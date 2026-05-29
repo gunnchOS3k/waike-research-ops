@@ -1,0 +1,3 @@
+# Lesson Plan
+
+Template scaffold.

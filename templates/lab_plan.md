@@ -1,0 +1,3 @@
+# Lab Plan
+
+Template scaffold.
