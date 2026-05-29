@@ -1,0 +1,3 @@
+version: '1.0'
+mirror: gunnchAI3k/knowledge/skill_tree.yaml
+sync_policy: manual PR both repos
