@@ -1,0 +1,8 @@
+*.pdf
+*transcript*
+*resume*
+private/
+raw/
+extracted_private/
+*.docx
+*.xlsx
