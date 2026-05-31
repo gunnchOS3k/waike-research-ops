@@ -1,10 +1,11 @@
 stateDiagram-v2
-  [*] --> Start
-  orientation
-  Validated --> lesson
-  Validated --> lab
-  Validated --> issue
-  Validated --> contribution
-  Validated --> portfolio
-  Validated --> milestone
-  Exported --> [*]
+  [*] --> Orientation
+  Orientation --> Lesson
+  Lesson --> Lab
+  Lab --> IssueAssignment
+  IssueAssignment --> Contribution
+  Contribution --> Review
+  Review --> PortfolioArtifact
+  PortfolioArtifact --> Milestone
+  Milestone --> ResearchDemo
+  ResearchDemo --> [*]

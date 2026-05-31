@@ -1,10 +1,16 @@
 flowchart TB
-  subgraph users [Users]
-    SUP[Supervisor]
-    RES[Researcher]
-    STU[Student]
+  LRN[Learner]
+  INS[Instructor]
+  MENT[Mentor]
+  TUTOR[gunnchAI3k]
+  subgraph SYS[waike-research-ops]
+    PROG[programs/research_apprenticeship_*.md]
+    MAP[export_course_repo_map.py]
+    VAL[validate_waike_artifacts.py]
   end
-  SYS[waike-research-ops]
-  TWIN[7gc-digital-twin]
-  users --> SYS
-  SYS --> TWIN
+  GH[GitHub six research repos]
+  LRN --> PROG
+  INS --> PROG
+  MENT --> LRN
+  TUTOR --> LRN
+  MAP --> GH
