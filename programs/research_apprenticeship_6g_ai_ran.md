@@ -1,16 +1,31 @@
-# research apprenticeship 6g ai ran
+# 6G AI-RAN
 
 ## Beginner
-Clone repo, read SUPERVISOR_README, run toy demo.
+- Read repo `docs/00_SUPERVISOR_README.md` (or `docs/SUPERVISOR_README.md`)
+- Run demo: `make -C ../spectrumx-ai-ran-gary demo-research`
+- Open one `research_task` issue
 
 ## Intermediate
-Fix docs issue, add test, open PR.
+- Add test or doc improvement PR
+- Update `quality/TRACEABILITY_MATRIX.md` row
 
 ## Advanced
-Capstone metric or scenario extension.
+- Extend metrics or scenario config
+- Draft figure for `paper/figures_needed.md`
 
-## Ethics
-No PII. Opt-in only. See docs/ETHICS_SECURITY_PRIVACY.md in target repo.
+## Mentor check-ins
+Week 1 orientation · Week 2 demo proof · Week 4 PR review
 
-## Portfolio
-GitHub PR + story card + demo recording (no faces/PII without consent).
+## Portfolio artifacts
+- Screenshot of demo output
+- PR link with tests
+- One-page reflection (no PII)
+
+## Ethics guardrails
+Synthetic data only · no private competition IQ · no affiliation claims
+
+## Final demo
+`make -C ../spectrumx-ai-ran-gary demo-research`
+
+## gunnchAI3k tutor cards
+`/waike lesson airan` · `/mentor` · `/explain reproducibility`

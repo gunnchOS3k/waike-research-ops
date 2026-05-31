@@ -1,8 +1,8 @@
-# Digital Twin
+# Reproducible Research
 
 ## Beginner
 - Read repo `docs/00_SUPERVISOR_README.md` (or `docs/SUPERVISOR_README.md`)
-- Run demo: `make -C ../7gc-digital-twin demo`
+- Run demo: `make map`
 - Open one `research_task` issue
 
 ## Intermediate
@@ -25,7 +25,7 @@ Week 1 orientation · Week 2 demo proof · Week 4 PR review
 Synthetic data only · no private competition IQ · no affiliation claims
 
 ## Final demo
-`make -C ../7gc-digital-twin demo`
+`make map`
 
 ## gunnchAI3k tutor cards
-`/waike lesson 7gc` · `/mentor` · `/explain reproducibility`
+`/waike lesson repro` · `/mentor` · `/explain reproducibility`
