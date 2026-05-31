@@ -16,15 +16,32 @@ MAP = {
     "research_apprenticeship_reproducible_research": "waike-research-ops",
 }
 
+LEVELS = {
+    "beginner": ["Read SUPERVISOR_README", "Run target repo make e2e", "Open one research_task issue"],
+    "intermediate": ["Fix test or doc", "Update traceability row"],
+    "advanced": ["Add metric or scenario", "Draft paper figure"],
+}
+
 
 def main() -> int:
-    out_dir = ROOT / "docs" / "generated"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / "course_repo_map.json"
-    payload = {"programs": MAP, "note": "synthetic map for supervisor demo"}
-    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    payload = {"programs": MAP, "levels": LEVELS, "note": "synthetic map — no PII"}
+    e2e = ROOT / "results" / "e2e"
+    e2e.mkdir(parents=True, exist_ok=True)
+    (e2e / "course_repo_map.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    md = ["# Course → Repo Map", ""]
+    for prog, repo in MAP.items():
+        md.append(f"- **{prog}** → `{repo}`")
+    (e2e / "course_repo_map.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    idx = ["# Research Apprenticeship Index", ""]
+    for level, tasks in LEVELS.items():
+        idx.append(f"## {level.title()}")
+        idx.extend(f"- {t}" for t in tasks)
+        idx.append("")
+    for p in sorted((ROOT / "programs").glob("research_apprenticeship_*.md")):
+        idx.append(f"- Program: `{p.name}`")
+    (e2e / "research_apprenticeship_index.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
     print(json.dumps(payload, indent=2))
-    print(f"Wrote {path}")
+    print(f"Wrote {e2e}")
     return 0
 
 

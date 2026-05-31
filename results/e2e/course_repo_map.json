@@ -1,0 +1,26 @@
+{
+  "programs": {
+    "research_apprenticeship_digital_twin": "7gc-digital-twin",
+    "research_apprenticeship_6g_ai_ran": "spectrumx-ai-ran-gary",
+    "research_apprenticeship_beam_selection": "readygary-6g-beam-selection",
+    "research_apprenticeship_edge_measurement": "edge-io-measurement-node",
+    "research_apprenticeship_ntn_resilience": "ntn-resilience-sim",
+    "research_apprenticeship_reproducible_research": "waike-research-ops"
+  },
+  "levels": {
+    "beginner": [
+      "Read SUPERVISOR_README",
+      "Run target repo make e2e",
+      "Open one research_task issue"
+    ],
+    "intermediate": [
+      "Fix test or doc",
+      "Update traceability row"
+    ],
+    "advanced": [
+      "Add metric or scenario",
+      "Draft paper figure"
+    ]
+  },
+  "note": "synthetic map \u2014 no PII"
+}
