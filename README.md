@@ -1,16 +1,19 @@
 # WAIKE Research Ops
+## End-to-End Research Artifact
 
-**North Star:** WAIKE = Wireless + Artificial Intelligence Kinesthetic Education for Gary Indiana's Undiscovered Professionals Navigating Opportunities Wherever.
+| Item | Detail |
+|------|--------|
+| **Runs today** | Research prototype with synthetic toy demo |
+| **Demo** | `make e2e` |
+| **Data** | Synthetic only — no private IQ or PII |
+| **Extend** | See [EXTERNAL_RESEARCHER_QUICKSTART.md](docs/EXTERNAL_RESEARCHER_QUICKSTART.md) |
+| **Limits** | Not operational 6G; not Oulu affiliation; not carrier-grade |
+| **Readiness** | [END_TO_END_READINESS.md](docs/END_TO_END_READINESS.md) |
+| **Proof** | [E2E_RUN_RECORD.md](reproducibility/E2E_RUN_RECORD.md) |
+| **Artifacts** | [results/e2e/](results/e2e/) |
 
-Education/research/workforce operating system for **WAIKE Gary UPNOW**, **7GC**, and **gunnchOS3k MLV**.
+Education/research operating system for **WAIKE Gary UPNOW** and **7GC** — ISO-style ops, UDL, Kirkpatrick, FOI rubrics, research-to-workforce pipelines.
 
-## WAIKE Knowledge OS (Phase 2)
+> Generates measurable learning outcomes; supports cross-generational learning without chaos.
 
-- Levels 0–7: digital confidence → researcher/founder
-- **Beyond the Founder Standard** — Edmund's education is the seed, not the ceiling
-- Standards alignment (CS2023, NIST NICE, SWEBOK, …) — *partial until objective mapping completes*
-- **gunnchAI3k** Discord tutor: [gunnchAI3k](https://github.com/gunnchOS3k/gunnchAI3k)
-
-Start: `docs/00_WAIKE_KNOWLEDGE_OS.md`, `knowledge_maps/waike_skill_tree.yaml`
-
-> No transcripts, grades, or PII in this public repo. Use `tools/private_transcript_ingestion/` locally only.
+Feeds the [7GC AI-RAN Digital Twin Program](https://github.com/gunnchOS3k/7gc-digital-twin) and gunnchOS product incubator.
