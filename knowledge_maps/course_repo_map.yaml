@@ -1,0 +1,36 @@
+# WAIKE course → repo mapping (machine-readable)
+version: 1
+core_repos:
+  - id: 7gc-digital-twin
+    demo: make e2e
+    apprenticeship: research_apprenticeship_digital_twin
+  - id: spectrumx-ai-ran-gary
+    demo: make e2e
+    apprenticeship: research_apprenticeship_6g_ai_ran
+  - id: readygary-6g-beam-selection
+    demo: make e2e
+    apprenticeship: research_apprenticeship_beam_selection
+  - id: edge-io-measurement-node
+    demo: make e2e
+    apprenticeship: research_apprenticeship_edge_measurement
+  - id: ntn-resilience-sim
+    demo: make e2e
+    apprenticeship: research_apprenticeship_ntn_resilience
+  - id: waike-research-ops
+    demo: make e2e
+    apprenticeship: research_apprenticeship_reproducible_research
+
+levels:
+  beginner:
+    - Read docs/video_walkthrough_script.md in target repo
+    - Run make e2e
+    - Open one research_task issue
+  intermediate:
+    - Fix a test or doc gap
+    - Update quality/TRACEABILITY_MATRIX.md
+  advanced:
+    - Add metric or scenario
+    - Draft paper figure from results/e2e
+
+ethics_note: Synthetic data only; no PII; no affiliation claims
+tutor_card: "gunnchAI3k /waike lesson <topic>"

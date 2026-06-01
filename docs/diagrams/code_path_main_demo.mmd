@@ -1,0 +1,3 @@
+flowchart LR
+  CMD["make e2e"] --> MOD["export_course_repo_map, validate_waike_artifacts"]
+  MOD --> ART["results/e2e/course_repo_map.md, waike_validation_report.md"]
