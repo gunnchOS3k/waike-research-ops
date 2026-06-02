@@ -1,0 +1,1 @@
+"""WAIKE campus operational generators."""
