@@ -4,8 +4,10 @@ map:
 	python3 scripts/export_course_repo_map.py
 
 e2e:
-	@mkdir -p results/e2e
+	@mkdir -p results/e2e results/campus_learning
 	python3 scripts/export_course_repo_map.py 2>&1 | tee results/e2e/e2e_terminal_output.txt
+	PYTHONPATH=src python3 scripts/generate_all_campus_tracks.py >> results/e2e/e2e_terminal_output.txt
+	PYTHONPATH=src pytest -q >> results/e2e/e2e_terminal_output.txt
 	python3 scripts/validate_waike_artifacts.py >> results/e2e/e2e_terminal_output.txt
 	python3 scripts/e2e_check_required_artifacts.py
 

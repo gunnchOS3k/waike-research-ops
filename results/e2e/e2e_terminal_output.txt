@@ -2,4 +2,7 @@
   "repos": 6
 }
 Wrote /Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/results/e2e
+Wrote results/campus_learning/
+.                                                                        [100%]
+1 passed in 0.03s
 PASS {"pass": true, "checks": ["ok: research_apprenticeship_digital_twin.md", "ok: research_apprenticeship_edge_measurement.md", "ok: research_apprenticeship_beam_selection.md", "ok: research_apprenticeship_ntn_resilience.md", "ok: research_apprenticeship_6g_ai_ran.md", "ok: research_apprenticeship_reproducible_research.md"]}
