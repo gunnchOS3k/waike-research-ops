@@ -3,7 +3,7 @@
 ## Branch and commit
 
 - **Branch:** `curriculum-depth-full-educational-artifacts`
-- **Commit:** _(see `git rev-parse HEAD` after push)_
+- **Commit:** `cb6f752dcce9aabd099b137f2539e20d55bcc6c0`
 - **Repo:** `gunnchOS3k/waike-research-ops`
 
 ## PR (do not merge)
