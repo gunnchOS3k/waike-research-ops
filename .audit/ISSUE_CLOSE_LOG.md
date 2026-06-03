@@ -1,12 +1,13 @@
 # Issue close log
-
-gh CLI not available in Cursor sandbox. Run in Terminal.app:
-
-```bash
-cd waike-research-ops
-bash scripts/close_completed_issues.sh
-```
-
-Expected immediate closes (ALREADY_DONE_ON_MAIN): #9, #10, #11, #14
-
-All other implemented issues: comment + Fixes #N in PR; close on merge.
+Closing #14
+Post "https://api.github.com/graphql": Forbidden
+gh failed for #14
+Closing #11
+Post "https://api.github.com/graphql": Forbidden
+gh failed for #11
+Closing #10
+Post "https://api.github.com/graphql": Forbidden
+gh failed for #10
+Closing #9
+Post "https://api.github.com/graphql": Forbidden
+gh failed for #9
