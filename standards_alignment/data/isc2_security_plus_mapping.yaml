@@ -1,0 +1,7 @@
+framework: ISC2/CC
+disclaimer: "WAIKE is **aligned with** / **informed by** industry frameworks \u2014\
+  \ **not accredited by**, **not endorsed by**, and **not official certification training**."
+mappings:
+- domain: Security operations
+  project: cyber safety kit
+  artifact: threat model

@@ -1,8 +1,7 @@
-# ABET mapping (informed by — not accredited by ABET)
+# ABET mapping
 
-| Standard area | WAIKE courses | Evidence |
-|---------------|---------------|----------|
-| Engineering design | hardware_engineering, wireless_dsp_6g | Group project + portfolio |
-| Ethics | communication_ethics_professional_dev, all 7GC cases | ethics rubric |
+WAIKE is **aligned with** / **informed by** industry frameworks — **not accredited by**, **not endorsed by**, and **not official certification training**.
 
-**Gaps:** Full program accreditation review not performed.
+Course focus: `ai_ran_digital_twin_research`.
+
+See data/abet_mapping.yaml.

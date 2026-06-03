@@ -1,0 +1,7 @@
+framework: SFIA 9
+disclaimer: "WAIKE is **aligned with** / **informed by** industry frameworks \u2014\
+  \ **not accredited by**, **not endorsed by**, and **not official certification training**."
+mappings:
+- skill: Digital literacy
+  level: '2'
+  assignment: assignment_01
