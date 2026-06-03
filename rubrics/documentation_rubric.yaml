@@ -1,0 +1,3 @@
+version: 1
+inherits: master_rubric.yaml
+focus: documentation_quality

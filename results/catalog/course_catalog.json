@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "program": "WAIKE",
+  "ethos_statement": "WAIKE uses the 7GC campuses as case-study environments because technology education should not be abstract. Learners study real communities, real constraints, real risks, and real opportunities. The goal is not to drop technology into a place. The goal is to build with context, local respect, technical skill, and community benefit.\n",
+  "courses": [
+    {
+      "course_id": "digital_confidence",
+      "course_title": "Digital Confidence to Computer Operator",
+      "program_track": "foundations",
+      "level": "beginner",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "geelong",
+        "germany"
+      ]
+    },
+    {
+      "course_id": "general_it",
+      "course_title": "General IT and Systems Foundations",
+      "program_track": "foundations",
+      "level": "beginner",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "ghana",
+        "germany"
+      ]
+    },
+    {
+      "course_id": "hardware_engineering",
+      "course_title": "IT Support and Hardware Foundations",
+      "program_track": "infrastructure",
+      "level": "beginner",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "guyana",
+        "ghana"
+      ]
+    },
+    {
+      "course_id": "software_engineering",
+      "course_title": "Software Builder Zero-to-Hero",
+      "program_track": "engineering",
+      "level": "beginner",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "gaza",
+        "geelong"
+      ]
+    },
+    {
+      "course_id": "networking",
+      "course_title": "Networking and Internet Infrastructure",
+      "program_track": "infrastructure",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "ghana",
+        "guyana",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "cybersecurity",
+      "course_title": "Cybersecurity Foundations and SOC Readiness",
+      "program_track": "security",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "ghana",
+        "germany",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "cloud_devops",
+      "course_title": "Cloud and DevOps Foundations",
+      "program_track": "infrastructure",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "germany",
+        "geelong",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "ai_ml_data",
+      "course_title": "AI, ML, and Data Foundations",
+      "program_track": "ai",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "ghana",
+        "germany"
+      ]
+    },
+    {
+      "course_id": "edge_ai_embedded",
+      "course_title": "Embedded Systems and Device Prototyping",
+      "program_track": "edge",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "ghana",
+        "graham_land",
+        "guyana"
+      ]
+    },
+    {
+      "course_id": "wireless_dsp_6g",
+      "course_title": "Wireless, DSP, and 6G Foundations",
+      "program_track": "wireless",
+      "level": "advanced",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "ghana",
+        "graham_land",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "robotics_control",
+      "course_title": "Robotics and Control Foundations",
+      "program_track": "engineering",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "geelong",
+        "germany",
+        "guyana"
+      ]
+    },
+    {
+      "course_id": "project_management_agile_lss",
+      "course_title": "Project Management, Agile, and Lean Six Sigma",
+      "program_track": "professional",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "ghana",
+        "germany"
+      ]
+    },
+    {
+      "course_id": "data_visualization_bi",
+      "course_title": "Data, Databases, and Dashboards",
+      "program_track": "data",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "ghana",
+        "geelong"
+      ]
+    },
+    {
+      "course_id": "communication_ethics_professional_dev",
+      "course_title": "Communication, Ethics, Leadership, and Professional Development",
+      "program_track": "professional",
+      "level": "all",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gaza",
+        "germany",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "game_development_interactive_media",
+      "course_title": "Game Development and Interactive Media",
+      "program_track": "creative",
+      "level": "intermediate",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "geelong",
+        "gary",
+        "gaza"
+      ]
+    },
+    {
+      "course_id": "gunnchos_device_os_product_lab",
+      "course_title": "gunnchOS Device OS and Product Lab",
+      "program_track": "product",
+      "level": "advanced",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gaza",
+        "geelong",
+        "gary"
+      ]
+    },
+    {
+      "course_id": "ai_ran_digital_twin_research",
+      "course_title": "7GC AI-RAN and Digital Twin Research Apprenticeship",
+      "program_track": "research",
+      "level": "advanced",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "ghana",
+        "guyana",
+        "germany"
+      ]
+    },
+    {
+      "course_id": "reproducible_research",
+      "course_title": "Reproducible Research and Technical Publishing",
+      "program_track": "research",
+      "level": "advanced",
+      "exam_weight_max": 0.05,
+      "7gc_sites": [
+        "gary",
+        "graham_land",
+        "germany"
+      ]
+    }
+  ]
+}

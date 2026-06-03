@@ -1,0 +1,18 @@
+version: 1
+scale:
+  4: Exceeds professional/apprentice expectations — clear evidence, reusable artifact
+  3: Meets expectations — complete, correct enough for level
+  2: Developing — gaps in explanation or execution
+  1: Beginning — partial attempt
+  0: Missing or not assessable
+categories:
+  - conceptual_understanding
+  - technical_execution
+  - case_study_application
+  - documentation_quality
+  - reproducibility
+  - teamwork
+  - ethical_reasoning
+  - communication
+  - iteration_revision
+  - professional_readiness

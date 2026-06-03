@@ -1,0 +1,14 @@
+version: 1
+outcomes:
+  - id: understanding
+    statement: Explain concepts in plain language and connect to community needs.
+  - id: applied_skill
+    statement: Build working artifacts with documentation and reproducibility.
+  - id: teamwork
+    statement: Deliver group projects with visible roles and peer accountability.
+  - id: ethics
+    statement: Reason about privacy, safety, and equity using 7GC case studies.
+  - id: portfolio
+    statement: Publish portfolio-quality evidence suitable for jobs and research paths.
+  - id: confidence
+    statement: Demonstrate growth through revision cycles, not single high-stakes exams.

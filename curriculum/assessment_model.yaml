@@ -1,0 +1,15 @@
+version: 1
+philosophy: not_exam_heavy
+max_exam_weight: 0.10
+default_breakdown:
+  applied_labs: 0.25
+  group_case_study_project: 0.25
+  individual_portfolio_artifact: 0.20
+  documentation_reproducibility: 0.10
+  communication_presentation: 0.10
+  reflection_peer_review_revision: 0.05
+  knowledge_checks_quizzes: 0.05
+revision_policy:
+  allowed: true
+  requires_change_log: true
+  goal: mastery_not_gotcha

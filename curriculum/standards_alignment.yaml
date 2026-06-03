@@ -1,0 +1,11 @@
+version: 1
+disclaimer: aligned with — not accredited by — not endorsed by
+frameworks:
+  - id: ABET
+    file: standards_alignment/ABET_mapping.md
+  - id: ACM_CS2023
+    file: standards_alignment/ACM_CS2023_mapping.md
+  - id: NIST_NICE
+    file: standards_alignment/NIST_NICE_mapping.md
+  - id: NIST_AI_RMF
+    file: standards_alignment/NIST_AI_RMF_mapping.md

@@ -1,0 +1,9 @@
+# Copy for new assignments — see REQUIREMENTS.md §9
+assignment_id: TEMPLATE
+assignment_title: Template Assignment
+course_id: course_id
+week: 1
+estimated_time_hours: 3
+deliverables: [reflection]
+rubric: rubrics/master_rubric.yaml
+revision_policy: allowed_with_changelog
