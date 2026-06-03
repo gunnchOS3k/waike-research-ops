@@ -1,8 +1,20 @@
-.PHONY: deepen-courses generate-lessons generate-labs generate-assignment-bodies \
-	generate-group-project-depth generate-case-study-depth generate-industry-alignment \
-	generate-deep-student-packets generate-deep-instructor-packets generate-portfolio-evidence-index \
-	validate-depth generate-syllabi generate-assignments generate-group-projects generate-case-studies \
-	generate-rubrics export-catalog validate-curriculum e2e map smoke
+.PHONY: deepen-courses implement-issues validate-issue-completion validate-readiness \
+	audit-issues validate-depth generate-syllabi generate-assignments generate-group-projects \
+	generate-case-studies generate-rubrics export-catalog validate-curriculum e2e map smoke
+
+implement-issues:
+	$(PY) python3 scripts/implement_issue_completion.py
+	python3 scripts/generate_evaluation_dashboard.py
+
+validate-issue-completion:
+	python3 scripts/validate_issue_completion.py
+
+audit-issues:
+	python3 scripts/audit_open_issues.py
+	python3 scripts/classify_issue_completion.py
+
+validate-readiness:
+	python3 scripts/validate_all_waike_readiness.py
 
 PY := PYTHONPATH=src
 
@@ -47,13 +59,14 @@ map:
 	python3 scripts/export_course_repo_map.py
 
 e2e:
-	@mkdir -p results/e2e results/validation results/catalog results/syllabi \
+	@mkdir -p results/e2e results/validation results/audit results/catalog results/syllabi \
 		results/assignment_packs results/group_project_packs results/case_study_packs \
 		results/instructor_packets results/student_packets results/deep_course_packets \
 		results/deep_student_packets results/deep_instructor_packets results/portfolio_evidence_index
 	$(MAKE) generate-syllabi generate-assignments generate-group-projects generate-case-studies generate-rubrics export-catalog
-	$(MAKE) deepen-courses
-	$(MAKE) validate-curriculum validate-depth
+	$(MAKE) deepen-courses implement-issues
+	$(MAKE) validate-curriculum validate-depth validate-issue-completion validate-readiness
+	$(MAKE) audit-issues
 	python3 scripts/export_course_repo_map.py 2>&1 | tee results/e2e/e2e_terminal_output.txt
 	$(PY) python3 scripts/generate_all_campus_tracks.py >> results/e2e/e2e_terminal_output.txt
 	$(PY) pytest -q >> results/e2e/e2e_terminal_output.txt

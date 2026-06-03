@@ -1,0 +1,2 @@
+version: 1
+fields: [course_id, week, artifact_submitted]
