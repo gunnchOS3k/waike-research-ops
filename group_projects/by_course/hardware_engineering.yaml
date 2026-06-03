@@ -1,0 +1,19 @@
+project_title: "IT Support and Hardware Foundations \u2014 7GC group project"
+course_id: hardware_engineering
+7gc_site: gary
+community_problem: "Source-backed assumption \u2014 requires local validation"
+technical_problem: Defined in group_project_brief.md
+team_roles:
+- Project Lead
+- Technical Lead
+- Research Lead
+- Documentation Lead
+- Quality Lead
+- Presentation Lead
+- Community Impact Lead
+peer_review: true
+portfolio_artifacts:
+- report
+- demo
+- reproducibility_checklist
+risk_ethics_privacy_review: true

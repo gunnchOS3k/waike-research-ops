@@ -1,0 +1,7 @@
+version: 1
+inherits: master_rubric.yaml
+focus: teamwork
+criteria:
+  role_visibility: "Roles and weekly contribution log present"
+  peer_review: "Completed constructive peer review"
+  charter: "Team charter signed"

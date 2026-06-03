@@ -1,0 +1,11 @@
+course_id: game_development_interactive_media
+outcomes:
+- id: explain
+  level: 3
+  text: Explain core concepts for 7GC context.
+- id: apply
+  level: 4
+  text: Apply skills in labs and group project.
+- id: portfolio
+  level: 5
+  text: Deliver portfolio artifact with reproducibility.

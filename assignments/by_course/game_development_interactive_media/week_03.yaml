@@ -1,0 +1,21 @@
+assignment_id: game_development_interactive_media_w03
+assignment_title: Case study analysis
+course_id: game_development_interactive_media
+week: 3
+estimated_time_hours: 3
+difficulty_level: developing
+deliverables:
+- reflection
+- diagram_or_code
+rubric: rubrics/master_rubric.yaml
+gunnchAI3k_allowed_help:
+- hints
+- practice
+- debugging
+- draft_review
+gunnchAI3k_not_allowed_help:
+- complete graded submission
+- fabricated sources
+revision_policy: allowed_with_changelog
+portfolio_connection: true
+7gc_case_study_connection: "site from course map \u2014 synthetic teaching fixture"

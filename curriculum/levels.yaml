@@ -1,0 +1,25 @@
+mastery_levels:
+  - level: 0
+    name: Exposure
+    description: Recognize the idea and explain why it matters.
+  - level: 1
+    name: Guided Practice
+    description: Complete a task with step-by-step support.
+  - level: 2
+    name: Independent Practice
+    description: Complete a similar task without step-by-step support.
+  - level: 3
+    name: Applied Understanding
+    description: Apply the idea to a 7GC case study.
+  - level: 4
+    name: Team Delivery
+    description: Contribute to a group artifact with a defined role.
+  - level: 5
+    name: Professional Artifact
+    description: Produce portfolio-ready output.
+  - level: 6
+    name: Teaching and Transfer
+    description: Explain, document, and teach part of the work.
+  - level: 7
+    name: Research and Innovation
+    description: Identify limitations and connect to research or industry standards.

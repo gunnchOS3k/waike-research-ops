@@ -1,0 +1,5 @@
+# Homework and Portfolio Access Lab
+
+Site: gary
+
+**Evidence note:** synthetic teaching fixture / source-backed assumption. **Requires local validation** — not field-validated deployment.
