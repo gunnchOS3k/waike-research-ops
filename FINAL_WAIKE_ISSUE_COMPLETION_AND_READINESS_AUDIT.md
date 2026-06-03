@@ -4,7 +4,8 @@
 
 - **Branch:** `issue-completion-student-instructor-readiness-audit`
 - **Compare:** https://github.com/gunnchOS3k/waike-research-ops/compare/main...issue-completion-student-instructor-readiness-audit
-- **PR command:** `bash scripts/create_or_update_issue_completion_pr.sh` (after `gh auth login`)
+- **Commit:** `9dd986c`
+- **PR:** https://github.com/gunnchOS3k/waike-research-ops/compare/main...issue-completion-student-instructor-readiness-audit — create with `bash scripts/create_or_update_issue_completion_pr.sh` (see `.audit/PR_HANDOFF.md`; `gh` was Forbidden in Cursor sandbox)
 
 ## Issues fetched
 
