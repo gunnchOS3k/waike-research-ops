@@ -1,0 +1,3 @@
+# Lab week 1 — Week 1: Core practice — Reproducible Research and Technical Publishing
+
+reproducible_research guided lab.

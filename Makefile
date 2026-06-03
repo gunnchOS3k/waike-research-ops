@@ -1,7 +1,24 @@
-.PHONY: generate-syllabi generate-assignments generate-group-projects generate-case-studies \
+.PHONY: deepen-courses generate-lessons generate-labs generate-assignment-bodies \
+	generate-group-project-depth generate-case-study-depth generate-industry-alignment \
+	generate-deep-student-packets generate-deep-instructor-packets generate-portfolio-evidence-index \
+	validate-depth generate-syllabi generate-assignments generate-group-projects generate-case-studies \
 	generate-rubrics export-catalog validate-curriculum e2e map smoke
 
 PY := PYTHONPATH=src
+
+deepen-courses:
+	$(PY) python3 scripts/deepen_all_courses.py
+
+generate-lessons generate-labs generate-assignment-bodies generate-group-project-depth: deepen-courses
+
+generate-case-study-depth: deepen-courses
+
+generate-industry-alignment: deepen-courses
+
+generate-deep-student-packets generate-deep-instructor-packets generate-portfolio-evidence-index: deepen-courses
+
+validate-depth:
+	python3 scripts/validate_depth_all.py
 
 generate-syllabi:
 	$(PY) python3 scripts/generate_syllabi.py --all
@@ -32,9 +49,11 @@ map:
 e2e:
 	@mkdir -p results/e2e results/validation results/catalog results/syllabi \
 		results/assignment_packs results/group_project_packs results/case_study_packs \
-		results/instructor_packets results/student_packets
+		results/instructor_packets results/student_packets results/deep_course_packets \
+		results/deep_student_packets results/deep_instructor_packets results/portfolio_evidence_index
 	$(MAKE) generate-syllabi generate-assignments generate-group-projects generate-case-studies generate-rubrics export-catalog
-	$(MAKE) validate-curriculum
+	$(MAKE) deepen-courses
+	$(MAKE) validate-curriculum validate-depth
 	python3 scripts/export_course_repo_map.py 2>&1 | tee results/e2e/e2e_terminal_output.txt
 	$(PY) python3 scripts/generate_all_campus_tracks.py >> results/e2e/e2e_terminal_output.txt
 	$(PY) pytest -q >> results/e2e/e2e_terminal_output.txt

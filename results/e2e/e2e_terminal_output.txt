@@ -3,8 +3,8 @@
 }
 Wrote /Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/results/e2e
 Wrote results/campus_learning/
-......                                                                   [100%]
-6 passed in 0.16s
+............                                                             [100%]
+12 passed in 0.39s
 PASS {"pass": true, "checks": ["ok: research_apprenticeship_digital_twin.md", "ok: research_apprenticeship_edge_measurement.md", "ok: research_apprenticeship_beam_selection.md", "ok: research_apprenticeship_ntn_resilience.md", "ok: research_apprenticeship_6g_ai_ran.md", "ok: research_apprenticeship_reproducible_research.md"]}
 /Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/scripts/run_all_tool_exports.py': [Errno 2] No such file or directory
 /Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/scripts/check_optional_backends.py': [Errno 2] No such file or directory
