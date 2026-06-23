@@ -1,0 +1,15 @@
+{
+  "site_id": "guyana",
+  "evidence_status": "synthetic simulation",
+  "learners_sample_count": 12,
+  "device_types": [
+    "phone",
+    "chromebook",
+    "repair_bench"
+  ],
+  "connectivity_modes": [
+    "wired",
+    "wifi",
+    "offline_cache"
+  ]
+}
