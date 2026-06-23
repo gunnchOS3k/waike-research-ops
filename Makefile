@@ -1,6 +1,13 @@
 .PHONY: deepen-courses implement-issues validate-issue-completion validate-readiness \
 	audit-issues validate-depth generate-syllabi generate-assignments generate-group-projects \
-	generate-case-studies generate-rubrics export-catalog validate-curriculum e2e map smoke
+	generate-case-studies generate-rubrics export-catalog validate-curriculum e2e map smoke \
+	test generate-7gc-upnow
+
+test:
+	$(PY) pytest -q
+
+generate-7gc-upnow:
+	$(PY) python3 scripts/generate_7gc_upnow_bundle.py
 
 implement-issues:
 	$(PY) python3 scripts/implement_issue_completion.py
