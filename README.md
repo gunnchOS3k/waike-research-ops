@@ -1,185 +1,109 @@
-# WAIKE Research Ops
-## End-to-End Research Artifact
+# waike-research-ops
 
-| Item | Detail |
-|------|--------|
-| **Runs today** | Research prototype with smoke test (synthetic, non-evidence) |
-| **Demo** | `make smoke` (smoke test only — not readiness proof) |
-| **Data** | Synthetic only — no private IQ or PII |
-| **Extend** | See [EXTERNAL_RESEARCHER_QUICKSTART.md](docs/EXTERNAL_RESEARCHER_QUICKSTART.md) |
-| **Limits** | Not operational 6G; not Oulu affiliation; not carrier-grade |
-| **Readiness** | [END_TO_END_READINESS.md](docs/END_TO_END_READINESS.md) |
-| **Smoke test** | [E2E_RUN_RECORD.md](reproducibility/E2E_RUN_RECORD.md) |
-| **Artifacts** | [results/e2e/](results/e2e/) |
+**WAIKE** — Wireless + Artificial Intelligence Kinesthetic Education research operations for equitable learning pathways (Gary UPNOW context and broader gunnchOS3k education).
 
-Education/research operating system for **WAIKE Gary UPNOW** and **7GC** — ISO-style ops, UDL, Kirkpatrick, FOI rubrics, research-to-workforce pipelines.
+> **Current release/state:** `INTEGRATED` digitally — education/ops content; partner/external program execution remains EXTERNAL_PENDING where noted.
 
-> Generates measurable learning outcomes; supports cross-generational learning without chaos.
-
-Feeds the [7GC AI-RAN Digital Twin Program](https://github.com/gunnchOS3k/7gc-digital-twin) and gunnchOS product incubator.
-
----
+Ecosystem portal: [gunnchos-research-portal](https://github.com/gunnchOS3k/gunnchos-research-portal) · Product charter: [gunnchOS3k_PRODUCT_CHARTER.md](https://github.com/gunnchOS3k/gunnchos-7gc-ai-ran-field-kit/blob/main/program/charter/gunnchOS3k_PRODUCT_CHARTER.md)
 
 ## What is this?
 
-**Turn 7GC repos into learnable pathways, rubrics, and apprenticeships so technology divides close through people—not code alone.**
+Curriculum maps, standards alignment drafts, templates, and ops tooling for WAIKE programs — not a carrier product.
 
-| | |
-|---|---|
-| **Status** | Adoption-pilot planning · education OS |
-| **Evidence today** | Level 1 smoke test — see [Evidence status](#evidence-status-smoke-test-vs-real-validation) |
-| **Start** | [docs/START_HERE.md](docs/START_HERE.md) |
+## Why does it exist?
 
-## What problem does this solve?
+Education and workforce pathways need an explicit ops layer alongside devices, OS, and AI.
 
-**Human:** Advanced repos are useless if learners and teachers cannot safely participate.
+## Where does it fit?
 
-**Technical:** Operationalize course-to-repo maps, assessments, and privacy-safe portfolios.
+Product Charter **layer 14**. Surfaced via Ecosystem Portal `WAIKE` docs; pairs with `gunnchAI3k` tutoring.
 
-**Who is harmed if unsolved:** Students without mentors; communities without maintainers.
+## What is real today?
 
-**Gary / 7GC / digital equality:** This repo supports equitable connectivity research for under-connected communities; Gary is the flagship urban anchor where applicable.
+- Knowledge OS outlines and skill-tree YAML
+- Program/templates under `programs/`, `templates/`, `knowledge_maps/`
+- Public docs without transcripts/grades/PII
 
-## Beginner mental model
+## What is simulated / modelled?
 
-A **school-to-researcher ladder** connecting classrooms to GitHub evidence.
+- Partial standards mappings until objective completion
+- Scenario/campus curriculum packages that are research/education artifacts
 
-## How this repo addresses the problem
+## What is physical / external pending?
 
-Course maps, rubrics, validation scripts, WAIKE integration docs (program design—not completed cohort proof yet).
+- External partner execution / institutional adoption evidence
+- Any claim of accredited degree program or carrier workforce certification — **not claimed**
 
-**Main output:** Exported maps and validation logs (`results/e2e/` smoke).
-
-**Output does NOT prove:** Completed pilot cohort outcomes.
-
-## How this fits gunnchOS3k MLV
-
-Human pipeline for gunnchOS3k; links gunnchAI3k and all research repos.
-
-Deep dive: [docs/HOW_THIS_FITS_GUNNCHOS.md](docs/HOW_THIS_FITS_GUNNCHOS.md) · [docs/CROSS_REPO_DEPENDENCY_MAP.md](docs/CROSS_REPO_DEPENDENCY_MAP.md) (where present)
-
-## How this fits 6G PhD research
-
-Relevant themes: **Education/workforce impact · digital equality · reproducible research training**
-
-Oulu/CWC-style alignment (research direction, not affiliation claim): [docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md](docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md)
-
-## What exists today
-
-- YAML course map
-- Export scripts
-- Rubric docs
-- `make smoke`
-
-Details: [docs/WHAT_IS_REAL_TODAY.md](docs/WHAT_IS_REAL_TODAY.md)
-
-## Evidence status: smoke test vs real validation
-
-- `make smoke` / `make e2e` = **CI smoke test** — proves code runs, **not** that research claims are field-validated.
-- See [docs/NO_MORE_TOY_DEMOS.md](docs/NO_MORE_TOY_DEMOS.md) · [docs/EVIDENCE_STANDARD.md](docs/EVIDENCE_STANDARD.md) · [quality/CLAIMS_TO_EVIDENCE_MATRIX.md](quality/CLAIMS_TO_EVIDENCE_MATRIX.md)
-
-**Next real evidence needed:**
-
-- Pilot cohort
-- Anonymized assessments
-- Instructor review
-- Adoption packet
-
-## Run or inspect this repo
+## Try / inspect in 5 minutes
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-make smoke
+# Browse the Knowledge OS entrypoints
+ls docs knowledge_maps programs
+# Run unit tests if present
+python3 -m pytest -q tests 2>/dev/null || true
 ```
+Start: `docs/00_WAIKE_KNOWLEDGE_OS.md`, `knowledge_maps/waike_skill_tree.yaml`.
 
-| | |
+## Architecture
+
+Docs + YAML knowledge maps + templates/tools; optional Python under `src/` / `tools/`.
+
+## Repo map
+
+| Path | Role |
 |---|---|
-| **Output** | `results/e2e/ course map exports` |
-| **Means** | Reproducible smoke artifacts for CI and reviewers |
-| **Does not mean** | Conference, adoption, or manufacturing readiness |
+| `docs/` | Knowledge OS + guides |
+| `knowledge_maps/` | Skill trees |
+| `programs/` | Program packs |
+| `standards_alignment/` | Partial mappings |
+| `tools/` | Local-only helpers (no PII in git) |
 
-Video: [docs/video_walkthrough_script.md](docs/video_walkthrough_script.md)
+## Interfaces
 
-## Visual map
+Content consumed by portal/education surfaces; tutor bridge references `gunnchAI3k`.
 
-```mermaid
-flowchart LR
-  WAIKE[waike-research-ops] --> Learner[Learner]
-  Learner --> Repos[7GC repos]
-  gunnchAI[gunnchAI3k] --> Learner
+## Tests
+
+```bash
+python3 -m pytest -q tests
 ```
 
-More diagrams: [docs/diagrams/README.md](docs/diagrams/README.md) (if present) · [docs/uml/README.md](docs/uml/README.md) (spectrumx)
+## Evidence
 
-## Start here based on who you are
+`results/` when present; otherwise docs + YAML are the artifact. No learner PII in public git.
 
-| Reader | Start here | You will learn |
-|--------|------------|----------------|
-| Beginner | [docs/PLAIN_ENGLISH_EXPLANATION.md](docs/PLAIN_ENGLISH_EXPLANATION.md) | Idea without jargon |
-| Student / WAIKE | [docs/AUDIENCE_GUIDE.md](docs/AUDIENCE_GUIDE.md) | Learning path |
-| Researcher / professor | [docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md](docs/HOW_THIS_FITS_6G_PHD_RESEARCH.md) | Research fit |
-| Contributor | [CONTRIBUTING.md](CONTRIBUTING.md) or Issues | How to help |
-| City / school partner | [docs/PROBLEM_SOLUTION_MAP.md](docs/PROBLEM_SOLUTION_MAP.md) | Why it matters locally |
+## Known gaps
 
-## What would make this final?
+Completed objective standards mapping; external partner evidence; privacy-safe private ingest remains local-only.
 
-**Not satisfied yet** for final / conference / adoption / manufacturing gates—see audit:
+## Beginner path
 
-- [docs/WHAT_WOULD_MAKE_THIS_FINAL.md](docs/WHAT_WOULD_MAKE_THIS_FINAL.md)
-- [quality/FINAL_READINESS_CONFIRMATION.md](quality/FINAL_READINESS_CONFIRMATION.md)
+WAIKE is the **education pathway** around the devices — skills and programs, not radioshipping claims.
 
-## Roadmap from current state to final readiness
+## Intern path
 
-| Gate | Status |
-|------|--------|
-| Concept | Met |
-| Smoke test | Met (`make smoke`) |
-| Real evidence pipeline | Open |
-| Benchmark / field data | Open |
-| Internal validation | Open |
-| External reproduction | Open |
-| Candidate release | Open |
-| Final | Not claimed |
+Read Knowledge OS levels 0–7 and propose one skill-tree improvement with tests.
 
-Full table: [quality/READINESS_GATE_TABLE.md](quality/READINESS_GATE_TABLE.md)
+## Expert path
 
-## Related repos in the 7GC research spine
+Align standards maps honestly; keep education_ops ≠ carrier.
 
+## Contribution path
 
-| Repo | Role |
-|------|------|
-| [7gc-digital-twin](https://github.com/gunnchOS3k/7gc-digital-twin) | Community digital twin spine |
-| [spectrumx-ai-ran-gary](https://github.com/gunnchOS3k/spectrumx-ai-ran-gary) | AI-RAN + SpectrumX competition path |
-| [readygary-6g-beam-selection](https://github.com/gunnchOS3k/readygary-6g-beam-selection) | Beam selection / PHY-facing evidence |
-| [edge-io-measurement-node](https://github.com/gunnchOS3k/edge-io-measurement-node) | Privacy-first edge measurement |
-| [ntn-resilience-sim](https://github.com/gunnchOS3k/ntn-resilience-sim) | NTN + terrestrial resilience |
-| [waike-research-ops](https://github.com/gunnchOS3k/waike-research-ops) | Education & workforce pipeline |
-| [gunnchos-hardware-industrial-design](https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design) | Device hardware EVT planning |
-| [gunnchos-device-os](https://github.com/gunnchOS3k/gunnchos-device-os) | School/research device OS prototype |
-| [gunnchAI3k](https://github.com/gunnchOS3k/gunnchAI3k) | Learning assistant (where relevant) |
+Curriculum clarity, templates, tests. Never commit transcripts/grades/PII.
 
+## Current release / state
 
-## Claims and non-claims
+**INTEGRATED** (content) · **EXTERNAL_PENDING** (partner execution). Not a carrier certification program.
 
-**Supports today:** Runnable scaffold, documented methods, smoke-test artifacts, honest limitations.
+## Claim boundary
 
-**Does not prove yet:** Completed pilot cohort outcomes.
-
-**Requires evidence issues:** See GitHub `[Evidence TODO]` issues and `quality/CLAIMS_TO_EVIDENCE_MATRIX.md`.
+Education/ops only · no commercial 6G · no certification · Cursor DRAFT-only.
 
 ---
 
-## Industry / research-grade tooling alignment
+## Retained detail (post–Cycle 3A front door)
 
-| Tool / ecosystem | Why it matters | Adapter | Runs now? | Access? |
-|------------------|----------------|---------|-----------|---------|
-| See matrix | Evidence upgrade path | `industry_research_stack/` | Stub exports | Optional |
+Prior short README: [docs/history/README_PRE_WP012.md](docs/history/README_PRE_WP012.md).
 
-**Commands:** `make e2e` (includes tool export stubs) · `python3 scripts/run_all_tool_exports.py`
-
-**Notice:** Aligned with public research ecosystems — [non-affiliation](industry_research_stack/NON_AFFILIATION_NOTICE.md). Smoke stubs only unless documented otherwise.
-
-## Wireless engineering alignment
-
-See [docs/WIRELESS_ENGINEERING_ALIGNMENT.md](docs/WIRELESS_ENGINEERING_ALIGNMENT.md).
+> No transcripts, grades, or PII in this public repo. Use `tools/private_transcript_ingestion/` locally only.
