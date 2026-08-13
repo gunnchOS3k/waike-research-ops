@@ -4,9 +4,11 @@ CR with id/impact/decision; status report; AI plan critique that names risk or a
 
 Capstone: end-to-end improvement/project simulation with real artifacts from weeks 1–9. No fabricated community outcomes. PMP 2026 value/AI/sustainability as judgment contexts only.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+WAIKE is not a PMI ATP; week 10 alignment labels do not grant CAPM, PMP, or CSSGB.
 
-Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Change request needs id, impact, decision. Status report names blockers honestly. AI plan critique must name a risk or assumption the plan missed. Capstone assembles charter→control with real artifact ids. Career map: ops analyst / continuous-improvement associate; certs aligned not granted. Disclosure table maps AI modes used across the course.
+
+Journal week 10 (Change control, status, AI-plan critique, capstone): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 
 ## Worked example
 

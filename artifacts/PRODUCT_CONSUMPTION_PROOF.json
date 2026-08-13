@@ -6,9 +6,9 @@
   "catalog_fields_present": true,
   "learner_ingest_has_no_keys": true,
   "teacher_ingest_has_keys": true,
-  "learner_course_count": 3,
-  "teacher_course_count": 3,
-  "owner_session_overlay_count": 3,
+  "learner_course_count": 6,
+  "teacher_course_count": 6,
+  "owner_session_overlay_count": 6,
   "current_product_layer": {
     "imported": true,
     "packs": [

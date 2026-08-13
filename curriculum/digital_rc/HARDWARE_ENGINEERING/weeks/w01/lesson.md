@@ -4,9 +4,9 @@ WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before 
 
 MIT OCW 6.002 is PUBLIC_REFERENCE_ONLY rigor citation: lumped abstraction, KCL/KVL habits. We do not redistribute OCW problem sets. KiCad appears later; this week is pure network math on original ForgeSense sensor node nets.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 1 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Series divider fixture: R1=1kΩ, R2=3kΩ, Vin=12V → I=Vin/(R1+R2)=3mA, Vout=Vin*R2/(R1+R2)=9V. The lab checks your arithmetic fields, not a SPICE GUI screenshot. MIT OCW 6.002 is PUBLIC_REFERENCE_ONLY for lumped abstraction and KCL/KVL habits; we do not redistribute OCW problem sets. KiCad comes later — this week is pure network math on ForgeSense sensor nets. PHYSICAL_PENDING covers soldering and instruments until digital validators pass.
 
 ## Worked example
 

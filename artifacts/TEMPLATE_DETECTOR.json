@@ -1,7 +1,7 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0921,
+  "worst_jaccard": 0.0074,
   "worst_pair": [
     "HARDWARE_ENGINEERING",
     "PM_AGILE_LSS"

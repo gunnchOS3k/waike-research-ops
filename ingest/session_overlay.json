@@ -2,6 +2,60 @@
   {
     "ok": true,
     "session": {
+      "lesson_id": "GENERAL_IT-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "GENERAL_IT-offline",
+      "labs": [
+        "lab_os_users",
+        "lab_services"
+      ],
+      "catalog_course_id": "GENERAL_IT",
+      "title": "General IT \u2014 Operator to Support Specialist"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "COMPUTER_NETWORKING-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "COMPUTER_NETWORKING-offline",
+      "labs": [
+        "lab_cidr_math",
+        "lab_datapath"
+      ],
+      "catalog_course_id": "COMPUTER_NETWORKING",
+      "title": "Computer Networking \u2014 Packets to Campus Edge"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "CYBERSECURITY-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "CYBERSECURITY-offline",
+      "labs": [
+        "lab_siem_triage",
+        "lab_hardening_baseline"
+      ],
+      "catalog_course_id": "CYBERSECURITY",
+      "title": "Cybersecurity \u2014 Harbor SOC Foundations"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
       "lesson_id": "SOFTWARE_BUILDER-w01",
       "profile": "student",
       "role": "learner",

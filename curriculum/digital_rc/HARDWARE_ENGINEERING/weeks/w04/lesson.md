@@ -4,9 +4,13 @@
 
 6.002 digital abstraction cited; original WAIKE truth-table fixture.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 4 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Two-input NAND yields 0 only for inputs 1,1. Submit the full truth table the lab recomputes. Noise margins and gate delay stay conceptual this week; Boolean correctness gates PCB work. 6.002 digital abstraction is cited as rigor, not as a problem-set dump. Original WAIKE truth-table fixture only.
+
+Journal week 4 (NAND as the digital abstraction): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
+
+Week 4 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
 
 ## Worked example
 

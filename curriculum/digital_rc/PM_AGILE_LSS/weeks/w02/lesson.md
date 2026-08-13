@@ -4,9 +4,15 @@ Each task exactly one A (accountable). Matrix covers charter, measure, control a
 
 People domain judgment without claiming PMP credential.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+WAIKE is not a PMI ATP; week 2 alignment labels do not grant CAPM, PMP, or CSSGB.
 
-Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Each task has exactly one A (accountable). Matrix covers charter, measure, and control at minimum. Two A's on one task fails. RACI vocabulary stays precise — do not paste ECO task text as stems. Aligns to PMBOK responsibility themes as PUBLIC_REFERENCE_ONLY labels.
+
+Journal week 2 (RACI for the improvement team): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
+
+Week 2 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+
+Week 2 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
 ## Worked example
 

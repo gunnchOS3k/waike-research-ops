@@ -4,9 +4,15 @@ Tasks A2 B3 C2 D4 with preds A→B,A→C,B/C→D. Critical path days = 2+3+4=9. 
 
 PMP 2026 ECO Process weighting is a label; scenarios may mention AI tools as context without testing model math.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+WAIKE is not a PMI ATP; week 3 alignment labels do not grant CAPM, PMP, or CSSGB.
 
-Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Tasks A2 B3 C2 D4 with predecessors A→B, A→C, B/C→D. Critical path duration = 2+3+4 = 9 days. Lab recomputes longest path; a pretty Gantt PNG is not acceptance. Schedule float talk is fine orally; submitted numbers must match the fixture graph.
+
+Journal week 3 (WBS and schedule — critical path): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
+
+Week 3 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+
+Week 3 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
 ## Worked example
 

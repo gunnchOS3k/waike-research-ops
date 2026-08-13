@@ -4,9 +4,15 @@ Causes sorted; cumulative % until >=80%. Root cause sentence required. Fixture: 
 
 Analyze phase CSSGB alignment label only.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+WAIKE is not a PMI ATP; week 7 alignment labels do not grant CAPM, PMP, or CSSGB.
 
-Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Sort causes; accumulate percent until ≥80%. Root-cause sentence required. Fixture causes include cables and staffing — use those counts. Fabricated Pareto bars fail. AI HINT allowed on wording with AI_DISCLOSED; chart math is NO_AI.
+
+Journal week 7 (Pareto and root cause): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
+
+Week 7 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+
+Week 7 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
 ## Worked example
 

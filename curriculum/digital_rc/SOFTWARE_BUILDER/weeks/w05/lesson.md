@@ -6,7 +6,7 @@ AI-use mode REVIEW_MY_WORK: assistants may critique your matrix; the submitted J
 
 Distinct vocabulary from Harbor SOC avoids noun-swapped templates across batches.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+desk may create and close checkouts; reader may GET only; forge-bot may annotate but never close. The lab evaluates an action matrix against those rules. Granting forge-bot checkout.close is the package negative and must fail. REVIEW_MY_WORK assistants may critique your matrix; the submitted JSON is yours and must carry AI_DISCLOSED when used. Keep vocabulary distinct from Harbor SOC so batch-001 and batch-002 authz labs are not noun-swapped clones.
 
 ## Worked example
 

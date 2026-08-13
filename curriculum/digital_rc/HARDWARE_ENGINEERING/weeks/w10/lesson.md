@@ -4,9 +4,11 @@ Final practical: symptoms rail_sag_3v3 + i2c_nack. Root cause among weak_regulat
 
 Capstone: digitally validate embedded subsystem (power + bus + DT + QEMU) with artifacts — not fabricated field yield claims.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 10 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Symptoms rail_sag_3v3 + i2c_nack. Choose root cause among weak_regulator, missing_pullup, wrong_address, and open_gnd using the digital evidence pack — not gut feel. Capstone: assemble the subsystem packet (net math, Thévenin, RC, power, bus parse, west/QEMU, overlay, ERC/DRC) with PHYSICAL_PENDING where hardware is still pending. AI modes disclosed when used; NO_AI on the diagnosis practical.
+
+Journal week 10 (Failure diagnosis — digitally validate the subsystem): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 
 ## Worked example
 

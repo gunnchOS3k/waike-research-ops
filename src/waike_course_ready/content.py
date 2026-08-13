@@ -1497,8 +1497,9 @@ COURSES_001 = {
 
 from waike_course_ready.batch002.content import COURSES_002, BATCH_COURSE_IDS  # noqa: E402
 
-# Active digital-RC emit/audit batch (COURSE-READY-002). Batch 001 packages remain on disk.
-COURSES = COURSES_002
+# Product path = batch-001 (#43) ∪ batch-002 (#44). Do not replace #43.
+COURSES = {**COURSES_001, **COURSES_002}
+BATCH_COURSE_IDS_ACTIVE = tuple(COURSES)
 
 
 def _rebalance_weekly() -> None:

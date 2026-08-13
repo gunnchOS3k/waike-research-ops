@@ -4,7 +4,11 @@ Review ForgeDesk for IDOR on checkout ids, missing login rate limit, verbose 500
 
 OWASP ASVS themes are domain labels — no copied item banks. Practical assessment mode: NO_AI.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Compose and CI logs for week 9 are evidence; adjectives are not. Keep digest and status fields typed.
+
+Score findings with id, severity band, and evidence. At least one high or critical must name the intentional IDOR fixture on checkout ids. Empty looks-fine reviews fail. Also watch missing login rate limits and verbose 500s that leak stack traces. OWASP ASVS themes are domain labels — no copied item banks. Practical assessment mode: NO_AI.
+
+Journal week 9 (Security review — findings with severity bands): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 
 ## Worked example
 

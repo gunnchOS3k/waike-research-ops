@@ -4,9 +4,11 @@ Rail 3V3 budget using real MPNs: nRF52840 Iq, AMS1117-3.3 quiescent, SSD1306 OLE
 
 Datasheets are PUBLIC_REFERENCE_ONLY. Values in fixture are course-sanctioned numbers for the lab, not a claim about every SKU revision.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 5 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+Rail 3V3 budget uses real MPN fields: nRF52840 Iq, AMS1117-3.3 quiescent, SSD1306 OLED draw. Sum currents; flag over-budget if sum exceeds the fixture rail limit. Invented datasheet currents fail honesty checks. EMBEDDED_PROTOTYPING integration: the same budget sheet feeds the subsystem packet later. PHYSICAL_PENDING for thermal camera / shunt measurements.
+
+Journal week 5 (Power budget with real MPNs): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 
 ## Worked example
 

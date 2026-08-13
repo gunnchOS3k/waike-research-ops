@@ -4,9 +4,9 @@ Seen from the ADC pin, the divider becomes Vth and Rth. Vth=Vin*R2/(R1+R2), Rth=
 
 This week integrates HARDWARE_ENGINEERING analysis with EMBEDDED_PROTOTYPING measurement planning: you will later sample this node from Zephyr QEMU fixtures.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 2 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+From the ADC pin: Vth=Vin*R2/(R1+R2)=9V and Rth=R1∥R2=750Ω for the 12V/1k/3k fixture. Loading the node with finite ADC input resistance changes the reading — quantify before blaming firmware. This week bridges HARDWARE_ENGINEERING analysis to EMBEDDED_PROTOTYPING measurement planning: later you sample this node from Zephyr QEMU fixtures. Invented Thévenin numbers fail the recomputed checks.
 
 ## Worked example
 

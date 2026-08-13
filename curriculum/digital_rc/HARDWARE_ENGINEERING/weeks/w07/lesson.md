@@ -4,9 +4,13 @@ west build -b qemu_cortex_m0 for the ForgeSense app. physical_status must be PHY
 
 EMBEDDED_PROTOTYPING integration: same app will bind I2C in DT next week.
 
-Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. 
+Show the week 7 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. 
+west build -b qemu_cortex_m0 for the ForgeSense app. physical_status must remain PHYSICAL_PENDING until digital build and QEMU boot logs pass. Claiming board flashed without hardware evidence fails. Zephyr docs are PUBLIC_REFERENCE_ONLY; your west/CMake fragments are original WAIKE wording for ForgeSense.
+
+Journal week 7 (Zephyr west + QEMU before hardware): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
+
+Week 7 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
 
 ## Worked example
 

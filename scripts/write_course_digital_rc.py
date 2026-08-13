@@ -10,6 +10,26 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from waike_course_ready.content import COURSES  # noqa: E402
+from waike_course_ready.provenance import strip_lesson_padding  # noqa: E402
+
+BATCH_001 = ("GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY")
+
+
+def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
+    """Reject operator-note padding; require stripped lesson ≥800 chars."""
+    reasons: list[str] = []
+    course = COURSES.get(cid) or {}
+    for w in course.get("weeks") or []:
+        raw = w.get("lesson") or ""
+        low = raw.lower()
+        if "operator note: record evidence before changing shared systems" in low:
+            reasons.append(f"week {w.get('week')}: operator-note depth padding")
+        if "evidence discipline week" in low:
+            reasons.append(f"week {w.get('week')}: evidence-discipline depth padding")
+        stripped = strip_lesson_padding(raw)
+        if len(stripped) < 800:
+            reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")
+    return (not reasons), reasons
 
 
 def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) -> tuple[bool, list[str]]:
@@ -44,6 +64,17 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(bool(labs.get("ttl1_from_parsed_header")), "TTL=1 check is tautology, not parsed header")
     need(bool(labs.get("no_submission_fails")), "no-submission golden path still passes")
     need(all(n.get("ok") for n in labs.get("negatives_must_fail_and_did") or []), "package negatives did not fail")
+    # Coexistence: #43 labs must still execute when this RC writer runs on the union product path.
+    need(int(labs.get("lab_count") or 0) >= 50, f"lab_count {labs.get('lab_count')} < 50 (#43∪#44)")
+    need(int(labs.get("batch_001_lab_count") or 0) == 20, "#43 labs orphaned from run_all")
+    need(set(BATCH_001).issubset(set(COURSES)), "#43 courses missing from COURSES product path")
+    depth_ok, depth_reasons = _lesson_depth_ok(cid)
+    need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
+    need(int(prov.get("lesson_padding_rejected") or 0) == 0, "provenance rejected lesson padding")
+    need(
+        int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= 800,
+        f"stripped lesson min {(prov.get('stripped_lesson_mins') or {}).get(cid)} < 800",
+    )
     need(prov.get("status") == "PASS", f"provenance {prov.get('status')}")
     need(bool(prov.get("key_balance_ok")), "answer keys collapsed")
     need(bool(prov.get("exam_items_original")), "mid/final not original")
@@ -103,8 +134,10 @@ def main() -> int:
         "worst_exam_weekly_token_jaccard": prov.get("worst_exam_weekly_token_jaccard"),
         "claim_boundary": (
             "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, "
-            "non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. "
-            "Not a student/teacher E6. Not all 18 courses. Batch 002 only."
+            "non-cloned packaging, stripped lesson depth ≥800 without operator-note padding, "
+            "and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 "
+            "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM). Not a student/teacher E6. "
+            "Not all 18 courses."
         ),
     }
     out = ROOT / "artifacts" / "COURSE_DIGITAL_RC.json"
