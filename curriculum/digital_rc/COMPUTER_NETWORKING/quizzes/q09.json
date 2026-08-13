@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "net-w9-1",
+      "kind": "mcq",
+      "stem": "Port 23 in this lab is",
+      "choices": [
+        "Permitted",
+        "Denied",
+        "NAT translated to 443",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "net-w9-2",
+      "kind": "mcq",
+      "stem": "Star rule at the bottom is",
+      "choices": [
+        "Permit all",
+        "STP",
+        "Visible implicit deny",
+        "LPM"
+      ]
+    },
+    {
+      "id": "net-w9-3",
+      "kind": "mcq",
+      "stem": "Rogue DHCP under the table typically",
+      "choices": [
+        "Improves SPF",
+        "Fixes TTL",
+        "Enables BPDU guard",
+        "Hands out a lying gateway"
+      ]
+    },
+    {
+      "id": "net-w9-4",
+      "kind": "mcq",
+      "stem": "permit ip any any as first line",
+      "choices": [
+        "Turns the ACL into wallpaper",
+        "Hardens the edge",
+        "Is required by RFC 791",
+        "Replaces NAT"
+      ]
+    },
+    {
+      "id": "net-w9-5",
+      "kind": "mcq",
+      "stem": "WIRELESS_6G track is",
+      "choices": [
+        "Deleted by this course",
+        "Kept as an advanced networking extension",
+        "Replaced by telnet",
+        "A CompTIA dump"
+      ]
+    },
+    {
+      "id": "net-w9-6",
+      "kind": "mcq",
+      "stem": "Staff tools should prefer",
+      "choices": [
+        "Telnet and HTTP",
+        "Port 9",
+        "SSH and HTTPS",
+        "Anonymous FTP"
+      ]
+    }
+  ]
+}

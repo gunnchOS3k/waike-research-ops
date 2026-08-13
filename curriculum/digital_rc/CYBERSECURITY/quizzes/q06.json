@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "cy-w6-1",
+      "kind": "mcq",
+      "stem": "First containment for a stolen staff laptop",
+      "choices": [
+        "Revoke identity/sessions",
+        "Widen SOC allow",
+        "Disable syslog",
+        "Permit telnet"
+      ]
+    },
+    {
+      "id": "cy-w6-2",
+      "kind": "mcq",
+      "stem": "Temporarily allowing guest\u2192staff",
+      "choices": [
+        "Is fine",
+        "Is a segmentation regression",
+        "Fixes AIMD",
+        "Is 800-61 recover"
+      ]
+    },
+    {
+      "id": "cy-w6-3",
+      "kind": "mcq",
+      "stem": "Kiosk SMB to staff shares",
+      "choices": [
+        "Required",
+        "Is DNS",
+        "Should stay denied",
+        "Is MFA"
+      ]
+    },
+    {
+      "id": "cy-w6-4",
+      "kind": "mcq",
+      "stem": "Security groups in this lesson are",
+      "choices": [
+        "A shopping list",
+        "CS161 P1",
+        "A leaked bank",
+        "Cloud-shaped ACLs we express as a matrix"
+      ]
+    },
+    {
+      "id": "cy-w6-5",
+      "kind": "mcq",
+      "stem": "Report delay 16:12 steal / 16:40 report means",
+      "choices": [
+        "28 minutes of untrusted sessions to hunt",
+        "Nothing happened",
+        "NAT failed",
+        "TTL expired"
+      ]
+    },
+    {
+      "id": "cy-w6-6",
+      "kind": "mcq",
+      "stem": "Press release as first IR step",
+      "choices": [
+        "Yes",
+        "No \u2014 contain first",
+        "Yes if AI writes it",
+        "Yes on guest Wi-Fi"
+      ]
+    }
+  ]
+}

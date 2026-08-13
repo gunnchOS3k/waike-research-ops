@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "git-w5-1",
+      "kind": "mcq",
+      "stem": "Why is reboot-and-hope banned as a next action?",
+      "choices": [
+        "It destroys evidence and skips root cause",
+        "Reboots are slow",
+        "Windows 11 cannot reboot",
+        "Printers forbid reboot"
+      ]
+    },
+    {
+      "id": "git-w5-2",
+      "kind": "mcq",
+      "stem": "4419 cannot resolve printer.gary.waike.local. First subsystem?",
+      "choices": [
+        "Thermal paste",
+        "Name resolution",
+        "GPU driver",
+        "BitLocker"
+      ]
+    },
+    {
+      "id": "git-w5-3",
+      "kind": "mcq",
+      "stem": "SE1 at this desk means",
+      "choices": [
+        "One essay lost",
+        "A fan is dusty",
+        "The whole desk is down in public hours",
+        "A volunteer is late"
+      ]
+    },
+    {
+      "id": "git-w5-4",
+      "kind": "mcq",
+      "stem": "SLA for SE3 here is",
+      "choices": [
+        "Five minutes",
+        "Never",
+        "Ninety days",
+        "End of next public day"
+      ]
+    },
+    {
+      "id": "git-w5-5",
+      "kind": "mcq",
+      "stem": "Best patron sentence after 4417?",
+      "choices": [
+        "Your essay is in the restore folder; idle logout still exists on purpose",
+        "We fixed it",
+        "Disable all security",
+        "Email us the password"
+      ]
+    },
+    {
+      "id": "git-w5-6",
+      "kind": "mcq",
+      "stem": "4418 fan scream then black screen: collect what first?",
+      "choices": [
+        "A new gaming PC quote",
+        "Temps / thermal evidence",
+        "BIOS password from a forum",
+        "A full disk wipe"
+      ]
+    }
+  ]
+}

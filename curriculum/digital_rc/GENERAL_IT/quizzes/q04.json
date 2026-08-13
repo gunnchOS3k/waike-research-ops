@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "git-w4-1",
+      "kind": "mcq",
+      "stem": "256 GiB disk, 180 used, 12 reserved. Free GiB?",
+      "choices": [
+        "76",
+        "44",
+        "64",
+        "12"
+      ]
+    },
+    {
+      "id": "git-w4-2",
+      "kind": "mcq",
+      "stem": "Why fail at 15% free instead of 0%?",
+      "choices": [
+        "Disks explode at 15%",
+        "ext4 cannot use last 15%",
+        "CompTIA requires 15%",
+        "Updates and profiles need headroom before 'full'"
+      ]
+    },
+    {
+      "id": "git-w4-3",
+      "kind": "mcq",
+      "stem": "A backup that has never been restored is",
+      "choices": [
+        "A rumor until a restore hash matches",
+        "3-2-1 compliant by default",
+        "Better than snapshots",
+        "A substitute for RAID"
+      ]
+    },
+    {
+      "id": "git-w4-4",
+      "kind": "mcq",
+      "stem": "ssn.txt in the archive should",
+      "choices": [
+        "Be encrypted and kept forever",
+        "Fail the lab \u2014 PII does not belong there",
+        "Be emailed to the instructor",
+        "Be stored in ticket 4417"
+      ]
+    },
+    {
+      "id": "git-w4-5",
+      "kind": "mcq",
+      "stem": "3-2-1 at this desk includes",
+      "choices": [
+        "Three identical cloud buckets only",
+        "RAID 0 only",
+        "Volume + locked USB + off-box closet PC",
+        "A screenshot of File Explorer"
+      ]
+    },
+    {
+      "id": "git-w4-6",
+      "kind": "mcq",
+      "stem": "Used climbs to 220 GiB, reserved 12, size 256. Policy 15% free?",
+      "choices": [
+        "Pass",
+        "Undefined",
+        "Pass if NTFS",
+        "Fail"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "practical_id": "GENERAL_IT-practical",
+  "labs": [
+    "lab_os_users",
+    "lab_services",
+    "lab_storage",
+    "lab_dns_hosts",
+    "lab_backup",
+    "lab_ticket_queue",
+    "lab_automation_runbook"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

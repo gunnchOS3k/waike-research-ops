@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "git-w3-1",
+      "kind": "mcq",
+      "stem": "Why does the lab fail if kiosk is in sudo?",
+      "choices": [
+        "Shared kiosk must not be able to change the image",
+        "sudo is deprecated",
+        "kiosk needs root for printing",
+        "UIDs must be even"
+      ]
+    },
+    {
+      "id": "git-w3-2",
+      "kind": "mcq",
+      "stem": "Two passwd lines, same UID, different names. What is wrong?",
+      "choices": [
+        "Nothing if homes differ",
+        "Ownership collisions \u2014 a ghost shares files",
+        "Only Windows cares about UIDs",
+        "SSH will fix it"
+      ]
+    },
+    {
+      "id": "git-w3-3",
+      "kind": "mcq",
+      "stem": "desk.lead may sudo for which task?",
+      "choices": [
+        "Install a random USB installer",
+        "Disable the firewall permanently",
+        "Unlock a patron local account / restart cups",
+        "Share the root password on paper"
+      ]
+    },
+    {
+      "id": "git-w3-4",
+      "kind": "mcq",
+      "stem": "Fast User Switching is useful because",
+      "choices": [
+        "It wipes the spooler",
+        "It disables idle logout",
+        "It grants kiosk sudo",
+        "A volunteer can leave without killing everyone else's jobs"
+      ]
+    },
+    {
+      "id": "git-w3-5",
+      "kind": "mcq",
+      "stem": "Time-boxed admin is an example of",
+      "choices": [
+        "Least privilege / support-shaped zero trust",
+        "Security through obscurity",
+        "Defense in depth via extra antivirus",
+        "NAT"
+      ]
+    },
+    {
+      "id": "git-w3-6",
+      "kind": "mcq",
+      "stem": "Which home layout passes unique-homes?",
+      "choices": [
+        "/home/kiosk for both kiosk and lead",
+        "/home/kiosk and /home/desk.lead",
+        "/root for everyone",
+        "C:\\Users\\Public for Linux"
+      ]
+    }
+  ]
+}

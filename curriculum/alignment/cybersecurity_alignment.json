@@ -1,0 +1,144 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "CYBERSECURITY",
+  "track_ids": ["CYBER_SOC"],
+  "date_checked": "2026-08-13",
+  "preferred_outline": "ISC2 CC effective 2026-09-01",
+  "benchmarks": [
+    {
+      "source_id": "ISC2_CC_CURRENT_AND_2026_09_01",
+      "reuse_class": "RESTRICTED",
+      "prefer": "upcoming_2026_09_01",
+      "coverage_upcoming": [
+        {
+          "domain": "security_principles",
+          "waike_weeks": [1],
+          "includes_ai_governance": true,
+          "waike_artifacts": ["lessons/w01", "quizzes/q01"]
+        },
+        {
+          "domain": "security_governance",
+          "waike_weeks": [1, 10],
+          "waike_artifacts": ["assignments/a01", "capstone"]
+        },
+        {
+          "domain": "identity_and_access_management_concepts",
+          "waike_weeks": [2],
+          "includes_non_human_identities": true,
+          "waike_artifacts": ["labs/lab_iam_rbac"]
+        },
+        {
+          "domain": "networking_and_cloud_security_concepts",
+          "waike_weeks": [3, 6],
+          "waike_artifacts": ["labs/lab_segmentation_zones", "lessons/w03"]
+        },
+        {
+          "domain": "security_operations_and_incident_response",
+          "waike_weeks": [4, 5, 7, 8, 9],
+          "waike_artifacts": [
+            "labs/lab_siem_triage",
+            "labs/lab_hardening_baseline",
+            "labs/lab_incident_playbook",
+            "labs/lab_safe_vuln_detect",
+            "labs/lab_forensics_timeline"
+          ]
+        }
+      ],
+      "coverage_current_pre_sep_2026_still_mapped": [
+        {
+          "domain": "business_continuity_disaster_recovery_incident_response",
+          "waike_weeks": [7, 10]
+        },
+        {
+          "domain": "access_controls_concepts",
+          "waike_weeks": [2]
+        },
+        {
+          "domain": "network_security",
+          "waike_weeks": [3, 6]
+        },
+        {
+          "domain": "security_operations",
+          "waike_weeks": [4, 5]
+        }
+      ]
+    },
+    {
+      "source_id": "COMPTIA_SECURITY_PLUS_SY0_701",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "general_security_concepts",
+          "weight_pct": 12,
+          "waike_weeks": [1]
+        },
+        {
+          "domain": "threats_vulnerabilities_mitigations",
+          "weight_pct": 22,
+          "waike_weeks": [8],
+          "note": "Authorized toy-parser lab only. No live scanning of unauthorized targets."
+        },
+        {
+          "domain": "security_architecture",
+          "weight_pct": 18,
+          "waike_weeks": [3, 6]
+        },
+        {
+          "domain": "security_operations",
+          "weight_pct": 28,
+          "waike_weeks": [4, 5, 7, 9]
+        },
+        {
+          "domain": "security_program_management_and_oversight",
+          "weight_pct": 20,
+          "waike_weeks": [1, 10]
+        }
+      ]
+    },
+    {
+      "source_id": "BERKELEY_CS161_SU26",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "structure_only": true,
+      "do_not_copy": ["project_specs", "vulnerable_binaries_from_course", "exams", "solutions", "go_file_share_project"],
+      "structure_adapted": [
+        {
+          "cs161_pattern": "authorized_vulnerable_target_in_course_vm",
+          "waike_artifact": "labs/lab_safe_vuln_detect",
+          "how": "Original length-prefixed toy parser with an intentional bounds lie. Detector, not an exploit kit. Sandbox-only."
+        },
+        {
+          "cs161_pattern": "design_document_checkpoint_before_implementation",
+          "waike_artifact": "projects/harbor_evidence_locker.md",
+          "how": "Original design-then-build group project for an evidence locker policy, not a CS161 file-share clone."
+        },
+        {
+          "cs161_pattern": "project_plus_midterm_plus_final",
+          "waike_shape": "7 labs, mid-course, final knowledge, practical IR/forensics, group project"
+        }
+      ]
+    },
+    {
+      "source_id": "NIST_SP_800_181R1_NICE",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "waike_artifacts": ["career_mapping.json"]
+    },
+    {
+      "source_id": "NIST_SP_800_61R2_IR",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "waike_artifacts": ["labs/lab_incident_playbook"]
+    },
+    {
+      "source_id": "NIST_SP_800_53R5_CONTROLS",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "waike_artifacts": ["labs/lab_hardening_baseline", "labs/lab_iam_rbac"]
+    },
+    {
+      "source_id": "ISC2_AI_EXAM_GUIDANCE_2026",
+      "reuse_class": "RESTRICTED",
+      "waike_artifacts": ["lessons/w01", "quizzes/q01"],
+      "note": "Original items on CIA applied to model integrity and non-human identities. No ISC2 wording copied."
+    }
+  ],
+  "authorized_security_lab_boundary": "Security labs run only against course fixtures, local sandbox files, and the WAIKE course CTF toy parser. No scanning, exploiting, or credential attacks against systems the learner does not own and that the course did not authorize.",
+  "claim_boundary": "Not an ISC2 or CompTIA item dump. Not a CS161 project replica. Not a certification."
+}

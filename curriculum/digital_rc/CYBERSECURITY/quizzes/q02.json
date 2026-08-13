@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "cy-w2-1",
+      "kind": "mcq",
+      "stem": "harbor-bot may",
+      "choices": [
+        "Read cases",
+        "Close cases",
+        "Grant sudo to kiosk",
+        "Disable logs"
+      ]
+    },
+    {
+      "id": "cy-w2-2",
+      "kind": "mcq",
+      "stem": "Naiya closing a case should",
+      "choices": [
+        "Pass",
+        "Fail RBAC",
+        "Trigger NAT",
+        "Pass if MFA"
+      ]
+    },
+    {
+      "id": "cy-w2-3",
+      "kind": "mcq",
+      "stem": "Deprovisioning without a ticket is",
+      "choices": [
+        "Agile",
+        "Required by SPF",
+        "How orphan access is born",
+        "A lab bonus"
+      ]
+    },
+    {
+      "id": "cy-w2-4",
+      "kind": "mcq",
+      "stem": "Bot token in lesson markdown",
+      "choices": [
+        "Is required",
+        "Is a VLAN",
+        "Is CIDR",
+        "Is forbidden"
+      ]
+    },
+    {
+      "id": "cy-w2-5",
+      "kind": "mcq",
+      "stem": "AAA accounting means",
+      "choices": [
+        "Recording who did which action on which case",
+        "Billing only",
+        "OSPF cost",
+        "AIMD"
+      ]
+    },
+    {
+      "id": "cy-w2-6",
+      "kind": "mcq",
+      "stem": "NICE framework reuse class in our registry is",
+      "choices": [
+        "RESTRICTED dump",
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "Paywall bypass",
+        "Unknown malware"
+      ]
+    }
+  ]
+}

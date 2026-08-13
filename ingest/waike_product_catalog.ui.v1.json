@@ -1,0 +1,48 @@
+{
+  "schema": "waike.course_catalog.ui.v1",
+  "full_curriculum_complete": false,
+  "owner_repo": "waike-research-ops",
+  "packet": "WAIKE-COURSE-READY-001",
+  "courses": [
+    {
+      "course_id": "GENERAL_IT",
+      "title": "General IT \u2014 Operator to Support Specialist",
+      "kinesthetic_hook": "Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.",
+      "lesson_excerpt": "At the Gary Civic Tech Desk the machine in front of a patron is not a personality. It remembers (files), it calculates (apps), and it talks (network). Beginners freeze when a window disappears because they cannot name which of those three jobs failed. Ticket 4417 from the library kiosk is a remember-job failure: the essay lived in a browser temp store and the idle timer (1200 seconds) wiped the se",
+      "worked_example": "Idle policy 1200s = 20 minutes. Patron sat down at 14:02, last keystroke 14:07, return 14:28. Session is gone. Restore from the auto-save folder if present; do not disable the timer as your first move \u2014 the timer is a shared-kiosk control.",
+      "assignment": "Build the required folder tree for ticket 4417, write a four-line operator journal (remember / calculate / talk / what broke), and describe one restore method that is not Ctrl+Z. No patron PII.",
+      "lab_hint": "lab_ticket_queue",
+      "track_ids": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "academy_id": "ACADEMY_IT"
+    },
+    {
+      "course_id": "COMPUTER_NETWORKING",
+      "title": "Computer Networking \u2014 Packets to Campus Edge",
+      "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
+      "lesson_excerpt": "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire agreed to that, not because the Internet is polite.",
+      "worked_example": "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. Peel Ethernet first (ethertype 0x0800), then IP, then TCP.",
+      "assignment": "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label who reads each header. No vendor GUI screenshots required.",
+      "lab_hint": "lab_cidr_math",
+      "track_ids": [
+        "NETWORKING_INFRA"
+      ],
+      "academy_id": "ACADEMY_NETWORKING"
+    },
+    {
+      "course_id": "CYBERSECURITY",
+      "title": "Cybersecurity \u2014 Harbor SOC Foundations",
+      "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",
+      "lesson_excerpt": "Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The 2026-09-01 ISC2 CC outline renames the second domain toward governance and threads AI through all five. We prefer that upcoming outline. We do not copy ISC2 items.",
+      "worked_example": "A triage bot with sudo would violate least privilege for a non-human identity and would turn a prompt injection into root. Harbor policy: bots read, humans close.",
+      "assignment": "Write a one-page Harbor governance memo: CIA applied to the ticket-summarizer bot, one GRC owner, and one prohibited data class.",
+      "lab_hint": "lab_hardening_baseline",
+      "track_ids": [
+        "CYBER_SOC"
+      ],
+      "academy_id": "ACADEMY_CYBER"
+    }
+  ]
+}

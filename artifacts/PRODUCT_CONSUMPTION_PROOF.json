@@ -1,0 +1,43 @@
+{
+  "schema": "waike.product_consumption_proof.v1",
+  "owner_repo": "waike-research-ops",
+  "device_os_curriculum_pr": false,
+  "catalog_schema": "waike.course_catalog.ui.v1",
+  "catalog_fields_present": true,
+  "learner_ingest_has_no_keys": true,
+  "teacher_ingest_has_keys": true,
+  "learner_course_count": 3,
+  "teacher_course_count": 3,
+  "owner_session_overlay_count": 3,
+  "current_product_layer": {
+    "imported": true,
+    "packs": [
+      "waike_gary_upnow_intro",
+      "wireless_basics_101",
+      "python_starter_pack"
+    ],
+    "learner_session_ok": true,
+    "teacher_session_ok": true,
+    "learner_has_educator_block": true,
+    "session_shape_keys": [
+      "accessibility",
+      "account",
+      "educator",
+      "labs",
+      "lesson_id",
+      "offline_pack",
+      "profile",
+      "progress",
+      "role",
+      "tutor"
+    ],
+    "claim_boundary": "Digital WAIKE learning runtime using repo lesson packs. Not a full LMS, not production cloud sync."
+  },
+  "honest_limit": "device-os origin/main WAIKE UI still hardcodes three offline packs. This packet proves schema-compatible catalog + session-shaped overlay + live run_session on those existing packs. It does not mega-PR device-os or copy curriculum bodies into device-os.",
+  "wrote": {
+    "learner": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/ingest/learner/waike_learner_ingest.v1.json",
+    "teacher": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/ingest/teacher/waike_teacher_ingest.v1.json",
+    "catalog": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/ingest/waike_product_catalog.ui.v1.json"
+  },
+  "ok": true
+}

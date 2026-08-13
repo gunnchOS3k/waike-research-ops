@@ -1,0 +1,160 @@
+[
+  {
+    "rubric_id": "COMPUTER_NETWORKING-lab",
+    "title": "Packet Range lab",
+    "criteria": [
+      {
+        "name": "datapath_parse",
+        "weight": 30,
+        "desc": "Student reports TTL from bytes 14+8, not a hardcoded 4"
+      },
+      {
+        "name": "ttl1_drop",
+        "weight": 25,
+        "desc": "A crafted TTL=1 header decrements to 0 and is not forwarded"
+      },
+      {
+        "name": "lpm",
+        "weight": 25,
+        "desc": "/24 beats /16; /32 steals the host"
+      },
+      {
+        "name": "acl_order",
+        "weight": 20,
+        "desc": "deny tcp/23 before permit 443 before deny *"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-assignment",
+    "title": "Hex and graph work",
+    "criteria": [
+      {
+        "name": "sliced_frame",
+        "weight": 40,
+        "desc": "Paper slice of MAC/ethertype/IHL/TTL/proto/src/dst"
+      },
+      {
+        "name": "spf_recompute",
+        "weight": 30,
+        "desc": "Changing B-D to 20 flips A\u2192D to A-C-D"
+      },
+      {
+        "name": "no_vendor_gui",
+        "weight": 30,
+        "desc": "No stolen Packet Tracer / exam-sim screenshots"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-quiz",
+    "title": "Protocol knowledge",
+    "criteria": [
+      {
+        "name": "range_numbers",
+        "weight": 50,
+        "desc": "10.20.30.0/26, seq/ACK, 5-tuple \u2014 original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys only in instructor/answer_keys.json"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-mid",
+    "title": "Mid-course path exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not weekly clones"
+      },
+      {
+        "name": "encap_cidr_tcp",
+        "weight": 40,
+        "desc": "MTU chop, LPM, ACK arithmetic"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-final-knowledge",
+    "title": "Final edge exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not weekly clones"
+      },
+      {
+        "name": "stp_spf_acl",
+        "weight": 50,
+        "desc": "BPDU guard, SPF cost 4 vs 10, telnet deny"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-practical",
+    "title": "Datapath practical",
+    "criteria": [
+      {
+        "name": "student_parse",
+        "weight": 40,
+        "desc": "Empty parse JSON fails"
+      },
+      {
+        "name": "ttl_header",
+        "weight": 40,
+        "desc": "TTL=1 uses the parsed header, not (1-1)==0"
+      },
+      {
+        "name": "negatives",
+        "weight": 20,
+        "desc": "Wrong network address on /26 fails CIDR lab"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-project",
+    "title": "Guest VLAN redesign",
+    "criteria": [
+      {
+        "name": "intent_json",
+        "weight": 40,
+        "desc": "Prefixes, ACL, NAT, four-router costs"
+      },
+      {
+        "name": "guest_isolated",
+        "weight": 30,
+        "desc": "Guest cannot reach Roof management"
+      },
+      {
+        "name": "eight_minutes",
+        "weight": 30,
+        "desc": "Talk uses this topology, not a campus UPNOW slide clone"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMPUTER_NETWORKING-portfolio",
+    "title": "Path portfolio",
+    "criteria": [
+      {
+        "name": "trace",
+        "weight": 50,
+        "desc": "One Pier\u2192Roof trace naming VLAN/LPM/TTL/ACL"
+      },
+      {
+        "name": "intent",
+        "weight": 30,
+        "desc": "Validator-rejected missing next-hop included as evidence"
+      },
+      {
+        "name": "no_ccna_claim",
+        "weight": 20,
+        "desc": "Portfolio does not say 'I am CCNA'"
+      }
+    ]
+  }
+]

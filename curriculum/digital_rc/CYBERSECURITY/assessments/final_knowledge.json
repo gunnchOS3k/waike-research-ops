@@ -1,0 +1,269 @@
+{
+  "assessment_id": "CYBERSECURITY-final",
+  "items": [
+    {
+      "id": "CYBERSECURITY-fin-01",
+      "kind": "mcq",
+      "stem": "ssh_password_auth on the Harbor image should be?",
+      "choices": [
+        "True",
+        "Maybe",
+        "Port 23",
+        "False"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-02",
+      "kind": "mcq",
+      "stem": "ai_agent_sudo true on the image is?",
+      "choices": [
+        "A baseline fail",
+        "Required",
+        "A VLAN",
+        "A DNS TTL"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-03",
+      "kind": "mcq",
+      "stem": "open_ports {22,80,3389} versus Harbor \u2264{22,443}?",
+      "choices": [
+        "Pass",
+        "Fail \u2014 too open",
+        "Enables OSPF",
+        "Grants CC"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-04",
+      "kind": "mcq",
+      "stem": "Baseline JSON for harbor-img-07 shows /home/naiya mode 0777. Which control fails?",
+      "choices": [
+        "Availability only",
+        "cups cannot print",
+        "Confidentiality and integrity of Naiya's files",
+        "IPv6 RA"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-05",
+      "kind": "mcq",
+      "stem": "Do we nmap the school's real /24 for this lab?",
+      "choices": [
+        "Yes",
+        "Yes if offline",
+        "Yes from a dump",
+        "No \u2014 fixture JSON only"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-06",
+      "kind": "mcq",
+      "stem": "Stolen staff laptop at 16:12, reported 16:40. First containment?",
+      "choices": [
+        "Revoke identity/sessions",
+        "Widen SOC allow",
+        "Disable syslog",
+        "Permit telnet"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-07",
+      "kind": "mcq",
+      "stem": "Temporarily allowing guest\u2192staff 'so the label printer works' is?",
+      "choices": [
+        "Fine",
+        "A segmentation regression",
+        "AIMD",
+        "800-61 recover"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-08",
+      "kind": "mcq",
+      "stem": "A volunteer opens \\\\staff-fs\\payroll from a public kiosk 'to print labels.' Harbor response?",
+      "choices": [
+        "Permit SMB forever",
+        "Call it DNS",
+        "Keep deny; use the desk print procedure instead",
+        "Require MFA then allow"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-09",
+      "kind": "mcq",
+      "stem": "28 minutes between theft and report means?",
+      "choices": [
+        "Nothing happened",
+        "NAT failed",
+        "TTL expired",
+        "Untrusted sessions to hunt"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-10",
+      "kind": "mcq",
+      "stem": "At T+4 minutes after the stolen-laptop call, an intern drafts a public blog post before sessions are revoked. Clock check?",
+      "choices": [
+        "Wrong \u2014 revoke/contain before press",
+        "Correct \u2014 communicate first",
+        "Correct if a model writes it",
+        "Correct on guest Wi-Fi"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-11",
+      "kind": "mcq",
+      "stem": "Wipe disks before contain. Lab order?",
+      "choices": [
+        "Efficient",
+        "Fails \u2014 destroys evidence",
+        "800-53 AU",
+        "LPM"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-12",
+      "kind": "mcq",
+      "stem": "Lessons-learned belongs where on the clock?",
+      "choices": [
+        "First",
+        "Never",
+        "Last",
+        "In the ACL"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-13",
+      "kind": "mcq",
+      "stem": "'ASAP' as the IR timestamp?",
+      "choices": [
+        "Precise",
+        "NTP",
+        "VLAN 1",
+        "Not a time"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-14",
+      "kind": "mcq",
+      "stem": "If the summarizer is part of ops, model weights are?",
+      "choices": [
+        "A continuity asset",
+        "Never backed up",
+        "Only for CCNA",
+        "Only FAT32"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-15",
+      "kind": "mcq",
+      "stem": "Tidying embarrassing logs during legal hold?",
+      "choices": [
+        "Helpful",
+        "May violate integrity of evidence",
+        "Required by cups",
+        "A Google module"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-16",
+      "kind": "mcq",
+      "stem": "Fixture buf starts 0x14 then five bytes of ASCII 'short'. Why does the unsafe Harbor parser misbehave?",
+      "choices": [
+        "It is a campus CMS 0-day",
+        "OSPF adjacency",
+        "It treats 0x14 as length without checking remaining bytes",
+        "exFAT limit"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-17",
+      "kind": "mcq",
+      "stem": "Shellcode against random Internet hosts for week 8?",
+      "choices": [
+        "The assignment",
+        "Extra credit",
+        "CCNA",
+        "Forbidden"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-18",
+      "kind": "mcq",
+      "stem": "CS161 projects in this packet?",
+      "choices": [
+        "Structure reference only; not copied",
+        "Copied",
+        "Required binaries",
+        "Our SIEM"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-19",
+      "kind": "mcq",
+      "stem": "Safe Harbor parser is given bytes [4, 97, 98, 99, 100]. What payload should the lab JSON report?",
+      "choices": [
+        "raise ValueError",
+        "abcd",
+        "open 8.8.8.8",
+        "grant sudo"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-20",
+      "kind": "mcq",
+      "stem": "During week 8 a student finds an oversize-length crash in a Harbor tool that is not the course fixture. Next action?",
+      "choices": [
+        "Quietly exploit it",
+        "Post it to a dump site",
+        "Report it and stop; do not 'practice' on live software",
+        "Paste a PoC into a quiz stem"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-21",
+      "kind": "mcq",
+      "stem": "USB story: login t=90, insert 100, copy 140, unmount 155. First after sort?",
+      "choices": [
+        "usb_insert",
+        "file_copy",
+        "unmount",
+        "login"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-22",
+      "kind": "mcq",
+      "stem": "USB timeline names device sdb1 and path essay.docx, never a username. May the write-up name ada as the copier?",
+      "choices": [
+        "No \u2014 the fixture does not identify the human",
+        "Yes",
+        "Yes if there was a burst",
+        "Yes if guest VLAN"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-23",
+      "kind": "mcq",
+      "stem": "Evidence locker copies Berkeley CS161 proj2 Go file-share?",
+      "choices": [
+        "Yes",
+        "No \u2014 original Harbor policy checker",
+        "Yes the hidden tests",
+        "Yes the VM"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-24",
+      "kind": "mcq",
+      "stem": "Capstone teammate runs masscan against 1.2.3.0/24 'to practice Harbor IR.' Allowed?",
+      "choices": [
+        "Yes for extra credit",
+        "Yes if done at night",
+        "No \u2014 only course_ctf_fixture in this repo",
+        "Required by 800-61"
+      ]
+    }
+  ]
+}

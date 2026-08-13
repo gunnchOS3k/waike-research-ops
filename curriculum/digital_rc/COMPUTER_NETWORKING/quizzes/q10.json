@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "net-w10-1",
+      "kind": "mcq",
+      "stem": "Intent file missing a next-hop should",
+      "choices": [
+        "Silently pass",
+        "Start STP",
+        "Grant CCNA",
+        "Fail the validator"
+      ]
+    },
+    {
+      "id": "net-w10-2",
+      "kind": "mcq",
+      "stem": "Practical trace must include",
+      "choices": [
+        "VLAN, LPM, TTL, ACL",
+        "Only brand names",
+        "Only AIMD",
+        "Only CS144 code"
+      ]
+    },
+    {
+      "id": "net-w10-3",
+      "kind": "mcq",
+      "stem": "Guest VLAN reaching Roof management",
+      "choices": [
+        "Is the goal",
+        "Is a segmentation failure",
+        "Is NAT",
+        "Is SPF"
+      ]
+    },
+    {
+      "id": "net-w10-4",
+      "kind": "mcq",
+      "stem": "Automation in this capstone is",
+      "choices": [
+        "A full SDN fabric",
+        "Ansible from a dump",
+        "JSON intent + validator",
+        "Terraform exam"
+      ]
+    },
+    {
+      "id": "net-w10-5",
+      "kind": "mcq",
+      "stem": "Does this course grant CCNA?",
+      "choices": [
+        "Yes",
+        "Yes if labs pass",
+        "Yes after week 4",
+        "No"
+      ]
+    },
+    {
+      "id": "net-w10-6",
+      "kind": "mcq",
+      "stem": "Datapath lab ok flag must be",
+      "choices": [
+        "Computed from header/LPM/TTL checks",
+        "Printed PASS with no checks",
+        "Always true",
+        "Copied from Stanford"
+      ]
+    }
+  ]
+}

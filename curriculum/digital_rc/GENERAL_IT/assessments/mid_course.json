@@ -1,0 +1,225 @@
+{
+  "assessment_id": "GENERAL_IT-mid",
+  "items": [
+    {
+      "id": "GENERAL_IT-mid-01",
+      "kind": "mcq",
+      "stem": "Ticket 4502: patron says 'blue screen,' Event Viewer shows disk 100% and CPU 3%. Which job is it?",
+      "choices": [
+        "Remember/wait-on-storage",
+        "Talk (WAN outage)",
+        "GPU driver conspiracy",
+        "Idle logout"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-02",
+      "kind": "mcq",
+      "stem": "Volunteer `sat.am` was cloned from desk.lead including UID 1020. What is the first failure?",
+      "choices": [
+        "SSH banners collide",
+        "Two names share one kernel identity and home ownership",
+        "cups refuses even UIDs",
+        "GRUB cannot boot"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-03",
+      "kind": "mcq",
+      "stem": "Civic volume 256 GiB, used 210, reserved 12. Policy needs 15% free. Verdict?",
+      "choices": [
+        "Pass \u2014 34 GiB is plenty",
+        "Pass if NTFS",
+        "Fail \u2014 34/256 \u2248 13.3% is under 15%",
+        "Undefined until SMART"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-04",
+      "kind": "mcq",
+      "stem": "CHG-91 is planned 17:45. Window is 18:00\u201321:00. Is it in window?",
+      "choices": [
+        "Yes",
+        "Windows ignores minutes",
+        "Yes if SE1",
+        "No \u2014 17:45 is before 18:00"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-05",
+      "kind": "mcq",
+      "stem": "A home router under the table is handing 192.168.0.50 to a kiosk. First operator move?",
+      "choices": [
+        "Find and disable the second DHCP server, then renew the lease",
+        "Reimage Debian",
+        "Set a static 169.254 address",
+        "Grant kiosk sudo"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-06",
+      "kind": "mcq",
+      "stem": "Ping 10.20.30.40 works; printer.gary.waike.local does not. Next?",
+      "choices": [
+        "Buy toner",
+        "Fix name resolution before touching cups",
+        "Disable IPv4",
+        "Format SSD"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-07",
+      "kind": "mcq",
+      "stem": "A 5.1 GiB `.mkv` must leave the desk on a patron stick. Which filesystem?",
+      "choices": [
+        "FAT32",
+        "ISO9660",
+        "exFAT (or NTFS if Windows-only)",
+        "ext4 on the patron stick without warning"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-08",
+      "kind": "mcq",
+      "stem": "An intern enabled toy-tracker 'to see the logs.' Image policy says?",
+      "choices": [
+        "Leave it for the SIEM course",
+        "Put it in sudoers",
+        "Bind it to port 631",
+        "Disable/inactivate and rewrite the image if needed"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-09",
+      "kind": "mcq",
+      "stem": "A volunteer applied the idle policy, then snapshotted. Why does CHG-91 fail review?",
+      "choices": [
+        "Rollback has no before-image",
+        "Snapshots are optional",
+        "cron requires apply-first",
+        "Windows 11 forbids snapshots"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-10",
+      "kind": "mcq",
+      "stem": "Saturday volunteer on guest Wi-Fi swears civic DNS is dead. Best first hypothesis?",
+      "choices": [
+        "SSD death",
+        "Split horizon \u2014 they are not on the staff LAN",
+        "Need kiosk sudo",
+        "Reinstall GRUB"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-11",
+      "kind": "mcq",
+      "stem": "Brick LED is dark and fans are silent. Spare SODIMM in hand. What do you touch first?",
+      "choices": [
+        "The SODIMM",
+        "Windows recovery",
+        "Power path (brick/outlet/LED) before RAM",
+        "GRUB"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-12",
+      "kind": "mcq",
+      "stem": "Which pair is the same operator verb across Windows and Debian?",
+      "choices": [
+        "robocopy and systemctl",
+        "top and cupsd",
+        "BitLocker and OSPF",
+        "icacls and chmod"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-13",
+      "kind": "mcq",
+      "stem": "Essay restored to the restore folder; idle logout still 1200s. Honest patron sentence?",
+      "choices": [
+        "Your file is in the restore folder; the shared kiosk still logs out on purpose",
+        "We fixed it",
+        "Disable all timers",
+        "Email us the password"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-14",
+      "kind": "mcq",
+      "stem": "Why is RAID 0 not a 3-2-1 backup?",
+      "choices": [
+        "RAID 0 is slower",
+        "Striping is not a second copy or off-box copy",
+        "RAID 0 forbids USB",
+        "3-2-1 requires cloud"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-15",
+      "kind": "mcq",
+      "stem": "Why is the public kiosk a local account, not a Microsoft account?",
+      "choices": [
+        "Microsoft accounts cannot browse",
+        "Local accounts cannot print",
+        "A shared station must not own a volunteer's cloud identity",
+        "A+ V15 forbids Microsoft accounts"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-16",
+      "kind": "mcq",
+      "stem": "lpstat shows cups paused; the balloon says offline. First move?",
+      "choices": [
+        "Buy toner",
+        "Reinstall Windows",
+        "Disable sshd",
+        "Confirm power, then resume/restart cups"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-17",
+      "kind": "mcq",
+      "stem": "Staff recovery stick for Debian should be?",
+      "choices": [
+        "ext4",
+        "FAT32",
+        "ISO9660",
+        "ReFS"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-18",
+      "kind": "mcq",
+      "stem": "`0 21 * * 3` is on the calendar. A Saturday 11:00 image write is?",
+      "choices": [
+        "The same job",
+        "An incident \u2014 public hours are not the patch window",
+        "Required by unattended-upgrades",
+        "Safer than Wednesday"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-19",
+      "kind": "mcq",
+      "stem": "Patron dictates a library-card PAN into the ticket. You write?",
+      "choices": [
+        "The PAN",
+        "A screenshot of the card",
+        "'do not store PAN; reset/help without recording the number'",
+        "The password too"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-20",
+      "kind": "mcq",
+      "stem": "Ticket 4611: a volunteer starts `apt upgrade` on Debian while Windows Update is already downloading on the same Civic kiosk during Saturday hours. First stop?",
+      "choices": [
+        "Let both finish",
+        "Disable GRUB forever",
+        "Grant kiosk sudo",
+        "Abort one image so the other stays bootable; reschedule the second to Wednesday 21:00"
+      ]
+    }
+  ]
+}

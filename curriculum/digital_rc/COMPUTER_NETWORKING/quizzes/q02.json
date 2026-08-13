@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "net-w2-1",
+      "kind": "mcq",
+      "stem": "10.20.30.40/26 network address?",
+      "choices": [
+        "10.20.30.40",
+        "10.20.30.63",
+        "10.20.30.1",
+        "10.20.30.0"
+      ]
+    },
+    {
+      "id": "net-w2-2",
+      "kind": "mcq",
+      "stem": "Usable hosts in a typical /26 (not /31)?",
+      "choices": [
+        "62",
+        "64",
+        "32",
+        "14"
+      ]
+    },
+    {
+      "id": "net-w2-3",
+      "kind": "mcq",
+      "stem": "Printer at 10.20.30.96 with a /28 on .80",
+      "choices": [
+        "In the /28",
+        "Outside the /28",
+        "The broadcast",
+        "The network address"
+      ]
+    },
+    {
+      "id": "net-w2-4",
+      "kind": "mcq",
+      "stem": "LPM prefers",
+      "choices": [
+        "Shortest prefix",
+        "Random",
+        "Longest matching prefix",
+        "Lowest metric always"
+      ]
+    },
+    {
+      "id": "net-w2-5",
+      "kind": "mcq",
+      "stem": "fe80:: addresses are",
+      "choices": [
+        "Public globals",
+        "Multicast OSPF",
+        "NAT pools",
+        "Link-local"
+      ]
+    },
+    {
+      "id": "net-w2-6",
+      "kind": "mcq",
+      "stem": "/28 usable (typical)?",
+      "choices": [
+        "14",
+        "16",
+        "30",
+        "2"
+      ]
+    }
+  ]
+}

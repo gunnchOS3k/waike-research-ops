@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_product_catalog_ui.v1.json",
+  "title": "Projection matching current WAIKE product catalog UI fields",
+  "description": "Compatible with waike.course_catalog.ui.v1 used by the WAIKE Learning catalog renderer. Owner curriculum is projected into this shape. Curriculum bodies are not copied into device-os.",
+  "type": "object",
+  "required": ["schema", "courses"],
+  "properties": {
+    "schema": { "const": "waike.course_catalog.ui.v1" },
+    "full_curriculum_complete": { "type": "boolean" },
+    "owner_repo": { "type": "string" },
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "course_id",
+          "title",
+          "kinesthetic_hook",
+          "lesson_excerpt",
+          "worked_example",
+          "assignment",
+          "lab_hint"
+        ]
+      }
+    }
+  }
+}

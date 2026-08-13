@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "git-w10-1",
+      "kind": "mcq",
+      "stem": "Volunteer laptop on guest cannot see printer.gary.waike.local. First hypothesis?",
+      "choices": [
+        "SSD death",
+        "Need kiosk sudo",
+        "Split horizon / guest network",
+        "Reinstall GRUB"
+      ]
+    },
+    {
+      "id": "git-w10-2",
+      "kind": "mcq",
+      "stem": "Disk 88% used on 256 GiB with 12 GiB reserved. Policy 15% free?",
+      "choices": [
+        "Always pass",
+        "RAID fixes it",
+        "IPv6 fixes it",
+        "Likely fail \u2014 compute free ratio before applying updates"
+      ]
+    },
+    {
+      "id": "git-w10-3",
+      "kind": "mcq",
+      "stem": "This course grants CompTIA A+?",
+      "choices": [
+        "No \u2014 alignment only",
+        "Yes",
+        "Yes if labs pass",
+        "Yes if Google signs"
+      ]
+    },
+    {
+      "id": "git-w10-4",
+      "kind": "mcq",
+      "stem": "Recorder notes that require the operator's memory",
+      "choices": [
+        "Pass",
+        "Fail the group project",
+        "Are extra credit",
+        "Replace backups"
+      ]
+    },
+    {
+      "id": "git-w10-5",
+      "kind": "mcq",
+      "stem": "AI extension asks for admin on the kiosk. You",
+      "choices": [
+        "Grant it",
+        "Store its token in the ticket",
+        "Refuse; non-human tools do not get sudo on the public image",
+        "Disable idle logout"
+      ]
+    },
+    {
+      "id": "git-w10-6",
+      "kind": "mcq",
+      "stem": "Portfolio video must",
+      "choices": [
+        "Show patron faces",
+        "Include passwords",
+        "Be filmed on guest Wi-Fi only",
+        "Avoid PII and faces; show the tree, the hash, the change"
+      ]
+    }
+  ]
+}

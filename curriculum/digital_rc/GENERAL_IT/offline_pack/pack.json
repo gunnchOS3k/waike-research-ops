@@ -1,0 +1,26 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "GENERAL_IT",
+  "lesson_ids": [
+    "GENERAL_IT-w01",
+    "GENERAL_IT-w02",
+    "GENERAL_IT-w03",
+    "GENERAL_IT-w04",
+    "GENERAL_IT-w05",
+    "GENERAL_IT-w06",
+    "GENERAL_IT-w07",
+    "GENERAL_IT-w08",
+    "GENERAL_IT-w09",
+    "GENERAL_IT-w10"
+  ],
+  "labs": [
+    "lab_os_users",
+    "lab_services",
+    "lab_storage",
+    "lab_dns_hosts",
+    "lab_backup",
+    "lab_ticket_queue",
+    "lab_automation_runbook"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

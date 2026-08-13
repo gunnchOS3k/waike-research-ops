@@ -1,0 +1,1025 @@
+{
+  "ok": true,
+  "lab_count": 20,
+  "results": [
+    {
+      "lab_id": "lab_os_users",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "users"
+        },
+        {
+          "name": "kiosk_exists",
+          "ok": true,
+          "detail": "kiosk account present"
+        },
+        {
+          "name": "kiosk_no_sudo",
+          "ok": true,
+          "detail": "kiosk must not have sudo"
+        },
+        {
+          "name": "kiosk_not_rootish",
+          "ok": true,
+          "detail": "forbidden groups=[]"
+        },
+        {
+          "name": "lead_in_helpdesk",
+          "ok": true,
+          "detail": "groups=['helpdesk', 'staff']"
+        },
+        {
+          "name": "unique_homes",
+          "ok": true,
+          "detail": "each account needs its own home"
+        },
+        {
+          "name": "unique_uids",
+          "ok": true,
+          "detail": "UIDs collide"
+        }
+      ],
+      "claim_boundary": "Local fixture user store. Not a live directory service."
+    },
+    {
+      "lab_id": "lab_services",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "units"
+        },
+        {
+          "name": "cupsd_running",
+          "ok": true,
+          "detail": "print spooler down"
+        },
+        {
+          "name": "sshd_running",
+          "ok": true,
+          "detail": "remote admin path down"
+        },
+        {
+          "name": "tracker_off",
+          "ok": true,
+          "detail": "classroom image forbids toy-tracker"
+        },
+        {
+          "name": "cupsd_restart_budget",
+          "ok": true,
+          "detail": "restart loop too slow for kiosk"
+        }
+      ],
+      "claim_boundary": "Mock service table. Not systemd on a real host."
+    },
+    {
+      "lab_id": "lab_storage",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "size_bytes,used_bytes,reserved_bytes,free_ratio"
+        },
+        {
+          "name": "free_nonneg",
+          "ok": true,
+          "detail": "free=68719476736"
+        },
+        {
+          "name": "min_free",
+          "ok": true,
+          "detail": "free_ratio=0.2500"
+        },
+        {
+          "name": "used_lt_size",
+          "ok": true,
+          "detail": "used exceeds disk"
+        },
+        {
+          "name": "student_ratio",
+          "ok": true,
+          "detail": "student=0.25 computed=0.250000"
+        }
+      ],
+      "claim_boundary": "Arithmetic on a fixture volume. Not a live block device."
+    },
+    {
+      "lab_id": "lab_dns_hosts",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "answers"
+        },
+        {
+          "name": "resolve:desk.gary.waike.local",
+          "ok": true,
+          "detail": "got=10.20.30.14 expect=10.20.30.14"
+        },
+        {
+          "name": "resolve:printer.gary.waike.local",
+          "ok": true,
+          "detail": "got=10.20.30.40 expect=10.20.30.40"
+        },
+        {
+          "name": "resolve:library.gary.waike.local",
+          "ok": true,
+          "detail": "got=10.20.30.21 expect=10.20.30.21"
+        },
+        {
+          "name": "resolve:example.com",
+          "ok": true,
+          "detail": "got=nxdomain"
+        }
+      ],
+      "claim_boundary": "Static hosts/zone fixture. Not recursive Internet DNS."
+    },
+    {
+      "lab_id": "lab_backup",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "restored_hash,includes_ssn"
+        },
+        {
+          "name": "archive_exists",
+          "ok": true,
+          "detail": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/artifacts/_lab_tmp/backup/desk.tgz"
+        },
+        {
+          "name": "hash_match",
+          "ok": true,
+          "detail": "student=169a8fc7839e expect=169a8fc7839e"
+        },
+        {
+          "name": "no_ssn_file",
+          "ok": true,
+          "detail": "PII file must not be in the lab tree"
+        }
+      ],
+      "claim_boundary": "Local tar+sha256. Not a production backup appliance."
+    },
+    {
+      "lab_id": "lab_ticket_queue",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "tickets"
+        },
+        {
+          "name": "4417_not_reboot",
+          "ok": true,
+          "detail": "reboot is not a root cause"
+        },
+        {
+          "name": "4417_next",
+          "ok": true,
+          "detail": "adjust_idle_or_save_prompt"
+        },
+        {
+          "name": "4417_sev",
+          "ok": true,
+          "detail": "se3"
+        },
+        {
+          "name": "4418_not_reboot",
+          "ok": true,
+          "detail": "reboot is not a root cause"
+        },
+        {
+          "name": "4418_next",
+          "ok": true,
+          "detail": "capture_temps_then_reseating_plan"
+        },
+        {
+          "name": "4418_sev",
+          "ok": true,
+          "detail": "se2"
+        },
+        {
+          "name": "4419_not_reboot",
+          "ok": true,
+          "detail": "reboot is not a root cause"
+        },
+        {
+          "name": "4419_next",
+          "ok": true,
+          "detail": "check_hosts_then_spooler"
+        },
+        {
+          "name": "4419_sev",
+          "ok": true,
+          "detail": "se3"
+        },
+        {
+          "name": "4417_idle_math",
+          "ok": true,
+          "detail": "20 minutes is 1200 seconds"
+        }
+      ],
+      "claim_boundary": "Synthetic tickets. No real patron PII."
+    },
+    {
+      "lab_id": "lab_automation_runbook",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "change_id,planned_min,steps,rollback,executed"
+        },
+        {
+          "name": "three_steps",
+          "ok": true,
+          "detail": "['snapshot_home', 'apply_idle_policy', 'verify_kiosk_login']"
+        },
+        {
+          "name": "rollback_named",
+          "ok": true,
+          "detail": "missing rollback"
+        },
+        {
+          "name": "in_window",
+          "ok": true,
+          "detail": "planned=1155"
+        },
+        {
+          "name": "executed_matches",
+          "ok": true,
+          "detail": "dry-run drifted"
+        },
+        {
+          "name": "snapshot_first",
+          "ok": true,
+          "detail": "no snapshot before mutate"
+        }
+      ],
+      "claim_boundary": "Dry-run change record. Not unattended production automation."
+    },
+    {
+      "lab_id": "lab_cidr_math",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "cases"
+        },
+        {
+          "name": "10.20.30.40/26_net",
+          "ok": true,
+          "detail": "10.20.30.0"
+        },
+        {
+          "name": "10.20.30.40/26_bcast",
+          "ok": true,
+          "detail": "10.20.30.63"
+        },
+        {
+          "name": "10.20.30.40/26_usable",
+          "ok": true,
+          "detail": "usable=62"
+        },
+        {
+          "name": "10.20.30.80/28_net",
+          "ok": true,
+          "detail": "10.20.30.80"
+        },
+        {
+          "name": "10.20.30.80/28_bcast",
+          "ok": true,
+          "detail": "10.20.30.95"
+        },
+        {
+          "name": "10.20.30.80/28_usable",
+          "ok": true,
+          "detail": "usable=14"
+        }
+      ],
+      "claim_boundary": "IPv4 arithmetic. Not a Cisco simulator."
+    },
+    {
+      "lab_id": "lab_datapath",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "dst_mac,ethertype,ttl,proto,dst_ip,lpm_iface,ttl1_forwarded,ttl1_after_decrement"
+        },
+        {
+          "name": "ethertype_ipv4",
+          "ok": true,
+          "detail": "0x800"
+        },
+        {
+          "name": "ipv4_version",
+          "ok": true,
+          "detail": "ver=4 ihl=5"
+        },
+        {
+          "name": "tcp",
+          "ok": true,
+          "detail": "proto=6"
+        },
+        {
+          "name": "dst_mac_unicast",
+          "ok": true,
+          "detail": "aaaaaaaaaa01"
+        },
+        {
+          "name": "student_ttl",
+          "ok": true,
+          "detail": "student=4 header=4"
+        },
+        {
+          "name": "student_dst",
+          "ok": true,
+          "detail": "student=10.20.40.9"
+        },
+        {
+          "name": "ttl_positive_after_dec",
+          "ok": true,
+          "detail": "ttl=4"
+        },
+        {
+          "name": "lpm_more_specific",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.0/24', 'nh': '10.20.30.1', 'iface': 'eth1'}"
+        },
+        {
+          "name": "nh",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.0/24', 'nh': '10.20.30.1', 'iface': 'eth1'}"
+        },
+        {
+          "name": "lpm_host_route",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.9/32', 'nh': '10.20.30.9', 'iface': 'host9'}"
+        },
+        {
+          "name": "ttl1_parsed_from_header",
+          "ok": true,
+          "detail": "header_ttl=1"
+        },
+        {
+          "name": "ttl1_decrement",
+          "ok": true,
+          "detail": "parsed_ttl=1 after=0"
+        },
+        {
+          "name": "ttl1_drop",
+          "ok": true,
+          "detail": "student_forwarded=False student_after=0 header_after=0"
+        }
+      ],
+      "claim_boundary": "Classroom-crafted frame. Not a packet capture from production. Original WAIKE datapath, not CS144 code."
+    },
+    {
+      "lab_id": "lab_vlan_mac",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "out_port,vlan30_leak"
+        },
+        {
+          "name": "hit_vlan20",
+          "ok": true,
+          "detail": "Gi1/0/8"
+        },
+        {
+          "name": "vlan_isolation",
+          "ok": true,
+          "detail": "MAC must not leak across VLAN 30"
+        }
+      ],
+      "claim_boundary": "Toy MAC/VLAN table. Not a live switch."
+    },
+    {
+      "lab_id": "lab_spf_routing",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "cost_a_to_d,path"
+        },
+        {
+          "name": "path_cost_ad",
+          "ok": true,
+          "detail": "dist={'A': 0.0, 'B': 2.0, 'C': 5.0, 'D': 4.0}"
+        },
+        {
+          "name": "not_long_way",
+          "ok": true,
+          "detail": "A-C-D must lose"
+        },
+        {
+          "name": "self_zero",
+          "ok": true,
+          "detail": "0.0"
+        },
+        {
+          "name": "path_abd",
+          "ok": true,
+          "detail": "A-B-D"
+        }
+      ],
+      "claim_boundary": "Four-node SPF. Not OSPF packet exchange with a vendor NOS."
+    },
+    {
+      "lab_id": "lab_nat_acl",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "telnet,https,discard,nat_inside"
+        },
+        {
+          "name": "telnet_denied",
+          "ok": true,
+          "detail": "telnet must die at the edge"
+        },
+        {
+          "name": "https_ok",
+          "ok": true,
+          "detail": "library HTTPS must pass"
+        },
+        {
+          "name": "unknown_denied",
+          "ok": true,
+          "detail": "implicit deny via star rule"
+        },
+        {
+          "name": "nat_maps",
+          "ok": true,
+          "detail": "10.20.30.14"
+        }
+      ],
+      "claim_boundary": "Ordered ACL on a fixture. Not a live firewall."
+    },
+    {
+      "lab_id": "lab_dns_resolution",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "first_how,second_how,ip"
+        },
+        {
+          "name": "first_walk",
+          "ok": true,
+          "detail": "auth_walk:203.0.113.14"
+        },
+        {
+          "name": "second_cache",
+          "ok": true,
+          "detail": "cache:203.0.113.14"
+        },
+        {
+          "name": "ip",
+          "ok": true,
+          "detail": "203.0.113.14"
+        }
+      ],
+      "claim_boundary": "Toy resolver. Not a public recursive service."
+    },
+    {
+      "lab_id": "lab_siem_triage",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "bursts,note"
+        },
+        {
+          "name": "ada_burst",
+          "ok": true,
+          "detail": "bursts=['ada'] counts={'ada': 4, 'cal': 1}"
+        },
+        {
+          "name": "no_attacker_word",
+          "ok": true,
+          "detail": "note must contain burst and must not say attacker; note='burst on ada \u2014 look, do not convict'"
+        },
+        {
+          "name": "cal_under",
+          "ok": true,
+          "detail": "{'ada': 4, 'cal': 1}"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_hardening_baseline",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "guest_login,ssh_password_auth,unattended_upgrades,open_ports,world_writable_home,ai_agent_sudo"
+        },
+        {
+          "name": "no_guest",
+          "ok": true,
+          "detail": "guest login"
+        },
+        {
+          "name": "ssh_keys_only",
+          "ok": true,
+          "detail": "password SSH"
+        },
+        {
+          "name": "patch_pipe",
+          "ok": true,
+          "detail": "no patch pipe"
+        },
+        {
+          "name": "ports",
+          "ok": true,
+          "detail": "[22, 443]"
+        },
+        {
+          "name": "home_mode",
+          "ok": true,
+          "detail": "home is 777"
+        },
+        {
+          "name": "no_ai_sudo",
+          "ok": true,
+          "detail": "non-human identity must not have sudo"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_iam_rbac",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "roles,bindings"
+        },
+        {
+          "name": "analyst_read",
+          "ok": true,
+          "detail": "analyst should read"
+        },
+        {
+          "name": "analyst_no_close",
+          "ok": true,
+          "detail": "analyst closed a case"
+        },
+        {
+          "name": "lead_close",
+          "ok": true,
+          "detail": "lead cannot close"
+        },
+        {
+          "name": "bot_no_close",
+          "ok": true,
+          "detail": "bot must not close"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_segmentation_zones",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "kiosk_to_soc,soc_to_kiosk,guest_to_staff"
+        },
+        {
+          "name": "kiosk_no_soc",
+          "ok": true,
+          "detail": "east-west hole"
+        },
+        {
+          "name": "soc_syslog",
+          "ok": true,
+          "detail": "allow_syslog_only"
+        },
+        {
+          "name": "guest_staff",
+          "ok": true,
+          "detail": "guest jumped to staff"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_incident_playbook",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "steps"
+        },
+        {
+          "name": "order",
+          "ok": true,
+          "detail": "got=['detect', 'contain', 'eradicate', 'recover', 'lessons']"
+        },
+        {
+          "name": "contain_before_wipe",
+          "ok": true,
+          "detail": "wiped before contain"
+        },
+        {
+          "name": "lessons_last",
+          "ok": true,
+          "detail": "no retro"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_safe_vuln_detect",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "targets,safe_rejects_lie,honest_payload"
+        },
+        {
+          "name": "unsafe_truncates_or_overreads_pattern",
+          "ok": true,
+          "detail": "fixture did not demonstrate the lie"
+        },
+        {
+          "name": "safe_accepts_honest",
+          "ok": true,
+          "detail": "abcd"
+        },
+        {
+          "name": "safe_rejects_lie",
+          "ok": true,
+          "detail": "safe parser accepted oversize claim"
+        },
+        {
+          "name": "no_network",
+          "ok": true,
+          "detail": "opened=0 targets=['course_ctf_fixture']"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    {
+      "lab_id": "lab_forensics_timeline",
+      "course_id": "CYBERSECURITY",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "first_event,cannot_claim_identity"
+        },
+        {
+          "name": "login_first",
+          "ok": true,
+          "detail": "['login', 'usb_insert', 'file_copy', 'usb_unmount']"
+        },
+        {
+          "name": "copy_between",
+          "ok": true,
+          "detail": "['login', 'usb_insert', 'file_copy', 'usb_unmount']"
+        },
+        {
+          "name": "no_secret_in_path",
+          "ok": true,
+          "detail": "secret in fixture"
+        },
+        {
+          "name": "cannot_claim",
+          "ok": true,
+          "detail": "fixture does not identify the human"
+        }
+      ],
+      "claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    }
+  ],
+  "negatives_must_fail_and_did": [
+    {
+      "lab_id": "lab_os_users_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_cidr_math_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_iam_rbac_negative",
+      "ok": true
+    }
+  ],
+  "empty_submission_fails": true,
+  "wrong_submission_fails": true,
+  "no_submission_fails": true,
+  "print_pass_raises": true,
+  "ttl1_from_parsed_header": true,
+  "empty_rows": [
+    {
+      "lab_id": "lab_os_users",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_services",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_storage",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dns_hosts",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_backup",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ticket_queue",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_automation_runbook",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cidr_math",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_datapath",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_vlan_mac",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_spf_routing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nat_acl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dns_resolution",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_siem_triage",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_hardening_baseline",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_iam_rbac",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_segmentation_zones",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_incident_playbook",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_safe_vuln_detect",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_forensics_timeline",
+      "failed_as_required": true
+    }
+  ],
+  "wrong_rows": [
+    {
+      "lab_id": "lab_os_users",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_services",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_storage",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dns_hosts",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_backup",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ticket_queue",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_automation_runbook",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cidr_math",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_datapath",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_vlan_mac",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_spf_routing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nat_acl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dns_resolution",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_siem_triage",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_hardening_baseline",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_iam_rbac",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_segmentation_zones",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_incident_playbook",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_safe_vuln_detect",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_forensics_timeline",
+      "failed_as_required": true
+    }
+  ],
+  "print_pass_forbidden": true
+}

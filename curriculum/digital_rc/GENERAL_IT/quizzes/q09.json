@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "git-w9-1",
+      "kind": "mcq",
+      "stem": "Why snapshot before apply?",
+      "choices": [
+        "Rollback needs a before-image",
+        "Snapshots are slow",
+        "cron requires it",
+        "Windows 11 forbids apply"
+      ]
+    },
+    {
+      "id": "git-w9-2",
+      "kind": "mcq",
+      "stem": "19:15 with window 18:00\u201321:00 is",
+      "choices": [
+        "Out of window",
+        "In window",
+        "SE1",
+        "A DHCP lease"
+      ]
+    },
+    {
+      "id": "git-w9-3",
+      "kind": "mcq",
+      "stem": "`0 21 * * 3` means",
+      "choices": [
+        "Every day at 21:00",
+        "March 21",
+        "Wednesday 21:00",
+        "Every 3 minutes"
+      ]
+    },
+    {
+      "id": "git-w9-4",
+      "kind": "mcq",
+      "stem": "A chatbot invents an unexplained destructive command. You",
+      "choices": [
+        "Pipe it to sudo",
+        "Put it in cron at 11:00 Saturday",
+        "Store it in ssn.txt",
+        "Refuse until you can explain it"
+      ]
+    },
+    {
+      "id": "git-w9-5",
+      "kind": "mcq",
+      "stem": "Lab fails when executed != planned because",
+      "choices": [
+        "Dry-run drift means you did not do the change you documented",
+        "JSON is picky",
+        "SHA256 is broken",
+        "UID collision"
+      ]
+    },
+    {
+      "id": "git-w9-6",
+      "kind": "mcq",
+      "stem": "Public hours 10:00\u201317:00 should",
+      "choices": [
+        "Host image writes",
+        "Not host image writes",
+        "Disable cups",
+        "Grant kiosk sudo"
+      ]
+    }
+  ]
+}

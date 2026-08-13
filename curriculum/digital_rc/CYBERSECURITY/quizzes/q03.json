@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "cy-w3-1",
+      "kind": "mcq",
+      "stem": "Kiosk initiating to SOC should be",
+      "choices": [
+        "Allow all",
+        "NAT",
+        "Deny",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "cy-w3-2",
+      "kind": "mcq",
+      "stem": "SOC pulling kiosk syslog is",
+      "choices": [
+        "Deny",
+        "Full RDP",
+        "Guest",
+        "allow_syslog_only"
+      ]
+    },
+    {
+      "id": "cy-w3-3",
+      "kind": "mcq",
+      "stem": "Untrusted ticket text instructing a bot to dump a DB is",
+      "choices": [
+        "Prompt injection / untrusted content",
+        "A valid runbook",
+        "DHCP",
+        "STP"
+      ]
+    },
+    {
+      "id": "cy-w3-4",
+      "kind": "mcq",
+      "stem": "Inside IP implies trust?",
+      "choices": [
+        "Yes always",
+        "No \u2014 kiosk VLAN is still hostile",
+        "Only on Tuesdays",
+        "If TTL>1"
+      ]
+    },
+    {
+      "id": "cy-w3-5",
+      "kind": "mcq",
+      "stem": "SaaS ticketing: who still classifies data?",
+      "choices": [
+        "Only the vendor",
+        "RFC 9293",
+        "Harbor still does",
+        "Nobody"
+      ]
+    },
+    {
+      "id": "cy-w3-6",
+      "kind": "mcq",
+      "stem": "This SIEM is",
+      "choices": [
+        "A purchased SOC platform",
+        "A leaked exam",
+        "Packet Tracer",
+        "On-box JSON fixtures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "cy-w10-1",
+      "kind": "mcq",
+      "stem": "Evidence locker copies CS161 proj2?",
+      "choices": [
+        "No \u2014 original policy checker",
+        "Yes",
+        "Yes the Go code",
+        "Yes hidden tests"
+      ]
+    },
+    {
+      "id": "cy-w10-2",
+      "kind": "mcq",
+      "stem": "Bot as closer in the locker",
+      "choices": [
+        "Allowed",
+        "Rejected",
+        "Required",
+        "A VLAN"
+      ]
+    },
+    {
+      "id": "cy-w10-3",
+      "kind": "mcq",
+      "stem": "Certification granted?",
+      "choices": [
+        "CC and Security+",
+        "A+ V15",
+        "None",
+        "CCNA"
+      ]
+    },
+    {
+      "id": "cy-w10-4",
+      "kind": "mcq",
+      "stem": "Scanning random Internet hosts for the capstone",
+      "choices": [
+        "Encouraged",
+        "Extra credit",
+        "Required by 800-61",
+        "Forbidden"
+      ]
+    },
+    {
+      "id": "cy-w10-5",
+      "kind": "mcq",
+      "stem": "Design checkpoint exists because",
+      "choices": [
+        "Depth pattern: design then implement then test",
+        "Paperwork",
+        "STP",
+        "CIDR"
+      ]
+    },
+    {
+      "id": "cy-w10-6",
+      "kind": "mcq",
+      "stem": "Negative IAM fixture that lets the bot close must",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Be deleted",
+        "Grant sudo"
+      ]
+    }
+  ]
+}

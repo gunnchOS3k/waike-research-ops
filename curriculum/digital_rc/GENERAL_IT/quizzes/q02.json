@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "git-w2-1",
+      "kind": "mcq",
+      "stem": "A 4.7 GiB video vanishes on a camera card. Most likely filesystem limit?",
+      "choices": [
+        "ext4 16 TiB file cap",
+        "exFAT forbids video",
+        "FAT32 4 GiB file cap",
+        "NTFS compression"
+      ]
+    },
+    {
+      "id": "git-w2-2",
+      "kind": "mcq",
+      "stem": "Disk 100%, CPU 4%, UI frozen. First evidence to capture?",
+      "choices": [
+        "Reboot immediately",
+        "Reinstall Windows",
+        "Disable Debian GRUB",
+        "Disk queue / Task Manager Performance"
+      ]
+    },
+    {
+      "id": "git-w2-3",
+      "kind": "mcq",
+      "stem": "Why not patch Windows and Debian in the same hour on a dual-boot kiosk?",
+      "choices": [
+        "Bootloader/update collision risk during the only public hours",
+        "Licensing",
+        "Debian cannot be patched",
+        "Windows 11 forbids GRUB"
+      ]
+    },
+    {
+      "id": "git-w2-4",
+      "kind": "mcq",
+      "stem": "Which pair is the same operator verb?",
+      "choices": [
+        "robocopy and systemctl",
+        "icacls and chmod",
+        "top and cupsd",
+        "GRUB and BitLocker"
+      ]
+    },
+    {
+      "id": "git-w2-5",
+      "kind": "mcq",
+      "stem": "Staff recovery stick should be which filesystem in this course?",
+      "choices": [
+        "FAT32",
+        "exFAT",
+        "ext4",
+        "ISO9660"
+      ]
+    },
+    {
+      "id": "git-w2-6",
+      "kind": "mcq",
+      "stem": "Patron share that Windows and a camera must both read: pick",
+      "choices": [
+        "ext4",
+        "ZFS",
+        "Btrfs",
+        "exFAT"
+      ]
+    }
+  ]
+}

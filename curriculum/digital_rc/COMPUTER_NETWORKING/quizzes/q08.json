@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "net-w8-1",
+      "kind": "mcq",
+      "stem": "Second identical DNS lookup in the lab should be",
+      "choices": [
+        "auth_walk",
+        "nxdomain",
+        "OSPF",
+        "cache"
+      ]
+    },
+    {
+      "id": "net-w8-2",
+      "kind": "mcq",
+      "stem": "NAT in this lab maps",
+      "choices": [
+        "10.20.30.14 to 192.0.2.88",
+        "MAC to VLAN",
+        "TCP to UDP",
+        "STP to SPF"
+      ]
+    },
+    {
+      "id": "net-w8-3",
+      "kind": "mcq",
+      "stem": "DHCP lease 3600 seconds means",
+      "choices": [
+        "Permanent",
+        "You may use the address about one hour unless renewed",
+        "A /32 route",
+        "BPDU guard"
+      ]
+    },
+    {
+      "id": "net-w8-4",
+      "kind": "mcq",
+      "stem": "Stale DNS A record after a printer move",
+      "choices": [
+        "Is a disk failure",
+        "Requires AIMD",
+        "Is a TTL/cache policy problem",
+        "Needs a new ASN"
+      ]
+    },
+    {
+      "id": "net-w8-5",
+      "kind": "mcq",
+      "stem": "Syslog in this course is",
+      "choices": [
+        "A full NMS",
+        "OSPF LSA",
+        "A CCNA dump",
+        "A timestamped line in lab output"
+      ]
+    },
+    {
+      "id": "net-w8-6",
+      "kind": "mcq",
+      "stem": "Iterative DNS walk order in the toy",
+      "choices": [
+        "Stub then (on miss) authoritative, then cache",
+        "Auth then stub",
+        "Only /etc/hosts",
+        "Only ICMP"
+      ]
+    }
+  ]
+}

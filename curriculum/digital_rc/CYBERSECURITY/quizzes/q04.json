@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "cy-w4-1",
+      "kind": "mcq",
+      "stem": "ada with 4 AUTH_FAIL vs threshold 3 is",
+      "choices": [
+        "A burst that warrants a look",
+        "Proof ada is guilty",
+        "A VLAN leak",
+        "A /26"
+      ]
+    },
+    {
+      "id": "cy-w4-2",
+      "kind": "mcq",
+      "stem": "cal with 1 fail",
+      "choices": [
+        "Is also a burst",
+        "Is under threshold",
+        "Closes the case",
+        "Grants sudo"
+      ]
+    },
+    {
+      "id": "cy-w4-3",
+      "kind": "mcq",
+      "stem": "Who closes the case?",
+      "choices": [
+        "harbor-bot",
+        "The kiosk",
+        "A human with the close permission",
+        "DHCP"
+      ]
+    },
+    {
+      "id": "cy-w4-4",
+      "kind": "mcq",
+      "stem": "Password in a log line",
+      "choices": [
+        "Is fine",
+        "Is MFA",
+        "Is NICE",
+        "Is a fixture bug / policy failure"
+      ]
+    },
+    {
+      "id": "cy-w4-5",
+      "kind": "mcq",
+      "stem": "Bot clustering bursts is",
+      "choices": [
+        "Allowed as assist, not as closer",
+        "Forbidden always",
+        "A CCNA dump",
+        "NAT"
+      ]
+    },
+    {
+      "id": "cy-w4-6",
+      "kind": "mcq",
+      "stem": "bea's AUTH_OK means",
+      "choices": [
+        "Ignore all fails",
+        "A success exists; still count ada's fails separately",
+        "Wipe logs",
+        "Disable SSH"
+      ]
+    }
+  ]
+}

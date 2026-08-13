@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "git-w7-1",
+      "kind": "mcq",
+      "stem": "169.254.13.9 on a kiosk most likely means",
+      "choices": [
+        "DHCP lease failure (link-local)",
+        "Static plan from the city",
+        "IPv6 only",
+        "A successful NAT"
+      ]
+    },
+    {
+      "id": "git-w7-2",
+      "kind": "mcq",
+      "stem": "Why must the fixture not resolve example.com?",
+      "choices": [
+        "example.com is illegal",
+        "Classroom resolver must not invent WAN answers",
+        "DNSSEC forbids it",
+        "Port 53 is closed forever"
+      ]
+    },
+    {
+      "id": "git-w7-3",
+      "kind": "mcq",
+      "stem": "IPP/cups printing commonly uses port",
+      "choices": [
+        "22",
+        "53",
+        "631",
+        "3389"
+      ]
+    },
+    {
+      "id": "git-w7-4",
+      "kind": "mcq",
+      "stem": "Volunteer on guest Wi-Fi says civic DNS is dead. Likely?",
+      "choices": [
+        "ext4 corruption",
+        "SODIMM failure",
+        "Idle timer",
+        "Split horizon / wrong network"
+      ]
+    },
+    {
+      "id": "git-w7-5",
+      "kind": "mcq",
+      "stem": "Name resolution succeeds to 10.20.30.40 but printing fails. Next?",
+      "choices": [
+        "Check spooler/cups after the name is honest",
+        "Ignore cups",
+        "Disable IPv4",
+        "Format the SSD"
+      ]
+    },
+    {
+      "id": "git-w7-6",
+      "kind": "mcq",
+      "stem": "desk.gary.waike.local in the lab is",
+      "choices": [
+        "192.0.2.1",
+        "10.20.30.14",
+        "127.0.0.1",
+        "169.254.1.1"
+      ]
+    }
+  ]
+}

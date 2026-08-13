@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "cy-w8-1",
+      "kind": "mcq",
+      "stem": "The toy parser bug is",
+      "choices": [
+        "Trusting a length byte without remaining-byte checks",
+        "A live campus CMS 0-day",
+        "OSPF",
+        "exFAT"
+      ]
+    },
+    {
+      "id": "cy-w8-2",
+      "kind": "mcq",
+      "stem": "Shellcode against random hosts",
+      "choices": [
+        "Is the assignment",
+        "Is forbidden",
+        "Is extra credit",
+        "Is CCNA"
+      ]
+    },
+    {
+      "id": "cy-w8-3",
+      "kind": "mcq",
+      "stem": "CS161 projects are",
+      "choices": [
+        "Copied here",
+        "Required binaries",
+        "Structure reference only; not copied",
+        "Our SIEM"
+      ]
+    },
+    {
+      "id": "cy-w8-4",
+      "kind": "mcq",
+      "stem": "Safe parser on honest 4+abcd",
+      "choices": [
+        "Raises",
+        "Opens a socket",
+        "Grants sudo",
+        "Returns b'abcd'"
+      ]
+    },
+    {
+      "id": "cy-w8-5",
+      "kind": "mcq",
+      "stem": "Finding a real WAIKE bug outside the fixture",
+      "choices": [
+        "Report it; do not 'practice' on it",
+        "Exploit silently",
+        "Post to a dump site",
+        "Put it in a quiz stem with the PoC"
+      ]
+    },
+    {
+      "id": "cy-w8-6",
+      "kind": "mcq",
+      "stem": "This lab opens network sockets?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only UDP",
+        "Only to 8.8.8.8"
+      ]
+    }
+  ]
+}

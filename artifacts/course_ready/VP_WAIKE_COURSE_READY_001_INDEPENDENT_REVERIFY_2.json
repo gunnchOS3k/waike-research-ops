@@ -1,0 +1,170 @@
+{
+  "schema": "waike.course_ready_001.independent_verifier_result.v3",
+  "packet": "WAIKE-COURSE-READY-001",
+  "reverify_of": [
+    "b78ba4b334d6dbc685d3b7b289e9d84542fcd0b9",
+    "df9616645d7935ea99aef76f6a02681afbbeede6"
+  ],
+  "previous_fail_tips": [
+    "ce364e27e817a3b2f6c3cb579c346a9cb9d10a1e",
+    "494a4afc23a1613cb1b4b67964bcddd1c2998faf"
+  ],
+  "previous_fail_vps_still_in_history": true,
+  "verifier_role": "INDEPENDENT_VERIFIER_AGENT",
+  "did_not_implement": true,
+  "did_not_merge": true,
+  "did_not_push_main": true,
+  "did_not_start_next_14_courses": true,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "HUMAN_E6": false,
+  "full_18_course_digital_rc": false,
+  "pr": {
+    "repo": "gunnchOS3k/waike-research-ops",
+    "number": 43,
+    "url": "https://github.com/gunnchOS3k/waike-research-ops/pull/43",
+    "draft": true,
+    "state": "OPEN",
+    "branch": "operating-cycle-user-ready/waike-course-ready-001",
+    "base": "main"
+  },
+  "claimed_tip": "3b81933661b47147639973936e300210f5c7d17b",
+  "live_tip": "3b81933661b47147639973936e300210f5c7d17b",
+  "live_tip_matches_claimed": true,
+  "history": [
+    "ce364e27 author packet",
+    "b78ba4b independent FAIL VP (template/keys/labs/clones)",
+    "494a4af implementer labs/packaging/key-balance fix",
+    "df96166 independent FAIL VP (exam restatements)",
+    "3b81933 implementer exam rewrite + Jaccard gate"
+  ],
+  "generated_at_utc": "2026-08-13T21:08:00Z",
+  "VP_WAIKE_COURSE_READY_001_INDEPENDENT": "PASS",
+  "VP_WAIKE_COURSE_READY_001_INDEPENDENT_REVERIFY_2": "PASS",
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "READY_FOR_EDMUND_MERGE": true,
+  "cursor_must_not_merge": true,
+  "fail_reason": null,
+  "pass_note": "Independent PASS on DRAFT #43 tip 3b81933 for this 3-course digital RC only. Token-identical mid/final restatements are gone (j=1.0=0, Jaccard>=0.80=0). Injected punctuation clones now fail the provenance gate. Labs 20/20 with empty/wrong/print-PASS/negatives. Keys 26/26/26/26 and instructor-only. Not student/teacher E6. Not 18 courses. Cursor does not merge.",
+  "verdicts": {
+    "GENERAL_IT": "PASS",
+    "COMPUTER_NETWORKING": "PASS",
+    "CYBERSECURITY": "PASS",
+    "BATCH": "PASS",
+    "COURSE_DIGITAL_RC_GENERAL_IT": true,
+    "COURSE_DIGITAL_RC_COMPUTER_NETWORKING": true,
+    "COURSE_DIGITAL_RC_CYBERSECURITY": true
+  },
+  "exam_restatement": {
+    "tokenizer_independent": "[a-z0-9]+ lowercase (punctuation/?/case ignored)",
+    "token_identical_j1": 0,
+    "token_jaccard_ge_0_80": 0,
+    "worst_independent": 0.7143,
+    "worst_independent_id": "COMPUTER_NETWORKING-fin-08",
+    "worst_independent_exam": "OSPF vs this lab's Dijkstra?",
+    "worst_independent_weekly": "OSPF's job vs this lab",
+    "implementer_claimed_worst": 0.6923,
+    "tokenizer_delta_note": "Implementer tokenizer keeps apostrophes ([a-z0-9']+). Independent alphanumeric tokenizer yields 0.7143. Both are under 0.80. Not a FAIL.",
+    "per_course": {
+      "GENERAL_IT": {"j1": 0, "j80": 0, "worst": 0.6364, "worst_id": "GENERAL_IT-mid-12"},
+      "COMPUTER_NETWORKING": {"j1": 0, "j80": 0, "worst": 0.7143, "worst_id": "COMPUTER_NETWORKING-fin-08"},
+      "CYBERSECURITY": {"j1": 0, "j80": 0, "worst": 0.6667, "worst_id": "CYBERSECURITY-mid-20"}
+    },
+    "sampled_rewrites": [
+      {
+        "was": "Access port vs trunk in one line?",
+        "now": "Gi1/0/8 is untagged VLAN 20 for the catalog PC; Gi1/0/24 must carry VLAN 20 and 30 toward the Yard switch. Which is which?"
+      },
+      {
+        "was": "MAC flapping is evidence of?",
+        "now": "aa:aa:aa:aa:aa:10 shows on Gi1/0/8 then Gi1/0/12 every 200 ms after two extra patch cables were added. What does that log mean?"
+      },
+      {
+        "was": "Library PANs in the model context window?",
+        "now": "Harbor-bot ticket H-22 includes a pasted library-card number 'so the model can look it up.' Policy?"
+      },
+      {
+        "was": "IHL 5 means IPv4 header length / IPv4 IHL=5 means header length?",
+        "now": "On the Pier capture, byte 14 is 0x45. How many bytes of IPv4 header do you skip before the TCP header starts?"
+      }
+    ]
+  },
+  "injected_clone_gate": {
+    "verdict": "PASS",
+    "injected": "Access port vs trunk in one line?",
+    "against_weekly": "Access port vs trunk in one line",
+    "token_identical": true,
+    "jaccard": 1.0,
+    "exam_is_restatement": true,
+    "weekly_plus_question_mark_fails": true
+  },
+  "labs": {
+    "verdict": "PASS",
+    "executed": "20/20",
+    "empty_fails": true,
+    "wrong_fails": true,
+    "no_submission_fails": true,
+    "print_pass_raises": true,
+    "siem_print_pass_raises": true,
+    "kiosk_with_sudo_fails": true,
+    "wrong_cidr_fails": true,
+    "bot_can_close_fails": true,
+    "siem_attacker_note_fails": true,
+    "pytest": "10 passed"
+  },
+  "keys": {
+    "verdict": "PASS",
+    "distribution": {
+      "GENERAL_IT": {"A": 26, "B": 26, "C": 26, "D": 26, "n": 104},
+      "COMPUTER_NETWORKING": {"A": 26, "B": 26, "C": 26, "D": 26, "n": 104},
+      "CYBERSECURITY": {"A": 26, "B": 26, "C": 26, "D": 26, "n": 104}
+    },
+    "learner_has_answer_index": false,
+    "learner_has_answer_keys": false,
+    "teacher_has_answer_keys": true
+  },
+  "packaging_jaccard_independent": 0.0249,
+  "ci": {
+    "docs": "SUCCESS",
+    "digital_rc_batch": "SUCCESS",
+    "docs_still_readme_existence": true
+  },
+  "independent_count_table": {
+    "GENERAL_IT": {
+      "syllabus": 1, "weeks": 10, "full_lessons": 10, "assignments": 10,
+      "runnable_labs": 7, "quizzes": 10, "quiz_items": 60, "quiz_items_unique_stems": 60,
+      "mid_course_items": 20, "final_items": 24, "j1_vs_weekly": 0, "j80_vs_weekly": 0,
+      "practicals": 1, "projects": 1, "rubrics": 8, "answer_keys": 13,
+      "student_materials": 1, "instructor_materials": 11, "presentation_materials": 10,
+      "offline_pack": 1, "portfolio_artifacts": 1, "track_ids": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"]
+    },
+    "COMPUTER_NETWORKING": {
+      "syllabus": 1, "weeks": 10, "full_lessons": 10, "assignments": 10,
+      "runnable_labs": 6, "quizzes": 10, "quiz_items": 60, "quiz_items_unique_stems": 60,
+      "mid_course_items": 20, "final_items": 24, "j1_vs_weekly": 0, "j80_vs_weekly": 0,
+      "practicals": 1, "projects": 1, "rubrics": 8, "answer_keys": 13,
+      "student_materials": 1, "instructor_materials": 11, "presentation_materials": 10,
+      "offline_pack": 1, "portfolio_artifacts": 1, "track_ids": ["NETWORKING_INFRA"]
+    },
+    "CYBERSECURITY": {
+      "syllabus": 1, "weeks": 10, "full_lessons": 10, "assignments": 10,
+      "runnable_labs": 7, "quizzes": 10, "quiz_items": 60, "quiz_items_unique_stems": 60,
+      "mid_course_items": 20, "final_items": 24, "j1_vs_weekly": 0, "j80_vs_weekly": 0,
+      "practicals": 1, "projects": 1, "rubrics": 8, "answer_keys": 13,
+      "student_materials": 1, "instructor_materials": 11, "presentation_materials": 10,
+      "offline_pack": 1, "portfolio_artifacts": 1, "track_ids": ["CYBER_SOC"]
+    }
+  },
+  "remaining_OPEN_tracks_14": [
+    "SOFTWARE_BUILDER", "DATA_DASHBOARDS", "AI_ML_EDGE", "EMBEDDED_PROTOTYPING",
+    "WIRELESS_6G", "PM_AGILE_LSS", "GAME_DEV_INTERACTIVE", "SEVEN_GC_APPRENTICESHIP",
+    "CLOUD_DEVOPS", "COMM_PD_ETHICS", "ROBOTICS_CONTROL", "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING", "DATA_VIZ_BI"
+  ],
+  "residuals_not_fail": [
+    "RC writer still has unused slack floors weeks>=8 / quiz_items>=48 / labs>=4; actual packet is 10/60/6-7",
+    "CI docs job is still test -f README.md",
+    "Independent worst exam-weekly Jaccard 0.7143 remains (under 0.80)"
+  ],
+  "claim_boundary": "COURSE_DIGITAL_RC earned for GENERAL_IT + COMPUTER_NETWORKING + CYBERSECURITY on DRAFT #43 tip 3b81933 only. Not REAL_STUDENT_E6 / REAL_TEACHER_E6. Not the other 14 tracks. Cursor does not merge."
+}

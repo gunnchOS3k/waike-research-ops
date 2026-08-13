@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_teacher_ingest.v1.json",
+  "title": "WAIKE teacher ingest — keys stay instructor-only",
+  "type": "object",
+  "required": ["schema", "role", "courses"],
+  "properties": {
+    "schema": { "const": "waike.teacher_ingest.v1" },
+    "role": { "const": "educator" },
+    "generated_utc": { "type": "string" },
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "course_id",
+          "title",
+          "syllabus",
+          "weeks",
+          "assignments",
+          "labs",
+          "quizzes",
+          "assessments",
+          "rubrics",
+          "answer_keys",
+          "instructor_notes",
+          "presentation"
+        ]
+      }
+    }
+  }
+}

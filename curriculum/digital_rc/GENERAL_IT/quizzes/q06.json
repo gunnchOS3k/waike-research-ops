@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "git-w6-1",
+      "kind": "mcq",
+      "stem": "Correct first subsystem to name on a dead kiosk?",
+      "choices": [
+        "OS reinstall",
+        "RAM vendor",
+        "Power path (brick/LED)",
+        "Browser cache"
+      ]
+    },
+    {
+      "id": "git-w6-2",
+      "kind": "mcq",
+      "stem": "Why is the spare SODIMM last in the black-screen flowchart?",
+      "choices": [
+        "RAM is cheap",
+        "SODIMMs cannot fail",
+        "Windows 11 needs 128 GB",
+        "Video/power/cables explain more of this failure class"
+      ]
+    },
+    {
+      "id": "git-w6-3",
+      "kind": "mcq",
+      "stem": "Patron tethers a phone because 'Wi-Fi is slow.' You should",
+      "choices": [
+        "Check the kiosk patch cable/link lights first",
+        "Ignore Ethernet lights",
+        "Buy a new phone",
+        "Disable the idle timer"
+      ]
+    },
+    {
+      "id": "git-w6-4",
+      "kind": "mcq",
+      "stem": "78 C exhaust after dust: next?",
+      "choices": [
+        "Immediate chassis RMA",
+        "Clean intake, re-measure",
+        "Reinstall Debian",
+        "Overclock the fan"
+      ]
+    },
+    {
+      "id": "git-w6-5",
+      "kind": "mcq",
+      "stem": "SMART is evidence for which subsystem?",
+      "choices": [
+        "Display cable",
+        "RAM timings",
+        "Storage",
+        "GRUB theme"
+      ]
+    },
+    {
+      "id": "git-w6-6",
+      "kind": "mcq",
+      "stem": "A+ V15 Core 1 hardware domain in this week is used as",
+      "choices": [
+        "An item dump",
+        "A license to copy CertMaster",
+        "A replacement for tickets",
+        "A domain label for power/RAM/disk/display triage"
+      ]
+    }
+  ]
+}

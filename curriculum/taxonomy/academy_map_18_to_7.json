@@ -1,0 +1,96 @@
+{
+  "schema": "waike.taxonomy.academy_map_18_to_7.v1",
+  "date_checked": "2026-08-13",
+  "rule": "Owner 18-track taxonomy wins. Map into 7 academies. Do not delete advanced tracks.",
+  "academies": [
+    {
+      "academy_id": "ACADEMY_IT",
+      "title": "IT",
+      "track_ids": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"]
+    },
+    {
+      "academy_id": "ACADEMY_HARDWARE",
+      "title": "Hardware",
+      "track_ids": [
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING",
+        "ROBOTICS_CONTROL",
+        "GUNNCHOS_PRODUCT_LAB"
+      ]
+    },
+    {
+      "academy_id": "ACADEMY_SOFTWARE",
+      "title": "Software",
+      "track_ids": [
+        "SOFTWARE_BUILDER",
+        "DATA_DASHBOARDS",
+        "AI_ML_EDGE",
+        "GAME_DEV_INTERACTIVE",
+        "CLOUD_DEVOPS",
+        "DATA_VIZ_BI",
+        "SEVEN_GC_APPRENTICESHIP"
+      ]
+    },
+    {
+      "academy_id": "ACADEMY_CYBER",
+      "title": "Cyber",
+      "track_ids": ["CYBER_SOC"]
+    },
+    {
+      "academy_id": "ACADEMY_PROF_DEV",
+      "title": "Prof Dev",
+      "track_ids": ["COMM_PD_ETHICS"]
+    },
+    {
+      "academy_id": "ACADEMY_NETWORKING",
+      "title": "Networking",
+      "track_ids": ["NETWORKING_INFRA", "WIRELESS_6G"]
+    },
+    {
+      "academy_id": "ACADEMY_PROCESS_PM",
+      "title": "Process/PM",
+      "track_ids": ["PM_AGILE_LSS"]
+    }
+  ],
+  "this_batch": {
+    "packet_id": "WAIKE-COURSE-READY-001",
+    "courses": [
+      {
+        "course_id": "GENERAL_IT",
+        "title": "General IT — Operator to Support Specialist",
+        "maps_to_tracks": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"],
+        "academy_id": "ACADEMY_IT",
+        "note": "One authored course covers both foundation IT tracks. Tracks remain distinct IDs."
+      },
+      {
+        "course_id": "COMPUTER_NETWORKING",
+        "title": "Computer Networking — Packets to Campus Edge",
+        "maps_to_tracks": ["NETWORKING_INFRA"],
+        "academy_id": "ACADEMY_NETWORKING",
+        "note": "WIRELESS_6G stays an advanced networking extension and is not deleted."
+      },
+      {
+        "course_id": "CYBERSECURITY",
+        "title": "Cybersecurity — Harbor SOC Foundations",
+        "maps_to_tracks": ["CYBER_SOC"],
+        "academy_id": "ACADEMY_CYBER"
+      }
+    ]
+  },
+  "unauthored_this_packet": [
+    "SOFTWARE_BUILDER",
+    "DATA_DASHBOARDS",
+    "AI_ML_EDGE",
+    "EMBEDDED_PROTOTYPING",
+    "WIRELESS_6G",
+    "PM_AGILE_LSS",
+    "GAME_DEV_INTERACTIVE",
+    "SEVEN_GC_APPRENTICESHIP",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "ROBOTICS_CONTROL",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "DATA_VIZ_BI"
+  ]
+}

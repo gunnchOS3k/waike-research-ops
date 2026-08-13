@@ -1,0 +1,160 @@
+[
+  {
+    "rubric_id": "GENERAL_IT-lab",
+    "title": "Civic desk lab",
+    "criteria": [
+      {
+        "name": "kiosk_least_privilege",
+        "weight": 25,
+        "desc": "kiosk not in sudo/root; unique UID/home"
+      },
+      {
+        "name": "restore_hash",
+        "weight": 25,
+        "desc": "SHA256 of restored civic tree matches source; no ssn.txt"
+      },
+      {
+        "name": "ticket_next_action",
+        "weight": 25,
+        "desc": "reboot_and_hope scores zero; 4417/4418/4419 next-actions match"
+      },
+      {
+        "name": "change_window",
+        "weight": 25,
+        "desc": "snapshot before apply; planned time inside 18:00\u201321:00"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-assignment",
+    "title": "Desk journal",
+    "criteria": [
+      {
+        "name": "named_ticket",
+        "weight": 40,
+        "desc": "Uses 4417/4502/CHG-88 numbers, not 'a user had an issue'"
+      },
+      {
+        "name": "no_pii",
+        "weight": 30,
+        "desc": "No PAN/password/SSN in the journal"
+      },
+      {
+        "name": "next_shift",
+        "weight": 30,
+        "desc": "A Saturday volunteer can continue without asking you"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-quiz",
+    "title": "Operator knowledge",
+    "criteria": [
+      {
+        "name": "desk_numbers",
+        "weight": 50,
+        "desc": "1200s, 10.20.30.14, 15% free \u2014 not vendor stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys only in instructor/answer_keys.json"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-mid",
+    "title": "Mid-course desk audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not cloned from weekly quizzes"
+      },
+      {
+        "name": "accounts_storage_change",
+        "weight": 40,
+        "desc": "UID clone, free-ratio, window math"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-final-knowledge",
+    "title": "Final operator knowledge",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not cloned from weekly quizzes"
+      },
+      {
+        "name": "hardware_dns_services",
+        "weight": 50,
+        "desc": "Power-first triage, split horizon, cups restart budget"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-practical",
+    "title": "Submitted desk artifacts",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 50,
+        "desc": "Empty submission fails; reference JSON passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "kiosk-with-sudo fails the user lab"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "A file containing only PASS is rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-project",
+    "title": "After-hours rotation",
+    "criteria": [
+      {
+        "name": "two_roles",
+        "weight": 30,
+        "desc": "Operator and recorder swap at 30 minutes"
+      },
+      {
+        "name": "stranger_handoff",
+        "weight": 40,
+        "desc": "Recorder notes do not require the operator's memory"
+      },
+      {
+        "name": "scope",
+        "weight": 30,
+        "desc": "No imaging of neighborhood laptops"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-portfolio",
+    "title": "Desk portfolio",
+    "criteria": [
+      {
+        "name": "tree_and_hash",
+        "weight": 50,
+        "desc": "Folder tree + restore hash"
+      },
+      {
+        "name": "chg88",
+        "weight": 30,
+        "desc": "Change record with window"
+      },
+      {
+        "name": "no_faces",
+        "weight": 20,
+        "desc": "Tour video without patron faces"
+      }
+    ]
+  }
+]

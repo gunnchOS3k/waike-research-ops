@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "net-w3-1",
+      "kind": "mcq",
+      "stem": "MAC table key in this lab is",
+      "choices": [
+        "MAC only",
+        "(MAC, VLAN)",
+        "IP only",
+        "Port only"
+      ]
+    },
+    {
+      "id": "net-w3-2",
+      "kind": "mcq",
+      "stem": "Unknown unicast should",
+      "choices": [
+        "Cross all VLANs",
+        "Always drop",
+        "Flood inside its VLAN",
+        "Convert to OSPF"
+      ]
+    },
+    {
+      "id": "net-w3-3",
+      "kind": "mcq",
+      "stem": "Access port vs trunk in one line",
+      "choices": [
+        "They are identical",
+        "Trunks are IPv6 only",
+        "Access ports run BGP",
+        "Access is untagged membership; trunk carries tags"
+      ]
+    },
+    {
+      "id": "net-w3-4",
+      "kind": "mcq",
+      "stem": "Two cables, no STP, cheap switch: likely",
+      "choices": [
+        "Broadcast storm / loop",
+        "Faster Internet",
+        "Better SPF",
+        "CIDR shrink"
+      ]
+    },
+    {
+      "id": "net-w3-5",
+      "kind": "mcq",
+      "stem": "Pier VLAN 20, Yard VLAN 30: same MAC string",
+      "choices": [
+        "Must collide",
+        "Are different keys",
+        "Break LPM",
+        "Disable DHCP"
+      ]
+    },
+    {
+      "id": "net-w3-6",
+      "kind": "mcq",
+      "stem": "We configure live Cisco IOS here?",
+      "choices": [
+        "Yes required",
+        "Yes Packet Tracer dumps",
+        "No \u2014 fixture forwarding, alignment only",
+        "Yes exam sims"
+      ]
+    }
+  ]
+}

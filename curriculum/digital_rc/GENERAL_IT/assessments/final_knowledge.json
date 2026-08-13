@@ -1,0 +1,269 @@
+{
+  "assessment_id": "GENERAL_IT-final",
+  "items": [
+    {
+      "id": "GENERAL_IT-fin-01",
+      "kind": "mcq",
+      "stem": "Black screen, fans on, one short beep, display cable dangling after you pulled the chassis. First reseat?",
+      "choices": [
+        "The spare SODIMM",
+        "Display cable (and confirm power/POST) before spending the only DIMM",
+        "The SATA SSD",
+        "GRUB"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-02",
+      "kind": "mcq",
+      "stem": "Ticket 4620: after vacuuming the Civic intake, exhaust still reads 81 C at idle. What do you log before opening an RMA?",
+      "choices": [
+        "Ship the chassis today",
+        "Disable the fan",
+        "Confirm intake is clear, wait ten minutes, record a second temperature",
+        "Reinstall Windows"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-03",
+      "kind": "mcq",
+      "stem": "Kiosk shows 169.254.13.9 after a furniture move. What failed?",
+      "choices": [
+        "Static city plan",
+        "IPv6 only",
+        "NAT",
+        "DHCP lease (link-local)"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-04",
+      "kind": "mcq",
+      "stem": "desk.gary.waike.local is 10.20.30.14 in hosts. The fixture resolver also answers example.com. Why fail the lab?",
+      "choices": [
+        "A classroom resolver must not invent WAN answers",
+        "example.com is illegal",
+        "DNSSEC forbids it",
+        "Port 53 is closed forever"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-05",
+      "kind": "mcq",
+      "stem": "cupsd RestartSec=120 during a 40-job r\u00e9sum\u00e9 queue. Operational problem?",
+      "choices": [
+        "systemd forbids 120",
+        "The public line becomes a rumor before cups returns",
+        "IPP requires 120",
+        "sshd needs 120"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-06",
+      "kind": "mcq",
+      "stem": "Closet recovery VM snapshots exist so that useradd practice is?",
+      "choices": [
+        "Production kiosk work",
+        "A place to run toy-tracker for patrons",
+        "Reversible",
+        "Guest Wi-Fi"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-07",
+      "kind": "mcq",
+      "stem": "A chatbot invents `rm -rf /home/kiosk` you cannot explain. Policy?",
+      "choices": [
+        "Pipe to sudo",
+        "Put it in Saturday cron",
+        "Store it in ssn.txt",
+        "Refuse until you can explain it"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-08",
+      "kind": "mcq",
+      "stem": "Executed steps != planned steps in the dry-run JSON. Meaning?",
+      "choices": [
+        "You did not do the change you documented",
+        "JSON is picky",
+        "SHA256 is broken",
+        "UID collision"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-09",
+      "kind": "mcq",
+      "stem": "After-hours recorder notes that only the operator can decode. Group project?",
+      "choices": [
+        "Pass",
+        "Fail \u2014 a stranger must continue",
+        "Extra credit",
+        "Replaces backups"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-10",
+      "kind": "mcq",
+      "stem": "Does passing this course grant CompTIA A+ V15?",
+      "choices": [
+        "Yes",
+        "Yes if labs pass",
+        "No \u2014 domain alignment only",
+        "Yes if Google signs"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-11",
+      "kind": "mcq",
+      "stem": "A 'homework helper' Chrome add-on on kiosk-3 requests local-admin to 'install a driver' (ticket 4628). Operator move?",
+      "choices": [
+        "Approve because students asked",
+        "Paste the vendor token into the ticket",
+        "Turn off the idle timer so it can finish",
+        "Refuse and remove the add-on \u2014 the public image does not grant admin to extensions"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-12",
+      "kind": "mcq",
+      "stem": "Portfolio video shows patron faces 'for authenticity.' Verdict?",
+      "choices": [
+        "Fail \u2014 no faces/PII",
+        "Pass",
+        "Pass if blurred later maybe",
+        "Required for Google IT"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-13",
+      "kind": "mcq",
+      "stem": "Used=225 GiB, reserved=12, size=256, then a Windows update wants 20 GiB. Why did the 15% policy exist?",
+      "choices": [
+        "Disks explode at 15%",
+        "Headroom for updates/profiles before 'full'",
+        "ext4 cannot use the last 15%",
+        "CompTIA requires 15%"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-14",
+      "kind": "mcq",
+      "stem": "SMART reallocated-sector count climbing on the kiosk SSD. Subsystem to name before OS reinstall?",
+      "choices": [
+        "Display cable",
+        "RAM timings",
+        "Storage",
+        "GRUB theme"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-15",
+      "kind": "mcq",
+      "stem": "Type-2 hypervisor in one honest sentence for the closet PC?",
+      "choices": [
+        "A switch ASIC",
+        "A DNS zone",
+        "A CompTIA item",
+        "A hypervisor that runs on an existing OS"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-16",
+      "kind": "mcq",
+      "stem": "Ticket 4633: a patron asks why port 22 is listening on the Civic kiosk. Honest answer?",
+      "choices": [
+        "Staff recovery path for this lab image \u2014 not a public service",
+        "So patrons can log in from home",
+        "It is the guest captive portal",
+        "cups moved to 22"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-17",
+      "kind": "mcq",
+      "stem": "3-2-1 at this desk is volume + locked USB + closet PC. Cloud-only three buckets would fail because?",
+      "choices": [
+        "Cloud is illegal",
+        "One media/off-site class, not two media",
+        "USB is required by A+",
+        "Closet PCs cannot hash"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-18",
+      "kind": "mcq",
+      "stem": "CHG-88 snapshot_home / apply_idle_policy / verify_kiosk_login. Which rollback string is acceptable?",
+      "choices": [
+        "reboot_and_hope",
+        "disable_idle_forever",
+        "restore_snapshot_home",
+        "grant_kiosk_sudo"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-19",
+      "kind": "mcq",
+      "stem": "Why is Fast User Switching preferred over logging off the last admin during a 40-job print?",
+      "choices": [
+        "It wipes the spooler",
+        "It disables idle logout",
+        "It grants kiosk sudo",
+        "It can leave the spooler owner alive"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-20",
+      "kind": "mcq",
+      "stem": "Zero Trust as a support behavior this week means?",
+      "choices": [
+        "Do not grant admin because someone is late; time-box the group the ticket needs",
+        "Never patch",
+        "Disable the firewall",
+        "NAT everything"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-21",
+      "kind": "mcq",
+      "stem": "A backup `.tgz` exists but nobody has extracted it this quarter. What is it?",
+      "choices": [
+        "3-2-1 complete",
+        "A rumor until a restore hash matches",
+        "Better than snapshots",
+        "A RAID substitute"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-22",
+      "kind": "mcq",
+      "stem": "Patron tethers a phone because 'Wi-Fi is slow.' Ethernet link lights are off. You?",
+      "choices": [
+        "Ignore the lights",
+        "Buy a new phone",
+        "Reseat the patch cable before blaming cellular",
+        "Disable idle logout"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-23",
+      "kind": "mcq",
+      "stem": "Scope paragraph: this course licenses you to image random neighborhood laptops?",
+      "choices": [
+        "Yes",
+        "Yes after week 10",
+        "Yes if offline",
+        "No \u2014 desk/image you are authorized to touch"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-24",
+      "kind": "mcq",
+      "stem": "Ticket 4418 fan scream then black. Next action that scores on the lab?",
+      "choices": [
+        "capture_temps_then_reseating_plan",
+        "reboot_and_hope",
+        "order_gaming_pc",
+        "full_disk_wipe"
+      ]
+    }
+  ]
+}

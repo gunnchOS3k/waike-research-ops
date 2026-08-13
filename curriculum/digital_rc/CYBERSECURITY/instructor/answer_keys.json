@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "CYBERSECURITY",
+  "quizzes": {
+    "CYBERSECURITY-q01": [
+      {
+        "id": "cy-w1-1",
+        "answer_index": 2,
+        "explanation": "2026-09-01."
+      },
+      {
+        "id": "cy-w1-2",
+        "answer_index": 3,
+        "explanation": "Integrity."
+      },
+      {
+        "id": "cy-w1-3",
+        "answer_index": 0,
+        "explanation": "IAM."
+      },
+      {
+        "id": "cy-w1-4",
+        "answer_index": 1,
+        "explanation": "Do not feed PII to the bot."
+      },
+      {
+        "id": "cy-w1-5",
+        "answer_index": 2,
+        "explanation": "Governance."
+      },
+      {
+        "id": "cy-w1-6",
+        "answer_index": 3,
+        "explanation": "RESTRICTED."
+      }
+    ],
+    "CYBERSECURITY-q02": [
+      {
+        "id": "cy-w2-1",
+        "answer_index": 0,
+        "explanation": "Read only."
+      },
+      {
+        "id": "cy-w2-2",
+        "answer_index": 1,
+        "explanation": "Analyst cannot close."
+      },
+      {
+        "id": "cy-w2-3",
+        "answer_index": 2,
+        "explanation": "Lifecycle."
+      },
+      {
+        "id": "cy-w2-4",
+        "answer_index": 3,
+        "explanation": "No secrets in notes."
+      },
+      {
+        "id": "cy-w2-5",
+        "answer_index": 0,
+        "explanation": "Audit trail."
+      },
+      {
+        "id": "cy-w2-6",
+        "answer_index": 1,
+        "explanation": "US government work."
+      }
+    ],
+    "CYBERSECURITY-q03": [
+      {
+        "id": "cy-w3-1",
+        "answer_index": 2,
+        "explanation": "East-west hole."
+      },
+      {
+        "id": "cy-w3-2",
+        "answer_index": 3,
+        "explanation": "Narrow allow."
+      },
+      {
+        "id": "cy-w3-3",
+        "answer_index": 0,
+        "explanation": "Do not obey."
+      },
+      {
+        "id": "cy-w3-4",
+        "answer_index": 1,
+        "explanation": "Zero Trust."
+      },
+      {
+        "id": "cy-w3-5",
+        "answer_index": 2,
+        "explanation": "Shared duty."
+      },
+      {
+        "id": "cy-w3-6",
+        "answer_index": 3,
+        "explanation": "Honest fixture."
+      }
+    ],
+    "CYBERSECURITY-q04": [
+      {
+        "id": "cy-w4-1",
+        "answer_index": 0,
+        "explanation": "Look, not convict."
+      },
+      {
+        "id": "cy-w4-2",
+        "answer_index": 1,
+        "explanation": "No burst."
+      },
+      {
+        "id": "cy-w4-3",
+        "answer_index": 2,
+        "explanation": "Human."
+      },
+      {
+        "id": "cy-w4-4",
+        "answer_index": 3,
+        "explanation": "No secrets."
+      },
+      {
+        "id": "cy-w4-5",
+        "answer_index": 0,
+        "explanation": "Assist."
+      },
+      {
+        "id": "cy-w4-6",
+        "answer_index": 1,
+        "explanation": "Do not let success hide bursts."
+      }
+    ],
+    "CYBERSECURITY-q05": [
+      {
+        "id": "cy-w5-1",
+        "answer_index": 2,
+        "explanation": "Keys only."
+      },
+      {
+        "id": "cy-w5-2",
+        "answer_index": 3,
+        "explanation": "Bots do not get sudo."
+      },
+      {
+        "id": "cy-w5-3",
+        "answer_index": 0,
+        "explanation": "Too open."
+      },
+      {
+        "id": "cy-w5-4",
+        "answer_index": 1,
+        "explanation": "OPEN_LICENSE."
+      },
+      {
+        "id": "cy-w5-5",
+        "answer_index": 2,
+        "explanation": "777 is not hospitality."
+      },
+      {
+        "id": "cy-w5-6",
+        "answer_index": 3,
+        "explanation": "Authorized fixture."
+      }
+    ],
+    "CYBERSECURITY-q06": [
+      {
+        "id": "cy-w6-1",
+        "answer_index": 0,
+        "explanation": "Identity."
+      },
+      {
+        "id": "cy-w6-2",
+        "answer_index": 1,
+        "explanation": "Do not widen."
+      },
+      {
+        "id": "cy-w6-3",
+        "answer_index": 2,
+        "explanation": "Use desk procedure."
+      },
+      {
+        "id": "cy-w6-4",
+        "answer_index": 3,
+        "explanation": "Opinions as policy."
+      },
+      {
+        "id": "cy-w6-5",
+        "answer_index": 0,
+        "explanation": "Clock matters."
+      },
+      {
+        "id": "cy-w6-6",
+        "answer_index": 1,
+        "explanation": "Clock: contain."
+      }
+    ],
+    "CYBERSECURITY-q07": [
+      {
+        "id": "cy-w7-1",
+        "answer_index": 2,
+        "explanation": "Order matters."
+      },
+      {
+        "id": "cy-w7-2",
+        "answer_index": 3,
+        "explanation": "Retro last."
+      },
+      {
+        "id": "cy-w7-3",
+        "answer_index": 0,
+        "explanation": "Use minutes."
+      },
+      {
+        "id": "cy-w7-4",
+        "answer_index": 1,
+        "explanation": "2026 CC AI guidance in our words."
+      },
+      {
+        "id": "cy-w7-5",
+        "answer_index": 2,
+        "explanation": "Do not tidy."
+      },
+      {
+        "id": "cy-w7-6",
+        "answer_index": 3,
+        "explanation": "US government."
+      }
+    ],
+    "CYBERSECURITY-q08": [
+      {
+        "id": "cy-w8-1",
+        "answer_index": 0,
+        "explanation": "Length lie."
+      },
+      {
+        "id": "cy-w8-2",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "cy-w8-3",
+        "answer_index": 2,
+        "explanation": "PUBLIC_REFERENCE_ONLY."
+      },
+      {
+        "id": "cy-w8-4",
+        "answer_index": 3,
+        "explanation": "Accept honest."
+      },
+      {
+        "id": "cy-w8-5",
+        "answer_index": 0,
+        "explanation": "Responsible."
+      },
+      {
+        "id": "cy-w8-6",
+        "answer_index": 1,
+        "explanation": "No sockets."
+      }
+    ],
+    "CYBERSECURITY-q09": [
+      {
+        "id": "cy-w9-1",
+        "answer_index": 2,
+        "explanation": "t=90."
+      },
+      {
+        "id": "cy-w9-2",
+        "answer_index": 3,
+        "explanation": "Physical story."
+      },
+      {
+        "id": "cy-w9-3",
+        "answer_index": 0,
+        "explanation": "Evidence."
+      },
+      {
+        "id": "cy-w9-4",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "cy-w9-5",
+        "answer_index": 2,
+        "explanation": "Cannot claim."
+      },
+      {
+        "id": "cy-w9-6",
+        "answer_index": 3,
+        "explanation": "Humble chain."
+      }
+    ],
+    "CYBERSECURITY-q10": [
+      {
+        "id": "cy-w10-1",
+        "answer_index": 0,
+        "explanation": "Original."
+      },
+      {
+        "id": "cy-w10-2",
+        "answer_index": 1,
+        "explanation": "IAM."
+      },
+      {
+        "id": "cy-w10-3",
+        "answer_index": 2,
+        "explanation": "None."
+      },
+      {
+        "id": "cy-w10-4",
+        "answer_index": 3,
+        "explanation": "Do not."
+      },
+      {
+        "id": "cy-w10-5",
+        "answer_index": 0,
+        "explanation": "CS161-shaped, original prompt."
+      },
+      {
+        "id": "cy-w10-6",
+        "answer_index": 1,
+        "explanation": "Validators catch regressions."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "CYBERSECURITY-mid-01",
+      "answer_index": 2,
+      "explanation": "Upcoming outline."
+    },
+    {
+      "id": "CYBERSECURITY-mid-02",
+      "answer_index": 3,
+      "explanation": "Model/data integrity."
+    },
+    {
+      "id": "CYBERSECURITY-mid-03",
+      "answer_index": 0,
+      "explanation": "Governance is named."
+    },
+    {
+      "id": "CYBERSECURITY-mid-04",
+      "answer_index": 1,
+      "explanation": "Do not feed PII to the bot."
+    },
+    {
+      "id": "CYBERSECURITY-mid-05",
+      "answer_index": 2,
+      "explanation": "Analyst cannot close."
+    },
+    {
+      "id": "CYBERSECURITY-mid-06",
+      "answer_index": 3,
+      "explanation": "Read only."
+    },
+    {
+      "id": "CYBERSECURITY-mid-07",
+      "answer_index": 0,
+      "explanation": "Lifecycle."
+    },
+    {
+      "id": "CYBERSECURITY-mid-08",
+      "answer_index": 1,
+      "explanation": "No secrets in notes."
+    },
+    {
+      "id": "CYBERSECURITY-mid-09",
+      "answer_index": 2,
+      "explanation": "Audit trail."
+    },
+    {
+      "id": "CYBERSECURITY-mid-10",
+      "answer_index": 3,
+      "explanation": "US government work."
+    },
+    {
+      "id": "CYBERSECURITY-mid-11",
+      "answer_index": 0,
+      "explanation": "East-west hole if allowed."
+    },
+    {
+      "id": "CYBERSECURITY-mid-12",
+      "answer_index": 1,
+      "explanation": "Narrow allow toward the kiosk."
+    },
+    {
+      "id": "CYBERSECURITY-mid-13",
+      "answer_index": 2,
+      "explanation": "Do not obey."
+    },
+    {
+      "id": "CYBERSECURITY-mid-14",
+      "answer_index": 3,
+      "explanation": "Zero Trust."
+    },
+    {
+      "id": "CYBERSECURITY-mid-15",
+      "answer_index": 0,
+      "explanation": "Shared duty."
+    },
+    {
+      "id": "CYBERSECURITY-mid-16",
+      "answer_index": 1,
+      "explanation": "Burst \u2260 guilt."
+    },
+    {
+      "id": "CYBERSECURITY-mid-17",
+      "answer_index": 2,
+      "explanation": "Threshold is policy."
+    },
+    {
+      "id": "CYBERSECURITY-mid-18",
+      "answer_index": 3,
+      "explanation": "Human closer."
+    },
+    {
+      "id": "CYBERSECURITY-mid-19",
+      "answer_index": 0,
+      "explanation": "No secrets in logs."
+    },
+    {
+      "id": "CYBERSECURITY-mid-20",
+      "answer_index": 1,
+      "explanation": "Assist, not closer."
+    }
+  ],
+  "final": [
+    {
+      "id": "CYBERSECURITY-fin-01",
+      "answer_index": 3,
+      "explanation": "Keys only."
+    },
+    {
+      "id": "CYBERSECURITY-fin-02",
+      "answer_index": 0,
+      "explanation": "Bots do not get sudo."
+    },
+    {
+      "id": "CYBERSECURITY-fin-03",
+      "answer_index": 1,
+      "explanation": "RDP/HTTP extra."
+    },
+    {
+      "id": "CYBERSECURITY-fin-04",
+      "answer_index": 2,
+      "explanation": "0777 is not hospitality."
+    },
+    {
+      "id": "CYBERSECURITY-fin-05",
+      "answer_index": 3,
+      "explanation": "Authorized fixture."
+    },
+    {
+      "id": "CYBERSECURITY-fin-06",
+      "answer_index": 0,
+      "explanation": "Identity first."
+    },
+    {
+      "id": "CYBERSECURITY-fin-07",
+      "answer_index": 1,
+      "explanation": "Do not widen."
+    },
+    {
+      "id": "CYBERSECURITY-fin-08",
+      "answer_index": 2,
+      "explanation": "Kiosk does not speak SMB to staff."
+    },
+    {
+      "id": "CYBERSECURITY-fin-09",
+      "answer_index": 3,
+      "explanation": "Clock matters."
+    },
+    {
+      "id": "CYBERSECURITY-fin-10",
+      "answer_index": 0,
+      "explanation": "Contain first."
+    },
+    {
+      "id": "CYBERSECURITY-fin-11",
+      "answer_index": 1,
+      "explanation": "detect\u2192contain\u2192eradicate."
+    },
+    {
+      "id": "CYBERSECURITY-fin-12",
+      "answer_index": 2,
+      "explanation": "Retro last."
+    },
+    {
+      "id": "CYBERSECURITY-fin-13",
+      "answer_index": 3,
+      "explanation": "Use minutes."
+    },
+    {
+      "id": "CYBERSECURITY-fin-14",
+      "answer_index": 0,
+      "explanation": "2026 CC AI guidance in WAIKE words."
+    },
+    {
+      "id": "CYBERSECURITY-fin-15",
+      "answer_index": 1,
+      "explanation": "Do not tidy."
+    },
+    {
+      "id": "CYBERSECURITY-fin-16",
+      "answer_index": 2,
+      "explanation": "Length lie on this fixture."
+    },
+    {
+      "id": "CYBERSECURITY-fin-17",
+      "answer_index": 3,
+      "explanation": "No."
+    },
+    {
+      "id": "CYBERSECURITY-fin-18",
+      "answer_index": 0,
+      "explanation": "PUBLIC_REFERENCE_ONLY."
+    },
+    {
+      "id": "CYBERSECURITY-fin-19",
+      "answer_index": 1,
+      "explanation": "Honest length 4 plus abcd."
+    },
+    {
+      "id": "CYBERSECURITY-fin-20",
+      "answer_index": 2,
+      "explanation": "Responsible disclosure."
+    },
+    {
+      "id": "CYBERSECURITY-fin-21",
+      "answer_index": 3,
+      "explanation": "t=90."
+    },
+    {
+      "id": "CYBERSECURITY-fin-22",
+      "answer_index": 0,
+      "explanation": "Cannot claim identity."
+    },
+    {
+      "id": "CYBERSECURITY-fin-23",
+      "answer_index": 1,
+      "explanation": "Original."
+    },
+    {
+      "id": "CYBERSECURITY-fin-24",
+      "answer_index": 2,
+      "explanation": "Do not scan what Harbor does not own."
+    }
+  ]
+}

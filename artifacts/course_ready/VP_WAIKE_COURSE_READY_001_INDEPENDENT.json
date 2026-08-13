@@ -1,0 +1,351 @@
+{
+  "schema": "waike.course_ready_001.independent_verifier_result.v1",
+  "packet": "WAIKE-COURSE-READY-001",
+  "work_item": "waike-research-ops-pr-43-general-it-networking-cyber",
+  "verifier_role": "INDEPENDENT_VERIFIER_AGENT",
+  "did_not_implement": true,
+  "did_not_merge": true,
+  "did_not_push_main": true,
+  "did_not_open_device_os_mega_pr": true,
+  "did_not_start_next_15_courses": true,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "HUMAN_E6": false,
+  "full_18_course_digital_rc": false,
+  "pr": {
+    "repo": "gunnchOS3k/waike-research-ops",
+    "number": 43,
+    "url": "https://github.com/gunnchOS3k/waike-research-ops/pull/43",
+    "draft": true,
+    "state": "OPEN",
+    "title": "WAIKE-COURSE-READY-001: General IT, Networking, Cyber digital RC batch",
+    "branch": "operating-cycle-user-ready/waike-course-ready-001",
+    "base": "main"
+  },
+  "claimed_tip": "ce364e27e817a3b2f6c3cb579c346a9cb9d10a1e",
+  "live_tip": "ce364e27e817a3b2f6c3cb579c346a9cb9d10a1e",
+  "live_tip_matches_claimed": true,
+  "implementer_commits_on_pr": 1,
+  "verifier_commit_subject": "verify(course-ready-001): independent FAIL on DRAFT #43 COURSE_DIGITAL_RC",
+  "generated_at_utc": "2026-08-13T20:45:00Z",
+  "VP_WAIKE_COURSE_READY_001_INDEPENDENT": "FAIL",
+  "COURSE_DIGITAL_RC_BATCH": false,
+  "implementer_COURSE_DIGITAL_RC_BATCH_claim": true,
+  "READY_FOR_EDMUND_MERGE": false,
+  "cursor_must_not_merge": true,
+  "fail_reason": "COURSE_DIGITAL_RC is not earned. File counts match, labs compute, and weekly stems are original WAIKE wording, but the packet fails independent gates: generic identical rubrics across all three courses, identical lab README/instructor-note/syllabus-assessment shells, mid+final are 1:1 clones of weekly quiz stems, Cyber answer_index is 100% B, Networking 98.3% B, RC writer rubber-stamps at 48/8/4 thresholds, and several named checks are tautologies. Implementer TEMPLATE_DETECTOR Jaccard-on-lessons-only is not a template audit.",
+  "verdicts": {
+    "GENERAL_IT": "FAIL",
+    "COMPUTER_NETWORKING": "FAIL",
+    "CYBERSECURITY": "FAIL",
+    "BATCH": "FAIL",
+    "COURSE_DIGITAL_RC_GENERAL_IT": false,
+    "COURSE_DIGITAL_RC_COMPUTER_NETWORKING": false,
+    "COURSE_DIGITAL_RC_CYBERSECURITY": false
+  },
+  "challenge_results": {
+    "1_live_tip_and_ci": {
+      "verdict": "PASS",
+      "live_tip": "ce364e27e817a3b2f6c3cb579c346a9cb9d10a1e",
+      "claimed_tip_match": true,
+      "draft": true,
+      "ci": {
+        "docs": "SUCCESS",
+        "digital_rc_batch": "SUCCESS",
+        "unique_check_names": ["docs", "digital_rc_batch"],
+        "duplicate_runs_push_and_pr": true,
+        "docs_job_is": "test -f README.md",
+        "docs_job_honest": "existence check only, not a curriculum review",
+        "digital_rc_batch_runtime_s": 11,
+        "urls": [
+          "https://github.com/gunnchOS3k/waike-research-ops/actions/runs/31741923677/job/94587150322",
+          "https://github.com/gunnchOS3k/waike-research-ops/actions/runs/31741923677/job/94587150379"
+        ]
+      }
+    },
+    "2_full_contents_not_file_counts": {
+      "verdict": "FAIL",
+      "lessons_original_settings": true,
+      "swapped_nouns_across_courses": false,
+      "identical_labs_across_courses": false,
+      "generic_rubric_copy": true,
+      "identical_lab_readmes": true,
+      "identical_instructor_notes_shell": true,
+      "identical_syllabus_assessment_boilerplate": true,
+      "identical_quiz_templates": {
+        "CYBERSECURITY_answer_index_all_B": true,
+        "COMPUTER_NETWORKING_answer_index_B_pct": 98.3,
+        "GENERAL_IT_answer_index_B_pct": 78.3
+      },
+      "notes": "Lesson bodies are distinct civic-desk / packet-range / Harbor-SOC prose, not noun-swaps of each other. Packaging (rubrics, instructor notes, lab READMEs, syllabus Duration/Assessments/Claim boundary, presentation slide-3/speaker-notes) is emit.py copy. That is the template fail the Jaccard-on-lessons detector was written not to see."
+    },
+    "3_quiz_wording_and_provenance": {
+      "verdict": "MIXED",
+      "dump_scan": "PASS",
+      "sampled_stems_original_waike": true,
+      "live_cert_dumps_found": false,
+      "registry_size": 16,
+      "reuse_classes_observed": [
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "PUBLIC_REFERENCE_ONLY",
+        "RESTRICTED"
+      ],
+      "implementer_provenance_status": "PASS",
+      "independent_provenance_status": "FAIL_TEMPLATE_GATES",
+      "detector_gap": "provenance.audit() Jaccard is lesson-body only (worst 0.0003). Forbidden markers do not include generic rubric copy, B-always keys, or recycled mid/final. BATCH_TEMPLATED=0 is therefore not independent evidence.",
+      "sample_stems": [
+        "Ticket 4417 lost an essay after 20 idle minutes. Which job failed first?",
+        "Upcoming ISC2 CC outline we prefer takes effect",
+        "Harbor bot closing incidents would violate"
+      ]
+    },
+    "4_labs_executed": {
+      "verdict": "PASS_WITH_FINDINGS",
+      "labs_executed": "20/20",
+      "lab_count": 20,
+      "print_pass_only": false,
+      "computing_validators": true,
+      "negatives": {
+        "kiosk_with_sudo": {"must_fail": true, "did_fail": true, "ok": false},
+        "wrong_cidr": {"must_fail": true, "did_fail": true, "ok": false},
+        "bot_can_close": {"must_fail": true, "did_fail": true, "ok": false}
+      },
+      "findings": [
+        "_fail_if_print_pass is defined and never called",
+        "lab_siem_triage no_attacker_word is _check(..., True, ...) — always passes",
+        "lab_safe_vuln_detect no_network is _check(..., True, ...) — always passes",
+        "lab_datapath ttl1_would_drop is (1-1)==0 — tautology, does not parse a TTL=1 frame",
+        "Default fixtures already pass; running the script without learner work prints ok=true. Labs are golden-path self-tests, not submitted student artifacts."
+      ]
+    },
+    "5_answer_keys_instructor_only": {
+      "verdict": "PASS",
+      "learner_ingest_has_answer_index": false,
+      "learner_ingest_has_answer_keys": false,
+      "learner_ingest_has_explanation": false,
+      "teacher_ingest_has_answer_keys": true,
+      "teacher_ingest_has_answer_index": true,
+      "learner_catalog_ui_has_keys": false,
+      "keys_path": "curriculum/digital_rc/*/instructor/answer_keys.json"
+    },
+    "6_count_audit": {
+      "verdict": "MIXED",
+      "file_counts_match_claimed_table": true,
+      "weekly_quiz_items_60_distinct_per_course": true,
+      "mid_and_final_are_original_distinct_items": false,
+      "mid_stems_exact_weekly_clones": {
+        "GENERAL_IT": "20/20",
+        "COMPUTER_NETWORKING": "20/20",
+        "CYBERSECURITY": "20/20"
+      },
+      "final_stems_exact_weekly_clones": {
+        "GENERAL_IT": "24/24",
+        "COMPUTER_NETWORKING": "24/24",
+        "CYBERSECURITY": "24/24"
+      },
+      "clone_source": "src/waike_course_ready/content.py extra_assessment_items() copies weekly quiz dicts and relabels ids",
+      "answer_keys_13_note": "Counted as 1 JSON wrapper + 10 quiz key sets + mid + final. Actual keyed assessments in the file: 12 sets."
+    },
+    "7_datapath_and_cyber_sandbox": {
+      "verdict": "PASS_WITH_FINDINGS",
+      "networking_real_datapath_not_wrapper": true,
+      "datapath_does": "Crafted Ethernet+IPv4 bytes, ethertype/IHL/proto parse, LPM including /32 steal",
+      "datapath_ttl1_is_tautology": true,
+      "cyber_labs_sandbox_fixtures_only": true,
+      "cyber_claim_boundary": "Authorized WAIKE course sandbox/fixture only. Do not run against systems you do not own."
+    },
+    "8_no_device_os_curriculum_pr": {
+      "verdict": "PASS",
+      "device_os_curriculum_pr": false,
+      "device_os_paths_in_diff": []
+    },
+    "9_course_digital_rc_earned": {
+      "verdict": "FAIL",
+      "implementer_flag": true,
+      "independent_flag": false,
+      "rubber_stamp": {
+        "script": "scripts/write_course_digital_rc.py",
+        "reads_prewritten_COURSE_COUNTS_json": true,
+        "thresholds_below_claim": {
+          "weeks": ">=8 vs claimed 10",
+          "full_lessons": ">=8 vs claimed 10",
+          "quiz_items": ">=48 vs claimed 60",
+          "runnable_labs": ">=4 vs claimed 6-7",
+          "mid_course_items": ">=8 vs claimed 20",
+          "final_items": ">=8 vs claimed 24",
+          "rubrics": ">=4 vs claimed 8"
+        },
+        "does_not_check": [
+          "rubric uniqueness across courses",
+          "mid/final distinctness from weekly stems",
+          "answer_index distribution",
+          "always-true lab checks",
+          "learner-submitted lab inputs"
+        ]
+      }
+    }
+  },
+  "independent_count_table": {
+    "columns": [
+      "syllabus",
+      "weeks",
+      "full_lessons",
+      "assignments",
+      "runnable_labs",
+      "quizzes",
+      "quiz_items",
+      "quiz_items_unique_stems",
+      "mid_course_items",
+      "mid_original_not_weekly_clones",
+      "final_items",
+      "final_original_not_weekly_clones",
+      "practicals",
+      "projects",
+      "rubrics",
+      "answer_keys",
+      "student_materials",
+      "instructor_materials",
+      "presentation_materials",
+      "offline_pack",
+      "portfolio_artifacts"
+    ],
+    "GENERAL_IT": {
+      "syllabus": 1,
+      "weeks": 10,
+      "full_lessons": 10,
+      "assignments": 10,
+      "runnable_labs": 7,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "quiz_items_unique_stems": 60,
+      "mid_course_items": 20,
+      "mid_original_not_weekly_clones": 0,
+      "final_items": 24,
+      "final_original_not_weekly_clones": 0,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "answer_keys": 13,
+      "student_materials": 1,
+      "instructor_materials": 11,
+      "presentation_materials": 10,
+      "offline_pack": 1,
+      "portfolio_artifacts": 1,
+      "track_ids": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"],
+      "academy_id": "ACADEMY_IT"
+    },
+    "COMPUTER_NETWORKING": {
+      "syllabus": 1,
+      "weeks": 10,
+      "full_lessons": 10,
+      "assignments": 10,
+      "runnable_labs": 6,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "quiz_items_unique_stems": 60,
+      "mid_course_items": 20,
+      "mid_original_not_weekly_clones": 0,
+      "final_items": 24,
+      "final_original_not_weekly_clones": 0,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "answer_keys": 13,
+      "student_materials": 1,
+      "instructor_materials": 11,
+      "presentation_materials": 10,
+      "offline_pack": 1,
+      "portfolio_artifacts": 1,
+      "track_ids": ["NETWORKING_INFRA"],
+      "academy_id": "ACADEMY_NETWORKING"
+    },
+    "CYBERSECURITY": {
+      "syllabus": 1,
+      "weeks": 10,
+      "full_lessons": 10,
+      "assignments": 10,
+      "runnable_labs": 7,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "quiz_items_unique_stems": 60,
+      "mid_course_items": 20,
+      "mid_original_not_weekly_clones": 0,
+      "final_items": 24,
+      "final_original_not_weekly_clones": 0,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "answer_keys": 13,
+      "student_materials": 1,
+      "instructor_materials": 11,
+      "presentation_materials": 10,
+      "offline_pack": 1,
+      "portfolio_artifacts": 1,
+      "track_ids": ["CYBER_SOC"],
+      "academy_id": "ACADEMY_CYBER"
+    }
+  },
+  "labs_executed": "20/20",
+  "negatives_executed": "3/3_failed_as_required",
+  "provenance": {
+    "benchmark_sources": 16,
+    "implementer_status": "PASS",
+    "independent_status": "FAIL_TEMPLATE_GATES",
+    "BATCH_TEMPLATED_COURSES_implementer": 0,
+    "BATCH_STUB_COURSES_implementer": 0,
+    "independent_template_audit": "FAIL"
+  },
+  "template_audit": {
+    "verdict": "FAIL",
+    "generic_rubric_copy": true,
+    "identical_lab_readme_shell": true,
+    "identical_instructor_note_shell": true,
+    "recycled_mid_final": true,
+    "cyber_all_answers_B": true,
+    "jaccard_lessons_only_is_insufficient": true
+  },
+  "mapping": {
+    "GENERAL_IT": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"],
+    "COMPUTER_NETWORKING": ["NETWORKING_INFRA"],
+    "CYBERSECURITY": ["CYBER_SOC"],
+    "mapping_matches_claim": true
+  },
+  "remaining_OPEN_tracks_14": [
+    "SOFTWARE_BUILDER",
+    "DATA_DASHBOARDS",
+    "AI_ML_EDGE",
+    "EMBEDDED_PROTOTYPING",
+    "WIRELESS_6G",
+    "PM_AGILE_LSS",
+    "GAME_DEV_INTERACTIVE",
+    "SEVEN_GC_APPRENTICESHIP",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "ROBOTICS_CONTROL",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "DATA_VIZ_BI"
+  ],
+  "honest_what_did_pass": [
+    "Live DRAFT #43 tip matches claimed ce364e27",
+    "digital_rc_batch CI SUCCESS (self-gated)",
+    "20/20 labs ran with named computing checks; specified negatives fail",
+    "Weekly 60 stems per course are distinct original WAIKE wording, not CompTIA/ISC2/Cisco dumps",
+    "Learner ingest/catalog has no answer_index/answer_keys",
+    "Networking lab_datapath parses a crafted frame and does LPM",
+    "Cyber labs stay on repo fixtures",
+    "No device-os curriculum duplication PR",
+    "18-track IDs retained; this batch maps 4 tracks via 3 courses",
+    "REAL_STUDENT_E6 and REAL_TEACHER_E6 remain false"
+  ],
+  "must_fix_before_rc": [
+    "Author course-specific rubrics; stop emit.py _rubrics() clones",
+    "Write original mid and final items; stop extra_assessment_items() cloning weekly stems",
+    "Randomize/balance answer_index; Cyber 60/60 B is not an assessment",
+    "Make labs consume learner-submitted fixtures; golden defaults must not be the pass path",
+    "Replace tautology checks (ttl1 (1-1)==0, always-True SIEM/network flags); actually call _fail_if_print_pass",
+    "Raise write_course_digital_rc.py to the claimed table and add template/distinctness gates",
+    "Expand provenance detector beyond lesson Jaccard"
+  ],
+  "claim_boundary": "Independent FAIL on COURSE_DIGITAL_RC for this 3-course DRAFT only. Not a student/teacher E6. Not all 18 courses. Cursor does not merge."
+}
