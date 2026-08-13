@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "sw7-1",
+      "kind": "mcq",
+      "stem": "PR workflow must include",
+      "choices": [
+        "test job",
+        "prod destroy",
+        "manual FTP",
+        "SSH patrons"
+      ]
+    },
+    {
+      "id": "sw7-2",
+      "kind": "mcq",
+      "stem": "Echo-only PASS step",
+      "choices": [
+        "Passes",
+        "Fails honesty",
+        "GitHub default",
+        "Skips lint"
+      ]
+    },
+    {
+      "id": "sw7-3",
+      "kind": "mcq",
+      "stem": "Ungoverned deploy on pull_request",
+      "choices": [
+        "Best practice",
+        "CS50 requires",
+        "Fails gate check",
+        "SPICE needs"
+      ]
+    },
+    {
+      "id": "sw7-4",
+      "kind": "mcq",
+      "stem": "Actions docs reuse class",
+      "choices": [
+        "FREE_COPY",
+        "ATP",
+        "DRM bypass",
+        "PUBLIC_REFERENCE_ONLY"
+      ]
+    },
+    {
+      "id": "sw7-5",
+      "kind": "mcq",
+      "stem": "lint before test",
+      "choices": [
+        "Required so broken style fails fast",
+        "Optional",
+        "Forbidden",
+        "Only on main"
+      ]
+    },
+    {
+      "id": "sw7-6",
+      "kind": "mcq",
+      "stem": "DEBUG_WITH_ME allows",
+      "choices": [
+        "Secret exfiltration",
+        "Collaborative debugging with disclosure",
+        "Key sharing",
+        "Skipping tests"
+      ]
+    }
+  ]
+}

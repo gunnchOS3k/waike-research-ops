@@ -1,5 +1,5 @@
 {
-  "packet": "WAIKE-COURSE-READY-001",
+  "packet": "WAIKE-COURSE-READY-002",
   "COURSE_DIGITAL_RC_BATCH": true,
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
@@ -7,12 +7,12 @@
   "full_18_course_digital_rc": false,
   "device_os_curriculum_pr": false,
   "courses": {
-    "GENERAL_IT": {
+    "SOFTWARE_BUILDER": {
       "syllabus": 1,
       "weeks": 10,
       "full_lessons": 10,
       "assignments": 10,
-      "runnable_labs": 7,
+      "runnable_labs": 10,
       "quizzes": 10,
       "quiz_items": 60,
       "mid_course_items": 20,
@@ -28,7 +28,7 @@
       "presentation_materials": 10,
       "offline_pack": 1,
       "portfolio_artifacts": 1,
-      "benchmark_sources": 16,
+      "benchmark_sources": 26,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
@@ -36,12 +36,12 @@
       "COURSE_DIGITAL_RC": true,
       "rc_fail_reasons": []
     },
-    "COMPUTER_NETWORKING": {
+    "HARDWARE_ENGINEERING": {
       "syllabus": 1,
       "weeks": 10,
       "full_lessons": 10,
       "assignments": 10,
-      "runnable_labs": 6,
+      "runnable_labs": 10,
       "quizzes": 10,
       "quiz_items": 60,
       "mid_course_items": 20,
@@ -57,7 +57,7 @@
       "presentation_materials": 10,
       "offline_pack": 1,
       "portfolio_artifacts": 1,
-      "benchmark_sources": 16,
+      "benchmark_sources": 26,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
@@ -65,12 +65,12 @@
       "COURSE_DIGITAL_RC": true,
       "rc_fail_reasons": []
     },
-    "CYBERSECURITY": {
+    "PM_AGILE_LSS": {
       "syllabus": 1,
       "weeks": 10,
       "full_lessons": 10,
       "assignments": 10,
-      "runnable_labs": 7,
+      "runnable_labs": 10,
       "quizzes": 10,
       "quiz_items": 60,
       "mid_course_items": 20,
@@ -86,7 +86,7 @@
       "presentation_materials": 10,
       "offline_pack": 1,
       "portfolio_artifacts": 1,
-      "benchmark_sources": 16,
+      "benchmark_sources": 26,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
@@ -96,29 +96,29 @@
     }
   },
   "lab_execution_ok": true,
-  "lab_count": 20,
+  "lab_count": 30,
   "empty_submission_fails": true,
   "wrong_submission_fails": true,
   "print_pass_raises": true,
   "ttl1_from_parsed_header": true,
   "product_consumption_ok": true,
-  "registry_size": 16,
+  "registry_size": 26,
   "key_distribution": {
-    "GENERAL_IT": {
+    "SOFTWARE_BUILDER": {
       "A": 26,
       "B": 26,
       "C": 26,
       "D": 26,
       "n": 104
     },
-    "COMPUTER_NETWORKING": {
+    "HARDWARE_ENGINEERING": {
       "A": 26,
       "B": 26,
       "C": 26,
       "D": 26,
       "n": 104
     },
-    "CYBERSECURITY": {
+    "PM_AGILE_LSS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -126,9 +126,9 @@
       "n": 104
     }
   },
-  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_jaccard": 0.092,
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
-  "worst_exam_weekly_token_jaccard": 0.6923,
-  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. Not a student/teacher E6. Not all 18 courses."
+  "worst_exam_weekly_token_jaccard": 0.75,
+  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. Not a student/teacher E6. Not all 18 courses. Batch 002 only."
 }

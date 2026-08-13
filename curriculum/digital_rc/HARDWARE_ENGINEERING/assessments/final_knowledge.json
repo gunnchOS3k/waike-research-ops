@@ -1,0 +1,269 @@
+{
+  "assessment_id": "HARDWARE_ENGINEERING-final",
+  "items": [
+    {
+      "id": "hwf01",
+      "kind": "mcq",
+      "stem": "Vin=12 R1=3k R2=1k. Voltage across R2?",
+      "choices": [
+        "9 V",
+        "12 V",
+        "3 V",
+        "4 V"
+      ]
+    },
+    {
+      "id": "hwf02",
+      "kind": "mcq",
+      "stem": "Open-circuit Thevenin voltage at that node?",
+      "choices": [
+        "9 V",
+        "0 V",
+        "12 V",
+        "3 V"
+      ]
+    },
+    {
+      "id": "hwf03",
+      "kind": "mcq",
+      "stem": "Rth for 3k in parallel with 1k?",
+      "choices": [
+        "750 ohm",
+        "4000 ohm",
+        "3000 ohm",
+        "1000 ohm"
+      ]
+    },
+    {
+      "id": "hwf04",
+      "kind": "mcq",
+      "stem": "Charging capacitor formula uses?",
+      "choices": [
+        "V0 exp(+t)",
+        "V0 times (1 - exp(-t/tau))",
+        "V0 times t",
+        "always zero"
+      ]
+    },
+    {
+      "id": "hwf05",
+      "kind": "mcq",
+      "stem": "About how settled at three tau?",
+      "choices": [
+        "10 percent",
+        "50 percent",
+        "about 95 percent",
+        "0 percent"
+      ]
+    },
+    {
+      "id": "hwf06",
+      "kind": "mcq",
+      "stem": "NAND outputs zero only when?",
+      "choices": [
+        "any input is zero",
+        "never",
+        "always",
+        "both inputs are one"
+      ]
+    },
+    {
+      "id": "hwf07",
+      "kind": "mcq",
+      "stem": "Regulator 40mA with load 45mA yields?",
+      "choices": [
+        "negative margin fail",
+        "plus 5 margin",
+        "zero required",
+        "infinite"
+      ]
+    },
+    {
+      "id": "hwf08",
+      "kind": "mcq",
+      "stem": "One SPI versus I2C distinction?",
+      "choices": [
+        "They are identical",
+        "SPI uses chip-select and shared clock; I2C uses address and ACK",
+        "Both need CAN",
+        "Neither needs ground"
+      ]
+    },
+    {
+      "id": "hwf09",
+      "kind": "mcq",
+      "stem": "physical_status set to DONE against course rule. Result?",
+      "choices": [
+        "Passes",
+        "Required",
+        "Fails physical_pending",
+        "Auto"
+      ]
+    },
+    {
+      "id": "hwf10",
+      "kind": "mcq",
+      "stem": "LED enabled but overlay text omits led0 token. Result?",
+      "choices": [
+        "PASS",
+        "QEMU adds LED",
+        "BOM fixes",
+        "led check fails"
+      ]
+    },
+    {
+      "id": "hwf11",
+      "kind": "mcq",
+      "stem": "unconnected_power true on ERC package. Result?",
+      "choices": [
+        "Fails",
+        "Passes",
+        "Optional",
+        "Ignored"
+      ]
+    },
+    {
+      "id": "hwf12",
+      "kind": "mcq",
+      "stem": "next_probe set to ignore it. Result?",
+      "choices": [
+        "Passes",
+        "Fails measure requirement",
+        "Ideal",
+        "Physical"
+      ]
+    },
+    {
+      "id": "hwf13",
+      "kind": "mcq",
+      "stem": "AI invents datasheet currents not in fixture. Allowed?",
+      "choices": [
+        "Yes",
+        "Required",
+        "No",
+        "ATP"
+      ]
+    },
+    {
+      "id": "hwf14",
+      "kind": "mcq",
+      "stem": "Zephyr documentation posture here?",
+      "choices": [
+        "Copy exams",
+        "Paywall bypass",
+        "ATP grant",
+        "Reference open docs not exam dump"
+      ]
+    },
+    {
+      "id": "hwf15",
+      "kind": "mcq",
+      "stem": "DRC 0 and ERC 2. Package result?",
+      "choices": [
+        "Fails erc_clean",
+        "Passes",
+        "Half pass",
+        "QEMU pass"
+      ]
+    },
+    {
+      "id": "hwf16",
+      "kind": "mcq",
+      "stem": "Subsystem validation packet should include?",
+      "choices": [
+        "Only vibes",
+        "Power bus DT and QEMU artifacts",
+        "Only faked solder photos",
+        "Exam PDFs"
+      ]
+    },
+    {
+      "id": "hwf17",
+      "kind": "mcq",
+      "stem": "First response to I2C NACK should usually be?",
+      "choices": [
+        "Always rewrite GPIO first",
+        "Required by west",
+        "Check rail and pullups before bit-bang rewrite",
+        "Fix Vth"
+      ]
+    },
+    {
+      "id": "hwf18",
+      "kind": "mcq",
+      "stem": "Why list AMS1117-3.3 in budget?",
+      "choices": [
+        "Fake part",
+        "Optional emoji",
+        "RACI role",
+        "Real regulator MPN in fixture"
+      ]
+    },
+    {
+      "id": "hwf19",
+      "kind": "mcq",
+      "stem": "Public OCW page means free to copy problem sets?",
+      "choices": [
+        "No",
+        "Yes",
+        "Only solutions",
+        "Only exams"
+      ]
+    },
+    {
+      "id": "hwf20",
+      "kind": "mcq",
+      "stem": "Final practical emphasis?",
+      "choices": [
+        "Immediate soldering only",
+        "Digitally validate embedded subsystem",
+        "PMI exam",
+        "CSSGB grant"
+      ]
+    },
+    {
+      "id": "hwf21",
+      "kind": "mcq",
+      "stem": "UART framing error most likely appears as?",
+      "choices": [
+        "Thevenin change",
+        "Pareto shift",
+        "Garbled serial not I2C NACK",
+        "Sprint overflow"
+      ]
+    },
+    {
+      "id": "hwf22",
+      "kind": "mcq",
+      "stem": "Oral EXPLAIN of RC with instructor allowed?",
+      "choices": [
+        "AI may fabricate C",
+        "Skip lab",
+        "Print PASS",
+        "Yes; submitted numbers remain student-owned"
+      ]
+    },
+    {
+      "id": "hwf23",
+      "kind": "mcq",
+      "stem": "Course evidence for QEMU success includes?",
+      "choices": [
+        "Sanitized run log excerpt plus JSON",
+        "Nothing",
+        "Only solder video",
+        "Exam dump"
+      ]
+    },
+    {
+      "id": "hwf24",
+      "kind": "mcq",
+      "stem": "Is EMBEDDED_PROTOTYPING removed as a track?",
+      "choices": [
+        "Yes deleted",
+        "No it is integrated here",
+        "Moved to PROFILE",
+        "Mega-PR only"
+      ]
+    }
+  ]
+}

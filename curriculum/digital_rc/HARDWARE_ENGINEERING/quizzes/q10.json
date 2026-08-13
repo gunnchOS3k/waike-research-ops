@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "hw10-1",
+      "kind": "mcq",
+      "stem": "Required symptoms",
+      "choices": [
+        "only fan noise",
+        "only GUI",
+        "only DRC",
+        "rail_sag_3v3 and i2c_nack"
+      ]
+    },
+    {
+      "id": "hw10-2",
+      "kind": "mcq",
+      "stem": "physical_status (week 10 fixture)",
+      "choices": [
+        "PHYSICAL_PENDING",
+        "DONE",
+        "WAIVED",
+        "SOLDERED"
+      ]
+    },
+    {
+      "id": "hw10-3",
+      "kind": "mcq",
+      "stem": "next_probe must",
+      "choices": [
+        "say ignore",
+        "include measure",
+        "say luck",
+        "say AI knows"
+      ]
+    },
+    {
+      "id": "hw10-4",
+      "kind": "mcq",
+      "stem": "Fabricated yield %",
+      "choices": [
+        "Required",
+        "PMI ATP",
+        "Forbidden",
+        "OK"
+      ]
+    },
+    {
+      "id": "hw10-5",
+      "kind": "mcq",
+      "stem": "Subsystem validation uses",
+      "choices": [
+        "Only vibes",
+        "Only soldering",
+        "Exam dumps",
+        "Prior digital lab artifacts"
+      ]
+    },
+    {
+      "id": "hw10-6",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING role",
+      "choices": [
+        "Integrated track in this course",
+        "Deleted",
+        "Separate mega-PR",
+        "PROFILE README"
+      ]
+    }
+  ]
+}

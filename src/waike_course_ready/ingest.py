@@ -143,7 +143,7 @@ def build_product_catalog() -> dict[str, Any]:
         "schema": "waike.course_catalog.ui.v1",
         "full_curriculum_complete": False,
         "owner_repo": "waike-research-ops",
-        "packet": "WAIKE-COURSE-READY-001",
+        "packet": "WAIKE-COURSE-READY-002",
         "courses": courses,
     }
 

@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "SOFTWARE_BUILDER",
+  "lesson_ids": [
+    "SOFTWARE_BUILDER-w01",
+    "SOFTWARE_BUILDER-w02",
+    "SOFTWARE_BUILDER-w03",
+    "SOFTWARE_BUILDER-w04",
+    "SOFTWARE_BUILDER-w05",
+    "SOFTWARE_BUILDER-w06",
+    "SOFTWARE_BUILDER-w07",
+    "SOFTWARE_BUILDER-w08",
+    "SOFTWARE_BUILDER-w09",
+    "SOFTWARE_BUILDER-w10"
+  ],
+  "labs": [
+    "lab_git_conflict",
+    "lab_rest_api",
+    "lab_db_migration",
+    "lab_frontend_ui",
+    "lab_authz",
+    "lab_automated_testing",
+    "lab_github_actions_ci",
+    "lab_deploy_rollback",
+    "lab_security_review",
+    "lab_observability"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

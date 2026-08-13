@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "sw8-1",
+      "kind": "mcq",
+      "stem": "rollback_to equal current",
+      "choices": [
+        "Passes",
+        "Ideal",
+        "Fails \u2014 no real rollback pointer",
+        "Skips health"
+      ]
+    },
+    {
+      "id": "sw8-2",
+      "kind": "mcq",
+      "stem": "Skipping migrate",
+      "choices": [
+        "Passes if healthy",
+        "Faster required",
+        "Zephyr-only",
+        "Fails"
+      ]
+    },
+    {
+      "id": "sw8-3",
+      "kind": "mcq",
+      "stem": "Health must be",
+      "choices": [
+        "healthy after migrate ok",
+        "starting forever",
+        "unhealthy always",
+        "unknown"
+      ]
+    },
+    {
+      "id": "sw8-4",
+      "kind": "mcq",
+      "stem": "Device Lab target",
+      "choices": [
+        "Physical soldering",
+        "Local compose stack",
+        "Prod AWS without review",
+        "Patron laptops"
+      ]
+    },
+    {
+      "id": "sw8-5",
+      "kind": "mcq",
+      "stem": "Image pin uses",
+      "choices": [
+        "latest only",
+        "random UUID",
+        "digest sha256",
+        "MAC"
+      ]
+    },
+    {
+      "id": "sw8-6",
+      "kind": "mcq",
+      "stem": "Capstone requires",
+      "choices": [
+        "Quiz only",
+        "PMI ATP claim",
+        "Soldering",
+        "issue\u2192deployed artifact path"
+      ]
+    }
+  ]
+}

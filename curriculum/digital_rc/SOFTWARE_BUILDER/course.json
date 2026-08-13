@@ -1,0 +1,247 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "SOFTWARE_BUILDER",
+  "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+  "track_ids": [
+    "SOFTWARE_BUILDER"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Merge a real conflict, ship a checkout API, and pin a digest on local Device Lab compose.",
+  "lesson_excerpt": "The WAIKE Software ForgeDesk is a two-person civic issue tracker for Device Lab checkouts. Ticket 8801 opens when a volunteer edits routes.py on feature/kiosk-hours while the desk lead edited the same function on main. A conflict is not a personality crisis. It is two hashes that claim the same lines. You will read both sides, keep the authz guard that main added, and keep the hours table that the",
+  "worked_example": "Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens.",
+  "assignment": "Write a conflict report for ticket 8801 naming both parents, survivor tokens, and one wrong resolution the lab must fail.",
+  "lab_hint": "lab_git_conflict",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "ForgeDesk ticket 8801 \u2014 git conflict on the deploy branch",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w01",
+        "title": "ForgeDesk ticket 8801 \u2014 git conflict on the deploy branch",
+        "body_md": "The WAIKE Software ForgeDesk is a two-person civic issue tracker for Device Lab checkouts. Ticket 8801 opens when a volunteer edits routes.py on feature/kiosk-hours while the desk lead edited the same function on main. A conflict is not a personality crisis. It is two hashes that claim the same lines. You will read both sides, keep the authz guard that main added, and keep the hours table that the feature branch added.\n\nBranch names in this course are contracts. main is always deployable to the local Device Lab compose stack. Feature branches must merge with an explicit conflict report JSON that names the surviving function signature. The lab rejects a resolution that drops require_role or that keeps both copies as _v1 and _v2 without a test.\n\nCS50 Web Git week is a structure citation only. Harvard lab text stays at Harvard. WAIKE conflict fixture is original: two parents, one file, one required survivor set. Publicly viewable is not free to copy. AI mode for practice drills: PRACTICE; for the graded conflict report: AI_DISCLOSED if you used HINT.",
+        "worked_example": "Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens."
+      },
+      "lab_id": "lab_git_conflict"
+    },
+    {
+      "week": 2,
+      "title": "REST for checkout \u2014 status codes that mean something",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w02",
+        "title": "REST for checkout \u2014 status codes that mean something",
+        "body_md": "ForgeDesk exposes /api/v1/checkouts. GET inventing a device returns 404 with a stable error body, not 200 with null. POST without device_id returns 400. POST from reader role against a write route returns 403. Successful POST returns 201 and Location /api/v1/checkouts/{id}.\n\nYou will build a route table in JSON and prove each case. The lab computes expected status from method, path, role, and body keys. Idempotent PUT on the same checkout id must not mint a second row.\n\nSecure-development practice: validate input before storage, return problem-style errors without stack traces, never echo secrets. GitHub Actions will later call these routes in CI against an in-memory store.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "POST as reader with device_id \u2192 403. POST as desk missing device_id \u2192 400. GET missing \u2192 404. Create \u2192 201."
+      },
+      "lab_id": "lab_rest_api"
+    },
+    {
+      "week": 3,
+      "title": "Migrations that do not strand the Device Lab",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w03",
+        "title": "Migrations that do not strand the Device Lab",
+        "body_md": "Checkout rows live in SQLite for local Device Lab and Postgres in staging. Week 3 is migration discipline. Migration 0003_add_returned_at must add a nullable timestamp, bump schema_version to 3, and leave a down migration that drops the column without deleting checkout history.\n\nA migration that hard-codes production passwords fails. A migration that DELETE FROM checkouts to make room fails. CS50 Web SQL/models week is a domain label only. Fixture SQL is original WAIKE wording for ForgeDesk.\n\nAssessment mode AI_RESTRICTED for the SQL artifact: you may use EXPLAIN orally with an instructor, but the submitted forward/down SQL must be authored without generative paste.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Forward adds returned_at TIMESTAMP NULL; schema_version=3; down drops returned_at only."
+      },
+      "lab_id": "lab_db_migration"
+    },
+    {
+      "week": 4,
+      "title": "Frontend contract \u2014 accessible checkout board",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w04",
+        "title": "Frontend contract \u2014 accessible checkout board",
+        "body_md": "The ForgeDesk board is a single HTML page with a table of checkouts. Accessibility is not a slide. Every overdue signal needs text marker OVERDUE, not color alone. The filter must be a button named Filter overdue. API failures render in a role=alert region.\n\nThe lab parses a DOM-like JSON tree. Broken API JSON must not fail silently. This is original WAIKE UI work, not a CS50 project port.\n\nAI mode COMPARE_APPROACHES allowed when weighing table vs card layouts; disclose the comparison in the assignment footer.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Tree includes button Filter overdue, table, OVERDUE text for ring-7, and role=alert."
+      },
+      "lab_id": "lab_frontend_ui"
+    },
+    {
+      "week": 5,
+      "title": "Authz matrix \u2014 desk vs reader vs forge-bot",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w05",
+        "title": "Authz matrix \u2014 desk vs reader vs forge-bot",
+        "body_md": "Roles: desk can create and close checkouts. reader can GET only. forge-bot can annotate but cannot close. The lab evaluates an action matrix. Granting forge-bot checkout.close is the package negative.\n\nAI-use mode REVIEW_MY_WORK: assistants may critique your matrix; the submitted JSON is yours and AI assistance must be disclosed (AI_DISCLOSED).\n\nDistinct vocabulary from Harbor SOC avoids noun-swapped templates across batches.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "desk:{create,close,read}; reader:{read}; forge-bot:{annotate}. Bot close fails."
+      },
+      "lab_id": "lab_authz"
+    },
+    {
+      "week": 6,
+      "title": "Automated tests that catch the silent 200",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w06",
+        "title": "Automated tests that catch the silent 200",
+        "body_md": "A test suite is a contract. Parse a JUnit-like JSON report: total, failed, skipped. Lab requires failed==0, total>=8, and named test test_reader_post_forbidden passed. A green badge PNG is not evidence.\n\nAligns to CS50 Web testing/CI themes and secure-dev prove-the-negative-path. Original ForgeDesk test names only.\n\nNO_AI on the practical portion of this week's quiz makeup if offered.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Report total=10 failed=0 skipped=1 includes test_reader_post_forbidden passed=true."
+      },
+      "lab_id": "lab_automated_testing"
+    },
+    {
+      "week": 7,
+      "title": "GitHub Actions \u2014 CI that blocks bad merges",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w07",
+        "title": "GitHub Actions \u2014 CI that blocks bad merges",
+        "body_md": "Workflow forge-ci must run on pull_request, lint, test, and upload the report artifact. Lab validates workflow JSON: triggers, ordered jobs, and deploy not on PR without environment gate. Echo PASS fails.\n\nGitHub Actions docs are PUBLIC_REFERENCE_ONLY. We write our own workflow model. AI mode DEBUG_WITH_ME allowed on red workflows with disclosure.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "on:[pull_request]; jobs lint \u2192 test \u2192 upload-report; no ungated deploy on PR."
+      },
+      "lab_id": "lab_github_actions_ci"
+    },
+    {
+      "week": 8,
+      "title": "Deploy and rollback on Device Lab compose",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w08",
+        "title": "Deploy and rollback on Device Lab compose",
+        "body_md": "Deploy pins image digest sha256:\u2026 to local compose and writes rollback pointer to previous digest. Lab checks rollback_to != current and health healthy only after migrate=ok. Skipping migrate fails.\n\nPhysical flashing out of scope; Device Lab here is digital compose. Capstone preview: issue through deploy artifact path.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "current=sha256:aaa rollback_to=sha256:bbb migrate=ok health=healthy."
+      },
+      "lab_id": "lab_deploy_rollback"
+    },
+    {
+      "week": 9,
+      "title": "Security review \u2014 findings with severity bands",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w09",
+        "title": "Security review \u2014 findings with severity bands",
+        "body_md": "Review ForgeDesk for IDOR on checkout ids, missing login rate limit, verbose 500s. Lab scores findings: id, severity band, evidence. At least one high/critical for intentional IDOR fixture. Empty 'looks fine' fails.\n\nOWASP ASVS themes are domain labels \u2014 no copied item banks. Practical assessment mode: NO_AI.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Findings include FORGE-IDOR-1 severity=high with evidence lacking owner check."
+      },
+      "lab_id": "lab_security_review"
+    },
+    {
+      "week": 10,
+      "title": "Observability and issue\u2192deploy capstone",
+      "lesson": {
+        "lesson_id": "SOFTWARE_BUILDER-w10",
+        "title": "Observability and issue\u2192deploy capstone",
+        "body_md": "SLO: checkout API availability 99.5% over fixture window. Compute error budget from failed/total. Capstone: real ForgeDesk issue fixture through branch, CI, migrate, deploy, observability note. No fabricated community impact numbers.\n\nCareer map: junior software builder / Device Lab integrator. Certs aligned not granted. Academic: CS50/CS50 Web structure citations only.\n\nAI modes used across the course must appear in the capstone disclosure table: EXPLAIN/HINT/QUESTION_ME/DEBUG_WITH_ME/REVIEW_MY_WORK/COMPARE_APPROACHES/PRACTICE mapped to assessment modes AI_ALLOWED / AI_RESTRICTED / AI_DISCLOSED / NO_AI.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "failed=50 total=10000 \u2192 availability=0.995; budget_ok true."
+      },
+      "lab_id": "lab_observability"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_git_conflict",
+    "lab_rest_api",
+    "lab_db_migration",
+    "lab_frontend_ui",
+    "lab_authz",
+    "lab_automated_testing",
+    "lab_github_actions_ci",
+    "lab_deploy_rollback",
+    "lab_security_review",
+    "lab_observability"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "SOFTWARE_BUILDER-lab",
+    "SOFTWARE_BUILDER-assignment",
+    "SOFTWARE_BUILDER-quiz",
+    "SOFTWARE_BUILDER-mid",
+    "SOFTWARE_BUILDER-final-knowledge",
+    "SOFTWARE_BUILDER-practical",
+    "SOFTWARE_BUILDER-project",
+    "SOFTWARE_BUILDER-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_software_builder",
+      "device_lab_integrator"
+    ],
+    "certs_aligned_not_granted": [],
+    "academic_alignment": [
+      "Harvard CS50",
+      "CS50 Web"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/software_builder_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "notes": "Weekly defaults AI_DISCLOSED for critiques; security practical NO_AI; migration SQL AI_RESTRICTED."
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

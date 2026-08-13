@@ -4,8 +4,14 @@ from __future__ import annotations
 from typing import Any
 
 from waike_course_ready.labs import COURSE_LABS, LAB_SPECS
+from waike_course_ready.batch002.packaging import (
+    SYLLABUS_ASSESSMENT_002, SYLLABUS_CLAIM_002, SYLLABUS_DURATION_002,
+    rubrics_002, lab_readme_002, instructor_week_notes_002, presentation_002,
+    instructor_packet_002, student_packet_002, group_project_002, portfolio_002,
+)
 
 SYLLABUS_ASSESSMENT = {
+    **SYLLABUS_ASSESSMENT_002,
     "GENERAL_IT": (
         "Civic Tech Desk assessment mix: weekly operator quizzes (ticket 4417/4502 numbers, "
         "not vendor stems), a mid-course desk audit (20 original items on accounts/storage/"
@@ -32,6 +38,7 @@ SYLLABUS_ASSESSMENT = {
 }
 
 SYLLABUS_DURATION = {
+    **SYLLABUS_DURATION_002,
     "GENERAL_IT": (
         "Ten public-desk weeks (about 6–8 hours/week including Saturday volunteer shadow). "
         "Not a two-hour 'computers' workshop. Dual-boot kiosk time is scheduled; do not "
@@ -48,6 +55,7 @@ SYLLABUS_DURATION = {
 }
 
 SYLLABUS_CLAIM = {
+    **SYLLABUS_CLAIM_002,
     "GENERAL_IT": (
         "Aligns to Google IT Support themes and CompTIA A+ V15 220-1201/1202 domain names. "
         "Does not grant those credentials. Instructor keys stay out of the learner packet."
@@ -66,6 +74,8 @@ SYLLABUS_CLAIM = {
 
 
 def rubrics(course_id: str) -> list[dict[str, Any]]:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return rubrics_002(course_id)
     if course_id == "GENERAL_IT":
         return [
             {"rubric_id": "GENERAL_IT-lab", "title": "Civic desk lab", "criteria": [
@@ -193,6 +203,8 @@ def rubrics(course_id: str) -> list[dict[str, Any]]:
 
 
 def lab_readme(course_id: str, lab_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return lab_readme_002(course_id, lab_id)
     spec = LAB_SPECS[lab_id]
     if course_id == "GENERAL_IT":
         how = (
@@ -237,6 +249,8 @@ def lab_readme(course_id: str, lab_id: str) -> str:
 
 
 def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return instructor_week_notes_002(course_id, week)
     n = week["week"]
     lab = week["lab_id"]
     if course_id == "GENERAL_IT":
@@ -301,6 +315,8 @@ def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
 
 
 def presentation(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return presentation_002(course_id, week)
     n = week["week"]
     if course_id == "GENERAL_IT":
         slide3 = "Put 1200 seconds, 15% free, and CHG window 18:00–21:00 on the board. Sit in silence until someone does the arithmetic."
@@ -332,6 +348,8 @@ def presentation(course_id: str, week: dict[str, Any]) -> str:
 
 
 def instructor_packet(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return instructor_packet_002(course_id)
     if course_id == "GENERAL_IT":
         return (
             "# Instructor packet — Civic Tech Desk\n\n"
@@ -360,6 +378,8 @@ def instructor_packet(course_id: str) -> str:
 
 
 def student_packet(course_id: str, hook: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return student_packet_002(course_id, hook)
     if course_id == "GENERAL_IT":
         extra = "You will submit user tables, restore hashes, and change records. You will not receive keys."
     elif course_id == "COMPUTER_NETWORKING":
@@ -370,6 +390,8 @@ def student_packet(course_id: str, hook: str) -> str:
 
 
 def group_project(course_id: str, title: str, assignment: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return group_project_002(course_id, title, assignment)
     if course_id == "GENERAL_IT":
         extra = "Roles: operator and recorder. Swap at 30 minutes. Notes that require the operator's memory fail."
     elif course_id == "COMPUTER_NETWORKING":
@@ -380,6 +402,8 @@ def group_project(course_id: str, title: str, assignment: str) -> str:
 
 
 def portfolio(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_002:
+        return portfolio_002(course_id)
     if course_id == "GENERAL_IT":
         return "# Portfolio — Civic Tech Desk\n\nShip restore hash, CHG-88, and a no-face desk tour. No PII.\n"
     if course_id == "COMPUTER_NETWORKING":

@@ -1,0 +1,18 @@
+{
+  "modes": [
+    "EXPLAIN",
+    "HINT",
+    "QUESTION_ME",
+    "DEBUG_WITH_ME",
+    "REVIEW_MY_WORK",
+    "COMPARE_APPROACHES",
+    "PRACTICE"
+  ],
+  "assessment_modes": [
+    "AI_ALLOWED",
+    "AI_RESTRICTED",
+    "AI_DISCLOSED",
+    "NO_AI"
+  ],
+  "notes": "AI plan critique requires AI_DISCLOSED true; chart math NO_AI; never invent community outcomes."
+}

@@ -1,0 +1,2766 @@
+{
+  "SOFTWARE_BUILDER": {
+    "course_id": "SOFTWARE_BUILDER",
+    "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+    "track_ids": [
+      "SOFTWARE_BUILDER"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Merge a real conflict, ship a checkout API, and pin a digest on local Device Lab compose.",
+    "syllabus_hook": "Ten weeks on ForgeDesk: git conflict, REST, migrations, accessible UI, authz, tests, GitHub Actions, deploy/rollback, security review, observability. Capstone is issue\u2192deployed local/Device-Lab artifact. CS50/CS50 Web and Actions docs are structure citations only. No dumps.",
+    "career": {
+      "roles": [
+        "junior_software_builder",
+        "device_lab_integrator"
+      ],
+      "certs_aligned_not_granted": [],
+      "academic_alignment": [
+        "Harvard CS50",
+        "CS50 Web"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "notes": "Weekly defaults AI_DISCLOSED for critiques; security practical NO_AI; migration SQL AI_RESTRICTED."
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "ForgeDesk ticket 8801 \u2014 git conflict on the deploy branch",
+        "lesson": "The WAIKE Software ForgeDesk is a two-person civic issue tracker for Device Lab checkouts. Ticket 8801 opens when a volunteer edits routes.py on feature/kiosk-hours while the desk lead edited the same function on main. A conflict is not a personality crisis. It is two hashes that claim the same lines. You will read both sides, keep the authz guard that main added, and keep the hours table that the feature branch added.\n\nBranch names in this course are contracts. main is always deployable to the local Device Lab compose stack. Feature branches must merge with an explicit conflict report JSON that names the surviving function signature. The lab rejects a resolution that drops require_role or that keeps both copies as _v1 and _v2 without a test.\n\nCS50 Web Git week is a structure citation only. Harvard lab text stays at Harvard. WAIKE conflict fixture is original: two parents, one file, one required survivor set. Publicly viewable is not free to copy. AI mode for practice drills: PRACTICE; for the graded conflict report: AI_DISCLOSED if you used HINT.",
+        "worked_example": "Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens.",
+        "assignment": "Write a conflict report for ticket 8801 naming both parents, survivor tokens, and one wrong resolution the lab must fail.",
+        "lab_id": "lab_git_conflict",
+        "quiz": [
+          {
+            "id": "sw1-1",
+            "kind": "mcq",
+            "stem": "Ticket 8801 keeps only the feature side. What is missing?",
+            "choices": [
+              "Missing require_role authz guard",
+              "Deploy latency",
+              "DNS TTL",
+              "Printer spool"
+            ],
+            "answer_index": 0,
+            "explanation": "Main added the guard."
+          },
+          {
+            "id": "sw1-2",
+            "kind": "mcq",
+            "stem": "Why forbid open_hours_v1 and open_hours_v2?",
+            "choices": [
+              "Hides unresolved contract / breaks single entrypoint",
+              "Python forbids two defs",
+              "Git cannot store two defs",
+              "Docker ignores both"
+            ],
+            "answer_index": 0,
+            "explanation": "One entrypoint."
+          },
+          {
+            "id": "sw1-3",
+            "kind": "mcq",
+            "stem": "CS50 Web Git reuse class?",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY",
+              "OPEN_LICENSE_ADAPT_ALLOWED",
+              "FREE_TO_COPY",
+              "UNKNOWN"
+            ],
+            "answer_index": 0,
+            "explanation": "Structure only."
+          },
+          {
+            "id": "sw1-4",
+            "kind": "mcq",
+            "stem": "Resolution JSON omitting parent SHAs should",
+            "choices": [
+              "Fail the lab contract",
+              "Pass if file looks right",
+              "Auto-rebase",
+              "Skip CI"
+            ],
+            "answer_index": 0,
+            "explanation": "Parents are evidence."
+          },
+          {
+            "id": "sw1-5",
+            "kind": "mcq",
+            "stem": "main on ForgeDesk means",
+            "choices": [
+              "Always deployable to local Device Lab compose",
+              "Always broken",
+              "Draft only",
+              "Mirror of Issues"
+            ],
+            "answer_index": 0,
+            "explanation": "Deployable."
+          },
+          {
+            "id": "sw1-6",
+            "kind": "mcq",
+            "stem": "Take theirs without reading is wrong because",
+            "choices": [
+              "You may drop required tokens from the other side",
+              "Theirs is always main",
+              "Git deletes history",
+              "Compose cannot start"
+            ],
+            "answer_index": 0,
+            "explanation": "Read both."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "REST for checkout \u2014 status codes that mean something",
+        "lesson": "ForgeDesk exposes /api/v1/checkouts. GET inventing a device returns 404 with a stable error body, not 200 with null. POST without device_id returns 400. POST from reader role against a write route returns 403. Successful POST returns 201 and Location /api/v1/checkouts/{id}.\n\nYou will build a route table in JSON and prove each case. The lab computes expected status from method, path, role, and body keys. Idempotent PUT on the same checkout id must not mint a second row.\n\nSecure-development practice: validate input before storage, return problem-style errors without stack traces, never echo secrets. GitHub Actions will later call these routes in CI against an in-memory store.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "POST as reader with device_id \u2192 403. POST as desk missing device_id \u2192 400. GET missing \u2192 404. Create \u2192 201.",
+        "assignment": "Author five route cases for ticket 8802 covering 201/400/403/404 and store-length=1 after idempotent PUT.",
+        "lab_id": "lab_rest_api",
+        "quiz": [
+          {
+            "id": "sw2-1",
+            "kind": "mcq",
+            "stem": "Reader POST to write checkout route returns",
+            "choices": [
+              "403",
+              "200",
+              "201",
+              "500"
+            ],
+            "answer_index": 0,
+            "explanation": "Authz."
+          },
+          {
+            "id": "sw2-2",
+            "kind": "mcq",
+            "stem": "Successful create returns",
+            "choices": [
+              "201 with location shape",
+              "200 empty",
+              "204 only",
+              "302"
+            ],
+            "answer_index": 0,
+            "explanation": "Create."
+          },
+          {
+            "id": "sw2-3",
+            "kind": "mcq",
+            "stem": "GET missing id returns",
+            "choices": [
+              "404 stable error",
+              "200 null",
+              "401",
+              "418"
+            ],
+            "answer_index": 0,
+            "explanation": "Honest 404."
+          },
+          {
+            "id": "sw2-4",
+            "kind": "mcq",
+            "stem": "PUT same id twice should",
+            "choices": [
+              "Keep store length 1",
+              "Create two rows",
+              "Wipe DB",
+              "Return 500"
+            ],
+            "answer_index": 0,
+            "explanation": "Idempotent."
+          },
+          {
+            "id": "sw2-5",
+            "kind": "mcq",
+            "stem": "Submission string PASS alone",
+            "choices": [
+              "Fails _fail_if_print_pass",
+              "Passes",
+              "Required",
+              "Docker health"
+            ],
+            "answer_index": 0,
+            "explanation": "Honesty."
+          },
+          {
+            "id": "sw2-6",
+            "kind": "mcq",
+            "stem": "Stack traces in API errors are",
+            "choices": [
+              "Leak risk; use stable bodies",
+              "Helpful for patrons",
+              "Required by REST",
+              "Needed for CORS"
+            ],
+            "answer_index": 0,
+            "explanation": "No internals."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Migrations that do not strand the Device Lab",
+        "lesson": "Checkout rows live in SQLite for local Device Lab and Postgres in staging. Week 3 is migration discipline. Migration 0003_add_returned_at must add a nullable timestamp, bump schema_version to 3, and leave a down migration that drops the column without deleting checkout history.\n\nA migration that hard-codes production passwords fails. A migration that DELETE FROM checkouts to make room fails. CS50 Web SQL/models week is a domain label only. Fixture SQL is original WAIKE wording for ForgeDesk.\n\nAssessment mode AI_RESTRICTED for the SQL artifact: you may use EXPLAIN orally with an instructor, but the submitted forward/down SQL must be authored without generative paste.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Forward adds returned_at TIMESTAMP NULL; schema_version=3; down drops returned_at only.",
+        "assignment": "Write forward and down SQL for 0003; explain why DELETE FROM checkouts is forbidden.",
+        "lab_id": "lab_db_migration",
+        "quiz": [
+          {
+            "id": "sw3-1",
+            "kind": "mcq",
+            "stem": "schema_version after 0003",
+            "choices": [
+              "3",
+              "2",
+              "0",
+              "null"
+            ],
+            "answer_index": 0,
+            "explanation": "Bump."
+          },
+          {
+            "id": "sw3-2",
+            "kind": "mcq",
+            "stem": "returned_at should be",
+            "choices": [
+              "NULL-able timestamp",
+              "NOT NULL forced",
+              "Primary key",
+              "BLOB"
+            ],
+            "answer_index": 0,
+            "explanation": "Nullable."
+          },
+          {
+            "id": "sw3-3",
+            "kind": "mcq",
+            "stem": "Down migration may",
+            "choices": [
+              "Drop only returned_at",
+              "DROP DATABASE",
+              "DELETE all users",
+              "Truncate logs"
+            ],
+            "answer_index": 0,
+            "explanation": "Column only."
+          },
+          {
+            "id": "sw3-4",
+            "kind": "mcq",
+            "stem": "Hard-coded DB password in SQL",
+            "choices": [
+              "Fails security boundary",
+              "Fine for labs",
+              "Required",
+              "Helps CI"
+            ],
+            "answer_index": 0,
+            "explanation": "No secrets."
+          },
+          {
+            "id": "sw3-5",
+            "kind": "mcq",
+            "stem": "DELETE FROM checkouts to make room",
+            "choices": [
+              "Fails \u2014 destroys history",
+              "Passes if commented",
+              "Is down path",
+              "CS50 requires"
+            ],
+            "answer_index": 0,
+            "explanation": "No wipe."
+          },
+          {
+            "id": "sw3-6",
+            "kind": "mcq",
+            "stem": "Why hash forward SQL?",
+            "choices": [
+              "Prove real statement submitted",
+              "Fashion",
+              "Postgres requires",
+              "Volumes"
+            ],
+            "answer_index": 0,
+            "explanation": "Evidence."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Frontend contract \u2014 accessible checkout board",
+        "lesson": "The ForgeDesk board is a single HTML page with a table of checkouts. Accessibility is not a slide. Every overdue signal needs text marker OVERDUE, not color alone. The filter must be a button named Filter overdue. API failures render in a role=alert region.\n\nThe lab parses a DOM-like JSON tree. Broken API JSON must not fail silently. This is original WAIKE UI work, not a CS50 project port.\n\nAI mode COMPARE_APPROACHES allowed when weighing table vs card layouts; disclose the comparison in the assignment footer.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Tree includes button Filter overdue, table, OVERDUE text for ring-7, and role=alert.",
+        "assignment": "Submit UI tree JSON and a screenshot-free note on the alert region.",
+        "lab_id": "lab_frontend_ui",
+        "quiz": [
+          {
+            "id": "sw4-1",
+            "kind": "mcq",
+            "stem": "Overdue only via red CSS",
+            "choices": [
+              "Fails \u2014 need OVERDUE text too",
+              "Passes a11y",
+              "Required by HTML5",
+              "Blocks CI"
+            ],
+            "answer_index": 0,
+            "explanation": "Not color alone."
+          },
+          {
+            "id": "sw4-2",
+            "kind": "mcq",
+            "stem": "Filter control should be",
+            "choices": [
+              "Button named Filter overdue",
+              "div onclick only",
+              "hidden span",
+              "canvas"
+            ],
+            "answer_index": 0,
+            "explanation": "Named button."
+          },
+          {
+            "id": "sw4-3",
+            "kind": "mcq",
+            "stem": "API error rendering needs",
+            "choices": [
+              "role=alert region",
+              "alert() only",
+              "console.log only",
+              "Email staff"
+            ],
+            "answer_index": 0,
+            "explanation": "Alert."
+          },
+          {
+            "id": "sw4-4",
+            "kind": "mcq",
+            "stem": "Why JSON tree not PNG?",
+            "choices": [
+              "Validator computes structure",
+              "PNG illegal",
+              "GitHub bans PNG",
+              "CSS untestable"
+            ],
+            "answer_index": 0,
+            "explanation": "Computable."
+          },
+          {
+            "id": "sw4-5",
+            "kind": "mcq",
+            "stem": "ring-7 late means",
+            "choices": [
+              "Include OVERDUE text in row",
+              "Hide row",
+              "Delete device",
+              "Return 500"
+            ],
+            "answer_index": 0,
+            "explanation": "Visible."
+          },
+          {
+            "id": "sw4-6",
+            "kind": "mcq",
+            "stem": "CS50 UI week is",
+            "choices": [
+              "Domain alignment label only",
+              "Copied project",
+              "Exam dump",
+              "Republish license"
+            ],
+            "answer_index": 0,
+            "explanation": "No copy."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Authz matrix \u2014 desk vs reader vs forge-bot",
+        "lesson": "Roles: desk can create and close checkouts. reader can GET only. forge-bot can annotate but cannot close. The lab evaluates an action matrix. Granting forge-bot checkout.close is the package negative.\n\nAI-use mode REVIEW_MY_WORK: assistants may critique your matrix; the submitted JSON is yours and AI assistance must be disclosed (AI_DISCLOSED).\n\nDistinct vocabulary from Harbor SOC avoids noun-swapped templates across batches.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "desk:{create,close,read}; reader:{read}; forge-bot:{annotate}. Bot close fails.",
+        "assignment": "Draw matrix for ticket 8805; list one AI critique accepted or rejected.",
+        "lab_id": "lab_authz",
+        "quiz": [
+          {
+            "id": "sw5-1",
+            "kind": "mcq",
+            "stem": "forge-bot with checkout.close",
+            "choices": [
+              "Fails bot_no_close",
+              "Passes",
+              "Required",
+              "Friday only"
+            ],
+            "answer_index": 0,
+            "explanation": "No close."
+          },
+          {
+            "id": "sw5-2",
+            "kind": "mcq",
+            "stem": "reader may",
+            "choices": [
+              "read",
+              "create",
+              "close",
+              "drop schema"
+            ],
+            "answer_index": 0,
+            "explanation": "Read."
+          },
+          {
+            "id": "sw5-3",
+            "kind": "mcq",
+            "stem": "REVIEW_MY_WORK means",
+            "choices": [
+              "AI critiques; you own artifact and disclose",
+              "AI submits for you",
+              "No AI",
+              "AI rewrites stems"
+            ],
+            "answer_index": 0,
+            "explanation": "Disclose."
+          },
+          {
+            "id": "sw5-4",
+            "kind": "mcq",
+            "stem": "desk without create",
+            "choices": [
+              "Fails desk_can_create",
+              "Fine",
+              "Auto-heals",
+              "Is reader"
+            ],
+            "answer_index": 0,
+            "explanation": "Desk writes."
+          },
+          {
+            "id": "sw5-5",
+            "kind": "mcq",
+            "stem": "Authz checks happen",
+            "choices": [
+              "Before mutating storage",
+              "After DB write",
+              "Only UI",
+              "Only DNS"
+            ],
+            "answer_index": 0,
+            "explanation": "Before."
+          },
+          {
+            "id": "sw5-6",
+            "kind": "mcq",
+            "stem": "Why not Harbor bot names?",
+            "choices": [
+              "Distinct product vocabulary anti-template",
+              "Accident",
+              "PMI requires",
+              "Zephyr requires"
+            ],
+            "answer_index": 0,
+            "explanation": "Anti-template."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Automated tests that catch the silent 200",
+        "lesson": "A test suite is a contract. Parse a JUnit-like JSON report: total, failed, skipped. Lab requires failed==0, total>=8, and named test test_reader_post_forbidden passed. A green badge PNG is not evidence.\n\nAligns to CS50 Web testing/CI themes and secure-dev prove-the-negative-path. Original ForgeDesk test names only.\n\nNO_AI on the practical portion of this week's quiz makeup if offered.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Report total=10 failed=0 skipped=1 includes test_reader_post_forbidden passed=true.",
+        "assignment": "Author eight test names mapping to status-code cases; submit passing report JSON.",
+        "lab_id": "lab_automated_testing",
+        "quiz": [
+          {
+            "id": "sw6-1",
+            "kind": "mcq",
+            "stem": "failed must be",
+            "choices": [
+              "0",
+              "any",
+              "equal total",
+              "9"
+            ],
+            "answer_index": 0,
+            "explanation": "All pass."
+          },
+          {
+            "id": "sw6-2",
+            "kind": "mcq",
+            "stem": "total>=8 means",
+            "choices": [
+              "At least eight tests ran",
+              "Eight browsers",
+              "Eight servers",
+              "Eight certs"
+            ],
+            "answer_index": 0,
+            "explanation": "Floor."
+          },
+          {
+            "id": "sw6-3",
+            "kind": "mcq",
+            "stem": "Missing named forbidden test",
+            "choices": [
+              "Fails named_test check",
+              "Passes if total high",
+              "Optional",
+              "PNG ok"
+            ],
+            "answer_index": 0,
+            "explanation": "Named."
+          },
+          {
+            "id": "sw6-4",
+            "kind": "mcq",
+            "stem": "Green badge PNG alone",
+            "choices": [
+              "Fails \u2014 need computable report",
+              "Passes",
+              "Replaces JUnit",
+              "OWASP"
+            ],
+            "answer_index": 0,
+            "explanation": "JSON."
+          },
+          {
+            "id": "sw6-5",
+            "kind": "mcq",
+            "stem": "Negative-path tests matter because",
+            "choices": [
+              "Silent 200 on forbidden writes is a security bug",
+              "They slow CI",
+              "PMI requires",
+              "SPICE needs"
+            ],
+            "answer_index": 0,
+            "explanation": "Authz."
+          },
+          {
+            "id": "sw6-6",
+            "kind": "mcq",
+            "stem": "Skipped tests",
+            "choices": [
+              "May be >0 if failed is 0",
+              "Must be zero",
+              "Delete suite",
+              "Force deploy"
+            ],
+            "answer_index": 0,
+            "explanation": "Skip ok."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "GitHub Actions \u2014 CI that blocks bad merges",
+        "lesson": "Workflow forge-ci must run on pull_request, lint, test, and upload the report artifact. Lab validates workflow JSON: triggers, ordered jobs, and deploy not on PR without environment gate. Echo PASS fails.\n\nGitHub Actions docs are PUBLIC_REFERENCE_ONLY. We write our own workflow model. AI mode DEBUG_WITH_ME allowed on red workflows with disclosure.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "on:[pull_request]; jobs lint \u2192 test \u2192 upload-report; no ungated deploy on PR.",
+        "assignment": "Submit workflow model JSON and note one CI failure fixed.",
+        "lab_id": "lab_github_actions_ci",
+        "quiz": [
+          {
+            "id": "sw7-1",
+            "kind": "mcq",
+            "stem": "PR workflow must include",
+            "choices": [
+              "test job",
+              "prod destroy",
+              "manual FTP",
+              "SSH patrons"
+            ],
+            "answer_index": 0,
+            "explanation": "Tests."
+          },
+          {
+            "id": "sw7-2",
+            "kind": "mcq",
+            "stem": "Echo-only PASS step",
+            "choices": [
+              "Fails honesty",
+              "Passes",
+              "GitHub default",
+              "Skips lint"
+            ],
+            "answer_index": 0,
+            "explanation": "No PASS."
+          },
+          {
+            "id": "sw7-3",
+            "kind": "mcq",
+            "stem": "Ungoverned deploy on pull_request",
+            "choices": [
+              "Fails gate check",
+              "Best practice",
+              "CS50 requires",
+              "SPICE needs"
+            ],
+            "answer_index": 0,
+            "explanation": "Gate."
+          },
+          {
+            "id": "sw7-4",
+            "kind": "mcq",
+            "stem": "Actions docs reuse class",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY",
+              "FREE_COPY",
+              "ATP",
+              "DRM bypass"
+            ],
+            "answer_index": 0,
+            "explanation": "Reference."
+          },
+          {
+            "id": "sw7-5",
+            "kind": "mcq",
+            "stem": "lint before test",
+            "choices": [
+              "Required so broken style fails fast",
+              "Optional",
+              "Forbidden",
+              "Only on main"
+            ],
+            "answer_index": 0,
+            "explanation": "Order."
+          },
+          {
+            "id": "sw7-6",
+            "kind": "mcq",
+            "stem": "DEBUG_WITH_ME allows",
+            "choices": [
+              "Collaborative debugging with disclosure",
+              "Secret exfiltration",
+              "Key sharing",
+              "Skipping tests"
+            ],
+            "answer_index": 0,
+            "explanation": "Disclosed."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Deploy and rollback on Device Lab compose",
+        "lesson": "Deploy pins image digest sha256:\u2026 to local compose and writes rollback pointer to previous digest. Lab checks rollback_to != current and health healthy only after migrate=ok. Skipping migrate fails.\n\nPhysical flashing out of scope; Device Lab here is digital compose. Capstone preview: issue through deploy artifact path.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "current=sha256:aaa rollback_to=sha256:bbb migrate=ok health=healthy.",
+        "assignment": "Write deploy record for build 44 and rollback drill note with digests.",
+        "lab_id": "lab_deploy_rollback",
+        "quiz": [
+          {
+            "id": "sw8-1",
+            "kind": "mcq",
+            "stem": "rollback_to equal current",
+            "choices": [
+              "Fails \u2014 no real rollback pointer",
+              "Passes",
+              "Ideal",
+              "Skips health"
+            ],
+            "answer_index": 0,
+            "explanation": "Need prior."
+          },
+          {
+            "id": "sw8-2",
+            "kind": "mcq",
+            "stem": "Skipping migrate",
+            "choices": [
+              "Fails",
+              "Passes if healthy",
+              "Faster required",
+              "Zephyr-only"
+            ],
+            "answer_index": 0,
+            "explanation": "Migrate."
+          },
+          {
+            "id": "sw8-3",
+            "kind": "mcq",
+            "stem": "Health must be",
+            "choices": [
+              "healthy after migrate ok",
+              "starting forever",
+              "unhealthy always",
+              "unknown"
+            ],
+            "answer_index": 0,
+            "explanation": "Healthy."
+          },
+          {
+            "id": "sw8-4",
+            "kind": "mcq",
+            "stem": "Device Lab target",
+            "choices": [
+              "Local compose stack",
+              "Physical soldering",
+              "Prod AWS without review",
+              "Patron laptops"
+            ],
+            "answer_index": 0,
+            "explanation": "Compose."
+          },
+          {
+            "id": "sw8-5",
+            "kind": "mcq",
+            "stem": "Image pin uses",
+            "choices": [
+              "digest sha256",
+              "latest only",
+              "random UUID",
+              "MAC"
+            ],
+            "answer_index": 0,
+            "explanation": "Digest."
+          },
+          {
+            "id": "sw8-6",
+            "kind": "mcq",
+            "stem": "Capstone requires",
+            "choices": [
+              "issue\u2192deployed artifact path",
+              "Quiz only",
+              "PMI ATP claim",
+              "Soldering"
+            ],
+            "answer_index": 0,
+            "explanation": "Path."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Security review \u2014 findings with severity bands",
+        "lesson": "Review ForgeDesk for IDOR on checkout ids, missing login rate limit, verbose 500s. Lab scores findings: id, severity band, evidence. At least one high/critical for intentional IDOR fixture. Empty 'looks fine' fails.\n\nOWASP ASVS themes are domain labels \u2014 no copied item banks. Practical assessment mode: NO_AI.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "Findings include FORGE-IDOR-1 severity=high with evidence lacking owner check.",
+        "assignment": "Submit findings JSON and one-page remediation order.",
+        "lab_id": "lab_security_review",
+        "quiz": [
+          {
+            "id": "sw9-1",
+            "kind": "mcq",
+            "stem": "Empty findings on IDOR fixture",
+            "choices": [
+              "Fails needs_high",
+              "Passes",
+              "Is agile",
+              "Is lean"
+            ],
+            "answer_index": 0,
+            "explanation": "Must find."
+          },
+          {
+            "id": "sw9-2",
+            "kind": "mcq",
+            "stem": "Severity band missing",
+            "choices": [
+              "Fails schema",
+              "Passes",
+              "Defaults low",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Required."
+          },
+          {
+            "id": "sw9-3",
+            "kind": "mcq",
+            "stem": "Verbose 500 with stacks",
+            "choices": [
+              "Is a finding",
+              "Required for patrons",
+              "PMI task",
+              "KiCad DRC"
+            ],
+            "answer_index": 0,
+            "explanation": "Leak."
+          },
+          {
+            "id": "sw9-4",
+            "kind": "mcq",
+            "stem": "OWASP ASVS in registry",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY domain label",
+              "Item bank to copy",
+              "ATP",
+              "Dump"
+            ],
+            "answer_index": 0,
+            "explanation": "Label."
+          },
+          {
+            "id": "sw9-5",
+            "kind": "mcq",
+            "stem": "Remediation starts with",
+            "choices": [
+              "critical/high",
+              "typography",
+              "Ignore IDOR",
+              "Delete logs only"
+            ],
+            "answer_index": 0,
+            "explanation": "Risk first."
+          },
+          {
+            "id": "sw9-6",
+            "kind": "mcq",
+            "stem": "NO_AI on practical means",
+            "choices": [
+              "No AI assistance on that assessment",
+              "AI writes findings",
+              "AI required",
+              "AI grades"
+            ],
+            "answer_index": 0,
+            "explanation": "Restricted."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Observability and issue\u2192deploy capstone",
+        "lesson": "SLO: checkout API availability 99.5% over fixture window. Compute error budget from failed/total. Capstone: real ForgeDesk issue fixture through branch, CI, migrate, deploy, observability note. No fabricated community impact numbers.\n\nCareer map: junior software builder / Device Lab integrator. Certs aligned not granted. Academic: CS50/CS50 Web structure citations only.\n\nAI modes used across the course must appear in the capstone disclosure table: EXPLAIN/HINT/QUESTION_ME/DEBUG_WITH_ME/REVIEW_MY_WORK/COMPARE_APPROACHES/PRACTICE mapped to assessment modes AI_ALLOWED / AI_RESTRICTED / AI_DISCLOSED / NO_AI.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. ",
+        "worked_example": "failed=50 total=10000 \u2192 availability=0.995; budget_ok true.",
+        "assignment": "Ship capstone packet: issue, PR, CI report, deploy record, SLO note; disclose AI modes.",
+        "lab_id": "lab_observability",
+        "quiz": [
+          {
+            "id": "sw10-1",
+            "kind": "mcq",
+            "stem": "availability 50 fails / 10000",
+            "choices": [
+              "0.995",
+              "0.5",
+              "0.95",
+              "1.0"
+            ],
+            "answer_index": 0,
+            "explanation": "Math."
+          },
+          {
+            "id": "sw10-2",
+            "kind": "mcq",
+            "stem": "Fabricating community outcomes",
+            "choices": [
+              "Forbidden",
+              "Required drama",
+              "PMI ATP",
+              "OK if AI"
+            ],
+            "answer_index": 0,
+            "explanation": "No fake."
+          },
+          {
+            "id": "sw10-3",
+            "kind": "mcq",
+            "stem": "Error budget uses",
+            "choices": [
+              "Fixture counts",
+              "Twitter polls",
+              "Guesses",
+              "Soldering time"
+            ],
+            "answer_index": 0,
+            "explanation": "Fixture."
+          },
+          {
+            "id": "sw10-4",
+            "kind": "mcq",
+            "stem": "Capstone path",
+            "choices": [
+              "issue\u2192CI\u2192migrate\u2192deploy\u2192SLO",
+              "Quiz only",
+              "PMI dump",
+              "Physical fab"
+            ],
+            "answer_index": 0,
+            "explanation": "Path."
+          },
+          {
+            "id": "sw10-5",
+            "kind": "mcq",
+            "stem": "WAIKE grants PMI/CompTIA?",
+            "choices": [
+              "No \u2014 alignment labels only",
+              "Yes",
+              "Only CSSGB",
+              "Only CAPM"
+            ],
+            "answer_index": 0,
+            "explanation": "No grant."
+          },
+          {
+            "id": "sw10-6",
+            "kind": "mcq",
+            "stem": "COMPARE_APPROACHES is for",
+            "choices": [
+              "Tradeoffs with disclosure",
+              "Stealing keys",
+              "Skipping deploy",
+              "Bypassing DRC"
+            ],
+            "answer_index": 0,
+            "explanation": "Tradeoffs."
+          }
+        ]
+      }
+    ]
+  },
+  "HARDWARE_ENGINEERING": {
+    "course_id": "HARDWARE_ENGINEERING",
+    "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+    "track_ids": [
+      "HARDWARE_ENGINEERING",
+      "EMBEDDED_PROTOTYPING"
+    ],
+    "academy_id": "ACADEMY_HARDWARE",
+    "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",
+    "syllabus_hook": "Integrates HARDWARE_ENGINEERING and EMBEDDED_PROTOTYPING: SPICE nets, Th\u00e9venin, RC, logic, power budget with real MPNs, bus protocols, Zephyr west/QEMU, DT, PCB ERC/DRC/BOM, failure diagnosis. Sim/QEMU/Device Lab digital before physical; soldering/instruments PHYSICAL_PENDING. MIT 6.002/Zephyr/KiCad/datasheets are reference only.",
+    "career": {
+      "roles": [
+        "junior_hardware_engineer",
+        "embedded_prototyping_assistant"
+      ],
+      "certs_aligned_not_granted": [],
+      "academic_alignment": [
+        "MIT OCW 6.002"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "notes": "Numeric labs AI_RESTRICTED; diagnosis writeup AI_DISCLOSED; no AI inventing datasheet currents."
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Device Lab bench \u2014 lumped nets before soldering",
+        "lesson": "WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before any iron heats. PHYSICAL_PENDING covers soldering and instruments. Digitally you solve a series divider: R1=1k, R2=3k, Vin=12V \u2192 I=3mA, Vout=9V. The lab checks your arithmetic, not a screenshot of a GUI.\n\nMIT OCW 6.002 is PUBLIC_REFERENCE_ONLY rigor citation: lumped abstraction, KCL/KVL habits. We do not redistribute OCW problem sets. KiCad appears later; this week is pure network math on original ForgeSense sensor node nets.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R1=1000 R2=3000 Vin=12 \u2192 I=0.003 A Vout=9 V.",
+        "assignment": "Submit SPICE network JSON and show handwritten KCL at the mid node.",
+        "lab_id": "lab_spice_network",
+        "quiz": [
+          {
+            "id": "hw1-1",
+            "kind": "mcq",
+            "stem": "I for 12V across 1k+3k",
+            "choices": [
+              "0.003 A",
+              "0.012 A",
+              "3 A",
+              "12 A"
+            ],
+            "answer_index": 0,
+            "explanation": "Ohm."
+          },
+          {
+            "id": "hw1-2",
+            "kind": "mcq",
+            "stem": "Vout across 3k",
+            "choices": [
+              "9 V",
+              "3 V",
+              "12 V",
+              "0 V"
+            ],
+            "answer_index": 0,
+            "explanation": "Divider."
+          },
+          {
+            "id": "hw1-3",
+            "kind": "mcq",
+            "stem": "Soldering this week",
+            "choices": [
+              "PHYSICAL_PENDING",
+              "Required",
+              "Forbidden forever",
+              "Done in QEMU"
+            ],
+            "answer_index": 0,
+            "explanation": "Pending."
+          },
+          {
+            "id": "hw1-4",
+            "kind": "mcq",
+            "stem": "6.002 reuse class",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY",
+              "FREE_COPY",
+              "ATP",
+              "Dump"
+            ],
+            "answer_index": 0,
+            "explanation": "Reference."
+          },
+          {
+            "id": "hw1-5",
+            "kind": "mcq",
+            "stem": "Print PASS as lab output",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Required",
+              "KiCad default"
+            ],
+            "answer_index": 0,
+            "explanation": "Honesty."
+          },
+          {
+            "id": "hw1-6",
+            "kind": "mcq",
+            "stem": "Why sim before iron?",
+            "choices": [
+              "Catch math errors before heat",
+              "Irons are illegal",
+              "Zephyr bans irons",
+              "PMI says so"
+            ],
+            "answer_index": 0,
+            "explanation": "Safety/order."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Th\u00e9venin of the sense divider",
+        "lesson": "Seen from the ADC pin, the divider becomes Vth and Rth. Vth=Vin*R2/(R1+R2), Rth=R1||R2. For 12V/1k/3k: Vth=9V, Rth=750\u03a9. Loading the node with ADC input resistance changes reading \u2014 quantify before you blame the firmware.\n\nThis week integrates HARDWARE_ENGINEERING analysis with EMBEDDED_PROTOTYPING measurement planning: you will later sample this node from Zephyr QEMU fixtures.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Vth=9 Rth=750 for Vin=12 R1=1k R2=3k.",
+        "assignment": "Compute Vth/Rth and estimate error if ADC Rin=10k.",
+        "lab_id": "lab_thevenin",
+        "quiz": [
+          {
+            "id": "hw2-1",
+            "kind": "mcq",
+            "stem": "Vth for given divider",
+            "choices": [
+              "9 V",
+              "6 V",
+              "3 V",
+              "12 V"
+            ],
+            "answer_index": 0,
+            "explanation": "Divider open-circuit."
+          },
+          {
+            "id": "hw2-2",
+            "kind": "mcq",
+            "stem": "Rth",
+            "choices": [
+              "750 \u03a9",
+              "4000 \u03a9",
+              "3000 \u03a9",
+              "0 \u03a9"
+            ],
+            "answer_index": 0,
+            "explanation": "Parallel."
+          },
+          {
+            "id": "hw2-3",
+            "kind": "mcq",
+            "stem": "Why Th\u00e9venin before ADC blame?",
+            "choices": [
+              "Loading changes reading",
+              "ADCs never err",
+              "SPICE bans ADC",
+              "KiCad needs it"
+            ],
+            "answer_index": 0,
+            "explanation": "Loading."
+          },
+          {
+            "id": "hw2-4",
+            "kind": "mcq",
+            "stem": "Embedded integration means",
+            "choices": [
+              "Plan Zephyr sample of this node later",
+              "Skip DT",
+              "Skip power budget",
+              "Only soldering"
+            ],
+            "answer_index": 0,
+            "explanation": "Bridge tracks."
+          },
+          {
+            "id": "hw2-5",
+            "kind": "mcq",
+            "stem": "Wrong Vth submission",
+            "choices": [
+              "Fails numeric check",
+              "Passes",
+              "Auto-corrects",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Compute."
+          },
+          {
+            "id": "hw2-6",
+            "kind": "mcq",
+            "stem": "Open-circuit Vth assumes",
+            "choices": [
+              "Load removed",
+              "Shorted output",
+              "Infinite Vin",
+              "Zero R1"
+            ],
+            "answer_index": 0,
+            "explanation": "Definition."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "RC timing for the reset pin",
+        "lesson": "Reset RC: tau=R*C. Charging V(t)=V0(1-e^{-t/tau}). With R=1k C=1uF tau=1ms. At t=tau, Vt\u22480.632 V0. Firmware that samples reset too early sees a lie. Lab checks tau and Vt math.\n\nPHYSICAL_PENDING: scope capture of the real RC. Digital validation is mandatory first.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R=1000 C=1e-6 V0=5 t=0.001 \u2192 tau=0.001 Vt=5*(1-e^{-1}).",
+        "assignment": "Submit RC JSON; sketch V(t) and mark sample time safe after 3 tau.",
+        "lab_id": "lab_rc_transient",
+        "quiz": [
+          {
+            "id": "hw3-1",
+            "kind": "mcq",
+            "stem": "tau for 1k and 1uF",
+            "choices": [
+              "0.001 s",
+              "0.001 ms",
+              "1 s",
+              "1 us"
+            ],
+            "answer_index": 0,
+            "explanation": "RC."
+          },
+          {
+            "id": "hw3-2",
+            "kind": "mcq",
+            "stem": "At t=tau, fraction of V0",
+            "choices": [
+              "~0.632",
+              "0.5",
+              "1.0",
+              "0.1"
+            ],
+            "answer_index": 0,
+            "explanation": "1-1/e."
+          },
+          {
+            "id": "hw3-3",
+            "kind": "mcq",
+            "stem": "Sampling reset at 0.1 tau risks",
+            "choices": [
+              "False not-ready reading",
+              "Perfect boot",
+              "Lower Iq",
+              "Better I2C"
+            ],
+            "answer_index": 0,
+            "explanation": "Too early."
+          },
+          {
+            "id": "hw3-4",
+            "kind": "mcq",
+            "stem": "Scope on hardware",
+            "choices": [
+              "PHYSICAL_PENDING after digital PASS",
+              "Required now",
+              "Banned",
+              "QEMU only"
+            ],
+            "answer_index": 0,
+            "explanation": "Order."
+          },
+          {
+            "id": "hw3-5",
+            "kind": "mcq",
+            "stem": "Wrong Vt",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Rounded away",
+              "Optional"
+            ],
+            "answer_index": 0,
+            "explanation": "Math."
+          },
+          {
+            "id": "hw3-6",
+            "kind": "mcq",
+            "stem": "3 tau \u2248",
+            "choices": [
+              "95% settled",
+              "10%",
+              "50%",
+              "0%"
+            ],
+            "answer_index": 0,
+            "explanation": "Rule of thumb."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "NAND as the digital abstraction",
+        "lesson": "2-input NAND truth: only 1,1 yields 0. You will submit the full table. Noise margins and gate delay stay conceptual; lab insists on right Boolean before PCB.\n\n6.002 digital abstraction cited; original WAIKE truth-table fixture.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "NAND rows (0,0)->1 (0,1)->1 (1,0)->1 (1,1)->0.",
+        "assignment": "Submit truth table JSON and one sentence on why NOR is not a drop-in.",
+        "lab_id": "lab_logic_gate",
+        "quiz": [
+          {
+            "id": "hw4-1",
+            "kind": "mcq",
+            "stem": "NAND(1,1)",
+            "choices": [
+              "0",
+              "1",
+              "X",
+              "Z"
+            ],
+            "answer_index": 0,
+            "explanation": "Only zero case."
+          },
+          {
+            "id": "hw4-2",
+            "kind": "mcq",
+            "stem": "NAND(0,0)",
+            "choices": [
+              "1",
+              "0",
+              "X",
+              "Z"
+            ],
+            "answer_index": 0,
+            "explanation": "One."
+          },
+          {
+            "id": "hw4-3",
+            "kind": "mcq",
+            "stem": "Why table before PCB?",
+            "choices": [
+              "Catch Boolean errors early",
+              "PCB ignores logic",
+              "Zephyr forbids tables",
+              "ASQ requires"
+            ],
+            "answer_index": 0,
+            "explanation": "Order."
+          },
+          {
+            "id": "hw4-4",
+            "kind": "mcq",
+            "stem": "Lab gate type",
+            "choices": [
+              "NAND",
+              "XOR only",
+              "Analog",
+              "UART"
+            ],
+            "answer_index": 0,
+            "explanation": "NAND."
+          },
+          {
+            "id": "hw4-5",
+            "kind": "mcq",
+            "stem": "Wrong y on 1,1",
+            "choices": [
+              "Fails truth",
+              "Passes",
+              "DRC fixes",
+              "QEMU fixes"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "hw4-6",
+            "kind": "mcq",
+            "stem": "Digital abstraction means",
+            "choices": [
+              "Levels ignore analog internals for logic",
+              "Ignore power",
+              "Skip DT",
+              "Skip BOM"
+            ],
+            "answer_index": 0,
+            "explanation": "Abstraction."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Power budget with real MPNs",
+        "lesson": "Rail 3V3 budget using real MPNs: nRF52840 Iq, AMS1117-3.3 quiescent, SSD1306 OLED. Sum currents; margin = regulator_mA - total must be positive. Fake MPNs fail.\n\nDatasheets are PUBLIC_REFERENCE_ONLY. Values in fixture are course-sanctioned numbers for the lab, not a claim about every SKU revision.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "nRF52840 5.4 + AMS1117 5.0 + SSD1306 10.0 = 20.4 mA; regulator 50 \u2192 margin 29.6.",
+        "assignment": "Submit budget JSON and note which load dominates.",
+        "lab_id": "lab_power_budget",
+        "quiz": [
+          {
+            "id": "hw5-1",
+            "kind": "mcq",
+            "stem": "total mA in reference",
+            "choices": [
+              "20.4",
+              "50",
+              "5.4",
+              "100"
+            ],
+            "answer_index": 0,
+            "explanation": "Sum."
+          },
+          {
+            "id": "hw5-2",
+            "kind": "mcq",
+            "stem": "margin must be",
+            "choices": [
+              ">0",
+              "0",
+              "negative",
+              "infinite"
+            ],
+            "answer_index": 0,
+            "explanation": "Headroom."
+          },
+          {
+            "id": "hw5-3",
+            "kind": "mcq",
+            "stem": "fake MPN",
+            "choices": [
+              "Fails real_mpns",
+              "Passes",
+              "Auto-substitutes",
+              "KiCad ignores"
+            ],
+            "answer_index": 0,
+            "explanation": "Real MPNs."
+          },
+          {
+            "id": "hw5-4",
+            "kind": "mcq",
+            "stem": "Datasheet reuse",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY",
+              "Copy full PDF into repo",
+              "Exam dump",
+              "ATP"
+            ],
+            "answer_index": 0,
+            "explanation": "Reference."
+          },
+          {
+            "id": "hw5-5",
+            "kind": "mcq",
+            "stem": "OLED often dominates",
+            "choices": [
+              "Yes in this fixture",
+              "Never",
+              "Only at 0K",
+              "Only in SPICE"
+            ],
+            "answer_index": 0,
+            "explanation": "10mA."
+          },
+          {
+            "id": "hw5-6",
+            "kind": "mcq",
+            "stem": "Regulator 50mA with 20.4 load",
+            "choices": [
+              "Margin 29.6",
+              "Fails",
+              "Margin 0",
+              "Needs 100"
+            ],
+            "answer_index": 0,
+            "explanation": "Subtract."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "GPIO/I2C/SPI/UART \u2014 parse an I2C write",
+        "lesson": "Buses: GPIO edges, I2C addr+reg+data, SPI mode clocks, UART framing. Lab parses I2C write frame hex 3c00af \u2192 addr 0x3C reg 0x00 data 0xAF (OLED).\n\nYou will name which bus the OLED uses and why bit-bang GPIO is the wrong first debug when NACK appears.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "frame_hex 3c00af \u2192 addr=0x3C reg=0x00 data=0xAF bus=I2C.",
+        "assignment": "Submit parse JSON; contrast SPI mode 0 vs I2C ACK.",
+        "lab_id": "lab_bus_protocol",
+        "quiz": [
+          {
+            "id": "hw6-1",
+            "kind": "mcq",
+            "stem": "First byte 0x3C",
+            "choices": [
+              "I2C addr",
+              "UART start",
+              "SPI CS",
+              "GPIO"
+            ],
+            "answer_index": 0,
+            "explanation": "Addr."
+          },
+          {
+            "id": "hw6-2",
+            "kind": "mcq",
+            "stem": "bus field",
+            "choices": [
+              "I2C",
+              "CAN",
+              "PCIe",
+              "MIDI"
+            ],
+            "answer_index": 0,
+            "explanation": "I2C."
+          },
+          {
+            "id": "hw6-3",
+            "kind": "mcq",
+            "stem": "NACK first debug",
+            "choices": [
+              "Confirm pullups/rail before bit-bang rewrite",
+              "Rewrite all GPIO",
+              "Ignore",
+              "Resolder blindly now"
+            ],
+            "answer_index": 0,
+            "explanation": "Basics."
+          },
+          {
+            "id": "hw6-4",
+            "kind": "mcq",
+            "stem": "Wrong addr parse",
+            "choices": [
+              "Fails",
+              "Passes",
+              "QEMU fixes",
+              "DRC fixes"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "hw6-5",
+            "kind": "mcq",
+            "stem": "UART vs I2C",
+            "choices": [
+              "Framing vs addr/ack protocol",
+              "Same",
+              "Both need CS",
+              "Neither needs ground"
+            ],
+            "answer_index": 0,
+            "explanation": "Difference."
+          },
+          {
+            "id": "hw6-6",
+            "kind": "mcq",
+            "stem": "SPI needs",
+            "choices": [
+              "Shared clock + CS discipline",
+              "Only SDA",
+              "Only CAN",
+              "Only 5V"
+            ],
+            "answer_index": 0,
+            "explanation": "SPI."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Zephyr west + QEMU before hardware",
+        "lesson": "west build -b qemu_cortex_m0 for the ForgeSense app. physical_status must be PHYSICAL_PENDING. qemu_ok true after digital run log fixture. Zephyr docs OPEN_LICENSE / reference \u2014 we do not vendor the entire tree.\n\nEMBEDDED_PROTOTYPING integration: same app will bind I2C in DT next week.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "board=qemu_cortex_m0 west_cmd includes west build -b qemu_cortex_m0; PHYSICAL_PENDING; qemu_ok true.",
+        "assignment": "Submit west/QEMU JSON and paste sanitized run log excerpt.",
+        "lab_id": "lab_zephyr_qemu",
+        "quiz": [
+          {
+            "id": "hw7-1",
+            "kind": "mcq",
+            "stem": "board id",
+            "choices": [
+              "qemu_cortex_m0",
+              "pi4",
+              "x86_efi",
+              "native_sim_only_forbidden"
+            ],
+            "answer_index": 0,
+            "explanation": "QEMU M0."
+          },
+          {
+            "id": "hw7-2",
+            "kind": "mcq",
+            "stem": "physical_status",
+            "choices": [
+              "PHYSICAL_PENDING",
+              "DONE",
+              "SKIPPED_FOREVER",
+              "SOLDERED"
+            ],
+            "answer_index": 0,
+            "explanation": "Pending."
+          },
+          {
+            "id": "hw7-3",
+            "kind": "mcq",
+            "stem": "west cmd must include",
+            "choices": [
+              "west build and board name",
+              "make only",
+              "PlatformIO only",
+              "Arduino flash"
+            ],
+            "answer_index": 0,
+            "explanation": "west."
+          },
+          {
+            "id": "hw7-4",
+            "kind": "mcq",
+            "stem": "Flash hardware now?",
+            "choices": [
+              "No \u2014 digital first",
+              "Yes always",
+              "Required for PASS",
+              "Ignore QEMU"
+            ],
+            "answer_index": 0,
+            "explanation": "Order."
+          },
+          {
+            "id": "hw7-5",
+            "kind": "mcq",
+            "stem": "Zephyr docs",
+            "choices": [
+              "Reference / open project docs \u2014 not dump of exams",
+              "Copy entire tree mandatorily",
+              "PMI ATP",
+              "DRM bypass"
+            ],
+            "answer_index": 0,
+            "explanation": "Docs."
+          },
+          {
+            "id": "hw7-6",
+            "kind": "mcq",
+            "stem": "QEMU fails qemu_ok false",
+            "choices": [
+              "Lab fails",
+              "Still PASS",
+              "Physical required",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "Must pass digital."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Devicetree overlay \u2014 I2C1 and LED0",
+        "lesson": "Overlay enables &i2c1 status okay and led0 gpios. Deleting &soc is unsafe and fails. DT is the contract between board and drivers.\n\nLab checks overlay text and fields. No physical probe yet.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "i2c1_status=okay; led0_gpios set; overlay contains &i2c1 and led0.",
+        "assignment": "Submit overlay JSON/text; explain one wrong delete-node.",
+        "lab_id": "lab_devicetree",
+        "quiz": [
+          {
+            "id": "hw8-1",
+            "kind": "mcq",
+            "stem": "i2c1_status",
+            "choices": [
+              "okay",
+              "disabled",
+              "deleted",
+              "unknown"
+            ],
+            "answer_index": 0,
+            "explanation": "okay."
+          },
+          {
+            "id": "hw8-2",
+            "kind": "mcq",
+            "stem": "/delete-node/ &soc",
+            "choices": [
+              "Fails safety",
+              "Recommended",
+              "Required",
+              "QEMU only"
+            ],
+            "answer_index": 0,
+            "explanation": "Unsafe."
+          },
+          {
+            "id": "hw8-3",
+            "kind": "mcq",
+            "stem": "led0 appears in overlay",
+            "choices": [
+              "Required",
+              "Forbidden",
+              "Optional silence",
+              "Only in BOM"
+            ],
+            "answer_index": 0,
+            "explanation": "LED."
+          },
+          {
+            "id": "hw8-4",
+            "kind": "mcq",
+            "stem": "DT purpose",
+            "choices": [
+              "Board\u2194driver contract",
+              "Replace west",
+              "Replace SPICE",
+              "Replace RACI"
+            ],
+            "answer_index": 0,
+            "explanation": "Contract."
+          },
+          {
+            "id": "hw8-5",
+            "kind": "mcq",
+            "stem": "Empty overlay",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Auto-fills",
+              "Ignores I2C"
+            ],
+            "answer_index": 0,
+            "explanation": "Need content."
+          },
+          {
+            "id": "hw8-6",
+            "kind": "mcq",
+            "stem": "Physical LED blink",
+            "choices": [
+              "PHYSICAL_PENDING after digital",
+              "Required now",
+              "Banned",
+              "Done in SPICE"
+            ],
+            "answer_index": 0,
+            "explanation": "Pending."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "PCB schematic/layout ERC/DRC + BOM",
+        "lesson": "KiCad docs are reference. Your ERC_errors and DRC_errors must be 0; unconnected_power false; BOM >=3 lines with MPNs matching power budget parts.\n\nNo claim that WAIKE ships proprietary PCB fab files from vendors.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "erc_errors=0 drc_errors=0 unconnected_power=false bom with nRF52840, AMS1117-3.3, SSD1306.",
+        "assignment": "Submit ERC/DRC/BOM JSON; attach export paths only (no paywall bypass).",
+        "lab_id": "lab_pcb_erc_drc",
+        "quiz": [
+          {
+            "id": "hw9-1",
+            "kind": "mcq",
+            "stem": "erc_errors must be",
+            "choices": [
+              "0",
+              "1",
+              "99",
+              "ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Clean."
+          },
+          {
+            "id": "hw9-2",
+            "kind": "mcq",
+            "stem": "unconnected_power",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "unknown"
+            ],
+            "answer_index": 0,
+            "explanation": "Power tied."
+          },
+          {
+            "id": "hw9-3",
+            "kind": "mcq",
+            "stem": "BOM lines",
+            "choices": [
+              ">=3 with mpn",
+              "0",
+              "Only values",
+              "Only footprints"
+            ],
+            "answer_index": 0,
+            "explanation": "MPNs."
+          },
+          {
+            "id": "hw9-4",
+            "kind": "mcq",
+            "stem": "KiCad docs reuse",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY",
+              "Copy all tutorials verbatim as WAIKE IP",
+              "Dump",
+              "ATP"
+            ],
+            "answer_index": 0,
+            "explanation": "Reference."
+          },
+          {
+            "id": "hw9-5",
+            "kind": "mcq",
+            "stem": "DRC errors 2",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Warning only in our lab",
+              "Auto-waived"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "hw9-6",
+            "kind": "mcq",
+            "stem": "Paywall PCB site scrape",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "AI must do it",
+              "DRM bypass OK"
+            ],
+            "answer_index": 0,
+            "explanation": "No bypass."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Failure diagnosis \u2014 digitally validate the subsystem",
+        "lesson": "Final practical: symptoms rail_sag_3v3 + i2c_nack. Root cause among weak_regulator, missing_pullups, shared_rail_overload. next_probe must include measure. physical_status PHYSICAL_PENDING.\n\nCapstone: digitally validate embedded subsystem (power + bus + DT + QEMU) with artifacts \u2014 not fabricated field yield claims.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "symptoms include rail_sag_3v3 and i2c_nack; root_cause shared_rail_overload; next_probe measure 3V3 under load; PHYSICAL_PENDING.",
+        "assignment": "Submit diagnosis JSON + subsystem validation packet linking labs 5\u20139.",
+        "lab_id": "lab_failure_diagnosis",
+        "quiz": [
+          {
+            "id": "hw10-1",
+            "kind": "mcq",
+            "stem": "Required symptoms",
+            "choices": [
+              "rail_sag_3v3 and i2c_nack",
+              "only fan noise",
+              "only GUI",
+              "only DRC"
+            ],
+            "answer_index": 0,
+            "explanation": "Pair."
+          },
+          {
+            "id": "hw10-2",
+            "kind": "mcq",
+            "stem": "physical_status (week 10 fixture)",
+            "choices": [
+              "PHYSICAL_PENDING",
+              "DONE",
+              "WAIVED",
+              "SOLDERED"
+            ],
+            "answer_index": 0,
+            "explanation": "Pending."
+          },
+          {
+            "id": "hw10-3",
+            "kind": "mcq",
+            "stem": "next_probe must",
+            "choices": [
+              "include measure",
+              "say ignore",
+              "say luck",
+              "say AI knows"
+            ],
+            "answer_index": 0,
+            "explanation": "Measure."
+          },
+          {
+            "id": "hw10-4",
+            "kind": "mcq",
+            "stem": "Fabricated yield %",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "PMI ATP",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "No fake."
+          },
+          {
+            "id": "hw10-5",
+            "kind": "mcq",
+            "stem": "Subsystem validation uses",
+            "choices": [
+              "Prior digital lab artifacts",
+              "Only vibes",
+              "Only soldering",
+              "Exam dumps"
+            ],
+            "answer_index": 0,
+            "explanation": "Artifacts."
+          },
+          {
+            "id": "hw10-6",
+            "kind": "mcq",
+            "stem": "EMBEDDED_PROTOTYPING role",
+            "choices": [
+              "Integrated track in this course",
+              "Deleted",
+              "Separate mega-PR",
+              "PROFILE README"
+            ],
+            "answer_index": 0,
+            "explanation": "Integrated."
+          }
+        ]
+      }
+    ]
+  },
+  "PM_AGILE_LSS": {
+    "course_id": "PM_AGILE_LSS",
+    "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+    "track_ids": [
+      "PM_AGILE_LSS"
+    ],
+    "academy_id": "ACADEMY_PROCESS_PM",
+    "kinesthetic_hook": "Charter a real wait problem, run DMAIC on fixture data, and critique an AI plan without inventing outcomes.",
+    "syllabus_hook": "Charter, RACI, WBS/schedule, sprint, risk, SIPOC, Pareto/root-cause, control chart, DMAIC case, change control/status/AI critique. Aligns to ASQ CSSGB BoK themes, PMI CAPM ECO, and PMI PMP 2026 ECO (People/Process/Business Environment with AI/sustainability/value in context). NOT a PMI ATP. No fake certs. No fabricated community outcomes.",
+    "career": {
+      "roles": [
+        "junior_project_coordinator",
+        "process_improvement_analyst"
+      ],
+      "certs_aligned_not_granted": [
+        "ASQ CSSGB",
+        "PMI CAPM",
+        "PMI PMP"
+      ],
+      "not_atp_claim": true
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "notes": "AI plan critique requires AI_DISCLOSED true; chart math NO_AI; never invent community outcomes."
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Charter the noon checkout wait problem",
+        "lesson": "Process Studio: Device Lab noon checkout wait baseline 15 minutes. Charter states problem, goal metric with baseline, in/out scope. fabricated_outcomes must be false \u2014 no invented community impact.\n\nASQ CSSGB Define themes and PMI CAPM/PMP alignment are labels only. WAIKE is not a PMI ATP. No fake certs.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "problem wait>15m; goal baseline 15m\u21928m; in_scope queue+staffing; out_scope new building; fabricated_outcomes false.",
+        "assignment": "Write charter JSON and a one-page sponsor brief without invented stats.",
+        "lab_id": "lab_charter",
+        "quiz": [
+          {
+            "id": "pm1-1",
+            "kind": "mcq",
+            "stem": "fabricated_outcomes",
+            "choices": [
+              "false required",
+              "true required",
+              "optional",
+              "ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "No fake."
+          },
+          {
+            "id": "pm1-2",
+            "kind": "mcq",
+            "stem": "goal_metric should include",
+            "choices": [
+              "baseline",
+              "vibes",
+              "AI score",
+              "logo"
+            ],
+            "answer_index": 0,
+            "explanation": "Baseline."
+          },
+          {
+            "id": "pm1-3",
+            "kind": "mcq",
+            "stem": "WAIKE is PMI ATP?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only CAPM",
+              "Only PMP"
+            ],
+            "answer_index": 0,
+            "explanation": "Not ATP."
+          },
+          {
+            "id": "pm1-4",
+            "kind": "mcq",
+            "stem": "out_scope example",
+            "choices": [
+              "new building",
+              "queue board",
+              "staffing slots",
+              "wait metric"
+            ],
+            "answer_index": 0,
+            "explanation": "Out."
+          },
+          {
+            "id": "pm1-5",
+            "kind": "mcq",
+            "stem": "Empty problem",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Auto-fills",
+              "AI invents"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pm1-6",
+            "kind": "mcq",
+            "stem": "CSSGB BoK reuse",
+            "choices": [
+              "RESTRICTED/public domain labels only \u2014 no item harvest",
+              "Copy exam",
+              "Dump",
+              "DRM bypass"
+            ],
+            "answer_index": 0,
+            "explanation": "No harvest."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "RACI for the improvement team",
+        "lesson": "Each task exactly one A (accountable). Matrix covers charter, measure, control at minimum. Two As on one task fails.\n\nPeople domain judgment without claiming PMP credential.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Three tasks each with exactly one A.",
+        "assignment": "Submit RACI JSON; narrate one conflict you resolved about accountability.",
+        "lab_id": "lab_raci",
+        "quiz": [
+          {
+            "id": "pm2-1",
+            "kind": "mcq",
+            "stem": "Accountable count per task",
+            "choices": [
+              "Exactly one A",
+              "Zero",
+              "Two",
+              "All R"
+            ],
+            "answer_index": 0,
+            "explanation": "One A."
+          },
+          {
+            "id": "pm2-2",
+            "kind": "mcq",
+            "stem": "Two As",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Agile",
+              "Lean"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pm2-3",
+            "kind": "mcq",
+            "stem": "R means",
+            "choices": [
+              "Responsible doer",
+              "Accountable",
+              "Consulted only",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "R."
+          },
+          {
+            "id": "pm2-4",
+            "kind": "mcq",
+            "stem": "Minimum tasks in lab",
+            "choices": [
+              ">=3",
+              "1",
+              "0",
+              "100"
+            ],
+            "answer_index": 0,
+            "explanation": "Three."
+          },
+          {
+            "id": "pm2-5",
+            "kind": "mcq",
+            "stem": "PMP granted?",
+            "choices": [
+              "No",
+              "Yes",
+              "Auto",
+              "CSSGB"
+            ],
+            "answer_index": 0,
+            "explanation": "No."
+          },
+          {
+            "id": "pm2-6",
+            "kind": "mcq",
+            "stem": "AI HINT on RACI",
+            "choices": [
+              "Disclose if used",
+              "Hide",
+              "Forbidden forever",
+              "Required"
+            ],
+            "answer_index": 0,
+            "explanation": "Disclose."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "WBS and schedule \u2014 critical path",
+        "lesson": "Tasks A2 B3 C2 D4 with preds A\u2192B,A\u2192C,B/C\u2192D. Critical path days = 2+3+4=9. Lab recomputes longest path.\n\nPMP 2026 ECO Process weighting is a label; scenarios may mention AI tools as context without testing model math.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "critical_path_days=9 for the reference graph.",
+        "assignment": "Submit WBS JSON; show why A-C-D is shorter than A-B-D.",
+        "lab_id": "lab_wbs_schedule",
+        "quiz": [
+          {
+            "id": "pm3-1",
+            "kind": "mcq",
+            "stem": "CP days reference",
+            "choices": [
+              "9",
+              "7",
+              "4",
+              "2"
+            ],
+            "answer_index": 0,
+            "explanation": "2+3+4."
+          },
+          {
+            "id": "pm3-2",
+            "kind": "mcq",
+            "stem": "Wrong CP number",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Rounded",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pm3-3",
+            "kind": "mcq",
+            "stem": "PMP 2026 Business Environment weight ~",
+            "choices": [
+              "26%",
+              "8%",
+              "50%",
+              "0%"
+            ],
+            "answer_index": 0,
+            "explanation": "2026 refresh."
+          },
+          {
+            "id": "pm3-4",
+            "kind": "mcq",
+            "stem": "AI on PMP 2026",
+            "choices": [
+              "In scenario context not standalone model exam",
+              "Must code neural nets",
+              "Banned topic",
+              "ATP only"
+            ],
+            "answer_index": 0,
+            "explanation": "Context."
+          },
+          {
+            "id": "pm3-5",
+            "kind": "mcq",
+            "stem": "preds missing",
+            "choices": [
+              "Breaks path math",
+              "Fine",
+              "Auto",
+              "SPICE"
+            ],
+            "answer_index": 0,
+            "explanation": "Need preds."
+          },
+          {
+            "id": "pm3-6",
+            "kind": "mcq",
+            "stem": "WBS purpose",
+            "choices": [
+              "Decompose work",
+              "Replace risk",
+              "Replace SIPOC",
+              "Replace charter"
+            ],
+            "answer_index": 0,
+            "explanation": "Decompose."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Sprint board under capacity",
+        "lesson": "Agile sprint: committed points <= capacity; Done items need acceptance criteria. Overcommit fails.\n\nHybrid delivery language allowed; not a Scrum Guide reprint.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "capacity=20 committed=18 done_items with acceptance text.",
+        "assignment": "Submit sprint JSON and a 5-line retro without blame theater.",
+        "lab_id": "lab_sprint_board",
+        "quiz": [
+          {
+            "id": "pm4-1",
+            "kind": "mcq",
+            "stem": "committed > capacity",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Required",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Cap."
+          },
+          {
+            "id": "pm4-2",
+            "kind": "mcq",
+            "stem": "Done without AC",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Auto",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Need AC."
+          },
+          {
+            "id": "pm4-3",
+            "kind": "mcq",
+            "stem": "Sprint is",
+            "choices": [
+              "Timeboxed delivery slice",
+              "Infinite",
+              "Only DMAIC",
+              "Only SPICE"
+            ],
+            "answer_index": 0,
+            "explanation": "Sprint."
+          },
+          {
+            "id": "pm4-4",
+            "kind": "mcq",
+            "stem": "AI PRACTICE mode",
+            "choices": [
+              "Drills with disclosure rules",
+              "Secret key share",
+              "Skip retro",
+              "Forge metrics"
+            ],
+            "answer_index": 0,
+            "explanation": "Practice."
+          },
+          {
+            "id": "pm4-5",
+            "kind": "mcq",
+            "stem": "capacity 0",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Ideal",
+              "Lean"
+            ],
+            "answer_index": 0,
+            "explanation": "Need cap."
+          },
+          {
+            "id": "pm4-6",
+            "kind": "mcq",
+            "stem": "Acceptance criteria",
+            "choices": [
+              "Testable Done check",
+              "Logo",
+              "Vibe",
+              "Password"
+            ],
+            "answer_index": 0,
+            "explanation": "Testable."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Risk register with scores",
+        "lesson": "score=prob*impact. Top risk needs response. Three risks minimum.\n\nSustainability/AI appear as risk contexts per PMP 2026 \u2014 judgment not engineering depth.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R1 3*5=15 with response cross-train; others lower.",
+        "assignment": "Submit risk JSON; add one sustainability and one AI-tool risk in WAIKE words.",
+        "lab_id": "lab_risk_register",
+        "quiz": [
+          {
+            "id": "pm5-1",
+            "kind": "mcq",
+            "stem": "score formula",
+            "choices": [
+              "prob*impact",
+              "prob+impact",
+              "impact only",
+              "AI score"
+            ],
+            "answer_index": 0,
+            "explanation": "Product."
+          },
+          {
+            "id": "pm5-2",
+            "kind": "mcq",
+            "stem": "Top without response",
+            "choices": [
+              "Fails",
+              "Passes",
+              "OK",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "Need response."
+          },
+          {
+            "id": "pm5-3",
+            "kind": "mcq",
+            "stem": "Wrong score 3*5=9",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Close enough",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Math."
+          },
+          {
+            "id": "pm5-4",
+            "kind": "mcq",
+            "stem": "PMP 2026 sustainability",
+            "choices": [
+              "Embedded in planning/quality/risk context",
+              "Standalone eng exam",
+              "Ignored",
+              "ATP grant"
+            ],
+            "answer_index": 0,
+            "explanation": "Context."
+          },
+          {
+            "id": "pm5-5",
+            "kind": "mcq",
+            "stem": "Minimum risks",
+            "choices": [
+              ">=3",
+              "1",
+              "0",
+              "50"
+            ],
+            "answer_index": 0,
+            "explanation": "Three."
+          },
+          {
+            "id": "pm5-6",
+            "kind": "mcq",
+            "stem": "Fake risk scores for drama",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "AI must",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Honest."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "SIPOC and process map",
+        "lesson": "SIPOC with >=3 process steps and measurable output (count/time/%). Lean VSM themes as labels \u2014 original Device Lab process.\n\nMeasurement system note ties to next week.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "process intake/triage/resolve; outputs resolved count/day.",
+        "assignment": "Submit SIPOC JSON plus a simple process map list.",
+        "lab_id": "lab_sipoc_process",
+        "quiz": [
+          {
+            "id": "pm6-1",
+            "kind": "mcq",
+            "stem": "process steps >=",
+            "choices": [
+              "3",
+              "1",
+              "0",
+              "20 mandatory"
+            ],
+            "answer_index": 0,
+            "explanation": "Three."
+          },
+          {
+            "id": "pm6-2",
+            "kind": "mcq",
+            "stem": "output 'vibes'",
+            "choices": [
+              "Fails measurable",
+              "Passes",
+              "Ideal",
+              "Required"
+            ],
+            "answer_index": 0,
+            "explanation": "Measurable."
+          },
+          {
+            "id": "pm6-3",
+            "kind": "mcq",
+            "stem": "SIPOC expands to",
+            "choices": [
+              "Suppliers Inputs Process Outputs Customers",
+              "Only SPI",
+              "Only RACI",
+              "Only BOM"
+            ],
+            "answer_index": 0,
+            "explanation": "SIPOC."
+          },
+          {
+            "id": "pm6-4",
+            "kind": "mcq",
+            "stem": "Empty suppliers",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Auto",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Filled."
+          },
+          {
+            "id": "pm6-5",
+            "kind": "mcq",
+            "stem": "Lean citation",
+            "choices": [
+              "Domain label not copied handbook text",
+              "Copy ASQ book",
+              "Dump",
+              "DRM"
+            ],
+            "answer_index": 0,
+            "explanation": "Label."
+          },
+          {
+            "id": "pm6-6",
+            "kind": "mcq",
+            "stem": "Map misaligned steps",
+            "choices": [
+              "Find with process map",
+              "Ignore",
+              "Delete customers",
+              "Skip outputs"
+            ],
+            "answer_index": 0,
+            "explanation": "Find."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Pareto and root cause",
+        "lesson": "Causes sorted; cumulative % until >=80%. Root cause sentence required. Fixture: cables/staff/labels/other.\n\nAnalyze phase CSSGB alignment label only.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "cum_pct_top computed from sorted counts until >=0.8; root_cause about cable kit staging.",
+        "assignment": "Submit Pareto JSON; 5-Why ending in controllable cause.",
+        "lab_id": "lab_pareto_rootcause",
+        "quiz": [
+          {
+            "id": "pm7-1",
+            "kind": "mcq",
+            "stem": "cum must reach",
+            "choices": [
+              ">=0.80",
+              "0.10",
+              "1.01",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "80/20."
+          },
+          {
+            "id": "pm7-2",
+            "kind": "mcq",
+            "stem": "Wrong cum",
+            "choices": [
+              "Fails",
+              "Passes",
+              "OK",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pm7-3",
+            "kind": "mcq",
+            "stem": "root_cause short 'x'",
+            "choices": [
+              "Fails length",
+              "Passes",
+              "Ideal",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "Need text."
+          },
+          {
+            "id": "pm7-4",
+            "kind": "mcq",
+            "stem": "Pareto sorts by",
+            "choices": [
+              "Descending count",
+              "Name",
+              "Random",
+              "AI"
+            ],
+            "answer_index": 0,
+            "explanation": "Count."
+          },
+          {
+            "id": "pm7-5",
+            "kind": "mcq",
+            "stem": "Fabricated percentages",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "OK",
+              "ATP"
+            ],
+            "answer_index": 0,
+            "explanation": "No fake."
+          },
+          {
+            "id": "pm7-6",
+            "kind": "mcq",
+            "stem": "5-Why goal",
+            "choices": [
+              "Controllable cause",
+              "Blame person",
+              "Infinite loop",
+              "Skip data"
+            ],
+            "answer_index": 0,
+            "explanation": "Controllable."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Control chart on wait times",
+        "lesson": "Individuals chart: mean, MR-based sigma, UCL/LCL \u00b13\u03c3, flag out-of-control indices. Fixture includes a spike.\n\nControl phase label; not Minitab dump.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Compute mean/ucl/lcl/ooc from points [10,11,10,12,10,25,11].",
+        "assignment": "Submit control chart JSON; interpret the spike without blaming a named student.",
+        "lab_id": "lab_control_chart",
+        "quiz": [
+          {
+            "id": "pm8-1",
+            "kind": "mcq",
+            "stem": "UCL uses",
+            "choices": [
+              "mean+3\u03c3",
+              "mean",
+              "max",
+              "AI"
+            ],
+            "answer_index": 0,
+            "explanation": "3\u03c3."
+          },
+          {
+            "id": "pm8-2",
+            "kind": "mcq",
+            "stem": "Wrong ooc index",
+            "choices": [
+              "Fails",
+              "Passes",
+              "OK",
+              "Ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "Exact."
+          },
+          {
+            "id": "pm8-3",
+            "kind": "mcq",
+            "stem": "Spike at 25",
+            "choices": [
+              "Likely out of control vs limits",
+              "Always ignore",
+              "Delete point silently",
+              "Mean becomes 25"
+            ],
+            "answer_index": 0,
+            "explanation": "Flag."
+          },
+          {
+            "id": "pm8-4",
+            "kind": "mcq",
+            "stem": "Empty points",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Auto",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Need data."
+          },
+          {
+            "id": "pm8-5",
+            "kind": "mcq",
+            "stem": "SPC purpose",
+            "choices": [
+              "Detect special cause",
+              "Replace charter",
+              "Replace RACI",
+              "Grant CSSGB"
+            ],
+            "answer_index": 0,
+            "explanation": "Detect."
+          },
+          {
+            "id": "pm8-6",
+            "kind": "mcq",
+            "stem": "NO_AI on chart math",
+            "choices": [
+              "Allowed as assessment mode",
+              "AI must compute",
+              "Hide",
+              "Forge limits"
+            ],
+            "answer_index": 0,
+            "explanation": "Mode."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "DMAIC case with real artifacts",
+        "lesson": "Each DMAIC phase narrative >=15 chars; fabricated_outcomes false. Tie to prior labs' artifacts.\n\nImprove must name a change you can evidence; Control points to chart.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "define/measure/analyze/improve/control filled; fabricated_outcomes false.",
+        "assignment": "Submit DMAIC case linking charter, Pareto, chart artifact ids.",
+        "lab_id": "lab_dmaic_case",
+        "quiz": [
+          {
+            "id": "pm9-1",
+            "kind": "mcq",
+            "stem": "fabricated_outcomes (week 9 fixture)",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "null"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "pm9-2",
+            "kind": "mcq",
+            "stem": "Missing improve text",
+            "choices": [
+              "Fails",
+              "Passes",
+              "OK",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "Need all phases."
+          },
+          {
+            "id": "pm9-3",
+            "kind": "mcq",
+            "stem": "DMAIC order",
+            "choices": [
+              "Define Measure Analyze Improve Control",
+              "Random",
+              "Skip Measure",
+              "Only Improve"
+            ],
+            "answer_index": 0,
+            "explanation": "DMAIC."
+          },
+          {
+            "id": "pm9-4",
+            "kind": "mcq",
+            "stem": "ASQ CSSGB",
+            "choices": [
+              "Alignment label not credential grant",
+              "Grants belt",
+              "ATP",
+              "Dump"
+            ],
+            "answer_index": 0,
+            "explanation": "Label."
+          },
+          {
+            "id": "pm9-5",
+            "kind": "mcq",
+            "stem": "Evidence links",
+            "choices": [
+              "Prior lab artifacts",
+              "Invented tweets",
+              "DRM PDFs",
+              "Exam stems"
+            ],
+            "answer_index": 0,
+            "explanation": "Artifacts."
+          },
+          {
+            "id": "pm9-6",
+            "kind": "mcq",
+            "stem": "AI REVIEW_MY_WORK",
+            "choices": [
+              "Critique with disclosure",
+              "Silent rewrite",
+              "Key leak",
+              "Skip control"
+            ],
+            "answer_index": 0,
+            "explanation": "Disclose."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Change control, status, AI-plan critique, capstone",
+        "lesson": "CR with id/impact/decision; status report; AI plan critique that names risk or assumption; ai_disclosed true.\n\nCapstone: end-to-end improvement/project simulation with real artifacts from weeks 1\u20139. No fabricated community outcomes. PMP 2026 value/AI/sustainability as judgment contexts only.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "CR-12 approve; status mentions SPI/risk; critique mentions risk/assumption; ai_disclosed true.",
+        "assignment": "Ship capstone bundle: charter\u2192DMAIC\u2192change\u2192status\u2192AI critique disclosure.",
+        "lab_id": "lab_change_status_ai",
+        "quiz": [
+          {
+            "id": "pm10-1",
+            "kind": "mcq",
+            "stem": "ai_disclosed must be",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "hidden"
+            ],
+            "answer_index": 0,
+            "explanation": "Disclose."
+          },
+          {
+            "id": "pm10-2",
+            "kind": "mcq",
+            "stem": "decision values",
+            "choices": [
+              "approve/reject/defer",
+              "maybe",
+              "vibes",
+              "ship-it"
+            ],
+            "answer_index": 0,
+            "explanation": "Enum."
+          },
+          {
+            "id": "pm10-3",
+            "kind": "mcq",
+            "stem": "critique without risk/assumption",
+            "choices": [
+              "Fails",
+              "Passes",
+              "OK",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "Need substance."
+          },
+          {
+            "id": "pm10-4",
+            "kind": "mcq",
+            "stem": "WAIKE claims PMI ATP?",
+            "choices": [
+              "No",
+              "Yes",
+              "After capstone",
+              "If AI says"
+            ],
+            "answer_index": 0,
+            "explanation": "No."
+          },
+          {
+            "id": "pm10-5",
+            "kind": "mcq",
+            "stem": "Capstone uses",
+            "choices": [
+              "Real course artifacts",
+              "Fabricated city stats",
+              "Exam dumps",
+              "DRM"
+            ],
+            "answer_index": 0,
+            "explanation": "Real."
+          },
+          {
+            "id": "pm10-6",
+            "kind": "mcq",
+            "stem": "Status report short 'ok'",
+            "choices": [
+              "Fails length",
+              "Passes",
+              "Ideal",
+              "Required"
+            ],
+            "answer_index": 0,
+            "explanation": "Need substance."
+          }
+        ]
+      }
+    ]
+  }
+}

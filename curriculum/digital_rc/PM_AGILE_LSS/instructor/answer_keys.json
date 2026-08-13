@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "PM_AGILE_LSS",
+  "quizzes": {
+    "PM_AGILE_LSS-q01": [
+      {
+        "id": "pm1-1",
+        "answer_index": 2,
+        "explanation": "No fake."
+      },
+      {
+        "id": "pm1-2",
+        "answer_index": 3,
+        "explanation": "Baseline."
+      },
+      {
+        "id": "pm1-3",
+        "answer_index": 0,
+        "explanation": "Not ATP."
+      },
+      {
+        "id": "pm1-4",
+        "answer_index": 1,
+        "explanation": "Out."
+      },
+      {
+        "id": "pm1-5",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pm1-6",
+        "answer_index": 3,
+        "explanation": "No harvest."
+      }
+    ],
+    "PM_AGILE_LSS-q02": [
+      {
+        "id": "pm2-1",
+        "answer_index": 0,
+        "explanation": "One A."
+      },
+      {
+        "id": "pm2-2",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pm2-3",
+        "answer_index": 2,
+        "explanation": "R."
+      },
+      {
+        "id": "pm2-4",
+        "answer_index": 3,
+        "explanation": "Three."
+      },
+      {
+        "id": "pm2-5",
+        "answer_index": 0,
+        "explanation": "No."
+      },
+      {
+        "id": "pm2-6",
+        "answer_index": 1,
+        "explanation": "Disclose."
+      }
+    ],
+    "PM_AGILE_LSS-q03": [
+      {
+        "id": "pm3-1",
+        "answer_index": 2,
+        "explanation": "2+3+4."
+      },
+      {
+        "id": "pm3-2",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pm3-3",
+        "answer_index": 0,
+        "explanation": "2026 refresh."
+      },
+      {
+        "id": "pm3-4",
+        "answer_index": 1,
+        "explanation": "Context."
+      },
+      {
+        "id": "pm3-5",
+        "answer_index": 2,
+        "explanation": "Need preds."
+      },
+      {
+        "id": "pm3-6",
+        "answer_index": 3,
+        "explanation": "Decompose."
+      }
+    ],
+    "PM_AGILE_LSS-q04": [
+      {
+        "id": "pm4-1",
+        "answer_index": 0,
+        "explanation": "Cap."
+      },
+      {
+        "id": "pm4-2",
+        "answer_index": 1,
+        "explanation": "Need AC."
+      },
+      {
+        "id": "pm4-3",
+        "answer_index": 2,
+        "explanation": "Sprint."
+      },
+      {
+        "id": "pm4-4",
+        "answer_index": 3,
+        "explanation": "Practice."
+      },
+      {
+        "id": "pm4-5",
+        "answer_index": 0,
+        "explanation": "Need cap."
+      },
+      {
+        "id": "pm4-6",
+        "answer_index": 1,
+        "explanation": "Testable."
+      }
+    ],
+    "PM_AGILE_LSS-q05": [
+      {
+        "id": "pm5-1",
+        "answer_index": 2,
+        "explanation": "Product."
+      },
+      {
+        "id": "pm5-2",
+        "answer_index": 3,
+        "explanation": "Need response."
+      },
+      {
+        "id": "pm5-3",
+        "answer_index": 0,
+        "explanation": "Math."
+      },
+      {
+        "id": "pm5-4",
+        "answer_index": 1,
+        "explanation": "Context."
+      },
+      {
+        "id": "pm5-5",
+        "answer_index": 2,
+        "explanation": "Three."
+      },
+      {
+        "id": "pm5-6",
+        "answer_index": 3,
+        "explanation": "Honest."
+      }
+    ],
+    "PM_AGILE_LSS-q06": [
+      {
+        "id": "pm6-1",
+        "answer_index": 0,
+        "explanation": "Three."
+      },
+      {
+        "id": "pm6-2",
+        "answer_index": 1,
+        "explanation": "Measurable."
+      },
+      {
+        "id": "pm6-3",
+        "answer_index": 2,
+        "explanation": "SIPOC."
+      },
+      {
+        "id": "pm6-4",
+        "answer_index": 3,
+        "explanation": "Filled."
+      },
+      {
+        "id": "pm6-5",
+        "answer_index": 0,
+        "explanation": "Label."
+      },
+      {
+        "id": "pm6-6",
+        "answer_index": 1,
+        "explanation": "Find."
+      }
+    ],
+    "PM_AGILE_LSS-q07": [
+      {
+        "id": "pm7-1",
+        "answer_index": 2,
+        "explanation": "80/20."
+      },
+      {
+        "id": "pm7-2",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pm7-3",
+        "answer_index": 0,
+        "explanation": "Need text."
+      },
+      {
+        "id": "pm7-4",
+        "answer_index": 1,
+        "explanation": "Count."
+      },
+      {
+        "id": "pm7-5",
+        "answer_index": 2,
+        "explanation": "No fake."
+      },
+      {
+        "id": "pm7-6",
+        "answer_index": 3,
+        "explanation": "Controllable."
+      }
+    ],
+    "PM_AGILE_LSS-q08": [
+      {
+        "id": "pm8-1",
+        "answer_index": 0,
+        "explanation": "3\u03c3."
+      },
+      {
+        "id": "pm8-2",
+        "answer_index": 1,
+        "explanation": "Exact."
+      },
+      {
+        "id": "pm8-3",
+        "answer_index": 2,
+        "explanation": "Flag."
+      },
+      {
+        "id": "pm8-4",
+        "answer_index": 3,
+        "explanation": "Need data."
+      },
+      {
+        "id": "pm8-5",
+        "answer_index": 0,
+        "explanation": "Detect."
+      },
+      {
+        "id": "pm8-6",
+        "answer_index": 1,
+        "explanation": "Mode."
+      }
+    ],
+    "PM_AGILE_LSS-q09": [
+      {
+        "id": "pm9-1",
+        "answer_index": 2,
+        "explanation": "False."
+      },
+      {
+        "id": "pm9-2",
+        "answer_index": 3,
+        "explanation": "Need all phases."
+      },
+      {
+        "id": "pm9-3",
+        "answer_index": 0,
+        "explanation": "DMAIC."
+      },
+      {
+        "id": "pm9-4",
+        "answer_index": 1,
+        "explanation": "Label."
+      },
+      {
+        "id": "pm9-5",
+        "answer_index": 2,
+        "explanation": "Artifacts."
+      },
+      {
+        "id": "pm9-6",
+        "answer_index": 3,
+        "explanation": "Disclose."
+      }
+    ],
+    "PM_AGILE_LSS-q10": [
+      {
+        "id": "pm10-1",
+        "answer_index": 0,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "pm10-2",
+        "answer_index": 1,
+        "explanation": "Enum."
+      },
+      {
+        "id": "pm10-3",
+        "answer_index": 2,
+        "explanation": "Need substance."
+      },
+      {
+        "id": "pm10-4",
+        "answer_index": 3,
+        "explanation": "No."
+      },
+      {
+        "id": "pm10-5",
+        "answer_index": 0,
+        "explanation": "Real."
+      },
+      {
+        "id": "pm10-6",
+        "answer_index": 1,
+        "explanation": "Need substance."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "pmm01",
+      "answer_index": 2,
+      "explanation": "Need baseline."
+    },
+    {
+      "id": "pmm02",
+      "answer_index": 3,
+      "explanation": "One A."
+    },
+    {
+      "id": "pmm03",
+      "answer_index": 0,
+      "explanation": "A-B=7."
+    },
+    {
+      "id": "pmm04",
+      "answer_index": 1,
+      "explanation": "Overcommit."
+    },
+    {
+      "id": "pmm05",
+      "answer_index": 2,
+      "explanation": "Product."
+    },
+    {
+      "id": "pmm06",
+      "answer_index": 3,
+      "explanation": "Need measure."
+    },
+    {
+      "id": "pmm07",
+      "answer_index": 0,
+      "explanation": "Need 0.8."
+    },
+    {
+      "id": "pmm08",
+      "answer_index": 1,
+      "explanation": "Exact."
+    },
+    {
+      "id": "pmm09",
+      "answer_index": 2,
+      "explanation": "All phases."
+    },
+    {
+      "id": "pmm10",
+      "answer_index": 3,
+      "explanation": "Disclose."
+    },
+    {
+      "id": "pmm11",
+      "answer_index": 0,
+      "explanation": "Not ATP."
+    },
+    {
+      "id": "pmm12",
+      "answer_index": 1,
+      "explanation": "26."
+    },
+    {
+      "id": "pmm13",
+      "answer_index": 2,
+      "explanation": "No fake."
+    },
+    {
+      "id": "pmm14",
+      "answer_index": 3,
+      "explanation": "Need AC."
+    },
+    {
+      "id": "pmm15",
+      "answer_index": 0,
+      "explanation": "Need response."
+    },
+    {
+      "id": "pmm16",
+      "answer_index": 1,
+      "explanation": "Enum."
+    },
+    {
+      "id": "pmm17",
+      "answer_index": 2,
+      "explanation": "Label."
+    },
+    {
+      "id": "pmm18",
+      "answer_index": 3,
+      "explanation": "Context."
+    },
+    {
+      "id": "pmm19",
+      "answer_index": 0,
+      "explanation": "Substance."
+    },
+    {
+      "id": "pmm20",
+      "answer_index": 1,
+      "explanation": "Disclose."
+    }
+  ],
+  "final": [
+    {
+      "id": "pmf01",
+      "answer_index": 3,
+      "explanation": "Process."
+    },
+    {
+      "id": "pmf02",
+      "answer_index": 0,
+      "explanation": "C vs I."
+    },
+    {
+      "id": "pmf03",
+      "answer_index": 1,
+      "explanation": "8 vs 7."
+    },
+    {
+      "id": "pmf04",
+      "answer_index": 2,
+      "explanation": "At cap OK."
+    },
+    {
+      "id": "pmf05",
+      "answer_index": 3,
+      "explanation": "Response."
+    },
+    {
+      "id": "pmf06",
+      "answer_index": 0,
+      "explanation": "Need 3."
+    },
+    {
+      "id": "pmf07",
+      "answer_index": 1,
+      "explanation": "80/100."
+    },
+    {
+      "id": "pmf08",
+      "answer_index": 2,
+      "explanation": "Special cause."
+    },
+    {
+      "id": "pmf09",
+      "answer_index": 3,
+      "explanation": "Evidence."
+    },
+    {
+      "id": "pmf10",
+      "answer_index": 0,
+      "explanation": "Need impact."
+    },
+    {
+      "id": "pmf11",
+      "answer_index": 1,
+      "explanation": "Substance."
+    },
+    {
+      "id": "pmf12",
+      "answer_index": 2,
+      "explanation": "33."
+    },
+    {
+      "id": "pmf13",
+      "answer_index": 3,
+      "explanation": "41."
+    },
+    {
+      "id": "pmf14",
+      "answer_index": 0,
+      "explanation": "Value."
+    },
+    {
+      "id": "pmf15",
+      "answer_index": 1,
+      "explanation": "Real artifacts."
+    },
+    {
+      "id": "pmf16",
+      "answer_index": 2,
+      "explanation": "Mode."
+    },
+    {
+      "id": "pmf17",
+      "answer_index": 3,
+      "explanation": "Labels."
+    },
+    {
+      "id": "pmf18",
+      "answer_index": 0,
+      "explanation": "Hybrid."
+    },
+    {
+      "id": "pmf19",
+      "answer_index": 1,
+      "explanation": "Instructor-only."
+    },
+    {
+      "id": "pmf20",
+      "answer_index": 2,
+      "explanation": "Original."
+    },
+    {
+      "id": "pmf21",
+      "answer_index": 3,
+      "explanation": "Difference."
+    },
+    {
+      "id": "pmf22",
+      "answer_index": 0,
+      "explanation": "Measure."
+    },
+    {
+      "id": "pmf23",
+      "answer_index": 1,
+      "explanation": "Critique."
+    },
+    {
+      "id": "pmf24",
+      "answer_index": 2,
+      "explanation": "Boundary."
+    }
+  ]
+}

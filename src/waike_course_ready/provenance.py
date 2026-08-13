@@ -1,4 +1,4 @@
-"""Provenance + template detectors for the digital RC batch.
+"""Provenance + template detectors for the digital RC batch (COURSE-READY-002 active).
 
 Lesson Jaccard alone is not enough. Packaging shells (rubrics, lab READMEs,
 instructor notes, syllabus assessment language) and answer-key collapse are
@@ -142,8 +142,8 @@ def audit() -> dict[str, Any]:
             findings.append(f"{cid} week openings not distinct")
 
         weekly = list(_weekly_stems(cid))
-        if len(weekly) < 48:
-            findings.append(f"{cid} weekly stems {len(weekly)} < 48")
+        if len(weekly) < 60:
+            findings.append(f"{cid} weekly stems {len(weekly)} < 60")
         if len(set(weekly)) != len(weekly):
             findings.append(f"{cid} duplicate weekly stems")
 

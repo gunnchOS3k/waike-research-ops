@@ -1,0 +1,225 @@
+{
+  "assessment_id": "SOFTWARE_BUILDER-mid",
+  "items": [
+    {
+      "id": "swm01",
+      "kind": "mcq",
+      "stem": "Build 47 collides on serialize_ticket where main added rate_limit(30) and feature added FIELD_MAP. Survivor must retain?",
+      "choices": [
+        "Both rate_limit(30) and FIELD_MAP",
+        "Only FIELD_MAP",
+        "Neither",
+        "Only a comment"
+      ]
+    },
+    {
+      "id": "swm02",
+      "kind": "mcq",
+      "stem": "Compose healthcheck stays starting after migrate=skipped. Right decision?",
+      "choices": [
+        "Ship anyway",
+        "Block until migrate=ok then healthy",
+        "Delete rollback digest",
+        "Force latest"
+      ]
+    },
+    {
+      "id": "swm03",
+      "kind": "mcq",
+      "stem": "Checkout store length becomes 2 after two identical PUTs to same id. Broken contract?",
+      "choices": [
+        "DNS TTL",
+        "CSS grid",
+        "Idempotent update",
+        "SPICE net"
+      ]
+    },
+    {
+      "id": "swm04",
+      "kind": "mcq",
+      "stem": "Why reject migration SQL containing PASSWORD=hunter2?",
+      "choices": [
+        "SQLite syntax",
+        "CS50 requires it",
+        "Zephyr needs it",
+        "Secrets must not live in migration SQL"
+      ]
+    },
+    {
+      "id": "swm05",
+      "kind": "mcq",
+      "stem": "Overdue row uses class=red with no OVERDUE text. Which rule fails?",
+      "choices": [
+        "Color-only signaling",
+        "Git LFS",
+        "BOM MPN",
+        "Control chart UCL"
+      ]
+    },
+    {
+      "id": "swm06",
+      "kind": "mcq",
+      "stem": "forge-bot granted checkout.close during a rush. Which check fails?",
+      "choices": [
+        "tau math",
+        "bot_no_close",
+        "RACI one A",
+        "Thevenin Rth"
+      ]
+    },
+    {
+      "id": "swm07",
+      "kind": "mcq",
+      "stem": "Report total=12 failed=0 omits test_reader_post_forbidden. Result?",
+      "choices": [
+        "Pass",
+        "Auto-generate test",
+        "Fail named_test",
+        "Skip CI"
+      ]
+    },
+    {
+      "id": "swm08",
+      "kind": "mcq",
+      "stem": "PR workflow deploy job has no environment key. Gate?",
+      "choices": [
+        "NAND truth",
+        "Pareto 80 percent",
+        "Idle timer",
+        "no_ungated_deploy"
+      ]
+    },
+    {
+      "id": "swm09",
+      "kind": "mcq",
+      "stem": "Fixture failed=20 total=4000. Student availability?",
+      "choices": [
+        "0.995",
+        "0.95",
+        "0.005",
+        "1.0"
+      ]
+    },
+    {
+      "id": "swm10",
+      "kind": "mcq",
+      "stem": "Review lists only low findings while intentional IDOR remains. Missing?",
+      "choices": [
+        "A KiCad DRC",
+        "A high or critical IDOR finding",
+        "A SIPOC",
+        "A Thevenin"
+      ]
+    },
+    {
+      "id": "swm11",
+      "kind": "mcq",
+      "stem": "Location header after create should match which shape?",
+      "choices": [
+        "/admin",
+        "mailto:staff",
+        "/api/v1/checkouts/{id}",
+        "file:///etc/passwd"
+      ]
+    },
+    {
+      "id": "swm12",
+      "kind": "mcq",
+      "stem": "Down migration drops entire checkouts table. Why reject?",
+      "choices": [
+        "Tables are illegal",
+        "Postgres forbids DROP",
+        "Compose cannot mount",
+        "History must survive column rollback"
+      ]
+    },
+    {
+      "id": "swm13",
+      "kind": "mcq",
+      "stem": "Assistant edited your authz matrix. Proper assessment tag?",
+      "choices": [
+        "AI_DISCLOSED",
+        "NO_AI claimed falsely",
+        "Skip disclosure",
+        "Hide the JSON"
+      ]
+    },
+    {
+      "id": "swm14",
+      "kind": "mcq",
+      "stem": "lint job scheduled after test job. Ordering rule?",
+      "choices": [
+        "BOM first",
+        "lint before test fails",
+        "DMAIC only",
+        "QEMU last"
+      ]
+    },
+    {
+      "id": "swm15",
+      "kind": "mcq",
+      "stem": "rollback_to equals current digest sha256:abc. Failure?",
+      "choices": [
+        "NAND output",
+        "One Accountable",
+        "rollback_distinct",
+        "SIPOC customers"
+      ]
+    },
+    {
+      "id": "swm16",
+      "kind": "mcq",
+      "stem": "Reader receives 201 on POST /checkouts. What should happen instead?",
+      "choices": [
+        "500 always",
+        "204 empty",
+        "302 redirect",
+        "403 forbidden"
+      ]
+    },
+    {
+      "id": "swm17",
+      "kind": "mcq",
+      "stem": "Capstone packet has quizzes but no deploy record. Status?",
+      "choices": [
+        "Incomplete issue-to-deploy path",
+        "Complete",
+        "CSSGB earned",
+        "PMI ATP"
+      ]
+    },
+    {
+      "id": "swm18",
+      "kind": "mcq",
+      "stem": "API returns Python traceback to browser on 500. Treat as?",
+      "choices": [
+        "ignore",
+        "medium or higher finding",
+        "info-only always",
+        "automatic pass"
+      ]
+    },
+    {
+      "id": "swm19",
+      "kind": "mcq",
+      "stem": "schema_version stays 2 after adding returned_at. Fail because?",
+      "choices": [
+        "SPICE error",
+        "RACI error",
+        "version must bump to 3",
+        "UCL error"
+      ]
+    },
+    {
+      "id": "swm20",
+      "kind": "mcq",
+      "stem": "COMPARE_APPROACHES used on UI layout. Footer must include?",
+      "choices": [
+        "Nothing",
+        "Instructor password",
+        "DRM key",
+        "Disclosure of the comparison"
+      ]
+    }
+  ]
+}

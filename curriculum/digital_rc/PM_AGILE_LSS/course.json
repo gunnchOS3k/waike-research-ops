@@ -1,0 +1,248 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "PM_AGILE_LSS",
+  "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+  "track_ids": [
+    "PM_AGILE_LSS"
+  ],
+  "academy_id": "ACADEMY_PROCESS_PM",
+  "kinesthetic_hook": "Charter a real wait problem, run DMAIC on fixture data, and critique an AI plan without inventing outcomes.",
+  "lesson_excerpt": "Process Studio: Device Lab noon checkout wait baseline 15 minutes. Charter states problem, goal metric with baseline, in/out scope. fabricated_outcomes must be false \u2014 no invented community impact.\n\nASQ CSSGB Define themes and PMI CAPM/PMP alignment are labels only. WAIKE is not a PMI ATP. No fake certs.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence",
+  "worked_example": "problem wait>15m; goal baseline 15m\u21928m; in_scope queue+staffing; out_scope new building; fabricated_outcomes false.",
+  "assignment": "Write charter JSON and a one-page sponsor brief without invented stats.",
+  "lab_hint": "lab_charter",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Charter the noon checkout wait problem",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w01",
+        "title": "Charter the noon checkout wait problem",
+        "body_md": "Process Studio: Device Lab noon checkout wait baseline 15 minutes. Charter states problem, goal metric with baseline, in/out scope. fabricated_outcomes must be false \u2014 no invented community impact.\n\nASQ CSSGB Define themes and PMI CAPM/PMP alignment are labels only. WAIKE is not a PMI ATP. No fake certs.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "problem wait>15m; goal baseline 15m\u21928m; in_scope queue+staffing; out_scope new building; fabricated_outcomes false."
+      },
+      "lab_id": "lab_charter"
+    },
+    {
+      "week": 2,
+      "title": "RACI for the improvement team",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w02",
+        "title": "RACI for the improvement team",
+        "body_md": "Each task exactly one A (accountable). Matrix covers charter, measure, control at minimum. Two As on one task fails.\n\nPeople domain judgment without claiming PMP credential.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Three tasks each with exactly one A."
+      },
+      "lab_id": "lab_raci"
+    },
+    {
+      "week": 3,
+      "title": "WBS and schedule \u2014 critical path",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w03",
+        "title": "WBS and schedule \u2014 critical path",
+        "body_md": "Tasks A2 B3 C2 D4 with preds A\u2192B,A\u2192C,B/C\u2192D. Critical path days = 2+3+4=9. Lab recomputes longest path.\n\nPMP 2026 ECO Process weighting is a label; scenarios may mention AI tools as context without testing model math.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "critical_path_days=9 for the reference graph."
+      },
+      "lab_id": "lab_wbs_schedule"
+    },
+    {
+      "week": 4,
+      "title": "Sprint board under capacity",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w04",
+        "title": "Sprint board under capacity",
+        "body_md": "Agile sprint: committed points <= capacity; Done items need acceptance criteria. Overcommit fails.\n\nHybrid delivery language allowed; not a Scrum Guide reprint.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "capacity=20 committed=18 done_items with acceptance text."
+      },
+      "lab_id": "lab_sprint_board"
+    },
+    {
+      "week": 5,
+      "title": "Risk register with scores",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w05",
+        "title": "Risk register with scores",
+        "body_md": "score=prob*impact. Top risk needs response. Three risks minimum.\n\nSustainability/AI appear as risk contexts per PMP 2026 \u2014 judgment not engineering depth.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R1 3*5=15 with response cross-train; others lower."
+      },
+      "lab_id": "lab_risk_register"
+    },
+    {
+      "week": 6,
+      "title": "SIPOC and process map",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w06",
+        "title": "SIPOC and process map",
+        "body_md": "SIPOC with >=3 process steps and measurable output (count/time/%). Lean VSM themes as labels \u2014 original Device Lab process.\n\nMeasurement system note ties to next week.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "process intake/triage/resolve; outputs resolved count/day."
+      },
+      "lab_id": "lab_sipoc_process"
+    },
+    {
+      "week": 7,
+      "title": "Pareto and root cause",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w07",
+        "title": "Pareto and root cause",
+        "body_md": "Causes sorted; cumulative % until >=80%. Root cause sentence required. Fixture: cables/staff/labels/other.\n\nAnalyze phase CSSGB alignment label only.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "cum_pct_top computed from sorted counts until >=0.8; root_cause about cable kit staging."
+      },
+      "lab_id": "lab_pareto_rootcause"
+    },
+    {
+      "week": 8,
+      "title": "Control chart on wait times",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w08",
+        "title": "Control chart on wait times",
+        "body_md": "Individuals chart: mean, MR-based sigma, UCL/LCL \u00b13\u03c3, flag out-of-control indices. Fixture includes a spike.\n\nControl phase label; not Minitab dump.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Compute mean/ucl/lcl/ooc from points [10,11,10,12,10,25,11]."
+      },
+      "lab_id": "lab_control_chart"
+    },
+    {
+      "week": 9,
+      "title": "DMAIC case with real artifacts",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w09",
+        "title": "DMAIC case with real artifacts",
+        "body_md": "Each DMAIC phase narrative >=15 chars; fabricated_outcomes false. Tie to prior labs' artifacts.\n\nImprove must name a change you can evidence; Control points to chart.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "define/measure/analyze/improve/control filled; fabricated_outcomes false."
+      },
+      "lab_id": "lab_dmaic_case"
+    },
+    {
+      "week": 10,
+      "title": "Change control, status, AI-plan critique, capstone",
+      "lesson": {
+        "lesson_id": "PM_AGILE_LSS-w10",
+        "title": "Change control, status, AI-plan critique, capstone",
+        "body_md": "CR with id/impact/decision; status report; AI plan critique that names risk or assumption; ai_disclosed true.\n\nCapstone: end-to-end improvement/project simulation with real artifacts from weeks 1\u20139. No fabricated community outcomes. PMP 2026 value/AI/sustainability as judgment contexts only.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "CR-12 approve; status mentions SPI/risk; critique mentions risk/assumption; ai_disclosed true."
+      },
+      "lab_id": "lab_change_status_ai"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_charter",
+    "lab_raci",
+    "lab_wbs_schedule",
+    "lab_sprint_board",
+    "lab_risk_register",
+    "lab_sipoc_process",
+    "lab_pareto_rootcause",
+    "lab_control_chart",
+    "lab_dmaic_case",
+    "lab_change_status_ai"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "PM_AGILE_LSS-lab",
+    "PM_AGILE_LSS-assignment",
+    "PM_AGILE_LSS-quiz",
+    "PM_AGILE_LSS-mid",
+    "PM_AGILE_LSS-final-knowledge",
+    "PM_AGILE_LSS-practical",
+    "PM_AGILE_LSS-project",
+    "PM_AGILE_LSS-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_project_coordinator",
+      "process_improvement_analyst"
+    ],
+    "certs_aligned_not_granted": [
+      "ASQ CSSGB",
+      "PMI CAPM",
+      "PMI PMP"
+    ],
+    "not_atp_claim": true
+  },
+  "alignment_ref": "curriculum/alignment/pm_agile_lss_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "notes": "AI plan critique requires AI_DISCLOSED true; chart math NO_AI; never invent community outcomes."
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

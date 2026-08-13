@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "hw7-1",
+      "kind": "mcq",
+      "stem": "board id",
+      "choices": [
+        "pi4",
+        "qemu_cortex_m0",
+        "x86_efi",
+        "native_sim_only_forbidden"
+      ]
+    },
+    {
+      "id": "hw7-2",
+      "kind": "mcq",
+      "stem": "physical_status",
+      "choices": [
+        "DONE",
+        "SKIPPED_FOREVER",
+        "PHYSICAL_PENDING",
+        "SOLDERED"
+      ]
+    },
+    {
+      "id": "hw7-3",
+      "kind": "mcq",
+      "stem": "west cmd must include",
+      "choices": [
+        "make only",
+        "PlatformIO only",
+        "Arduino flash",
+        "west build and board name"
+      ]
+    },
+    {
+      "id": "hw7-4",
+      "kind": "mcq",
+      "stem": "Flash hardware now?",
+      "choices": [
+        "No \u2014 digital first",
+        "Yes always",
+        "Required for PASS",
+        "Ignore QEMU"
+      ]
+    },
+    {
+      "id": "hw7-5",
+      "kind": "mcq",
+      "stem": "Zephyr docs",
+      "choices": [
+        "Copy entire tree mandatorily",
+        "Reference / open project docs \u2014 not dump of exams",
+        "PMI ATP",
+        "DRM bypass"
+      ]
+    },
+    {
+      "id": "hw7-6",
+      "kind": "mcq",
+      "stem": "QEMU fails qemu_ok false",
+      "choices": [
+        "Still PASS",
+        "Physical required",
+        "Lab fails",
+        "Ignore"
+      ]
+    }
+  ]
+}

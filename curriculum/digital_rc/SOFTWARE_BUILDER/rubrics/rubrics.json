@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "SOFTWARE_BUILDER-lab",
+    "title": "ForgeDesk lab",
+    "criteria": [
+      {
+        "name": "conflict_tokens",
+        "weight": 20,
+        "desc": "require_role and HOURS both survive"
+      },
+      {
+        "name": "status_map",
+        "weight": 20,
+        "desc": "201/400/403/404 map matches role/body"
+      },
+      {
+        "name": "ci_gate",
+        "weight": 20,
+        "desc": "PR workflow lint\u2192test\u2192upload; no ungated deploy"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails student_artifact"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS-only submission rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-assignment",
+    "title": "Builder journal",
+    "criteria": [
+      {
+        "name": "ticket_numbers",
+        "weight": 40,
+        "desc": "Uses 8801-class tickets not 'a bug'"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "AI mode tagged when used"
+      },
+      {
+        "name": "no_secrets",
+        "weight": 30,
+        "desc": "No passwords/tokens in journal"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-quiz",
+    "title": "Builder knowledge",
+    "criteria": [
+      {
+        "name": "forge_numbers",
+        "weight": 50,
+        "desc": "Original stems; status/digest/SLO math"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys only in instructor/answer_keys.json"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-mid",
+    "title": "Mid ForgeDesk audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not weekly clones / Jaccard<0.80"
+      },
+      {
+        "name": "conflict_rest_ci",
+        "weight": 40,
+        "desc": "Conflict, REST, migrate, authz, CI"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-final-knowledge",
+    "title": "Final builder exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not weekly clones"
+      },
+      {
+        "name": "deploy_sec_slo",
+        "weight": 50,
+        "desc": "Deploy, review, availability, capstone path"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Bot-close and bad migrate fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS string rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-project",
+    "title": "Issue to deploy",
+    "criteria": [
+      {
+        "name": "path_complete",
+        "weight": 40,
+        "desc": "issue\u2192PR\u2192CI\u2192migrate\u2192deploy\u2192SLO"
+      },
+      {
+        "name": "device_lab_target",
+        "weight": 30,
+        "desc": "Local compose digest pin"
+      },
+      {
+        "name": "no_fabricated_impact",
+        "weight": 30,
+        "desc": "Fixture counts only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SOFTWARE_BUILDER-portfolio",
+    "title": "Builder portfolio",
+    "criteria": [
+      {
+        "name": "lab_json",
+        "weight": 40,
+        "desc": "Lab results + empty-fail evidence"
+      },
+      {
+        "name": "security_findings",
+        "weight": 30,
+        "desc": "IDOR finding with evidence"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 30,
+        "desc": "Does not claim vendor certs"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "practical_id": "HARDWARE_ENGINEERING-practical",
+  "labs": [
+    "lab_spice_network",
+    "lab_thevenin",
+    "lab_rc_transient",
+    "lab_logic_gate",
+    "lab_power_budget",
+    "lab_bus_protocol",
+    "lab_zephyr_qemu",
+    "lab_devicetree",
+    "lab_pcb_erc_drc",
+    "lab_failure_diagnosis"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

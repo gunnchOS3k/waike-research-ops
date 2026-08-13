@@ -1,0 +1,18 @@
+{
+  "modes": [
+    "EXPLAIN",
+    "HINT",
+    "QUESTION_ME",
+    "DEBUG_WITH_ME",
+    "REVIEW_MY_WORK",
+    "COMPARE_APPROACHES",
+    "PRACTICE"
+  ],
+  "assessment_modes": [
+    "AI_ALLOWED",
+    "AI_RESTRICTED",
+    "AI_DISCLOSED",
+    "NO_AI"
+  ],
+  "notes": "Weekly defaults AI_DISCLOSED for critiques; security practical NO_AI; migration SQL AI_RESTRICTED."
+}

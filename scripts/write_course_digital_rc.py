@@ -19,19 +19,24 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
             reasons.append(msg)
 
     need(c.get("syllabus", 0) >= 1, "syllabus < 1")
-    need(c.get("weeks", 0) >= 8, "weeks < 8")
-    need(c.get("full_lessons", 0) >= 8, "full_lessons < 8")
-    need(c.get("assignments", 0) >= 8, "assignments < 8")
-    need(c.get("runnable_labs", 0) >= 4, "runnable_labs < 4")
-    need(c.get("quizzes", 0) >= 8, "quizzes < 8")
-    need(c.get("quiz_items", 0) >= 48, "quiz_items < 48")
+    need(c.get("weeks", 0) >= 10, "weeks < 10")
+    need(c.get("full_lessons", 0) >= 10, "full_lessons < 10")
+    need(c.get("assignments", 0) >= 10, "assignments < 10")
+    need(c.get("runnable_labs", 0) >= 6, "runnable_labs < 6")
+    need(c.get("quizzes", 0) >= 10, "quizzes < 10")
+    need(c.get("quiz_items", 0) >= 60, "quiz_items < 60")
     need(c.get("mid_course_items", 0) >= 20, "mid_course_items < 20")
     need(c.get("final_items", 0) >= 24, "final_items < 24")
     need(c.get("mid_course_items_original", 0) >= 20, "mid original < 20 (cloned stems)")
     need(c.get("final_items_original", 0) >= 24, "final original < 24 (cloned stems)")
     need(c.get("practicals", 0) >= 1, "practicals < 1")
     need(c.get("projects", 0) >= 1, "projects < 1")
-    need(c.get("rubrics", 0) >= 4, "rubrics < 4")
+    need(c.get("presentation_materials", 0) >= 10, "presentations < 10")
+    need(c.get("student_materials", 0) >= 1, "student packet missing")
+    need(c.get("instructor_materials", 0) >= 11, "instructor materials < 11")
+    need(c.get("offline_pack", 0) >= 1, "offline pack missing")
+    need(c.get("portfolio_artifacts", 0) >= 1, "portfolio missing")
+    need(c.get("rubrics", 0) >= 8, "rubrics < 8")
     need(bool(labs.get("ok")), "lab execution bundle not ok")
     need(bool(labs.get("empty_submission_fails")), "empty student artifacts still pass")
     need(bool(labs.get("wrong_submission_fails")), "wrong student artifacts still pass")
@@ -75,7 +80,7 @@ def main() -> int:
         }
         batch_ok = batch_ok and earned
     payload = {
-        "packet": "WAIKE-COURSE-READY-001",
+        "packet": "WAIKE-COURSE-READY-002",
         "COURSE_DIGITAL_RC_BATCH": batch_ok,
         "REAL_STUDENT_E6": False,
         "REAL_TEACHER_E6": False,
@@ -99,7 +104,7 @@ def main() -> int:
         "claim_boundary": (
             "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, "
             "non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. "
-            "Not a student/teacher E6. Not all 18 courses."
+            "Not a student/teacher E6. Not all 18 courses. Batch 002 only."
         ),
     }
     out = ROOT / "artifacts" / "COURSE_DIGITAL_RC.json"

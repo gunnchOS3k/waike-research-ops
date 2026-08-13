@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "pm8-1",
+      "kind": "mcq",
+      "stem": "UCL uses",
+      "choices": [
+        "mean+3\u03c3",
+        "mean",
+        "max",
+        "AI"
+      ]
+    },
+    {
+      "id": "pm8-2",
+      "kind": "mcq",
+      "stem": "Wrong ooc index",
+      "choices": [
+        "Passes",
+        "Fails",
+        "OK",
+        "Ignored"
+      ]
+    },
+    {
+      "id": "pm8-3",
+      "kind": "mcq",
+      "stem": "Spike at 25",
+      "choices": [
+        "Always ignore",
+        "Delete point silently",
+        "Likely out of control vs limits",
+        "Mean becomes 25"
+      ]
+    },
+    {
+      "id": "pm8-4",
+      "kind": "mcq",
+      "stem": "Empty points",
+      "choices": [
+        "Passes",
+        "Auto",
+        "OK",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm8-5",
+      "kind": "mcq",
+      "stem": "SPC purpose",
+      "choices": [
+        "Detect special cause",
+        "Replace charter",
+        "Replace RACI",
+        "Grant CSSGB"
+      ]
+    },
+    {
+      "id": "pm8-6",
+      "kind": "mcq",
+      "stem": "NO_AI on chart math",
+      "choices": [
+        "AI must compute",
+        "Allowed as assessment mode",
+        "Hide",
+        "Forge limits"
+      ]
+    }
+  ]
+}

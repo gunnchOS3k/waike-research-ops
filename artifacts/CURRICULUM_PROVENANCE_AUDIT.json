@@ -3,66 +3,66 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0003,
+  "worst_jaccard": 0.0921,
   "worst_pair": [
-    "GENERAL_IT",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
-  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_jaccard": 0.092,
   "worst_packaging_pair": [
-    "COMPUTER_NETWORKING",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
   "pairs": [
     {
-      "a": "GENERAL_IT",
-      "b": "CYBERSECURITY",
-      "jaccard_5gram": 0.0003
+      "a": "HARDWARE_ENGINEERING",
+      "b": "PM_AGILE_LSS",
+      "jaccard_5gram": 0.0921
     },
     {
-      "a": "GENERAL_IT",
-      "b": "COMPUTER_NETWORKING",
-      "jaccard_5gram": 0.0
+      "a": "SOFTWARE_BUILDER",
+      "b": "PM_AGILE_LSS",
+      "jaccard_5gram": 0.006
     },
     {
-      "a": "COMPUTER_NETWORKING",
-      "b": "CYBERSECURITY",
-      "jaccard_5gram": 0.0
+      "a": "SOFTWARE_BUILDER",
+      "b": "HARDWARE_ENGINEERING",
+      "jaccard_5gram": 0.0053
     }
   ],
   "packaging_pairs": [
     {
-      "a": "COMPUTER_NETWORKING",
-      "b": "CYBERSECURITY",
-      "packaging_jaccard_5gram": 0.0249
+      "a": "HARDWARE_ENGINEERING",
+      "b": "PM_AGILE_LSS",
+      "packaging_jaccard_5gram": 0.092
     },
     {
-      "a": "GENERAL_IT",
-      "b": "CYBERSECURITY",
-      "packaging_jaccard_5gram": 0.0201
+      "a": "SOFTWARE_BUILDER",
+      "b": "PM_AGILE_LSS",
+      "packaging_jaccard_5gram": 0.0797
     },
     {
-      "a": "GENERAL_IT",
-      "b": "COMPUTER_NETWORKING",
-      "packaging_jaccard_5gram": 0.0197
+      "a": "SOFTWARE_BUILDER",
+      "b": "HARDWARE_ENGINEERING",
+      "packaging_jaccard_5gram": 0.0784
     }
   ],
   "key_distribution": {
-    "GENERAL_IT": {
+    "SOFTWARE_BUILDER": {
       "A": 26,
       "B": 26,
       "C": 26,
       "D": 26,
       "n": 104
     },
-    "COMPUTER_NETWORKING": {
+    "HARDWARE_ENGINEERING": {
       "A": 26,
       "B": 26,
       "C": 26,
       "D": 26,
       "n": 104
     },
-    "CYBERSECURITY": {
+    "PM_AGILE_LSS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -73,36 +73,36 @@
   "key_balance_ok": true,
   "exam_items_original": true,
   "exam_original_counts": {
-    "GENERAL_IT": {
+    "SOFTWARE_BUILDER": {
       "weekly_stems": 60,
       "mid_original": 20,
       "final_original": 24,
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
-      "worst_token_jaccard": 0.6471
+      "worst_token_jaccard": 0.4
     },
-    "COMPUTER_NETWORKING": {
+    "HARDWARE_ENGINEERING": {
       "weekly_stems": 60,
       "mid_original": 20,
       "final_original": 24,
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
-      "worst_token_jaccard": 0.6923
+      "worst_token_jaccard": 0.75
     },
-    "CYBERSECURITY": {
+    "PM_AGILE_LSS": {
       "weekly_stems": 60,
       "mid_original": 20,
       "final_original": 24,
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
-      "worst_token_jaccard": 0.6667
+      "worst_token_jaccard": 0.7143
     }
   },
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
-  "worst_exam_weekly_token_jaccard": 0.6923,
+  "worst_exam_weekly_token_jaccard": 0.75,
   "exam_restatement_hits": [],
-  "registry_size": 16,
+  "registry_size": 26,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."
 }

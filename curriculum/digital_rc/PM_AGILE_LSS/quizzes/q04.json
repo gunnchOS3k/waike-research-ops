@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "pm4-1",
+      "kind": "mcq",
+      "stem": "committed > capacity",
+      "choices": [
+        "Fails",
+        "Passes",
+        "Required",
+        "Ignored"
+      ]
+    },
+    {
+      "id": "pm4-2",
+      "kind": "mcq",
+      "stem": "Done without AC",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Auto",
+        "OK"
+      ]
+    },
+    {
+      "id": "pm4-3",
+      "kind": "mcq",
+      "stem": "Sprint is",
+      "choices": [
+        "Infinite",
+        "Only DMAIC",
+        "Timeboxed delivery slice",
+        "Only SPICE"
+      ]
+    },
+    {
+      "id": "pm4-4",
+      "kind": "mcq",
+      "stem": "AI PRACTICE mode",
+      "choices": [
+        "Secret key share",
+        "Skip retro",
+        "Forge metrics",
+        "Drills with disclosure rules"
+      ]
+    },
+    {
+      "id": "pm4-5",
+      "kind": "mcq",
+      "stem": "capacity 0",
+      "choices": [
+        "Fails",
+        "Passes",
+        "Ideal",
+        "Lean"
+      ]
+    },
+    {
+      "id": "pm4-6",
+      "kind": "mcq",
+      "stem": "Acceptance criteria",
+      "choices": [
+        "Logo",
+        "Testable Done check",
+        "Vibe",
+        "Password"
+      ]
+    }
+  ]
+}

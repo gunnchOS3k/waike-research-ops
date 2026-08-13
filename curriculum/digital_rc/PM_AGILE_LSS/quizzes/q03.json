@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "pm3-1",
+      "kind": "mcq",
+      "stem": "CP days reference",
+      "choices": [
+        "7",
+        "4",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "id": "pm3-2",
+      "kind": "mcq",
+      "stem": "Wrong CP number",
+      "choices": [
+        "Passes",
+        "Rounded",
+        "Ignored",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm3-3",
+      "kind": "mcq",
+      "stem": "PMP 2026 Business Environment weight ~",
+      "choices": [
+        "26%",
+        "8%",
+        "50%",
+        "0%"
+      ]
+    },
+    {
+      "id": "pm3-4",
+      "kind": "mcq",
+      "stem": "AI on PMP 2026",
+      "choices": [
+        "Must code neural nets",
+        "In scenario context not standalone model exam",
+        "Banned topic",
+        "ATP only"
+      ]
+    },
+    {
+      "id": "pm3-5",
+      "kind": "mcq",
+      "stem": "preds missing",
+      "choices": [
+        "Fine",
+        "Auto",
+        "Breaks path math",
+        "SPICE"
+      ]
+    },
+    {
+      "id": "pm3-6",
+      "kind": "mcq",
+      "stem": "WBS purpose",
+      "choices": [
+        "Replace risk",
+        "Replace SIPOC",
+        "Replace charter",
+        "Decompose work"
+      ]
+    }
+  ]
+}

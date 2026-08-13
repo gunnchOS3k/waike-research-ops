@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "sw3-1",
+      "kind": "mcq",
+      "stem": "schema_version after 0003",
+      "choices": [
+        "3",
+        "2",
+        "0",
+        "null"
+      ]
+    },
+    {
+      "id": "sw3-2",
+      "kind": "mcq",
+      "stem": "returned_at should be",
+      "choices": [
+        "NOT NULL forced",
+        "NULL-able timestamp",
+        "Primary key",
+        "BLOB"
+      ]
+    },
+    {
+      "id": "sw3-3",
+      "kind": "mcq",
+      "stem": "Down migration may",
+      "choices": [
+        "DROP DATABASE",
+        "DELETE all users",
+        "Drop only returned_at",
+        "Truncate logs"
+      ]
+    },
+    {
+      "id": "sw3-4",
+      "kind": "mcq",
+      "stem": "Hard-coded DB password in SQL",
+      "choices": [
+        "Fine for labs",
+        "Required",
+        "Helps CI",
+        "Fails security boundary"
+      ]
+    },
+    {
+      "id": "sw3-5",
+      "kind": "mcq",
+      "stem": "DELETE FROM checkouts to make room",
+      "choices": [
+        "Fails \u2014 destroys history",
+        "Passes if commented",
+        "Is down path",
+        "CS50 requires"
+      ]
+    },
+    {
+      "id": "sw3-6",
+      "kind": "mcq",
+      "stem": "Why hash forward SQL?",
+      "choices": [
+        "Fashion",
+        "Prove real statement submitted",
+        "Postgres requires",
+        "Volumes"
+      ]
+    }
+  ]
+}

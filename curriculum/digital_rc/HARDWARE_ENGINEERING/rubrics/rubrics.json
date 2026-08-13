@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-lab",
+    "title": "ForgeSense lab",
+    "criteria": [
+      {
+        "name": "network_math",
+        "weight": 20,
+        "desc": "I/Vout/Vth/Rth/tau computed not guessed"
+      },
+      {
+        "name": "mpn_budget",
+        "weight": 20,
+        "desc": "Real MPNs with positive margin"
+      },
+      {
+        "name": "qemu_west",
+        "weight": 20,
+        "desc": "qemu_cortex_m0 + PHYSICAL_PENDING"
+      },
+      {
+        "name": "erc_drc",
+        "weight": 20,
+        "desc": "Zero ERC/DRC; power connected"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty/wrong/print-PASS fail"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-assignment",
+    "title": "Bench journal",
+    "criteria": [
+      {
+        "name": "numbers",
+        "weight": 40,
+        "desc": "Uses fixture net values not adjectives"
+      },
+      {
+        "name": "physical_pending",
+        "weight": 30,
+        "desc": "Does not claim solder done"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "Numeric AI_RESTRICTED honored"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-quiz",
+    "title": "Circuit/embedded knowledge",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "WAIKE stems; no OCW item harvest"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-mid",
+    "title": "Mid network/embedded exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "divider_rc_bus",
+        "weight": 40,
+        "desc": "Divider/RC/logic/power/bus"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-final-knowledge",
+    "title": "Final subsystem exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone items"
+      },
+      {
+        "name": "zephyr_pcb_fail",
+        "weight": 50,
+        "desc": "QEMU/DT/PCB/diagnosis"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-practical",
+    "title": "Digital hardware practical",
+    "criteria": [
+      {
+        "name": "computed_nets",
+        "weight": 40,
+        "desc": "SPICE/Thevenin from values"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Fake MPN / DONE physical fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-project",
+    "title": "Digitally validated subsystem",
+    "criteria": [
+      {
+        "name": "artifact_chain",
+        "weight": 40,
+        "desc": "Power+bus+DT+QEMU+diagnosis linked"
+      },
+      {
+        "name": "no_fake_yield",
+        "weight": 30,
+        "desc": "No fabricated field yields"
+      },
+      {
+        "name": "embedded_integration",
+        "weight": 30,
+        "desc": "Shows EMBEDDED_PROTOTYPING outcomes"
+      }
+    ]
+  },
+  {
+    "rubric_id": "HARDWARE_ENGINEERING-portfolio",
+    "title": "Hardware portfolio",
+    "criteria": [
+      {
+        "name": "bom_budget",
+        "weight": 40,
+        "desc": "BOM + power budget MPNs"
+      },
+      {
+        "name": "qemu_log",
+        "weight": 30,
+        "desc": "Sanitized QEMU evidence"
+      },
+      {
+        "name": "no_ocw_copy",
+        "weight": 30,
+        "desc": "No OCW problem-set paste"
+      }
+    ]
+  }
+]

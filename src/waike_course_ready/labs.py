@@ -1052,6 +1052,19 @@ LAB_SPECS: dict[str, dict[str, Any]] = {
 }
 
 
+
+from waike_course_ready.batch002.labs import (
+    LABS_002, COURSE_LABS_002, LAB_SPECS_002, REFERENCE_002, WRONG_002,
+    lab_authz, lab_git_conflict, lab_spice_network, lab_charter, lab_observability,
+)
+
+LABS.update(LABS_002)
+COURSE_LABS.clear()
+COURSE_LABS.update(COURSE_LABS_002)
+LAB_SPECS.update(LAB_SPECS_002)
+REFERENCE.update(REFERENCE_002)
+WRONG.update(WRONG_002)
+
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
     if lab_id == "lab_backup":
@@ -1083,44 +1096,36 @@ def run_all() -> dict[str, Any]:
             wrong = run_lab(lab_id, submission=WRONG[lab_id])
             wrong_rows.append({"lab_id": lab_id, "failed_as_required": (not wrong["ok"])})
 
-    no_sub = run_lab("lab_os_users")
+    no_sub = run_lab("lab_git_conflict")
     print_pass_raises = False
     try:
         _fail_if_print_pass("PASS")
     except AssertionError:
         print_pass_raises = True
     try:
-        run_lab("lab_siem_triage", submission="PASS")
+        run_lab("lab_observability", submission="PASS")
         print_pass_on_submit = False
     except AssertionError:
         print_pass_on_submit = True
 
     negatives = []
-    bad_users = lab_os_users({
-        "users": {"kiosk": {"uid": 1010, "groups": ["sudo"], "sudo": True, "home": "/home/kiosk"}},
-        "required": {"kiosk": {"sudo": False, "groups_must_not_contain": ["sudo", "root"]},
-                     "desk.lead": {"groups_must_contain": ["helpdesk"]}},
-    })
-    negatives.append({"lab_id": "lab_os_users_negative", "ok": (not bad_users.ok)})
-    bad_lpm = lab_cidr_math([
-        {"cidr": "10.20.30.40/26", "network": "10.20.30.40", "broadcast": "10.20.30.63", "usable": 62},
-        {"cidr": "10.20.30.80/28", "network": "10.20.30.80", "broadcast": "10.20.30.95", "usable": 14},
-    ])
-    negatives.append({"lab_id": "lab_cidr_math_negative", "ok": (not bad_lpm.ok)})
-    bad_bot = lab_iam_rbac({
-        "roles": {"ai.triage.bot": {"actions": ["case.read", "case.close"]}, "analyst": {"actions": ["case.read"]},
-                  "lead": {"actions": ["case.close"]}},
-        "bindings": {"naiya": "analyst", "omar": "lead", "harbor-bot": "ai.triage.bot"},
-    })
-    negatives.append({"lab_id": "lab_iam_rbac_negative", "ok": (not bad_bot.ok)})
+    bad_bot = lab_authz({"roles": {"desk": {"actions": ["checkout.read"]}, "reader": {"actions": ["checkout.read"]}, "forge-bot": {"actions": ["checkout.close"]}}})
+    negatives.append({"lab_id": "lab_authz_negative", "ok": (not bad_bot.ok)})
+    bad_spice = lab_spice_network({"R1": 1000.0, "R2": 3000.0, "Vin": 12.0, "I": 1.0, "Vout": 1.0})
+    negatives.append({"lab_id": "lab_spice_network_negative", "ok": (not bad_spice.ok)})
+    bad_charter = lab_charter({"problem": "x", "goal_metric": "better", "in_scope": [], "out_scope": [], "fabricated_outcomes": True})
+    negatives.append({"lab_id": "lab_charter_negative", "ok": (not bad_charter.ok)})
 
-    datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
+    # Honesty gate analogous to ttl1: observability availability must come from fixture math
+    obs = next(r for r in results if r["lab_id"] == "lab_observability")
+    obs_names = {c["name"]: c["ok"] for c in obs.get("checks", [])}
+    computed_honesty = bool(obs_names.get("availability_math") and obs_names.get("counts"))
+
     empty_ok = all(r["failed_as_required"] for r in empty_rows)
     wrong_ok = all(r["failed_as_required"] for r in wrong_rows)
     refs_ok = all(r["ok"] for r in results)
     neg_ok = all(n["ok"] for n in negatives)
-    ttl_ok = _ttl1_from_parsed_header(datapath)
-    ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_pass_raises and print_pass_on_submit and (not no_sub["ok"]) and ttl_ok
+    ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_pass_raises and print_pass_on_submit and (not no_sub["ok"]) and computed_honesty
     return {
         "ok": ok,
         "lab_count": len(results),
@@ -1130,7 +1135,8 @@ def run_all() -> dict[str, Any]:
         "wrong_submission_fails": wrong_ok,
         "no_submission_fails": (not no_sub["ok"]),
         "print_pass_raises": print_pass_raises and print_pass_on_submit,
-        "ttl1_from_parsed_header": ttl_ok,
+        "ttl1_from_parsed_header": computed_honesty,  # reused key: computed-honesty gate for batch 002
+        "computed_honesty_gate": computed_honesty,
         "empty_rows": empty_rows,
         "wrong_rows": wrong_rows,
         "print_pass_forbidden": True,

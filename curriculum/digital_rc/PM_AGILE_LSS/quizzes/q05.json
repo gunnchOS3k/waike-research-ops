@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "pm5-1",
+      "kind": "mcq",
+      "stem": "score formula",
+      "choices": [
+        "prob+impact",
+        "impact only",
+        "prob*impact",
+        "AI score"
+      ]
+    },
+    {
+      "id": "pm5-2",
+      "kind": "mcq",
+      "stem": "Top without response",
+      "choices": [
+        "Passes",
+        "OK",
+        "Auto",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm5-3",
+      "kind": "mcq",
+      "stem": "Wrong score 3*5=9",
+      "choices": [
+        "Fails",
+        "Passes",
+        "Close enough",
+        "Ignored"
+      ]
+    },
+    {
+      "id": "pm5-4",
+      "kind": "mcq",
+      "stem": "PMP 2026 sustainability",
+      "choices": [
+        "Standalone eng exam",
+        "Embedded in planning/quality/risk context",
+        "Ignored",
+        "ATP grant"
+      ]
+    },
+    {
+      "id": "pm5-5",
+      "kind": "mcq",
+      "stem": "Minimum risks",
+      "choices": [
+        "1",
+        "0",
+        ">=3",
+        "50"
+      ]
+    },
+    {
+      "id": "pm5-6",
+      "kind": "mcq",
+      "stem": "Fake risk scores for drama",
+      "choices": [
+        "Required",
+        "AI must",
+        "OK",
+        "Forbidden"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "assessment_id": "HARDWARE_ENGINEERING-mid",
+  "items": [
+    {
+      "id": "hwm01",
+      "kind": "mcq",
+      "stem": "Vin=5V R1=2k R2=2k. Series current?",
+      "choices": [
+        "0.0025 A",
+        "0.00125 A",
+        "5 A",
+        "0 A"
+      ]
+    },
+    {
+      "id": "hwm02",
+      "kind": "mcq",
+      "stem": "Same divider voltage across R2?",
+      "choices": [
+        "5 V",
+        "0 V",
+        "2.5 V",
+        "1 V"
+      ]
+    },
+    {
+      "id": "hwm03",
+      "kind": "mcq",
+      "stem": "Thevenin Rth for two 2k resistors?",
+      "choices": [
+        "4000 ohm",
+        "0",
+        "infinity",
+        "1000 ohm"
+      ]
+    },
+    {
+      "id": "hwm04",
+      "kind": "mcq",
+      "stem": "tau for R=10k C=100nF?",
+      "choices": [
+        "0.001 s",
+        "1 s",
+        "10 s",
+        "1e-9 s"
+      ]
+    },
+    {
+      "id": "hwm05",
+      "kind": "mcq",
+      "stem": "NAND with inputs 1 and 0 yields?",
+      "choices": [
+        "0",
+        "1",
+        "Z",
+        "X"
+      ]
+    },
+    {
+      "id": "hwm06",
+      "kind": "mcq",
+      "stem": "Budget omits SSD1306 MPN. Result?",
+      "choices": [
+        "PASS",
+        "Auto-add",
+        "real_mpns fails",
+        "Ignore OLED"
+      ]
+    },
+    {
+      "id": "hwm07",
+      "kind": "mcq",
+      "stem": "I2C frame bytes 50 AA BB \u2014 data byte value?",
+      "choices": [
+        "0x50",
+        "0xAA",
+        "0x00",
+        "0xBB"
+      ]
+    },
+    {
+      "id": "hwm08",
+      "kind": "mcq",
+      "stem": "west build command missing board id. Result?",
+      "choices": [
+        "west check fails",
+        "PASS",
+        "Physical required",
+        "DRC fixes"
+      ]
+    },
+    {
+      "id": "hwm09",
+      "kind": "mcq",
+      "stem": "i2c1 status disabled while OLED present. Risk?",
+      "choices": [
+        "Always faster boot",
+        "Bus off so peripheral mute",
+        "Lower Vth",
+        "Better UCL"
+      ]
+    },
+    {
+      "id": "hwm10",
+      "kind": "mcq",
+      "stem": "erc_errors equals 1 on PCB package. Result?",
+      "choices": [
+        "Passes",
+        "Warning pass",
+        "Fails",
+        "QEMU ignores"
+      ]
+    },
+    {
+      "id": "hwm11",
+      "kind": "mcq",
+      "stem": "Diagnosis symptoms list only fan_noise. Result?",
+      "choices": [
+        "PASS",
+        "Auto",
+        "Physical done",
+        "symptoms check fails"
+      ]
+    },
+    {
+      "id": "hwm12",
+      "kind": "mcq",
+      "stem": "Why keep soldering marked PHYSICAL_PENDING?",
+      "choices": [
+        "Digital validation first",
+        "Irons banned forever",
+        "ASQ rule",
+        "PMI ATP"
+      ]
+    },
+    {
+      "id": "hwm13",
+      "kind": "mcq",
+      "stem": "MIT OCW 6.002 is used as?",
+      "choices": [
+        "Full PDF republish",
+        "Rigor citation not problem-set copy",
+        "Exam harvest",
+        "DRM bypass"
+      ]
+    },
+    {
+      "id": "hwm14",
+      "kind": "mcq",
+      "stem": "ADC input resistance near Rth causes?",
+      "choices": [
+        "No effect",
+        "Always plus 12V",
+        "Loading error on reading",
+        "Deletes DT"
+      ]
+    },
+    {
+      "id": "hwm15",
+      "kind": "mcq",
+      "stem": "Sampling reset at 0.2 tau risks?",
+      "choices": [
+        "Perfect boot",
+        "Lower Iq",
+        "Fixes NACK",
+        "Not settled reading"
+      ]
+    },
+    {
+      "id": "hwm16",
+      "kind": "mcq",
+      "stem": "Required QEMU board id in this course?",
+      "choices": [
+        "qemu_cortex_m0",
+        "raspberrypi5",
+        "x86_64",
+        "native_only"
+      ]
+    },
+    {
+      "id": "hwm17",
+      "kind": "mcq",
+      "stem": "BOM lines lack mpn fields. Result?",
+      "choices": [
+        "Passes",
+        "Fails bom check",
+        "Optional",
+        "SPICE fills"
+      ]
+    },
+    {
+      "id": "hwm18",
+      "kind": "mcq",
+      "stem": "shared_rail_overload matches which symptom pair?",
+      "choices": [
+        "only green LED",
+        "only clean DRC",
+        "rail_sag_3v3 and i2c_nack",
+        "only RACI"
+      ]
+    },
+    {
+      "id": "hwm19",
+      "kind": "mcq",
+      "stem": "Overlay deletes soc node. Result?",
+      "choices": [
+        "Recommended",
+        "Required for QEMU",
+        "Fixes margin",
+        "Fails safety"
+      ]
+    },
+    {
+      "id": "hwm20",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING in batch 002 is?",
+      "choices": [
+        "Integrated with hardware engineering",
+        "Deleted",
+        "Separate mega-PR",
+        "PROFILE README"
+      ]
+    }
+  ]
+}

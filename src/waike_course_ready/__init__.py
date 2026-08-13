@@ -1,3 +1,3 @@
-"""WAIKE-COURSE-READY-001 owner-side digital RC package helpers."""
+"""WAIKE-COURSE-READY digital RC package helpers (active batch 002)."""
 
 __all__ = ["labs", "emit", "ingest", "provenance"]

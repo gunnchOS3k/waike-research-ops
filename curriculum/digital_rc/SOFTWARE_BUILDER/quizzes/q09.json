@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "sw9-1",
+      "kind": "mcq",
+      "stem": "Empty findings on IDOR fixture",
+      "choices": [
+        "Fails needs_high",
+        "Passes",
+        "Is agile",
+        "Is lean"
+      ]
+    },
+    {
+      "id": "sw9-2",
+      "kind": "mcq",
+      "stem": "Severity band missing",
+      "choices": [
+        "Passes",
+        "Fails schema",
+        "Defaults low",
+        "OK"
+      ]
+    },
+    {
+      "id": "sw9-3",
+      "kind": "mcq",
+      "stem": "Verbose 500 with stacks",
+      "choices": [
+        "Required for patrons",
+        "PMI task",
+        "Is a finding",
+        "KiCad DRC"
+      ]
+    },
+    {
+      "id": "sw9-4",
+      "kind": "mcq",
+      "stem": "OWASP ASVS in registry",
+      "choices": [
+        "Item bank to copy",
+        "ATP",
+        "Dump",
+        "PUBLIC_REFERENCE_ONLY domain label"
+      ]
+    },
+    {
+      "id": "sw9-5",
+      "kind": "mcq",
+      "stem": "Remediation starts with",
+      "choices": [
+        "critical/high",
+        "typography",
+        "Ignore IDOR",
+        "Delete logs only"
+      ]
+    },
+    {
+      "id": "sw9-6",
+      "kind": "mcq",
+      "stem": "NO_AI on practical means",
+      "choices": [
+        "AI writes findings",
+        "No AI assistance on that assessment",
+        "AI required",
+        "AI grades"
+      ]
+    }
+  ]
+}

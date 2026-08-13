@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "sw5-1",
+      "kind": "mcq",
+      "stem": "forge-bot with checkout.close",
+      "choices": [
+        "Fails bot_no_close",
+        "Passes",
+        "Required",
+        "Friday only"
+      ]
+    },
+    {
+      "id": "sw5-2",
+      "kind": "mcq",
+      "stem": "reader may",
+      "choices": [
+        "create",
+        "read",
+        "close",
+        "drop schema"
+      ]
+    },
+    {
+      "id": "sw5-3",
+      "kind": "mcq",
+      "stem": "REVIEW_MY_WORK means",
+      "choices": [
+        "AI submits for you",
+        "No AI",
+        "AI critiques; you own artifact and disclose",
+        "AI rewrites stems"
+      ]
+    },
+    {
+      "id": "sw5-4",
+      "kind": "mcq",
+      "stem": "desk without create",
+      "choices": [
+        "Fine",
+        "Auto-heals",
+        "Is reader",
+        "Fails desk_can_create"
+      ]
+    },
+    {
+      "id": "sw5-5",
+      "kind": "mcq",
+      "stem": "Authz checks happen",
+      "choices": [
+        "Before mutating storage",
+        "After DB write",
+        "Only UI",
+        "Only DNS"
+      ]
+    },
+    {
+      "id": "sw5-6",
+      "kind": "mcq",
+      "stem": "Why not Harbor bot names?",
+      "choices": [
+        "Accident",
+        "Distinct product vocabulary anti-template",
+        "PMI requires",
+        "Zephyr requires"
+      ]
+    }
+  ]
+}

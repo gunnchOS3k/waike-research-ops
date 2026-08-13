@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "sw6-1",
+      "kind": "mcq",
+      "stem": "failed must be",
+      "choices": [
+        "any",
+        "equal total",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "id": "sw6-2",
+      "kind": "mcq",
+      "stem": "total>=8 means",
+      "choices": [
+        "Eight browsers",
+        "Eight servers",
+        "Eight certs",
+        "At least eight tests ran"
+      ]
+    },
+    {
+      "id": "sw6-3",
+      "kind": "mcq",
+      "stem": "Missing named forbidden test",
+      "choices": [
+        "Fails named_test check",
+        "Passes if total high",
+        "Optional",
+        "PNG ok"
+      ]
+    },
+    {
+      "id": "sw6-4",
+      "kind": "mcq",
+      "stem": "Green badge PNG alone",
+      "choices": [
+        "Passes",
+        "Fails \u2014 need computable report",
+        "Replaces JUnit",
+        "OWASP"
+      ]
+    },
+    {
+      "id": "sw6-5",
+      "kind": "mcq",
+      "stem": "Negative-path tests matter because",
+      "choices": [
+        "They slow CI",
+        "PMI requires",
+        "Silent 200 on forbidden writes is a security bug",
+        "SPICE needs"
+      ]
+    },
+    {
+      "id": "sw6-6",
+      "kind": "mcq",
+      "stem": "Skipped tests",
+      "choices": [
+        "Must be zero",
+        "Delete suite",
+        "Force deploy",
+        "May be >0 if failed is 0"
+      ]
+    }
+  ]
+}

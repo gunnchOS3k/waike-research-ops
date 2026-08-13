@@ -2,47 +2,47 @@
   "schema": "waike.course_catalog.ui.v1",
   "full_curriculum_complete": false,
   "owner_repo": "waike-research-ops",
-  "packet": "WAIKE-COURSE-READY-001",
+  "packet": "WAIKE-COURSE-READY-002",
   "courses": [
     {
-      "course_id": "GENERAL_IT",
-      "title": "General IT \u2014 Operator to Support Specialist",
-      "kinesthetic_hook": "Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.",
-      "lesson_excerpt": "At the Gary Civic Tech Desk the machine in front of a patron is not a personality. It remembers (files), it calculates (apps), and it talks (network). Beginners freeze when a window disappears because they cannot name which of those three jobs failed. Ticket 4417 from the library kiosk is a remember-job failure: the essay lived in a browser temp store and the idle timer (1200 seconds) wiped the se",
-      "worked_example": "Idle policy 1200s = 20 minutes. Patron sat down at 14:02, last keystroke 14:07, return 14:28. Session is gone. Restore from the auto-save folder if present; do not disable the timer as your first move \u2014 the timer is a shared-kiosk control.",
-      "assignment": "Build the required folder tree for ticket 4417, write a four-line operator journal (remember / calculate / talk / what broke), and describe one restore method that is not Ctrl+Z. No patron PII.",
-      "lab_hint": "lab_ticket_queue",
+      "course_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+      "kinesthetic_hook": "Merge a real conflict, ship a checkout API, and pin a digest on local Device Lab compose.",
+      "lesson_excerpt": "The WAIKE Software ForgeDesk is a two-person civic issue tracker for Device Lab checkouts. Ticket 8801 opens when a volunteer edits routes.py on feature/kiosk-hours while the desk lead edited the same function on main. A conflict is not a personality crisis. It is two hashes that claim the same lines. You will read both sides, keep the authz guard that main added, and keep the hours table that the",
+      "worked_example": "Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens.",
+      "assignment": "Write a conflict report for ticket 8801 naming both parents, survivor tokens, and one wrong resolution the lab must fail.",
+      "lab_hint": "lab_git_conflict",
       "track_ids": [
-        "DIGITAL_CONFIDENCE",
-        "IT_SUPPORT_HARDWARE"
+        "SOFTWARE_BUILDER"
       ],
-      "academy_id": "ACADEMY_IT"
+      "academy_id": "ACADEMY_SOFTWARE"
     },
     {
-      "course_id": "COMPUTER_NETWORKING",
-      "title": "Computer Networking \u2014 Packets to Campus Edge",
-      "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
-      "lesson_excerpt": "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire agreed to that, not because the Internet is polite.",
-      "worked_example": "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. Peel Ethernet first (ethertype 0x0800), then IP, then TCP.",
-      "assignment": "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label who reads each header. No vendor GUI screenshots required.",
-      "lab_hint": "lab_cidr_math",
+      "course_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+      "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",
+      "lesson_excerpt": "WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before any iron heats. PHYSICAL_PENDING covers soldering and instruments. Digitally you solve a series divider: R1=1k, R2=3k, Vin=12V \u2192 I=3mA, Vout=9V. The lab checks your arithmetic, not a screenshot of a GUI.",
+      "worked_example": "R1=1000 R2=3000 Vin=12 \u2192 I=0.003 A Vout=9 V.",
+      "assignment": "Submit SPICE network JSON and show handwritten KCL at the mid node.",
+      "lab_hint": "lab_spice_network",
       "track_ids": [
-        "NETWORKING_INFRA"
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING"
       ],
-      "academy_id": "ACADEMY_NETWORKING"
+      "academy_id": "ACADEMY_HARDWARE"
     },
     {
-      "course_id": "CYBERSECURITY",
-      "title": "Cybersecurity \u2014 Harbor SOC Foundations",
-      "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",
-      "lesson_excerpt": "Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The 2026-09-01 ISC2 CC outline renames the second domain toward governance and threads AI through all five. We prefer that upcoming outline. We do not copy ISC2 items.",
-      "worked_example": "A triage bot with sudo would violate least privilege for a non-human identity and would turn a prompt injection into root. Harbor policy: bots read, humans close.",
-      "assignment": "Write a one-page Harbor governance memo: CIA applied to the ticket-summarizer bot, one GRC owner, and one prohibited data class.",
-      "lab_hint": "lab_hardening_baseline",
+      "course_id": "PM_AGILE_LSS",
+      "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+      "kinesthetic_hook": "Charter a real wait problem, run DMAIC on fixture data, and critique an AI plan without inventing outcomes.",
+      "lesson_excerpt": "Process Studio: Device Lab noon checkout wait baseline 15 minutes. Charter states problem, goal metric with baseline, in/out scope. fabricated_outcomes must be false \u2014 no invented community impact.",
+      "worked_example": "problem wait>15m; goal baseline 15m\u21928m; in_scope queue+staffing; out_scope new building; fabricated_outcomes false.",
+      "assignment": "Write charter JSON and a one-page sponsor brief without invented stats.",
+      "lab_hint": "lab_charter",
       "track_ids": [
-        "CYBER_SOC"
+        "PM_AGILE_LSS"
       ],
-      "academy_id": "ACADEMY_CYBER"
+      "academy_id": "ACADEMY_PROCESS_PM"
     }
   ]
 }

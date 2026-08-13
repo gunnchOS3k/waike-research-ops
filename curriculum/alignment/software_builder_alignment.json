@@ -1,0 +1,96 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "SOFTWARE_BUILDER",
+  "track_ids": [
+    "SOFTWARE_BUILDER"
+  ],
+  "date_checked": "2026-08-13",
+  "benchmarks": [
+    {
+      "source_id": "HARVARD_CS50_WEB",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "git",
+          "waike_weeks": [
+            1
+          ]
+        },
+        {
+          "domain": "sql_migrations",
+          "waike_weeks": [
+            3
+          ]
+        },
+        {
+          "domain": "user_interfaces",
+          "waike_weeks": [
+            4
+          ]
+        },
+        {
+          "domain": "testing_cicd",
+          "waike_weeks": [
+            6,
+            7
+          ]
+        },
+        {
+          "domain": "scalability_security",
+          "waike_weeks": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "HARVARD_CS50_2025",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "python",
+          "waike_weeks": [
+            2,
+            3
+          ]
+        },
+        {
+          "domain": "web_basics",
+          "waike_weeks": [
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "GITHUB_ACTIONS_DOCS_2026",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "workflows",
+          "waike_weeks": [
+            7
+          ],
+          "waike_artifacts": [
+            "labs/lab_github_actions_ci"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "OWASP_ASVS_THEMES",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "access_control",
+          "waike_weeks": [
+            5,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Structure citations only. No CS50 project copy. No cert grants."
+}

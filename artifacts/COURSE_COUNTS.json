@@ -1,10 +1,10 @@
 {
-  "GENERAL_IT": {
+  "SOFTWARE_BUILDER": {
     "syllabus": 1,
     "weeks": 10,
     "full_lessons": 10,
     "assignments": 10,
-    "runnable_labs": 7,
+    "runnable_labs": 10,
     "quizzes": 10,
     "quiz_items": 60,
     "mid_course_items": 20,
@@ -19,14 +19,19 @@
     "instructor_materials": 11,
     "presentation_materials": 10,
     "offline_pack": 1,
-    "portfolio_artifacts": 1
+    "portfolio_artifacts": 1,
+    "career_map": 1,
+    "ai_use_policy": 1,
+    "source_count": 26,
+    "provenance": "PASS",
+    "template_duplicates": 0
   },
-  "COMPUTER_NETWORKING": {
+  "HARDWARE_ENGINEERING": {
     "syllabus": 1,
     "weeks": 10,
     "full_lessons": 10,
     "assignments": 10,
-    "runnable_labs": 6,
+    "runnable_labs": 10,
     "quizzes": 10,
     "quiz_items": 60,
     "mid_course_items": 20,
@@ -41,14 +46,19 @@
     "instructor_materials": 11,
     "presentation_materials": 10,
     "offline_pack": 1,
-    "portfolio_artifacts": 1
+    "portfolio_artifacts": 1,
+    "career_map": 1,
+    "ai_use_policy": 1,
+    "source_count": 26,
+    "provenance": "PASS",
+    "template_duplicates": 0
   },
-  "CYBERSECURITY": {
+  "PM_AGILE_LSS": {
     "syllabus": 1,
     "weeks": 10,
     "full_lessons": 10,
     "assignments": 10,
-    "runnable_labs": 7,
+    "runnable_labs": 10,
     "quizzes": 10,
     "quiz_items": 60,
     "mid_course_items": 20,
@@ -63,6 +73,11 @@
     "instructor_materials": 11,
     "presentation_materials": 10,
     "offline_pack": 1,
-    "portfolio_artifacts": 1
+    "portfolio_artifacts": 1,
+    "career_map": 1,
+    "ai_use_policy": 1,
+    "source_count": 26,
+    "provenance": "PASS",
+    "template_duplicates": 0
   }
 }

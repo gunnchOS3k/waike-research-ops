@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "hw8-1",
+      "kind": "mcq",
+      "stem": "i2c1_status",
+      "choices": [
+        "disabled",
+        "deleted",
+        "unknown",
+        "okay"
+      ]
+    },
+    {
+      "id": "hw8-2",
+      "kind": "mcq",
+      "stem": "/delete-node/ &soc",
+      "choices": [
+        "Fails safety",
+        "Recommended",
+        "Required",
+        "QEMU only"
+      ]
+    },
+    {
+      "id": "hw8-3",
+      "kind": "mcq",
+      "stem": "led0 appears in overlay",
+      "choices": [
+        "Forbidden",
+        "Required",
+        "Optional silence",
+        "Only in BOM"
+      ]
+    },
+    {
+      "id": "hw8-4",
+      "kind": "mcq",
+      "stem": "DT purpose",
+      "choices": [
+        "Replace west",
+        "Replace SPICE",
+        "Board\u2194driver contract",
+        "Replace RACI"
+      ]
+    },
+    {
+      "id": "hw8-5",
+      "kind": "mcq",
+      "stem": "Empty overlay",
+      "choices": [
+        "Passes",
+        "Auto-fills",
+        "Ignores I2C",
+        "Fails"
+      ]
+    },
+    {
+      "id": "hw8-6",
+      "kind": "mcq",
+      "stem": "Physical LED blink",
+      "choices": [
+        "PHYSICAL_PENDING after digital",
+        "Required now",
+        "Banned",
+        "Done in SPICE"
+      ]
+    }
+  ]
+}

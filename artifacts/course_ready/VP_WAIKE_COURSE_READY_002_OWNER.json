@@ -1,0 +1,23 @@
+{
+  "packet": "WAIKE-COURSE-READY-002",
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "courses": [
+    "SOFTWARE_BUILDER",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
+  ],
+  "lab_execution": "30/30",
+  "benchmark_sources": 26,
+  "preserved_digital_rc_tracks": [
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "SOFTWARE_BUILDER"
+  ],
+  "ai_use_policy": "Per course ai_use_policy.json: modes EXPLAIN/HINT/QUESTION_ME/DEBUG_WITH_ME/REVIEW_MY_WORK/COMPARE_APPROACHES/PRACTICE; assessment modes AI_ALLOWED/AI_RESTRICTED/AI_DISCLOSED/NO_AI. Not PMI ATP.",
+  "claim_boundary": "COURSE_DIGITAL_RC earned for SOFTWARE_BUILDER + HARDWARE_ENGINEERING(+EMBEDDED_PROTOTYPING) + PM_AGILE_LSS only. Not student/teacher E6. Not 18 courses. Cursor does not merge."
+}

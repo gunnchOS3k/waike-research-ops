@@ -1,0 +1,16 @@
+{
+  "practical_id": "SOFTWARE_BUILDER-practical",
+  "labs": [
+    "lab_git_conflict",
+    "lab_rest_api",
+    "lab_db_migration",
+    "lab_frontend_ui",
+    "lab_authz",
+    "lab_automated_testing",
+    "lab_github_actions_ci",
+    "lab_deploy_rollback",
+    "lab_security_review",
+    "lab_observability"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

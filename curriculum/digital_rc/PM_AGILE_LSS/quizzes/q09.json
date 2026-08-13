@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "pm9-1",
+      "kind": "mcq",
+      "stem": "fabricated_outcomes (week 9 fixture)",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "null"
+      ]
+    },
+    {
+      "id": "pm9-2",
+      "kind": "mcq",
+      "stem": "Missing improve text",
+      "choices": [
+        "Passes",
+        "OK",
+        "Auto",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm9-3",
+      "kind": "mcq",
+      "stem": "DMAIC order",
+      "choices": [
+        "Define Measure Analyze Improve Control",
+        "Random",
+        "Skip Measure",
+        "Only Improve"
+      ]
+    },
+    {
+      "id": "pm9-4",
+      "kind": "mcq",
+      "stem": "ASQ CSSGB",
+      "choices": [
+        "Grants belt",
+        "Alignment label not credential grant",
+        "ATP",
+        "Dump"
+      ]
+    },
+    {
+      "id": "pm9-5",
+      "kind": "mcq",
+      "stem": "Evidence links",
+      "choices": [
+        "Invented tweets",
+        "DRM PDFs",
+        "Prior lab artifacts",
+        "Exam stems"
+      ]
+    },
+    {
+      "id": "pm9-6",
+      "kind": "mcq",
+      "stem": "AI REVIEW_MY_WORK",
+      "choices": [
+        "Silent rewrite",
+        "Key leak",
+        "Skip control",
+        "Critique with disclosure"
+      ]
+    }
+  ]
+}

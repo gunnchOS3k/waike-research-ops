@@ -1,0 +1,247 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "HARDWARE_ENGINEERING",
+  "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+  "track_ids": [
+    "HARDWARE_ENGINEERING",
+    "EMBEDDED_PROTOTYPING"
+  ],
+  "academy_id": "ACADEMY_HARDWARE",
+  "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",
+  "lesson_excerpt": "WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before any iron heats. PHYSICAL_PENDING covers soldering and instruments. Digitally you solve a series divider: R1=1k, R2=3k, Vin=12V \u2192 I=3mA, Vout=9V. The lab checks your arithmetic, not a screenshot of a GUI.\n\nMIT OCW 6.002 is PUBLIC_REFERENCE_ONLY rigor citation: lumped abstraction, KCL/KVL habits. We do not redistribute O",
+  "worked_example": "R1=1000 R2=3000 Vin=12 \u2192 I=0.003 A Vout=9 V.",
+  "assignment": "Submit SPICE network JSON and show handwritten KCL at the mid node.",
+  "lab_hint": "lab_spice_network",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Device Lab bench \u2014 lumped nets before soldering",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w01",
+        "title": "Device Lab bench \u2014 lumped nets before soldering",
+        "body_md": "WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before any iron heats. PHYSICAL_PENDING covers soldering and instruments. Digitally you solve a series divider: R1=1k, R2=3k, Vin=12V \u2192 I=3mA, Vout=9V. The lab checks your arithmetic, not a screenshot of a GUI.\n\nMIT OCW 6.002 is PUBLIC_REFERENCE_ONLY rigor citation: lumped abstraction, KCL/KVL habits. We do not redistribute OCW problem sets. KiCad appears later; this week is pure network math on original ForgeSense sensor node nets.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 1: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R1=1000 R2=3000 Vin=12 \u2192 I=0.003 A Vout=9 V."
+      },
+      "lab_id": "lab_spice_network"
+    },
+    {
+      "week": 2,
+      "title": "Th\u00e9venin of the sense divider",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w02",
+        "title": "Th\u00e9venin of the sense divider",
+        "body_md": "Seen from the ADC pin, the divider becomes Vth and Rth. Vth=Vin*R2/(R1+R2), Rth=R1||R2. For 12V/1k/3k: Vth=9V, Rth=750\u03a9. Loading the node with ADC input resistance changes reading \u2014 quantify before you blame the firmware.\n\nThis week integrates HARDWARE_ENGINEERING analysis with EMBEDDED_PROTOTYPING measurement planning: you will later sample this node from Zephyr QEMU fixtures.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 2: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "Vth=9 Rth=750 for Vin=12 R1=1k R2=3k."
+      },
+      "lab_id": "lab_thevenin"
+    },
+    {
+      "week": 3,
+      "title": "RC timing for the reset pin",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w03",
+        "title": "RC timing for the reset pin",
+        "body_md": "Reset RC: tau=R*C. Charging V(t)=V0(1-e^{-t/tau}). With R=1k C=1uF tau=1ms. At t=tau, Vt\u22480.632 V0. Firmware that samples reset too early sees a lie. Lab checks tau and Vt math.\n\nPHYSICAL_PENDING: scope capture of the real RC. Digital validation is mandatory first.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 3: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "R=1000 C=1e-6 V0=5 t=0.001 \u2192 tau=0.001 Vt=5*(1-e^{-1})."
+      },
+      "lab_id": "lab_rc_transient"
+    },
+    {
+      "week": 4,
+      "title": "NAND as the digital abstraction",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w04",
+        "title": "NAND as the digital abstraction",
+        "body_md": "2-input NAND truth: only 1,1 yields 0. You will submit the full table. Noise margins and gate delay stay conceptual; lab insists on right Boolean before PCB.\n\n6.002 digital abstraction cited; original WAIKE truth-table fixture.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 4: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "NAND rows (0,0)->1 (0,1)->1 (1,0)->1 (1,1)->0."
+      },
+      "lab_id": "lab_logic_gate"
+    },
+    {
+      "week": 5,
+      "title": "Power budget with real MPNs",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w05",
+        "title": "Power budget with real MPNs",
+        "body_md": "Rail 3V3 budget using real MPNs: nRF52840 Iq, AMS1117-3.3 quiescent, SSD1306 OLED. Sum currents; margin = regulator_mA - total must be positive. Fake MPNs fail.\n\nDatasheets are PUBLIC_REFERENCE_ONLY. Values in fixture are course-sanctioned numbers for the lab, not a claim about every SKU revision.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 5: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "nRF52840 5.4 + AMS1117 5.0 + SSD1306 10.0 = 20.4 mA; regulator 50 \u2192 margin 29.6."
+      },
+      "lab_id": "lab_power_budget"
+    },
+    {
+      "week": 6,
+      "title": "GPIO/I2C/SPI/UART \u2014 parse an I2C write",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w06",
+        "title": "GPIO/I2C/SPI/UART \u2014 parse an I2C write",
+        "body_md": "Buses: GPIO edges, I2C addr+reg+data, SPI mode clocks, UART framing. Lab parses I2C write frame hex 3c00af \u2192 addr 0x3C reg 0x00 data 0xAF (OLED).\n\nYou will name which bus the OLED uses and why bit-bang GPIO is the wrong first debug when NACK appears.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 6: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "frame_hex 3c00af \u2192 addr=0x3C reg=0x00 data=0xAF bus=I2C."
+      },
+      "lab_id": "lab_bus_protocol"
+    },
+    {
+      "week": 7,
+      "title": "Zephyr west + QEMU before hardware",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w07",
+        "title": "Zephyr west + QEMU before hardware",
+        "body_md": "west build -b qemu_cortex_m0 for the ForgeSense app. physical_status must be PHYSICAL_PENDING. qemu_ok true after digital run log fixture. Zephyr docs OPEN_LICENSE / reference \u2014 we do not vendor the entire tree.\n\nEMBEDDED_PROTOTYPING integration: same app will bind I2C in DT next week.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 7: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "board=qemu_cortex_m0 west_cmd includes west build -b qemu_cortex_m0; PHYSICAL_PENDING; qemu_ok true."
+      },
+      "lab_id": "lab_zephyr_qemu"
+    },
+    {
+      "week": 8,
+      "title": "Devicetree overlay \u2014 I2C1 and LED0",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w08",
+        "title": "Devicetree overlay \u2014 I2C1 and LED0",
+        "body_md": "Overlay enables &i2c1 status okay and led0 gpios. Deleting &soc is unsafe and fails. DT is the contract between board and drivers.\n\nLab checks overlay text and fields. No physical probe yet.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 8: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "i2c1_status=okay; led0_gpios set; overlay contains &i2c1 and led0."
+      },
+      "lab_id": "lab_devicetree"
+    },
+    {
+      "week": 9,
+      "title": "PCB schematic/layout ERC/DRC + BOM",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w09",
+        "title": "PCB schematic/layout ERC/DRC + BOM",
+        "body_md": "KiCad docs are reference. Your ERC_errors and DRC_errors must be 0; unconnected_power false; BOM >=3 lines with MPNs matching power budget parts.\n\nNo claim that WAIKE ships proprietary PCB fab files from vendors.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 9: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "erc_errors=0 drc_errors=0 unconnected_power=false bom with nRF52840, AMS1117-3.3, SSD1306."
+      },
+      "lab_id": "lab_pcb_erc_drc"
+    },
+    {
+      "week": 10,
+      "title": "Failure diagnosis \u2014 digitally validate the subsystem",
+      "lesson": {
+        "lesson_id": "HARDWARE_ENGINEERING-w10",
+        "title": "Failure diagnosis \u2014 digitally validate the subsystem",
+        "body_md": "Final practical: symptoms rail_sag_3v3 + i2c_nack. Root cause among weak_regulator, missing_pullups, shared_rail_overload. next_probe must include measure. physical_status PHYSICAL_PENDING.\n\nCapstone: digitally validate embedded subsystem (power + bus + DT + QEMU) with artifacts \u2014 not fabricated field yield claims.\n\nOperator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. Operator note: record evidence before changing shared systems. \n\nEvidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. Evidence discipline week 10: keep ticket numbers, hashes, and fixture counts in the journal; do not replace them with adjectives. ",
+        "worked_example": "symptoms include rail_sag_3v3 and i2c_nack; root_cause shared_rail_overload; next_probe measure 3V3 under load; PHYSICAL_PENDING."
+      },
+      "lab_id": "lab_failure_diagnosis"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_spice_network",
+    "lab_thevenin",
+    "lab_rc_transient",
+    "lab_logic_gate",
+    "lab_power_budget",
+    "lab_bus_protocol",
+    "lab_zephyr_qemu",
+    "lab_devicetree",
+    "lab_pcb_erc_drc",
+    "lab_failure_diagnosis"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "HARDWARE_ENGINEERING-lab",
+    "HARDWARE_ENGINEERING-assignment",
+    "HARDWARE_ENGINEERING-quiz",
+    "HARDWARE_ENGINEERING-mid",
+    "HARDWARE_ENGINEERING-final-knowledge",
+    "HARDWARE_ENGINEERING-practical",
+    "HARDWARE_ENGINEERING-project",
+    "HARDWARE_ENGINEERING-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_hardware_engineer",
+      "embedded_prototyping_assistant"
+    ],
+    "certs_aligned_not_granted": [],
+    "academic_alignment": [
+      "MIT OCW 6.002"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/hardware_engineering_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "notes": "Numeric labs AI_RESTRICTED; diagnosis writeup AI_DISCLOSED; no AI inventing datasheet currents."
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

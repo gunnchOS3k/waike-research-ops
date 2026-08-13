@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "PM_AGILE_LSS-lab",
+    "title": "Process Studio lab",
+    "criteria": [
+      {
+        "name": "charter_metric",
+        "weight": 20,
+        "desc": "Baseline metric; fabricated_outcomes false"
+      },
+      {
+        "name": "one_A",
+        "weight": 20,
+        "desc": "Exactly one Accountable per task"
+      },
+      {
+        "name": "critical_path",
+        "weight": 20,
+        "desc": "CP days recomputed from preds"
+      },
+      {
+        "name": "spc_math",
+        "weight": 20,
+        "desc": "mean/UCL/LCL/ooc match fixture"
+      },
+      {
+        "name": "ai_disclose",
+        "weight": 20,
+        "desc": "AI critique sets ai_disclosed true"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-assignment",
+    "title": "PM memo",
+    "criteria": [
+      {
+        "name": "named_artifacts",
+        "weight": 40,
+        "desc": "References lab artifact ids"
+      },
+      {
+        "name": "no_fake_community",
+        "weight": 30,
+        "desc": "No invented city outcomes"
+      },
+      {
+        "name": "not_atp",
+        "weight": 30,
+        "desc": "Does not claim PMI ATP/credential"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-quiz",
+    "title": "PM/LSS knowledge",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "WAIKE stems; no ECO task paste"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-mid",
+    "title": "Mid process/PM exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "charter_raci_wbs",
+        "weight": 40,
+        "desc": "Charter/RACI/WBS/sprint/risk"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-final-knowledge",
+    "title": "Final process/PM exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone items"
+      },
+      {
+        "name": "dmaic_pmp2026",
+        "weight": 50,
+        "desc": "DMAIC/SPC/change/PMP-2026 context"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-practical",
+    "title": "Artifact practical",
+    "criteria": [
+      {
+        "name": "empty_fails",
+        "weight": 40,
+        "desc": "Empty submissions fail"
+      },
+      {
+        "name": "math_labs",
+        "weight": 30,
+        "desc": "Pareto/SPC/CP compute"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-project",
+    "title": "E2E improvement simulation",
+    "criteria": [
+      {
+        "name": "chain",
+        "weight": 40,
+        "desc": "charter\u2192DMAIC\u2192change\u2192status\u2192AI critique"
+      },
+      {
+        "name": "real_artifacts",
+        "weight": 30,
+        "desc": "Uses prior lab outputs"
+      },
+      {
+        "name": "claim_boundary",
+        "weight": 30,
+        "desc": "Not ATP; no fake certs/outcomes"
+      }
+    ]
+  },
+  {
+    "rubric_id": "PM_AGILE_LSS-portfolio",
+    "title": "PM portfolio",
+    "criteria": [
+      {
+        "name": "registers",
+        "weight": 40,
+        "desc": "RACI/risk/sprint artifacts"
+      },
+      {
+        "name": "charts",
+        "weight": 30,
+        "desc": "Pareto + control chart"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 30,
+        "desc": "No CAPM/PMP/CSSGB claim"
+      }
+    ]
+  }
+]
