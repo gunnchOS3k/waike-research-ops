@@ -8,8 +8,8 @@
       "stem": "Wipe before contain",
       "choices": [
         "Is efficient",
-        "Destroys evidence / fails the lab order",
         "Is 800-53 AU",
+        "Destroys evidence / fails the lab order",
         "Is LPM"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "Lessons learned belongs",
       "choices": [
         "First",
-        "Last",
         "Never",
-        "In the ACL"
+        "In the ACL",
+        "Last"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "ASAP as a timestamp",
       "choices": [
-        "Is precise",
         "Is not a time",
+        "Is precise",
         "Is NTP",
         "Is VLAN 1"
       ]
@@ -52,8 +52,8 @@
       "stem": "Tidying embarrassing logs",
       "choices": [
         "Helpful",
-        "May violate legal hold / integrity of evidence",
         "Required by cups",
+        "May violate legal hold / integrity of evidence",
         "A Google module"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "800-61 reuse class",
       "choices": [
         "RESTRICTED dump",
-        "OPEN_LICENSE_ADAPT_ALLOWED",
         "Paywall",
-        "CS161 protected"
+        "CS161 protected",
+        "OPEN_LICENSE_ADAPT_ALLOWED"
       ]
     }
   ]

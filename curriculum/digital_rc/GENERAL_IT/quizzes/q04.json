@@ -7,9 +7,9 @@
       "kind": "mcq",
       "stem": "256 GiB disk, 180 used, 12 reserved. Free GiB?",
       "choices": [
-        "64",
         "76",
         "44",
+        "64",
         "12"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "Why fail at 15% free instead of 0%?",
       "choices": [
         "Disks explode at 15%",
-        "Updates and profiles need headroom before 'full'",
         "ext4 cannot use last 15%",
-        "CompTIA requires 15%"
+        "CompTIA requires 15%",
+        "Updates and profiles need headroom before 'full'"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "A backup that has never been restored is",
       "choices": [
-        "3-2-1 compliant by default",
         "A rumor until a restore hash matches",
+        "3-2-1 compliant by default",
         "Better than snapshots",
         "A substitute for RAID"
       ]
@@ -52,8 +52,8 @@
       "stem": "3-2-1 at this desk includes",
       "choices": [
         "Three identical cloud buckets only",
-        "Volume + locked USB + off-box closet PC",
         "RAID 0 only",
+        "Volume + locked USB + off-box closet PC",
         "A screenshot of File Explorer"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "Used climbs to 220 GiB, reserved 12, size 256. Policy 15% free?",
       "choices": [
         "Pass",
-        "Fail",
         "Undefined",
-        "Pass if NTFS"
+        "Pass if NTFS",
+        "Fail"
       ]
     }
   ]

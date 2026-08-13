@@ -1,139 +1,159 @@
 [
   {
     "rubric_id": "CYBERSECURITY-lab",
-    "title": "Runnable lab",
+    "title": "Harbor fixture lab",
     "criteria": [
       {
-        "name": "validator_ok",
-        "weight": 40,
-        "desc": "Lab JSON ok=true with named checks"
+        "name": "burst_note",
+        "weight": 25,
+        "desc": "Incident note contains burst, not attacker; empty note fails"
       },
       {
-        "name": "evidence",
-        "weight": 30,
-        "desc": "Inputs/outputs attached, no PII"
+        "name": "bot_rbac",
+        "weight": 25,
+        "desc": "harbor-bot cannot close; bot-close fixture fails"
       },
       {
-        "name": "explanation",
-        "weight": 30,
-        "desc": "Learner can say what a failing check means"
+        "name": "toy_parser",
+        "weight": 25,
+        "desc": "Safe parser rejects oversize length; targets=[course_ctf_fixture]"
+      },
+      {
+        "name": "ir_order",
+        "weight": 25,
+        "desc": "contain before eradicate; lessons last"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-assignment",
-    "title": "Weekly assignment",
+    "title": "SOC memo",
     "criteria": [
       {
-        "name": "specific_numbers",
+        "name": "named_identities",
         "weight": 40,
-        "desc": "Uses course numbers, not generic prose"
+        "desc": "Naiya/Omar/harbor-bot, not 'a user'"
       },
       {
-        "name": "scope",
+        "name": "no_secrets",
         "weight": 30,
-        "desc": "Does not claim certs or unauthorized testing"
+        "desc": "No tokens or passwords in the memo"
       },
       {
-        "name": "clarity",
+        "name": "authorized_only",
         "weight": 30,
-        "desc": "A stranger can continue the work"
+        "desc": "No scan of systems Harbor does not own"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-quiz",
-    "title": "Knowledge check",
+    "title": "SOC knowledge",
     "criteria": [
       {
-        "name": "original",
+        "name": "harbor_words",
         "weight": 50,
-        "desc": "WAIKE stems, not vendor items"
+        "desc": "Original WAIKE stems; no ISC2/CompTIA item text"
       },
       {
-        "name": "keyed",
+        "name": "key_hidden",
         "weight": 50,
-        "desc": "Instructor key exists and is not in learner UI"
+        "desc": "Keys only in instructor/answer_keys.json"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-mid",
-    "title": "Mid-course knowledge",
+    "title": "Mid-course Harbor exam",
     "criteria": [
       {
-        "name": "coverage_weeks_1_5",
-        "weight": 100,
-        "desc": "Items map to weeks 1\u20135"
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not weekly clones"
+      },
+      {
+        "name": "cc_2026_domains",
+        "weight": 40,
+        "desc": "Principles/governance/IAM/zones/bursts in WAIKE words"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-final-knowledge",
-    "title": "Final knowledge",
+    "title": "Final Harbor exam",
     "criteria": [
       {
-        "name": "coverage_weeks_6_10",
-        "weight": 100,
-        "desc": "Items map to later weeks plus capstone"
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not weekly clones"
+      },
+      {
+        "name": "harden_ir_parser",
+        "weight": 50,
+        "desc": "Baseline flags, IR clock, length lie, USB timeline"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-practical",
-    "title": "Final practical",
+    "title": "Seven-lab practical",
     "criteria": [
       {
-        "name": "labs_green",
-        "weight": 60,
-        "desc": "Required labs ok"
+        "name": "empty_fails",
+        "weight": 40,
+        "desc": "Missing student JSON fails each lab"
       },
       {
-        "name": "negative_fail",
-        "weight": 20,
-        "desc": "Mutated fixtures fail"
+        "name": "no_network",
+        "weight": 30,
+        "desc": "Socket opens during toy parser fail the lab"
       },
       {
-        "name": "writeup",
-        "weight": 20,
-        "desc": "Honest claim boundary"
+        "name": "bot_negative",
+        "weight": 30,
+        "desc": "Bot with case.close fails IAM"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-project",
-    "title": "Group project",
+    "title": "Evidence locker",
     "criteria": [
       {
-        "name": "design",
-        "weight": 30,
-        "desc": "Design exists before implementation"
-      },
-      {
-        "name": "handoff",
+        "name": "design_first",
         "weight": 40,
-        "desc": "Recorder notes let a stranger continue"
+        "desc": "\u22642 page design before the checker"
       },
       {
-        "name": "ethics",
+        "name": "pii_reject",
         "weight": 30,
-        "desc": "No PII, no unauthorized targets"
+        "desc": "password= fields rejected"
+      },
+      {
+        "name": "bot_not_closer",
+        "weight": 30,
+        "desc": "harbor-bot cannot close locker cases"
       }
     ]
   },
   {
     "rubric_id": "CYBERSECURITY-portfolio",
-    "title": "Portfolio",
+    "title": "SOC portfolio",
     "criteria": [
       {
-        "name": "artifacts",
-        "weight": 70,
-        "desc": "Required artifacts present"
+        "name": "seven_json",
+        "weight": 50,
+        "desc": "Seven lab results plus empty-fail evidence"
       },
       {
-        "name": "no_pii",
+        "name": "cannot_claim",
         "weight": 30,
-        "desc": "No faces, secrets, or PANs"
+        "desc": "Timeline page lists what the USB fixture cannot prove"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 20,
+        "desc": "Does not claim ISC2 CC or Security+"
       }
     ]
   }

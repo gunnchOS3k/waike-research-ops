@@ -4,265 +4,265 @@
     {
       "id": "GENERAL_IT-fin-01",
       "kind": "mcq",
-      "stem": "Correct first subsystem to name on a dead kiosk?",
+      "stem": "Black screen, fans on, one short beep, display cable dangling after you pulled the chassis. First reseat?",
       "choices": [
-        "OS reinstall",
-        "Power path (brick/LED)",
-        "RAM vendor",
-        "Browser cache"
+        "The spare SODIMM",
+        "Display cable (and confirm power/POST) before spending the only DIMM",
+        "The SATA SSD",
+        "GRUB"
       ]
     },
     {
       "id": "GENERAL_IT-fin-02",
       "kind": "mcq",
-      "stem": "Why is the spare SODIMM last in the black-screen flowchart?",
+      "stem": "Exhaust 78 C after dust. Next measurement?",
       "choices": [
-        "RAM is cheap",
-        "Video/power/cables explain more of this failure class",
-        "SODIMMs cannot fail",
-        "Windows 11 needs 128 GB"
+        "Immediate RMA",
+        "Overclock the fan",
+        "Clean intake, re-measure temperature",
+        "Reinstall Debian"
       ]
     },
     {
       "id": "GENERAL_IT-fin-03",
       "kind": "mcq",
-      "stem": "Patron tethers a phone because 'Wi-Fi is slow.' You should",
+      "stem": "Kiosk shows 169.254.13.9 after a furniture move. What failed?",
       "choices": [
-        "Ignore Ethernet lights",
-        "Check the kiosk patch cable/link lights first",
-        "Buy a new phone",
-        "Disable the idle timer"
+        "Static city plan",
+        "IPv6 only",
+        "NAT",
+        "DHCP lease (link-local)"
       ]
     },
     {
       "id": "GENERAL_IT-fin-04",
       "kind": "mcq",
-      "stem": "78 C exhaust after dust: next?",
+      "stem": "desk.gary.waike.local is 10.20.30.14 in hosts. The fixture resolver also answers example.com. Why fail the lab?",
       "choices": [
-        "Immediate chassis RMA",
-        "Clean intake, re-measure",
-        "Reinstall Debian",
-        "Overclock the fan"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-05",
-      "kind": "mcq",
-      "stem": "SMART is evidence for which subsystem?",
-      "choices": [
-        "Display cable",
-        "Storage",
-        "RAM timings",
-        "GRUB theme"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-06",
-      "kind": "mcq",
-      "stem": "A+ V15 Core 1 hardware domain in this week is used as",
-      "choices": [
-        "An item dump",
-        "A domain label for power/RAM/disk/display triage",
-        "A license to copy CertMaster",
-        "A replacement for tickets"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-07",
-      "kind": "mcq",
-      "stem": "169.254.13.9 on a kiosk most likely means",
-      "choices": [
-        "Static plan from the city",
-        "DHCP lease failure (link-local)",
-        "IPv6 only",
-        "A successful NAT"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-08",
-      "kind": "mcq",
-      "stem": "Why must the fixture not resolve example.com?",
-      "choices": [
+        "A classroom resolver must not invent WAN answers",
         "example.com is illegal",
-        "Classroom resolver must not invent WAN answers",
         "DNSSEC forbids it",
         "Port 53 is closed forever"
       ]
     },
     {
-      "id": "GENERAL_IT-fin-09",
+      "id": "GENERAL_IT-fin-05",
       "kind": "mcq",
-      "stem": "IPP/cups printing commonly uses port",
+      "stem": "cupsd RestartSec=120 during a 40-job r\u00e9sum\u00e9 queue. Operational problem?",
       "choices": [
-        "22",
-        "53",
-        "631",
-        "3389"
+        "systemd forbids 120",
+        "The public line becomes a rumor before cups returns",
+        "IPP requires 120",
+        "sshd needs 120"
       ]
     },
     {
-      "id": "GENERAL_IT-fin-10",
+      "id": "GENERAL_IT-fin-06",
       "kind": "mcq",
-      "stem": "Volunteer on guest Wi-Fi says civic DNS is dead. Likely?",
+      "stem": "Closet recovery VM snapshots exist so that useradd practice is?",
       "choices": [
-        "Split horizon / wrong network",
-        "ext4 corruption",
-        "SODIMM failure",
-        "Idle timer"
+        "Production kiosk work",
+        "A place to run toy-tracker for patrons",
+        "Reversible",
+        "Guest Wi-Fi"
       ]
     },
     {
-      "id": "GENERAL_IT-fin-11",
+      "id": "GENERAL_IT-fin-07",
       "kind": "mcq",
-      "stem": "Name resolution succeeds to 10.20.30.40 but printing fails. Next?",
+      "stem": "A chatbot invents `rm -rf /home/kiosk` you cannot explain. Policy?",
       "choices": [
-        "Ignore cups",
-        "Check spooler/cups after the name is honest",
-        "Disable IPv4",
-        "Format the SSD"
+        "Pipe to sudo",
+        "Put it in Saturday cron",
+        "Store it in ssn.txt",
+        "Refuse until you can explain it"
       ]
     },
     {
-      "id": "GENERAL_IT-fin-12",
+      "id": "GENERAL_IT-fin-08",
       "kind": "mcq",
-      "stem": "desk.gary.waike.local in the lab is",
+      "stem": "Executed steps != planned steps in the dry-run JSON. Meaning?",
       "choices": [
-        "10.20.30.14",
-        "192.0.2.1",
-        "127.0.0.1",
-        "169.254.1.1"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-13",
-      "kind": "mcq",
-      "stem": "toy-tracker must be",
-      "choices": [
-        "enabled and active",
-        "disabled and inactive",
-        "in sudo",
-        "bound to port 631"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-14",
-      "kind": "mcq",
-      "stem": "cupsd restart_sec=120 is bad because",
-      "choices": [
-        "systemd forbids it",
-        "The public queue reforms into a rumor before cups returns",
-        "IPP uses 120",
-        "SSH needs 120"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-15",
-      "kind": "mcq",
-      "stem": "Printer balloon says offline; lpstat shows paused. You",
-      "choices": [
-        "Buy toner first",
-        "Resume/restart cups after confirming the device is powered",
-        "Reinstall Windows",
-        "Disable sshd"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-16",
-      "kind": "mcq",
-      "stem": "The closet recovery VM is for",
-      "choices": [
-        "Production kiosks",
-        "Practicing useradd behind a snapshot",
-        "Hosting toy-tracker for patrons",
-        "Public Wi-Fi"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-17",
-      "kind": "mcq",
-      "stem": "Type-2 hypervisor in one honest sentence is",
-      "choices": [
-        "A hypervisor that runs on an existing OS",
-        "A switch ASIC",
-        "A DNS zone",
-        "A CompTIA exam item"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-18",
-      "kind": "mcq",
-      "stem": "sshd on the desk image is",
-      "choices": [
-        "Forbidden",
-        "Required for staff recovery in this lab",
-        "A guest Wi-Fi portal",
-        "Port 631"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-19",
-      "kind": "mcq",
-      "stem": "Why snapshot before apply?",
-      "choices": [
-        "Snapshots are slow",
-        "Rollback needs a before-image",
-        "cron requires it",
-        "Windows 11 forbids apply"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-20",
-      "kind": "mcq",
-      "stem": "19:15 with window 18:00\u201321:00 is",
-      "choices": [
-        "Out of window",
-        "In window",
-        "SE1",
-        "A DHCP lease"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-21",
-      "kind": "mcq",
-      "stem": "`0 21 * * 3` means",
-      "choices": [
-        "Every day at 21:00",
-        "Wednesday 21:00",
-        "March 21",
-        "Every 3 minutes"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-22",
-      "kind": "mcq",
-      "stem": "A chatbot invents an unexplained destructive command. You",
-      "choices": [
-        "Pipe it to sudo",
-        "Refuse until you can explain it",
-        "Put it in cron at 11:00 Saturday",
-        "Store it in ssn.txt"
-      ]
-    },
-    {
-      "id": "GENERAL_IT-fin-23",
-      "kind": "mcq",
-      "stem": "Lab fails when executed != planned because",
-      "choices": [
+        "You did not do the change you documented",
         "JSON is picky",
-        "Dry-run drift means you did not do the change you documented",
         "SHA256 is broken",
         "UID collision"
       ]
     },
     {
+      "id": "GENERAL_IT-fin-09",
+      "kind": "mcq",
+      "stem": "After-hours recorder notes that only the operator can decode. Group project?",
+      "choices": [
+        "Pass",
+        "Fail \u2014 a stranger must continue",
+        "Extra credit",
+        "Replaces backups"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-10",
+      "kind": "mcq",
+      "stem": "Does passing this course grant CompTIA A+ V15?",
+      "choices": [
+        "Yes",
+        "Yes if labs pass",
+        "No \u2014 domain alignment only",
+        "Yes if Google signs"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-11",
+      "kind": "mcq",
+      "stem": "AI browser extension asks for admin on the public kiosk. You?",
+      "choices": [
+        "Grant it",
+        "Store its token in ticket 4502",
+        "Disable idle logout",
+        "Refuse \u2014 non-human tools do not get sudo on the public image"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-12",
+      "kind": "mcq",
+      "stem": "Portfolio video shows patron faces 'for authenticity.' Verdict?",
+      "choices": [
+        "Fail \u2014 no faces/PII",
+        "Pass",
+        "Pass if blurred later maybe",
+        "Required for Google IT"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-13",
+      "kind": "mcq",
+      "stem": "Used=225 GiB, reserved=12, size=256, then a Windows update wants 20 GiB. Why did the 15% policy exist?",
+      "choices": [
+        "Disks explode at 15%",
+        "Headroom for updates/profiles before 'full'",
+        "ext4 cannot use the last 15%",
+        "CompTIA requires 15%"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-14",
+      "kind": "mcq",
+      "stem": "SMART reallocated-sector count climbing on the kiosk SSD. Subsystem to name before OS reinstall?",
+      "choices": [
+        "Display cable",
+        "RAM timings",
+        "Storage",
+        "GRUB theme"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-15",
+      "kind": "mcq",
+      "stem": "Type-2 hypervisor in one honest sentence for the closet PC?",
+      "choices": [
+        "A switch ASIC",
+        "A DNS zone",
+        "A CompTIA item",
+        "A hypervisor that runs on an existing OS"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-16",
+      "kind": "mcq",
+      "stem": "sshd on the desk image is present because?",
+      "choices": [
+        "Staff recovery path in this lab",
+        "Patrons need it",
+        "It is the guest portal",
+        "Port 631"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-17",
+      "kind": "mcq",
+      "stem": "3-2-1 at this desk is volume + locked USB + closet PC. Cloud-only three buckets would fail because?",
+      "choices": [
+        "Cloud is illegal",
+        "One media/off-site class, not two media",
+        "USB is required by A+",
+        "Closet PCs cannot hash"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-18",
+      "kind": "mcq",
+      "stem": "CHG-88 snapshot_home / apply_idle_policy / verify_kiosk_login. Which rollback string is acceptable?",
+      "choices": [
+        "reboot_and_hope",
+        "disable_idle_forever",
+        "restore_snapshot_home",
+        "grant_kiosk_sudo"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-19",
+      "kind": "mcq",
+      "stem": "Why is Fast User Switching preferred over logging off the last admin during a 40-job print?",
+      "choices": [
+        "It wipes the spooler",
+        "It disables idle logout",
+        "It grants kiosk sudo",
+        "It can leave the spooler owner alive"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-20",
+      "kind": "mcq",
+      "stem": "Zero Trust as a support behavior this week means?",
+      "choices": [
+        "Do not grant admin because someone is late; time-box the group the ticket needs",
+        "Never patch",
+        "Disable the firewall",
+        "NAT everything"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-21",
+      "kind": "mcq",
+      "stem": "A backup `.tgz` exists but nobody has extracted it this quarter. What is it?",
+      "choices": [
+        "3-2-1 complete",
+        "A rumor until a restore hash matches",
+        "Better than snapshots",
+        "A RAID substitute"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-22",
+      "kind": "mcq",
+      "stem": "Patron tethers a phone because 'Wi-Fi is slow.' Ethernet link lights are off. You?",
+      "choices": [
+        "Ignore the lights",
+        "Buy a new phone",
+        "Reseat the patch cable before blaming cellular",
+        "Disable idle logout"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-fin-23",
+      "kind": "mcq",
+      "stem": "Scope paragraph: this course licenses you to image random neighborhood laptops?",
+      "choices": [
+        "Yes",
+        "Yes after week 10",
+        "Yes if offline",
+        "No \u2014 desk/image you are authorized to touch"
+      ]
+    },
+    {
       "id": "GENERAL_IT-fin-24",
       "kind": "mcq",
-      "stem": "Public hours 10:00\u201317:00 should",
+      "stem": "Ticket 4418 fan scream then black. Next action that scores on the lab?",
       "choices": [
-        "Host image writes",
-        "Not host image writes",
-        "Disable cups",
-        "Grant kiosk sudo"
+        "capture_temps_then_reseating_plan",
+        "reboot_and_hope",
+        "order_gaming_pc",
+        "full_disk_wipe"
       ]
     }
   ]

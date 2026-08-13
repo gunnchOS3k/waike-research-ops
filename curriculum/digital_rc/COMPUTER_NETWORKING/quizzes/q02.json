@@ -8,9 +8,9 @@
       "stem": "10.20.30.40/26 network address?",
       "choices": [
         "10.20.30.40",
-        "10.20.30.0",
         "10.20.30.63",
-        "10.20.30.1"
+        "10.20.30.1",
+        "10.20.30.0"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "kind": "mcq",
       "stem": "Usable hosts in a typical /26 (not /31)?",
       "choices": [
-        "64",
         "62",
+        "64",
         "32",
         "14"
       ]
@@ -41,8 +41,8 @@
       "stem": "LPM prefers",
       "choices": [
         "Shortest prefix",
-        "Longest matching prefix",
         "Random",
+        "Longest matching prefix",
         "Lowest metric always"
       ]
     },
@@ -52,9 +52,9 @@
       "stem": "fe80:: addresses are",
       "choices": [
         "Public globals",
-        "Link-local",
         "Multicast OSPF",
-        "NAT pools"
+        "NAT pools",
+        "Link-local"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "/28 usable (typical)?",
       "choices": [
-        "16",
         "14",
+        "16",
         "30",
         "2"
       ]

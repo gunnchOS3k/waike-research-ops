@@ -8,9 +8,9 @@
       "stem": "LPM for 10.20.40.9 with /24 and /16 present chooses",
       "choices": [
         "/16",
-        "/24",
         "default only",
-        "drop"
+        "drop",
+        "/24"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "kind": "mcq",
       "stem": "TTL 1 at ingress of a router should",
       "choices": [
-        "Forward forever",
         "Drop after decrement to 0",
+        "Forward forever",
         "Convert to TCP",
         "NAT to 192.0.2.1"
       ]
@@ -41,8 +41,8 @@
       "stem": "Proto 6 is",
       "choices": [
         "ICMP",
-        "TCP",
         "UDP",
+        "TCP",
         "OSPF"
       ]
     },
@@ -52,9 +52,9 @@
       "stem": "Adding 10.20.40.9/32 should",
       "choices": [
         "Be ignored",
-        "Win over the /24",
         "Break Ethernet",
-        "Disable TTL"
+        "Disable TTL",
+        "Win over the /24"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "This frame came from",
       "choices": [
-        "A cafe capture",
         "A classroom-crafted bytestring",
+        "A cafe capture",
         "CS144 hidden tests",
         "A CCNA dump"
       ]

@@ -6,8 +6,8 @@
 ## Slide 2 — Teaching beat
 10.20.30.40/26 is not 'a class C with a funny number.' /26 means 26 bits of network, 6 bits of host, 64 addresses, network 10.20.30.0, broadcast 10.20.30.63, 62 usable if you still believe in network and broadcast addresses. The host .40 lives in that block the way a house lives on a surveyed lot.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Slice the crafted frame: bytes 0–5 dest MAC, 12–13 ethertype, IP[8] TTL. Then decrement a TTL=1 copy.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+Refuse CS144 solutions and CCNA item banks. The datapath lab is original WAIKE Python.

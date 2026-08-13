@@ -17,6 +17,8 @@
       "quiz_items": 60,
       "mid_course_items": 20,
       "final_items": 24,
+      "mid_course_items_original": 20,
+      "final_items_original": 24,
       "practicals": 1,
       "projects": 1,
       "rubrics": 8,
@@ -29,7 +31,10 @@
       "benchmark_sources": 16,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
-      "COURSE_DIGITAL_RC": true
+      "key_balance_ok": true,
+      "exam_items_original": true,
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "COMPUTER_NETWORKING": {
       "syllabus": 1,
@@ -41,6 +46,8 @@
       "quiz_items": 60,
       "mid_course_items": 20,
       "final_items": 24,
+      "mid_course_items_original": 20,
+      "final_items_original": 24,
       "practicals": 1,
       "projects": 1,
       "rubrics": 8,
@@ -53,7 +60,10 @@
       "benchmark_sources": 16,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
-      "COURSE_DIGITAL_RC": true
+      "key_balance_ok": true,
+      "exam_items_original": true,
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "CYBERSECURITY": {
       "syllabus": 1,
@@ -65,6 +75,8 @@
       "quiz_items": 60,
       "mid_course_items": 20,
       "final_items": 24,
+      "mid_course_items_original": 20,
+      "final_items_original": 24,
       "practicals": 1,
       "projects": 1,
       "rubrics": 8,
@@ -77,12 +89,43 @@
       "benchmark_sources": 16,
       "provenance_status": "PASS",
       "template_status": "ORIGINAL",
-      "COURSE_DIGITAL_RC": true
+      "key_balance_ok": true,
+      "exam_items_original": true,
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     }
   },
   "lab_execution_ok": true,
   "lab_count": 20,
+  "empty_submission_fails": true,
+  "wrong_submission_fails": true,
+  "print_pass_raises": true,
+  "ttl1_from_parsed_header": true,
   "product_consumption_ok": true,
   "registry_size": 16,
-  "claim_boundary": "COURSE_DIGITAL_RC is earned only for this 3-course batch if labs, provenance, and depth gates pass. Not a student/teacher E6. Not all 18 courses."
+  "key_distribution": {
+    "GENERAL_IT": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "COMPUTER_NETWORKING": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "CYBERSECURITY": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    }
+  },
+  "worst_packaging_jaccard": 0.0249,
+  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. Not a student/teacher E6. Not all 18 courses."
 }

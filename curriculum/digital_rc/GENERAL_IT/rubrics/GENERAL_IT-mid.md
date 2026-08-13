@@ -1,3 +1,4 @@
-# Mid-course knowledge
+# Mid-course desk audit
 
-- **coverage_weeks_1_5** (100%): Items map to weeks 1–5
+- **original_stems** (60%): 20 items not cloned from weekly quizzes
+- **accounts_storage_change** (40%): UID clone, free-ratio, window math

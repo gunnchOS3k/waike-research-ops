@@ -1,3 +1,3 @@
-# Portfolio — Computer Networking — Packets to Campus Edge
+# Portfolio — Packet Range
 
-Ship lab JSON, the capstone artifact, and a scope paragraph. No PII.
+Ship datapath JSON, intent file, and the four-noun trace. Do not claim CCNA.

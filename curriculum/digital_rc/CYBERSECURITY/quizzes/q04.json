@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "ada with 4 AUTH_FAIL vs threshold 3 is",
       "choices": [
-        "Proof ada is guilty",
         "A burst that warrants a look",
+        "Proof ada is guilty",
         "A VLAN leak",
         "A /26"
       ]
@@ -30,8 +30,8 @@
       "stem": "Who closes the case?",
       "choices": [
         "harbor-bot",
-        "A human with the close permission",
         "The kiosk",
+        "A human with the close permission",
         "DHCP"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "Password in a log line",
       "choices": [
         "Is fine",
-        "Is a fixture bug / policy failure",
         "Is MFA",
-        "Is NICE"
+        "Is NICE",
+        "Is a fixture bug / policy failure"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Bot clustering bursts is",
       "choices": [
-        "Forbidden always",
         "Allowed as assist, not as closer",
+        "Forbidden always",
         "A CCNA dump",
         "NAT"
       ]

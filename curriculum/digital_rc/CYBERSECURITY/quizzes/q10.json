@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "Evidence locker copies CS161 proj2?",
       "choices": [
-        "Yes",
         "No \u2014 original policy checker",
+        "Yes",
         "Yes the Go code",
         "Yes hidden tests"
       ]
@@ -30,8 +30,8 @@
       "stem": "Certification granted?",
       "choices": [
         "CC and Security+",
-        "None",
         "A+ V15",
+        "None",
         "CCNA"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "Scanning random Internet hosts for the capstone",
       "choices": [
         "Encouraged",
-        "Forbidden",
         "Extra credit",
-        "Required by 800-61"
+        "Required by 800-61",
+        "Forbidden"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Design checkpoint exists because",
       "choices": [
-        "Paperwork",
         "Depth pattern: design then implement then test",
+        "Paperwork",
         "STP",
         "CIDR"
       ]

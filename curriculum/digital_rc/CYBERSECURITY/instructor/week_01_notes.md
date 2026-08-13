@@ -1,7 +1,9 @@
-# Instructor notes week 1
+# Harbor SOC — instructor week 1
 
-Pace: live worked example first.
+**Tabletop beat:** A triage bot with sudo would violate least privilege for a non-human identity and would turn a prompt injection into root. Harbor policy: bots read, humans close.
 
-Lab `lab_hardening_baseline` must be executed, not narrated.
+**Lab `lab_hardening_baseline`:** fixture + student JSON. Empty note fails no_attacker_word.
 
-Do not paste vendor exam items.
+**Pitfall:** If someone wants the bot to have sudo 'just to try,' that is the week's exam.
+
+No ISC2/CompTIA item text. Upcoming CC 2026-09-01 is a domain map, not a dump.

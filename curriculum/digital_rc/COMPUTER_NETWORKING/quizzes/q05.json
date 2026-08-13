@@ -19,8 +19,8 @@
       "stem": "Handshake order",
       "choices": [
         "ACK SYN SYN-ACK",
-        "SYN, SYN-ACK, ACK",
         "FIN FIN ACK",
+        "SYN, SYN-ACK, ACK",
         "RST only"
       ]
     },
@@ -30,9 +30,9 @@
       "stem": "AIMD loss event typically",
       "choices": [
         "Doubles cwnd",
-        "Halves cwnd (multiplicative decrease)",
         "Sets TTL 1",
-        "Clears ARP"
+        "Clears ARP",
+        "Halves cwnd (multiplicative decrease)"
       ]
     },
     {
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "rwnd is",
       "choices": [
-        "Router queue",
         "Receiver advertised window",
+        "Router queue",
         "OSPF cost",
         "VLAN ID"
       ]
@@ -63,8 +63,8 @@
       "stem": "Data before handshake in this course is",
       "choices": [
         "Required",
-        "Out of scope / a bug in the basic model",
         "OSPF",
+        "Out of scope / a bug in the basic model",
         "NAT"
       ]
     }

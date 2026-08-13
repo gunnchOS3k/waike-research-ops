@@ -1,5 +1,5 @@
-# Final practical
+# Submitted desk artifacts
 
-- **labs_green** (60%): Required labs ok
-- **negative_fail** (20%): Mutated fixtures fail
-- **writeup** (20%): Honest claim boundary
+- **student_json** (50%): Empty submission fails; reference JSON passes
+- **negatives** (30%): kiosk-with-sudo fails the user lab
+- **print_pass** (20%): A file containing only PASS is rejected

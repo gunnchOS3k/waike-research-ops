@@ -2,4 +2,4 @@
 
 Submit intent JSON, datapath result, packet trace, and the guest-VLAN redesign. Pair.
 
-Design first. Recorder notes must let a stranger continue.
+Deliver intent JSON + Pier→Roof trace (VLAN, LPM, TTL, ACL) + guest VLAN that cannot reach Roof.

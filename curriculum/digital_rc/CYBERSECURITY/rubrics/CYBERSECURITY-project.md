@@ -1,5 +1,5 @@
-# Group project
+# Evidence locker
 
-- **design** (30%): Design exists before implementation
-- **handoff** (40%): Recorder notes let a stranger continue
-- **ethics** (30%): No PII, no unauthorized targets
+- **design_first** (40%): ≤2 page design before the checker
+- **pii_reject** (30%): password= fields rejected
+- **bot_not_closer** (30%): harbor-bot cannot close locker cases

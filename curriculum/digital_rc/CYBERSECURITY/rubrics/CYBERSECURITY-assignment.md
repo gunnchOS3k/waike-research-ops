@@ -1,5 +1,5 @@
-# Weekly assignment
+# SOC memo
 
-- **specific_numbers** (40%): Uses course numbers, not generic prose
-- **scope** (30%): Does not claim certs or unauthorized testing
-- **clarity** (30%): A stranger can continue the work
+- **named_identities** (40%): Naiya/Omar/harbor-bot, not 'a user'
+- **no_secrets** (30%): No tokens or passwords in the memo
+- **authorized_only** (30%): No scan of systems Harbor does not own

@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "The toy parser bug is",
       "choices": [
-        "A live campus CMS 0-day",
         "Trusting a length byte without remaining-byte checks",
+        "A live campus CMS 0-day",
         "OSPF",
         "exFAT"
       ]
@@ -30,8 +30,8 @@
       "stem": "CS161 projects are",
       "choices": [
         "Copied here",
-        "Structure reference only; not copied",
         "Required binaries",
+        "Structure reference only; not copied",
         "Our SIEM"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "Safe parser on honest 4+abcd",
       "choices": [
         "Raises",
-        "Returns b'abcd'",
         "Opens a socket",
-        "Grants sudo"
+        "Grants sudo",
+        "Returns b'abcd'"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Finding a real WAIKE bug outside the fixture",
       "choices": [
-        "Exploit silently",
         "Report it; do not 'practice' on it",
+        "Exploit silently",
         "Post to a dump site",
         "Put it in a quiz stem with the PoC"
       ]

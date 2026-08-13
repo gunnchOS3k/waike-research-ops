@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "Why snapshot before apply?",
       "choices": [
-        "Snapshots are slow",
         "Rollback needs a before-image",
+        "Snapshots are slow",
         "cron requires it",
         "Windows 11 forbids apply"
       ]
@@ -30,8 +30,8 @@
       "stem": "`0 21 * * 3` means",
       "choices": [
         "Every day at 21:00",
-        "Wednesday 21:00",
         "March 21",
+        "Wednesday 21:00",
         "Every 3 minutes"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "A chatbot invents an unexplained destructive command. You",
       "choices": [
         "Pipe it to sudo",
-        "Refuse until you can explain it",
         "Put it in cron at 11:00 Saturday",
-        "Store it in ssn.txt"
+        "Store it in ssn.txt",
+        "Refuse until you can explain it"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Lab fails when executed != planned because",
       "choices": [
-        "JSON is picky",
         "Dry-run drift means you did not do the change you documented",
+        "JSON is picky",
         "SHA256 is broken",
         "UID collision"
       ]

@@ -8,8 +8,8 @@
       "stem": "Kiosk initiating to SOC should be",
       "choices": [
         "Allow all",
-        "Deny",
         "NAT",
+        "Deny",
         "OSPF"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "SOC pulling kiosk syslog is",
       "choices": [
         "Deny",
-        "allow_syslog_only",
         "Full RDP",
-        "Guest"
+        "Guest",
+        "allow_syslog_only"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "Untrusted ticket text instructing a bot to dump a DB is",
       "choices": [
-        "A valid runbook",
         "Prompt injection / untrusted content",
+        "A valid runbook",
         "DHCP",
         "STP"
       ]
@@ -52,8 +52,8 @@
       "stem": "SaaS ticketing: who still classifies data?",
       "choices": [
         "Only the vendor",
-        "Harbor still does",
         "RFC 9293",
+        "Harbor still does",
         "Nobody"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "This SIEM is",
       "choices": [
         "A purchased SOC platform",
-        "On-box JSON fixtures",
         "A leaked exam",
-        "Packet Tracer"
+        "Packet Tracer",
+        "On-box JSON fixtures"
       ]
     }
   ]

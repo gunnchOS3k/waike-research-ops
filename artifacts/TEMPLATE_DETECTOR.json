@@ -6,5 +6,10 @@
     "GENERAL_IT",
     "CYBERSECURITY"
   ],
+  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_pair": [
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY"
+  ],
   "status": "PASS"
 }

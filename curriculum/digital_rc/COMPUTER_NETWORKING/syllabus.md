@@ -8,7 +8,7 @@ Ten weeks on the WAIKE Packet Range: chop packets, survey CIDR, learn MACs with 
 - Academy: ACADEMY_NETWORKING
 
 ## Duration
-10 weeks. Operator/support, packet-range, or Harbor SOC hours — not a 2-hour workshop pretending to be a course.
+Ten Packet Range weeks with one deep data-path practical in week 4 that returns in the capstone. Budget a quiet table for hex slicing; this is not a GUI click-through.
 
 ## Weekly map
 - Week 01: Packets are chopped on purpose
@@ -23,14 +23,10 @@ Ten weeks on the WAIKE Packet Range: chop packets, survey CIDR, learn MACs with 
 - Week 10: Campus edge capstone — intent files and a datapath proof
 
 ## Assessments
-- 10 weekly quizzes (6 original items each)
-- Mid-course knowledge (20 items, weeks 1–5)
-- Final knowledge (24 items)
-- Final practical (runnable labs)
-- Group project / capstone
+Packet Range assessment mix: weekly protocol quizzes, a mid-course written exam on encapsulation/CIDR/LPM/TCP numbering (20 original items), a final on STP/SPF/NAT/ACL/intent files (24 original items), a practical that parses a crafted Ethernet+IPv4 frame and must drop a real TTL=1 header, and a guest-VLAN redesign presentation. A trace that omits VLAN, LPM, TTL, or ACL is incomplete.
 
 ## Claim boundary
-Original WAIKE materials. Domain alignment only. No certification granted. Instructor keys are not in the learner packet.
+Aligns to Cisco CCNA 200-301 v1.1 domain weights and cites CS144's weekly shape. Does not grant CCNA and does not ship Stanford code or solutions. Instructor keys stay out of the learner packet.
 
 ## Kinesthetic hook
 Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.

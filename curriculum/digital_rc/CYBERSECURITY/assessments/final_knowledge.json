@@ -4,265 +4,265 @@
     {
       "id": "CYBERSECURITY-fin-01",
       "kind": "mcq",
-      "stem": "First containment for a stolen staff laptop",
+      "stem": "ssh_password_auth on the Harbor image should be?",
       "choices": [
-        "Widen SOC allow",
-        "Revoke identity/sessions",
-        "Disable syslog",
-        "Permit telnet"
+        "True",
+        "Maybe",
+        "Port 23",
+        "False"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-02",
       "kind": "mcq",
-      "stem": "Temporarily allowing guest\u2192staff",
+      "stem": "ai_agent_sudo true on the image is?",
       "choices": [
-        "Is fine",
-        "Is a segmentation regression",
-        "Fixes AIMD",
-        "Is 800-61 recover"
+        "A baseline fail",
+        "Required",
+        "A VLAN",
+        "A DNS TTL"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-03",
       "kind": "mcq",
-      "stem": "Kiosk SMB to staff shares",
+      "stem": "open_ports {22,80,3389} versus Harbor \u2264{22,443}?",
       "choices": [
-        "Required",
-        "Should stay denied",
-        "Is DNS",
-        "Is MFA"
+        "Pass",
+        "Fail \u2014 too open",
+        "Enables OSPF",
+        "Grants CC"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-04",
       "kind": "mcq",
-      "stem": "Security groups in this lesson are",
+      "stem": "World-writable home is?",
       "choices": [
-        "A shopping list",
-        "Cloud-shaped ACLs we express as a matrix",
-        "CS161 P1",
-        "A leaked bank"
+        "Friendly",
+        "Required for cups",
+        "A confidentiality/integrity failure",
+        "IPv6"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-05",
       "kind": "mcq",
-      "stem": "Report delay 16:12 steal / 16:40 report means",
+      "stem": "Do we nmap the school's real /24 for this lab?",
       "choices": [
-        "Nothing happened",
-        "28 minutes of untrusted sessions to hunt",
-        "NAT failed",
-        "TTL expired"
+        "Yes",
+        "Yes if offline",
+        "Yes from a dump",
+        "No \u2014 fixture JSON only"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-06",
       "kind": "mcq",
-      "stem": "Press release as first IR step",
+      "stem": "Stolen staff laptop at 16:12, reported 16:40. First containment?",
       "choices": [
-        "Yes",
-        "No \u2014 contain first",
-        "Yes if AI writes it",
-        "Yes on guest Wi-Fi"
+        "Revoke identity/sessions",
+        "Widen SOC allow",
+        "Disable syslog",
+        "Permit telnet"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-07",
       "kind": "mcq",
-      "stem": "Wipe before contain",
+      "stem": "Temporarily allowing guest\u2192staff 'so the label printer works' is?",
       "choices": [
-        "Is efficient",
-        "Destroys evidence / fails the lab order",
-        "Is 800-53 AU",
-        "Is LPM"
+        "Fine",
+        "A segmentation regression",
+        "AIMD",
+        "800-61 recover"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-08",
       "kind": "mcq",
-      "stem": "Lessons learned belongs",
+      "stem": "Kiosk SMB to staff shares should?",
       "choices": [
-        "First",
-        "Last",
-        "Never",
-        "In the ACL"
+        "Be required",
+        "Be DNS",
+        "Stay denied",
+        "Be MFA"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-09",
       "kind": "mcq",
-      "stem": "ASAP as a timestamp",
+      "stem": "28 minutes between theft and report means?",
       "choices": [
-        "Is precise",
-        "Is not a time",
-        "Is NTP",
-        "Is VLAN 1"
+        "Nothing happened",
+        "NAT failed",
+        "TTL expired",
+        "Untrusted sessions to hunt"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-10",
       "kind": "mcq",
-      "stem": "Model weights as a continuity asset",
+      "stem": "Press release as the first IR step?",
       "choices": [
-        "Never",
-        "Yes if the model is part of ops",
-        "Only for CCNA",
-        "Only FAT32"
+        "No \u2014 contain first",
+        "Yes",
+        "Yes if a model writes it",
+        "Yes on guest Wi-Fi"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-11",
       "kind": "mcq",
-      "stem": "Tidying embarrassing logs",
+      "stem": "Wipe disks before contain. Lab order?",
       "choices": [
-        "Helpful",
-        "May violate legal hold / integrity of evidence",
-        "Required by cups",
-        "A Google module"
+        "Efficient",
+        "Fails \u2014 destroys evidence",
+        "800-53 AU",
+        "LPM"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-12",
       "kind": "mcq",
-      "stem": "800-61 reuse class",
+      "stem": "Lessons-learned belongs where on the clock?",
       "choices": [
-        "RESTRICTED dump",
-        "OPEN_LICENSE_ADAPT_ALLOWED",
-        "Paywall",
-        "CS161 protected"
+        "First",
+        "Never",
+        "Last",
+        "In the ACL"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-13",
       "kind": "mcq",
-      "stem": "The toy parser bug is",
+      "stem": "'ASAP' as the IR timestamp?",
       "choices": [
-        "A live campus CMS 0-day",
-        "Trusting a length byte without remaining-byte checks",
-        "OSPF",
-        "exFAT"
+        "Precise",
+        "NTP",
+        "VLAN 1",
+        "Not a time"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-14",
       "kind": "mcq",
-      "stem": "Shellcode against random hosts",
+      "stem": "If the summarizer is part of ops, model weights are?",
       "choices": [
-        "Is the assignment",
-        "Is forbidden",
-        "Is extra credit",
-        "Is CCNA"
+        "A continuity asset",
+        "Never backed up",
+        "Only for CCNA",
+        "Only FAT32"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-15",
       "kind": "mcq",
-      "stem": "CS161 projects are",
+      "stem": "Tidying embarrassing logs during legal hold?",
       "choices": [
-        "Copied here",
-        "Structure reference only; not copied",
-        "Required binaries",
-        "Our SIEM"
+        "Helpful",
+        "May violate integrity of evidence",
+        "Required by cups",
+        "A Google module"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-16",
       "kind": "mcq",
-      "stem": "Safe parser on honest 4+abcd",
+      "stem": "The toy parser bug is?",
       "choices": [
-        "Raises",
-        "Returns b'abcd'",
-        "Opens a socket",
-        "Grants sudo"
+        "A live campus CMS 0-day",
+        "OSPF",
+        "Trusting a length byte without remaining-byte checks",
+        "exFAT"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-17",
       "kind": "mcq",
-      "stem": "Finding a real WAIKE bug outside the fixture",
+      "stem": "Shellcode against random Internet hosts for week 8?",
       "choices": [
-        "Exploit silently",
-        "Report it; do not 'practice' on it",
-        "Post to a dump site",
-        "Put it in a quiz stem with the PoC"
+        "The assignment",
+        "Extra credit",
+        "CCNA",
+        "Forbidden"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-18",
       "kind": "mcq",
-      "stem": "This lab opens network sockets?",
+      "stem": "CS161 projects in this packet?",
       "choices": [
-        "Yes",
-        "No",
-        "Only UDP",
-        "Only to 8.8.8.8"
+        "Structure reference only; not copied",
+        "Copied",
+        "Required binaries",
+        "Our SIEM"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-19",
       "kind": "mcq",
-      "stem": "First event after sort",
+      "stem": "Safe parser on honest 4+abcd returns?",
       "choices": [
-        "usb_insert",
-        "login",
-        "file_copy",
-        "unmount"
+        "Raises",
+        "b'abcd'",
+        "Opens a socket",
+        "Grants sudo"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-20",
       "kind": "mcq",
-      "stem": "file_copy must sit",
+      "stem": "A real WAIKE bug found outside the fixture. You?",
       "choices": [
-        "Before insert",
-        "Between insert and unmount",
-        "After unmount only",
-        "At t=0"
+        "Exploit silently",
+        "Post to a dump site",
+        "Report it; do not 'practice' on it",
+        "Put a PoC in a quiz stem"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-21",
       "kind": "mcq",
-      "stem": "Volunteer memory vs JSON timeline",
+      "stem": "USB story: login t=90, insert 100, copy 140, unmount 155. First after sort?",
       "choices": [
-        "Memory wins",
-        "Timeline/hash wins as evidence in this class",
-        "Neither",
-        "STP"
+        "usb_insert",
+        "file_copy",
+        "unmount",
+        "login"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-22",
       "kind": "mcq",
-      "stem": "Imaging a stranger's phone",
+      "stem": "Can we claim ada is the USB person from that fixture?",
       "choices": [
-        "Lab extra",
-        "Forbidden",
-        "Required for CC",
-        "A Google module"
-      ]
-    },
-    {
-      "id": "CYBERSECURITY-fin-23",
-      "kind": "mcq",
-      "stem": "We can claim ada is the USB person?",
-      "choices": [
-        "Yes",
         "No \u2014 fixture does not identify the human",
+        "Yes",
         "Yes if burst",
         "Yes if guest"
       ]
     },
     {
+      "id": "CYBERSECURITY-fin-23",
+      "kind": "mcq",
+      "stem": "Evidence locker copies Berkeley CS161 proj2 Go file-share?",
+      "choices": [
+        "Yes",
+        "No \u2014 original Harbor policy checker",
+        "Yes the hidden tests",
+        "Yes the VM"
+      ]
+    },
+    {
       "id": "CYBERSECURITY-fin-24",
       "kind": "mcq",
-      "stem": "Chain of custody here is",
+      "stem": "Scanning random Internet hosts for the Harbor capstone?",
       "choices": [
-        "A TV trope",
-        "Who touched the JSON, when, and the hash",
-        "A VLAN",
-        "A NAT pool"
+        "Encouraged",
+        "Extra credit",
+        "Forbidden",
+        "Required by 800-61"
       ]
     }
   ]

@@ -19,8 +19,8 @@
       "stem": "Unknown unicast should",
       "choices": [
         "Cross all VLANs",
-        "Flood inside its VLAN",
         "Always drop",
+        "Flood inside its VLAN",
         "Convert to OSPF"
       ]
     },
@@ -29,10 +29,10 @@
       "kind": "mcq",
       "stem": "Access port vs trunk in one line",
       "choices": [
-        "Access is untagged membership; trunk carries tags",
         "They are identical",
         "Trunks are IPv6 only",
-        "Access ports run BGP"
+        "Access ports run BGP",
+        "Access is untagged membership; trunk carries tags"
       ]
     },
     {
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "Two cables, no STP, cheap switch: likely",
       "choices": [
-        "Faster Internet",
         "Broadcast storm / loop",
+        "Faster Internet",
         "Better SPF",
         "CIDR shrink"
       ]
@@ -63,8 +63,8 @@
       "stem": "We configure live Cisco IOS here?",
       "choices": [
         "Yes required",
-        "No \u2014 fixture forwarding, alignment only",
         "Yes Packet Tracer dumps",
+        "No \u2014 fixture forwarding, alignment only",
         "Yes exam sims"
       ]
     }

@@ -8,6 +8,11 @@
     "GENERAL_IT",
     "CYBERSECURITY"
   ],
+  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_pair": [
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY"
+  ],
   "pairs": [
     {
       "a": "GENERAL_IT",
@@ -25,6 +30,65 @@
       "jaccard_5gram": 0.0
     }
   ],
+  "packaging_pairs": [
+    {
+      "a": "COMPUTER_NETWORKING",
+      "b": "CYBERSECURITY",
+      "packaging_jaccard_5gram": 0.0249
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "CYBERSECURITY",
+      "packaging_jaccard_5gram": 0.0201
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "COMPUTER_NETWORKING",
+      "packaging_jaccard_5gram": 0.0197
+    }
+  ],
+  "key_distribution": {
+    "GENERAL_IT": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "COMPUTER_NETWORKING": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "CYBERSECURITY": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    }
+  },
+  "key_balance_ok": true,
+  "exam_items_original": true,
+  "exam_original_counts": {
+    "GENERAL_IT": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24
+    },
+    "COMPUTER_NETWORKING": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24
+    },
+    "CYBERSECURITY": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24
+    }
+  },
   "registry_size": 16,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."

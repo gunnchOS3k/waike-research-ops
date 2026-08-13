@@ -6,8 +6,8 @@ Query printer.gary.waike.local → 10.20.30.40 from hosts. Query example.com →
 ## Slide 2 — Teaching beat
 printer.gary.waike.local is not on the public Internet and should not be. The desk resolver checks a hosts file first, then a tiny zone. desk.gary.waike.local is 10.20.30.14. The library A records are 10.20.30.21 and .22; the lab returns the first. example.com must not resolve in this fixture — a classroom resolver that invents WAN answers is a liar.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Put 1200 seconds, 15% free, and CHG window 18:00–21:00 on the board. Sit in silence until someone does the arithmetic.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+If they ask for A+ dumps, close the slide and open the alignment JSON. Keys never leave the instructor packet.

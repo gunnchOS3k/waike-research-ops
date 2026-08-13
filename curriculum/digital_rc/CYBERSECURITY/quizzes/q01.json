@@ -8,8 +8,8 @@
       "stem": "Upcoming ISC2 CC outline we prefer takes effect",
       "choices": [
         "2012-01-01",
-        "2026-09-01",
         "1999-12-31",
+        "2026-09-01",
         "Never"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "Model poisoning primarily attacks",
       "choices": [
         "Availability of power",
-        "Integrity of the model's behavior",
         "STP",
-        "CIDR"
+        "CIDR",
+        "Integrity of the model's behavior"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "Harbor bot closing incidents would violate",
       "choices": [
-        "MTU",
         "Least privilege for non-human identity",
+        "MTU",
         "IPv4 broadcast",
         "exFAT"
       ]
@@ -52,8 +52,8 @@
       "stem": "GRC owner for the kiosk image is",
       "choices": [
         "Anonymous",
-        "A named role in the memo",
         "RFC 791",
+        "A named role in the memo",
         "A CompTIA dump"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "This course copies ISC2 exam questions?",
       "choices": [
         "Yes",
-        "No",
         "Yes after Sep 2026",
-        "Yes if offline"
+        "Yes if offline",
+        "No"
       ]
     }
   ]

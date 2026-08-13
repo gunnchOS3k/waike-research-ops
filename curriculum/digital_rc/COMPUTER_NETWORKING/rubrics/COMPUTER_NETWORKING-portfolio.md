@@ -1,4 +1,5 @@
-# Portfolio
+# Path portfolio
 
-- **artifacts** (70%): Required artifacts present
-- **no_pii** (30%): No faces, secrets, or PANs
+- **trace** (50%): One Pier→Roof trace naming VLAN/LPM/TTL/ACL
+- **intent** (30%): Validator-rejected missing next-hop included as evidence
+- **no_ccna_claim** (20%): Portfolio does not say 'I am CCNA'

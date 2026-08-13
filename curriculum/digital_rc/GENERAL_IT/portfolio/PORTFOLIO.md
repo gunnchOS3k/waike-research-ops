@@ -1,3 +1,3 @@
-# Portfolio — General IT — Operator to Support Specialist
+# Portfolio — Civic Tech Desk
 
-Ship lab JSON, the capstone artifact, and a scope paragraph. No PII.
+Ship restore hash, CHG-88, and a no-face desk tour. No PII.

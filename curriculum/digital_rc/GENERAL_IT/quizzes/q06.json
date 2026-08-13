@@ -8,8 +8,8 @@
       "stem": "Correct first subsystem to name on a dead kiosk?",
       "choices": [
         "OS reinstall",
-        "Power path (brick/LED)",
         "RAM vendor",
+        "Power path (brick/LED)",
         "Browser cache"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "Why is the spare SODIMM last in the black-screen flowchart?",
       "choices": [
         "RAM is cheap",
-        "Video/power/cables explain more of this failure class",
         "SODIMMs cannot fail",
-        "Windows 11 needs 128 GB"
+        "Windows 11 needs 128 GB",
+        "Video/power/cables explain more of this failure class"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "Patron tethers a phone because 'Wi-Fi is slow.' You should",
       "choices": [
-        "Ignore Ethernet lights",
         "Check the kiosk patch cable/link lights first",
+        "Ignore Ethernet lights",
         "Buy a new phone",
         "Disable the idle timer"
       ]
@@ -52,8 +52,8 @@
       "stem": "SMART is evidence for which subsystem?",
       "choices": [
         "Display cable",
-        "Storage",
         "RAM timings",
+        "Storage",
         "GRUB theme"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "A+ V15 Core 1 hardware domain in this week is used as",
       "choices": [
         "An item dump",
-        "A domain label for power/RAM/disk/display triage",
         "A license to copy CertMaster",
-        "A replacement for tickets"
+        "A replacement for tickets",
+        "A domain label for power/RAM/disk/display triage"
       ]
     }
   ]

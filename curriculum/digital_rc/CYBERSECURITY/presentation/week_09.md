@@ -6,8 +6,8 @@ kinds after sort: login, usb_insert, file_copy, usb_unmount. Copy sits between i
 ## Slide 2 — Teaching beat
 Events: login t=90, usb_insert t=100, file_copy t=140, usb_unmount t=155. Ordered, that is a story: someone logged into the kiosk, plugged a stick, copied essay.docx, and left. Forensics is the ordered story plus hashes, not a TV montage.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Write the Harbor note on the board: 'burst on ada' vs 'ada is the attacker'. Only the first passes.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+Week 8 is a toy parser. Anyone opening nmap on the campus /24 fails the course ethic, not just the lab.

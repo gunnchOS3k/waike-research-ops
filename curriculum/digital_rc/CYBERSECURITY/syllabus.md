@@ -8,7 +8,7 @@ Harbor SOC is a classroom SOC. Prefer ISC2 CC outline effective 2026-09-01 (prin
 - Academy: ACADEMY_CYBER
 
 ## Duration
-10 weeks. Operator/support, packet-range, or Harbor SOC hours — not a 2-hour workshop pretending to be a course.
+Ten Harbor SOC weeks. Week 8 is the only vulnerability lab and it stays on the length-prefixed toy parser. Do not schedule 'scan the campus' as homework.
 
 ## Weekly map
 - Week 01: Harbor SOC — principles, governance, and the model that is also an asset
@@ -23,14 +23,10 @@ Harbor SOC is a classroom SOC. Prefer ISC2 CC outline effective 2026-09-01 (prin
 - Week 10: Harbor capstone — evidence locker design then operate
 
 ## Assessments
-- 10 weekly quizzes (6 original items each)
-- Mid-course knowledge (20 items, weeks 1–5)
-- Final knowledge (24 items)
-- Final practical (runnable labs)
-- Group project / capstone
+Harbor SOC assessment mix: weekly ops quizzes, a mid-course on upcoming ISC2 CC 2026-09-01 domains in WAIKE words (20 original items), a final on hardening/IR/toy-parser/forensics (24 original items), a practical over seven fixture labs that reject empty submissions, and an evidence-locker design checkpoint before the policy checker. Burst notes that say 'attacker' fail. Scanning hosts you do not own fails the course, not just the lab.
 
 ## Claim boundary
-Original WAIKE materials. Domain alignment only. No certification granted. Instructor keys are not in the learner packet.
+Prefers ISC2 CC outline effective 2026-09-01; dual-maps current CC and Security+ SY0-701; cites CS161 project-depth pattern only. No item harvests. Instructor keys stay out of the learner packet.
 
 ## Kinesthetic hook
 Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.

@@ -8,7 +8,7 @@ This is not a survey of 'computers.' It is the job of keeping a public desk aliv
 - Academy: ACADEMY_IT
 
 ## Duration
-10 weeks. Operator/support, packet-range, or Harbor SOC hours — not a 2-hour workshop pretending to be a course.
+Ten public-desk weeks (about 6–8 hours/week including Saturday volunteer shadow). Not a two-hour 'computers' workshop. Dual-boot kiosk time is scheduled; do not patch both images in the same hour.
 
 ## Weekly map
 - Week 01: The Civic Tech Desk — three jobs a computer actually has
@@ -23,14 +23,10 @@ This is not a survey of 'computers.' It is the job of keeping a public desk aliv
 - Week 10: After-hours capstone — keep the desk alive without becoming a hero
 
 ## Assessments
-- 10 weekly quizzes (6 original items each)
-- Mid-course knowledge (20 items, weeks 1–5)
-- Final knowledge (24 items)
-- Final practical (runnable labs)
-- Group project / capstone
+Civic Tech Desk assessment mix: weekly operator quizzes (ticket 4417/4502 numbers, not vendor stems), a mid-course desk audit (20 original items on accounts/storage/change windows), a final knowledge set (24 original items on hardware/DNS/services/after-hours), a practical that requires submitted user/service/backup JSON, and a two-person after-hours rotation whose recorder notes a stranger can continue. Reboot-and-hope scores zero on every ticket rubric.
 
 ## Claim boundary
-Original WAIKE materials. Domain alignment only. No certification granted. Instructor keys are not in the learner packet.
+Aligns to Google IT Support themes and CompTIA A+ V15 220-1201/1202 domain names. Does not grant those credentials. Instructor keys stay out of the learner packet.
 
 ## Kinesthetic hook
 Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.

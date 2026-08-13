@@ -6,8 +6,8 @@ unsafe(\x14short) returns a short slice (the lie). safe(\x14short) raises ValueE
 ## Slide 2 — Teaching beat
 Berkeley CS161 uses authorized vulnerable targets in a course VM. We take the depth pattern, not the projects. Harbor's course CTF is a length-prefixed toy parser: first byte claims payload length. The unsafe parser trusts it. A message `\x14short` claims 20 bytes and only has 5. The safe parser raises.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Write the Harbor note on the board: 'burst on ada' vs 'ada is the attacker'. Only the first passes.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+Week 8 is a toy parser. Anyone opening nmap on the campus /24 fails the course ethic, not just the lab.

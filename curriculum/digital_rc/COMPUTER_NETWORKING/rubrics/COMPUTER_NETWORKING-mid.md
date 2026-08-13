@@ -1,3 +1,4 @@
-# Mid-course knowledge
+# Mid-course path exam
 
-- **coverage_weeks_1_5** (100%): Items map to weeks 1–5
+- **original_stems** (60%): 20 items not weekly clones
+- **encap_cidr_tcp** (40%): MTU chop, LPM, ACK arithmetic

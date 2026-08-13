@@ -10,17 +10,17 @@
       },
       {
         "id": "net-w1-2",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Conversation ID."
       },
       {
         "id": "net-w1-3",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Chopping is the design."
       },
       {
         "id": "net-w1-4",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Ports multiplex."
       },
       {
@@ -30,19 +30,19 @@
       },
       {
         "id": "net-w1-6",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "PUBLIC_REFERENCE_ONLY."
       }
     ],
     "COMPUTER_NETWORKING-q02": [
       {
         "id": "net-w2-1",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Mask 255.255.255.192."
       },
       {
         "id": "net-w2-2",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "64-2=62."
       },
       {
@@ -52,17 +52,17 @@
       },
       {
         "id": "net-w2-4",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Most specific."
       },
       {
         "id": "net-w2-5",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Link-local."
       },
       {
         "id": "net-w2-6",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "16-2=14."
       }
     ],
@@ -74,17 +74,17 @@
       },
       {
         "id": "net-w3-2",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "In-VLAN flood."
       },
       {
         "id": "net-w3-3",
-        "answer_index": 0,
+        "answer_index": 3,
         "explanation": "Tagging."
       },
       {
         "id": "net-w3-4",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Loops need a breaker."
       },
       {
@@ -94,19 +94,19 @@
       },
       {
         "id": "net-w3-6",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Offline fixture."
       }
     ],
     "COMPUTER_NETWORKING-q04": [
       {
         "id": "net-w4-1",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Longer prefix."
       },
       {
         "id": "net-w4-2",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Loop safety."
       },
       {
@@ -116,17 +116,17 @@
       },
       {
         "id": "net-w4-4",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "TCP."
       },
       {
         "id": "net-w4-5",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Host route."
       },
       {
         "id": "net-w4-6",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Authorized fixture."
       }
     ],
@@ -138,17 +138,17 @@
       },
       {
         "id": "net-w5-2",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Three-way."
       },
       {
         "id": "net-w5-3",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "MD then AI."
       },
       {
         "id": "net-w5-4",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Flow control."
       },
       {
@@ -158,19 +158,19 @@
       },
       {
         "id": "net-w5-6",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Keep the model honest."
       }
     ],
     "COMPUTER_NETWORKING-q06": [
       {
         "id": "net-w6-1",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Circuit breaker."
       },
       {
         "id": "net-w6-2",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Rogue bridges."
       },
       {
@@ -180,17 +180,17 @@
       },
       {
         "id": "net-w6-4",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "One side on, one off."
       },
       {
         "id": "net-w6-5",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Same MAC, many ports."
       },
       {
         "id": "net-w6-6",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "RESTRICTED sources."
       }
     ],
@@ -202,17 +202,17 @@
       },
       {
         "id": "net-w7-2",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Graph."
       },
       {
         "id": "net-w7-3",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "10 < 22."
       },
       {
         "id": "net-w7-4",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Protocol vs algorithm."
       },
       {
@@ -222,19 +222,19 @@
       },
       {
         "id": "net-w7-6",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Via B."
       }
     ],
     "COMPUTER_NETWORKING-q08": [
       {
         "id": "net-w8-1",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Cache hit."
       },
       {
         "id": "net-w8-2",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Inside source."
       },
       {
@@ -244,17 +244,17 @@
       },
       {
         "id": "net-w8-4",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Ask which liar expired."
       },
       {
         "id": "net-w8-5",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Minimal honest log."
       },
       {
         "id": "net-w8-6",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Walk then cache."
       }
     ],
@@ -266,17 +266,17 @@
       },
       {
         "id": "net-w9-2",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Deny *."
       },
       {
         "id": "net-w9-3",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Steal the afternoon."
       },
       {
         "id": "net-w9-4",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "First match wins."
       },
       {
@@ -286,19 +286,19 @@
       },
       {
         "id": "net-w9-6",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Encrypted admin."
       }
     ],
     "COMPUTER_NETWORKING-q10": [
       {
         "id": "net-w10-1",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Reject incomplete."
       },
       {
         "id": "net-w10-2",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Four nouns."
       },
       {
@@ -308,17 +308,17 @@
       },
       {
         "id": "net-w10-4",
-        "answer_index": 1,
+        "answer_index": 2,
         "explanation": "Honest small automation."
       },
       {
         "id": "net-w10-5",
-        "answer_index": 1,
+        "answer_index": 3,
         "explanation": "Alignment only."
       },
       {
         "id": "net-w10-6",
-        "answer_index": 1,
+        "answer_index": 0,
         "explanation": "Validators compute."
       }
     ]
@@ -327,224 +327,224 @@
     {
       "id": "COMPUTER_NETWORKING-mid-01",
       "answer_index": 1,
-      "explanation": "L2 then L3."
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-02",
-      "answer_index": 1,
-      "explanation": "Conversation ID."
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-03",
-      "answer_index": 1,
       "explanation": "Chopping is the design."
     },
     {
+      "id": "COMPUTER_NETWORKING-mid-02",
+      "answer_index": 2,
+      "explanation": "L2 then L3."
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-03",
+      "answer_index": 3,
+      "explanation": "5-tuple includes ports."
+    },
+    {
       "id": "COMPUTER_NETWORKING-mid-04",
-      "answer_index": 1,
-      "explanation": "Ports multiplex."
+      "answer_index": 0,
+      "explanation": ".96 is the next lot."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-05",
       "answer_index": 1,
-      "explanation": "IPv4."
+      "explanation": "Longest prefix."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-06",
-      "answer_index": 1,
-      "explanation": "PUBLIC_REFERENCE_ONLY."
+      "answer_index": 2,
+      "explanation": "fe80::/10."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-07",
-      "answer_index": 1,
-      "explanation": "Mask 255.255.255.192."
+      "answer_index": 3,
+      "explanation": "Key is (MAC, VLAN)."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-08",
-      "answer_index": 1,
-      "explanation": "64-2=62."
+      "answer_index": 0,
+      "explanation": "In-VLAN flood."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-09",
       "answer_index": 1,
-      "explanation": ".80\u2013.95 only."
+      "explanation": "5\u00d74=20."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-10",
-      "answer_index": 1,
-      "explanation": "Most specific."
+      "answer_index": 2,
+      "explanation": "IPv4."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-11",
-      "answer_index": 1,
-      "explanation": "Link-local."
+      "answer_index": 3,
+      "explanation": "TCP."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-12",
-      "answer_index": 1,
-      "explanation": "16-2=14."
+      "answer_index": 0,
+      "explanation": "ACK the next expected byte."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-13",
       "answer_index": 1,
-      "explanation": "VLAN is part of the key."
+      "explanation": "Three-way."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-14",
-      "answer_index": 1,
-      "explanation": "In-VLAN flood."
+      "answer_index": 2,
+      "explanation": "Multiplicative decrease halves."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-15",
-      "answer_index": 0,
-      "explanation": "Tagging."
+      "answer_index": 3,
+      "explanation": "Flow control."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-16",
-      "answer_index": 1,
-      "explanation": "Loops need a breaker."
+      "answer_index": 0,
+      "explanation": "9293 is current."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-17",
       "answer_index": 1,
-      "explanation": "Per-VLAN learning."
+      "explanation": "Host bits must be zero; mask 255.255.255.192."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-18",
-      "answer_index": 1,
-      "explanation": "Offline fixture."
+      "answer_index": 2,
+      "explanation": "64-2."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-19",
-      "answer_index": 1,
-      "explanation": "Longer prefix."
+      "answer_index": 3,
+      "explanation": "Tagging."
     },
     {
       "id": "COMPUTER_NETWORKING-mid-20",
-      "answer_index": 1,
-      "explanation": "Loop safety."
+      "answer_index": 0,
+      "explanation": "PUBLIC_REFERENCE_ONLY."
     }
   ],
   "final": [
     {
       "id": "COMPUTER_NETWORKING-fin-01",
-      "answer_index": 1,
-      "explanation": "Circuit breaker."
+      "answer_index": 2,
+      "explanation": "Loops need a breaker."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-02",
-      "answer_index": 1,
+      "answer_index": 3,
       "explanation": "Rogue bridges."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-03",
-      "answer_index": 1,
+      "answer_index": 0,
       "explanation": "Priority + MAC."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-04",
       "answer_index": 1,
-      "explanation": "One side on, one off."
+      "explanation": "Mismatch."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-05",
-      "answer_index": 1,
+      "answer_index": 2,
       "explanation": "Same MAC, many ports."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-06",
-      "answer_index": 1,
-      "explanation": "RESTRICTED sources."
+      "answer_index": 3,
+      "explanation": "A-B-D."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-07",
-      "answer_index": 1,
-      "explanation": "A-B-D."
+      "answer_index": 0,
+      "explanation": "10 < 22."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-08",
       "answer_index": 1,
-      "explanation": "Graph."
-    },
-    {
-      "id": "COMPUTER_NETWORKING-fin-09",
-      "answer_index": 1,
-      "explanation": "10 < 22."
-    },
-    {
-      "id": "COMPUTER_NETWORKING-fin-10",
-      "answer_index": 1,
       "explanation": "Protocol vs algorithm."
     },
     {
-      "id": "COMPUTER_NETWORKING-fin-11",
-      "answer_index": 1,
+      "id": "COMPUTER_NETWORKING-fin-09",
+      "answer_index": 2,
       "explanation": "Who wins."
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-10",
+      "answer_index": 3,
+      "explanation": "Cache hit."
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-11",
+      "answer_index": 0,
+      "explanation": "Inside source NAT."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-12",
       "answer_index": 1,
-      "explanation": "Via B."
+      "explanation": "A timed lie."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-13",
-      "answer_index": 1,
-      "explanation": "Cache hit."
+      "answer_index": 2,
+      "explanation": "Ask which liar expired."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-14",
-      "answer_index": 1,
-      "explanation": "Inside source."
+      "answer_index": 3,
+      "explanation": "Telnet dies."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-15",
-      "answer_index": 1,
-      "explanation": "A timed lie."
+      "answer_index": 0,
+      "explanation": "Deny *."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-16",
       "answer_index": 1,
-      "explanation": "Ask which liar expired."
+      "explanation": "First match wins."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-17",
-      "answer_index": 1,
-      "explanation": "Minimal honest log."
+      "answer_index": 2,
+      "explanation": "Do not delete advanced tracks."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-18",
-      "answer_index": 1,
-      "explanation": "Walk then cache."
+      "answer_index": 3,
+      "explanation": "Encrypted admin."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-19",
-      "answer_index": 1,
-      "explanation": "Telnet dies."
+      "answer_index": 0,
+      "explanation": "Reject incomplete."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-20",
       "answer_index": 1,
-      "explanation": "Deny *."
+      "explanation": "Four nouns."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-21",
-      "answer_index": 1,
-      "explanation": "Steal the afternoon."
+      "answer_index": 2,
+      "explanation": "Isolate guest."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-22",
-      "answer_index": 1,
-      "explanation": "First match wins."
+      "answer_index": 3,
+      "explanation": "Alignment only."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-23",
-      "answer_index": 1,
-      "explanation": "Do not delete advanced tracks."
+      "answer_index": 0,
+      "explanation": "Loop safety from a real header, not 1-1 arithmetic."
     },
     {
       "id": "COMPUTER_NETWORKING-fin-24",
       "answer_index": 1,
-      "explanation": "Encrypted admin."
+      "explanation": "Steal the afternoon."
     }
   ]
 }

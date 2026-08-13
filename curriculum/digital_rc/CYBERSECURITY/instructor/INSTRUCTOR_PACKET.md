@@ -1,7 +1,7 @@
-# Instructor packet — Cybersecurity — Harbor SOC Foundations
+# Instructor packet — Harbor SOC
 
-Keys: `instructor/answer_keys.json` (never copy into learner ingest).
+Keys: `instructor/answer_keys.json`. Never copy into learner ingest or slides.
 
-Run labs via `scripts/run_course_labs.py`.
+Burst notes that say attacker fail. Toy parser must not open sockets. Bot-close fixtures must fail.
 
-Alignment: see `curriculum/alignment/`.
+Alignment: `curriculum/alignment/cybersecurity_alignment.json` (CC 2026-09-01 preferred).

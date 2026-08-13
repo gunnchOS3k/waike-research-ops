@@ -6,8 +6,8 @@ Idle policy 1200s = 20 minutes. Patron sat down at 14:02, last keystroke 14:07, 
 ## Slide 2 — Teaching beat
 At the Gary Civic Tech Desk the machine in front of a patron is not a personality. It remembers (files), it calculates (apps), and it talks (network). Beginners freeze when a window disappears because they cannot name which of those three jobs failed. Ticket 4417 from the library kiosk is a remember-job failure: the essay lived in a browser temp store and the idle timer (1200 seconds) wiped the session. Naming the job changes the next action. You do not 'fix the Internet' for a missing file.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Put 1200 seconds, 15% free, and CHG window 18:00–21:00 on the board. Sit in silence until someone does the arithmetic.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+If they ask for A+ dumps, close the slide and open the alignment JSON. Keys never leave the instructor packet.

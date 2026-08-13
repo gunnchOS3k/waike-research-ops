@@ -4,221 +4,221 @@
     {
       "id": "GENERAL_IT-mid-01",
       "kind": "mcq",
-      "stem": "Ticket 4417 lost an essay after 20 idle minutes. Which job failed first?",
+      "stem": "Ticket 4502: patron says 'blue screen,' Event Viewer shows disk 100% and CPU 3%. Which job is it?",
       "choices": [
-        "Talk (network)",
-        "Remember (session/files)",
-        "Calculate (CPU thermal)",
-        "Print spooler"
+        "Remember/wait-on-storage",
+        "Talk (WAN outage)",
+        "GPU driver conspiracy",
+        "Idle logout"
       ]
     },
     {
       "id": "GENERAL_IT-mid-02",
       "kind": "mcq",
-      "stem": "Idle logout is 1200 seconds. How many minutes is that?",
+      "stem": "Volunteer `sat.am` was cloned from desk.lead including UID 1020. What is the first failure?",
       "choices": [
-        "12",
-        "15",
-        "20",
-        "1200"
+        "SSH banners collide",
+        "Two names share one kernel identity and home ownership",
+        "cups refuses even UIDs",
+        "GRUB cannot boot"
       ]
     },
     {
       "id": "GENERAL_IT-mid-03",
       "kind": "mcq",
-      "stem": "A patron dictates a password at the desk. What do you record in the ticket?",
+      "stem": "Civic volume 256 GiB, used 210, reserved 12. Policy needs 15% free. Verdict?",
       "choices": [
-        "The password in plaintext",
-        "'credential reset requested' and no secret",
-        "A screenshot of the login form",
-        "The library card PAN"
+        "Pass \u2014 34 GiB is plenty",
+        "Pass if NTFS",
+        "Fail \u2014 34/256 \u2248 13.3% is under 15%",
+        "Undefined until SMART"
       ]
     },
     {
       "id": "GENERAL_IT-mid-04",
       "kind": "mcq",
-      "stem": "Which statement is an observation, not an inference?",
+      "stem": "CHG-91 is planned 17:45. Window is 18:00\u201321:00. Is it in window?",
       "choices": [
-        "The kiosk is broken",
-        "The Internet is down",
-        "The textarea was empty after idle logout at 14:28",
-        "Someone hacked the kiosk"
+        "Yes",
+        "Windows ignores minutes",
+        "Yes if SE1",
+        "No \u2014 17:45 is before 18:00"
       ]
     },
     {
       "id": "GENERAL_IT-mid-05",
       "kind": "mcq",
-      "stem": "Why does the lab mark extra Desktop folders as clutter?",
+      "stem": "A home router under the table is handing 192.168.0.50 to a kiosk. First operator move?",
       "choices": [
-        "Desktop is faster storage",
-        "Required paths are the contract; extras are not the job",
-        "Windows forbids Desktop folders",
-        "Antivirus scans Desktop only"
+        "Find and disable the second DHCP server, then renew the lease",
+        "Reimage Debian",
+        "Set a static 169.254 address",
+        "Grant kiosk sudo"
       ]
     },
     {
       "id": "GENERAL_IT-mid-06",
       "kind": "mcq",
-      "stem": "Which restore method is acceptable for 4417 besides Undo?",
+      "stem": "Ping 10.20.30.40 works; printer.gary.waike.local does not. Next?",
       "choices": [
-        "Disable the idle timer forever",
-        "Copy from auto-save or previous export if present",
-        "Reimage the kiosk immediately",
-        "Post the essay to Discord"
+        "Buy toner",
+        "Fix name resolution before touching cups",
+        "Disable IPv4",
+        "Format SSD"
       ]
     },
     {
       "id": "GENERAL_IT-mid-07",
       "kind": "mcq",
-      "stem": "A 4.7 GiB video vanishes on a camera card. Most likely filesystem limit?",
+      "stem": "A 5.1 GiB `.mkv` must leave the desk on a patron stick. Which filesystem?",
       "choices": [
-        "ext4 16 TiB file cap",
-        "FAT32 4 GiB file cap",
-        "exFAT forbids video",
-        "NTFS compression"
+        "FAT32",
+        "ISO9660",
+        "exFAT (or NTFS if Windows-only)",
+        "ext4 on the patron stick without warning"
       ]
     },
     {
       "id": "GENERAL_IT-mid-08",
       "kind": "mcq",
-      "stem": "Disk 100%, CPU 4%, UI frozen. First evidence to capture?",
+      "stem": "An intern enabled toy-tracker 'to see the logs.' Image policy says?",
       "choices": [
-        "Reboot immediately",
-        "Disk queue / Task Manager Performance",
-        "Reinstall Windows",
-        "Disable Debian GRUB"
+        "Leave it for the SIEM course",
+        "Put it in sudoers",
+        "Bind it to port 631",
+        "Disable/inactivate and rewrite the image if needed"
       ]
     },
     {
       "id": "GENERAL_IT-mid-09",
       "kind": "mcq",
-      "stem": "Why not patch Windows and Debian in the same hour on a dual-boot kiosk?",
+      "stem": "A volunteer applied the idle policy, then snapshotted. Why does CHG-91 fail review?",
       "choices": [
-        "Licensing",
-        "Bootloader/update collision risk during the only public hours",
-        "Debian cannot be patched",
-        "Windows 11 forbids GRUB"
+        "Rollback has no before-image",
+        "Snapshots are optional",
+        "cron requires apply-first",
+        "Windows 11 forbids snapshots"
       ]
     },
     {
       "id": "GENERAL_IT-mid-10",
       "kind": "mcq",
-      "stem": "Which pair is the same operator verb?",
+      "stem": "Saturday volunteer on guest Wi-Fi swears civic DNS is dead. Best first hypothesis?",
       "choices": [
-        "icacls and chmod",
-        "robocopy and systemctl",
-        "top and cupsd",
-        "GRUB and BitLocker"
+        "SSD death",
+        "Split horizon \u2014 they are not on the staff LAN",
+        "Need kiosk sudo",
+        "Reinstall GRUB"
       ]
     },
     {
       "id": "GENERAL_IT-mid-11",
       "kind": "mcq",
-      "stem": "Staff recovery stick should be which filesystem in this course?",
+      "stem": "Brick LED is dark and fans are silent. Spare SODIMM in hand. What do you touch first?",
       "choices": [
-        "FAT32",
-        "exFAT",
-        "ext4",
-        "ISO9660"
+        "The SODIMM",
+        "Windows recovery",
+        "Power path (brick/outlet/LED) before RAM",
+        "GRUB"
       ]
     },
     {
       "id": "GENERAL_IT-mid-12",
       "kind": "mcq",
-      "stem": "Patron share that Windows and a camera must both read: pick",
+      "stem": "Which pair is the same operator verb across Windows and Debian?",
       "choices": [
-        "ext4",
-        "ZFS",
-        "exFAT",
-        "Btrfs"
+        "robocopy and systemctl",
+        "top and cupsd",
+        "BitLocker and OSPF",
+        "icacls and chmod"
       ]
     },
     {
       "id": "GENERAL_IT-mid-13",
       "kind": "mcq",
-      "stem": "Why does the lab fail if kiosk is in sudo?",
+      "stem": "Essay restored to the restore folder; idle logout still 1200s. Honest patron sentence?",
       "choices": [
-        "sudo is deprecated",
-        "Shared kiosk must not be able to change the image",
-        "kiosk needs root for printing",
-        "UIDs must be even"
+        "Your file is in the restore folder; the shared kiosk still logs out on purpose",
+        "We fixed it",
+        "Disable all timers",
+        "Email us the password"
       ]
     },
     {
       "id": "GENERAL_IT-mid-14",
       "kind": "mcq",
-      "stem": "Two passwd lines, same UID, different names. What is wrong?",
+      "stem": "Why is RAID 0 not a 3-2-1 backup?",
       "choices": [
-        "Nothing if homes differ",
-        "Ownership collisions \u2014 a ghost shares files",
-        "Only Windows cares about UIDs",
-        "SSH will fix it"
+        "RAID 0 is slower",
+        "Striping is not a second copy or off-box copy",
+        "RAID 0 forbids USB",
+        "3-2-1 requires cloud"
       ]
     },
     {
       "id": "GENERAL_IT-mid-15",
       "kind": "mcq",
-      "stem": "desk.lead may sudo for which task?",
+      "stem": "Why is the public kiosk a local account, not a Microsoft account?",
       "choices": [
-        "Install a random USB installer",
-        "Unlock a patron local account / restart cups",
-        "Disable the firewall permanently",
-        "Share the root password on paper"
+        "Microsoft accounts cannot browse",
+        "Local accounts cannot print",
+        "A shared station must not own a volunteer's cloud identity",
+        "A+ V15 forbids Microsoft accounts"
       ]
     },
     {
       "id": "GENERAL_IT-mid-16",
       "kind": "mcq",
-      "stem": "Fast User Switching is useful because",
+      "stem": "lpstat shows cups paused; the balloon says offline. First move?",
       "choices": [
-        "It wipes the spooler",
-        "A volunteer can leave without killing everyone else's jobs",
-        "It disables idle logout",
-        "It grants kiosk sudo"
+        "Buy toner",
+        "Reinstall Windows",
+        "Disable sshd",
+        "Confirm power, then resume/restart cups"
       ]
     },
     {
       "id": "GENERAL_IT-mid-17",
       "kind": "mcq",
-      "stem": "Time-boxed admin is an example of",
+      "stem": "Staff recovery stick for Debian should be?",
       "choices": [
-        "Security through obscurity",
-        "Least privilege / support-shaped zero trust",
-        "Defense in depth via extra antivirus",
-        "NAT"
+        "ext4",
+        "FAT32",
+        "ISO9660",
+        "ReFS"
       ]
     },
     {
       "id": "GENERAL_IT-mid-18",
       "kind": "mcq",
-      "stem": "Which home layout passes unique-homes?",
+      "stem": "`0 21 * * 3` is on the calendar. A Saturday 11:00 image write is?",
       "choices": [
-        "/home/kiosk for both kiosk and lead",
-        "/root for everyone",
-        "/home/kiosk and /home/desk.lead",
-        "C:\\Users\\Public for Linux"
+        "The same job",
+        "An incident \u2014 public hours are not the patch window",
+        "Required by unattended-upgrades",
+        "Safer than Wednesday"
       ]
     },
     {
       "id": "GENERAL_IT-mid-19",
       "kind": "mcq",
-      "stem": "256 GiB disk, 180 used, 12 reserved. Free GiB?",
+      "stem": "Patron dictates a library-card PAN into the ticket. You write?",
       "choices": [
-        "64",
-        "76",
-        "44",
-        "12"
+        "The PAN",
+        "A screenshot of the card",
+        "'do not store PAN; reset/help without recording the number'",
+        "The password too"
       ]
     },
     {
       "id": "GENERAL_IT-mid-20",
       "kind": "mcq",
-      "stem": "Why fail at 15% free instead of 0%?",
+      "stem": "Why not patch Windows 11 and Debian in the same hour on the dual-boot kiosk?",
       "choices": [
-        "Disks explode at 15%",
-        "Updates and profiles need headroom before 'full'",
-        "ext4 cannot use last 15%",
-        "CompTIA requires 15%"
+        "Licensing",
+        "Debian cannot patch",
+        "Windows forbids GRUB",
+        "Keep one image bootable; GRUB/update collision risk during public hours"
       ]
     }
   ]

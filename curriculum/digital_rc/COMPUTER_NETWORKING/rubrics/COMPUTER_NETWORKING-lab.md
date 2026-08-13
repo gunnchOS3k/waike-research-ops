@@ -1,5 +1,6 @@
-# Runnable lab
+# Packet Range lab
 
-- **validator_ok** (40%): Lab JSON ok=true with named checks
-- **evidence** (30%): Inputs/outputs attached, no PII
-- **explanation** (30%): Learner can say what a failing check means
+- **datapath_parse** (30%): Student reports TTL from bytes 14+8, not a hardcoded 4
+- **ttl1_drop** (25%): A crafted TTL=1 header decrements to 0 and is not forwarded
+- **lpm** (25%): /24 beats /16; /32 steals the host
+- **acl_order** (20%): deny tcp/23 before permit 443 before deny *

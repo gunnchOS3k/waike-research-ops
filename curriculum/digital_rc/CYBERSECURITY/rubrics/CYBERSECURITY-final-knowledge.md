@@ -1,3 +1,4 @@
-# Final knowledge
+# Final Harbor exam
 
-- **coverage_weeks_6_10** (100%): Items map to later weeks plus capstone
+- **original_stems** (50%): 24 items not weekly clones
+- **harden_ir_parser** (50%): Baseline flags, IR clock, length lie, USB timeline

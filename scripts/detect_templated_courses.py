@@ -19,6 +19,8 @@ def main() -> int:
         "BATCH_STUB_COURSES": result["BATCH_STUB_COURSES"],
         "worst_jaccard": result["worst_jaccard"],
         "worst_pair": result["worst_pair"],
+        "worst_packaging_jaccard": result.get("worst_packaging_jaccard"),
+        "worst_packaging_pair": result.get("worst_packaging_pair"),
         "status": "PASS"
         if result["BATCH_TEMPLATED_COURSES"] == 0 and result["BATCH_STUB_COURSES"] == 0
         else "FAIL",

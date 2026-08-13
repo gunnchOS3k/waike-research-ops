@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Honest COURSE_DIGITAL_RC writer. File presence and week counts are not PASS."""
 from __future__ import annotations
 
 import json
@@ -9,6 +10,43 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from waike_course_ready.content import COURSES  # noqa: E402
+
+
+def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) -> tuple[bool, list[str]]:
+    reasons: list[str] = []
+    def need(ok: bool, msg: str) -> None:
+        if not ok:
+            reasons.append(msg)
+
+    need(c.get("syllabus", 0) >= 1, "syllabus < 1")
+    need(c.get("weeks", 0) >= 8, "weeks < 8")
+    need(c.get("full_lessons", 0) >= 8, "full_lessons < 8")
+    need(c.get("assignments", 0) >= 8, "assignments < 8")
+    need(c.get("runnable_labs", 0) >= 4, "runnable_labs < 4")
+    need(c.get("quizzes", 0) >= 8, "quizzes < 8")
+    need(c.get("quiz_items", 0) >= 48, "quiz_items < 48")
+    need(c.get("mid_course_items", 0) >= 20, "mid_course_items < 20")
+    need(c.get("final_items", 0) >= 24, "final_items < 24")
+    need(c.get("mid_course_items_original", 0) >= 20, "mid original < 20 (cloned stems)")
+    need(c.get("final_items_original", 0) >= 24, "final original < 24 (cloned stems)")
+    need(c.get("practicals", 0) >= 1, "practicals < 1")
+    need(c.get("projects", 0) >= 1, "projects < 1")
+    need(c.get("rubrics", 0) >= 4, "rubrics < 4")
+    need(bool(labs.get("ok")), "lab execution bundle not ok")
+    need(bool(labs.get("empty_submission_fails")), "empty student artifacts still pass")
+    need(bool(labs.get("wrong_submission_fails")), "wrong student artifacts still pass")
+    need(bool(labs.get("print_pass_raises")), "_fail_if_print_pass never raised")
+    need(bool(labs.get("ttl1_from_parsed_header")), "TTL=1 check is tautology, not parsed header")
+    need(bool(labs.get("no_submission_fails")), "no-submission golden path still passes")
+    need(all(n.get("ok") for n in labs.get("negatives_must_fail_and_did") or []), "package negatives did not fail")
+    need(prov.get("status") == "PASS", f"provenance {prov.get('status')}")
+    need(bool(prov.get("key_balance_ok")), "answer keys collapsed")
+    need(bool(prov.get("exam_items_original")), "mid/final not original")
+    need(tmpl.get("BATCH_TEMPLATED_COURSES") == 0, "BATCH_TEMPLATED_COURSES != 0")
+    need(tmpl.get("BATCH_STUB_COURSES") == 0, "BATCH_STUB_COURSES != 0")
+    need(float(prov.get("worst_packaging_jaccard") or 0) < 0.35, "packaging shells cloned")
+    need(bool(proof.get("ok")), "product consumption proof failed")
+    return (not reasons), reasons
 
 
 def main() -> int:
@@ -22,30 +60,16 @@ def main() -> int:
     batch_ok = True
     for cid in COURSES:
         c = counts[cid]
-        earned = (
-            c["syllabus"] >= 1
-            and c["weeks"] >= 8
-            and c["full_lessons"] >= 8
-            and c["assignments"] >= 8
-            and c["runnable_labs"] >= 4
-            and c["quizzes"] >= 8
-            and c["quiz_items"] >= 48
-            and c["mid_course_items"] >= 8
-            and c["final_items"] >= 8
-            and c["practicals"] >= 1
-            and c["projects"] >= 1
-            and c["rubrics"] >= 4
-            and labs["ok"]
-            and prov["status"] == "PASS"
-            and tmpl["BATCH_TEMPLATED_COURSES"] == 0
-            and tmpl["BATCH_STUB_COURSES"] == 0
-        )
+        earned, reasons = _earned(cid, c, labs, prov, tmpl, proof)
         per_course[cid] = {
             **c,
             "benchmark_sources": len(registry["sources"]),
             "provenance_status": prov["status"],
             "template_status": "ORIGINAL" if tmpl["status"] == "PASS" else "TEMPLATED_OR_STUB",
+            "key_balance_ok": prov.get("key_balance_ok"),
+            "exam_items_original": prov.get("exam_items_original"),
             "COURSE_DIGITAL_RC": bool(earned),
+            "rc_fail_reasons": reasons,
         }
         batch_ok = batch_ok and earned
     payload = {
@@ -59,11 +83,18 @@ def main() -> int:
         "courses": per_course,
         "lab_execution_ok": labs["ok"],
         "lab_count": labs["lab_count"],
+        "empty_submission_fails": labs.get("empty_submission_fails"),
+        "wrong_submission_fails": labs.get("wrong_submission_fails"),
+        "print_pass_raises": labs.get("print_pass_raises"),
+        "ttl1_from_parsed_header": labs.get("ttl1_from_parsed_header"),
         "product_consumption_ok": proof["ok"],
         "registry_size": len(registry["sources"]),
+        "key_distribution": prov.get("key_distribution"),
+        "worst_packaging_jaccard": prov.get("worst_packaging_jaccard"),
         "claim_boundary": (
-            "COURSE_DIGITAL_RC is earned only for this 3-course batch if labs, provenance, "
-            "and depth gates pass. Not a student/teacher E6. Not all 18 courses."
+            "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, "
+            "non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. "
+            "Not a student/teacher E6. Not all 18 courses."
         ),
     }
     out = ROOT / "artifacts" / "COURSE_DIGITAL_RC.json"

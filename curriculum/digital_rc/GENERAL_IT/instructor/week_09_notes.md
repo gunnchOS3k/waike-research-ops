@@ -1,7 +1,9 @@
-# Instructor notes week 9
+# Civic Tech Desk — instructor week 9
 
-Pace: live worked example first.
+**Live number:** work Window 18:00–21:00, planned 19:15 → in window. Steps [snapshot_home, apply_idle_policy, verify_kiosk_login]. Rollback named.
 
-Lab `lab_automation_runbook` must be executed, not narrated.
+**Lab `lab_automation_runbook`:** collect student JSON; do not run the golden path and call it theirs.
 
-Do not paste vendor exam items.
+**Pitfall:** Apply-then-snapshot is a souvenir. Make them reorder the JSON.
+
+Refuse vendor item banks. Point at `curriculum/alignment/general_it_alignment.json`.

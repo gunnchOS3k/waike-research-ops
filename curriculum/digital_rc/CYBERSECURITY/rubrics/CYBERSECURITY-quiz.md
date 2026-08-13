@@ -1,4 +1,4 @@
-# Knowledge check
+# SOC knowledge
 
-- **original** (50%): WAIKE stems, not vendor items
-- **keyed** (50%): Instructor key exists and is not in learner UI
+- **harbor_words** (50%): Original WAIKE stems; no ISC2/CompTIA item text
+- **key_hidden** (50%): Keys only in instructor/answer_keys.json

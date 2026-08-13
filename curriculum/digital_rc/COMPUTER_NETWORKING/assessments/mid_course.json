@@ -4,221 +4,221 @@
     {
       "id": "COMPUTER_NETWORKING-mid-01",
       "kind": "mcq",
-      "stem": "Why peel Ethernet before IP on receive?",
+      "stem": "Pier sends 2000 bytes on a 1500-byte MTU Ethernet. Minimum IPv4 datagrams?",
       "choices": [
-        "IP is optional",
-        "Last-on, first-off encapsulation",
-        "TCP forbids IP",
-        "MAC addresses are IPv6"
+        "1",
+        "2",
+        "8",
+        "0 \u2014 TCP forbids chopping"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-02",
       "kind": "mcq",
-      "stem": "The 5-tuple includes",
+      "stem": "On receive, why is Ethernet peeled before IP?",
       "choices": [
-        "Only MACs",
-        "src/dst IP, protocol, src/dst port",
-        "Only DNS names",
-        "VLAN 1 only"
+        "IP is optional",
+        "TCP forbids IP",
+        "Last-on, first-off",
+        "MACs are IPv6"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-03",
       "kind": "mcq",
-      "stem": "MTU 1500 and a 2000-byte buffer implies",
+      "stem": "Two students share 10.20.30.14 but TCP ports 443 and 22. Same 5-tuple?",
       "choices": [
-        "One frame always",
-        "At least two IP datagrams",
-        "NAT failure",
-        "OSPF hello"
+        "Yes",
+        "Only if VLAN 20",
+        "Only if TTL matches",
+        "No \u2014 ports multiplex conversations"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-04",
       "kind": "mcq",
-      "stem": "Two students share an IP but different TCP ports. They are",
+      "stem": "10.20.30.96 with a /28 whose network is 10.20.30.80. Inside the lot?",
       "choices": [
-        "The same 5-tuple",
-        "Different conversations",
-        "A broadcast storm",
-        "A /32 host route"
+        "No \u2014 usable/typical /28 is .80\u2013.95",
+        "Yes",
+        "It is the broadcast .95",
+        "It is the network .80"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-05",
       "kind": "mcq",
-      "stem": "Ethertype 0x0800 means",
+      "stem": "A /32 host route and a /24 cover 10.20.40.9. LPM installs?",
       "choices": [
-        "ARP",
-        "IPv4",
-        "IPv6",
-        "LLDP"
+        "The /24",
+        "The /32",
+        "Default only",
+        "Both equally"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-06",
       "kind": "mcq",
-      "stem": "This course copies CS144 lab code?",
+      "stem": "fe80::1 on Yard's Ethernet. What kind of IPv6 address?",
       "choices": [
-        "Yes",
-        "No \u2014 structure reference only",
-        "Yes the C++ stack",
-        "Yes the exams"
+        "Global unicast",
+        "OSPF multicast",
+        "Link-local",
+        "NAT pool"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-07",
       "kind": "mcq",
-      "stem": "10.20.30.40/26 network address?",
+      "stem": "MAC aa:aa:aa:aa:aa:10 in VLAN 20 hits Gi1/0/8. Same MAC in VLAN 30 should?",
       "choices": [
-        "10.20.30.40",
+        "Also hit Gi1/0/8",
+        "Break LPM",
+        "Disable DHCP",
+        "Miss unless a VLAN-30 entry exists"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-08",
+      "kind": "mcq",
+      "stem": "Unknown unicast in VLAN 20 floods where?",
+      "choices": [
+        "Inside VLAN 20",
+        "All VLANs",
+        "Always drops",
+        "Into OSPF"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-09",
+      "kind": "mcq",
+      "stem": "IPv4 IHL=5 means header length?",
+      "choices": [
+        "5 bytes",
+        "20 bytes",
+        "40 bytes",
+        "8 bytes"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-10",
+      "kind": "mcq",
+      "stem": "Ethertype 0x0800 on the crafted frame means?",
+      "choices": [
+        "ARP",
+        "IPv6",
+        "IPv4",
+        "LLDP"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-11",
+      "kind": "mcq",
+      "stem": "IP protocol field 6 on the datapath frame is?",
+      "choices": [
+        "ICMP",
+        "UDP",
+        "OSPF",
+        "TCP"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-12",
+      "kind": "mcq",
+      "stem": "seq=5000, 300 bytes received in order. Next ACK number?",
+      "choices": [
+        "5300",
+        "5000",
+        "300",
+        "4700"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-13",
+      "kind": "mcq",
+      "stem": "TCP handshake order used in this course's basic model?",
+      "choices": [
+        "ACK, SYN, SYN-ACK",
+        "SYN, SYN-ACK, ACK",
+        "FIN, FIN, ACK",
+        "RST only"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-14",
+      "kind": "mcq",
+      "stem": "cwnd=12 MSS, loss event, AIMD as taught here. cwnd becomes?",
+      "choices": [
+        "24",
+        "0",
+        "6",
+        "TTL"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-15",
+      "kind": "mcq",
+      "stem": "rwnd is whose belly?",
+      "choices": [
+        "The router's queue",
+        "OSPF cost",
+        "VLAN ID",
+        "The receiver's advertised window"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-16",
+      "kind": "mcq",
+      "stem": "Current TCP spec cited in the Packet Range is?",
+      "choices": [
+        "RFC 9293 (793 is historic)",
+        "RFC 793 only",
+        "RFC 2328",
+        "RFC 4632"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-mid-17",
+      "kind": "mcq",
+      "stem": "A volunteer writes 10.20.30.40 as the network for 10.20.30.40/26 on the Pier sheet. Correct network line?",
+      "choices": [
+        "Keep 10.20.30.40",
         "10.20.30.0",
         "10.20.30.63",
         "10.20.30.1"
       ]
     },
     {
-      "id": "COMPUTER_NETWORKING-mid-08",
-      "kind": "mcq",
-      "stem": "Usable hosts in a typical /26 (not /31)?",
-      "choices": [
-        "64",
-        "62",
-        "32",
-        "14"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-09",
-      "kind": "mcq",
-      "stem": "Printer at 10.20.30.96 with a /28 on .80",
-      "choices": [
-        "In the /28",
-        "Outside the /28",
-        "The broadcast",
-        "The network address"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-10",
-      "kind": "mcq",
-      "stem": "LPM prefers",
-      "choices": [
-        "Shortest prefix",
-        "Longest matching prefix",
-        "Random",
-        "Lowest metric always"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-11",
-      "kind": "mcq",
-      "stem": "fe80:: addresses are",
-      "choices": [
-        "Public globals",
-        "Link-local",
-        "Multicast OSPF",
-        "NAT pools"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-12",
-      "kind": "mcq",
-      "stem": "/28 usable (typical)?",
-      "choices": [
-        "16",
-        "14",
-        "30",
-        "2"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-13",
-      "kind": "mcq",
-      "stem": "MAC table key in this lab is",
-      "choices": [
-        "MAC only",
-        "(MAC, VLAN)",
-        "IP only",
-        "Port only"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-14",
-      "kind": "mcq",
-      "stem": "Unknown unicast should",
-      "choices": [
-        "Cross all VLANs",
-        "Flood inside its VLAN",
-        "Always drop",
-        "Convert to OSPF"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-15",
-      "kind": "mcq",
-      "stem": "Access port vs trunk in one line",
-      "choices": [
-        "Access is untagged membership; trunk carries tags",
-        "They are identical",
-        "Trunks are IPv6 only",
-        "Access ports run BGP"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-16",
-      "kind": "mcq",
-      "stem": "Two cables, no STP, cheap switch: likely",
-      "choices": [
-        "Faster Internet",
-        "Broadcast storm / loop",
-        "Better SPF",
-        "CIDR shrink"
-      ]
-    },
-    {
-      "id": "COMPUTER_NETWORKING-mid-17",
-      "kind": "mcq",
-      "stem": "Pier VLAN 20, Yard VLAN 30: same MAC string",
-      "choices": [
-        "Must collide",
-        "Are different keys",
-        "Break LPM",
-        "Disable DHCP"
-      ]
-    },
-    {
       "id": "COMPUTER_NETWORKING-mid-18",
       "kind": "mcq",
-      "stem": "We configure live Cisco IOS here?",
+      "stem": "Pier /26 (not a /31 point-to-point). How many usable host addresses should the worksheet show?",
       "choices": [
-        "Yes required",
-        "No \u2014 fixture forwarding, alignment only",
-        "Yes Packet Tracer dumps",
-        "Yes exam sims"
+        "64",
+        "32",
+        "62",
+        "14"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-19",
       "kind": "mcq",
-      "stem": "LPM for 10.20.40.9 with /24 and /16 present chooses",
+      "stem": "Access port vs trunk in one line?",
       "choices": [
-        "/16",
-        "/24",
-        "default only",
-        "drop"
+        "They are identical",
+        "Trunks are IPv6 only",
+        "Access ports run BGP",
+        "Access is untagged membership; trunk carries tags"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-20",
       "kind": "mcq",
-      "stem": "TTL 1 at ingress of a router should",
+      "stem": "This course copies Stanford CS144 lab code?",
       "choices": [
-        "Forward forever",
-        "Drop after decrement to 0",
-        "Convert to TCP",
-        "NAT to 192.0.2.1"
+        "No \u2014 structure reference only",
+        "Yes",
+        "Yes the C++ stack",
+        "Yes the exams"
       ]
     }
   ]

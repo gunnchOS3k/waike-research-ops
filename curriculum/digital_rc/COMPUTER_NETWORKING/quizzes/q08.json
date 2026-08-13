@@ -8,9 +8,9 @@
       "stem": "Second identical DNS lookup in the lab should be",
       "choices": [
         "auth_walk",
-        "cache",
         "nxdomain",
-        "OSPF"
+        "OSPF",
+        "cache"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "kind": "mcq",
       "stem": "NAT in this lab maps",
       "choices": [
-        "MAC to VLAN",
         "10.20.30.14 to 192.0.2.88",
+        "MAC to VLAN",
         "TCP to UDP",
         "STP to SPF"
       ]
@@ -41,8 +41,8 @@
       "stem": "Stale DNS A record after a printer move",
       "choices": [
         "Is a disk failure",
-        "Is a TTL/cache policy problem",
         "Requires AIMD",
+        "Is a TTL/cache policy problem",
         "Needs a new ASN"
       ]
     },
@@ -52,9 +52,9 @@
       "stem": "Syslog in this course is",
       "choices": [
         "A full NMS",
-        "A timestamped line in lab output",
         "OSPF LSA",
-        "A CCNA dump"
+        "A CCNA dump",
+        "A timestamped line in lab output"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "Iterative DNS walk order in the toy",
       "choices": [
-        "Auth then stub",
         "Stub then (on miss) authoritative, then cache",
+        "Auth then stub",
         "Only /etc/hosts",
         "Only ICMP"
       ]

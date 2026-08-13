@@ -8,8 +8,8 @@
       "stem": "Volunteer laptop on guest cannot see printer.gary.waike.local. First hypothesis?",
       "choices": [
         "SSD death",
-        "Split horizon / guest network",
         "Need kiosk sudo",
+        "Split horizon / guest network",
         "Reinstall GRUB"
       ]
     },
@@ -18,10 +18,10 @@
       "kind": "mcq",
       "stem": "Disk 88% used on 256 GiB with 12 GiB reserved. Policy 15% free?",
       "choices": [
-        "Likely fail \u2014 compute free ratio before applying updates",
         "Always pass",
         "RAID fixes it",
-        "IPv6 fixes it"
+        "IPv6 fixes it",
+        "Likely fail \u2014 compute free ratio before applying updates"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "This course grants CompTIA A+?",
       "choices": [
-        "Yes",
         "No \u2014 alignment only",
+        "Yes",
         "Yes if labs pass",
         "Yes if Google signs"
       ]
@@ -52,8 +52,8 @@
       "stem": "AI extension asks for admin on the kiosk. You",
       "choices": [
         "Grant it",
-        "Refuse; non-human tools do not get sudo on the public image",
         "Store its token in the ticket",
+        "Refuse; non-human tools do not get sudo on the public image",
         "Disable idle logout"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "Portfolio video must",
       "choices": [
         "Show patron faces",
-        "Avoid PII and faces; show the tree, the hash, the change",
         "Include passwords",
-        "Be filmed on guest Wi-Fi only"
+        "Be filmed on guest Wi-Fi only",
+        "Avoid PII and faces; show the tree, the hash, the change"
       ]
     }
   ]

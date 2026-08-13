@@ -208,6 +208,8 @@
     "quiz_items": 60,
     "mid_course_items": 20,
     "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
     "practicals": 1,
     "projects": 1,
     "rubrics": 8,

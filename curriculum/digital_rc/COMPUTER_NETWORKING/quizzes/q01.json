@@ -19,8 +19,8 @@
       "stem": "The 5-tuple includes",
       "choices": [
         "Only MACs",
-        "src/dst IP, protocol, src/dst port",
         "Only DNS names",
+        "src/dst IP, protocol, src/dst port",
         "VLAN 1 only"
       ]
     },
@@ -30,9 +30,9 @@
       "stem": "MTU 1500 and a 2000-byte buffer implies",
       "choices": [
         "One frame always",
-        "At least two IP datagrams",
         "NAT failure",
-        "OSPF hello"
+        "OSPF hello",
+        "At least two IP datagrams"
       ]
     },
     {
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "Two students share an IP but different TCP ports. They are",
       "choices": [
-        "The same 5-tuple",
         "Different conversations",
+        "The same 5-tuple",
         "A broadcast storm",
         "A /32 host route"
       ]
@@ -63,8 +63,8 @@
       "stem": "This course copies CS144 lab code?",
       "choices": [
         "Yes",
-        "No \u2014 structure reference only",
         "Yes the C++ stack",
+        "No \u2014 structure reference only",
         "Yes the exams"
       ]
     }

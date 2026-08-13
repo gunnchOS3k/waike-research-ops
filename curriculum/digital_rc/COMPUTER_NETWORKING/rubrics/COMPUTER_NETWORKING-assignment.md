@@ -1,5 +1,5 @@
-# Weekly assignment
+# Hex and graph work
 
-- **specific_numbers** (40%): Uses course numbers, not generic prose
-- **scope** (30%): Does not claim certs or unauthorized testing
-- **clarity** (30%): A stranger can continue the work
+- **sliced_frame** (40%): Paper slice of MAC/ethertype/IHL/TTL/proto/src/dst
+- **spf_recompute** (30%): Changing B-D to 20 flips A→D to A-C-D
+- **no_vendor_gui** (30%): No stolen Packet Tracer / exam-sim screenshots

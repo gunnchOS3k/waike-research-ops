@@ -1,3 +1,3 @@
-# Portfolio — Cybersecurity — Harbor SOC Foundations
+# Portfolio — Harbor SOC
 
-Ship lab JSON, the capstone artifact, and a scope paragraph. No PII.
+Ship seven lab JSON files, USB timeline with cannot-claim, and a scope paragraph. Do not claim CC/Security+.

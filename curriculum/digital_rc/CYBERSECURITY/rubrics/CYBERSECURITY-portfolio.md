@@ -1,4 +1,5 @@
-# Portfolio
+# SOC portfolio
 
-- **artifacts** (70%): Required artifacts present
-- **no_pii** (30%): No faces, secrets, or PANs
+- **seven_json** (50%): Seven lab results plus empty-fail evidence
+- **cannot_claim** (30%): Timeline page lists what the USB fixture cannot prove
+- **no_cert_claim** (20%): Does not claim ISC2 CC or Security+

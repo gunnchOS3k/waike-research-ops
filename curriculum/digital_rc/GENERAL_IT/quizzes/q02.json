@@ -8,8 +8,8 @@
       "stem": "A 4.7 GiB video vanishes on a camera card. Most likely filesystem limit?",
       "choices": [
         "ext4 16 TiB file cap",
-        "FAT32 4 GiB file cap",
         "exFAT forbids video",
+        "FAT32 4 GiB file cap",
         "NTFS compression"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "Disk 100%, CPU 4%, UI frozen. First evidence to capture?",
       "choices": [
         "Reboot immediately",
-        "Disk queue / Task Manager Performance",
         "Reinstall Windows",
-        "Disable Debian GRUB"
+        "Disable Debian GRUB",
+        "Disk queue / Task Manager Performance"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "Why not patch Windows and Debian in the same hour on a dual-boot kiosk?",
       "choices": [
-        "Licensing",
         "Bootloader/update collision risk during the only public hours",
+        "Licensing",
         "Debian cannot be patched",
         "Windows 11 forbids GRUB"
       ]
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "Which pair is the same operator verb?",
       "choices": [
-        "icacls and chmod",
         "robocopy and systemctl",
+        "icacls and chmod",
         "top and cupsd",
         "GRUB and BitLocker"
       ]
@@ -64,8 +64,8 @@
       "choices": [
         "ext4",
         "ZFS",
-        "exFAT",
-        "Btrfs"
+        "Btrfs",
+        "exFAT"
       ]
     }
   ]

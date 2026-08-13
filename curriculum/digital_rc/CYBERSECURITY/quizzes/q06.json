@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "First containment for a stolen staff laptop",
       "choices": [
-        "Widen SOC allow",
         "Revoke identity/sessions",
+        "Widen SOC allow",
         "Disable syslog",
         "Permit telnet"
       ]
@@ -30,8 +30,8 @@
       "stem": "Kiosk SMB to staff shares",
       "choices": [
         "Required",
-        "Should stay denied",
         "Is DNS",
+        "Should stay denied",
         "Is MFA"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "Security groups in this lesson are",
       "choices": [
         "A shopping list",
-        "Cloud-shaped ACLs we express as a matrix",
         "CS161 P1",
-        "A leaked bank"
+        "A leaked bank",
+        "Cloud-shaped ACLs we express as a matrix"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Report delay 16:12 steal / 16:40 report means",
       "choices": [
-        "Nothing happened",
         "28 minutes of untrusted sessions to hunt",
+        "Nothing happened",
         "NAT failed",
         "TTL expired"
       ]

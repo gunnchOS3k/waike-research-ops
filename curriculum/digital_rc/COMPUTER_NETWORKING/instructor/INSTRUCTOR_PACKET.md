@@ -1,7 +1,7 @@
-# Instructor packet — Computer Networking — Packets to Campus Edge
+# Instructor packet — Packet Range
 
-Keys: `instructor/answer_keys.json` (never copy into learner ingest).
+Keys: `instructor/answer_keys.json`. Never copy into learner ingest or slides.
 
-Run labs via `scripts/run_course_labs.py`.
+Week 4 practical: require a student parse of the crafted frame and a TTL=1 drop from the header, not a tautology.
 
-Alignment: see `curriculum/alignment/`.
+Alignment: `curriculum/alignment/networking_alignment.json` (CCNA v1.1 weights, CS144 structure only).

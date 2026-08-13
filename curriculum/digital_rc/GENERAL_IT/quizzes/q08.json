@@ -8,8 +8,8 @@
       "stem": "toy-tracker must be",
       "choices": [
         "enabled and active",
-        "disabled and inactive",
         "in sudo",
+        "disabled and inactive",
         "bound to port 631"
       ]
     },
@@ -19,9 +19,9 @@
       "stem": "cupsd restart_sec=120 is bad because",
       "choices": [
         "systemd forbids it",
-        "The public queue reforms into a rumor before cups returns",
         "IPP uses 120",
-        "SSH needs 120"
+        "SSH needs 120",
+        "The public queue reforms into a rumor before cups returns"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "kind": "mcq",
       "stem": "Printer balloon says offline; lpstat shows paused. You",
       "choices": [
-        "Buy toner first",
         "Resume/restart cups after confirming the device is powered",
+        "Buy toner first",
         "Reinstall Windows",
         "Disable sshd"
       ]
@@ -51,9 +51,9 @@
       "kind": "mcq",
       "stem": "Type-2 hypervisor in one honest sentence is",
       "choices": [
-        "A hypervisor that runs on an existing OS",
         "A switch ASIC",
         "A DNS zone",
+        "A hypervisor that runs on an existing OS",
         "A CompTIA exam item"
       ]
     },
@@ -63,9 +63,9 @@
       "stem": "sshd on the desk image is",
       "choices": [
         "Forbidden",
-        "Required for staff recovery in this lab",
         "A guest Wi-Fi portal",
-        "Port 631"
+        "Port 631",
+        "Required for staff recovery in this lab"
       ]
     }
   ]

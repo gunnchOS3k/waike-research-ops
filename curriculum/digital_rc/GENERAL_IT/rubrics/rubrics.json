@@ -1,139 +1,159 @@
 [
   {
     "rubric_id": "GENERAL_IT-lab",
-    "title": "Runnable lab",
+    "title": "Civic desk lab",
     "criteria": [
       {
-        "name": "validator_ok",
-        "weight": 40,
-        "desc": "Lab JSON ok=true with named checks"
+        "name": "kiosk_least_privilege",
+        "weight": 25,
+        "desc": "kiosk not in sudo/root; unique UID/home"
       },
       {
-        "name": "evidence",
-        "weight": 30,
-        "desc": "Inputs/outputs attached, no PII"
+        "name": "restore_hash",
+        "weight": 25,
+        "desc": "SHA256 of restored civic tree matches source; no ssn.txt"
       },
       {
-        "name": "explanation",
-        "weight": 30,
-        "desc": "Learner can say what a failing check means"
+        "name": "ticket_next_action",
+        "weight": 25,
+        "desc": "reboot_and_hope scores zero; 4417/4418/4419 next-actions match"
+      },
+      {
+        "name": "change_window",
+        "weight": 25,
+        "desc": "snapshot before apply; planned time inside 18:00\u201321:00"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-assignment",
-    "title": "Weekly assignment",
+    "title": "Desk journal",
     "criteria": [
       {
-        "name": "specific_numbers",
+        "name": "named_ticket",
         "weight": 40,
-        "desc": "Uses course numbers, not generic prose"
+        "desc": "Uses 4417/4502/CHG-88 numbers, not 'a user had an issue'"
       },
       {
-        "name": "scope",
+        "name": "no_pii",
         "weight": 30,
-        "desc": "Does not claim certs or unauthorized testing"
+        "desc": "No PAN/password/SSN in the journal"
       },
       {
-        "name": "clarity",
+        "name": "next_shift",
         "weight": 30,
-        "desc": "A stranger can continue the work"
+        "desc": "A Saturday volunteer can continue without asking you"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-quiz",
-    "title": "Knowledge check",
+    "title": "Operator knowledge",
     "criteria": [
       {
-        "name": "original",
+        "name": "desk_numbers",
         "weight": 50,
-        "desc": "WAIKE stems, not vendor items"
+        "desc": "1200s, 10.20.30.14, 15% free \u2014 not vendor stems"
       },
       {
-        "name": "keyed",
+        "name": "key_hidden",
         "weight": 50,
-        "desc": "Instructor key exists and is not in learner UI"
+        "desc": "Keys only in instructor/answer_keys.json"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-mid",
-    "title": "Mid-course knowledge",
+    "title": "Mid-course desk audit",
     "criteria": [
       {
-        "name": "coverage_weeks_1_5",
-        "weight": 100,
-        "desc": "Items map to weeks 1\u20135"
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not cloned from weekly quizzes"
+      },
+      {
+        "name": "accounts_storage_change",
+        "weight": 40,
+        "desc": "UID clone, free-ratio, window math"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-final-knowledge",
-    "title": "Final knowledge",
+    "title": "Final operator knowledge",
     "criteria": [
       {
-        "name": "coverage_weeks_6_10",
-        "weight": 100,
-        "desc": "Items map to later weeks plus capstone"
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not cloned from weekly quizzes"
+      },
+      {
+        "name": "hardware_dns_services",
+        "weight": 50,
+        "desc": "Power-first triage, split horizon, cups restart budget"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-practical",
-    "title": "Final practical",
+    "title": "Submitted desk artifacts",
     "criteria": [
       {
-        "name": "labs_green",
-        "weight": 60,
-        "desc": "Required labs ok"
+        "name": "student_json",
+        "weight": 50,
+        "desc": "Empty submission fails; reference JSON passes"
       },
       {
-        "name": "negative_fail",
-        "weight": 20,
-        "desc": "Mutated fixtures fail"
+        "name": "negatives",
+        "weight": 30,
+        "desc": "kiosk-with-sudo fails the user lab"
       },
       {
-        "name": "writeup",
+        "name": "print_pass",
         "weight": 20,
-        "desc": "Honest claim boundary"
+        "desc": "A file containing only PASS is rejected"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-project",
-    "title": "Group project",
+    "title": "After-hours rotation",
     "criteria": [
       {
-        "name": "design",
+        "name": "two_roles",
         "weight": 30,
-        "desc": "Design exists before implementation"
+        "desc": "Operator and recorder swap at 30 minutes"
       },
       {
-        "name": "handoff",
+        "name": "stranger_handoff",
         "weight": 40,
-        "desc": "Recorder notes let a stranger continue"
+        "desc": "Recorder notes do not require the operator's memory"
       },
       {
-        "name": "ethics",
+        "name": "scope",
         "weight": 30,
-        "desc": "No PII, no unauthorized targets"
+        "desc": "No imaging of neighborhood laptops"
       }
     ]
   },
   {
     "rubric_id": "GENERAL_IT-portfolio",
-    "title": "Portfolio",
+    "title": "Desk portfolio",
     "criteria": [
       {
-        "name": "artifacts",
-        "weight": 70,
-        "desc": "Required artifacts present"
+        "name": "tree_and_hash",
+        "weight": 50,
+        "desc": "Folder tree + restore hash"
       },
       {
-        "name": "no_pii",
+        "name": "chg88",
         "weight": 30,
-        "desc": "No faces, secrets, or PANs"
+        "desc": "Change record with window"
+      },
+      {
+        "name": "no_faces",
+        "weight": 20,
+        "desc": "Tour video without patron faces"
       }
     ]
   }

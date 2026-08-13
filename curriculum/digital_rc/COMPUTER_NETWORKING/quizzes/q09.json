@@ -19,8 +19,8 @@
       "stem": "Star rule at the bottom is",
       "choices": [
         "Permit all",
-        "Visible implicit deny",
         "STP",
+        "Visible implicit deny",
         "LPM"
       ]
     },
@@ -30,9 +30,9 @@
       "stem": "Rogue DHCP under the table typically",
       "choices": [
         "Improves SPF",
-        "Hands out a lying gateway",
         "Fixes TTL",
-        "Enables BPDU guard"
+        "Enables BPDU guard",
+        "Hands out a lying gateway"
       ]
     },
     {
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "permit ip any any as first line",
       "choices": [
-        "Hardens the edge",
         "Turns the ACL into wallpaper",
+        "Hardens the edge",
         "Is required by RFC 791",
         "Replaces NAT"
       ]
@@ -63,8 +63,8 @@
       "stem": "Staff tools should prefer",
       "choices": [
         "Telnet and HTTP",
-        "SSH and HTTPS",
         "Port 9",
+        "SSH and HTTPS",
         "Anonymous FTP"
       ]
     }

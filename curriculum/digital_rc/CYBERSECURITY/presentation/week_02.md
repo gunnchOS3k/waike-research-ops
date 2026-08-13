@@ -6,8 +6,8 @@ allow(naiya, case.close)=false; allow(omar, case.close)=true; allow(harbor-bot, 
 ## Slide 2 — Teaching beat
 Naiya is an analyst: read and comment. Omar is a lead: may close. harbor-bot is an AI triage helper: read only. Provisioning is a ticket. Deprovisioning is a ticket. Orphan accounts are incidents waiting for a calendar.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Write the Harbor note on the board: 'burst on ada' vs 'ada is the attacker'. Only the first passes.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+Week 8 is a toy parser. Anyone opening nmap on the campus /24 fails the course ethic, not just the lab.

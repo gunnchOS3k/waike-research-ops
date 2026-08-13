@@ -1,7 +1,9 @@
-# Instructor notes week 6
+# Harbor SOC — instructor week 6
 
-Pace: live worked example first.
+**Tabletop beat:** Revoke omar's sessions before rewriting the zone matrix. Matrix widen is not containment.
 
-Lab `lab_segmentation_zones` must be executed, not narrated.
+**Lab `lab_segmentation_zones`:** fixture + student JSON. Empty note fails no_attacker_word.
 
-Do not paste vendor exam items.
+**Pitfall:** Stolen laptop: revoke before rewriting the matrix.
+
+No ISC2/CompTIA item text. Upcoming CC 2026-09-01 is a domain map, not a dump.

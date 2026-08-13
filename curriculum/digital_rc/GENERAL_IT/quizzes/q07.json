@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "169.254.13.9 on a kiosk most likely means",
       "choices": [
-        "Static plan from the city",
         "DHCP lease failure (link-local)",
+        "Static plan from the city",
         "IPv6 only",
         "A successful NAT"
       ]
@@ -40,10 +40,10 @@
       "kind": "mcq",
       "stem": "Volunteer on guest Wi-Fi says civic DNS is dead. Likely?",
       "choices": [
-        "Split horizon / wrong network",
         "ext4 corruption",
         "SODIMM failure",
-        "Idle timer"
+        "Idle timer",
+        "Split horizon / wrong network"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Name resolution succeeds to 10.20.30.40 but printing fails. Next?",
       "choices": [
-        "Ignore cups",
         "Check spooler/cups after the name is honest",
+        "Ignore cups",
         "Disable IPv4",
         "Format the SSD"
       ]
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "desk.gary.waike.local in the lab is",
       "choices": [
-        "10.20.30.14",
         "192.0.2.1",
+        "10.20.30.14",
         "127.0.0.1",
         "169.254.1.1"
       ]

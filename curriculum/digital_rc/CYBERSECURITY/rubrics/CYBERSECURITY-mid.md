@@ -1,3 +1,4 @@
-# Mid-course knowledge
+# Mid-course Harbor exam
 
-- **coverage_weeks_1_5** (100%): Items map to weeks 1–5
+- **original_stems** (60%): 20 items not weekly clones
+- **cc_2026_domains** (40%): Principles/governance/IAM/zones/bursts in WAIKE words

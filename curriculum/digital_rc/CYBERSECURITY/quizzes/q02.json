@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "harbor-bot may",
       "choices": [
-        "Close cases",
         "Read cases",
+        "Close cases",
         "Grant sudo to kiosk",
         "Disable logs"
       ]
@@ -30,8 +30,8 @@
       "stem": "Deprovisioning without a ticket is",
       "choices": [
         "Agile",
-        "How orphan access is born",
         "Required by SPF",
+        "How orphan access is born",
         "A lab bonus"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "Bot token in lesson markdown",
       "choices": [
         "Is required",
-        "Is forbidden",
         "Is a VLAN",
-        "Is CIDR"
+        "Is CIDR",
+        "Is forbidden"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "AAA accounting means",
       "choices": [
-        "Billing only",
         "Recording who did which action on which case",
+        "Billing only",
         "OSPF cost",
         "AIMD"
       ]

@@ -1,5 +1,5 @@
-# Group project
+# After-hours rotation
 
-- **design** (30%): Design exists before implementation
-- **handoff** (40%): Recorder notes let a stranger continue
-- **ethics** (30%): No PII, no unauthorized targets
+- **two_roles** (30%): Operator and recorder swap at 30 minutes
+- **stranger_handoff** (40%): Recorder notes do not require the operator's memory
+- **scope** (30%): No imaging of neighborhood laptops

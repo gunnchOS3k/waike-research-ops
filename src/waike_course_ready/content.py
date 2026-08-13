@@ -1496,36 +1496,22 @@ COURSES = {
 }
 
 
+def _rebalance_weekly() -> None:
+    from waike_course_ready.exams import rebalance_mcq
+
+    offsets = {"GENERAL_IT": 0, "COMPUTER_NETWORKING": 1, "CYBERSECURITY": 2}
+    for cid, course in COURSES.items():
+        k = offsets[cid]
+        for w in course["weeks"]:
+            n = len(w["quiz"])
+            w["quiz"] = rebalance_mcq(w["quiz"], k)
+            k += n
+
+
+_rebalance_weekly()
+
+
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
-    """Mid-course (20) and final knowledge (24) original items built from week facts."""
-    course = COURSES[course_id]
-    weekly: list[dict[str, Any]] = []
-    for w in course["weeks"]:
-        weekly.extend(w["quiz"])
-    # Mid uses weeks 1-5; final uses 6-10 plus a few earlier
-    mid = []
-    fin = []
-    for i, item in enumerate(weekly):
-        week_no = int(item["id"].split("-w")[1].split("-")[0])
-        clone = dict(item)
-        if week_no <= 5 and len(mid) < 20:
-            clone["id"] = f"{course_id}-mid-{len(mid)+1:02d}"
-            mid.append(clone)
-        if week_no >= 6 and len(fin) < 24:
-            clone2 = dict(item)
-            clone2["id"] = f"{course_id}-fin-{len(fin)+1:02d}"
-            fin.append(clone2)
-    # Pad final from earlier unused stems if needed
-    while len(fin) < 24:
-        src = weekly[len(fin) % len(weekly)]
-        extra = dict(src)
-        extra["id"] = f"{course_id}-fin-{len(fin)+1:02d}"
-        extra["stem"] = "Capstone check: " + src["stem"]
-        fin.append(extra)
-    while len(mid) < 20:
-        src = weekly[len(mid) % len(weekly)]
-        extra = dict(src)
-        extra["id"] = f"{course_id}-mid-{len(mid)+1:02d}"
-        extra["stem"] = "Mid-course check: " + src["stem"]
-        mid.append(extra)
-    return {"mid": mid[:20], "final": fin[:24]}
+    from waike_course_ready.exams import extra_assessment_items as _exams
+
+    return _exams(course_id)

@@ -6,8 +6,8 @@ No video, fans spin, one short beep, Ethernet lights off because you pulled the 
 ## Slide 2 — Teaching beat
 The Civic Tech Desk keeps a parts tub: one spare 16 GB SODIMM, one SATA SSD, one 90 W brick, one display cable. Swapping before naming the subsystem is how you waste the only DIMM. Order of operations: confirm power (brick voltage and LED), then listen and SMART for storage, then count RAM in the firmware screen, then accuse the OS.
 
-## Slide 3 — Numbers on the board
-Do the worked example live. Do not skip to the quiz.
+## Slide 3 — Live work
+Put 1200 seconds, 15% free, and CHG window 18:00–21:00 on the board. Sit in silence until someone does the arithmetic.
 
 ## Speaker notes
-If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.
+If they ask for A+ dumps, close the slide and open the alignment JSON. Keys never leave the instructor packet.

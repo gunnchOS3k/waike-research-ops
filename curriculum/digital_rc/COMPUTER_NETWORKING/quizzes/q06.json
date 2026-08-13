@@ -8,9 +8,9 @@
       "stem": "STP's job here is",
       "choices": [
         "Encrypt frames",
-        "Break L2 loops",
         "Assign CIDR",
-        "Run AIMD"
+        "Run AIMD",
+        "Break L2 loops"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "kind": "mcq",
       "stem": "BPDU guard on access ports protects against",
       "choices": [
-        "DNS cache",
         "A volunteer mini-switch becoming root",
+        "DNS cache",
         "IPv6 RA",
         "NAT exhaustion"
       ]
@@ -41,8 +41,8 @@
       "stem": "EtherChannel mis-match risk",
       "choices": [
         "None",
-        "Loops / unpredictable forwarding",
         "Better OSPF",
+        "Loops / unpredictable forwarding",
         "Free CCNA"
       ]
     },
@@ -52,9 +52,9 @@
       "stem": "MAC flapping is evidence of",
       "choices": [
         "Healthy LPM",
-        "A loop or a move storm",
         "TCP AIMD",
-        "DHCP snooping success"
+        "DHCP snooping success",
+        "A loop or a move storm"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "We paste Cisco running-config from exam dumps?",
       "choices": [
-        "Yes",
         "No",
+        "Yes",
         "Only STP",
         "Only if offline"
       ]

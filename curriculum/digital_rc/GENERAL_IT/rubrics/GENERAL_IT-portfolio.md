@@ -1,4 +1,5 @@
-# Portfolio
+# Desk portfolio
 
-- **artifacts** (70%): Required artifacts present
-- **no_pii** (30%): No faces, secrets, or PANs
+- **tree_and_hash** (50%): Folder tree + restore hash
+- **chg88** (30%): Change record with window
+- **no_faces** (20%): Tour video without patron faces

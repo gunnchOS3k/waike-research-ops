@@ -1,5 +1,5 @@
-# Weekly assignment
+# Desk journal
 
-- **specific_numbers** (40%): Uses course numbers, not generic prose
-- **scope** (30%): Does not claim certs or unauthorized testing
-- **clarity** (30%): A stranger can continue the work
+- **named_ticket** (40%): Uses 4417/4502/CHG-88 numbers, not 'a user had an issue'
+- **no_pii** (30%): No PAN/password/SSN in the journal
+- **next_shift** (30%): A Saturday volunteer can continue without asking you

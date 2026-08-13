@@ -1,139 +1,159 @@
 [
   {
     "rubric_id": "COMPUTER_NETWORKING-lab",
-    "title": "Runnable lab",
+    "title": "Packet Range lab",
     "criteria": [
       {
-        "name": "validator_ok",
-        "weight": 40,
-        "desc": "Lab JSON ok=true with named checks"
+        "name": "datapath_parse",
+        "weight": 30,
+        "desc": "Student reports TTL from bytes 14+8, not a hardcoded 4"
       },
       {
-        "name": "evidence",
-        "weight": 30,
-        "desc": "Inputs/outputs attached, no PII"
+        "name": "ttl1_drop",
+        "weight": 25,
+        "desc": "A crafted TTL=1 header decrements to 0 and is not forwarded"
       },
       {
-        "name": "explanation",
-        "weight": 30,
-        "desc": "Learner can say what a failing check means"
+        "name": "lpm",
+        "weight": 25,
+        "desc": "/24 beats /16; /32 steals the host"
+      },
+      {
+        "name": "acl_order",
+        "weight": 20,
+        "desc": "deny tcp/23 before permit 443 before deny *"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-assignment",
-    "title": "Weekly assignment",
+    "title": "Hex and graph work",
     "criteria": [
       {
-        "name": "specific_numbers",
+        "name": "sliced_frame",
         "weight": 40,
-        "desc": "Uses course numbers, not generic prose"
+        "desc": "Paper slice of MAC/ethertype/IHL/TTL/proto/src/dst"
       },
       {
-        "name": "scope",
+        "name": "spf_recompute",
         "weight": 30,
-        "desc": "Does not claim certs or unauthorized testing"
+        "desc": "Changing B-D to 20 flips A\u2192D to A-C-D"
       },
       {
-        "name": "clarity",
+        "name": "no_vendor_gui",
         "weight": 30,
-        "desc": "A stranger can continue the work"
+        "desc": "No stolen Packet Tracer / exam-sim screenshots"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-quiz",
-    "title": "Knowledge check",
+    "title": "Protocol knowledge",
     "criteria": [
       {
-        "name": "original",
+        "name": "range_numbers",
         "weight": 50,
-        "desc": "WAIKE stems, not vendor items"
+        "desc": "10.20.30.0/26, seq/ACK, 5-tuple \u2014 original stems"
       },
       {
-        "name": "keyed",
+        "name": "key_hidden",
         "weight": 50,
-        "desc": "Instructor key exists and is not in learner UI"
+        "desc": "Keys only in instructor/answer_keys.json"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-mid",
-    "title": "Mid-course knowledge",
+    "title": "Mid-course path exam",
     "criteria": [
       {
-        "name": "coverage_weeks_1_5",
-        "weight": 100,
-        "desc": "Items map to weeks 1\u20135"
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not weekly clones"
+      },
+      {
+        "name": "encap_cidr_tcp",
+        "weight": 40,
+        "desc": "MTU chop, LPM, ACK arithmetic"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-final-knowledge",
-    "title": "Final knowledge",
+    "title": "Final edge exam",
     "criteria": [
       {
-        "name": "coverage_weeks_6_10",
-        "weight": 100,
-        "desc": "Items map to later weeks plus capstone"
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not weekly clones"
+      },
+      {
+        "name": "stp_spf_acl",
+        "weight": 50,
+        "desc": "BPDU guard, SPF cost 4 vs 10, telnet deny"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-practical",
-    "title": "Final practical",
+    "title": "Datapath practical",
     "criteria": [
       {
-        "name": "labs_green",
-        "weight": 60,
-        "desc": "Required labs ok"
+        "name": "student_parse",
+        "weight": 40,
+        "desc": "Empty parse JSON fails"
       },
       {
-        "name": "negative_fail",
-        "weight": 20,
-        "desc": "Mutated fixtures fail"
+        "name": "ttl_header",
+        "weight": 40,
+        "desc": "TTL=1 uses the parsed header, not (1-1)==0"
       },
       {
-        "name": "writeup",
+        "name": "negatives",
         "weight": 20,
-        "desc": "Honest claim boundary"
+        "desc": "Wrong network address on /26 fails CIDR lab"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-project",
-    "title": "Group project",
+    "title": "Guest VLAN redesign",
     "criteria": [
       {
-        "name": "design",
-        "weight": 30,
-        "desc": "Design exists before implementation"
-      },
-      {
-        "name": "handoff",
+        "name": "intent_json",
         "weight": 40,
-        "desc": "Recorder notes let a stranger continue"
+        "desc": "Prefixes, ACL, NAT, four-router costs"
       },
       {
-        "name": "ethics",
+        "name": "guest_isolated",
         "weight": 30,
-        "desc": "No PII, no unauthorized targets"
+        "desc": "Guest cannot reach Roof management"
+      },
+      {
+        "name": "eight_minutes",
+        "weight": 30,
+        "desc": "Talk uses this topology, not a campus UPNOW slide clone"
       }
     ]
   },
   {
     "rubric_id": "COMPUTER_NETWORKING-portfolio",
-    "title": "Portfolio",
+    "title": "Path portfolio",
     "criteria": [
       {
-        "name": "artifacts",
-        "weight": 70,
-        "desc": "Required artifacts present"
+        "name": "trace",
+        "weight": 50,
+        "desc": "One Pier\u2192Roof trace naming VLAN/LPM/TTL/ACL"
       },
       {
-        "name": "no_pii",
+        "name": "intent",
         "weight": 30,
-        "desc": "No faces, secrets, or PANs"
+        "desc": "Validator-rejected missing next-hop included as evidence"
+      },
+      {
+        "name": "no_ccna_claim",
+        "weight": 20,
+        "desc": "Portfolio does not say 'I am CCNA'"
       }
     ]
   }

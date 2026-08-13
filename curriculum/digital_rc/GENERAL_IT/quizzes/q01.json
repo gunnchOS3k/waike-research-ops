@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "Ticket 4417 lost an essay after 20 idle minutes. Which job failed first?",
       "choices": [
-        "Talk (network)",
         "Remember (session/files)",
+        "Talk (network)",
         "Calculate (CPU thermal)",
         "Print spooler"
       ]
@@ -19,8 +19,8 @@
       "stem": "Idle logout is 1200 seconds. How many minutes is that?",
       "choices": [
         "12",
-        "15",
         "20",
+        "15",
         "1200"
       ]
     },
@@ -30,8 +30,8 @@
       "stem": "A patron dictates a password at the desk. What do you record in the ticket?",
       "choices": [
         "The password in plaintext",
-        "'credential reset requested' and no secret",
         "A screenshot of the login form",
+        "'credential reset requested' and no secret",
         "The library card PAN"
       ]
     },
@@ -42,8 +42,8 @@
       "choices": [
         "The kiosk is broken",
         "The Internet is down",
-        "The textarea was empty after idle logout at 14:28",
-        "Someone hacked the kiosk"
+        "Someone hacked the kiosk",
+        "The textarea was empty after idle logout at 14:28"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Why does the lab mark extra Desktop folders as clutter?",
       "choices": [
-        "Desktop is faster storage",
         "Required paths are the contract; extras are not the job",
+        "Desktop is faster storage",
         "Windows forbids Desktop folders",
         "Antivirus scans Desktop only"
       ]

@@ -7,8 +7,8 @@
       "kind": "mcq",
       "stem": "Why is reboot-and-hope banned as a next action?",
       "choices": [
-        "Reboots are slow",
         "It destroys evidence and skips root cause",
+        "Reboots are slow",
         "Windows 11 cannot reboot",
         "Printers forbid reboot"
       ]
@@ -30,8 +30,8 @@
       "stem": "SE1 at this desk means",
       "choices": [
         "One essay lost",
-        "The whole desk is down in public hours",
         "A fan is dusty",
+        "The whole desk is down in public hours",
         "A volunteer is late"
       ]
     },
@@ -41,9 +41,9 @@
       "stem": "SLA for SE3 here is",
       "choices": [
         "Five minutes",
-        "End of next public day",
         "Never",
-        "Ninety days"
+        "Ninety days",
+        "End of next public day"
       ]
     },
     {
@@ -51,8 +51,8 @@
       "kind": "mcq",
       "stem": "Best patron sentence after 4417?",
       "choices": [
-        "We fixed it",
         "Your essay is in the restore folder; idle logout still exists on purpose",
+        "We fixed it",
         "Disable all security",
         "Email us the password"
       ]
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "4418 fan scream then black screen: collect what first?",
       "choices": [
-        "Temps / thermal evidence",
         "A new gaming PC quote",
+        "Temps / thermal evidence",
         "BIOS password from a forum",
         "A full disk wipe"
       ]

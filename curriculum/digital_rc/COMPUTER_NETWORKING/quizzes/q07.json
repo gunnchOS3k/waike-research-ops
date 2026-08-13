@@ -19,8 +19,8 @@
       "stem": "SPF in this lab is",
       "choices": [
         "A Cisco dump",
-        "Dijkstra on the four-node town",
         "AIMD",
+        "Dijkstra on the four-node town",
         "VLAN 20"
       ]
     },
@@ -30,9 +30,9 @@
       "stem": "If B-D becomes cost 20, A\u2192D prefers",
       "choices": [
         "Still A-B-D always",
-        "A-C-D cost 10",
         "Flood Ethernet",
-        "Drop TTL"
+        "Drop TTL",
+        "A-C-D cost 10"
       ]
     },
     {
@@ -40,8 +40,8 @@
       "kind": "mcq",
       "stem": "OSPF's job vs this lab",
       "choices": [
-        "This lab floods LSAs",
         "OSPF floods topology; we compute SPF on a known graph",
+        "This lab floods LSAs",
         "OSPF is TCP",
         "OSPF is a VLAN"
       ]
@@ -63,8 +63,8 @@
       "stem": "10.20.40.0/24 from Pier should next-hop",
       "choices": [
         "Shed at cost 10 if B-D is 2",
-        "Yard on the cost-4 path",
         "Default WAN",
+        "Yard on the cost-4 path",
         "STP root"
       ]
     }

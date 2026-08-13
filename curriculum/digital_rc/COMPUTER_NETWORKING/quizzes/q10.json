@@ -8,9 +8,9 @@
       "stem": "Intent file missing a next-hop should",
       "choices": [
         "Silently pass",
-        "Fail the validator",
         "Start STP",
-        "Grant CCNA"
+        "Grant CCNA",
+        "Fail the validator"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "kind": "mcq",
       "stem": "Practical trace must include",
       "choices": [
-        "Only brand names",
         "VLAN, LPM, TTL, ACL",
+        "Only brand names",
         "Only AIMD",
         "Only CS144 code"
       ]
@@ -41,8 +41,8 @@
       "stem": "Automation in this capstone is",
       "choices": [
         "A full SDN fabric",
-        "JSON intent + validator",
         "Ansible from a dump",
+        "JSON intent + validator",
         "Terraform exam"
       ]
     },
@@ -52,9 +52,9 @@
       "stem": "Does this course grant CCNA?",
       "choices": [
         "Yes",
-        "No",
         "Yes if labs pass",
-        "Yes after week 4"
+        "Yes after week 4",
+        "No"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "kind": "mcq",
       "stem": "Datapath lab ok flag must be",
       "choices": [
-        "Printed PASS with no checks",
         "Computed from header/LPM/TTL checks",
+        "Printed PASS with no checks",
         "Always true",
         "Copied from Stanford"
       ]

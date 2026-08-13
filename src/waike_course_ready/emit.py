@@ -8,6 +8,19 @@ from typing import Any
 
 from waike_course_ready.content import COURSES, extra_assessment_items
 from waike_course_ready.labs import COURSE_LABS
+from waike_course_ready.packaging import (
+    SYLLABUS_ASSESSMENT,
+    SYLLABUS_CLAIM,
+    SYLLABUS_DURATION,
+    group_project,
+    instructor_packet,
+    instructor_week_notes,
+    lab_readme,
+    portfolio,
+    presentation,
+    rubrics as course_rubrics,
+    student_packet,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "curriculum" / "digital_rc"
@@ -28,70 +41,7 @@ def _dump(path: Path, obj: Any) -> None:
 
 
 def _rubrics(course_id: str) -> list[dict[str, Any]]:
-    return [
-        {
-            "rubric_id": f"{course_id}-lab",
-            "title": "Runnable lab",
-            "criteria": [
-                {"name": "validator_ok", "weight": 40, "desc": "Lab JSON ok=true with named checks"},
-                {"name": "evidence", "weight": 30, "desc": "Inputs/outputs attached, no PII"},
-                {"name": "explanation", "weight": 30, "desc": "Learner can say what a failing check means"},
-            ],
-        },
-        {
-            "rubric_id": f"{course_id}-assignment",
-            "title": "Weekly assignment",
-            "criteria": [
-                {"name": "specific_numbers", "weight": 40, "desc": "Uses course numbers, not generic prose"},
-                {"name": "scope", "weight": 30, "desc": "Does not claim certs or unauthorized testing"},
-                {"name": "clarity", "weight": 30, "desc": "A stranger can continue the work"},
-            ],
-        },
-        {
-            "rubric_id": f"{course_id}-quiz",
-            "title": "Knowledge check",
-            "criteria": [
-                {"name": "original", "weight": 50, "desc": "WAIKE stems, not vendor items"},
-                {"name": "keyed", "weight": 50, "desc": "Instructor key exists and is not in learner UI"},
-            ],
-        },
-        {
-            "rubric_id": f"{course_id}-mid",
-            "title": "Mid-course knowledge",
-            "criteria": [{"name": "coverage_weeks_1_5", "weight": 100, "desc": "Items map to weeks 1–5"}],
-        },
-        {
-            "rubric_id": f"{course_id}-final-knowledge",
-            "title": "Final knowledge",
-            "criteria": [{"name": "coverage_weeks_6_10", "weight": 100, "desc": "Items map to later weeks plus capstone"}],
-        },
-        {
-            "rubric_id": f"{course_id}-practical",
-            "title": "Final practical",
-            "criteria": [
-                {"name": "labs_green", "weight": 60, "desc": "Required labs ok"},
-                {"name": "negative_fail", "weight": 20, "desc": "Mutated fixtures fail"},
-                {"name": "writeup", "weight": 20, "desc": "Honest claim boundary"},
-            ],
-        },
-        {
-            "rubric_id": f"{course_id}-project",
-            "title": "Group project",
-            "criteria": [
-                {"name": "design", "weight": 30, "desc": "Design exists before implementation"},
-                {"name": "handoff", "weight": 40, "desc": "Recorder notes let a stranger continue"},
-                {"name": "ethics", "weight": 30, "desc": "No PII, no unauthorized targets"},
-            ],
-        },
-        {
-            "rubric_id": f"{course_id}-portfolio",
-            "title": "Portfolio",
-            "criteria": [
-                {"name": "artifacts", "weight": 70, "desc": "Required artifacts present"},
-                {"name": "no_pii", "weight": 30, "desc": "No faces, secrets, or PANs"},
-            ],
-        },
-    ]
+    return course_rubrics(course_id)
 
 
 def emit_course(course_id: str) -> dict[str, Any]:
@@ -111,7 +61,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
         f"- Academy: {c['academy_id']}",
         "",
         "## Duration",
-        "10 weeks. Operator/support, packet-range, or Harbor SOC hours — not a 2-hour workshop pretending to be a course.",
+        SYLLABUS_DURATION[course_id],
         "",
         "## Weekly map",
     ]
@@ -120,14 +70,10 @@ def emit_course(course_id: str) -> dict[str, Any]:
     syllabus += [
         "",
         "## Assessments",
-        "- 10 weekly quizzes (6 original items each)",
-        "- Mid-course knowledge (20 items, weeks 1–5)",
-        "- Final knowledge (24 items)",
-        "- Final practical (runnable labs)",
-        "- Group project / capstone",
+        SYLLABUS_ASSESSMENT[course_id],
         "",
         "## Claim boundary",
-        "Original WAIKE materials. Domain alignment only. No certification granted. Instructor keys are not in the learner packet.",
+        SYLLABUS_CLAIM[course_id],
         "",
         f"## Kinesthetic hook",
         c["kinesthetic_hook"],
@@ -156,32 +102,11 @@ def emit_course(course_id: str) -> dict[str, Any]:
         ]
         quiz_count += 1
         quiz_items += len(w["quiz"])
-        slides = [
-            f"# Week {w['week']} presentation — {w['title']}",
-            "",
-            "## Slide 1 — Cold open",
-            w["worked_example"],
-            "",
-            "## Slide 2 — Teaching beat",
-            w["lesson"].split("\n\n")[0],
-            "",
-            "## Slide 3 — Numbers on the board",
-            "Do the worked example live. Do not skip to the quiz.",
-            "",
-            "## Speaker notes",
-            "If a learner asks for a certification dump, refuse and point at the alignment JSON. Keys stay instructor-only.",
-        ]
-        _write(base / "presentation" / f"week_{w['week']:02d}.md", "\n".join(slides))
-        _write(
-            base / "instructor" / f"week_{w['week']:02d}_notes.md",
-            f"# Instructor notes week {w['week']}\n\nPace: live worked example first.\n\nLab `{w['lab_id']}` must be executed, not narrated.\n\nDo not paste vendor exam items.\n",
-        )
+        _write(base / "presentation" / f"week_{w['week']:02d}.md", presentation(course_id, w))
+        _write(base / "instructor" / f"week_{w['week']:02d}_notes.md", instructor_week_notes(course_id, w))
 
     for lab_id in labs:
-        _write(
-            base / "labs" / lab_id / "README.md",
-            f"# {lab_id}\n\nRun from repo root:\n\n```\npython3 scripts/run_course_labs.py --lab {lab_id}\n```\n\nValidators compute. Print-PASS is rejected.\n",
-        )
+        _write(base / "labs" / lab_id / "README.md", lab_readme(course_id, lab_id))
 
     mid_learner = [{"id": i["id"], "kind": i["kind"], "stem": i["stem"], "choices": i["choices"]} for i in extras["mid"]]
     fin_learner = [{"id": i["id"], "kind": i["kind"], "stem": i["stem"], "choices": i["choices"]} for i in extras["final"]]
@@ -198,7 +123,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
     _dump(base / "assessments" / "final_practical.json", practical)
     _write(
         base / "projects" / "group_project.md",
-        f"# Group project — {c['title']}\n\n{c['weeks'][-1]['assignment']}\n\nDesign first. Recorder notes must let a stranger continue.\n",
+        group_project(course_id, c["title"], c["weeks"][-1]["assignment"]),
     )
 
     rubrics = _rubrics(course_id)
@@ -210,14 +135,8 @@ def emit_course(course_id: str) -> dict[str, Any]:
         _write(base / "rubrics" / f"{r['rubric_id']}.md", "\n".join(lines))
 
     _dump(base / "instructor" / "answer_keys.json", answer_keys)
-    _write(
-        base / "instructor" / "INSTRUCTOR_PACKET.md",
-        f"# Instructor packet — {c['title']}\n\nKeys: `instructor/answer_keys.json` (never copy into learner ingest).\n\nRun labs via `scripts/run_course_labs.py`.\n\nAlignment: see `curriculum/alignment/`.\n",
-    )
-    _write(
-        base / "student" / "STUDENT_PACKET.md",
-        f"# Student packet — {c['title']}\n\n{c['kinesthetic_hook']}\n\nRead weekly lessons, submit assignments, run labs. You will not receive answer keys in this packet.\n",
-    )
+    _write(base / "instructor" / "INSTRUCTOR_PACKET.md", instructor_packet(course_id))
+    _write(base / "student" / "STUDENT_PACKET.md", student_packet(course_id, c["kinesthetic_hook"]))
     offline = {
         "schema": "waike.offline_pack.v1",
         "course_id": course_id,
@@ -233,7 +152,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "no_pii": True,
         },
     )
-    _write(base / "portfolio" / "PORTFOLIO.md", f"# Portfolio — {c['title']}\n\nShip lab JSON, the capstone artifact, and a scope paragraph. No PII.\n")
+    _write(base / "portfolio" / "PORTFOLIO.md", portfolio(course_id))
     _dump(base / "career_mapping.json", c["career"])
 
     package = {
@@ -299,6 +218,18 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "quiz_items": quiz_items,
             "mid_course_items": len(extras["mid"]),
             "final_items": len(extras["final"]),
+            "mid_course_items_original": sum(
+                1
+                for i in extras["mid"]
+                if i["stem"] not in {q["stem"] for w in c["weeks"] for q in w["quiz"]}
+                and not str(i["stem"]).startswith("Mid-course check:")
+            ),
+            "final_items_original": sum(
+                1
+                for i in extras["final"]
+                if i["stem"] not in {q["stem"] for w in c["weeks"] for q in w["quiz"]}
+                and not str(i["stem"]).startswith("Capstone check:")
+            ),
             "practicals": 1,
             "projects": 1,
             "rubrics": len(rubrics),
