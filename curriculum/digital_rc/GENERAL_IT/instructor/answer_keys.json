@@ -422,7 +422,7 @@
     {
       "id": "GENERAL_IT-mid-20",
       "answer_index": 3,
-      "explanation": "One bootable image."
+      "explanation": "Keep one bootable image during public hours."
     }
   ],
   "final": [
@@ -434,7 +434,7 @@
     {
       "id": "GENERAL_IT-fin-02",
       "answer_index": 2,
-      "explanation": "Measure twice."
+      "explanation": "Measure twice; 81 C is a new reading, not the week-6 78 C prompt."
     },
     {
       "id": "GENERAL_IT-fin-03",
@@ -479,7 +479,7 @@
     {
       "id": "GENERAL_IT-fin-11",
       "answer_index": 3,
-      "explanation": "Identity hygiene at the desk."
+      "explanation": "Non-human tools do not get sudo on the Civic image."
     },
     {
       "id": "GENERAL_IT-fin-12",
@@ -504,7 +504,7 @@
     {
       "id": "GENERAL_IT-fin-16",
       "answer_index": 0,
-      "explanation": "Staff recovery."
+      "explanation": "sshd is for operators, not patrons."
     },
     {
       "id": "GENERAL_IT-fin-17",

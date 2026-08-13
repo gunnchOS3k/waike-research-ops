@@ -48,12 +48,12 @@
     {
       "id": "COMPUTER_NETWORKING-fin-05",
       "kind": "mcq",
-      "stem": "MAC flapping is evidence of?",
+      "stem": "aa:aa:aa:aa:aa:10 shows on Gi1/0/8 then Gi1/0/12 every 200 ms after two extra patch cables were added. What does that log mean?",
       "choices": [
-        "Healthy LPM",
-        "TCP AIMD",
-        "A loop or a move storm",
-        "DHCP snooping success"
+        "LPM is healthy",
+        "AIMD backing off",
+        "A loop or a station bouncing ports",
+        "DHCP snooping working"
       ]
     },
     {
@@ -70,12 +70,12 @@
     {
       "id": "COMPUTER_NETWORKING-fin-07",
       "kind": "mcq",
-      "stem": "B-D cost becomes 20. A\u2192D now prefers?",
+      "stem": "On the four-router town you set link B\u2013D from 2 to 20 and recompute. Which A-to-D path wins?",
       "choices": [
         "A-C-D at 10",
-        "Still A-B-D at 22",
-        "Flood Ethernet",
-        "Drop TTL"
+        "A-B-D at 22",
+        "Flood every Ethernet",
+        "Drop on TTL"
       ]
     },
     {
@@ -92,23 +92,23 @@
     {
       "id": "COMPUTER_NETWORKING-fin-09",
       "kind": "mcq",
-      "stem": "Administrative distance is?",
+      "stem": "Pier has OSPF (typical AD 110, cost 20) to 10.20.40.0/24 and a static with AD 1 to the same prefix. Which path is installed?",
       "choices": [
-        "Cable meters",
-        "STP priority",
-        "Trust ranking among route sources",
-        "cwnd"
+        "OSPF, because cost 20 is smaller",
+        "Load-balance both",
+        "The static, because AD 1 outranks OSPF 110",
+        "Neither until STP converges"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-fin-10",
       "kind": "mcq",
-      "stem": "Second identical DNS lookup in the toy resolver should be?",
+      "stem": "desk.gary.waike.example is asked twice in one lab run. First walk hits auth at 203.0.113.14. The second answer should come from?",
       "choices": [
-        "auth_walk",
+        "another TLD walk",
         "nxdomain",
-        "OSPF",
-        "cache"
+        "OSPF LSAs",
+        "the resolver cache"
       ]
     },
     {
@@ -125,12 +125,12 @@
     {
       "id": "COMPUTER_NETWORKING-fin-12",
       "kind": "mcq",
-      "stem": "DHCP lease 3600 seconds means?",
+      "stem": "Yard printer lease started 14:00 with 3600 s. At 14:50 someone unplugs the closet router. If the printer cannot renew, when does 10.20.30.40 become a rumor?",
       "choices": [
-        "Permanent",
-        "About one hour unless renewed",
-        "A /32 route",
-        "BPDU guard"
+        "Immediately",
+        "Around 15:00 unless it renewed",
+        "Never \u2014 DHCP is permanent",
+        "After STP reconverges"
       ]
     },
     {
@@ -169,12 +169,12 @@
     {
       "id": "COMPUTER_NETWORKING-fin-16",
       "kind": "mcq",
-      "stem": "`permit ip any any` as first line does what?",
+      "stem": "Student ACL line 1 is `permit ip any any`, then deny tcp/23. What happens to telnet from Pier?",
       "choices": [
-        "Hardens the edge",
-        "Turns the ACL into wallpaper",
-        "Required by RFC 791",
-        "Replaces NAT"
+        "Telnet dies",
+        "Telnet is permitted because first match wins, so later denies are wallpaper",
+        "RFC 791 requires it",
+        "NAT replaces the ACL"
       ]
     },
     {
@@ -191,23 +191,23 @@
     {
       "id": "COMPUTER_NETWORKING-fin-18",
       "kind": "mcq",
-      "stem": "Staff tools should prefer?",
+      "stem": "Roof jump-host ACL in the capstone intent file: which pair is permitted?",
       "choices": [
-        "Telnet and HTTP",
-        "Port 9",
-        "Anonymous FTP",
-        "SSH and HTTPS"
+        "tcp/23 and tcp/80",
+        "udp/9 and tcp/21",
+        "tcp/23 only",
+        "tcp/22 and tcp/443"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-fin-19",
       "kind": "mcq",
-      "stem": "Intent JSON missing a next-hop should?",
+      "stem": "Capstone intent for 10.20.40.0/24 lists iface eth1 but omits `nh`. Validator result?",
       "choices": [
-        "Fail the validator",
+        "Fail \u2014 incomplete forwarding intent",
         "Silently pass",
         "Start STP",
-        "Grant CCNA"
+        "Issue a CCNA number"
       ]
     },
     {
@@ -224,23 +224,23 @@
     {
       "id": "COMPUTER_NETWORKING-fin-21",
       "kind": "mcq",
-      "stem": "Guest VLAN reaching Roof management is?",
+      "stem": "After the capstone, a guest laptop on VLAN 40 pings 10.20.99.1 (Roof mgmt). What failed?",
       "choices": [
-        "The goal",
-        "NAT",
-        "A segmentation failure",
-        "SPF"
+        "Nothing \u2014 guests need Roof",
+        "SPF cost math",
+        "Guest ACL / VLAN isolation",
+        "NAT pool size"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-fin-22",
       "kind": "mcq",
-      "stem": "Does this course grant CCNA 200-301?",
+      "stem": "A resume line after Packet Range says 'CCNA 200-301 certified by WAIKE.' Allowed?",
       "choices": [
         "Yes",
-        "Yes if labs pass",
-        "Yes after week 4",
-        "No"
+        "Yes if all labs are green",
+        "Yes after the datapath practical",
+        "No \u2014 this packet aligns to domains; it does not grant the credential"
       ]
     },
     {
@@ -257,12 +257,12 @@
     {
       "id": "COMPUTER_NETWORKING-fin-24",
       "kind": "mcq",
-      "stem": "Rogue DHCP under the table typically?",
+      "stem": "A travel router under the catalog table offers 192.168.0.1 as gateway while Pier DHCP is 10.20.30.1. What happens to kiosk-3?",
       "choices": [
-        "Improves SPF",
-        "Hands out a lying default gateway",
-        "Fixes TTL",
-        "Enables BPDU guard"
+        "SPF improves",
+        "It may install a lying default route and blackhole civic DNS",
+        "TTL is repaired",
+        "BPDU guard enables itself"
       ]
     }
   ]

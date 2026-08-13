@@ -37,12 +37,12 @@
     {
       "id": "CYBERSECURITY-mid-04",
       "kind": "mcq",
-      "stem": "Library PANs in the model context window?",
+      "stem": "Harbor-bot ticket H-22 includes a pasted library-card number 'so the model can look it up.' Policy?",
       "choices": [
-        "Fine if TLS",
-        "Violate Harbor confidentiality policy",
-        "Required for CCNA",
-        "Fix AIMD"
+        "Fine under TLS",
+        "Reject the prompt \u2014 PANs do not enter the bot context",
+        "Required for the CC map",
+        "Fixes AIMD"
       ]
     },
     {
@@ -114,23 +114,23 @@
     {
       "id": "CYBERSECURITY-mid-11",
       "kind": "mcq",
-      "stem": "Kiosk initiating connections to SOC should be?",
+      "stem": "Zone matrix row for case H-31: kiosk-3 opens TCP/443 to the SOC SIEM. Verdict?",
       "choices": [
-        "Deny",
-        "Allow all",
-        "NAT",
-        "OSPF"
+        "Deny \u2014 kiosks do not originate toward SOC",
+        "Allow \u2014 kiosks report home",
+        "NAT it",
+        "Advertise it in OSPF"
       ]
     },
     {
       "id": "CYBERSECURITY-mid-12",
       "kind": "mcq",
-      "stem": "SOC pulling kiosk syslog is modeled as?",
+      "stem": "Harbor matrix: SOC collector reaches kiosk-3 on UDP/514 and nothing else. Label the cell?",
       "choices": [
-        "Deny",
+        "deny",
         "allow_syslog_only",
-        "Full RDP",
-        "Guest"
+        "full RDP",
+        "guest"
       ]
     },
     {

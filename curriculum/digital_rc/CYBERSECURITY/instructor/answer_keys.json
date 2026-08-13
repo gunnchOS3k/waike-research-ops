@@ -377,12 +377,12 @@
     {
       "id": "CYBERSECURITY-mid-11",
       "answer_index": 0,
-      "explanation": "East-west hole."
+      "explanation": "East-west hole if allowed."
     },
     {
       "id": "CYBERSECURITY-mid-12",
       "answer_index": 1,
-      "explanation": "Narrow allow."
+      "explanation": "Narrow allow toward the kiosk."
     },
     {
       "id": "CYBERSECURITY-mid-13",
@@ -444,7 +444,7 @@
     {
       "id": "CYBERSECURITY-fin-04",
       "answer_index": 2,
-      "explanation": "777 is not hospitality."
+      "explanation": "0777 is not hospitality."
     },
     {
       "id": "CYBERSECURITY-fin-05",
@@ -464,7 +464,7 @@
     {
       "id": "CYBERSECURITY-fin-08",
       "answer_index": 2,
-      "explanation": "Use the desk procedure."
+      "explanation": "Kiosk does not speak SMB to staff."
     },
     {
       "id": "CYBERSECURITY-fin-09",
@@ -474,7 +474,7 @@
     {
       "id": "CYBERSECURITY-fin-10",
       "answer_index": 0,
-      "explanation": "Contain."
+      "explanation": "Contain first."
     },
     {
       "id": "CYBERSECURITY-fin-11",
@@ -504,7 +504,7 @@
     {
       "id": "CYBERSECURITY-fin-16",
       "answer_index": 2,
-      "explanation": "Length lie."
+      "explanation": "Length lie on this fixture."
     },
     {
       "id": "CYBERSECURITY-fin-17",
@@ -519,7 +519,7 @@
     {
       "id": "CYBERSECURITY-fin-19",
       "answer_index": 1,
-      "explanation": "Accept honest."
+      "explanation": "Honest length 4 plus abcd."
     },
     {
       "id": "CYBERSECURITY-fin-20",
@@ -534,7 +534,7 @@
     {
       "id": "CYBERSECURITY-fin-22",
       "answer_index": 0,
-      "explanation": "Cannot claim."
+      "explanation": "Cannot claim identity."
     },
     {
       "id": "CYBERSECURITY-fin-23",
@@ -544,7 +544,7 @@
     {
       "id": "CYBERSECURITY-fin-24",
       "answer_index": 2,
-      "explanation": "Do not."
+      "explanation": "Do not scan what Harbor does not own."
     }
   ]
 }

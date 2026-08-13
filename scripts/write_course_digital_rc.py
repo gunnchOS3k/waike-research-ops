@@ -42,6 +42,8 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(prov.get("status") == "PASS", f"provenance {prov.get('status')}")
     need(bool(prov.get("key_balance_ok")), "answer keys collapsed")
     need(bool(prov.get("exam_items_original")), "mid/final not original")
+    need(int(prov.get("exam_token_identical") or 0) == 0, "token-identical exam restatements remain")
+    need(int(prov.get("exam_token_jaccard_ge_0_80") or 0) == 0, "exam stems Jaccard≥0.80 vs weekly remain")
     need(tmpl.get("BATCH_TEMPLATED_COURSES") == 0, "BATCH_TEMPLATED_COURSES != 0")
     need(tmpl.get("BATCH_STUB_COURSES") == 0, "BATCH_STUB_COURSES != 0")
     need(float(prov.get("worst_packaging_jaccard") or 0) < 0.35, "packaging shells cloned")
@@ -91,6 +93,9 @@ def main() -> int:
         "registry_size": len(registry["sources"]),
         "key_distribution": prov.get("key_distribution"),
         "worst_packaging_jaccard": prov.get("worst_packaging_jaccard"),
+        "exam_token_identical": prov.get("exam_token_identical"),
+        "exam_token_jaccard_ge_0_80": prov.get("exam_token_jaccard_ge_0_80"),
+        "worst_exam_weekly_token_jaccard": prov.get("worst_exam_weekly_token_jaccard"),
         "claim_boundary": (
             "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, "
             "non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. "

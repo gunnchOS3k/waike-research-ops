@@ -127,5 +127,8 @@
     }
   },
   "worst_packaging_jaccard": 0.0249,
+  "exam_token_identical": 0,
+  "exam_token_jaccard_ge_0_80": 0,
+  "worst_exam_weekly_token_jaccard": 0.6923,
   "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, and labs that fail empty/wrong/print-PASS all hold. Not a student/teacher E6. Not all 18 courses."
 }

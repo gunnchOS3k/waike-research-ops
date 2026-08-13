@@ -213,12 +213,12 @@
     {
       "id": "GENERAL_IT-mid-20",
       "kind": "mcq",
-      "stem": "Why not patch Windows 11 and Debian in the same hour on the dual-boot kiosk?",
+      "stem": "Ticket 4611: a volunteer starts `apt upgrade` on Debian while Windows Update is already downloading on the same Civic kiosk during Saturday hours. First stop?",
       "choices": [
-        "Licensing",
-        "Debian cannot patch",
-        "Windows forbids GRUB",
-        "Keep one image bootable; GRUB/update collision risk during public hours"
+        "Let both finish",
+        "Disable GRUB forever",
+        "Grant kiosk sudo",
+        "Abort one image so the other stays bootable; reschedule the second to Wednesday 21:00"
       ]
     }
   ]

@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from waike_course_ready.content import COURSES, extra_assessment_items
+from waike_course_ready.exams import scan_exam_restatements
 from waike_course_ready.labs import COURSE_LABS
 from waike_course_ready.packaging import (
     SYLLABUS_ASSESSMENT,
@@ -167,6 +168,18 @@ def audit() -> dict[str, Any]:
         if fin_orig < 24:
             findings.append(f"{cid} final original items {fin_orig} < 24")
 
+        rest = scan_exam_restatements(cid, weekly)
+        if rest["token_identical"]:
+            findings.append(
+                f"{cid} token-identical exam restatements={rest['token_identical']} "
+                f"(ignore punctuation/?/case) e.g. {rest['hits'][0]['id'] if rest['hits'] else '?'}"
+            )
+        if rest["token_jaccard_ge_0_80"]:
+            findings.append(
+                f"{cid} exam token Jaccard≥0.80 vs weekly={rest['token_jaccard_ge_0_80']} "
+                f"worst={rest['worst_token_jaccard']}"
+            )
+
         keys = _key_rows(cid)
         dist = Counter(keys)
         n = len(keys) or 1
@@ -194,21 +207,40 @@ def audit() -> dict[str, Any]:
     stub = 1 if any("stub risk" in f for f in findings) else 0
     templated = 1 if any("BATCH_TEMPLATED" in f for f in findings) else 0
     key_balance_ok = not any("answer_index collapse" in f or "unused answer letters" in f for f in findings)
-    exam_items_original = not any(" clone:" in f or "original items" in f for f in findings)
+    exam_items_original = not any(
+        " clone:" in f
+        or "original items" in f
+        or "token-identical" in f
+        or "Jaccard≥0.80" in f
+        for f in findings
+    )
 
     status = "PASS" if not findings else "FAIL"
     key_report = {}
     exam_report = {}
+    restatement_hits: list[dict[str, Any]] = []
+    token_identical_total = 0
+    token_j80_total = 0
+    worst_exam_weekly = 0.0
     for cid in COURSES:
         dist = Counter(_key_rows(cid))
         key_report[cid] = {LETTERS[i]: dist.get(i, 0) for i in range(4)}
         key_report[cid]["n"] = sum(dist.values())
         extras = extra_assessment_items(cid)
-        weekly_set = _weekly_stems(cid)
+        weekly_list = list(_weekly_stems(cid))
+        weekly_set = set(weekly_list)
+        rest = scan_exam_restatements(cid, weekly_list)
+        token_identical_total += rest["token_identical"]
+        token_j80_total += rest["token_jaccard_ge_0_80"]
+        worst_exam_weekly = max(worst_exam_weekly, rest["worst_token_jaccard"])
+        restatement_hits.extend({"course_id": cid, **h} for h in rest["hits"])
         exam_report[cid] = {
             "weekly_stems": len(weekly_set),
             "mid_original": sum(1 for i in extras["mid"] if i["stem"] not in weekly_set and not i["stem"].startswith(CLONE_PREFIXES)),
             "final_original": sum(1 for i in extras["final"] if i["stem"] not in weekly_set and not i["stem"].startswith(CLONE_PREFIXES)),
+            "token_identical": rest["token_identical"],
+            "token_jaccard_ge_0_80": rest["token_jaccard_ge_0_80"],
+            "worst_token_jaccard": rest["worst_token_jaccard"],
         }
 
     return {
@@ -226,6 +258,10 @@ def audit() -> dict[str, Any]:
         "key_balance_ok": key_balance_ok,
         "exam_items_original": exam_items_original,
         "exam_original_counts": exam_report,
+        "exam_token_identical": token_identical_total,
+        "exam_token_jaccard_ge_0_80": token_j80_total,
+        "worst_exam_weekly_token_jaccard": round(worst_exam_weekly, 4),
+        "exam_restatement_hits": restatement_hits[:20],
         "registry_size": len(registry.get("sources", [])),
         "findings": findings,
         "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only.",

@@ -92,12 +92,12 @@
     {
       "id": "COMPUTER_NETWORKING-mid-09",
       "kind": "mcq",
-      "stem": "IPv4 IHL=5 means header length?",
+      "stem": "On the Pier capture, byte 14 is 0x45. How many bytes of IPv4 header do you skip before the TCP header starts?",
       "choices": [
-        "5 bytes",
-        "20 bytes",
-        "40 bytes",
-        "8 bytes"
+        "5",
+        "20",
+        "45",
+        "8"
       ]
     },
     {
@@ -202,23 +202,23 @@
     {
       "id": "COMPUTER_NETWORKING-mid-19",
       "kind": "mcq",
-      "stem": "Access port vs trunk in one line?",
+      "stem": "Gi1/0/8 is untagged VLAN 20 for the catalog PC; Gi1/0/24 must carry VLAN 20 and 30 toward the Yard switch. Which is which?",
       "choices": [
-        "They are identical",
-        "Trunks are IPv6 only",
-        "Access ports run BGP",
-        "Access is untagged membership; trunk carries tags"
+        "Both trunks",
+        "Gi1/0/8 trunk; Gi1/0/24 access",
+        "Both run BGP",
+        "Gi1/0/8 access VLAN 20; Gi1/0/24 802.1Q trunk"
       ]
     },
     {
       "id": "COMPUTER_NETWORKING-mid-20",
       "kind": "mcq",
-      "stem": "This course copies Stanford CS144 lab code?",
+      "stem": "A teammate pastes a Stanford CS144 C++ reliable-transport skeleton into the Packet Range practical. Allowed?",
       "choices": [
-        "No \u2014 structure reference only",
-        "Yes",
-        "Yes the C++ stack",
-        "Yes the exams"
+        "No \u2014 cite the weekly shape only; ship original WAIKE Python",
+        "Yes, the repo is public",
+        "Yes if comments are stripped",
+        "Yes the hidden tests"
       ]
     }
   ]

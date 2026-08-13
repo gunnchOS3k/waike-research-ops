@@ -37,12 +37,12 @@
     {
       "id": "CYBERSECURITY-fin-04",
       "kind": "mcq",
-      "stem": "World-writable home is?",
+      "stem": "Baseline JSON for harbor-img-07 shows /home/naiya mode 0777. Which control fails?",
       "choices": [
-        "Friendly",
-        "Required for cups",
-        "A confidentiality/integrity failure",
-        "IPv6"
+        "Availability only",
+        "cups cannot print",
+        "Confidentiality and integrity of Naiya's files",
+        "IPv6 RA"
       ]
     },
     {
@@ -81,12 +81,12 @@
     {
       "id": "CYBERSECURITY-fin-08",
       "kind": "mcq",
-      "stem": "Kiosk SMB to staff shares should?",
+      "stem": "A volunteer opens \\\\staff-fs\\payroll from a public kiosk 'to print labels.' Harbor response?",
       "choices": [
-        "Be required",
-        "Be DNS",
-        "Stay denied",
-        "Be MFA"
+        "Permit SMB forever",
+        "Call it DNS",
+        "Keep deny; use the desk print procedure instead",
+        "Require MFA then allow"
       ]
     },
     {
@@ -103,12 +103,12 @@
     {
       "id": "CYBERSECURITY-fin-10",
       "kind": "mcq",
-      "stem": "Press release as the first IR step?",
+      "stem": "At T+4 minutes after the stolen-laptop call, an intern drafts a public blog post before sessions are revoked. Clock check?",
       "choices": [
-        "No \u2014 contain first",
-        "Yes",
-        "Yes if a model writes it",
-        "Yes on guest Wi-Fi"
+        "Wrong \u2014 revoke/contain before press",
+        "Correct \u2014 communicate first",
+        "Correct if a model writes it",
+        "Correct on guest Wi-Fi"
       ]
     },
     {
@@ -169,12 +169,12 @@
     {
       "id": "CYBERSECURITY-fin-16",
       "kind": "mcq",
-      "stem": "The toy parser bug is?",
+      "stem": "Fixture buf starts 0x14 then five bytes of ASCII 'short'. Why does the unsafe Harbor parser misbehave?",
       "choices": [
-        "A live campus CMS 0-day",
-        "OSPF",
-        "Trusting a length byte without remaining-byte checks",
-        "exFAT"
+        "It is a campus CMS 0-day",
+        "OSPF adjacency",
+        "It treats 0x14 as length without checking remaining bytes",
+        "exFAT limit"
       ]
     },
     {
@@ -202,23 +202,23 @@
     {
       "id": "CYBERSECURITY-fin-19",
       "kind": "mcq",
-      "stem": "Safe parser on honest 4+abcd returns?",
+      "stem": "Safe Harbor parser is given bytes [4, 97, 98, 99, 100]. What payload should the lab JSON report?",
       "choices": [
-        "Raises",
-        "b'abcd'",
-        "Opens a socket",
-        "Grants sudo"
+        "raise ValueError",
+        "abcd",
+        "open 8.8.8.8",
+        "grant sudo"
       ]
     },
     {
       "id": "CYBERSECURITY-fin-20",
       "kind": "mcq",
-      "stem": "A real WAIKE bug found outside the fixture. You?",
+      "stem": "During week 8 a student finds an oversize-length crash in a Harbor tool that is not the course fixture. Next action?",
       "choices": [
-        "Exploit silently",
-        "Post to a dump site",
-        "Report it; do not 'practice' on it",
-        "Put a PoC in a quiz stem"
+        "Quietly exploit it",
+        "Post it to a dump site",
+        "Report it and stop; do not 'practice' on live software",
+        "Paste a PoC into a quiz stem"
       ]
     },
     {
@@ -235,12 +235,12 @@
     {
       "id": "CYBERSECURITY-fin-22",
       "kind": "mcq",
-      "stem": "Can we claim ada is the USB person from that fixture?",
+      "stem": "USB timeline names device sdb1 and path essay.docx, never a username. May the write-up name ada as the copier?",
       "choices": [
-        "No \u2014 fixture does not identify the human",
+        "No \u2014 the fixture does not identify the human",
         "Yes",
-        "Yes if burst",
-        "Yes if guest"
+        "Yes if there was a burst",
+        "Yes if guest VLAN"
       ]
     },
     {
@@ -257,11 +257,11 @@
     {
       "id": "CYBERSECURITY-fin-24",
       "kind": "mcq",
-      "stem": "Scanning random Internet hosts for the Harbor capstone?",
+      "stem": "Capstone teammate runs masscan against 1.2.3.0/24 'to practice Harbor IR.' Allowed?",
       "choices": [
-        "Encouraged",
-        "Extra credit",
-        "Forbidden",
+        "Yes for extra credit",
+        "Yes if done at night",
+        "No \u2014 only course_ctf_fixture in this repo",
         "Required by 800-61"
       ]
     }

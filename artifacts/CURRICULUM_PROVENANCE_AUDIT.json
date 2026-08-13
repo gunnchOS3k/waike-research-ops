@@ -76,19 +76,32 @@
     "GENERAL_IT": {
       "weekly_stems": 60,
       "mid_original": 20,
-      "final_original": 24
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6471
     },
     "COMPUTER_NETWORKING": {
       "weekly_stems": 60,
       "mid_original": 20,
-      "final_original": 24
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6923
     },
     "CYBERSECURITY": {
       "weekly_stems": 60,
       "mid_original": 20,
-      "final_original": 24
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6667
     }
   },
+  "exam_token_identical": 0,
+  "exam_token_jaccard_ge_0_80": 0,
+  "worst_exam_weekly_token_jaccard": 0.6923,
+  "exam_restatement_hits": [],
   "registry_size": 16,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."

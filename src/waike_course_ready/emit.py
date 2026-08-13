@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from waike_course_ready.content import COURSES, extra_assessment_items
+from waike_course_ready.exams import exam_is_restatement
 from waike_course_ready.labs import COURSE_LABS
 from waike_course_ready.packaging import (
     SYLLABUS_ASSESSMENT,
@@ -223,12 +224,14 @@ def emit_course(course_id: str) -> dict[str, Any]:
                 for i in extras["mid"]
                 if i["stem"] not in {q["stem"] for w in c["weeks"] for q in w["quiz"]}
                 and not str(i["stem"]).startswith("Mid-course check:")
+                and not exam_is_restatement(i["stem"], [q["stem"] for w in c["weeks"] for q in w["quiz"]])
             ),
             "final_items_original": sum(
                 1
                 for i in extras["final"]
                 if i["stem"] not in {q["stem"] for w in c["weeks"] for q in w["quiz"]}
                 and not str(i["stem"]).startswith("Capstone check:")
+                and not exam_is_restatement(i["stem"], [q["stem"] for w in c["weeks"] for q in w["quiz"]])
             ),
             "practicals": 1,
             "projects": 1,

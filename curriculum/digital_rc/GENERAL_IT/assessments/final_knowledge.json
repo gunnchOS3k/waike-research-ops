@@ -15,12 +15,12 @@
     {
       "id": "GENERAL_IT-fin-02",
       "kind": "mcq",
-      "stem": "Exhaust 78 C after dust. Next measurement?",
+      "stem": "Ticket 4620: after vacuuming the Civic intake, exhaust still reads 81 C at idle. What do you log before opening an RMA?",
       "choices": [
-        "Immediate RMA",
-        "Overclock the fan",
-        "Clean intake, re-measure temperature",
-        "Reinstall Debian"
+        "Ship the chassis today",
+        "Disable the fan",
+        "Confirm intake is clear, wait ten minutes, record a second temperature",
+        "Reinstall Windows"
       ]
     },
     {
@@ -114,12 +114,12 @@
     {
       "id": "GENERAL_IT-fin-11",
       "kind": "mcq",
-      "stem": "AI browser extension asks for admin on the public kiosk. You?",
+      "stem": "A 'homework helper' Chrome add-on on kiosk-3 requests local-admin to 'install a driver' (ticket 4628). Operator move?",
       "choices": [
-        "Grant it",
-        "Store its token in ticket 4502",
-        "Disable idle logout",
-        "Refuse \u2014 non-human tools do not get sudo on the public image"
+        "Approve because students asked",
+        "Paste the vendor token into the ticket",
+        "Turn off the idle timer so it can finish",
+        "Refuse and remove the add-on \u2014 the public image does not grant admin to extensions"
       ]
     },
     {
@@ -169,12 +169,12 @@
     {
       "id": "GENERAL_IT-fin-16",
       "kind": "mcq",
-      "stem": "sshd on the desk image is present because?",
+      "stem": "Ticket 4633: a patron asks why port 22 is listening on the Civic kiosk. Honest answer?",
       "choices": [
-        "Staff recovery path in this lab",
-        "Patrons need it",
-        "It is the guest portal",
-        "Port 631"
+        "Staff recovery path for this lab image \u2014 not a public service",
+        "So patrons can log in from home",
+        "It is the guest captive portal",
+        "cups moved to 22"
       ]
     },
     {

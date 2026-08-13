@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from waike_course_ready.content import COURSES, extra_assessment_items
+from waike_course_ready.exams import TOKEN_JACCARD_FAIL, nearest_weekly, token_identical
 from waike_course_ready.ingest import build_learner, build_product_catalog, build_teacher
 from waike_course_ready.labs import _fail_if_print_pass, run_all, run_lab
 from waike_course_ready.packaging import SYLLABUS_ASSESSMENT, rubrics
@@ -62,15 +63,17 @@ def test_empty_and_print_pass_fail():
 def test_mid_final_not_weekly_clones():
     for cid in COURSES:
         weekly = {i["stem"] for w in COURSES[cid]["weeks"] for i in w["quiz"]}
+        weekly_list = list(weekly)
         extras = extra_assessment_items(cid)
         assert len(extras["mid"]) == 20
         assert len(extras["final"]) == 24
-        for item in extras["mid"]:
+        for item in extras["mid"] + extras["final"]:
             assert item["stem"] not in weekly, (cid, item["id"])
             assert not item["stem"].startswith("Mid-course check:")
-        for item in extras["final"]:
-            assert item["stem"] not in weekly, (cid, item["id"])
             assert not item["stem"].startswith("Capstone check:")
+            j, near = nearest_weekly(item["stem"], weekly_list)
+            assert not token_identical(item["stem"], near), (cid, item["id"], item["stem"], near)
+            assert j < TOKEN_JACCARD_FAIL, (cid, item["id"], j, item["stem"], near)
 
 
 def test_answer_keys_not_collapsed():
@@ -120,4 +123,6 @@ def test_provenance_pass():
     result = audit()
     assert result["BATCH_TEMPLATED_COURSES"] == 0
     assert result["BATCH_STUB_COURSES"] == 0
+    assert result["exam_token_identical"] == 0, result.get("exam_restatement_hits")
+    assert result["exam_token_jaccard_ge_0_80"] == 0, result.get("exam_restatement_hits")
     assert result["status"] == "PASS", result["findings"]

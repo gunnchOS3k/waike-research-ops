@@ -1,7 +1,7 @@
 {
   "schema": "waike.teacher_ingest.v1",
   "role": "educator",
-  "generated_utc": "2026-08-13T20:56:56Z",
+  "generated_utc": "2026-08-13T21:04:41Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -1059,12 +1059,12 @@
           },
           {
             "id": "GENERAL_IT-mid-20",
-            "stem": "Why not patch Windows 11 and Debian in the same hour on the dual-boot kiosk?",
+            "stem": "Ticket 4611: a volunteer starts `apt upgrade` on Debian while Windows Update is already downloading on the same Civic kiosk during Saturday hours. First stop?",
             "choices": [
-              "Licensing",
-              "Debian cannot patch",
-              "Windows forbids GRUB",
-              "Keep one image bootable; GRUB/update collision risk during public hours"
+              "Let both finish",
+              "Disable GRUB forever",
+              "Grant kiosk sudo",
+              "Abort one image so the other stays bootable; reschedule the second to Wednesday 21:00"
             ]
           }
         ],
@@ -1081,12 +1081,12 @@
           },
           {
             "id": "GENERAL_IT-fin-02",
-            "stem": "Exhaust 78 C after dust. Next measurement?",
+            "stem": "Ticket 4620: after vacuuming the Civic intake, exhaust still reads 81 C at idle. What do you log before opening an RMA?",
             "choices": [
-              "Immediate RMA",
-              "Overclock the fan",
-              "Clean intake, re-measure temperature",
-              "Reinstall Debian"
+              "Ship the chassis today",
+              "Disable the fan",
+              "Confirm intake is clear, wait ten minutes, record a second temperature",
+              "Reinstall Windows"
             ]
           },
           {
@@ -1171,12 +1171,12 @@
           },
           {
             "id": "GENERAL_IT-fin-11",
-            "stem": "AI browser extension asks for admin on the public kiosk. You?",
+            "stem": "A 'homework helper' Chrome add-on on kiosk-3 requests local-admin to 'install a driver' (ticket 4628). Operator move?",
             "choices": [
-              "Grant it",
-              "Store its token in ticket 4502",
-              "Disable idle logout",
-              "Refuse \u2014 non-human tools do not get sudo on the public image"
+              "Approve because students asked",
+              "Paste the vendor token into the ticket",
+              "Turn off the idle timer so it can finish",
+              "Refuse and remove the add-on \u2014 the public image does not grant admin to extensions"
             ]
           },
           {
@@ -1221,12 +1221,12 @@
           },
           {
             "id": "GENERAL_IT-fin-16",
-            "stem": "sshd on the desk image is present because?",
+            "stem": "Ticket 4633: a patron asks why port 22 is listening on the Civic kiosk. Honest answer?",
             "choices": [
-              "Staff recovery path in this lab",
-              "Patrons need it",
-              "It is the guest portal",
-              "Port 631"
+              "Staff recovery path for this lab image \u2014 not a public service",
+              "So patrons can log in from home",
+              "It is the guest captive portal",
+              "cups moved to 22"
             ]
           },
           {
@@ -2814,12 +2814,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-mid-09",
-            "stem": "IPv4 IHL=5 means header length?",
+            "stem": "On the Pier capture, byte 14 is 0x45. How many bytes of IPv4 header do you skip before the TCP header starts?",
             "choices": [
-              "5 bytes",
-              "20 bytes",
-              "40 bytes",
-              "8 bytes"
+              "5",
+              "20",
+              "45",
+              "8"
             ]
           },
           {
@@ -2914,22 +2914,22 @@
           },
           {
             "id": "COMPUTER_NETWORKING-mid-19",
-            "stem": "Access port vs trunk in one line?",
+            "stem": "Gi1/0/8 is untagged VLAN 20 for the catalog PC; Gi1/0/24 must carry VLAN 20 and 30 toward the Yard switch. Which is which?",
             "choices": [
-              "They are identical",
-              "Trunks are IPv6 only",
-              "Access ports run BGP",
-              "Access is untagged membership; trunk carries tags"
+              "Both trunks",
+              "Gi1/0/8 trunk; Gi1/0/24 access",
+              "Both run BGP",
+              "Gi1/0/8 access VLAN 20; Gi1/0/24 802.1Q trunk"
             ]
           },
           {
             "id": "COMPUTER_NETWORKING-mid-20",
-            "stem": "This course copies Stanford CS144 lab code?",
+            "stem": "A teammate pastes a Stanford CS144 C++ reliable-transport skeleton into the Packet Range practical. Allowed?",
             "choices": [
-              "No \u2014 structure reference only",
-              "Yes",
-              "Yes the C++ stack",
-              "Yes the exams"
+              "No \u2014 cite the weekly shape only; ship original WAIKE Python",
+              "Yes, the repo is public",
+              "Yes if comments are stripped",
+              "Yes the hidden tests"
             ]
           }
         ],
@@ -2976,12 +2976,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-05",
-            "stem": "MAC flapping is evidence of?",
+            "stem": "aa:aa:aa:aa:aa:10 shows on Gi1/0/8 then Gi1/0/12 every 200 ms after two extra patch cables were added. What does that log mean?",
             "choices": [
-              "Healthy LPM",
-              "TCP AIMD",
-              "A loop or a move storm",
-              "DHCP snooping success"
+              "LPM is healthy",
+              "AIMD backing off",
+              "A loop or a station bouncing ports",
+              "DHCP snooping working"
             ]
           },
           {
@@ -2996,12 +2996,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-07",
-            "stem": "B-D cost becomes 20. A\u2192D now prefers?",
+            "stem": "On the four-router town you set link B\u2013D from 2 to 20 and recompute. Which A-to-D path wins?",
             "choices": [
               "A-C-D at 10",
-              "Still A-B-D at 22",
-              "Flood Ethernet",
-              "Drop TTL"
+              "A-B-D at 22",
+              "Flood every Ethernet",
+              "Drop on TTL"
             ]
           },
           {
@@ -3016,22 +3016,22 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-09",
-            "stem": "Administrative distance is?",
+            "stem": "Pier has OSPF (typical AD 110, cost 20) to 10.20.40.0/24 and a static with AD 1 to the same prefix. Which path is installed?",
             "choices": [
-              "Cable meters",
-              "STP priority",
-              "Trust ranking among route sources",
-              "cwnd"
+              "OSPF, because cost 20 is smaller",
+              "Load-balance both",
+              "The static, because AD 1 outranks OSPF 110",
+              "Neither until STP converges"
             ]
           },
           {
             "id": "COMPUTER_NETWORKING-fin-10",
-            "stem": "Second identical DNS lookup in the toy resolver should be?",
+            "stem": "desk.gary.waike.example is asked twice in one lab run. First walk hits auth at 203.0.113.14. The second answer should come from?",
             "choices": [
-              "auth_walk",
+              "another TLD walk",
               "nxdomain",
-              "OSPF",
-              "cache"
+              "OSPF LSAs",
+              "the resolver cache"
             ]
           },
           {
@@ -3046,12 +3046,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-12",
-            "stem": "DHCP lease 3600 seconds means?",
+            "stem": "Yard printer lease started 14:00 with 3600 s. At 14:50 someone unplugs the closet router. If the printer cannot renew, when does 10.20.30.40 become a rumor?",
             "choices": [
-              "Permanent",
-              "About one hour unless renewed",
-              "A /32 route",
-              "BPDU guard"
+              "Immediately",
+              "Around 15:00 unless it renewed",
+              "Never \u2014 DHCP is permanent",
+              "After STP reconverges"
             ]
           },
           {
@@ -3086,12 +3086,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-16",
-            "stem": "`permit ip any any` as first line does what?",
+            "stem": "Student ACL line 1 is `permit ip any any`, then deny tcp/23. What happens to telnet from Pier?",
             "choices": [
-              "Hardens the edge",
-              "Turns the ACL into wallpaper",
-              "Required by RFC 791",
-              "Replaces NAT"
+              "Telnet dies",
+              "Telnet is permitted because first match wins, so later denies are wallpaper",
+              "RFC 791 requires it",
+              "NAT replaces the ACL"
             ]
           },
           {
@@ -3106,22 +3106,22 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-18",
-            "stem": "Staff tools should prefer?",
+            "stem": "Roof jump-host ACL in the capstone intent file: which pair is permitted?",
             "choices": [
-              "Telnet and HTTP",
-              "Port 9",
-              "Anonymous FTP",
-              "SSH and HTTPS"
+              "tcp/23 and tcp/80",
+              "udp/9 and tcp/21",
+              "tcp/23 only",
+              "tcp/22 and tcp/443"
             ]
           },
           {
             "id": "COMPUTER_NETWORKING-fin-19",
-            "stem": "Intent JSON missing a next-hop should?",
+            "stem": "Capstone intent for 10.20.40.0/24 lists iface eth1 but omits `nh`. Validator result?",
             "choices": [
-              "Fail the validator",
+              "Fail \u2014 incomplete forwarding intent",
               "Silently pass",
               "Start STP",
-              "Grant CCNA"
+              "Issue a CCNA number"
             ]
           },
           {
@@ -3136,22 +3136,22 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-21",
-            "stem": "Guest VLAN reaching Roof management is?",
+            "stem": "After the capstone, a guest laptop on VLAN 40 pings 10.20.99.1 (Roof mgmt). What failed?",
             "choices": [
-              "The goal",
-              "NAT",
-              "A segmentation failure",
-              "SPF"
+              "Nothing \u2014 guests need Roof",
+              "SPF cost math",
+              "Guest ACL / VLAN isolation",
+              "NAT pool size"
             ]
           },
           {
             "id": "COMPUTER_NETWORKING-fin-22",
-            "stem": "Does this course grant CCNA 200-301?",
+            "stem": "A resume line after Packet Range says 'CCNA 200-301 certified by WAIKE.' Allowed?",
             "choices": [
               "Yes",
-              "Yes if labs pass",
-              "Yes after week 4",
-              "No"
+              "Yes if all labs are green",
+              "Yes after the datapath practical",
+              "No \u2014 this packet aligns to domains; it does not grant the credential"
             ]
           },
           {
@@ -3166,12 +3166,12 @@
           },
           {
             "id": "COMPUTER_NETWORKING-fin-24",
-            "stem": "Rogue DHCP under the table typically?",
+            "stem": "A travel router under the catalog table offers 192.168.0.1 as gateway while Pier DHCP is 10.20.30.1. What happens to kiosk-3?",
             "choices": [
-              "Improves SPF",
-              "Hands out a lying default gateway",
-              "Fixes TTL",
-              "Enables BPDU guard"
+              "SPF improves",
+              "It may install a lying default route and blackhole civic DNS",
+              "TTL is repaired",
+              "BPDU guard enables itself"
             ]
           }
         ],
@@ -4629,12 +4629,12 @@
           },
           {
             "id": "CYBERSECURITY-mid-04",
-            "stem": "Library PANs in the model context window?",
+            "stem": "Harbor-bot ticket H-22 includes a pasted library-card number 'so the model can look it up.' Policy?",
             "choices": [
-              "Fine if TLS",
-              "Violate Harbor confidentiality policy",
-              "Required for CCNA",
-              "Fix AIMD"
+              "Fine under TLS",
+              "Reject the prompt \u2014 PANs do not enter the bot context",
+              "Required for the CC map",
+              "Fixes AIMD"
             ]
           },
           {
@@ -4699,22 +4699,22 @@
           },
           {
             "id": "CYBERSECURITY-mid-11",
-            "stem": "Kiosk initiating connections to SOC should be?",
+            "stem": "Zone matrix row for case H-31: kiosk-3 opens TCP/443 to the SOC SIEM. Verdict?",
             "choices": [
-              "Deny",
-              "Allow all",
-              "NAT",
-              "OSPF"
+              "Deny \u2014 kiosks do not originate toward SOC",
+              "Allow \u2014 kiosks report home",
+              "NAT it",
+              "Advertise it in OSPF"
             ]
           },
           {
             "id": "CYBERSECURITY-mid-12",
-            "stem": "SOC pulling kiosk syslog is modeled as?",
+            "stem": "Harbor matrix: SOC collector reaches kiosk-3 on UDP/514 and nothing else. Label the cell?",
             "choices": [
-              "Deny",
+              "deny",
               "allow_syslog_only",
-              "Full RDP",
-              "Guest"
+              "full RDP",
+              "guest"
             ]
           },
           {
@@ -4831,12 +4831,12 @@
           },
           {
             "id": "CYBERSECURITY-fin-04",
-            "stem": "World-writable home is?",
+            "stem": "Baseline JSON for harbor-img-07 shows /home/naiya mode 0777. Which control fails?",
             "choices": [
-              "Friendly",
-              "Required for cups",
-              "A confidentiality/integrity failure",
-              "IPv6"
+              "Availability only",
+              "cups cannot print",
+              "Confidentiality and integrity of Naiya's files",
+              "IPv6 RA"
             ]
           },
           {
@@ -4871,12 +4871,12 @@
           },
           {
             "id": "CYBERSECURITY-fin-08",
-            "stem": "Kiosk SMB to staff shares should?",
+            "stem": "A volunteer opens \\\\staff-fs\\payroll from a public kiosk 'to print labels.' Harbor response?",
             "choices": [
-              "Be required",
-              "Be DNS",
-              "Stay denied",
-              "Be MFA"
+              "Permit SMB forever",
+              "Call it DNS",
+              "Keep deny; use the desk print procedure instead",
+              "Require MFA then allow"
             ]
           },
           {
@@ -4891,12 +4891,12 @@
           },
           {
             "id": "CYBERSECURITY-fin-10",
-            "stem": "Press release as the first IR step?",
+            "stem": "At T+4 minutes after the stolen-laptop call, an intern drafts a public blog post before sessions are revoked. Clock check?",
             "choices": [
-              "No \u2014 contain first",
-              "Yes",
-              "Yes if a model writes it",
-              "Yes on guest Wi-Fi"
+              "Wrong \u2014 revoke/contain before press",
+              "Correct \u2014 communicate first",
+              "Correct if a model writes it",
+              "Correct on guest Wi-Fi"
             ]
           },
           {
@@ -4951,12 +4951,12 @@
           },
           {
             "id": "CYBERSECURITY-fin-16",
-            "stem": "The toy parser bug is?",
+            "stem": "Fixture buf starts 0x14 then five bytes of ASCII 'short'. Why does the unsafe Harbor parser misbehave?",
             "choices": [
-              "A live campus CMS 0-day",
-              "OSPF",
-              "Trusting a length byte without remaining-byte checks",
-              "exFAT"
+              "It is a campus CMS 0-day",
+              "OSPF adjacency",
+              "It treats 0x14 as length without checking remaining bytes",
+              "exFAT limit"
             ]
           },
           {
@@ -4981,22 +4981,22 @@
           },
           {
             "id": "CYBERSECURITY-fin-19",
-            "stem": "Safe parser on honest 4+abcd returns?",
+            "stem": "Safe Harbor parser is given bytes [4, 97, 98, 99, 100]. What payload should the lab JSON report?",
             "choices": [
-              "Raises",
-              "b'abcd'",
-              "Opens a socket",
-              "Grants sudo"
+              "raise ValueError",
+              "abcd",
+              "open 8.8.8.8",
+              "grant sudo"
             ]
           },
           {
             "id": "CYBERSECURITY-fin-20",
-            "stem": "A real WAIKE bug found outside the fixture. You?",
+            "stem": "During week 8 a student finds an oversize-length crash in a Harbor tool that is not the course fixture. Next action?",
             "choices": [
-              "Exploit silently",
-              "Post to a dump site",
-              "Report it; do not 'practice' on it",
-              "Put a PoC in a quiz stem"
+              "Quietly exploit it",
+              "Post it to a dump site",
+              "Report it and stop; do not 'practice' on live software",
+              "Paste a PoC into a quiz stem"
             ]
           },
           {
@@ -5011,12 +5011,12 @@
           },
           {
             "id": "CYBERSECURITY-fin-22",
-            "stem": "Can we claim ada is the USB person from that fixture?",
+            "stem": "USB timeline names device sdb1 and path essay.docx, never a username. May the write-up name ada as the copier?",
             "choices": [
-              "No \u2014 fixture does not identify the human",
+              "No \u2014 the fixture does not identify the human",
               "Yes",
-              "Yes if burst",
-              "Yes if guest"
+              "Yes if there was a burst",
+              "Yes if guest VLAN"
             ]
           },
           {
@@ -5031,11 +5031,11 @@
           },
           {
             "id": "CYBERSECURITY-fin-24",
-            "stem": "Scanning random Internet hosts for the Harbor capstone?",
+            "stem": "Capstone teammate runs masscan against 1.2.3.0/24 'to practice Harbor IR.' Allowed?",
             "choices": [
-              "Encouraged",
-              "Extra credit",
-              "Forbidden",
+              "Yes for extra credit",
+              "Yes if done at night",
+              "No \u2014 only course_ctf_fixture in this repo",
               "Required by 800-61"
             ]
           }
