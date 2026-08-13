@@ -1,0 +1,225 @@
+{
+  "assessment_id": "GENERAL_IT-mid",
+  "items": [
+    {
+      "id": "GENERAL_IT-mid-01",
+      "kind": "mcq",
+      "stem": "Ticket 4417 lost an essay after 20 idle minutes. Which job failed first?",
+      "choices": [
+        "Talk (network)",
+        "Remember (session/files)",
+        "Calculate (CPU thermal)",
+        "Print spooler"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-02",
+      "kind": "mcq",
+      "stem": "Idle logout is 1200 seconds. How many minutes is that?",
+      "choices": [
+        "12",
+        "15",
+        "20",
+        "1200"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-03",
+      "kind": "mcq",
+      "stem": "A patron dictates a password at the desk. What do you record in the ticket?",
+      "choices": [
+        "The password in plaintext",
+        "'credential reset requested' and no secret",
+        "A screenshot of the login form",
+        "The library card PAN"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-04",
+      "kind": "mcq",
+      "stem": "Which statement is an observation, not an inference?",
+      "choices": [
+        "The kiosk is broken",
+        "The Internet is down",
+        "The textarea was empty after idle logout at 14:28",
+        "Someone hacked the kiosk"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-05",
+      "kind": "mcq",
+      "stem": "Why does the lab mark extra Desktop folders as clutter?",
+      "choices": [
+        "Desktop is faster storage",
+        "Required paths are the contract; extras are not the job",
+        "Windows forbids Desktop folders",
+        "Antivirus scans Desktop only"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-06",
+      "kind": "mcq",
+      "stem": "Which restore method is acceptable for 4417 besides Undo?",
+      "choices": [
+        "Disable the idle timer forever",
+        "Copy from auto-save or previous export if present",
+        "Reimage the kiosk immediately",
+        "Post the essay to Discord"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-07",
+      "kind": "mcq",
+      "stem": "A 4.7 GiB video vanishes on a camera card. Most likely filesystem limit?",
+      "choices": [
+        "ext4 16 TiB file cap",
+        "FAT32 4 GiB file cap",
+        "exFAT forbids video",
+        "NTFS compression"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-08",
+      "kind": "mcq",
+      "stem": "Disk 100%, CPU 4%, UI frozen. First evidence to capture?",
+      "choices": [
+        "Reboot immediately",
+        "Disk queue / Task Manager Performance",
+        "Reinstall Windows",
+        "Disable Debian GRUB"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-09",
+      "kind": "mcq",
+      "stem": "Why not patch Windows and Debian in the same hour on a dual-boot kiosk?",
+      "choices": [
+        "Licensing",
+        "Bootloader/update collision risk during the only public hours",
+        "Debian cannot be patched",
+        "Windows 11 forbids GRUB"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-10",
+      "kind": "mcq",
+      "stem": "Which pair is the same operator verb?",
+      "choices": [
+        "icacls and chmod",
+        "robocopy and systemctl",
+        "top and cupsd",
+        "GRUB and BitLocker"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-11",
+      "kind": "mcq",
+      "stem": "Staff recovery stick should be which filesystem in this course?",
+      "choices": [
+        "FAT32",
+        "exFAT",
+        "ext4",
+        "ISO9660"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-12",
+      "kind": "mcq",
+      "stem": "Patron share that Windows and a camera must both read: pick",
+      "choices": [
+        "ext4",
+        "ZFS",
+        "exFAT",
+        "Btrfs"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-13",
+      "kind": "mcq",
+      "stem": "Why does the lab fail if kiosk is in sudo?",
+      "choices": [
+        "sudo is deprecated",
+        "Shared kiosk must not be able to change the image",
+        "kiosk needs root for printing",
+        "UIDs must be even"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-14",
+      "kind": "mcq",
+      "stem": "Two passwd lines, same UID, different names. What is wrong?",
+      "choices": [
+        "Nothing if homes differ",
+        "Ownership collisions \u2014 a ghost shares files",
+        "Only Windows cares about UIDs",
+        "SSH will fix it"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-15",
+      "kind": "mcq",
+      "stem": "desk.lead may sudo for which task?",
+      "choices": [
+        "Install a random USB installer",
+        "Unlock a patron local account / restart cups",
+        "Disable the firewall permanently",
+        "Share the root password on paper"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-16",
+      "kind": "mcq",
+      "stem": "Fast User Switching is useful because",
+      "choices": [
+        "It wipes the spooler",
+        "A volunteer can leave without killing everyone else's jobs",
+        "It disables idle logout",
+        "It grants kiosk sudo"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-17",
+      "kind": "mcq",
+      "stem": "Time-boxed admin is an example of",
+      "choices": [
+        "Security through obscurity",
+        "Least privilege / support-shaped zero trust",
+        "Defense in depth via extra antivirus",
+        "NAT"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-18",
+      "kind": "mcq",
+      "stem": "Which home layout passes unique-homes?",
+      "choices": [
+        "/home/kiosk for both kiosk and lead",
+        "/root for everyone",
+        "/home/kiosk and /home/desk.lead",
+        "C:\\Users\\Public for Linux"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-19",
+      "kind": "mcq",
+      "stem": "256 GiB disk, 180 used, 12 reserved. Free GiB?",
+      "choices": [
+        "64",
+        "76",
+        "44",
+        "12"
+      ]
+    },
+    {
+      "id": "GENERAL_IT-mid-20",
+      "kind": "mcq",
+      "stem": "Why fail at 15% free instead of 0%?",
+      "choices": [
+        "Disks explode at 15%",
+        "Updates and profiles need headroom before 'full'",
+        "ext4 cannot use last 15%",
+        "CompTIA requires 15%"
+      ]
+    }
+  ]
+}

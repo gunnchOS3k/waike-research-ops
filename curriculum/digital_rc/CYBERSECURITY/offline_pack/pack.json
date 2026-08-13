@@ -1,0 +1,26 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "CYBERSECURITY",
+  "lesson_ids": [
+    "CYBERSECURITY-w01",
+    "CYBERSECURITY-w02",
+    "CYBERSECURITY-w03",
+    "CYBERSECURITY-w04",
+    "CYBERSECURITY-w05",
+    "CYBERSECURITY-w06",
+    "CYBERSECURITY-w07",
+    "CYBERSECURITY-w08",
+    "CYBERSECURITY-w09",
+    "CYBERSECURITY-w10"
+  ],
+  "labs": [
+    "lab_siem_triage",
+    "lab_hardening_baseline",
+    "lab_iam_rbac",
+    "lab_segmentation_zones",
+    "lab_incident_playbook",
+    "lab_safe_vuln_detect",
+    "lab_forensics_timeline"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

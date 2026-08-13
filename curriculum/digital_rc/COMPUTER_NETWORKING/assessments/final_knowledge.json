@@ -1,0 +1,269 @@
+{
+  "assessment_id": "COMPUTER_NETWORKING-final",
+  "items": [
+    {
+      "id": "COMPUTER_NETWORKING-fin-01",
+      "kind": "mcq",
+      "stem": "STP's job here is",
+      "choices": [
+        "Encrypt frames",
+        "Break L2 loops",
+        "Assign CIDR",
+        "Run AIMD"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-02",
+      "kind": "mcq",
+      "stem": "BPDU guard on access ports protects against",
+      "choices": [
+        "DNS cache",
+        "A volunteer mini-switch becoming root",
+        "IPv6 RA",
+        "NAT exhaustion"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-03",
+      "kind": "mcq",
+      "stem": "Root bridge is chosen by",
+      "choices": [
+        "Coffee proximity",
+        "Best priority then MAC",
+        "Highest TTL",
+        "Largest VLAN"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-04",
+      "kind": "mcq",
+      "stem": "EtherChannel mis-match risk",
+      "choices": [
+        "None",
+        "Loops / unpredictable forwarding",
+        "Better OSPF",
+        "Free CCNA"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-05",
+      "kind": "mcq",
+      "stem": "MAC flapping is evidence of",
+      "choices": [
+        "Healthy LPM",
+        "A loop or a move storm",
+        "TCP AIMD",
+        "DHCP snooping success"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-06",
+      "kind": "mcq",
+      "stem": "We paste Cisco running-config from exam dumps?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only STP",
+        "Only if offline"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-07",
+      "kind": "mcq",
+      "stem": "A\u2192D with costs AB=2 BD=2 AC=5 CD=5 is",
+      "choices": [
+        "10",
+        "4",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-08",
+      "kind": "mcq",
+      "stem": "SPF in this lab is",
+      "choices": [
+        "A Cisco dump",
+        "Dijkstra on the four-node town",
+        "AIMD",
+        "VLAN 20"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-09",
+      "kind": "mcq",
+      "stem": "If B-D becomes cost 20, A\u2192D prefers",
+      "choices": [
+        "Still A-B-D always",
+        "A-C-D cost 10",
+        "Flood Ethernet",
+        "Drop TTL"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-10",
+      "kind": "mcq",
+      "stem": "OSPF's job vs this lab",
+      "choices": [
+        "This lab floods LSAs",
+        "OSPF floods topology; we compute SPF on a known graph",
+        "OSPF is TCP",
+        "OSPF is a VLAN"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-11",
+      "kind": "mcq",
+      "stem": "Administrative distance is",
+      "choices": [
+        "Cable meters",
+        "Trust ranking among sources of routes",
+        "STP priority",
+        "cwnd"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-12",
+      "kind": "mcq",
+      "stem": "10.20.40.0/24 from Pier should next-hop",
+      "choices": [
+        "Shed at cost 10 if B-D is 2",
+        "Yard on the cost-4 path",
+        "Default WAN",
+        "STP root"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-13",
+      "kind": "mcq",
+      "stem": "Second identical DNS lookup in the lab should be",
+      "choices": [
+        "auth_walk",
+        "cache",
+        "nxdomain",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-14",
+      "kind": "mcq",
+      "stem": "NAT in this lab maps",
+      "choices": [
+        "MAC to VLAN",
+        "10.20.30.14 to 192.0.2.88",
+        "TCP to UDP",
+        "STP to SPF"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-15",
+      "kind": "mcq",
+      "stem": "DHCP lease 3600 seconds means",
+      "choices": [
+        "Permanent",
+        "You may use the address about one hour unless renewed",
+        "A /32 route",
+        "BPDU guard"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-16",
+      "kind": "mcq",
+      "stem": "Stale DNS A record after a printer move",
+      "choices": [
+        "Is a disk failure",
+        "Is a TTL/cache policy problem",
+        "Requires AIMD",
+        "Needs a new ASN"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-17",
+      "kind": "mcq",
+      "stem": "Syslog in this course is",
+      "choices": [
+        "A full NMS",
+        "A timestamped line in lab output",
+        "OSPF LSA",
+        "A CCNA dump"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-18",
+      "kind": "mcq",
+      "stem": "Iterative DNS walk order in the toy",
+      "choices": [
+        "Auth then stub",
+        "Stub then (on miss) authoritative, then cache",
+        "Only /etc/hosts",
+        "Only ICMP"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-19",
+      "kind": "mcq",
+      "stem": "Port 23 in this lab is",
+      "choices": [
+        "Permitted",
+        "Denied",
+        "NAT translated to 443",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-20",
+      "kind": "mcq",
+      "stem": "Star rule at the bottom is",
+      "choices": [
+        "Permit all",
+        "Visible implicit deny",
+        "STP",
+        "LPM"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-21",
+      "kind": "mcq",
+      "stem": "Rogue DHCP under the table typically",
+      "choices": [
+        "Improves SPF",
+        "Hands out a lying gateway",
+        "Fixes TTL",
+        "Enables BPDU guard"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-22",
+      "kind": "mcq",
+      "stem": "permit ip any any as first line",
+      "choices": [
+        "Hardens the edge",
+        "Turns the ACL into wallpaper",
+        "Is required by RFC 791",
+        "Replaces NAT"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-23",
+      "kind": "mcq",
+      "stem": "WIRELESS_6G track is",
+      "choices": [
+        "Deleted by this course",
+        "Kept as an advanced networking extension",
+        "Replaced by telnet",
+        "A CompTIA dump"
+      ]
+    },
+    {
+      "id": "COMPUTER_NETWORKING-fin-24",
+      "kind": "mcq",
+      "stem": "Staff tools should prefer",
+      "choices": [
+        "Telnet and HTTP",
+        "SSH and HTTPS",
+        "Port 9",
+        "Anonymous FTP"
+      ]
+    }
+  ]
+}

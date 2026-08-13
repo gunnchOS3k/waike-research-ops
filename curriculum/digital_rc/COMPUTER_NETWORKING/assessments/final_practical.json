@@ -1,0 +1,12 @@
+{
+  "practical_id": "COMPUTER_NETWORKING-practical",
+  "labs": [
+    "lab_cidr_math",
+    "lab_datapath",
+    "lab_vlan_mac",
+    "lab_spf_routing",
+    "lab_nat_acl",
+    "lab_dns_resolution"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

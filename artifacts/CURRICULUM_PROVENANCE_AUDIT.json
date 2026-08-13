@@ -1,0 +1,31 @@
+{
+  "schema": "waike.curriculum_provenance_audit.v1",
+  "status": "PASS",
+  "BATCH_TEMPLATED_COURSES": 0,
+  "BATCH_STUB_COURSES": 0,
+  "worst_jaccard": 0.0003,
+  "worst_pair": [
+    "GENERAL_IT",
+    "CYBERSECURITY"
+  ],
+  "pairs": [
+    {
+      "a": "GENERAL_IT",
+      "b": "CYBERSECURITY",
+      "jaccard_5gram": 0.0003
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "COMPUTER_NETWORKING",
+      "jaccard_5gram": 0.0
+    },
+    {
+      "a": "COMPUTER_NETWORKING",
+      "b": "CYBERSECURITY",
+      "jaccard_5gram": 0.0
+    }
+  ],
+  "registry_size": 16,
+  "findings": [],
+  "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."
+}

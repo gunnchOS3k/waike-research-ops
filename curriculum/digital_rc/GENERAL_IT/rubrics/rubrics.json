@@ -1,0 +1,140 @@
+[
+  {
+    "rubric_id": "GENERAL_IT-lab",
+    "title": "Runnable lab",
+    "criteria": [
+      {
+        "name": "validator_ok",
+        "weight": 40,
+        "desc": "Lab JSON ok=true with named checks"
+      },
+      {
+        "name": "evidence",
+        "weight": 30,
+        "desc": "Inputs/outputs attached, no PII"
+      },
+      {
+        "name": "explanation",
+        "weight": 30,
+        "desc": "Learner can say what a failing check means"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-assignment",
+    "title": "Weekly assignment",
+    "criteria": [
+      {
+        "name": "specific_numbers",
+        "weight": 40,
+        "desc": "Uses course numbers, not generic prose"
+      },
+      {
+        "name": "scope",
+        "weight": 30,
+        "desc": "Does not claim certs or unauthorized testing"
+      },
+      {
+        "name": "clarity",
+        "weight": 30,
+        "desc": "A stranger can continue the work"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-quiz",
+    "title": "Knowledge check",
+    "criteria": [
+      {
+        "name": "original",
+        "weight": 50,
+        "desc": "WAIKE stems, not vendor items"
+      },
+      {
+        "name": "keyed",
+        "weight": 50,
+        "desc": "Instructor key exists and is not in learner UI"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-mid",
+    "title": "Mid-course knowledge",
+    "criteria": [
+      {
+        "name": "coverage_weeks_1_5",
+        "weight": 100,
+        "desc": "Items map to weeks 1\u20135"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-final-knowledge",
+    "title": "Final knowledge",
+    "criteria": [
+      {
+        "name": "coverage_weeks_6_10",
+        "weight": 100,
+        "desc": "Items map to later weeks plus capstone"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-practical",
+    "title": "Final practical",
+    "criteria": [
+      {
+        "name": "labs_green",
+        "weight": 60,
+        "desc": "Required labs ok"
+      },
+      {
+        "name": "negative_fail",
+        "weight": 20,
+        "desc": "Mutated fixtures fail"
+      },
+      {
+        "name": "writeup",
+        "weight": 20,
+        "desc": "Honest claim boundary"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-project",
+    "title": "Group project",
+    "criteria": [
+      {
+        "name": "design",
+        "weight": 30,
+        "desc": "Design exists before implementation"
+      },
+      {
+        "name": "handoff",
+        "weight": 40,
+        "desc": "Recorder notes let a stranger continue"
+      },
+      {
+        "name": "ethics",
+        "weight": 30,
+        "desc": "No PII, no unauthorized targets"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GENERAL_IT-portfolio",
+    "title": "Portfolio",
+    "criteria": [
+      {
+        "name": "artifacts",
+        "weight": 70,
+        "desc": "Required artifacts present"
+      },
+      {
+        "name": "no_pii",
+        "weight": 30,
+        "desc": "No faces, secrets, or PANs"
+      }
+    ]
+  }
+]

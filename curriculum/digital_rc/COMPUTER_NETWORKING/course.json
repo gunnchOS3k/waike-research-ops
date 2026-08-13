@@ -1,0 +1,221 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "COMPUTER_NETWORKING",
+  "title": "Computer Networking \u2014 Packets to Campus Edge",
+  "track_ids": [
+    "NETWORKING_INFRA"
+  ],
+  "academy_id": "ACADEMY_NETWORKING",
+  "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
+  "lesson_excerpt": "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire agreed to that, not because the Internet is polite.\n\nEncapsulation is dressing: HTTP inside TCP inside IP inside Ethernet. Each header is a sticky",
+  "worked_example": "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. Peel Ethernet first (ethertype 0x0800), then IP, then TCP.",
+  "assignment": "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label who reads each header. No vendor GUI screenshots required.",
+  "lab_hint": "lab_cidr_math",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Packets are chopped on purpose",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w01",
+        "title": "Packets are chopped on purpose",
+        "body_md": "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire agreed to that, not because the Internet is polite.\n\nEncapsulation is dressing: HTTP inside TCP inside IP inside Ethernet. Each header is a sticky note for a different worker. The sticky note you peel first on receive is the one you added last on send. Learners who skip that sentence try to debug TCP checksums when the Ethernet destination MAC is wrong.\n\nMultiplexing is why port 443 and port 22 can share one IP. The 5-tuple (src IP, dst IP, protocol, src port, dst port) is the conversation ID. If you only look at IPs you will swear two students are 'the same traffic.'\n\nCS144's public weekly shape (principles \u2192 transport \u2192 switching \u2192 congestion \u2192 routing) is a structure we acknowledge. We do not copy Stanford code. This week's lab starts an original Ethernet/IPv4 parse you will finish in the datapath lab.",
+        "worked_example": "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. Peel Ethernet first (ethertype 0x0800), then IP, then TCP."
+      },
+      "lab_id": "lab_cidr_math"
+    },
+    {
+      "week": 2,
+      "title": "CIDR as a land survey, not a guessing game",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w02",
+        "title": "CIDR as a land survey, not a guessing game",
+        "body_md": "10.20.30.40/26 is not 'a class C with a funny number.' /26 means 26 bits of network, 6 bits of host, 64 addresses, network 10.20.30.0, broadcast 10.20.30.63, 62 usable if you still believe in network and broadcast addresses. The host .40 lives in that block the way a house lives on a surveyed lot.\n\nA second block 10.20.30.80/28 is 16 addresses, .80\u2013.95, 14 usable. If you put a printer at .96 you are in the next lot and the ACL you wrote for /28 will not save you.\n\nLongest prefix match is how a router chooses among overlapping lots. /32 beats /24 beats /16 beats /0. This is the same idea you will wire into the datapath lab, and it is why 'add a more specific' is a real change, not a superstition.\n\nIPv6 appears as a parallel survey (128 bits, no broadcast). We do not pretend a 10-week course makes you an IPv6 designer. You will be able to say why fe80:: is link-local and why it is not a public plan.",
+        "worked_example": "10.20.30.40/26 \u2192 net 10.20.30.0 bcast 10.20.30.63 usable 62. 10.20.30.80/28 \u2192 net 10.20.30.80 bcast 10.20.30.95 usable 14."
+      },
+      "lab_id": "lab_cidr_math"
+    },
+    {
+      "week": 3,
+      "title": "The MAC closet \u2014 learning, flooding, and VLAN 20",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w03",
+        "title": "The MAC closet \u2014 learning, flooding, and VLAN 20",
+        "body_md": "Pier hangs off Gi1/0/8 on VLAN 20. Yard hangs off Gi1/0/9 on VLAN 30. A frame destined to aa:aa:aa:aa:aa:10 in VLAN 20 egresses Gi1/0/8. The same MAC in VLAN 30 is a different key. If your mental model is 'MAC table is just MAC,' you have built a VLAN leak.\n\nUnknown unicasts flood inside the VLAN, not across it. That sentence is the difference between a campus and a party line. Trunks carry VLAN tags; access ports do not surprise patrons with tagged frames.\n\nCCNA v1.1 Network Access is the alignment label: VLANs, trunks, STP later. We configure none of that on a real Cisco in this packet. We compute forwarding on a fixture so the idea is testable offline.\n\nA loop without STP is how the Packet Range went dark in a previous cohort: two cables into the same closet, broadcast joy, CPU 100% on the cheap switch. Week 6 returns to that scar.",
+        "worked_example": "mac_table[(aa:aa:aa:aa:aa:10, 20)] = Gi1/0/8. Lookup with VLAN 30 misses. Isolation holds."
+      },
+      "lab_id": "lab_vlan_mac"
+    },
+    {
+      "week": 4,
+      "title": "Forwarding plane \u2014 TTL, LPM, and a crafted IPv4 frame",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w04",
+        "title": "Forwarding plane \u2014 TTL, LPM, and a crafted IPv4 frame",
+        "body_md": "This is the deep data-path week. You are handed a classroom-crafted Ethernet+IPv4+TCP frame. Destination MAC aa:aa:aa:aa:aa:01, ethertype 0x0800, IPv4 IHL 5, TTL 4, proto 6, src 10.20.30.14, dst 10.20.40.9. You parse bytes. You do not open Wireshark on a cafe network and call it a lab.\n\nThe forwarding table has 10.20.40.0/24 via 10.20.30.1 on eth1, a /16 on eth0, and a default out wan0. LPM must choose eth1. Adding 10.20.40.9/32 must steal the route to host9. TTL decrements; TTL 1 would drop instead of forward. That drop is a feature: loops die.\n\nRFC 791 is the field dictionary (version, IHL, TTL, protocol, addresses). We cite it; we do not paste pages of it. Checksums are mentioned; this lab does not require you to recompute the IP checksum unless you take the stretch goal.\n\nIf you treat the frame as a string of hex without slicing 0:6, 6:12, 12:14, you will invent an ethertype from the IP version nibble and then write a sad forum post.",
+        "worked_example": "dst 10.20.40.9 matches /24 better than /16. nh 10.20.30.1 iface eth1. TTL 4\u21923. Host route /32 wins when present."
+      },
+      "lab_id": "lab_datapath"
+    },
+    {
+      "week": 5,
+      "title": "Reliability on an unreliable wire \u2014 sequences, ACKs, AIMD on paper",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w05",
+        "title": "Reliability on an unreliable wire \u2014 sequences, ACKs, AIMD on paper",
+        "body_md": "TCP (current spec RFC 9293) pretends the wire is reliable by numbering bytes and refusing to live on hope. Sequence 1000, payload 200 bytes, ACK 1200 means 'I have everything before 1200.' If ACK 1000 returns, none of that payload is safe yet.\n\nThe three-way handshake is not a personality test. SYN, SYN-ACK, ACK. Data before the handshake completes is a bug in your mental model (or an experimental Fast Open you will not implement here).\n\nCongestion control in this course is AIMD arithmetic: cwnd 10, loss, halve to 5, then +1 per RTT. You will compute a table for 8 RTTs. You will not port a C++ TCP stack. That is the CS144 shape we refuse to copy and the WAIKE shape we can actually grade offline.\n\nFlow control (rwnd) is the receiver's remaining belly. Congestion control is the network's remaining belly. Mixing those two words is how people tune the wrong knob.",
+        "worked_example": "seq=1000 len=200 \u2192 ACK 1200 on full receipt. cwnd 10, loss \u2192 5, then 6,7,8... on additive increase per RTT without further loss."
+      },
+      "lab_id": "lab_datapath"
+    },
+    {
+      "week": 6,
+      "title": "When VLANs meet a loop \u2014 STP as a circuit breaker",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w06",
+        "title": "When VLANs meet a loop \u2014 STP as a circuit breaker",
+        "body_md": "Rapid PVST+ is a CCNA v1.1 phrase. In the Packet Range we treat STP as a circuit breaker: one forwarding tree per VLAN, blocked ports that would otherwise loop. Root bridge is the switch with the best priority+MAC, not the one closest to the coffee.\n\nBPDU guard on access ports is how a volunteer plugging a 'helpful' mini-switch does not become the new root. You will explain that sentence in plain English. You will not paste Cisco config from a dump.\n\nEtherChannel is two cables acting as one logical link so a single unplug does not partition Yard. It is not 'more Internet.' Misconfigured channel (one side on, one side off) is a loop factory.\n\nWeek 3's scar returns as a postmortem: which port should have been blocking, which VLAN flooded, and what evidence (CPU, MAC flapping) you would collect next time.",
+        "worked_example": "Two access cables into one closet without STP \u2192 storm. BPDU guard on access would err-disable the volunteer mini-switch instead of electing it root."
+      },
+      "lab_id": "lab_vlan_mac"
+    },
+    {
+      "week": 7,
+      "title": "Four-router town \u2014 SPF beats the scenic route",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w07",
+        "title": "Four-router town \u2014 SPF beats the scenic route",
+        "body_md": "Routers A (Pier), B (Yard), C (Shed), D (Roof). Costs: A-B 2, B-D 2, A-C 5, C-D 5, B-C 9. Shortest A\u2192D is A-B-D cost 4, not A-C-D cost 10. SPF is just Dijkstra on a weighted graph. OSPFv2 (RFC 2328) is the protocol that floods the graph; this lab computes the graph you already know.\n\nA routing table is not a suggestion. If Roof's LAN is 10.20.40.0/24, Pier installs that prefix via Yard. Administrative distance is a CCNA word for 'who do I trust when two protocols argue.' Static vs OSPF is enough for this course.\n\nFirst-hop redundancy is postponed to a paragraph: two gateways, one VIP, so a brick dying does not isolate the kiosk VLAN. We do not implement VRRP here.\n\nYou will trace one packet from Pier to Roof using last week's datapath plus this week's route. That is IP connectivity as a story, not a memorized command list.",
+        "worked_example": "dijkstra(A)['D']=4 via B. Scenic A-C-D=10 loses. Install 10.20.40.0/24 nh=Yard."
+      },
+      "lab_id": "lab_spf_routing"
+    },
+    {
+      "week": 8,
+      "title": "DHCP, DNS, NAT \u2014 services that lie for us on purpose",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w08",
+        "title": "DHCP, DNS, NAT \u2014 services that lie for us on purpose",
+        "body_md": "DHCP hands out leases so Pier does not keep a paper IP ledger. DNS walks stub \u2192 TLD \u2192 authoritative, then caches. The lab's second lookup must hit cache. NAT maps 10.20.30.14 to 192.0.2.88 so the library cache on the far side can answer without knowing our inside lot.\n\nLying is the feature: NAT lies about addresses, DNS lies about 'this name is that number for now,' DHCP lies about 'you may use this for 3600 seconds.' Troubleshooting is asking which liar expired.\n\nNTP, syslog, SNMP appear as a CCNA IP Services chorus. In WAIKE you will timestamp lab JSON and write one syslog line. You will not stand up a full NMS.\n\nA cache that never expires is how a moved printer becomes a ghost. TTL 300 on an A record is a policy. Set it, write it, do not blame 'the Internet.' When Roof moves to a new address at 16:00 and Pier still prints to the old one at 16:10, the liar is the cache, not the cable.",
+        "worked_example": "First resolve desk.gary.waike.example \u2192 203.0.113.14 via auth_walk. Second \u2192 cache. NAT inside 10.20.30.14 outside 192.0.2.88."
+      },
+      "lab_id": "lab_dns_resolution"
+    },
+    {
+      "week": 9,
+      "title": "ACLs that actually order, and the telnet we refuse",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w09",
+        "title": "ACLs that actually order, and the telnet we refuse",
+        "body_md": "An ACL is a story told top to bottom. Deny tcp/23, permit tcp/443, deny *. Telnet is a classroom fossil we refuse at the edge. HTTPS to the library cache is allowed. Port 9 discard is denied by the star rule \u2014 implicit deny made visible.\n\nDHCP snooping and ARP inspection are named so you can recognize a CCNA Security Fundamentals neighbor. We implement neither on silicon. We do write why a rogue DHCP under the table hands out 192.168.1.1 as a gateway and steals a cohort afternoon.\n\nWPA3 is a wireless security word you should be able to place next to 'guest SSID is isolated.' This is not a wireless engineering course (that is WIRELESS_6G, still alive as an advanced track).\n\nSSH not telnet, HTTPS not HTTP for staff tools, and no 'permit ip any any' at the top because that line is how ACLs become wallpaper.",
+        "worked_example": "decide(23)=deny, decide(443)=permit, decide(9)=deny. NAT still maps the inside host."
+      },
+      "lab_id": "lab_nat_acl"
+    },
+    {
+      "week": 10,
+      "title": "Campus edge capstone \u2014 intent files and a datapath proof",
+      "lesson": {
+        "lesson_id": "COMPUTER_NETWORKING-w10",
+        "title": "Campus edge capstone \u2014 intent files and a datapath proof",
+        "body_md": "You will ship a JSON intent file: VLANs, prefixes, ACL order, NAT, and the four-router costs. A tiny validator will reject missing next-hops. That is the automation domain without pretending we built a controller fabric.\n\nThe practical exam is the datapath lab plus a written trace of one packet from Pier to Roof including VLAN, LPM, TTL, and ACL. If those four nouns are not in the trace, the practical is incomplete.\n\nGroup project: redesign the Packet Range for a public Saturday with a guest VLAN that cannot reach Roof management. Present for eight minutes. No slide template from the old campus UPNOW generator \u2014 your topology is specific.\n\nCareer: this course aligns to CCNA v1.1 domains and to CS144's build-the-path ethos. It does not grant CCNA. It does not include Stanford solutions. If a recruiter asks 'did you pass CCNA,' the honest answer is 'I can show a datapath trace and an intent file,' not 'yes.' That sentence belongs in the portfolio.",
+        "worked_example": "Intent JSON must include prefix 10.20.40.0/24 nh via Yard, ACL deny 23, datapath ok=true."
+      },
+      "lab_id": "lab_datapath"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_cidr_math",
+    "lab_datapath",
+    "lab_vlan_mac",
+    "lab_spf_routing",
+    "lab_nat_acl",
+    "lab_dns_resolution"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "COMPUTER_NETWORKING-lab",
+    "COMPUTER_NETWORKING-assignment",
+    "COMPUTER_NETWORKING-quiz",
+    "COMPUTER_NETWORKING-mid",
+    "COMPUTER_NETWORKING-final-knowledge",
+    "COMPUTER_NETWORKING-practical",
+    "COMPUTER_NETWORKING-project",
+    "COMPUTER_NETWORKING-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_network_technician",
+      "campus_edge_operator"
+    ],
+    "certs_aligned_not_granted": [
+      "CCNA 200-301 v1.1"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/networking_alignment.json",
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 6,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

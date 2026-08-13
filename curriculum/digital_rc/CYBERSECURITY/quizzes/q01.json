@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "cy-w1-1",
+      "kind": "mcq",
+      "stem": "Upcoming ISC2 CC outline we prefer takes effect",
+      "choices": [
+        "2012-01-01",
+        "2026-09-01",
+        "1999-12-31",
+        "Never"
+      ]
+    },
+    {
+      "id": "cy-w1-2",
+      "kind": "mcq",
+      "stem": "Model poisoning primarily attacks",
+      "choices": [
+        "Availability of power",
+        "Integrity of the model's behavior",
+        "STP",
+        "CIDR"
+      ]
+    },
+    {
+      "id": "cy-w1-3",
+      "kind": "mcq",
+      "stem": "Harbor bot closing incidents would violate",
+      "choices": [
+        "MTU",
+        "Least privilege for non-human identity",
+        "IPv4 broadcast",
+        "exFAT"
+      ]
+    },
+    {
+      "id": "cy-w1-4",
+      "kind": "mcq",
+      "stem": "Library PANs in the model context window",
+      "choices": [
+        "Are fine if encrypted in transit only",
+        "Violate confidentiality policy here",
+        "Are required for CCNA",
+        "Fix AIMD"
+      ]
+    },
+    {
+      "id": "cy-w1-5",
+      "kind": "mcq",
+      "stem": "GRC owner for the kiosk image is",
+      "choices": [
+        "Anonymous",
+        "A named role in the memo",
+        "RFC 791",
+        "A CompTIA dump"
+      ]
+    },
+    {
+      "id": "cy-w1-6",
+      "kind": "mcq",
+      "stem": "This course copies ISC2 exam questions?",
+      "choices": [
+        "Yes",
+        "No",
+        "Yes after Sep 2026",
+        "Yes if offline"
+      ]
+    }
+  ]
+}

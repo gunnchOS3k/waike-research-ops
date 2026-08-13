@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "cy-w5-1",
+      "kind": "mcq",
+      "stem": "ssh_password_auth should be",
+      "choices": [
+        "True",
+        "False",
+        "Maybe",
+        "Port 23"
+      ]
+    },
+    {
+      "id": "cy-w5-2",
+      "kind": "mcq",
+      "stem": "ai_agent_sudo true is",
+      "choices": [
+        "Required",
+        "A fail",
+        "A VLAN",
+        "A DNS TTL"
+      ]
+    },
+    {
+      "id": "cy-w5-3",
+      "kind": "mcq",
+      "stem": "open_ports {22,80,3389} would",
+      "choices": [
+        "Pass",
+        "Fail the \u2264{22,443} check",
+        "Enable OSPF",
+        "Grant CC"
+      ]
+    },
+    {
+      "id": "cy-w5-4",
+      "kind": "mcq",
+      "stem": "800-53 in this course is",
+      "choices": [
+        "An exam dump",
+        "Open control-family labels",
+        "A Cisco ACL",
+        "A CS161 project"
+      ]
+    },
+    {
+      "id": "cy-w5-5",
+      "kind": "mcq",
+      "stem": "World-writable home is",
+      "choices": [
+        "Friendly",
+        "A confidentiality/integrity failure",
+        "Required for cups",
+        "IPv6"
+      ]
+    },
+    {
+      "id": "cy-w5-6",
+      "kind": "mcq",
+      "stem": "We scan the school's real /24?",
+      "choices": [
+        "Yes",
+        "No \u2014 fixture JSON only",
+        "Yes if offline",
+        "Yes with nmap from a dump"
+      ]
+    }
+  ]
+}

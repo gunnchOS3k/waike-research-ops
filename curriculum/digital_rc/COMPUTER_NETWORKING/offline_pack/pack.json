@@ -1,0 +1,25 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "COMPUTER_NETWORKING",
+  "lesson_ids": [
+    "COMPUTER_NETWORKING-w01",
+    "COMPUTER_NETWORKING-w02",
+    "COMPUTER_NETWORKING-w03",
+    "COMPUTER_NETWORKING-w04",
+    "COMPUTER_NETWORKING-w05",
+    "COMPUTER_NETWORKING-w06",
+    "COMPUTER_NETWORKING-w07",
+    "COMPUTER_NETWORKING-w08",
+    "COMPUTER_NETWORKING-w09",
+    "COMPUTER_NETWORKING-w10"
+  ],
+  "labs": [
+    "lab_cidr_math",
+    "lab_datapath",
+    "lab_vlan_mac",
+    "lab_spf_routing",
+    "lab_nat_acl",
+    "lab_dns_resolution"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

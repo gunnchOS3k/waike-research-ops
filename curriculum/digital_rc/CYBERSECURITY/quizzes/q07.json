@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "cy-w7-1",
+      "kind": "mcq",
+      "stem": "Wipe before contain",
+      "choices": [
+        "Is efficient",
+        "Destroys evidence / fails the lab order",
+        "Is 800-53 AU",
+        "Is LPM"
+      ]
+    },
+    {
+      "id": "cy-w7-2",
+      "kind": "mcq",
+      "stem": "Lessons learned belongs",
+      "choices": [
+        "First",
+        "Last",
+        "Never",
+        "In the ACL"
+      ]
+    },
+    {
+      "id": "cy-w7-3",
+      "kind": "mcq",
+      "stem": "ASAP as a timestamp",
+      "choices": [
+        "Is precise",
+        "Is not a time",
+        "Is NTP",
+        "Is VLAN 1"
+      ]
+    },
+    {
+      "id": "cy-w7-4",
+      "kind": "mcq",
+      "stem": "Model weights as a continuity asset",
+      "choices": [
+        "Never",
+        "Yes if the model is part of ops",
+        "Only for CCNA",
+        "Only FAT32"
+      ]
+    },
+    {
+      "id": "cy-w7-5",
+      "kind": "mcq",
+      "stem": "Tidying embarrassing logs",
+      "choices": [
+        "Helpful",
+        "May violate legal hold / integrity of evidence",
+        "Required by cups",
+        "A Google module"
+      ]
+    },
+    {
+      "id": "cy-w7-6",
+      "kind": "mcq",
+      "stem": "800-61 reuse class",
+      "choices": [
+        "RESTRICTED dump",
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "Paywall",
+        "CS161 protected"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_course_package.v1.json",
+  "title": "WAIKE owner-side digital RC course package",
+  "type": "object",
+  "required": [
+    "schema",
+    "course_id",
+    "title",
+    "track_ids",
+    "academy_id",
+    "syllabus",
+    "weeks",
+    "assignments",
+    "labs",
+    "quizzes",
+    "assessments",
+    "rubrics",
+    "answer_keys_ref",
+    "student_materials_ref",
+    "instructor_materials_ref",
+    "presentation_materials_ref",
+    "offline_pack_ref",
+    "portfolio",
+    "career_mapping",
+    "alignment_ref",
+    "provenance"
+  ],
+  "properties": {
+    "schema": { "const": "waike.course_package.v1" },
+    "course_id": { "type": "string" },
+    "title": { "type": "string" },
+    "track_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "academy_id": { "type": "string" },
+    "syllabus": { "type": "object" },
+    "weeks": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["week", "title", "lesson"],
+        "properties": {
+          "week": { "type": "integer", "minimum": 1 },
+          "title": { "type": "string" },
+          "lesson": {
+            "type": "object",
+            "required": ["lesson_id", "title", "body_md", "worked_example"],
+            "properties": {
+              "lesson_id": { "type": "string" },
+              "title": { "type": "string" },
+              "body_md": { "type": "string", "minLength": 800 },
+              "worked_example": { "type": "string", "minLength": 80 }
+            }
+          }
+        }
+      }
+    },
+    "assignments": { "type": "array", "minItems": 8 },
+    "labs": { "type": "array", "minItems": 4 },
+    "quizzes": { "type": "array", "minItems": 8 },
+    "assessments": { "type": "object" },
+    "rubrics": { "type": "array" },
+    "answer_keys_ref": { "type": "string" },
+    "student_materials_ref": { "type": "string" },
+    "instructor_materials_ref": { "type": "string" },
+    "presentation_materials_ref": { "type": "string" },
+    "offline_pack_ref": { "type": "string" },
+    "portfolio": { "type": "object" },
+    "career_mapping": { "type": "object" },
+    "alignment_ref": { "type": "string" },
+    "provenance": { "type": "object" }
+  }
+}

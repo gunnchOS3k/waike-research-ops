@@ -1,0 +1,10 @@
+{
+  "BATCH_TEMPLATED_COURSES": 0,
+  "BATCH_STUB_COURSES": 0,
+  "worst_jaccard": 0.0003,
+  "worst_pair": [
+    "GENERAL_IT",
+    "CYBERSECURITY"
+  ],
+  "status": "PASS"
+}

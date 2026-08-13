@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "net-w6-1",
+      "kind": "mcq",
+      "stem": "STP's job here is",
+      "choices": [
+        "Encrypt frames",
+        "Break L2 loops",
+        "Assign CIDR",
+        "Run AIMD"
+      ]
+    },
+    {
+      "id": "net-w6-2",
+      "kind": "mcq",
+      "stem": "BPDU guard on access ports protects against",
+      "choices": [
+        "DNS cache",
+        "A volunteer mini-switch becoming root",
+        "IPv6 RA",
+        "NAT exhaustion"
+      ]
+    },
+    {
+      "id": "net-w6-3",
+      "kind": "mcq",
+      "stem": "Root bridge is chosen by",
+      "choices": [
+        "Coffee proximity",
+        "Best priority then MAC",
+        "Highest TTL",
+        "Largest VLAN"
+      ]
+    },
+    {
+      "id": "net-w6-4",
+      "kind": "mcq",
+      "stem": "EtherChannel mis-match risk",
+      "choices": [
+        "None",
+        "Loops / unpredictable forwarding",
+        "Better OSPF",
+        "Free CCNA"
+      ]
+    },
+    {
+      "id": "net-w6-5",
+      "kind": "mcq",
+      "stem": "MAC flapping is evidence of",
+      "choices": [
+        "Healthy LPM",
+        "A loop or a move storm",
+        "TCP AIMD",
+        "DHCP snooping success"
+      ]
+    },
+    {
+      "id": "net-w6-6",
+      "kind": "mcq",
+      "stem": "We paste Cisco running-config from exam dumps?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only STP",
+        "Only if offline"
+      ]
+    }
+  ]
+}

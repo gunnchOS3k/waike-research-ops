@@ -1,0 +1,117 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "GENERAL_IT",
+  "track_ids": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"],
+  "date_checked": "2026-08-13",
+  "retired_series_excluded": ["CompTIA A+ 220-1101", "CompTIA A+ 220-1102"],
+  "benchmarks": [
+    {
+      "source_id": "GOOGLE_IT_SUPPORT_PC_2026",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "technical_support_fundamentals",
+          "waike_weeks": [1, 2, 5],
+          "waike_artifacts": ["lessons/w01", "labs/lab_ticket_queue", "assignments/a01"]
+        },
+        {
+          "domain": "operating_systems_power_user",
+          "waike_weeks": [2, 3, 8],
+          "waike_artifacts": ["lessons/w02", "labs/lab_os_users", "labs/lab_services"]
+        },
+        {
+          "domain": "system_administration_infrastructure_services",
+          "waike_weeks": [4, 7, 8, 9],
+          "waike_artifacts": ["labs/lab_dns_hosts", "labs/lab_backup", "labs/lab_automation_runbook"]
+        },
+        {
+          "domain": "computer_networking_bits_bytes",
+          "waike_weeks": [7],
+          "waike_artifacts": ["lessons/w07", "labs/lab_dns_hosts"],
+          "note": "Support-desk DNS/DHCP only; full stack lives in COMPUTER_NETWORKING."
+        },
+        {
+          "domain": "it_security_defense",
+          "waike_weeks": [3, 5, 10],
+          "waike_artifacts": ["lessons/w03", "assignments/a05"],
+          "note": "Least privilege and ticket hygiene. Deep SOC work is CYBERSECURITY."
+        },
+        {
+          "domain": "job_search_ai_productivity",
+          "waike_weeks": [10],
+          "waike_artifacts": ["career_mapping.json", "portfolio/"],
+          "note": "Original WAIKE career artifacts. No Google module text."
+        }
+      ]
+    },
+    {
+      "source_id": "COMPTIA_APLUS_V15_220_1201_1202",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "exam": "220-1201",
+          "domain": "mobile_devices",
+          "weight_pct": 13,
+          "waike_weeks": [6],
+          "depth": "partial_support_view"
+        },
+        {
+          "exam": "220-1201",
+          "domain": "networking",
+          "weight_pct": 23,
+          "waike_weeks": [7],
+          "depth": "helpdesk_ports_and_soho"
+        },
+        {
+          "exam": "220-1201",
+          "domain": "hardware",
+          "weight_pct": 25,
+          "waike_weeks": [6],
+          "waike_artifacts": ["labs/lab_storage", "assignments/a06"]
+        },
+        {
+          "exam": "220-1201",
+          "domain": "virtualization_cloud",
+          "weight_pct": 11,
+          "waike_weeks": [8],
+          "depth": "concepts_plus_one_worked_example"
+        },
+        {
+          "exam": "220-1201",
+          "domain": "hardware_network_troubleshooting",
+          "weight_pct": 28,
+          "waike_weeks": [5, 6],
+          "waike_artifacts": ["labs/lab_ticket_queue"]
+        },
+        {
+          "exam": "220-1202",
+          "domain": "operating_systems",
+          "weight_pct": 28,
+          "waike_weeks": [2, 3, 8],
+          "waike_artifacts": ["labs/lab_os_users", "labs/lab_services"]
+        },
+        {
+          "exam": "220-1202",
+          "domain": "security",
+          "weight_pct": 28,
+          "waike_weeks": [3],
+          "depth": "accounts_permissions_malware_hygiene_not_soc"
+        },
+        {
+          "exam": "220-1202",
+          "domain": "software_troubleshooting",
+          "weight_pct": 23,
+          "waike_weeks": [5, 8]
+        },
+        {
+          "exam": "220-1202",
+          "domain": "operational_procedures",
+          "weight_pct": 21,
+          "waike_weeks": [4, 5, 9, 10],
+          "waike_artifacts": ["labs/lab_backup", "labs/lab_automation_runbook"]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Alignment is domain coverage for original WAIKE assessments. Not CompTIA exam prep dumps. Not a Google certificate replica. Not a claim that passing this course yields A+ or Google IT Support."
+}

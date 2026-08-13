@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "net-w5-1",
+      "kind": "mcq",
+      "stem": "seq 1000, 200 bytes received in order. Next ACK?",
+      "choices": [
+        "1000",
+        "1200",
+        "200",
+        "800"
+      ]
+    },
+    {
+      "id": "net-w5-2",
+      "kind": "mcq",
+      "stem": "Handshake order",
+      "choices": [
+        "ACK SYN SYN-ACK",
+        "SYN, SYN-ACK, ACK",
+        "FIN FIN ACK",
+        "RST only"
+      ]
+    },
+    {
+      "id": "net-w5-3",
+      "kind": "mcq",
+      "stem": "AIMD loss event typically",
+      "choices": [
+        "Doubles cwnd",
+        "Halves cwnd (multiplicative decrease)",
+        "Sets TTL 1",
+        "Clears ARP"
+      ]
+    },
+    {
+      "id": "net-w5-4",
+      "kind": "mcq",
+      "stem": "rwnd is",
+      "choices": [
+        "Router queue",
+        "Receiver advertised window",
+        "OSPF cost",
+        "VLAN ID"
+      ]
+    },
+    {
+      "id": "net-w5-5",
+      "kind": "mcq",
+      "stem": "Current TCP spec cited here is",
+      "choices": [
+        "RFC 793 only",
+        "RFC 9293 (793 is historic)",
+        "RFC 2328",
+        "RFC 4632"
+      ]
+    },
+    {
+      "id": "net-w5-6",
+      "kind": "mcq",
+      "stem": "Data before handshake in this course is",
+      "choices": [
+        "Required",
+        "Out of scope / a bug in the basic model",
+        "OSPF",
+        "NAT"
+      ]
+    }
+  ]
+}

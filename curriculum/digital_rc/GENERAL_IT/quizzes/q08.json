@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GENERAL_IT-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "git-w8-1",
+      "kind": "mcq",
+      "stem": "toy-tracker must be",
+      "choices": [
+        "enabled and active",
+        "disabled and inactive",
+        "in sudo",
+        "bound to port 631"
+      ]
+    },
+    {
+      "id": "git-w8-2",
+      "kind": "mcq",
+      "stem": "cupsd restart_sec=120 is bad because",
+      "choices": [
+        "systemd forbids it",
+        "The public queue reforms into a rumor before cups returns",
+        "IPP uses 120",
+        "SSH needs 120"
+      ]
+    },
+    {
+      "id": "git-w8-3",
+      "kind": "mcq",
+      "stem": "Printer balloon says offline; lpstat shows paused. You",
+      "choices": [
+        "Buy toner first",
+        "Resume/restart cups after confirming the device is powered",
+        "Reinstall Windows",
+        "Disable sshd"
+      ]
+    },
+    {
+      "id": "git-w8-4",
+      "kind": "mcq",
+      "stem": "The closet recovery VM is for",
+      "choices": [
+        "Production kiosks",
+        "Practicing useradd behind a snapshot",
+        "Hosting toy-tracker for patrons",
+        "Public Wi-Fi"
+      ]
+    },
+    {
+      "id": "git-w8-5",
+      "kind": "mcq",
+      "stem": "Type-2 hypervisor in one honest sentence is",
+      "choices": [
+        "A hypervisor that runs on an existing OS",
+        "A switch ASIC",
+        "A DNS zone",
+        "A CompTIA exam item"
+      ]
+    },
+    {
+      "id": "git-w8-6",
+      "kind": "mcq",
+      "stem": "sshd on the desk image is",
+      "choices": [
+        "Forbidden",
+        "Required for staff recovery in this lab",
+        "A guest Wi-Fi portal",
+        "Port 631"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "assessment_id": "CYBERSECURITY-final",
+  "items": [
+    {
+      "id": "CYBERSECURITY-fin-01",
+      "kind": "mcq",
+      "stem": "First containment for a stolen staff laptop",
+      "choices": [
+        "Widen SOC allow",
+        "Revoke identity/sessions",
+        "Disable syslog",
+        "Permit telnet"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-02",
+      "kind": "mcq",
+      "stem": "Temporarily allowing guest\u2192staff",
+      "choices": [
+        "Is fine",
+        "Is a segmentation regression",
+        "Fixes AIMD",
+        "Is 800-61 recover"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-03",
+      "kind": "mcq",
+      "stem": "Kiosk SMB to staff shares",
+      "choices": [
+        "Required",
+        "Should stay denied",
+        "Is DNS",
+        "Is MFA"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-04",
+      "kind": "mcq",
+      "stem": "Security groups in this lesson are",
+      "choices": [
+        "A shopping list",
+        "Cloud-shaped ACLs we express as a matrix",
+        "CS161 P1",
+        "A leaked bank"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-05",
+      "kind": "mcq",
+      "stem": "Report delay 16:12 steal / 16:40 report means",
+      "choices": [
+        "Nothing happened",
+        "28 minutes of untrusted sessions to hunt",
+        "NAT failed",
+        "TTL expired"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-06",
+      "kind": "mcq",
+      "stem": "Press release as first IR step",
+      "choices": [
+        "Yes",
+        "No \u2014 contain first",
+        "Yes if AI writes it",
+        "Yes on guest Wi-Fi"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-07",
+      "kind": "mcq",
+      "stem": "Wipe before contain",
+      "choices": [
+        "Is efficient",
+        "Destroys evidence / fails the lab order",
+        "Is 800-53 AU",
+        "Is LPM"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-08",
+      "kind": "mcq",
+      "stem": "Lessons learned belongs",
+      "choices": [
+        "First",
+        "Last",
+        "Never",
+        "In the ACL"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-09",
+      "kind": "mcq",
+      "stem": "ASAP as a timestamp",
+      "choices": [
+        "Is precise",
+        "Is not a time",
+        "Is NTP",
+        "Is VLAN 1"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-10",
+      "kind": "mcq",
+      "stem": "Model weights as a continuity asset",
+      "choices": [
+        "Never",
+        "Yes if the model is part of ops",
+        "Only for CCNA",
+        "Only FAT32"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-11",
+      "kind": "mcq",
+      "stem": "Tidying embarrassing logs",
+      "choices": [
+        "Helpful",
+        "May violate legal hold / integrity of evidence",
+        "Required by cups",
+        "A Google module"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-12",
+      "kind": "mcq",
+      "stem": "800-61 reuse class",
+      "choices": [
+        "RESTRICTED dump",
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "Paywall",
+        "CS161 protected"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-13",
+      "kind": "mcq",
+      "stem": "The toy parser bug is",
+      "choices": [
+        "A live campus CMS 0-day",
+        "Trusting a length byte without remaining-byte checks",
+        "OSPF",
+        "exFAT"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-14",
+      "kind": "mcq",
+      "stem": "Shellcode against random hosts",
+      "choices": [
+        "Is the assignment",
+        "Is forbidden",
+        "Is extra credit",
+        "Is CCNA"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-15",
+      "kind": "mcq",
+      "stem": "CS161 projects are",
+      "choices": [
+        "Copied here",
+        "Structure reference only; not copied",
+        "Required binaries",
+        "Our SIEM"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-16",
+      "kind": "mcq",
+      "stem": "Safe parser on honest 4+abcd",
+      "choices": [
+        "Raises",
+        "Returns b'abcd'",
+        "Opens a socket",
+        "Grants sudo"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-17",
+      "kind": "mcq",
+      "stem": "Finding a real WAIKE bug outside the fixture",
+      "choices": [
+        "Exploit silently",
+        "Report it; do not 'practice' on it",
+        "Post to a dump site",
+        "Put it in a quiz stem with the PoC"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-18",
+      "kind": "mcq",
+      "stem": "This lab opens network sockets?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only UDP",
+        "Only to 8.8.8.8"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-19",
+      "kind": "mcq",
+      "stem": "First event after sort",
+      "choices": [
+        "usb_insert",
+        "login",
+        "file_copy",
+        "unmount"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-20",
+      "kind": "mcq",
+      "stem": "file_copy must sit",
+      "choices": [
+        "Before insert",
+        "Between insert and unmount",
+        "After unmount only",
+        "At t=0"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-21",
+      "kind": "mcq",
+      "stem": "Volunteer memory vs JSON timeline",
+      "choices": [
+        "Memory wins",
+        "Timeline/hash wins as evidence in this class",
+        "Neither",
+        "STP"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-22",
+      "kind": "mcq",
+      "stem": "Imaging a stranger's phone",
+      "choices": [
+        "Lab extra",
+        "Forbidden",
+        "Required for CC",
+        "A Google module"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-23",
+      "kind": "mcq",
+      "stem": "We can claim ada is the USB person?",
+      "choices": [
+        "Yes",
+        "No \u2014 fixture does not identify the human",
+        "Yes if burst",
+        "Yes if guest"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-fin-24",
+      "kind": "mcq",
+      "stem": "Chain of custody here is",
+      "choices": [
+        "A TV trope",
+        "Who touched the JSON, when, and the hash",
+        "A VLAN",
+        "A NAT pool"
+      ]
+    }
+  ]
+}

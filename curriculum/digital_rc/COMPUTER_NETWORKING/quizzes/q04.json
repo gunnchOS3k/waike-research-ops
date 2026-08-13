@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "net-w4-1",
+      "kind": "mcq",
+      "stem": "LPM for 10.20.40.9 with /24 and /16 present chooses",
+      "choices": [
+        "/16",
+        "/24",
+        "default only",
+        "drop"
+      ]
+    },
+    {
+      "id": "net-w4-2",
+      "kind": "mcq",
+      "stem": "TTL 1 at ingress of a router should",
+      "choices": [
+        "Forward forever",
+        "Drop after decrement to 0",
+        "Convert to TCP",
+        "NAT to 192.0.2.1"
+      ]
+    },
+    {
+      "id": "net-w4-3",
+      "kind": "mcq",
+      "stem": "IHL 5 means IPv4 header length",
+      "choices": [
+        "5 bytes",
+        "20 bytes",
+        "40 bytes",
+        "8 bytes"
+      ]
+    },
+    {
+      "id": "net-w4-4",
+      "kind": "mcq",
+      "stem": "Proto 6 is",
+      "choices": [
+        "ICMP",
+        "TCP",
+        "UDP",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "net-w4-5",
+      "kind": "mcq",
+      "stem": "Adding 10.20.40.9/32 should",
+      "choices": [
+        "Be ignored",
+        "Win over the /24",
+        "Break Ethernet",
+        "Disable TTL"
+      ]
+    },
+    {
+      "id": "net-w4-6",
+      "kind": "mcq",
+      "stem": "This frame came from",
+      "choices": [
+        "A cafe capture",
+        "A classroom-crafted bytestring",
+        "CS144 hidden tests",
+        "A CCNA dump"
+      ]
+    }
+  ]
+}

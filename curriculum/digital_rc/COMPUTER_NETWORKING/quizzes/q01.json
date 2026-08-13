@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMPUTER_NETWORKING-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "net-w1-1",
+      "kind": "mcq",
+      "stem": "Why peel Ethernet before IP on receive?",
+      "choices": [
+        "IP is optional",
+        "Last-on, first-off encapsulation",
+        "TCP forbids IP",
+        "MAC addresses are IPv6"
+      ]
+    },
+    {
+      "id": "net-w1-2",
+      "kind": "mcq",
+      "stem": "The 5-tuple includes",
+      "choices": [
+        "Only MACs",
+        "src/dst IP, protocol, src/dst port",
+        "Only DNS names",
+        "VLAN 1 only"
+      ]
+    },
+    {
+      "id": "net-w1-3",
+      "kind": "mcq",
+      "stem": "MTU 1500 and a 2000-byte buffer implies",
+      "choices": [
+        "One frame always",
+        "At least two IP datagrams",
+        "NAT failure",
+        "OSPF hello"
+      ]
+    },
+    {
+      "id": "net-w1-4",
+      "kind": "mcq",
+      "stem": "Two students share an IP but different TCP ports. They are",
+      "choices": [
+        "The same 5-tuple",
+        "Different conversations",
+        "A broadcast storm",
+        "A /32 host route"
+      ]
+    },
+    {
+      "id": "net-w1-5",
+      "kind": "mcq",
+      "stem": "Ethertype 0x0800 means",
+      "choices": [
+        "ARP",
+        "IPv4",
+        "IPv6",
+        "LLDP"
+      ]
+    },
+    {
+      "id": "net-w1-6",
+      "kind": "mcq",
+      "stem": "This course copies CS144 lab code?",
+      "choices": [
+        "Yes",
+        "No \u2014 structure reference only",
+        "Yes the C++ stack",
+        "Yes the exams"
+      ]
+    }
+  ]
+}

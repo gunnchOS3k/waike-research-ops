@@ -1,0 +1,104 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "COMPUTER_NETWORKING",
+  "track_ids": ["NETWORKING_INFRA"],
+  "date_checked": "2026-08-13",
+  "benchmarks": [
+    {
+      "source_id": "CISCO_CCNA_200_301_V1_1",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "network_fundamentals",
+          "weight_pct": 20,
+          "waike_weeks": [1, 2],
+          "waike_artifacts": ["labs/lab_cidr_math", "lessons/w01"]
+        },
+        {
+          "domain": "network_access",
+          "weight_pct": 20,
+          "waike_weeks": [3, 6],
+          "waike_artifacts": ["labs/lab_vlan_mac"]
+        },
+        {
+          "domain": "ip_connectivity",
+          "weight_pct": 25,
+          "waike_weeks": [4, 7],
+          "waike_artifacts": ["labs/lab_datapath", "labs/lab_spf_routing"]
+        },
+        {
+          "domain": "ip_services",
+          "weight_pct": 10,
+          "waike_weeks": [8],
+          "waike_artifacts": ["labs/lab_dns_resolution", "labs/lab_nat_acl"]
+        },
+        {
+          "domain": "security_fundamentals",
+          "weight_pct": 15,
+          "waike_weeks": [9],
+          "waike_artifacts": ["labs/lab_nat_acl", "assignments/a09"]
+        },
+        {
+          "domain": "automation_programmability",
+          "weight_pct": 10,
+          "waike_weeks": [10],
+          "waike_artifacts": ["assignments/a10", "capstone"],
+          "note": "JSON intent files and a tiny validator. No Cisco controller product labs."
+        }
+      ]
+    },
+    {
+      "source_id": "STANFORD_CS144_F2025",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "structure_only": true,
+      "do_not_copy": ["lab_code", "solutions", "exam_pdfs", "lecture_note_verbatim"],
+      "structure_adapted": [
+        {
+          "cs144_unit_theme": "datagrams_encapsulation_multiplexing",
+          "waike_week": 1,
+          "how": "Original packet-chopping lesson + Ethernet/IP parse in lab_datapath"
+        },
+        {
+          "cs144_unit_theme": "reliability_from_unreliability",
+          "waike_week": 5,
+          "how": "Original TCP sequence/ACK workbook; Python state checks, not C++ TCP stack"
+        },
+        {
+          "cs144_unit_theme": "packet_switching",
+          "waike_week": 4,
+          "how": "Longest-prefix-match forwarding plane in lab_datapath"
+        },
+        {
+          "cs144_unit_theme": "congestion_control",
+          "waike_week": 5,
+          "how": "Original AIMD numeric lab in assignment A05; no CS144 checkpoint code"
+        },
+        {
+          "cs144_unit_theme": "routing",
+          "waike_week": 7,
+          "how": "Original four-router SPF on a WAIKE topology"
+        },
+        {
+          "cs144_assessment_shape": "weekly_quiz_plus_midterm_plus_final_plus_build_lab",
+          "waike_shape": "10 weekly quizzes, mid-course, final knowledge, datapath practical, campus-edge capstone"
+        }
+      ]
+    },
+    {
+      "source_id": "IETF_RFC791_IPV4",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "waike_artifacts": ["labs/lab_datapath"]
+    },
+    {
+      "source_id": "IETF_RFC9293_TCP",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "waike_artifacts": ["lessons/w05", "labs/lab_datapath"]
+    },
+    {
+      "source_id": "IETF_RFC4632_CIDR",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "waike_artifacts": ["labs/lab_cidr_math"]
+    }
+  ],
+  "claim_boundary": "Not a CCNA exam dump. Not a Stanford CS144 code port. Datapath lab is original WAIKE Python."
+}

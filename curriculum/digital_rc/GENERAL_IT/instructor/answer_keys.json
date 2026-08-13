@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "GENERAL_IT",
+  "quizzes": {
+    "GENERAL_IT-q01": [
+      {
+        "id": "git-w1-1",
+        "answer_index": 1,
+        "explanation": "The idle timer discarded session state \u2014 a remember job."
+      },
+      {
+        "id": "git-w1-2",
+        "answer_index": 2,
+        "explanation": "1200/60 = 20."
+      },
+      {
+        "id": "git-w1-3",
+        "answer_index": 1,
+        "explanation": "Never store secrets in tickets."
+      },
+      {
+        "id": "git-w1-4",
+        "answer_index": 2,
+        "explanation": "Observation names what you saw and when."
+      },
+      {
+        "id": "git-w1-5",
+        "answer_index": 1,
+        "explanation": "The tree is the acceptance test."
+      },
+      {
+        "id": "git-w1-6",
+        "answer_index": 1,
+        "explanation": "Look for auto-save; do not destroy shared policy first."
+      }
+    ],
+    "GENERAL_IT-q02": [
+      {
+        "id": "git-w2-1",
+        "answer_index": 1,
+        "explanation": "FAT32 cannot store a single file \u2265 4 GiB."
+      },
+      {
+        "id": "git-w2-2",
+        "answer_index": 1,
+        "explanation": "Capture wait-on-disk before destroying the graph."
+      },
+      {
+        "id": "git-w2-3",
+        "answer_index": 1,
+        "explanation": "Keep one image bootable."
+      },
+      {
+        "id": "git-w2-4",
+        "answer_index": 0,
+        "explanation": "Both adjust permissions."
+      },
+      {
+        "id": "git-w2-5",
+        "answer_index": 2,
+        "explanation": "Debian recovery stick: ext4."
+      },
+      {
+        "id": "git-w2-6",
+        "answer_index": 2,
+        "explanation": "exFAT is the interoperability pick here."
+      }
+    ],
+    "GENERAL_IT-q03": [
+      {
+        "id": "git-w3-1",
+        "answer_index": 1,
+        "explanation": "Least privilege for a public account."
+      },
+      {
+        "id": "git-w3-2",
+        "answer_index": 1,
+        "explanation": "UID is the real identity to the kernel."
+      },
+      {
+        "id": "git-w3-3",
+        "answer_index": 1,
+        "explanation": "Sudo is for named ops, not souvenirs."
+      },
+      {
+        "id": "git-w3-4",
+        "answer_index": 1,
+        "explanation": "Do not log off the last session that owns the printer queue."
+      },
+      {
+        "id": "git-w3-5",
+        "answer_index": 1,
+        "explanation": "Grant the group the ticket needs, then remove it."
+      },
+      {
+        "id": "git-w3-6",
+        "answer_index": 2,
+        "explanation": "One home per account."
+      }
+    ],
+    "GENERAL_IT-q04": [
+      {
+        "id": "git-w4-1",
+        "answer_index": 0,
+        "explanation": "256-180-12=64."
+      },
+      {
+        "id": "git-w4-2",
+        "answer_index": 1,
+        "explanation": "Policy is about operational headroom."
+      },
+      {
+        "id": "git-w4-3",
+        "answer_index": 1,
+        "explanation": "The lab is a restore, not a file copy theater."
+      },
+      {
+        "id": "git-w4-4",
+        "answer_index": 1,
+        "explanation": "Backup is not a hidey-hole."
+      },
+      {
+        "id": "git-w4-5",
+        "answer_index": 1,
+        "explanation": "Two media, one off-box."
+      },
+      {
+        "id": "git-w4-6",
+        "answer_index": 1,
+        "explanation": "Free=24 GiB \u2248 9.4% < 15%."
+      }
+    ],
+    "GENERAL_IT-q05": [
+      {
+        "id": "git-w5-1",
+        "answer_index": 1,
+        "explanation": "You owe a cause, not a kick."
+      },
+      {
+        "id": "git-w5-2",
+        "answer_index": 1,
+        "explanation": "The name is the symptom."
+      },
+      {
+        "id": "git-w5-3",
+        "answer_index": 1,
+        "explanation": "Impact, not adjectives."
+      },
+      {
+        "id": "git-w5-4",
+        "answer_index": 1,
+        "explanation": "Written so the next shift inherits a clock."
+      },
+      {
+        "id": "git-w5-5",
+        "answer_index": 1,
+        "explanation": "Specific and honest."
+      },
+      {
+        "id": "git-w5-6",
+        "answer_index": 0,
+        "explanation": "Hardware thermal, evidence first."
+      }
+    ],
+    "GENERAL_IT-q06": [
+      {
+        "id": "git-w6-1",
+        "answer_index": 1,
+        "explanation": "Power, then storage, then memory, then OS."
+      },
+      {
+        "id": "git-w6-2",
+        "answer_index": 1,
+        "explanation": "Do not spend the only spare first."
+      },
+      {
+        "id": "git-w6-3",
+        "answer_index": 1,
+        "explanation": "Physical link before cellular theater."
+      },
+      {
+        "id": "git-w6-4",
+        "answer_index": 1,
+        "explanation": "Measure twice."
+      },
+      {
+        "id": "git-w6-5",
+        "answer_index": 1,
+        "explanation": "Disk health."
+      },
+      {
+        "id": "git-w6-6",
+        "answer_index": 1,
+        "explanation": "Alignment, not a dump."
+      }
+    ],
+    "GENERAL_IT-q07": [
+      {
+        "id": "git-w7-1",
+        "answer_index": 1,
+        "explanation": "APIPA/link-local after DHCP silence."
+      },
+      {
+        "id": "git-w7-2",
+        "answer_index": 1,
+        "explanation": "Scope the toy resolver."
+      },
+      {
+        "id": "git-w7-3",
+        "answer_index": 2,
+        "explanation": "Internet Printing Protocol / cups."
+      },
+      {
+        "id": "git-w7-4",
+        "answer_index": 0,
+        "explanation": "They are on the guest horizon."
+      },
+      {
+        "id": "git-w7-5",
+        "answer_index": 1,
+        "explanation": "Name first, then service."
+      },
+      {
+        "id": "git-w7-6",
+        "answer_index": 0,
+        "explanation": "From the hosts fixture."
+      }
+    ],
+    "GENERAL_IT-q08": [
+      {
+        "id": "git-w8-1",
+        "answer_index": 1,
+        "explanation": "Classroom malware analog stays dead."
+      },
+      {
+        "id": "git-w8-2",
+        "answer_index": 1,
+        "explanation": "Budget the restart."
+      },
+      {
+        "id": "git-w8-3",
+        "answer_index": 1,
+        "explanation": "Paused \u2260 empty toner."
+      },
+      {
+        "id": "git-w8-4",
+        "answer_index": 1,
+        "explanation": "Snapshots make practice reversible."
+      },
+      {
+        "id": "git-w8-5",
+        "answer_index": 0,
+        "explanation": "Hosted on a host OS."
+      },
+      {
+        "id": "git-w8-6",
+        "answer_index": 1,
+        "explanation": "Staff recovery path."
+      }
+    ],
+    "GENERAL_IT-q09": [
+      {
+        "id": "git-w9-1",
+        "answer_index": 1,
+        "explanation": "Otherwise rollback is theater."
+      },
+      {
+        "id": "git-w9-2",
+        "answer_index": 1,
+        "explanation": "18*60 \u2264 19:15 \u2264 21*60."
+      },
+      {
+        "id": "git-w9-3",
+        "answer_index": 1,
+        "explanation": "Dow=3 Wednesday."
+      },
+      {
+        "id": "git-w9-4",
+        "answer_index": 1,
+        "explanation": "No unexplained sudo."
+      },
+      {
+        "id": "git-w9-5",
+        "answer_index": 1,
+        "explanation": "The document is the job."
+      },
+      {
+        "id": "git-w9-6",
+        "answer_index": 1,
+        "explanation": "Change windows exist for a reason."
+      }
+    ],
+    "GENERAL_IT-q10": [
+      {
+        "id": "git-w10-1",
+        "answer_index": 1,
+        "explanation": "Wrong horizon."
+      },
+      {
+        "id": "git-w10-2",
+        "answer_index": 0,
+        "explanation": "Headroom policy."
+      },
+      {
+        "id": "git-w10-3",
+        "answer_index": 1,
+        "explanation": "No credential is granted."
+      },
+      {
+        "id": "git-w10-4",
+        "answer_index": 1,
+        "explanation": "A stranger must continue."
+      },
+      {
+        "id": "git-w10-5",
+        "answer_index": 1,
+        "explanation": "Identity hygiene at the desk."
+      },
+      {
+        "id": "git-w10-6",
+        "answer_index": 1,
+        "explanation": "No PII."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "GENERAL_IT-mid-01",
+      "answer_index": 1,
+      "explanation": "The idle timer discarded session state \u2014 a remember job."
+    },
+    {
+      "id": "GENERAL_IT-mid-02",
+      "answer_index": 2,
+      "explanation": "1200/60 = 20."
+    },
+    {
+      "id": "GENERAL_IT-mid-03",
+      "answer_index": 1,
+      "explanation": "Never store secrets in tickets."
+    },
+    {
+      "id": "GENERAL_IT-mid-04",
+      "answer_index": 2,
+      "explanation": "Observation names what you saw and when."
+    },
+    {
+      "id": "GENERAL_IT-mid-05",
+      "answer_index": 1,
+      "explanation": "The tree is the acceptance test."
+    },
+    {
+      "id": "GENERAL_IT-mid-06",
+      "answer_index": 1,
+      "explanation": "Look for auto-save; do not destroy shared policy first."
+    },
+    {
+      "id": "GENERAL_IT-mid-07",
+      "answer_index": 1,
+      "explanation": "FAT32 cannot store a single file \u2265 4 GiB."
+    },
+    {
+      "id": "GENERAL_IT-mid-08",
+      "answer_index": 1,
+      "explanation": "Capture wait-on-disk before destroying the graph."
+    },
+    {
+      "id": "GENERAL_IT-mid-09",
+      "answer_index": 1,
+      "explanation": "Keep one image bootable."
+    },
+    {
+      "id": "GENERAL_IT-mid-10",
+      "answer_index": 0,
+      "explanation": "Both adjust permissions."
+    },
+    {
+      "id": "GENERAL_IT-mid-11",
+      "answer_index": 2,
+      "explanation": "Debian recovery stick: ext4."
+    },
+    {
+      "id": "GENERAL_IT-mid-12",
+      "answer_index": 2,
+      "explanation": "exFAT is the interoperability pick here."
+    },
+    {
+      "id": "GENERAL_IT-mid-13",
+      "answer_index": 1,
+      "explanation": "Least privilege for a public account."
+    },
+    {
+      "id": "GENERAL_IT-mid-14",
+      "answer_index": 1,
+      "explanation": "UID is the real identity to the kernel."
+    },
+    {
+      "id": "GENERAL_IT-mid-15",
+      "answer_index": 1,
+      "explanation": "Sudo is for named ops, not souvenirs."
+    },
+    {
+      "id": "GENERAL_IT-mid-16",
+      "answer_index": 1,
+      "explanation": "Do not log off the last session that owns the printer queue."
+    },
+    {
+      "id": "GENERAL_IT-mid-17",
+      "answer_index": 1,
+      "explanation": "Grant the group the ticket needs, then remove it."
+    },
+    {
+      "id": "GENERAL_IT-mid-18",
+      "answer_index": 2,
+      "explanation": "One home per account."
+    },
+    {
+      "id": "GENERAL_IT-mid-19",
+      "answer_index": 0,
+      "explanation": "256-180-12=64."
+    },
+    {
+      "id": "GENERAL_IT-mid-20",
+      "answer_index": 1,
+      "explanation": "Policy is about operational headroom."
+    }
+  ],
+  "final": [
+    {
+      "id": "GENERAL_IT-fin-01",
+      "answer_index": 1,
+      "explanation": "Power, then storage, then memory, then OS."
+    },
+    {
+      "id": "GENERAL_IT-fin-02",
+      "answer_index": 1,
+      "explanation": "Do not spend the only spare first."
+    },
+    {
+      "id": "GENERAL_IT-fin-03",
+      "answer_index": 1,
+      "explanation": "Physical link before cellular theater."
+    },
+    {
+      "id": "GENERAL_IT-fin-04",
+      "answer_index": 1,
+      "explanation": "Measure twice."
+    },
+    {
+      "id": "GENERAL_IT-fin-05",
+      "answer_index": 1,
+      "explanation": "Disk health."
+    },
+    {
+      "id": "GENERAL_IT-fin-06",
+      "answer_index": 1,
+      "explanation": "Alignment, not a dump."
+    },
+    {
+      "id": "GENERAL_IT-fin-07",
+      "answer_index": 1,
+      "explanation": "APIPA/link-local after DHCP silence."
+    },
+    {
+      "id": "GENERAL_IT-fin-08",
+      "answer_index": 1,
+      "explanation": "Scope the toy resolver."
+    },
+    {
+      "id": "GENERAL_IT-fin-09",
+      "answer_index": 2,
+      "explanation": "Internet Printing Protocol / cups."
+    },
+    {
+      "id": "GENERAL_IT-fin-10",
+      "answer_index": 0,
+      "explanation": "They are on the guest horizon."
+    },
+    {
+      "id": "GENERAL_IT-fin-11",
+      "answer_index": 1,
+      "explanation": "Name first, then service."
+    },
+    {
+      "id": "GENERAL_IT-fin-12",
+      "answer_index": 0,
+      "explanation": "From the hosts fixture."
+    },
+    {
+      "id": "GENERAL_IT-fin-13",
+      "answer_index": 1,
+      "explanation": "Classroom malware analog stays dead."
+    },
+    {
+      "id": "GENERAL_IT-fin-14",
+      "answer_index": 1,
+      "explanation": "Budget the restart."
+    },
+    {
+      "id": "GENERAL_IT-fin-15",
+      "answer_index": 1,
+      "explanation": "Paused \u2260 empty toner."
+    },
+    {
+      "id": "GENERAL_IT-fin-16",
+      "answer_index": 1,
+      "explanation": "Snapshots make practice reversible."
+    },
+    {
+      "id": "GENERAL_IT-fin-17",
+      "answer_index": 0,
+      "explanation": "Hosted on a host OS."
+    },
+    {
+      "id": "GENERAL_IT-fin-18",
+      "answer_index": 1,
+      "explanation": "Staff recovery path."
+    },
+    {
+      "id": "GENERAL_IT-fin-19",
+      "answer_index": 1,
+      "explanation": "Otherwise rollback is theater."
+    },
+    {
+      "id": "GENERAL_IT-fin-20",
+      "answer_index": 1,
+      "explanation": "18*60 \u2264 19:15 \u2264 21*60."
+    },
+    {
+      "id": "GENERAL_IT-fin-21",
+      "answer_index": 1,
+      "explanation": "Dow=3 Wednesday."
+    },
+    {
+      "id": "GENERAL_IT-fin-22",
+      "answer_index": 1,
+      "explanation": "No unexplained sudo."
+    },
+    {
+      "id": "GENERAL_IT-fin-23",
+      "answer_index": 1,
+      "explanation": "The document is the job."
+    },
+    {
+      "id": "GENERAL_IT-fin-24",
+      "answer_index": 1,
+      "explanation": "Change windows exist for a reason."
+    }
+  ]
+}

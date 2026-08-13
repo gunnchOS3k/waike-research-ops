@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBERSECURITY-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "cy-w9-1",
+      "kind": "mcq",
+      "stem": "First event after sort",
+      "choices": [
+        "usb_insert",
+        "login",
+        "file_copy",
+        "unmount"
+      ]
+    },
+    {
+      "id": "cy-w9-2",
+      "kind": "mcq",
+      "stem": "file_copy must sit",
+      "choices": [
+        "Before insert",
+        "Between insert and unmount",
+        "After unmount only",
+        "At t=0"
+      ]
+    },
+    {
+      "id": "cy-w9-3",
+      "kind": "mcq",
+      "stem": "Volunteer memory vs JSON timeline",
+      "choices": [
+        "Memory wins",
+        "Timeline/hash wins as evidence in this class",
+        "Neither",
+        "STP"
+      ]
+    },
+    {
+      "id": "cy-w9-4",
+      "kind": "mcq",
+      "stem": "Imaging a stranger's phone",
+      "choices": [
+        "Lab extra",
+        "Forbidden",
+        "Required for CC",
+        "A Google module"
+      ]
+    },
+    {
+      "id": "cy-w9-5",
+      "kind": "mcq",
+      "stem": "We can claim ada is the USB person?",
+      "choices": [
+        "Yes",
+        "No \u2014 fixture does not identify the human",
+        "Yes if burst",
+        "Yes if guest"
+      ]
+    },
+    {
+      "id": "cy-w9-6",
+      "kind": "mcq",
+      "stem": "Chain of custody here is",
+      "choices": [
+        "A TV trope",
+        "Who touched the JSON, when, and the hash",
+        "A VLAN",
+        "A NAT pool"
+      ]
+    }
+  ]
+}

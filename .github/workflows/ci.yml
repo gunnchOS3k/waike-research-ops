@@ -6,3 +6,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: test -f README.md
+  digital_rc_batch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Emit packages and run digital RC gates
+        env:
+          PYTHONPATH: src
+        run: |
+          python3 -m pip install pytest
+          python3 scripts/emit_digital_rc.py
+          python3 scripts/run_course_labs.py
+          python3 scripts/validate_curriculum_provenance.py
+          python3 scripts/detect_templated_courses.py
+          python3 scripts/prove_product_consumption.py
+          python3 scripts/write_course_digital_rc.py
+          python3 -m pytest -q tests/curriculum/test_digital_rc_batch.py

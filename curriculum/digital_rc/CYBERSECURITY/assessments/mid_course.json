@@ -1,0 +1,225 @@
+{
+  "assessment_id": "CYBERSECURITY-mid",
+  "items": [
+    {
+      "id": "CYBERSECURITY-mid-01",
+      "kind": "mcq",
+      "stem": "Upcoming ISC2 CC outline we prefer takes effect",
+      "choices": [
+        "2012-01-01",
+        "2026-09-01",
+        "1999-12-31",
+        "Never"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-02",
+      "kind": "mcq",
+      "stem": "Model poisoning primarily attacks",
+      "choices": [
+        "Availability of power",
+        "Integrity of the model's behavior",
+        "STP",
+        "CIDR"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-03",
+      "kind": "mcq",
+      "stem": "Harbor bot closing incidents would violate",
+      "choices": [
+        "MTU",
+        "Least privilege for non-human identity",
+        "IPv4 broadcast",
+        "exFAT"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-04",
+      "kind": "mcq",
+      "stem": "Library PANs in the model context window",
+      "choices": [
+        "Are fine if encrypted in transit only",
+        "Violate confidentiality policy here",
+        "Are required for CCNA",
+        "Fix AIMD"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-05",
+      "kind": "mcq",
+      "stem": "GRC owner for the kiosk image is",
+      "choices": [
+        "Anonymous",
+        "A named role in the memo",
+        "RFC 791",
+        "A CompTIA dump"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-06",
+      "kind": "mcq",
+      "stem": "This course copies ISC2 exam questions?",
+      "choices": [
+        "Yes",
+        "No",
+        "Yes after Sep 2026",
+        "Yes if offline"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-07",
+      "kind": "mcq",
+      "stem": "harbor-bot may",
+      "choices": [
+        "Close cases",
+        "Read cases",
+        "Grant sudo to kiosk",
+        "Disable logs"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-08",
+      "kind": "mcq",
+      "stem": "Naiya closing a case should",
+      "choices": [
+        "Pass",
+        "Fail RBAC",
+        "Trigger NAT",
+        "Pass if MFA"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-09",
+      "kind": "mcq",
+      "stem": "Deprovisioning without a ticket is",
+      "choices": [
+        "Agile",
+        "How orphan access is born",
+        "Required by SPF",
+        "A lab bonus"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-10",
+      "kind": "mcq",
+      "stem": "Bot token in lesson markdown",
+      "choices": [
+        "Is required",
+        "Is forbidden",
+        "Is a VLAN",
+        "Is CIDR"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-11",
+      "kind": "mcq",
+      "stem": "AAA accounting means",
+      "choices": [
+        "Billing only",
+        "Recording who did which action on which case",
+        "OSPF cost",
+        "AIMD"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-12",
+      "kind": "mcq",
+      "stem": "NICE framework reuse class in our registry is",
+      "choices": [
+        "RESTRICTED dump",
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "Paywall bypass",
+        "Unknown malware"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-13",
+      "kind": "mcq",
+      "stem": "Kiosk initiating to SOC should be",
+      "choices": [
+        "Allow all",
+        "Deny",
+        "NAT",
+        "OSPF"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-14",
+      "kind": "mcq",
+      "stem": "SOC pulling kiosk syslog is",
+      "choices": [
+        "Deny",
+        "allow_syslog_only",
+        "Full RDP",
+        "Guest"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-15",
+      "kind": "mcq",
+      "stem": "Untrusted ticket text instructing a bot to dump a DB is",
+      "choices": [
+        "A valid runbook",
+        "Prompt injection / untrusted content",
+        "DHCP",
+        "STP"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-16",
+      "kind": "mcq",
+      "stem": "Inside IP implies trust?",
+      "choices": [
+        "Yes always",
+        "No \u2014 kiosk VLAN is still hostile",
+        "Only on Tuesdays",
+        "If TTL>1"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-17",
+      "kind": "mcq",
+      "stem": "SaaS ticketing: who still classifies data?",
+      "choices": [
+        "Only the vendor",
+        "Harbor still does",
+        "RFC 9293",
+        "Nobody"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-18",
+      "kind": "mcq",
+      "stem": "This SIEM is",
+      "choices": [
+        "A purchased SOC platform",
+        "On-box JSON fixtures",
+        "A leaked exam",
+        "Packet Tracer"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-19",
+      "kind": "mcq",
+      "stem": "ada with 4 AUTH_FAIL vs threshold 3 is",
+      "choices": [
+        "Proof ada is guilty",
+        "A burst that warrants a look",
+        "A VLAN leak",
+        "A /26"
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-mid-20",
+      "kind": "mcq",
+      "stem": "cal with 1 fail",
+      "choices": [
+        "Is also a burst",
+        "Is under threshold",
+        "Closes the case",
+        "Grants sudo"
+      ]
+    }
+  ]
+}

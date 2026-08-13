@@ -1,0 +1,228 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "GENERAL_IT",
+  "title": "General IT \u2014 Operator to Support Specialist",
+  "track_ids": [
+    "DIGITAL_CONFIDENCE",
+    "IT_SUPPORT_HARDWARE"
+  ],
+  "academy_id": "ACADEMY_IT",
+  "kinesthetic_hook": "Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.",
+  "lesson_excerpt": "At the Gary Civic Tech Desk the machine in front of a patron is not a personality. It remembers (files), it calculates (apps), and it talks (network). Beginners freeze when a window disappears because they cannot name which of those three jobs failed. Ticket 4417 from the library kiosk is a remember-job failure: the essay lived in a browser temp store and the idle timer (1200 seconds) wiped the se",
+  "worked_example": "Idle policy 1200s = 20 minutes. Patron sat down at 14:02, last keystroke 14:07, return 14:28. Session is gone. Restore from the auto-save folder if present; do not disable the timer as your first move \u2014 the timer is a shared-kiosk control.",
+  "assignment": "Build the required folder tree for ticket 4417, write a four-line operator journal (remember / calculate / talk / what broke), and describe one restore method that is not Ctrl+Z. No patron PII.",
+  "lab_hint": "lab_ticket_queue",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "The Civic Tech Desk \u2014 three jobs a computer actually has",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w01",
+        "title": "The Civic Tech Desk \u2014 three jobs a computer actually has",
+        "body_md": "At the Gary Civic Tech Desk the machine in front of a patron is not a personality. It remembers (files), it calculates (apps), and it talks (network). Beginners freeze when a window disappears because they cannot name which of those three jobs failed. Ticket 4417 from the library kiosk is a remember-job failure: the essay lived in a browser temp store and the idle timer (1200 seconds) wiped the session. Naming the job changes the next action. You do not 'fix the Internet' for a missing file.\n\nOperator confidence is a spoken path. Say `Documents/waike/desk/4417` out loud before you copy anything. If that folder is missing, create it. Extra folders on the Desktop are clutter, not success. The lab marks required paths; it does not grade wallpaper.\n\nPrivacy is operational, not a poster. The desk forbids storing SSNs, library-card PANs, or passwords in ticket notes. If a patron dictates a password, you write 'credential reset requested' and walk them through a reset \u2014 you never type their secret into chat.\n\nThis week you will also meet the WAIKE Consensus Ladder in miniature: what you saw, what you inferred, what you still need. 'The kiosk is broken' is not an observation. 'Idle logout at 1200s discarded an unsaved textarea' is.",
+        "worked_example": "Idle policy 1200s = 20 minutes. Patron sat down at 14:02, last keystroke 14:07, return 14:28. Session is gone. Restore from the auto-save folder if present; do not disable the timer as your first move \u2014 the timer is a shared-kiosk control."
+      },
+      "lab_id": "lab_ticket_queue"
+    },
+    {
+      "week": 2,
+      "title": "Two operating systems, one pair of hands",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w02",
+        "title": "Two operating systems, one pair of hands",
+        "body_md": "The Civic Tech Desk dual-boots a Windows 11 image for walk-up patrons and a Debian bookworm image for staff recovery. You will not memorize every click. You will learn the same three verbs on both: list, copy, and permission. On Windows those verbs are Explorer, `robocopy` or copy, and icacls. On Debian they are `ls`, `cp`, and `chmod`/`chown`.\n\nFile systems are not fashion. The staff recovery stick is ext4. The patron share that must be read by Windows is exFAT. NTFS is fine for the internal Windows volume. FAT32 still appears on old camera cards and lies about files over 4 GiB. When a 4.7 GiB video 'disappears' on a camera card, the card is not haunted \u2014 FAT32 refused the write.\n\nTask Manager and `top` answer the same question: who is burning CPU and who is waiting on disk. A kiosk that feels 'frozen' with disk 100% and CPU 4% is a storage job, not a virus story. You will capture that evidence before you reboot, because reboot erases the graph.\n\nUpdates are operational procedures. The desk patches Windows after 21:00 local on Wednesdays and Debian with unattended-upgrades, but never both images in the same hour. A dual-boot machine that patches both at once can leave GRUB confused and a Saturday volunteer with no kiosk.",
+        "worked_example": "A 4.7 GiB `.mkv` copied to a FAT32 camera card ends as a 0-byte or missing file. Reformat is the wrong first step. Copy to the NTFS staff volume, then to the patron exFAT share."
+      },
+      "lab_id": "lab_os_users"
+    },
+    {
+      "week": 3,
+      "title": "Users, groups, and the sudo you can actually type",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w03",
+        "title": "Users, groups, and the sudo you can actually type",
+        "body_md": "The kiosk account exists so a stranger can browse. It must not be in `sudo`. The desk lead account `desk.lead` is in `helpdesk` and may use sudo for printer cups and user unlocks, not for installing random `.exe` from a USB stick. Least privilege is a group membership you can print, not a vibe.\n\nUIDs collide in the worst way: two names, one number, one home. The lab rejects duplicate UIDs and duplicate homes. If you clone an account by copying `/etc/passwd` lines and forget to change the UID, you have invented a ghost who owns the lead's files.\n\nWindows analog: local users vs Microsoft accounts vs the kiosk local account that is not an administrator. Fast User Switching is how a volunteer leaves a session without killing the spooler. Logging off the last admin session while cups is printing 40 r\u00e9sum\u00e9s is how Saturday starts with a fight.\n\nZero Trust shows up here as a support behavior, not a product: do not grant admin because someone is late. Grant the group that the ticket type requires, time-box it, and write the change.",
+        "worked_example": "kiosk uid 1010, groups=[kiosk], sudo=false. desk.lead uid 1020, groups=[helpdesk, staff]. If kiosk also sits in sudo, the lab fails even if the password is long."
+      },
+      "lab_id": "lab_os_users"
+    },
+    {
+      "week": 4,
+      "title": "Storage, snapshots, and the Friday 16:00 panic",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w04",
+        "title": "Storage, snapshots, and the Friday 16:00 panic",
+        "body_md": "The civic volume is 256 GiB. Used 180 GiB. Reserved 12 GiB for snapshots. The desk policy demands 15% free because Windows updates and browser profiles balloon without asking. Free = 256-180-12 = 64 GiB, which is 25% \u2014 you pass today. If used climbs to 220 GiB, you fail the policy before the disk is 'full,' and that is the point of a quota.\n\nBackup is a restore you have practiced. A `.tgz` that nobody has extracted is a rumor. The lab hashes the tree, archives, restores, and hashes again. If you exclude `ticket_4417.txt` because it 'looks temporary,' the patron essay is gone.\n\n3-2-1 is the language: three copies, two media, one off-box. For this desk, that means the volume, a USB disk in the locked drawer, and a weekly encrypted copy to the staff closet PC. Cloud is optional and never the only copy \u2014 the closet floods less often than the WAN dies on Sunday.\n\nPII still does not belong in the archive. The lab fails if you add `ssn.txt`. Backup is not a place to hide documents you would not leave on the desk.",
+        "worked_example": "size=256GiB used=180 reserved=12 \u2192 free=64 GiB \u2192 64/256=0.25 \u2265 0.15. SHA256 of source tree must equal SHA256 of restored tree."
+      },
+      "lab_id": "lab_backup"
+    },
+    {
+      "week": 5,
+      "title": "Tickets are promises, not chat threads",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w05",
+        "title": "Tickets are promises, not chat threads",
+        "body_md": "A ticket is a promise to restore someone's work. Severity is about impact, not volume of adjectives. SE1 is 'the whole desk is down during public hours.' SE3 is 'one kiosk idle-logout ate an essay.' Reboot-and-hope is never a next action in this course because it destroys evidence and trains patrons to kick hardware.\n\nTicket 4418: fan scream then black screen. Subsystem is hardware thermal, not 'Windows update.' Next action is capture temps and plan a reseat/clean, not order a new PC from a flyer. Ticket 4419: cannot reach printer.gary.waike.local \u2014 name resolution first, then spooler. You will be tempted to reinstall the printer driver. Resist until the name resolves.\n\nSLA for SE3 at this desk is end of next public day. Write that in the ticket so a Sunday volunteer does not inherit a mystery. Documentation is an operational procedure on A+ V15 Core 2, but here it is also how Gary's Saturday shift survives.\n\nCustomer communication is specific: 'I saved a copy of your essay to the restore folder and the kiosk will still log out at 20 minutes because this is a shared station.' That sentence is kinder than 'we fixed it.'",
+        "worked_example": "4417 next=adjust_idle_or_save_prompt; 4418 next=capture_temps_then_reseating_plan; 4419 next=check_hosts_then_spooler. None of them are reboot_and_hope."
+      },
+      "lab_id": "lab_ticket_queue"
+    },
+    {
+      "week": 6,
+      "title": "Hardware triage \u2014 power, then storage, then memory, then OS",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w06",
+        "title": "Hardware triage \u2014 power, then storage, then memory, then OS",
+        "body_md": "The Civic Tech Desk keeps a parts tub: one spare 16 GB SODIMM, one SATA SSD, one 90 W brick, one display cable. Swapping before naming the subsystem is how you waste the only DIMM. Order of operations: confirm power (brick voltage and LED), then listen and SMART for storage, then count RAM in the firmware screen, then accuse the OS.\n\nPOST beep patterns are not folklore you invent. No display plus fans plus a single short beep on this classroom board means 'alive but video path.' Reseat RAM and check the display cable before you reinstall Windows. Reinstall is an OS move and this is still a hardware week.\n\nMobile devices appear as patrons' phones tethering the kiosk 'because Wi-Fi is slow.' You will check the kiosk Ethernet link lights before you blame the phone. A+ V15 Core 1 cares about mobile accessories; this desk cares that a phone hotspot is not a substitute for a dropped patch cable under the table.\n\nThermal ticket 4418 returns: dust in the intake, fan RPM in the BIOS, and a surface thermometer reading 78 C at the exhaust. Clean, then re-measure. Buying a new chassis is not a lab step.",
+        "worked_example": "No video, fans spin, one short beep, Ethernet lights off because you pulled the PC out. Restore the display cable and the patch cable before you unbox the spare SODIMM."
+      },
+      "lab_id": "lab_storage"
+    },
+    {
+      "week": 7,
+      "title": "Names on the LAN \u2014 hosts, a tiny zone, and the printer that only exists locally",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w07",
+        "title": "Names on the LAN \u2014 hosts, a tiny zone, and the printer that only exists locally",
+        "body_md": "printer.gary.waike.local is not on the public Internet and should not be. The desk resolver checks a hosts file first, then a tiny zone. desk.gary.waike.local is 10.20.30.14. The library A records are 10.20.30.21 and .22; the lab returns the first. example.com must not resolve in this fixture \u2014 a classroom resolver that invents WAN answers is a liar.\n\nDHCP is how kiosks get 10.20.30.0/24 addresses. When a kiosk shows 169.254.x.x, it did not 'go rogue'; it failed to hear a lease. Check the switch port, the DHCP pool, and whether someone enabled a second DHCP server on a home router under the table.\n\nPorts you must be able to name at the desk: 53 (DNS), 67/68 (DHCP), 80/443 (web), 631 (IPP/cups). You do not need a CCNA to say 'the printer name does not resolve.' You do need to stop reinstalling drivers until ping of the IP works and the name matches.\n\nSplit horizon is why staff see an internal A record and patrons on guest Wi-Fi do not. If a volunteer tests from a phone on guest, they will swear DNS is down. They are on the wrong horizon.",
+        "worked_example": "Query printer.gary.waike.local \u2192 10.20.30.40 from hosts. Query example.com \u2192 none. Link-local 169.254.13.9 on a kiosk \u2192 DHCP failure, not a new addressing plan."
+      },
+      "lab_id": "lab_dns_hosts"
+    },
+    {
+      "week": 8,
+      "title": "Services, printers, and the tracker that must stay dead",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w08",
+        "title": "Services, printers, and the tracker that must stay dead",
+        "body_md": "cups (`cupsd`) must be enabled and active or Saturday r\u00e9sum\u00e9s pile up. sshd stays up for staff recovery. `toy-tracker` is a classroom malware analog \u2014 it must be disabled and inactive on the image. If a volunteer 'enabled it to see what it does,' the lab fails and you rewrite the image.\n\nRestart budgets matter. cupsd restart_sec \u2264 15 so a crash during a 40-job queue comes back before the line forms. A 120 second RestartSec is how you get a crowd and a rumor that 'the printer hates us.'\n\nVirtualization shows up as a nested recovery VM on the closet PC: a Debian guest with snapshots. Hypervisor type-1 vs type-2 is a sentence you can say, not a VMware sales pitch. The guest is for practicing useradd, not for production kiosks.\n\nSoftware troubleshooting: a 'printer offline' balloon is often cups paused, not hardware. You will learn to read `lpstat -p` (or the Windows analog) before you buy toner.",
+        "worked_example": "cupsd enabled+active restart_sec=8 pass. toy-tracker active fail. Nested Debian guest snapshot before practicing useradd."
+      },
+      "lab_id": "lab_services"
+    },
+    {
+      "week": 9,
+      "title": "Automation without heroics \u2014 snapshot, change window, rollback",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w09",
+        "title": "Automation without heroics \u2014 snapshot, change window, rollback",
+        "body_md": "CHG-88 moves the idle policy. Planned time 19:15 local. Window 18:00\u201321:00. Snapshot homes first, apply policy, verify kiosk login. Rollback is restore_snapshot_home. If you apply first and snapshot later, you have a souvenir, not a rollback.\n\nCron is a clock, not a personality. The desk runs `0 21 * * 3` for Windows patch download (Wednesday 21:00) and refuses to schedule image writes during public hours 10:00\u201317:00. Automation that fires at 11:00 on a Saturday is an incident.\n\nScripts in this course print what they would do, then do it only with `--apply`. Dry-run is how volunteers learn. The lab compares executed steps to planned steps; drift fails.\n\nAI tools may draft a runbook. They may not be granted sudo. If a chatbot invents a command you cannot explain, it does not go on the kiosk. That is operational procedure and, later, a cybersecurity identity rule \u2014 here it is just not being a daredevil.",
+        "worked_example": "Window 18:00\u201321:00, planned 19:15 \u2192 in window. Steps [snapshot_home, apply_idle_policy, verify_kiosk_login]. Rollback named."
+      },
+      "lab_id": "lab_automation_runbook"
+    },
+    {
+      "week": 10,
+      "title": "After-hours capstone \u2014 keep the desk alive without becoming a hero",
+      "lesson": {
+        "lesson_id": "GENERAL_IT-w10",
+        "title": "After-hours capstone \u2014 keep the desk alive without becoming a hero",
+        "body_md": "Saturday 16:40: kiosk idle-logout, printer name missing from a volunteer laptop on guest Wi-Fi, disk at 88% used, and a well-meaning AI browser extension asking for admin. You will open tickets, not folklore. You will snapshot before you apply. You will tell the truth to the next shift.\n\nCareer mapping this week is honest: this course aligns to Google IT Support themes and A+ V15 domains. It does not grant those credentials. Portfolio artifacts are the account table, the restore hash, the change record CHG-88, and a 90-second desk tour video with no patron faces.\n\nGroup project: staff a two-person after-hours rotation. One person is operator, one is recorder. Swap at 30 minutes. The recorder's notes must let a stranger continue. If the notes require the operator's memory, the project fails.\n\nYou will also write one paragraph on what this course is not: not a SOC, not a CCNA, not a license to image random laptops in the neighborhood. Scope is a professional habit.",
+        "worked_example": "Capstone scoring: tickets with subsystems, passing lab hashes, CHG in window, recorder notes usable by a stranger, no PII."
+      },
+      "lab_id": "lab_automation_runbook"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_os_users",
+    "lab_services",
+    "lab_storage",
+    "lab_dns_hosts",
+    "lab_backup",
+    "lab_ticket_queue",
+    "lab_automation_runbook"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "GENERAL_IT-lab",
+    "GENERAL_IT-assignment",
+    "GENERAL_IT-quiz",
+    "GENERAL_IT-mid",
+    "GENERAL_IT-final-knowledge",
+    "GENERAL_IT-practical",
+    "GENERAL_IT-project",
+    "GENERAL_IT-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "service_desk_technician",
+      "computer_operator",
+      "junior_sysadmin"
+    ],
+    "nice_categories": [
+      "operate_and_maintain"
+    ],
+    "certs_aligned_not_granted": [
+      "Google IT Support",
+      "CompTIA A+ V15"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/general_it_alignment.json",
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 7,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

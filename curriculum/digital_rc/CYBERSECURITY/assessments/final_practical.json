@@ -1,0 +1,13 @@
+{
+  "practical_id": "CYBERSECURITY-practical",
+  "labs": [
+    "lab_siem_triage",
+    "lab_hardening_baseline",
+    "lab_iam_rbac",
+    "lab_segmentation_zones",
+    "lab_incident_playbook",
+    "lab_safe_vuln_detect",
+    "lab_forensics_timeline"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

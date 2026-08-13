@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_learner_ingest.v1.json",
+  "title": "WAIKE learner ingest — no instructor keys",
+  "type": "object",
+  "required": ["schema", "role", "courses"],
+  "properties": {
+    "schema": { "const": "waike.learner_ingest.v1" },
+    "role": { "const": "learner" },
+    "generated_utc": { "type": "string" },
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "course_id",
+          "title",
+          "syllabus",
+          "weeks",
+          "assignments",
+          "labs",
+          "quizzes",
+          "assessments",
+          "portfolio",
+          "offline_pack"
+        ],
+        "properties": {
+          "course_id": { "type": "string" },
+          "title": { "type": "string" },
+          "kinesthetic_hook": { "type": "string" },
+          "lesson_excerpt": { "type": "string" },
+          "worked_example": { "type": "string" },
+          "assignment": { "type": "string" },
+          "lab_hint": { "type": "string" },
+          "syllabus": { "type": "object" },
+          "weeks": { "type": "array" },
+          "assignments": { "type": "array" },
+          "labs": { "type": "array" },
+          "quizzes": { "type": "array" },
+          "assessments": { "type": "object" },
+          "portfolio": { "type": "object" },
+          "offline_pack": { "type": "object" }
+        },
+        "not": {
+          "anyOf": [
+            { "required": ["answer_keys"] },
+            { "required": ["instructor_keys"] },
+            { "required": ["solution_key"] }
+          ]
+        }
+      }
+    }
+  }
+}
