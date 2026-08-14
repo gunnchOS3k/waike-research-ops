@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "HARDWARE_ENGINEERING",
+  "quizzes": {
+    "HARDWARE_ENGINEERING-q01": [
+      {
+        "id": "hw1-1",
+        "answer_index": 1,
+        "explanation": "Ohm."
+      },
+      {
+        "id": "hw1-2",
+        "answer_index": 2,
+        "explanation": "Divider."
+      },
+      {
+        "id": "hw1-3",
+        "answer_index": 3,
+        "explanation": "Pending."
+      },
+      {
+        "id": "hw1-4",
+        "answer_index": 0,
+        "explanation": "Reference."
+      },
+      {
+        "id": "hw1-5",
+        "answer_index": 1,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "hw1-6",
+        "answer_index": 2,
+        "explanation": "Safety/order."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q02": [
+      {
+        "id": "hw2-1",
+        "answer_index": 3,
+        "explanation": "Divider open-circuit."
+      },
+      {
+        "id": "hw2-2",
+        "answer_index": 0,
+        "explanation": "Parallel."
+      },
+      {
+        "id": "hw2-3",
+        "answer_index": 1,
+        "explanation": "Loading."
+      },
+      {
+        "id": "hw2-4",
+        "answer_index": 2,
+        "explanation": "Bridge tracks."
+      },
+      {
+        "id": "hw2-5",
+        "answer_index": 3,
+        "explanation": "Compute."
+      },
+      {
+        "id": "hw2-6",
+        "answer_index": 0,
+        "explanation": "Definition."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q03": [
+      {
+        "id": "hw3-1",
+        "answer_index": 1,
+        "explanation": "RC."
+      },
+      {
+        "id": "hw3-2",
+        "answer_index": 2,
+        "explanation": "1-1/e."
+      },
+      {
+        "id": "hw3-3",
+        "answer_index": 3,
+        "explanation": "Too early."
+      },
+      {
+        "id": "hw3-4",
+        "answer_index": 0,
+        "explanation": "Order."
+      },
+      {
+        "id": "hw3-5",
+        "answer_index": 1,
+        "explanation": "Math."
+      },
+      {
+        "id": "hw3-6",
+        "answer_index": 2,
+        "explanation": "Rule of thumb."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q04": [
+      {
+        "id": "hw4-1",
+        "answer_index": 3,
+        "explanation": "Only zero case."
+      },
+      {
+        "id": "hw4-2",
+        "answer_index": 0,
+        "explanation": "One."
+      },
+      {
+        "id": "hw4-3",
+        "answer_index": 1,
+        "explanation": "Order."
+      },
+      {
+        "id": "hw4-4",
+        "answer_index": 2,
+        "explanation": "NAND."
+      },
+      {
+        "id": "hw4-5",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "hw4-6",
+        "answer_index": 0,
+        "explanation": "Abstraction."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q05": [
+      {
+        "id": "hw5-1",
+        "answer_index": 1,
+        "explanation": "Sum."
+      },
+      {
+        "id": "hw5-2",
+        "answer_index": 2,
+        "explanation": "Headroom."
+      },
+      {
+        "id": "hw5-3",
+        "answer_index": 3,
+        "explanation": "Real MPNs."
+      },
+      {
+        "id": "hw5-4",
+        "answer_index": 0,
+        "explanation": "Reference."
+      },
+      {
+        "id": "hw5-5",
+        "answer_index": 1,
+        "explanation": "10mA."
+      },
+      {
+        "id": "hw5-6",
+        "answer_index": 2,
+        "explanation": "Subtract."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q06": [
+      {
+        "id": "hw6-1",
+        "answer_index": 3,
+        "explanation": "Addr."
+      },
+      {
+        "id": "hw6-2",
+        "answer_index": 0,
+        "explanation": "I2C."
+      },
+      {
+        "id": "hw6-3",
+        "answer_index": 1,
+        "explanation": "Basics."
+      },
+      {
+        "id": "hw6-4",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "hw6-5",
+        "answer_index": 3,
+        "explanation": "Difference."
+      },
+      {
+        "id": "hw6-6",
+        "answer_index": 0,
+        "explanation": "SPI."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q07": [
+      {
+        "id": "hw7-1",
+        "answer_index": 1,
+        "explanation": "QEMU M0."
+      },
+      {
+        "id": "hw7-2",
+        "answer_index": 2,
+        "explanation": "Pending."
+      },
+      {
+        "id": "hw7-3",
+        "answer_index": 3,
+        "explanation": "west."
+      },
+      {
+        "id": "hw7-4",
+        "answer_index": 0,
+        "explanation": "Order."
+      },
+      {
+        "id": "hw7-5",
+        "answer_index": 1,
+        "explanation": "Docs."
+      },
+      {
+        "id": "hw7-6",
+        "answer_index": 2,
+        "explanation": "Must pass digital."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q08": [
+      {
+        "id": "hw8-1",
+        "answer_index": 3,
+        "explanation": "okay."
+      },
+      {
+        "id": "hw8-2",
+        "answer_index": 0,
+        "explanation": "Unsafe."
+      },
+      {
+        "id": "hw8-3",
+        "answer_index": 1,
+        "explanation": "LED."
+      },
+      {
+        "id": "hw8-4",
+        "answer_index": 2,
+        "explanation": "Contract."
+      },
+      {
+        "id": "hw8-5",
+        "answer_index": 3,
+        "explanation": "Need content."
+      },
+      {
+        "id": "hw8-6",
+        "answer_index": 0,
+        "explanation": "Pending."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q09": [
+      {
+        "id": "hw9-1",
+        "answer_index": 1,
+        "explanation": "Clean."
+      },
+      {
+        "id": "hw9-2",
+        "answer_index": 2,
+        "explanation": "Power tied."
+      },
+      {
+        "id": "hw9-3",
+        "answer_index": 3,
+        "explanation": "MPNs."
+      },
+      {
+        "id": "hw9-4",
+        "answer_index": 0,
+        "explanation": "Reference."
+      },
+      {
+        "id": "hw9-5",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "hw9-6",
+        "answer_index": 2,
+        "explanation": "No bypass."
+      }
+    ],
+    "HARDWARE_ENGINEERING-q10": [
+      {
+        "id": "hw10-1",
+        "answer_index": 3,
+        "explanation": "Pair."
+      },
+      {
+        "id": "hw10-2",
+        "answer_index": 0,
+        "explanation": "Pending."
+      },
+      {
+        "id": "hw10-3",
+        "answer_index": 1,
+        "explanation": "Measure."
+      },
+      {
+        "id": "hw10-4",
+        "answer_index": 2,
+        "explanation": "No fake."
+      },
+      {
+        "id": "hw10-5",
+        "answer_index": 3,
+        "explanation": "Artifacts."
+      },
+      {
+        "id": "hw10-6",
+        "answer_index": 0,
+        "explanation": "Integrated."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "hwm01",
+      "answer_index": 1,
+      "explanation": "5/4000."
+    },
+    {
+      "id": "hwm02",
+      "answer_index": 2,
+      "explanation": "Half."
+    },
+    {
+      "id": "hwm03",
+      "answer_index": 3,
+      "explanation": "Parallel."
+    },
+    {
+      "id": "hwm04",
+      "answer_index": 0,
+      "explanation": "1e-3."
+    },
+    {
+      "id": "hwm05",
+      "answer_index": 1,
+      "explanation": "NAND."
+    },
+    {
+      "id": "hwm06",
+      "answer_index": 2,
+      "explanation": "Need MPNs."
+    },
+    {
+      "id": "hwm07",
+      "answer_index": 3,
+      "explanation": "Third."
+    },
+    {
+      "id": "hwm08",
+      "answer_index": 0,
+      "explanation": "Need board."
+    },
+    {
+      "id": "hwm09",
+      "answer_index": 1,
+      "explanation": "Need okay."
+    },
+    {
+      "id": "hwm10",
+      "answer_index": 2,
+      "explanation": "Must 0."
+    },
+    {
+      "id": "hwm11",
+      "answer_index": 3,
+      "explanation": "Need rail and nack."
+    },
+    {
+      "id": "hwm12",
+      "answer_index": 0,
+      "explanation": "Order."
+    },
+    {
+      "id": "hwm13",
+      "answer_index": 1,
+      "explanation": "Citation."
+    },
+    {
+      "id": "hwm14",
+      "answer_index": 2,
+      "explanation": "Loading."
+    },
+    {
+      "id": "hwm15",
+      "answer_index": 3,
+      "explanation": "Early."
+    },
+    {
+      "id": "hwm16",
+      "answer_index": 0,
+      "explanation": "Board."
+    },
+    {
+      "id": "hwm17",
+      "answer_index": 1,
+      "explanation": "Need mpn."
+    },
+    {
+      "id": "hwm18",
+      "answer_index": 2,
+      "explanation": "Pair."
+    },
+    {
+      "id": "hwm19",
+      "answer_index": 3,
+      "explanation": "Unsafe."
+    },
+    {
+      "id": "hwm20",
+      "answer_index": 0,
+      "explanation": "Integrated."
+    }
+  ],
+  "final": [
+    {
+      "id": "hwf01",
+      "answer_index": 2,
+      "explanation": "3V."
+    },
+    {
+      "id": "hwf02",
+      "answer_index": 3,
+      "explanation": "Same open V."
+    },
+    {
+      "id": "hwf03",
+      "answer_index": 0,
+      "explanation": "750."
+    },
+    {
+      "id": "hwf04",
+      "answer_index": 1,
+      "explanation": "Charge."
+    },
+    {
+      "id": "hwf05",
+      "answer_index": 2,
+      "explanation": "3tau."
+    },
+    {
+      "id": "hwf06",
+      "answer_index": 3,
+      "explanation": "1,1."
+    },
+    {
+      "id": "hwf07",
+      "answer_index": 0,
+      "explanation": "Need positive."
+    },
+    {
+      "id": "hwf08",
+      "answer_index": 1,
+      "explanation": "Contrast."
+    },
+    {
+      "id": "hwf09",
+      "answer_index": 2,
+      "explanation": "Must PENDING."
+    },
+    {
+      "id": "hwf10",
+      "answer_index": 3,
+      "explanation": "Need led0."
+    },
+    {
+      "id": "hwf11",
+      "answer_index": 0,
+      "explanation": "Power nets."
+    },
+    {
+      "id": "hwf12",
+      "answer_index": 1,
+      "explanation": "Must measure."
+    },
+    {
+      "id": "hwf13",
+      "answer_index": 2,
+      "explanation": "No invent."
+    },
+    {
+      "id": "hwf14",
+      "answer_index": 3,
+      "explanation": "Docs."
+    },
+    {
+      "id": "hwf15",
+      "answer_index": 0,
+      "explanation": "Both zero."
+    },
+    {
+      "id": "hwf16",
+      "answer_index": 1,
+      "explanation": "Artifacts."
+    },
+    {
+      "id": "hwf17",
+      "answer_index": 2,
+      "explanation": "Basics."
+    },
+    {
+      "id": "hwf18",
+      "answer_index": 3,
+      "explanation": "Real MPN."
+    },
+    {
+      "id": "hwf19",
+      "answer_index": 0,
+      "explanation": "Not free."
+    },
+    {
+      "id": "hwf20",
+      "answer_index": 1,
+      "explanation": "Digital."
+    },
+    {
+      "id": "hwf21",
+      "answer_index": 2,
+      "explanation": "UART."
+    },
+    {
+      "id": "hwf22",
+      "answer_index": 3,
+      "explanation": "Explain ok."
+    },
+    {
+      "id": "hwf23",
+      "answer_index": 0,
+      "explanation": "Evidence."
+    },
+    {
+      "id": "hwf24",
+      "answer_index": 1,
+      "explanation": "Keep."
+    }
+  ]
+}

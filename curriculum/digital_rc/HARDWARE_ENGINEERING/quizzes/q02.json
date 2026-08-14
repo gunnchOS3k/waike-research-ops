@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "hw2-1",
+      "kind": "mcq",
+      "stem": "Vth for given divider",
+      "choices": [
+        "6 V",
+        "3 V",
+        "12 V",
+        "9 V"
+      ]
+    },
+    {
+      "id": "hw2-2",
+      "kind": "mcq",
+      "stem": "Rth",
+      "choices": [
+        "750 \u03a9",
+        "4000 \u03a9",
+        "3000 \u03a9",
+        "0 \u03a9"
+      ]
+    },
+    {
+      "id": "hw2-3",
+      "kind": "mcq",
+      "stem": "Why Th\u00e9venin before ADC blame?",
+      "choices": [
+        "ADCs never err",
+        "Loading changes reading",
+        "SPICE bans ADC",
+        "KiCad needs it"
+      ]
+    },
+    {
+      "id": "hw2-4",
+      "kind": "mcq",
+      "stem": "Embedded integration means",
+      "choices": [
+        "Skip DT",
+        "Skip power budget",
+        "Plan Zephyr sample of this node later",
+        "Only soldering"
+      ]
+    },
+    {
+      "id": "hw2-5",
+      "kind": "mcq",
+      "stem": "Wrong Vth submission",
+      "choices": [
+        "Passes",
+        "Auto-corrects",
+        "Ignored",
+        "Fails numeric check"
+      ]
+    },
+    {
+      "id": "hw2-6",
+      "kind": "mcq",
+      "stem": "Open-circuit Vth assumes",
+      "choices": [
+        "Load removed",
+        "Shorted output",
+        "Infinite Vin",
+        "Zero R1"
+      ]
+    }
+  ]
+}

@@ -155,6 +155,8 @@ def emit_course(course_id: str) -> dict[str, Any]:
     )
     _write(base / "portfolio" / "PORTFOLIO.md", portfolio(course_id))
     _dump(base / "career_mapping.json", c["career"])
+    if c.get("ai_use_policy"):
+        _dump(base / "ai_use_policy.json", c["ai_use_policy"])
 
     package = {
         "schema": "waike.course_package.v1",
@@ -203,7 +205,11 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "GENERAL_IT": "curriculum/alignment/general_it_alignment.json",
             "COMPUTER_NETWORKING": "curriculum/alignment/networking_alignment.json",
             "CYBERSECURITY": "curriculum/alignment/cybersecurity_alignment.json",
+            "SOFTWARE_BUILDER": "curriculum/alignment/software_builder_alignment.json",
+            "HARDWARE_ENGINEERING": "curriculum/alignment/hardware_engineering_alignment.json",
+            "PM_AGILE_LSS": "curriculum/alignment/pm_agile_lss_alignment.json",
         }[course_id],
+        "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {
             "original_waike": True,
             "reuse_class_note": "See sources/benchmark_registry.json",

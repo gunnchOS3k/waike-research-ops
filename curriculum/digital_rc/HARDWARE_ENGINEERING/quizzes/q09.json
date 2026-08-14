@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "hw9-1",
+      "kind": "mcq",
+      "stem": "erc_errors must be",
+      "choices": [
+        "1",
+        "0",
+        "99",
+        "ignored"
+      ]
+    },
+    {
+      "id": "hw9-2",
+      "kind": "mcq",
+      "stem": "unconnected_power",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "unknown"
+      ]
+    },
+    {
+      "id": "hw9-3",
+      "kind": "mcq",
+      "stem": "BOM lines",
+      "choices": [
+        "0",
+        "Only values",
+        "Only footprints",
+        ">=3 with mpn"
+      ]
+    },
+    {
+      "id": "hw9-4",
+      "kind": "mcq",
+      "stem": "KiCad docs reuse",
+      "choices": [
+        "PUBLIC_REFERENCE_ONLY",
+        "Copy all tutorials verbatim as WAIKE IP",
+        "Dump",
+        "ATP"
+      ]
+    },
+    {
+      "id": "hw9-5",
+      "kind": "mcq",
+      "stem": "DRC errors 2",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Warning only in our lab",
+        "Auto-waived"
+      ]
+    },
+    {
+      "id": "hw9-6",
+      "kind": "mcq",
+      "stem": "Paywall PCB site scrape",
+      "choices": [
+        "Required",
+        "AI must do it",
+        "Forbidden",
+        "DRM bypass OK"
+      ]
+    }
+  ]
+}

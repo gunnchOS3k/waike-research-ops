@@ -1,0 +1,115 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "PM_AGILE_LSS",
+  "track_ids": [
+    "PM_AGILE_LSS"
+  ],
+  "date_checked": "2026-08-13",
+  "not_pmi_atp": true,
+  "benchmarks": [
+    {
+      "source_id": "ASQ_CSSGB_BOK_2022",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "define",
+          "waike_weeks": [
+            1,
+            9
+          ]
+        },
+        {
+          "domain": "measure",
+          "waike_weeks": [
+            6,
+            8
+          ]
+        },
+        {
+          "domain": "analyze",
+          "waike_weeks": [
+            7
+          ]
+        },
+        {
+          "domain": "improve",
+          "waike_weeks": [
+            9
+          ]
+        },
+        {
+          "domain": "control",
+          "waike_weeks": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "PMI_CAPM_ECO",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "project_management_fundamentals",
+          "waike_weeks": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "PMI_PMP_ECO_2026",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "people",
+          "waike_weeks": [
+            2,
+            4
+          ],
+          "weight_pct": 33
+        },
+        {
+          "domain": "process",
+          "waike_weeks": [
+            3,
+            5,
+            10
+          ],
+          "weight_pct": 41
+        },
+        {
+          "domain": "business_environment",
+          "waike_weeks": [
+            5,
+            10
+          ],
+          "weight_pct": 26
+        },
+        {
+          "domain": "ai_in_context",
+          "waike_weeks": [
+            10
+          ]
+        },
+        {
+          "domain": "sustainability_in_context",
+          "waike_weeks": [
+            5
+          ]
+        },
+        {
+          "domain": "value_delivery",
+          "waike_weeks": [
+            9,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "WAIKE is NOT a PMI ATP. No CAPM/PMP/CSSGB credential granted. No ECO task text as quiz stems. No fabricated community outcomes."
+}

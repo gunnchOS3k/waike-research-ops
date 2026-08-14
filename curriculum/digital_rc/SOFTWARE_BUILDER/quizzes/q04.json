@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "sw4-1",
+      "kind": "mcq",
+      "stem": "Overdue only via red CSS",
+      "choices": [
+        "Passes a11y",
+        "Required by HTML5",
+        "Fails \u2014 need OVERDUE text too",
+        "Blocks CI"
+      ]
+    },
+    {
+      "id": "sw4-2",
+      "kind": "mcq",
+      "stem": "Filter control should be",
+      "choices": [
+        "div onclick only",
+        "hidden span",
+        "canvas",
+        "Button named Filter overdue"
+      ]
+    },
+    {
+      "id": "sw4-3",
+      "kind": "mcq",
+      "stem": "API error rendering needs",
+      "choices": [
+        "role=alert region",
+        "alert() only",
+        "console.log only",
+        "Email staff"
+      ]
+    },
+    {
+      "id": "sw4-4",
+      "kind": "mcq",
+      "stem": "Why JSON tree not PNG?",
+      "choices": [
+        "PNG illegal",
+        "Validator computes structure",
+        "GitHub bans PNG",
+        "CSS untestable"
+      ]
+    },
+    {
+      "id": "sw4-5",
+      "kind": "mcq",
+      "stem": "ring-7 late means",
+      "choices": [
+        "Hide row",
+        "Delete device",
+        "Include OVERDUE text in row",
+        "Return 500"
+      ]
+    },
+    {
+      "id": "sw4-6",
+      "kind": "mcq",
+      "stem": "CS50 UI week is",
+      "choices": [
+        "Copied project",
+        "Exam dump",
+        "Republish license",
+        "Domain alignment label only"
+      ]
+    }
+  ]
+}

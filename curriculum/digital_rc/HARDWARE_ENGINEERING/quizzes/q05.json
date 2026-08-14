@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "hw5-1",
+      "kind": "mcq",
+      "stem": "total mA in reference",
+      "choices": [
+        "50",
+        "20.4",
+        "5.4",
+        "100"
+      ]
+    },
+    {
+      "id": "hw5-2",
+      "kind": "mcq",
+      "stem": "margin must be",
+      "choices": [
+        "0",
+        "negative",
+        ">0",
+        "infinite"
+      ]
+    },
+    {
+      "id": "hw5-3",
+      "kind": "mcq",
+      "stem": "fake MPN",
+      "choices": [
+        "Passes",
+        "Auto-substitutes",
+        "KiCad ignores",
+        "Fails real_mpns"
+      ]
+    },
+    {
+      "id": "hw5-4",
+      "kind": "mcq",
+      "stem": "Datasheet reuse",
+      "choices": [
+        "PUBLIC_REFERENCE_ONLY",
+        "Copy full PDF into repo",
+        "Exam dump",
+        "ATP"
+      ]
+    },
+    {
+      "id": "hw5-5",
+      "kind": "mcq",
+      "stem": "OLED often dominates",
+      "choices": [
+        "Never",
+        "Yes in this fixture",
+        "Only at 0K",
+        "Only in SPICE"
+      ]
+    },
+    {
+      "id": "hw5-6",
+      "kind": "mcq",
+      "stem": "Regulator 50mA with 20.4 load",
+      "choices": [
+        "Fails",
+        "Margin 0",
+        "Margin 29.6",
+        "Needs 100"
+      ]
+    }
+  ]
+}

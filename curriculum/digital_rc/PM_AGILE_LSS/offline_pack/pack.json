@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "PM_AGILE_LSS",
+  "lesson_ids": [
+    "PM_AGILE_LSS-w01",
+    "PM_AGILE_LSS-w02",
+    "PM_AGILE_LSS-w03",
+    "PM_AGILE_LSS-w04",
+    "PM_AGILE_LSS-w05",
+    "PM_AGILE_LSS-w06",
+    "PM_AGILE_LSS-w07",
+    "PM_AGILE_LSS-w08",
+    "PM_AGILE_LSS-w09",
+    "PM_AGILE_LSS-w10"
+  ],
+  "labs": [
+    "lab_charter",
+    "lab_raci",
+    "lab_wbs_schedule",
+    "lab_sprint_board",
+    "lab_risk_register",
+    "lab_sipoc_process",
+    "lab_pareto_rootcause",
+    "lab_control_chart",
+    "lab_dmaic_case",
+    "lab_change_status_ai"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

@@ -1,15 +1,15 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0003,
+  "worst_jaccard": 0.0074,
   "worst_pair": [
-    "GENERAL_IT",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
-  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_jaccard": 0.092,
   "worst_packaging_pair": [
-    "COMPUTER_NETWORKING",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
   "status": "PASS"
 }

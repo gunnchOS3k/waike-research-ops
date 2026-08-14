@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "sw10-1",
+      "kind": "mcq",
+      "stem": "availability 50 fails / 10000",
+      "choices": [
+        "0.5",
+        "0.95",
+        "0.995",
+        "1.0"
+      ]
+    },
+    {
+      "id": "sw10-2",
+      "kind": "mcq",
+      "stem": "Fabricating community outcomes",
+      "choices": [
+        "Required drama",
+        "PMI ATP",
+        "OK if AI",
+        "Forbidden"
+      ]
+    },
+    {
+      "id": "sw10-3",
+      "kind": "mcq",
+      "stem": "Error budget uses",
+      "choices": [
+        "Fixture counts",
+        "Twitter polls",
+        "Guesses",
+        "Soldering time"
+      ]
+    },
+    {
+      "id": "sw10-4",
+      "kind": "mcq",
+      "stem": "Capstone path",
+      "choices": [
+        "Quiz only",
+        "issue\u2192CI\u2192migrate\u2192deploy\u2192SLO",
+        "PMI dump",
+        "Physical fab"
+      ]
+    },
+    {
+      "id": "sw10-5",
+      "kind": "mcq",
+      "stem": "WAIKE grants PMI/CompTIA?",
+      "choices": [
+        "Yes",
+        "Only CSSGB",
+        "No \u2014 alignment labels only",
+        "Only CAPM"
+      ]
+    },
+    {
+      "id": "sw10-6",
+      "kind": "mcq",
+      "stem": "COMPARE_APPROACHES is for",
+      "choices": [
+        "Stealing keys",
+        "Skipping deploy",
+        "Bypassing DRC",
+        "Tradeoffs with disclosure"
+      ]
+    }
+  ]
+}

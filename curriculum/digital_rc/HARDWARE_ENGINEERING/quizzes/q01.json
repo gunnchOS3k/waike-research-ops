@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "hw1-1",
+      "kind": "mcq",
+      "stem": "I for 12V across 1k+3k",
+      "choices": [
+        "0.012 A",
+        "0.003 A",
+        "3 A",
+        "12 A"
+      ]
+    },
+    {
+      "id": "hw1-2",
+      "kind": "mcq",
+      "stem": "Vout across 3k",
+      "choices": [
+        "3 V",
+        "12 V",
+        "9 V",
+        "0 V"
+      ]
+    },
+    {
+      "id": "hw1-3",
+      "kind": "mcq",
+      "stem": "Soldering this week",
+      "choices": [
+        "Required",
+        "Forbidden forever",
+        "Done in QEMU",
+        "PHYSICAL_PENDING"
+      ]
+    },
+    {
+      "id": "hw1-4",
+      "kind": "mcq",
+      "stem": "6.002 reuse class",
+      "choices": [
+        "PUBLIC_REFERENCE_ONLY",
+        "FREE_COPY",
+        "ATP",
+        "Dump"
+      ]
+    },
+    {
+      "id": "hw1-5",
+      "kind": "mcq",
+      "stem": "Print PASS as lab output",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Required",
+        "KiCad default"
+      ]
+    },
+    {
+      "id": "hw1-6",
+      "kind": "mcq",
+      "stem": "Why sim before iron?",
+      "choices": [
+        "Irons are illegal",
+        "Zephyr bans irons",
+        "Catch math errors before heat",
+        "PMI says so"
+      ]
+    }
+  ]
+}

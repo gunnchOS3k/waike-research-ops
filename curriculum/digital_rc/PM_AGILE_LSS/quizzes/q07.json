@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "pm7-1",
+      "kind": "mcq",
+      "stem": "cum must reach",
+      "choices": [
+        "0.10",
+        "1.01",
+        ">=0.80",
+        "0"
+      ]
+    },
+    {
+      "id": "pm7-2",
+      "kind": "mcq",
+      "stem": "Wrong cum",
+      "choices": [
+        "Passes",
+        "OK",
+        "Ignored",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm7-3",
+      "kind": "mcq",
+      "stem": "root_cause short 'x'",
+      "choices": [
+        "Fails length",
+        "Passes",
+        "Ideal",
+        "Auto"
+      ]
+    },
+    {
+      "id": "pm7-4",
+      "kind": "mcq",
+      "stem": "Pareto sorts by",
+      "choices": [
+        "Name",
+        "Descending count",
+        "Random",
+        "AI"
+      ]
+    },
+    {
+      "id": "pm7-5",
+      "kind": "mcq",
+      "stem": "Fabricated percentages",
+      "choices": [
+        "Required",
+        "OK",
+        "Forbidden",
+        "ATP"
+      ]
+    },
+    {
+      "id": "pm7-6",
+      "kind": "mcq",
+      "stem": "5-Why goal",
+      "choices": [
+        "Blame person",
+        "Infinite loop",
+        "Skip data",
+        "Controllable cause"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1739 @@
+{
+  "SOFTWARE_BUILDER": {
+    "mid": [
+      {
+        "id": "swm01",
+        "kind": "mcq",
+        "stem": "Build 47 collides on serialize_ticket where main added rate_limit(30) and feature added FIELD_MAP. Survivor must retain?",
+        "choices": [
+          "Only FIELD_MAP",
+          "Both rate_limit(30) and FIELD_MAP",
+          "Neither",
+          "Only a comment"
+        ],
+        "answer_index": 1,
+        "explanation": "Both tokens."
+      },
+      {
+        "id": "swm02",
+        "kind": "mcq",
+        "stem": "Compose healthcheck stays starting after migrate=skipped. Right decision?",
+        "choices": [
+          "Ship anyway",
+          "Block until migrate=ok then healthy",
+          "Delete rollback digest",
+          "Force latest"
+        ],
+        "answer_index": 1,
+        "explanation": "Migrate then health."
+      },
+      {
+        "id": "swm03",
+        "kind": "mcq",
+        "stem": "Checkout store length becomes 2 after two identical PUTs to same id. Broken contract?",
+        "choices": [
+          "DNS TTL",
+          "Idempotent update",
+          "CSS grid",
+          "SPICE net"
+        ],
+        "answer_index": 1,
+        "explanation": "Idempotency."
+      },
+      {
+        "id": "swm04",
+        "kind": "mcq",
+        "stem": "Why reject migration SQL containing PASSWORD=hunter2?",
+        "choices": [
+          "SQLite syntax",
+          "Secrets must not live in migration SQL",
+          "CS50 requires it",
+          "Zephyr needs it"
+        ],
+        "answer_index": 1,
+        "explanation": "No secrets."
+      },
+      {
+        "id": "swm05",
+        "kind": "mcq",
+        "stem": "Overdue row uses class=red with no OVERDUE text. Which rule fails?",
+        "choices": [
+          "Color-only signaling",
+          "Git LFS",
+          "BOM MPN",
+          "Control chart UCL"
+        ],
+        "answer_index": 0,
+        "explanation": "A11y text."
+      },
+      {
+        "id": "swm06",
+        "kind": "mcq",
+        "stem": "forge-bot granted checkout.close during a rush. Which check fails?",
+        "choices": [
+          "bot_no_close",
+          "tau math",
+          "RACI one A",
+          "Thevenin Rth"
+        ],
+        "answer_index": 0,
+        "explanation": "Bot policy."
+      },
+      {
+        "id": "swm07",
+        "kind": "mcq",
+        "stem": "Report total=12 failed=0 omits test_reader_post_forbidden. Result?",
+        "choices": [
+          "Pass",
+          "Fail named_test",
+          "Auto-generate test",
+          "Skip CI"
+        ],
+        "answer_index": 1,
+        "explanation": "Named negative path."
+      },
+      {
+        "id": "swm08",
+        "kind": "mcq",
+        "stem": "PR workflow deploy job has no environment key. Gate?",
+        "choices": [
+          "no_ungated_deploy",
+          "NAND truth",
+          "Pareto 80 percent",
+          "Idle timer"
+        ],
+        "answer_index": 0,
+        "explanation": "Environment gate."
+      },
+      {
+        "id": "swm09",
+        "kind": "mcq",
+        "stem": "Fixture failed=20 total=4000. Student availability?",
+        "choices": [
+          "0.995",
+          "0.95",
+          "0.005",
+          "1.0"
+        ],
+        "answer_index": 0,
+        "explanation": "1-20/4000."
+      },
+      {
+        "id": "swm10",
+        "kind": "mcq",
+        "stem": "Review lists only low findings while intentional IDOR remains. Missing?",
+        "choices": [
+          "A high or critical IDOR finding",
+          "A KiCad DRC",
+          "A SIPOC",
+          "A Thevenin"
+        ],
+        "answer_index": 0,
+        "explanation": "Catch IDOR."
+      },
+      {
+        "id": "swm11",
+        "kind": "mcq",
+        "stem": "Location header after create should match which shape?",
+        "choices": [
+          "/api/v1/checkouts/{id}",
+          "/admin",
+          "mailto:staff",
+          "file:///etc/passwd"
+        ],
+        "answer_index": 0,
+        "explanation": "REST create."
+      },
+      {
+        "id": "swm12",
+        "kind": "mcq",
+        "stem": "Down migration drops entire checkouts table. Why reject?",
+        "choices": [
+          "History must survive column rollback",
+          "Tables are illegal",
+          "Postgres forbids DROP",
+          "Compose cannot mount"
+        ],
+        "answer_index": 0,
+        "explanation": "Column-only."
+      },
+      {
+        "id": "swm13",
+        "kind": "mcq",
+        "stem": "Assistant edited your authz matrix. Proper assessment tag?",
+        "choices": [
+          "AI_DISCLOSED",
+          "NO_AI claimed falsely",
+          "Skip disclosure",
+          "Hide the JSON"
+        ],
+        "answer_index": 0,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "swm14",
+        "kind": "mcq",
+        "stem": "lint job scheduled after test job. Ordering rule?",
+        "choices": [
+          "lint before test fails",
+          "BOM first",
+          "DMAIC only",
+          "QEMU last"
+        ],
+        "answer_index": 0,
+        "explanation": "Fail fast."
+      },
+      {
+        "id": "swm15",
+        "kind": "mcq",
+        "stem": "rollback_to equals current digest sha256:abc. Failure?",
+        "choices": [
+          "rollback_distinct",
+          "NAND output",
+          "One Accountable",
+          "SIPOC customers"
+        ],
+        "answer_index": 0,
+        "explanation": "Need prior."
+      },
+      {
+        "id": "swm16",
+        "kind": "mcq",
+        "stem": "Reader receives 201 on POST /checkouts. What should happen instead?",
+        "choices": [
+          "403 forbidden",
+          "500 always",
+          "204 empty",
+          "302 redirect"
+        ],
+        "answer_index": 0,
+        "explanation": "Reader cannot write."
+      },
+      {
+        "id": "swm17",
+        "kind": "mcq",
+        "stem": "Capstone packet has quizzes but no deploy record. Status?",
+        "choices": [
+          "Incomplete issue-to-deploy path",
+          "Complete",
+          "CSSGB earned",
+          "PMI ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "Need deploy."
+      },
+      {
+        "id": "swm18",
+        "kind": "mcq",
+        "stem": "API returns Python traceback to browser on 500. Treat as?",
+        "choices": [
+          "medium or higher finding",
+          "ignore",
+          "info-only always",
+          "automatic pass"
+        ],
+        "answer_index": 0,
+        "explanation": "Leak."
+      },
+      {
+        "id": "swm19",
+        "kind": "mcq",
+        "stem": "schema_version stays 2 after adding returned_at. Fail because?",
+        "choices": [
+          "version must bump to 3",
+          "SPICE error",
+          "RACI error",
+          "UCL error"
+        ],
+        "answer_index": 0,
+        "explanation": "Version."
+      },
+      {
+        "id": "swm20",
+        "kind": "mcq",
+        "stem": "COMPARE_APPROACHES used on UI layout. Footer must include?",
+        "choices": [
+          "Disclosure of the comparison",
+          "Nothing",
+          "Instructor password",
+          "DRM key"
+        ],
+        "answer_index": 0,
+        "explanation": "Disclose."
+      }
+    ],
+    "final": [
+      {
+        "id": "swf01",
+        "kind": "mcq",
+        "stem": "Feature removed require_role while adding HOURS cache. Merging blindly risks?",
+        "choices": [
+          "Open endpoint",
+          "Faster boots only",
+          "Better OLED contrast",
+          "Lower Rth"
+        ],
+        "answer_index": 0,
+        "explanation": "Lost guard."
+      },
+      {
+        "id": "swf02",
+        "kind": "mcq",
+        "stem": "PUT /checkouts/9 twice under desk role should leave store_len at?",
+        "choices": [
+          "1",
+          "2",
+          "0",
+          "9"
+        ],
+        "answer_index": 0,
+        "explanation": "Idempotent."
+      },
+      {
+        "id": "swf03",
+        "kind": "mcq",
+        "stem": "Which request should return 403?",
+        "choices": [
+          "reader POST write route",
+          "desk GET existing",
+          "desk POST with device_id",
+          "reader GET"
+        ],
+        "answer_index": 0,
+        "explanation": "403."
+      },
+      {
+        "id": "swf04",
+        "kind": "mcq",
+        "stem": "Forward migration sets returned_at NOT NULL without backfill. Risk?",
+        "choices": [
+          "Legacy rows break contracts",
+          "Faster queries only",
+          "Better a11y",
+          "Lower tau"
+        ],
+        "answer_index": 0,
+        "explanation": "Nullable needed."
+      },
+      {
+        "id": "swf05",
+        "kind": "mcq",
+        "stem": "API failure UI omits role=alert. Which check fails?",
+        "choices": [
+          "alert_role",
+          "west build",
+          "critical path",
+          "Vth"
+        ],
+        "answer_index": 0,
+        "explanation": "Alert."
+      },
+      {
+        "id": "swf06",
+        "kind": "mcq",
+        "stem": "desk role omits checkout.create. Outcome?",
+        "choices": [
+          "desk_can_create fails",
+          "PASS",
+          "QEMU boots",
+          "CSSGB"
+        ],
+        "answer_index": 0,
+        "explanation": "Desk writes."
+      },
+      {
+        "id": "swf07",
+        "kind": "mcq",
+        "stem": "Report failed=1 total=20. Outcome?",
+        "choices": [
+          "failed_zero fails",
+          "PASS",
+          "Ignored",
+          "Physical"
+        ],
+        "answer_index": 0,
+        "explanation": "Must be 0."
+      },
+      {
+        "id": "swf08",
+        "kind": "mcq",
+        "stem": "Workflow on push only with deploy run PASS. Honesty issues include?",
+        "choices": [
+          "bad trigger, echo PASS, ungated deploy",
+          "none",
+          "only lint",
+          "only SPDX"
+        ],
+        "answer_index": 0,
+        "explanation": "Multiple."
+      },
+      {
+        "id": "swf09",
+        "kind": "mcq",
+        "stem": "migrate=ok but health=unhealthy. Deploy lab?",
+        "choices": [
+          "Fails healthy check",
+          "Passes",
+          "Silent pass",
+          "Grants CAPM"
+        ],
+        "answer_index": 0,
+        "explanation": "Need healthy."
+      },
+      {
+        "id": "swf10",
+        "kind": "mcq",
+        "stem": "Findings FORGE-IDOR-1 high plus rate-limit medium with evidence. OK?",
+        "choices": [
+          "Yes",
+          "No only one finding",
+          "No high forbidden",
+          "No need BOM"
+        ],
+        "answer_index": 0,
+        "explanation": "OK."
+      },
+      {
+        "id": "swf11",
+        "kind": "mcq",
+        "stem": "failed=100 total=10000. Reported availability value?",
+        "choices": [
+          "0.99",
+          "0.995",
+          "0.9",
+          "1.0"
+        ],
+        "answer_index": 0,
+        "explanation": "0.99."
+      },
+      {
+        "id": "swf12",
+        "kind": "mcq",
+        "stem": "SLO 0.995 with availability 0.99. budget_ok?",
+        "choices": [
+          "false",
+          "true",
+          "null",
+          "PHYSICAL_PENDING"
+        ],
+        "answer_index": 0,
+        "explanation": "Below SLO."
+      },
+      {
+        "id": "swf13",
+        "kind": "mcq",
+        "stem": "CS50 Web in syllabus means?",
+        "choices": [
+          "Structure citation without lab copy",
+          "Paste projects freely",
+          "Exam dump OK",
+          "ATP status"
+        ],
+        "answer_index": 0,
+        "explanation": "Citation."
+      },
+      {
+        "id": "swf14",
+        "kind": "mcq",
+        "stem": "Week 8 deploy target in this course?",
+        "choices": [
+          "Local Device Lab compose",
+          "Unreviewed production AWS",
+          "Patron phones",
+          "Soldering iron"
+        ],
+        "answer_index": 0,
+        "explanation": "Compose."
+      },
+      {
+        "id": "swf15",
+        "kind": "mcq",
+        "stem": "AI secretly authors entire security findings list. Integrity?",
+        "choices": [
+          "Violates NO_AI practical",
+          "Fine",
+          "Required",
+          "Grants OSCP"
+        ],
+        "answer_index": 0,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "swf16",
+        "kind": "mcq",
+        "stem": "Conflict parents array length 1. Result?",
+        "choices": [
+          "two_parents fails",
+          "PASS",
+          "Auto-merge",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Need two."
+      },
+      {
+        "id": "swf17",
+        "kind": "mcq",
+        "stem": "upload-report job missing from CI model. Result?",
+        "choices": [
+          "has_upload fails",
+          "PASS",
+          "Optional forever",
+          "Only on main"
+        ],
+        "answer_index": 0,
+        "explanation": "Artifact."
+      },
+      {
+        "id": "swf18",
+        "kind": "mcq",
+        "stem": "Capstone claims city saved two million dollars without fixture. Allowed?",
+        "choices": [
+          "No",
+          "Yes",
+          "If AI says",
+          "If PMI ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "No fabrications."
+      },
+      {
+        "id": "swf19",
+        "kind": "mcq",
+        "stem": "Public CS50 page means free to copy labs into WAIKE?",
+        "choices": [
+          "No",
+          "Yes",
+          "Only quizzes",
+          "Only solutions"
+        ],
+        "answer_index": 0,
+        "explanation": "Not free."
+      },
+      {
+        "id": "swf20",
+        "kind": "mcq",
+        "stem": "Where do graded key files live?",
+        "choices": [
+          "instructor instructor key file only",
+          "learner quiz JSON",
+          "public Discord",
+          "README hero"
+        ],
+        "answer_index": 0,
+        "explanation": "Instructor-only."
+      },
+      {
+        "id": "swf21",
+        "kind": "mcq",
+        "stem": "store_len_after_idempotent_put=1 proves?",
+        "choices": [
+          "Update did not duplicate row",
+          "DNS works",
+          "OLED wired",
+          "RACI done"
+        ],
+        "answer_index": 0,
+        "explanation": "Idempotency."
+      },
+      {
+        "id": "swf22",
+        "kind": "mcq",
+        "stem": "HINT used on REST cases. Proper tag?",
+        "choices": [
+          "AI_DISCLOSED",
+          "Claim NO_AI",
+          "Delete cases",
+          "Ship without tests"
+        ],
+        "answer_index": 0,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "swf23",
+        "kind": "mcq",
+        "stem": "Image pin format required?",
+        "choices": [
+          "sha256 digest",
+          "latest tag",
+          "v1 string",
+          "random UUID"
+        ],
+        "answer_index": 0,
+        "explanation": "Digest."
+      },
+      {
+        "id": "swf24",
+        "kind": "mcq",
+        "stem": "Final practical pass rule emphasizes?",
+        "choices": [
+          "Labs ok with empty/wrong/print-PASS failing",
+          "Print PASS files",
+          "Copied CS50",
+          "PMI exam PDF"
+        ],
+        "answer_index": 0,
+        "explanation": "Honest labs."
+      }
+    ],
+    "offset": 0
+  },
+  "HARDWARE_ENGINEERING": {
+    "mid": [
+      {
+        "id": "hwm01",
+        "kind": "mcq",
+        "stem": "Vin=5V R1=2k R2=2k. Series current?",
+        "choices": [
+          "0.00125 A",
+          "0.0025 A",
+          "5 A",
+          "0 A"
+        ],
+        "answer_index": 0,
+        "explanation": "5/4000."
+      },
+      {
+        "id": "hwm02",
+        "kind": "mcq",
+        "stem": "Same divider voltage across R2?",
+        "choices": [
+          "2.5 V",
+          "5 V",
+          "0 V",
+          "1 V"
+        ],
+        "answer_index": 0,
+        "explanation": "Half."
+      },
+      {
+        "id": "hwm03",
+        "kind": "mcq",
+        "stem": "Thevenin Rth for two 2k resistors?",
+        "choices": [
+          "1000 ohm",
+          "4000 ohm",
+          "0",
+          "infinity"
+        ],
+        "answer_index": 0,
+        "explanation": "Parallel."
+      },
+      {
+        "id": "hwm04",
+        "kind": "mcq",
+        "stem": "tau for R=10k C=100nF?",
+        "choices": [
+          "0.001 s",
+          "1 s",
+          "10 s",
+          "1e-9 s"
+        ],
+        "answer_index": 0,
+        "explanation": "1e-3."
+      },
+      {
+        "id": "hwm05",
+        "kind": "mcq",
+        "stem": "NAND with inputs 1 and 0 yields?",
+        "choices": [
+          "1",
+          "0",
+          "Z",
+          "X"
+        ],
+        "answer_index": 0,
+        "explanation": "NAND."
+      },
+      {
+        "id": "hwm06",
+        "kind": "mcq",
+        "stem": "Budget omits SSD1306 MPN. Result?",
+        "choices": [
+          "real_mpns fails",
+          "PASS",
+          "Auto-add",
+          "Ignore OLED"
+        ],
+        "answer_index": 0,
+        "explanation": "Need MPNs."
+      },
+      {
+        "id": "hwm07",
+        "kind": "mcq",
+        "stem": "I2C frame bytes 50 AA BB \u2014 data byte value?",
+        "choices": [
+          "0xBB",
+          "0x50",
+          "0xAA",
+          "0x00"
+        ],
+        "answer_index": 0,
+        "explanation": "Third."
+      },
+      {
+        "id": "hwm08",
+        "kind": "mcq",
+        "stem": "west build command missing board id. Result?",
+        "choices": [
+          "west check fails",
+          "PASS",
+          "Physical required",
+          "DRC fixes"
+        ],
+        "answer_index": 0,
+        "explanation": "Need board."
+      },
+      {
+        "id": "hwm09",
+        "kind": "mcq",
+        "stem": "i2c1 status disabled while OLED present. Risk?",
+        "choices": [
+          "Bus off so peripheral mute",
+          "Always faster boot",
+          "Lower Vth",
+          "Better UCL"
+        ],
+        "answer_index": 0,
+        "explanation": "Need okay."
+      },
+      {
+        "id": "hwm10",
+        "kind": "mcq",
+        "stem": "erc_errors equals 1 on PCB package. Result?",
+        "choices": [
+          "Fails",
+          "Passes",
+          "Warning pass",
+          "QEMU ignores"
+        ],
+        "answer_index": 0,
+        "explanation": "Must 0."
+      },
+      {
+        "id": "hwm11",
+        "kind": "mcq",
+        "stem": "Diagnosis symptoms list only fan_noise. Result?",
+        "choices": [
+          "symptoms check fails",
+          "PASS",
+          "Auto",
+          "Physical done"
+        ],
+        "answer_index": 0,
+        "explanation": "Need rail and nack."
+      },
+      {
+        "id": "hwm12",
+        "kind": "mcq",
+        "stem": "Why keep soldering marked PHYSICAL_PENDING?",
+        "choices": [
+          "Digital validation first",
+          "Irons banned forever",
+          "ASQ rule",
+          "PMI ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "Order."
+      },
+      {
+        "id": "hwm13",
+        "kind": "mcq",
+        "stem": "MIT OCW 6.002 is used as?",
+        "choices": [
+          "Rigor citation not problem-set copy",
+          "Full PDF republish",
+          "Exam harvest",
+          "DRM bypass"
+        ],
+        "answer_index": 0,
+        "explanation": "Citation."
+      },
+      {
+        "id": "hwm14",
+        "kind": "mcq",
+        "stem": "ADC input resistance near Rth causes?",
+        "choices": [
+          "Loading error on reading",
+          "No effect",
+          "Always plus 12V",
+          "Deletes DT"
+        ],
+        "answer_index": 0,
+        "explanation": "Loading."
+      },
+      {
+        "id": "hwm15",
+        "kind": "mcq",
+        "stem": "Sampling reset at 0.2 tau risks?",
+        "choices": [
+          "Not settled reading",
+          "Perfect boot",
+          "Lower Iq",
+          "Fixes NACK"
+        ],
+        "answer_index": 0,
+        "explanation": "Early."
+      },
+      {
+        "id": "hwm16",
+        "kind": "mcq",
+        "stem": "Required QEMU board id in this course?",
+        "choices": [
+          "qemu_cortex_m0",
+          "raspberrypi5",
+          "x86_64",
+          "native_only"
+        ],
+        "answer_index": 0,
+        "explanation": "Board."
+      },
+      {
+        "id": "hwm17",
+        "kind": "mcq",
+        "stem": "BOM lines lack mpn fields. Result?",
+        "choices": [
+          "Fails bom check",
+          "Passes",
+          "Optional",
+          "SPICE fills"
+        ],
+        "answer_index": 0,
+        "explanation": "Need mpn."
+      },
+      {
+        "id": "hwm18",
+        "kind": "mcq",
+        "stem": "shared_rail_overload matches which symptom pair?",
+        "choices": [
+          "rail_sag_3v3 and i2c_nack",
+          "only green LED",
+          "only clean DRC",
+          "only RACI"
+        ],
+        "answer_index": 0,
+        "explanation": "Pair."
+      },
+      {
+        "id": "hwm19",
+        "kind": "mcq",
+        "stem": "Overlay deletes soc node. Result?",
+        "choices": [
+          "Fails safety",
+          "Recommended",
+          "Required for QEMU",
+          "Fixes margin"
+        ],
+        "answer_index": 0,
+        "explanation": "Unsafe."
+      },
+      {
+        "id": "hwm20",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING in batch 002 is?",
+        "choices": [
+          "Integrated with hardware engineering",
+          "Deleted",
+          "Separate mega-PR",
+          "PROFILE README"
+        ],
+        "answer_index": 0,
+        "explanation": "Integrated."
+      }
+    ],
+    "final": [
+      {
+        "id": "hwf01",
+        "kind": "mcq",
+        "stem": "Vin=12 R1=3k R2=1k. Voltage across R2?",
+        "choices": [
+          "3 V",
+          "9 V",
+          "12 V",
+          "4 V"
+        ],
+        "answer_index": 0,
+        "explanation": "3V."
+      },
+      {
+        "id": "hwf02",
+        "kind": "mcq",
+        "stem": "Open-circuit Thevenin voltage at that node?",
+        "choices": [
+          "3 V",
+          "9 V",
+          "0 V",
+          "12 V"
+        ],
+        "answer_index": 0,
+        "explanation": "Same open V."
+      },
+      {
+        "id": "hwf03",
+        "kind": "mcq",
+        "stem": "Rth for 3k in parallel with 1k?",
+        "choices": [
+          "750 ohm",
+          "4000 ohm",
+          "3000 ohm",
+          "1000 ohm"
+        ],
+        "answer_index": 0,
+        "explanation": "750."
+      },
+      {
+        "id": "hwf04",
+        "kind": "mcq",
+        "stem": "Charging capacitor formula uses?",
+        "choices": [
+          "V0 times (1 - exp(-t/tau))",
+          "V0 exp(+t)",
+          "V0 times t",
+          "always zero"
+        ],
+        "answer_index": 0,
+        "explanation": "Charge."
+      },
+      {
+        "id": "hwf05",
+        "kind": "mcq",
+        "stem": "About how settled at three tau?",
+        "choices": [
+          "about 95 percent",
+          "10 percent",
+          "50 percent",
+          "0 percent"
+        ],
+        "answer_index": 0,
+        "explanation": "3tau."
+      },
+      {
+        "id": "hwf06",
+        "kind": "mcq",
+        "stem": "NAND outputs zero only when?",
+        "choices": [
+          "both inputs are one",
+          "any input is zero",
+          "never",
+          "always"
+        ],
+        "answer_index": 0,
+        "explanation": "1,1."
+      },
+      {
+        "id": "hwf07",
+        "kind": "mcq",
+        "stem": "Regulator 40mA with load 45mA yields?",
+        "choices": [
+          "negative margin fail",
+          "plus 5 margin",
+          "zero required",
+          "infinite"
+        ],
+        "answer_index": 0,
+        "explanation": "Need positive."
+      },
+      {
+        "id": "hwf08",
+        "kind": "mcq",
+        "stem": "One SPI versus I2C distinction?",
+        "choices": [
+          "SPI uses chip-select and shared clock; I2C uses address and ACK",
+          "They are identical",
+          "Both need CAN",
+          "Neither needs ground"
+        ],
+        "answer_index": 0,
+        "explanation": "Contrast."
+      },
+      {
+        "id": "hwf09",
+        "kind": "mcq",
+        "stem": "physical_status set to DONE against course rule. Result?",
+        "choices": [
+          "Fails physical_pending",
+          "Passes",
+          "Required",
+          "Auto"
+        ],
+        "answer_index": 0,
+        "explanation": "Must PENDING."
+      },
+      {
+        "id": "hwf10",
+        "kind": "mcq",
+        "stem": "LED enabled but overlay text omits led0 token. Result?",
+        "choices": [
+          "led check fails",
+          "PASS",
+          "QEMU adds LED",
+          "BOM fixes"
+        ],
+        "answer_index": 0,
+        "explanation": "Need led0."
+      },
+      {
+        "id": "hwf11",
+        "kind": "mcq",
+        "stem": "unconnected_power true on ERC package. Result?",
+        "choices": [
+          "Fails",
+          "Passes",
+          "Optional",
+          "Ignored"
+        ],
+        "answer_index": 0,
+        "explanation": "Power nets."
+      },
+      {
+        "id": "hwf12",
+        "kind": "mcq",
+        "stem": "next_probe set to ignore it. Result?",
+        "choices": [
+          "Fails measure requirement",
+          "Passes",
+          "Ideal",
+          "Physical"
+        ],
+        "answer_index": 0,
+        "explanation": "Must measure."
+      },
+      {
+        "id": "hwf13",
+        "kind": "mcq",
+        "stem": "AI invents datasheet currents not in fixture. Allowed?",
+        "choices": [
+          "No",
+          "Yes",
+          "Required",
+          "ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "No invent."
+      },
+      {
+        "id": "hwf14",
+        "kind": "mcq",
+        "stem": "Zephyr documentation posture here?",
+        "choices": [
+          "Reference open docs not exam dump",
+          "Copy exams",
+          "Paywall bypass",
+          "ATP grant"
+        ],
+        "answer_index": 0,
+        "explanation": "Docs."
+      },
+      {
+        "id": "hwf15",
+        "kind": "mcq",
+        "stem": "DRC 0 and ERC 2. Package result?",
+        "choices": [
+          "Fails erc_clean",
+          "Passes",
+          "Half pass",
+          "QEMU pass"
+        ],
+        "answer_index": 0,
+        "explanation": "Both zero."
+      },
+      {
+        "id": "hwf16",
+        "kind": "mcq",
+        "stem": "Subsystem validation packet should include?",
+        "choices": [
+          "Power bus DT and QEMU artifacts",
+          "Only vibes",
+          "Only faked solder photos",
+          "Exam PDFs"
+        ],
+        "answer_index": 0,
+        "explanation": "Artifacts."
+      },
+      {
+        "id": "hwf17",
+        "kind": "mcq",
+        "stem": "First response to I2C NACK should usually be?",
+        "choices": [
+          "Check rail and pullups before bit-bang rewrite",
+          "Always rewrite GPIO first",
+          "Required by west",
+          "Fix Vth"
+        ],
+        "answer_index": 0,
+        "explanation": "Basics."
+      },
+      {
+        "id": "hwf18",
+        "kind": "mcq",
+        "stem": "Why list AMS1117-3.3 in budget?",
+        "choices": [
+          "Real regulator MPN in fixture",
+          "Fake part",
+          "Optional emoji",
+          "RACI role"
+        ],
+        "answer_index": 0,
+        "explanation": "Real MPN."
+      },
+      {
+        "id": "hwf19",
+        "kind": "mcq",
+        "stem": "Public OCW page means free to copy problem sets?",
+        "choices": [
+          "No",
+          "Yes",
+          "Only solutions",
+          "Only exams"
+        ],
+        "answer_index": 0,
+        "explanation": "Not free."
+      },
+      {
+        "id": "hwf20",
+        "kind": "mcq",
+        "stem": "Final practical emphasis?",
+        "choices": [
+          "Digitally validate embedded subsystem",
+          "Immediate soldering only",
+          "PMI exam",
+          "CSSGB grant"
+        ],
+        "answer_index": 0,
+        "explanation": "Digital."
+      },
+      {
+        "id": "hwf21",
+        "kind": "mcq",
+        "stem": "UART framing error most likely appears as?",
+        "choices": [
+          "Garbled serial not I2C NACK",
+          "Thevenin change",
+          "Pareto shift",
+          "Sprint overflow"
+        ],
+        "answer_index": 0,
+        "explanation": "UART."
+      },
+      {
+        "id": "hwf22",
+        "kind": "mcq",
+        "stem": "Oral EXPLAIN of RC with instructor allowed?",
+        "choices": [
+          "Yes; submitted numbers remain student-owned",
+          "AI may fabricate C",
+          "Skip lab",
+          "Print PASS"
+        ],
+        "answer_index": 0,
+        "explanation": "Explain ok."
+      },
+      {
+        "id": "hwf23",
+        "kind": "mcq",
+        "stem": "Course evidence for QEMU success includes?",
+        "choices": [
+          "Sanitized run log excerpt plus JSON",
+          "Nothing",
+          "Only solder video",
+          "Exam dump"
+        ],
+        "answer_index": 0,
+        "explanation": "Evidence."
+      },
+      {
+        "id": "hwf24",
+        "kind": "mcq",
+        "stem": "Is EMBEDDED_PROTOTYPING removed as a track?",
+        "choices": [
+          "No it is integrated here",
+          "Yes deleted",
+          "Moved to PROFILE",
+          "Mega-PR only"
+        ],
+        "answer_index": 0,
+        "explanation": "Keep."
+      }
+    ],
+    "offset": 1
+  },
+  "PM_AGILE_LSS": {
+    "mid": [
+      {
+        "id": "pmm01",
+        "kind": "mcq",
+        "stem": "Charter goal make it better without baseline. Result?",
+        "choices": [
+          "metric check fails",
+          "PASS",
+          "ATP earned",
+          "Auto"
+        ],
+        "answer_index": 0,
+        "explanation": "Need baseline."
+      },
+      {
+        "id": "pmm02",
+        "kind": "mcq",
+        "stem": "Two Accountable letters on measure task. Result?",
+        "choices": [
+          "one_accountable fails",
+          "PASS",
+          "Required by PMI",
+          "Lean"
+        ],
+        "answer_index": 0,
+        "explanation": "One A."
+      },
+      {
+        "id": "pmm03",
+        "kind": "mcq",
+        "stem": "Graph A2 to B5 and A2 to C1 to D3. Critical path days?",
+        "choices": [
+          "7",
+          "5",
+          "3",
+          "2"
+        ],
+        "answer_index": 0,
+        "explanation": "A-B=7."
+      },
+      {
+        "id": "pmm04",
+        "kind": "mcq",
+        "stem": "committed 30 with capacity 25. Sprint result?",
+        "choices": [
+          "Fails capacity",
+          "Passes",
+          "Ideal",
+          "Required"
+        ],
+        "answer_index": 0,
+        "explanation": "Overcommit."
+      },
+      {
+        "id": "pmm05",
+        "kind": "mcq",
+        "stem": "prob 4 impact 3 with score 12. Valid?",
+        "choices": [
+          "Yes",
+          "No should be 7",
+          "No should be 1",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Product."
+      },
+      {
+        "id": "pmm06",
+        "kind": "mcq",
+        "stem": "SIPOC outputs only happiness. Result?",
+        "choices": [
+          "measurable_output fails",
+          "PASS",
+          "CSSGB",
+          "ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "Need measure."
+      },
+      {
+        "id": "pmm07",
+        "kind": "mcq",
+        "stem": "Pareto cumulative stops at 0.55. Result?",
+        "choices": [
+          "ge80 fails",
+          "PASS",
+          "OK",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Need 0.8."
+      },
+      {
+        "id": "pmm08",
+        "kind": "mcq",
+        "stem": "Control chart mean off by 2.0. Result?",
+        "choices": [
+          "mean check fails",
+          "PASS",
+          "Auto",
+          "Physical"
+        ],
+        "answer_index": 0,
+        "explanation": "Exact."
+      },
+      {
+        "id": "pmm09",
+        "kind": "mcq",
+        "stem": "DMAIC packet omits analyze narrative. Result?",
+        "choices": [
+          "analyze fails",
+          "PASS",
+          "Skip allowed",
+          "Secret AI fill OK"
+        ],
+        "answer_index": 0,
+        "explanation": "All phases."
+      },
+      {
+        "id": "pmm10",
+        "kind": "mcq",
+        "stem": "ai_disclosed false while critique used AI. Result?",
+        "choices": [
+          "disclosed fails",
+          "PASS",
+          "Required false",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "pmm11",
+        "kind": "mcq",
+        "stem": "Syllabus should claim WAIKE is PMI ATP?",
+        "choices": [
+          "No",
+          "Yes",
+          "Only after week 10",
+          "If AI says"
+        ],
+        "answer_index": 0,
+        "explanation": "Not ATP."
+      },
+      {
+        "id": "pmm12",
+        "kind": "mcq",
+        "stem": "PMP 2026 Business Environment weight is about?",
+        "choices": [
+          "26 percent",
+          "8 percent",
+          "50 percent",
+          "0 percent"
+        ],
+        "answer_index": 0,
+        "explanation": "26."
+      },
+      {
+        "id": "pmm13",
+        "kind": "mcq",
+        "stem": "Charter invents city NPS plus 40. Allowed?",
+        "choices": [
+          "No",
+          "Yes",
+          "OK",
+          "ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "No fake."
+      },
+      {
+        "id": "pmm14",
+        "kind": "mcq",
+        "stem": "Done card lacks acceptance criteria. Result?",
+        "choices": [
+          "Fails acs",
+          "Passes",
+          "Optional",
+          "Auto"
+        ],
+        "answer_index": 0,
+        "explanation": "Need AC."
+      },
+      {
+        "id": "pmm15",
+        "kind": "mcq",
+        "stem": "Highest risk has empty response. Result?",
+        "choices": [
+          "Fails response",
+          "Passes",
+          "Ideal",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Need response."
+      },
+      {
+        "id": "pmm16",
+        "kind": "mcq",
+        "stem": "Change decision value ship-it. Result?",
+        "choices": [
+          "Fails enum",
+          "Passes",
+          "Required",
+          "Agile only"
+        ],
+        "answer_index": 0,
+        "explanation": "Enum."
+      },
+      {
+        "id": "pmm17",
+        "kind": "mcq",
+        "stem": "ASQ CSSGB mention in WAIKE means?",
+        "choices": [
+          "Alignment label not belt grant",
+          "Instant belt",
+          "Exam dump OK",
+          "DRM bypass"
+        ],
+        "answer_index": 0,
+        "explanation": "Label."
+      },
+      {
+        "id": "pmm18",
+        "kind": "mcq",
+        "stem": "AI and sustainability on PMP 2026 appear as?",
+        "choices": [
+          "Scenario context judgment",
+          "Neural net coding exam",
+          "Banned topic",
+          "ATP-only chapter"
+        ],
+        "answer_index": 0,
+        "explanation": "Context."
+      },
+      {
+        "id": "pmm19",
+        "kind": "mcq",
+        "stem": "Status report contains only the word ok. Result?",
+        "choices": [
+          "Fails substance length",
+          "Passes",
+          "Ideal",
+          "Required"
+        ],
+        "answer_index": 0,
+        "explanation": "Substance."
+      },
+      {
+        "id": "pmm20",
+        "kind": "mcq",
+        "stem": "HINT used while building RACI. Tag?",
+        "choices": [
+          "AI_DISCLOSED",
+          "NO_AI falsely",
+          "Hide",
+          "Delete matrix"
+        ],
+        "answer_index": 0,
+        "explanation": "Disclose."
+      }
+    ],
+    "final": [
+      {
+        "id": "pmf01",
+        "kind": "mcq",
+        "stem": "Out of scope is a new campus wing. In scope still includes?",
+        "choices": [
+          "Queue and staffing process changes",
+          "Wing construction",
+          "DRM bypass",
+          "Exam harvest"
+        ],
+        "answer_index": 0,
+        "explanation": "Process."
+      },
+      {
+        "id": "pmf02",
+        "kind": "mcq",
+        "stem": "Consulted versus Informed in RACI?",
+        "choices": [
+          "Consulted is two-way; Informed is one-way notify",
+          "Same meaning",
+          "Both Accountable",
+          "Both Responsible"
+        ],
+        "answer_index": 0,
+        "explanation": "C vs I."
+      },
+      {
+        "id": "pmf03",
+        "kind": "mcq",
+        "stem": "Compare A2-C4-D2 versus A2-B3-D2. Longer path days?",
+        "choices": [
+          "8 for A-C-D",
+          "7 for both",
+          "5",
+          "2"
+        ],
+        "answer_index": 0,
+        "explanation": "8 vs 7."
+      },
+      {
+        "id": "pmf04",
+        "kind": "mcq",
+        "stem": "capacity 15 committed 15 with acceptance on done. OK?",
+        "choices": [
+          "Yes when ACs present",
+          "Never",
+          "Only if AI",
+          "Only ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "At cap OK."
+      },
+      {
+        "id": "pmf05",
+        "kind": "mcq",
+        "stem": "Risk scores 6,10,4 \u2014 top entry needs?",
+        "choices": [
+          "response",
+          "deletion",
+          "ignore",
+          "BOM"
+        ],
+        "answer_index": 0,
+        "explanation": "Response."
+      },
+      {
+        "id": "pmf06",
+        "kind": "mcq",
+        "stem": "SIPOC process list length 2. Result?",
+        "choices": [
+          "Fails minimum steps",
+          "Passes",
+          "Ideal",
+          "Required"
+        ],
+        "answer_index": 0,
+        "explanation": "Need 3."
+      },
+      {
+        "id": "pmf07",
+        "kind": "mcq",
+        "stem": "Counts 50,30,10,10 \u2014 cumulative after top two?",
+        "choices": [
+          "0.8",
+          "0.5",
+          "1.0",
+          "0.3"
+        ],
+        "answer_index": 0,
+        "explanation": "80/100."
+      },
+      {
+        "id": "pmf08",
+        "kind": "mcq",
+        "stem": "Point far above UCL suggests?",
+        "choices": [
+          "Out-of-control candidate",
+          "Silent delete",
+          "Move mean to point",
+          "Grant CSSGB"
+        ],
+        "answer_index": 0,
+        "explanation": "Special cause."
+      },
+      {
+        "id": "pmf09",
+        "kind": "mcq",
+        "stem": "Improve names a change with no artifact link. Quality?",
+        "choices": [
+          "Weak without evidence links",
+          "Perfect",
+          "ATP",
+          "Ignore"
+        ],
+        "answer_index": 0,
+        "explanation": "Evidence."
+      },
+      {
+        "id": "pmf10",
+        "kind": "mcq",
+        "stem": "Change request impact field blank. Result?",
+        "choices": [
+          "Fails cr check",
+          "Passes",
+          "Optional",
+          "Auto"
+        ],
+        "answer_index": 0,
+        "explanation": "Need impact."
+      },
+      {
+        "id": "pmf11",
+        "kind": "mcq",
+        "stem": "Critique text fine with no risk or assumption. Result?",
+        "choices": [
+          "Fails critique check",
+          "Passes",
+          "Ideal",
+          "Required"
+        ],
+        "answer_index": 0,
+        "explanation": "Substance."
+      },
+      {
+        "id": "pmf12",
+        "kind": "mcq",
+        "stem": "People domain 2026 weight about?",
+        "choices": [
+          "33 percent",
+          "42 percent",
+          "8 percent",
+          "100 percent"
+        ],
+        "answer_index": 0,
+        "explanation": "33."
+      },
+      {
+        "id": "pmf13",
+        "kind": "mcq",
+        "stem": "Process domain 2026 weight about?",
+        "choices": [
+          "41 percent",
+          "50 percent",
+          "8 percent",
+          "0 percent"
+        ],
+        "answer_index": 0,
+        "explanation": "41."
+      },
+      {
+        "id": "pmf14",
+        "kind": "mcq",
+        "stem": "Value delivery emphasis means?",
+        "choices": [
+          "Outcomes over theater metrics",
+          "Ignore stakeholders",
+          "Skip control",
+          "Fake NPS"
+        ],
+        "answer_index": 0,
+        "explanation": "Value."
+      },
+      {
+        "id": "pmf15",
+        "kind": "mcq",
+        "stem": "Capstone simulation must use?",
+        "choices": [
+          "Course artifacts from prior labs",
+          "Invented city dashboards",
+          "Exam dumps",
+          "Paywall PDFs"
+        ],
+        "answer_index": 0,
+        "explanation": "Real artifacts."
+      },
+      {
+        "id": "pmf16",
+        "kind": "mcq",
+        "stem": "Control chart NO_AI means?",
+        "choices": [
+          "Student computes limits without generative fill",
+          "AI must compute",
+          "Hide points",
+          "Forge UCL"
+        ],
+        "answer_index": 0,
+        "explanation": "Mode."
+      },
+      {
+        "id": "pmf17",
+        "kind": "mcq",
+        "stem": "Lean waste language is used as?",
+        "choices": [
+          "Labels for process talk not handbook paste",
+          "Full book reprint",
+          "Dump",
+          "ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "Labels."
+      },
+      {
+        "id": "pmf18",
+        "kind": "mcq",
+        "stem": "Hybrid delivery in sprint week means?",
+        "choices": [
+          "Thoughtful mix of predictive and agile practices",
+          "Ban WBS",
+          "Ban DMAIC",
+          "Ban RACI"
+        ],
+        "answer_index": 0,
+        "explanation": "Hybrid."
+      },
+      {
+        "id": "pmf19",
+        "kind": "mcq",
+        "stem": "Instructor keys inside learner packet?",
+        "choices": [
+          "Forbidden",
+          "Required",
+          "Optional",
+          "AI decides"
+        ],
+        "answer_index": 0,
+        "explanation": "Instructor-only."
+      },
+      {
+        "id": "pmf20",
+        "kind": "mcq",
+        "stem": "Public PMI page allows copying ECO tasks as quiz stems?",
+        "choices": [
+          "No write original WAIKE stems",
+          "Yes",
+          "Only if ATP",
+          "Only AI"
+        ],
+        "answer_index": 0,
+        "explanation": "Original."
+      },
+      {
+        "id": "pmf21",
+        "kind": "mcq",
+        "stem": "Defer versus reject on a change?",
+        "choices": [
+          "Defer postpones; reject declines",
+          "Same",
+          "Both approve",
+          "Both ignore risk"
+        ],
+        "answer_index": 0,
+        "explanation": "Difference."
+      },
+      {
+        "id": "pmf22",
+        "kind": "mcq",
+        "stem": "Why measure before analyze?",
+        "choices": [
+          "Baseline data beats opinions",
+          "Skip measure always",
+          "AI guesses better",
+          "Pareto always last"
+        ],
+        "answer_index": 0,
+        "explanation": "Measure."
+      },
+      {
+        "id": "pmf23",
+        "kind": "mcq",
+        "stem": "AI plan understates staffing risk. Student action?",
+        "choices": [
+          "Critique naming assumption with disclosure",
+          "Accept silently",
+          "Delete charter",
+          "Claim ATP"
+        ],
+        "answer_index": 0,
+        "explanation": "Critique."
+      },
+      {
+        "id": "pmf24",
+        "kind": "mcq",
+        "stem": "Final claim boundary includes which statement?",
+        "choices": [
+          "Not PMI ATP, no fake certs, no fabricated outcomes",
+          "We grant PMP",
+          "We grant CSSGB",
+          "Dumps OK"
+        ],
+        "answer_index": 0,
+        "explanation": "Boundary."
+      }
+    ],
+    "offset": 2
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "pm6-1",
+      "kind": "mcq",
+      "stem": "process steps >=",
+      "choices": [
+        "3",
+        "1",
+        "0",
+        "20 mandatory"
+      ]
+    },
+    {
+      "id": "pm6-2",
+      "kind": "mcq",
+      "stem": "output 'vibes'",
+      "choices": [
+        "Passes",
+        "Fails measurable",
+        "Ideal",
+        "Required"
+      ]
+    },
+    {
+      "id": "pm6-3",
+      "kind": "mcq",
+      "stem": "SIPOC expands to",
+      "choices": [
+        "Only SPI",
+        "Only RACI",
+        "Suppliers Inputs Process Outputs Customers",
+        "Only BOM"
+      ]
+    },
+    {
+      "id": "pm6-4",
+      "kind": "mcq",
+      "stem": "Empty suppliers",
+      "choices": [
+        "Passes",
+        "Auto",
+        "OK",
+        "Fails"
+      ]
+    },
+    {
+      "id": "pm6-5",
+      "kind": "mcq",
+      "stem": "Lean citation",
+      "choices": [
+        "Domain label not copied handbook text",
+        "Copy ASQ book",
+        "Dump",
+        "DRM"
+      ]
+    },
+    {
+      "id": "pm6-6",
+      "kind": "mcq",
+      "stem": "Map misaligned steps",
+      "choices": [
+        "Ignore",
+        "Find with process map",
+        "Delete customers",
+        "Skip outputs"
+      ]
+    }
+  ]
+}

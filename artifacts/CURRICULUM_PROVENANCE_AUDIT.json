@@ -3,17 +3,32 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0003,
+  "worst_jaccard": 0.0074,
   "worst_pair": [
-    "GENERAL_IT",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
-  "worst_packaging_jaccard": 0.0249,
+  "worst_packaging_jaccard": 0.092,
   "worst_packaging_pair": [
-    "COMPUTER_NETWORKING",
-    "CYBERSECURITY"
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS"
   ],
   "pairs": [
+    {
+      "a": "HARDWARE_ENGINEERING",
+      "b": "PM_AGILE_LSS",
+      "jaccard_5gram": 0.0074
+    },
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "PM_AGILE_LSS",
+      "jaccard_5gram": 0.0049
+    },
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "HARDWARE_ENGINEERING",
+      "jaccard_5gram": 0.0037
+    },
     {
       "a": "GENERAL_IT",
       "b": "CYBERSECURITY",
@@ -25,26 +40,61 @@
       "jaccard_5gram": 0.0
     },
     {
-      "a": "COMPUTER_NETWORKING",
-      "b": "CYBERSECURITY",
+      "a": "GENERAL_IT",
+      "b": "SOFTWARE_BUILDER",
+      "jaccard_5gram": 0.0
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "HARDWARE_ENGINEERING",
+      "jaccard_5gram": 0.0
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "PM_AGILE_LSS",
       "jaccard_5gram": 0.0
     }
   ],
   "packaging_pairs": [
+    {
+      "a": "HARDWARE_ENGINEERING",
+      "b": "PM_AGILE_LSS",
+      "packaging_jaccard_5gram": 0.092
+    },
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "PM_AGILE_LSS",
+      "packaging_jaccard_5gram": 0.0797
+    },
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "HARDWARE_ENGINEERING",
+      "packaging_jaccard_5gram": 0.0784
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "SOFTWARE_BUILDER",
+      "packaging_jaccard_5gram": 0.0307
+    },
     {
       "a": "COMPUTER_NETWORKING",
       "b": "CYBERSECURITY",
       "packaging_jaccard_5gram": 0.0249
     },
     {
-      "a": "GENERAL_IT",
-      "b": "CYBERSECURITY",
-      "packaging_jaccard_5gram": 0.0201
+      "a": "CYBERSECURITY",
+      "b": "SOFTWARE_BUILDER",
+      "packaging_jaccard_5gram": 0.0245
+    },
+    {
+      "a": "COMPUTER_NETWORKING",
+      "b": "SOFTWARE_BUILDER",
+      "packaging_jaccard_5gram": 0.0224
     },
     {
       "a": "GENERAL_IT",
-      "b": "COMPUTER_NETWORKING",
-      "packaging_jaccard_5gram": 0.0197
+      "b": "HARDWARE_ENGINEERING",
+      "packaging_jaccard_5gram": 0.0222
     }
   ],
   "key_distribution": {
@@ -63,6 +113,27 @@
       "n": 104
     },
     "CYBERSECURITY": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "SOFTWARE_BUILDER": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "HARDWARE_ENGINEERING": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "PM_AGILE_LSS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -96,13 +167,46 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.6667
+    },
+    "SOFTWARE_BUILDER": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.4
+    },
+    "HARDWARE_ENGINEERING": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.75
+    },
+    "PM_AGILE_LSS": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.7143
     }
   },
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
-  "worst_exam_weekly_token_jaccard": 0.6923,
+  "worst_exam_weekly_token_jaccard": 0.75,
   "exam_restatement_hits": [],
-  "registry_size": 16,
+  "stripped_lesson_mins": {
+    "GENERAL_IT": 905,
+    "COMPUTER_NETWORKING": 813,
+    "CYBERSECURITY": 804,
+    "SOFTWARE_BUILDER": 860,
+    "HARDWARE_ENGINEERING": 875,
+    "PM_AGILE_LSS": 864
+  },
+  "lesson_padding_rejected": 0,
+  "registry_size": 26,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."
 }

@@ -1,0 +1,82 @@
+{
+  "packet": "WAIKE-COURSE-READY-002",
+  "role": "INDEPENDENT_VERIFIER",
+  "pr": 44,
+  "tip": "42cb9c807e171631763409108f07528fbbccfff6",
+  "base": "eb3f416300168ad0410eb76bc2e1c72243add8f8",
+  "verdict": "FAIL",
+  "COURSE_DIGITAL_RC_BATCH": false,
+  "COURSE_DIGITAL_RC": {
+    "SOFTWARE_BUILDER": false,
+    "HARDWARE_ENGINEERING": false,
+    "PM_AGILE_LSS": false
+  },
+  "edmund_mergeable": false,
+  "cursor_merges": false,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "ci": {
+    "github_api": "blocked_403_from_verifier_host",
+    "local_pytest": "2 failed, 8 passed",
+    "failures": [
+      "test_three_courses_only_in_batch",
+      "test_labs_compute_and_negatives_fail (lab_count 30!=20)"
+    ]
+  },
+  "weaken_43_bar": {
+    "COURSES_replaced_not_union": true,
+    "COURSE_LABS_cleared_to_002_only": true,
+    "product_catalog_dropped_batch001": true,
+    "committed_ingest_course_ids": [
+      "SOFTWARE_BUILDER",
+      "HARDWARE_ENGINEERING",
+      "PM_AGILE_LSS"
+    ],
+    "on_disk_digital_rc_still_has_batch001": true
+  },
+  "lesson_padding": {
+    "operator_note_repeats_per_week_batch002": 8,
+    "batch001_operator_note_repeats": 0,
+    "min_lesson_chars_after_strip_operator_note": {
+      "SOFTWARE_BUILDER": 318,
+      "HARDWARE_ENGINEERING": 586,
+      "PM_AGILE_LSS": 544
+    },
+    "depth_gate_800_after_strip": false
+  },
+  "labs": {
+    "executed": "30/30",
+    "empty_fail": "30/30",
+    "wrong_fail": "30/30",
+    "nosub_fail": "30/30",
+    "print_pass_raise": "30/30",
+    "batch001_labs_in_run_all": false,
+    "batch001_lab_count_orphaned": 20
+  },
+  "exam_restatement_independent": {
+    "tokenizer": "[a-z0-9]+",
+    "token_identical_j1": 0,
+    "jaccard_ge_0_80": 0,
+    "worst": 0.75,
+    "worst_id": "HARDWARE_ENGINEERING:hwm15",
+    "injected_clone_gate_works": true
+  },
+  "keys": {
+    "distribution_per_course": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "learner_has_answer_keys": false,
+    "teacher_has_answer_keys": true
+  },
+  "counts_match_claim_table": true,
+  "counts_alone_earn_rc": false,
+  "pmi_atp_claim": false,
+  "physical_pending_labeled": true,
+  "ai_use_policy_present": true,
+  "open_tracks_note": "Do not start WAIKE-003. Re-preserve #43 product paths. Remaining content tracks still OPEN.",
+  "claim_boundary": "Independent FAIL. COURSE_DIGITAL_RC not earned. Owner stamp rejected."
+}

@@ -1,0 +1,269 @@
+{
+  "assessment_id": "PM_AGILE_LSS-final",
+  "items": [
+    {
+      "id": "pmf01",
+      "kind": "mcq",
+      "stem": "Out of scope is a new campus wing. In scope still includes?",
+      "choices": [
+        "Wing construction",
+        "DRM bypass",
+        "Exam harvest",
+        "Queue and staffing process changes"
+      ]
+    },
+    {
+      "id": "pmf02",
+      "kind": "mcq",
+      "stem": "Consulted versus Informed in RACI?",
+      "choices": [
+        "Consulted is two-way; Informed is one-way notify",
+        "Same meaning",
+        "Both Accountable",
+        "Both Responsible"
+      ]
+    },
+    {
+      "id": "pmf03",
+      "kind": "mcq",
+      "stem": "Compare A2-C4-D2 versus A2-B3-D2. Longer path days?",
+      "choices": [
+        "7 for both",
+        "8 for A-C-D",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": "pmf04",
+      "kind": "mcq",
+      "stem": "capacity 15 committed 15 with acceptance on done. OK?",
+      "choices": [
+        "Never",
+        "Only if AI",
+        "Yes when ACs present",
+        "Only ATP"
+      ]
+    },
+    {
+      "id": "pmf05",
+      "kind": "mcq",
+      "stem": "Risk scores 6,10,4 \u2014 top entry needs?",
+      "choices": [
+        "deletion",
+        "ignore",
+        "BOM",
+        "response"
+      ]
+    },
+    {
+      "id": "pmf06",
+      "kind": "mcq",
+      "stem": "SIPOC process list length 2. Result?",
+      "choices": [
+        "Fails minimum steps",
+        "Passes",
+        "Ideal",
+        "Required"
+      ]
+    },
+    {
+      "id": "pmf07",
+      "kind": "mcq",
+      "stem": "Counts 50,30,10,10 \u2014 cumulative after top two?",
+      "choices": [
+        "0.5",
+        "0.8",
+        "1.0",
+        "0.3"
+      ]
+    },
+    {
+      "id": "pmf08",
+      "kind": "mcq",
+      "stem": "Point far above UCL suggests?",
+      "choices": [
+        "Silent delete",
+        "Move mean to point",
+        "Out-of-control candidate",
+        "Grant CSSGB"
+      ]
+    },
+    {
+      "id": "pmf09",
+      "kind": "mcq",
+      "stem": "Improve names a change with no artifact link. Quality?",
+      "choices": [
+        "Perfect",
+        "ATP",
+        "Ignore",
+        "Weak without evidence links"
+      ]
+    },
+    {
+      "id": "pmf10",
+      "kind": "mcq",
+      "stem": "Change request impact field blank. Result?",
+      "choices": [
+        "Fails cr check",
+        "Passes",
+        "Optional",
+        "Auto"
+      ]
+    },
+    {
+      "id": "pmf11",
+      "kind": "mcq",
+      "stem": "Critique text fine with no risk or assumption. Result?",
+      "choices": [
+        "Passes",
+        "Fails critique check",
+        "Ideal",
+        "Required"
+      ]
+    },
+    {
+      "id": "pmf12",
+      "kind": "mcq",
+      "stem": "People domain 2026 weight about?",
+      "choices": [
+        "42 percent",
+        "8 percent",
+        "33 percent",
+        "100 percent"
+      ]
+    },
+    {
+      "id": "pmf13",
+      "kind": "mcq",
+      "stem": "Process domain 2026 weight about?",
+      "choices": [
+        "50 percent",
+        "8 percent",
+        "0 percent",
+        "41 percent"
+      ]
+    },
+    {
+      "id": "pmf14",
+      "kind": "mcq",
+      "stem": "Value delivery emphasis means?",
+      "choices": [
+        "Outcomes over theater metrics",
+        "Ignore stakeholders",
+        "Skip control",
+        "Fake NPS"
+      ]
+    },
+    {
+      "id": "pmf15",
+      "kind": "mcq",
+      "stem": "Capstone simulation must use?",
+      "choices": [
+        "Invented city dashboards",
+        "Course artifacts from prior labs",
+        "Exam dumps",
+        "Paywall PDFs"
+      ]
+    },
+    {
+      "id": "pmf16",
+      "kind": "mcq",
+      "stem": "Control chart NO_AI means?",
+      "choices": [
+        "AI must compute",
+        "Hide points",
+        "Student computes limits without generative fill",
+        "Forge UCL"
+      ]
+    },
+    {
+      "id": "pmf17",
+      "kind": "mcq",
+      "stem": "Lean waste language is used as?",
+      "choices": [
+        "Full book reprint",
+        "Dump",
+        "ATP",
+        "Labels for process talk not handbook paste"
+      ]
+    },
+    {
+      "id": "pmf18",
+      "kind": "mcq",
+      "stem": "Hybrid delivery in sprint week means?",
+      "choices": [
+        "Thoughtful mix of predictive and agile practices",
+        "Ban WBS",
+        "Ban DMAIC",
+        "Ban RACI"
+      ]
+    },
+    {
+      "id": "pmf19",
+      "kind": "mcq",
+      "stem": "Instructor keys inside learner packet?",
+      "choices": [
+        "Required",
+        "Forbidden",
+        "Optional",
+        "AI decides"
+      ]
+    },
+    {
+      "id": "pmf20",
+      "kind": "mcq",
+      "stem": "Public PMI page allows copying ECO tasks as quiz stems?",
+      "choices": [
+        "Yes",
+        "Only if ATP",
+        "No write original WAIKE stems",
+        "Only AI"
+      ]
+    },
+    {
+      "id": "pmf21",
+      "kind": "mcq",
+      "stem": "Defer versus reject on a change?",
+      "choices": [
+        "Same",
+        "Both approve",
+        "Both ignore risk",
+        "Defer postpones; reject declines"
+      ]
+    },
+    {
+      "id": "pmf22",
+      "kind": "mcq",
+      "stem": "Why measure before analyze?",
+      "choices": [
+        "Baseline data beats opinions",
+        "Skip measure always",
+        "AI guesses better",
+        "Pareto always last"
+      ]
+    },
+    {
+      "id": "pmf23",
+      "kind": "mcq",
+      "stem": "AI plan understates staffing risk. Student action?",
+      "choices": [
+        "Accept silently",
+        "Critique naming assumption with disclosure",
+        "Delete charter",
+        "Claim ATP"
+      ]
+    },
+    {
+      "id": "pmf24",
+      "kind": "mcq",
+      "stem": "Final claim boundary includes which statement?",
+      "choices": [
+        "We grant PMP",
+        "We grant CSSGB",
+        "Not PMI ATP, no fake certs, no fabricated outcomes",
+        "Dumps OK"
+      ]
+    }
+  ]
+}

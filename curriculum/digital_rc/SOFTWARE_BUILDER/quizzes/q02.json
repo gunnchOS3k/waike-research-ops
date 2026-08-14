@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "sw2-1",
+      "kind": "mcq",
+      "stem": "Reader POST to write checkout route returns",
+      "choices": [
+        "200",
+        "201",
+        "403",
+        "500"
+      ]
+    },
+    {
+      "id": "sw2-2",
+      "kind": "mcq",
+      "stem": "Successful create returns",
+      "choices": [
+        "200 empty",
+        "204 only",
+        "302",
+        "201 with location shape"
+      ]
+    },
+    {
+      "id": "sw2-3",
+      "kind": "mcq",
+      "stem": "GET missing id returns",
+      "choices": [
+        "404 stable error",
+        "200 null",
+        "401",
+        "418"
+      ]
+    },
+    {
+      "id": "sw2-4",
+      "kind": "mcq",
+      "stem": "PUT same id twice should",
+      "choices": [
+        "Create two rows",
+        "Keep store length 1",
+        "Wipe DB",
+        "Return 500"
+      ]
+    },
+    {
+      "id": "sw2-5",
+      "kind": "mcq",
+      "stem": "Submission string PASS alone",
+      "choices": [
+        "Passes",
+        "Required",
+        "Fails _fail_if_print_pass",
+        "Docker health"
+      ]
+    },
+    {
+      "id": "sw2-6",
+      "kind": "mcq",
+      "stem": "Stack traces in API errors are",
+      "choices": [
+        "Helpful for patrons",
+        "Required by REST",
+        "Needed for CORS",
+        "Leak risk; use stable bodies"
+      ]
+    }
+  ]
+}

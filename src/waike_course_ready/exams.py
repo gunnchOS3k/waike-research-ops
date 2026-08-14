@@ -661,6 +661,9 @@ EXAMS = {
 
 
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
+    if course_id not in EXAMS:
+        from waike_course_ready.batch002.exams import extra_assessment_items_002
+        return extra_assessment_items_002(course_id)
     spec = EXAMS[course_id]
     mid = rebalance_mcq(spec["mid"], spec["offset"])
     final = rebalance_mcq(spec["final"], spec["offset"] + 1)

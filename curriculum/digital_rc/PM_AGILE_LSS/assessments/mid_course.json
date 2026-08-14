@@ -1,0 +1,225 @@
+{
+  "assessment_id": "PM_AGILE_LSS-mid",
+  "items": [
+    {
+      "id": "pmm01",
+      "kind": "mcq",
+      "stem": "Charter goal make it better without baseline. Result?",
+      "choices": [
+        "PASS",
+        "ATP earned",
+        "metric check fails",
+        "Auto"
+      ]
+    },
+    {
+      "id": "pmm02",
+      "kind": "mcq",
+      "stem": "Two Accountable letters on measure task. Result?",
+      "choices": [
+        "PASS",
+        "Required by PMI",
+        "Lean",
+        "one_accountable fails"
+      ]
+    },
+    {
+      "id": "pmm03",
+      "kind": "mcq",
+      "stem": "Graph A2 to B5 and A2 to C1 to D3. Critical path days?",
+      "choices": [
+        "7",
+        "5",
+        "3",
+        "2"
+      ]
+    },
+    {
+      "id": "pmm04",
+      "kind": "mcq",
+      "stem": "committed 30 with capacity 25. Sprint result?",
+      "choices": [
+        "Passes",
+        "Fails capacity",
+        "Ideal",
+        "Required"
+      ]
+    },
+    {
+      "id": "pmm05",
+      "kind": "mcq",
+      "stem": "prob 4 impact 3 with score 12. Valid?",
+      "choices": [
+        "No should be 7",
+        "No should be 1",
+        "Yes",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pmm06",
+      "kind": "mcq",
+      "stem": "SIPOC outputs only happiness. Result?",
+      "choices": [
+        "PASS",
+        "CSSGB",
+        "ATP",
+        "measurable_output fails"
+      ]
+    },
+    {
+      "id": "pmm07",
+      "kind": "mcq",
+      "stem": "Pareto cumulative stops at 0.55. Result?",
+      "choices": [
+        "ge80 fails",
+        "PASS",
+        "OK",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pmm08",
+      "kind": "mcq",
+      "stem": "Control chart mean off by 2.0. Result?",
+      "choices": [
+        "PASS",
+        "mean check fails",
+        "Auto",
+        "Physical"
+      ]
+    },
+    {
+      "id": "pmm09",
+      "kind": "mcq",
+      "stem": "DMAIC packet omits analyze narrative. Result?",
+      "choices": [
+        "PASS",
+        "Skip allowed",
+        "analyze fails",
+        "Secret AI fill OK"
+      ]
+    },
+    {
+      "id": "pmm10",
+      "kind": "mcq",
+      "stem": "ai_disclosed false while critique used AI. Result?",
+      "choices": [
+        "PASS",
+        "Required false",
+        "Ignore",
+        "disclosed fails"
+      ]
+    },
+    {
+      "id": "pmm11",
+      "kind": "mcq",
+      "stem": "Syllabus should claim WAIKE is PMI ATP?",
+      "choices": [
+        "No",
+        "Yes",
+        "Only after week 10",
+        "If AI says"
+      ]
+    },
+    {
+      "id": "pmm12",
+      "kind": "mcq",
+      "stem": "PMP 2026 Business Environment weight is about?",
+      "choices": [
+        "8 percent",
+        "26 percent",
+        "50 percent",
+        "0 percent"
+      ]
+    },
+    {
+      "id": "pmm13",
+      "kind": "mcq",
+      "stem": "Charter invents city NPS plus 40. Allowed?",
+      "choices": [
+        "Yes",
+        "OK",
+        "No",
+        "ATP"
+      ]
+    },
+    {
+      "id": "pmm14",
+      "kind": "mcq",
+      "stem": "Done card lacks acceptance criteria. Result?",
+      "choices": [
+        "Passes",
+        "Optional",
+        "Auto",
+        "Fails acs"
+      ]
+    },
+    {
+      "id": "pmm15",
+      "kind": "mcq",
+      "stem": "Highest risk has empty response. Result?",
+      "choices": [
+        "Fails response",
+        "Passes",
+        "Ideal",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pmm16",
+      "kind": "mcq",
+      "stem": "Change decision value ship-it. Result?",
+      "choices": [
+        "Passes",
+        "Fails enum",
+        "Required",
+        "Agile only"
+      ]
+    },
+    {
+      "id": "pmm17",
+      "kind": "mcq",
+      "stem": "ASQ CSSGB mention in WAIKE means?",
+      "choices": [
+        "Instant belt",
+        "Exam dump OK",
+        "Alignment label not belt grant",
+        "DRM bypass"
+      ]
+    },
+    {
+      "id": "pmm18",
+      "kind": "mcq",
+      "stem": "AI and sustainability on PMP 2026 appear as?",
+      "choices": [
+        "Neural net coding exam",
+        "Banned topic",
+        "ATP-only chapter",
+        "Scenario context judgment"
+      ]
+    },
+    {
+      "id": "pmm19",
+      "kind": "mcq",
+      "stem": "Status report contains only the word ok. Result?",
+      "choices": [
+        "Fails substance length",
+        "Passes",
+        "Ideal",
+        "Required"
+      ]
+    },
+    {
+      "id": "pmm20",
+      "kind": "mcq",
+      "stem": "HINT used while building RACI. Tag?",
+      "choices": [
+        "NO_AI falsely",
+        "AI_DISCLOSED",
+        "Hide",
+        "Delete matrix"
+      ]
+    }
+  ]
+}

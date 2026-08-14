@@ -1,0 +1,90 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "HARDWARE_ENGINEERING",
+  "track_ids": [
+    "HARDWARE_ENGINEERING",
+    "EMBEDDED_PROTOTYPING"
+  ],
+  "date_checked": "2026-08-13",
+  "benchmarks": [
+    {
+      "source_id": "MIT_OCW_6002_CIRCUITS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "lumped_abstraction",
+          "waike_weeks": [
+            1
+          ]
+        },
+        {
+          "domain": "thevenin",
+          "waike_weeks": [
+            2
+          ]
+        },
+        {
+          "domain": "rc_dynamics",
+          "waike_weeks": [
+            3
+          ]
+        },
+        {
+          "domain": "digital_abstraction",
+          "waike_weeks": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ZEPHYR_DOCS_WEST_QEMU",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "coverage": [
+        {
+          "domain": "west_build",
+          "waike_weeks": [
+            7
+          ],
+          "waike_artifacts": [
+            "labs/lab_zephyr_qemu"
+          ]
+        },
+        {
+          "domain": "qemu_emulation",
+          "waike_weeks": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "KICAD_DOCS_ERC_DRC",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "schematic_erc",
+          "waike_weeks": [
+            9
+          ]
+        },
+        {
+          "domain": "pcb_drc",
+          "waike_weeks": [
+            9
+          ]
+        },
+        {
+          "domain": "bom",
+          "waike_weeks": [
+            5,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_policy": "PHYSICAL_PENDING for soldering and instruments until digital validators PASS.",
+  "claim_boundary": "No OCW problem-set copy. No fabricated physical completion."
+}

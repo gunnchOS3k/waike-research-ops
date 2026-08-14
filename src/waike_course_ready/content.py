@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from typing import Any
 
-BATCH_COURSE_IDS = ("GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY")
+BATCH_COURSE_IDS_001 = ("GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY")
 
 
 def _q(qid: str, stem: str, choices: list[str], answer: int, explain: str, kind: str = "mcq") -> dict[str, Any]:
@@ -1489,18 +1489,25 @@ CYBERSECURITY: dict[str, Any] = {
     "weeks": _cyber_weeks(),
 }
 
-COURSES = {
+COURSES_001 = {
     "GENERAL_IT": GENERAL_IT,
     "COMPUTER_NETWORKING": COMPUTER_NETWORKING,
     "CYBERSECURITY": CYBERSECURITY,
 }
 
+from waike_course_ready.batch002.content import COURSES_002, BATCH_COURSE_IDS  # noqa: E402
+
+# Product path = batch-001 (#43) ∪ batch-002 (#44). Do not replace #43.
+COURSES = {**COURSES_001, **COURSES_002}
+BATCH_COURSE_IDS_ACTIVE = tuple(COURSES)
+
 
 def _rebalance_weekly() -> None:
     from waike_course_ready.exams import rebalance_mcq
 
-    offsets = {"GENERAL_IT": 0, "COMPUTER_NETWORKING": 1, "CYBERSECURITY": 2}
-    for cid, course in COURSES.items():
+    offsets = {"SOFTWARE_BUILDER": 0, "HARDWARE_ENGINEERING": 1, "PM_AGILE_LSS": 2,
+               "GENERAL_IT": 0, "COMPUTER_NETWORKING": 1, "CYBERSECURITY": 2}
+    for cid, course in {**COURSES_001, **COURSES_002}.items():
         k = offsets[cid]
         for w in course["weeks"]:
             n = len(w["quiz"])
@@ -1512,6 +1519,8 @@ _rebalance_weekly()
 
 
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
+    if course_id in COURSES_002:
+        from waike_course_ready.batch002.exams import extra_assessment_items_002
+        return extra_assessment_items_002(course_id)
     from waike_course_ready.exams import extra_assessment_items as _exams
-
     return _exams(course_id)

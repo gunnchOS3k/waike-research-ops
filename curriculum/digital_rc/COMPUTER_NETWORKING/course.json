@@ -193,6 +193,7 @@
     ]
   },
   "alignment_ref": "curriculum/alignment/networking_alignment.json",
+  "ai_use_policy": null,
   "provenance": {
     "original_waike": true,
     "reuse_class_note": "See sources/benchmark_registry.json",

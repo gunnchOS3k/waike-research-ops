@@ -2,7 +2,7 @@
   "schema": "waike.course_catalog.ui.v1",
   "full_curriculum_complete": false,
   "owner_repo": "waike-research-ops",
-  "packet": "WAIKE-COURSE-READY-001",
+  "packet": "WAIKE-COURSE-READY-002",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -43,6 +43,46 @@
         "CYBER_SOC"
       ],
       "academy_id": "ACADEMY_CYBER"
+    },
+    {
+      "course_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+      "kinesthetic_hook": "Merge a real conflict, ship a checkout API, and pin a digest on local Device Lab compose.",
+      "lesson_excerpt": "The WAIKE Software ForgeDesk is a two-person civic issue tracker for Device Lab checkouts. Ticket 8801 opens when a volunteer edits routes.py on feature/kiosk-hours while the desk lead edited the same function on main. A conflict is not a personality crisis. It is two hashes that claim the same lines. You will read both sides, keep the authz guard that main added, and keep the hours table that the",
+      "worked_example": "Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens.",
+      "assignment": "Write a conflict report for ticket 8801 naming both parents, survivor tokens, and one wrong resolution the lab must fail.",
+      "lab_hint": "lab_git_conflict",
+      "track_ids": [
+        "SOFTWARE_BUILDER"
+      ],
+      "academy_id": "ACADEMY_SOFTWARE"
+    },
+    {
+      "course_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+      "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",
+      "lesson_excerpt": "WAIKE Device Lab Hardware Studio opens with SPICE-class network analysis before any iron heats. PHYSICAL_PENDING covers soldering and instruments. Digitally you solve a series divider: R1=1k, R2=3k, Vin=12V \u2192 I=3mA, Vout=9V. The lab checks your arithmetic, not a screenshot of a GUI.",
+      "worked_example": "R1=1000 R2=3000 Vin=12 \u2192 I=0.003 A Vout=9 V.",
+      "assignment": "Submit SPICE network JSON and show handwritten KCL at the mid node.",
+      "lab_hint": "lab_spice_network",
+      "track_ids": [
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING"
+      ],
+      "academy_id": "ACADEMY_HARDWARE"
+    },
+    {
+      "course_id": "PM_AGILE_LSS",
+      "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+      "kinesthetic_hook": "Charter a real wait problem, run DMAIC on fixture data, and critique an AI plan without inventing outcomes.",
+      "lesson_excerpt": "Process Studio: Device Lab noon checkout wait baseline 15 minutes. Charter states problem, goal metric with baseline, in/out scope. fabricated_outcomes must be false \u2014 no invented community impact.",
+      "worked_example": "problem wait>15m; goal baseline 15m\u21928m; in_scope queue+staffing; out_scope new building; fabricated_outcomes false.",
+      "assignment": "Write charter JSON and a one-page sponsor brief without invented stats.",
+      "lab_hint": "lab_charter",
+      "track_ids": [
+        "PM_AGILE_LSS"
+      ],
+      "academy_id": "ACADEMY_PROCESS_PM"
     }
   ]
 }

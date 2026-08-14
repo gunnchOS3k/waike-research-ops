@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "hw6-1",
+      "kind": "mcq",
+      "stem": "First byte 0x3C",
+      "choices": [
+        "UART start",
+        "SPI CS",
+        "GPIO",
+        "I2C addr"
+      ]
+    },
+    {
+      "id": "hw6-2",
+      "kind": "mcq",
+      "stem": "bus field",
+      "choices": [
+        "I2C",
+        "CAN",
+        "PCIe",
+        "MIDI"
+      ]
+    },
+    {
+      "id": "hw6-3",
+      "kind": "mcq",
+      "stem": "NACK first debug",
+      "choices": [
+        "Rewrite all GPIO",
+        "Confirm pullups/rail before bit-bang rewrite",
+        "Ignore",
+        "Resolder blindly now"
+      ]
+    },
+    {
+      "id": "hw6-4",
+      "kind": "mcq",
+      "stem": "Wrong addr parse",
+      "choices": [
+        "Passes",
+        "QEMU fixes",
+        "Fails",
+        "DRC fixes"
+      ]
+    },
+    {
+      "id": "hw6-5",
+      "kind": "mcq",
+      "stem": "UART vs I2C",
+      "choices": [
+        "Same",
+        "Both need CS",
+        "Neither needs ground",
+        "Framing vs addr/ack protocol"
+      ]
+    },
+    {
+      "id": "hw6-6",
+      "kind": "mcq",
+      "stem": "SPI needs",
+      "choices": [
+        "Shared clock + CS discipline",
+        "Only SDA",
+        "Only CAN",
+        "Only 5V"
+      ]
+    }
+  ]
+}

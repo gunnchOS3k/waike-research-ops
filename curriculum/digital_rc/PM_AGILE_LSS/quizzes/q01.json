@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "pm1-1",
+      "kind": "mcq",
+      "stem": "fabricated_outcomes",
+      "choices": [
+        "true required",
+        "optional",
+        "false required",
+        "ignored"
+      ]
+    },
+    {
+      "id": "pm1-2",
+      "kind": "mcq",
+      "stem": "goal_metric should include",
+      "choices": [
+        "vibes",
+        "AI score",
+        "logo",
+        "baseline"
+      ]
+    },
+    {
+      "id": "pm1-3",
+      "kind": "mcq",
+      "stem": "WAIKE is PMI ATP?",
+      "choices": [
+        "No",
+        "Yes",
+        "Only CAPM",
+        "Only PMP"
+      ]
+    },
+    {
+      "id": "pm1-4",
+      "kind": "mcq",
+      "stem": "out_scope example",
+      "choices": [
+        "queue board",
+        "new building",
+        "staffing slots",
+        "wait metric"
+      ]
+    },
+    {
+      "id": "pm1-5",
+      "kind": "mcq",
+      "stem": "Empty problem",
+      "choices": [
+        "Passes",
+        "Auto-fills",
+        "Fails",
+        "AI invents"
+      ]
+    },
+    {
+      "id": "pm1-6",
+      "kind": "mcq",
+      "stem": "CSSGB BoK reuse",
+      "choices": [
+        "Copy exam",
+        "Dump",
+        "DRM bypass",
+        "RESTRICTED/public domain labels only \u2014 no item harvest"
+      ]
+    }
+  ]
+}

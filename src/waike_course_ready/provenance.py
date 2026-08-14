@@ -1,4 +1,4 @@
-"""Provenance + template detectors for the digital RC batch.
+"""Provenance + template detectors for the digital RC batch (COURSE-READY-002 active).
 
 Lesson Jaccard alone is not enough. Packaging shells (rubrics, lab READMEs,
 instructor notes, syllabus assessment language) and answer-key collapse are
@@ -52,6 +52,24 @@ GENERIC_TEMPLATE_MARKERS = [
 
 CLONE_PREFIXES = ("Mid-course check:", "Capstone check:")
 LETTERS = "ABCD"
+
+# Depth padding the independent verifier strips before measuring ≥800.
+_PAD_RE = re.compile(
+    r"(Operator note: record evidence before changing shared systems\.\s*)+|"
+    r"(Evidence discipline week \d+: keep ticket numbers, hashes, and fixture counts "
+    r"in the journal; do not replace them with adjectives\.\s*)+",
+    re.I,
+)
+_PAD_MARKERS = (
+    "operator note: record evidence before changing shared systems",
+    "evidence discipline week",
+)
+
+
+def strip_lesson_padding(text: str) -> str:
+    """Remove operator-note / evidence-discipline spam before depth measurement."""
+    cleaned = _PAD_RE.sub("", text or "")
+    return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
 
 
 def _ngrams(text: str, n: int = 5) -> set[tuple[str, ...]]:
@@ -130,6 +148,8 @@ def audit() -> dict[str, Any]:
     if worst_pack >= 0.35:
         findings.append(f"BATCH_TEMPLATED_COURSES: packaging jaccard {worst_pack:.3f} on {worst_pack_pair}")
 
+    stripped_lesson_mins: dict[str, int] = {}
+    lesson_padding_rejected = 0
     for cid, text in texts.items():
         low = text.lower()
         for marker in FORBIDDEN_SUBSTRINGS + DUMP_MARKERS + GENERIC_TEMPLATE_MARKERS:
@@ -141,9 +161,27 @@ def audit() -> dict[str, Any]:
         if len(set(weeks)) < 8:
             findings.append(f"{cid} week openings not distinct")
 
+        # Raise RC depth gate: reject operator-note / evidence-discipline padding.
+        week_stripped_lens: list[int] = []
+        for w in COURSES[cid]["weeks"]:
+            raw = w["lesson"]
+            raw_low = raw.lower()
+            if any(m in raw_low for m in _PAD_MARKERS):
+                lesson_padding_rejected += 1
+                findings.append(
+                    f"{cid} week {w['week']} uses operator-note/evidence-discipline depth padding"
+                )
+            stripped = strip_lesson_padding(raw)
+            week_stripped_lens.append(len(stripped))
+            if len(stripped) < 800:
+                findings.append(
+                    f"{cid} week {w['week']} stripped lesson depth {len(stripped)} < 800"
+                )
+        stripped_lesson_mins[cid] = min(week_stripped_lens) if week_stripped_lens else 0
+
         weekly = list(_weekly_stems(cid))
-        if len(weekly) < 48:
-            findings.append(f"{cid} weekly stems {len(weekly)} < 48")
+        if len(weekly) < 60:
+            findings.append(f"{cid} weekly stems {len(weekly)} < 60")
         if len(set(weekly)) != len(weekly):
             findings.append(f"{cid} duplicate weekly stems")
 
@@ -262,6 +300,8 @@ def audit() -> dict[str, Any]:
         "exam_token_jaccard_ge_0_80": token_j80_total,
         "worst_exam_weekly_token_jaccard": round(worst_exam_weekly, 4),
         "exam_restatement_hits": restatement_hits[:20],
+        "stripped_lesson_mins": stripped_lesson_mins,
+        "lesson_padding_rejected": lesson_padding_rejected,
         "registry_size": len(registry.get("sources", [])),
         "findings": findings,
         "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only.",

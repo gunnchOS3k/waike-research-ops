@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "hw3-1",
+      "kind": "mcq",
+      "stem": "tau for 1k and 1uF",
+      "choices": [
+        "0.001 ms",
+        "0.001 s",
+        "1 s",
+        "1 us"
+      ]
+    },
+    {
+      "id": "hw3-2",
+      "kind": "mcq",
+      "stem": "At t=tau, fraction of V0",
+      "choices": [
+        "0.5",
+        "1.0",
+        "~0.632",
+        "0.1"
+      ]
+    },
+    {
+      "id": "hw3-3",
+      "kind": "mcq",
+      "stem": "Sampling reset at 0.1 tau risks",
+      "choices": [
+        "Perfect boot",
+        "Lower Iq",
+        "Better I2C",
+        "False not-ready reading"
+      ]
+    },
+    {
+      "id": "hw3-4",
+      "kind": "mcq",
+      "stem": "Scope on hardware",
+      "choices": [
+        "PHYSICAL_PENDING after digital PASS",
+        "Required now",
+        "Banned",
+        "QEMU only"
+      ]
+    },
+    {
+      "id": "hw3-5",
+      "kind": "mcq",
+      "stem": "Wrong Vt",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Rounded away",
+        "Optional"
+      ]
+    },
+    {
+      "id": "hw3-6",
+      "kind": "mcq",
+      "stem": "3 tau \u2248",
+      "choices": [
+        "10%",
+        "50%",
+        "95% settled",
+        "0%"
+      ]
+    }
+  ]
+}

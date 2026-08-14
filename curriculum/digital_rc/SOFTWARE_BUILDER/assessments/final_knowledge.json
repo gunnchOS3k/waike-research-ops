@@ -1,0 +1,269 @@
+{
+  "assessment_id": "SOFTWARE_BUILDER-final",
+  "items": [
+    {
+      "id": "swf01",
+      "kind": "mcq",
+      "stem": "Feature removed require_role while adding HOURS cache. Merging blindly risks?",
+      "choices": [
+        "Faster boots only",
+        "Open endpoint",
+        "Better OLED contrast",
+        "Lower Rth"
+      ]
+    },
+    {
+      "id": "swf02",
+      "kind": "mcq",
+      "stem": "PUT /checkouts/9 twice under desk role should leave store_len at?",
+      "choices": [
+        "2",
+        "0",
+        "1",
+        "9"
+      ]
+    },
+    {
+      "id": "swf03",
+      "kind": "mcq",
+      "stem": "Which request should return 403?",
+      "choices": [
+        "desk GET existing",
+        "desk POST with device_id",
+        "reader GET",
+        "reader POST write route"
+      ]
+    },
+    {
+      "id": "swf04",
+      "kind": "mcq",
+      "stem": "Forward migration sets returned_at NOT NULL without backfill. Risk?",
+      "choices": [
+        "Legacy rows break contracts",
+        "Faster queries only",
+        "Better a11y",
+        "Lower tau"
+      ]
+    },
+    {
+      "id": "swf05",
+      "kind": "mcq",
+      "stem": "API failure UI omits role=alert. Which check fails?",
+      "choices": [
+        "west build",
+        "alert_role",
+        "critical path",
+        "Vth"
+      ]
+    },
+    {
+      "id": "swf06",
+      "kind": "mcq",
+      "stem": "desk role omits checkout.create. Outcome?",
+      "choices": [
+        "PASS",
+        "QEMU boots",
+        "desk_can_create fails",
+        "CSSGB"
+      ]
+    },
+    {
+      "id": "swf07",
+      "kind": "mcq",
+      "stem": "Report failed=1 total=20. Outcome?",
+      "choices": [
+        "PASS",
+        "Ignored",
+        "Physical",
+        "failed_zero fails"
+      ]
+    },
+    {
+      "id": "swf08",
+      "kind": "mcq",
+      "stem": "Workflow on push only with deploy run PASS. Honesty issues include?",
+      "choices": [
+        "bad trigger, echo PASS, ungated deploy",
+        "none",
+        "only lint",
+        "only SPDX"
+      ]
+    },
+    {
+      "id": "swf09",
+      "kind": "mcq",
+      "stem": "migrate=ok but health=unhealthy. Deploy lab?",
+      "choices": [
+        "Passes",
+        "Fails healthy check",
+        "Silent pass",
+        "Grants CAPM"
+      ]
+    },
+    {
+      "id": "swf10",
+      "kind": "mcq",
+      "stem": "Findings FORGE-IDOR-1 high plus rate-limit medium with evidence. OK?",
+      "choices": [
+        "No only one finding",
+        "No high forbidden",
+        "Yes",
+        "No need BOM"
+      ]
+    },
+    {
+      "id": "swf11",
+      "kind": "mcq",
+      "stem": "failed=100 total=10000. Reported availability value?",
+      "choices": [
+        "0.995",
+        "0.9",
+        "1.0",
+        "0.99"
+      ]
+    },
+    {
+      "id": "swf12",
+      "kind": "mcq",
+      "stem": "SLO 0.995 with availability 0.99. budget_ok?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "PHYSICAL_PENDING"
+      ]
+    },
+    {
+      "id": "swf13",
+      "kind": "mcq",
+      "stem": "CS50 Web in syllabus means?",
+      "choices": [
+        "Paste projects freely",
+        "Structure citation without lab copy",
+        "Exam dump OK",
+        "ATP status"
+      ]
+    },
+    {
+      "id": "swf14",
+      "kind": "mcq",
+      "stem": "Week 8 deploy target in this course?",
+      "choices": [
+        "Unreviewed production AWS",
+        "Patron phones",
+        "Local Device Lab compose",
+        "Soldering iron"
+      ]
+    },
+    {
+      "id": "swf15",
+      "kind": "mcq",
+      "stem": "AI secretly authors entire security findings list. Integrity?",
+      "choices": [
+        "Fine",
+        "Required",
+        "Grants OSCP",
+        "Violates NO_AI practical"
+      ]
+    },
+    {
+      "id": "swf16",
+      "kind": "mcq",
+      "stem": "Conflict parents array length 1. Result?",
+      "choices": [
+        "two_parents fails",
+        "PASS",
+        "Auto-merge",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "swf17",
+      "kind": "mcq",
+      "stem": "upload-report job missing from CI model. Result?",
+      "choices": [
+        "PASS",
+        "has_upload fails",
+        "Optional forever",
+        "Only on main"
+      ]
+    },
+    {
+      "id": "swf18",
+      "kind": "mcq",
+      "stem": "Capstone claims city saved two million dollars without fixture. Allowed?",
+      "choices": [
+        "Yes",
+        "If AI says",
+        "No",
+        "If PMI ATP"
+      ]
+    },
+    {
+      "id": "swf19",
+      "kind": "mcq",
+      "stem": "Public CS50 page means free to copy labs into WAIKE?",
+      "choices": [
+        "Yes",
+        "Only quizzes",
+        "Only solutions",
+        "No"
+      ]
+    },
+    {
+      "id": "swf20",
+      "kind": "mcq",
+      "stem": "Where do graded key files live?",
+      "choices": [
+        "instructor instructor key file only",
+        "learner quiz JSON",
+        "public Discord",
+        "README hero"
+      ]
+    },
+    {
+      "id": "swf21",
+      "kind": "mcq",
+      "stem": "store_len_after_idempotent_put=1 proves?",
+      "choices": [
+        "DNS works",
+        "Update did not duplicate row",
+        "OLED wired",
+        "RACI done"
+      ]
+    },
+    {
+      "id": "swf22",
+      "kind": "mcq",
+      "stem": "HINT used on REST cases. Proper tag?",
+      "choices": [
+        "Claim NO_AI",
+        "Delete cases",
+        "AI_DISCLOSED",
+        "Ship without tests"
+      ]
+    },
+    {
+      "id": "swf23",
+      "kind": "mcq",
+      "stem": "Image pin format required?",
+      "choices": [
+        "latest tag",
+        "v1 string",
+        "random UUID",
+        "sha256 digest"
+      ]
+    },
+    {
+      "id": "swf24",
+      "kind": "mcq",
+      "stem": "Final practical pass rule emphasizes?",
+      "choices": [
+        "Labs ok with empty/wrong/print-PASS failing",
+        "Print PASS files",
+        "Copied CS50",
+        "PMI exam PDF"
+      ]
+    }
+  ]
+}

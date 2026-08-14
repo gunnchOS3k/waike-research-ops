@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "pm2-1",
+      "kind": "mcq",
+      "stem": "Accountable count per task",
+      "choices": [
+        "Exactly one A",
+        "Zero",
+        "Two",
+        "All R"
+      ]
+    },
+    {
+      "id": "pm2-2",
+      "kind": "mcq",
+      "stem": "Two As",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Agile",
+        "Lean"
+      ]
+    },
+    {
+      "id": "pm2-3",
+      "kind": "mcq",
+      "stem": "R means",
+      "choices": [
+        "Accountable",
+        "Consulted only",
+        "Responsible doer",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pm2-4",
+      "kind": "mcq",
+      "stem": "Minimum tasks in lab",
+      "choices": [
+        "1",
+        "0",
+        "100",
+        ">=3"
+      ]
+    },
+    {
+      "id": "pm2-5",
+      "kind": "mcq",
+      "stem": "PMP granted?",
+      "choices": [
+        "No",
+        "Yes",
+        "Auto",
+        "CSSGB"
+      ]
+    },
+    {
+      "id": "pm2-6",
+      "kind": "mcq",
+      "stem": "AI HINT on RACI",
+      "choices": [
+        "Hide",
+        "Disclose if used",
+        "Forbidden forever",
+        "Required"
+      ]
+    }
+  ]
+}

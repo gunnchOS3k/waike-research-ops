@@ -1,0 +1,16 @@
+{
+  "practical_id": "PM_AGILE_LSS-practical",
+  "labs": [
+    "lab_charter",
+    "lab_raci",
+    "lab_wbs_schedule",
+    "lab_sprint_board",
+    "lab_risk_register",
+    "lab_sipoc_process",
+    "lab_pareto_rootcause",
+    "lab_control_chart",
+    "lab_dmaic_case",
+    "lab_change_status_ai"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

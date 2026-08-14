@@ -1,0 +1,72 @@
+{
+  "quiz_id": "HARDWARE_ENGINEERING-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "hw4-1",
+      "kind": "mcq",
+      "stem": "NAND(1,1)",
+      "choices": [
+        "1",
+        "X",
+        "Z",
+        "0"
+      ]
+    },
+    {
+      "id": "hw4-2",
+      "kind": "mcq",
+      "stem": "NAND(0,0)",
+      "choices": [
+        "1",
+        "0",
+        "X",
+        "Z"
+      ]
+    },
+    {
+      "id": "hw4-3",
+      "kind": "mcq",
+      "stem": "Why table before PCB?",
+      "choices": [
+        "PCB ignores logic",
+        "Catch Boolean errors early",
+        "Zephyr forbids tables",
+        "ASQ requires"
+      ]
+    },
+    {
+      "id": "hw4-4",
+      "kind": "mcq",
+      "stem": "Lab gate type",
+      "choices": [
+        "XOR only",
+        "Analog",
+        "NAND",
+        "UART"
+      ]
+    },
+    {
+      "id": "hw4-5",
+      "kind": "mcq",
+      "stem": "Wrong y on 1,1",
+      "choices": [
+        "Passes",
+        "DRC fixes",
+        "QEMU fixes",
+        "Fails truth"
+      ]
+    },
+    {
+      "id": "hw4-6",
+      "kind": "mcq",
+      "stem": "Digital abstraction means",
+      "choices": [
+        "Levels ignore analog internals for logic",
+        "Ignore power",
+        "Skip DT",
+        "Skip BOM"
+      ]
+    }
+  ]
+}

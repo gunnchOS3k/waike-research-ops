@@ -1,0 +1,72 @@
+{
+  "quiz_id": "PM_AGILE_LSS-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "pm10-1",
+      "kind": "mcq",
+      "stem": "ai_disclosed must be",
+      "choices": [
+        "true",
+        "false",
+        "optional",
+        "hidden"
+      ]
+    },
+    {
+      "id": "pm10-2",
+      "kind": "mcq",
+      "stem": "decision values",
+      "choices": [
+        "maybe",
+        "approve/reject/defer",
+        "vibes",
+        "ship-it"
+      ]
+    },
+    {
+      "id": "pm10-3",
+      "kind": "mcq",
+      "stem": "critique without risk/assumption",
+      "choices": [
+        "Passes",
+        "OK",
+        "Fails",
+        "Auto"
+      ]
+    },
+    {
+      "id": "pm10-4",
+      "kind": "mcq",
+      "stem": "WAIKE claims PMI ATP?",
+      "choices": [
+        "Yes",
+        "After capstone",
+        "If AI says",
+        "No"
+      ]
+    },
+    {
+      "id": "pm10-5",
+      "kind": "mcq",
+      "stem": "Capstone uses",
+      "choices": [
+        "Real course artifacts",
+        "Fabricated city stats",
+        "Exam dumps",
+        "DRM"
+      ]
+    },
+    {
+      "id": "pm10-6",
+      "kind": "mcq",
+      "stem": "Status report short 'ok'",
+      "choices": [
+        "Passes",
+        "Fails length",
+        "Ideal",
+        "Required"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SOFTWARE_BUILDER-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "sw1-1",
+      "kind": "mcq",
+      "stem": "Ticket 8801 keeps only the feature side. What is missing?",
+      "choices": [
+        "Missing require_role authz guard",
+        "Deploy latency",
+        "DNS TTL",
+        "Printer spool"
+      ]
+    },
+    {
+      "id": "sw1-2",
+      "kind": "mcq",
+      "stem": "Why forbid open_hours_v1 and open_hours_v2?",
+      "choices": [
+        "Python forbids two defs",
+        "Hides unresolved contract / breaks single entrypoint",
+        "Git cannot store two defs",
+        "Docker ignores both"
+      ]
+    },
+    {
+      "id": "sw1-3",
+      "kind": "mcq",
+      "stem": "CS50 Web Git reuse class?",
+      "choices": [
+        "OPEN_LICENSE_ADAPT_ALLOWED",
+        "FREE_TO_COPY",
+        "PUBLIC_REFERENCE_ONLY",
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "sw1-4",
+      "kind": "mcq",
+      "stem": "Resolution JSON omitting parent SHAs should",
+      "choices": [
+        "Pass if file looks right",
+        "Auto-rebase",
+        "Skip CI",
+        "Fail the lab contract"
+      ]
+    },
+    {
+      "id": "sw1-5",
+      "kind": "mcq",
+      "stem": "main on ForgeDesk means",
+      "choices": [
+        "Always deployable to local Device Lab compose",
+        "Always broken",
+        "Draft only",
+        "Mirror of Issues"
+      ]
+    },
+    {
+      "id": "sw1-6",
+      "kind": "mcq",
+      "stem": "Take theirs without reading is wrong because",
+      "choices": [
+        "Theirs is always main",
+        "You may drop required tokens from the other side",
+        "Git deletes history",
+        "Compose cannot start"
+      ]
+    }
+  ]
+}

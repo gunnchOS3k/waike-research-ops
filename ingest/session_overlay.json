@@ -52,5 +52,59 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "SOFTWARE_BUILDER-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "SOFTWARE_BUILDER-offline",
+      "labs": [
+        "lab_git_conflict",
+        "lab_rest_api"
+      ],
+      "catalog_course_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "HARDWARE_ENGINEERING-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "HARDWARE_ENGINEERING-offline",
+      "labs": [
+        "lab_spice_network",
+        "lab_thevenin"
+      ],
+      "catalog_course_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "PM_AGILE_LSS-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "PM_AGILE_LSS-offline",
+      "labs": [
+        "lab_charter",
+        "lab_raci"
+      ],
+      "catalog_course_id": "PM_AGILE_LSS",
+      "title": "Process Improvement + Project Management \u2014 Device Lab Flow"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

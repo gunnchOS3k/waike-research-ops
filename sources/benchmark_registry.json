@@ -1,7 +1,7 @@
 {
   "schema": "waike.benchmark_registry.v1",
   "date_generated": "2026-08-13",
-  "research_method": "Fresh web retrieval on 2026-08-13. Publicly viewable is not a license to copy. Domain-level alignment only. No exam dumps, leaked items, paywall bypass, or proprietary lab/solution reuse.",
+  "research_method": "Fresh web retrieval on 2026-08-13 for COURSE-READY-001 and COURSE-READY-002. Publicly viewable is not a license to copy. Domain-level alignment only. No exam dumps, leaked items, paywall bypass, or proprietary lab/solution reuse. WAIKE is not a PMI ATP.",
   "sources": [
     {
       "source_id": "GOOGLE_IT_SUPPORT_PC_2026",
@@ -19,7 +19,12 @@
         "it_security_defense",
         "job_search_ai_productivity"
       ],
-      "assessment_patterns": ["module_quizzes", "hands_on_labs", "applied_learning_project", "not_proctored_vendor_exam"],
+      "assessment_patterns": [
+        "module_quizzes",
+        "hands_on_labs",
+        "applied_learning_project",
+        "not_proctored_vendor_exam"
+      ],
       "license": "Coursera / Google Career Certificates terms; instructional text not reusable",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "Google IT Support Professional Certificate course titles and publicly listed module themes, retrieved 2026-08-13 from Coursera.",
@@ -44,7 +49,12 @@
         "software_troubleshooting",
         "operational_procedures"
       ],
-      "assessment_patterns": ["multiple_choice", "performance_based", "drag_and_drop", "two_exam_cores"],
+      "assessment_patterns": [
+        "multiple_choice",
+        "performance_based",
+        "drag_and_drop",
+        "two_exam_cores"
+      ],
       "license": "CompTIA copyright; exam items restricted; public domain summaries only",
       "reuse_class": "RESTRICTED",
       "attribution": "CompTIA A+ V15 public exam-version and domain-weight summary from comptia.org, 2026-08-13. Not an item bank.",
@@ -66,7 +76,12 @@
         "security_fundamentals",
         "automation_programmability"
       ],
-      "assessment_patterns": ["multiple_choice", "simulations", "drag_and_drop", "120_minute_exam"],
+      "assessment_patterns": [
+        "multiple_choice",
+        "simulations",
+        "drag_and_drop",
+        "120_minute_exam"
+      ],
       "license": "Cisco copyright; exam topics PDF is reference-only; NetAcad labs not reusable",
       "reuse_class": "RESTRICTED",
       "attribution": "Cisco 200-301 CCNA v1.1 published exam topic domains and weights, 2026-08-13.",
@@ -90,7 +105,12 @@
         "routing",
         "internet_security"
       ],
-      "assessment_patterns": ["weekly_unit_quizzes", "midterm", "final", "multi_checkpoint_lab_build_the_stack"],
+      "assessment_patterns": [
+        "weekly_unit_quizzes",
+        "midterm",
+        "final",
+        "multi_checkpoint_lab_build_the_stack"
+      ],
       "license": "Stanford / course staff copyright; lab code and solutions not licensed for reuse",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "Stanford CS144 Fall 2025 public logistics and weekly topic sequence from cs144.github.io. No lab code, no solutions, no exam PDFs reused.",
@@ -119,7 +139,10 @@
         "network_security",
         "security_operations"
       ],
-      "assessment_patterns": ["selected_response", "domain_weighted_exam"],
+      "assessment_patterns": [
+        "selected_response",
+        "domain_weighted_exam"
+      ],
       "license": "ISC2 copyright; exam outlines reference-only; no item harvesting",
       "reuse_class": "RESTRICTED",
       "attribution": "ISC2 CC exam outline effective 2026-09-01 (official PDF) plus public current-domain names. AI security concepts from ISC2 Exam Guidance for Artificial Intelligence (Apr 2026) mapped at principle level only.",
@@ -140,7 +163,10 @@
         "security_operations",
         "security_program_management_and_oversight"
       ],
-      "assessment_patterns": ["multiple_choice", "performance_based"],
+      "assessment_patterns": [
+        "multiple_choice",
+        "performance_based"
+      ],
       "license": "CompTIA copyright; objectives PDF reference-only",
       "reuse_class": "RESTRICTED",
       "attribution": "CompTIA Security+ SY0-701 public domain names and weights, 2026-08-13.",
@@ -184,8 +210,15 @@
       "date_checked": "2026-08-13",
       "url": "https://doi.org/10.6028/NIST.SP.800-181r1",
       "source_type": "us_government_framework",
-      "topic_domains": ["cybersecurity_work_roles", "tasks_knowledge_skills", "workforce_categories"],
-      "assessment_patterns": ["competency_statements", "not_an_exam"],
+      "topic_domains": [
+        "cybersecurity_work_roles",
+        "tasks_knowledge_skills",
+        "workforce_categories"
+      ],
+      "assessment_patterns": [
+        "competency_statements",
+        "not_an_exam"
+      ],
       "license": "Not subject to copyright in the United States; attribution appreciated",
       "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
       "attribution": "NIST SP 800-181 Rev. 1, Workforce Framework for Cybersecurity (NICE Framework).",
@@ -199,8 +232,16 @@
       "date_checked": "2026-08-13",
       "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
       "source_type": "us_government_guide",
-      "topic_domains": ["preparation", "detection_analysis", "containment_eradication_recovery", "post_incident"],
-      "assessment_patterns": ["process_tabletop", "not_an_exam"],
+      "topic_domains": [
+        "preparation",
+        "detection_analysis",
+        "containment_eradication_recovery",
+        "post_incident"
+      ],
+      "assessment_patterns": [
+        "process_tabletop",
+        "not_an_exam"
+      ],
       "license": "US government work; not subject to copyright in the United States",
       "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
       "attribution": "NIST SP 800-61 Rev. 2 Computer Security Incident Handling Guide.",
@@ -214,8 +255,16 @@
       "date_checked": "2026-08-13",
       "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
       "source_type": "us_government_control_catalog",
-      "topic_domains": ["access_control", "audit_accountability", "system_communications_protection", "incident_response", "identification_authentication"],
-      "assessment_patterns": ["control_implementation_statements"],
+      "topic_domains": [
+        "access_control",
+        "audit_accountability",
+        "system_communications_protection",
+        "incident_response",
+        "identification_authentication"
+      ],
+      "assessment_patterns": [
+        "control_implementation_statements"
+      ],
       "license": "US government work; not subject to copyright in the United States",
       "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
       "attribution": "NIST SP 800-53 Rev. 5 control family names used as alignment labels only.",
@@ -229,8 +278,15 @@
       "date_checked": "2026-08-13",
       "url": "https://www.rfc-editor.org/rfc/rfc791",
       "source_type": "open_internet_standard",
-      "topic_domains": ["ipv4_header", "addressing", "fragmentation"],
-      "assessment_patterns": ["protocol_implementation", "header_parse"],
+      "topic_domains": [
+        "ipv4_header",
+        "addressing",
+        "fragmentation"
+      ],
+      "assessment_patterns": [
+        "protocol_implementation",
+        "header_parse"
+      ],
       "license": "IETF RFC; specification text is citable; do not paste large verbatim excerpts",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "RFC 791, Internet Protocol, IETF.",
@@ -244,8 +300,15 @@
       "date_checked": "2026-08-13",
       "url": "https://www.rfc-editor.org/rfc/rfc9293",
       "source_type": "open_internet_standard",
-      "topic_domains": ["tcp_header", "connection_establishment", "reliability"],
-      "assessment_patterns": ["protocol_implementation", "state_machine"],
+      "topic_domains": [
+        "tcp_header",
+        "connection_establishment",
+        "reliability"
+      ],
+      "assessment_patterns": [
+        "protocol_implementation",
+        "state_machine"
+      ],
       "license": "IETF RFC; specification text is citable",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "RFC 9293, Transmission Control Protocol (TCP), IETF. Historical RFC 793 noted but not used as the current spec.",
@@ -259,8 +322,13 @@
       "date_checked": "2026-08-13",
       "url": "https://www.rfc-editor.org/rfc/rfc4632",
       "source_type": "open_internet_standard",
-      "topic_domains": ["cidr", "longest_prefix_match"],
-      "assessment_patterns": ["subnet_calculation"],
+      "topic_domains": [
+        "cidr",
+        "longest_prefix_match"
+      ],
+      "assessment_patterns": [
+        "subnet_calculation"
+      ],
       "license": "IETF RFC; specification text is citable",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "RFC 4632, Classless Inter-domain Routing (CIDR), IETF.",
@@ -269,13 +337,23 @@
     {
       "source_id": "GROW_GOOGLE_IT_SUPPORT_LANDING",
       "institution": "Google",
-      "course_or_cert": "Google Career Certificates — IT Support landing",
+      "course_or_cert": "Google Career Certificates \u2014 IT Support landing",
       "current_version": "checked 2026-08-13",
       "date_checked": "2026-08-13",
       "url": "https://grow.google/certificates/it-support/",
       "source_type": "vendor_career_pathway",
-      "topic_domains": ["troubleshooting_customer_care", "networking", "operating_systems", "system_administration", "security", "ai_productivity"],
-      "assessment_patterns": ["certificate_completion", "career_artifacts"],
+      "topic_domains": [
+        "troubleshooting_customer_care",
+        "networking",
+        "operating_systems",
+        "system_administration",
+        "security",
+        "ai_productivity"
+      ],
+      "assessment_patterns": [
+        "certificate_completion",
+        "career_artifacts"
+      ],
       "license": "Google terms; not reusable instructional text",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "Google Career Certificates IT Support public skill list, 2026-08-13.",
@@ -289,8 +367,17 @@
       "date_checked": "2026-08-13",
       "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
       "source_type": "vendor_exam_topics_pdf",
-      "topic_domains": ["network_fundamentals_20", "network_access_20", "ip_connectivity_25", "ip_services_10", "security_fundamentals_15", "automation_programmability_10"],
-      "assessment_patterns": ["exam_topic_guidelines"],
+      "topic_domains": [
+        "network_fundamentals_20",
+        "network_access_20",
+        "ip_connectivity_25",
+        "ip_services_10",
+        "security_fundamentals_15",
+        "automation_programmability_10"
+      ],
+      "assessment_patterns": [
+        "exam_topic_guidelines"
+      ],
       "license": "Cisco copyright",
       "reuse_class": "RESTRICTED",
       "attribution": "Cisco CCNA 200-301 v1.1 exam topics PDF domain weights, 2026-08-13. No topic text copied beyond domain names/weights.",
@@ -304,12 +391,260 @@
       "date_checked": "2026-08-13",
       "url": "https://www.isc2.org/Insights/2026/04/ISC2-Publishes-Exam-Guidance-AI",
       "source_type": "vendor_exam_guidance",
-      "topic_domains": ["cia_applied_to_ai", "model_poisoning_integrity", "non_human_identities", "ai_api_endpoint_security", "siem_ai_triage"],
-      "assessment_patterns": ["integrated_into_existing_domains"],
+      "topic_domains": [
+        "cia_applied_to_ai",
+        "model_poisoning_integrity",
+        "non_human_identities",
+        "ai_api_endpoint_security",
+        "siem_ai_triage"
+      ],
+      "assessment_patterns": [
+        "integrated_into_existing_domains"
+      ],
       "license": "ISC2 copyright",
       "reuse_class": "RESTRICTED",
       "attribution": "ISC2 Exam Guidance for Artificial Intelligence (Apr 2026) principle-level mapping only.",
       "why_selected": "Upcoming CC outline weaves AI security through domains; WAIKE authors original AI-governance items, not ISC2 wording."
+    },
+    {
+      "source_id": "HARVARD_CS50_2025",
+      "institution": "Harvard University",
+      "course_or_cert": "CS50 Introduction to Computer Science",
+      "current_version": "Fall 2025 public syllabus",
+      "date_checked": "2026-08-13",
+      "url": "https://cs50.harvard.edu/college/2025/fall/syllabus/",
+      "source_type": "university_course_structure",
+      "topic_domains": [
+        "abstraction",
+        "algorithms",
+        "memory",
+        "python",
+        "sql",
+        "web_basics"
+      ],
+      "assessment_patterns": [
+        "problem_sets",
+        "labs",
+        "quizzes",
+        "final_project"
+      ],
+      "license": "Harvard / course staff copyright; problem sets and solutions not licensed for reuse",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "CS50 Fall 2025 public syllabus topic sequence, retrieved 2026-08-13. No pset text reused.",
+      "why_selected": "Software Builder academic depth citation for fundamentals-to-web path."
+    },
+    {
+      "source_id": "HARVARD_CS50_WEB",
+      "institution": "Harvard University",
+      "course_or_cert": "CS50 Web Programming with Python and JavaScript",
+      "current_version": "Public weeks index (HTML/CSS, Git, Python, Django, SQL, JS, UI, Testing/CI/CD, Security)",
+      "date_checked": "2026-08-13",
+      "url": "https://cs50.harvard.edu/web/weeks/",
+      "source_type": "university_course_structure",
+      "topic_domains": [
+        "html_css",
+        "git",
+        "python",
+        "django",
+        "sql_migrations",
+        "javascript",
+        "user_interfaces",
+        "testing_cicd",
+        "scalability_security"
+      ],
+      "assessment_patterns": [
+        "lectures",
+        "projects",
+        "quizzes"
+      ],
+      "license": "Harvard copyright; projects/solutions not reusable",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "CS50 Web public weeks list from cs50.harvard.edu/web/weeks/, 2026-08-13. No project code copied.",
+      "why_selected": "Primary shape citation for SOFTWARE_BUILDER weekly map."
+    },
+    {
+      "source_id": "GITHUB_ACTIONS_DOCS_2026",
+      "institution": "GitHub",
+      "course_or_cert": "GitHub Actions documentation",
+      "current_version": "Public docs checked 2026-08-13",
+      "date_checked": "2026-08-13",
+      "url": "https://docs.github.com/en/actions",
+      "source_type": "vendor_documentation",
+      "topic_domains": [
+        "workflows",
+        "events",
+        "jobs",
+        "artifacts",
+        "environments"
+      ],
+      "assessment_patterns": [
+        "not_an_exam"
+      ],
+      "license": "GitHub docs terms; reference only",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "GitHub Actions public documentation themes, 2026-08-13.",
+      "why_selected": "CI/CD lab alignment for SOFTWARE_BUILDER without copying workflow samples verbatim as IP claims."
+    },
+    {
+      "source_id": "OWASP_ASVS_THEMES",
+      "institution": "OWASP",
+      "course_or_cert": "Application Security Verification Standard themes",
+      "current_version": "Public ASVS project pages",
+      "date_checked": "2026-08-13",
+      "url": "https://owasp.org/www-project-application-security-verification-standard/",
+      "source_type": "security_standard_outline",
+      "topic_domains": [
+        "authentication",
+        "access_control",
+        "validation",
+        "error_handling"
+      ],
+      "assessment_patterns": [
+        "verification_requirements_not_exam_items"
+      ],
+      "license": "OWASP license for ASVS text \u2014 WAIKE uses domain labels only, not requirement text harvest",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "OWASP ASVS project landing themes, 2026-08-13. No requirement enumeration copied into quizzes.",
+      "why_selected": "Secure-dev review week labels for SOFTWARE_BUILDER."
+    },
+    {
+      "source_id": "MIT_OCW_6002_CIRCUITS",
+      "institution": "MIT OpenCourseWare",
+      "course_or_cert": "6.002 Circuits and Electronics",
+      "current_version": "Spring 2007 OCW public syllabus/outcomes",
+      "date_checked": "2026-08-13",
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/pages/syllabus/",
+      "source_type": "university_course_structure",
+      "topic_domains": [
+        "lumped_abstraction",
+        "thevenin",
+        "digital_abstraction",
+        "rc_dynamics",
+        "power"
+      ],
+      "assessment_patterns": [
+        "problem_sets",
+        "labs",
+        "exams_not_reused"
+      ],
+      "license": "OCW terms; problem sets/exams not free to copy into commercial/other curricula without compliance",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "MIT OCW 6.002 syllabus learning outcomes list, 2026-08-13. No problem-set text reused.",
+      "why_selected": "Hardware rigor citation for HARDWARE_ENGINEERING."
+    },
+    {
+      "source_id": "ZEPHYR_DOCS_WEST_QEMU",
+      "institution": "Zephyr Project",
+      "course_or_cert": "Zephyr RTOS docs \u2014 west and QEMU",
+      "current_version": "latest docs qemu_cortex_m0 / west build",
+      "date_checked": "2026-08-13",
+      "url": "https://docs.zephyrproject.org/latest/boards/qemu/cortex_m0/doc/index.html",
+      "source_type": "open_source_documentation",
+      "topic_domains": [
+        "west_build",
+        "qemu_emulation",
+        "boards",
+        "samples"
+      ],
+      "assessment_patterns": [
+        "not_an_exam"
+      ],
+      "license": "Zephyr Project licensing for code/docs \u2014 reference; WAIKE writes original fixtures",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "attribution": "Zephyr QEMU Cortex-M0 board doc command examples cited as reference, 2026-08-13.",
+      "why_selected": "Embedded prototyping integration digital path before physical."
+    },
+    {
+      "source_id": "KICAD_DOCS_ERC_DRC",
+      "institution": "KiCad",
+      "course_or_cert": "KiCad documentation ERC/DRC",
+      "current_version": "Public docs checked 2026-08-13",
+      "date_checked": "2026-08-13",
+      "url": "https://docs.kicad.org/",
+      "source_type": "eda_documentation",
+      "topic_domains": [
+        "schematic_erc",
+        "pcb_drc",
+        "bom"
+      ],
+      "assessment_patterns": [
+        "not_an_exam"
+      ],
+      "license": "KiCad docs license; reference only",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "KiCad documentation themes for ERC/DRC/BOM, 2026-08-13.",
+      "why_selected": "PCB lab alignment for HARDWARE_ENGINEERING."
+    },
+    {
+      "source_id": "ASQ_CSSGB_BOK_2022",
+      "institution": "ASQ",
+      "course_or_cert": "Certified Six Sigma Green Belt Body of Knowledge",
+      "current_version": "2022 BoK (Define/Measure/Analyze/Improve/Control + Lean)",
+      "date_checked": "2026-08-13",
+      "url": "https://asq.org/cert/six-sigma-green-belt",
+      "source_type": "vendor_bok_outline",
+      "topic_domains": [
+        "overview_lean",
+        "define",
+        "measure",
+        "analyze",
+        "improve",
+        "control"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_exam_items_restricted"
+      ],
+      "license": "ASQ copyright; BoK outline reference; exam items restricted",
+      "reuse_class": "RESTRICTED",
+      "attribution": "ASQ CSSGB BoK domain pillars as published for exam alignment, 2026-08-13. No item harvest.",
+      "why_selected": "Process improvement alignment for PM_AGILE_LSS."
+    },
+    {
+      "source_id": "PMI_CAPM_ECO",
+      "institution": "PMI",
+      "course_or_cert": "CAPM Exam Content Outline",
+      "current_version": "Public CAPM certification pages / ECO themes",
+      "date_checked": "2026-08-13",
+      "url": "https://www.pmi.org/certifications/certified-associate-capm",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "project_management_fundamentals",
+        "predictive_adaptive_hybrid",
+        "business_analysis_foundations"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted"
+      ],
+      "license": "PMI copyright; ECO reference only; WAIKE is not an ATP",
+      "reuse_class": "RESTRICTED",
+      "attribution": "PMI CAPM public certification domain themes, 2026-08-13. No ECO task text pasted as quiz stems. Not an ATP claim.",
+      "why_selected": "Foundational PM alignment labels for PM_AGILE_LSS."
+    },
+    {
+      "source_id": "PMI_PMP_ECO_2026",
+      "institution": "PMI",
+      "course_or_cert": "PMP Exam Content Outline 2026",
+      "current_version": "Effective July 2026; People 33% / Process 41% / Business Environment 26%; AI and sustainability in context; value focus",
+      "date_checked": "2026-08-13",
+      "url": "https://www.pmi.org/certifications/project-management-pmp/new-exam",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "people",
+        "process",
+        "business_environment",
+        "ai_in_context",
+        "sustainability_in_context",
+        "value_delivery"
+      ],
+      "assessment_patterns": [
+        "scenario_case",
+        "multiple_choice",
+        "practicum_style_restricted"
+      ],
+      "license": "PMI copyright; ECO reference only; WAIKE is NOT a PMI ATP; no fake certs",
+      "reuse_class": "RESTRICTED",
+      "attribution": "PMI public PMP 2026 exam change communications and domain weights, retrieved 2026-08-13. Domain labels only; no task/item harvest.",
+      "why_selected": "Required July 2026 PMP refresh alignment for Process/PM course."
     }
   ]
 }
