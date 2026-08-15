@@ -1,0 +1,49 @@
+{
+  "schema": "waike.course_honesty.v1",
+  "checks": [
+    {
+      "course_id": "WIRELESS_6G",
+      "distinctions": {
+        "5g": true,
+        "5g_advanced": true,
+        "ntn": true,
+        "ai_ran": true,
+        "fr3": false,
+        "imt_2030": false,
+        "future_6g_research": true
+      },
+      "distinctions_ok": true,
+      "honesty_flags_present": true,
+      "claims_current_commercial_6g_standard": false,
+      "pass": true,
+      "detail": "Requires 5G/5GA/NTN/AI-RAN distinctions; never claim commercial standardized 6G."
+    },
+    {
+      "course_id": "ROBOTICS_CONTROL",
+      "needs": {
+        "pid": true,
+        "kinematics": true,
+        "sensor": true,
+        "estop": true,
+        "path_or_traj": true
+      },
+      "pass": true,
+      "detail": "Requires kinematics/PID/sensor/estop/trajectory reasoning surfaces."
+    },
+    {
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "needs": {
+        "game_loop": true,
+        "input": true,
+        "state_fsm": true,
+        "mechanics": true,
+        "build_or_test": true
+      },
+      "pass": true,
+      "prose_concept_insufficient": true,
+      "detail": "Requires real loop/input/state/mechanics/build-test evidence, not prose concepts alone."
+    }
+  ],
+  "pass": true,
+  "claim_boundary": "Curriculum honesty surfaces for Mastery-002. Not a claim of commercial 6G or physical robot/game studio validation."
+}

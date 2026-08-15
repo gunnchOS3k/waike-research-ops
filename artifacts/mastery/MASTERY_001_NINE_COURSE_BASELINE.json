@@ -1,0 +1,21 @@
+{
+  "schema": "waike.mastery_001_nine_course_baseline.v1",
+  "label": "MASTERY_001_NINE_COURSE_BASELINE",
+  "source": "waike-research-ops #47 merged artifacts (pre-#46 12-course regen)",
+  "courses": 9,
+  "assessable_items": 1016,
+  "course_ids": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_VIZ_BI",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "SOFTWARE_BUILDER"
+  ],
+  "overall_score": 0.6442307692307693,
+  "solver": "curriculum_overlap_v1",
+  "note": "Historical Mastery-001 score on the nine-course corpus. Preserved for comparison; not current accepted-main truth after #46."
+}

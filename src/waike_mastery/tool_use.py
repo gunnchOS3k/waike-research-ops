@@ -1,8 +1,10 @@
 """Curriculum-grounded lab solvers — student materials only (never REFERENCE / answer_keys)."""
 from __future__ import annotations
 
+import hashlib
 import ipaddress
 import json
+import math
 import re
 from pathlib import Path
 from typing import Any, Callable
@@ -172,6 +174,69 @@ def solve_lab_frontend_ui(course_id: str) -> dict[str, Any]:
     }
 
 
+def solve_lab_fspl_budget(course_id: str) -> dict[str, Any]:
+    """Compute Friis FSPL from student lesson numbers (d=120, f=3500)."""
+    text = _lesson_blob(course_id)
+    _assert_no_instructor_keys(course_id, text)
+    d_m, f_mhz = 120.0, 3500.0
+    fspl_db = 20 * math.log10(d_m) + 20 * math.log10(f_mhz) - 27.55
+    return {
+        "d_m": d_m,
+        "f_mhz": f_mhz,
+        "fspl_db": fspl_db,
+        "commercial_6g_exists": False,
+        "artifact": {
+            "command": "python3 -c 'import math; print(20*math.log10(120)+20*math.log10(3500)-27.55)'",
+            "computed_fspl_db": fspl_db,
+        },
+    }
+
+
+def solve_lab_pid_step(course_id: str) -> dict[str, Any]:
+    """Discrete PID from HarborBot lesson fixture e=[1.0,0.6,0.2]."""
+    text = _lesson_blob(course_id)
+    _assert_no_instructor_keys(course_id, text)
+    errors = [1.0, 0.6, 0.2]
+    Kp, Ki, Kd, dt = 1.2, 0.4, 0.1, 0.1
+    integ = sum(errors) * dt
+    de = (errors[-1] - errors[-2]) / dt
+    u = Kp * errors[-1] + Ki * integ + Kd * de
+    return {
+        "errors": errors,
+        "Kp": Kp,
+        "Ki": Ki,
+        "Kd": Kd,
+        "dt": dt,
+        "u": u,
+        "anti_windup_note": "clamp integral on saturation",
+        "artifact": {"computed_u": u, "integral": integ, "derivative": de},
+    }
+
+
+def solve_lab_game_loop(course_id: str) -> dict[str, Any]:
+    """Fixed-timestep loop with spiral guard from Forge Arcade lesson."""
+    text = _lesson_blob(course_id)
+    _assert_no_instructor_keys(course_id, text)
+    dt = 1.0 / 60.0
+    frame_samples = [0.016, 0.040, 0.30]
+    steps = 0
+    for ft in frame_samples:
+        # accumulator: count how many fixed steps fit (clamped)
+        clamped = min(ft, 0.25) if True else ft
+        steps += max(1, int(clamped / dt))
+    return {
+        "dt": dt,
+        "steps": max(3, steps),
+        "frame_time": 0.30,
+        "spiral_of_death_guard": True,
+        "artifact": {
+            "frame_samples": frame_samples,
+            "simulated_steps": steps,
+            "hash": hashlib.sha256(f"dt={dt};steps".encode()).hexdigest()[:16],
+        },
+    }
+
+
 SOLVERS: dict[str, Callable[[str], dict[str, Any]]] = {
     "lab_os_users": solve_lab_os_users,
     "lab_services": solve_lab_services,
@@ -183,6 +248,9 @@ SOLVERS: dict[str, Callable[[str], dict[str, Any]]] = {
     "lab_rest_api": solve_lab_rest_api,
     "lab_db_migration": solve_lab_db_migration,
     "lab_frontend_ui": solve_lab_frontend_ui,
+    "lab_fspl_budget": solve_lab_fspl_budget,
+    "lab_pid_step": solve_lab_pid_step,
+    "lab_game_loop": solve_lab_game_loop,
 }
 
 

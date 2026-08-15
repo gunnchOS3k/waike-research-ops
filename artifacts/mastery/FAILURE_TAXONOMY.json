@@ -1,0 +1,209 @@
+{
+  "schema": "waike.failure_taxonomy_report.v1",
+  "taxonomy": [
+    "MODEL_KNOWLEDGE_GAP",
+    "PREREQUISITE_GAP",
+    "CONCEPT_CONFUSION",
+    "REASONING_FAILURE",
+    "CALCULATION_FAILURE",
+    "INSTRUCTION_INTERPRETATION_FAILURE",
+    "VOCABULARY_FAILURE",
+    "TRANSFER_FAILURE",
+    "TOOL_SELECTION_FAILURE",
+    "TOOL_EXECUTION_FAILURE",
+    "DEBUGGING_FAILURE",
+    "CODE_FAILURE",
+    "SOURCE_GROUNDING_FAILURE",
+    "RUBRIC_FAILURE",
+    "PARTIAL_COMPLETION",
+    "CARELESS_ERROR",
+    "ACCESSIBILITY_BARRIER",
+    "AMBIGUOUS_PROMPT",
+    "CURRICULUM_DEFECT_CANDIDATE",
+    "GRADER_DEFECT_CANDIDATE",
+    "POLICY_BLOCKED",
+    "RESOURCE_BLOCKED",
+    "DIAGNOSIS_UNCERTAIN"
+  ],
+  "miss_count": 40,
+  "counts": {
+    "MODEL_KNOWLEDGE_GAP": 40
+  },
+  "samples": [
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w1-1",
+      "chosen_excerpt": "3",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w2-2",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w3-1",
+      "chosen_excerpt": "3",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w3-3",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w3-5",
+      "chosen_excerpt": "3",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w4-1",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w4-2",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w4-3",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w4-5",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w4-6",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w5-1",
+      "chosen_excerpt": "2",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w5-4",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w6-4",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w6-6",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w7-4",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w8-1",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w9-1",
+      "chosen_excerpt": "1",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w9-3",
+      "chosen_excerpt": "3",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w9-4",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w10-2",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim-w10-6",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim01",
+      "chosen_excerpt": "2",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim03",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim04",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    },
+    {
+      "failure_code": "MODEL_KNOWLEDGE_GAP",
+      "first_divergence": "answer_selection",
+      "stem_excerpt": "AI_ML_EDGE:aim06",
+      "chosen_excerpt": "0",
+      "taxonomy_version": "waike.failure_taxonomy.v1"
+    }
+  ]
+}

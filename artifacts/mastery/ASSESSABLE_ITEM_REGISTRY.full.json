@@ -1,8 +1,8 @@
 {
   "schema": "waike.assessable_item_registry.v1",
-  "generated_utc": "2026-08-15T17:35:36Z",
-  "course_count": 9,
-  "item_count": 1016,
+  "generated_utc": "2026-08-15T18:41:47Z",
+  "course_count": 12,
+  "item_count": 1358,
   "per_course": {
     "AI_ML_EDGE": {
       "quiz": 60,
@@ -39,6 +39,13 @@
       "lab": 10,
       "total": 114
     },
+    "GAME_DEV_INTERACTIVE": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
     "GENERAL_IT": {
       "quiz": 60,
       "mid": 20,
@@ -60,7 +67,21 @@
       "lab": 10,
       "total": 114
     },
+    "ROBOTICS_CONTROL": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
     "SOFTWARE_BUILDER": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "WIRELESS_6G": {
       "quiz": 60,
       "mid": 20,
       "final": 24,
@@ -8876,6 +8897,1780 @@
       "source": "curriculum/digital_rc/DATA_VIZ_BI/labs/lab_stats_summary"
     },
     {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "dt?",
+      "choices": [
+        "1",
+        "0",
+        "1/60",
+        "60"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "spiral_of_death_guard?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Variable dt only forever?",
+      "choices": [
+        "Fails discipline",
+        "Best",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Handheld profiling?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "Skip",
+        "Fake OK"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w1-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q01",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "print PASS?",
+      "choices": [
+        "OK",
+        "Half",
+        "Skip",
+        "Raises"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q01.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Hit requires?",
+      "choices": [
+        "Both axis overlaps",
+        "One axis",
+        "VFX",
+        "Audio"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "VFX-only proof?",
+      "choices": [
+        "OK",
+        "Fails",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Swept tests?",
+      "choices": [
+        "Done",
+        "Deleted",
+        "Still need",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 2 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Auto",
+        "Fails"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "overlap_x needed?",
+      "choices": [
+        "Yes",
+        "No",
+        "Screenshot",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w2-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q02",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "AABB means?",
+      "choices": [
+        "Sphere only",
+        "Axis-aligned box",
+        "Mesh only",
+        "Audio bus"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q02.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Period @120 BPM?",
+      "choices": [
+        "1 s",
+        "2 s",
+        "0.5 s",
+        "0.12"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "pirated_sample_pack?",
+      "choices": [
+        "true",
+        "optional",
+        "required",
+        "false"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "license_ok?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "crack"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "t=1.25 beat index?",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "5"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Latency calibration?",
+      "choices": [
+        "Done",
+        "Skip",
+        "Still need",
+        "Fake"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w3-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q03",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Cracked packs in portfolio?",
+      "choices": [
+        "OK",
+        "Required",
+        "Extra",
+        "Fails"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q03.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Illegal edge should?",
+      "choices": [
+        "Fail transition_ok",
+        "Pass",
+        "Skip",
+        "AI fix"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Boolean soup without table?",
+      "choices": [
+        "OK",
+        "Fails discipline",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Blend trees claimed done?",
+      "choices": [
+        "Yes",
+        "Always",
+        "No \u2014 still need",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Idle\u2192Run legal?",
+      "choices": [
+        "Never",
+        "Only AI",
+        "Only audio",
+        "Yes on fixture"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 4 ticket context: Empty {}?",
+      "choices": [
+        "Fails",
+        "PASS",
+        "Half",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w4-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q04",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 4 ticket context: print PASS?",
+      "choices": [
+        "OK",
+        "Raises",
+        "Half",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q04.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "tiles length rule?",
+      "choices": [
+        "width+height",
+        "always 10",
+        "width*height",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "AI mode?",
+      "choices": [
+        "AI dumps",
+        "Skip",
+        "Auto",
+        "NO_AI"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Screenshot-only artifact?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "checksum_ok needed?",
+      "choices": [
+        "No",
+        "Yes",
+        "Optional",
+        "Never"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Streaming chunks?",
+      "choices": [
+        "Done",
+        "Deleted",
+        "Still need",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w5-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q05",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 5 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Auto",
+        "Fails"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q05.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "rebindable?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "ai"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "raw_only docs?",
+      "choices": [
+        "OK",
+        "Fails",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Jump action needed?",
+      "choices": [
+        "No",
+        "Audio only",
+        "Yes",
+        "GPU"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Device swap survival?",
+      "choices": [
+        "Impossible",
+        "Ignore",
+        "6G",
+        "Actions help"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 6 ticket context: Empty {}?",
+      "choices": [
+        "Fails",
+        "PASS",
+        "Half",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w6-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q06",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 9 link?",
+      "choices": [
+        "FSPL",
+        "A11y remaps",
+        "NTN",
+        "E-stop"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q06.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "required_unmerged_branch?",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "required"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Four titles include?",
+      "choices": [
+        "device-os",
+        "6G-core",
+        "qemu-only",
+        "beatlink-party"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Hard-depend unmerged PR?",
+      "choices": [
+        "Fails boundary",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Case study mandatory?",
+      "choices": [
+        "Always",
+        "Optional",
+        "Forbidden",
+        "AI only"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 7 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w7-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q07",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "foot-racing is?",
+      "choices": [
+        "Required merge",
+        "device-os",
+        "NTN",
+        "Optional example title"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q07.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "early_churn_rate?",
+      "choices": [
+        "0.2",
+        "0.8",
+        "8",
+        "40"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "vanity_dau_claim?",
+      "choices": [
+        "true",
+        "false",
+        "required",
+        "optional"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Fake million DAU?",
+      "choices": [
+        "OK",
+        "Required",
+        "Fails",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Sessions fixture n?",
+      "choices": [
+        "4",
+        "400",
+        "0",
+        "40"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 8 ticket context: Empty {}?",
+      "choices": [
+        "Fails",
+        "PASS",
+        "Half",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w8-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q08",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Cohort significance?",
+      "choices": [
+        "Done",
+        "Still need",
+        "Skip",
+        "Fake"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q08.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "captions?",
+      "choices": [
+        "false",
+        "optional",
+        "true",
+        "ai"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "flash_hz>3?",
+      "choices": [
+        "OK",
+        "Required",
+        "Extra",
+        "Fails"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: AI mode?",
+      "choices": [
+        "NO_AI",
+        "AI dumps",
+        "Skip",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricate disabled-player tests?",
+      "choices": [
+        "OK",
+        "Forbidden",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "remaps?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "raw"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w9-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q09",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "colorblind_safe?",
+      "choices": [
+        "false",
+        "ignore",
+        "gpu",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q09.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-1",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "unmerged_branch_required?",
+      "choices": [
+        "false",
+        "true",
+        "optional",
+        "required"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-2",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "1",
+        "6",
+        "3",
+        "100"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-3",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "a11y_ok?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "skip"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-4",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Consume this unmerged branch in Product-Use?",
+      "choices": [
+        "Yes",
+        "Optional",
+        "Required",
+        "No"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-5",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Aligned not granted",
+        "Granted",
+        "Hidden",
+        "Sold"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga-w10-6",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-q10",
+      "assessment_kind": "quiz",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Keyboard-only path notes?",
+      "choices": [
+        "Forbidden",
+        "Required in portfolio",
+        "GPU only",
+        "Audio only"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes/q10.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga01",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Forge Arcade fixed simulation step used in the loop lab is?",
+      "choices": [
+        "1 second",
+        "0",
+        "1/60 second",
+        "60 seconds"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga02",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "When frame_time exceeds the clamp region, spiral_of_death_guard must be?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga03",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "AABB contact requires overlap on?",
+      "choices": [
+        "both axes",
+        "exactly one axis",
+        "VFX only",
+        "audio only"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga04",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Using particle fireworks as the only collision evidence is?",
+      "choices": [
+        "Sufficient",
+        "A math failure",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga05",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "At 120 BPM the beat period equals?",
+      "choices": [
+        "1.0 s",
+        "2.0 s",
+        "0.5 s",
+        "0.12 s"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga06",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "pirated_sample_pack must evaluate to?",
+      "choices": [
+        "true",
+        "optional",
+        "required",
+        "false"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga07",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "An illegal finite-state edge should set transition_ok to?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "skip"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga08",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Boolean flags with no transition table are?",
+      "choices": [
+        "Best practice",
+        "A discipline failure",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga09",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Level tile array length must equal?",
+      "choices": [
+        "width plus height",
+        "always ten",
+        "width times height",
+        "an AI guess"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga10",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "NO_AI level-hash week expects?",
+      "choices": [
+        "Exam dumps",
+        "Cracked editors",
+        "Fake DAU",
+        "Hand-computed checksum fields"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga11",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Input actions should be marked rebindable?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "raw-only"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga12",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Design docs that list only raw scancodes should?",
+      "choices": [
+        "Pass",
+        "Fail the actions lab",
+        "Earn Unity cert",
+        "Earn Godot cert"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga13",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "required_unmerged_branch on the four-game case must be?",
+      "choices": [
+        "true",
+        "required",
+        "false",
+        "optional-true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga14",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Which title is a valid optional case-study example?",
+      "choices": [
+        "device-os merge PR",
+        "NET-SEC reopen",
+        "WP-001 packet",
+        "earth-species"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga15",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "If 5 of 25 sessions churn early, early_churn_rate is?",
+      "choices": [
+        "0.2",
+        "0.5",
+        "5",
+        "25"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga16",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "vanity_dau_claim must be?",
+      "choices": [
+        "true",
+        "false",
+        "required",
+        "optional"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga17",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Accessibility captions flag must be?",
+      "choices": [
+        "false",
+        "optional",
+        "true",
+        "ai"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga18",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "flash_hz equal to 10 on the a11y lab should?",
+      "choices": [
+        "Pass",
+        "Earn bonus",
+        "Skip week",
+        "Fail the \u22643 rule"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga19",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Ship checklist unmerged_branch_required must be?",
+      "choices": [
+        "false",
+        "true",
+        "optional-true",
+        "required-true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:ga20",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+      "assessment_kind": "mid",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Game capstone labs_passed minimum is?",
+      "choices": [
+        "2",
+        "6",
+        "4",
+        "60"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/mid_course.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf01",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Interpolating render frames while keeping fixed sim steps is?",
+      "choices": [
+        "Always forbidden",
+        "AI-only",
+        "Audio-only",
+        "An accepted pattern"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf02",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Handheld profiling marked PHYSICAL_PENDING means?",
+      "choices": [
+        "Await real measurement",
+        "Always DONE",
+        "Fabricate FPS",
+        "Skip ethics"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf03",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "AABB separating-axis work reduces to?",
+      "choices": [
+        "Sphere-only math",
+        "Per-axis overlap tests",
+        "DAU charts",
+        "FSPL charts"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf04",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Swept collision tests after basic AABB are?",
+      "choices": [
+        "Finished forever in week 1",
+        "Deleted",
+        "Still needed later",
+        "Replaced by 6G"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf05",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Beat phase after indexing should lie in?",
+      "choices": [
+        "always exactly 2",
+        "degree-only space",
+        "dB space",
+        "[0,1)"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf06",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "license_ok on audio week must read?",
+      "choices": [
+        "true",
+        "false",
+        "crack",
+        "null"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf07",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Idle\u2192Run on the fixture table is?",
+      "choices": [
+        "Always illegal",
+        "A legal edge",
+        "AI-only",
+        "Audio-only"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf08",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Claiming blend trees are finished after FSM week is?",
+      "choices": [
+        "Accurate",
+        "Required",
+        "Over-claim / still needed",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf09",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Level checksums primarily pin?",
+      "choices": [
+        "E-stop wiring",
+        "FSPL hops",
+        "NTN ephemeris",
+        "Canonical level edits"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf10",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Screenshot-only level proof without JSON should?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Earn cert",
+        "Earn DAU"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf11",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Action maps help when controllers change because?",
+      "choices": [
+        "They never matter",
+        "Semantic actions survive device swaps",
+        "They require 6G",
+        "They require E-stop"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf12",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Week-9 remaps relate to earlier input work by?",
+      "choices": [
+        "Deleting input week",
+        "Requiring NTN",
+        "Extending accessibility remapping",
+        "Requiring FSPL"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf13",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Hard-depending an unmerged game PR for the case study is?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Extra",
+        "A claim-boundary failure"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf14",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "anime-aggressors appears in this course as?",
+      "choices": [
+        "An optional named example",
+        "A mandatory merge blocker",
+        "A device-os module",
+        "A NET-SEC ticket"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf15",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Playtest median/session metrics require?",
+      "choices": [
+        "Only vanity DAU slides",
+        "Arithmetic on the session list",
+        "Only VFX reels",
+        "Only cracked assets"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf16",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Statistical cohort significance after the small playtest is?",
+      "choices": [
+        "Already proven forever",
+        "Fake-OK",
+        "Still needed",
+        "Skipped"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf17",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "colorblind_safe must be?",
+      "choices": [
+        "false",
+        "ignored",
+        "gpu-only",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf18",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricating tests with disabled players is?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf19",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Should Product-Use consume this unmerged course branch?",
+      "choices": [
+        "Yes",
+        "No",
+        "Optional",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf20",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Career credentials are?",
+      "choices": [
+        "Granted automatically",
+        "Sold",
+        "Aligned not granted",
+        "Hidden"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf21",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Keyboard-only path notes in the portfolio are?",
+      "choices": [
+        "Forbidden",
+        "GPU-only",
+        "Unnecessary",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf22",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "PASS-only lab bodies are?",
+      "choices": [
+        "Rejected via AssertionError",
+        "Accepted",
+        "Half credit",
+        "Auto A"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf23",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Empty {} submissions are?",
+      "choices": [
+        "PASS",
+        "Failures",
+        "Half credit",
+        "Silent skips"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:gaf24",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "GAME_DEV_INTERACTIVE-final",
+      "assessment_kind": "final",
+      "domain": "GAME_DEV_INTERACTIVE.knowledge",
+      "kind": "mcq",
+      "stem": "Forge Arcade academy id is?",
+      "choices": [
+        "ACADEMY_CYBER",
+        "ACADEMY_HARDWARE",
+        "ACADEMY_SOFTWARE",
+        "ACADEMY_IT"
+      ],
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_aabb_hit",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_aabb_hit",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_aabb_hit \u2014 aabb hit\n\nRunnable validator for lab_aabb_hit. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_aabb_hit --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_aabb_hit --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_aabb_hit"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_beat_clock",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_beat_clock",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_beat_clock \u2014 beat clock\n\nRunnable validator for lab_beat_clock. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_beat_clock --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_beat_clock --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_beat_clock"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_entity_fsm",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_entity_fsm",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_entity_fsm \u2014 entity fsm\n\nRunnable validator for lab_entity_fsm. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_entity_fsm --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_entity_fsm --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_entity_fsm"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_four_games_case",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_four_games_case",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_four_games_case \u2014 four games case\n\nRunnable validator for lab_four_games_case. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_four_games_case --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_four_games_case --empty\n```\n\nWrong numeric or policy fiel",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_four_games_case"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_game_a11y",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_game_a11y",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_game_a11y \u2014 game a11y\n\nRunnable validator for lab_game_a11y. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_game_a11y --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_game_a11y --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_game_a11y"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_game_capstone",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_game_capstone",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_game_capstone \u2014 game capstone\n\nRunnable validator for lab_game_capstone. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_game_capstone --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_game_capstone --empty\n```\n\nWrong numeric or policy fields must fa",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_game_capstone"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_game_loop",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_game_loop",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_game_loop \u2014 game loop\n\nRunnable validator for lab_game_loop. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_game_loop --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_game_loop --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_game_loop"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_input_actions",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_input_actions",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_input_actions \u2014 input actions\n\nRunnable validator for lab_input_actions. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_input_actions --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_input_actions --empty\n```\n\nWrong numeric or policy fields must fa",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_input_actions"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_level_hash",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_level_hash",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_level_hash \u2014 level hash\n\nRunnable validator for lab_level_hash. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_level_hash --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_level_hash --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_level_hash"
+    },
+    {
+      "item_id": "GAME_DEV_INTERACTIVE:lab_playtest_metrics",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "assessment_id": "lab_playtest_metrics",
+      "assessment_kind": "lab",
+      "domain": "GAME_DEV_INTERACTIVE.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_playtest_metrics \u2014 playtest metrics\n\nRunnable validator for lab_playtest_metrics. Empty/wrong/print-PASS fail.\n\n## Student artifact\nPiracy and flash_hz>3 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom Forge Arcade, submit loop/collision/a11y JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_playtest_metrics --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_playtest_metrics --empty\n```\n\nWrong numeric or policy",
+      "choices": null,
+      "source": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs/lab_playtest_metrics"
+    },
+    {
       "item_id": "GENERAL_IT:git-w1-1",
       "course_id": "GENERAL_IT",
       "assessment_id": "GENERAL_IT-q01",
@@ -14165,6 +15960,1780 @@
       "source": "curriculum/digital_rc/PM_AGILE_LSS/labs/lab_wbs_schedule"
     },
     {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Pose fields?",
+      "choices": [
+        "RGB only",
+        "x,y,theta",
+        "MCS",
+        "FSPL"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Units?",
+      "choices": [
+        "deg only",
+        "pixels",
+        "m and rad",
+        "dB"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Skip",
+        "Fails"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "AI nabbed-box claim without frames?",
+      "choices": [
+        "Fails week",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Journal needs?",
+      "choices": [
+        "Only TikTok",
+        "ASCII frame diagram",
+        "Only GPU",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w1-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q01",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "print PASS?",
+      "choices": [
+        "OK",
+        "Half",
+        "Raises",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q01.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Max reach L1+L2?",
+      "choices": [
+        "0.05 m",
+        "2 m",
+        "65 m",
+        "0.65 m"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Beyond max reach?",
+      "choices": [
+        "reachable false",
+        "reachable true",
+        "Ignore",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Strong servos imply infinite reach?",
+      "choices": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Always"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Lab needs FK x,y?",
+      "choices": [
+        "No",
+        "Screenshot",
+        "Yes",
+        "Audio"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "L2 length?",
+      "choices": [
+        "3 m",
+        "30 cm only labeled wrong",
+        "0",
+        "0.30 m"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w2-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q02",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Joint limits this week?",
+      "choices": [
+        "Still need later",
+        "Fully mapped",
+        "Deleted",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q02.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "dt on fixture?",
+      "choices": [
+        "1.0",
+        "0.1",
+        "10",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Kp?",
+      "choices": [
+        "12",
+        "0",
+        "1.2",
+        "100"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Missing anti_windup when needed?",
+      "choices": [
+        "OK",
+        "Extra",
+        "Skip",
+        "Fails check"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Plant ID claimed done?",
+      "choices": [
+        "No \u2014 still need",
+        "Yes",
+        "Always",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 3 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails",
+        "Half",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w3-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q03",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "D term uses?",
+      "choices": [
+        "FSPL",
+        "MCS",
+        "Error slope",
+        "BLER"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q03.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "vmax?",
+      "choices": [
+        "4 m/s",
+        "40",
+        "0",
+        "0.4 m/s"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Ignore vmax for smooth look?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "AI mode?",
+      "choices": [
+        "AI dumps",
+        "NO_AI",
+        "Skip",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Distance?",
+      "choices": [
+        "12 m",
+        "0.12",
+        "1.2 m",
+        "120"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "amax?",
+      "choices": [
+        "5",
+        "50",
+        "0",
+        "0.5"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w4-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q04",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Curvature limits?",
+      "choices": [
+        "Still need",
+        "Done",
+        "Deleted",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q04.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Outlier in fixture?",
+      "choices": [
+        "1.00",
+        "3.50",
+        "0.99",
+        "1.02"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "cleaned_n after drop?",
+      "choices": [
+        "5",
+        "1",
+        "4",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Trust raw max always?",
+      "choices": [
+        "Yes",
+        "AI yes",
+        "Required",
+        "No"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Bias calibration?",
+      "choices": [
+        "Still need",
+        "Done",
+        "Impossible",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 5 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails",
+        "Half",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w5-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q05",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Hard gate example?",
+      "choices": [
+        "Drop all",
+        "Keep 3.50",
+        ">2.0 m drop",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q05.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "motors_disabled?",
+      "choices": [
+        "false",
+        "optional",
+        "AI",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Soft slowdown only?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "resume_requires_human?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "bot"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Bypass for demo video?",
+      "choices": [
+        "OK",
+        "Required",
+        "Ethics fail",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "SIL claimed?",
+      "choices": [
+        "Yes",
+        "Auto",
+        "Always",
+        "No \u2014 not claimed"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w6-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q06",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "brake_engaged?",
+      "choices": [
+        "true",
+        "false",
+        "maybe",
+        "skip"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q06.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Wheel base B?",
+      "choices": [
+        "4 m",
+        "0.40 m",
+        "40",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "B=0 allowed?",
+      "choices": [
+        "Yes",
+        "Required",
+        "No \u2014 reject",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "v formula uses?",
+      "choices": [
+        "FSPL",
+        "MCS",
+        "BLER",
+        "\u03c9_l+\u03c9_r"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Video-only proof?",
+      "choices": [
+        "Not enough without math",
+        "Enough",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "r?",
+      "choices": [
+        "0.5",
+        "0.05 m",
+        "5",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w7-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q07",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Slip compensation?",
+      "choices": [
+        "Done",
+        "Deleted",
+        "Still need",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q07.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "K formula?",
+      "choices": [
+        "p*r",
+        "1",
+        "0",
+        "p/(p+r)"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "P=0 certainty claim?",
+      "choices": [
+        "Fails cov honesty",
+        "OK",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Full EKF claimed?",
+      "choices": [
+        "Yes",
+        "No \u2014 still need",
+        "Always",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 8 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Lower variance does?",
+      "choices": [
+        "Ignored",
+        "Deletes robot",
+        "6G",
+        "Dominates fuse"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w8-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q08",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 8 ticket context: print PASS?",
+      "choices": [
+        "Raises",
+        "OK",
+        "Half",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q08.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "frame_id?",
+      "choices": [
+        "map_ai",
+        "base_link",
+        "6G",
+        "geo"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Fleet deploy claim?",
+      "choices": [
+        "OK",
+        "Required",
+        "Fails",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: AI mode?",
+      "choices": [
+        "AI dumps",
+        "Skip",
+        "Auto",
+        "NO_AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: Units?",
+      "choices": [
+        "m/s and rad/s",
+        "deg only",
+        "dB",
+        "MCS"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "NaN angular.z?",
+      "choices": [
+        "OK",
+        "Fails finite check",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w9-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q09",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Production DDS pin claimed?",
+      "choices": [
+        "Yes",
+        "Always",
+        "No \u2014 not claimed",
+        "AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q09.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-1",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "estop_ok?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-2",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "6",
+        "1",
+        "3",
+        "100"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-3",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Open device-os PR from this course?",
+      "choices": [
+        "Yes",
+        "No",
+        "Optional",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-4",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricate injury stats?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-5",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Granted",
+        "Hidden",
+        "Sold",
+        "Aligned not granted"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb-w10-6",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-q10",
+      "assessment_kind": "quiz",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "E-stop sheet format?",
+      "choices": [
+        "Large-text printable",
+        "Tiny GIF only",
+        "Audio only",
+        "None"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/quizzes/q10.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb01",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "HarborBot planar pose representation expected in week-1 journals is?",
+      "choices": [
+        "RGB pixels only",
+        "x, y, and yaw theta",
+        "BPM and phase",
+        "MCS and BLER"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb02",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "A tool-point claim without any frame sketch should?",
+      "choices": [
+        "Pass",
+        "Earn SIL",
+        "Fail the frames week",
+        "Earn Unity cert"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb03",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Links 0.45 m and 0.35 m imply a maximum planar reach near?",
+      "choices": [
+        "0.10 m",
+        "1.80 m",
+        "80 m",
+        "0.80 m"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb04",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "A commanded tip 0.95 m out with 0.80 m max reach must set reachable?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "ai"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb05",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Discrete PID fixtures in this course assume dt is?",
+      "choices": [
+        "Exactly zero",
+        "A small positive sample time",
+        "Negative",
+        "Infinite"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb06",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "When the integrated error grows large, the lab expects?",
+      "choices": [
+        "Silence",
+        "Deletion of Kp",
+        "An anti-windup note of real length",
+        "A 6G claim"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb07",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Planning a cinematic path that exceeds vmax 'because it looks smooth' is?",
+      "choices": [
+        "Accepted art",
+        "Required for mid",
+        "Required for NTN",
+        "A trajectory-limits failure"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb08",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "On the NO_AI trajectory week, students should?",
+      "choices": [
+        "Compute limit times by hand",
+        "Paste vendor dumps",
+        "Bypass E-stop",
+        "Fabricate SIL"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb09",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "A 4.2 m lidar hit with a 2.0 m hard gate should be?",
+      "choices": [
+        "Kept as truth",
+        "Dropped as outlier",
+        "Averaged unchanged",
+        "Used as E-stop"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb10",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Treating the maximum raw sample as ground truth always is?",
+      "choices": [
+        "Best practice",
+        "Required",
+        "Rejected sensing discipline",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb11",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Hard E-stop policy requires motors_disabled to be?",
+      "choices": [
+        "false",
+        "optional",
+        "ai-decided",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb12",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Replacing E-stop with 'software will slow down eventually' is?",
+      "choices": [
+        "A safety failure",
+        "Adequate",
+        "Required for demos",
+        "Required for games"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb13",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Diff-drive wheel base entered as zero should?",
+      "choices": [
+        "Compute omega anyway",
+        "Be rejected by the B>0 check",
+        "Earn extra credit",
+        "Unlock fleet mode"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb14",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Body linear speed from wheel rates uses which combination?",
+      "choices": [
+        "only FSPL",
+        "only MCS",
+        "sum of left and right rates",
+        "only BPM"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb15",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Reporting covariance exactly zero as a certainty lie should?",
+      "choices": [
+        "Pass fuse lab",
+        "Earn Kalman badge",
+        "Earn CKA",
+        "Fail covariance honesty"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb16",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Scalar Kalman gain form used on the fixture is?",
+      "choices": [
+        "p/(p+r)",
+        "p*r",
+        "always 1",
+        "always 0"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb17",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "cmd_vel-shaped messages must use frame_id?",
+      "choices": [
+        "map_ai",
+        "base_link",
+        "sixg",
+        "geo_slot"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb18",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Advertising a 50-robot Harbor fleet deploy from schema week is?",
+      "choices": [
+        "Fine",
+        "Required",
+        "A claim-boundary failure",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb19",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Opening a device-os curriculum PR from this robotics packet is?",
+      "choices": [
+        "Encouraged",
+        "Required",
+        "Optional",
+        "Forbidden by capstone flag"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rb20",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-mid",
+      "assessment_kind": "mid",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Safety packet capstone needs labs_passed at least?",
+      "choices": [
+        "6",
+        "2",
+        "4",
+        "60"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/mid_course.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf01",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Rotating a tool offset by yaw \u03c0/2 mixes coordinates using?",
+      "choices": [
+        "BPM phase only",
+        "BLER tables only",
+        "sine and cosine of yaw",
+        "DAU only"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf02",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "'Servos are strong, therefore workspace is infinite' is?",
+      "choices": [
+        "Correct",
+        "Required mantra",
+        "Extra credit",
+        "False kinematics"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf03",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Forward-kinematics submissions must include?",
+      "choices": [
+        "Cartesian tip and reachable flag",
+        "Only RGB",
+        "Only captions",
+        "Only NTN delay"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf04",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "The derivative term primarily responds to?",
+      "choices": [
+        "Path loss",
+        "Error slope across samples",
+        "MCS index",
+        "Beat period"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf05",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Trapezoidal time bounds need which pair?",
+      "choices": [
+        "VFX and DAU",
+        "Captions and BPM",
+        "vmax and amax",
+        "FSPL and OBW"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf06",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Curvature limits mid-course are best labeled?",
+      "choices": [
+        "Already finished forever",
+        "Deleted from physics",
+        "Replaced by 6G",
+        "Still needed later"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf07",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Hard gates / IQR cleaning exist to?",
+      "choices": [
+        "Remove wild outliers",
+        "Invent sensor bias",
+        "Bypass E-stop",
+        "Fake SIL papers"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf08",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Bias calibration status after the noise week is?",
+      "choices": [
+        "Finished in week 1 forever",
+        "Still needed",
+        "Impossible",
+        "Skipped ethically"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf09",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "After E-stop, resume_requires_human must be?",
+      "choices": [
+        "false",
+        "bot-optional",
+        "true",
+        "null"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf10",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Disabling E-stop wiring for a demo recording is?",
+      "choices": [
+        "Allowed showmanship",
+        "Required",
+        "Extra",
+        "Ethics failure"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf11",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Body yaw rate from differential wheels uses?",
+      "choices": [
+        "difference of wheel rates",
+        "only their sum",
+        "only wheel radius alone",
+        "only B alone"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf12",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "A pretty drive video without kinematics fields is?",
+      "choices": [
+        "Sufficient proof",
+        "Insufficient without the math JSON",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf13",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Scalar fusion must refuse which lie?",
+      "choices": [
+        "Finite K",
+        "Two measurements",
+        "Zero-covariance certainty",
+        "Operator notes"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf14",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Claiming a full SE(2) EKF is complete after the scalar week is?",
+      "choices": [
+        "Accurate",
+        "Required",
+        "Extra",
+        "Over-claim / still needed"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf15",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "NaN in angular.z should?",
+      "choices": [
+        "Fail the finite twist check",
+        "Pass schema",
+        "Earn ROS badge",
+        "Earn Unity badge"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf16",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "NO_AI schema week expects?",
+      "choices": [
+        "Exam-item harvests",
+        "Hand-authored JSON",
+        "Fake fleet logos",
+        "Fake SIL scans"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf17",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Capstone estop_ok must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "ai"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf18",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Inventing injury statistics for portfolio drama is?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Extra",
+        "Forbidden"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf19",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Career credentials on the map are?",
+      "choices": [
+        "Aligned labels not granted",
+        "Auto-issued",
+        "Sold",
+        "Hidden"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf20",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "E-stop procedure sheet accessibility requires?",
+      "choices": [
+        "Tiny GIF only",
+        "Large-text printable form",
+        "No text",
+        "Cracked PDF reader"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf21",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "A lab artifact that is only the word PASS is?",
+      "choices": [
+        "Accepted",
+        "Half credit",
+        "Rejected with AssertionError",
+        "Auto-graded A"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf22",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Empty student JSON object yields?",
+      "choices": [
+        "PASS",
+        "Half credit",
+        "Silent skip",
+        "Failure of student_artifact"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf23",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "Does this course grant SIL certification?",
+      "choices": [
+        "No \u2014 not claimed",
+        "Yes",
+        "Automatically after final",
+        "Yes via AI"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:rbf24",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "ROBOTICS_CONTROL-final",
+      "assessment_kind": "final",
+      "domain": "ROBOTICS_CONTROL.knowledge",
+      "kind": "mcq",
+      "stem": "HarborBot maps into which academy id?",
+      "choices": [
+        "ACADEMY_CYBER",
+        "ACADEMY_HARDWARE",
+        "ACADEMY_PROF_DEV",
+        "ACADEMY_PROCESS_PM"
+      ],
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_cmd_vel_schema",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_cmd_vel_schema",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_cmd_vel_schema \u2014 cmd vel schema\n\nRunnable validator for lab_cmd_vel_schema. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_cmd_vel_schema --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_cmd_vel_schema --empty\n```\n\nWrong numeric or policy fields must ",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_cmd_vel_schema"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_diff_drive",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_diff_drive",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_diff_drive \u2014 diff drive\n\nRunnable validator for lab_diff_drive. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_diff_drive --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_diff_drive --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_diff_drive"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_estop_policy",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_estop_policy",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_estop_policy \u2014 estop policy\n\nRunnable validator for lab_estop_policy. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_estop_policy --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_estop_policy --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_estop_policy"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_fk_2r",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_fk_2r",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_fk_2r \u2014 fk 2r\n\nRunnable validator for lab_fk_2r. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_fk_2r --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_fk_2r --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_fk_2r"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_fuse_scalar",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_fuse_scalar",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_fuse_scalar \u2014 fuse scalar\n\nRunnable validator for lab_fuse_scalar. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_fuse_scalar --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_fuse_scalar --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_fuse_scalar"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_pid_step",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_pid_step",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_pid_step \u2014 pid step\n\nRunnable validator for lab_pid_step. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_pid_step --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_pid_step --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_pid_step"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_robot_capstone",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_robot_capstone",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_robot_capstone \u2014 robot capstone\n\nRunnable validator for lab_robot_capstone. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_robot_capstone --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_robot_capstone --empty\n```\n\nWrong numeric or policy fields must ",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_robot_capstone"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_se2_pose",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_se2_pose",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_se2_pose \u2014 se2 pose\n\nRunnable validator for lab_se2_pose. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_se2_pose --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_se2_pose --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_se2_pose"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_sensor_noise",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_sensor_noise",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_sensor_noise \u2014 sensor noise\n\nRunnable validator for lab_sensor_noise. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_sensor_noise --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_sensor_noise --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_sensor_noise"
+    },
+    {
+      "item_id": "ROBOTICS_CONTROL:lab_traj_limits",
+      "course_id": "ROBOTICS_CONTROL",
+      "assessment_id": "lab_traj_limits",
+      "assessment_kind": "lab",
+      "domain": "ROBOTICS_CONTROL.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_traj_limits \u2014 traj limits\n\nRunnable validator for lab_traj_limits. Empty/wrong/print-PASS fail.\n\n## Student artifact\nSoft E-stop and B=0 fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom HarborBot Bay, submit kinematics/safety JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_traj_limits --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_traj_limits --empty\n```\n\nWrong numeric or policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/ROBOTICS_CONTROL/labs/lab_traj_limits"
+    },
+    {
       "item_id": "SOFTWARE_BUILDER:sw1-1",
       "course_id": "SOFTWARE_BUILDER",
       "assessment_id": "SOFTWARE_BUILDER-q01",
@@ -15937,6 +19506,1780 @@
       "stem": "# lab_security_review \u2014 security review\n\nRunnable validator for lab_security_review. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS string raises.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the ForgeDesk repo root, submit the JSON you computed.\n```\npython3 scripts/run_course_labs.py --lab lab_security_review --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_security_review --empty\n```\n\nWrong numeri",
       "choices": null,
       "source": "curriculum/digital_rc/SOFTWARE_BUILDER/labs/lab_security_review"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "WR-4101 uses which FSPL term?",
+      "choices": [
+        "20*log10(120)",
+        "6G_TCI",
+        "Rel-20 MCS",
+        "GEO slot"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "COMMERCIAL_STANDARDIZED_6G card reads?",
+      "choices": [
+        "true",
+        "false",
+        "pending",
+        "vendor_true"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Forbidden claim on WR-4101?",
+      "choices": [
+        "Computed FSPL",
+        "3.5 GHz",
+        "6G coverage from a slide",
+        "120 m"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Observation for the hop?",
+      "choices": [
+        "Railing multipath measured",
+        "6G ratified",
+        "SDR serial",
+        "d=120 m and f=3.5 GHz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Heavy sim download on WR-4101?",
+      "choices": [
+        "Forbidden \u2014 fixtures only",
+        "Required",
+        "GPU required",
+        "Overnight required"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w1-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q01",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Lab rejects?",
+      "choices": [
+        "Shown FSPL math",
+        "Invented 6G standard ID",
+        "d_m",
+        "f_mhz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q01.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "12 sc @ 30 kHz \u2192 PRB BW?",
+      "choices": [
+        "30 kHz",
+        "3.6 MHz",
+        "360 kHz",
+        "12 Hz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "T_sym without CP @ 30 kHz?",
+      "choices": [
+        "30 \u03bcs",
+        "1 ms",
+        "14 \u03bcs",
+        "\u224833.3 \u03bcs"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Week 2 grades?",
+      "choices": [
+        "Numerology fields",
+        "Screenshots",
+        "6G badges",
+        "Ephemeris"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "CP this week?",
+      "choices": [
+        "Fully computed",
+        "Named omission",
+        "Ignored forever",
+        "Equals \u0394f"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Larger \u0394f does what to T_sym?",
+      "choices": [
+        "Lengthens",
+        "Deletes PRBs",
+        "Shortens",
+        "Creates 6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w2-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q02",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "print('PASS')?",
+      "choices": [
+        "Accepted",
+        "Half credit",
+        "Skip",
+        "Raises AssertionError"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q02.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "commercial_6g_exists?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "Rel-20"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "RedCap here is?",
+      "choices": [
+        "Exam dump",
+        "PUBLIC_REFERENCE_ONLY label",
+        "6G PHY",
+        "Secret"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Week 3 AI?",
+      "choices": [
+        "AI dumps",
+        "AI writes Rel-20",
+        "NO_AI hand map",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Min features[]?",
+      "choices": [
+        "1",
+        "2",
+        "20",
+        "3"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "5G-Advanced is?",
+      "choices": [
+        "Evolutionary on 5G NR",
+        "New RAT replacing 5G",
+        "Commercial 6G",
+        "Wi-Fi 8"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w3-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q03",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Invent Rel-20 commercial 6G row?",
+      "choices": [
+        "PASS",
+        "Fails claim boundary",
+        "Extra",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q03.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "At SNR 8 with given BLER table & cap 0.1, MCS?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Pick MCS 4 for throughput?",
+      "choices": [
+        "Correct",
+        "Required",
+        "6G",
+        "Fails BLER discipline"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "bler_at_choice for MCS 2?",
+      "choices": [
+        "0.09",
+        "0.40",
+        "0.18",
+        "1.0"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails student_artifact",
+        "Half",
+        "Auto0"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Outer-loop CQI claimed?",
+      "choices": [
+        "Yes",
+        "Rel-20",
+        "No \u2014 not claimed",
+        "NTN only"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w4-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q04",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "BLER cap?",
+      "choices": [
+        "0.5",
+        "0.01",
+        "1.0",
+        "0.1"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q04.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "700 km one-way \u2192 ms \u2248?",
+      "choices": [
+        "2.33",
+        "0.23",
+        "23",
+        "250"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "RTT \u2248?",
+      "choices": [
+        "2.33 ms",
+        "4.67 ms",
+        "250 ms",
+        "1 s"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "geo_comparable?",
+      "choices": [
+        "true",
+        "null",
+        "false",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "ntn_as_6g_standard?",
+      "choices": [
+        "true",
+        "Rel-20",
+        "optional",
+        "false"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Heatmap without delay math?",
+      "choices": [
+        "Marketing fail",
+        "PASS",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w5-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q05",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Altitude class?",
+      "choices": [
+        "GEO 35786 km",
+        "550 km LEO",
+        "Wi-Fi",
+        "Undersea"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q05.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Tap count?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "64"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Powers unit?",
+      "choices": [
+        "watts only",
+        "MCS",
+        "RTT",
+        "dB relative"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "AI beamforming claim with no taps?",
+      "choices": [
+        "Fails week",
+        "PASS",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Sounding status?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "6G auto",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "First tap delay?",
+      "choices": [
+        "120 ns",
+        "350 ns",
+        "0 ns",
+        "1 ms"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w6-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q06",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Need tau_rms_ns?",
+      "choices": [
+        "No",
+        "Screenshot only",
+        "AI only",
+        "Yes"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q06.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "auto_apply_without_gate?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "human_gate?",
+      "choices": [
+        "false",
+        "true",
+        "optional",
+        "vendor"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "AI-RAN this week?",
+      "choices": [
+        "Magic",
+        "Commercial 6G",
+        "Gated policy on fixtures",
+        "Dump"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Field trial claimed?",
+      "choices": [
+        "Yes",
+        "Rel-20",
+        "Pier-wide",
+        "No \u2014 not claimed"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Action should name?",
+      "choices": [
+        "MCS or PRB",
+        "Feelings",
+        "6G logo",
+        "GEO"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w7-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q07",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Quiz AI mode?",
+      "choices": [
+        "AI dumps",
+        "NO_AI",
+        "Skip",
+        "Auto AI"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q07.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "unauthorized_tx?",
+      "choices": [
+        "true",
+        "maybe",
+        "false",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "OBW?",
+      "choices": [
+        "100 MHz",
+        "1 GHz",
+        "30 kHz",
+        "18 MHz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "TX outside narrative?",
+      "choices": [
+        "Ethics fail",
+        "Extra",
+        "Required",
+        "AI-RAN"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricate FCC filing?",
+      "choices": [
+        "OK",
+        "Forbidden",
+        "Required",
+        "Rel-20"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Center?",
+      "choices": [
+        "2.4",
+        "28 only",
+        "3.5 GHz",
+        "60"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w8-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q08",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "mask_ok means?",
+      "choices": [
+        "Ignore OOB",
+        "6G cert",
+        "NTN",
+        "Fixture mask check passed"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q08.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "deployed_full_ric?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "E2 here is?",
+      "choices": [
+        "Dump",
+        "Interface vocabulary",
+        "Commercial 6G",
+        "Wi-Fi"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "RIC claim without logs?",
+      "choices": [
+        "PASS",
+        "Required",
+        "Fails",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Scale?",
+      "choices": [
+        "NATIONWIDE",
+        "GEO",
+        "CONSUMER_6G",
+        "RESEARCH_LAB_SCALE"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "A1 in map?",
+      "choices": [
+        "Yes",
+        "Never",
+        "NTN only",
+        "Games only"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w9-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q09",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "E2 logs status?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "Fake OK",
+        "Never"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q09.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-1",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "product_use_unmerged_consumed?",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "required"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-2",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "commercial_6g false statement included?",
+      "choices": [
+        "false",
+        "null",
+        "Rel-20",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-3",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "6",
+        "1",
+        "3",
+        "100"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-4",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Grants 3GPP cert?",
+      "choices": [
+        "Yes",
+        "No",
+        "After final",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-5",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Depend on unmerged Product-Use?",
+      "choices": [
+        "Yes",
+        "If QEMU",
+        "No",
+        "If AI"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr-w10-6",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-q10",
+      "assessment_kind": "quiz",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Granted",
+        "Hidden",
+        "Sold",
+        "Aligned not granted"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/quizzes/q10.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr01",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Harbor pier hop measured 250 m at 2100 MHz. Which Friis input pair is required before reporting path loss?",
+      "choices": [
+        "distance_m and frequency_MHz",
+        "BPM and flash_hz",
+        "E-stop and brake",
+        "DAU and churn"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr02",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "A donor slideset titles the pier 'live commercial 6G today.' Correct operator response?",
+      "choices": [
+        "Publish as PASS",
+        "Refuse \u2014 standardized commercial 6G does not exist today",
+        "Treat as Rel-17 proof",
+        "Treat as GEO proof"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr03",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Numerology card shows 24 subcarriers spaced 15 kHz. Resource-block bandwidth equals?",
+      "choices": [
+        "15 kHz",
+        "24 Hz",
+        "360 kHz",
+        "1.5 GHz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr04",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Ignoring cyclic prefix, approximate OFDM symbol time at 15 kHz spacing is nearest which?",
+      "choices": [
+        "15 milliseconds",
+        "1 second",
+        "14 nanoseconds",
+        "66.7 microseconds"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr05",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Student JSON sets commercial_6g_exists true on the 5G-Advanced feature map. Lab outcome?",
+      "choices": [
+        "Reject the honesty gate",
+        "Accept",
+        "Half credit",
+        "Auto Rel-20"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr06",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "BLER vector at a fixed SNR is [0.25,0.11,0.07,0.19]. With ceiling 0.10, highest eligible MCS index?",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "3"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr07",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "For a 500 km slant-range toy LEO hop, one-way light time is nearest which class?",
+      "choices": [
+        "~167 ms",
+        "~1.67 s",
+        "~1.67 ms",
+        "~16 \u03bcs"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr08",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Compared with classic GEO RTT hundreds of milliseconds, the 500 km LEO toy RTT is?",
+      "choices": [
+        "Same class",
+        "Exactly 250 ms",
+        "Undefined",
+        "Much smaller millisecond-class"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr09",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Marking geo_comparable true for that LEO toy should?",
+      "choices": [
+        "Fail honesty checks",
+        "Pass validation",
+        "Grant NTN cert",
+        "Unlock 6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr10",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Adding a late, strong tap to a power-delay profile typically does what to RMS delay spread?",
+      "choices": [
+        "Decreases it",
+        "Increases it",
+        "Deletes MCS",
+        "Creates a standard"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr11",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "An AI-RAN proposal that auto-applies without a human gate on the pier fixture?",
+      "choices": [
+        "Allowed",
+        "Required for Rel-18",
+        "Must fail the gate check",
+        "Required for games"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr12",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Minimum contents of a legal AI-RAN proposed_action string in this course?",
+      "choices": [
+        "A feeling adjective",
+        "A 6G logo URL",
+        "A GEO slot id",
+        "Explicit MCS or PRB language"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr13",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Unauthorized over-the-air transmission outside the lab narrative is?",
+      "choices": [
+        "Course ethics failure",
+        "Extra credit",
+        "Required for SDR week",
+        "Allowed after midterm"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr14",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Mask_ok without stating occupied bandwidth numbers is?",
+      "choices": [
+        "Acceptable",
+        "Insufficient for the spectrum lab",
+        "Enough if SDR blinks",
+        "Enough if AI agrees"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr15",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Claiming a production Near-RT RIC is live without E2 evidence should?",
+      "choices": [
+        "Pass O-RAN week",
+        "Earn SIL",
+        "Fail the deployment honesty flag",
+        "Earn CKA"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr16",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "In Pier Radio, A1/E2/O1 primarily function as?",
+      "choices": [
+        "Harvested exam items",
+        "Proof of consumer 6G",
+        "Game input actions",
+        "Interface vocabulary on a map"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr17",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Capstone sets product_use_unmerged_consumed true. Result?",
+      "choices": [
+        "Must be false \u2014 fail",
+        "PASS",
+        "Required",
+        "Optional half"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr18",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "While Product-Use QEMU is busy, preferred Pier Radio practice is?",
+      "choices": [
+        "Pull multi-GB channel sims",
+        "Stay on light fixture validators",
+        "Force overnight GPU farms",
+        "Skip all wireless weeks"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr19",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Best one-line description of 5G-Advanced in this syllabus?",
+      "choices": [
+        "A brand-new RAT replacing 5G overnight",
+        "Consumer-standardized 6G",
+        "An evolution layered on 5G NR",
+        "Wi-Fi 8 rebrand"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wr20",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-mid",
+      "assessment_kind": "mid",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Radio notebook capstone requires labs_passed at least?",
+      "choices": [
+        "2",
+        "4",
+        "60",
+        "6"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/mid_course.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf01",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Before quoting FSPL, which measured pair must appear in the journal?",
+      "choices": [
+        "only a vendor heatmap",
+        "path length and carrier frequency",
+        "only a DAU chart",
+        "only an E-stop photo"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf02",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Declaring 'Release-20 commercial 6G ratified for Gary' is?",
+      "choices": [
+        "Accurate",
+        "Required for final",
+        "An honesty failure",
+        "Required for NTN"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf03",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Twelve tones at 60 kHz spacing yield what PRB bandwidth?",
+      "choices": [
+        "60 kHz",
+        "12 kHz",
+        "1 Hz",
+        "720 kHz"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf04",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Calling cyclic prefix a named omission this early means?",
+      "choices": [
+        "CP exists but is not yet computed here",
+        "CP is fiction",
+        "CP equals delta-f",
+        "CP proves 6G"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf05",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "During the NO_AI feature-map week, accepted authoring is?",
+      "choices": [
+        "Copied exam dumps",
+        "Hand-labeled public topics",
+        "Fake Rel-20 commercial rows",
+        "Ungated RF transmission"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf06",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "BLER ceiling 0.05 with rates [0.18,0.06,0.03,0.09] selects which MCS?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf07",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Should NTN be labeled a finished commercial 6G standard in student JSON?",
+      "choices": [
+        "Yes always",
+        "Only for GEO",
+        "Only for games",
+        "No \u2014 keep the standard flag false"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf08",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Light-time across 450 km is nearest?",
+      "choices": [
+        "1.5 ms",
+        "15 ms",
+        "150 ms",
+        "1.5 \u03bcs"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf09",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "'AI beamforming erased multipath' with zero taps submitted?",
+      "choices": [
+        "PASS",
+        "FAIL the multipath week",
+        "Required storytelling",
+        "Extra credit"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf10",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Computing \u03c4_rms requires which ingredient?",
+      "choices": [
+        "Only a marketing heatmap",
+        "Only vanity DAU",
+        "A power-delay profile with delays and powers",
+        "Only an E-stop"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf11",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Correct AI-RAN control ordering on the pier fixture?",
+      "choices": [
+        "apply then observe then delete logs",
+        "dump then ship",
+        "skip gate forever",
+        "observe then propose then human-gate then apply"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf12",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Asserting a completed closed-loop field trial with no data is?",
+      "choices": [
+        "Outside claim boundary / fail",
+        "Allowed",
+        "Required for mid",
+        "Required for games"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf13",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Inventing a regulator filing PDF for spectrum week is?",
+      "choices": [
+        "Encouraged",
+        "Forbidden",
+        "Required",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf14",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Pier lab narrative center frequency class used in the mask lab?",
+      "choices": [
+        "optical only",
+        "DC bias only",
+        "about 3.5 GHz",
+        "60 GHz exclusive"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf15",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "RESEARCH_LAB_SCALE correctly implies?",
+      "choices": [
+        "Nationwide production RIC",
+        "Consumer handset 6G",
+        "GEO-only service",
+        "Practice-scale vocabulary and fixtures"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf16",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "PHYSICAL_PENDING on E2 subscription logs means?",
+      "choices": [
+        "Measurement not yet captured",
+        "Fabricate the logs",
+        "Delete O-RAN week",
+        "Skip ethics"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf17",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Capstone notebook must explicitly include which honesty statement?",
+      "choices": [
+        "student is CKA certified",
+        "commercial standardized 6G is false today",
+        "device-os PR merged",
+        "piracy allowed"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf18",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "How are vendor/3GPP credentials treated on the career map?",
+      "choices": [
+        "Automatically granted",
+        "Sold in packet",
+        "Alignment labels only \u2014 not granted",
+        "Hidden from teachers"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf19",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Accessibility expectation for optional RF plots?",
+      "choices": [
+        "Omit all text",
+        "Require cracked viewers",
+        "Ban journals",
+        "Provide alt_text / text summary path"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf20",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Submitting a lab file whose entire body is the word PASS yields?",
+      "choices": [
+        "AssertionError / reject",
+        "Full credit",
+        "Half credit",
+        "Silent skip"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf21",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Choosing maximum MCS while violating the BLER ceiling is?",
+      "choices": [
+        "Good for throughput stories",
+        "A discipline failure",
+        "Required by NTN",
+        "Required by O-RAN"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf22",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Calling a ~5 ms LEO RTT 'GEO-comparable' should be?",
+      "choices": [
+        "Accepted",
+        "Required",
+        "Rejected as false",
+        "Extra"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf23",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "An O-RAN map missing A1, E2, and O1 should?",
+      "choices": [
+        "Pass",
+        "Earn RIC badge",
+        "Earn 6G badge",
+        "Fail interface checks"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:wrf24",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "WIRELESS_6G-final",
+      "assessment_kind": "final",
+      "domain": "WIRELESS_6G.knowledge",
+      "kind": "mcq",
+      "stem": "Best lab style concurrent with Stream A QEMU load?",
+      "choices": [
+        "Compact fixture math validators",
+        "Heavyweight simulator tarballs",
+        "Idle forever",
+        "Only marketing decks"
+      ],
+      "source": "curriculum/digital_rc/WIRELESS_6G/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_5ga_feature_map",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_5ga_feature_map",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_5ga_feature_map \u2014 5ga feature map\n\nRunnable validator for lab_5ga_feature_map. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_5ga_feature_map --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_5ga_feature_map --empty\n```\n\nWrong",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_5ga_feature_map"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_airan_policy",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_airan_policy",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_airan_policy \u2014 airan policy\n\nRunnable validator for lab_airan_policy. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_airan_policy --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_airan_policy --empty\n```\n\nWrong numeric or pol",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_airan_policy"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_delay_spread",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_delay_spread",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_delay_spread \u2014 delay spread\n\nRunnable validator for lab_delay_spread. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_delay_spread --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_delay_spread --empty\n```\n\nWrong numeric or pol",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_delay_spread"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_fspl_budget",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_fspl_budget",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_fspl_budget \u2014 fspl budget\n\nRunnable validator for lab_fspl_budget. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_fspl_budget --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_fspl_budget --empty\n```\n\nWrong numeric or policy f",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_fspl_budget"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_mcs_bler",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_mcs_bler",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_mcs_bler \u2014 mcs bler\n\nRunnable validator for lab_mcs_bler. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_mcs_bler --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_mcs_bler --empty\n```\n\nWrong numeric or policy fields must fail",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_mcs_bler"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_ntn_delay",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_ntn_delay",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_ntn_delay \u2014 ntn delay\n\nRunnable validator for lab_ntn_delay. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_ntn_delay --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_ntn_delay --empty\n```\n\nWrong numeric or policy fields must",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_ntn_delay"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_ofdm_numerology",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_ofdm_numerology",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_ofdm_numerology \u2014 ofdm numerology\n\nRunnable validator for lab_ofdm_numerology. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_ofdm_numerology --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_ofdm_numerology --empty\n```\n\nWrong",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_ofdm_numerology"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_oran_interfaces",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_oran_interfaces",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_oran_interfaces \u2014 oran interfaces\n\nRunnable validator for lab_oran_interfaces. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_oran_interfaces --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_oran_interfaces --empty\n```\n\nWrong",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_oran_interfaces"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_radio_capstone",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_radio_capstone",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_radio_capstone \u2014 radio capstone\n\nRunnable validator for lab_radio_capstone. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_radio_capstone --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_radio_capstone --empty\n```\n\nWrong nume",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_radio_capstone"
+    },
+    {
+      "item_id": "WIRELESS_6G:lab_spectrum_mask",
+      "course_id": "WIRELESS_6G",
+      "assessment_id": "lab_spectrum_mask",
+      "assessment_kind": "lab",
+      "domain": "WIRELESS_6G.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_spectrum_mask \u2014 spectrum mask\n\nRunnable validator for lab_spectrum_mask. Empty/wrong/print-PASS fail.\n\n## Student artifact\nEmpty {} fails. PASS raises. No commercial 6G.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the Pier Radio Bench folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_spectrum_mask --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_spectrum_mask --empty\n```\n\nWrong numeric o",
+      "choices": null,
+      "source": "curriculum/digital_rc/WIRELESS_6G/labs/lab_spectrum_mask"
     }
   ],
   "claim_boundary": "Student-facing assessable registry only. Instructor keys are not embedded. Scoring requires an isolated grading agent after submission."

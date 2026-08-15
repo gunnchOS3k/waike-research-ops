@@ -19,15 +19,15 @@ def contract():
     return emit_learning_contract(ROOT)
 
 
-def test_discover_not_hardcoded_nine_names(contract):
+def test_discover_current_twelve_not_hardcoded(contract):
     assert contract["discovery"]["hardcoded_course_names"] is False
     assert contract["discovery"]["method"] == "filesystem_scan"
-    assert contract["discovery"]["course_count"] >= 9
+    assert contract["discovery"]["course_count"] >= 12
     ids = {c["course_id"] for c in contract["courses"]}
     assert "SOFTWARE_BUILDER" in ids
-    assert "GENERAL_IT" in ids
-    # Ready for #46 merge: discovery is dynamic; do not hardcode nine forever.
-    assert isinstance(contract["courses"], list)
+    assert "WIRELESS_6G" in ids
+    assert "ROBOTICS_CONTROL" in ids
+    assert "GAME_DEV_INTERACTIVE" in ids
 
 
 def test_permission_separation(contract):
@@ -46,7 +46,8 @@ def test_registry_strips_keys():
     from waike_mastery.registry import build_assessable_registry
 
     reg = build_assessable_registry(ROOT)
-    assert reg["item_count"] > 500
+    assert reg["item_count"] > 1000
+    assert reg["course_count"] >= 12
     assert reg["key_fields_present_in_registry"] == []
     blob = json.dumps(reg["items"][:50])
     assert "answer_index" not in blob
@@ -67,7 +68,7 @@ def test_canary_feeds_and_refuses():
     assert CANARY_TOKEN in c["canary_token"]
 
 
-def test_tool_use_is_partial_not_complete():
+def test_tool_use_is_partial_includes_new_courses():
     import sys
 
     sys.path.insert(0, str(ROOT / "src"))
@@ -77,6 +78,10 @@ def test_tool_use_is_partial_not_complete():
     assert tool["passed"] >= 6
     assert tool["coverage_status"] == "PARTIAL"
     assert tool["mastery_complete"] is False
+    labs = {r["lab_id"] for r in tool["results"]}
+    assert "lab_fspl_budget" in labs
+    assert "lab_pid_step" in labs
+    assert "lab_game_loop" in labs
 
 
 def test_benchmark_measures_key_use_and_policy_blocks_055():
@@ -91,7 +96,6 @@ def test_benchmark_measures_key_use_and_policy_blocks_055():
     assert "used_instructor_keys_during_solve" in b
     assert isinstance(b["used_instructor_keys_during_solve"], bool)
     assert "key_use_measurement" in b
-    # ~curriculum-overlap scores must not earn mastery under policy
     policy = evaluate_mastery_policy(
         overall_score=0.64,
         per_course=b["per_course"],
@@ -123,3 +127,22 @@ def test_diagnosis_loop():
         remediation_loop(d, reassess_score=0.95, transfer_ok=True)["final_evidence_state"]
         == "CERTAINLY_FILLED"
     )
+
+
+def test_corpus_diff_and_baseline():
+    import sys
+
+    sys.path.insert(0, str(ROOT / "src"))
+    from waike_mastery.corpus_diff import (
+        MASTERY_001_NINE_COURSE_BASELINE,
+        build_corpus_version_diff,
+    )
+    from waike_mastery.course_honesty import run_course_honesty
+
+    diff = build_corpus_version_diff(ROOT)
+    assert diff["old_corpus"]["courses"] == 9
+    assert diff["old_corpus"]["assessable_items"] == 1016
+    assert diff["new_corpus"]["courses"] >= 12
+    assert "WIRELESS_6G" in diff["added_courses"]
+    assert MASTERY_001_NINE_COURSE_BASELINE["overall_score"] == 0.6442307692307693
+    assert run_course_honesty(ROOT)["pass"] is True
