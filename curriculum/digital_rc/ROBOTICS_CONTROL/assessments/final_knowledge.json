@@ -1,0 +1,269 @@
+{
+  "assessment_id": "ROBOTICS_CONTROL-final",
+  "items": [
+    {
+      "id": "rbf01",
+      "kind": "mcq",
+      "stem": "Rotating a tool offset by yaw \u03c0/2 mixes coordinates using?",
+      "choices": [
+        "BPM phase only",
+        "BLER tables only",
+        "sine and cosine of yaw",
+        "DAU only"
+      ]
+    },
+    {
+      "id": "rbf02",
+      "kind": "mcq",
+      "stem": "'Servos are strong, therefore workspace is infinite' is?",
+      "choices": [
+        "Correct",
+        "Required mantra",
+        "Extra credit",
+        "False kinematics"
+      ]
+    },
+    {
+      "id": "rbf03",
+      "kind": "mcq",
+      "stem": "Forward-kinematics submissions must include?",
+      "choices": [
+        "Cartesian tip and reachable flag",
+        "Only RGB",
+        "Only captions",
+        "Only NTN delay"
+      ]
+    },
+    {
+      "id": "rbf04",
+      "kind": "mcq",
+      "stem": "The derivative term primarily responds to?",
+      "choices": [
+        "Path loss",
+        "Error slope across samples",
+        "MCS index",
+        "Beat period"
+      ]
+    },
+    {
+      "id": "rbf05",
+      "kind": "mcq",
+      "stem": "Trapezoidal time bounds need which pair?",
+      "choices": [
+        "VFX and DAU",
+        "Captions and BPM",
+        "vmax and amax",
+        "FSPL and OBW"
+      ]
+    },
+    {
+      "id": "rbf06",
+      "kind": "mcq",
+      "stem": "Curvature limits mid-course are best labeled?",
+      "choices": [
+        "Already finished forever",
+        "Deleted from physics",
+        "Replaced by 6G",
+        "Still needed later"
+      ]
+    },
+    {
+      "id": "rbf07",
+      "kind": "mcq",
+      "stem": "Hard gates / IQR cleaning exist to?",
+      "choices": [
+        "Remove wild outliers",
+        "Invent sensor bias",
+        "Bypass E-stop",
+        "Fake SIL papers"
+      ]
+    },
+    {
+      "id": "rbf08",
+      "kind": "mcq",
+      "stem": "Bias calibration status after the noise week is?",
+      "choices": [
+        "Finished in week 1 forever",
+        "Still needed",
+        "Impossible",
+        "Skipped ethically"
+      ]
+    },
+    {
+      "id": "rbf09",
+      "kind": "mcq",
+      "stem": "After E-stop, resume_requires_human must be?",
+      "choices": [
+        "false",
+        "bot-optional",
+        "true",
+        "null"
+      ]
+    },
+    {
+      "id": "rbf10",
+      "kind": "mcq",
+      "stem": "Disabling E-stop wiring for a demo recording is?",
+      "choices": [
+        "Allowed showmanship",
+        "Required",
+        "Extra",
+        "Ethics failure"
+      ]
+    },
+    {
+      "id": "rbf11",
+      "kind": "mcq",
+      "stem": "Body yaw rate from differential wheels uses?",
+      "choices": [
+        "difference of wheel rates",
+        "only their sum",
+        "only wheel radius alone",
+        "only B alone"
+      ]
+    },
+    {
+      "id": "rbf12",
+      "kind": "mcq",
+      "stem": "A pretty drive video without kinematics fields is?",
+      "choices": [
+        "Sufficient proof",
+        "Insufficient without the math JSON",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rbf13",
+      "kind": "mcq",
+      "stem": "Scalar fusion must refuse which lie?",
+      "choices": [
+        "Finite K",
+        "Two measurements",
+        "Zero-covariance certainty",
+        "Operator notes"
+      ]
+    },
+    {
+      "id": "rbf14",
+      "kind": "mcq",
+      "stem": "Claiming a full SE(2) EKF is complete after the scalar week is?",
+      "choices": [
+        "Accurate",
+        "Required",
+        "Extra",
+        "Over-claim / still needed"
+      ]
+    },
+    {
+      "id": "rbf15",
+      "kind": "mcq",
+      "stem": "NaN in angular.z should?",
+      "choices": [
+        "Fail the finite twist check",
+        "Pass schema",
+        "Earn ROS badge",
+        "Earn Unity badge"
+      ]
+    },
+    {
+      "id": "rbf16",
+      "kind": "mcq",
+      "stem": "NO_AI schema week expects?",
+      "choices": [
+        "Exam-item harvests",
+        "Hand-authored JSON",
+        "Fake fleet logos",
+        "Fake SIL scans"
+      ]
+    },
+    {
+      "id": "rbf17",
+      "kind": "mcq",
+      "stem": "Capstone estop_ok must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "ai"
+      ]
+    },
+    {
+      "id": "rbf18",
+      "kind": "mcq",
+      "stem": "Inventing injury statistics for portfolio drama is?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Extra",
+        "Forbidden"
+      ]
+    },
+    {
+      "id": "rbf19",
+      "kind": "mcq",
+      "stem": "Career credentials on the map are?",
+      "choices": [
+        "Aligned labels not granted",
+        "Auto-issued",
+        "Sold",
+        "Hidden"
+      ]
+    },
+    {
+      "id": "rbf20",
+      "kind": "mcq",
+      "stem": "E-stop procedure sheet accessibility requires?",
+      "choices": [
+        "Tiny GIF only",
+        "Large-text printable form",
+        "No text",
+        "Cracked PDF reader"
+      ]
+    },
+    {
+      "id": "rbf21",
+      "kind": "mcq",
+      "stem": "A lab artifact that is only the word PASS is?",
+      "choices": [
+        "Accepted",
+        "Half credit",
+        "Rejected with AssertionError",
+        "Auto-graded A"
+      ]
+    },
+    {
+      "id": "rbf22",
+      "kind": "mcq",
+      "stem": "Empty student JSON object yields?",
+      "choices": [
+        "PASS",
+        "Half credit",
+        "Silent skip",
+        "Failure of student_artifact"
+      ]
+    },
+    {
+      "id": "rbf23",
+      "kind": "mcq",
+      "stem": "Does this course grant SIL certification?",
+      "choices": [
+        "No \u2014 not claimed",
+        "Yes",
+        "Automatically after final",
+        "Yes via AI"
+      ]
+    },
+    {
+      "id": "rbf24",
+      "kind": "mcq",
+      "stem": "HarborBot maps into which academy id?",
+      "choices": [
+        "ACADEMY_CYBER",
+        "ACADEMY_HARDWARE",
+        "ACADEMY_PROF_DEV",
+        "ACADEMY_PROCESS_PM"
+      ]
+    }
+  ]
+}

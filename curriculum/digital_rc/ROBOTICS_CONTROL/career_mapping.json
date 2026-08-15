@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "robotics_technician",
+    "controls_junior",
+    "automation_apprentice"
+  ],
+  "nice_categories": [
+    "build_and_deploy",
+    "analyze"
+  ],
+  "certs_aligned_not_granted": [
+    "FANUC/ABB operator topic labels (PUBLIC_REFERENCE_ONLY)",
+    "OSHA machine-guarding awareness labels (not a license)"
+  ]
+}

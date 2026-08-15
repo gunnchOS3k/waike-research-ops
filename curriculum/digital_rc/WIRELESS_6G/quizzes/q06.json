@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "wr-w6-1",
+      "kind": "mcq",
+      "stem": "Tap count?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "64"
+      ]
+    },
+    {
+      "id": "wr-w6-2",
+      "kind": "mcq",
+      "stem": "Powers unit?",
+      "choices": [
+        "watts only",
+        "MCS",
+        "RTT",
+        "dB relative"
+      ]
+    },
+    {
+      "id": "wr-w6-3",
+      "kind": "mcq",
+      "stem": "AI beamforming claim with no taps?",
+      "choices": [
+        "Fails week",
+        "PASS",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "wr-w6-4",
+      "kind": "mcq",
+      "stem": "Sounding status?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "6G auto",
+        "Skip"
+      ]
+    },
+    {
+      "id": "wr-w6-5",
+      "kind": "mcq",
+      "stem": "First tap delay?",
+      "choices": [
+        "120 ns",
+        "350 ns",
+        "0 ns",
+        "1 ms"
+      ]
+    },
+    {
+      "id": "wr-w6-6",
+      "kind": "mcq",
+      "stem": "Need tau_rms_ns?",
+      "choices": [
+        "No",
+        "Screenshot only",
+        "AI only",
+        "Yes"
+      ]
+    }
+  ]
+}

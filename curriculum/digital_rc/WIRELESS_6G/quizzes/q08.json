@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "wr-w8-1",
+      "kind": "mcq",
+      "stem": "unauthorized_tx?",
+      "choices": [
+        "true",
+        "maybe",
+        "false",
+        "6G"
+      ]
+    },
+    {
+      "id": "wr-w8-2",
+      "kind": "mcq",
+      "stem": "OBW?",
+      "choices": [
+        "100 MHz",
+        "1 GHz",
+        "30 kHz",
+        "18 MHz"
+      ]
+    },
+    {
+      "id": "wr-w8-3",
+      "kind": "mcq",
+      "stem": "TX outside narrative?",
+      "choices": [
+        "Ethics fail",
+        "Extra",
+        "Required",
+        "AI-RAN"
+      ]
+    },
+    {
+      "id": "wr-w8-4",
+      "kind": "mcq",
+      "stem": "Fabricate FCC filing?",
+      "choices": [
+        "OK",
+        "Forbidden",
+        "Required",
+        "Rel-20"
+      ]
+    },
+    {
+      "id": "wr-w8-5",
+      "kind": "mcq",
+      "stem": "Center?",
+      "choices": [
+        "2.4",
+        "28 only",
+        "3.5 GHz",
+        "60"
+      ]
+    },
+    {
+      "id": "wr-w8-6",
+      "kind": "mcq",
+      "stem": "mask_ok means?",
+      "choices": [
+        "Ignore OOB",
+        "6G cert",
+        "NTN",
+        "Fixture mask check passed"
+      ]
+    }
+  ]
+}

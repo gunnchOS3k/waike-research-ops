@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "ROBOTICS_CONTROL-lab",
+    "title": "HarborBot lab",
+    "criteria": [
+      {
+        "name": "kin_pid",
+        "weight": 20,
+        "desc": "FK/PID/traj/fuse math"
+      },
+      {
+        "name": "estop",
+        "weight": 20,
+        "desc": "E-stop hard policy"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong fields fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-assignment",
+    "title": "Bay journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses RB-####"
+      },
+      {
+        "name": "frames",
+        "weight": 30,
+        "desc": "ASCII frame diagrams"
+      },
+      {
+        "name": "no_bypass",
+        "weight": 30,
+        "desc": "No E-stop bypass"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-quiz",
+    "title": "Controls knowledge",
+    "criteria": [
+      {
+        "name": "bay_numbers",
+        "weight": 50,
+        "desc": "Original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-mid",
+    "title": "Mid HarborBot audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone"
+      },
+      {
+        "name": "fk_pid_estop",
+        "weight": 40,
+        "desc": "FK/PID/E-stop"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-final-knowledge",
+    "title": "Final controls exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone"
+      },
+      {
+        "name": "fuse_schema_safety",
+        "weight": 50,
+        "desc": "Fuse/schema/safety"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Soft-E-stop/B=0 fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-project",
+    "title": "Safety packet",
+    "criteria": [
+      {
+        "name": "estop_ok",
+        "weight": 40,
+        "desc": "estop_ok true"
+      },
+      {
+        "name": "no_device_os",
+        "weight": 30,
+        "desc": "no_device_os_pr"
+      },
+      {
+        "name": "six_labs",
+        "weight": 30,
+        "desc": "labs_passed\u22656"
+      }
+    ]
+  },
+  {
+    "rubric_id": "ROBOTICS_CONTROL-portfolio",
+    "title": "Bay portfolio",
+    "criteria": [
+      {
+        "name": "large_text_estop",
+        "weight": 40,
+        "desc": "Printable E-stop sheet"
+      },
+      {
+        "name": "no_fake_injury",
+        "weight": 30,
+        "desc": "No fabricated stats"
+      },
+      {
+        "name": "career_map",
+        "weight": 30,
+        "desc": "Aligned roles"
+      }
+    ]
+  }
+]

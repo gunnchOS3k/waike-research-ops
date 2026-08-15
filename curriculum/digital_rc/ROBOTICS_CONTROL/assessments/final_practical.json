@@ -1,0 +1,16 @@
+{
+  "practical_id": "ROBOTICS_CONTROL-practical",
+  "labs": [
+    "lab_se2_pose",
+    "lab_fk_2r",
+    "lab_pid_step",
+    "lab_traj_limits",
+    "lab_sensor_noise",
+    "lab_estop_policy",
+    "lab_diff_drive",
+    "lab_fuse_scalar",
+    "lab_cmd_vel_schema",
+    "lab_robot_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

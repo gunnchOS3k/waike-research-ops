@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "ga-w2-1",
+      "kind": "mcq",
+      "stem": "Hit requires?",
+      "choices": [
+        "Both axis overlaps",
+        "One axis",
+        "VFX",
+        "Audio"
+      ]
+    },
+    {
+      "id": "ga-w2-2",
+      "kind": "mcq",
+      "stem": "VFX-only proof?",
+      "choices": [
+        "OK",
+        "Fails",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w2-3",
+      "kind": "mcq",
+      "stem": "Swept tests?",
+      "choices": [
+        "Done",
+        "Deleted",
+        "Still need",
+        "6G"
+      ]
+    },
+    {
+      "id": "ga-w2-4",
+      "kind": "mcq",
+      "stem": "Week 2 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Auto",
+        "Fails"
+      ]
+    },
+    {
+      "id": "ga-w2-5",
+      "kind": "mcq",
+      "stem": "overlap_x needed?",
+      "choices": [
+        "Yes",
+        "No",
+        "Screenshot",
+        "AI"
+      ]
+    },
+    {
+      "id": "ga-w2-6",
+      "kind": "mcq",
+      "stem": "AABB means?",
+      "choices": [
+        "Sphere only",
+        "Axis-aligned box",
+        "Mesh only",
+        "Audio bus"
+      ]
+    }
+  ]
+}

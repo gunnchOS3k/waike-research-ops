@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "WIRELESS_6G",
+  "lesson_ids": [
+    "WIRELESS_6G-w01",
+    "WIRELESS_6G-w02",
+    "WIRELESS_6G-w03",
+    "WIRELESS_6G-w04",
+    "WIRELESS_6G-w05",
+    "WIRELESS_6G-w06",
+    "WIRELESS_6G-w07",
+    "WIRELESS_6G-w08",
+    "WIRELESS_6G-w09",
+    "WIRELESS_6G-w10"
+  ],
+  "labs": [
+    "lab_fspl_budget",
+    "lab_ofdm_numerology",
+    "lab_5ga_feature_map",
+    "lab_mcs_bler",
+    "lab_ntn_delay",
+    "lab_delay_spread",
+    "lab_airan_policy",
+    "lab_spectrum_mask",
+    "lab_oran_interfaces",
+    "lab_radio_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

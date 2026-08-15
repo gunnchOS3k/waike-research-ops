@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "rf_lab_technician",
+    "ran_ops_junior",
+    "wireless_research_apprentice"
+  ],
+  "nice_categories": [
+    "analyze",
+    "build_and_deploy"
+  ],
+  "certs_aligned_not_granted": [
+    "CompTIA Network+ (wireless domains)",
+    "3GPP 5G NR overview (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

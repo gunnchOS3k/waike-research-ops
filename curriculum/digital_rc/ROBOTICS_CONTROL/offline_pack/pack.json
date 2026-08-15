@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "ROBOTICS_CONTROL",
+  "lesson_ids": [
+    "ROBOTICS_CONTROL-w01",
+    "ROBOTICS_CONTROL-w02",
+    "ROBOTICS_CONTROL-w03",
+    "ROBOTICS_CONTROL-w04",
+    "ROBOTICS_CONTROL-w05",
+    "ROBOTICS_CONTROL-w06",
+    "ROBOTICS_CONTROL-w07",
+    "ROBOTICS_CONTROL-w08",
+    "ROBOTICS_CONTROL-w09",
+    "ROBOTICS_CONTROL-w10"
+  ],
+  "labs": [
+    "lab_se2_pose",
+    "lab_fk_2r",
+    "lab_pid_step",
+    "lab_traj_limits",
+    "lab_sensor_noise",
+    "lab_estop_policy",
+    "lab_diff_drive",
+    "lab_fuse_scalar",
+    "lab_cmd_vel_schema",
+    "lab_robot_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

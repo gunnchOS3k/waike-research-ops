@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "wr-w4-1",
+      "kind": "mcq",
+      "stem": "At SNR 8 with given BLER table & cap 0.1, MCS?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "id": "wr-w4-2",
+      "kind": "mcq",
+      "stem": "Pick MCS 4 for throughput?",
+      "choices": [
+        "Correct",
+        "Required",
+        "6G",
+        "Fails BLER discipline"
+      ]
+    },
+    {
+      "id": "wr-w4-3",
+      "kind": "mcq",
+      "stem": "bler_at_choice for MCS 2?",
+      "choices": [
+        "0.09",
+        "0.40",
+        "0.18",
+        "1.0"
+      ]
+    },
+    {
+      "id": "wr-w4-4",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails student_artifact",
+        "Half",
+        "Auto0"
+      ]
+    },
+    {
+      "id": "wr-w4-5",
+      "kind": "mcq",
+      "stem": "Outer-loop CQI claimed?",
+      "choices": [
+        "Yes",
+        "Rel-20",
+        "No \u2014 not claimed",
+        "NTN only"
+      ]
+    },
+    {
+      "id": "wr-w4-6",
+      "kind": "mcq",
+      "stem": "BLER cap?",
+      "choices": [
+        "0.5",
+        "0.01",
+        "1.0",
+        "0.1"
+      ]
+    }
+  ]
+}

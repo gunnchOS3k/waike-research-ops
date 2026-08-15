@@ -1,0 +1,2789 @@
+{
+  "WIRELESS_6G": {
+    "course_id": "WIRELESS_6G",
+    "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+    "track_ids": [
+      "WIRELESS_6G"
+    ],
+    "academy_id": "ACADEMY_NETWORKING",
+    "kinesthetic_hook": "Run the Gary Pier Radio Bench for ten weeks: FSPL \u2192 OFDM \u2192 5G-Advanced \u2192 NTN LEO delay \u2192 AI-RAN gated policy. Commercial standardized 6G does NOT exist today.",
+    "syllabus_hook": "Honest wireless engineering on fixtures: Friis math, numerology, Release topic labels, NTN light-time, O-RAN vocabulary, and AI-RAN gates. No commercial-6G brochure claims. 3GPP/IEEE names are PUBLIC_REFERENCE_ONLY.",
+    "career": {
+      "roles": [
+        "rf_lab_technician",
+        "ran_ops_junior",
+        "wireless_research_apprentice"
+      ],
+      "nice_categories": [
+        "analyze",
+        "build_and_deploy"
+      ],
+      "certs_aligned_not_granted": [
+        "CompTIA Network+ (wireless domains)",
+        "3GPP 5G NR overview (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        3,
+        8
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Pier Radio Bench \u2014 free-space path loss without marketing",
+        "lesson": "The Pier Radio Bench sits under the Gary pier canopy: a USRP-class SDR, a scratched\nThinkPad, and a laminated card that says COMMERCIAL_STANDARDIZED_6G=false. Week 1 is\nticket WR-4101. Beginners want a 6G slide deck. Operators compute free-space path loss\nfor a 3.5 GHz pier hop at 120 m using FSPL_dB = 20*log10(d_m) + 20*log10(f_MHz) - 27.55.\n\nPlug numbers on paper before any GUI: d=120, f=3500. That is the only number the lab\naccepts. Pasting a vendor '6G ready' banner into the journal fails the claim boundary.\n\nConsensus Ladder for WR-4101: observed = 120 m tape and 3.5 GHz center; inferred = FSPL\ndominates this short clear hop; still need = pier-railing multipath (week 6).\n\nFailure mode: claiming 'we have 6G coverage' because a slide said so. Operators speak\n`fixtures/wr4101/fspl.json` with d_m, f_mhz, fspl_db. Invented 6G standard IDs fail.\n\nResource rule: light math fixtures only while Product-Use QEMU is busy \u2014 no multi-GB\nSionna/DeepMIMO tarballs on this ticket. Accessibility: journals stay text-first; any\noptional plot needs an alt_text field in the portfolio later.\n\nWork the Friis card on paper with a second hop length (95 m at 3500 MHz) so the class\nsees how 20*log10(d) moves when the tape changes. Record both answers in the journal\nwith units. The Pier Radio Bench treats invented '6G coverage radius' strings as claim\nboundary failures even when the arithmetic for FSPL is correct.\n\nOperators also name the antenna assumption: isotropic teaching model, not a measured\npanel pattern. If someone imports a vendor EIRP table without citing the fixture path\n`fixtures/wr4101/fspl.json`, stop the demo and return to the laminated card.",
+        "worked_example": "d=120 m, f=3500 MHz \u2192 FSPL \u2248 20*log10(120)+20*log10(3500)-27.55 \u2248 84.9 dB.",
+        "assignment": "Journal WR-4101 with d_m, f_mhz, fspl_db, and commercial-6G=false. Submit lab_fspl_budget.",
+        "lab_id": "lab_fspl_budget",
+        "quiz": [
+          {
+            "id": "wr-w1-1",
+            "kind": "mcq",
+            "stem": "WR-4101 uses which FSPL term?",
+            "choices": [
+              "20*log10(120)",
+              "6G_TCI",
+              "Rel-20 MCS",
+              "GEO slot"
+            ],
+            "answer_index": 0,
+            "explanation": "Friis."
+          },
+          {
+            "id": "wr-w1-2",
+            "kind": "mcq",
+            "stem": "COMMERCIAL_STANDARDIZED_6G card reads?",
+            "choices": [
+              "true",
+              "false",
+              "pending",
+              "vendor_true"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w1-3",
+            "kind": "mcq",
+            "stem": "Forbidden claim on WR-4101?",
+            "choices": [
+              "Computed FSPL",
+              "6G coverage from a slide",
+              "3.5 GHz",
+              "120 m"
+            ],
+            "answer_index": 1,
+            "explanation": "No marketing."
+          },
+          {
+            "id": "wr-w1-4",
+            "kind": "mcq",
+            "stem": "Observation for the hop?",
+            "choices": [
+              "Railing multipath measured",
+              "d=120 m and f=3.5 GHz",
+              "6G ratified",
+              "SDR serial"
+            ],
+            "answer_index": 1,
+            "explanation": "Measured."
+          },
+          {
+            "id": "wr-w1-5",
+            "kind": "mcq",
+            "stem": "Heavy sim download on WR-4101?",
+            "choices": [
+              "Required",
+              "Forbidden \u2014 fixtures only",
+              "GPU required",
+              "Overnight required"
+            ],
+            "answer_index": 1,
+            "explanation": "Resource."
+          },
+          {
+            "id": "wr-w1-6",
+            "kind": "mcq",
+            "stem": "Lab rejects?",
+            "choices": [
+              "Shown FSPL math",
+              "Invented 6G standard ID",
+              "d_m",
+              "f_mhz"
+            ],
+            "answer_index": 1,
+            "explanation": "No fake IDs."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "OFDM numerology intuition \u2014 symbols without a fake 6G waveform",
+        "lesson": "Ticket WR-4202 ships a toy OFDM numerology card: \u0394f=30 kHz, N_sc=12 subcarriers per PRB,\nsymbol duration \u2248 1/\u0394f ignoring CP. Pier operators compute PRB bandwidth = 12*30e3 = 360 kHz\nfor scheduling math \u2014 not a marketing badge.\n\nOne slot with 14 symbols at \u03bc=1 is a teaching fixture, not a claim the pier ships Rel-18.\nThe lab asks for n_sc, delta_f_hz, prb_bw_hz, and symbol_duration_s. Empty JSON fails.\nA print('PASS') string raises AssertionError.\n\nConsensus Ladder: observed = numerology table; inferred = larger \u0394f shortens symbols;\nstill need = measured Doppler on the pier.\n\nFailure mode: renaming the week '6G waveform lab' and pasting a vendor constellation\nscreenshot with no math. Cyclic prefix is a named omission this week \u2014 honesty is skill.\n\nDraw one resource block as twelve vertical tones and mark \u0394f=30 kHz between them.\nCompute PRB bandwidth again with \u03bc=0 (15 kHz) as a contrast case: 12*15e3=180 kHz.\nWrite both results side by side so learners stop treating 'PRB' as a brand badge.\n\nCall out the cyclic-prefix omission in one sentence: CP is real on air interfaces and\ndeliberately not scored this week. Anyone pasting a constellation PNG without\nn_sc/delta_f_hz/prb_bw_hz/symbol_duration_s fields fails the lab contract.",
+        "worked_example": "PRB BW = 12\u00d730e3 = 360000 Hz; T_sym \u2248 1/30000 \u2248 33.33 \u03bcs (no CP).",
+        "assignment": "Compute PRB BW and symbol duration for WR-4202. Submit lab_ofdm_numerology.",
+        "lab_id": "lab_ofdm_numerology",
+        "quiz": [
+          {
+            "id": "wr-w2-1",
+            "kind": "mcq",
+            "stem": "12 sc @ 30 kHz \u2192 PRB BW?",
+            "choices": [
+              "360 kHz",
+              "30 kHz",
+              "3.6 MHz",
+              "12 Hz"
+            ],
+            "answer_index": 0,
+            "explanation": "12*30e3."
+          },
+          {
+            "id": "wr-w2-2",
+            "kind": "mcq",
+            "stem": "T_sym without CP @ 30 kHz?",
+            "choices": [
+              "30 \u03bcs",
+              "\u224833.3 \u03bcs",
+              "1 ms",
+              "14 \u03bcs"
+            ],
+            "answer_index": 1,
+            "explanation": "1/\u0394f."
+          },
+          {
+            "id": "wr-w2-3",
+            "kind": "mcq",
+            "stem": "Week 2 grades?",
+            "choices": [
+              "Screenshots",
+              "Numerology fields",
+              "6G badges",
+              "Ephemeris"
+            ],
+            "answer_index": 1,
+            "explanation": "Math."
+          },
+          {
+            "id": "wr-w2-4",
+            "kind": "mcq",
+            "stem": "CP this week?",
+            "choices": [
+              "Fully computed",
+              "Named omission",
+              "Ignored forever",
+              "Equals \u0394f"
+            ],
+            "answer_index": 1,
+            "explanation": "Honesty."
+          },
+          {
+            "id": "wr-w2-5",
+            "kind": "mcq",
+            "stem": "Larger \u0394f does what to T_sym?",
+            "choices": [
+              "Lengthens",
+              "Shortens",
+              "Deletes PRBs",
+              "Creates 6G"
+            ],
+            "answer_index": 1,
+            "explanation": "1/\u0394f."
+          },
+          {
+            "id": "wr-w2-6",
+            "kind": "mcq",
+            "stem": "print('PASS')?",
+            "choices": [
+              "Accepted",
+              "Raises AssertionError",
+              "Half credit",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "5G-Advanced features map \u2014 Release labels without exam dumps",
+        "lesson": "Ticket WR-4303 is a feature map: RedCap, XR awareness, NTN early hooks, AI/ML study items \u2014\nall PUBLIC_REFERENCE_ONLY. List \u22653 Release-18/19 topic labels and one non-claim: this course\ndoes not grant 3GPP membership or dump exam items.\n\nLab checks features[] length \u22653 with name+release_tag and commercial_6g_exists=false.\nIf commercial_6g_exists is true, the lab fails.\n\nConsensus Ladder: observed = public overview titles; inferred = 5G-Advanced evolves 5G NR;\nstill need = measurements mapping to those titles.\n\nNO_AI week: hand-write the map. Generative fill inventing 'Rel-20 commercial 6G' fails the\nclaim boundary even if grammar is perfect. Alignment file only \u2014 no harvested stems.\n\nBuild the feature map as three rows only: name, release_tag, PUBLIC_REFERENCE_ONLY.\nExample rows may include RedCap, NTN early hooks, and AI/ML study items \u2014 never a\nfabricated Rel-20 commercial-6G row. commercial_6g_exists stays false in JSON.\n\nNO_AI means hand labels. If a generative draft invents a ratified consumer 6G SKU,\ndelete the row and rewrite from the alignment file. Membership in 3GPP is not granted\nby completing WR-4303.",
+        "worked_example": "\u22653 features with release tags; commercial_6g_exists=false.",
+        "assignment": "Hand-write WR-4303 feature map. NO_AI. Submit lab_5ga_feature_map.",
+        "lab_id": "lab_5ga_feature_map",
+        "quiz": [
+          {
+            "id": "wr-w3-1",
+            "kind": "mcq",
+            "stem": "commercial_6g_exists?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "Rel-20"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w3-2",
+            "kind": "mcq",
+            "stem": "RedCap here is?",
+            "choices": [
+              "Exam dump",
+              "PUBLIC_REFERENCE_ONLY label",
+              "6G PHY",
+              "Secret"
+            ],
+            "answer_index": 1,
+            "explanation": "Label."
+          },
+          {
+            "id": "wr-w3-3",
+            "kind": "mcq",
+            "stem": "Week 3 AI?",
+            "choices": [
+              "AI dumps",
+              "NO_AI hand map",
+              "AI writes Rel-20",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "wr-w3-4",
+            "kind": "mcq",
+            "stem": "Min features[]?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "20"
+            ],
+            "answer_index": 2,
+            "explanation": "\u22653."
+          },
+          {
+            "id": "wr-w3-5",
+            "kind": "mcq",
+            "stem": "5G-Advanced is?",
+            "choices": [
+              "New RAT replacing 5G",
+              "Evolutionary on 5G NR",
+              "Commercial 6G",
+              "Wi-Fi 8"
+            ],
+            "answer_index": 1,
+            "explanation": "Evolution."
+          },
+          {
+            "id": "wr-w3-6",
+            "kind": "mcq",
+            "stem": "Invent Rel-20 commercial 6G row?",
+            "choices": [
+              "PASS",
+              "Fails claim boundary",
+              "Extra",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Link adaptation toy \u2014 MCS vs BLER on a fixture",
+        "lesson": "Ticket WR-4404 gives BLER for MCS 0..4 at SNR=8 dB: [0.40,0.22,0.09,0.18,0.35]. Pick the\nhighest MCS with BLER \u2264 0.1 \u2192 MCS 2 at 0.09. Lab checks snr_db, bler_cap, chosen_mcs,\nbler_at_choice.\n\nConsensus Ladder: observed = table; inferred = higher MCS needs headroom; still need =\nouter-loop CQI mapping (not claimed).\n\nFailure mode: always max MCS for 'throughput.' Empty {} fails. PASS string raises.\nOperators speak `fixtures/wr4404/bler_table.json` and defend the choice on a whiteboard.\n\nWalk the BLER table left to right and mark every MCS whose BLER \u2264 0.1 before picking\nthe maximum eligible index. At SNR=8 dB the eligible set is {2}; chosen_mcs=2 with\nbler_at_choice=0.09. Document why MCS 3 and 4 are rejected even if throughput stories\nsound better in marketing.\n\nOuter-loop CQI mapping stays in the 'still need' ladder rung \u2014 do not claim the pier\nruns a live link-adaptation closed loop from this fixture alone.",
+        "worked_example": "SNR=8 dB, cap 0.1 \u2192 chosen_mcs=2 (BLER 0.09).",
+        "assignment": "Select MCS under BLER cap for WR-4404. Submit lab_mcs_bler.",
+        "lab_id": "lab_mcs_bler",
+        "quiz": [
+          {
+            "id": "wr-w4-1",
+            "kind": "mcq",
+            "stem": "At SNR 8 with given BLER table & cap 0.1, MCS?",
+            "choices": [
+              "0",
+              "1",
+              "2",
+              "4"
+            ],
+            "answer_index": 2,
+            "explanation": "0.09."
+          },
+          {
+            "id": "wr-w4-2",
+            "kind": "mcq",
+            "stem": "Pick MCS 4 for throughput?",
+            "choices": [
+              "Correct",
+              "Fails BLER discipline",
+              "Required",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Cap."
+          },
+          {
+            "id": "wr-w4-3",
+            "kind": "mcq",
+            "stem": "bler_at_choice for MCS 2?",
+            "choices": [
+              "0.40",
+              "0.09",
+              "0.18",
+              "1.0"
+            ],
+            "answer_index": 1,
+            "explanation": "Table."
+          },
+          {
+            "id": "wr-w4-4",
+            "kind": "mcq",
+            "stem": "Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails student_artifact",
+              "Half",
+              "Auto0"
+            ],
+            "answer_index": 1,
+            "explanation": "Empty."
+          },
+          {
+            "id": "wr-w4-5",
+            "kind": "mcq",
+            "stem": "Outer-loop CQI claimed?",
+            "choices": [
+              "Yes",
+              "No \u2014 not claimed",
+              "Rel-20",
+              "NTN only"
+            ],
+            "answer_index": 1,
+            "explanation": "Boundary."
+          },
+          {
+            "id": "wr-w4-6",
+            "kind": "mcq",
+            "stem": "BLER cap?",
+            "choices": [
+              "0.5",
+              "0.1",
+              "0.01",
+              "1.0"
+            ],
+            "answer_index": 1,
+            "explanation": "0.1."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "NTN LEO delay honesty \u2014 light-time, not sci-fi maps",
+        "lesson": "Ticket WR-4505: LEO altitude 550 km, slant \u2248700 km. Light-time \u2248 d/c; RTT \u2248 2*d/c.\nc=3e8, d=7e5 \u2192 one_way\u22482.333 ms, RTT\u22484.667 ms. Not GEO-class (~250 ms). Lab fails if\ngeo_comparable=true or ntn_as_6g_standard=true.\n\nConsensus Ladder: observed = altitude card; inferred = ms-class RTT for this toy slant;\nstill need = feeder/gateway scheduling (out of scope).\n\nMarketing fail: 'global 6G NTN' heatmap with no delay math. No constellation sim downloads \u2014\nfixture arithmetic only while Stream A runs.\n\nRecompute light-time with a second slant (650 km) so learners practice d/c without\nmemorizing one number. Compare both RTTs to a GEO-class ~250 ms figure and keep\ngeo_comparable=false. ntn_as_6g_standard remains false: NTN features in 5G-Advanced\ntalk are not a commercial standardized 6G ratification.\n\nRefuse constellation-sim downloads while Stream A QEMU is active. Fixture milliseconds\nare the graded artifact; heatmaps without delay math are marketing fails.",
+        "worked_example": "d=700 km \u2192 one_way\u22482.333 ms, RTT\u22484.667 ms; geo_comparable=false.",
+        "assignment": "Compute NTN light-time for WR-4505. Submit lab_ntn_delay.",
+        "lab_id": "lab_ntn_delay",
+        "quiz": [
+          {
+            "id": "wr-w5-1",
+            "kind": "mcq",
+            "stem": "700 km one-way \u2192 ms \u2248?",
+            "choices": [
+              "0.23",
+              "2.33",
+              "23",
+              "250"
+            ],
+            "answer_index": 1,
+            "explanation": "d/c."
+          },
+          {
+            "id": "wr-w5-2",
+            "kind": "mcq",
+            "stem": "RTT \u2248?",
+            "choices": [
+              "2.33 ms",
+              "4.67 ms",
+              "250 ms",
+              "1 s"
+            ],
+            "answer_index": 1,
+            "explanation": "2*d/c."
+          },
+          {
+            "id": "wr-w5-3",
+            "kind": "mcq",
+            "stem": "geo_comparable?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w5-4",
+            "kind": "mcq",
+            "stem": "ntn_as_6g_standard?",
+            "choices": [
+              "true",
+              "false",
+              "Rel-20",
+              "optional"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w5-5",
+            "kind": "mcq",
+            "stem": "Heatmap without delay math?",
+            "choices": [
+              "PASS",
+              "Marketing fail",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "wr-w5-6",
+            "kind": "mcq",
+            "stem": "Altitude class?",
+            "choices": [
+              "550 km LEO",
+              "GEO 35786 km",
+              "Wi-Fi",
+              "Undersea"
+            ],
+            "answer_index": 0,
+            "explanation": "LEO."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Channel tap toy \u2014 RMS delay spread on pier railing fixture",
+        "lesson": "Ticket WR-4606: delays_ns=[0,120,350], powers_db=[0,-3,-10]. Compute discrete PDP RMS delay\nspread with linear powers. Lab checks tau_rms_ns within tolerance and tap_count=3.\n\nMultipath is a number, not a vibe. Claiming 'AI beamforming solved multipath' without taps\nfails. PHYSICAL sounding stays PHYSICAL_PENDING.\n\nConsensus Ladder: observed = tap table; inferred = late energy grows \u03c4_rms; still need =\nmeasured sounding. Empty {} fails. Wrong \u03c4_rms fails. PASS raises.\n\nConvert powers_db to linear, form the first and second moments of delay, then take the\nsquare root for \u03c4_rms. Change the last tap power by \u22121 dB as a sensitivity check and\nnote how \u03c4_rms moves. PHYSICAL sounding stays PHYSICAL_PENDING until a real capture\nexists; AI beamforming slogans without taps score zero.\n\nSubmit delays_ns, powers_db, tau_rms_ns, and tap_count=3. Wrong moments fail even when\nthe journal prose is polished.",
+        "worked_example": "Three-tap PDP \u2192 compute tau_rms_ns; tap_count=3.",
+        "assignment": "Compute RMS delay spread for WR-4606. Submit lab_delay_spread.",
+        "lab_id": "lab_delay_spread",
+        "quiz": [
+          {
+            "id": "wr-w6-1",
+            "kind": "mcq",
+            "stem": "Tap count?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "64"
+            ],
+            "answer_index": 2,
+            "explanation": "3."
+          },
+          {
+            "id": "wr-w6-2",
+            "kind": "mcq",
+            "stem": "Powers unit?",
+            "choices": [
+              "dB relative",
+              "watts only",
+              "MCS",
+              "RTT"
+            ],
+            "answer_index": 0,
+            "explanation": "dB."
+          },
+          {
+            "id": "wr-w6-3",
+            "kind": "mcq",
+            "stem": "AI beamforming claim with no taps?",
+            "choices": [
+              "PASS",
+              "Fails week",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "wr-w6-4",
+            "kind": "mcq",
+            "stem": "Sounding status?",
+            "choices": [
+              "DONE",
+              "PHYSICAL_PENDING",
+              "6G auto",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Pending."
+          },
+          {
+            "id": "wr-w6-5",
+            "kind": "mcq",
+            "stem": "First tap delay?",
+            "choices": [
+              "0 ns",
+              "120 ns",
+              "350 ns",
+              "1 ms"
+            ],
+            "answer_index": 0,
+            "explanation": "0."
+          },
+          {
+            "id": "wr-w6-6",
+            "kind": "mcq",
+            "stem": "Need tau_rms_ns?",
+            "choices": [
+              "No",
+              "Yes",
+              "Screenshot only",
+              "AI only"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "AI-RAN control loop \u2014 gated policy, not magic autonomy",
+        "lesson": "Ticket WR-4707: observe KPI window \u2192 propose MCS/PRB action \u2192 human gate \u2192 apply.\nSubmit observe_kpis, proposed_action, human_gate=true, auto_apply_without_gate=false.\nUngated auto-apply fails.\n\nAI-RAN is research/systems with gates \u2014 not pier-wide 6G autonomy. NO_AI quiz week.\nConsensus Ladder: observed = KPI CSV; inferred = actions need gates; still need =\nclosed-loop field trial evidence (not claimed).\n\nWrite the AI-RAN loop as four explicit fields: observe_kpis (list), proposed_action\ncontaining MCS or PRB language, human_gate=true, auto_apply_without_gate=false.\nUngated reinforcement-learning theater fails the validator.\n\nNO_AI quiz week still allows disclosed calculators on the lab JSON. Closed-loop field\ntrial evidence is not claimed; the pier remains RESEARCH_LAB_SCALE.\n\nOn WR-4707, enumerate observe_kpis as concrete CSV column names (bler, prb_util, snr_p50)\nbefore proposing MCS or PRB moves. Document the human gate as a named pier operator role,\nnot a checkbox theater. Auto-apply without that gate must remain false in every submitted\nJSON variant the class practices. Compare one gated proposal against an ungated fantasy\nloop and mark which fields the validator rejects. Keep AI-RAN vocabulary at RESEARCH_LAB_SCALE;\ndo not imply pier-wide closed-loop autonomy from this ticket alone.",
+        "worked_example": "human_gate=true; auto_apply_without_gate=false; action names MCS or PRB.",
+        "assignment": "Author WR-4707 policy JSON. Submit lab_airan_policy.",
+        "lab_id": "lab_airan_policy",
+        "quiz": [
+          {
+            "id": "wr-w7-1",
+            "kind": "mcq",
+            "stem": "auto_apply_without_gate?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w7-2",
+            "kind": "mcq",
+            "stem": "human_gate?",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "vendor"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "wr-w7-3",
+            "kind": "mcq",
+            "stem": "AI-RAN this week?",
+            "choices": [
+              "Magic",
+              "Gated policy on fixtures",
+              "Commercial 6G",
+              "Dump"
+            ],
+            "answer_index": 1,
+            "explanation": "Gated."
+          },
+          {
+            "id": "wr-w7-4",
+            "kind": "mcq",
+            "stem": "Field trial claimed?",
+            "choices": [
+              "Yes",
+              "No \u2014 not claimed",
+              "Rel-20",
+              "Pier-wide"
+            ],
+            "answer_index": 1,
+            "explanation": "Boundary."
+          },
+          {
+            "id": "wr-w7-5",
+            "kind": "mcq",
+            "stem": "Action should name?",
+            "choices": [
+              "Feelings",
+              "MCS or PRB",
+              "6G logo",
+              "GEO"
+            ],
+            "answer_index": 1,
+            "explanation": "Concrete."
+          },
+          {
+            "id": "wr-w7-6",
+            "kind": "mcq",
+            "stem": "Quiz AI mode?",
+            "choices": [
+              "AI dumps",
+              "NO_AI",
+              "Skip",
+              "Auto AI"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Spectrum honesty \u2014 masks and no unauthorized TX",
+        "lesson": "Ticket WR-4808: lab license narrative at 3.5 GHz, OBW 18 MHz. Submit center_ghz, obw_mhz,\nmask_ok, unauthorized_tx=false. Transmitting outside the narrative 'because SDR' fails ethics.\n\nConsensus Ladder: observed = license card; inferred = OBW fits mask; still need = real\nFCC/ITU filings (not fabricated). NO_AI week. No fake auction wins in journals.\n\nSpectrum honesty is an ethics gate: unauthorized_tx=false, center_ghz=3.5, obw_mhz=18,\nmask_ok=true on the narrative card. Transmitting outside the lab narrative 'because\nSDR' fails the course, not just the week.\n\nFabricated FCC/ITU PDF filenames are forbidden. Alignment labels are\nPUBLIC_REFERENCE_ONLY. Journals must not invent auction wins.\n\nFor WR-4808, recompute whether OBW 18 MHz at 3.5 GHz sits inside the narrative mask and\nwrite mask_ok with the inequality you used. List three transmission acts that would set\nunauthorized_tx true even if the SDR UI looks green. Journals that invent auction IDs or\nFCC PDF filenames fail ethics before RF arithmetic is graded. Align labels to\nPUBLIC_REFERENCE_ONLY and keep commercial standardized 6G absent from the claim line.",
+        "worked_example": "center 3.5 GHz, OBW 18 MHz, mask_ok true, unauthorized_tx false.",
+        "assignment": "Submit lab_spectrum_mask for WR-4808. No unauthorized TX.",
+        "lab_id": "lab_spectrum_mask",
+        "quiz": [
+          {
+            "id": "wr-w8-1",
+            "kind": "mcq",
+            "stem": "unauthorized_tx?",
+            "choices": [
+              "true",
+              "false",
+              "maybe",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w8-2",
+            "kind": "mcq",
+            "stem": "OBW?",
+            "choices": [
+              "18 MHz",
+              "100 MHz",
+              "1 GHz",
+              "30 kHz"
+            ],
+            "answer_index": 0,
+            "explanation": "18."
+          },
+          {
+            "id": "wr-w8-3",
+            "kind": "mcq",
+            "stem": "TX outside narrative?",
+            "choices": [
+              "Extra",
+              "Ethics fail",
+              "Required",
+              "AI-RAN"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "wr-w8-4",
+            "kind": "mcq",
+            "stem": "Fabricate FCC filing?",
+            "choices": [
+              "OK",
+              "Forbidden",
+              "Required",
+              "Rel-20"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "wr-w8-5",
+            "kind": "mcq",
+            "stem": "Center?",
+            "choices": [
+              "2.4",
+              "3.5 GHz",
+              "28 only",
+              "60"
+            ],
+            "answer_index": 1,
+            "explanation": "3.5."
+          },
+          {
+            "id": "wr-w8-6",
+            "kind": "mcq",
+            "stem": "mask_ok means?",
+            "choices": [
+              "Ignore OOB",
+              "Fixture mask check passed",
+              "6G cert",
+              "NTN"
+            ],
+            "answer_index": 1,
+            "explanation": "Fixture."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "O-RAN interface map \u2014 vocabulary without fake RIC production",
+        "lesson": "Ticket WR-4909 maps A1/E2/O1/O2 to pier roles. Submit interfaces including A1,E2,O1 and\ndeployed_full_ric=false. Production Near-RT RIC claims without E2 logs fail.\n\nStay RESEARCH_LAB_SCALE. Consensus Ladder: observed = flashcards; inferred = control split\nexists in O-RAN talk; still need = E2 subscription logs (PHYSICAL_PENDING).\n\nFailure mode: noun-swapping a Cloud/DevOps deck. Empty {} fails. PASS raises.\n\nMap A1, E2, and O1 onto pier roles with one sentence each. deployed_full_ric stays\nfalse until E2 subscription logs exist (PHYSICAL_PENDING). Noun-swapping a Cloud or\nDevOps slide deck into O-RAN vocabulary fails the week.\n\nO2 may appear as optional vocabulary but does not unlock a production RIC claim.\nRESEARCH_LAB_SCALE is the only honest size label for WR-4909.\n\nSketch A1 policy advice, E2 near-RT control, and O1/O2 management as separate arrows on\nthe pier whiteboard for WR-4909. Require deployed_full_ric=false until an E2 subscription\nlog path exists. Write one sentence explaining why a Cloud/DevOps deck cannot be\nnoun-swapped into O-RAN interfaces. Cap the honesty note at RESEARCH_LAB_SCALE and refuse\nproduction RIC claims without PHYSICAL_PENDING evidence.",
+        "worked_example": "interfaces include A1,E2,O1; deployed_full_ric=false.",
+        "assignment": "Submit lab_oran_interfaces for WR-4909.",
+        "lab_id": "lab_oran_interfaces",
+        "quiz": [
+          {
+            "id": "wr-w9-1",
+            "kind": "mcq",
+            "stem": "deployed_full_ric?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w9-2",
+            "kind": "mcq",
+            "stem": "E2 here is?",
+            "choices": [
+              "Dump",
+              "Interface vocabulary",
+              "Commercial 6G",
+              "Wi-Fi"
+            ],
+            "answer_index": 1,
+            "explanation": "Vocab."
+          },
+          {
+            "id": "wr-w9-3",
+            "kind": "mcq",
+            "stem": "RIC claim without logs?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "wr-w9-4",
+            "kind": "mcq",
+            "stem": "Scale?",
+            "choices": [
+              "NATIONWIDE",
+              "RESEARCH_LAB_SCALE",
+              "GEO",
+              "CONSUMER_6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Lab."
+          },
+          {
+            "id": "wr-w9-5",
+            "kind": "mcq",
+            "stem": "A1 in map?",
+            "choices": [
+              "Yes",
+              "Never",
+              "NTN only",
+              "Games only"
+            ],
+            "answer_index": 0,
+            "explanation": "Yes."
+          },
+          {
+            "id": "wr-w9-6",
+            "kind": "mcq",
+            "stem": "E2 logs status?",
+            "choices": [
+              "DONE",
+              "PHYSICAL_PENDING",
+              "Fake OK",
+              "Never"
+            ],
+            "answer_index": 1,
+            "explanation": "Pending."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Capstone radio notebook \u2014 no Product-Use unmerged dependency",
+        "lesson": "Ticket WR-4910 assembles FSPL, numerology, MCS, NTN delay, AI-RAN gate, and spectrum digests\ninto one notebook hash. Capstone forbids consuming unmerged Product-Use packages and forbids\nclaiming vendor/3GPP certificates.\n\nSubmit notebook_sha256, includes_commercial_6g_false_statement=true,\nproduct_use_unmerged_consumed=false, labs_passed\u22656.\n\nCareer map: RF lab tech / RAN ops junior \u2014 certs aligned not granted. Accessibility:\ntext-only summary path required; optional plots need alt_text in portfolio JSON.\n\nCapstone notebook hashes prior digests and requires includes_commercial_6g_false_statement\ntrue, product_use_unmerged_consumed false, and labs_passed\u22656. Career map roles are\naligned, not granted. Optional plots need alt_text; a text-only summary path is required.\n\nDo not open device-os PRs from this packet. Do not consume unmerged Product-Use packages\nas a hard dependency for the notebook.",
+        "worked_example": "product_use_unmerged_consumed=false; commercial_6g false statement; labs_passed\u22656.",
+        "assignment": "Ship WR-4910 via lab_radio_capstone. Portfolio + career map.",
+        "lab_id": "lab_radio_capstone",
+        "quiz": [
+          {
+            "id": "wr-w10-1",
+            "kind": "mcq",
+            "stem": "product_use_unmerged_consumed?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "required"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "wr-w10-2",
+            "kind": "mcq",
+            "stem": "commercial_6g false statement included?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "Rel-20"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "wr-w10-3",
+            "kind": "mcq",
+            "stem": "labs_passed min?",
+            "choices": [
+              "1",
+              "3",
+              "6",
+              "100"
+            ],
+            "answer_index": 2,
+            "explanation": "\u22656."
+          },
+          {
+            "id": "wr-w10-4",
+            "kind": "mcq",
+            "stem": "Grants 3GPP cert?",
+            "choices": [
+              "Yes",
+              "No",
+              "After final",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "wr-w10-5",
+            "kind": "mcq",
+            "stem": "Depend on unmerged Product-Use?",
+            "choices": [
+              "Yes",
+              "No",
+              "If QEMU",
+              "If AI"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "wr-w10-6",
+            "kind": "mcq",
+            "stem": "Career certs?",
+            "choices": [
+              "Granted",
+              "Aligned not granted",
+              "Hidden",
+              "Sold"
+            ],
+            "answer_index": 1,
+            "explanation": "Aligned."
+          }
+        ]
+      }
+    ]
+  },
+  "ROBOTICS_CONTROL": {
+    "course_id": "ROBOTICS_CONTROL",
+    "title": "Robotics and Control \u2014 HarborBot Bay",
+    "track_ids": [
+      "ROBOTICS_CONTROL"
+    ],
+    "academy_id": "ACADEMY_HARDWARE",
+    "kinesthetic_hook": "Ten weeks in HarborBot Bay: frames \u2192 2R kinematics \u2192 PID \u2192 traj \u2192 sensing \u2192 E-stop \u2192 diff-drive \u2192 estimation \u2192 message schemas \u2192 safety capstone. Real commands on fixture math.",
+    "syllabus_hook": "Control discipline for a civic pier robot cart: transforms, inverse kinematics checks, PID with anti-windup notes, trajectory limits, noise-aware sensing, and hard E-stop policy. ROS topic names are alignment vocabulary only \u2014 no claiming a full robot fleet deploy.",
+    "career": {
+      "roles": [
+        "robotics_technician",
+        "controls_junior",
+        "automation_apprentice"
+      ],
+      "nice_categories": [
+        "build_and_deploy",
+        "analyze"
+      ],
+      "certs_aligned_not_granted": [
+        "FANUC/ABB operator topic labels (PUBLIC_REFERENCE_ONLY)",
+        "OSHA machine-guarding awareness labels (not a license)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "HarborBot frames \u2014 SE(2) pose without cinematic hype",
+        "lesson": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.\n\nLab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PASS raises.\n\nConsensus Ladder: observed = tape origin and tool offset; inferred = rotation mixes x/y;\nstill need = wheel slip model (later). Accessibility: ASCII frame diagrams required in journals.\n\nTape the pier origin, mark +x along the aisle, and sketch the tool offset arrow before\nany code. With theta=\u03c0/2, show how the offset rotates into pier axes using cos/sin.\nJournals without an ASCII frame diagram fail accessibility expectations for HarborBot.\n\nRefuse 'AI nabbed the box' narratives that skip the SE(2) fields. Lab JSON must carry\nx, y, theta, tool offsets, and mapped tool_x/tool_y that match the rotation math.",
+        "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos.",
+        "assignment": "Compute RB-5101 pose/tool map. Submit lab_se2_pose.",
+        "lab_id": "lab_se2_pose",
+        "quiz": [
+          {
+            "id": "rb-w1-1",
+            "kind": "mcq",
+            "stem": "Pose fields?",
+            "choices": [
+              "x,y,theta",
+              "RGB only",
+              "MCS",
+              "FSPL"
+            ],
+            "answer_index": 0,
+            "explanation": "SE2."
+          },
+          {
+            "id": "rb-w1-2",
+            "kind": "mcq",
+            "stem": "Units?",
+            "choices": [
+              "m and rad",
+              "deg only",
+              "pixels",
+              "dB"
+            ],
+            "answer_index": 0,
+            "explanation": "SI."
+          },
+          {
+            "id": "rb-w1-3",
+            "kind": "mcq",
+            "stem": "Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w1-4",
+            "kind": "mcq",
+            "stem": "AI nabbed-box claim without frames?",
+            "choices": [
+              "OK",
+              "Fails week",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w1-5",
+            "kind": "mcq",
+            "stem": "Journal needs?",
+            "choices": [
+              "ASCII frame diagram",
+              "Only TikTok",
+              "Only GPU",
+              "6G"
+            ],
+            "answer_index": 0,
+            "explanation": "A11y."
+          },
+          {
+            "id": "rb-w1-6",
+            "kind": "mcq",
+            "stem": "print PASS?",
+            "choices": [
+              "OK",
+              "Raises",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "2R kinematics \u2014 reachability before torque myths",
+        "lesson": "Ticket RB-5202: planar 2R arm with L1=0.35 m, L2=0.30 m. Forward kinematics to a target and\na reachability flag when hypot(x,y) > L1+L2. Lab checks x,y, reachable.\n\nConsensus Ladder: observed = link lengths; inferred = workspace is an annulus/disk bound;\nstill need = joint limits map. Failure: claiming infinite reach because 'servos are strong.'\n\nPlot the reachable disk of radius L1+L2=0.65 m and mark a forbidden point beyond it.\nForward kinematics must report both Cartesian tip and reachable=false when outside.\nStrong-servo myths do not enlarge the workspace.\n\nJoint-limit maps stay in 'still need'. Learners defend L1/L2 numbers from the fixture\ncard, not from a cinematic robot trailer.\n\nFor RB-5202, compute tip pose at \u03b81=0.4 rad, \u03b82=\u22120.2 rad with L1=0.35, L2=0.30 and mark\nreachable vs hypot(x,y)>0.65. Include a second target beyond the disk and show\nreachable=false without inventing extra link length. Defend L1/L2 from the fixture card\nonly; cinematic reach claims are out of scope. Joint-limit maps stay listed under still-need.",
+        "worked_example": "L1=0.35, L2=0.30; point beyond 0.65 m \u2192 reachable=false.",
+        "assignment": "FK + reachability for RB-5202. Submit lab_fk_2r.",
+        "lab_id": "lab_fk_2r",
+        "quiz": [
+          {
+            "id": "rb-w2-1",
+            "kind": "mcq",
+            "stem": "Max reach L1+L2?",
+            "choices": [
+              "0.65 m",
+              "0.05 m",
+              "2 m",
+              "65 m"
+            ],
+            "answer_index": 0,
+            "explanation": "Sum."
+          },
+          {
+            "id": "rb-w2-2",
+            "kind": "mcq",
+            "stem": "Beyond max reach?",
+            "choices": [
+              "reachable true",
+              "reachable false",
+              "Ignore",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "False."
+          },
+          {
+            "id": "rb-w2-3",
+            "kind": "mcq",
+            "stem": "Strong servos imply infinite reach?",
+            "choices": [
+              "Yes",
+              "No",
+              "Sometimes",
+              "Always"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "rb-w2-4",
+            "kind": "mcq",
+            "stem": "Lab needs FK x,y?",
+            "choices": [
+              "No",
+              "Yes",
+              "Screenshot",
+              "Audio"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          },
+          {
+            "id": "rb-w2-5",
+            "kind": "mcq",
+            "stem": "L2 length?",
+            "choices": [
+              "0.30 m",
+              "3 m",
+              "30 cm only labeled wrong",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.30."
+          },
+          {
+            "id": "rb-w2-6",
+            "kind": "mcq",
+            "stem": "Joint limits this week?",
+            "choices": [
+              "Fully mapped",
+              "Still need later",
+              "Deleted",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Later."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "PID on a fixture plant \u2014 gains with anti-windup note",
+        "lesson": "Ticket RB-5303: discrete PID on e=[1.0,0.6,0.2] with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.\nCompute u for the last step with simple rectangular integral and backward diff. Include\nanti_windup_note length \u22658 when integral magnitude is large.\n\nConsensus Ladder: observed = error series; inferred = D term reacts to slope; still need =\nreal motor plant ID. Empty fails. Wrong u fails.\n\nExpand the PID step: integrate the error series with rectangular rule, form the\nbackward difference for D, and compute u on the last sample. When |integral| is large,\nanti_windup_note must be a real mitigation sentence (\u22658 characters), not an empty string.\n\nPlant identification remains unfinished. Wrong u fails even if the motor 'sounds right'\non a phone video.\n\nWalk RB-5303 with the full e series [1.0,0.6,0.2], accumulate rectangular integral, form\nbackward \u0394e/dt, and publish u for the last sample with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.\nWhen |integral| grows, anti_windup_note must name a mitigation (clamp, back-calculation)\nin \u22658 characters. Wrong u fails even if a phone video of the motor looks smooth.",
+        "worked_example": "Compute u_last from fixture gains; document anti-windup note.",
+        "assignment": "PID step for RB-5303. Submit lab_pid_step.",
+        "lab_id": "lab_pid_step",
+        "quiz": [
+          {
+            "id": "rb-w3-1",
+            "kind": "mcq",
+            "stem": "dt on fixture?",
+            "choices": [
+              "0.1",
+              "1.0",
+              "10",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.1."
+          },
+          {
+            "id": "rb-w3-2",
+            "kind": "mcq",
+            "stem": "Kp?",
+            "choices": [
+              "1.2",
+              "12",
+              "0",
+              "100"
+            ],
+            "answer_index": 0,
+            "explanation": "1.2."
+          },
+          {
+            "id": "rb-w3-3",
+            "kind": "mcq",
+            "stem": "Missing anti_windup when needed?",
+            "choices": [
+              "OK",
+              "Fails check",
+              "Extra",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w3-4",
+            "kind": "mcq",
+            "stem": "Plant ID claimed done?",
+            "choices": [
+              "Yes",
+              "No \u2014 still need",
+              "Always",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "rb-w3-5",
+            "kind": "mcq",
+            "stem": "Week 3 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w3-6",
+            "kind": "mcq",
+            "stem": "D term uses?",
+            "choices": [
+              "Error slope",
+              "FSPL",
+              "MCS",
+              "BLER"
+            ],
+            "answer_index": 0,
+            "explanation": "Slope."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Trajectory limits \u2014 vmax/amax before cinematic paths",
+        "lesson": "Ticket RB-5404: move 1.2 m with vmax=0.4 m/s and amax=0.5 m/s\u00b2. Compute minimum time for a\ntrapezoid/triangle profile bound and reject path_ok if commanded speed exceeds vmax.\n\nNO_AI week. Consensus Ladder: observed = limits card; inferred = time bounded by v/a;\nstill need = curvature limits. Failure: spline that ignores vmax 'because it looks smooth.'\n\nFor distance 1.2 m, vmax=0.4, amax=0.5, derive whether the profile is triangle or\ntrapezoid, then compute t_min. path_ok is false when cmd_speed exceeds vmax. Smooth\nsplines that ignore limits fail the NO_AI week.\n\nCurvature limits are deferred. Whiteboard the numbers; screenshots of path planners\nwithout t_min/path_ok fields do not pass.\n\nOn RB-5404, decide triangle vs trapezoid for 1.2 m with vmax=0.4 and amax=0.5, then compute\nt_min from the chosen profile. Set path_ok false for any cmd_speed>vmax and explain the\nreject in one sentence. NO_AI week: hand-derive on paper; GUI path screenshots without\nt_min/path_ok fields do not pass. Curvature limits remain deferred.",
+        "worked_example": "Distance 1.2 m, vmax 0.4, amax 0.5 \u2192 compute t_min; path_ok respects vmax.",
+        "assignment": "Trajectory limit check RB-5404. Submit lab_traj_limits. NO_AI.",
+        "lab_id": "lab_traj_limits",
+        "quiz": [
+          {
+            "id": "rb-w4-1",
+            "kind": "mcq",
+            "stem": "vmax?",
+            "choices": [
+              "0.4 m/s",
+              "4 m/s",
+              "40",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.4."
+          },
+          {
+            "id": "rb-w4-2",
+            "kind": "mcq",
+            "stem": "Ignore vmax for smooth look?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w4-3",
+            "kind": "mcq",
+            "stem": "AI mode?",
+            "choices": [
+              "AI dumps",
+              "NO_AI",
+              "Skip",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "rb-w4-4",
+            "kind": "mcq",
+            "stem": "Distance?",
+            "choices": [
+              "1.2 m",
+              "12 m",
+              "0.12",
+              "120"
+            ],
+            "answer_index": 0,
+            "explanation": "1.2."
+          },
+          {
+            "id": "rb-w4-5",
+            "kind": "mcq",
+            "stem": "amax?",
+            "choices": [
+              "0.5",
+              "5",
+              "50",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.5."
+          },
+          {
+            "id": "rb-w4-6",
+            "kind": "mcq",
+            "stem": "Curvature limits?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Deleted",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Later."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Sensor noise \u2014 mean/std and reject wild outliers",
+        "lesson": "Ticket RB-5505: lidar range samples [1.01,1.00,0.99,1.02,3.50] m. Compute mean/std after\ndropping values beyond 1.5\u00d7IQR or a hard gate >2.0 m. Lab checks cleaned_n, mean, outlier_dropped.\n\nConsensus Ladder: observed = samples; inferred = 3.50 is outlier for pier aisle; still need =\ncalibrated bias. Failure: trusting raw max as truth.\n\nApply the hard gate (>2.0 m drop) to the lidar list and recompute mean on the cleaned\nset. outlier_dropped must be true when 3.50 is removed. Trusting the raw maximum as\naisle truth fails sensing discipline.\n\nBias calibration remains a later ladder rung. Empty submissions fail student_artifact.\n\nClean RB-5505 lidar [1.01,1.00,0.99,1.02,3.50] with the >2.0 m hard gate, recompute mean\nand cleaned_n, and set outlier_dropped true when 3.50 is removed. Show why trusting the\nraw max as aisle truth breaks sensing discipline. Bias calibration stays on the still-need\nrung; empty student_artifact still fails.",
+        "worked_example": "Drop 3.50; cleaned_n=4; mean\u22481.005.",
+        "assignment": "Clean RB-5505 samples. Submit lab_sensor_noise.",
+        "lab_id": "lab_sensor_noise",
+        "quiz": [
+          {
+            "id": "rb-w5-1",
+            "kind": "mcq",
+            "stem": "Outlier in fixture?",
+            "choices": [
+              "3.50",
+              "1.00",
+              "0.99",
+              "1.02"
+            ],
+            "answer_index": 0,
+            "explanation": "3.50."
+          },
+          {
+            "id": "rb-w5-2",
+            "kind": "mcq",
+            "stem": "cleaned_n after drop?",
+            "choices": [
+              "5",
+              "4",
+              "1",
+              "0"
+            ],
+            "answer_index": 1,
+            "explanation": "4."
+          },
+          {
+            "id": "rb-w5-3",
+            "kind": "mcq",
+            "stem": "Trust raw max always?",
+            "choices": [
+              "Yes",
+              "No",
+              "AI yes",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "rb-w5-4",
+            "kind": "mcq",
+            "stem": "Bias calibration?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Impossible",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "rb-w5-5",
+            "kind": "mcq",
+            "stem": "Week 5 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w5-6",
+            "kind": "mcq",
+            "stem": "Hard gate example?",
+            "choices": [
+              ">2.0 m drop",
+              "Drop all",
+              "Keep 3.50",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "Gate."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "E-stop policy \u2014 hard interrupt beats soft hope",
+        "lesson": "Ticket RB-5606: E-stop must assert motors_disabled=true, brake_engaged=true, and\nresume_requires_human=true. Software 'slow down' without disable fails.\n\nConsensus Ladder: observed = E-stop wiring card; inferred = safety power path; still need =\nSIL certification (not claimed). Ethics: never bypass E-stop for a demo video.\n\nE-stop is hard: motors_disabled, brake_engaged, and resume_requires_human all true.\nSoft 'slow down eventually' stories fail. Bypass for demo video is an ethics fail, not\na style choice. SIL certification is not claimed by this course.\n\nPractice the printable large-text E-stop sheet path even when the cart is powered down\nfor the classroom tabletop.\n\nAssert RB-5606 E-stop fields motors_disabled, brake_engaged, and resume_requires_human\nas a triple-true contract. Contrast against a soft 'slow eventually' story that must fail.\nNote that demo-video bypass is an ethics fail, and SIL certification is not claimed.\nKeep the printable large-text E-stop sheet in the student packet path for tabletop drills.",
+        "worked_example": "motors_disabled, brake_engaged, resume_requires_human all true.",
+        "assignment": "E-stop policy JSON for RB-5606. Submit lab_estop_policy.",
+        "lab_id": "lab_estop_policy",
+        "quiz": [
+          {
+            "id": "rb-w6-1",
+            "kind": "mcq",
+            "stem": "motors_disabled?",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "rb-w6-2",
+            "kind": "mcq",
+            "stem": "Soft slowdown only?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w6-3",
+            "kind": "mcq",
+            "stem": "resume_requires_human?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "bot"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "rb-w6-4",
+            "kind": "mcq",
+            "stem": "Bypass for demo video?",
+            "choices": [
+              "OK",
+              "Ethics fail",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w6-5",
+            "kind": "mcq",
+            "stem": "SIL claimed?",
+            "choices": [
+              "Yes",
+              "No \u2014 not claimed",
+              "Auto",
+              "Always"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "rb-w6-6",
+            "kind": "mcq",
+            "stem": "brake_engaged?",
+            "choices": [
+              "true",
+              "false",
+              "maybe",
+              "skip"
+            ],
+            "answer_index": 0,
+            "explanation": "true."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Diff-drive ICC \u2014 wheel speeds to body twist",
+        "lesson": "Ticket RB-5707: wheel base B=0.40 m, r=0.05 m, wheel rates \u03c9_l, \u03c9_r. Compute v and \u03c9_body.\nLab checks v, omega, and rejects if someone sets B=0.\n\nConsensus Ladder: observed = encoder rates; inferred = ICC geometry; still need = slip\ncompensation. Wrong kinematics fail even if the cart 'looks right' on video.\n\nDiff-drive: v=(r/2)(\u03c9_l+\u03c9_r), \u03c9=(r/B)(\u03c9_r\u2212\u03c9_l) with B>0. B=0 is rejected before any\ndivision. Video of the cart without v/omega fields is insufficient evidence.\n\nSlip compensation stays in 'still need'. Encoder rates come from the fixture, not from\ninvented fleet telemetry.\n\nDerive RB-5707 v=(r/2)(\u03c9_l+\u03c9_r) and \u03c9=(r/B)(\u03c9_r\u2212\u03c9_l) with B=0.40, r=0.05 and reject B=0\nbefore division. Publish finite v and omega from fixture encoder rates only. Video without\nthose fields is insufficient. Slip compensation remains still-need; invented fleet\ntelemetry is forbidden. Work a second numeric pair (\u03c9_l=2.0, \u03c9_r=2.4) on the whiteboard\nand show how \u03c9_body changes sign when the wheel rates swap, still with B>0 enforced.",
+        "worked_example": "v=(r/2)*(\u03c9_l+\u03c9_r); \u03c9=(r/B)*(\u03c9_r-\u03c9_l).",
+        "assignment": "Diff-drive map RB-5707. Submit lab_diff_drive.",
+        "lab_id": "lab_diff_drive",
+        "quiz": [
+          {
+            "id": "rb-w7-1",
+            "kind": "mcq",
+            "stem": "Wheel base B?",
+            "choices": [
+              "0.40 m",
+              "4 m",
+              "40",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.40."
+          },
+          {
+            "id": "rb-w7-2",
+            "kind": "mcq",
+            "stem": "B=0 allowed?",
+            "choices": [
+              "Yes",
+              "No \u2014 reject",
+              "Required",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Reject."
+          },
+          {
+            "id": "rb-w7-3",
+            "kind": "mcq",
+            "stem": "v formula uses?",
+            "choices": [
+              "\u03c9_l+\u03c9_r",
+              "FSPL",
+              "MCS",
+              "BLER"
+            ],
+            "answer_index": 0,
+            "explanation": "Sum."
+          },
+          {
+            "id": "rb-w7-4",
+            "kind": "mcq",
+            "stem": "Video-only proof?",
+            "choices": [
+              "Enough",
+              "Not enough without math",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Math."
+          },
+          {
+            "id": "rb-w7-5",
+            "kind": "mcq",
+            "stem": "r?",
+            "choices": [
+              "0.05 m",
+              "0.5",
+              "5",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "0.05."
+          },
+          {
+            "id": "rb-w7-6",
+            "kind": "mcq",
+            "stem": "Slip compensation?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Deleted",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Later."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "State estimation toy \u2014 fuse odom + range with covariance honesty",
+        "lesson": "Ticket RB-5808: scalar fuse x_odom and x_range with variances. Compute Kalman-ish gain\nK = p/(p+r) and x_hat. Lab checks K, x_hat, and refuses cov_zero_lie=true.\n\nConsensus Ladder: observed = two measurements; inferred = lower variance dominates;\nstill need = full EKF on SE2. Failure: claiming perfect certainty (P=0).\n\nScalar fuse uses K=p/(p+r) and refuses cov_zero_lie. Walk a numeric example with\np=0.04, r=0.01 and show how lower variance pulls x_hat. Full SE(2) EKF is not claimed\nafter this toy.\n\nFinite K and two measurements are required; certainty theater fails honesty.\n\nFor RB-5808, compute K=p/(p+r) with p=0.04, r=0.01, form x_hat, and refuse cov_zero_lie.\nShow how the lower-variance measurement pulls the estimate. State explicitly that full\nSE(2) EKF is not earned by this scalar toy. Certainty theater (P=0) fails honesty.\nRepeat with p=0.09, r=0.01 and note how K shrinks when prior variance rises, still\nrefusing any submission that asserts zero covariance as a lie flag.\n\nPlot K versus r for fixed p=0.04 across r in {0.01,0.04,0.16} and write one sentence on why\ncov_zero_lie cannot be true for any of those points on RB-5808.",
+        "worked_example": "K=p/(p+r); x_hat = x_odom + K*(x_range-x_odom); no zero-cov lie.",
+        "assignment": "Fuse RB-5808. Submit lab_fuse_scalar.",
+        "lab_id": "lab_fuse_scalar",
+        "quiz": [
+          {
+            "id": "rb-w8-1",
+            "kind": "mcq",
+            "stem": "K formula?",
+            "choices": [
+              "p/(p+r)",
+              "p*r",
+              "1",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "Kalman."
+          },
+          {
+            "id": "rb-w8-2",
+            "kind": "mcq",
+            "stem": "P=0 certainty claim?",
+            "choices": [
+              "OK",
+              "Fails cov honesty",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w8-3",
+            "kind": "mcq",
+            "stem": "Full EKF claimed?",
+            "choices": [
+              "Yes",
+              "No \u2014 still need",
+              "Always",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "rb-w8-4",
+            "kind": "mcq",
+            "stem": "Week 8 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w8-5",
+            "kind": "mcq",
+            "stem": "Lower variance does?",
+            "choices": [
+              "Ignored",
+              "Dominates fuse",
+              "Deletes robot",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Dominates."
+          },
+          {
+            "id": "rb-w8-6",
+            "kind": "mcq",
+            "stem": "Week 8 ticket context: print PASS?",
+            "choices": [
+              "OK",
+              "Raises",
+              "Half",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Message schemas \u2014 /cmd_vel shaped fixtures without fleet claims",
+        "lesson": "Ticket RB-5909: validate a cmd_vel-shaped JSON with linear.x and angular.z finite, and\nframe_id='base_link'. Claiming a 50-robot Harbor fleet deploy fails.\n\nNO_AI week. Consensus Ladder: observed = schema card; inferred = units m/s and rad/s;\nstill need = DDS/ROS distro pin (not claimed as production).\n\ncmd_vel-shaped JSON needs finite linear_x/angular_z and frame_id=base_link.\nfleet_claim=false. NaNs fail. NO_AI week: hand-author the schema. Production DDS/ROS\ndistro pins are not granted by schema vocabulary alone.\n\nHand-author RB-5909 cmd_vel JSON with finite linear_x, angular_z, and frame_id=base_link.\nfleet_claim must be false; NaNs fail. NO_AI week forbids generative schema dumps.\nProduction DDS/ROS distro pins are not granted by vocabulary alone. Add a negative case\nwith angular_z=null and show the validator reject text the pier expects learners to cite.\n\nDocument a second negative for RB-5909: linear_x set to NaN while angular_z is finite, and show\nthat fleet_claim must remain false even if a slide deck claims fifty harbor robots. Cite the\nschema card fields by name in the journal so the reject is reproducible without a GUI.",
+        "worked_example": "linear.x + angular.z finite; frame_id base_link; fleet_claim=false.",
+        "assignment": "Schema check RB-5909. Submit lab_cmd_vel_schema. NO_AI.",
+        "lab_id": "lab_cmd_vel_schema",
+        "quiz": [
+          {
+            "id": "rb-w9-1",
+            "kind": "mcq",
+            "stem": "frame_id?",
+            "choices": [
+              "base_link",
+              "map_ai",
+              "6G",
+              "geo"
+            ],
+            "answer_index": 0,
+            "explanation": "base_link."
+          },
+          {
+            "id": "rb-w9-2",
+            "kind": "mcq",
+            "stem": "Fleet deploy claim?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w9-3",
+            "kind": "mcq",
+            "stem": "Week 9 ticket context: AI mode?",
+            "choices": [
+              "AI dumps",
+              "NO_AI",
+              "Skip",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "rb-w9-4",
+            "kind": "mcq",
+            "stem": "Week 9 ticket context: Units?",
+            "choices": [
+              "m/s and rad/s",
+              "deg only",
+              "dB",
+              "MCS"
+            ],
+            "answer_index": 0,
+            "explanation": "SI."
+          },
+          {
+            "id": "rb-w9-5",
+            "kind": "mcq",
+            "stem": "NaN angular.z?",
+            "choices": [
+              "OK",
+              "Fails finite check",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "rb-w9-6",
+            "kind": "mcq",
+            "stem": "Production DDS pin claimed?",
+            "choices": [
+              "Yes",
+              "No \u2014 not claimed",
+              "Always",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Capstone safety packet \u2014 E-stop + traj + fuse evidence",
+        "lesson": "Ticket RB-5910: assemble E-stop policy, traj limits, and fuse result digests. Capstone\nrequires estop_ok=true, labs_passed\u22656, and no_device_os_pr=true (do not open device-os PRs).\n\nCareer map: robotics technician / controls junior. Accessibility: emergency procedure\nsheet must be printable large-text. Portfolio forbids fabricated injury statistics.\n\nCapstone packet requires estop_ok=true, labs_passed\u22656, no_device_os_pr=true, and a\npacket_sha256. Fabricated injury statistics are forbidden. Career map: robotics\ntechnician / controls junior \u2014 aligned, not granted.\n\nLarge-text E-stop procedure must remain in the portfolio folder.\n\nAssemble RB-5910 with estop_ok=true, labs_passed\u22656, no_device_os_pr=true, and packet_sha256.\nForbid fabricated injury statistics. Keep career mapping as robotics technician / controls\njunior \u2014 aligned, not granted \u2014 and retain the large-text E-stop procedure in portfolio.",
+        "worked_example": "estop_ok true; labs_passed\u22656; no_device_os_pr true.",
+        "assignment": "Ship RB-5910 via lab_robot_capstone. Portfolio + career map.",
+        "lab_id": "lab_robot_capstone",
+        "quiz": [
+          {
+            "id": "rb-w10-1",
+            "kind": "mcq",
+            "stem": "estop_ok?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "ai"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "rb-w10-2",
+            "kind": "mcq",
+            "stem": "labs_passed min?",
+            "choices": [
+              "1",
+              "3",
+              "6",
+              "100"
+            ],
+            "answer_index": 2,
+            "explanation": "\u22656."
+          },
+          {
+            "id": "rb-w10-3",
+            "kind": "mcq",
+            "stem": "Open device-os PR from this course?",
+            "choices": [
+              "Yes",
+              "No",
+              "Optional",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "rb-w10-4",
+            "kind": "mcq",
+            "stem": "Fabricate injury stats?",
+            "choices": [
+              "OK",
+              "Forbidden",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "rb-w10-5",
+            "kind": "mcq",
+            "stem": "Career certs?",
+            "choices": [
+              "Granted",
+              "Aligned not granted",
+              "Hidden",
+              "Sold"
+            ],
+            "answer_index": 1,
+            "explanation": "Aligned."
+          },
+          {
+            "id": "rb-w10-6",
+            "kind": "mcq",
+            "stem": "E-stop sheet format?",
+            "choices": [
+              "Large-text printable",
+              "Tiny GIF only",
+              "Audio only",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "A11y."
+          }
+        ]
+      }
+    ]
+  },
+  "GAME_DEV_INTERACTIVE": {
+    "course_id": "GAME_DEV_INTERACTIVE",
+    "title": "Game Development \u2014 Forge Arcade Studio",
+    "track_ids": [
+      "GAME_DEV_INTERACTIVE"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Ten Forge Arcade weeks: game loop \u2192 AABB \u2192 audio clock \u2192 entities \u2192 levels \u2192 input \u2192 optional four-game case studies \u2192 playtest metrics \u2192 a11y \u2192 ship checklist. Case studies are optional; not dependent on unmerged game branches.",
+    "syllabus_hook": "Build interactive media with runnable validators: fixed timestep honesty, collision math, beat clocks, entity state, and accessibility. Optional case studies may reference four titled games (anime-aggressors, beatlink-party, earth-species, foot-racing) as PUBLIC examples without requiring those repos to be merged.",
+    "career": {
+      "roles": [
+        "gameplay_programmer_junior",
+        "technical_artist_apprentice",
+        "qa_playtest_tech"
+      ],
+      "nice_categories": [
+        "build_and_deploy",
+        "create"
+      ],
+      "certs_aligned_not_granted": [
+        "Unity Certified Associate topic labels (PUBLIC_REFERENCE_ONLY)",
+        "Godot fundamentals topic labels (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        5,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Game loop \u2014 fixed dt honesty on Forge Arcade",
+        "lesson": "Ticket GA-6101: fixed timestep dt=1/60 with accumulator pattern. Lab checks dt, steps,\nspiral_of_death_guard=true when frame_time exceeds 0.25 s clamp. Variable rendering may\ninterpolate; simulation steps stay fixed.\n\nConsensus Ladder: observed = clock card; inferred = fixed dt stabilizes physics; still need =\nprofiling on target handheld (PHYSICAL_PENDING). Failure: 'just use delta everywhere' without guard.\n\nImplement the accumulator mental model: fixed dt=1/60, clamp spiral when frame_time\nexceeds 0.25 s, keep spiral_of_death_guard true on the reference path. Variable render\ninterpolation is allowed; simulation steps stay fixed.\n\nHandheld profiling remains PHYSICAL_PENDING. 'Just use delta everywhere' without a\nguard fails the loop contract.\n\nOn GA-6101, simulate three frame_time samples (0.016, 0.040, 0.30) through the accumulator\nwith dt=1/60 and show when spiral_of_death_guard clamps. Keep simulation steps fixed while\nallowing render interpolation. Handheld profiling stays PHYSICAL_PENDING; delta-everywhere\nwithout a guard fails the loop contract.",
+        "worked_example": "dt=1/60; clamp frame_time; spiral_of_death_guard true.",
+        "assignment": "Implement GA-6101 loop JSON. Submit lab_game_loop.",
+        "lab_id": "lab_game_loop",
+        "quiz": [
+          {
+            "id": "ga-w1-1",
+            "kind": "mcq",
+            "stem": "dt?",
+            "choices": [
+              "1/60",
+              "1",
+              "0",
+              "60"
+            ],
+            "answer_index": 0,
+            "explanation": "Fixed."
+          },
+          {
+            "id": "ga-w1-2",
+            "kind": "mcq",
+            "stem": "spiral_of_death_guard?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "ai"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w1-3",
+            "kind": "mcq",
+            "stem": "Variable dt only forever?",
+            "choices": [
+              "Best",
+              "Fails discipline",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w1-4",
+            "kind": "mcq",
+            "stem": "Handheld profiling?",
+            "choices": [
+              "DONE",
+              "PHYSICAL_PENDING",
+              "Skip",
+              "Fake OK"
+            ],
+            "answer_index": 1,
+            "explanation": "Pending."
+          },
+          {
+            "id": "ga-w1-5",
+            "kind": "mcq",
+            "stem": "Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w1-6",
+            "kind": "mcq",
+            "stem": "print PASS?",
+            "choices": [
+              "OK",
+              "Raises",
+              "Half",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "AABB collision \u2014 overlap math before particle fireworks",
+        "lesson": "Ticket GA-6202: two AABBs. Compute overlap on x and y; hit if both overlap. Lab checks\nhit, overlap_x, overlap_y. Failure: particle VFX as 'proof' of collision without math.\n\nConsensus Ladder: observed = rects; inferred = separating-axis for AABB; still need = swept\ntests for tunnels. Empty fails.\n\nCompute overlap_x and overlap_y explicitly; hit requires both positive. Particle VFX\ncannot replace the arithmetic. Swept tests for tunneling stay in 'still need'.\n\nSubmit both rectangles and the overlap fields. Empty {} fails. Wrong signs fail.\n\nCompute GA-6202 overlap_x and overlap_y for two axis-aligned boxes with deliberate miss and\nhit cases; require both overlaps positive for hit. Particle VFX cannot replace the signs.\nSwept tunneling tests remain still-need. Empty {} and wrong signs fail the lab. Include a\nthird rectangle pair where overlap_x>0 but overlap_y\u22640 and mark hit=false with the arithmetic\nwritten beside the boxes.",
+        "worked_example": "hit = overlap_x and overlap_y; report both overlaps.",
+        "assignment": "AABB test GA-6202. Submit lab_aabb_hit.",
+        "lab_id": "lab_aabb_hit",
+        "quiz": [
+          {
+            "id": "ga-w2-1",
+            "kind": "mcq",
+            "stem": "Hit requires?",
+            "choices": [
+              "Both axis overlaps",
+              "One axis",
+              "VFX",
+              "Audio"
+            ],
+            "answer_index": 0,
+            "explanation": "Both."
+          },
+          {
+            "id": "ga-w2-2",
+            "kind": "mcq",
+            "stem": "VFX-only proof?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w2-3",
+            "kind": "mcq",
+            "stem": "Swept tests?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Deleted",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Later."
+          },
+          {
+            "id": "ga-w2-4",
+            "kind": "mcq",
+            "stem": "Week 2 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w2-5",
+            "kind": "mcq",
+            "stem": "overlap_x needed?",
+            "choices": [
+              "No",
+              "Yes",
+              "Screenshot",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          },
+          {
+            "id": "ga-w2-6",
+            "kind": "mcq",
+            "stem": "AABB means?",
+            "choices": [
+              "Axis-aligned box",
+              "Sphere only",
+              "Mesh only",
+              "Audio bus"
+            ],
+            "answer_index": 0,
+            "explanation": "Box."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Audio clock \u2014 beat grid without pirated sample packs",
+        "lesson": "Ticket GA-6303: BPM=120 \u2192 beat period 0.5 s. Map t=1.25 s to beat index and phase.\nlicense_ok must be true; pirated_sample_pack=false.\n\nConsensus Ladder: observed = BPM card; inferred = phase in [0,1); still need = device latency\ncalibration. Failure: cracked sample libraries in the portfolio.\n\nBPM 120 \u2192 period 0.5 s. Map t=1.25 to beat_index=2 and phase=0.5. license_ok true and\npirated_sample_pack false are hard gates. Cracked sample libraries in the portfolio\nfail the week regardless of beat math.\n\nDevice latency calibration remains unfinished; do not invent millisecond offsets.\n\nMap GA-6303 t=1.25 at BPM 120 to beat_index and phase with period 0.5 s. Enforce\nlicense_ok true and pirated_sample_pack false as hard gates. Cracked sample packs fail\nregardless of beat math. Do not invent device-latency millisecond offsets this week.\nAlso map t=0.0 and t=2.0 and show beat_index continuity without claiming a DAW license.",
+        "worked_example": "BPM 120 \u2192 period 0.5; t=1.25 \u2192 beat 2 with phase 0.5.",
+        "assignment": "Beat map GA-6303. Submit lab_beat_clock. No piracy.",
+        "lab_id": "lab_beat_clock",
+        "quiz": [
+          {
+            "id": "ga-w3-1",
+            "kind": "mcq",
+            "stem": "Period @120 BPM?",
+            "choices": [
+              "0.5 s",
+              "1 s",
+              "2 s",
+              "0.12"
+            ],
+            "answer_index": 0,
+            "explanation": "60/BPM."
+          },
+          {
+            "id": "ga-w3-2",
+            "kind": "mcq",
+            "stem": "pirated_sample_pack?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "required"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "ga-w3-3",
+            "kind": "mcq",
+            "stem": "license_ok?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "crack"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w3-4",
+            "kind": "mcq",
+            "stem": "t=1.25 beat index?",
+            "choices": [
+              "0",
+              "1",
+              "2",
+              "5"
+            ],
+            "answer_index": 2,
+            "explanation": "2."
+          },
+          {
+            "id": "ga-w3-5",
+            "kind": "mcq",
+            "stem": "Latency calibration?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Skip",
+              "Fake"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "ga-w3-6",
+            "kind": "mcq",
+            "stem": "Cracked packs in portfolio?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Entity state \u2014 finite states with illegal transition reject",
+        "lesson": "Ticket GA-6404: states Idle\u2192Run\u2192Jump\u2192Idle. Reject Jump\u2192Run without Idle/land if table forbids.\nLab checks transition_ok and state_after.\n\nConsensus Ladder: observed = transition table; inferred = illegal edges must hard-fail;\nstill need = animation blend trees. Failure: boolean soup without a table.\n\nAuthor the transition table and reject illegal Jump\u2192Run if the fixture forbids it.\ntransition_ok and state_after must match legality. Boolean soups without a table fail.\n\nAnimation blend trees are not claimed done after FSM week.\n\nAuthor GA-6404 transition table rows and reject illegal Jump\u2192Run when the fixture forbids\nit. Publish transition_ok and state_after that match legality. Boolean soups without a\ntable fail. Animation blend trees are not claimed complete after FSM week. Add Idle\u2192Jump\nas a legal row and document the guard condition in one sentence next to the table.\n\nAdd a legal Run\u2192Idle transition beside the illegal Jump\u2192Run row so learners contrast guards\nrather than memorizing a single boolean.",
+        "worked_example": "Only legal edges pass; illegal Jump\u2192Run fails transition_ok.",
+        "assignment": "State machine GA-6404. Submit lab_entity_fsm.",
+        "lab_id": "lab_entity_fsm",
+        "quiz": [
+          {
+            "id": "ga-w4-1",
+            "kind": "mcq",
+            "stem": "Illegal edge should?",
+            "choices": [
+              "Pass",
+              "Fail transition_ok",
+              "Skip",
+              "AI fix"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w4-2",
+            "kind": "mcq",
+            "stem": "Boolean soup without table?",
+            "choices": [
+              "OK",
+              "Fails discipline",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w4-3",
+            "kind": "mcq",
+            "stem": "Blend trees claimed done?",
+            "choices": [
+              "Yes",
+              "No \u2014 still need",
+              "Always",
+              "AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "ga-w4-4",
+            "kind": "mcq",
+            "stem": "Idle\u2192Run legal?",
+            "choices": [
+              "Yes on fixture",
+              "Never",
+              "Only AI",
+              "Only audio"
+            ],
+            "answer_index": 0,
+            "explanation": "Yes."
+          },
+          {
+            "id": "ga-w4-5",
+            "kind": "mcq",
+            "stem": "Week 4 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w4-6",
+            "kind": "mcq",
+            "stem": "Week 4 ticket context: print PASS?",
+            "choices": [
+              "OK",
+              "Raises",
+              "Half",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Level data \u2014 JSON tiles with checksum, NO_AI",
+        "lesson": "Ticket GA-6505: level JSON with width, height, tiles length = width*height, and sha256 of\ncanonical bytes. NO_AI week. Lab checks dims, len match, checksum_ok.\n\nConsensus Ladder: observed = level file; inferred = checksum pins edits; still need =\nstreaming chunks. Failure: editor GUI screenshot as only artifact.\n\nLevel JSON: tiles length equals width*height; checksum pins canonical bytes.\nNO_AI week. Editor GUI screenshots alone are not artifacts. Streaming chunks stay in\n'still need'.\n\nchecksum_ok must be true only when the digest matches the canonical serialization.\n\nFor GA-6505, prove tiles.length == width*height and pin checksum to canonical bytes.\nNO_AI week: hand-edit JSON; editor screenshots alone are not artifacts. Streaming chunks\nstay still-need. checksum_ok is true only on digest match. Mutate one tile intentionally\nand show checksum_ok flip to false before restoring the canonical bytes.",
+        "worked_example": "tiles len = width*height; checksum_ok true.",
+        "assignment": "Level pin GA-6505. Submit lab_level_hash. NO_AI.",
+        "lab_id": "lab_level_hash",
+        "quiz": [
+          {
+            "id": "ga-w5-1",
+            "kind": "mcq",
+            "stem": "tiles length rule?",
+            "choices": [
+              "width*height",
+              "width+height",
+              "always 10",
+              "AI"
+            ],
+            "answer_index": 0,
+            "explanation": "Product."
+          },
+          {
+            "id": "ga-w5-2",
+            "kind": "mcq",
+            "stem": "AI mode?",
+            "choices": [
+              "AI dumps",
+              "NO_AI",
+              "Skip",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "ga-w5-3",
+            "kind": "mcq",
+            "stem": "Screenshot-only artifact?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w5-4",
+            "kind": "mcq",
+            "stem": "checksum_ok needed?",
+            "choices": [
+              "No",
+              "Yes",
+              "Optional",
+              "Never"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          },
+          {
+            "id": "ga-w5-5",
+            "kind": "mcq",
+            "stem": "Streaming chunks?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Deleted",
+              "6G"
+            ],
+            "answer_index": 1,
+            "explanation": "Later."
+          },
+          {
+            "id": "ga-w5-6",
+            "kind": "mcq",
+            "stem": "Week 5 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Input mapping \u2014 actions not raw scancodes in design docs",
+        "lesson": "Ticket GA-6606: map Jump to Space and South face button; rebindable=true; raw_only=false.\nLab checks actions include Jump and rebindable.\n\nConsensus Ladder: observed = input table; inferred = actions survive device swaps;\nstill need = accessibility remaps beyond defaults (week 9). Failure: hard-coded scancode-only docs.\n\nActions, not scancodes: Jump must appear, rebindable=true, raw_only=false. Device swaps\nshould not break design docs. Week 9 accessibility remaps extend this work; they do not\ndelete it.\n\nBind GA-6606 actions (not scancodes): Jump must appear with rebindable=true and\nraw_only=false. Argue why device swaps must not break design docs. Week 9 remaps extend\nthis contract; they do not erase it. Provide a sample remap table keyboard\u2192gamepad that\nkeeps the Jump action id stable across devices. Also bind Interact and Pause with the\nsame action-id rule, and show a failing submission that stores only HID scancodes without\naction names so the class can quote the reject reason in journals.",
+        "worked_example": "Jump action present; rebindable true; raw_only false.",
+        "assignment": "Input map GA-6606. Submit lab_input_actions.",
+        "lab_id": "lab_input_actions",
+        "quiz": [
+          {
+            "id": "ga-w6-1",
+            "kind": "mcq",
+            "stem": "rebindable?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "ai"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w6-2",
+            "kind": "mcq",
+            "stem": "raw_only docs?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w6-3",
+            "kind": "mcq",
+            "stem": "Jump action needed?",
+            "choices": [
+              "No",
+              "Yes",
+              "Audio only",
+              "GPU"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          },
+          {
+            "id": "ga-w6-4",
+            "kind": "mcq",
+            "stem": "Device swap survival?",
+            "choices": [
+              "Actions help",
+              "Impossible",
+              "Ignore",
+              "6G"
+            ],
+            "answer_index": 0,
+            "explanation": "Actions."
+          },
+          {
+            "id": "ga-w6-5",
+            "kind": "mcq",
+            "stem": "Week 6 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w6-6",
+            "kind": "mcq",
+            "stem": "Week 9 link?",
+            "choices": [
+              "A11y remaps",
+              "FSPL",
+              "NTN",
+              "E-stop"
+            ],
+            "answer_index": 0,
+            "explanation": "A11y."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Optional four-game case study \u2014 no unmerged branch dependency",
+        "lesson": "Ticket GA-6707: optional case study may cite anime-aggressors, beatlink-party, earth-species,\nand foot-racing as named examples. required_unmerged_branch=false always. Students pick one\nlens (combat timing / beat sync / ecology sim / racing physics) and write fixture metrics.\n\nLab checks optional_case_study in the four titles OR none, and required_unmerged_branch=false.\nConsuming unmerged Product-Use/game PRs as a hard dependency fails the claim boundary.\n\nOptional case study may cite anime-aggressors, beatlink-party, earth-species, or\nfoot-racing \u2014 or none. required_unmerged_branch=false always. Hard-depending unmerged\ngame or Product-Use PRs fails the claim boundary.\n\nPick one lens (combat timing, beat sync, ecology sim, or racing physics) and attach\nfixture metrics without claiming those repos must be merged.\n\nOptional GA-6707 case study may cite anime-aggressors, beatlink-party, earth-species, or\nfoot-racing \u2014 or none \u2014 with required_unmerged_branch=false. Hard-depending unmerged game\nor Product-Use PRs fails the claim boundary. Attach fixture metrics for one lens without\ndemanding merges.",
+        "worked_example": "required_unmerged_branch=false; optional title from the four or none.",
+        "assignment": "Case study note GA-6707. Submit lab_four_games_case.",
+        "lab_id": "lab_four_games_case",
+        "quiz": [
+          {
+            "id": "ga-w7-1",
+            "kind": "mcq",
+            "stem": "required_unmerged_branch?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "required"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "ga-w7-2",
+            "kind": "mcq",
+            "stem": "Four titles include?",
+            "choices": [
+              "beatlink-party",
+              "device-os",
+              "6G-core",
+              "qemu-only"
+            ],
+            "answer_index": 0,
+            "explanation": "Games."
+          },
+          {
+            "id": "ga-w7-3",
+            "kind": "mcq",
+            "stem": "Hard-depend unmerged PR?",
+            "choices": [
+              "OK",
+              "Fails boundary",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w7-4",
+            "kind": "mcq",
+            "stem": "Case study mandatory?",
+            "choices": [
+              "Always",
+              "Optional",
+              "Forbidden",
+              "AI only"
+            ],
+            "answer_index": 1,
+            "explanation": "Optional."
+          },
+          {
+            "id": "ga-w7-5",
+            "kind": "mcq",
+            "stem": "Week 7 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w7-6",
+            "kind": "mcq",
+            "stem": "foot-racing is?",
+            "choices": [
+              "Optional example title",
+              "Required merge",
+              "device-os",
+              "NTN"
+            ],
+            "answer_index": 0,
+            "explanation": "Optional."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Playtest metrics \u2014 session length and churn without vanity DAU",
+        "lesson": "Ticket GA-6808: 40 sessions, 8 churn out before minute 3. Compute early_churn_rate and\nmedian_session_min from fixture list. Lab checks rate math and refuses vanity_dau_claim=true.\n\nConsensus Ladder: observed = session table; inferred = early churn is a design smell;\nstill need = cohort significance. Failure: fake million-DAU slides.\n\nearly_churn_rate = early_churn/sessions on the fixture (8/40=0.2). vanity_dau_claim\nmust be false. Fake million-DAU slides fail. Cohort significance remains a later need.\n\nMedian session minutes, when required by the lab fields, must come from the list math\nrather than adjectives.\n\nCompute GA-6808 early_churn_rate = early_churn/sessions on the fixture (8/40=0.2) and keep\nvanity_dau_claim false. Fake million-DAU slides fail. Median session minutes, when required,\ncome from list math, not adjectives. Cohort significance remains later-need.\n\nRecompute early_churn_rate with a second fixture slice (5 churn / 25 sessions = 0.2) and show\nthe rate is identical while vanity_dau_claim stays false. Refuse screenshots that replace the\nratio with adjectives about 'sticky players.'",
+        "worked_example": "early_churn_rate=8/40=0.2; vanity_dau_claim false.",
+        "assignment": "Metrics GA-6808. Submit lab_playtest_metrics.",
+        "lab_id": "lab_playtest_metrics",
+        "quiz": [
+          {
+            "id": "ga-w8-1",
+            "kind": "mcq",
+            "stem": "early_churn_rate?",
+            "choices": [
+              "0.2",
+              "0.8",
+              "8",
+              "40"
+            ],
+            "answer_index": 0,
+            "explanation": "8/40."
+          },
+          {
+            "id": "ga-w8-2",
+            "kind": "mcq",
+            "stem": "vanity_dau_claim?",
+            "choices": [
+              "true",
+              "false",
+              "required",
+              "optional"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "ga-w8-3",
+            "kind": "mcq",
+            "stem": "Fake million DAU?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w8-4",
+            "kind": "mcq",
+            "stem": "Sessions fixture n?",
+            "choices": [
+              "40",
+              "4",
+              "400",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "40."
+          },
+          {
+            "id": "ga-w8-5",
+            "kind": "mcq",
+            "stem": "Week 8 ticket context: Empty {}?",
+            "choices": [
+              "PASS",
+              "Fails",
+              "Half",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w8-6",
+            "kind": "mcq",
+            "stem": "Cohort significance?",
+            "choices": [
+              "Done",
+              "Still need",
+              "Skip",
+              "Fake"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Accessibility \u2014 captions, remaps, color-safe UI, NO_AI",
+        "lesson": "Ticket GA-6909: captions=true, remaps=true, colorblind_safe=true, flash_hz\u22643. NO_AI week.\nLab fails if captions false or flash_hz>3.\n\nConsensus Ladder: observed = a11y checklist; inferred = defaults are not enough;\nstill need = user testing with disabled players (not fabricated). Large-text menus required\nin student packet notes.\n\nAccessibility checklist: captions, remaps, colorblind_safe true; flash_hz\u22643. NO_AI.\nFabricating disabled-player test quotes is forbidden. Large-text menu notes belong in\nthe student packet path.\n\nComplete GA-6909 a11y checklist: captions, remaps, colorblind_safe, flash_hz\u22643 under NO_AI.\nFabricated disabled-player quotes are forbidden. Large-text menu notes belong in the student\npacket path and must be cited in the journal. Record flash_hz from the fixture card and\nrefuse any cinematic trailer that exceeds the flash limit for accessibility.\n\nWalk the colorblind_safe flag against a red/green-only HUD mock and force a redesign note in\nthe journal. Keep flash_hz recorded from the fixture, not from a trailer editor export.",
+        "worked_example": "captions/remaps/colorblind_safe true; flash_hz\u22643.",
+        "assignment": "A11y checklist GA-6909. Submit lab_game_a11y. NO_AI.",
+        "lab_id": "lab_game_a11y",
+        "quiz": [
+          {
+            "id": "ga-w9-1",
+            "kind": "mcq",
+            "stem": "captions?",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "ai"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w9-2",
+            "kind": "mcq",
+            "stem": "flash_hz>3?",
+            "choices": [
+              "OK",
+              "Fails",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "ga-w9-3",
+            "kind": "mcq",
+            "stem": "Week 9 ticket context: AI mode?",
+            "choices": [
+              "AI dumps",
+              "NO_AI",
+              "Skip",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "ga-w9-4",
+            "kind": "mcq",
+            "stem": "Fabricate disabled-player tests?",
+            "choices": [
+              "OK",
+              "Forbidden",
+              "Required",
+              "Extra"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "ga-w9-5",
+            "kind": "mcq",
+            "stem": "remaps?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "raw"
+            ],
+            "answer_index": 0,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w9-6",
+            "kind": "mcq",
+            "stem": "colorblind_safe?",
+            "choices": [
+              "true",
+              "false",
+              "ignore",
+              "gpu"
+            ],
+            "answer_index": 0,
+            "explanation": "true."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Ship checklist capstone \u2014 build repro without unmerged deps",
+        "lesson": "Ticket GA-6910: ship checklist with build_repro_hash, a11y_ok=true, labs_passed\u22656,\nunmerged_branch_required=false, and four_games_optional_note present.\n\nCareer map: gameplay programmer junior / QA playtest tech. Certs aligned not granted.\nPortfolio must include keyboard-only path notes. No Product-Use package consumption of this\nunmerged course branch.\n\nShip checklist: build_repro_hash, a11y_ok=true, labs_passed\u22656, unmerged_branch_required\nfalse, and a four_games_optional_note. Keyboard-only path notes are required in the\nportfolio. Product-Use must not consume this unmerged course branch.\n\nCareer certs remain aligned, not granted.\n\nShip GA-6910 with build_repro_hash, a11y_ok=true, labs_passed\u22656, unmerged_branch_required\nfalse, and four_games_optional_note. Require a keyboard-only path note in portfolio.\nProduct-Use must not consume this unmerged course branch; career certs stay aligned-not-granted.",
+        "worked_example": "a11y_ok true; labs_passed\u22656; unmerged_branch_required false.",
+        "assignment": "Ship GA-6910 via lab_game_capstone. Portfolio + career map.",
+        "lab_id": "lab_game_capstone",
+        "quiz": [
+          {
+            "id": "ga-w10-1",
+            "kind": "mcq",
+            "stem": "unmerged_branch_required?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "required"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "ga-w10-2",
+            "kind": "mcq",
+            "stem": "labs_passed min?",
+            "choices": [
+              "1",
+              "3",
+              "6",
+              "100"
+            ],
+            "answer_index": 2,
+            "explanation": "\u22656."
+          },
+          {
+            "id": "ga-w10-3",
+            "kind": "mcq",
+            "stem": "a11y_ok?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "skip"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "ga-w10-4",
+            "kind": "mcq",
+            "stem": "Consume this unmerged branch in Product-Use?",
+            "choices": [
+              "Yes",
+              "No",
+              "Optional",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "ga-w10-5",
+            "kind": "mcq",
+            "stem": "Career certs?",
+            "choices": [
+              "Granted",
+              "Aligned not granted",
+              "Hidden",
+              "Sold"
+            ],
+            "answer_index": 1,
+            "explanation": "Aligned."
+          },
+          {
+            "id": "ga-w10-6",
+            "kind": "mcq",
+            "stem": "Keyboard-only path notes?",
+            "choices": [
+              "Required in portfolio",
+              "Forbidden",
+              "GPU only",
+              "Audio only"
+            ],
+            "answer_index": 0,
+            "explanation": "A11y."
+          }
+        ]
+      }
+    ]
+  }
+}

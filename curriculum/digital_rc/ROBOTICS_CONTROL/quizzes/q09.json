@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "rb-w9-1",
+      "kind": "mcq",
+      "stem": "frame_id?",
+      "choices": [
+        "map_ai",
+        "base_link",
+        "6G",
+        "geo"
+      ]
+    },
+    {
+      "id": "rb-w9-2",
+      "kind": "mcq",
+      "stem": "Fleet deploy claim?",
+      "choices": [
+        "OK",
+        "Required",
+        "Fails",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w9-3",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: AI mode?",
+      "choices": [
+        "AI dumps",
+        "Skip",
+        "Auto",
+        "NO_AI"
+      ]
+    },
+    {
+      "id": "rb-w9-4",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: Units?",
+      "choices": [
+        "m/s and rad/s",
+        "deg only",
+        "dB",
+        "MCS"
+      ]
+    },
+    {
+      "id": "rb-w9-5",
+      "kind": "mcq",
+      "stem": "NaN angular.z?",
+      "choices": [
+        "OK",
+        "Fails finite check",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w9-6",
+      "kind": "mcq",
+      "stem": "Production DDS pin claimed?",
+      "choices": [
+        "Yes",
+        "Always",
+        "No \u2014 not claimed",
+        "AI"
+      ]
+    }
+  ]
+}

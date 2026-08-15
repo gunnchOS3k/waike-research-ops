@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "wr-w1-1",
+      "kind": "mcq",
+      "stem": "WR-4101 uses which FSPL term?",
+      "choices": [
+        "20*log10(120)",
+        "6G_TCI",
+        "Rel-20 MCS",
+        "GEO slot"
+      ]
+    },
+    {
+      "id": "wr-w1-2",
+      "kind": "mcq",
+      "stem": "COMMERCIAL_STANDARDIZED_6G card reads?",
+      "choices": [
+        "true",
+        "false",
+        "pending",
+        "vendor_true"
+      ]
+    },
+    {
+      "id": "wr-w1-3",
+      "kind": "mcq",
+      "stem": "Forbidden claim on WR-4101?",
+      "choices": [
+        "Computed FSPL",
+        "3.5 GHz",
+        "6G coverage from a slide",
+        "120 m"
+      ]
+    },
+    {
+      "id": "wr-w1-4",
+      "kind": "mcq",
+      "stem": "Observation for the hop?",
+      "choices": [
+        "Railing multipath measured",
+        "6G ratified",
+        "SDR serial",
+        "d=120 m and f=3.5 GHz"
+      ]
+    },
+    {
+      "id": "wr-w1-5",
+      "kind": "mcq",
+      "stem": "Heavy sim download on WR-4101?",
+      "choices": [
+        "Forbidden \u2014 fixtures only",
+        "Required",
+        "GPU required",
+        "Overnight required"
+      ]
+    },
+    {
+      "id": "wr-w1-6",
+      "kind": "mcq",
+      "stem": "Lab rejects?",
+      "choices": [
+        "Shown FSPL math",
+        "Invented 6G standard ID",
+        "d_m",
+        "f_mhz"
+      ]
+    }
+  ]
+}

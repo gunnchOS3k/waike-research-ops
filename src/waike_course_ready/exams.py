@@ -662,6 +662,9 @@ EXAMS = {
 
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
     if course_id not in EXAMS:
+        if course_id in {"WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE"}:
+            from waike_course_ready.batch004.exams import extra_assessment_items_004
+            return extra_assessment_items_004(course_id)
         if course_id in {"AI_ML_EDGE", "DATA_VIZ_BI", "CLOUD_DEVOPS"}:
             from waike_course_ready.batch003.exams import extra_assessment_items_003
             return extra_assessment_items_003(course_id)

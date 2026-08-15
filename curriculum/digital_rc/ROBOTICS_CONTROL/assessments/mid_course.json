@@ -1,0 +1,225 @@
+{
+  "assessment_id": "ROBOTICS_CONTROL-mid",
+  "items": [
+    {
+      "id": "rb01",
+      "kind": "mcq",
+      "stem": "HarborBot planar pose representation expected in week-1 journals is?",
+      "choices": [
+        "RGB pixels only",
+        "x, y, and yaw theta",
+        "BPM and phase",
+        "MCS and BLER"
+      ]
+    },
+    {
+      "id": "rb02",
+      "kind": "mcq",
+      "stem": "A tool-point claim without any frame sketch should?",
+      "choices": [
+        "Pass",
+        "Earn SIL",
+        "Fail the frames week",
+        "Earn Unity cert"
+      ]
+    },
+    {
+      "id": "rb03",
+      "kind": "mcq",
+      "stem": "Links 0.45 m and 0.35 m imply a maximum planar reach near?",
+      "choices": [
+        "0.10 m",
+        "1.80 m",
+        "80 m",
+        "0.80 m"
+      ]
+    },
+    {
+      "id": "rb04",
+      "kind": "mcq",
+      "stem": "A commanded tip 0.95 m out with 0.80 m max reach must set reachable?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "ai"
+      ]
+    },
+    {
+      "id": "rb05",
+      "kind": "mcq",
+      "stem": "Discrete PID fixtures in this course assume dt is?",
+      "choices": [
+        "Exactly zero",
+        "A small positive sample time",
+        "Negative",
+        "Infinite"
+      ]
+    },
+    {
+      "id": "rb06",
+      "kind": "mcq",
+      "stem": "When the integrated error grows large, the lab expects?",
+      "choices": [
+        "Silence",
+        "Deletion of Kp",
+        "An anti-windup note of real length",
+        "A 6G claim"
+      ]
+    },
+    {
+      "id": "rb07",
+      "kind": "mcq",
+      "stem": "Planning a cinematic path that exceeds vmax 'because it looks smooth' is?",
+      "choices": [
+        "Accepted art",
+        "Required for mid",
+        "Required for NTN",
+        "A trajectory-limits failure"
+      ]
+    },
+    {
+      "id": "rb08",
+      "kind": "mcq",
+      "stem": "On the NO_AI trajectory week, students should?",
+      "choices": [
+        "Compute limit times by hand",
+        "Paste vendor dumps",
+        "Bypass E-stop",
+        "Fabricate SIL"
+      ]
+    },
+    {
+      "id": "rb09",
+      "kind": "mcq",
+      "stem": "A 4.2 m lidar hit with a 2.0 m hard gate should be?",
+      "choices": [
+        "Kept as truth",
+        "Dropped as outlier",
+        "Averaged unchanged",
+        "Used as E-stop"
+      ]
+    },
+    {
+      "id": "rb10",
+      "kind": "mcq",
+      "stem": "Treating the maximum raw sample as ground truth always is?",
+      "choices": [
+        "Best practice",
+        "Required",
+        "Rejected sensing discipline",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb11",
+      "kind": "mcq",
+      "stem": "Hard E-stop policy requires motors_disabled to be?",
+      "choices": [
+        "false",
+        "optional",
+        "ai-decided",
+        "true"
+      ]
+    },
+    {
+      "id": "rb12",
+      "kind": "mcq",
+      "stem": "Replacing E-stop with 'software will slow down eventually' is?",
+      "choices": [
+        "A safety failure",
+        "Adequate",
+        "Required for demos",
+        "Required for games"
+      ]
+    },
+    {
+      "id": "rb13",
+      "kind": "mcq",
+      "stem": "Diff-drive wheel base entered as zero should?",
+      "choices": [
+        "Compute omega anyway",
+        "Be rejected by the B>0 check",
+        "Earn extra credit",
+        "Unlock fleet mode"
+      ]
+    },
+    {
+      "id": "rb14",
+      "kind": "mcq",
+      "stem": "Body linear speed from wheel rates uses which combination?",
+      "choices": [
+        "only FSPL",
+        "only MCS",
+        "sum of left and right rates",
+        "only BPM"
+      ]
+    },
+    {
+      "id": "rb15",
+      "kind": "mcq",
+      "stem": "Reporting covariance exactly zero as a certainty lie should?",
+      "choices": [
+        "Pass fuse lab",
+        "Earn Kalman badge",
+        "Earn CKA",
+        "Fail covariance honesty"
+      ]
+    },
+    {
+      "id": "rb16",
+      "kind": "mcq",
+      "stem": "Scalar Kalman gain form used on the fixture is?",
+      "choices": [
+        "p/(p+r)",
+        "p*r",
+        "always 1",
+        "always 0"
+      ]
+    },
+    {
+      "id": "rb17",
+      "kind": "mcq",
+      "stem": "cmd_vel-shaped messages must use frame_id?",
+      "choices": [
+        "map_ai",
+        "base_link",
+        "sixg",
+        "geo_slot"
+      ]
+    },
+    {
+      "id": "rb18",
+      "kind": "mcq",
+      "stem": "Advertising a 50-robot Harbor fleet deploy from schema week is?",
+      "choices": [
+        "Fine",
+        "Required",
+        "A claim-boundary failure",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb19",
+      "kind": "mcq",
+      "stem": "Opening a device-os curriculum PR from this robotics packet is?",
+      "choices": [
+        "Encouraged",
+        "Required",
+        "Optional",
+        "Forbidden by capstone flag"
+      ]
+    },
+    {
+      "id": "rb20",
+      "kind": "mcq",
+      "stem": "Safety packet capstone needs labs_passed at least?",
+      "choices": [
+        "6",
+        "2",
+        "4",
+        "60"
+      ]
+    }
+  ]
+}

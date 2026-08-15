@@ -1,0 +1,50 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "WIRELESS_6G",
+  "track_ids": [
+    "WIRELESS_6G"
+  ],
+  "date_checked": "2026-08-15",
+  "benchmarks": [
+    {
+      "source_id": "3GPP_5G_ADVANCED_OVERVIEW",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "nr_evolution",
+          "waike_weeks": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "domain": "ntn",
+          "waike_weeks": [
+            5
+          ]
+        },
+        {
+          "domain": "ai_ran_study",
+          "waike_weeks": [
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ORAN_ALLIANCE_VOCAB",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "interfaces",
+          "waike_weeks": [
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "PUBLIC_REFERENCE_ONLY / RESTRICTED outlines. No exam dumps. Certs not granted."
+}

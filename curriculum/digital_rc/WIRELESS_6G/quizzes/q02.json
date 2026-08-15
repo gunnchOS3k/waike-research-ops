@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "wr-w2-1",
+      "kind": "mcq",
+      "stem": "12 sc @ 30 kHz \u2192 PRB BW?",
+      "choices": [
+        "30 kHz",
+        "3.6 MHz",
+        "360 kHz",
+        "12 Hz"
+      ]
+    },
+    {
+      "id": "wr-w2-2",
+      "kind": "mcq",
+      "stem": "T_sym without CP @ 30 kHz?",
+      "choices": [
+        "30 \u03bcs",
+        "1 ms",
+        "14 \u03bcs",
+        "\u224833.3 \u03bcs"
+      ]
+    },
+    {
+      "id": "wr-w2-3",
+      "kind": "mcq",
+      "stem": "Week 2 grades?",
+      "choices": [
+        "Numerology fields",
+        "Screenshots",
+        "6G badges",
+        "Ephemeris"
+      ]
+    },
+    {
+      "id": "wr-w2-4",
+      "kind": "mcq",
+      "stem": "CP this week?",
+      "choices": [
+        "Fully computed",
+        "Named omission",
+        "Ignored forever",
+        "Equals \u0394f"
+      ]
+    },
+    {
+      "id": "wr-w2-5",
+      "kind": "mcq",
+      "stem": "Larger \u0394f does what to T_sym?",
+      "choices": [
+        "Lengthens",
+        "Deletes PRBs",
+        "Shortens",
+        "Creates 6G"
+      ]
+    },
+    {
+      "id": "wr-w2-6",
+      "kind": "mcq",
+      "stem": "print('PASS')?",
+      "choices": [
+        "Accepted",
+        "Half credit",
+        "Skip",
+        "Raises AssertionError"
+      ]
+    }
+  ]
+}

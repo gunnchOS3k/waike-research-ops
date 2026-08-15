@@ -211,6 +211,9 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "AI_ML_EDGE": "curriculum/alignment/ai_ml_edge_alignment.json",
             "DATA_VIZ_BI": "curriculum/alignment/data_viz_bi_alignment.json",
             "CLOUD_DEVOPS": "curriculum/alignment/cloud_devops_alignment.json",
+            "WIRELESS_6G": "curriculum/alignment/wireless_6g_alignment.json",
+            "ROBOTICS_CONTROL": "curriculum/alignment/robotics_control_alignment.json",
+            "GAME_DEV_INTERACTIVE": "curriculum/alignment/game_dev_interactive_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

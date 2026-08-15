@@ -1,0 +1,269 @@
+{
+  "assessment_id": "WIRELESS_6G-final",
+  "items": [
+    {
+      "id": "wrf01",
+      "kind": "mcq",
+      "stem": "Before quoting FSPL, which measured pair must appear in the journal?",
+      "choices": [
+        "only a vendor heatmap",
+        "path length and carrier frequency",
+        "only a DAU chart",
+        "only an E-stop photo"
+      ]
+    },
+    {
+      "id": "wrf02",
+      "kind": "mcq",
+      "stem": "Declaring 'Release-20 commercial 6G ratified for Gary' is?",
+      "choices": [
+        "Accurate",
+        "Required for final",
+        "An honesty failure",
+        "Required for NTN"
+      ]
+    },
+    {
+      "id": "wrf03",
+      "kind": "mcq",
+      "stem": "Twelve tones at 60 kHz spacing yield what PRB bandwidth?",
+      "choices": [
+        "60 kHz",
+        "12 kHz",
+        "1 Hz",
+        "720 kHz"
+      ]
+    },
+    {
+      "id": "wrf04",
+      "kind": "mcq",
+      "stem": "Calling cyclic prefix a named omission this early means?",
+      "choices": [
+        "CP exists but is not yet computed here",
+        "CP is fiction",
+        "CP equals delta-f",
+        "CP proves 6G"
+      ]
+    },
+    {
+      "id": "wrf05",
+      "kind": "mcq",
+      "stem": "During the NO_AI feature-map week, accepted authoring is?",
+      "choices": [
+        "Copied exam dumps",
+        "Hand-labeled public topics",
+        "Fake Rel-20 commercial rows",
+        "Ungated RF transmission"
+      ]
+    },
+    {
+      "id": "wrf06",
+      "kind": "mcq",
+      "stem": "BLER ceiling 0.05 with rates [0.18,0.06,0.03,0.09] selects which MCS?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "wrf07",
+      "kind": "mcq",
+      "stem": "Should NTN be labeled a finished commercial 6G standard in student JSON?",
+      "choices": [
+        "Yes always",
+        "Only for GEO",
+        "Only for games",
+        "No \u2014 keep the standard flag false"
+      ]
+    },
+    {
+      "id": "wrf08",
+      "kind": "mcq",
+      "stem": "Light-time across 450 km is nearest?",
+      "choices": [
+        "1.5 ms",
+        "15 ms",
+        "150 ms",
+        "1.5 \u03bcs"
+      ]
+    },
+    {
+      "id": "wrf09",
+      "kind": "mcq",
+      "stem": "'AI beamforming erased multipath' with zero taps submitted?",
+      "choices": [
+        "PASS",
+        "FAIL the multipath week",
+        "Required storytelling",
+        "Extra credit"
+      ]
+    },
+    {
+      "id": "wrf10",
+      "kind": "mcq",
+      "stem": "Computing \u03c4_rms requires which ingredient?",
+      "choices": [
+        "Only a marketing heatmap",
+        "Only vanity DAU",
+        "A power-delay profile with delays and powers",
+        "Only an E-stop"
+      ]
+    },
+    {
+      "id": "wrf11",
+      "kind": "mcq",
+      "stem": "Correct AI-RAN control ordering on the pier fixture?",
+      "choices": [
+        "apply then observe then delete logs",
+        "dump then ship",
+        "skip gate forever",
+        "observe then propose then human-gate then apply"
+      ]
+    },
+    {
+      "id": "wrf12",
+      "kind": "mcq",
+      "stem": "Asserting a completed closed-loop field trial with no data is?",
+      "choices": [
+        "Outside claim boundary / fail",
+        "Allowed",
+        "Required for mid",
+        "Required for games"
+      ]
+    },
+    {
+      "id": "wrf13",
+      "kind": "mcq",
+      "stem": "Inventing a regulator filing PDF for spectrum week is?",
+      "choices": [
+        "Encouraged",
+        "Forbidden",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "wrf14",
+      "kind": "mcq",
+      "stem": "Pier lab narrative center frequency class used in the mask lab?",
+      "choices": [
+        "optical only",
+        "DC bias only",
+        "about 3.5 GHz",
+        "60 GHz exclusive"
+      ]
+    },
+    {
+      "id": "wrf15",
+      "kind": "mcq",
+      "stem": "RESEARCH_LAB_SCALE correctly implies?",
+      "choices": [
+        "Nationwide production RIC",
+        "Consumer handset 6G",
+        "GEO-only service",
+        "Practice-scale vocabulary and fixtures"
+      ]
+    },
+    {
+      "id": "wrf16",
+      "kind": "mcq",
+      "stem": "PHYSICAL_PENDING on E2 subscription logs means?",
+      "choices": [
+        "Measurement not yet captured",
+        "Fabricate the logs",
+        "Delete O-RAN week",
+        "Skip ethics"
+      ]
+    },
+    {
+      "id": "wrf17",
+      "kind": "mcq",
+      "stem": "Capstone notebook must explicitly include which honesty statement?",
+      "choices": [
+        "student is CKA certified",
+        "commercial standardized 6G is false today",
+        "device-os PR merged",
+        "piracy allowed"
+      ]
+    },
+    {
+      "id": "wrf18",
+      "kind": "mcq",
+      "stem": "How are vendor/3GPP credentials treated on the career map?",
+      "choices": [
+        "Automatically granted",
+        "Sold in packet",
+        "Alignment labels only \u2014 not granted",
+        "Hidden from teachers"
+      ]
+    },
+    {
+      "id": "wrf19",
+      "kind": "mcq",
+      "stem": "Accessibility expectation for optional RF plots?",
+      "choices": [
+        "Omit all text",
+        "Require cracked viewers",
+        "Ban journals",
+        "Provide alt_text / text summary path"
+      ]
+    },
+    {
+      "id": "wrf20",
+      "kind": "mcq",
+      "stem": "Submitting a lab file whose entire body is the word PASS yields?",
+      "choices": [
+        "AssertionError / reject",
+        "Full credit",
+        "Half credit",
+        "Silent skip"
+      ]
+    },
+    {
+      "id": "wrf21",
+      "kind": "mcq",
+      "stem": "Choosing maximum MCS while violating the BLER ceiling is?",
+      "choices": [
+        "Good for throughput stories",
+        "A discipline failure",
+        "Required by NTN",
+        "Required by O-RAN"
+      ]
+    },
+    {
+      "id": "wrf22",
+      "kind": "mcq",
+      "stem": "Calling a ~5 ms LEO RTT 'GEO-comparable' should be?",
+      "choices": [
+        "Accepted",
+        "Required",
+        "Rejected as false",
+        "Extra"
+      ]
+    },
+    {
+      "id": "wrf23",
+      "kind": "mcq",
+      "stem": "An O-RAN map missing A1, E2, and O1 should?",
+      "choices": [
+        "Pass",
+        "Earn RIC badge",
+        "Earn 6G badge",
+        "Fail interface checks"
+      ]
+    },
+    {
+      "id": "wrf24",
+      "kind": "mcq",
+      "stem": "Best lab style concurrent with Stream A QEMU load?",
+      "choices": [
+        "Compact fixture math validators",
+        "Heavyweight simulator tarballs",
+        "Idle forever",
+        "Only marketing decks"
+      ]
+    }
+  ]
+}

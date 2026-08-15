@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "wr-w3-1",
+      "kind": "mcq",
+      "stem": "commercial_6g_exists?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "Rel-20"
+      ]
+    },
+    {
+      "id": "wr-w3-2",
+      "kind": "mcq",
+      "stem": "RedCap here is?",
+      "choices": [
+        "Exam dump",
+        "PUBLIC_REFERENCE_ONLY label",
+        "6G PHY",
+        "Secret"
+      ]
+    },
+    {
+      "id": "wr-w3-3",
+      "kind": "mcq",
+      "stem": "Week 3 AI?",
+      "choices": [
+        "AI dumps",
+        "AI writes Rel-20",
+        "NO_AI hand map",
+        "Skip"
+      ]
+    },
+    {
+      "id": "wr-w3-4",
+      "kind": "mcq",
+      "stem": "Min features[]?",
+      "choices": [
+        "1",
+        "2",
+        "20",
+        "3"
+      ]
+    },
+    {
+      "id": "wr-w3-5",
+      "kind": "mcq",
+      "stem": "5G-Advanced is?",
+      "choices": [
+        "Evolutionary on 5G NR",
+        "New RAT replacing 5G",
+        "Commercial 6G",
+        "Wi-Fi 8"
+      ]
+    },
+    {
+      "id": "wr-w3-6",
+      "kind": "mcq",
+      "stem": "Invent Rel-20 commercial 6G row?",
+      "choices": [
+        "PASS",
+        "Fails claim boundary",
+        "Extra",
+        "Required"
+      ]
+    }
+  ]
+}

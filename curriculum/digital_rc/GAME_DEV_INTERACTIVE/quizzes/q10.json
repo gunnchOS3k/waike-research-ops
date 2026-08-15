@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "ga-w10-1",
+      "kind": "mcq",
+      "stem": "unmerged_branch_required?",
+      "choices": [
+        "false",
+        "true",
+        "optional",
+        "required"
+      ]
+    },
+    {
+      "id": "ga-w10-2",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "1",
+        "6",
+        "3",
+        "100"
+      ]
+    },
+    {
+      "id": "ga-w10-3",
+      "kind": "mcq",
+      "stem": "a11y_ok?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "skip"
+      ]
+    },
+    {
+      "id": "ga-w10-4",
+      "kind": "mcq",
+      "stem": "Consume this unmerged branch in Product-Use?",
+      "choices": [
+        "Yes",
+        "Optional",
+        "Required",
+        "No"
+      ]
+    },
+    {
+      "id": "ga-w10-5",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Aligned not granted",
+        "Granted",
+        "Hidden",
+        "Sold"
+      ]
+    },
+    {
+      "id": "ga-w10-6",
+      "kind": "mcq",
+      "stem": "Keyboard-only path notes?",
+      "choices": [
+        "Forbidden",
+        "Required in portfolio",
+        "GPU only",
+        "Audio only"
+      ]
+    }
+  ]
+}

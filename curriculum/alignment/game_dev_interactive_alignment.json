@@ -1,0 +1,50 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "GAME_DEV_INTERACTIVE",
+  "track_ids": [
+    "GAME_DEV_INTERACTIVE"
+  ],
+  "date_checked": "2026-08-15",
+  "benchmarks": [
+    {
+      "source_id": "UNITY_ASSOCIATE_TOPICS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "gameplay",
+          "waike_weeks": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "domain": "audio",
+          "waike_weeks": [
+            3
+          ]
+        },
+        {
+          "domain": "a11y",
+          "waike_weeks": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "GODOT_FUNDAMENTALS_TOPICS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "scenes_input",
+          "waike_weeks": [
+            5,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "PUBLIC_REFERENCE_ONLY / RESTRICTED outlines. No exam dumps. Certs not granted."
+}

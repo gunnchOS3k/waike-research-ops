@@ -1,0 +1,1739 @@
+{
+  "WIRELESS_6G": {
+    "offset": 0,
+    "mid": [
+      {
+        "id": "wr01",
+        "kind": "mcq",
+        "stem": "Harbor pier hop measured 250 m at 2100 MHz. Which Friis input pair is required before reporting path loss?",
+        "choices": [
+          "distance_m and frequency_MHz",
+          "BPM and flash_hz",
+          "E-stop and brake",
+          "DAU and churn"
+        ],
+        "answer_index": 0,
+        "explanation": "Friis."
+      },
+      {
+        "id": "wr02",
+        "kind": "mcq",
+        "stem": "A donor slideset titles the pier 'live commercial 6G today.' Correct operator response?",
+        "choices": [
+          "Publish as PASS",
+          "Refuse \u2014 standardized commercial 6G does not exist today",
+          "Treat as Rel-17 proof",
+          "Treat as GEO proof"
+        ],
+        "answer_index": 1,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "wr03",
+        "kind": "mcq",
+        "stem": "Numerology card shows 24 subcarriers spaced 15 kHz. Resource-block bandwidth equals?",
+        "choices": [
+          "360 kHz",
+          "15 kHz",
+          "24 Hz",
+          "1.5 GHz"
+        ],
+        "answer_index": 0,
+        "explanation": "24*15e3."
+      },
+      {
+        "id": "wr04",
+        "kind": "mcq",
+        "stem": "Ignoring cyclic prefix, approximate OFDM symbol time at 15 kHz spacing is nearest which?",
+        "choices": [
+          "66.7 microseconds",
+          "15 milliseconds",
+          "1 second",
+          "14 nanoseconds"
+        ],
+        "answer_index": 0,
+        "explanation": "1/df."
+      },
+      {
+        "id": "wr05",
+        "kind": "mcq",
+        "stem": "Student JSON sets commercial_6g_exists true on the 5G-Advanced feature map. Lab outcome?",
+        "choices": [
+          "Accept",
+          "Reject the honesty gate",
+          "Half credit",
+          "Auto Rel-20"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr06",
+        "kind": "mcq",
+        "stem": "BLER vector at a fixed SNR is [0.25,0.11,0.07,0.19]. With ceiling 0.10, highest eligible MCS index?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_index": 2,
+        "explanation": "0.07."
+      },
+      {
+        "id": "wr07",
+        "kind": "mcq",
+        "stem": "For a 500 km slant-range toy LEO hop, one-way light time is nearest which class?",
+        "choices": [
+          "~1.67 ms",
+          "~167 ms",
+          "~1.67 s",
+          "~16 \u03bcs"
+        ],
+        "answer_index": 0,
+        "explanation": "d/c."
+      },
+      {
+        "id": "wr08",
+        "kind": "mcq",
+        "stem": "Compared with classic GEO RTT hundreds of milliseconds, the 500 km LEO toy RTT is?",
+        "choices": [
+          "Same class",
+          "Much smaller millisecond-class",
+          "Exactly 250 ms",
+          "Undefined"
+        ],
+        "answer_index": 1,
+        "explanation": "Not GEO."
+      },
+      {
+        "id": "wr09",
+        "kind": "mcq",
+        "stem": "Marking geo_comparable true for that LEO toy should?",
+        "choices": [
+          "Pass validation",
+          "Fail honesty checks",
+          "Grant NTN cert",
+          "Unlock 6G"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr10",
+        "kind": "mcq",
+        "stem": "Adding a late, strong tap to a power-delay profile typically does what to RMS delay spread?",
+        "choices": [
+          "Decreases it",
+          "Increases it",
+          "Deletes MCS",
+          "Creates a standard"
+        ],
+        "answer_index": 1,
+        "explanation": "Grows."
+      },
+      {
+        "id": "wr11",
+        "kind": "mcq",
+        "stem": "An AI-RAN proposal that auto-applies without a human gate on the pier fixture?",
+        "choices": [
+          "Allowed",
+          "Must fail the gate check",
+          "Required for Rel-18",
+          "Required for games"
+        ],
+        "answer_index": 1,
+        "explanation": "Gated."
+      },
+      {
+        "id": "wr12",
+        "kind": "mcq",
+        "stem": "Minimum contents of a legal AI-RAN proposed_action string in this course?",
+        "choices": [
+          "A feeling adjective",
+          "Explicit MCS or PRB language",
+          "A 6G logo URL",
+          "A GEO slot id"
+        ],
+        "answer_index": 1,
+        "explanation": "Concrete."
+      },
+      {
+        "id": "wr13",
+        "kind": "mcq",
+        "stem": "Unauthorized over-the-air transmission outside the lab narrative is?",
+        "choices": [
+          "Extra credit",
+          "Course ethics failure",
+          "Required for SDR week",
+          "Allowed after midterm"
+        ],
+        "answer_index": 1,
+        "explanation": "Ethics."
+      },
+      {
+        "id": "wr14",
+        "kind": "mcq",
+        "stem": "Mask_ok without stating occupied bandwidth numbers is?",
+        "choices": [
+          "Acceptable",
+          "Insufficient for the spectrum lab",
+          "Enough if SDR blinks",
+          "Enough if AI agrees"
+        ],
+        "answer_index": 1,
+        "explanation": "Numbers."
+      },
+      {
+        "id": "wr15",
+        "kind": "mcq",
+        "stem": "Claiming a production Near-RT RIC is live without E2 evidence should?",
+        "choices": [
+          "Pass O-RAN week",
+          "Fail the deployment honesty flag",
+          "Earn SIL",
+          "Earn CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr16",
+        "kind": "mcq",
+        "stem": "In Pier Radio, A1/E2/O1 primarily function as?",
+        "choices": [
+          "Harvested exam items",
+          "Interface vocabulary on a map",
+          "Proof of consumer 6G",
+          "Game input actions"
+        ],
+        "answer_index": 1,
+        "explanation": "Vocab."
+      },
+      {
+        "id": "wr17",
+        "kind": "mcq",
+        "stem": "Capstone sets product_use_unmerged_consumed true. Result?",
+        "choices": [
+          "PASS",
+          "Must be false \u2014 fail",
+          "Required",
+          "Optional half"
+        ],
+        "answer_index": 1,
+        "explanation": "No PU."
+      },
+      {
+        "id": "wr18",
+        "kind": "mcq",
+        "stem": "While Product-Use QEMU is busy, preferred Pier Radio practice is?",
+        "choices": [
+          "Pull multi-GB channel sims",
+          "Stay on light fixture validators",
+          "Force overnight GPU farms",
+          "Skip all wireless weeks"
+        ],
+        "answer_index": 1,
+        "explanation": "Fixtures."
+      },
+      {
+        "id": "wr19",
+        "kind": "mcq",
+        "stem": "Best one-line description of 5G-Advanced in this syllabus?",
+        "choices": [
+          "A brand-new RAT replacing 5G overnight",
+          "An evolution layered on 5G NR",
+          "Consumer-standardized 6G",
+          "Wi-Fi 8 rebrand"
+        ],
+        "answer_index": 1,
+        "explanation": "Evolution."
+      },
+      {
+        "id": "wr20",
+        "kind": "mcq",
+        "stem": "Radio notebook capstone requires labs_passed at least?",
+        "choices": [
+          "2",
+          "4",
+          "6",
+          "60"
+        ],
+        "answer_index": 2,
+        "explanation": ">=6."
+      }
+    ],
+    "final": [
+      {
+        "id": "wrf01",
+        "kind": "mcq",
+        "stem": "Before quoting FSPL, which measured pair must appear in the journal?",
+        "choices": [
+          "path length and carrier frequency",
+          "only a vendor heatmap",
+          "only a DAU chart",
+          "only an E-stop photo"
+        ],
+        "answer_index": 0,
+        "explanation": "Friis."
+      },
+      {
+        "id": "wrf02",
+        "kind": "mcq",
+        "stem": "Declaring 'Release-20 commercial 6G ratified for Gary' is?",
+        "choices": [
+          "Accurate",
+          "An honesty failure",
+          "Required for final",
+          "Required for NTN"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wrf03",
+        "kind": "mcq",
+        "stem": "Twelve tones at 60 kHz spacing yield what PRB bandwidth?",
+        "choices": [
+          "720 kHz",
+          "60 kHz",
+          "12 kHz",
+          "1 Hz"
+        ],
+        "answer_index": 0,
+        "explanation": "720e3."
+      },
+      {
+        "id": "wrf04",
+        "kind": "mcq",
+        "stem": "Calling cyclic prefix a named omission this early means?",
+        "choices": [
+          "CP is fiction",
+          "CP exists but is not yet computed here",
+          "CP equals delta-f",
+          "CP proves 6G"
+        ],
+        "answer_index": 1,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "wrf05",
+        "kind": "mcq",
+        "stem": "During the NO_AI feature-map week, accepted authoring is?",
+        "choices": [
+          "Hand-labeled public topics",
+          "Copied exam dumps",
+          "Fake Rel-20 commercial rows",
+          "Ungated RF transmission"
+        ],
+        "answer_index": 0,
+        "explanation": "Hand."
+      },
+      {
+        "id": "wrf06",
+        "kind": "mcq",
+        "stem": "BLER ceiling 0.05 with rates [0.18,0.06,0.03,0.09] selects which MCS?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_index": 2,
+        "explanation": "0.03."
+      },
+      {
+        "id": "wrf07",
+        "kind": "mcq",
+        "stem": "Should NTN be labeled a finished commercial 6G standard in student JSON?",
+        "choices": [
+          "Yes always",
+          "No \u2014 keep the standard flag false",
+          "Only for GEO",
+          "Only for games"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "wrf08",
+        "kind": "mcq",
+        "stem": "Light-time across 450 km is nearest?",
+        "choices": [
+          "1.5 ms",
+          "15 ms",
+          "150 ms",
+          "1.5 \u03bcs"
+        ],
+        "answer_index": 0,
+        "explanation": "d/c."
+      },
+      {
+        "id": "wrf09",
+        "kind": "mcq",
+        "stem": "'AI beamforming erased multipath' with zero taps submitted?",
+        "choices": [
+          "PASS",
+          "FAIL the multipath week",
+          "Required storytelling",
+          "Extra credit"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wrf10",
+        "kind": "mcq",
+        "stem": "Computing \u03c4_rms requires which ingredient?",
+        "choices": [
+          "A power-delay profile with delays and powers",
+          "Only a marketing heatmap",
+          "Only vanity DAU",
+          "Only an E-stop"
+        ],
+        "answer_index": 0,
+        "explanation": "PDP."
+      },
+      {
+        "id": "wrf11",
+        "kind": "mcq",
+        "stem": "Correct AI-RAN control ordering on the pier fixture?",
+        "choices": [
+          "apply then observe then delete logs",
+          "observe then propose then human-gate then apply",
+          "dump then ship",
+          "skip gate forever"
+        ],
+        "answer_index": 1,
+        "explanation": "Gated."
+      },
+      {
+        "id": "wrf12",
+        "kind": "mcq",
+        "stem": "Asserting a completed closed-loop field trial with no data is?",
+        "choices": [
+          "Allowed",
+          "Outside claim boundary / fail",
+          "Required for mid",
+          "Required for games"
+        ],
+        "answer_index": 1,
+        "explanation": "Boundary."
+      },
+      {
+        "id": "wrf13",
+        "kind": "mcq",
+        "stem": "Inventing a regulator filing PDF for spectrum week is?",
+        "choices": [
+          "Encouraged",
+          "Forbidden",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "wrf14",
+        "kind": "mcq",
+        "stem": "Pier lab narrative center frequency class used in the mask lab?",
+        "choices": [
+          "about 3.5 GHz",
+          "optical only",
+          "DC bias only",
+          "60 GHz exclusive"
+        ],
+        "answer_index": 0,
+        "explanation": "3.5."
+      },
+      {
+        "id": "wrf15",
+        "kind": "mcq",
+        "stem": "RESEARCH_LAB_SCALE correctly implies?",
+        "choices": [
+          "Nationwide production RIC",
+          "Practice-scale vocabulary and fixtures",
+          "Consumer handset 6G",
+          "GEO-only service"
+        ],
+        "answer_index": 1,
+        "explanation": "Lab."
+      },
+      {
+        "id": "wrf16",
+        "kind": "mcq",
+        "stem": "PHYSICAL_PENDING on E2 subscription logs means?",
+        "choices": [
+          "Fabricate the logs",
+          "Measurement not yet captured",
+          "Delete O-RAN week",
+          "Skip ethics"
+        ],
+        "answer_index": 1,
+        "explanation": "Pending."
+      },
+      {
+        "id": "wrf17",
+        "kind": "mcq",
+        "stem": "Capstone notebook must explicitly include which honesty statement?",
+        "choices": [
+          "commercial standardized 6G is false today",
+          "student is CKA certified",
+          "device-os PR merged",
+          "piracy allowed"
+        ],
+        "answer_index": 0,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "wrf18",
+        "kind": "mcq",
+        "stem": "How are vendor/3GPP credentials treated on the career map?",
+        "choices": [
+          "Automatically granted",
+          "Alignment labels only \u2014 not granted",
+          "Sold in packet",
+          "Hidden from teachers"
+        ],
+        "answer_index": 1,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "wrf19",
+        "kind": "mcq",
+        "stem": "Accessibility expectation for optional RF plots?",
+        "choices": [
+          "Provide alt_text / text summary path",
+          "Omit all text",
+          "Require cracked viewers",
+          "Ban journals"
+        ],
+        "answer_index": 0,
+        "explanation": "A11y."
+      },
+      {
+        "id": "wrf20",
+        "kind": "mcq",
+        "stem": "Submitting a lab file whose entire body is the word PASS yields?",
+        "choices": [
+          "Full credit",
+          "AssertionError / reject",
+          "Half credit",
+          "Silent skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "wrf21",
+        "kind": "mcq",
+        "stem": "Choosing maximum MCS while violating the BLER ceiling is?",
+        "choices": [
+          "Good for throughput stories",
+          "A discipline failure",
+          "Required by NTN",
+          "Required by O-RAN"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wrf22",
+        "kind": "mcq",
+        "stem": "Calling a ~5 ms LEO RTT 'GEO-comparable' should be?",
+        "choices": [
+          "Accepted",
+          "Rejected as false",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Reject."
+      },
+      {
+        "id": "wrf23",
+        "kind": "mcq",
+        "stem": "An O-RAN map missing A1, E2, and O1 should?",
+        "choices": [
+          "Pass",
+          "Fail interface checks",
+          "Earn RIC badge",
+          "Earn 6G badge"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wrf24",
+        "kind": "mcq",
+        "stem": "Best lab style concurrent with Stream A QEMU load?",
+        "choices": [
+          "Heavyweight simulator tarballs",
+          "Compact fixture math validators",
+          "Idle forever",
+          "Only marketing decks"
+        ],
+        "answer_index": 1,
+        "explanation": "Fixtures."
+      }
+    ]
+  },
+  "ROBOTICS_CONTROL": {
+    "offset": 1,
+    "mid": [
+      {
+        "id": "rb01",
+        "kind": "mcq",
+        "stem": "HarborBot planar pose representation expected in week-1 journals is?",
+        "choices": [
+          "x, y, and yaw theta",
+          "RGB pixels only",
+          "BPM and phase",
+          "MCS and BLER"
+        ],
+        "answer_index": 0,
+        "explanation": "SE2."
+      },
+      {
+        "id": "rb02",
+        "kind": "mcq",
+        "stem": "A tool-point claim without any frame sketch should?",
+        "choices": [
+          "Pass",
+          "Fail the frames week",
+          "Earn SIL",
+          "Earn Unity cert"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rb03",
+        "kind": "mcq",
+        "stem": "Links 0.45 m and 0.35 m imply a maximum planar reach near?",
+        "choices": [
+          "0.80 m",
+          "0.10 m",
+          "1.80 m",
+          "80 m"
+        ],
+        "answer_index": 0,
+        "explanation": "Sum."
+      },
+      {
+        "id": "rb04",
+        "kind": "mcq",
+        "stem": "A commanded tip 0.95 m out with 0.80 m max reach must set reachable?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "ai"
+        ],
+        "answer_index": 1,
+        "explanation": "False."
+      },
+      {
+        "id": "rb05",
+        "kind": "mcq",
+        "stem": "Discrete PID fixtures in this course assume dt is?",
+        "choices": [
+          "A small positive sample time",
+          "Exactly zero",
+          "Negative",
+          "Infinite"
+        ],
+        "answer_index": 0,
+        "explanation": "dt."
+      },
+      {
+        "id": "rb06",
+        "kind": "mcq",
+        "stem": "When the integrated error grows large, the lab expects?",
+        "choices": [
+          "Silence",
+          "An anti-windup note of real length",
+          "Deletion of Kp",
+          "A 6G claim"
+        ],
+        "answer_index": 1,
+        "explanation": "Note."
+      },
+      {
+        "id": "rb07",
+        "kind": "mcq",
+        "stem": "Planning a cinematic path that exceeds vmax 'because it looks smooth' is?",
+        "choices": [
+          "Accepted art",
+          "A trajectory-limits failure",
+          "Required for mid",
+          "Required for NTN"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rb08",
+        "kind": "mcq",
+        "stem": "On the NO_AI trajectory week, students should?",
+        "choices": [
+          "Compute limit times by hand",
+          "Paste vendor dumps",
+          "Bypass E-stop",
+          "Fabricate SIL"
+        ],
+        "answer_index": 0,
+        "explanation": "Hand."
+      },
+      {
+        "id": "rb09",
+        "kind": "mcq",
+        "stem": "A 4.2 m lidar hit with a 2.0 m hard gate should be?",
+        "choices": [
+          "Kept as truth",
+          "Dropped as outlier",
+          "Averaged unchanged",
+          "Used as E-stop"
+        ],
+        "answer_index": 1,
+        "explanation": "Drop."
+      },
+      {
+        "id": "rb10",
+        "kind": "mcq",
+        "stem": "Treating the maximum raw sample as ground truth always is?",
+        "choices": [
+          "Best practice",
+          "Rejected sensing discipline",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "rb11",
+        "kind": "mcq",
+        "stem": "Hard E-stop policy requires motors_disabled to be?",
+        "choices": [
+          "false",
+          "true",
+          "optional",
+          "ai-decided"
+        ],
+        "answer_index": 1,
+        "explanation": "true."
+      },
+      {
+        "id": "rb12",
+        "kind": "mcq",
+        "stem": "Replacing E-stop with 'software will slow down eventually' is?",
+        "choices": [
+          "Adequate",
+          "A safety failure",
+          "Required for demos",
+          "Required for games"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rb13",
+        "kind": "mcq",
+        "stem": "Diff-drive wheel base entered as zero should?",
+        "choices": [
+          "Compute omega anyway",
+          "Be rejected by the B>0 check",
+          "Earn extra credit",
+          "Unlock fleet mode"
+        ],
+        "answer_index": 1,
+        "explanation": "Reject."
+      },
+      {
+        "id": "rb14",
+        "kind": "mcq",
+        "stem": "Body linear speed from wheel rates uses which combination?",
+        "choices": [
+          "sum of left and right rates",
+          "only FSPL",
+          "only MCS",
+          "only BPM"
+        ],
+        "answer_index": 0,
+        "explanation": "Sum."
+      },
+      {
+        "id": "rb15",
+        "kind": "mcq",
+        "stem": "Reporting covariance exactly zero as a certainty lie should?",
+        "choices": [
+          "Pass fuse lab",
+          "Fail covariance honesty",
+          "Earn Kalman badge",
+          "Earn CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rb16",
+        "kind": "mcq",
+        "stem": "Scalar Kalman gain form used on the fixture is?",
+        "choices": [
+          "p/(p+r)",
+          "p*r",
+          "always 1",
+          "always 0"
+        ],
+        "answer_index": 0,
+        "explanation": "K."
+      },
+      {
+        "id": "rb17",
+        "kind": "mcq",
+        "stem": "cmd_vel-shaped messages must use frame_id?",
+        "choices": [
+          "base_link",
+          "map_ai",
+          "sixg",
+          "geo_slot"
+        ],
+        "answer_index": 0,
+        "explanation": "base_link."
+      },
+      {
+        "id": "rb18",
+        "kind": "mcq",
+        "stem": "Advertising a 50-robot Harbor fleet deploy from schema week is?",
+        "choices": [
+          "Fine",
+          "A claim-boundary failure",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rb19",
+        "kind": "mcq",
+        "stem": "Opening a device-os curriculum PR from this robotics packet is?",
+        "choices": [
+          "Encouraged",
+          "Forbidden by capstone flag",
+          "Required",
+          "Optional"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "rb20",
+        "kind": "mcq",
+        "stem": "Safety packet capstone needs labs_passed at least?",
+        "choices": [
+          "2",
+          "4",
+          "6",
+          "60"
+        ],
+        "answer_index": 2,
+        "explanation": ">=6."
+      }
+    ],
+    "final": [
+      {
+        "id": "rbf01",
+        "kind": "mcq",
+        "stem": "Rotating a tool offset by yaw \u03c0/2 mixes coordinates using?",
+        "choices": [
+          "sine and cosine of yaw",
+          "BPM phase only",
+          "BLER tables only",
+          "DAU only"
+        ],
+        "answer_index": 0,
+        "explanation": "Rot."
+      },
+      {
+        "id": "rbf02",
+        "kind": "mcq",
+        "stem": "'Servos are strong, therefore workspace is infinite' is?",
+        "choices": [
+          "Correct",
+          "False kinematics",
+          "Required mantra",
+          "Extra credit"
+        ],
+        "answer_index": 1,
+        "explanation": "False."
+      },
+      {
+        "id": "rbf03",
+        "kind": "mcq",
+        "stem": "Forward-kinematics submissions must include?",
+        "choices": [
+          "Cartesian tip and reachable flag",
+          "Only RGB",
+          "Only captions",
+          "Only NTN delay"
+        ],
+        "answer_index": 0,
+        "explanation": "FK."
+      },
+      {
+        "id": "rbf04",
+        "kind": "mcq",
+        "stem": "The derivative term primarily responds to?",
+        "choices": [
+          "Error slope across samples",
+          "Path loss",
+          "MCS index",
+          "Beat period"
+        ],
+        "answer_index": 0,
+        "explanation": "Slope."
+      },
+      {
+        "id": "rbf05",
+        "kind": "mcq",
+        "stem": "Trapezoidal time bounds need which pair?",
+        "choices": [
+          "vmax and amax",
+          "VFX and DAU",
+          "Captions and BPM",
+          "FSPL and OBW"
+        ],
+        "answer_index": 0,
+        "explanation": "Limits."
+      },
+      {
+        "id": "rbf06",
+        "kind": "mcq",
+        "stem": "Curvature limits mid-course are best labeled?",
+        "choices": [
+          "Still needed later",
+          "Already finished forever",
+          "Deleted from physics",
+          "Replaced by 6G"
+        ],
+        "answer_index": 0,
+        "explanation": "Need."
+      },
+      {
+        "id": "rbf07",
+        "kind": "mcq",
+        "stem": "Hard gates / IQR cleaning exist to?",
+        "choices": [
+          "Remove wild outliers",
+          "Invent sensor bias",
+          "Bypass E-stop",
+          "Fake SIL papers"
+        ],
+        "answer_index": 0,
+        "explanation": "Clean."
+      },
+      {
+        "id": "rbf08",
+        "kind": "mcq",
+        "stem": "Bias calibration status after the noise week is?",
+        "choices": [
+          "Still needed",
+          "Finished in week 1 forever",
+          "Impossible",
+          "Skipped ethically"
+        ],
+        "answer_index": 0,
+        "explanation": "Need."
+      },
+      {
+        "id": "rbf09",
+        "kind": "mcq",
+        "stem": "After E-stop, resume_requires_human must be?",
+        "choices": [
+          "true",
+          "false",
+          "bot-optional",
+          "null"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "rbf10",
+        "kind": "mcq",
+        "stem": "Disabling E-stop wiring for a demo recording is?",
+        "choices": [
+          "Allowed showmanship",
+          "Ethics failure",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rbf11",
+        "kind": "mcq",
+        "stem": "Body yaw rate from differential wheels uses?",
+        "choices": [
+          "difference of wheel rates",
+          "only their sum",
+          "only wheel radius alone",
+          "only B alone"
+        ],
+        "answer_index": 0,
+        "explanation": "Diff."
+      },
+      {
+        "id": "rbf12",
+        "kind": "mcq",
+        "stem": "A pretty drive video without kinematics fields is?",
+        "choices": [
+          "Sufficient proof",
+          "Insufficient without the math JSON",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Math."
+      },
+      {
+        "id": "rbf13",
+        "kind": "mcq",
+        "stem": "Scalar fusion must refuse which lie?",
+        "choices": [
+          "Zero-covariance certainty",
+          "Finite K",
+          "Two measurements",
+          "Operator notes"
+        ],
+        "answer_index": 0,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "rbf14",
+        "kind": "mcq",
+        "stem": "Claiming a full SE(2) EKF is complete after the scalar week is?",
+        "choices": [
+          "Accurate",
+          "Over-claim / still needed",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Need."
+      },
+      {
+        "id": "rbf15",
+        "kind": "mcq",
+        "stem": "NaN in angular.z should?",
+        "choices": [
+          "Pass schema",
+          "Fail the finite twist check",
+          "Earn ROS badge",
+          "Earn Unity badge"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rbf16",
+        "kind": "mcq",
+        "stem": "NO_AI schema week expects?",
+        "choices": [
+          "Hand-authored JSON",
+          "Exam-item harvests",
+          "Fake fleet logos",
+          "Fake SIL scans"
+        ],
+        "answer_index": 0,
+        "explanation": "Hand."
+      },
+      {
+        "id": "rbf17",
+        "kind": "mcq",
+        "stem": "Capstone estop_ok must be?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "ai"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "rbf18",
+        "kind": "mcq",
+        "stem": "Inventing injury statistics for portfolio drama is?",
+        "choices": [
+          "Allowed",
+          "Forbidden",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "rbf19",
+        "kind": "mcq",
+        "stem": "Career credentials on the map are?",
+        "choices": [
+          "Auto-issued",
+          "Aligned labels not granted",
+          "Sold",
+          "Hidden"
+        ],
+        "answer_index": 1,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "rbf20",
+        "kind": "mcq",
+        "stem": "E-stop procedure sheet accessibility requires?",
+        "choices": [
+          "Large-text printable form",
+          "Tiny GIF only",
+          "No text",
+          "Cracked PDF reader"
+        ],
+        "answer_index": 0,
+        "explanation": "A11y."
+      },
+      {
+        "id": "rbf21",
+        "kind": "mcq",
+        "stem": "A lab artifact that is only the word PASS is?",
+        "choices": [
+          "Accepted",
+          "Rejected with AssertionError",
+          "Half credit",
+          "Auto-graded A"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "rbf22",
+        "kind": "mcq",
+        "stem": "Empty student JSON object yields?",
+        "choices": [
+          "PASS",
+          "Failure of student_artifact",
+          "Half credit",
+          "Silent skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "rbf23",
+        "kind": "mcq",
+        "stem": "Does this course grant SIL certification?",
+        "choices": [
+          "Yes",
+          "No \u2014 not claimed",
+          "Automatically after final",
+          "Yes via AI"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "rbf24",
+        "kind": "mcq",
+        "stem": "HarborBot maps into which academy id?",
+        "choices": [
+          "ACADEMY_HARDWARE",
+          "ACADEMY_CYBER",
+          "ACADEMY_PROF_DEV",
+          "ACADEMY_PROCESS_PM"
+        ],
+        "answer_index": 0,
+        "explanation": "Hardware."
+      }
+    ]
+  },
+  "GAME_DEV_INTERACTIVE": {
+    "offset": 2,
+    "mid": [
+      {
+        "id": "ga01",
+        "kind": "mcq",
+        "stem": "Forge Arcade fixed simulation step used in the loop lab is?",
+        "choices": [
+          "1/60 second",
+          "1 second",
+          "0",
+          "60 seconds"
+        ],
+        "answer_index": 0,
+        "explanation": "Fixed."
+      },
+      {
+        "id": "ga02",
+        "kind": "mcq",
+        "stem": "When frame_time exceeds the clamp region, spiral_of_death_guard must be?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "ai"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "ga03",
+        "kind": "mcq",
+        "stem": "AABB contact requires overlap on?",
+        "choices": [
+          "both axes",
+          "exactly one axis",
+          "VFX only",
+          "audio only"
+        ],
+        "answer_index": 0,
+        "explanation": "Both."
+      },
+      {
+        "id": "ga04",
+        "kind": "mcq",
+        "stem": "Using particle fireworks as the only collision evidence is?",
+        "choices": [
+          "Sufficient",
+          "A math failure",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga05",
+        "kind": "mcq",
+        "stem": "At 120 BPM the beat period equals?",
+        "choices": [
+          "0.5 s",
+          "1.0 s",
+          "2.0 s",
+          "0.12 s"
+        ],
+        "answer_index": 0,
+        "explanation": "0.5."
+      },
+      {
+        "id": "ga06",
+        "kind": "mcq",
+        "stem": "pirated_sample_pack must evaluate to?",
+        "choices": [
+          "true",
+          "false",
+          "optional",
+          "required"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga07",
+        "kind": "mcq",
+        "stem": "An illegal finite-state edge should set transition_ok to?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "skip"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga08",
+        "kind": "mcq",
+        "stem": "Boolean flags with no transition table are?",
+        "choices": [
+          "Best practice",
+          "A discipline failure",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga09",
+        "kind": "mcq",
+        "stem": "Level tile array length must equal?",
+        "choices": [
+          "width times height",
+          "width plus height",
+          "always ten",
+          "an AI guess"
+        ],
+        "answer_index": 0,
+        "explanation": "Product."
+      },
+      {
+        "id": "ga10",
+        "kind": "mcq",
+        "stem": "NO_AI level-hash week expects?",
+        "choices": [
+          "Hand-computed checksum fields",
+          "Exam dumps",
+          "Cracked editors",
+          "Fake DAU"
+        ],
+        "answer_index": 0,
+        "explanation": "Hand."
+      },
+      {
+        "id": "ga11",
+        "kind": "mcq",
+        "stem": "Input actions should be marked rebindable?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "raw-only"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "ga12",
+        "kind": "mcq",
+        "stem": "Design docs that list only raw scancodes should?",
+        "choices": [
+          "Pass",
+          "Fail the actions lab",
+          "Earn Unity cert",
+          "Earn Godot cert"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga13",
+        "kind": "mcq",
+        "stem": "required_unmerged_branch on the four-game case must be?",
+        "choices": [
+          "true",
+          "false",
+          "required",
+          "optional-true"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga14",
+        "kind": "mcq",
+        "stem": "Which title is a valid optional case-study example?",
+        "choices": [
+          "earth-species",
+          "device-os merge PR",
+          "NET-SEC reopen",
+          "WP-001 packet"
+        ],
+        "answer_index": 0,
+        "explanation": "Games."
+      },
+      {
+        "id": "ga15",
+        "kind": "mcq",
+        "stem": "If 5 of 25 sessions churn early, early_churn_rate is?",
+        "choices": [
+          "0.2",
+          "0.5",
+          "5",
+          "25"
+        ],
+        "answer_index": 0,
+        "explanation": "0.2."
+      },
+      {
+        "id": "ga16",
+        "kind": "mcq",
+        "stem": "vanity_dau_claim must be?",
+        "choices": [
+          "true",
+          "false",
+          "required",
+          "optional"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga17",
+        "kind": "mcq",
+        "stem": "Accessibility captions flag must be?",
+        "choices": [
+          "true",
+          "false",
+          "optional",
+          "ai"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "ga18",
+        "kind": "mcq",
+        "stem": "flash_hz equal to 10 on the a11y lab should?",
+        "choices": [
+          "Pass",
+          "Fail the \u22643 rule",
+          "Earn bonus",
+          "Skip week"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga19",
+        "kind": "mcq",
+        "stem": "Ship checklist unmerged_branch_required must be?",
+        "choices": [
+          "true",
+          "false",
+          "optional-true",
+          "required-true"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga20",
+        "kind": "mcq",
+        "stem": "Game capstone labs_passed minimum is?",
+        "choices": [
+          "2",
+          "4",
+          "6",
+          "60"
+        ],
+        "answer_index": 2,
+        "explanation": ">=6."
+      }
+    ],
+    "final": [
+      {
+        "id": "gaf01",
+        "kind": "mcq",
+        "stem": "Interpolating render frames while keeping fixed sim steps is?",
+        "choices": [
+          "An accepted pattern",
+          "Always forbidden",
+          "AI-only",
+          "Audio-only"
+        ],
+        "answer_index": 0,
+        "explanation": "OK."
+      },
+      {
+        "id": "gaf02",
+        "kind": "mcq",
+        "stem": "Handheld profiling marked PHYSICAL_PENDING means?",
+        "choices": [
+          "Await real measurement",
+          "Always DONE",
+          "Fabricate FPS",
+          "Skip ethics"
+        ],
+        "answer_index": 0,
+        "explanation": "Pending."
+      },
+      {
+        "id": "gaf03",
+        "kind": "mcq",
+        "stem": "AABB separating-axis work reduces to?",
+        "choices": [
+          "Per-axis overlap tests",
+          "Sphere-only math",
+          "DAU charts",
+          "FSPL charts"
+        ],
+        "answer_index": 0,
+        "explanation": "Overlap."
+      },
+      {
+        "id": "gaf04",
+        "kind": "mcq",
+        "stem": "Swept collision tests after basic AABB are?",
+        "choices": [
+          "Still needed later",
+          "Finished forever in week 1",
+          "Deleted",
+          "Replaced by 6G"
+        ],
+        "answer_index": 0,
+        "explanation": "Need."
+      },
+      {
+        "id": "gaf05",
+        "kind": "mcq",
+        "stem": "Beat phase after indexing should lie in?",
+        "choices": [
+          "[0,1)",
+          "always exactly 2",
+          "degree-only space",
+          "dB space"
+        ],
+        "answer_index": 0,
+        "explanation": "Phase."
+      },
+      {
+        "id": "gaf06",
+        "kind": "mcq",
+        "stem": "license_ok on audio week must read?",
+        "choices": [
+          "true",
+          "false",
+          "crack",
+          "null"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "gaf07",
+        "kind": "mcq",
+        "stem": "Idle\u2192Run on the fixture table is?",
+        "choices": [
+          "A legal edge",
+          "Always illegal",
+          "AI-only",
+          "Audio-only"
+        ],
+        "answer_index": 0,
+        "explanation": "Legal."
+      },
+      {
+        "id": "gaf08",
+        "kind": "mcq",
+        "stem": "Claiming blend trees are finished after FSM week is?",
+        "choices": [
+          "Accurate",
+          "Over-claim / still needed",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Need."
+      },
+      {
+        "id": "gaf09",
+        "kind": "mcq",
+        "stem": "Level checksums primarily pin?",
+        "choices": [
+          "Canonical level edits",
+          "E-stop wiring",
+          "FSPL hops",
+          "NTN ephemeris"
+        ],
+        "answer_index": 0,
+        "explanation": "Level."
+      },
+      {
+        "id": "gaf10",
+        "kind": "mcq",
+        "stem": "Screenshot-only level proof without JSON should?",
+        "choices": [
+          "Pass",
+          "Fail",
+          "Earn cert",
+          "Earn DAU"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "gaf11",
+        "kind": "mcq",
+        "stem": "Action maps help when controllers change because?",
+        "choices": [
+          "Semantic actions survive device swaps",
+          "They never matter",
+          "They require 6G",
+          "They require E-stop"
+        ],
+        "answer_index": 0,
+        "explanation": "Actions."
+      },
+      {
+        "id": "gaf12",
+        "kind": "mcq",
+        "stem": "Week-9 remaps relate to earlier input work by?",
+        "choices": [
+          "Extending accessibility remapping",
+          "Deleting input week",
+          "Requiring NTN",
+          "Requiring FSPL"
+        ],
+        "answer_index": 0,
+        "explanation": "A11y."
+      },
+      {
+        "id": "gaf13",
+        "kind": "mcq",
+        "stem": "Hard-depending an unmerged game PR for the case study is?",
+        "choices": [
+          "Allowed",
+          "A claim-boundary failure",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "gaf14",
+        "kind": "mcq",
+        "stem": "anime-aggressors appears in this course as?",
+        "choices": [
+          "An optional named example",
+          "A mandatory merge blocker",
+          "A device-os module",
+          "A NET-SEC ticket"
+        ],
+        "answer_index": 0,
+        "explanation": "Optional."
+      },
+      {
+        "id": "gaf15",
+        "kind": "mcq",
+        "stem": "Playtest median/session metrics require?",
+        "choices": [
+          "Arithmetic on the session list",
+          "Only vanity DAU slides",
+          "Only VFX reels",
+          "Only cracked assets"
+        ],
+        "answer_index": 0,
+        "explanation": "Math."
+      },
+      {
+        "id": "gaf16",
+        "kind": "mcq",
+        "stem": "Statistical cohort significance after the small playtest is?",
+        "choices": [
+          "Still needed",
+          "Already proven forever",
+          "Fake-OK",
+          "Skipped"
+        ],
+        "answer_index": 0,
+        "explanation": "Need."
+      },
+      {
+        "id": "gaf17",
+        "kind": "mcq",
+        "stem": "colorblind_safe must be?",
+        "choices": [
+          "true",
+          "false",
+          "ignored",
+          "gpu-only"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "gaf18",
+        "kind": "mcq",
+        "stem": "Fabricating tests with disabled players is?",
+        "choices": [
+          "Allowed",
+          "Forbidden",
+          "Required",
+          "Extra"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "gaf19",
+        "kind": "mcq",
+        "stem": "Should Product-Use consume this unmerged course branch?",
+        "choices": [
+          "Yes",
+          "No",
+          "Optional",
+          "Required"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "gaf20",
+        "kind": "mcq",
+        "stem": "Career credentials are?",
+        "choices": [
+          "Granted automatically",
+          "Aligned not granted",
+          "Sold",
+          "Hidden"
+        ],
+        "answer_index": 1,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "gaf21",
+        "kind": "mcq",
+        "stem": "Keyboard-only path notes in the portfolio are?",
+        "choices": [
+          "Required",
+          "Forbidden",
+          "GPU-only",
+          "Unnecessary"
+        ],
+        "answer_index": 0,
+        "explanation": "A11y."
+      },
+      {
+        "id": "gaf22",
+        "kind": "mcq",
+        "stem": "PASS-only lab bodies are?",
+        "choices": [
+          "Accepted",
+          "Rejected via AssertionError",
+          "Half credit",
+          "Auto A"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "gaf23",
+        "kind": "mcq",
+        "stem": "Empty {} submissions are?",
+        "choices": [
+          "PASS",
+          "Failures",
+          "Half credit",
+          "Silent skips"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "gaf24",
+        "kind": "mcq",
+        "stem": "Forge Arcade academy id is?",
+        "choices": [
+          "ACADEMY_SOFTWARE",
+          "ACADEMY_CYBER",
+          "ACADEMY_HARDWARE",
+          "ACADEMY_IT"
+        ],
+        "answer_index": 0,
+        "explanation": "Software."
+      }
+    ]
+  }
+}

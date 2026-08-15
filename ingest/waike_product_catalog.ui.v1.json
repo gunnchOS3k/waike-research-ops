@@ -122,6 +122,45 @@
         "CLOUD_DEVOPS"
       ],
       "academy_id": "ACADEMY_SOFTWARE"
+    },
+    {
+      "course_id": "WIRELESS_6G",
+      "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+      "kinesthetic_hook": "Run the Gary Pier Radio Bench for ten weeks: FSPL \u2192 OFDM \u2192 5G-Advanced \u2192 NTN LEO delay \u2192 AI-RAN gated policy. Commercial standardized 6G does NOT exist today.",
+      "lesson_excerpt": "The Pier Radio Bench sits under the Gary pier canopy: a USRP-class SDR, a scratched\nThinkPad, and a laminated card that says COMMERCIAL_STANDARDIZED_6G=false. Week 1 is\nticket WR-4101. Beginners want a 6G slide deck. Operators compute free-space path loss\nfor a 3.5 GHz pier hop at 120 m using FSPL_dB = 20*log10(d_m) + 20*log10(f_MHz) - 27.55.",
+      "worked_example": "d=120 m, f=3500 MHz \u2192 FSPL \u2248 20*log10(120)+20*log10(3500)-27.55 \u2248 84.9 dB.",
+      "assignment": "Journal WR-4101 with d_m, f_mhz, fspl_db, and commercial-6G=false. Submit lab_fspl_budget.",
+      "lab_hint": "lab_fspl_budget",
+      "track_ids": [
+        "WIRELESS_6G"
+      ],
+      "academy_id": "ACADEMY_NETWORKING"
+    },
+    {
+      "course_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control \u2014 HarborBot Bay",
+      "kinesthetic_hook": "Ten weeks in HarborBot Bay: frames \u2192 2R kinematics \u2192 PID \u2192 traj \u2192 sensing \u2192 E-stop \u2192 diff-drive \u2192 estimation \u2192 message schemas \u2192 safety capstone. Real commands on fixture math.",
+      "lesson_excerpt": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.",
+      "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos.",
+      "assignment": "Compute RB-5101 pose/tool map. Submit lab_se2_pose.",
+      "lab_hint": "lab_se2_pose",
+      "track_ids": [
+        "ROBOTICS_CONTROL"
+      ],
+      "academy_id": "ACADEMY_HARDWARE"
+    },
+    {
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development \u2014 Forge Arcade Studio",
+      "kinesthetic_hook": "Ten Forge Arcade weeks: game loop \u2192 AABB \u2192 audio clock \u2192 entities \u2192 levels \u2192 input \u2192 optional four-game case studies \u2192 playtest metrics \u2192 a11y \u2192 ship checklist. Case studies are optional; not dependent on unmerged game branches.",
+      "lesson_excerpt": "Ticket GA-6101: fixed timestep dt=1/60 with accumulator pattern. Lab checks dt, steps,\nspiral_of_death_guard=true when frame_time exceeds 0.25 s clamp. Variable rendering may\ninterpolate; simulation steps stay fixed.",
+      "worked_example": "dt=1/60; clamp frame_time; spiral_of_death_guard true.",
+      "assignment": "Implement GA-6101 loop JSON. Submit lab_game_loop.",
+      "lab_hint": "lab_game_loop",
+      "track_ids": [
+        "GAME_DEV_INTERACTIVE"
+      ],
+      "academy_id": "ACADEMY_SOFTWARE"
     }
   ]
 }

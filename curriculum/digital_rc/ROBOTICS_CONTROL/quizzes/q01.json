@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "rb-w1-1",
+      "kind": "mcq",
+      "stem": "Pose fields?",
+      "choices": [
+        "RGB only",
+        "x,y,theta",
+        "MCS",
+        "FSPL"
+      ]
+    },
+    {
+      "id": "rb-w1-2",
+      "kind": "mcq",
+      "stem": "Units?",
+      "choices": [
+        "deg only",
+        "pixels",
+        "m and rad",
+        "dB"
+      ]
+    },
+    {
+      "id": "rb-w1-3",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Skip",
+        "Fails"
+      ]
+    },
+    {
+      "id": "rb-w1-4",
+      "kind": "mcq",
+      "stem": "AI nabbed-box claim without frames?",
+      "choices": [
+        "Fails week",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w1-5",
+      "kind": "mcq",
+      "stem": "Journal needs?",
+      "choices": [
+        "Only TikTok",
+        "ASCII frame diagram",
+        "Only GPU",
+        "6G"
+      ]
+    },
+    {
+      "id": "rb-w1-6",
+      "kind": "mcq",
+      "stem": "print PASS?",
+      "choices": [
+        "OK",
+        "Half",
+        "Raises",
+        "Auto"
+      ]
+    }
+  ]
+}

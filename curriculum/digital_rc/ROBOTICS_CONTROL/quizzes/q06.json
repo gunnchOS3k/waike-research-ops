@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "rb-w6-1",
+      "kind": "mcq",
+      "stem": "motors_disabled?",
+      "choices": [
+        "false",
+        "optional",
+        "AI",
+        "true"
+      ]
+    },
+    {
+      "id": "rb-w6-2",
+      "kind": "mcq",
+      "stem": "Soft slowdown only?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w6-3",
+      "kind": "mcq",
+      "stem": "resume_requires_human?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "bot"
+      ]
+    },
+    {
+      "id": "rb-w6-4",
+      "kind": "mcq",
+      "stem": "Bypass for demo video?",
+      "choices": [
+        "OK",
+        "Required",
+        "Ethics fail",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w6-5",
+      "kind": "mcq",
+      "stem": "SIL claimed?",
+      "choices": [
+        "Yes",
+        "Auto",
+        "Always",
+        "No \u2014 not claimed"
+      ]
+    },
+    {
+      "id": "rb-w6-6",
+      "kind": "mcq",
+      "stem": "brake_engaged?",
+      "choices": [
+        "true",
+        "false",
+        "maybe",
+        "skip"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "rb-w5-1",
+      "kind": "mcq",
+      "stem": "Outlier in fixture?",
+      "choices": [
+        "1.00",
+        "3.50",
+        "0.99",
+        "1.02"
+      ]
+    },
+    {
+      "id": "rb-w5-2",
+      "kind": "mcq",
+      "stem": "cleaned_n after drop?",
+      "choices": [
+        "5",
+        "1",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "id": "rb-w5-3",
+      "kind": "mcq",
+      "stem": "Trust raw max always?",
+      "choices": [
+        "Yes",
+        "AI yes",
+        "Required",
+        "No"
+      ]
+    },
+    {
+      "id": "rb-w5-4",
+      "kind": "mcq",
+      "stem": "Bias calibration?",
+      "choices": [
+        "Still need",
+        "Done",
+        "Impossible",
+        "Skip"
+      ]
+    },
+    {
+      "id": "rb-w5-5",
+      "kind": "mcq",
+      "stem": "Week 5 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails",
+        "Half",
+        "Auto"
+      ]
+    },
+    {
+      "id": "rb-w5-6",
+      "kind": "mcq",
+      "stem": "Hard gate example?",
+      "choices": [
+        "Drop all",
+        "Keep 3.50",
+        ">2.0 m drop",
+        "Ignore"
+      ]
+    }
+  ]
+}

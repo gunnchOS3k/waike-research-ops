@@ -1,6 +1,6 @@
 {
   "schema": "waike.taxonomy.academy_map_18_to_7.v1",
-  "date_checked": "2026-08-13",
+  "date_checked": "2026-08-15",
   "rule": "Owner 18-track taxonomy wins. Map into 7 academies. Do not delete advanced tracks.",
   "academies": [
     {
@@ -53,44 +53,57 @@
     }
   ],
   "this_batch": {
-    "packet_id": "WAIKE-COURSE-READY-001",
+    "packet_id": "WAIKE-COURSE-READY-004",
     "courses": [
       {
-        "course_id": "GENERAL_IT",
-        "title": "General IT — Operator to Support Specialist",
-        "maps_to_tracks": ["DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE"],
-        "academy_id": "ACADEMY_IT",
-        "note": "One authored course covers both foundation IT tracks. Tracks remain distinct IDs."
-      },
-      {
-        "course_id": "COMPUTER_NETWORKING",
-        "title": "Computer Networking — Packets to Campus Edge",
-        "maps_to_tracks": ["NETWORKING_INFRA"],
+        "course_id": "WIRELESS_6G",
+        "title": "Wireless / 5G-Advanced / NTN / AI-RAN — Pier Radio Bench",
+        "maps_to_tracks": ["WIRELESS_6G"],
         "academy_id": "ACADEMY_NETWORKING",
-        "note": "WIRELESS_6G stays an advanced networking extension and is not deleted."
+        "note": "Existing track_id WIRELESS_6G. Commercial standardized 6G does NOT exist today; RESEARCH_ONLY foresight labeled."
       },
       {
-        "course_id": "CYBERSECURITY",
-        "title": "Cybersecurity — Harbor SOC Foundations",
-        "maps_to_tracks": ["CYBER_SOC"],
-        "academy_id": "ACADEMY_CYBER"
+        "course_id": "ROBOTICS_CONTROL",
+        "title": "Robotics and Control — HarborBot Bay",
+        "maps_to_tracks": ["ROBOTICS_CONTROL"],
+        "academy_id": "ACADEMY_HARDWARE",
+        "note": "Existing track_id ROBOTICS_CONTROL. No invent/duplicate/delete."
+      },
+      {
+        "course_id": "GAME_DEV_INTERACTIVE",
+        "title": "Game Development — Forge Arcade Studio",
+        "maps_to_tracks": ["GAME_DEV_INTERACTIVE"],
+        "academy_id": "ACADEMY_SOFTWARE",
+        "note": "Existing track_id GAME_DEV_INTERACTIVE. Four games optional case study; no unmerged-branch dependency."
       }
     ]
   },
-  "unauthored_this_packet": [
+  "prior_batches_preserved": [
+    "WAIKE-COURSE-READY-001",
+    "WAIKE-COURSE-READY-002",
+    "WAIKE-COURSE-READY-003"
+  ],
+  "authored_product_path_courses": [
+    "GENERAL_IT",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
     "SOFTWARE_BUILDER",
-    "DATA_DASHBOARDS",
-    "AI_ML_EDGE",
-    "EMBEDDED_PROTOTYPING",
-    "WIRELESS_6G",
-    "PM_AGILE_LSS",
-    "GAME_DEV_INTERACTIVE",
-    "SEVEN_GC_APPRENTICESHIP",
-    "CLOUD_DEVOPS",
-    "COMM_PD_ETHICS",
-    "ROBOTICS_CONTROL",
-    "GUNNCHOS_PRODUCT_LAB",
     "HARDWARE_ENGINEERING",
-    "DATA_VIZ_BI"
+    "PM_AGILE_LSS",
+    "AI_ML_EDGE",
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS",
+    "WIRELESS_6G",
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
+  ],
+  "unauthored_this_packet": [
+    "DIGITAL_CONFIDENCE",
+    "IT_SUPPORT_HARDWARE",
+    "DATA_DASHBOARDS",
+    "EMBEDDED_PROTOTYPING",
+    "SEVEN_GC_APPRENTICESHIP",
+    "COMM_PD_ETHICS",
+    "GUNNCHOS_PRODUCT_LAB"
   ]
 }

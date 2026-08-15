@@ -6,10 +6,10 @@
     "DATA_VIZ_BI",
     "CLOUD_DEVOPS"
   ],
-  "worst_packaging_jaccard": 0.1244,
+  "worst_packaging_jaccard": 0.1316,
   "worst_packaging_pair": [
-    "SOFTWARE_BUILDER",
-    "AI_ML_EDGE"
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
   ],
   "status": "PASS"
 }

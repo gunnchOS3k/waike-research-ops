@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "rb-w8-1",
+      "kind": "mcq",
+      "stem": "K formula?",
+      "choices": [
+        "p*r",
+        "1",
+        "0",
+        "p/(p+r)"
+      ]
+    },
+    {
+      "id": "rb-w8-2",
+      "kind": "mcq",
+      "stem": "P=0 certainty claim?",
+      "choices": [
+        "Fails cov honesty",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w8-3",
+      "kind": "mcq",
+      "stem": "Full EKF claimed?",
+      "choices": [
+        "Yes",
+        "No \u2014 still need",
+        "Always",
+        "AI"
+      ]
+    },
+    {
+      "id": "rb-w8-4",
+      "kind": "mcq",
+      "stem": "Week 8 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ]
+    },
+    {
+      "id": "rb-w8-5",
+      "kind": "mcq",
+      "stem": "Lower variance does?",
+      "choices": [
+        "Ignored",
+        "Deletes robot",
+        "6G",
+        "Dominates fuse"
+      ]
+    },
+    {
+      "id": "rb-w8-6",
+      "kind": "mcq",
+      "stem": "Week 8 ticket context: print PASS?",
+      "choices": [
+        "Raises",
+        "OK",
+        "Half",
+        "Skip"
+      ]
+    }
+  ]
+}

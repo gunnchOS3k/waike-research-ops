@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "ROBOTICS_CONTROL",
+  "title": "Robotics and Control \u2014 HarborBot Bay",
+  "track_ids": [
+    "ROBOTICS_CONTROL"
+  ],
+  "academy_id": "ACADEMY_HARDWARE",
+  "kinesthetic_hook": "Ten weeks in HarborBot Bay: frames \u2192 2R kinematics \u2192 PID \u2192 traj \u2192 sensing \u2192 E-stop \u2192 diff-drive \u2192 estimation \u2192 message schemas \u2192 safety capstone. Real commands on fixture math.",
+  "lesson_excerpt": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.\n\nLab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PASS raises.\n\nConsensus Ladder: observed = tape origin and tool offset; inferred = rotation ",
+  "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos.",
+  "assignment": "Compute RB-5101 pose/tool map. Submit lab_se2_pose.",
+  "lab_hint": "lab_se2_pose",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "HarborBot frames \u2014 SE(2) pose without cinematic hype",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w01",
+        "title": "HarborBot frames \u2014 SE(2) pose without cinematic hype",
+        "body_md": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.\n\nLab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PASS raises.\n\nConsensus Ladder: observed = tape origin and tool offset; inferred = rotation mixes x/y;\nstill need = wheel slip model (later). Accessibility: ASCII frame diagrams required in journals.\n\nTape the pier origin, mark +x along the aisle, and sketch the tool offset arrow before\nany code. With theta=\u03c0/2, show how the offset rotates into pier axes using cos/sin.\nJournals without an ASCII frame diagram fail accessibility expectations for HarborBot.\n\nRefuse 'AI nabbed the box' narratives that skip the SE(2) fields. Lab JSON must carry\nx, y, theta, tool offsets, and mapped tool_x/tool_y that match the rotation math.",
+        "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos."
+      },
+      "lab_id": "lab_se2_pose"
+    },
+    {
+      "week": 2,
+      "title": "2R kinematics \u2014 reachability before torque myths",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w02",
+        "title": "2R kinematics \u2014 reachability before torque myths",
+        "body_md": "Ticket RB-5202: planar 2R arm with L1=0.35 m, L2=0.30 m. Forward kinematics to a target and\na reachability flag when hypot(x,y) > L1+L2. Lab checks x,y, reachable.\n\nConsensus Ladder: observed = link lengths; inferred = workspace is an annulus/disk bound;\nstill need = joint limits map. Failure: claiming infinite reach because 'servos are strong.'\n\nPlot the reachable disk of radius L1+L2=0.65 m and mark a forbidden point beyond it.\nForward kinematics must report both Cartesian tip and reachable=false when outside.\nStrong-servo myths do not enlarge the workspace.\n\nJoint-limit maps stay in 'still need'. Learners defend L1/L2 numbers from the fixture\ncard, not from a cinematic robot trailer.\n\nFor RB-5202, compute tip pose at \u03b81=0.4 rad, \u03b82=\u22120.2 rad with L1=0.35, L2=0.30 and mark\nreachable vs hypot(x,y)>0.65. Include a second target beyond the disk and show\nreachable=false without inventing extra link length. Defend L1/L2 from the fixture card\nonly; cinematic reach claims are out of scope. Joint-limit maps stay listed under still-need.",
+        "worked_example": "L1=0.35, L2=0.30; point beyond 0.65 m \u2192 reachable=false."
+      },
+      "lab_id": "lab_fk_2r"
+    },
+    {
+      "week": 3,
+      "title": "PID on a fixture plant \u2014 gains with anti-windup note",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w03",
+        "title": "PID on a fixture plant \u2014 gains with anti-windup note",
+        "body_md": "Ticket RB-5303: discrete PID on e=[1.0,0.6,0.2] with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.\nCompute u for the last step with simple rectangular integral and backward diff. Include\nanti_windup_note length \u22658 when integral magnitude is large.\n\nConsensus Ladder: observed = error series; inferred = D term reacts to slope; still need =\nreal motor plant ID. Empty fails. Wrong u fails.\n\nExpand the PID step: integrate the error series with rectangular rule, form the\nbackward difference for D, and compute u on the last sample. When |integral| is large,\nanti_windup_note must be a real mitigation sentence (\u22658 characters), not an empty string.\n\nPlant identification remains unfinished. Wrong u fails even if the motor 'sounds right'\non a phone video.\n\nWalk RB-5303 with the full e series [1.0,0.6,0.2], accumulate rectangular integral, form\nbackward \u0394e/dt, and publish u for the last sample with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.\nWhen |integral| grows, anti_windup_note must name a mitigation (clamp, back-calculation)\nin \u22658 characters. Wrong u fails even if a phone video of the motor looks smooth.",
+        "worked_example": "Compute u_last from fixture gains; document anti-windup note."
+      },
+      "lab_id": "lab_pid_step"
+    },
+    {
+      "week": 4,
+      "title": "Trajectory limits \u2014 vmax/amax before cinematic paths",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w04",
+        "title": "Trajectory limits \u2014 vmax/amax before cinematic paths",
+        "body_md": "Ticket RB-5404: move 1.2 m with vmax=0.4 m/s and amax=0.5 m/s\u00b2. Compute minimum time for a\ntrapezoid/triangle profile bound and reject path_ok if commanded speed exceeds vmax.\n\nNO_AI week. Consensus Ladder: observed = limits card; inferred = time bounded by v/a;\nstill need = curvature limits. Failure: spline that ignores vmax 'because it looks smooth.'\n\nFor distance 1.2 m, vmax=0.4, amax=0.5, derive whether the profile is triangle or\ntrapezoid, then compute t_min. path_ok is false when cmd_speed exceeds vmax. Smooth\nsplines that ignore limits fail the NO_AI week.\n\nCurvature limits are deferred. Whiteboard the numbers; screenshots of path planners\nwithout t_min/path_ok fields do not pass.\n\nOn RB-5404, decide triangle vs trapezoid for 1.2 m with vmax=0.4 and amax=0.5, then compute\nt_min from the chosen profile. Set path_ok false for any cmd_speed>vmax and explain the\nreject in one sentence. NO_AI week: hand-derive on paper; GUI path screenshots without\nt_min/path_ok fields do not pass. Curvature limits remain deferred.",
+        "worked_example": "Distance 1.2 m, vmax 0.4, amax 0.5 \u2192 compute t_min; path_ok respects vmax."
+      },
+      "lab_id": "lab_traj_limits"
+    },
+    {
+      "week": 5,
+      "title": "Sensor noise \u2014 mean/std and reject wild outliers",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w05",
+        "title": "Sensor noise \u2014 mean/std and reject wild outliers",
+        "body_md": "Ticket RB-5505: lidar range samples [1.01,1.00,0.99,1.02,3.50] m. Compute mean/std after\ndropping values beyond 1.5\u00d7IQR or a hard gate >2.0 m. Lab checks cleaned_n, mean, outlier_dropped.\n\nConsensus Ladder: observed = samples; inferred = 3.50 is outlier for pier aisle; still need =\ncalibrated bias. Failure: trusting raw max as truth.\n\nApply the hard gate (>2.0 m drop) to the lidar list and recompute mean on the cleaned\nset. outlier_dropped must be true when 3.50 is removed. Trusting the raw maximum as\naisle truth fails sensing discipline.\n\nBias calibration remains a later ladder rung. Empty submissions fail student_artifact.\n\nClean RB-5505 lidar [1.01,1.00,0.99,1.02,3.50] with the >2.0 m hard gate, recompute mean\nand cleaned_n, and set outlier_dropped true when 3.50 is removed. Show why trusting the\nraw max as aisle truth breaks sensing discipline. Bias calibration stays on the still-need\nrung; empty student_artifact still fails.",
+        "worked_example": "Drop 3.50; cleaned_n=4; mean\u22481.005."
+      },
+      "lab_id": "lab_sensor_noise"
+    },
+    {
+      "week": 6,
+      "title": "E-stop policy \u2014 hard interrupt beats soft hope",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w06",
+        "title": "E-stop policy \u2014 hard interrupt beats soft hope",
+        "body_md": "Ticket RB-5606: E-stop must assert motors_disabled=true, brake_engaged=true, and\nresume_requires_human=true. Software 'slow down' without disable fails.\n\nConsensus Ladder: observed = E-stop wiring card; inferred = safety power path; still need =\nSIL certification (not claimed). Ethics: never bypass E-stop for a demo video.\n\nE-stop is hard: motors_disabled, brake_engaged, and resume_requires_human all true.\nSoft 'slow down eventually' stories fail. Bypass for demo video is an ethics fail, not\na style choice. SIL certification is not claimed by this course.\n\nPractice the printable large-text E-stop sheet path even when the cart is powered down\nfor the classroom tabletop.\n\nAssert RB-5606 E-stop fields motors_disabled, brake_engaged, and resume_requires_human\nas a triple-true contract. Contrast against a soft 'slow eventually' story that must fail.\nNote that demo-video bypass is an ethics fail, and SIL certification is not claimed.\nKeep the printable large-text E-stop sheet in the student packet path for tabletop drills.",
+        "worked_example": "motors_disabled, brake_engaged, resume_requires_human all true."
+      },
+      "lab_id": "lab_estop_policy"
+    },
+    {
+      "week": 7,
+      "title": "Diff-drive ICC \u2014 wheel speeds to body twist",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w07",
+        "title": "Diff-drive ICC \u2014 wheel speeds to body twist",
+        "body_md": "Ticket RB-5707: wheel base B=0.40 m, r=0.05 m, wheel rates \u03c9_l, \u03c9_r. Compute v and \u03c9_body.\nLab checks v, omega, and rejects if someone sets B=0.\n\nConsensus Ladder: observed = encoder rates; inferred = ICC geometry; still need = slip\ncompensation. Wrong kinematics fail even if the cart 'looks right' on video.\n\nDiff-drive: v=(r/2)(\u03c9_l+\u03c9_r), \u03c9=(r/B)(\u03c9_r\u2212\u03c9_l) with B>0. B=0 is rejected before any\ndivision. Video of the cart without v/omega fields is insufficient evidence.\n\nSlip compensation stays in 'still need'. Encoder rates come from the fixture, not from\ninvented fleet telemetry.\n\nDerive RB-5707 v=(r/2)(\u03c9_l+\u03c9_r) and \u03c9=(r/B)(\u03c9_r\u2212\u03c9_l) with B=0.40, r=0.05 and reject B=0\nbefore division. Publish finite v and omega from fixture encoder rates only. Video without\nthose fields is insufficient. Slip compensation remains still-need; invented fleet\ntelemetry is forbidden. Work a second numeric pair (\u03c9_l=2.0, \u03c9_r=2.4) on the whiteboard\nand show how \u03c9_body changes sign when the wheel rates swap, still with B>0 enforced.",
+        "worked_example": "v=(r/2)*(\u03c9_l+\u03c9_r); \u03c9=(r/B)*(\u03c9_r-\u03c9_l)."
+      },
+      "lab_id": "lab_diff_drive"
+    },
+    {
+      "week": 8,
+      "title": "State estimation toy \u2014 fuse odom + range with covariance honesty",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w08",
+        "title": "State estimation toy \u2014 fuse odom + range with covariance honesty",
+        "body_md": "Ticket RB-5808: scalar fuse x_odom and x_range with variances. Compute Kalman-ish gain\nK = p/(p+r) and x_hat. Lab checks K, x_hat, and refuses cov_zero_lie=true.\n\nConsensus Ladder: observed = two measurements; inferred = lower variance dominates;\nstill need = full EKF on SE2. Failure: claiming perfect certainty (P=0).\n\nScalar fuse uses K=p/(p+r) and refuses cov_zero_lie. Walk a numeric example with\np=0.04, r=0.01 and show how lower variance pulls x_hat. Full SE(2) EKF is not claimed\nafter this toy.\n\nFinite K and two measurements are required; certainty theater fails honesty.\n\nFor RB-5808, compute K=p/(p+r) with p=0.04, r=0.01, form x_hat, and refuse cov_zero_lie.\nShow how the lower-variance measurement pulls the estimate. State explicitly that full\nSE(2) EKF is not earned by this scalar toy. Certainty theater (P=0) fails honesty.\nRepeat with p=0.09, r=0.01 and note how K shrinks when prior variance rises, still\nrefusing any submission that asserts zero covariance as a lie flag.\n\nPlot K versus r for fixed p=0.04 across r in {0.01,0.04,0.16} and write one sentence on why\ncov_zero_lie cannot be true for any of those points on RB-5808.",
+        "worked_example": "K=p/(p+r); x_hat = x_odom + K*(x_range-x_odom); no zero-cov lie."
+      },
+      "lab_id": "lab_fuse_scalar"
+    },
+    {
+      "week": 9,
+      "title": "Message schemas \u2014 /cmd_vel shaped fixtures without fleet claims",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w09",
+        "title": "Message schemas \u2014 /cmd_vel shaped fixtures without fleet claims",
+        "body_md": "Ticket RB-5909: validate a cmd_vel-shaped JSON with linear.x and angular.z finite, and\nframe_id='base_link'. Claiming a 50-robot Harbor fleet deploy fails.\n\nNO_AI week. Consensus Ladder: observed = schema card; inferred = units m/s and rad/s;\nstill need = DDS/ROS distro pin (not claimed as production).\n\ncmd_vel-shaped JSON needs finite linear_x/angular_z and frame_id=base_link.\nfleet_claim=false. NaNs fail. NO_AI week: hand-author the schema. Production DDS/ROS\ndistro pins are not granted by schema vocabulary alone.\n\nHand-author RB-5909 cmd_vel JSON with finite linear_x, angular_z, and frame_id=base_link.\nfleet_claim must be false; NaNs fail. NO_AI week forbids generative schema dumps.\nProduction DDS/ROS distro pins are not granted by vocabulary alone. Add a negative case\nwith angular_z=null and show the validator reject text the pier expects learners to cite.\n\nDocument a second negative for RB-5909: linear_x set to NaN while angular_z is finite, and show\nthat fleet_claim must remain false even if a slide deck claims fifty harbor robots. Cite the\nschema card fields by name in the journal so the reject is reproducible without a GUI.",
+        "worked_example": "linear.x + angular.z finite; frame_id base_link; fleet_claim=false."
+      },
+      "lab_id": "lab_cmd_vel_schema"
+    },
+    {
+      "week": 10,
+      "title": "Capstone safety packet \u2014 E-stop + traj + fuse evidence",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w10",
+        "title": "Capstone safety packet \u2014 E-stop + traj + fuse evidence",
+        "body_md": "Ticket RB-5910: assemble E-stop policy, traj limits, and fuse result digests. Capstone\nrequires estop_ok=true, labs_passed\u22656, and no_device_os_pr=true (do not open device-os PRs).\n\nCareer map: robotics technician / controls junior. Accessibility: emergency procedure\nsheet must be printable large-text. Portfolio forbids fabricated injury statistics.\n\nCapstone packet requires estop_ok=true, labs_passed\u22656, no_device_os_pr=true, and a\npacket_sha256. Fabricated injury statistics are forbidden. Career map: robotics\ntechnician / controls junior \u2014 aligned, not granted.\n\nLarge-text E-stop procedure must remain in the portfolio folder.\n\nAssemble RB-5910 with estop_ok=true, labs_passed\u22656, no_device_os_pr=true, and packet_sha256.\nForbid fabricated injury statistics. Keep career mapping as robotics technician / controls\njunior \u2014 aligned, not granted \u2014 and retain the large-text E-stop procedure in portfolio.",
+        "worked_example": "estop_ok true; labs_passed\u22656; no_device_os_pr true."
+      },
+      "lab_id": "lab_robot_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_se2_pose",
+    "lab_fk_2r",
+    "lab_pid_step",
+    "lab_traj_limits",
+    "lab_sensor_noise",
+    "lab_estop_policy",
+    "lab_diff_drive",
+    "lab_fuse_scalar",
+    "lab_cmd_vel_schema",
+    "lab_robot_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "ROBOTICS_CONTROL-lab",
+    "ROBOTICS_CONTROL-assignment",
+    "ROBOTICS_CONTROL-quiz",
+    "ROBOTICS_CONTROL-mid",
+    "ROBOTICS_CONTROL-final-knowledge",
+    "ROBOTICS_CONTROL-practical",
+    "ROBOTICS_CONTROL-project",
+    "ROBOTICS_CONTROL-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "robotics_technician",
+      "controls_junior",
+      "automation_apprentice"
+    ],
+    "nice_categories": [
+      "build_and_deploy",
+      "analyze"
+    ],
+    "certs_aligned_not_granted": [
+      "FANUC/ABB operator topic labels (PUBLIC_REFERENCE_ONLY)",
+      "OSHA machine-guarding awareness labels (not a license)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/robotics_control_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

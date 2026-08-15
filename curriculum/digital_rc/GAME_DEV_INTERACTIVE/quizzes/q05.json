@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "ga-w5-1",
+      "kind": "mcq",
+      "stem": "tiles length rule?",
+      "choices": [
+        "width+height",
+        "always 10",
+        "width*height",
+        "AI"
+      ]
+    },
+    {
+      "id": "ga-w5-2",
+      "kind": "mcq",
+      "stem": "AI mode?",
+      "choices": [
+        "AI dumps",
+        "Skip",
+        "Auto",
+        "NO_AI"
+      ]
+    },
+    {
+      "id": "ga-w5-3",
+      "kind": "mcq",
+      "stem": "Screenshot-only artifact?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w5-4",
+      "kind": "mcq",
+      "stem": "checksum_ok needed?",
+      "choices": [
+        "No",
+        "Yes",
+        "Optional",
+        "Never"
+      ]
+    },
+    {
+      "id": "ga-w5-5",
+      "kind": "mcq",
+      "stem": "Streaming chunks?",
+      "choices": [
+        "Done",
+        "Deleted",
+        "Still need",
+        "6G"
+      ]
+    },
+    {
+      "id": "ga-w5-6",
+      "kind": "mcq",
+      "stem": "Week 5 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Auto",
+        "Fails"
+      ]
+    }
+  ]
+}

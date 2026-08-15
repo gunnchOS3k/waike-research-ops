@@ -30,9 +30,24 @@ def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
             reasons.append(f"week {w.get('week')}: lab-JSON-evidence depth padding")
         if "not in a screenshot of a green checkmark" in low:
             reasons.append(f"week {w.get('week')}: green-checkmark evidence padding")
+        if "detail mark" in low:
+            reasons.append(f"week {w.get('week')}: Detail-mark trailer padding")
+        if "operators keep a numbered ticket trail for" in low:
+            reasons.append(f"week {w.get('week')}: rotating ticket-trail trailer padding")
+        if "whiteboard the worked numbers before opening any gui" in low:
+            reasons.append(f"week {w.get('week')}: whiteboard-trailer padding")
+        if "if a volunteer asks for a certificate selfie" in low:
+            reasons.append(f"week {w.get('week')}: certificate-selfie trailer padding")
+        if "ticket arithmetic checkpoint" in low:
+            reasons.append(f"week {w.get('week')}: Ticket-arithmetic checkpoint trailer padding")
+        if "restate the worked example in your own symbols" in low:
+            reasons.append(f"week {w.get('week')}: worked-example-checkpoint trailer padding")
         stripped = strip_lesson_padding(raw)
         if len(stripped) < 800:
             reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")
+        # Prefer #45 post-collapse floor for new batches (871) when course is batch-004.
+        if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") and len(stripped) < 871:
+            reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 871 (#45 floor)")
     return (not reasons), reasons
 
 
@@ -69,17 +84,21 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(bool(labs.get("no_submission_fails")), "no-submission golden path still passes")
     need(all(n.get("ok") for n in labs.get("negatives_must_fail_and_did") or []), "package negatives did not fail")
     # Coexistence: #43 labs must still execute when this RC writer runs on the union product path.
-    need(int(labs.get("lab_count") or 0) >= 80, f"lab_count {labs.get('lab_count')} < 80 (#43∪#44∪#45)")
+    need(int(labs.get("lab_count") or 0) >= 110, f"lab_count {labs.get('lab_count')} < 110 (#43∪#44∪#45∪#46)")
     need(int(labs.get("batch_001_lab_count") or 0) == 20, "#43 labs orphaned from run_all")
     need(int(labs.get("batch_002_lab_count") or 0) == 30, "#44 labs orphaned from run_all")
     need(int(labs.get("batch_003_lab_count") or 0) == 30, "#45 labs orphaned from run_all")
+    need(int(labs.get("batch_004_lab_count") or 0) == 30, "#46 labs orphaned from run_all")
     need(set(BATCH_001).issubset(set(COURSES)), "#43 courses missing from COURSES product path")
     depth_ok, depth_reasons = _lesson_depth_ok(cid)
     need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
     need(int(prov.get("lesson_padding_rejected") or 0) == 0, "provenance rejected lesson padding")
+    need(not (prov.get("repeated_trailer_findings") or {}).get(cid), "repeated near-identical trailers")
     need(
-        int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= 800,
-        f"stripped lesson min {(prov.get('stripped_lesson_mins') or {}).get(cid)} < 800",
+        int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= (
+            871 if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") else 800
+        ),
+        f"stripped lesson min {(prov.get('stripped_lesson_mins') or {}).get(cid)} below floor",
     )
     need(prov.get("status") == "PASS", f"provenance {prov.get('status')}")
     need(bool(prov.get("key_balance_ok")), "answer keys collapsed")
@@ -117,7 +136,7 @@ def main() -> int:
         }
         batch_ok = batch_ok and earned
     payload = {
-        "packet": "WAIKE-COURSE-READY-003",
+        "packet": "WAIKE-COURSE-READY-004",
         "COURSE_DIGITAL_RC_BATCH": batch_ok,
         "REAL_STUDENT_E6": False,
         "REAL_TEACHER_E6": False,
@@ -142,7 +161,8 @@ def main() -> int:
             "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, "
             "non-cloned packaging, stripped lesson depth ≥800 without operator-note padding, "
             "and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 "
-            "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM) ∪ #45 (AI/Data/Cloud). "
+            "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM) ∪ #45 (AI/Data/Cloud) ∪ #46 "
+            "(Wireless/Robotics/Game). Commercial standardized 6G does not exist today. "
             "Not a student/teacher E6. Not all 18 courses."
         ),
     }

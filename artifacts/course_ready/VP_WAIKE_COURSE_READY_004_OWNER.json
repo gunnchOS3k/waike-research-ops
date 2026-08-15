@@ -1,0 +1,87 @@
+{
+  "packet": "WAIKE-COURSE-READY-004",
+  "remediation": "WAIKE-COURSE-READY-004 Detail-mark + Ticket-arithmetic trailer padding removed; strip_lesson_padding + repeated-trailer detector extended; RC re-earned under #45 floor 871",
+  "taxonomy_map": {
+    "Wireless / 5G-Advanced / 6G / NTN / AI-RAN": "WIRELESS_6G",
+    "Robotics / Control": "ROBOTICS_CONTROL",
+    "Game Development": "GAME_DEV_INTERACTIVE"
+  },
+  "prior_courses_preserved": 9,
+  "prior_course_ids": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_VIZ_BI",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "SOFTWARE_BUILDER"
+  ],
+  "batch_courses": [
+    {
+      "course_id": "WIRELESS_6G",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "labs": 10,
+      "rubrics": 8,
+      "stripped_lesson_min": 903,
+      "COURSE_DIGITAL_RC": true
+    },
+    {
+      "course_id": "ROBOTICS_CONTROL",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "labs": 10,
+      "rubrics": 8,
+      "stripped_lesson_min": 907,
+      "COURSE_DIGITAL_RC": true
+    },
+    {
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "labs": 10,
+      "rubrics": 8,
+      "stripped_lesson_min": 911,
+      "COURSE_DIGITAL_RC": true
+    }
+  ],
+  "floors": {
+    "hard_floor": 800,
+    "batch45_collapse_floor": 871
+  },
+  "lab_count": 110,
+  "batch_004_lab_count": 30,
+  "provenance_status": "PASS",
+  "template_status": "PASS",
+  "BATCH_TEMPLATED_COURSES": 0,
+  "repeated_trailer_spam": 0,
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "COHORT": false,
+  "ACCREDITED": false,
+  "CERT": false,
+  "commercial_standardized_6g_exists": false,
+  "device_os_curriculum_pr": false,
+  "stripper": {
+    "detail_mark_removed": true,
+    "ticket_arithmetic_removed": true,
+    "rotating_trailer_removed": true,
+    "repeated_trailer_detector": true,
+    "tests_cover_ticket_arithmetic_class": true
+  }
+}

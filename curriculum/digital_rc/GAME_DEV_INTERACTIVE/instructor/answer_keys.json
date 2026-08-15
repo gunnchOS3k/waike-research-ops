@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "GAME_DEV_INTERACTIVE",
+  "quizzes": {
+    "GAME_DEV_INTERACTIVE-q01": [
+      {
+        "id": "ga-w1-1",
+        "answer_index": 2,
+        "explanation": "Fixed."
+      },
+      {
+        "id": "ga-w1-2",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w1-3",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w1-4",
+        "answer_index": 1,
+        "explanation": "Pending."
+      },
+      {
+        "id": "ga-w1-5",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w1-6",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q02": [
+      {
+        "id": "ga-w2-1",
+        "answer_index": 0,
+        "explanation": "Both."
+      },
+      {
+        "id": "ga-w2-2",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w2-3",
+        "answer_index": 2,
+        "explanation": "Later."
+      },
+      {
+        "id": "ga-w2-4",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w2-5",
+        "answer_index": 0,
+        "explanation": "Yes."
+      },
+      {
+        "id": "ga-w2-6",
+        "answer_index": 1,
+        "explanation": "Box."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q03": [
+      {
+        "id": "ga-w3-1",
+        "answer_index": 2,
+        "explanation": "60/BPM."
+      },
+      {
+        "id": "ga-w3-2",
+        "answer_index": 3,
+        "explanation": "false."
+      },
+      {
+        "id": "ga-w3-3",
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w3-4",
+        "answer_index": 1,
+        "explanation": "2."
+      },
+      {
+        "id": "ga-w3-5",
+        "answer_index": 2,
+        "explanation": "Need."
+      },
+      {
+        "id": "ga-w3-6",
+        "answer_index": 3,
+        "explanation": "Fail."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q04": [
+      {
+        "id": "ga-w4-1",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w4-2",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w4-3",
+        "answer_index": 2,
+        "explanation": "Need."
+      },
+      {
+        "id": "ga-w4-4",
+        "answer_index": 3,
+        "explanation": "Yes."
+      },
+      {
+        "id": "ga-w4-5",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w4-6",
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q05": [
+      {
+        "id": "ga-w5-1",
+        "answer_index": 2,
+        "explanation": "Product."
+      },
+      {
+        "id": "ga-w5-2",
+        "answer_index": 3,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "ga-w5-3",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w5-4",
+        "answer_index": 1,
+        "explanation": "Yes."
+      },
+      {
+        "id": "ga-w5-5",
+        "answer_index": 2,
+        "explanation": "Later."
+      },
+      {
+        "id": "ga-w5-6",
+        "answer_index": 3,
+        "explanation": "Fail."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q06": [
+      {
+        "id": "ga-w6-1",
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w6-2",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w6-3",
+        "answer_index": 2,
+        "explanation": "Yes."
+      },
+      {
+        "id": "ga-w6-4",
+        "answer_index": 3,
+        "explanation": "Actions."
+      },
+      {
+        "id": "ga-w6-5",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w6-6",
+        "answer_index": 1,
+        "explanation": "A11y."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q07": [
+      {
+        "id": "ga-w7-1",
+        "answer_index": 2,
+        "explanation": "false."
+      },
+      {
+        "id": "ga-w7-2",
+        "answer_index": 3,
+        "explanation": "Games."
+      },
+      {
+        "id": "ga-w7-3",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w7-4",
+        "answer_index": 1,
+        "explanation": "Optional."
+      },
+      {
+        "id": "ga-w7-5",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w7-6",
+        "answer_index": 3,
+        "explanation": "Optional."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q08": [
+      {
+        "id": "ga-w8-1",
+        "answer_index": 0,
+        "explanation": "8/40."
+      },
+      {
+        "id": "ga-w8-2",
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "ga-w8-3",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w8-4",
+        "answer_index": 3,
+        "explanation": "40."
+      },
+      {
+        "id": "ga-w8-5",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w8-6",
+        "answer_index": 1,
+        "explanation": "Need."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q09": [
+      {
+        "id": "ga-w9-1",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w9-2",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "ga-w9-3",
+        "answer_index": 0,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "ga-w9-4",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "ga-w9-5",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w9-6",
+        "answer_index": 3,
+        "explanation": "true."
+      }
+    ],
+    "GAME_DEV_INTERACTIVE-q10": [
+      {
+        "id": "ga-w10-1",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "ga-w10-2",
+        "answer_index": 1,
+        "explanation": "\u22656."
+      },
+      {
+        "id": "ga-w10-3",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "ga-w10-4",
+        "answer_index": 3,
+        "explanation": "No."
+      },
+      {
+        "id": "ga-w10-5",
+        "answer_index": 0,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "ga-w10-6",
+        "answer_index": 1,
+        "explanation": "A11y."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "ga01",
+      "answer_index": 2,
+      "explanation": "Fixed."
+    },
+    {
+      "id": "ga02",
+      "answer_index": 3,
+      "explanation": "true."
+    },
+    {
+      "id": "ga03",
+      "answer_index": 0,
+      "explanation": "Both."
+    },
+    {
+      "id": "ga04",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "ga05",
+      "answer_index": 2,
+      "explanation": "0.5."
+    },
+    {
+      "id": "ga06",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "ga07",
+      "answer_index": 0,
+      "explanation": "false."
+    },
+    {
+      "id": "ga08",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "ga09",
+      "answer_index": 2,
+      "explanation": "Product."
+    },
+    {
+      "id": "ga10",
+      "answer_index": 3,
+      "explanation": "Hand."
+    },
+    {
+      "id": "ga11",
+      "answer_index": 0,
+      "explanation": "true."
+    },
+    {
+      "id": "ga12",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "ga13",
+      "answer_index": 2,
+      "explanation": "false."
+    },
+    {
+      "id": "ga14",
+      "answer_index": 3,
+      "explanation": "Games."
+    },
+    {
+      "id": "ga15",
+      "answer_index": 0,
+      "explanation": "0.2."
+    },
+    {
+      "id": "ga16",
+      "answer_index": 1,
+      "explanation": "false."
+    },
+    {
+      "id": "ga17",
+      "answer_index": 2,
+      "explanation": "true."
+    },
+    {
+      "id": "ga18",
+      "answer_index": 3,
+      "explanation": "Fail."
+    },
+    {
+      "id": "ga19",
+      "answer_index": 0,
+      "explanation": "false."
+    },
+    {
+      "id": "ga20",
+      "answer_index": 1,
+      "explanation": ">=6."
+    }
+  ],
+  "final": [
+    {
+      "id": "gaf01",
+      "answer_index": 3,
+      "explanation": "OK."
+    },
+    {
+      "id": "gaf02",
+      "answer_index": 0,
+      "explanation": "Pending."
+    },
+    {
+      "id": "gaf03",
+      "answer_index": 1,
+      "explanation": "Overlap."
+    },
+    {
+      "id": "gaf04",
+      "answer_index": 2,
+      "explanation": "Need."
+    },
+    {
+      "id": "gaf05",
+      "answer_index": 3,
+      "explanation": "Phase."
+    },
+    {
+      "id": "gaf06",
+      "answer_index": 0,
+      "explanation": "true."
+    },
+    {
+      "id": "gaf07",
+      "answer_index": 1,
+      "explanation": "Legal."
+    },
+    {
+      "id": "gaf08",
+      "answer_index": 2,
+      "explanation": "Need."
+    },
+    {
+      "id": "gaf09",
+      "answer_index": 3,
+      "explanation": "Level."
+    },
+    {
+      "id": "gaf10",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "gaf11",
+      "answer_index": 1,
+      "explanation": "Actions."
+    },
+    {
+      "id": "gaf12",
+      "answer_index": 2,
+      "explanation": "A11y."
+    },
+    {
+      "id": "gaf13",
+      "answer_index": 3,
+      "explanation": "Fail."
+    },
+    {
+      "id": "gaf14",
+      "answer_index": 0,
+      "explanation": "Optional."
+    },
+    {
+      "id": "gaf15",
+      "answer_index": 1,
+      "explanation": "Math."
+    },
+    {
+      "id": "gaf16",
+      "answer_index": 2,
+      "explanation": "Need."
+    },
+    {
+      "id": "gaf17",
+      "answer_index": 3,
+      "explanation": "true."
+    },
+    {
+      "id": "gaf18",
+      "answer_index": 0,
+      "explanation": "No."
+    },
+    {
+      "id": "gaf19",
+      "answer_index": 1,
+      "explanation": "No."
+    },
+    {
+      "id": "gaf20",
+      "answer_index": 2,
+      "explanation": "Aligned."
+    },
+    {
+      "id": "gaf21",
+      "answer_index": 3,
+      "explanation": "A11y."
+    },
+    {
+      "id": "gaf22",
+      "answer_index": 0,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "gaf23",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "gaf24",
+      "answer_index": 2,
+      "explanation": "Software."
+    }
+  ]
+}

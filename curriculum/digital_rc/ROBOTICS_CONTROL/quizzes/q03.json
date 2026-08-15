@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "rb-w3-1",
+      "kind": "mcq",
+      "stem": "dt on fixture?",
+      "choices": [
+        "1.0",
+        "0.1",
+        "10",
+        "0"
+      ]
+    },
+    {
+      "id": "rb-w3-2",
+      "kind": "mcq",
+      "stem": "Kp?",
+      "choices": [
+        "12",
+        "0",
+        "1.2",
+        "100"
+      ]
+    },
+    {
+      "id": "rb-w3-3",
+      "kind": "mcq",
+      "stem": "Missing anti_windup when needed?",
+      "choices": [
+        "OK",
+        "Extra",
+        "Skip",
+        "Fails check"
+      ]
+    },
+    {
+      "id": "rb-w3-4",
+      "kind": "mcq",
+      "stem": "Plant ID claimed done?",
+      "choices": [
+        "No \u2014 still need",
+        "Yes",
+        "Always",
+        "AI"
+      ]
+    },
+    {
+      "id": "rb-w3-5",
+      "kind": "mcq",
+      "stem": "Week 3 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Fails",
+        "Half",
+        "Auto"
+      ]
+    },
+    {
+      "id": "rb-w3-6",
+      "kind": "mcq",
+      "stem": "D term uses?",
+      "choices": [
+        "FSPL",
+        "MCS",
+        "Error slope",
+        "BLER"
+      ]
+    }
+  ]
+}

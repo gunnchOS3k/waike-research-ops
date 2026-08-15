@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "ga-w7-1",
+      "kind": "mcq",
+      "stem": "required_unmerged_branch?",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "required"
+      ]
+    },
+    {
+      "id": "ga-w7-2",
+      "kind": "mcq",
+      "stem": "Four titles include?",
+      "choices": [
+        "device-os",
+        "6G-core",
+        "qemu-only",
+        "beatlink-party"
+      ]
+    },
+    {
+      "id": "ga-w7-3",
+      "kind": "mcq",
+      "stem": "Hard-depend unmerged PR?",
+      "choices": [
+        "Fails boundary",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w7-4",
+      "kind": "mcq",
+      "stem": "Case study mandatory?",
+      "choices": [
+        "Always",
+        "Optional",
+        "Forbidden",
+        "AI only"
+      ]
+    },
+    {
+      "id": "ga-w7-5",
+      "kind": "mcq",
+      "stem": "Week 7 ticket context: Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ]
+    },
+    {
+      "id": "ga-w7-6",
+      "kind": "mcq",
+      "stem": "foot-racing is?",
+      "choices": [
+        "Required merge",
+        "device-os",
+        "NTN",
+        "Optional example title"
+      ]
+    }
+  ]
+}

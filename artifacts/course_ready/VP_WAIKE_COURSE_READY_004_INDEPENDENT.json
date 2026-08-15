@@ -1,0 +1,55 @@
+{
+  "packet": "WAIKE-COURSE-READY-004",
+  "verifier": "independent_adversarial",
+  "pr": "https://github.com/gunnchOS3k/waike-research-ops/pull/46",
+  "tip_verified": "3dd825f25c70a47de82faf05a265022f2f9521c4",
+  "verdict": "PASS",
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "demotions": {},
+  "gates": {
+    "taxonomy_existing_ids_only": "PASS",
+    "preserve_43_44_45_product_path": "PASS",
+    "product_path_course_count_12": "PASS",
+    "pytest_digital_rc_batch": "PASS",
+    "labs_110_110": "PASS",
+    "labs_empty_wrong_print_pass_fail": "PASS",
+    "provenance": "PASS",
+    "template_detector": "PASS",
+    "no_standardized_6g_as_fact": "PASS",
+    "instructor_keys_absent_from_learner_ingest": "PASS",
+    "REAL_STUDENT_E6": false,
+    "REAL_TEACHER_E6": false,
+    "COHORT": false,
+    "ACCREDITED": false,
+    "CERT": false,
+    "commercial_standardized_6g_exists": false,
+    "ticket_arithmetic_absent": "PASS",
+    "repeated_near_identical_trailers_absent": "PASS",
+    "adversarial_depth_vs_45_bar_871": "PASS",
+    "COURSE_DIGITAL_RC_earned": "PASS"
+  },
+  "counts": {
+    "product_path_courses": 12,
+    "prior_preserved": 9,
+    "batch_004_courses": 3,
+    "lab_count": 110,
+    "batch_004_lab_count": 30
+  },
+  "official_strip_mins": {
+    "WIRELESS_6G": 903,
+    "ROBOTICS_CONTROL": 907,
+    "GAME_DEV_INTERACTIVE": 911
+  },
+  "post_collapse_mins": {
+    "WIRELESS_6G": 903,
+    "ROBOTICS_CONTROL": 907,
+    "GAME_DEV_INTERACTIVE": 911
+  },
+  "floors": {
+    "hard_floor": 800,
+    "batch45_collapse_floor": 871
+  },
+  "defects": [],
+  "remediation": "Removed Ticket-arithmetic checkpoint trailers; extended strip_lesson_padding + repeated-trailer detector; rewrote week-unique depth; re-earned RC under \u2265871.",
+  "note": "Cursor does not merge."
+}

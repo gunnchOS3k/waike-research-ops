@@ -1,0 +1,225 @@
+{
+  "assessment_id": "WIRELESS_6G-mid",
+  "items": [
+    {
+      "id": "wr01",
+      "kind": "mcq",
+      "stem": "Harbor pier hop measured 250 m at 2100 MHz. Which Friis input pair is required before reporting path loss?",
+      "choices": [
+        "distance_m and frequency_MHz",
+        "BPM and flash_hz",
+        "E-stop and brake",
+        "DAU and churn"
+      ]
+    },
+    {
+      "id": "wr02",
+      "kind": "mcq",
+      "stem": "A donor slideset titles the pier 'live commercial 6G today.' Correct operator response?",
+      "choices": [
+        "Publish as PASS",
+        "Refuse \u2014 standardized commercial 6G does not exist today",
+        "Treat as Rel-17 proof",
+        "Treat as GEO proof"
+      ]
+    },
+    {
+      "id": "wr03",
+      "kind": "mcq",
+      "stem": "Numerology card shows 24 subcarriers spaced 15 kHz. Resource-block bandwidth equals?",
+      "choices": [
+        "15 kHz",
+        "24 Hz",
+        "360 kHz",
+        "1.5 GHz"
+      ]
+    },
+    {
+      "id": "wr04",
+      "kind": "mcq",
+      "stem": "Ignoring cyclic prefix, approximate OFDM symbol time at 15 kHz spacing is nearest which?",
+      "choices": [
+        "15 milliseconds",
+        "1 second",
+        "14 nanoseconds",
+        "66.7 microseconds"
+      ]
+    },
+    {
+      "id": "wr05",
+      "kind": "mcq",
+      "stem": "Student JSON sets commercial_6g_exists true on the 5G-Advanced feature map. Lab outcome?",
+      "choices": [
+        "Reject the honesty gate",
+        "Accept",
+        "Half credit",
+        "Auto Rel-20"
+      ]
+    },
+    {
+      "id": "wr06",
+      "kind": "mcq",
+      "stem": "BLER vector at a fixed SNR is [0.25,0.11,0.07,0.19]. With ceiling 0.10, highest eligible MCS index?",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "id": "wr07",
+      "kind": "mcq",
+      "stem": "For a 500 km slant-range toy LEO hop, one-way light time is nearest which class?",
+      "choices": [
+        "~167 ms",
+        "~1.67 s",
+        "~1.67 ms",
+        "~16 \u03bcs"
+      ]
+    },
+    {
+      "id": "wr08",
+      "kind": "mcq",
+      "stem": "Compared with classic GEO RTT hundreds of milliseconds, the 500 km LEO toy RTT is?",
+      "choices": [
+        "Same class",
+        "Exactly 250 ms",
+        "Undefined",
+        "Much smaller millisecond-class"
+      ]
+    },
+    {
+      "id": "wr09",
+      "kind": "mcq",
+      "stem": "Marking geo_comparable true for that LEO toy should?",
+      "choices": [
+        "Fail honesty checks",
+        "Pass validation",
+        "Grant NTN cert",
+        "Unlock 6G"
+      ]
+    },
+    {
+      "id": "wr10",
+      "kind": "mcq",
+      "stem": "Adding a late, strong tap to a power-delay profile typically does what to RMS delay spread?",
+      "choices": [
+        "Decreases it",
+        "Increases it",
+        "Deletes MCS",
+        "Creates a standard"
+      ]
+    },
+    {
+      "id": "wr11",
+      "kind": "mcq",
+      "stem": "An AI-RAN proposal that auto-applies without a human gate on the pier fixture?",
+      "choices": [
+        "Allowed",
+        "Required for Rel-18",
+        "Must fail the gate check",
+        "Required for games"
+      ]
+    },
+    {
+      "id": "wr12",
+      "kind": "mcq",
+      "stem": "Minimum contents of a legal AI-RAN proposed_action string in this course?",
+      "choices": [
+        "A feeling adjective",
+        "A 6G logo URL",
+        "A GEO slot id",
+        "Explicit MCS or PRB language"
+      ]
+    },
+    {
+      "id": "wr13",
+      "kind": "mcq",
+      "stem": "Unauthorized over-the-air transmission outside the lab narrative is?",
+      "choices": [
+        "Course ethics failure",
+        "Extra credit",
+        "Required for SDR week",
+        "Allowed after midterm"
+      ]
+    },
+    {
+      "id": "wr14",
+      "kind": "mcq",
+      "stem": "Mask_ok without stating occupied bandwidth numbers is?",
+      "choices": [
+        "Acceptable",
+        "Insufficient for the spectrum lab",
+        "Enough if SDR blinks",
+        "Enough if AI agrees"
+      ]
+    },
+    {
+      "id": "wr15",
+      "kind": "mcq",
+      "stem": "Claiming a production Near-RT RIC is live without E2 evidence should?",
+      "choices": [
+        "Pass O-RAN week",
+        "Earn SIL",
+        "Fail the deployment honesty flag",
+        "Earn CKA"
+      ]
+    },
+    {
+      "id": "wr16",
+      "kind": "mcq",
+      "stem": "In Pier Radio, A1/E2/O1 primarily function as?",
+      "choices": [
+        "Harvested exam items",
+        "Proof of consumer 6G",
+        "Game input actions",
+        "Interface vocabulary on a map"
+      ]
+    },
+    {
+      "id": "wr17",
+      "kind": "mcq",
+      "stem": "Capstone sets product_use_unmerged_consumed true. Result?",
+      "choices": [
+        "Must be false \u2014 fail",
+        "PASS",
+        "Required",
+        "Optional half"
+      ]
+    },
+    {
+      "id": "wr18",
+      "kind": "mcq",
+      "stem": "While Product-Use QEMU is busy, preferred Pier Radio practice is?",
+      "choices": [
+        "Pull multi-GB channel sims",
+        "Stay on light fixture validators",
+        "Force overnight GPU farms",
+        "Skip all wireless weeks"
+      ]
+    },
+    {
+      "id": "wr19",
+      "kind": "mcq",
+      "stem": "Best one-line description of 5G-Advanced in this syllabus?",
+      "choices": [
+        "A brand-new RAT replacing 5G overnight",
+        "Consumer-standardized 6G",
+        "An evolution layered on 5G NR",
+        "Wi-Fi 8 rebrand"
+      ]
+    },
+    {
+      "id": "wr20",
+      "kind": "mcq",
+      "stem": "Radio notebook capstone requires labs_passed at least?",
+      "choices": [
+        "2",
+        "4",
+        "60",
+        "6"
+      ]
+    }
+  ]
+}

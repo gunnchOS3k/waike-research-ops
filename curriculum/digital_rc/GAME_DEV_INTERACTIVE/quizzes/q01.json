@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "ga-w1-1",
+      "kind": "mcq",
+      "stem": "dt?",
+      "choices": [
+        "1",
+        "0",
+        "1/60",
+        "60"
+      ]
+    },
+    {
+      "id": "ga-w1-2",
+      "kind": "mcq",
+      "stem": "spiral_of_death_guard?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ]
+    },
+    {
+      "id": "ga-w1-3",
+      "kind": "mcq",
+      "stem": "Variable dt only forever?",
+      "choices": [
+        "Fails discipline",
+        "Best",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w1-4",
+      "kind": "mcq",
+      "stem": "Handheld profiling?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "Skip",
+        "Fake OK"
+      ]
+    },
+    {
+      "id": "ga-w1-5",
+      "kind": "mcq",
+      "stem": "Empty {}?",
+      "choices": [
+        "PASS",
+        "Half",
+        "Fails",
+        "Auto"
+      ]
+    },
+    {
+      "id": "ga-w1-6",
+      "kind": "mcq",
+      "stem": "print PASS?",
+      "choices": [
+        "OK",
+        "Half",
+        "Skip",
+        "Raises"
+      ]
+    }
+  ]
+}

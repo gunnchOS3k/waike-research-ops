@@ -1,0 +1,16 @@
+{
+  "practical_id": "GAME_DEV_INTERACTIVE-practical",
+  "labs": [
+    "lab_game_loop",
+    "lab_aabb_hit",
+    "lab_beat_clock",
+    "lab_entity_fsm",
+    "lab_level_hash",
+    "lab_input_actions",
+    "lab_four_games_case",
+    "lab_playtest_metrics",
+    "lab_game_a11y",
+    "lab_game_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

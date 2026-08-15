@@ -1,0 +1,16 @@
+{
+  "practical_id": "WIRELESS_6G-practical",
+  "labs": [
+    "lab_fspl_budget",
+    "lab_ofdm_numerology",
+    "lab_5ga_feature_map",
+    "lab_mcs_bler",
+    "lab_ntn_delay",
+    "lab_delay_spread",
+    "lab_airan_policy",
+    "lab_spectrum_mask",
+    "lab_oran_interfaces",
+    "lab_radio_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}
