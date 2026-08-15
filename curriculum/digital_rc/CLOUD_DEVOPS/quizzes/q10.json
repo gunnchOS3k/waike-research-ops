@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "cd-w10-1",
+      "kind": "mcq",
+      "stem": "heroics=true means?",
+      "choices": [
+        "Fails \u2014 undocumented solo fix",
+        "Good",
+        "Required",
+        "KPI"
+      ]
+    },
+    {
+      "id": "cd-w10-2",
+      "kind": "mcq",
+      "stem": "automation_runbook_id fixture?",
+      "choices": [
+        "PASS",
+        "RB-FC-rollback",
+        "latest",
+        "root"
+      ]
+    },
+    {
+      "id": "cd-w10-3",
+      "kind": "mcq",
+      "stem": "token_rotated after leak?",
+      "choices": [
+        "Optional",
+        "Never",
+        "Required true",
+        "Print only"
+      ]
+    },
+    {
+      "id": "cd-w10-4",
+      "kind": "mcq",
+      "stem": "Timeline needs?",
+      "choices": [
+        "Only vibes",
+        "Only blame",
+        "Faces",
+        "detect/contain/recover stamps"
+      ]
+    },
+    {
+      "id": "cd-w10-5",
+      "kind": "mcq",
+      "stem": "DevSecOps here includes?",
+      "choices": [
+        "Rollback + rotate + runbook",
+        "Ignore secrets",
+        "Pirate licenses",
+        "Exam dumps"
+      ]
+    },
+    {
+      "id": "cd-w10-6",
+      "kind": "mcq",
+      "stem": "Cert claim on portfolio?",
+      "choices": [
+        "Allowed",
+        "Forbidden \u2014 alignment only",
+        "Required CKA",
+        "PMI ATP"
+      ]
+    }
+  ]
+}

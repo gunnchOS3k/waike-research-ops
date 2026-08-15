@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "cd-w6-1",
+      "kind": "mcq",
+      "stem": "iam:CreateUser on deploy role?",
+      "choices": [
+        "Over-privilege \u2014 deny",
+        "Least privilege",
+        "Required",
+        "SQL"
+      ]
+    },
+    {
+      "id": "cd-w6-2",
+      "kind": "mcq",
+      "stem": "plaintext token in repo?",
+      "choices": [
+        "OK if short",
+        "Fails plaintext_secrets_found check",
+        "Best practice",
+        "F1"
+      ]
+    },
+    {
+      "id": "cd-w6-3",
+      "kind": "mcq",
+      "stem": "Vault stub path purpose?",
+      "choices": [
+        "Hide evidence",
+        "Train ML",
+        "Store secret outside git",
+        "Pie chart"
+      ]
+    },
+    {
+      "id": "cd-w6-4",
+      "kind": "mcq",
+      "stem": "Least privilege means?",
+      "choices": [
+        "Admin always",
+        "No IAM",
+        "World writable",
+        "Only actions needed for the job"
+      ]
+    },
+    {
+      "id": "cd-w6-5",
+      "kind": "mcq",
+      "stem": "ecs:UpdateService on deploy role?",
+      "choices": [
+        "Allowed in fixture",
+        "Always deny",
+        "Biometric",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "cd-w6-6",
+      "kind": "mcq",
+      "stem": "Secrets week pairs with?",
+      "choices": [
+        "Only viz",
+        "IAM policy review",
+        "Only clustering",
+        "Only medians"
+      ]
+    }
+  ]
+}

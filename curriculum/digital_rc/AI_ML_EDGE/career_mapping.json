@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "ml_ops_junior",
+    "edge_inference_technician",
+    "data_technician"
+  ],
+  "nice_categories": [
+    "analyze",
+    "build_and_deploy"
+  ],
+  "certs_aligned_not_granted": [
+    "Google Professional ML Engineer (domains)",
+    "AWS MLA-C01 (domains)"
+  ]
+}

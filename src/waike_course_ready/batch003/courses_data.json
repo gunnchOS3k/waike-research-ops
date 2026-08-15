@@ -1,0 +1,2788 @@
+{
+  "AI_ML_EDGE": {
+    "course_id": "AI_ML_EDGE",
+    "title": "AI/ML + Edge AI \u2014 EdgeForge Bench",
+    "track_ids": [
+      "AI_ML_EDGE"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Run the Gary EdgeForge Bench for ten weeks: civic occupancy CSV \u2192 metrics \u2192 tiny net \u2192 quantized inference \u2192 redacted RAG.",
+    "syllabus_hook": "This is not a tour of AI buzzwords. It is the job of keeping a civic edge rack honest: time-ordered splits, leakage refusal, FPR caps for staffing, digest-pinned inference, int8 budgets, and RAG that redacts patron contact strings. Google ML Engineer / AWS MLA domain names and academic course shapes are alignment labels only \u2014 no exam dumps.",
+    "career": {
+      "roles": [
+        "ml_ops_junior",
+        "edge_inference_technician",
+        "data_technician"
+      ],
+      "nice_categories": [
+        "analyze",
+        "build_and_deploy"
+      ],
+      "certs_aligned_not_granted": [
+        "Google Professional ML Engineer (domains)",
+        "AWS MLA-C01 (domains)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        7
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "EdgeForge Bench \u2014 Python tensors as civic tables",
+        "lesson": "The EdgeForge Bench in Gary is a rolling rack of three Coral-class USB accelerators and a battered ThinkPad that only sees the civic Wi-Fi. Week 1 is not 'learn Python.' It is naming columns so a sensor CSV becomes a matrix you can defend to a librarian. Ticket EF-2101 ships a 480-row occupancy CSV: timestamp_iso, zone_id, people_count, rssi_dbm. Beginners paste the file into a notebook and celebrate a DataFrame shape. Operators ask which rows are training candidates and which are the midnight janitor sweep that always reads people_count=0 for forty minutes.\n\nPython here is a broom, not a religion. You will use pathlib, csv.DictReader, and a hand-rolled mean \u2014 not a mystery import that hides a download. The lab rejects a submission that claims train_n without showing the split math. Privacy starts now: zone_id is a letter (A/B/C), never a camera MAC, never a patron face embedding.\n\nConsensus Ladder for EF-2101: observed = 480 rows with four columns; inferred = midnight zeros are cleaning, not empty buildings; still need = whether zone B's RSSI drop correlates with AP reboot logs (out of scope this week).\n\nWorked numbers: 480 rows, hold out last 96 (20%) for validation by time order, not shuffle \u2014 civic occupancy is autocorrelated. Training rows = 384. If someone shuffles first, midnight cleaning contaminates both folds and the F1 will lie.\n\nName the failure mode before you touch pandas. On EF-2101 the idle janitor sweep is a remembered pattern in time, not a class label. If you shuffle, you teach the model that midnight zeros belong in daytime folds, and the F1 you celebrate is a leak costume.\n\nOperators speak paths: `fixtures/ef2101/occupancy.csv`, then `train_n` and `val_n` as integers you can defend on a whiteboard. The lab marks missing split fields; it does not grade a notebook theme. Zone letters A/B/C are the only spatial vocabulary \u2014 never a camera serial, never an embedding that could re-identify a patron.\n\nWhen a volunteer asks to 'just use sklearn train_test_split,' answer with the autocorrelation clock: last-keystroke times cluster. Time order is the civic control, the same way the library idle timer is a shared-kiosk control rather than a personal preference.",
+        "worked_example": "480 rows \u00d7 0.80 = 384 train; 96 validation by time order (not shuffle).",
+        "assignment": "Write a four-line operator journal for EF-2101 naming columns, train_n, val_n, and why shuffle is forbidden. Submit lab_data_split JSON. No face IDs.",
+        "lab_id": "lab_data_split",
+        "quiz": [
+          {
+            "id": "aim-w1-1",
+            "kind": "mcq",
+            "stem": "EF-2101 has 480 rows and a 20% time-ordered holdout. train_n?",
+            "choices": [
+              "96",
+              "384",
+              "400",
+              "480"
+            ],
+            "answer_index": 1,
+            "explanation": "480*0.8=384."
+          },
+          {
+            "id": "aim-w1-2",
+            "kind": "mcq",
+            "stem": "Why forbid shuffle before the occupancy holdout?",
+            "choices": [
+              "GPUs dislike shuffle",
+              "Midnight cleaning zeros would leak across folds",
+              "CSV forbids shuffle",
+              "Validators require alphabetical zones"
+            ],
+            "answer_index": 1,
+            "explanation": "Autocorrelation."
+          },
+          {
+            "id": "aim-w1-3",
+            "kind": "mcq",
+            "stem": "Which column is forbidden on EdgeForge?",
+            "choices": [
+              "zone_id letter",
+              "people_count",
+              "patron face embedding",
+              "rssi_dbm"
+            ],
+            "answer_index": 2,
+            "explanation": "No faces."
+          },
+          {
+            "id": "aim-w1-4",
+            "kind": "mcq",
+            "stem": "Observation vs inference for midnight zeros?",
+            "choices": [
+              "Inference: building empty",
+              "Observation: people_count==0 for 40 minutes",
+              "Inference: AP rebooted",
+              "Observation: model is biased"
+            ],
+            "answer_index": 1,
+            "explanation": "Name what you saw."
+          },
+          {
+            "id": "aim-w1-5",
+            "kind": "mcq",
+            "stem": "Lab rejects which claim?",
+            "choices": [
+              "train_n with shown split math",
+              "train_n with no split fields",
+              "pathlib reads",
+              "csv.DictReader"
+            ],
+            "answer_index": 1,
+            "explanation": "Show the math."
+          },
+          {
+            "id": "aim-w1-6",
+            "kind": "mcq",
+            "stem": "EdgeForge sees which network?",
+            "choices": [
+              "Raw Internet without ACL",
+              "Civic Wi-Fi only on the ThinkPad",
+              "Starlink research slice",
+              "Guest VLAN to Roof"
+            ],
+            "answer_index": 1,
+            "explanation": "Civic Wi-Fi only."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Supervised labels \u2014 desk occupancy as a class, not a vibe",
+        "lesson": "Supervised learning on EdgeForge means a label you can argue about. Ticket EF-2204 asks for a binary busy/quiet label on zone A using people_count\u22653 as busy. That threshold is a policy choice from the library board, not a neural insight. You will fit a logistic-style score on rssi_dbm and hour_of_day from the fixture \u2014 then count TP/FP/FN against the held-out 96 rows.\n\nBeginners chase accuracy. EdgeForge chases false quiet alarms: predicting quiet when the room is busy means understaffing the desk. The lab computes precision/recall/F1 from your confusion counts; a print of 'PASS' is not a metric.\n\nFeature leakage to refuse: do not include people_count as an input when it defines the label. That is cheating dressed as ML.\n\nConfusion fixture: TP=40, FP=10, FN=5, TN=41. Precision=40/50=0.80. Recall=40/45\u22480.889. F1=2*0.80*0.889/(0.80+0.889)\u22480.842. Report three decimals.\n\nWrite the decision costs before you tune. A false quiet alarm skips a staff slot; a false busy alarm overstaffs and still wastes money, but the board ranked understaffing worse. That ranking is why precision on the busy class is not the only number on the ticket.\n\nBuild the confusion table by hand on the night fold before you trust a library summary. TP/FP/FN must match the fixture counts exactly to three decimals on F1. If an assistant drafts the defense paragraph, tag AI_DISCLOSED \u2014 the arithmetic remains yours.\n\nLeakage check is a gate, not a tip: any feature that is a deterministic function of the busy rule fails the week even if the ROC looks pretty. EdgeForge would rather ship a weaker honest score than a perfect cheater.",
+        "worked_example": "TP=40 FP=10 FN=5 \u2192 precision=0.800 recall=0.889 F1\u22480.842.",
+        "assignment": "Defend the busy threshold (\u22653) in two sentences, compute precision/recall/F1 on the fixture counts, and submit lab_supervised_metrics. Disclose if an LLM drafted the defense (AI_DISCLOSED).",
+        "lab_id": "lab_supervised_metrics",
+        "quiz": [
+          {
+            "id": "aim-w2-1",
+            "kind": "mcq",
+            "stem": "Busy label uses people_count\u22653. Is people_count a legal model input?",
+            "choices": [
+              "Yes always",
+              "No \u2014 it defines the label (leakage)",
+              "Only at night",
+              "Only with PCA"
+            ],
+            "answer_index": 1,
+            "explanation": "Leakage."
+          },
+          {
+            "id": "aim-w2-2",
+            "kind": "mcq",
+            "stem": "TP=40 FP=10. Precision?",
+            "choices": [
+              "0.75",
+              "0.80",
+              "0.90",
+              "4.0"
+            ],
+            "answer_index": 1,
+            "explanation": "40/50."
+          },
+          {
+            "id": "aim-w2-3",
+            "kind": "mcq",
+            "stem": "False quiet alarm means?",
+            "choices": [
+              "Predicted busy, actually quiet",
+              "Predicted quiet, actually busy",
+              "Model NaN",
+              "USB unplugged"
+            ],
+            "answer_index": 1,
+            "explanation": "FN-style staffing miss."
+          },
+          {
+            "id": "aim-w2-4",
+            "kind": "mcq",
+            "stem": "Why not optimize accuracy alone on EF-2204?",
+            "choices": [
+              "Accuracy illegal",
+              "Quiet majority can hide understaffing misses",
+              "F1 is always 1",
+              "Validators ban accuracy"
+            ],
+            "answer_index": 1,
+            "explanation": "Class imbalance / cost."
+          },
+          {
+            "id": "aim-w2-5",
+            "kind": "mcq",
+            "stem": "Threshold \u22653 comes from?",
+            "choices": [
+              "Gradient descent",
+              "Library board policy",
+              "ImageNet",
+              "Random seed 42"
+            ],
+            "answer_index": 1,
+            "explanation": "Policy."
+          },
+          {
+            "id": "aim-w2-6",
+            "kind": "mcq",
+            "stem": "print('PASS') as F1?",
+            "choices": [
+              "Allowed",
+              "Rejected by validator",
+              "Equals 1.0",
+              "Equals 0.842"
+            ],
+            "answer_index": 1,
+            "explanation": "No print-PASS."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Unsupervised clusters \u2014 failure modes without a teacher",
+        "lesson": "Not every EdgeForge ticket has a label. Ticket EF-2309 dumps 60 anonymous fault vectors (temp_c, fan_rpm, usb_reset_count) from the three accelerators. Unsupervised work means choosing k and defending centroids \u2014 not inventing a story that 'cluster 2 is hackers.'\n\nYou will assign each point to the nearest of two centroids using Manhattan distance (|dx|+|dy|+|dz|). The lab checks your assignments and the sum of distances. If you relabel clusters to match a preferred narrative without recomputing, the sum fails.\n\nResponsible AI note: clusters are hypotheses for the maintenance log, not accusations about staff.\n\nCentroid A=(40,3000,0), B=(70,1200,5). Point p=(55,2000,2): distA=|15|+|1000|+|2|=1017; distB=|15|+|800|+|3|=818 \u2192 assign B.\n\nChoose k like you choose a maintenance bucket count: enough to separate thermal throttle from USB reset storms, not enough to invent a villain. Manhattan distance keeps the arithmetic audible \u2014 no kernel mythology required for three telemetry axes.\n\nAfter assignment, recompute total distance from scratch. Relabeling clusters to match a preferred story without recomputing is the same fraud as rewriting a restore hash. The lab\u2019s sum is the honesty check.\n\nWrite one sentence in the journal that refuses staff blame: clusters are hypotheses for the rack log. If someone wants 'cluster 2 = intern error,' send them back to the Consensus Ladder \u2014 observation first, accusation never from unlabeled points.",
+        "worked_example": "p=(55,2000,2) closer to B=(70,1200,5) with Manhattan 818 vs 1017.",
+        "assignment": "Cluster the 60-vector fixture with k=2 Manhattan, submit assignments + total_distance via lab_cluster_assign. Write one sentence that refuses a staff-blame story.",
+        "lab_id": "lab_cluster_assign",
+        "quiz": [
+          {
+            "id": "aim-w3-1",
+            "kind": "mcq",
+            "stem": "Manhattan distance for (55,2000,2) to A=(40,3000,0)?",
+            "choices": [
+              "15",
+              "1017",
+              "818",
+              "0"
+            ],
+            "answer_index": 1,
+            "explanation": "|15|+|1000|+|2|."
+          },
+          {
+            "id": "aim-w3-2",
+            "kind": "mcq",
+            "stem": "Unsupervised means?",
+            "choices": [
+              "No GPU",
+              "No ground-truth labels for the clustering objective",
+              "No quiz",
+              "No CSV"
+            ],
+            "answer_index": 1,
+            "explanation": "No labels."
+          },
+          {
+            "id": "aim-w3-3",
+            "kind": "mcq",
+            "stem": "Cluster 2 'is hackers' is?",
+            "choices": [
+              "Required claim",
+              "Forbidden narrative without evidence",
+              "Always true if k=2",
+              "A PMI rule"
+            ],
+            "answer_index": 1,
+            "explanation": "No staff blame."
+          },
+          {
+            "id": "aim-w3-4",
+            "kind": "mcq",
+            "stem": "k choice on EdgeForge is?",
+            "choices": [
+              "Always 10",
+              "A defended modeling choice",
+              "Fixed by USB",
+              "Random"
+            ],
+            "answer_index": 1,
+            "explanation": "Defend k."
+          },
+          {
+            "id": "aim-w3-5",
+            "kind": "mcq",
+            "stem": "If you swap labels without recomputing distances?",
+            "choices": [
+              "Lab still passes",
+              "total_distance check fails",
+              "F1 improves",
+              "Accuracy=1"
+            ],
+            "answer_index": 1,
+            "explanation": "Sum fails."
+          },
+          {
+            "id": "aim-w3-6",
+            "kind": "mcq",
+            "stem": "Fault vector features this week?",
+            "choices": [
+              "face_id",
+              "temp_c, fan_rpm, usb_reset_count",
+              "SSN",
+              "password"
+            ],
+            "answer_index": 1,
+            "explanation": "Telemetry."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Evaluation curves \u2014 thresholds are staffing decisions",
+        "lesson": "Week 4 turns the busy classifier into a curve. Ticket EF-2411 gives score/label pairs for 20 validation rows. Sweeping threshold t from high to low changes TPR and FPR. The library board asks which t keeps FPR\u22640.20 while maximizing TPR \u2014 that is an operating point, not a mystical AUC worship.\n\nYou will compute TPR=TP/(TP+FN) and FPR=FP/(FP+TN) at two named thresholds. The lab checks arithmetic. Claiming 'AUC=1 because we feel good' fails.\n\nAt t=0.60: TP=6 FP=2 FN=2 TN=10 \u2192 TPR=0.75 FPR=1/6\u22480.167. Board constraint FPR\u22640.20 holds.\n\nAn operating point is a staffing contract. Sweep thresholds on the twenty validation pairs and stop when FPR crosses 0.20. Do not hand the board an AUC and walk away \u2014 AUC does not schedule a Saturday volunteer.\n\nCompute TPR and FPR from the confusion at the chosen t; show both fractions. If two thresholds meet the FPR cap, prefer the higher TPR and document the tie-break in one line.\n\nNO_AI week rule: generative fill of the fractions fails. Calculator OK. The board paragraph must name the threshold, the FPR, and the staffing implication without adjectives like 'robust AI.'",
+        "worked_example": "t=0.60 \u2192 TPR=0.75 FPR\u22480.167 (\u22640.20 constraint).",
+        "assignment": "Pick an operating threshold meeting FPR\u22640.20, show TPR/FPR math, submit lab_eval_thresholds. One paragraph to the board in plain English.",
+        "lab_id": "lab_eval_thresholds",
+        "quiz": [
+          {
+            "id": "aim-w4-1",
+            "kind": "mcq",
+            "stem": "TPR formula?",
+            "choices": [
+              "FP/(FP+TN)",
+              "TP/(TP+FN)",
+              "TP/(TP+FP)",
+              "TN/(TN+FP)"
+            ],
+            "answer_index": 1,
+            "explanation": "Recall."
+          },
+          {
+            "id": "aim-w4-2",
+            "kind": "mcq",
+            "stem": "FPR formula?",
+            "choices": [
+              "TP/(TP+FN)",
+              "FP/(FP+TN)",
+              "FN/(FN+TP)",
+              "TN/N"
+            ],
+            "answer_index": 1,
+            "explanation": "False positive rate."
+          },
+          {
+            "id": "aim-w4-3",
+            "kind": "mcq",
+            "stem": "Board constraint this week?",
+            "choices": [
+              "FPR\u22640.20",
+              "Accuracy\u22650.99",
+              "k=2",
+              "GPU required"
+            ],
+            "answer_index": 0,
+            "explanation": "FPR cap."
+          },
+          {
+            "id": "aim-w4-4",
+            "kind": "mcq",
+            "stem": "AUC worship without operating point?",
+            "choices": [
+              "Sufficient for staffing",
+              "Incomplete for EdgeForge desk decisions",
+              "Required by USB",
+              "Equals F1"
+            ],
+            "answer_index": 1,
+            "explanation": "Need threshold."
+          },
+          {
+            "id": "aim-w4-5",
+            "kind": "mcq",
+            "stem": "At t=0.60 TP=6 FN=2. TPR?",
+            "choices": [
+              "0.50",
+              "0.75",
+              "0.80",
+              "1.00"
+            ],
+            "answer_index": 1,
+            "explanation": "6/8."
+          },
+          {
+            "id": "aim-w4-6",
+            "kind": "mcq",
+            "stem": "Validation rows in EF-2411 fixture?",
+            "choices": [
+              "2",
+              "20",
+              "480",
+              "96"
+            ],
+            "answer_index": 1,
+            "explanation": "20 pairs."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Overfitting \u2014 when train glory means val shame",
+        "lesson": "Ticket EF-2502 shows a student model with train_acc=0.99 and val_acc=0.61. That gap is the week's villain. Overfitting on EdgeForge often comes from memorizing janitor midnight patterns that never appear in daytime validation \u2014 or from tuning on the test fold until it smiles.\n\nGeneralization means the val fold stays sealed until the final score. The lab checks gap=train_acc-val_acc and whether you marked leakage_flags correctly (e.g., people_count in features). A gap\u22650.25 with no mitigation note fails the honesty check.\n\ngap=0.99-0.61=0.38. Mitigation options: fewer features, time-ordered CV, early stop. Not: 'download a bigger model.'\n\nGap is a first-class ticket field: train_acc minus val_acc. When gap \u2265 0.25 the mitigation note is mandatory \u2014 fewer features, stricter time-ordered CV, or early stop. 'Download a bigger checkpoint' is not a mitigation; it is a shopping list.\n\nSeal the validation fold. Every peek that changes a hyperparameter after seeing val scores is a quiet restatement of the test set. EdgeForge treats that as the same class of failure as editing the golden JSON until it passes.\n\nMark leakage_flags when people_count sneaks into features. The honesty check fails if the gap is large and the note is empty, even when train_acc looks like a demo reel.",
+        "worked_example": "train_acc=0.99 val_acc=0.61 \u2192 gap=0.38 (\u22650.25 triggers mitigation note).",
+        "assignment": "Compute gap, list one leakage flag if present, propose one mitigation that is not 'bigger model'. Submit lab_overfit_gap.",
+        "lab_id": "lab_overfit_gap",
+        "quiz": [
+          {
+            "id": "aim-w5-1",
+            "kind": "mcq",
+            "stem": "gap for 0.99 vs 0.61?",
+            "choices": [
+              "0.38",
+              "1.60",
+              "0.61",
+              "0.99"
+            ],
+            "answer_index": 0,
+            "explanation": "0.38."
+          },
+          {
+            "id": "aim-w5-2",
+            "kind": "mcq",
+            "stem": "Sealed val fold means?",
+            "choices": [
+              "Delete val",
+              "Do not tune decisions on val until final score",
+              "Put val in train",
+              "Shuffle into train"
+            ],
+            "answer_index": 1,
+            "explanation": "No peeking."
+          },
+          {
+            "id": "aim-w5-3",
+            "kind": "mcq",
+            "stem": "Acceptable mitigation?",
+            "choices": [
+              "Download GPT weights",
+              "Fewer features / time-ordered CV / early stop",
+              "Hide the gap",
+              "Report only train_acc"
+            ],
+            "answer_index": 1,
+            "explanation": "Regularize."
+          },
+          {
+            "id": "aim-w5-4",
+            "kind": "mcq",
+            "stem": "people_count in features when it defines label?",
+            "choices": [
+              "Good engineering",
+              "Leakage flag",
+              "Required for F1",
+              "Edge-only OK"
+            ],
+            "answer_index": 1,
+            "explanation": "Leakage."
+          },
+          {
+            "id": "aim-w5-5",
+            "kind": "mcq",
+            "stem": "Janitor midnight memorization hurts?",
+            "choices": [
+              "Train only",
+              "Validation daytime scores",
+              "USB voltage",
+              "DNS"
+            ],
+            "answer_index": 1,
+            "explanation": "Val."
+          },
+          {
+            "id": "aim-w5-6",
+            "kind": "mcq",
+            "stem": "gap\u22650.25 without mitigation note?",
+            "choices": [
+              "Passes",
+              "Fails honesty check",
+              "Equals F1",
+              "Forces k=2"
+            ],
+            "answer_index": 1,
+            "explanation": "Must note."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Feature windows \u2014 telemetry that respects time",
+        "lesson": "Feature engineering on EdgeForge is mostly windows. Ticket EF-2607 needs a 5-sample trailing mean of rssi_dbm before the classifier sees raw noise. You will compute rolling means on a length-12 series and refuse future leakage (a window that includes t+1 when predicting t).\n\nCausal windows only look backward. The lab verifies your series and that uses_future is false.\n\nSeries [10,12,11,13,12,14,13,15,14,16,15,17]. Trailing mean at index 4 (0-based) with w=5 is mean(10,12,11,13,12)=11.6.\n\nCausal windows look backward only. A trailing mean that includes t+1 when predicting t is future leakage dressed as smoothing. The lab\u2019s uses_future flag must stay false.\n\nWalk the length-12 RSSI series index by index. At index 4 with w=5 the mean is 11.6 \u2014 write the five addends. If your notebook prints a vector of NaNs for the first w-1 steps, that is expected; do not impute with future samples to 'make the plot pretty.'\n\nFeature engineering here is operational: denoise before classify, preserve time, refuse lookahead. The journal names the window width and the forbidden future frame explicitly.",
+        "worked_example": "w=5 at index 4 \u2192 mean(10,12,11,13,12)=11.6.",
+        "assignment": "Compute trailing means for the fixture series, prove no future frames, submit lab_feature_windows.",
+        "lab_id": "lab_feature_windows",
+        "quiz": [
+          {
+            "id": "aim-w6-1",
+            "kind": "mcq",
+            "stem": "Trailing mean at index 4 for [10,12,11,13,12,...] w=5?",
+            "choices": [
+              "12.0",
+              "11.6",
+              "10.0",
+              "13.0"
+            ],
+            "answer_index": 1,
+            "explanation": "11.6."
+          },
+          {
+            "id": "aim-w6-2",
+            "kind": "mcq",
+            "stem": "Future leakage means?",
+            "choices": [
+              "Using t+1 to predict t",
+              "Using t-1",
+              "Using zone_id",
+              "Using pathlib"
+            ],
+            "answer_index": 0,
+            "explanation": "Lookahead."
+          },
+          {
+            "id": "aim-w6-3",
+            "kind": "mcq",
+            "stem": "Causal window looks?",
+            "choices": [
+              "Only forward",
+              "Only backward (and present)",
+              "Only shuffled",
+              "Only GPU"
+            ],
+            "answer_index": 1,
+            "explanation": "Backward."
+          },
+          {
+            "id": "aim-w6-4",
+            "kind": "mcq",
+            "stem": "uses_future must be?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "2"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "aim-w6-5",
+            "kind": "mcq",
+            "stem": "Why window RSSI?",
+            "choices": [
+              "Decorate plots",
+              "Reduce noise before classify",
+              "Grant A+",
+              "Skip labels"
+            ],
+            "answer_index": 1,
+            "explanation": "Denoise."
+          },
+          {
+            "id": "aim-w6-6",
+            "kind": "mcq",
+            "stem": "Fixture series length?",
+            "choices": [
+              "5",
+              "12",
+              "96",
+              "480"
+            ],
+            "answer_index": 1,
+            "explanation": "12."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Tiny neural net \u2014 forward pass without mythology",
+        "lesson": "Neural foundations on EdgeForge stay tiny: one hidden layer, two inputs (windowed rssi, hour_norm), two hidden units, one sigmoid output. Ticket EF-2710 gives weights as JSON. You will compute the forward pass by hand (or with plain Python) and match the lab's expected y_hat within 1e-3.\n\nNo downloading ImageNet. No claiming 'deep learning' for a 2\u00d72\u00d71 net. The point is that a weight is a number you can audit.\n\nh = relu(W1\u00b7x+b1); y=\u03c3(W2\u00b7h+b2). Fixture expects y_hat\u22480.731 for the published x.\n\nA weight is a number you can audit. The published 2\u00d72\u00d71 net uses ReLU hidden units and a sigmoid output; you will forward-propagate x=[0.5,0.2] to y_hat within 1e-3 of the fixture.\n\nRefuse ImageNet downloads and 'deep learning' branding for a toy net. The pedagogical point is that deployment later pins these exact numbers by digest \u2014 mythology does not pin.\n\nNO_AI week for the arithmetic: show h activations and the final \u03c3(z). If you use a tool for explanations only, keep it off the submitted y_hat path. Mismatch beyond 1e-3 fails even when the story sounds confident.",
+        "worked_example": "Published fixture forward pass yields y_hat\u22480.731 (\u00b11e-3).",
+        "assignment": "Implement or hand-compute the forward pass; submit lab_tiny_mlp_forward with y_hat and layer activations.",
+        "lab_id": "lab_tiny_mlp_forward",
+        "quiz": [
+          {
+            "id": "aim-w7-1",
+            "kind": "mcq",
+            "stem": "Hidden nonlinearity this week?",
+            "choices": [
+              "softmax only",
+              "ReLU on hidden",
+              "No nonlinearity",
+              "FFT"
+            ],
+            "answer_index": 1,
+            "explanation": "ReLU."
+          },
+          {
+            "id": "aim-w7-2",
+            "kind": "mcq",
+            "stem": "Output activation?",
+            "choices": [
+              "ReLU",
+              "Sigmoid",
+              "argmax",
+              "softmax-3"
+            ],
+            "answer_index": 1,
+            "explanation": "Sigmoid."
+          },
+          {
+            "id": "aim-w7-3",
+            "kind": "mcq",
+            "stem": "Downloading ImageNet weights?",
+            "choices": [
+              "Required",
+              "Out of scope / forbidden for this lab",
+              "Extra credit",
+              "Always"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "aim-w7-4",
+            "kind": "mcq",
+            "stem": "Tolerance on y_hat?",
+            "choices": [
+              "1e-3",
+              "0.5",
+              "exact string PASS",
+              "10%"
+            ],
+            "answer_index": 0,
+            "explanation": "1e-3."
+          },
+          {
+            "id": "aim-w7-5",
+            "kind": "mcq",
+            "stem": "Inputs this week?",
+            "choices": [
+              "face embedding",
+              "windowed rssi + hour_norm",
+              "SSN",
+              "password hash"
+            ],
+            "answer_index": 1,
+            "explanation": "Two feats."
+          },
+          {
+            "id": "aim-w7-6",
+            "kind": "mcq",
+            "stem": "Why tiny net?",
+            "choices": [
+              "Audit weights as numbers",
+              "Beat GPT",
+              "Skip eval",
+              "Grant CUDA cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Audit."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Deploy + inference \u2014 scoring JSON on the rack",
+        "lesson": "Deployment on EdgeForge is a scored JSON bundle pinned by sha256, not a demo laptop left unlocked. Ticket EF-2803 asks you to run inference on three feature vectors with the published model card (threshold 0.55) and record predictions + model_digest.\n\nIf the digest mismatches the card, refuse to score \u2014 supply-chain basics. The lab checks predictions and that digest matches.\n\nModel digest sha256:ef2803aa.... Threshold 0.55. Vector scores [0.62,0.40,0.81] \u2192 labels [1,0,1].\n\nInference is applying a pinned card, not improvising on an unlocked laptop. Threshold 0.55 on scores [0.62,0.40,0.81] yields labels [1,0,1] only when model_digest matches sha256:ef2803aa.\n\nDigest mismatch means refuse to score \u2014 supply chain is a verb. Do not 'hotfix' by pasting new weights into the card without rotating the digest in the change record.\n\nRecord predictions and the digest in the lab JSON. A screenshot of a dashboard gauge is not a substitute for those fields. EdgeForge will not accept a demo that cannot name its bytes.",
+        "worked_example": "scores 0.62/0.40/0.81 at t=0.55 \u2192 labels 1/0/1 with matching digest.",
+        "assignment": "Score three vectors, verify digest, submit lab_score_model. Refuse if digest mismatches.",
+        "lab_id": "lab_score_model",
+        "quiz": [
+          {
+            "id": "aim-w8-1",
+            "kind": "mcq",
+            "stem": "Threshold 0.55 on score 0.40 \u2192 label?",
+            "choices": [
+              "1",
+              "0",
+              "null",
+              "2"
+            ],
+            "answer_index": 1,
+            "explanation": "Below."
+          },
+          {
+            "id": "aim-w8-2",
+            "kind": "mcq",
+            "stem": "Digest mismatch action?",
+            "choices": [
+              "Score anyway",
+              "Refuse to score",
+              "Retrain silently",
+              "Print PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "Refuse."
+          },
+          {
+            "id": "aim-w8-3",
+            "kind": "mcq",
+            "stem": "Deployment artifact is?",
+            "choices": [
+              "Unlocked laptop",
+              "Pinned JSON model card + digest",
+              "Slack screenshot",
+              "USB meme"
+            ],
+            "answer_index": 1,
+            "explanation": "Pin."
+          },
+          {
+            "id": "aim-w8-4",
+            "kind": "mcq",
+            "stem": "Three scores 0.62,0.40,0.81 \u2192 labels?",
+            "choices": [
+              "1,1,1",
+              "1,0,1",
+              "0,0,0",
+              "0,1,0"
+            ],
+            "answer_index": 1,
+            "explanation": "1/0/1."
+          },
+          {
+            "id": "aim-w8-5",
+            "kind": "mcq",
+            "stem": "Inference means?",
+            "choices": [
+              "Training from scratch",
+              "Applying a fixed model to new features",
+              "Deleting val",
+              "Shuffling CSV"
+            ],
+            "answer_index": 1,
+            "explanation": "Apply model."
+          },
+          {
+            "id": "aim-w8-6",
+            "kind": "mcq",
+            "stem": "Supply-chain basic this week?",
+            "choices": [
+              "Ignore digest",
+              "Match sha256 before score",
+              "Post weights to Discord",
+              "Skip threshold"
+            ],
+            "answer_index": 1,
+            "explanation": "Digest."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Quantization + edge budget \u2014 int8 vs desk latency",
+        "lesson": "Edge AI is a budget. Ticket EF-2915 compares fp32 weights (4 bytes \u00d7 1_000 params) vs int8 (1 byte \u00d7 1_000) and a latency SLA of \u226415 ms on the USB accelerator profile. Quantization is not free accuracy; you will record expected size ratio and whether the profiled latency_ms meets SLA.\n\nPHYSICAL_PENDING: actual Coral flash remains pending until digital budgets PASS.\n\nfp32_bytes=4000, int8_bytes=1000, ratio=0.25. latency_ms=12 \u226415 \u2192 budget_ok true.\n\nQuantization is a budget conversation: 1000 params \u2192 4000 fp32 bytes vs 1000 int8 bytes (ratio 0.25) and latency_ms against a 15 ms SLA. Measure, do not assume accuracy survives.\n\nPHYSICAL_PENDING stays on the Coral flash until digital budgets PASS. Claiming DONE without the latency and size fields is a portfolio lie.\n\nIf latency_ms=18 against SLA 15, budget_ok is false even when the size ratio looks heroic. Write the inequality in the journal. Edge AI that misses the desk SLA is a research toy, not a civic deploy.",
+        "worked_example": "1000 params: fp32=4000B int8=1000B ratio=0.25; latency 12ms \u226415 \u2192 ok.",
+        "assignment": "Compute size ratio and SLA check; submit lab_quantize_budget. Label PHYSICAL_PENDING for device flash.",
+        "lab_id": "lab_quantize_budget",
+        "quiz": [
+          {
+            "id": "aim-w9-1",
+            "kind": "mcq",
+            "stem": "fp32 bytes for 1000 params?",
+            "choices": [
+              "1000",
+              "4000",
+              "8000",
+              "250"
+            ],
+            "answer_index": 1,
+            "explanation": "4*1000."
+          },
+          {
+            "id": "aim-w9-2",
+            "kind": "mcq",
+            "stem": "int8/fp32 size ratio?",
+            "choices": [
+              "1.0",
+              "0.25",
+              "4.0",
+              "0.5"
+            ],
+            "answer_index": 1,
+            "explanation": "1/4."
+          },
+          {
+            "id": "aim-w9-3",
+            "kind": "mcq",
+            "stem": "SLA this week?",
+            "choices": [
+              "\u226415 ms",
+              "\u22641 ms",
+              "\u22641 s",
+              "No SLA"
+            ],
+            "answer_index": 0,
+            "explanation": "15ms."
+          },
+          {
+            "id": "aim-w9-4",
+            "kind": "mcq",
+            "stem": "latency 12ms \u2192 budget_ok?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "PHYSICAL_DONE"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "aim-w9-5",
+            "kind": "mcq",
+            "stem": "Device flash status until digital PASS?",
+            "choices": [
+              "DONE",
+              "PHYSICAL_PENDING",
+              "Skipped forever",
+              "PMI ATP"
+            ],
+            "answer_index": 1,
+            "explanation": "Pending."
+          },
+          {
+            "id": "aim-w9-6",
+            "kind": "mcq",
+            "stem": "Quantization always keeps accuracy?",
+            "choices": [
+              "Yes",
+              "No \u2014 tradeoff must be measured",
+              "Only on GPU",
+              "Only if PASS printed"
+            ],
+            "answer_index": 1,
+            "explanation": "Tradeoff."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "RAG, privacy, responsibility \u2014 retrieve without leaking patrons",
+        "lesson": "Capstone week: a tiny RAG over EdgeForge runbooks. Ticket EF-2A01 retrieves top-k chunks for 'USB reset storm' and must redact any accidental email/phone patterns before display. Responsible AI means disclosing AI assistance, refusing biometric identification, and documenting who is harmed by a false quiet alarm.\n\nThe lab checks retrieval hit ids, redaction count, and that biometric_claim is false.\n\nQuery retrieves chunks [R12,R19]. Redact 2 emails. biometric_claim must be false.\n\nRAG retrieves runbook chunks R12 and R19 for 'USB reset storm,' then redacts contact strings before any display path. biometric_claim must remain false \u2014 occupancy models do not identify humans.\n\nResponsible AI is operational: disclose assistance on the harm note, name who is hurt by false quiet alarms (patrons waiting / understaffed desk), and ship metrics+digest+budget+RAG JSON in the portfolio.\n\nCapstone refusal list: face galleries, unredacted emails, vendor cert claims, and any narrative that the model 'knows' a person. Fixture counts only; no fabricated city savings.",
+        "worked_example": "top_k hits R12,R19; redactions=2; biometric_claim=false.",
+        "assignment": "Run lab_rag_redact, write a one-page harm note for false quiet alarms, and assemble the EdgeForge portfolio (metrics, digest, budget, RAG).",
+        "lab_id": "lab_rag_redact",
+        "quiz": [
+          {
+            "id": "aim-w10-1",
+            "kind": "mcq",
+            "stem": "RAG here retrieves?",
+            "choices": [
+              "Patron faces",
+              "Runbook chunks",
+              "SSNs",
+              "Wi-Fi passwords"
+            ],
+            "answer_index": 1,
+            "explanation": "Runbooks."
+          },
+          {
+            "id": "aim-w10-2",
+            "kind": "mcq",
+            "stem": "biometric_claim must be?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "admin-only true"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "aim-w10-3",
+            "kind": "mcq",
+            "stem": "Emails in chunks?",
+            "choices": [
+              "Show raw",
+              "Redact before display",
+              "Tweet them",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "Redact."
+          },
+          {
+            "id": "aim-w10-4",
+            "kind": "mcq",
+            "stem": "False quiet alarm harms?",
+            "choices": [
+              "Nobody",
+              "Desk staffing / patrons waiting",
+              "Only GPUs",
+              "Only DNS"
+            ],
+            "answer_index": 1,
+            "explanation": "Staffing."
+          },
+          {
+            "id": "aim-w10-5",
+            "kind": "mcq",
+            "stem": "AI assistance on harm note?",
+            "choices": [
+              "Hide it",
+              "Disclose (AI_DISCLOSED)",
+              "Forbidden forever",
+              "Required GPT-4"
+            ],
+            "answer_index": 1,
+            "explanation": "Disclose."
+          },
+          {
+            "id": "aim-w10-6",
+            "kind": "mcq",
+            "stem": "Expected hit ids?",
+            "choices": [
+              "R12,R19",
+              "EF-2101",
+              "PASS",
+              "k=2"
+            ],
+            "answer_index": 0,
+            "explanation": "R12,R19."
+          }
+        ]
+      }
+    ]
+  },
+  "DATA_VIZ_BI": {
+    "course_id": "DATA_VIZ_BI",
+    "title": "Data Visualization + BI \u2014 Civic Metrics Studio",
+    "track_ids": [
+      "DATA_VIZ_BI"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Run Civic Metrics Studio for ten weeks: clean waits \u2192 SQL \u2192 stats \u2192 charts \u2192 KPI story \u2192 hashed portfolio dashboard.",
+    "syllabus_hook": "This is not a gallery of pretty charts. It is the job of publishing civic wait metrics without lying: null rates, joins that refuse cartesians, median honesty, encoding discipline, refresh SLAs, and reproducible hashes. Tableau/Power BI appear as workflow labels under PUBLIC_REFERENCE_ONLY \u2014 no piracy, no exam dumps, no copied gallery workbooks as portfolio.",
+    "career": {
+      "roles": [
+        "data_analyst_junior",
+        "bi_developer_junior",
+        "reporting_specialist"
+      ],
+      "nice_categories": [
+        "analyze"
+      ],
+      "certs_aligned_not_granted": [
+        "Microsoft PL-300 topics (labels)",
+        "Tableau Desktop Specialist topics (labels)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Civic Metrics Studio \u2014 dirty rows before pretty charts",
+        "lesson": "The Civic Metrics Studio in Ghana/Gary partnership hours starts with a dirty CSV of desk tickets: ticket_id, opened_at, closed_at, zone, wait_min. Ticket CM-3102 has 5% null wait_min and two impossible negatives. Cleaning is not optional d\u00e9cor \u2014 dashboards that average negatives invent 'negative waits' for the mayor.\n\nYou will compute null_rate and drop/impute policy in JSON. Pretty Power BI themes come later; this week refuses to chart garbage.\n\n200 rows, 10 null wait_min \u2192 null_rate=0.05. Negatives must be dropped, not absolute-valued into fake success.\n\nCleaning is a publish gate. CM-3102\u2019s 10 nulls in 200 rows are a 0.05 null_rate; two negative waits are invalid measurements, not clever outliers to abs() into success.\n\nDecide drop vs impute in writing before you open a charting tool. Imputing zero for null wait_min invents instantaneous service and will be read as propaganda by the mayor\u2019s staff.\n\nStudio rule: no theme packs, no Power BI wallpaper, until null_rate and negatives_dropped are honest in lab_clean_nulls. Pretty lies fail harder than ugly truths.",
+        "worked_example": "200 rows, 10 nulls \u2192 null_rate=0.05; negatives dropped (not abs).",
+        "assignment": "Document drop vs impute choice for CM-3102; submit lab_clean_nulls.",
+        "lab_id": "lab_clean_nulls",
+        "quiz": [
+          {
+            "id": "dv-w1-1",
+            "kind": "mcq",
+            "stem": "null_rate for 10 nulls in 200?",
+            "choices": [
+              "0.05",
+              "0.10",
+              "5",
+              "10"
+            ],
+            "answer_index": 0,
+            "explanation": "0.05."
+          },
+          {
+            "id": "dv-w1-2",
+            "kind": "mcq",
+            "stem": "Negative wait_min handling?",
+            "choices": [
+              "abs() into dashboard",
+              "Drop as invalid",
+              "Impute 0 always",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "Drop."
+          },
+          {
+            "id": "dv-w1-3",
+            "kind": "mcq",
+            "stem": "Charting before clean?",
+            "choices": [
+              "Best practice",
+              "Forbidden on Studio desk",
+              "Required for Tableau",
+              "PMI rule"
+            ],
+            "answer_index": 1,
+            "explanation": "Clean first."
+          },
+          {
+            "id": "dv-w1-4",
+            "kind": "mcq",
+            "stem": "CM-3102 columns include?",
+            "choices": [
+              "face_id",
+              "wait_min",
+              "password",
+              "SSN"
+            ],
+            "answer_index": 1,
+            "explanation": "wait_min."
+          },
+          {
+            "id": "dv-w1-5",
+            "kind": "mcq",
+            "stem": "null wait_min means?",
+            "choices": [
+              "Zero wait",
+              "Missing measurement",
+              "VIP patron",
+              "GPU idle"
+            ],
+            "answer_index": 1,
+            "explanation": "Missing."
+          },
+          {
+            "id": "dv-w1-6",
+            "kind": "mcq",
+            "stem": "Mayor-facing negative average?",
+            "choices": [
+              "Clever",
+              "Invented metric \u2014 fails Studio",
+              "Required KPI",
+              "F1"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "SQL joins \u2014 tickets to zones without cartesian accidents",
+        "lesson": "Ticket CM-3208 needs a join from tickets to zone_dim on zone_id. A missing ON clause explodes to a cartesian product and invents thousands of waits. You will count joined rows on the fixture and show that unmatched tickets are left out of the inner join used for the median KPI.\n\ntickets=100, zones=5, matching=95 \u2192 inner join rows=95. Cartesian would be 500.\n\nJoins need ON clauses the way tickets need zone_id. 100\u00d75 without a match key is a 500-row cartesian accident that fabricates waits. Inner join on the fixture yields 95 matched rows for the median KPI \u2014 unmatched tickets stay out.\n\nWrite cartesian_trap_rows beside joined_rows so a reviewer sees you know the failure mode. SQL comments that only say 'joined stuff' fail the assignment even if the count is lucky.\n\nDo not run DROP or mutate a live campus warehouse. Fixture counts only. The Studio desk is authorized for the course tables in this repository \u2014 nothing else.",
+        "worked_example": "inner join matching 95; cartesian 100\u00d75=500 is the accident to refuse.",
+        "assignment": "Write the join intent in comments; submit lab_sql_join_counts with joined_rows and cartesian_trap_rows.",
+        "lab_id": "lab_sql_join_counts",
+        "quiz": [
+          {
+            "id": "dv-w2-1",
+            "kind": "mcq",
+            "stem": "Cartesian 100\u00d75?",
+            "choices": [
+              "105",
+              "500",
+              "95",
+              "5"
+            ],
+            "answer_index": 1,
+            "explanation": "500."
+          },
+          {
+            "id": "dv-w2-2",
+            "kind": "mcq",
+            "stem": "Inner join matching 95 \u2192 rows?",
+            "choices": [
+              "100",
+              "95",
+              "500",
+              "5"
+            ],
+            "answer_index": 1,
+            "explanation": "95."
+          },
+          {
+            "id": "dv-w2-3",
+            "kind": "mcq",
+            "stem": "Missing ON clause risk?",
+            "choices": [
+              "Faster queries",
+              "Cartesian explosion",
+              "Auto indexes",
+              "Grants cert"
+            ],
+            "answer_index": 1,
+            "explanation": "Cartesian."
+          },
+          {
+            "id": "dv-w2-4",
+            "kind": "mcq",
+            "stem": "Median KPI should use?",
+            "choices": [
+              "Cartesian",
+              "Matched join rows",
+              "Only nulls",
+              "PASS string"
+            ],
+            "answer_index": 1,
+            "explanation": "Matched."
+          },
+          {
+            "id": "dv-w2-5",
+            "kind": "mcq",
+            "stem": "zone_dim purpose?",
+            "choices": [
+              "Store passwords",
+              "Decode zone_id to labels",
+              "Train GPUs",
+              "DNS"
+            ],
+            "answer_index": 1,
+            "explanation": "Labels."
+          },
+          {
+            "id": "dv-w2-6",
+            "kind": "mcq",
+            "stem": "SQL this week is?",
+            "choices": [
+              "Exam dump",
+              "Fixture join counts",
+              "Live production DROP",
+              "NoSQL only"
+            ],
+            "answer_index": 1,
+            "explanation": "Fixture."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Relational modeling \u2014 stop repeating zone addresses",
+        "lesson": "Ticket CM-3311 shows zone address repeated on every ticket row. That update anomaly means one rename edit misses 40 rows. You will propose a 3NF-ish split: tickets reference zone_id; zone_dim holds address. The lab checks that repeating groups are removed from the ticket table proposal.\n\nBefore: ticket rows carry zone_address text. After: zone_id FK only; address in zone_dim.\n\nRepeating zone_address on every ticket is an update anomaly waiting for a rename. Move address into zone_dim; leave tickets with zone_id FK only. That is the 3NF-ish contract lab_schema_nf enforces.\n\nTell the anomaly story in one sentence: 'one rename missed forty ticket rows.' If your tables[] still list zone_address under tickets, the lab fails regardless of prose quality.\n\nNormalization here is civic maintenance: fewer copy-paste address edits, fewer contradictory labels on the same zone letter across weeks of dashboards.",
+        "worked_example": "Move zone_address into zone_dim; tickets keep zone_id FK only.",
+        "assignment": "Submit lab_schema_nf with tables[] and a one-sentence anomaly story.",
+        "lab_id": "lab_schema_nf",
+        "quiz": [
+          {
+            "id": "dv-w3-1",
+            "kind": "mcq",
+            "stem": "Repeating zone_address causes?",
+            "choices": [
+              "Faster joins",
+              "Update anomalies",
+              "Better F1",
+              "GPU heat"
+            ],
+            "answer_index": 1,
+            "explanation": "Anomalies."
+          },
+          {
+            "id": "dv-w3-2",
+            "kind": "mcq",
+            "stem": "tickets should store?",
+            "choices": [
+              "Full address text always",
+              "zone_id FK",
+              "SSN",
+              "face embedding"
+            ],
+            "answer_index": 1,
+            "explanation": "FK."
+          },
+          {
+            "id": "dv-w3-3",
+            "kind": "mcq",
+            "stem": "zone_dim holds?",
+            "choices": [
+              "Passwords",
+              "Address / label attributes",
+              "Model weights",
+              "SSH keys"
+            ],
+            "answer_index": 1,
+            "explanation": "Attrs."
+          },
+          {
+            "id": "dv-w3-4",
+            "kind": "mcq",
+            "stem": "3NF-ish goal this week?",
+            "choices": [
+              "More duplication",
+              "Remove repeating groups from tickets",
+              "Drop SQL",
+              "Skip keys"
+            ],
+            "answer_index": 1,
+            "explanation": "Normalize."
+          },
+          {
+            "id": "dv-w3-5",
+            "kind": "mcq",
+            "stem": "Rename edit missing 40 rows is?",
+            "choices": [
+              "Success",
+              "Anomaly symptom",
+              "KPI win",
+              "RAG hit"
+            ],
+            "answer_index": 1,
+            "explanation": "Symptom."
+          },
+          {
+            "id": "dv-w3-6",
+            "kind": "mcq",
+            "stem": "Lab checks?",
+            "choices": [
+              "Pretty colors",
+              "tables[] without repeating address on tickets",
+              "print PASS",
+              "AUC"
+            ],
+            "answer_index": 1,
+            "explanation": "Schema."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Applied stats \u2014 median wait beats a vanity mean",
+        "lesson": "Ticket CM-3404 asks for mean, median, and IQR of wait_min on the cleaned fixture. One 120-minute outlier pulls the mean; the median stays honest for the board. You will compute all three. Generative fill of statistics under NO_AI week policy fails.\n\nSorted waits [...]; median=12; Q1=8; Q3=18; IQR=10; mean inflated by 120 outlier.\n\nMean chases the 120-minute outlier; median stays near 12 for the board. IQR = Q3\u2212Q1 = 10 on the fixture. Prefer median (+ IQR) when you brief wait times.\n\nNO_AI week: no generative fill of the statistics. Compute mean, median, and IQR on the provided values; calculator OK. A model that invents a 'smoothed mean' fails honesty.\n\nJournal two sentences that explain why the board should not lead with the mean this week. Numbers first, adjectives never as a substitute for the sorted list.\n\nWeek 4 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_stats_summary` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "median=12, IQR=10; mean rises when 120-min outlier included.",
+        "assignment": "Submit lab_stats_summary; write two sentences preferring median for the board.",
+        "lab_id": "lab_stats_summary",
+        "quiz": [
+          {
+            "id": "dv-w4-1",
+            "kind": "mcq",
+            "stem": "Outlier 120-min mainly moves?",
+            "choices": [
+              "Median only",
+              "Mean upward",
+              "IQR to zero",
+              "null_rate"
+            ],
+            "answer_index": 1,
+            "explanation": "Mean."
+          },
+          {
+            "id": "dv-w4-2",
+            "kind": "mcq",
+            "stem": "IQR is?",
+            "choices": [
+              "Q3-Q1",
+              "mean-median",
+              "max-min",
+              "TP/FP"
+            ],
+            "answer_index": 0,
+            "explanation": "Q3-Q1."
+          },
+          {
+            "id": "dv-w4-3",
+            "kind": "mcq",
+            "stem": "Board-facing wait summary prefers?",
+            "choices": [
+              "Only mean with outlier",
+              "Median (+ IQR context)",
+              "Only max",
+              "PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "Median."
+          },
+          {
+            "id": "dv-w4-4",
+            "kind": "mcq",
+            "stem": "NO_AI this week means?",
+            "choices": [
+              "No computers",
+              "No generative fill of stats",
+              "No SQL",
+              "No charts"
+            ],
+            "answer_index": 1,
+            "explanation": "No fill."
+          },
+          {
+            "id": "dv-w4-5",
+            "kind": "mcq",
+            "stem": "median fixture value?",
+            "choices": [
+              "12",
+              "120",
+              "0",
+              "95"
+            ],
+            "answer_index": 0,
+            "explanation": "12."
+          },
+          {
+            "id": "dv-w4-6",
+            "kind": "mcq",
+            "stem": "Stats are?",
+            "choices": [
+              "Vendor exam items",
+              "Computed on Studio fixture",
+              "Copied from Tableau sample",
+              "Random"
+            ],
+            "answer_index": 1,
+            "explanation": "Fixture."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Visualization principles \u2014 encode waits, don't decorate",
+        "lesson": "Ticket CM-3519 grades a chart spec: mark=bar, x=zone, y=median_wait. A rainbow pie of ticket_ids fails encoding principles. You will validate channel types (nominal x, quantitative y) and refuse 3D extrusion as 'insight.'\n\nValid: bar + nominal zone + quantitative median_wait. Invalid: pie of unique ticket_ids.\n\nEncoding beats decoration. bar + nominal zone + quantitative median_wait is valid; a rainbow pie of ticket_ids is invalid for this KPI. 3D extrusion is chartjunk, not insight.\n\nSet invalid_rejected=true only after you can name the rejected mark. The lab checks the triple (mark,x,y) and the rejection flag together.\n\nStudio vocabulary stays concrete: channel types, marks, and the question the chart answers. If the chart cannot survive a grayscale print for the board packet, redesign it.\n\nWeek 5 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_chart_encode` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "bar/zone/median_wait valid; pie(ticket_id) invalid encoding.",
+        "assignment": "Submit lab_chart_encode with mark/channels and invalid_rejected=true.",
+        "lab_id": "lab_chart_encode",
+        "quiz": [
+          {
+            "id": "dv-w5-1",
+            "kind": "mcq",
+            "stem": "zone on x is?",
+            "choices": [
+              "quantitative",
+              "nominal",
+              "temporal only",
+              "biometric"
+            ],
+            "answer_index": 1,
+            "explanation": "Nominal."
+          },
+          {
+            "id": "dv-w5-2",
+            "kind": "mcq",
+            "stem": "median_wait on y is?",
+            "choices": [
+              "nominal",
+              "quantitative",
+              "password",
+              "FK"
+            ],
+            "answer_index": 1,
+            "explanation": "Quant."
+          },
+          {
+            "id": "dv-w5-3",
+            "kind": "mcq",
+            "stem": "Pie of ticket_ids?",
+            "choices": [
+              "Best practice",
+              "Invalid encoding for this KPI",
+              "Required",
+              "SQL"
+            ],
+            "answer_index": 1,
+            "explanation": "Invalid."
+          },
+          {
+            "id": "dv-w5-4",
+            "kind": "mcq",
+            "stem": "3D extrusion adds?",
+            "choices": [
+              "Causal insight",
+              "Chartjunk risk",
+              "F1",
+              "IAM"
+            ],
+            "answer_index": 1,
+            "explanation": "Junk."
+          },
+          {
+            "id": "dv-w5-5",
+            "kind": "mcq",
+            "stem": "Preferred mark for zone comparison?",
+            "choices": [
+              "bar",
+              "word cloud",
+              "globe",
+              "radar of SSNs"
+            ],
+            "answer_index": 0,
+            "explanation": "Bar."
+          },
+          {
+            "id": "dv-w5-6",
+            "kind": "mcq",
+            "stem": "Lab requires invalid_rejected?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "2"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Dashboard design \u2014 one question per screen",
+        "lesson": "Ticket CM-3605 builds a desk dashboard with three tiles: median wait by zone, open ticket count, and data freshness timestamp. A fourth tile of stock photos fails. Layout JSON must list required tiles and max_tiles=3 for the first screen.\n\nrequired_tiles=[median_by_zone, open_count, freshness]; max_tiles=3.\n\nFirst screen, three tiles: median_by_zone, open_count, freshness. max_tiles=3. A stock-photo fourth tile fails layout even if the PNG is beautiful.\n\nFreshness is trust infrastructure \u2014 without a timestamp the board cannot know whether the median is from this hour or last month. ASCII sketches are acceptable; missing freshness is not.\n\nOne question per screen means the three tiles argue the same desk question. Unrelated KPI collages belong on later pages, not the civic opening view.\n\nWeek 6 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_dashboard_layout` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "Three tiles only; freshness timestamp mandatory.",
+        "assignment": "Submit lab_dashboard_layout; sketch (ASCII OK) the first screen.",
+        "lab_id": "lab_dashboard_layout",
+        "quiz": [
+          {
+            "id": "dv-w6-1",
+            "kind": "mcq",
+            "stem": "First screen max_tiles?",
+            "choices": [
+              "3",
+              "12",
+              "100",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "3."
+          },
+          {
+            "id": "dv-w6-2",
+            "kind": "mcq",
+            "stem": "Freshness tile purpose?",
+            "choices": [
+              "Decoration",
+              "Trust \u2014 know if data is stale",
+              "GPU load",
+              "DNS"
+            ],
+            "answer_index": 1,
+            "explanation": "Trust."
+          },
+          {
+            "id": "dv-w6-3",
+            "kind": "mcq",
+            "stem": "Stock photo tile?",
+            "choices": [
+              "Required",
+              "Fails Studio",
+              "Increases F1",
+              "SQL"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "dv-w6-4",
+            "kind": "mcq",
+            "stem": "median_by_zone tile?",
+            "choices": [
+              "Optional fluff",
+              "Required",
+              "Forbidden",
+              "Biometric"
+            ],
+            "answer_index": 1,
+            "explanation": "Required."
+          },
+          {
+            "id": "dv-w6-5",
+            "kind": "mcq",
+            "stem": "One question per screen means?",
+            "choices": [
+              "Many unrelated KPIs",
+              "Coherent desk question",
+              "No title",
+              "No legend"
+            ],
+            "answer_index": 1,
+            "explanation": "Coherent."
+          },
+          {
+            "id": "dv-w6-6",
+            "kind": "mcq",
+            "stem": "open_count shows?",
+            "choices": [
+              "Closed only",
+              "Currently open tickets",
+              "Passwords",
+              "Faces"
+            ],
+            "answer_index": 1,
+            "explanation": "Open."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "BI workflows \u2014 refresh SLA without pirating licenses",
+        "lesson": "Industry workflows mention Tableau/Power BI patterns as PUBLIC_REFERENCE_ONLY. Ticket CM-3712 defines a refresh SLA of \u226415 minutes and a license_note that WAIKE does not redistribute vendor binaries. You will encode refresh_minutes and license_ok flags. No cracked installers. No copied sample workbooks from vendor galleries as 'your' work.\n\nrefresh_minutes=10 (\u226415); license_ok=true with attribution note only.\n\nRefresh SLA \u226415 minutes; encode refresh_minutes and meets_sla honestly. license_ok means attribution and no piracy \u2014 WAIKE does not redistribute Tableau/Power BI binaries.\n\nPUBLIC_REFERENCE_ONLY forbids claiming a vendor gallery workbook as your portfolio. Domain labels are alignment; sample workbooks are not your labor.\n\nWrite the license_note in your own words. Cracked installers fail the course ethic the same way scanning hosts you do not own fails Harbor SOC.",
+        "worked_example": "refresh 10min meets \u226415 SLA; license_ok with attribution, no binary redistribute.",
+        "assignment": "Submit lab_bi_refresh; write license_note sentence in your own words.",
+        "lab_id": "lab_bi_refresh",
+        "quiz": [
+          {
+            "id": "dv-w7-1",
+            "kind": "mcq",
+            "stem": "Refresh SLA?",
+            "choices": [
+              "\u226415 min",
+              "\u22641 day only",
+              "No SLA",
+              "\u22641 sec"
+            ],
+            "answer_index": 0,
+            "explanation": "15min."
+          },
+          {
+            "id": "dv-w7-2",
+            "kind": "mcq",
+            "stem": "Redistribute Tableau binaries?",
+            "choices": [
+              "Yes",
+              "No \u2014 reference workflows only",
+              "Always",
+              "If PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "dv-w7-3",
+            "kind": "mcq",
+            "stem": "refresh_minutes=10 \u2192 meets SLA?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "cartesian"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "dv-w7-4",
+            "kind": "mcq",
+            "stem": "Vendor gallery workbook as your portfolio?",
+            "choices": [
+              "Allowed silently",
+              "Not your work \u2014 forbidden claim",
+              "Required",
+              "Grants cert"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "dv-w7-5",
+            "kind": "mcq",
+            "stem": "license_ok means?",
+            "choices": [
+              "Cracked key works",
+              "Honest attribution / no piracy",
+              "Ignore ToS",
+              "Skip SLA"
+            ],
+            "answer_index": 1,
+            "explanation": "Honest."
+          },
+          {
+            "id": "dv-w7-6",
+            "kind": "mcq",
+            "stem": "PUBLIC_REFERENCE_ONLY means?",
+            "choices": [
+              "Copy exams",
+              "Domain alignment, not content theft",
+              "Free to pirate",
+              "No charts"
+            ],
+            "answer_index": 1,
+            "explanation": "Align only."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "pandas groupby \u2014 zone medians in reproducible scripts",
+        "lesson": "Ticket CM-3818 computes median wait by zone with pandas-style groupby on the fixture (plain Python OK if pandas absent). The lab checks the group map and that the script hash is recorded for reproducibility. Notebooks without a pinned input hash fail the portfolio later.\n\nzones A/B/C medians {A:10,B:14,C:12} on fixture; input_sha256 recorded.\n\ngroupby median waits: A:10, B:14, C:12 on the fixture. Pin input_sha256 so a later rerun proves the same bytes. Screenshots without hashes are portfolio risk.\n\nPlain Python aggregation is allowed if pandas is absent \u2014 the contract is the medians and the digest, not the import name. Dirty inputs still require last week\u2019s clean gate first.\n\nIf you change the CSV, rotate the hash. Reusing yesterday\u2019s digest after an edit is the same class of failure as a mismatched model digest on EdgeForge.\n\nWeek 8 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_pandas_group` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "groupby median \u2192 A:10 B:14 C:12 with input digest pinned.",
+        "assignment": "Submit lab_pandas_group with medians and input_sha256.",
+        "lab_id": "lab_pandas_group",
+        "quiz": [
+          {
+            "id": "dv-w8-1",
+            "kind": "mcq",
+            "stem": "Zone B median fixture?",
+            "choices": [
+              "10",
+              "14",
+              "12",
+              "120"
+            ],
+            "answer_index": 1,
+            "explanation": "14."
+          },
+          {
+            "id": "dv-w8-2",
+            "kind": "mcq",
+            "stem": "Reproducibility needs?",
+            "choices": [
+              "Only screenshots",
+              "Pinned input hash + script",
+              "Random seed ignored",
+              "PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "Hash."
+          },
+          {
+            "id": "dv-w8-3",
+            "kind": "mcq",
+            "stem": "groupby without clean data?",
+            "choices": [
+              "Fine",
+              "Inherited dirt \u2014 clean first",
+              "Better F1",
+              "IAM"
+            ],
+            "answer_index": 1,
+            "explanation": "Clean first."
+          },
+          {
+            "id": "dv-w8-4",
+            "kind": "mcq",
+            "stem": "pandas absent?",
+            "choices": [
+              "Fail course",
+              "Plain Python aggregation OK",
+              "Must pirate Anaconda",
+              "Skip week"
+            ],
+            "answer_index": 1,
+            "explanation": "Plain OK."
+          },
+          {
+            "id": "dv-w8-5",
+            "kind": "mcq",
+            "stem": "input_sha256 missing later?",
+            "choices": [
+              "Portfolio risk",
+              "Ideal",
+              "Required for cert grant",
+              "SQL only"
+            ],
+            "answer_index": 0,
+            "explanation": "Risk."
+          },
+          {
+            "id": "dv-w8-6",
+            "kind": "mcq",
+            "stem": "Medians are?",
+            "choices": [
+              "Vendor items",
+              "Fixture-computed",
+              "Guessed",
+              "AUC"
+            ],
+            "answer_index": 1,
+            "explanation": "Fixture."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Storytelling + KPIs \u2014 a formula the board can audit",
+        "lesson": "Ticket CM-3909 defines KPI desk_pressure = open_count * median_wait / staff_on_duty. Storytelling means one sentence that states the change, the number, and the action \u2014 not a adjective storm. The lab checks the formula evaluation on fixture numbers.\n\nopen_count=6, median_wait=12, staff=3 \u2192 desk_pressure=24.\n\ndesk_pressure = open_count \u00d7 median_wait / staff_on_duty. Fixture 6\u00d712/3 = 24. The formula must be auditable; secret KPI magic fails Studio.\n\nBoard sentence pattern: state the change, the number, and the next action. Adjective storms without numbers fail storytelling. Fabricating staff_on_duty upward to shrink pressure is an honesty failure.\n\nNO_AI for the formula evaluation this week when tagged; disclose assistance if a tool drafts the sentence, but the arithmetic stays local.\n\nWeek 9 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_kpi_tree` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "6*12/3=24 desk_pressure.",
+        "assignment": "Submit lab_kpi_tree; write one board sentence with the number and next action.",
+        "lab_id": "lab_kpi_tree",
+        "quiz": [
+          {
+            "id": "dv-w9-1",
+            "kind": "mcq",
+            "stem": "desk_pressure for 6,12,3?",
+            "choices": [
+              "24",
+              "2",
+              "72",
+              "0.5"
+            ],
+            "answer_index": 0,
+            "explanation": "24."
+          },
+          {
+            "id": "dv-w9-2",
+            "kind": "mcq",
+            "stem": "Adjective storm without number?",
+            "choices": [
+              "Good story",
+              "Fails Studio storytelling",
+              "Required",
+              "SQL"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "dv-w9-3",
+            "kind": "mcq",
+            "stem": "KPI formula must be?",
+            "choices": [
+              "Secret",
+              "Auditable",
+              "Random",
+              "Biometric"
+            ],
+            "answer_index": 1,
+            "explanation": "Auditable."
+          },
+          {
+            "id": "dv-w9-4",
+            "kind": "mcq",
+            "stem": "staff_on_duty in denominator?",
+            "choices": [
+              "Ignored",
+              "Scales pressure by coverage",
+              "Always 1",
+              "Password"
+            ],
+            "answer_index": 1,
+            "explanation": "Coverage."
+          },
+          {
+            "id": "dv-w9-5",
+            "kind": "mcq",
+            "stem": "Board sentence includes?",
+            "choices": [
+              "Only vibes",
+              "Change + number + action",
+              "Only logo",
+              "Face IDs"
+            ],
+            "answer_index": 1,
+            "explanation": "Numbered."
+          },
+          {
+            "id": "dv-w9-6",
+            "kind": "mcq",
+            "stem": "Fabricating staff_on_duty?",
+            "choices": [
+              "OK",
+              "Fails honesty",
+              "Extra credit",
+              "F1 boost"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Quality + repro portfolio \u2014 hash the dashboard inputs",
+        "lesson": "Capstone: ship a portfolio dashboard pack with cleaned CSV sha256, KPI snapshot, and a data-quality checklist (null_rate, negatives_dropped, freshness). Ticket CM-3A07 rejects portfolios that only contain a PNG with no hashes.\n\nquality_ok when null_rate\u22640.05, negatives_dropped=true, freshness_minutes\u226415, csv_sha256 present.\n\nquality_ok requires null_rate\u22640.05, negatives_dropped=true, freshness_minutes\u226415, and a csv_sha256. PNG-only portfolios without hashes are rejected.\n\nShip the checklist beside the dashboard pack. No PL-300 or Tableau credential claims \u2014 alignment labels only. No patron PII in screenshots.\n\nCapstone is reproducibility under civic scrutiny: another analyst must rebuild the median story from your hash and script notes without calling you at midnight.\n\nWeek 10 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_repro_hash` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "null_rate=0.04, negatives_dropped=true, freshness=8, sha256 present \u2192 quality_ok.",
+        "assignment": "Submit lab_repro_hash and assemble Civic Metrics portfolio (no PII, no vendor license claims).",
+        "lab_id": "lab_repro_hash",
+        "quiz": [
+          {
+            "id": "dv-w10-1",
+            "kind": "mcq",
+            "stem": "PNG-only portfolio?",
+            "choices": [
+              "Enough",
+              "Rejected without hashes",
+              "Grants cert",
+              "SQL"
+            ],
+            "answer_index": 1,
+            "explanation": "Rejected."
+          },
+          {
+            "id": "dv-w10-2",
+            "kind": "mcq",
+            "stem": "null_rate\u22640.05 required?",
+            "choices": [
+              "No",
+              "Yes for quality_ok",
+              "Only for AI",
+              "Only for k8s"
+            ],
+            "answer_index": 1,
+            "explanation": "Yes."
+          },
+          {
+            "id": "dv-w10-3",
+            "kind": "mcq",
+            "stem": "freshness_minutes\u226415?",
+            "choices": [
+              "Ignored",
+              "Part of quality_ok",
+              "Must be 0",
+              "Must be 60"
+            ],
+            "answer_index": 1,
+            "explanation": "Part."
+          },
+          {
+            "id": "dv-w10-4",
+            "kind": "mcq",
+            "stem": "csv_sha256 proves?",
+            "choices": [
+              "Beauty",
+              "Input identity for repro",
+              "GPU brand",
+              "IAM"
+            ],
+            "answer_index": 1,
+            "explanation": "Identity."
+          },
+          {
+            "id": "dv-w10-5",
+            "kind": "mcq",
+            "stem": "Vendor cert claim?",
+            "choices": [
+              "Allowed",
+              "Forbidden \u2014 alignment only",
+              "Required",
+              "PMI ATP"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "dv-w10-6",
+            "kind": "mcq",
+            "stem": "negatives_dropped must be?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "2"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          }
+        ]
+      }
+    ]
+  },
+  "CLOUD_DEVOPS": {
+    "course_id": "CLOUD_DEVOPS",
+    "title": "Cloud + DevOps \u2014 ForgeCloud Platform",
+    "track_ids": [
+      "CLOUD_DEVOPS"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Run ForgeCloud Platform for ten weeks: Linux perms \u2192 git \u2192 containers \u2192 CI \u2192 IAM/secrets \u2192 SLO \u2192 rollback \u2192 k8s probes \u2192 incident runbook.",
+    "syllabus_hook": "This is not a slideshow of cloud logos. It is the job of shipping a small service safely: 0600 keys, no force-push main, digest-pinned images, gated PR pipelines, private subnets, least-privilege IAM, error budgets, rollback digests, honest probes, and incident runbooks without heroics. AWS/Azure/CKA domain names are alignment labels only \u2014 no dumps, no fake certs.",
+    "career": {
+      "roles": [
+        "junior_devops",
+        "cloud_operations_technician",
+        "sre_junior"
+      ],
+      "nice_categories": [
+        "operate_and_maintain",
+        "build_and_deploy"
+      ],
+      "certs_aligned_not_granted": [
+        "AWS Cloud Practitioner topics (labels)",
+        "CKA topics (labels)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        1,
+        7
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "ForgeCloud \u2014 Linux permissions before the fancy YAML",
+        "lesson": "ForgeCloud Platform starts on a Linux bastion that deploys nothing until permissions make sense. Ticket FC-4101 shows a deploy key file mode 0666 \u2014 world writable. You will compute the correct mode 0600 and refuse to continue CI until the lab's mode check passes. Cloud YAML cannot save a secret that every login can rewrite.\n\ndeploy_key mode 0666 \u2192 must be 0600; owner read/write only.\n\nPermissions before YAML. A deploy key at 0666 is world writable; ForgeCloud requires 0600 (octal 384) and world_writable=false before any pipeline talk.\n\nCloud manifests cannot redeem a secret every login can rewrite. Bastion discipline is the first SRE muscle: name the mode, fix the mode, then consider containers.\n\nNO_AI week for the mode arithmetic when tagged. Journal the risk in one line: anyone with directory listing access can replace the key material and impersonate deploys.",
+        "worked_example": "0666 world-writable deploy key fails; 0600 passes.",
+        "assignment": "Submit lab_linux_perms with mode_octal=384 (0600) and rationale.",
+        "lab_id": "lab_linux_perms",
+        "quiz": [
+          {
+            "id": "cd-w1-1",
+            "kind": "mcq",
+            "stem": "0666 means?",
+            "choices": [
+              "Owner only",
+              "World writable",
+              "Setuid",
+              "Directory sticky"
+            ],
+            "answer_index": 1,
+            "explanation": "World write."
+          },
+          {
+            "id": "cd-w1-2",
+            "kind": "mcq",
+            "stem": "Required mode this week?",
+            "choices": [
+              "0777",
+              "0600",
+              "0000",
+              "0666"
+            ],
+            "answer_index": 1,
+            "explanation": "0600."
+          },
+          {
+            "id": "cd-w1-3",
+            "kind": "mcq",
+            "stem": "0600 octal as int?",
+            "choices": [
+              "600",
+              "384",
+              "666",
+              "64"
+            ],
+            "answer_index": 1,
+            "explanation": "384."
+          },
+          {
+            "id": "cd-w1-4",
+            "kind": "mcq",
+            "stem": "World-writable deploy key risk?",
+            "choices": [
+              "Faster deploys",
+              "Anyone can rewrite the key material",
+              "Better F1",
+              "Free SSL"
+            ],
+            "answer_index": 1,
+            "explanation": "Rewrite."
+          },
+          {
+            "id": "cd-w1-5",
+            "kind": "mcq",
+            "stem": "YAML before perms?",
+            "choices": [
+              "Best practice",
+              "Fails ForgeCloud gate",
+              "Required",
+              "Kubernetes only"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w1-6",
+            "kind": "mcq",
+            "stem": "Bastion role?",
+            "choices": [
+              "Public game server",
+              "Controlled jump host for deploys",
+              "Patron kiosk",
+              "DNS only"
+            ],
+            "answer_index": 1,
+            "explanation": "Jump."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Git on ForgeCloud \u2014 history you can roll back",
+        "lesson": "Ticket FC-4206 needs a release branch that is 2 commits ahead of main with a known conflict path services/api/health.py. You will report ahead/behind and list conflict files. Force-push to main is forbidden in the course ethic \u2014 same as production.\n\nahead=2 behind=0 conflict_files=['services/api/health.py']; force_push_main=false.\n\nRelease branch state: ahead=2, behind=0, conflict on services/api/health.py. force_push_main must stay false \u2014 recoverable history beats a rewritten main.\n\nWrite a merge plan that integrates without destroying reviewers\u2019 commits. Behind>0 means integrate main first; do not cosplay by force-pushing past the conflict.\n\nGit is the rollback substrate for later weeks. If history is a vibe, digest pins and incident timelines have nothing solid to cite.\n\nWeek 2 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_git_state` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "ahead 2 / behind 0; conflict on services/api/health.py; no force-push main.",
+        "assignment": "Submit lab_git_state; paste a merge plan that does not force-push main.",
+        "lab_id": "lab_git_state",
+        "quiz": [
+          {
+            "id": "cd-w2-1",
+            "kind": "mcq",
+            "stem": "ahead=2 means?",
+            "choices": [
+              "2 behind remote",
+              "2 commits not in main",
+              "2 conflicts always",
+              "2 tags"
+            ],
+            "answer_index": 1,
+            "explanation": "Ahead."
+          },
+          {
+            "id": "cd-w2-2",
+            "kind": "mcq",
+            "stem": "force-push main?",
+            "choices": [
+              "Required",
+              "Forbidden in ForgeCloud ethic",
+              "Silent OK",
+              "Only Fridays"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "cd-w2-3",
+            "kind": "mcq",
+            "stem": "Conflict file fixture?",
+            "choices": [
+              "README.md only",
+              "services/api/health.py",
+              "random.bin",
+              "PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "health.py."
+          },
+          {
+            "id": "cd-w2-4",
+            "kind": "mcq",
+            "stem": "behind=0 means?",
+            "choices": [
+              "Need rebase from main first",
+              "Not behind main",
+              "Detached HEAD",
+              "Shallow clone"
+            ],
+            "answer_index": 1,
+            "explanation": "Not behind."
+          },
+          {
+            "id": "cd-w2-5",
+            "kind": "mcq",
+            "stem": "Git purpose this week?",
+            "choices": [
+              "Decorate dashboards",
+              "Recoverable history for rollback",
+              "Train models",
+              "Pie charts"
+            ],
+            "answer_index": 1,
+            "explanation": "History."
+          },
+          {
+            "id": "cd-w2-6",
+            "kind": "mcq",
+            "stem": "Merge plan must?",
+            "choices": [
+              "Delete .git",
+              "Avoid force-push main",
+              "Skip conflicts",
+              "Print PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "No force."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Containers \u2014 Dockerfile that refuses :latest and root",
+        "lesson": "Ticket FC-4303 reviews a Dockerfile: FROM python:3.12-slim@sha256:abc..., USER app, no :latest. Running as root in the container fails the lab. Pin digests; do not worship floating tags on ForgeCloud.\n\npinned_digest=true, user_non_root=true, uses_latest=false \u2192 lint_ok.\n\nDockerfile lint: digest-pinned base, USER non-root, uses_latest=false. Floating :latest and root runtime fail lint_ok even when the image 'runs on my laptop.'\n\nPinning is reproducibility for ops the way model digests are reproducibility for EdgeForge. Document the base name and the three flags in lab_dockerfile_lint.\n\nThis week is not a full Kubernetes cluster. It is image hygiene that later probes depend on. Skip the meme FROM ubuntu:latest AS root.\n\nWeek 3 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_dockerfile_lint` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "digest-pinned base, USER app, uses_latest=false \u2192 lint_ok.",
+        "assignment": "Submit lab_dockerfile_lint with the three flags and base image name.",
+        "lab_id": "lab_dockerfile_lint",
+        "quiz": [
+          {
+            "id": "cd-w3-1",
+            "kind": "mcq",
+            "stem": ":latest on ForgeCloud?",
+            "choices": [
+              "Preferred",
+              "Fails lint (uses_latest must be false)",
+              "Required",
+              "Only AI"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "cd-w3-2",
+            "kind": "mcq",
+            "stem": "USER app means?",
+            "choices": [
+              "Root",
+              "Non-root runtime user",
+              "Windows user",
+              "SQL user"
+            ],
+            "answer_index": 1,
+            "explanation": "Non-root."
+          },
+          {
+            "id": "cd-w3-3",
+            "kind": "mcq",
+            "stem": "Digest pin purpose?",
+            "choices": [
+              "Pretty logs",
+              "Reproducible base layer",
+              "Faster Wi-Fi",
+              "Grants CKA"
+            ],
+            "answer_index": 1,
+            "explanation": "Repro."
+          },
+          {
+            "id": "cd-w3-4",
+            "kind": "mcq",
+            "stem": "Root container?",
+            "choices": [
+              "lint_ok",
+              "Fails user_non_root",
+              "Required for Python",
+              "Tableau need"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w3-5",
+            "kind": "mcq",
+            "stem": "Base image example?",
+            "choices": [
+              "python:3.12-slim@sha256:\u2026",
+              "ubuntu:latest",
+              "FROM scratch:latest as root",
+              "PASS"
+            ],
+            "answer_index": 0,
+            "explanation": "Pinned."
+          },
+          {
+            "id": "cd-w3-6",
+            "kind": "mcq",
+            "stem": "Containers this week are?",
+            "choices": [
+              "Full k8s cluster",
+              "Dockerfile lint on fixture",
+              "Live prod mutate",
+              "Exam dump"
+            ],
+            "answer_index": 1,
+            "explanation": "Lint."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "CI/CD gates \u2014 lint then test then upload, never ungated deploy",
+        "lesson": "Ticket FC-4410 encodes a pipeline: on pull_request \u2192 lint \u2192 test \u2192 upload-report. A job that deploys on pull_request without gates fails. You will submit the job order and deploy_on_pr=false.\n\njobs=['lint','test','upload-report']; deploy_on_pr=false; on=['pull_request'].\n\nPR pipeline: on pull_request \u2192 lint \u2192 test \u2192 upload-report. deploy_on_pr must be false. Ungated PR deploy is how fixtures become incidents.\n\nupload-report persists evidence; deleting it to hide a red build fails the gate spiritually even if JSON is hand-edited. Order matters \u2014 deploy-first pipelines fail cicd checks.\n\nExplain in two lines why PR deploy is forbidden: unreviewed code must not mutate the ForgeCloud runtime the desk depends on.\n\nWeek 4 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_cicd_gate` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "PR pipeline lint\u2192test\u2192upload; deploy_on_pr must be false.",
+        "assignment": "Submit lab_cicd_gate; explain in two lines why ungated PR deploy fails.",
+        "lab_id": "lab_cicd_gate",
+        "quiz": [
+          {
+            "id": "cd-w4-1",
+            "kind": "mcq",
+            "stem": "First job?",
+            "choices": [
+              "deploy",
+              "lint",
+              "prod mutate",
+              "drop db"
+            ],
+            "answer_index": 1,
+            "explanation": "lint."
+          },
+          {
+            "id": "cd-w4-2",
+            "kind": "mcq",
+            "stem": "deploy_on_pr?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "sometimes"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "cd-w4-3",
+            "kind": "mcq",
+            "stem": "upload-report purpose?",
+            "choices": [
+              "Hide failures",
+              "Persist test evidence",
+              "Skip lint",
+              "Force-push"
+            ],
+            "answer_index": 1,
+            "explanation": "Evidence."
+          },
+          {
+            "id": "cd-w4-4",
+            "kind": "mcq",
+            "stem": "Ungated PR deploy?",
+            "choices": [
+              "Best practice",
+              "Fails ForgeCloud gate",
+              "Required",
+              "Only Sundays"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w4-5",
+            "kind": "mcq",
+            "stem": "Trigger this week?",
+            "choices": [
+              "only cron yearly",
+              "pull_request",
+              "manual SMS",
+              "DNS NOTIFY"
+            ],
+            "answer_index": 1,
+            "explanation": "PR."
+          },
+          {
+            "id": "cd-w4-6",
+            "kind": "mcq",
+            "stem": "Order lint/test/upload?",
+            "choices": [
+              "upload/test/lint",
+              "lint/test/upload-report",
+              "deploy/lint",
+              "PASS/PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "Correct."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Cloud primitives \u2014 compute, storage, network as costed blocks",
+        "lesson": "Ticket FC-4508 estimates a lab stack: 2 vCPU \u00d7 hours + 50GB storage. You will compute cost_units = vcpu_hours*1.0 + storage_gb*0.01 on the fixture rates (toy currency). No claiming real AWS invoices. Networking is a private subnet flag must_be_private=true.\n\nvcpu_hours=16, storage_gb=50 \u2192 cost_units=16+0.5=16.5; must_be_private=true.\n\nToy cost_units = vcpu_hours\u00d71.0 + storage_gb\u00d70.01. Example: 16 + 50\u00d70.01 = 16.5. must_be_private=true for secret-bearing paths \u2014 public subnets fail the lab.\n\nDo not claim these units as a real AWS invoice. Fixture rates only. Networking here is the private-subnet flag, not a BGP lab.\n\nJournal the cost line and the subnet requirement together so finance and security reviews see the same artifact.\n\nWeek 5 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_cloud_cost` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "16 vCPU-hours + 50GB \u2192 16.5 cost_units; private subnet required.",
+        "assignment": "Submit lab_cloud_cost with cost_units and must_be_private=true.",
+        "lab_id": "lab_cloud_cost",
+        "quiz": [
+          {
+            "id": "cd-w5-1",
+            "kind": "mcq",
+            "stem": "cost_units for 16 + 50*0.01?",
+            "choices": [
+              "16.5",
+              "66",
+              "0.5",
+              "1600"
+            ],
+            "answer_index": 0,
+            "explanation": "16.5."
+          },
+          {
+            "id": "cd-w5-2",
+            "kind": "mcq",
+            "stem": "Public subnet for bastion secrets?",
+            "choices": [
+              "Preferred",
+              "Fails must_be_private",
+              "Required",
+              "Free"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w5-3",
+            "kind": "mcq",
+            "stem": "Toy currency means?",
+            "choices": [
+              "Real AWS bill",
+              "Fixture rates only \u2014 no invoice claims",
+              "Crypto",
+              "Tableau"
+            ],
+            "answer_index": 1,
+            "explanation": "Fixture."
+          },
+          {
+            "id": "cd-w5-4",
+            "kind": "mcq",
+            "stem": "Storage term?",
+            "choices": [
+              "vcpu_hours*1",
+              "storage_gb*0.01",
+              "Ignored",
+              "F1"
+            ],
+            "answer_index": 1,
+            "explanation": "0.01."
+          },
+          {
+            "id": "cd-w5-5",
+            "kind": "mcq",
+            "stem": "Compute term?",
+            "choices": [
+              "storage only",
+              "vcpu_hours*1.0",
+              "DNS*",
+              "Pie"
+            ],
+            "answer_index": 1,
+            "explanation": "vCPU hours."
+          },
+          {
+            "id": "cd-w5-6",
+            "kind": "mcq",
+            "stem": "Networking concept this week?",
+            "choices": [
+              "Ignore",
+              "Private subnet requirement",
+              "Only CDN memes",
+              "BGP hijack lab"
+            ],
+            "answer_index": 1,
+            "explanation": "Private."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "IAM + secrets \u2014 least privilege and no plaintext tokens",
+        "lesson": "Ticket FC-4614 reviews a role that can deploy but not iam:CreateUser. A secret found in plaintext in the fixture repo fails. You will mark actions_allowed and plaintext_secrets_found=false after moving the token to a vault stub path.\n\nallowed=['ecr:Upload','ecs:UpdateService']; denied includes iam:CreateUser; plaintext_secrets_found=false.\n\nLeast privilege: allow ecr:Upload and ecs:UpdateService; deny iam:CreateUser on the deploy role. plaintext_secrets_found must be false after moving tokens to a vault stub path.\n\nA token in git is an incident precursor. Vault path length \u22654 is the stub contract \u2014 empty strings fail. Admin-by-default roles fail even when deploys 'work.'\n\nPair IAM review with secrets hygiene every time you touch a deploy role. One without the other is cosplay DevSecOps.\n\nWeek 6 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_iam_secrets` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "Deploy role without CreateUser; vault path replaces plaintext token.",
+        "assignment": "Submit lab_iam_secrets; show vault path string and denied action.",
+        "lab_id": "lab_iam_secrets",
+        "quiz": [
+          {
+            "id": "cd-w6-1",
+            "kind": "mcq",
+            "stem": "iam:CreateUser on deploy role?",
+            "choices": [
+              "Least privilege",
+              "Over-privilege \u2014 deny",
+              "Required",
+              "SQL"
+            ],
+            "answer_index": 1,
+            "explanation": "Deny."
+          },
+          {
+            "id": "cd-w6-2",
+            "kind": "mcq",
+            "stem": "plaintext token in repo?",
+            "choices": [
+              "OK if short",
+              "Fails plaintext_secrets_found check",
+              "Best practice",
+              "F1"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w6-3",
+            "kind": "mcq",
+            "stem": "Vault stub path purpose?",
+            "choices": [
+              "Hide evidence",
+              "Store secret outside git",
+              "Train ML",
+              "Pie chart"
+            ],
+            "answer_index": 1,
+            "explanation": "Out of git."
+          },
+          {
+            "id": "cd-w6-4",
+            "kind": "mcq",
+            "stem": "Least privilege means?",
+            "choices": [
+              "Admin always",
+              "Only actions needed for the job",
+              "No IAM",
+              "World writable"
+            ],
+            "answer_index": 1,
+            "explanation": "Minimal."
+          },
+          {
+            "id": "cd-w6-5",
+            "kind": "mcq",
+            "stem": "ecs:UpdateService on deploy role?",
+            "choices": [
+              "Always deny",
+              "Allowed in fixture",
+              "Biometric",
+              "Tableau"
+            ],
+            "answer_index": 1,
+            "explanation": "Allowed."
+          },
+          {
+            "id": "cd-w6-6",
+            "kind": "mcq",
+            "stem": "Secrets week pairs with?",
+            "choices": [
+              "Only viz",
+              "IAM policy review",
+              "Only clustering",
+              "Only medians"
+            ],
+            "answer_index": 1,
+            "explanation": "IAM."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Observability \u2014 error budgets before blame",
+        "lesson": "Ticket FC-4719 sets SLO availability 99.5% over 10_000 requests. With 40 failures, availability=0.996 and budget_ok depends on the remaining error budget vs a 50-failure cap. You will compute availability and budget_ok. Blame-first chat without numbers fails.\n\nfailed=40 total=10000 \u2192 availability=0.996; failure_cap=50 \u2192 budget_ok=true.\n\nSLO math: failed=40, total=10000 \u2192 availability=0.996; failure_cap=50 \u2192 budget_ok=true. Blame-first chat without numbers fails the ForgeCloud note.\n\nIf failed rises to 55 against cap 50, budget_ok flips false \u2014 write the inequality. Error budgets are how you decide whether to ship features or freeze for reliability work.\n\nObservability is counts plus availability, not a wall of unlabeled graphs. The lab checks the arithmetic; your paragraph must cite it.\n\nWeek 7 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_slo_budget` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "40/10000 \u2192 0.996 availability; under 50-failure cap \u2192 budget_ok.",
+        "assignment": "Submit lab_slo_budget; one paragraph with numbers, no name-calling.",
+        "lab_id": "lab_slo_budget",
+        "quiz": [
+          {
+            "id": "cd-w7-1",
+            "kind": "mcq",
+            "stem": "availability for 40 fail / 10000?",
+            "choices": [
+              "0.960",
+              "0.996",
+              "0.995",
+              "1.0"
+            ],
+            "answer_index": 1,
+            "explanation": "0.996."
+          },
+          {
+            "id": "cd-w7-2",
+            "kind": "mcq",
+            "stem": "failure_cap 50 and failed 40 \u2192 budget_ok?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "cd-w7-3",
+            "kind": "mcq",
+            "stem": "Blame without numbers?",
+            "choices": [
+              "Good ops",
+              "Fails ForgeCloud note",
+              "Required",
+              "KPI"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w7-4",
+            "kind": "mcq",
+            "stem": "SLO target mentioned?",
+            "choices": [
+              "90%",
+              "99.5%",
+              "50%",
+              "0%"
+            ],
+            "answer_index": 1,
+            "explanation": "99.5%."
+          },
+          {
+            "id": "cd-w7-5",
+            "kind": "mcq",
+            "stem": "Observability needs?",
+            "choices": [
+              "Only vibes",
+              "Counts + availability math",
+              "Only screenshots",
+              "Faces"
+            ],
+            "answer_index": 1,
+            "explanation": "Math."
+          },
+          {
+            "id": "cd-w7-6",
+            "kind": "mcq",
+            "stem": "failed=60 vs cap 50 \u2192 budget_ok?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "ignored"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Deploy + rollback \u2014 digest pins and health gates",
+        "lesson": "Ticket FC-4822 deploys image sha256:fc4822aa and must roll back to sha256:fc4810bb if health\u2260healthy. rollback_to must differ from current. migrate must be ok before traffic switch in the fixture policy.\n\ncurrent=sha256:fc4822aa rollback_to=sha256:fc4810bb health=healthy migrate=ok.\n\nDeploy current sha256:fc4822aa with rollback_to sha256:fc4810bb, migrate=ok, health=healthy. rollback_to == current is theater and fails.\n\nHealth gates traffic; migrate=ok before switch is fixture policy. starting forever is not healthy. Digest pins identify the exact artifact you can roll back to.\n\nDocument the health gate in two lines in the journal. Screenshots of a green UI without digest fields do not satisfy lab_deploy_rollback_cloud.\n\nWeek 8 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_deploy_rollback_cloud` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "Pin current digest; rollback digest differs; health healthy; migrate ok.",
+        "assignment": "Submit lab_deploy_rollback_cloud; document the health gate in two lines.",
+        "lab_id": "lab_deploy_rollback_cloud",
+        "quiz": [
+          {
+            "id": "cd-w8-1",
+            "kind": "mcq",
+            "stem": "rollback_to == current?",
+            "choices": [
+              "Valid rollback",
+              "Theater \u2014 must differ",
+              "Best",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "Differ."
+          },
+          {
+            "id": "cd-w8-2",
+            "kind": "mcq",
+            "stem": "health must be?",
+            "choices": [
+              "starting forever",
+              "healthy",
+              "unknown OK",
+              "PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "healthy."
+          },
+          {
+            "id": "cd-w8-3",
+            "kind": "mcq",
+            "stem": "migrate before traffic?",
+            "choices": [
+              "Skip always",
+              "ok required in fixture policy",
+              "Drop DB",
+              "Optional vibe"
+            ],
+            "answer_index": 1,
+            "explanation": "ok."
+          },
+          {
+            "id": "cd-w8-4",
+            "kind": "mcq",
+            "stem": "Digest pin helps?",
+            "choices": [
+              "Beauty",
+              "Exact artifact identity",
+              "F1",
+              "Pie"
+            ],
+            "answer_index": 1,
+            "explanation": "Identity."
+          },
+          {
+            "id": "cd-w8-5",
+            "kind": "mcq",
+            "stem": "Failed health action?",
+            "choices": [
+              "Ignore",
+              "Rollback to previous digest",
+              "Force-push main",
+              "Delete logs"
+            ],
+            "answer_index": 1,
+            "explanation": "Rollback."
+          },
+          {
+            "id": "cd-w8-6",
+            "kind": "mcq",
+            "stem": "This lab is?",
+            "choices": [
+              "print-PASS",
+              "JSON digest/health checks",
+              "Live AWS bill",
+              "Exam dump"
+            ],
+            "answer_index": 1,
+            "explanation": "JSON."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Kubernetes fundamentals \u2014 probes before vanity replicas",
+        "lesson": "Ticket FC-4916 defines a Deployment with readinessProbe and livenessProbe HTTP paths and replicas=2. replicas=20 without resource requests fails the lab's sanity check. This is fundamentals \u2014 not a claim of CKA certification.\n\nreadiness=/readyz liveness=/healthz replicas=2 requests_cpu=100m \u2192 probe_ok.\n\nProbes: readiness=/readyz, liveness=/healthz, replicas=2, requests_cpu=100m. replicas=20 without requests fails sanity. This is fundamentals \u2014 no CKA credential is granted.\n\nProbes gate traffic and restarts honestly. Vanity replica counts without CPU requests are how clusters thrash under desk load.\n\nState the claim boundary in the assignment: alignment labels only. Portfolio text that says 'CKA complete' fails even if YAML validates.\n\nWeek 9 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_k8s_probes` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.",
+        "worked_example": "probes /readyz+/healthz, replicas=2, cpu request 100m \u2192 probe_ok.",
+        "assignment": "Submit lab_k8s_probes; state claim boundary: no CKA granted.",
+        "lab_id": "lab_k8s_probes",
+        "quiz": [
+          {
+            "id": "cd-w9-1",
+            "kind": "mcq",
+            "stem": "readiness path fixture?",
+            "choices": [
+              "/readyz",
+              "/admin",
+              "/delete",
+              "/PASS"
+            ],
+            "answer_index": 0,
+            "explanation": "/readyz."
+          },
+          {
+            "id": "cd-w9-2",
+            "kind": "mcq",
+            "stem": "replicas=20 without requests?",
+            "choices": [
+              "probe_ok",
+              "Fails sanity",
+              "Required",
+              "Tableau"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w9-3",
+            "kind": "mcq",
+            "stem": "CKA granted by this week?",
+            "choices": [
+              "Yes",
+              "No \u2014 fundamentals only",
+              "Automatic",
+              "If PASS"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "cd-w9-4",
+            "kind": "mcq",
+            "stem": "liveness path?",
+            "choices": [
+              "/healthz",
+              "/root",
+              "/latest",
+              "/ssh"
+            ],
+            "answer_index": 0,
+            "explanation": "/healthz."
+          },
+          {
+            "id": "cd-w9-5",
+            "kind": "mcq",
+            "stem": "cpu request fixture?",
+            "choices": [
+              "100m",
+              "64 CPU",
+              "0",
+              "unlimited"
+            ],
+            "answer_index": 0,
+            "explanation": "100m."
+          },
+          {
+            "id": "cd-w9-6",
+            "kind": "mcq",
+            "stem": "Probes purpose?",
+            "choices": [
+              "Decorate YAML",
+              "Gate traffic / restart policy honestly",
+              "Train ML",
+              "Pie"
+            ],
+            "answer_index": 1,
+            "explanation": "Gate."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "DevSecOps + incident \u2014 automate recoveries without heroics",
+        "lesson": "Capstone: an incident playbook that rolls back, rotates a leaked stub token, and records timeline timestamps. Ticket FC-4A03 fails if heroics=true (solo undocumented fix) or if automation_runbook_id is missing. Infra automation means the runbook id is executable in the lab sense \u2014 not a vibe doc.\n\nheroics=false; automation_runbook_id='RB-FC-rollback'; token_rotated=true; timeline has detect/contain/recover.\n\nIncident runbook RB-FC-rollback: heroics=false, token_rotated=true, timeline with detect/contain/recover stamps. Solo undocumented fixes fail honesty.\n\nDevSecOps trio: rollback, rotate, runbook. Missing automation_runbook_id fails the capstone lab. Ship perms/CI/SLO/rollback/probes/incident JSON without cert claims.\n\nHeroics look fast and teach nothing. ForgeCloud prefers a boring executable runbook id another on-call can run at 02:00 without calling you.",
+        "worked_example": "RB-FC-rollback; heroics=false; token_rotated=true; three timeline stamps.",
+        "assignment": "Submit lab_incident_runbook and ship ForgeCloud portfolio (perms, CI, SLO, rollback, probes, incident) with no cert claims.",
+        "lab_id": "lab_incident_runbook",
+        "quiz": [
+          {
+            "id": "cd-w10-1",
+            "kind": "mcq",
+            "stem": "heroics=true means?",
+            "choices": [
+              "Good",
+              "Fails \u2014 undocumented solo fix",
+              "Required",
+              "KPI"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "cd-w10-2",
+            "kind": "mcq",
+            "stem": "automation_runbook_id fixture?",
+            "choices": [
+              "RB-FC-rollback",
+              "PASS",
+              "latest",
+              "root"
+            ],
+            "answer_index": 0,
+            "explanation": "RB-FC-rollback."
+          },
+          {
+            "id": "cd-w10-3",
+            "kind": "mcq",
+            "stem": "token_rotated after leak?",
+            "choices": [
+              "Optional",
+              "Required true",
+              "Never",
+              "Print only"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "cd-w10-4",
+            "kind": "mcq",
+            "stem": "Timeline needs?",
+            "choices": [
+              "Only vibes",
+              "detect/contain/recover stamps",
+              "Only blame",
+              "Faces"
+            ],
+            "answer_index": 1,
+            "explanation": "Stamps."
+          },
+          {
+            "id": "cd-w10-5",
+            "kind": "mcq",
+            "stem": "DevSecOps here includes?",
+            "choices": [
+              "Ignore secrets",
+              "Rollback + rotate + runbook",
+              "Pirate licenses",
+              "Exam dumps"
+            ],
+            "answer_index": 1,
+            "explanation": "Trio."
+          },
+          {
+            "id": "cd-w10-6",
+            "kind": "mcq",
+            "stem": "Cert claim on portfolio?",
+            "choices": [
+              "Allowed",
+              "Forbidden \u2014 alignment only",
+              "Required CKA",
+              "PMI ATP"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "CLOUD_DEVOPS",
+  "quizzes": {
+    "CLOUD_DEVOPS-q01": [
+      {
+        "id": "cd-w1-1",
+        "answer_index": 2,
+        "explanation": "World write."
+      },
+      {
+        "id": "cd-w1-2",
+        "answer_index": 3,
+        "explanation": "0600."
+      },
+      {
+        "id": "cd-w1-3",
+        "answer_index": 0,
+        "explanation": "384."
+      },
+      {
+        "id": "cd-w1-4",
+        "answer_index": 1,
+        "explanation": "Rewrite."
+      },
+      {
+        "id": "cd-w1-5",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w1-6",
+        "answer_index": 3,
+        "explanation": "Jump."
+      }
+    ],
+    "CLOUD_DEVOPS-q02": [
+      {
+        "id": "cd-w2-1",
+        "answer_index": 0,
+        "explanation": "Ahead."
+      },
+      {
+        "id": "cd-w2-2",
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "cd-w2-3",
+        "answer_index": 2,
+        "explanation": "health.py."
+      },
+      {
+        "id": "cd-w2-4",
+        "answer_index": 3,
+        "explanation": "Not behind."
+      },
+      {
+        "id": "cd-w2-5",
+        "answer_index": 0,
+        "explanation": "History."
+      },
+      {
+        "id": "cd-w2-6",
+        "answer_index": 1,
+        "explanation": "No force."
+      }
+    ],
+    "CLOUD_DEVOPS-q03": [
+      {
+        "id": "cd-w3-1",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "cd-w3-2",
+        "answer_index": 3,
+        "explanation": "Non-root."
+      },
+      {
+        "id": "cd-w3-3",
+        "answer_index": 0,
+        "explanation": "Repro."
+      },
+      {
+        "id": "cd-w3-4",
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w3-5",
+        "answer_index": 2,
+        "explanation": "Pinned."
+      },
+      {
+        "id": "cd-w3-6",
+        "answer_index": 3,
+        "explanation": "Lint."
+      }
+    ],
+    "CLOUD_DEVOPS-q04": [
+      {
+        "id": "cd-w4-1",
+        "answer_index": 0,
+        "explanation": "lint."
+      },
+      {
+        "id": "cd-w4-2",
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "cd-w4-3",
+        "answer_index": 2,
+        "explanation": "Evidence."
+      },
+      {
+        "id": "cd-w4-4",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w4-5",
+        "answer_index": 0,
+        "explanation": "PR."
+      },
+      {
+        "id": "cd-w4-6",
+        "answer_index": 1,
+        "explanation": "Correct."
+      }
+    ],
+    "CLOUD_DEVOPS-q05": [
+      {
+        "id": "cd-w5-1",
+        "answer_index": 2,
+        "explanation": "16.5."
+      },
+      {
+        "id": "cd-w5-2",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w5-3",
+        "answer_index": 0,
+        "explanation": "Fixture."
+      },
+      {
+        "id": "cd-w5-4",
+        "answer_index": 1,
+        "explanation": "0.01."
+      },
+      {
+        "id": "cd-w5-5",
+        "answer_index": 2,
+        "explanation": "vCPU hours."
+      },
+      {
+        "id": "cd-w5-6",
+        "answer_index": 3,
+        "explanation": "Private."
+      }
+    ],
+    "CLOUD_DEVOPS-q06": [
+      {
+        "id": "cd-w6-1",
+        "answer_index": 0,
+        "explanation": "Deny."
+      },
+      {
+        "id": "cd-w6-2",
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w6-3",
+        "answer_index": 2,
+        "explanation": "Out of git."
+      },
+      {
+        "id": "cd-w6-4",
+        "answer_index": 3,
+        "explanation": "Minimal."
+      },
+      {
+        "id": "cd-w6-5",
+        "answer_index": 0,
+        "explanation": "Allowed."
+      },
+      {
+        "id": "cd-w6-6",
+        "answer_index": 1,
+        "explanation": "IAM."
+      }
+    ],
+    "CLOUD_DEVOPS-q07": [
+      {
+        "id": "cd-w7-1",
+        "answer_index": 2,
+        "explanation": "0.996."
+      },
+      {
+        "id": "cd-w7-2",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "cd-w7-3",
+        "answer_index": 0,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w7-4",
+        "answer_index": 1,
+        "explanation": "99.5%."
+      },
+      {
+        "id": "cd-w7-5",
+        "answer_index": 2,
+        "explanation": "Math."
+      },
+      {
+        "id": "cd-w7-6",
+        "answer_index": 3,
+        "explanation": "false."
+      }
+    ],
+    "CLOUD_DEVOPS-q08": [
+      {
+        "id": "cd-w8-1",
+        "answer_index": 0,
+        "explanation": "Differ."
+      },
+      {
+        "id": "cd-w8-2",
+        "answer_index": 1,
+        "explanation": "healthy."
+      },
+      {
+        "id": "cd-w8-3",
+        "answer_index": 2,
+        "explanation": "ok."
+      },
+      {
+        "id": "cd-w8-4",
+        "answer_index": 3,
+        "explanation": "Identity."
+      },
+      {
+        "id": "cd-w8-5",
+        "answer_index": 0,
+        "explanation": "Rollback."
+      },
+      {
+        "id": "cd-w8-6",
+        "answer_index": 1,
+        "explanation": "JSON."
+      }
+    ],
+    "CLOUD_DEVOPS-q09": [
+      {
+        "id": "cd-w9-1",
+        "answer_index": 2,
+        "explanation": "/readyz."
+      },
+      {
+        "id": "cd-w9-2",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w9-3",
+        "answer_index": 0,
+        "explanation": "No."
+      },
+      {
+        "id": "cd-w9-4",
+        "answer_index": 1,
+        "explanation": "/healthz."
+      },
+      {
+        "id": "cd-w9-5",
+        "answer_index": 2,
+        "explanation": "100m."
+      },
+      {
+        "id": "cd-w9-6",
+        "answer_index": 3,
+        "explanation": "Gate."
+      }
+    ],
+    "CLOUD_DEVOPS-q10": [
+      {
+        "id": "cd-w10-1",
+        "answer_index": 0,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cd-w10-2",
+        "answer_index": 1,
+        "explanation": "RB-FC-rollback."
+      },
+      {
+        "id": "cd-w10-3",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "cd-w10-4",
+        "answer_index": 3,
+        "explanation": "Stamps."
+      },
+      {
+        "id": "cd-w10-5",
+        "answer_index": 0,
+        "explanation": "Trio."
+      },
+      {
+        "id": "cd-w10-6",
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "cdm01",
+      "answer_index": 2,
+      "explanation": "0600."
+    },
+    {
+      "id": "cdm02",
+      "answer_index": 3,
+      "explanation": "384."
+    },
+    {
+      "id": "cdm03",
+      "answer_index": 0,
+      "explanation": "Yes."
+    },
+    {
+      "id": "cdm04",
+      "answer_index": 1,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "cdm05",
+      "answer_index": 2,
+      "explanation": "fails."
+    },
+    {
+      "id": "cdm06",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "cdm07",
+      "answer_index": 0,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdm08",
+      "answer_index": 1,
+      "explanation": "Correct."
+    },
+    {
+      "id": "cdm09",
+      "answer_index": 2,
+      "explanation": "10+1=11."
+    },
+    {
+      "id": "cdm10",
+      "answer_index": 3,
+      "explanation": "fails."
+    },
+    {
+      "id": "cdm11",
+      "answer_index": 0,
+      "explanation": "Over."
+    },
+    {
+      "id": "cdm12",
+      "answer_index": 1,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdm13",
+      "answer_index": 2,
+      "explanation": "0.997."
+    },
+    {
+      "id": "cdm14",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "cdm15",
+      "answer_index": 0,
+      "explanation": "Invalid."
+    },
+    {
+      "id": "cdm16",
+      "answer_index": 1,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdm17",
+      "answer_index": 2,
+      "explanation": "fails."
+    },
+    {
+      "id": "cdm18",
+      "answer_index": 3,
+      "explanation": "Readiness uses /readyz."
+    },
+    {
+      "id": "cdm19",
+      "answer_index": 0,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdm20",
+      "answer_index": 1,
+      "explanation": "Fails."
+    }
+  ],
+  "final": [
+    {
+      "id": "cdf01",
+      "answer_index": 3,
+      "explanation": "No."
+    },
+    {
+      "id": "cdf02",
+      "answer_index": 0,
+      "explanation": "Integrate."
+    },
+    {
+      "id": "cdf03",
+      "answer_index": 1,
+      "explanation": "health.py."
+    },
+    {
+      "id": "cdf04",
+      "answer_index": 2,
+      "explanation": "Repro."
+    },
+    {
+      "id": "cdf05",
+      "answer_index": 3,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdf06",
+      "answer_index": 0,
+      "explanation": "Risk."
+    },
+    {
+      "id": "cdf07",
+      "answer_index": 1,
+      "explanation": "2.0."
+    },
+    {
+      "id": "cdf08",
+      "answer_index": 2,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "cdf09",
+      "answer_index": 3,
+      "explanation": "Token."
+    },
+    {
+      "id": "cdf10",
+      "answer_index": 0,
+      "explanation": "UpdateService allowed."
+    },
+    {
+      "id": "cdf11",
+      "answer_index": 1,
+      "explanation": "50."
+    },
+    {
+      "id": "cdf12",
+      "answer_index": 2,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdf13",
+      "answer_index": 3,
+      "explanation": "Fails."
+    },
+    {
+      "id": "cdf14",
+      "answer_index": 0,
+      "explanation": "Valid."
+    },
+    {
+      "id": "cdf15",
+      "answer_index": 1,
+      "explanation": "Restart."
+    },
+    {
+      "id": "cdf16",
+      "answer_index": 2,
+      "explanation": "No."
+    },
+    {
+      "id": "cdf17",
+      "answer_index": 3,
+      "explanation": "Must rotate."
+    },
+    {
+      "id": "cdf18",
+      "answer_index": 0,
+      "explanation": "Incomplete."
+    },
+    {
+      "id": "cdf19",
+      "answer_index": 1,
+      "explanation": "Trio."
+    },
+    {
+      "id": "cdf20",
+      "answer_index": 2,
+      "explanation": "true."
+    },
+    {
+      "id": "cdf21",
+      "answer_index": 3,
+      "explanation": "lint."
+    },
+    {
+      "id": "cdf22",
+      "answer_index": 0,
+      "explanation": "Non-root."
+    },
+    {
+      "id": "cdf23",
+      "answer_index": 1,
+      "explanation": "Solo."
+    },
+    {
+      "id": "cdf24",
+      "answer_index": 2,
+      "explanation": "Forbidden."
+    }
+  ]
+}

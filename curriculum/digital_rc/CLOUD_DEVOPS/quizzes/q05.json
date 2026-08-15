@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "cd-w5-1",
+      "kind": "mcq",
+      "stem": "cost_units for 16 + 50*0.01?",
+      "choices": [
+        "66",
+        "0.5",
+        "16.5",
+        "1600"
+      ]
+    },
+    {
+      "id": "cd-w5-2",
+      "kind": "mcq",
+      "stem": "Public subnet for bastion secrets?",
+      "choices": [
+        "Preferred",
+        "Required",
+        "Free",
+        "Fails must_be_private"
+      ]
+    },
+    {
+      "id": "cd-w5-3",
+      "kind": "mcq",
+      "stem": "Toy currency means?",
+      "choices": [
+        "Fixture rates only \u2014 no invoice claims",
+        "Real AWS bill",
+        "Crypto",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "cd-w5-4",
+      "kind": "mcq",
+      "stem": "Storage term?",
+      "choices": [
+        "vcpu_hours*1",
+        "storage_gb*0.01",
+        "Ignored",
+        "F1"
+      ]
+    },
+    {
+      "id": "cd-w5-5",
+      "kind": "mcq",
+      "stem": "Compute term?",
+      "choices": [
+        "storage only",
+        "DNS*",
+        "vcpu_hours*1.0",
+        "Pie"
+      ]
+    },
+    {
+      "id": "cd-w5-6",
+      "kind": "mcq",
+      "stem": "Networking concept this week?",
+      "choices": [
+        "Ignore",
+        "Only CDN memes",
+        "BGP hijack lab",
+        "Private subnet requirement"
+      ]
+    }
+  ]
+}

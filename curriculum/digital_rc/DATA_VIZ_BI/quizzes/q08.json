@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "dv-w8-1",
+      "kind": "mcq",
+      "stem": "Zone B median fixture?",
+      "choices": [
+        "10",
+        "12",
+        "120",
+        "14"
+      ]
+    },
+    {
+      "id": "dv-w8-2",
+      "kind": "mcq",
+      "stem": "Reproducibility needs?",
+      "choices": [
+        "Pinned input hash + script",
+        "Only screenshots",
+        "Random seed ignored",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dv-w8-3",
+      "kind": "mcq",
+      "stem": "groupby without clean data?",
+      "choices": [
+        "Fine",
+        "Inherited dirt \u2014 clean first",
+        "Better F1",
+        "IAM"
+      ]
+    },
+    {
+      "id": "dv-w8-4",
+      "kind": "mcq",
+      "stem": "pandas absent?",
+      "choices": [
+        "Fail course",
+        "Must pirate Anaconda",
+        "Plain Python aggregation OK",
+        "Skip week"
+      ]
+    },
+    {
+      "id": "dv-w8-5",
+      "kind": "mcq",
+      "stem": "input_sha256 missing later?",
+      "choices": [
+        "Ideal",
+        "Required for cert grant",
+        "SQL only",
+        "Portfolio risk"
+      ]
+    },
+    {
+      "id": "dv-w8-6",
+      "kind": "mcq",
+      "stem": "Medians are?",
+      "choices": [
+        "Fixture-computed",
+        "Vendor items",
+        "Guessed",
+        "AUC"
+      ]
+    }
+  ]
+}

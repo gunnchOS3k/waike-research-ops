@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "aim-w2-1",
+      "kind": "mcq",
+      "stem": "Busy label uses people_count\u22653. Is people_count a legal model input?",
+      "choices": [
+        "Yes always",
+        "Only at night",
+        "No \u2014 it defines the label (leakage)",
+        "Only with PCA"
+      ]
+    },
+    {
+      "id": "aim-w2-2",
+      "kind": "mcq",
+      "stem": "TP=40 FP=10. Precision?",
+      "choices": [
+        "0.75",
+        "0.90",
+        "4.0",
+        "0.80"
+      ]
+    },
+    {
+      "id": "aim-w2-3",
+      "kind": "mcq",
+      "stem": "False quiet alarm means?",
+      "choices": [
+        "Predicted quiet, actually busy",
+        "Predicted busy, actually quiet",
+        "Model NaN",
+        "USB unplugged"
+      ]
+    },
+    {
+      "id": "aim-w2-4",
+      "kind": "mcq",
+      "stem": "Why not optimize accuracy alone on EF-2204?",
+      "choices": [
+        "Accuracy illegal",
+        "Quiet majority can hide understaffing misses",
+        "F1 is always 1",
+        "Validators ban accuracy"
+      ]
+    },
+    {
+      "id": "aim-w2-5",
+      "kind": "mcq",
+      "stem": "Threshold \u22653 comes from?",
+      "choices": [
+        "Gradient descent",
+        "ImageNet",
+        "Library board policy",
+        "Random seed 42"
+      ]
+    },
+    {
+      "id": "aim-w2-6",
+      "kind": "mcq",
+      "stem": "print('PASS') as F1?",
+      "choices": [
+        "Allowed",
+        "Equals 1.0",
+        "Equals 0.842",
+        "Rejected by validator"
+      ]
+    }
+  ]
+}

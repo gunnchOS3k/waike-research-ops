@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "junior_devops",
+    "cloud_operations_technician",
+    "sre_junior"
+  ],
+  "nice_categories": [
+    "operate_and_maintain",
+    "build_and_deploy"
+  ],
+  "certs_aligned_not_granted": [
+    "AWS Cloud Practitioner topics (labels)",
+    "CKA topics (labels)"
+  ]
+}

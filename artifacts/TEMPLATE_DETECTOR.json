@@ -1,15 +1,15 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0074,
+  "worst_jaccard": 0.0139,
   "worst_pair": [
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS"
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS"
   ],
-  "worst_packaging_jaccard": 0.092,
+  "worst_packaging_jaccard": 0.1244,
   "worst_packaging_pair": [
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS"
+    "SOFTWARE_BUILDER",
+    "AI_ML_EDGE"
   ],
   "status": "PASS"
 }

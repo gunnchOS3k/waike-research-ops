@@ -1,0 +1,104 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "AI_ML_EDGE",
+  "track_ids": [
+    "AI_ML_EDGE"
+  ],
+  "date_checked": "2026-08-14",
+  "benchmarks": [
+    {
+      "source_id": "GOOGLE_PROFESSIONAL_ML_ENGINEER",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "framing_ml_problems",
+          "waike_weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "domain": "architecting_ml_solutions",
+          "waike_weeks": [
+            7,
+            8
+          ]
+        },
+        {
+          "domain": "data_preparation",
+          "waike_weeks": [
+            1,
+            6
+          ]
+        },
+        {
+          "domain": "ml_pipeline_automation",
+          "waike_weeks": [
+            8,
+            9
+          ]
+        },
+        {
+          "domain": "monitoring_optimization_serving",
+          "waike_weeks": [
+            4,
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "AWS_MLA_C01_TOPICS",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "data_preparation_for_ml",
+          "waike_weeks": [
+            1,
+            6
+          ]
+        },
+        {
+          "domain": "ml_model_development",
+          "waike_weeks": [
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "domain": "deployment_and_orchestration",
+          "waike_weeks": [
+            8,
+            9
+          ]
+        },
+        {
+          "domain": "monitoring_maintenance_security",
+          "waike_weeks": [
+            4,
+            5,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "FASTAI_PRACTICAL_DL_STRUCTURE",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "practical_model_training_eval",
+          "waike_weeks": [
+            2,
+            4,
+            5,
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Domain labels only. No exam items. No proprietary lab reuse. PHYSICAL_PENDING for device flash."
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "aim-w7-1",
+      "kind": "mcq",
+      "stem": "Hidden nonlinearity this week?",
+      "choices": [
+        "ReLU on hidden",
+        "softmax only",
+        "No nonlinearity",
+        "FFT"
+      ]
+    },
+    {
+      "id": "aim-w7-2",
+      "kind": "mcq",
+      "stem": "Output activation?",
+      "choices": [
+        "ReLU",
+        "Sigmoid",
+        "argmax",
+        "softmax-3"
+      ]
+    },
+    {
+      "id": "aim-w7-3",
+      "kind": "mcq",
+      "stem": "Downloading ImageNet weights?",
+      "choices": [
+        "Required",
+        "Extra credit",
+        "Out of scope / forbidden for this lab",
+        "Always"
+      ]
+    },
+    {
+      "id": "aim-w7-4",
+      "kind": "mcq",
+      "stem": "Tolerance on y_hat?",
+      "choices": [
+        "0.5",
+        "exact string PASS",
+        "10%",
+        "1e-3"
+      ]
+    },
+    {
+      "id": "aim-w7-5",
+      "kind": "mcq",
+      "stem": "Inputs this week?",
+      "choices": [
+        "windowed rssi + hour_norm",
+        "face embedding",
+        "SSN",
+        "password hash"
+      ]
+    },
+    {
+      "id": "aim-w7-6",
+      "kind": "mcq",
+      "stem": "Why tiny net?",
+      "choices": [
+        "Beat GPT",
+        "Audit weights as numbers",
+        "Skip eval",
+        "Grant CUDA cert"
+      ]
+    }
+  ]
+}

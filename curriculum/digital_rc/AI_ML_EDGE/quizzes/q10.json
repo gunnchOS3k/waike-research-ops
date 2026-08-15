@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "aim-w10-1",
+      "kind": "mcq",
+      "stem": "RAG here retrieves?",
+      "choices": [
+        "Patron faces",
+        "SSNs",
+        "Runbook chunks",
+        "Wi-Fi passwords"
+      ]
+    },
+    {
+      "id": "aim-w10-2",
+      "kind": "mcq",
+      "stem": "biometric_claim must be?",
+      "choices": [
+        "true",
+        "optional",
+        "admin-only true",
+        "false"
+      ]
+    },
+    {
+      "id": "aim-w10-3",
+      "kind": "mcq",
+      "stem": "Emails in chunks?",
+      "choices": [
+        "Redact before display",
+        "Show raw",
+        "Tweet them",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "aim-w10-4",
+      "kind": "mcq",
+      "stem": "False quiet alarm harms?",
+      "choices": [
+        "Nobody",
+        "Desk staffing / patrons waiting",
+        "Only GPUs",
+        "Only DNS"
+      ]
+    },
+    {
+      "id": "aim-w10-5",
+      "kind": "mcq",
+      "stem": "AI assistance on harm note?",
+      "choices": [
+        "Hide it",
+        "Forbidden forever",
+        "Disclose (AI_DISCLOSED)",
+        "Required GPT-4"
+      ]
+    },
+    {
+      "id": "aim-w10-6",
+      "kind": "mcq",
+      "stem": "Expected hit ids?",
+      "choices": [
+        "EF-2101",
+        "PASS",
+        "k=2",
+        "R12,R19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "DATA_VIZ_BI",
+  "quizzes": {
+    "DATA_VIZ_BI-q01": [
+      {
+        "id": "dv-w1-1",
+        "answer_index": 1,
+        "explanation": "0.05."
+      },
+      {
+        "id": "dv-w1-2",
+        "answer_index": 2,
+        "explanation": "Drop."
+      },
+      {
+        "id": "dv-w1-3",
+        "answer_index": 3,
+        "explanation": "Clean first."
+      },
+      {
+        "id": "dv-w1-4",
+        "answer_index": 0,
+        "explanation": "wait_min."
+      },
+      {
+        "id": "dv-w1-5",
+        "answer_index": 1,
+        "explanation": "Missing."
+      },
+      {
+        "id": "dv-w1-6",
+        "answer_index": 2,
+        "explanation": "Fails."
+      }
+    ],
+    "DATA_VIZ_BI-q02": [
+      {
+        "id": "dv-w2-1",
+        "answer_index": 3,
+        "explanation": "500."
+      },
+      {
+        "id": "dv-w2-2",
+        "answer_index": 0,
+        "explanation": "95."
+      },
+      {
+        "id": "dv-w2-3",
+        "answer_index": 1,
+        "explanation": "Cartesian."
+      },
+      {
+        "id": "dv-w2-4",
+        "answer_index": 2,
+        "explanation": "Matched."
+      },
+      {
+        "id": "dv-w2-5",
+        "answer_index": 3,
+        "explanation": "Labels."
+      },
+      {
+        "id": "dv-w2-6",
+        "answer_index": 0,
+        "explanation": "Fixture."
+      }
+    ],
+    "DATA_VIZ_BI-q03": [
+      {
+        "id": "dv-w3-1",
+        "answer_index": 1,
+        "explanation": "Anomalies."
+      },
+      {
+        "id": "dv-w3-2",
+        "answer_index": 2,
+        "explanation": "FK."
+      },
+      {
+        "id": "dv-w3-3",
+        "answer_index": 3,
+        "explanation": "Attrs."
+      },
+      {
+        "id": "dv-w3-4",
+        "answer_index": 0,
+        "explanation": "Normalize."
+      },
+      {
+        "id": "dv-w3-5",
+        "answer_index": 1,
+        "explanation": "Symptom."
+      },
+      {
+        "id": "dv-w3-6",
+        "answer_index": 2,
+        "explanation": "Schema."
+      }
+    ],
+    "DATA_VIZ_BI-q04": [
+      {
+        "id": "dv-w4-1",
+        "answer_index": 3,
+        "explanation": "Mean."
+      },
+      {
+        "id": "dv-w4-2",
+        "answer_index": 0,
+        "explanation": "Q3-Q1."
+      },
+      {
+        "id": "dv-w4-3",
+        "answer_index": 1,
+        "explanation": "Median."
+      },
+      {
+        "id": "dv-w4-4",
+        "answer_index": 2,
+        "explanation": "No fill."
+      },
+      {
+        "id": "dv-w4-5",
+        "answer_index": 3,
+        "explanation": "12."
+      },
+      {
+        "id": "dv-w4-6",
+        "answer_index": 0,
+        "explanation": "Fixture."
+      }
+    ],
+    "DATA_VIZ_BI-q05": [
+      {
+        "id": "dv-w5-1",
+        "answer_index": 1,
+        "explanation": "Nominal."
+      },
+      {
+        "id": "dv-w5-2",
+        "answer_index": 2,
+        "explanation": "Quant."
+      },
+      {
+        "id": "dv-w5-3",
+        "answer_index": 3,
+        "explanation": "Invalid."
+      },
+      {
+        "id": "dv-w5-4",
+        "answer_index": 0,
+        "explanation": "Junk."
+      },
+      {
+        "id": "dv-w5-5",
+        "answer_index": 1,
+        "explanation": "Bar."
+      },
+      {
+        "id": "dv-w5-6",
+        "answer_index": 2,
+        "explanation": "true."
+      }
+    ],
+    "DATA_VIZ_BI-q06": [
+      {
+        "id": "dv-w6-1",
+        "answer_index": 3,
+        "explanation": "3."
+      },
+      {
+        "id": "dv-w6-2",
+        "answer_index": 0,
+        "explanation": "Trust."
+      },
+      {
+        "id": "dv-w6-3",
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "dv-w6-4",
+        "answer_index": 2,
+        "explanation": "Required."
+      },
+      {
+        "id": "dv-w6-5",
+        "answer_index": 3,
+        "explanation": "Coherent."
+      },
+      {
+        "id": "dv-w6-6",
+        "answer_index": 0,
+        "explanation": "Open."
+      }
+    ],
+    "DATA_VIZ_BI-q07": [
+      {
+        "id": "dv-w7-1",
+        "answer_index": 1,
+        "explanation": "15min."
+      },
+      {
+        "id": "dv-w7-2",
+        "answer_index": 2,
+        "explanation": "No."
+      },
+      {
+        "id": "dv-w7-3",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "dv-w7-4",
+        "answer_index": 0,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "dv-w7-5",
+        "answer_index": 1,
+        "explanation": "Honest."
+      },
+      {
+        "id": "dv-w7-6",
+        "answer_index": 2,
+        "explanation": "Align only."
+      }
+    ],
+    "DATA_VIZ_BI-q08": [
+      {
+        "id": "dv-w8-1",
+        "answer_index": 3,
+        "explanation": "14."
+      },
+      {
+        "id": "dv-w8-2",
+        "answer_index": 0,
+        "explanation": "Hash."
+      },
+      {
+        "id": "dv-w8-3",
+        "answer_index": 1,
+        "explanation": "Clean first."
+      },
+      {
+        "id": "dv-w8-4",
+        "answer_index": 2,
+        "explanation": "Plain OK."
+      },
+      {
+        "id": "dv-w8-5",
+        "answer_index": 3,
+        "explanation": "Risk."
+      },
+      {
+        "id": "dv-w8-6",
+        "answer_index": 0,
+        "explanation": "Fixture."
+      }
+    ],
+    "DATA_VIZ_BI-q09": [
+      {
+        "id": "dv-w9-1",
+        "answer_index": 1,
+        "explanation": "24."
+      },
+      {
+        "id": "dv-w9-2",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "dv-w9-3",
+        "answer_index": 3,
+        "explanation": "Auditable."
+      },
+      {
+        "id": "dv-w9-4",
+        "answer_index": 0,
+        "explanation": "Coverage."
+      },
+      {
+        "id": "dv-w9-5",
+        "answer_index": 1,
+        "explanation": "Numbered."
+      },
+      {
+        "id": "dv-w9-6",
+        "answer_index": 2,
+        "explanation": "Fails."
+      }
+    ],
+    "DATA_VIZ_BI-q10": [
+      {
+        "id": "dv-w10-1",
+        "answer_index": 3,
+        "explanation": "Rejected."
+      },
+      {
+        "id": "dv-w10-2",
+        "answer_index": 0,
+        "explanation": "Yes."
+      },
+      {
+        "id": "dv-w10-3",
+        "answer_index": 1,
+        "explanation": "Part."
+      },
+      {
+        "id": "dv-w10-4",
+        "answer_index": 2,
+        "explanation": "Identity."
+      },
+      {
+        "id": "dv-w10-5",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "dv-w10-6",
+        "answer_index": 0,
+        "explanation": "true."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "dvm01",
+      "answer_index": 1,
+      "explanation": "20/250=0.08."
+    },
+    {
+      "id": "dvm02",
+      "answer_index": 2,
+      "explanation": "180."
+    },
+    {
+      "id": "dvm03",
+      "answer_index": 3,
+      "explanation": "1600."
+    },
+    {
+      "id": "dvm04",
+      "answer_index": 0,
+      "explanation": "Normalize."
+    },
+    {
+      "id": "dvm05",
+      "answer_index": 1,
+      "explanation": "12."
+    },
+    {
+      "id": "dvm06",
+      "answer_index": 2,
+      "explanation": "Median."
+    },
+    {
+      "id": "dvm07",
+      "answer_index": 3,
+      "explanation": "Invalid."
+    },
+    {
+      "id": "dvm08",
+      "answer_index": 0,
+      "explanation": "3."
+    },
+    {
+      "id": "dvm09",
+      "answer_index": 1,
+      "explanation": "meets."
+    },
+    {
+      "id": "dvm10",
+      "answer_index": 2,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "dvm11",
+      "answer_index": 3,
+      "explanation": "Breaks."
+    },
+    {
+      "id": "dvm12",
+      "answer_index": 0,
+      "explanation": "8*15/4=30."
+    },
+    {
+      "id": "dvm13",
+      "answer_index": 1,
+      "explanation": "Fails."
+    },
+    {
+      "id": "dvm14",
+      "answer_index": 2,
+      "explanation": "Rejected."
+    },
+    {
+      "id": "dvm15",
+      "answer_index": 3,
+      "explanation": "Fail."
+    },
+    {
+      "id": "dvm16",
+      "answer_index": 0,
+      "explanation": "Trust."
+    },
+    {
+      "id": "dvm17",
+      "answer_index": 1,
+      "explanation": "Labels."
+    },
+    {
+      "id": "dvm18",
+      "answer_index": 2,
+      "explanation": "Fill."
+    },
+    {
+      "id": "dvm19",
+      "answer_index": 3,
+      "explanation": "Nominal."
+    },
+    {
+      "id": "dvm20",
+      "answer_index": 0,
+      "explanation": "true."
+    }
+  ],
+  "final": [
+    {
+      "id": "dvf01",
+      "answer_index": 2,
+      "explanation": "0.05."
+    },
+    {
+      "id": "dvf02",
+      "answer_index": 3,
+      "explanation": "Excluded."
+    },
+    {
+      "id": "dvf03",
+      "answer_index": 0,
+      "explanation": "Anomaly."
+    },
+    {
+      "id": "dvf04",
+      "answer_index": 1,
+      "explanation": "Median."
+    },
+    {
+      "id": "dvf05",
+      "answer_index": 2,
+      "explanation": "Valid."
+    },
+    {
+      "id": "dvf06",
+      "answer_index": 3,
+      "explanation": "Fails."
+    },
+    {
+      "id": "dvf07",
+      "answer_index": 0,
+      "explanation": "fails."
+    },
+    {
+      "id": "dvf08",
+      "answer_index": 1,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "dvf09",
+      "answer_index": 2,
+      "explanation": "Pin."
+    },
+    {
+      "id": "dvf10",
+      "answer_index": 3,
+      "explanation": "Auditable."
+    },
+    {
+      "id": "dvf11",
+      "answer_index": 0,
+      "explanation": "Fails."
+    },
+    {
+      "id": "dvf12",
+      "answer_index": 1,
+      "explanation": "not ok."
+    },
+    {
+      "id": "dvf13",
+      "answer_index": 2,
+      "explanation": "fails."
+    },
+    {
+      "id": "dvf14",
+      "answer_index": 3,
+      "explanation": "Refuse."
+    },
+    {
+      "id": "dvf15",
+      "answer_index": 0,
+      "explanation": "zone_dim."
+    },
+    {
+      "id": "dvf16",
+      "answer_index": 1,
+      "explanation": "Q3-Q1."
+    },
+    {
+      "id": "dvf17",
+      "answer_index": 2,
+      "explanation": "Numbered."
+    },
+    {
+      "id": "dvf18",
+      "answer_index": 3,
+      "explanation": "OK."
+    },
+    {
+      "id": "dvf19",
+      "answer_index": 0,
+      "explanation": "Honest."
+    },
+    {
+      "id": "dvf20",
+      "answer_index": 1,
+      "explanation": "Open."
+    },
+    {
+      "id": "dvf21",
+      "answer_index": 2,
+      "explanation": "Trio."
+    },
+    {
+      "id": "dvf22",
+      "answer_index": 3,
+      "explanation": "Risk."
+    },
+    {
+      "id": "dvf23",
+      "answer_index": 0,
+      "explanation": "Compare."
+    },
+    {
+      "id": "dvf24",
+      "answer_index": 1,
+      "explanation": "Incomplete."
+    }
+  ]
+}

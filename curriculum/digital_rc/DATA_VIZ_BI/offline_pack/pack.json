@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "DATA_VIZ_BI",
+  "lesson_ids": [
+    "DATA_VIZ_BI-w01",
+    "DATA_VIZ_BI-w02",
+    "DATA_VIZ_BI-w03",
+    "DATA_VIZ_BI-w04",
+    "DATA_VIZ_BI-w05",
+    "DATA_VIZ_BI-w06",
+    "DATA_VIZ_BI-w07",
+    "DATA_VIZ_BI-w08",
+    "DATA_VIZ_BI-w09",
+    "DATA_VIZ_BI-w10"
+  ],
+  "labs": [
+    "lab_clean_nulls",
+    "lab_sql_join_counts",
+    "lab_schema_nf",
+    "lab_stats_summary",
+    "lab_chart_encode",
+    "lab_dashboard_layout",
+    "lab_bi_refresh",
+    "lab_pandas_group",
+    "lab_kpi_tree",
+    "lab_repro_hash"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

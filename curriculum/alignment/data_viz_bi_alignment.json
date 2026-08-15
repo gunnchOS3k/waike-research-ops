@@ -1,0 +1,90 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "DATA_VIZ_BI",
+  "track_ids": [
+    "DATA_VIZ_BI"
+  ],
+  "date_checked": "2026-08-14",
+  "benchmarks": [
+    {
+      "source_id": "MICROSOFT_PL300_TOPICS",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {
+          "domain": "prepare_data",
+          "waike_weeks": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "domain": "model_data",
+          "waike_weeks": [
+            3,
+            8
+          ]
+        },
+        {
+          "domain": "visualize_and_analyze",
+          "waike_weeks": [
+            4,
+            5,
+            6,
+            9
+          ]
+        },
+        {
+          "domain": "deploy_and_maintain_assets",
+          "waike_weeks": [
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "TABLEAU_DESKTOP_SPECIALIST_TOPICS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "connecting_to_data",
+          "waike_weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "domain": "exploration_and_analytics",
+          "waike_weeks": [
+            4,
+            8
+          ]
+        },
+        {
+          "domain": "sharing_insights_dashboards",
+          "waike_weeks": [
+            5,
+            6,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "TUFTE_VISUAL_DISPLAY_PRINCIPLES",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "graphical_integrity_encoding",
+          "waike_weeks": [
+            5,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Topic labels only. No vendor binaries redistributed. No gallery workbook theft as portfolio."
+}

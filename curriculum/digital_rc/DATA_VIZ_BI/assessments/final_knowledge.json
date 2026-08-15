@@ -1,0 +1,269 @@
+{
+  "assessment_id": "DATA_VIZ_BI-final",
+  "items": [
+    {
+      "id": "dvf01",
+      "kind": "mcq",
+      "stem": "null_rate 15/300?",
+      "choices": [
+        "0.15",
+        "0.015",
+        "0.05",
+        "5"
+      ]
+    },
+    {
+      "id": "dvf02",
+      "kind": "mcq",
+      "stem": "Unmatched tickets on inner join appear in median KPI?",
+      "choices": [
+        "Yes always",
+        "As null faces",
+        "As PASS",
+        "No \u2014 excluded"
+      ]
+    },
+    {
+      "id": "dvf03",
+      "kind": "mcq",
+      "stem": "Update anomaly symptom?",
+      "choices": [
+        "One rename misses many duplicated addresses",
+        "Faster SSD",
+        "Better F1",
+        "CKA"
+      ]
+    },
+    {
+      "id": "dvf04",
+      "kind": "mcq",
+      "stem": "Mean vs median when outlier present?",
+      "choices": [
+        "Mean more robust",
+        "Median more robust for board waits",
+        "Same always",
+        "Neither defined"
+      ]
+    },
+    {
+      "id": "dvf05",
+      "kind": "mcq",
+      "stem": "bar + zone + median_wait encoding?",
+      "choices": [
+        "Invalid",
+        "Forbidden",
+        "Valid",
+        "Biometric"
+      ]
+    },
+    {
+      "id": "dvf06",
+      "kind": "mcq",
+      "stem": "Stock photo as fourth tile on first screen?",
+      "choices": [
+        "Required",
+        "Improves SLA",
+        "SQL",
+        "Fails layout contract"
+      ]
+    },
+    {
+      "id": "dvf07",
+      "kind": "mcq",
+      "stem": "refresh_minutes=20 vs \u226415?",
+      "choices": [
+        "fails SLA",
+        "meets",
+        "undefined",
+        "grants cert"
+      ]
+    },
+    {
+      "id": "dvf08",
+      "kind": "mcq",
+      "stem": "Vendor gallery workbook claimed as portfolio?",
+      "choices": [
+        "OK if pretty",
+        "Forbidden claim",
+        "Required",
+        "PMI"
+      ]
+    },
+    {
+      "id": "dvf09",
+      "kind": "mcq",
+      "stem": "input_sha256 purpose?",
+      "choices": [
+        "Decoration",
+        "Replace median",
+        "Pin input identity",
+        "IAM create"
+      ]
+    },
+    {
+      "id": "dvf10",
+      "kind": "mcq",
+      "stem": "KPI formula secret from auditors?",
+      "choices": [
+        "Best",
+        "Only AI knows",
+        "Random",
+        "Must be auditable"
+      ]
+    },
+    {
+      "id": "dvf11",
+      "kind": "mcq",
+      "stem": "staff_on_duty fabricated upward?",
+      "choices": [
+        "Honesty failure",
+        "OK",
+        "Required",
+        "F1"
+      ]
+    },
+    {
+      "id": "dvf12",
+      "kind": "mcq",
+      "stem": "null_rate 0.06 with threshold \u22640.05?",
+      "choices": [
+        "quality_ok",
+        "not quality_ok",
+        "ignored",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dvf13",
+      "kind": "mcq",
+      "stem": "freshness 20 with \u226415 gate?",
+      "choices": [
+        "quality_ok",
+        "boosts median",
+        "fails freshness",
+        "CKA"
+      ]
+    },
+    {
+      "id": "dvf14",
+      "kind": "mcq",
+      "stem": "Cartesian ON-less join for KPI?",
+      "choices": [
+        "Preferred",
+        "Required",
+        "Median",
+        "Accident to refuse"
+      ]
+    },
+    {
+      "id": "dvf15",
+      "kind": "mcq",
+      "stem": "3NF-ish move of address?",
+      "choices": [
+        "Into zone_dim",
+        "Into every ticket",
+        "Into passwords",
+        "Into faces"
+      ]
+    },
+    {
+      "id": "dvf16",
+      "kind": "mcq",
+      "stem": "IQR uses?",
+      "choices": [
+        "mean*2",
+        "Q3-Q1",
+        "TP-FP",
+        "null_rate"
+      ]
+    },
+    {
+      "id": "dvf17",
+      "kind": "mcq",
+      "stem": "Story sentence needs?",
+      "choices": [
+        "Only logo",
+        "Only emoji",
+        "Change + number + action",
+        "Face ID"
+      ]
+    },
+    {
+      "id": "dvf18",
+      "kind": "mcq",
+      "stem": "pandas absent fallback?",
+      "choices": [
+        "Fail course",
+        "Must pirate",
+        "Skip",
+        "Plain Python aggregation OK"
+      ]
+    },
+    {
+      "id": "dvf19",
+      "kind": "mcq",
+      "stem": "license_ok true means?",
+      "choices": [
+        "Honest attribution / no piracy",
+        "Cracked",
+        "Ignore ToS",
+        "Skip SLA"
+      ]
+    },
+    {
+      "id": "dvf20",
+      "kind": "mcq",
+      "stem": "open_count tile shows?",
+      "choices": [
+        "Only closed",
+        "Currently open",
+        "SSNs",
+        "Weights"
+      ]
+    },
+    {
+      "id": "dvf21",
+      "kind": "mcq",
+      "stem": "Data quality checklist includes?",
+      "choices": [
+        "Only fonts",
+        "Only GPU",
+        "null_rate, negatives_dropped, freshness",
+        "Only k8s"
+      ]
+    },
+    {
+      "id": "dvf22",
+      "kind": "mcq",
+      "stem": "Chartjunk 3D extrusion?",
+      "choices": [
+        "Causal proof",
+        "Required",
+        "SQL",
+        "Risk without insight"
+      ]
+    },
+    {
+      "id": "dvf23",
+      "kind": "mcq",
+      "stem": "Median wait by zone is?",
+      "choices": [
+        "A comparative quantitative view",
+        "A vanity pie of IDs",
+        "A biometric",
+        "A secret"
+      ]
+    },
+    {
+      "id": "dvf24",
+      "kind": "mcq",
+      "stem": "Capstone without hashes?",
+      "choices": [
+        "Ship it",
+        "Incomplete",
+        "Grants PL-300",
+        "Replaces SQL"
+      ]
+    }
+  ]
+}

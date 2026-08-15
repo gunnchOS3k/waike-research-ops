@@ -1,0 +1,16 @@
+{
+  "practical_id": "CLOUD_DEVOPS-practical",
+  "labs": [
+    "lab_linux_perms",
+    "lab_git_state",
+    "lab_dockerfile_lint",
+    "lab_cicd_gate",
+    "lab_cloud_cost",
+    "lab_iam_secrets",
+    "lab_slo_budget",
+    "lab_deploy_rollback_cloud",
+    "lab_k8s_probes",
+    "lab_incident_runbook"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "dv-w7-1",
+      "kind": "mcq",
+      "stem": "Refresh SLA?",
+      "choices": [
+        "\u22641 day only",
+        "\u226415 min",
+        "No SLA",
+        "\u22641 sec"
+      ]
+    },
+    {
+      "id": "dv-w7-2",
+      "kind": "mcq",
+      "stem": "Redistribute Tableau binaries?",
+      "choices": [
+        "Yes",
+        "Always",
+        "No \u2014 reference workflows only",
+        "If PASS"
+      ]
+    },
+    {
+      "id": "dv-w7-3",
+      "kind": "mcq",
+      "stem": "refresh_minutes=10 \u2192 meets SLA?",
+      "choices": [
+        "false",
+        "null",
+        "cartesian",
+        "true"
+      ]
+    },
+    {
+      "id": "dv-w7-4",
+      "kind": "mcq",
+      "stem": "Vendor gallery workbook as your portfolio?",
+      "choices": [
+        "Not your work \u2014 forbidden claim",
+        "Allowed silently",
+        "Required",
+        "Grants cert"
+      ]
+    },
+    {
+      "id": "dv-w7-5",
+      "kind": "mcq",
+      "stem": "license_ok means?",
+      "choices": [
+        "Cracked key works",
+        "Honest attribution / no piracy",
+        "Ignore ToS",
+        "Skip SLA"
+      ]
+    },
+    {
+      "id": "dv-w7-6",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY means?",
+      "choices": [
+        "Copy exams",
+        "Free to pirate",
+        "Domain alignment, not content theft",
+        "No charts"
+      ]
+    }
+  ]
+}

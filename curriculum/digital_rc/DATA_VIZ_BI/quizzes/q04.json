@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "dv-w4-1",
+      "kind": "mcq",
+      "stem": "Outlier 120-min mainly moves?",
+      "choices": [
+        "Median only",
+        "IQR to zero",
+        "null_rate",
+        "Mean upward"
+      ]
+    },
+    {
+      "id": "dv-w4-2",
+      "kind": "mcq",
+      "stem": "IQR is?",
+      "choices": [
+        "Q3-Q1",
+        "mean-median",
+        "max-min",
+        "TP/FP"
+      ]
+    },
+    {
+      "id": "dv-w4-3",
+      "kind": "mcq",
+      "stem": "Board-facing wait summary prefers?",
+      "choices": [
+        "Only mean with outlier",
+        "Median (+ IQR context)",
+        "Only max",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dv-w4-4",
+      "kind": "mcq",
+      "stem": "NO_AI this week means?",
+      "choices": [
+        "No computers",
+        "No SQL",
+        "No generative fill of stats",
+        "No charts"
+      ]
+    },
+    {
+      "id": "dv-w4-5",
+      "kind": "mcq",
+      "stem": "median fixture value?",
+      "choices": [
+        "120",
+        "0",
+        "95",
+        "12"
+      ]
+    },
+    {
+      "id": "dv-w4-6",
+      "kind": "mcq",
+      "stem": "Stats are?",
+      "choices": [
+        "Computed on Studio fixture",
+        "Vendor exam items",
+        "Copied from Tableau sample",
+        "Random"
+      ]
+    }
+  ]
+}

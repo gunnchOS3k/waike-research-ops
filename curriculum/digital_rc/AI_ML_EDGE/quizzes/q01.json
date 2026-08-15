@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "aim-w1-1",
+      "kind": "mcq",
+      "stem": "EF-2101 has 480 rows and a 20% time-ordered holdout. train_n?",
+      "choices": [
+        "384",
+        "96",
+        "400",
+        "480"
+      ]
+    },
+    {
+      "id": "aim-w1-2",
+      "kind": "mcq",
+      "stem": "Why forbid shuffle before the occupancy holdout?",
+      "choices": [
+        "GPUs dislike shuffle",
+        "Midnight cleaning zeros would leak across folds",
+        "CSV forbids shuffle",
+        "Validators require alphabetical zones"
+      ]
+    },
+    {
+      "id": "aim-w1-3",
+      "kind": "mcq",
+      "stem": "Which column is forbidden on EdgeForge?",
+      "choices": [
+        "zone_id letter",
+        "people_count",
+        "patron face embedding",
+        "rssi_dbm"
+      ]
+    },
+    {
+      "id": "aim-w1-4",
+      "kind": "mcq",
+      "stem": "Observation vs inference for midnight zeros?",
+      "choices": [
+        "Inference: building empty",
+        "Inference: AP rebooted",
+        "Observation: model is biased",
+        "Observation: people_count==0 for 40 minutes"
+      ]
+    },
+    {
+      "id": "aim-w1-5",
+      "kind": "mcq",
+      "stem": "Lab rejects which claim?",
+      "choices": [
+        "train_n with no split fields",
+        "train_n with shown split math",
+        "pathlib reads",
+        "csv.DictReader"
+      ]
+    },
+    {
+      "id": "aim-w1-6",
+      "kind": "mcq",
+      "stem": "EdgeForge sees which network?",
+      "choices": [
+        "Raw Internet without ACL",
+        "Civic Wi-Fi only on the ThinkPad",
+        "Starlink research slice",
+        "Guest VLAN to Roof"
+      ]
+    }
+  ]
+}

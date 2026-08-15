@@ -1,0 +1,16 @@
+{
+  "practical_id": "AI_ML_EDGE-practical",
+  "labs": [
+    "lab_data_split",
+    "lab_supervised_metrics",
+    "lab_cluster_assign",
+    "lab_eval_thresholds",
+    "lab_overfit_gap",
+    "lab_feature_windows",
+    "lab_tiny_mlp_forward",
+    "lab_score_model",
+    "lab_quantize_budget",
+    "lab_rag_redact"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

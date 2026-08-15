@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "CLOUD_DEVOPS-lab",
+    "title": "ForgeCloud lab",
+    "criteria": [
+      {
+        "name": "perms_git_ci",
+        "weight": 20,
+        "desc": "0600 / no force-push / gated CI"
+      },
+      {
+        "name": "slo_rollback",
+        "weight": 20,
+        "desc": "Budget + digest rollback"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong policy fails"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-assignment",
+    "title": "Platform journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses FC-#### tickets"
+      },
+      {
+        "name": "no_force_push",
+        "weight": 30,
+        "desc": "Main protected"
+      },
+      {
+        "name": "no_secrets",
+        "weight": 30,
+        "desc": "No plaintext tokens"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-quiz",
+    "title": "Cloud knowledge",
+    "criteria": [
+      {
+        "name": "forge_numbers",
+        "weight": 50,
+        "desc": "Original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-mid",
+    "title": "Mid ForgeCloud audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "linux_git_ci_iam",
+        "weight": 40,
+        "desc": "Perms/git/CI/IAM"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-final-knowledge",
+    "title": "Final cloud exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone items"
+      },
+      {
+        "name": "slo_k8s_incident",
+        "weight": 50,
+        "desc": "SLO/rollback/probes/incident"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "World-writable/heroics fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-project",
+    "title": "Incident runbook",
+    "criteria": [
+      {
+        "name": "runbook_id",
+        "weight": 40,
+        "desc": "RB-FC-rollback path"
+      },
+      {
+        "name": "timeline",
+        "weight": 30,
+        "desc": "detect/contain/recover"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 30,
+        "desc": "No CKA/AWS claim"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CLOUD_DEVOPS-portfolio",
+    "title": "ForgeCloud portfolio",
+    "criteria": [
+      {
+        "name": "artifacts",
+        "weight": 40,
+        "desc": "Perms/CI/SLO/rollback/probes JSON"
+      },
+      {
+        "name": "secrets_hygiene",
+        "weight": 30,
+        "desc": "Vault path, no plaintext"
+      },
+      {
+        "name": "claim_boundary",
+        "weight": 30,
+        "desc": "Alignment labels only"
+      }
+    ]
+  }
+]

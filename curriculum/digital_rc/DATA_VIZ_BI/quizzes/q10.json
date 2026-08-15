@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "dv-w10-1",
+      "kind": "mcq",
+      "stem": "PNG-only portfolio?",
+      "choices": [
+        "Enough",
+        "Grants cert",
+        "SQL",
+        "Rejected without hashes"
+      ]
+    },
+    {
+      "id": "dv-w10-2",
+      "kind": "mcq",
+      "stem": "null_rate\u22640.05 required?",
+      "choices": [
+        "Yes for quality_ok",
+        "No",
+        "Only for AI",
+        "Only for k8s"
+      ]
+    },
+    {
+      "id": "dv-w10-3",
+      "kind": "mcq",
+      "stem": "freshness_minutes\u226415?",
+      "choices": [
+        "Ignored",
+        "Part of quality_ok",
+        "Must be 0",
+        "Must be 60"
+      ]
+    },
+    {
+      "id": "dv-w10-4",
+      "kind": "mcq",
+      "stem": "csv_sha256 proves?",
+      "choices": [
+        "Beauty",
+        "GPU brand",
+        "Input identity for repro",
+        "IAM"
+      ]
+    },
+    {
+      "id": "dv-w10-5",
+      "kind": "mcq",
+      "stem": "Vendor cert claim?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "PMI ATP",
+        "Forbidden \u2014 alignment only"
+      ]
+    },
+    {
+      "id": "dv-w10-6",
+      "kind": "mcq",
+      "stem": "negatives_dropped must be?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "2"
+      ]
+    }
+  ]
+}

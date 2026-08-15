@@ -1,0 +1,225 @@
+{
+  "assessment_id": "CLOUD_DEVOPS-mid",
+  "items": [
+    {
+      "id": "cdm01",
+      "kind": "mcq",
+      "stem": "World-writable deploy key 0666. Required fix mode?",
+      "choices": [
+        "0777",
+        "0000",
+        "0600",
+        "0666"
+      ]
+    },
+    {
+      "id": "cdm02",
+      "kind": "mcq",
+      "stem": "0600 as decimal?",
+      "choices": [
+        "600",
+        "66",
+        "64",
+        "384"
+      ]
+    },
+    {
+      "id": "cdm03",
+      "kind": "mcq",
+      "stem": "Branch 3 ahead 1 behind. Need rebase-from-main before release?",
+      "choices": [
+        "Yes \u2014 behind>0",
+        "No",
+        "Only if PASS",
+        "Never"
+      ]
+    },
+    {
+      "id": "cdm04",
+      "kind": "mcq",
+      "stem": "force-push to main on ForgeCloud?",
+      "choices": [
+        "Encouraged",
+        "Forbidden",
+        "Silent OK",
+        "Only AI"
+      ]
+    },
+    {
+      "id": "cdm05",
+      "kind": "mcq",
+      "stem": "Dockerfile USER root?",
+      "choices": [
+        "lint_ok",
+        "Required",
+        "fails non-root gate",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "cdm06",
+      "kind": "mcq",
+      "stem": ":latest base tag?",
+      "choices": [
+        "Preferred",
+        "Required digests optional",
+        "SQL",
+        "uses_latest must be false"
+      ]
+    },
+    {
+      "id": "cdm07",
+      "kind": "mcq",
+      "stem": "PR pipeline deploy job ungated?",
+      "choices": [
+        "Fails cicd gate",
+        "Best",
+        "Required",
+        "Median"
+      ]
+    },
+    {
+      "id": "cdm08",
+      "kind": "mcq",
+      "stem": "Job order lint/test/upload-report?",
+      "choices": [
+        "Wrong",
+        "Correct fixture order",
+        "Deploy first",
+        "PASS first"
+      ]
+    },
+    {
+      "id": "cdm09",
+      "kind": "mcq",
+      "stem": "cost_units for vcpu_hours=10 storage_gb=100?",
+      "choices": [
+        "10",
+        "100",
+        "11",
+        "1"
+      ]
+    },
+    {
+      "id": "cdm10",
+      "kind": "mcq",
+      "stem": "Public subnet for secret-bearing bastion?",
+      "choices": [
+        "OK",
+        "Required",
+        "Free",
+        "fails must_be_private"
+      ]
+    },
+    {
+      "id": "cdm11",
+      "kind": "mcq",
+      "stem": "Deploy role with iam:CreateUser?",
+      "choices": [
+        "Over-privilege",
+        "Least privilege",
+        "Required",
+        "SQL"
+      ]
+    },
+    {
+      "id": "cdm12",
+      "kind": "mcq",
+      "stem": "Plaintext token in git?",
+      "choices": [
+        "OK",
+        "Fails secrets check",
+        "Best",
+        "F1"
+      ]
+    },
+    {
+      "id": "cdm13",
+      "kind": "mcq",
+      "stem": "failed=30 total=10000 availability?",
+      "choices": [
+        "0.970",
+        "0.003",
+        "0.997",
+        "1"
+      ]
+    },
+    {
+      "id": "cdm14",
+      "kind": "mcq",
+      "stem": "failed=55 cap=50 budget_ok?",
+      "choices": [
+        "true",
+        "null",
+        "PASS",
+        "false"
+      ]
+    },
+    {
+      "id": "cdm15",
+      "kind": "mcq",
+      "stem": "rollback_to equals current?",
+      "choices": [
+        "Invalid theater",
+        "Valid",
+        "Required",
+        "CKA"
+      ]
+    },
+    {
+      "id": "cdm16",
+      "kind": "mcq",
+      "stem": "health=starting with traffic switch?",
+      "choices": [
+        "OK",
+        "Fails health gate",
+        "Required",
+        "Median"
+      ]
+    },
+    {
+      "id": "cdm17",
+      "kind": "mcq",
+      "stem": "replicas=20 no CPU requests?",
+      "choices": [
+        "probe_ok",
+        "Required",
+        "fails sanity",
+        "Grants CKA"
+      ]
+    },
+    {
+      "id": "cdm18",
+      "kind": "mcq",
+      "stem": "During a probe review, which HTTP path marks pods ready for Service traffic?",
+      "choices": [
+        "/admin",
+        "/delete",
+        "/PASS",
+        "/readyz"
+      ]
+    },
+    {
+      "id": "cdm19",
+      "kind": "mcq",
+      "stem": "heroics=true incident note?",
+      "choices": [
+        "Fails runbook honesty",
+        "Good",
+        "Required",
+        "KPI"
+      ]
+    },
+    {
+      "id": "cdm20",
+      "kind": "mcq",
+      "stem": "Missing automation_runbook_id?",
+      "choices": [
+        "OK",
+        "Fails capstone lab",
+        "Grants cert",
+        "Optional vibe always pass"
+      ]
+    }
+  ]
+}

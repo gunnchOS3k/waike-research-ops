@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 50,
+  "lab_count": 80,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -63,10 +63,47 @@
       "lab_control_chart",
       "lab_dmaic_case",
       "lab_change_status_ai"
+    ],
+    "AI_ML_EDGE": [
+      "lab_data_split",
+      "lab_supervised_metrics",
+      "lab_cluster_assign",
+      "lab_eval_thresholds",
+      "lab_overfit_gap",
+      "lab_feature_windows",
+      "lab_tiny_mlp_forward",
+      "lab_score_model",
+      "lab_quantize_budget",
+      "lab_rag_redact"
+    ],
+    "DATA_VIZ_BI": [
+      "lab_clean_nulls",
+      "lab_sql_join_counts",
+      "lab_schema_nf",
+      "lab_stats_summary",
+      "lab_chart_encode",
+      "lab_dashboard_layout",
+      "lab_bi_refresh",
+      "lab_pandas_group",
+      "lab_kpi_tree",
+      "lab_repro_hash"
+    ],
+    "CLOUD_DEVOPS": [
+      "lab_linux_perms",
+      "lab_git_state",
+      "lab_dockerfile_lint",
+      "lab_cicd_gate",
+      "lab_cloud_cost",
+      "lab_iam_secrets",
+      "lab_slo_budget",
+      "lab_deploy_rollback_cloud",
+      "lab_k8s_probes",
+      "lab_incident_runbook"
     ]
   },
   "batch_001_lab_count": 20,
   "batch_002_lab_count": 30,
+  "batch_003_lab_count": 30,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1428,7 +1465,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'AMS1117-3.3', 'SSD1306', 'nRF52840'}"
+          "detail": "mpns={'nRF52840', 'SSD1306', 'AMS1117-3.3'}"
         },
         {
           "name": "total",
@@ -1967,6 +2004,956 @@
         }
       ],
       "boundary": "Change control + status report + AI plan critique (disclose)."
+    },
+    {
+      "lab_id": "lab_data_split",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "split_math",
+          "ok": true,
+          "detail": "expected train=384 val=96"
+        },
+        {
+          "name": "no_shuffle",
+          "ok": true,
+          "detail": "shuffle must be false for time-ordered holdout"
+        }
+      ],
+      "claim_boundary": "Fixture split math only. Not a live campus dataset export.",
+      "boundary": "Fixture split math only. Not a live campus dataset export."
+    },
+    {
+      "lab_id": "lab_supervised_metrics",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "precision",
+          "ok": true,
+          "detail": "expected 0.800"
+        },
+        {
+          "name": "recall",
+          "ok": true,
+          "detail": "expected 0.889"
+        },
+        {
+          "name": "f1",
+          "ok": true,
+          "detail": "expected 0.842"
+        }
+      ],
+      "claim_boundary": "Confusion arithmetic on fixture counts. Not a vendor exam item.",
+      "boundary": "Confusion arithmetic on fixture counts. Not a vendor exam item."
+    },
+    {
+      "lab_id": "lab_cluster_assign",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "dist_a",
+          "ok": true,
+          "detail": "expected 1017.0"
+        },
+        {
+          "name": "dist_b",
+          "ok": true,
+          "detail": "expected 818.0"
+        },
+        {
+          "name": "assignment",
+          "ok": true,
+          "detail": "expected B"
+        }
+      ],
+      "claim_boundary": "Manhattan assignment on fixture vectors. Not staff accusation.",
+      "boundary": "Manhattan assignment on fixture vectors. Not staff accusation."
+    },
+    {
+      "lab_id": "lab_eval_thresholds",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "tpr",
+          "ok": true,
+          "detail": "expected 0.750"
+        },
+        {
+          "name": "fpr",
+          "ok": true,
+          "detail": "expected 0.167"
+        },
+        {
+          "name": "fpr_cap",
+          "ok": true,
+          "detail": "fpr_cap_ok must match FPR\u22640.20"
+        }
+      ],
+      "claim_boundary": "TPR/FPR arithmetic on fixture confusion at a threshold.",
+      "boundary": "TPR/FPR arithmetic on fixture confusion at a threshold."
+    },
+    {
+      "lab_id": "lab_overfit_gap",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "gap",
+          "ok": true,
+          "detail": "expected 0.38"
+        },
+        {
+          "name": "mitigation",
+          "ok": true,
+          "detail": "gap\u22650.25 requires mitigation_note"
+        }
+      ],
+      "claim_boundary": "Gap honesty on fixture accuracies. Not a bigger-model sales pitch.",
+      "boundary": "Gap honesty on fixture accuracies. Not a bigger-model sales pitch."
+    },
+    {
+      "lab_id": "lab_feature_windows",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "range",
+          "ok": true,
+          "detail": "window must fit causally"
+        },
+        {
+          "name": "mean",
+          "ok": true,
+          "detail": "expected 11.6"
+        },
+        {
+          "name": "no_future",
+          "ok": true,
+          "detail": "uses_future must be false"
+        }
+      ],
+      "claim_boundary": "Causal trailing mean on fixture series. No future frames.",
+      "boundary": "Causal trailing mean on fixture series. No future frames."
+    },
+    {
+      "lab_id": "lab_tiny_mlp_forward",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "y_hat",
+          "ok": true,
+          "detail": "expected 0.5691"
+        }
+      ],
+      "claim_boundary": "Tiny 2\u00d72\u00d71 forward pass on published weights. Not ImageNet.",
+      "boundary": "Tiny 2\u00d72\u00d71 forward pass on published weights. Not ImageNet."
+    },
+    {
+      "lab_id": "lab_score_model",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labels",
+          "ok": true,
+          "detail": "expected [1, 0, 1]"
+        },
+        {
+          "name": "digest",
+          "ok": true,
+          "detail": "digest must match sha256:ef2803aa"
+        }
+      ],
+      "claim_boundary": "Digest-pinned scoring on fixture vectors. Refuse digest mismatch.",
+      "boundary": "Digest-pinned scoring on fixture vectors. Refuse digest mismatch."
+    },
+    {
+      "lab_id": "lab_quantize_budget",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "fp32",
+          "ok": true,
+          "detail": "fp32_bytes=params*4"
+        },
+        {
+          "name": "int8",
+          "ok": true,
+          "detail": "int8_bytes=params"
+        },
+        {
+          "name": "ratio",
+          "ok": true,
+          "detail": "expected 0.25"
+        },
+        {
+          "name": "budget",
+          "ok": true,
+          "detail": "budget_ok must match SLA"
+        },
+        {
+          "name": "physical",
+          "ok": true,
+          "detail": "flash remains PHYSICAL_PENDING"
+        }
+      ],
+      "claim_boundary": "Size/latency budget math. PHYSICAL_PENDING for device flash.",
+      "boundary": "Size/latency budget math. PHYSICAL_PENDING for device flash."
+    },
+    {
+      "lab_id": "lab_rag_redact",
+      "course_id": "AI_ML_EDGE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "hits",
+          "ok": true,
+          "detail": "expected hits R12,R19"
+        },
+        {
+          "name": "redactions",
+          "ok": true,
+          "detail": "redact \u22652 contact strings"
+        },
+        {
+          "name": "biometric",
+          "ok": true,
+          "detail": "biometric_claim must be false"
+        }
+      ],
+      "claim_boundary": "Fixture RAG retrieve+redact. No biometric identification claims.",
+      "boundary": "Fixture RAG retrieve+redact. No biometric identification claims."
+    },
+    {
+      "lab_id": "lab_clean_nulls",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "null_rate",
+          "ok": true,
+          "detail": "expected 0.05"
+        },
+        {
+          "name": "negatives",
+          "ok": true,
+          "detail": "negatives must be dropped"
+        }
+      ],
+      "claim_boundary": "Null-rate and drop policy on fixture waits. Not a live mayor feed.",
+      "boundary": "Null-rate and drop policy on fixture waits. Not a live mayor feed."
+    },
+    {
+      "lab_id": "lab_sql_join_counts",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "joined",
+          "ok": true,
+          "detail": "joined_rows=matched"
+        },
+        {
+          "name": "cartesian",
+          "ok": true,
+          "detail": "expected 500"
+        }
+      ],
+      "claim_boundary": "Join cardinality on fixture tables. Cartesian trap must be named.",
+      "boundary": "Join cardinality on fixture tables. Cartesian trap must be named."
+    },
+    {
+      "lab_id": "lab_schema_nf",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "has_zone_dim",
+          "ok": true,
+          "detail": "need zone_dim"
+        },
+        {
+          "name": "has_tickets",
+          "ok": true,
+          "detail": "need tickets"
+        },
+        {
+          "name": "no_address_on_tickets",
+          "ok": true,
+          "detail": "tickets keep zone_id only"
+        },
+        {
+          "name": "address_on_dim",
+          "ok": true,
+          "detail": "address lives on zone_dim"
+        }
+      ],
+      "claim_boundary": "Normalize repeating zone_address out of tickets.",
+      "boundary": "Normalize repeating zone_address out of tickets."
+    },
+    {
+      "lab_id": "lab_stats_summary",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mean",
+          "ok": true,
+          "detail": "expected 23.2"
+        },
+        {
+          "name": "median",
+          "ok": true,
+          "detail": "expected 12.0"
+        },
+        {
+          "name": "iqr",
+          "ok": true,
+          "detail": "expected 8.0"
+        }
+      ],
+      "claim_boundary": "Mean/median/IQR on fixture waits. NO_AI generative fill forbidden.",
+      "boundary": "Mean/median/IQR on fixture waits. NO_AI generative fill forbidden."
+    },
+    {
+      "lab_id": "lab_chart_encode",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "encoding",
+          "ok": true,
+          "detail": "expect bar/zone/median_wait"
+        },
+        {
+          "name": "invalid_rejected",
+          "ok": true,
+          "detail": "must reject pie(ticket_id)"
+        }
+      ],
+      "claim_boundary": "Encoding validity for civic wait charts.",
+      "boundary": "Encoding validity for civic wait charts."
+    },
+    {
+      "lab_id": "lab_dashboard_layout",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "tiles",
+          "ok": true,
+          "detail": "need {'median_by_zone', 'open_count', 'freshness'}"
+        },
+        {
+          "name": "max",
+          "ok": true,
+          "detail": "max_tiles=3"
+        }
+      ],
+      "claim_boundary": "Three-tile first screen with freshness.",
+      "boundary": "Three-tile first screen with freshness."
+    },
+    {
+      "lab_id": "lab_bi_refresh",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "sla",
+          "ok": true,
+          "detail": "meets_sla mismatch"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "detail": "license_ok must be true (no piracy)"
+        }
+      ],
+      "claim_boundary": "Refresh SLA + license honesty. No binary redistribution.",
+      "boundary": "Refresh SLA + license honesty. No binary redistribution."
+    },
+    {
+      "lab_id": "lab_pandas_group",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "medians",
+          "ok": true,
+          "detail": "expected {'A': 10, 'B': 14, 'C': 12}"
+        },
+        {
+          "name": "hash",
+          "ok": true,
+          "detail": "input_sha256 required"
+        }
+      ],
+      "claim_boundary": "Group medians on fixture + input digest.",
+      "boundary": "Group medians on fixture + input digest."
+    },
+    {
+      "lab_id": "lab_kpi_tree",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "kpi",
+          "ok": true,
+          "detail": "expected 24.0"
+        }
+      ],
+      "claim_boundary": "Auditable KPI formula on fixture numbers.",
+      "boundary": "Auditable KPI formula on fixture numbers."
+    },
+    {
+      "lab_id": "lab_repro_hash",
+      "course_id": "DATA_VIZ_BI",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "quality",
+          "ok": true,
+          "detail": "quality_ok mismatch"
+        }
+      ],
+      "claim_boundary": "Portfolio quality gates + csv sha256.",
+      "boundary": "Portfolio quality gates + csv sha256."
+    },
+    {
+      "lab_id": "lab_linux_perms",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mode",
+          "ok": true,
+          "detail": "expect 0600 / 384"
+        },
+        {
+          "name": "not_world",
+          "ok": true,
+          "detail": "world_writable must be false"
+        }
+      ],
+      "claim_boundary": "Mode arithmetic on fixture deploy key. Not a live bastion mutate.",
+      "boundary": "Mode arithmetic on fixture deploy key. Not a live bastion mutate."
+    },
+    {
+      "lab_id": "lab_git_state",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "ahead_behind",
+          "ok": true,
+          "detail": "ahead=2 behind=0"
+        },
+        {
+          "name": "conflict",
+          "ok": true,
+          "detail": "conflict path"
+        },
+        {
+          "name": "no_force",
+          "ok": true,
+          "detail": "force_push_main false"
+        }
+      ],
+      "claim_boundary": "Ahead/behind + conflict path. No force-push main.",
+      "boundary": "Ahead/behind + conflict path. No force-push main."
+    },
+    {
+      "lab_id": "lab_dockerfile_lint",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "flags",
+          "ok": true,
+          "detail": "pinned + nonroot + no latest"
+        },
+        {
+          "name": "lint_ok",
+          "ok": true,
+          "detail": "lint_ok mismatch"
+        }
+      ],
+      "claim_boundary": "Dockerfile lint on fixture flags.",
+      "boundary": "Dockerfile lint on fixture flags."
+    },
+    {
+      "lab_id": "lab_cicd_gate",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "on",
+          "ok": true,
+          "detail": "on pull_request"
+        },
+        {
+          "name": "jobs",
+          "ok": true,
+          "detail": "job order"
+        },
+        {
+          "name": "deploy",
+          "ok": true,
+          "detail": "deploy_on_pr false"
+        }
+      ],
+      "claim_boundary": "PR pipeline order + no ungated deploy.",
+      "boundary": "PR pipeline order + no ungated deploy."
+    },
+    {
+      "lab_id": "lab_cloud_cost",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "cost",
+          "ok": true,
+          "detail": "expected 16.5"
+        },
+        {
+          "name": "private",
+          "ok": true,
+          "detail": "must_be_private true"
+        }
+      ],
+      "claim_boundary": "Toy cost_units on fixture rates. Not a real cloud invoice.",
+      "boundary": "Toy cost_units on fixture rates. Not a real cloud invoice."
+    },
+    {
+      "lab_id": "lab_iam_secrets",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "allow",
+          "ok": true,
+          "detail": "deploy actions"
+        },
+        {
+          "name": "deny",
+          "ok": true,
+          "detail": "CreateUser denied"
+        },
+        {
+          "name": "secrets",
+          "ok": true,
+          "detail": "no plaintext"
+        },
+        {
+          "name": "vault",
+          "ok": true,
+          "detail": "vault path"
+        }
+      ],
+      "claim_boundary": "Least privilege + no plaintext secrets in git.",
+      "boundary": "Least privilege + no plaintext secrets in git."
+    },
+    {
+      "lab_id": "lab_slo_budget",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "availability",
+          "ok": true,
+          "detail": "expected 0.996"
+        },
+        {
+          "name": "budget",
+          "ok": true,
+          "detail": "budget_ok mismatch"
+        }
+      ],
+      "claim_boundary": "Availability + error-budget arithmetic on fixture counts.",
+      "boundary": "Availability + error-budget arithmetic on fixture counts."
+    },
+    {
+      "lab_id": "lab_deploy_rollback_cloud",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "differ",
+          "ok": true,
+          "detail": "rollback_to must differ"
+        },
+        {
+          "name": "migrate",
+          "ok": true,
+          "detail": "migrate ok"
+        },
+        {
+          "name": "health",
+          "ok": true,
+          "detail": "health healthy"
+        },
+        {
+          "name": "digest_form",
+          "ok": true,
+          "detail": "current digest form"
+        }
+      ],
+      "claim_boundary": "Digest pin + health/migrate gates for ForgeCloud deploy.",
+      "boundary": "Digest pin + health/migrate gates for ForgeCloud deploy."
+    },
+    {
+      "lab_id": "lab_k8s_probes",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "fields",
+          "ok": true,
+          "detail": "probes/replicas/cpu"
+        },
+        {
+          "name": "probe_ok",
+          "ok": true,
+          "detail": "probe_ok mismatch"
+        }
+      ],
+      "claim_boundary": "Probe fundamentals on fixture Deployment. No CKA claim.",
+      "boundary": "Probe fundamentals on fixture Deployment. No CKA claim."
+    },
+    {
+      "lab_id": "lab_incident_runbook",
+      "course_id": "CLOUD_DEVOPS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "heroics",
+          "ok": true,
+          "detail": "heroics must be false"
+        },
+        {
+          "name": "runbook",
+          "ok": true,
+          "detail": "runbook id"
+        },
+        {
+          "name": "rotate",
+          "ok": true,
+          "detail": "token_rotated"
+        },
+        {
+          "name": "timeline",
+          "ok": true,
+          "detail": "detect/contain/recover"
+        }
+      ],
+      "claim_boundary": "Incident runbook without heroics. Fixture timeline only.",
+      "boundary": "Incident runbook without heroics. Fixture timeline only."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -1992,6 +2979,18 @@
     },
     {
       "lab_id": "lab_charter_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_rag_redact_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_clean_nulls_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_linux_perms_negative",
       "ok": true
     }
   ],
@@ -2201,6 +3200,126 @@
     {
       "lab_id": "lab_change_status_ai",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_data_split",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_supervised_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cluster_assign",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_eval_thresholds",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_overfit_gap",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_feature_windows",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_tiny_mlp_forward",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_score_model",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_quantize_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_rag_redact",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_clean_nulls",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sql_join_counts",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_schema_nf",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_stats_summary",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_chart_encode",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_layout",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_bi_refresh",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pandas_group",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_kpi_tree",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_repro_hash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_linux_perms",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_git_state",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dockerfile_lint",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cicd_gate",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cloud_cost",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_iam_secrets",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_slo_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_deploy_rollback_cloud",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_k8s_probes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_incident_runbook",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -2402,6 +3521,126 @@
     },
     {
       "lab_id": "lab_change_status_ai",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_data_split",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_supervised_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cluster_assign",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_eval_thresholds",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_overfit_gap",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_feature_windows",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_tiny_mlp_forward",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_score_model",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_quantize_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_rag_redact",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_clean_nulls",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sql_join_counts",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_schema_nf",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_stats_summary",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_chart_encode",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_layout",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_bi_refresh",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pandas_group",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_kpi_tree",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_repro_hash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_linux_perms",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_git_state",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dockerfile_lint",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cicd_gate",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cloud_cost",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_iam_secrets",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_slo_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_deploy_rollback_cloud",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_k8s_probes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_incident_runbook",
       "failed_as_required": true
     }
   ],

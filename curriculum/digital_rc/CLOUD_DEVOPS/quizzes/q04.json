@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "cd-w4-1",
+      "kind": "mcq",
+      "stem": "First job?",
+      "choices": [
+        "lint",
+        "deploy",
+        "prod mutate",
+        "drop db"
+      ]
+    },
+    {
+      "id": "cd-w4-2",
+      "kind": "mcq",
+      "stem": "deploy_on_pr?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "sometimes"
+      ]
+    },
+    {
+      "id": "cd-w4-3",
+      "kind": "mcq",
+      "stem": "upload-report purpose?",
+      "choices": [
+        "Hide failures",
+        "Skip lint",
+        "Persist test evidence",
+        "Force-push"
+      ]
+    },
+    {
+      "id": "cd-w4-4",
+      "kind": "mcq",
+      "stem": "Ungated PR deploy?",
+      "choices": [
+        "Best practice",
+        "Required",
+        "Only Sundays",
+        "Fails ForgeCloud gate"
+      ]
+    },
+    {
+      "id": "cd-w4-5",
+      "kind": "mcq",
+      "stem": "Trigger this week?",
+      "choices": [
+        "pull_request",
+        "only cron yearly",
+        "manual SMS",
+        "DNS NOTIFY"
+      ]
+    },
+    {
+      "id": "cd-w4-6",
+      "kind": "mcq",
+      "stem": "Order lint/test/upload?",
+      "choices": [
+        "upload/test/lint",
+        "lint/test/upload-report",
+        "deploy/lint",
+        "PASS/PASS"
+      ]
+    }
+  ]
+}

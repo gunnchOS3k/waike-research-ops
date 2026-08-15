@@ -1495,19 +1495,24 @@ COURSES_001 = {
     "CYBERSECURITY": CYBERSECURITY,
 }
 
-from waike_course_ready.batch002.content import COURSES_002, BATCH_COURSE_IDS  # noqa: E402
+from waike_course_ready.batch002.content import COURSES_002, BATCH_COURSE_IDS as BATCH_COURSE_IDS_002  # noqa: E402
+from waike_course_ready.batch003.content import COURSES_003, BATCH_COURSE_IDS as BATCH_COURSE_IDS_003  # noqa: E402
 
-# Product path = batch-001 (#43) ∪ batch-002 (#44). Do not replace #43.
-COURSES = {**COURSES_001, **COURSES_002}
+# Product path = #43 ∪ #44 ∪ #45. Do not replace prior batches.
+COURSES = {**COURSES_001, **COURSES_002, **COURSES_003}
 BATCH_COURSE_IDS_ACTIVE = tuple(COURSES)
+BATCH_COURSE_IDS = BATCH_COURSE_IDS_ACTIVE
 
 
 def _rebalance_weekly() -> None:
     from waike_course_ready.exams import rebalance_mcq
 
-    offsets = {"SOFTWARE_BUILDER": 0, "HARDWARE_ENGINEERING": 1, "PM_AGILE_LSS": 2,
-               "GENERAL_IT": 0, "COMPUTER_NETWORKING": 1, "CYBERSECURITY": 2}
-    for cid, course in {**COURSES_001, **COURSES_002}.items():
+    offsets = {
+        "SOFTWARE_BUILDER": 0, "HARDWARE_ENGINEERING": 1, "PM_AGILE_LSS": 2,
+        "GENERAL_IT": 0, "COMPUTER_NETWORKING": 1, "CYBERSECURITY": 2,
+        "AI_ML_EDGE": 0, "DATA_VIZ_BI": 1, "CLOUD_DEVOPS": 2,
+    }
+    for cid, course in COURSES.items():
         k = offsets[cid]
         for w in course["weeks"]:
             n = len(w["quiz"])
@@ -1519,6 +1524,9 @@ _rebalance_weekly()
 
 
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
+    if course_id in COURSES_003:
+        from waike_course_ready.batch003.exams import extra_assessment_items_003
+        return extra_assessment_items_003(course_id)
     if course_id in COURSES_002:
         from waike_course_ready.batch002.exams import extra_assessment_items_002
         return extra_assessment_items_002(course_id)

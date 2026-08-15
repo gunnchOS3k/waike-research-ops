@@ -1,7 +1,7 @@
 {
   "schema": "waike.benchmark_registry.v1",
-  "date_generated": "2026-08-13",
-  "research_method": "Fresh web retrieval on 2026-08-13 for COURSE-READY-001 and COURSE-READY-002. Publicly viewable is not a license to copy. Domain-level alignment only. No exam dumps, leaked items, paywall bypass, or proprietary lab/solution reuse. WAIKE is not a PMI ATP.",
+  "date_generated": "2026-08-14",
+  "research_method": "Fresh web retrieval on 2026-08-13 for COURSE-READY-001/002 and 2026-08-14 refresh for COURSE-READY-003 (AI_ML_EDGE, DATA_VIZ_BI, CLOUD_DEVOPS). Publicly viewable is not a license to copy. Domain-level alignment only. No exam dumps, leaked items, paywall bypass, or proprietary lab/solution reuse. WAIKE is not a PMI ATP and grants no vendor certs.",
   "sources": [
     {
       "source_id": "GOOGLE_IT_SUPPORT_PC_2026",
@@ -645,6 +645,202 @@
       "reuse_class": "RESTRICTED",
       "attribution": "PMI public PMP 2026 exam change communications and domain weights, retrieved 2026-08-13. Domain labels only; no task/item harvest.",
       "why_selected": "Required July 2026 PMP refresh alignment for Process/PM course."
+    },
+    {
+      "source_id": "GOOGLE_PROFESSIONAL_ML_ENGINEER",
+      "institution": "Google Cloud",
+      "course_or_cert": "Professional Machine Learning Engineer",
+      "current_version": "Public exam guide domain outline (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "framing_ml_problems",
+        "architecting_ml_solutions",
+        "data_preparation",
+        "ml_pipeline_automation",
+        "monitoring_optimization_serving"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted",
+        "case_study_restricted"
+      ],
+      "license": "Google copyright; exam items restricted; public domain summaries only",
+      "reuse_class": "RESTRICTED",
+      "attribution": "Google Cloud Professional ML Engineer public certification page domain themes, 2026-08-14. No item harvest.",
+      "why_selected": "Primary ML engineering domain map for AI_ML_EDGE."
+    },
+    {
+      "source_id": "AWS_MLA_C01_TOPICS",
+      "institution": "Amazon Web Services",
+      "course_or_cert": "AWS Certified Machine Learning Engineer - Associate (MLA-C01)",
+      "current_version": "Public exam guide topics (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "data_preparation_for_ml",
+        "ml_model_development",
+        "deployment_and_orchestration",
+        "monitoring_maintenance_security"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted"
+      ],
+      "license": "AWS copyright; exam items restricted",
+      "reuse_class": "RESTRICTED",
+      "attribution": "AWS MLA-C01 public certification domain themes, 2026-08-14.",
+      "why_selected": "Associate ML engineer domain labels for AI_ML_EDGE deploy/monitor weeks."
+    },
+    {
+      "source_id": "FASTAI_PRACTICAL_DL_STRUCTURE",
+      "institution": "fast.ai",
+      "course_or_cert": "Practical Deep Learning for Coders (public course structure)",
+      "current_version": "Public course site structure 2026-08-14",
+      "date_checked": "2026-08-14",
+      "url": "https://course.fast.ai/",
+      "source_type": "university_style_course_structure",
+      "topic_domains": [
+        "practical_model_training_eval",
+        "transfer_learning_concepts",
+        "deployment_basics"
+      ],
+      "assessment_patterns": [
+        "project_based_public"
+      ],
+      "license": "Course site terms; structure citation only \u2014 no notebook/solution copy",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "fast.ai public course structure themes, 2026-08-14.",
+      "why_selected": "Practical DL teaching shape for tiny-net / eval weeks."
+    },
+    {
+      "source_id": "MICROSOFT_PL300_TOPICS",
+      "institution": "Microsoft",
+      "course_or_cert": "Power BI Data Analyst Associate (PL-300)",
+      "current_version": "Public skills outline (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/pl-300/",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "prepare_data",
+        "model_data",
+        "visualize_and_analyze",
+        "deploy_and_maintain_assets"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted",
+        "lab_restricted"
+      ],
+      "license": "Microsoft copyright; exam items restricted; no binary redistribution",
+      "reuse_class": "RESTRICTED",
+      "attribution": "Microsoft PL-300 public skills outline themes, 2026-08-14.",
+      "why_selected": "BI analyst domain map for DATA_VIZ_BI."
+    },
+    {
+      "source_id": "TABLEAU_DESKTOP_SPECIALIST_TOPICS",
+      "institution": "Tableau / Salesforce",
+      "course_or_cert": "Tableau Desktop Specialist",
+      "current_version": "Public exam domain themes (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://www.tableau.com/learn/certification/desktop-specialist",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "connecting_to_data",
+        "exploration_and_analytics",
+        "sharing_insights_dashboards"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted"
+      ],
+      "license": "Tableau copyright; no sample workbook theft as portfolio",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "Tableau Desktop Specialist public domain themes, 2026-08-14.",
+      "why_selected": "Dashboard/insight workflow labels for DATA_VIZ_BI."
+    },
+    {
+      "source_id": "TUFTE_VISUAL_DISPLAY_PRINCIPLES",
+      "institution": "Edward Tufte (public design principles)",
+      "course_or_cert": "The Visual Display of Quantitative Information \u2014 principles commonly cited in public syllabi",
+      "current_version": "Public principle labels only (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://www.edwardtufte.com/tufte/",
+      "source_type": "design_principles_reference",
+      "topic_domains": [
+        "graphical_integrity_encoding",
+        "data_ink_chartjunk"
+      ],
+      "assessment_patterns": [
+        "critique_based"
+      ],
+      "license": "Book copyright; principle labels only \u2014 no text reproduction",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "Publicly discussed Tufte principle labels used as encoding vocabulary, 2026-08-14.",
+      "why_selected": "Encoding integrity vocabulary for visualization weeks."
+    },
+    {
+      "source_id": "AWS_CLOUD_PRACTITIONER_TOPICS",
+      "institution": "Amazon Web Services",
+      "course_or_cert": "AWS Certified Cloud Practitioner",
+      "current_version": "Public exam guide topics (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "cloud_concepts",
+        "security_and_compliance",
+        "technology_and_services",
+        "billing_and_pricing_concepts"
+      ],
+      "assessment_patterns": [
+        "multiple_choice_restricted"
+      ],
+      "license": "AWS copyright; exam items restricted",
+      "reuse_class": "RESTRICTED",
+      "attribution": "AWS Cloud Practitioner public domain themes, 2026-08-14.",
+      "why_selected": "Cloud fundamentals map for CLOUD_DEVOPS."
+    },
+    {
+      "source_id": "CNCF_CKA_TOPICS",
+      "institution": "CNCF / Linux Foundation",
+      "course_or_cert": "Certified Kubernetes Administrator (CKA)",
+      "current_version": "Public curriculum domains (checked 2026-08-14)",
+      "date_checked": "2026-08-14",
+      "url": "https://www.cncf.io/training/certification/cka/",
+      "source_type": "vendor_exam_outline",
+      "topic_domains": [
+        "workloads_scheduling",
+        "services_networking_fundamentals",
+        "troubleshooting_fundamentals",
+        "cluster_architecture_fundamentals"
+      ],
+      "assessment_patterns": [
+        "performance_based_restricted"
+      ],
+      "license": "CNCF/LF copyright; no exam item harvest; WAIKE grants no CKA",
+      "reuse_class": "RESTRICTED",
+      "attribution": "CKA public curriculum domain themes, 2026-08-14.",
+      "why_selected": "Kubernetes fundamentals labels for CLOUD_DEVOPS probes week."
+    },
+    {
+      "source_id": "DOCKER_DOCS_BEST_PRACTICES",
+      "institution": "Docker Inc.",
+      "course_or_cert": "Dockerfile best practices (public docs)",
+      "current_version": "Public docs 2026-08-14",
+      "date_checked": "2026-08-14",
+      "url": "https://docs.docker.com/build/building/best-practices/",
+      "source_type": "vendor_documentation",
+      "topic_domains": [
+        "image_build_hygiene",
+        "non_root_user",
+        "pinning_bases"
+      ],
+      "assessment_patterns": [
+        "doc_guided_checklist"
+      ],
+      "license": "Docker docs terms; practices cited, not copied as proprietary labs",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "Docker public Dockerfile best-practice themes, 2026-08-14.",
+      "why_selected": "Container hygiene for CLOUD_DEVOPS Dockerfile week."
     }
   ]
 }

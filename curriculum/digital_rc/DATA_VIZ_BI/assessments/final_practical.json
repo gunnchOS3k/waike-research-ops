@@ -1,0 +1,16 @@
+{
+  "practical_id": "DATA_VIZ_BI-practical",
+  "labs": [
+    "lab_clean_nulls",
+    "lab_sql_join_counts",
+    "lab_schema_nf",
+    "lab_stats_summary",
+    "lab_chart_encode",
+    "lab_dashboard_layout",
+    "lab_bi_refresh",
+    "lab_pandas_group",
+    "lab_kpi_tree",
+    "lab_repro_hash"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

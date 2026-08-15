@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "aim-w8-1",
+      "kind": "mcq",
+      "stem": "Threshold 0.55 on score 0.40 \u2192 label?",
+      "choices": [
+        "1",
+        "null",
+        "0",
+        "2"
+      ]
+    },
+    {
+      "id": "aim-w8-2",
+      "kind": "mcq",
+      "stem": "Digest mismatch action?",
+      "choices": [
+        "Score anyway",
+        "Retrain silently",
+        "Print PASS",
+        "Refuse to score"
+      ]
+    },
+    {
+      "id": "aim-w8-3",
+      "kind": "mcq",
+      "stem": "Deployment artifact is?",
+      "choices": [
+        "Pinned JSON model card + digest",
+        "Unlocked laptop",
+        "Slack screenshot",
+        "USB meme"
+      ]
+    },
+    {
+      "id": "aim-w8-4",
+      "kind": "mcq",
+      "stem": "Three scores 0.62,0.40,0.81 \u2192 labels?",
+      "choices": [
+        "1,1,1",
+        "1,0,1",
+        "0,0,0",
+        "0,1,0"
+      ]
+    },
+    {
+      "id": "aim-w8-5",
+      "kind": "mcq",
+      "stem": "Inference means?",
+      "choices": [
+        "Training from scratch",
+        "Deleting val",
+        "Applying a fixed model to new features",
+        "Shuffling CSV"
+      ]
+    },
+    {
+      "id": "aim-w8-6",
+      "kind": "mcq",
+      "stem": "Supply-chain basic this week?",
+      "choices": [
+        "Ignore digest",
+        "Post weights to Discord",
+        "Skip threshold",
+        "Match sha256 before score"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "dv-w2-1",
+      "kind": "mcq",
+      "stem": "Cartesian 100\u00d75?",
+      "choices": [
+        "105",
+        "95",
+        "5",
+        "500"
+      ]
+    },
+    {
+      "id": "dv-w2-2",
+      "kind": "mcq",
+      "stem": "Inner join matching 95 \u2192 rows?",
+      "choices": [
+        "95",
+        "100",
+        "500",
+        "5"
+      ]
+    },
+    {
+      "id": "dv-w2-3",
+      "kind": "mcq",
+      "stem": "Missing ON clause risk?",
+      "choices": [
+        "Faster queries",
+        "Cartesian explosion",
+        "Auto indexes",
+        "Grants cert"
+      ]
+    },
+    {
+      "id": "dv-w2-4",
+      "kind": "mcq",
+      "stem": "Median KPI should use?",
+      "choices": [
+        "Cartesian",
+        "Only nulls",
+        "Matched join rows",
+        "PASS string"
+      ]
+    },
+    {
+      "id": "dv-w2-5",
+      "kind": "mcq",
+      "stem": "zone_dim purpose?",
+      "choices": [
+        "Store passwords",
+        "Train GPUs",
+        "DNS",
+        "Decode zone_id to labels"
+      ]
+    },
+    {
+      "id": "dv-w2-6",
+      "kind": "mcq",
+      "stem": "SQL this week is?",
+      "choices": [
+        "Fixture join counts",
+        "Exam dump",
+        "Live production DROP",
+        "NoSQL only"
+      ]
+    }
+  ]
+}

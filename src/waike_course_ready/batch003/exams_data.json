@@ -1,0 +1,1739 @@
+{
+  "AI_ML_EDGE": {
+    "mid": [
+      {
+        "id": "aim01",
+        "kind": "mcq",
+        "stem": "EdgeForge holds 600 new rows and keeps a 25% time-ordered tail for validation. train_n?",
+        "choices": [
+          "150",
+          "450",
+          "600",
+          "75"
+        ],
+        "answer_index": 1,
+        "explanation": "600*0.75=450."
+      },
+      {
+        "id": "aim02",
+        "kind": "mcq",
+        "stem": "A teammate adds people_count to features while the busy label is people_count\u22654. Verdict?",
+        "choices": [
+          "Clever feature",
+          "Label leakage \u2014 remove it",
+          "Required for F1",
+          "Only OK on GPU"
+        ],
+        "answer_index": 1,
+        "explanation": "Leakage."
+      },
+      {
+        "id": "aim03",
+        "kind": "mcq",
+        "stem": "Confusion on a night fold: TP=25 FP=5 FN=10. Recall?",
+        "choices": [
+          "0.80",
+          "0.714",
+          "0.50",
+          "2.5"
+        ],
+        "answer_index": 1,
+        "explanation": "25/35\u22480.714."
+      },
+      {
+        "id": "aim04",
+        "kind": "mcq",
+        "stem": "Board asks for an operating point with FPR\u22640.10. Which pair is eligible?",
+        "choices": [
+          "TPR=0.9 FPR=0.20",
+          "TPR=0.7 FPR=0.08",
+          "TPR=0.95 FPR=0.15",
+          "TPR=0.6 FPR=0.12"
+        ],
+        "answer_index": 1,
+        "explanation": "FPR 0.08."
+      },
+      {
+        "id": "aim05",
+        "kind": "mcq",
+        "stem": "train_acc=0.97 val_acc=0.70. gap and action?",
+        "choices": [
+          "0.27 \u2014 document mitigation",
+          "0.00 \u2014 ship",
+          "1.67 \u2014 retrain forever",
+          "0.70 \u2014 ignore train"
+        ],
+        "answer_index": 0,
+        "explanation": "Gap."
+      },
+      {
+        "id": "aim06",
+        "kind": "mcq",
+        "stem": "Trailing window w=3 on [4,6,8,10] at last index causal mean?",
+        "choices": [
+          "10",
+          "8",
+          "6",
+          "9"
+        ],
+        "answer_index": 1,
+        "explanation": "mean(6,8,10)=8."
+      },
+      {
+        "id": "aim07",
+        "kind": "mcq",
+        "stem": "Sigmoid output 0.82 with deploy threshold 0.55 yields label?",
+        "choices": [
+          "0",
+          "1",
+          "null",
+          "2"
+        ],
+        "answer_index": 1,
+        "explanation": "Above."
+      },
+      {
+        "id": "aim08",
+        "kind": "mcq",
+        "stem": "Model card digest mismatches the file on disk. Next step?",
+        "choices": [
+          "Score anyway",
+          "Refuse scoring",
+          "Delete val",
+          "Shuffle"
+        ],
+        "answer_index": 1,
+        "explanation": "Refuse."
+      },
+      {
+        "id": "aim09",
+        "kind": "mcq",
+        "stem": "2000 fp32 params \u2192 int8 bytes if 1 byte/param?",
+        "choices": [
+          "8000",
+          "2000",
+          "500",
+          "4"
+        ],
+        "answer_index": 1,
+        "explanation": "2000."
+      },
+      {
+        "id": "aim10",
+        "kind": "mcq",
+        "stem": "Latency profile 18ms vs SLA 15ms. budget_ok?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "PHYSICAL_DONE"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "aim11",
+        "kind": "mcq",
+        "stem": "RAG chunk shows phone 555-0100. Display policy?",
+        "choices": [
+          "Show raw",
+          "Redact before display",
+          "Call the number",
+          "Embed as feature"
+        ],
+        "answer_index": 1,
+        "explanation": "Redact."
+      },
+      {
+        "id": "aim12",
+        "kind": "mcq",
+        "stem": "biometric_claim on civic occupancy model?",
+        "choices": [
+          "Must be true",
+          "Must be false",
+          "Optional admin true",
+          "Required for F1"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "aim13",
+        "kind": "mcq",
+        "stem": "Manhattan from (10,10,10) to (10,10,13)?",
+        "choices": [
+          "3",
+          "0",
+          "30",
+          "13"
+        ],
+        "answer_index": 0,
+        "explanation": "3."
+      },
+      {
+        "id": "aim14",
+        "kind": "mcq",
+        "stem": "Why time-order holdout on occupancy?",
+        "choices": [
+          "GPUs prefer it",
+          "Autocorrelation / cleaning cycles",
+          "SQL requires it",
+          "Random law"
+        ],
+        "answer_index": 1,
+        "explanation": "Time."
+      },
+      {
+        "id": "aim15",
+        "kind": "mcq",
+        "stem": "False quiet alarm primarily risks?",
+        "choices": [
+          "Understaffing the desk",
+          "Overclocking USB",
+          "DNS failure",
+          "Pie charts"
+        ],
+        "answer_index": 0,
+        "explanation": "Staffing."
+      },
+      {
+        "id": "aim16",
+        "kind": "mcq",
+        "stem": "NO_AI week on metrics math means?",
+        "choices": [
+          "No computers",
+          "No generative fill of the arithmetic",
+          "No CSV",
+          "No lab"
+        ],
+        "answer_index": 1,
+        "explanation": "No fill."
+      },
+      {
+        "id": "aim17",
+        "kind": "mcq",
+        "stem": "Pinned inference digest is mainly for?",
+        "choices": [
+          "Wallpaper",
+          "Supply-chain identity",
+          "Faster Wi-Fi",
+          "Granting MLA"
+        ],
+        "answer_index": 1,
+        "explanation": "Identity."
+      },
+      {
+        "id": "aim18",
+        "kind": "mcq",
+        "stem": "k=2 clustering without labels is?",
+        "choices": [
+          "Supervised",
+          "Unsupervised",
+          "Reinforcement",
+          "DNS"
+        ],
+        "answer_index": 1,
+        "explanation": "Unsupervised."
+      },
+      {
+        "id": "aim19",
+        "kind": "mcq",
+        "stem": "people_count column type on EF CSV?",
+        "choices": [
+          "face embedding",
+          "integer count",
+          "password",
+          "SSN"
+        ],
+        "answer_index": 1,
+        "explanation": "Count."
+      },
+      {
+        "id": "aim20",
+        "kind": "mcq",
+        "stem": "Portfolio without lab JSON?",
+        "choices": [
+          "OK if slides pretty",
+          "Incomplete for EdgeForge",
+          "Grants cert",
+          "Replaces digest"
+        ],
+        "answer_index": 1,
+        "explanation": "Incomplete."
+      }
+    ],
+    "final": [
+      {
+        "id": "aif01",
+        "kind": "mcq",
+        "stem": "New campus sends 900 rows; 10% time holdout. val_n?",
+        "choices": [
+          "90",
+          "810",
+          "9",
+          "900"
+        ],
+        "answer_index": 0,
+        "explanation": "90."
+      },
+      {
+        "id": "aif02",
+        "kind": "mcq",
+        "stem": "Precision with TP=18 FP=6?",
+        "choices": [
+          "0.75",
+          "0.80",
+          "3.0",
+          "0.25"
+        ],
+        "answer_index": 0,
+        "explanation": "18/24=0.75."
+      },
+      {
+        "id": "aif03",
+        "kind": "mcq",
+        "stem": "F1 with P=0.8 R=0.8?",
+        "choices": [
+          "0.8",
+          "1.6",
+          "0.64",
+          "0.5"
+        ],
+        "answer_index": 0,
+        "explanation": "0.8."
+      },
+      {
+        "id": "aif04",
+        "kind": "mcq",
+        "stem": "Future frame in feature window?",
+        "choices": [
+          "Causal OK",
+          "Leakage \u2014 forbidden",
+          "Required",
+          "Only int8"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "aif05",
+        "kind": "mcq",
+        "stem": "ReLU of -2?",
+        "choices": [
+          "-2",
+          "0",
+          "1",
+          "2"
+        ],
+        "answer_index": 1,
+        "explanation": "0."
+      },
+      {
+        "id": "aif06",
+        "kind": "mcq",
+        "stem": "Three scores 0.10,0.90,0.55 at t=0.55 \u2192 labels?",
+        "choices": [
+          "0,1,1",
+          "1,1,1",
+          "0,0,0",
+          "0,1,0"
+        ],
+        "answer_index": 0,
+        "explanation": "0/1/1."
+      },
+      {
+        "id": "aif07",
+        "kind": "mcq",
+        "stem": "int8/fp32 size ratio for same param count?",
+        "choices": [
+          "0.25",
+          "1",
+          "4",
+          "0.5"
+        ],
+        "answer_index": 0,
+        "explanation": "0.25."
+      },
+      {
+        "id": "aif08",
+        "kind": "mcq",
+        "stem": "PHYSICAL_PENDING means?",
+        "choices": [
+          "Digital budgets still gate device flash",
+          "Everything finished",
+          "Ignore SLA",
+          "Cert granted"
+        ],
+        "answer_index": 0,
+        "explanation": "Gate."
+      },
+      {
+        "id": "aif09",
+        "kind": "mcq",
+        "stem": "Responsible harm note must mention?",
+        "choices": [
+          "GPU brand only",
+          "Who is hurt by false quiet",
+          "Stock prices",
+          "Slack emojis"
+        ],
+        "answer_index": 1,
+        "explanation": "Harm."
+      },
+      {
+        "id": "aif10",
+        "kind": "mcq",
+        "stem": "Retrieval hits missing R-ids?",
+        "choices": [
+          "lab fails hit check",
+          "Automatic pass",
+          "Grants RAG cert",
+          "Skip redaction"
+        ],
+        "answer_index": 0,
+        "explanation": "Fails."
+      },
+      {
+        "id": "aif11",
+        "kind": "mcq",
+        "stem": "Shuffle before occupancy split mainly risks?",
+        "choices": [
+          "Faster training",
+          "Leakage of midnight patterns across folds",
+          "Better DNS",
+          "Cheaper cloud"
+        ],
+        "answer_index": 1,
+        "explanation": "Leak."
+      },
+      {
+        "id": "aif12",
+        "kind": "mcq",
+        "stem": "Operating point vs AUC worship?",
+        "choices": [
+          "AUC alone staffs the desk",
+          "Need threshold tied to FPR/TPR costs",
+          "Thresholds illegal",
+          "Only k-means"
+        ],
+        "answer_index": 1,
+        "explanation": "Threshold."
+      },
+      {
+        "id": "aif13",
+        "kind": "mcq",
+        "stem": "Model digest role at deploy?",
+        "choices": [
+          "Optional comment",
+          "Must match before score",
+          "Replace labels",
+          "Set k"
+        ],
+        "answer_index": 1,
+        "explanation": "Match."
+      },
+      {
+        "id": "aif14",
+        "kind": "mcq",
+        "stem": "Edge latency 15ms exactly vs SLA \u226415?",
+        "choices": [
+          "budget_ok true",
+          "always false",
+          "undefined",
+          "PHYSICAL_DONE"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "aif15",
+        "kind": "mcq",
+        "stem": "Email redaction count 0 when two emails present?",
+        "choices": [
+          "OK",
+          "Fails redaction check",
+          "Grants privacy cert",
+          "Ignores RAG"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "aif16",
+        "kind": "mcq",
+        "stem": "Hidden size 2 means?",
+        "choices": [
+          "Two GPUs",
+          "Two hidden units in the tiny net",
+          "Two campuses",
+          "Two certs"
+        ],
+        "answer_index": 1,
+        "explanation": "Units."
+      },
+      {
+        "id": "aif17",
+        "kind": "mcq",
+        "stem": "Val sealed until final score prevents?",
+        "choices": [
+          "Pathlib",
+          "Peeking/tuning on the report fold",
+          "USB power",
+          "SQL joins"
+        ],
+        "answer_index": 1,
+        "explanation": "Peeking."
+      },
+      {
+        "id": "aif18",
+        "kind": "mcq",
+        "stem": "Cluster narrative blaming a named staffer?",
+        "choices": [
+          "Required",
+          "Forbidden without evidence",
+          "Always true if k=2",
+          "PMI rule"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "aif19",
+        "kind": "mcq",
+        "stem": "hour_norm feature is?",
+        "choices": [
+          "PII face",
+          "Scaled time-of-day input",
+          "SSN",
+          "Password"
+        ],
+        "answer_index": 1,
+        "explanation": "Time feat."
+      },
+      {
+        "id": "aif20",
+        "kind": "mcq",
+        "stem": "Capstone portfolio includes?",
+        "choices": [
+          "Only meme",
+          "Metrics+digest+budget+RAG JSON",
+          "Vendor exam PDF",
+          "Cracked weights"
+        ],
+        "answer_index": 1,
+        "explanation": "Artifacts."
+      },
+      {
+        "id": "aif21",
+        "kind": "mcq",
+        "stem": "AI_DISCLOSED on harm note?",
+        "choices": [
+          "Hide assistance",
+          "Tag assistance when used",
+          "Ban all tools",
+          "Force GPT"
+        ],
+        "answer_index": 1,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "aif22",
+        "kind": "mcq",
+        "stem": "FPR formula reminder?",
+        "choices": [
+          "FP/(FP+TN)",
+          "TP/(TP+FN)",
+          "TN/N",
+          "FN/TP"
+        ],
+        "answer_index": 0,
+        "explanation": "FPR."
+      },
+      {
+        "id": "aif23",
+        "kind": "mcq",
+        "stem": "Busy policy threshold is?",
+        "choices": [
+          "Gradient output",
+          "Library board choice",
+          "ImageNet default",
+          "Random"
+        ],
+        "answer_index": 1,
+        "explanation": "Policy."
+      },
+      {
+        "id": "aif24",
+        "kind": "mcq",
+        "stem": "Print-only PASS as inference result?",
+        "choices": [
+          "Accepted",
+          "Rejected by validator",
+          "Equals label 1",
+          "Equals digest"
+        ],
+        "answer_index": 1,
+        "explanation": "Rejected."
+      }
+    ],
+    "offset": 0
+  },
+  "DATA_VIZ_BI": {
+    "mid": [
+      {
+        "id": "dvm01",
+        "kind": "mcq",
+        "stem": "250 rows with 20 null waits. null_rate?",
+        "choices": [
+          "0.08",
+          "0.20",
+          "0.02",
+          "8"
+        ],
+        "answer_index": 0,
+        "explanation": "20/250=0.08."
+      },
+      {
+        "id": "dvm02",
+        "kind": "mcq",
+        "stem": "Inner join matches 180 of 200 tickets to zones. joined_rows?",
+        "choices": [
+          "200",
+          "180",
+          "1000",
+          "5"
+        ],
+        "answer_index": 1,
+        "explanation": "180."
+      },
+      {
+        "id": "dvm03",
+        "kind": "mcq",
+        "stem": "Cartesian risk for 200 tickets \u00d7 8 zones?",
+        "choices": [
+          "208",
+          "1600",
+          "180",
+          "8"
+        ],
+        "answer_index": 1,
+        "explanation": "1600."
+      },
+      {
+        "id": "dvm04",
+        "kind": "mcq",
+        "stem": "Tickets still embed full zone_address text. Primary modeling fix?",
+        "choices": [
+          "More copies",
+          "zone_id FK + zone_dim attributes",
+          "Delete SQL",
+          "Add faces"
+        ],
+        "answer_index": 1,
+        "explanation": "Normalize."
+      },
+      {
+        "id": "dvm05",
+        "kind": "mcq",
+        "stem": "IQR if Q1=7 and Q3=19?",
+        "choices": [
+          "12",
+          "26",
+          "7",
+          "19"
+        ],
+        "answer_index": 0,
+        "explanation": "12."
+      },
+      {
+        "id": "dvm06",
+        "kind": "mcq",
+        "stem": "Board summary with a single 200-min outlier prefers?",
+        "choices": [
+          "Mean only",
+          "Median with IQR context",
+          "Only max",
+          "PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "Median."
+      },
+      {
+        "id": "dvm07",
+        "kind": "mcq",
+        "stem": "Encoding: pie of unique ticket_id for wait KPI?",
+        "choices": [
+          "Valid",
+          "Invalid",
+          "Required",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Invalid."
+      },
+      {
+        "id": "dvm08",
+        "kind": "mcq",
+        "stem": "First dashboard screen max_tiles in Studio?",
+        "choices": [
+          "3",
+          "30",
+          "0",
+          "100"
+        ],
+        "answer_index": 0,
+        "explanation": "3."
+      },
+      {
+        "id": "dvm09",
+        "kind": "mcq",
+        "stem": "Refresh 12 minutes vs \u226415 SLA?",
+        "choices": [
+          "fails",
+          "meets",
+          "undefined",
+          "cartesian"
+        ],
+        "answer_index": 1,
+        "explanation": "meets."
+      },
+      {
+        "id": "dvm10",
+        "kind": "mcq",
+        "stem": "Redistributing Power BI installer in the repo?",
+        "choices": [
+          "OK",
+          "Forbidden \u2014 reference workflows only",
+          "Required",
+          "Grants PL-300"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "dvm11",
+        "kind": "mcq",
+        "stem": "groupby median B=14 on fixture \u2014 changing input without new hash?",
+        "choices": [
+          "Still reproducible",
+          "Breaks repro claim",
+          "Improves F1",
+          "Required"
+        ],
+        "answer_index": 1,
+        "explanation": "Breaks."
+      },
+      {
+        "id": "dvm12",
+        "kind": "mcq",
+        "stem": "desk_pressure open=8 wait=15 staff=4?",
+        "choices": [
+          "30",
+          "2",
+          "120",
+          "0.5"
+        ],
+        "answer_index": 0,
+        "explanation": "8*15/4=30."
+      },
+      {
+        "id": "dvm13",
+        "kind": "mcq",
+        "stem": "Adjective-only board story?",
+        "choices": [
+          "Passes",
+          "Fails storytelling bar",
+          "Grants cert",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "dvm14",
+        "kind": "mcq",
+        "stem": "PNG dashboard without csv_sha256?",
+        "choices": [
+          "Complete",
+          "Rejected for portfolio",
+          "Ideal",
+          "CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "Rejected."
+      },
+      {
+        "id": "dvm15",
+        "kind": "mcq",
+        "stem": "Negatives abs()'d into waits?",
+        "choices": [
+          "Honest",
+          "Invented success \u2014 fail clean policy",
+          "Required",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "dvm16",
+        "kind": "mcq",
+        "stem": "Freshness tile missing?",
+        "choices": [
+          "OK",
+          "Trust failure on first screen",
+          "Boosts KPI",
+          "IAM"
+        ],
+        "answer_index": 1,
+        "explanation": "Trust."
+      },
+      {
+        "id": "dvm17",
+        "kind": "mcq",
+        "stem": "PUBLIC_REFERENCE_ONLY for Tableau topics means?",
+        "choices": [
+          "Copy sample workbooks as yours",
+          "Domain labels only",
+          "Pirate keys",
+          "Skip charts"
+        ],
+        "answer_index": 1,
+        "explanation": "Labels."
+      },
+      {
+        "id": "dvm18",
+        "kind": "mcq",
+        "stem": "NO_AI on stats week blocks?",
+        "choices": [
+          "Calculators",
+          "Generative fill of the numbers",
+          "Paper",
+          "SQL comments"
+        ],
+        "answer_index": 1,
+        "explanation": "Fill."
+      },
+      {
+        "id": "dvm19",
+        "kind": "mcq",
+        "stem": "zone on x-axis channel type?",
+        "choices": [
+          "quantitative",
+          "nominal",
+          "password",
+          "biometric"
+        ],
+        "answer_index": 1,
+        "explanation": "Nominal."
+      },
+      {
+        "id": "dvm20",
+        "kind": "mcq",
+        "stem": "quality_ok needs negatives_dropped?",
+        "choices": [
+          "false",
+          "true",
+          "null",
+          "2"
+        ],
+        "answer_index": 1,
+        "explanation": "true."
+      }
+    ],
+    "final": [
+      {
+        "id": "dvf01",
+        "kind": "mcq",
+        "stem": "null_rate 15/300?",
+        "choices": [
+          "0.05",
+          "0.15",
+          "0.015",
+          "5"
+        ],
+        "answer_index": 0,
+        "explanation": "0.05."
+      },
+      {
+        "id": "dvf02",
+        "kind": "mcq",
+        "stem": "Unmatched tickets on inner join appear in median KPI?",
+        "choices": [
+          "Yes always",
+          "No \u2014 excluded",
+          "As null faces",
+          "As PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "Excluded."
+      },
+      {
+        "id": "dvf03",
+        "kind": "mcq",
+        "stem": "Update anomaly symptom?",
+        "choices": [
+          "One rename misses many duplicated addresses",
+          "Faster SSD",
+          "Better F1",
+          "CKA"
+        ],
+        "answer_index": 0,
+        "explanation": "Anomaly."
+      },
+      {
+        "id": "dvf04",
+        "kind": "mcq",
+        "stem": "Mean vs median when outlier present?",
+        "choices": [
+          "Mean more robust",
+          "Median more robust for board waits",
+          "Same always",
+          "Neither defined"
+        ],
+        "answer_index": 1,
+        "explanation": "Median."
+      },
+      {
+        "id": "dvf05",
+        "kind": "mcq",
+        "stem": "bar + zone + median_wait encoding?",
+        "choices": [
+          "Invalid",
+          "Valid",
+          "Forbidden",
+          "Biometric"
+        ],
+        "answer_index": 1,
+        "explanation": "Valid."
+      },
+      {
+        "id": "dvf06",
+        "kind": "mcq",
+        "stem": "Stock photo as fourth tile on first screen?",
+        "choices": [
+          "Required",
+          "Fails layout contract",
+          "Improves SLA",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "dvf07",
+        "kind": "mcq",
+        "stem": "refresh_minutes=20 vs \u226415?",
+        "choices": [
+          "meets",
+          "fails SLA",
+          "undefined",
+          "grants cert"
+        ],
+        "answer_index": 1,
+        "explanation": "fails."
+      },
+      {
+        "id": "dvf08",
+        "kind": "mcq",
+        "stem": "Vendor gallery workbook claimed as portfolio?",
+        "choices": [
+          "OK if pretty",
+          "Forbidden claim",
+          "Required",
+          "PMI"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "dvf09",
+        "kind": "mcq",
+        "stem": "input_sha256 purpose?",
+        "choices": [
+          "Decoration",
+          "Pin input identity",
+          "Replace median",
+          "IAM create"
+        ],
+        "answer_index": 1,
+        "explanation": "Pin."
+      },
+      {
+        "id": "dvf10",
+        "kind": "mcq",
+        "stem": "KPI formula secret from auditors?",
+        "choices": [
+          "Best",
+          "Must be auditable",
+          "Only AI knows",
+          "Random"
+        ],
+        "answer_index": 1,
+        "explanation": "Auditable."
+      },
+      {
+        "id": "dvf11",
+        "kind": "mcq",
+        "stem": "staff_on_duty fabricated upward?",
+        "choices": [
+          "OK",
+          "Honesty failure",
+          "Required",
+          "F1"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "dvf12",
+        "kind": "mcq",
+        "stem": "null_rate 0.06 with threshold \u22640.05?",
+        "choices": [
+          "quality_ok",
+          "not quality_ok",
+          "ignored",
+          "PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "not ok."
+      },
+      {
+        "id": "dvf13",
+        "kind": "mcq",
+        "stem": "freshness 20 with \u226415 gate?",
+        "choices": [
+          "quality_ok",
+          "fails freshness",
+          "boosts median",
+          "CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "fails."
+      },
+      {
+        "id": "dvf14",
+        "kind": "mcq",
+        "stem": "Cartesian ON-less join for KPI?",
+        "choices": [
+          "Preferred",
+          "Accident to refuse",
+          "Required",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Refuse."
+      },
+      {
+        "id": "dvf15",
+        "kind": "mcq",
+        "stem": "3NF-ish move of address?",
+        "choices": [
+          "Into every ticket",
+          "Into zone_dim",
+          "Into passwords",
+          "Into faces"
+        ],
+        "answer_index": 1,
+        "explanation": "zone_dim."
+      },
+      {
+        "id": "dvf16",
+        "kind": "mcq",
+        "stem": "IQR uses?",
+        "choices": [
+          "Q3-Q1",
+          "mean*2",
+          "TP-FP",
+          "null_rate"
+        ],
+        "answer_index": 0,
+        "explanation": "Q3-Q1."
+      },
+      {
+        "id": "dvf17",
+        "kind": "mcq",
+        "stem": "Story sentence needs?",
+        "choices": [
+          "Only logo",
+          "Change + number + action",
+          "Only emoji",
+          "Face ID"
+        ],
+        "answer_index": 1,
+        "explanation": "Numbered."
+      },
+      {
+        "id": "dvf18",
+        "kind": "mcq",
+        "stem": "pandas absent fallback?",
+        "choices": [
+          "Fail course",
+          "Plain Python aggregation OK",
+          "Must pirate",
+          "Skip"
+        ],
+        "answer_index": 1,
+        "explanation": "OK."
+      },
+      {
+        "id": "dvf19",
+        "kind": "mcq",
+        "stem": "license_ok true means?",
+        "choices": [
+          "Cracked",
+          "Honest attribution / no piracy",
+          "Ignore ToS",
+          "Skip SLA"
+        ],
+        "answer_index": 1,
+        "explanation": "Honest."
+      },
+      {
+        "id": "dvf20",
+        "kind": "mcq",
+        "stem": "open_count tile shows?",
+        "choices": [
+          "Only closed",
+          "Currently open",
+          "SSNs",
+          "Weights"
+        ],
+        "answer_index": 1,
+        "explanation": "Open."
+      },
+      {
+        "id": "dvf21",
+        "kind": "mcq",
+        "stem": "Data quality checklist includes?",
+        "choices": [
+          "null_rate, negatives_dropped, freshness",
+          "Only fonts",
+          "Only GPU",
+          "Only k8s"
+        ],
+        "answer_index": 0,
+        "explanation": "Trio."
+      },
+      {
+        "id": "dvf22",
+        "kind": "mcq",
+        "stem": "Chartjunk 3D extrusion?",
+        "choices": [
+          "Causal proof",
+          "Risk without insight",
+          "Required",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Risk."
+      },
+      {
+        "id": "dvf23",
+        "kind": "mcq",
+        "stem": "Median wait by zone is?",
+        "choices": [
+          "A vanity pie of IDs",
+          "A comparative quantitative view",
+          "A biometric",
+          "A secret"
+        ],
+        "answer_index": 1,
+        "explanation": "Compare."
+      },
+      {
+        "id": "dvf24",
+        "kind": "mcq",
+        "stem": "Capstone without hashes?",
+        "choices": [
+          "Ship it",
+          "Incomplete",
+          "Grants PL-300",
+          "Replaces SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Incomplete."
+      }
+    ],
+    "offset": 1
+  },
+  "CLOUD_DEVOPS": {
+    "mid": [
+      {
+        "id": "cdm01",
+        "kind": "mcq",
+        "stem": "World-writable deploy key 0666. Required fix mode?",
+        "choices": [
+          "0777",
+          "0600",
+          "0000",
+          "0666"
+        ],
+        "answer_index": 1,
+        "explanation": "0600."
+      },
+      {
+        "id": "cdm02",
+        "kind": "mcq",
+        "stem": "0600 as decimal?",
+        "choices": [
+          "600",
+          "384",
+          "66",
+          "64"
+        ],
+        "answer_index": 1,
+        "explanation": "384."
+      },
+      {
+        "id": "cdm03",
+        "kind": "mcq",
+        "stem": "Branch 3 ahead 1 behind. Need rebase-from-main before release?",
+        "choices": [
+          "No",
+          "Yes \u2014 behind>0",
+          "Only if PASS",
+          "Never"
+        ],
+        "answer_index": 1,
+        "explanation": "Yes."
+      },
+      {
+        "id": "cdm04",
+        "kind": "mcq",
+        "stem": "force-push to main on ForgeCloud?",
+        "choices": [
+          "Encouraged",
+          "Forbidden",
+          "Silent OK",
+          "Only AI"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "cdm05",
+        "kind": "mcq",
+        "stem": "Dockerfile USER root?",
+        "choices": [
+          "lint_ok",
+          "fails non-root gate",
+          "Required",
+          "Tableau"
+        ],
+        "answer_index": 1,
+        "explanation": "fails."
+      },
+      {
+        "id": "cdm06",
+        "kind": "mcq",
+        "stem": ":latest base tag?",
+        "choices": [
+          "Preferred",
+          "uses_latest must be false",
+          "Required digests optional",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "cdm07",
+        "kind": "mcq",
+        "stem": "PR pipeline deploy job ungated?",
+        "choices": [
+          "Best",
+          "Fails cicd gate",
+          "Required",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdm08",
+        "kind": "mcq",
+        "stem": "Job order lint/test/upload-report?",
+        "choices": [
+          "Wrong",
+          "Correct fixture order",
+          "Deploy first",
+          "PASS first"
+        ],
+        "answer_index": 1,
+        "explanation": "Correct."
+      },
+      {
+        "id": "cdm09",
+        "kind": "mcq",
+        "stem": "cost_units for vcpu_hours=10 storage_gb=100?",
+        "choices": [
+          "11",
+          "10",
+          "100",
+          "1"
+        ],
+        "answer_index": 0,
+        "explanation": "10+1=11."
+      },
+      {
+        "id": "cdm10",
+        "kind": "mcq",
+        "stem": "Public subnet for secret-bearing bastion?",
+        "choices": [
+          "OK",
+          "fails must_be_private",
+          "Required",
+          "Free"
+        ],
+        "answer_index": 1,
+        "explanation": "fails."
+      },
+      {
+        "id": "cdm11",
+        "kind": "mcq",
+        "stem": "Deploy role with iam:CreateUser?",
+        "choices": [
+          "Least privilege",
+          "Over-privilege",
+          "Required",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Over."
+      },
+      {
+        "id": "cdm12",
+        "kind": "mcq",
+        "stem": "Plaintext token in git?",
+        "choices": [
+          "OK",
+          "Fails secrets check",
+          "Best",
+          "F1"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdm13",
+        "kind": "mcq",
+        "stem": "failed=30 total=10000 availability?",
+        "choices": [
+          "0.997",
+          "0.970",
+          "0.003",
+          "1"
+        ],
+        "answer_index": 0,
+        "explanation": "0.997."
+      },
+      {
+        "id": "cdm14",
+        "kind": "mcq",
+        "stem": "failed=55 cap=50 budget_ok?",
+        "choices": [
+          "true",
+          "false",
+          "null",
+          "PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "cdm15",
+        "kind": "mcq",
+        "stem": "rollback_to equals current?",
+        "choices": [
+          "Valid",
+          "Invalid theater",
+          "Required",
+          "CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "Invalid."
+      },
+      {
+        "id": "cdm16",
+        "kind": "mcq",
+        "stem": "health=starting with traffic switch?",
+        "choices": [
+          "OK",
+          "Fails health gate",
+          "Required",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdm17",
+        "kind": "mcq",
+        "stem": "replicas=20 no CPU requests?",
+        "choices": [
+          "probe_ok",
+          "fails sanity",
+          "Required",
+          "Grants CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "fails."
+      },
+      {
+        "id": "cdm18",
+        "kind": "mcq",
+        "stem": "During a probe review, which HTTP path marks pods ready for Service traffic?",
+        "choices": [
+          "/readyz",
+          "/admin",
+          "/delete",
+          "/PASS"
+        ],
+        "answer_index": 0,
+        "explanation": "Readiness uses /readyz."
+      },
+      {
+        "id": "cdm19",
+        "kind": "mcq",
+        "stem": "heroics=true incident note?",
+        "choices": [
+          "Good",
+          "Fails runbook honesty",
+          "Required",
+          "KPI"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdm20",
+        "kind": "mcq",
+        "stem": "Missing automation_runbook_id?",
+        "choices": [
+          "OK",
+          "Fails capstone lab",
+          "Grants cert",
+          "Optional vibe always pass"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      }
+    ],
+    "final": [
+      {
+        "id": "cdf01",
+        "kind": "mcq",
+        "stem": "mode 0644 on private deploy key \u2014 acceptable?",
+        "choices": [
+          "Yes always",
+          "No \u2014 still group/world readable vs 0600 target",
+          "Only on Fridays",
+          "If PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "cdf02",
+        "kind": "mcq",
+        "stem": "ahead=0 behind=2 meaning?",
+        "choices": [
+          "Ready to force-push",
+          "Need integrate main first",
+          "Detached forever",
+          "Shallow only"
+        ],
+        "answer_index": 1,
+        "explanation": "Integrate."
+      },
+      {
+        "id": "cdf03",
+        "kind": "mcq",
+        "stem": "Conflict path expected in fixture?",
+        "choices": [
+          "services/api/health.py",
+          "/etc/shadow",
+          "random PASS",
+          "C:\\Windows"
+        ],
+        "answer_index": 0,
+        "explanation": "health.py."
+      },
+      {
+        "id": "cdf04",
+        "kind": "mcq",
+        "stem": "Digest-pinned FROM line purpose?",
+        "choices": [
+          "Beauty",
+          "Reproducible base",
+          "Faster DNS",
+          "Grant cert"
+        ],
+        "answer_index": 1,
+        "explanation": "Repro."
+      },
+      {
+        "id": "cdf05",
+        "kind": "mcq",
+        "stem": "deploy_on_pr true?",
+        "choices": [
+          "Allowed",
+          "Fails gate",
+          "Required",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdf06",
+        "kind": "mcq",
+        "stem": "upload-report missing?",
+        "choices": [
+          "Evidence gap risk",
+          "Ideal",
+          "Grants CKA",
+          "SQL"
+        ],
+        "answer_index": 0,
+        "explanation": "Risk."
+      },
+      {
+        "id": "cdf07",
+        "kind": "mcq",
+        "stem": "storage_gb*0.01 with 200GB?",
+        "choices": [
+          "2.0",
+          "200",
+          "0.01",
+          "20"
+        ],
+        "answer_index": 0,
+        "explanation": "2.0."
+      },
+      {
+        "id": "cdf08",
+        "kind": "mcq",
+        "stem": "Toy cost_units claim as real AWS invoice?",
+        "choices": [
+          "OK",
+          "Forbidden claim",
+          "Required",
+          "F1"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "cdf09",
+        "kind": "mcq",
+        "stem": "Vault path replaces?",
+        "choices": [
+          "Charts",
+          "Plaintext token in git",
+          "Median",
+          "Faces"
+        ],
+        "answer_index": 1,
+        "explanation": "Token."
+      },
+      {
+        "id": "cdf10",
+        "kind": "mcq",
+        "stem": "A ForgeCloud deploy role may call which ECS mutation in the fixture policy?",
+        "choices": [
+          "Always deny all ECS",
+          "ecs:UpdateService",
+          "Biometric enroll",
+          "Tableau publish"
+        ],
+        "answer_index": 1,
+        "explanation": "UpdateService allowed."
+      },
+      {
+        "id": "cdf11",
+        "kind": "mcq",
+        "stem": "availability 0.995 on 10_000 with how many fails?",
+        "choices": [
+          "50",
+          "5",
+          "500",
+          "0"
+        ],
+        "answer_index": 0,
+        "explanation": "50."
+      },
+      {
+        "id": "cdf12",
+        "kind": "mcq",
+        "stem": "SLO note without numbers?",
+        "choices": [
+          "Good",
+          "Fails ops bar",
+          "Required",
+          "Pie"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdf13",
+        "kind": "mcq",
+        "stem": "migrate skipped but traffic switched?",
+        "choices": [
+          "OK",
+          "Fails fixture policy",
+          "Required",
+          "CKA"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "cdf14",
+        "kind": "mcq",
+        "stem": "rollback digest differs + healthy?",
+        "choices": [
+          "Valid path",
+          "Invalid",
+          "Only root",
+          "Only latest"
+        ],
+        "answer_index": 0,
+        "explanation": "Valid."
+      },
+      {
+        "id": "cdf15",
+        "kind": "mcq",
+        "stem": "liveness /healthz purpose?",
+        "choices": [
+          "SSH backdoor",
+          "Restart honesty signal",
+          "Pie",
+          "Median"
+        ],
+        "answer_index": 1,
+        "explanation": "Restart."
+      },
+      {
+        "id": "cdf16",
+        "kind": "mcq",
+        "stem": "CKA granted by probes week?",
+        "choices": [
+          "Yes",
+          "No",
+          "Automatic",
+          "If replicas=20"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "cdf17",
+        "kind": "mcq",
+        "stem": "After a stub credential appears in git history, what must the incident JSON show?",
+        "choices": [
+          "token_rotated remains false",
+          "token_rotated true after rotation",
+          "Ignore vault",
+          "Print only PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "Must rotate."
+      },
+      {
+        "id": "cdf18",
+        "kind": "mcq",
+        "stem": "Timeline missing recover stamp?",
+        "choices": [
+          "OK",
+          "Incomplete timeline",
+          "Grants cert",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Incomplete."
+      },
+      {
+        "id": "cdf19",
+        "kind": "mcq",
+        "stem": "DevSecOps trio this course?",
+        "choices": [
+          "Ignore secrets",
+          "Rollback + rotate + runbook",
+          "Pirate + force-push + root",
+          "Exam dump"
+        ],
+        "answer_index": 1,
+        "explanation": "Trio."
+      },
+      {
+        "id": "cdf20",
+        "kind": "mcq",
+        "stem": "Private subnet flag?",
+        "choices": [
+          "must_be_private true",
+          "always public",
+          "ignore",
+          "PASS"
+        ],
+        "answer_index": 0,
+        "explanation": "true."
+      },
+      {
+        "id": "cdf21",
+        "kind": "mcq",
+        "stem": "CI on pull_request first job?",
+        "choices": [
+          "deploy",
+          "lint",
+          "drop",
+          "PASS"
+        ],
+        "answer_index": 1,
+        "explanation": "lint."
+      },
+      {
+        "id": "cdf22",
+        "kind": "mcq",
+        "stem": "USER app in Dockerfile?",
+        "choices": [
+          "Root",
+          "Non-root",
+          "Windows",
+          "SQL"
+        ],
+        "answer_index": 1,
+        "explanation": "Non-root."
+      },
+      {
+        "id": "cdf23",
+        "kind": "mcq",
+        "stem": "Incident heroics definition?",
+        "choices": [
+          "Documented runbook",
+          "Solo undocumented fix",
+          "Median",
+          "Join"
+        ],
+        "answer_index": 1,
+        "explanation": "Solo."
+      },
+      {
+        "id": "cdf24",
+        "kind": "mcq",
+        "stem": "Portfolio cert claim?",
+        "choices": [
+          "Allowed",
+          "Forbidden \u2014 labels only",
+          "Required CKA/AWS",
+          "PMI ATP"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      }
+    ],
+    "offset": 2
+  }
+}

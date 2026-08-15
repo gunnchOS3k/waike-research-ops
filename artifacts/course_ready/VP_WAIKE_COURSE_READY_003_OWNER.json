@@ -1,0 +1,28 @@
+{
+  "packet": "WAIKE-COURSE-READY-003",
+  "role": "OWNER",
+  "kind": "REMEDIATE_PADDING",
+  "prior_fail_tip": "bf93bcaf1e159da046774664181a694ccbac228c",
+  "post_collapse_min_lengths": {
+    "AI_ML_EDGE": 972,
+    "DATA_VIZ_BI": 881,
+    "CLOUD_DEVOPS": 871
+  },
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "COURSE_DIGITAL_RC": {
+    "AI_ML_EDGE": true,
+    "DATA_VIZ_BI": true,
+    "CLOUD_DEVOPS": true
+  },
+  "labs": {
+    "total": "80/80",
+    "ok": true,
+    "batch_003": "30/30"
+  },
+  "provenance_status": "PASS",
+  "template_status": "PASS",
+  "lesson_padding_rejected": 0,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "cursor_merges": false
+}
