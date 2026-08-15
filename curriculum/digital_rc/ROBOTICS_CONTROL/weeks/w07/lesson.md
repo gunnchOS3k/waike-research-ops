@@ -12,7 +12,11 @@ division. Video of the cart without v/omega fields is insufficient evidence.
 Slip compensation stays in 'still need'. Encoder rates come from the fixture, not from
 invented fleet telemetry.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 7: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Derive RB-5707 v=(r/2)(ω_l+ω_r) and ω=(r/B)(ω_r−ω_l) with B=0.40, r=0.05 and reject B=0
+before division. Publish finite v and omega from fixture encoder rates only. Video without
+those fields is insufficient. Slip compensation remains still-need; invented fleet
+telemetry is forbidden. Work a second numeric pair (ω_l=2.0, ω_r=2.4) on the whiteboard
+and show how ω_body changes sign when the wheel rates swap, still with B>0 enforced.
 
 ## Worked example
 

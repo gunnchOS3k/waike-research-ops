@@ -13,7 +13,11 @@ SDR' fails the course, not just the week.
 Fabricated FCC/ITU PDF filenames are forbidden. Alignment labels are
 PUBLIC_REFERENCE_ONLY. Journals must not invent auction wins.
 
-Ticket arithmetic checkpoint for WIRELESS_6G week 8: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+For WR-4808, recompute whether OBW 18 MHz at 3.5 GHz sits inside the narrative mask and
+write mask_ok with the inequality you used. List three transmission acts that would set
+unauthorized_tx true even if the SDR UI looks green. Journals that invent auction IDs or
+FCC PDF filenames fail ethics before RF arithmetic is graded. Align labels to
+PUBLIC_REFERENCE_ONLY and keep commercial standardized 6G absent from the claim line.
 
 ## Worked example
 

@@ -12,7 +12,10 @@ fail the week regardless of beat math.
 
 Device latency calibration remains unfinished; do not invent millisecond offsets.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 3: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Map GA-6303 t=1.25 at BPM 120 to beat_index and phase with period 0.5 s. Enforce
+license_ok true and pirated_sample_pack false as hard gates. Cracked sample packs fail
+regardless of beat math. Do not invent device-latency millisecond offsets this week.
+Also map t=0.0 and t=2.0 and show beat_index continuity without claiming a DAW license.
 
 ## Worked example
 

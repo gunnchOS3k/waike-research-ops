@@ -13,7 +13,10 @@ splines that ignore limits fail the NO_AI week.
 Curvature limits are deferred. Whiteboard the numbers; screenshots of path planners
 without t_min/path_ok fields do not pass.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 4: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+On RB-5404, decide triangle vs trapezoid for 1.2 m with vmax=0.4 and amax=0.5, then compute
+t_min from the chosen profile. Set path_ok false for any cmd_speed>vmax and explain the
+reject in one sentence. NO_AI week: hand-derive on paper; GUI path screenshots without
+t_min/path_ok fields do not pass. Curvature limits remain deferred.
 
 ## Worked example
 

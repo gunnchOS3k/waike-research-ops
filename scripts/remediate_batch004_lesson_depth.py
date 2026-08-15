@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import textwrap
 from pathlib import Path
@@ -10,10 +11,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from waike_course_ready.provenance import strip_lesson_padding  # noqa: E402
+from waike_course_ready.provenance import (  # noqa: E402
+    detect_repeated_near_identical_trailers,
+    strip_lesson_padding,
+)
 
 BATCH = ROOT / "src" / "waike_course_ready" / "batch004"
-FLOOR = 900  # authored target; official strip must clear #45 floor 871
+FLOOR = 871  # must clear #45 post-collapse floor; no identical trailer fillers
 
 
 # Unique, domain-specific expansions — NOT the rotating trailer class.
@@ -253,42 +257,201 @@ EXPAND: dict[str, dict[int, str]] = {
 }
 
 
+# Second-pass unique deepeners — each week has distinct technical prose (no shared template).
+UNIQUE_MORE: dict[str, dict[int, str]] = {
+    "WIRELESS_6G": {
+        7: """
+        On WR-4707, enumerate observe_kpis as concrete CSV column names (bler, prb_util, snr_p50)
+        before proposing MCS or PRB moves. Document the human gate as a named pier operator role,
+        not a checkbox theater. Auto-apply without that gate must remain false in every submitted
+        JSON variant the class practices. Compare one gated proposal against an ungated fantasy
+        loop and mark which fields the validator rejects. Keep AI-RAN vocabulary at RESEARCH_LAB_SCALE;
+        do not imply pier-wide closed-loop autonomy from this ticket alone.
+        """,
+        8: """
+        For WR-4808, recompute whether OBW 18 MHz at 3.5 GHz sits inside the narrative mask and
+        write mask_ok with the inequality you used. List three transmission acts that would set
+        unauthorized_tx true even if the SDR UI looks green. Journals that invent auction IDs or
+        FCC PDF filenames fail ethics before RF arithmetic is graded. Align labels to
+        PUBLIC_REFERENCE_ONLY and keep commercial standardized 6G absent from the claim line.
+        """,
+        9: """
+        Sketch A1 policy advice, E2 near-RT control, and O1/O2 management as separate arrows on
+        the pier whiteboard for WR-4909. Require deployed_full_ric=false until an E2 subscription
+        log path exists. Write one sentence explaining why a Cloud/DevOps deck cannot be
+        noun-swapped into O-RAN interfaces. Cap the honesty note at RESEARCH_LAB_SCALE and refuse
+        production RIC claims without PHYSICAL_PENDING evidence.
+        """,
+    },
+    "ROBOTICS_CONTROL": {
+        2: """
+        For RB-5202, compute tip pose at θ1=0.4 rad, θ2=−0.2 rad with L1=0.35, L2=0.30 and mark
+        reachable vs hypot(x,y)>0.65. Include a second target beyond the disk and show
+        reachable=false without inventing extra link length. Defend L1/L2 from the fixture card
+        only; cinematic reach claims are out of scope. Joint-limit maps stay listed under still-need.
+        """,
+        3: """
+        Walk RB-5303 with the full e series [1.0,0.6,0.2], accumulate rectangular integral, form
+        backward Δe/dt, and publish u for the last sample with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.
+        When |integral| grows, anti_windup_note must name a mitigation (clamp, back-calculation)
+        in ≥8 characters. Wrong u fails even if a phone video of the motor looks smooth.
+        """,
+        4: """
+        On RB-5404, decide triangle vs trapezoid for 1.2 m with vmax=0.4 and amax=0.5, then compute
+        t_min from the chosen profile. Set path_ok false for any cmd_speed>vmax and explain the
+        reject in one sentence. NO_AI week: hand-derive on paper; GUI path screenshots without
+        t_min/path_ok fields do not pass. Curvature limits remain deferred.
+        """,
+        5: """
+        Clean RB-5505 lidar [1.01,1.00,0.99,1.02,3.50] with the >2.0 m hard gate, recompute mean
+        and cleaned_n, and set outlier_dropped true when 3.50 is removed. Show why trusting the
+        raw max as aisle truth breaks sensing discipline. Bias calibration stays on the still-need
+        rung; empty student_artifact still fails.
+        """,
+        6: """
+        Assert RB-5606 E-stop fields motors_disabled, brake_engaged, and resume_requires_human
+        as a triple-true contract. Contrast against a soft 'slow eventually' story that must fail.
+        Note that demo-video bypass is an ethics fail, and SIL certification is not claimed.
+        Keep the printable large-text E-stop sheet in the student packet path for tabletop drills.
+        """,
+        7: """
+        Derive RB-5707 v=(r/2)(ω_l+ω_r) and ω=(r/B)(ω_r−ω_l) with B=0.40, r=0.05 and reject B=0
+        before division. Publish finite v and omega from fixture encoder rates only. Video without
+        those fields is insufficient. Slip compensation remains still-need; invented fleet
+        telemetry is forbidden. Work a second numeric pair (ω_l=2.0, ω_r=2.4) on the whiteboard
+        and show how ω_body changes sign when the wheel rates swap, still with B>0 enforced.
+        """,
+        8: """
+        For RB-5808, compute K=p/(p+r) with p=0.04, r=0.01, form x_hat, and refuse cov_zero_lie.
+        Show how the lower-variance measurement pulls the estimate. State explicitly that full
+        SE(2) EKF is not earned by this scalar toy. Certainty theater (P=0) fails honesty.
+        Repeat with p=0.09, r=0.01 and note how K shrinks when prior variance rises, still
+        refusing any submission that asserts zero covariance as a lie flag.
+        """,
+        9: """
+        Hand-author RB-5909 cmd_vel JSON with finite linear_x, angular_z, and frame_id=base_link.
+        fleet_claim must be false; NaNs fail. NO_AI week forbids generative schema dumps.
+        Production DDS/ROS distro pins are not granted by vocabulary alone. Add a negative case
+        with angular_z=null and show the validator reject text the pier expects learners to cite.
+        """,
+        10: """
+        Assemble RB-5910 with estop_ok=true, labs_passed≥6, no_device_os_pr=true, and packet_sha256.
+        Forbid fabricated injury statistics. Keep career mapping as robotics technician / controls
+        junior — aligned, not granted — and retain the large-text E-stop procedure in portfolio.
+        """,
+    },
+    "GAME_DEV_INTERACTIVE": {
+        1: """
+        On GA-6101, simulate three frame_time samples (0.016, 0.040, 0.30) through the accumulator
+        with dt=1/60 and show when spiral_of_death_guard clamps. Keep simulation steps fixed while
+        allowing render interpolation. Handheld profiling stays PHYSICAL_PENDING; delta-everywhere
+        without a guard fails the loop contract.
+        """,
+        2: """
+        Compute GA-6202 overlap_x and overlap_y for two axis-aligned boxes with deliberate miss and
+        hit cases; require both overlaps positive for hit. Particle VFX cannot replace the signs.
+        Swept tunneling tests remain still-need. Empty {} and wrong signs fail the lab. Include a
+        third rectangle pair where overlap_x>0 but overlap_y≤0 and mark hit=false with the arithmetic
+        written beside the boxes.
+        """,
+        3: """
+        Map GA-6303 t=1.25 at BPM 120 to beat_index and phase with period 0.5 s. Enforce
+        license_ok true and pirated_sample_pack false as hard gates. Cracked sample packs fail
+        regardless of beat math. Do not invent device-latency millisecond offsets this week.
+        Also map t=0.0 and t=2.0 and show beat_index continuity without claiming a DAW license.
+        """,
+        4: """
+        Author GA-6404 transition table rows and reject illegal Jump→Run when the fixture forbids
+        it. Publish transition_ok and state_after that match legality. Boolean soups without a
+        table fail. Animation blend trees are not claimed complete after FSM week. Add Idle→Jump
+        as a legal row and document the guard condition in one sentence next to the table.
+        """,
+        5: """
+        For GA-6505, prove tiles.length == width*height and pin checksum to canonical bytes.
+        NO_AI week: hand-edit JSON; editor screenshots alone are not artifacts. Streaming chunks
+        stay still-need. checksum_ok is true only on digest match. Mutate one tile intentionally
+        and show checksum_ok flip to false before restoring the canonical bytes.
+        """,
+        6: """
+        Bind GA-6606 actions (not scancodes): Jump must appear with rebindable=true and
+        raw_only=false. Argue why device swaps must not break design docs. Week 9 remaps extend
+        this contract; they do not erase it. Provide a sample remap table keyboard→gamepad that
+        keeps the Jump action id stable across devices. Also bind Interact and Pause with the
+        same action-id rule, and show a failing submission that stores only HID scancodes without
+        action names so the class can quote the reject reason in journals.
+        """,
+        7: """
+        Optional GA-6707 case study may cite anime-aggressors, beatlink-party, earth-species, or
+        foot-racing — or none — with required_unmerged_branch=false. Hard-depending unmerged game
+        or Product-Use PRs fails the claim boundary. Attach fixture metrics for one lens without
+        demanding merges.
+        """,
+        8: """
+        Compute GA-6808 early_churn_rate = early_churn/sessions on the fixture (8/40=0.2) and keep
+        vanity_dau_claim false. Fake million-DAU slides fail. Median session minutes, when required,
+        come from list math, not adjectives. Cohort significance remains later-need.
+        """,
+        9: """
+        Complete GA-6909 a11y checklist: captions, remaps, colorblind_safe, flash_hz≤3 under NO_AI.
+        Fabricated disabled-player quotes are forbidden. Large-text menu notes belong in the student
+        packet path and must be cited in the journal. Record flash_hz from the fixture card and
+        refuse any cinematic trailer that exceeds the flash limit for accessibility.
+        """,
+        10: """
+        Ship GA-6910 with build_repro_hash, a11y_ok=true, labs_passed≥6, unmerged_branch_required
+        false, and four_games_optional_note. Require a keyboard-only path note in portfolio.
+        Product-Use must not consume this unmerged course branch; career certs stay aligned-not-granted.
+        """,
+    },
+}
+
+
+_BAD_MARKERS = (
+    "detail mark",
+    "operators keep a numbered ticket trail for",
+    "whiteboard the worked numbers before opening any gui",
+    "if a volunteer asks for a certificate selfie",
+    "evidence for this week lives in the submitted lab json",
+    "operator note: record evidence before changing shared systems",
+    "ticket arithmetic checkpoint",
+    "restate the worked example in your own symbols",
+)
+
+
 def deepen(cid: str, week: int, body: str) -> str:
     core = strip_lesson_padding(body)
-    # Also drop any residual Detail-mark fragments the regex might miss mid-paragraph
-    lines = [ln for ln in core.splitlines() if "detail mark" not in ln.lower()]
+    lines = [
+        ln
+        for ln in core.splitlines()
+        if "detail mark" not in ln.lower() and "ticket arithmetic checkpoint" not in ln.lower()
+    ]
     core = "\n".join(lines).strip()
-    extra = textwrap.dedent(EXPAND[cid][week]).strip()
-    # Avoid duplicating if already deepened in a prior run
-    if extra[:80] in core:
-        out = core
-    else:
-        out = (core + "\n\n" + extra).strip()
-    out = strip_lesson_padding(out)
+    # Drop residual checkpoint paragraphs the line filter may miss mid-wrap
+    paras = []
+    for p in re.split(r"\n\s*\n", core):
+        low = p.lower()
+        if "ticket arithmetic checkpoint" in low:
+            continue
+        if "restate the worked example in your own symbols" in low:
+            continue
+        paras.append(p)
+    core = "\n\n".join(paras).strip()
+
+    for block in (EXPAND.get(cid, {}).get(week), UNIQUE_MORE.get(cid, {}).get(week)):
+        if not block:
+            continue
+        extra = textwrap.dedent(block).strip()
+        if extra[:72] not in core:
+            core = (core + "\n\n" + extra).strip()
+
+    out = strip_lesson_padding(core)
     if len(out) < FLOOR:
-        # Add one more unique technical paragraph keyed by course+week numbers
-        filler = (
-            f"Ticket arithmetic checkpoint for {cid} week {week}: restate the worked example "
-            f"in your own symbols, list the JSON keys the lab will reject when missing, and name "
-            f"one claim you will not make (commercial standardized 6G, vendor cert grant, "
-            f"unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on "
-            f"a whiteboard before submitting student JSON. Empty objects fail; a file whose body "
-            f"is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs "
-            f"rather than recycling another academy's nouns."
+        raise SystemExit(
+            f"{cid} w{week} still short after unique deepen: {len(out)} < {FLOOR} "
+            "(refusing identical trailer fillers)"
         )
-        out = (out + "\n\n" + filler).strip()
-        out = strip_lesson_padding(out)
-    if len(out) < FLOOR:
-        raise SystemExit(f"{cid} w{week} still short after deepen: {len(out)}")
     low = out.lower()
-    for bad in (
-        "detail mark",
-        "operators keep a numbered ticket trail for",
-        "whiteboard the worked numbers before opening any gui",
-        "if a volunteer asks for a certificate selfie",
-        "evidence for this week lives in the submitted lab json",
-        "operator note: record evidence before changing shared systems",
-    ):
+    for bad in _BAD_MARKERS:
         if bad in low:
             raise SystemExit(f"{cid} w{week} still contains padding marker: {bad}")
     return out
@@ -297,17 +460,20 @@ def deepen(cid: str, week: int, body: str) -> str:
 def main() -> int:
     path = BATCH / "courses_data.json"
     data = json.loads(path.read_text(encoding="utf-8"))
-    mins = {}
+    mins: dict[str, int] = {}
     for cid, course in data.items():
-        week_mins = []
+        week_mins: list[int] = []
         for w in course["weeks"]:
             w["lesson"] = deepen(cid, int(w["week"]), w["lesson"])
             week_mins.append(len(strip_lesson_padding(w["lesson"])))
         mins[cid] = min(week_mins)
+        spam = detect_repeated_near_identical_trailers(course["weeks"])
+        if spam.get("spam"):
+            raise SystemExit(f"{cid} repeated trailer spam after remediate: {spam}")
         if mins[cid] < 871:
             raise SystemExit(f"{cid} min {mins[cid]} < 871")
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"stripped_mins": mins, "floor": 871}, indent=2))
+    print(json.dumps({"stripped_mins": mins, "floor": 871, "ticket_arithmetic_spam": 0}, indent=2))
     return 0
 
 

@@ -38,6 +38,10 @@ def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
             reasons.append(f"week {w.get('week')}: whiteboard-trailer padding")
         if "if a volunteer asks for a certificate selfie" in low:
             reasons.append(f"week {w.get('week')}: certificate-selfie trailer padding")
+        if "ticket arithmetic checkpoint" in low:
+            reasons.append(f"week {w.get('week')}: Ticket-arithmetic checkpoint trailer padding")
+        if "restate the worked example in your own symbols" in low:
+            reasons.append(f"week {w.get('week')}: worked-example-checkpoint trailer padding")
         stripped = strip_lesson_padding(raw)
         if len(stripped) < 800:
             reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")
@@ -89,6 +93,7 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     depth_ok, depth_reasons = _lesson_depth_ok(cid)
     need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
     need(int(prov.get("lesson_padding_rejected") or 0) == 0, "provenance rejected lesson padding")
+    need(not (prov.get("repeated_trailer_findings") or {}).get(cid), "repeated near-identical trailers")
     need(
         int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= (
             871 if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") else 800

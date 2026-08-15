@@ -12,7 +12,13 @@ must be false. Fake million-DAU slides fail. Cohort significance remains a later
 Median session minutes, when required by the lab fields, must come from the list math
 rather than adjectives.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 8: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Compute GA-6808 early_churn_rate = early_churn/sessions on the fixture (8/40=0.2) and keep
+vanity_dau_claim false. Fake million-DAU slides fail. Median session minutes, when required,
+come from list math, not adjectives. Cohort significance remains later-need.
+
+Recompute early_churn_rate with a second fixture slice (5 churn / 25 sessions = 0.2) and show
+the rate is identical while vanity_dau_claim stays false. Refuse screenshots that replace the
+ratio with adjectives about 'sticky players.'
 
 ## Worked example
 

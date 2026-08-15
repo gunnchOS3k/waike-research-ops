@@ -55,7 +55,7 @@ LETTERS = "ABCD"
 
 # Depth padding the independent verifier strips before measuring ≥800.
 # Include batch-003 Evidence/operator-note rubber-stamps and batch-004 Detail-mark /
-# rotating trailer spam invented to dodge those markers.
+# rotating trailer + Ticket-arithmetic-checkpoint spam invented to dodge those markers.
 _PAD_RE = re.compile(
     r"(Operator note: record evidence before changing shared systems\.\s*)+|"
     r"(Evidence discipline week \d+: keep ticket numbers, hashes, and fixture counts "
@@ -76,7 +76,9 @@ _PAD_RE = re.compile(
     r"(When tools disagree, name the observation first, then the inference, then what is "
     r"still needed\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
     r"(Runnable labs must fail empty submissions and reject a file whose entire body is "
-    r"PASS\.\s*(?:Detail mark [^\n.]*\.\s*)*)+",
+    r"PASS\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
+    # Batch-004 Ticket-arithmetic / synonym checkpoint trailer class
+    r"(Ticket arithmetic checkpoint for [^\n]*(?:\n(?!\n)[^\n]*)*)+",
     re.I,
 )
 _PAD_MARKERS = (
@@ -92,21 +94,113 @@ _PAD_MARKERS = (
     "keep journals free of patron faces, passwords, and fabricated impact statistics",
     "when tools disagree, name the observation first, then the inference",
     "runnable labs must fail empty submissions and reject a file whose entire body is pass",
+    "ticket arithmetic checkpoint",
+    "restate the worked example in your own symbols",
+)
+
+# Phrases that often head synonym depth-padding trailers (defense for the next rename).
+_TRAILER_HEAD_MARKERS = (
+    "ticket arithmetic checkpoint",
+    "detail mark",
+    "operator note: record evidence",
+    "evidence discipline week",
+    "evidence for this week lives",
+    "operators keep a numbered ticket trail",
 )
 
 
 def strip_lesson_padding(text: str) -> str:
-    """Remove operator-note / evidence / Detail-mark trailer spam before depth measurement."""
+    """Remove operator-note / evidence / Detail-mark / Ticket-arithmetic trailer spam."""
     cleaned = _PAD_RE.sub("", text or "")
-    # Defense-in-depth: drop any remaining line that still carries Detail-mark spam.
+    # Drop whole paragraphs that still carry known pad heads (synonym-resistant cleanup).
+    kept_paras: list[str] = []
+    for para in re.split(r"\n\s*\n", cleaned):
+        low = para.lower()
+        if any(m in low for m in _TRAILER_HEAD_MARKERS):
+            continue
+        if "detail mark" in low:
+            continue
+        kept_paras.append(para)
+    cleaned = "\n\n".join(kept_paras)
+    # Line-level Detail-mark residue
     kept: list[str] = []
     for line in cleaned.splitlines():
-        low = line.lower()
-        if "detail mark" in low:
+        if "detail mark" in line.lower():
             continue
         kept.append(line)
     cleaned = "\n".join(kept)
     return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
+
+
+def _normalize_trailer_blob(text: str) -> str:
+    """Normalize course/week/ticket tokens so synonym pads compare as one body."""
+    t = (text or "").lower()
+    t = re.sub(r"\b(wireless_6g|robotics_control|game_dev_interactive)\b", "course", t)
+    t = re.sub(r"\bweek\s+\d+\b", "week n", t)
+    t = re.sub(r"\bw\d{1,2}\b", "wn", t)
+    t = re.sub(r"\b(?:wr|rb|ga|ef|it|nw|cy)-\d+\b", "ticket", t)
+    t = re.sub(r"[^a-z0-9\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def week_trailer_paragraph(lesson: str, min_chars: int = 180, max_chars: int = 650) -> str:
+    """Last substantial paragraph (or lesson tail) used for cross-week trailer spam checks."""
+    parts = [p.strip() for p in re.split(r"\n\s*\n", (lesson or "").strip()) if p.strip()]
+    if not parts:
+        return ""
+    last = parts[-1]
+    if len(last) >= min_chars:
+        return last[:max_chars]
+    return (lesson or "").strip()[-max_chars:]
+
+
+def detect_repeated_near_identical_trailers(
+    weeks: list[dict[str, Any]],
+    *,
+    min_hits: int = 3,
+    min_chars: int = 180,
+    jaccard_thresh: float = 0.85,
+) -> dict[str, Any]:
+    """Fail when the same near-identical trailer body repeats across weeks (any synonym class)."""
+    trailers: list[tuple[int, str, str]] = []
+    for w in weeks:
+        raw = week_trailer_paragraph(w.get("lesson") or "", min_chars=min_chars)
+        if len(raw) < min_chars:
+            continue
+        trailers.append((int(w.get("week") or 0), raw, _normalize_trailer_blob(raw)))
+
+    exact_counts = Counter(n for _, _, n in trailers)
+    for norm, count in exact_counts.items():
+        if count >= min_hits:
+            weeks_hit = [wk for wk, _, n in trailers if n == norm]
+            return {
+                "spam": True,
+                "kind": "normalized_exact",
+                "hits": count,
+                "weeks": weeks_hit,
+                "sample": norm[:160],
+            }
+
+    # Pairwise near-duplicates (catches light synonym edits of the same pad).
+    involved: set[int] = set()
+    pair_hits = 0
+    for i in range(len(trailers)):
+        for j in range(i + 1, len(trailers)):
+            a_raw, b_raw = trailers[i][1], trailers[j][1]
+            if jaccard(a_raw, b_raw) >= jaccard_thresh:
+                pair_hits += 1
+                involved.add(trailers[i][0])
+                involved.add(trailers[j][0])
+    if len(involved) >= min_hits and pair_hits >= min_hits:
+        return {
+            "spam": True,
+            "kind": "pairwise_jaccard",
+            "hits": pair_hits,
+            "weeks": sorted(involved),
+            "jaccard_thresh": jaccard_thresh,
+        }
+    return {"spam": False, "hits": 0, "weeks": []}
 
 
 def _ngrams(text: str, n: int = 5) -> set[tuple[str, ...]]:
@@ -187,6 +281,7 @@ def audit() -> dict[str, Any]:
 
     stripped_lesson_mins: dict[str, int] = {}
     lesson_padding_rejected = 0
+    repeated_trailer_findings: dict[str, Any] = {}
     for cid, text in texts.items():
         low = text.lower()
         for marker in FORBIDDEN_SUBSTRINGS + DUMP_MARKERS + GENERIC_TEMPLATE_MARKERS:
@@ -198,7 +293,7 @@ def audit() -> dict[str, Any]:
         if len(set(weeks)) < 8:
             findings.append(f"{cid} week openings not distinct")
 
-        # Raise RC depth gate: reject operator-note / evidence-discipline / lab-JSON spam.
+        # Raise RC depth gate: reject operator-note / evidence / Detail-mark / Ticket-arithmetic spam.
         week_stripped_lens: list[int] = []
         for w in COURSES[cid]["weeks"]:
             raw = w["lesson"]
@@ -207,7 +302,7 @@ def audit() -> dict[str, Any]:
                 lesson_padding_rejected += 1
                 findings.append(
                     f"{cid} week {w['week']} uses operator-note/evidence-discipline/"
-                    f"lab-JSON-evidence/Detail-mark trailer depth padding"
+                    f"lab-JSON-evidence/Detail-mark/Ticket-arithmetic trailer depth padding"
                 )
             stripped = strip_lesson_padding(raw)
             week_stripped_lens.append(len(stripped))
@@ -221,6 +316,17 @@ def audit() -> dict[str, Any]:
                     f"{cid} week {w['week']} stripped lesson depth {len(stripped)} < {floor}"
                 )
         stripped_lesson_mins[cid] = min(week_stripped_lens) if week_stripped_lens else 0
+
+        # General cross-week near-identical trailer detector (catches the next synonym pad).
+        trailer_spam = detect_repeated_near_identical_trailers(COURSES[cid]["weeks"])
+        if trailer_spam.get("spam"):
+            lesson_padding_rejected += int(trailer_spam.get("hits") or 1)
+            findings.append(
+                f"{cid} repeated near-identical lesson trailers "
+                f"kind={trailer_spam.get('kind')} hits={trailer_spam.get('hits')} "
+                f"weeks={trailer_spam.get('weeks')}"
+            )
+            repeated_trailer_findings[cid] = trailer_spam
 
         weekly = list(_weekly_stems(cid))
         if len(weekly) < 60:
@@ -345,6 +451,7 @@ def audit() -> dict[str, Any]:
         "exam_restatement_hits": restatement_hits[:20],
         "stripped_lesson_mins": stripped_lesson_mins,
         "lesson_padding_rejected": lesson_padding_rejected,
+        "repeated_trailer_findings": repeated_trailer_findings,
         "registry_size": len(registry.get("sources", [])),
         "findings": findings,
         "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only.",

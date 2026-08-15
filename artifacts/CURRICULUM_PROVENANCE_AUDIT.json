@@ -3,10 +3,10 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0416,
+  "worst_jaccard": 0.0139,
   "worst_pair": [
-    "ROBOTICS_CONTROL",
-    "GAME_DEV_INTERACTIVE"
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS"
   ],
   "worst_packaging_jaccard": 0.1316,
   "worst_packaging_pair": [
@@ -14,21 +14,6 @@
     "GAME_DEV_INTERACTIVE"
   ],
   "pairs": [
-    {
-      "a": "ROBOTICS_CONTROL",
-      "b": "GAME_DEV_INTERACTIVE",
-      "jaccard_5gram": 0.0416
-    },
-    {
-      "a": "WIRELESS_6G",
-      "b": "GAME_DEV_INTERACTIVE",
-      "jaccard_5gram": 0.0294
-    },
-    {
-      "a": "WIRELESS_6G",
-      "b": "ROBOTICS_CONTROL",
-      "jaccard_5gram": 0.0278
-    },
     {
       "a": "DATA_VIZ_BI",
       "b": "CLOUD_DEVOPS",
@@ -50,9 +35,24 @@
       "jaccard_5gram": 0.0037
     },
     {
+      "a": "ROBOTICS_CONTROL",
+      "b": "GAME_DEV_INTERACTIVE",
+      "jaccard_5gram": 0.0009
+    },
+    {
       "a": "AI_ML_EDGE",
       "b": "DATA_VIZ_BI",
       "jaccard_5gram": 0.0005
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "ROBOTICS_CONTROL",
+      "jaccard_5gram": 0.0005
+    },
+    {
+      "a": "GENERAL_IT",
+      "b": "CYBERSECURITY",
+      "jaccard_5gram": 0.0003
     }
   ],
   "packaging_pairs": [
@@ -298,10 +298,11 @@
     "DATA_VIZ_BI": 881,
     "CLOUD_DEVOPS": 871,
     "WIRELESS_6G": 903,
-    "ROBOTICS_CONTROL": 935,
-    "GAME_DEV_INTERACTIVE": 1056
+    "ROBOTICS_CONTROL": 907,
+    "GAME_DEV_INTERACTIVE": 911
   },
   "lesson_padding_rejected": 0,
+  "repeated_trailer_findings": {},
   "registry_size": 35,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."

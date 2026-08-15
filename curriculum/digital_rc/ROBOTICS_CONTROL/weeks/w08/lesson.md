@@ -12,7 +12,14 @@ after this toy.
 
 Finite K and two measurements are required; certainty theater fails honesty.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 8: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+For RB-5808, compute K=p/(p+r) with p=0.04, r=0.01, form x_hat, and refuse cov_zero_lie.
+Show how the lower-variance measurement pulls the estimate. State explicitly that full
+SE(2) EKF is not earned by this scalar toy. Certainty theater (P=0) fails honesty.
+Repeat with p=0.09, r=0.01 and note how K shrinks when prior variance rises, still
+refusing any submission that asserts zero covariance as a lie flag.
+
+Plot K versus r for fixed p=0.04 across r in {0.01,0.04,0.16} and write one sentence on why
+cov_zero_lie cannot be true for any of those points on RB-5808.
 
 ## Worked example
 

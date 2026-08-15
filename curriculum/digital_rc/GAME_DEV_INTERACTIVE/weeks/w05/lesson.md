@@ -12,7 +12,10 @@ NO_AI week. Editor GUI screenshots alone are not artifacts. Streaming chunks sta
 
 checksum_ok must be true only when the digest matches the canonical serialization.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 5: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+For GA-6505, prove tiles.length == width*height and pin checksum to canonical bytes.
+NO_AI week: hand-edit JSON; editor screenshots alone are not artifacts. Streaming chunks
+stay still-need. checksum_ok is true only on digest match. Mutate one tile intentionally
+and show checksum_ok flip to false before restoring the canonical bytes.
 
 ## Worked example
 

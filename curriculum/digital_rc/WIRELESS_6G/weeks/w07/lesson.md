@@ -15,7 +15,12 @@ Ungated reinforcement-learning theater fails the validator.
 NO_AI quiz week still allows disclosed calculators on the lab JSON. Closed-loop field
 trial evidence is not claimed; the pier remains RESEARCH_LAB_SCALE.
 
-Ticket arithmetic checkpoint for WIRELESS_6G week 7: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+On WR-4707, enumerate observe_kpis as concrete CSV column names (bler, prb_util, snr_p50)
+before proposing MCS or PRB moves. Document the human gate as a named pier operator role,
+not a checkbox theater. Auto-apply without that gate must remain false in every submitted
+JSON variant the class practices. Compare one gated proposal against an ungated fantasy
+loop and mark which fields the validator rejects. Keep AI-RAN vocabulary at RESEARCH_LAB_SCALE;
+do not imply pier-wide closed-loop autonomy from this ticket alone.
 
 ## Worked example
 

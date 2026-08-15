@@ -11,7 +11,13 @@ transition_ok and state_after must match legality. Boolean soups without a table
 
 Animation blend trees are not claimed done after FSM week.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 4: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Author GA-6404 transition table rows and reject illegal Jump→Run when the fixture forbids
+it. Publish transition_ok and state_after that match legality. Boolean soups without a
+table fail. Animation blend trees are not claimed complete after FSM week. Add Idle→Jump
+as a legal row and document the guard condition in one sentence next to the table.
+
+Add a legal Run→Idle transition beside the illegal Jump→Run row so learners contrast guards
+rather than memorizing a single boolean.
 
 ## Worked example
 

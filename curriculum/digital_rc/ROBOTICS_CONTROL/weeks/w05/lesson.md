@@ -12,7 +12,10 @@ aisle truth fails sensing discipline.
 
 Bias calibration remains a later ladder rung. Empty submissions fail student_artifact.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 5: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Clean RB-5505 lidar [1.01,1.00,0.99,1.02,3.50] with the >2.0 m hard gate, recompute mean
+and cleaned_n, and set outlier_dropped true when 3.50 is removed. Show why trusting the
+raw max as aisle truth breaks sensing discipline. Bias calibration stays on the still-need
+rung; empty student_artifact still fails.
 
 ## Worked example
 

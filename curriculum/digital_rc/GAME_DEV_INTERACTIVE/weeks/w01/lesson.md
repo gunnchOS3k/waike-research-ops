@@ -14,7 +14,10 @@ interpolation is allowed; simulation steps stay fixed.
 Handheld profiling remains PHYSICAL_PENDING. 'Just use delta everywhere' without a
 guard fails the loop contract.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 1: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+On GA-6101, simulate three frame_time samples (0.016, 0.040, 0.30) through the accumulator
+with dt=1/60 and show when spiral_of_death_guard clamps. Keep simulation steps fixed while
+allowing render interpolation. Handheld profiling stays PHYSICAL_PENDING; delta-everywhere
+without a guard fails the loop contract.
 
 ## Worked example
 

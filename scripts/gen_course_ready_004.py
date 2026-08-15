@@ -41,7 +41,8 @@ def ensure_lesson(body: str, tag: str = "") -> str:
         "if a volunteer asks for a certificate selfie",
         "keep journals free of patron faces, passwords, and fabricated impact statistics",
         "when tools disagree, name the observation first, then the inference",
-        "runnable labs must fail empty submissions and reject a file whose entire body is pass",
+        "ticket arithmetic checkpoint",
+        "restate the worked example in your own symbols",
     ):
         if bad in low:
             raise ValueError(f"padding marker present: {bad}")

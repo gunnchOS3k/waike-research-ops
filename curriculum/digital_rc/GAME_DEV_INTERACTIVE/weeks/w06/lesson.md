@@ -10,7 +10,12 @@ Actions, not scancodes: Jump must appear, rebindable=true, raw_only=false. Devic
 should not break design docs. Week 9 accessibility remaps extend this work; they do not
 delete it.
 
-Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 6: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Bind GA-6606 actions (not scancodes): Jump must appear with rebindable=true and
+raw_only=false. Argue why device swaps must not break design docs. Week 9 remaps extend
+this contract; they do not erase it. Provide a sample remap table keyboard→gamepad that
+keeps the Jump action id stable across devices. Also bind Interact and Pause with the
+same action-id rule, and show a failing submission that stores only HID scancodes without
+action names so the class can quote the reject reason in journals.
 
 ## Worked example
 

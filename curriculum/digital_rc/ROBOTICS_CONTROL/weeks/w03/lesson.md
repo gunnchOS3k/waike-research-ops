@@ -14,7 +14,10 @@ anti_windup_note must be a real mitigation sentence (≥8 characters), not an em
 Plant identification remains unfinished. Wrong u fails even if the motor 'sounds right'
 on a phone video.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 3: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Walk RB-5303 with the full e series [1.0,0.6,0.2], accumulate rectangular integral, form
+backward Δe/dt, and publish u for the last sample with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.
+When |integral| grows, anti_windup_note must name a mitigation (clamp, back-calculation)
+in ≥8 characters. Wrong u fails even if a phone video of the motor looks smooth.
 
 ## Worked example
 

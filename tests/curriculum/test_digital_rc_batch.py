@@ -15,7 +15,11 @@ from waike_course_ready.exams import TOKEN_JACCARD_FAIL, nearest_weekly, token_i
 from waike_course_ready.ingest import build_learner, build_product_catalog, build_teacher
 from waike_course_ready.labs import _fail_if_print_pass, run_all, run_lab
 from waike_course_ready.packaging import SYLLABUS_ASSESSMENT, rubrics
-from waike_course_ready.provenance import audit, strip_lesson_padding
+from waike_course_ready.provenance import (
+    audit,
+    detect_repeated_near_identical_trailers,
+    strip_lesson_padding,
+)
 
 BATCH_001 = {"GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY"}
 BATCH_002 = {"SOFTWARE_BUILDER", "HARDWARE_ENGINEERING", "PM_AGILE_LSS"}
@@ -52,6 +56,8 @@ def test_each_course_has_depth():
             assert "operators keep a numbered ticket trail for" not in low
             assert "whiteboard the worked numbers before opening any gui" not in low
             assert "if a volunteer asks for a certificate selfie" not in low
+            assert "ticket arithmetic checkpoint" not in low
+            assert "restate the worked example in your own symbols" not in low
             stripped = strip_lesson_padding(raw)
             floor = 871 if cid in BATCH_004 else 800
             assert len(stripped) >= floor, (cid, w["week"], len(stripped), floor)
@@ -59,9 +65,12 @@ def test_each_course_has_depth():
             assert "Evidence discipline week" not in stripped
             assert "Evidence for this week lives" not in stripped
             assert "Detail mark" not in stripped
+            assert "Ticket arithmetic checkpoint" not in stripped
         items = sum(len(w["quiz"]) for w in c["weeks"])
         assert items >= 48, (cid, items)
         assert len({w["lesson"][:120] for w in c["weeks"]}) == len(c["weeks"]), cid
+        spam = detect_repeated_near_identical_trailers(c["weeks"])
+        assert spam.get("spam") is False, (cid, spam)
 
 
 def test_strip_lesson_padding_removes_lab_json_evidence_spam():
@@ -114,6 +123,53 @@ def test_strip_lesson_padding_removes_detail_mark_trailer_spam():
     assert len(stripped) >= 800
     assert "WR-4101" in stripped
     assert "Commercial standardized 6G does not exist" in stripped
+
+
+def test_strip_lesson_padding_removes_ticket_arithmetic_trailer_spam():
+    real = (
+        "HarborBot RB-5909 validates cmd_vel-shaped JSON with finite linear_x and angular_z "
+        "and frame_id=base_link. fleet_claim stays false; NaNs fail. Production DDS pins are "
+        "not granted by schema vocabulary alone on the pier tabletop. " * 5
+    )
+    padded = (
+        real
+        + "\n\nTicket arithmetic checkpoint for ROBOTICS_CONTROL week 9: restate the worked example "
+        "in your own symbols, list the JSON keys the lab will reject when missing, and name one "
+        "claim you will not make (commercial standardized 6G, vendor cert grant, unmerged "
+        "Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard "
+        "before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. "
+        "Keep prose specific to this week's fixture paths and ticket IDs rather than recycling "
+        "another academy's nouns."
+    )
+    stripped = strip_lesson_padding(padded)
+    assert "Ticket arithmetic checkpoint" not in stripped
+    assert "restate the worked example in your own symbols" not in stripped.lower()
+    assert len(stripped) < len(padded)
+    assert len(stripped) >= 800
+    assert "RB-5909" in stripped
+
+
+def test_detect_repeated_near_identical_trailers_catches_synonym_pads():
+    base = (
+        "restAte the worked example in your own symbols, list the JSON keys the lab will reject "
+        "when missing, and name one claim you will not make. Defend the numbers on a whiteboard "
+        "before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. "
+        "Keep prose specific to this week's fixture paths and ticket IDs."
+    )
+    weeks = []
+    for i in range(1, 5):
+        weeks.append(
+            {
+                "week": i,
+                "lesson": (
+                    f"Unique opener for week {i} with distinct ticket math and fixture notes. " * 4
+                    + f"\n\nTicket arithmetic checkpoint for COURSE week {i}: {base}"
+                ),
+            }
+        )
+    spam = detect_repeated_near_identical_trailers(weeks)
+    assert spam.get("spam") is True
+    assert spam.get("hits", 0) >= 3
 
 
 def test_labs_compute_and_negatives_fail():

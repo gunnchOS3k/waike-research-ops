@@ -1,10 +1,10 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0416,
+  "worst_jaccard": 0.0139,
   "worst_pair": [
-    "ROBOTICS_CONTROL",
-    "GAME_DEV_INTERACTIVE"
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS"
   ],
   "worst_packaging_jaccard": 0.1316,
   "worst_packaging_pair": [

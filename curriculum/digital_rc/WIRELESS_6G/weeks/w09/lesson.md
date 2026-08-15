@@ -15,7 +15,11 @@ DevOps slide deck into O-RAN vocabulary fails the week.
 O2 may appear as optional vocabulary but does not unlock a production RIC claim.
 RESEARCH_LAB_SCALE is the only honest size label for WR-4909.
 
-Ticket arithmetic checkpoint for WIRELESS_6G week 9: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Sketch A1 policy advice, E2 near-RT control, and O1/O2 management as separate arrows on
+the pier whiteboard for WR-4909. Require deployed_full_ric=false until an E2 subscription
+log path exists. Write one sentence explaining why a Cloud/DevOps deck cannot be
+noun-swapped into O-RAN interfaces. Cap the honesty note at RESEARCH_LAB_SCALE and refuse
+production RIC claims without PHYSICAL_PENDING evidence.
 
 ## Worked example
 

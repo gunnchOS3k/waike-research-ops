@@ -1,0 +1,65 @@
+{
+  "packet": "WAIKE-COURSE-READY-004",
+  "pr": 46,
+  "base_tip_before_commit": "2fff72ec034335b440ddede2f5e171ae58a957e4",
+  "status": "PASS",
+  "gates": {
+    "labs_110": true,
+    "prior_9_plus_batch004_12": true,
+    "ticket_arithmetic_absent": true,
+    "repeated_trailer_spam_0": true,
+    "stripped_mins_ge_871": true,
+    "adversarial_collapse_mins_ge_871": true,
+    "COURSE_DIGITAL_RC_BATCH": true,
+    "provenance_PASS": true,
+    "lesson_padding_rejected_0": true,
+    "REAL_STUDENT_E6": false,
+    "REAL_TEACHER_E6": false,
+    "HUMAN_E6": false
+  },
+  "stripped_lesson_mins": {
+    "WIRELESS_6G": 903,
+    "ROBOTICS_CONTROL": 907,
+    "GAME_DEV_INTERACTIVE": 911
+  },
+  "adversarial_collapse_mins": {
+    "WIRELESS_6G": 903,
+    "ROBOTICS_CONTROL": 907,
+    "GAME_DEV_INTERACTIVE": 911
+  },
+  "repeated_trailer_findings": {
+    "WIRELESS_6G": {
+      "spam": false,
+      "hits": 0,
+      "weeks": []
+    },
+    "ROBOTICS_CONTROL": {
+      "spam": false,
+      "hits": 0,
+      "weeks": []
+    },
+    "GAME_DEV_INTERACTIVE": {
+      "spam": false,
+      "hits": 0,
+      "weeks": []
+    }
+  },
+  "ticket_arithmetic_hits": 0,
+  "courses": [
+    "GENERAL_IT",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "SOFTWARE_BUILDER",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "AI_ML_EDGE",
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS",
+    "WIRELESS_6G",
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
+  ],
+  "lab_count": 110,
+  "claim_boundary": "Independent re-verify after Ticket-arithmetic remediation. Cursor does not merge. REAL_*/COHORT/ACCREDITED stay false.",
+  "generated_at": "2026-08-15T18:14:46.571383+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "packet": "WAIKE-COURSE-READY-004",
-  "remediation": "WAIKE-COURSE-READY-004 Detail-mark/trailer padding removed; strip_lesson_padding extended; RC re-earned under #45 floor 871",
+  "remediation": "WAIKE-COURSE-READY-004 Detail-mark + Ticket-arithmetic trailer padding removed; strip_lesson_padding + repeated-trailer detector extended; RC re-earned under #45 floor 871",
   "taxonomy_map": {
     "Wireless / 5G-Advanced / 6G / NTN / AI-RAN": "WIRELESS_6G",
     "Robotics / Control": "ROBOTICS_CONTROL",
@@ -42,7 +42,7 @@
       "final": 24,
       "labs": 10,
       "rubrics": 8,
-      "stripped_lesson_min": 935,
+      "stripped_lesson_min": 907,
       "COURSE_DIGITAL_RC": true
     },
     {
@@ -55,7 +55,7 @@
       "final": 24,
       "labs": 10,
       "rubrics": 8,
-      "stripped_lesson_min": 1056,
+      "stripped_lesson_min": 911,
       "COURSE_DIGITAL_RC": true
     }
   ],
@@ -68,6 +68,7 @@
   "provenance_status": "PASS",
   "template_status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
+  "repeated_trailer_spam": 0,
   "COURSE_DIGITAL_RC_BATCH": true,
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
@@ -78,7 +79,9 @@
   "device_os_curriculum_pr": false,
   "stripper": {
     "detail_mark_removed": true,
+    "ticket_arithmetic_removed": true,
     "rotating_trailer_removed": true,
-    "tests_cover_detail_mark_class": true
+    "repeated_trailer_detector": true,
+    "tests_cover_ticket_arithmetic_class": true
   }
 }

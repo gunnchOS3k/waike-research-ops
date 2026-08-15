@@ -10,7 +10,14 @@ cmd_vel-shaped JSON needs finite linear_x/angular_z and frame_id=base_link.
 fleet_claim=false. NaNs fail. NO_AI week: hand-author the schema. Production DDS/ROS
 distro pins are not granted by schema vocabulary alone.
 
-Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 9: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
+Hand-author RB-5909 cmd_vel JSON with finite linear_x, angular_z, and frame_id=base_link.
+fleet_claim must be false; NaNs fail. NO_AI week forbids generative schema dumps.
+Production DDS/ROS distro pins are not granted by vocabulary alone. Add a negative case
+with angular_z=null and show the validator reject text the pier expects learners to cite.
+
+Document a second negative for RB-5909: linear_x set to NaN while angular_z is finite, and show
+that fleet_claim must remain false even if a slide deck claims fifty harbor robots. Cite the
+schema card fields by name in the journal so the reject is reproducible without a GUI.
 
 ## Worked example
 
