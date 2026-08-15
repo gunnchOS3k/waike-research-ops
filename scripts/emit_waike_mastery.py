@@ -138,7 +138,10 @@ def main() -> int:
             "skill_graph_nodes": graph["node_count"],
             "skill_graph_edges": graph["edge_count"],
             "curriculum_defect_candidates": audit["defect_candidate_count"],
-            "source": "origin/main digital_rc (WAIKE #45 nine-course corpus); #46 not required",
+            "source": (
+                "filesystem discovery of curriculum/digital_rc/*/course.json "
+                "(main/#45 = 9 courses; regenerate after #46 merges for 12)"
+            ),
         },
         "mastery_scores": {
             "overall": bench["overall_score"],

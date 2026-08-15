@@ -21,10 +21,13 @@ def contract():
 
 def test_discover_not_hardcoded_nine_names(contract):
     assert contract["discovery"]["hardcoded_course_names"] is False
+    assert contract["discovery"]["method"] == "filesystem_scan"
     assert contract["discovery"]["course_count"] >= 9
     ids = {c["course_id"] for c in contract["courses"]}
     assert "SOFTWARE_BUILDER" in ids
     assert "GENERAL_IT" in ids
+    # Ready for #46 merge: discovery is dynamic; do not hardcode nine forever.
+    assert isinstance(contract["courses"], list)
 
 
 def test_permission_separation(contract):
