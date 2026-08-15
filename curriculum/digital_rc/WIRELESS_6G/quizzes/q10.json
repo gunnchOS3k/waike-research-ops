@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "wr-w10-1",
+      "kind": "mcq",
+      "stem": "product_use_unmerged_consumed?",
+      "choices": [
+        "true",
+        "optional",
+        "false",
+        "required"
+      ]
+    },
+    {
+      "id": "wr-w10-2",
+      "kind": "mcq",
+      "stem": "commercial_6g false statement included?",
+      "choices": [
+        "false",
+        "null",
+        "Rel-20",
+        "true"
+      ]
+    },
+    {
+      "id": "wr-w10-3",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "6",
+        "1",
+        "3",
+        "100"
+      ]
+    },
+    {
+      "id": "wr-w10-4",
+      "kind": "mcq",
+      "stem": "Grants 3GPP cert?",
+      "choices": [
+        "Yes",
+        "No",
+        "After final",
+        "Auto"
+      ]
+    },
+    {
+      "id": "wr-w10-5",
+      "kind": "mcq",
+      "stem": "Depend on unmerged Product-Use?",
+      "choices": [
+        "Yes",
+        "If QEMU",
+        "No",
+        "If AI"
+      ]
+    },
+    {
+      "id": "wr-w10-6",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Granted",
+        "Hidden",
+        "Sold",
+        "Aligned not granted"
+      ]
+    }
+  ]
+}

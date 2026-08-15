@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "wr-w9-1",
+      "kind": "mcq",
+      "stem": "deployed_full_ric?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "6G"
+      ]
+    },
+    {
+      "id": "wr-w9-2",
+      "kind": "mcq",
+      "stem": "E2 here is?",
+      "choices": [
+        "Dump",
+        "Interface vocabulary",
+        "Commercial 6G",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "wr-w9-3",
+      "kind": "mcq",
+      "stem": "RIC claim without logs?",
+      "choices": [
+        "PASS",
+        "Required",
+        "Fails",
+        "Extra"
+      ]
+    },
+    {
+      "id": "wr-w9-4",
+      "kind": "mcq",
+      "stem": "Scale?",
+      "choices": [
+        "NATIONWIDE",
+        "GEO",
+        "CONSUMER_6G",
+        "RESEARCH_LAB_SCALE"
+      ]
+    },
+    {
+      "id": "wr-w9-5",
+      "kind": "mcq",
+      "stem": "A1 in map?",
+      "choices": [
+        "Yes",
+        "Never",
+        "NTN only",
+        "Games only"
+      ]
+    },
+    {
+      "id": "wr-w9-6",
+      "kind": "mcq",
+      "stem": "E2 logs status?",
+      "choices": [
+        "DONE",
+        "PHYSICAL_PENDING",
+        "Fake OK",
+        "Never"
+      ]
+    }
+  ]
+}

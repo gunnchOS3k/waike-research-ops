@@ -1,0 +1,225 @@
+{
+  "assessment_id": "GAME_DEV_INTERACTIVE-mid",
+  "items": [
+    {
+      "id": "ga01",
+      "kind": "mcq",
+      "stem": "Forge Arcade fixed simulation step used in the loop lab is?",
+      "choices": [
+        "1 second",
+        "0",
+        "1/60 second",
+        "60 seconds"
+      ]
+    },
+    {
+      "id": "ga02",
+      "kind": "mcq",
+      "stem": "When frame_time exceeds the clamp region, spiral_of_death_guard must be?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ]
+    },
+    {
+      "id": "ga03",
+      "kind": "mcq",
+      "stem": "AABB contact requires overlap on?",
+      "choices": [
+        "both axes",
+        "exactly one axis",
+        "VFX only",
+        "audio only"
+      ]
+    },
+    {
+      "id": "ga04",
+      "kind": "mcq",
+      "stem": "Using particle fireworks as the only collision evidence is?",
+      "choices": [
+        "Sufficient",
+        "A math failure",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga05",
+      "kind": "mcq",
+      "stem": "At 120 BPM the beat period equals?",
+      "choices": [
+        "1.0 s",
+        "2.0 s",
+        "0.5 s",
+        "0.12 s"
+      ]
+    },
+    {
+      "id": "ga06",
+      "kind": "mcq",
+      "stem": "pirated_sample_pack must evaluate to?",
+      "choices": [
+        "true",
+        "optional",
+        "required",
+        "false"
+      ]
+    },
+    {
+      "id": "ga07",
+      "kind": "mcq",
+      "stem": "An illegal finite-state edge should set transition_ok to?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "skip"
+      ]
+    },
+    {
+      "id": "ga08",
+      "kind": "mcq",
+      "stem": "Boolean flags with no transition table are?",
+      "choices": [
+        "Best practice",
+        "A discipline failure",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga09",
+      "kind": "mcq",
+      "stem": "Level tile array length must equal?",
+      "choices": [
+        "width plus height",
+        "always ten",
+        "width times height",
+        "an AI guess"
+      ]
+    },
+    {
+      "id": "ga10",
+      "kind": "mcq",
+      "stem": "NO_AI level-hash week expects?",
+      "choices": [
+        "Exam dumps",
+        "Cracked editors",
+        "Fake DAU",
+        "Hand-computed checksum fields"
+      ]
+    },
+    {
+      "id": "ga11",
+      "kind": "mcq",
+      "stem": "Input actions should be marked rebindable?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "raw-only"
+      ]
+    },
+    {
+      "id": "ga12",
+      "kind": "mcq",
+      "stem": "Design docs that list only raw scancodes should?",
+      "choices": [
+        "Pass",
+        "Fail the actions lab",
+        "Earn Unity cert",
+        "Earn Godot cert"
+      ]
+    },
+    {
+      "id": "ga13",
+      "kind": "mcq",
+      "stem": "required_unmerged_branch on the four-game case must be?",
+      "choices": [
+        "true",
+        "required",
+        "false",
+        "optional-true"
+      ]
+    },
+    {
+      "id": "ga14",
+      "kind": "mcq",
+      "stem": "Which title is a valid optional case-study example?",
+      "choices": [
+        "device-os merge PR",
+        "NET-SEC reopen",
+        "WP-001 packet",
+        "earth-species"
+      ]
+    },
+    {
+      "id": "ga15",
+      "kind": "mcq",
+      "stem": "If 5 of 25 sessions churn early, early_churn_rate is?",
+      "choices": [
+        "0.2",
+        "0.5",
+        "5",
+        "25"
+      ]
+    },
+    {
+      "id": "ga16",
+      "kind": "mcq",
+      "stem": "vanity_dau_claim must be?",
+      "choices": [
+        "true",
+        "false",
+        "required",
+        "optional"
+      ]
+    },
+    {
+      "id": "ga17",
+      "kind": "mcq",
+      "stem": "Accessibility captions flag must be?",
+      "choices": [
+        "false",
+        "optional",
+        "true",
+        "ai"
+      ]
+    },
+    {
+      "id": "ga18",
+      "kind": "mcq",
+      "stem": "flash_hz equal to 10 on the a11y lab should?",
+      "choices": [
+        "Pass",
+        "Earn bonus",
+        "Skip week",
+        "Fail the \u22643 rule"
+      ]
+    },
+    {
+      "id": "ga19",
+      "kind": "mcq",
+      "stem": "Ship checklist unmerged_branch_required must be?",
+      "choices": [
+        "false",
+        "true",
+        "optional-true",
+        "required-true"
+      ]
+    },
+    {
+      "id": "ga20",
+      "kind": "mcq",
+      "stem": "Game capstone labs_passed minimum is?",
+      "choices": [
+        "2",
+        "6",
+        "4",
+        "60"
+      ]
+    }
+  ]
+}

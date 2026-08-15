@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "ga-w9-1",
+      "kind": "mcq",
+      "stem": "captions?",
+      "choices": [
+        "false",
+        "optional",
+        "true",
+        "ai"
+      ]
+    },
+    {
+      "id": "ga-w9-2",
+      "kind": "mcq",
+      "stem": "flash_hz>3?",
+      "choices": [
+        "OK",
+        "Required",
+        "Extra",
+        "Fails"
+      ]
+    },
+    {
+      "id": "ga-w9-3",
+      "kind": "mcq",
+      "stem": "Week 9 ticket context: AI mode?",
+      "choices": [
+        "NO_AI",
+        "AI dumps",
+        "Skip",
+        "Auto"
+      ]
+    },
+    {
+      "id": "ga-w9-4",
+      "kind": "mcq",
+      "stem": "Fabricate disabled-player tests?",
+      "choices": [
+        "OK",
+        "Forbidden",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w9-5",
+      "kind": "mcq",
+      "stem": "remaps?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "raw"
+      ]
+    },
+    {
+      "id": "ga-w9-6",
+      "kind": "mcq",
+      "stem": "colorblind_safe?",
+      "choices": [
+        "false",
+        "ignore",
+        "gpu",
+        "true"
+      ]
+    }
+  ]
+}

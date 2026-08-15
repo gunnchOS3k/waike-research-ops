@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 80,
+  "lab_count": 110,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -99,11 +99,48 @@
       "lab_deploy_rollback_cloud",
       "lab_k8s_probes",
       "lab_incident_runbook"
+    ],
+    "WIRELESS_6G": [
+      "lab_fspl_budget",
+      "lab_ofdm_numerology",
+      "lab_5ga_feature_map",
+      "lab_mcs_bler",
+      "lab_ntn_delay",
+      "lab_delay_spread",
+      "lab_airan_policy",
+      "lab_spectrum_mask",
+      "lab_oran_interfaces",
+      "lab_radio_capstone"
+    ],
+    "ROBOTICS_CONTROL": [
+      "lab_se2_pose",
+      "lab_fk_2r",
+      "lab_pid_step",
+      "lab_traj_limits",
+      "lab_sensor_noise",
+      "lab_estop_policy",
+      "lab_diff_drive",
+      "lab_fuse_scalar",
+      "lab_cmd_vel_schema",
+      "lab_robot_capstone"
+    ],
+    "GAME_DEV_INTERACTIVE": [
+      "lab_game_loop",
+      "lab_aabb_hit",
+      "lab_beat_clock",
+      "lab_entity_fsm",
+      "lab_level_hash",
+      "lab_input_actions",
+      "lab_four_games_case",
+      "lab_playtest_metrics",
+      "lab_game_a11y",
+      "lab_game_capstone"
     ]
   },
   "batch_001_lab_count": 20,
   "batch_002_lab_count": 30,
   "batch_003_lab_count": 30,
+  "batch_004_lab_count": 30,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1465,7 +1502,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'nRF52840', 'SSD1306', 'AMS1117-3.3'}"
+          "detail": "mpns={'AMS1117-3.3', 'SSD1306', 'nRF52840'}"
         },
         {
           "name": "total",
@@ -1650,7 +1687,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
+          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
         },
         {
           "name": "cause",
@@ -2508,7 +2545,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'median_by_zone', 'open_count', 'freshness'}"
+          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
         },
         {
           "name": "max",
@@ -2954,6 +2991,1031 @@
       ],
       "claim_boundary": "Incident runbook without heroics. Fixture timeline only.",
       "boundary": "Incident runbook without heroics. Fixture timeline only."
+    },
+    {
+      "lab_id": "lab_fspl_budget",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "fspl",
+          "ok": true,
+          "detail": "expected 84.915"
+        },
+        {
+          "name": "no_commercial_6g",
+          "ok": true,
+          "detail": "must be false"
+        }
+      ],
+      "claim_boundary": "Friis fixture only. Not a live spectrum survey; commercial 6G does not exist.",
+      "boundary": "Friis fixture only. Not a live spectrum survey; commercial 6G does not exist."
+    },
+    {
+      "lab_id": "lab_ofdm_numerology",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "prb",
+          "ok": true,
+          "detail": "prb=n*df"
+        },
+        {
+          "name": "tsym",
+          "ok": true,
+          "detail": "T=1/df"
+        }
+      ],
+      "claim_boundary": "Numerology arithmetic fixture. Not a vendor waveform lab.",
+      "boundary": "Numerology arithmetic fixture. Not a vendor waveform lab."
+    },
+    {
+      "lab_id": "lab_5ga_feature_map",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "count",
+          "ok": true,
+          "detail": "need \u22653 features"
+        },
+        {
+          "name": "shape",
+          "ok": true,
+          "detail": "name+release_tag"
+        },
+        {
+          "name": "no_6g",
+          "ok": true,
+          "detail": "commercial_6g_exists false"
+        }
+      ],
+      "claim_boundary": "PUBLIC_REFERENCE_ONLY labels. No exam dumps; commercial 6G false.",
+      "boundary": "PUBLIC_REFERENCE_ONLY labels. No exam dumps; commercial 6G false."
+    },
+    {
+      "lab_id": "lab_mcs_bler",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mcs",
+          "ok": true,
+          "detail": "expected 2"
+        },
+        {
+          "name": "bler",
+          "ok": true,
+          "detail": "bler_at_choice"
+        }
+      ],
+      "claim_boundary": "BLER table fixture. Not an over-the-air campaign.",
+      "boundary": "BLER table fixture. Not an over-the-air campaign."
+    },
+    {
+      "lab_id": "lab_ntn_delay",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "one_way",
+          "ok": true,
+          "detail": "expected 2.333"
+        },
+        {
+          "name": "rtt",
+          "ok": true,
+          "detail": "expected 4.667"
+        },
+        {
+          "name": "not_geo",
+          "ok": true,
+          "detail": "geo_comparable false"
+        },
+        {
+          "name": "not_6g_std",
+          "ok": true,
+          "detail": "ntn_as_6g_standard false"
+        }
+      ],
+      "claim_boundary": "Light-time fixture. NTN is not a commercial 6G standard claim.",
+      "boundary": "Light-time fixture. NTN is not a commercial 6G standard claim."
+    },
+    {
+      "lab_id": "lab_delay_spread",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "taps",
+          "ok": true,
+          "detail": "tap_count"
+        },
+        {
+          "name": "tau",
+          "ok": true,
+          "detail": "expected 92.8826"
+        }
+      ],
+      "claim_boundary": "Discrete PDP RMS fixture. Not a channel sounder campaign.",
+      "boundary": "Discrete PDP RMS fixture. Not a channel sounder campaign."
+    },
+    {
+      "lab_id": "lab_airan_policy",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "action",
+          "ok": true,
+          "detail": "action must name MCS or PRB"
+        },
+        {
+          "name": "gate",
+          "ok": true,
+          "detail": "human_gate true"
+        },
+        {
+          "name": "no_ungated",
+          "ok": true,
+          "detail": "no ungated apply"
+        },
+        {
+          "name": "kpis",
+          "ok": true,
+          "detail": "kpis"
+        }
+      ],
+      "claim_boundary": "Gated AI-RAN policy fixture. Not ungated autonomy / not commercial 6G.",
+      "boundary": "Gated AI-RAN policy fixture. Not ungated autonomy / not commercial 6G."
+    },
+    {
+      "lab_id": "lab_spectrum_mask",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "center",
+          "ok": true,
+          "detail": "3.5 GHz"
+        },
+        {
+          "name": "obw",
+          "ok": true,
+          "detail": "18 MHz"
+        },
+        {
+          "name": "mask",
+          "ok": true,
+          "detail": "mask_ok"
+        },
+        {
+          "name": "auth",
+          "ok": true,
+          "detail": "unauthorized_tx false"
+        }
+      ],
+      "claim_boundary": "Lab-license narrative fixture. No unauthorized TX.",
+      "boundary": "Lab-license narrative fixture. No unauthorized TX."
+    },
+    {
+      "lab_id": "lab_oran_interfaces",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "a1",
+          "ok": true,
+          "detail": "A1"
+        },
+        {
+          "name": "e2",
+          "ok": true,
+          "detail": "E2"
+        },
+        {
+          "name": "o1",
+          "ok": true,
+          "detail": "O1"
+        },
+        {
+          "name": "no_fake_ric",
+          "ok": true,
+          "detail": "deployed_full_ric false"
+        }
+      ],
+      "claim_boundary": "O-RAN vocabulary map. RESEARCH_LAB_SCALE \u2014 not a production RIC claim.",
+      "boundary": "O-RAN vocabulary map. RESEARCH_LAB_SCALE \u2014 not a production RIC claim."
+    },
+    {
+      "lab_id": "lab_radio_capstone",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "sha",
+          "ok": true,
+          "detail": "sha256"
+        },
+        {
+          "name": "stmt",
+          "ok": true,
+          "detail": "6g false stmt"
+        },
+        {
+          "name": "no_pu",
+          "ok": true,
+          "detail": "no unmerged PU"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs\u22656"
+        }
+      ],
+      "claim_boundary": "Capstone notebook. No Product-Use unmerged consumption; commercial 6G false.",
+      "boundary": "Capstone notebook. No Product-Use unmerged consumption; commercial 6G false."
+    },
+    {
+      "lab_id": "lab_se2_pose",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "tool_x",
+          "ok": true,
+          "detail": "expected 1.2246467991473533e-17"
+        },
+        {
+          "name": "tool_y",
+          "ok": true,
+          "detail": "expected 0.2"
+        }
+      ],
+      "claim_boundary": "Planar pose fixture. Not a cinematic autonomy demo.",
+      "boundary": "Planar pose fixture. Not a cinematic autonomy demo."
+    },
+    {
+      "lab_id": "lab_fk_2r",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "x",
+          "ok": true,
+          "detail": "expected 0.5088543383822091"
+        },
+        {
+          "name": "y",
+          "ok": true,
+          "detail": "expected 0.3712944926962727"
+        },
+        {
+          "name": "reachable",
+          "ok": true,
+          "detail": "expected True"
+        }
+      ],
+      "claim_boundary": "2R FK + reachability fixture.",
+      "boundary": "2R FK + reachability fixture."
+    },
+    {
+      "lab_id": "lab_pid_step",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "u",
+          "ok": true,
+          "detail": "expected -0.08799999999999997"
+        },
+        {
+          "name": "anti",
+          "ok": true,
+          "detail": "anti_windup_note"
+        }
+      ],
+      "claim_boundary": "Discrete PID fixture with anti-windup note discipline.",
+      "boundary": "Discrete PID fixture with anti-windup note discipline."
+    },
+    {
+      "lab_id": "lab_traj_limits",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "t_min",
+          "ok": true,
+          "detail": "expected 3.8"
+        },
+        {
+          "name": "path",
+          "ok": true,
+          "detail": "path_ok vs vmax"
+        }
+      ],
+      "claim_boundary": "Trapezoid/triangle time bound fixture. vmax/amax honesty.",
+      "boundary": "Trapezoid/triangle time bound fixture. vmax/amax honesty."
+    },
+    {
+      "lab_id": "lab_sensor_noise",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "n",
+          "ok": true,
+          "detail": "cleaned_n"
+        },
+        {
+          "name": "mean",
+          "ok": true,
+          "detail": "expected 1.005"
+        },
+        {
+          "name": "dropped",
+          "ok": true,
+          "detail": "outlier_dropped"
+        }
+      ],
+      "claim_boundary": "Outlier gate on lidar fixture samples.",
+      "boundary": "Outlier gate on lidar fixture samples."
+    },
+    {
+      "lab_id": "lab_estop_policy",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "motors",
+          "ok": true,
+          "detail": "motors_disabled"
+        },
+        {
+          "name": "brake",
+          "ok": true,
+          "detail": "brake_engaged"
+        },
+        {
+          "name": "human",
+          "ok": true,
+          "detail": "resume_requires_human"
+        }
+      ],
+      "claim_boundary": "Hard E-stop policy. Soft hope is not safety.",
+      "boundary": "Hard E-stop policy. Soft hope is not safety."
+    },
+    {
+      "lab_id": "lab_diff_drive",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "B",
+          "ok": true,
+          "detail": "B>0"
+        },
+        {
+          "name": "v",
+          "ok": true,
+          "detail": "expected 0.15000000000000002"
+        },
+        {
+          "name": "omega",
+          "ok": true,
+          "detail": "expected 0.25"
+        }
+      ],
+      "claim_boundary": "Diff-drive ICC fixture.",
+      "boundary": "Diff-drive ICC fixture."
+    },
+    {
+      "lab_id": "lab_fuse_scalar",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "K",
+          "ok": true,
+          "detail": "expected 0.7999999999999999"
+        },
+        {
+          "name": "x_hat",
+          "ok": true,
+          "detail": "expected 1.16"
+        },
+        {
+          "name": "cov",
+          "ok": true,
+          "detail": "cov_zero_lie false"
+        }
+      ],
+      "claim_boundary": "Scalar fuse fixture with covariance honesty.",
+      "boundary": "Scalar fuse fixture with covariance honesty."
+    },
+    {
+      "lab_id": "lab_cmd_vel_schema",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "finite",
+          "ok": true,
+          "detail": "finite twist"
+        },
+        {
+          "name": "frame",
+          "ok": true,
+          "detail": "base_link"
+        },
+        {
+          "name": "fleet",
+          "ok": true,
+          "detail": "fleet_claim false"
+        }
+      ],
+      "claim_boundary": "cmd_vel-shaped schema fixture. No fleet deploy claim.",
+      "boundary": "cmd_vel-shaped schema fixture. No fleet deploy claim."
+    },
+    {
+      "lab_id": "lab_robot_capstone",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "estop",
+          "ok": true,
+          "detail": "estop_ok"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs\u22656"
+        },
+        {
+          "name": "no_dos",
+          "ok": true,
+          "detail": "no_device_os_pr"
+        },
+        {
+          "name": "sha",
+          "ok": true,
+          "detail": "sha"
+        }
+      ],
+      "claim_boundary": "Robotics capstone. Do not open device-os PRs from this packet.",
+      "boundary": "Robotics capstone. Do not open device-os PRs from this packet."
+    },
+    {
+      "lab_id": "lab_game_loop",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "dt",
+          "ok": true,
+          "detail": "dt=1/60"
+        },
+        {
+          "name": "steps",
+          "ok": true,
+          "detail": "steps"
+        },
+        {
+          "name": "guard",
+          "ok": true,
+          "detail": "guard when frame_time>0.25"
+        },
+        {
+          "name": "guard_flag",
+          "ok": true,
+          "detail": "guard true on reference"
+        }
+      ],
+      "claim_boundary": "Fixed-timestep loop fixture.",
+      "boundary": "Fixed-timestep loop fixture."
+    },
+    {
+      "lab_id": "lab_aabb_hit",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "ox",
+          "ok": true,
+          "detail": "expected 1.0"
+        },
+        {
+          "name": "oy",
+          "ok": true,
+          "detail": "expected 1.0"
+        },
+        {
+          "name": "hit",
+          "ok": true,
+          "detail": "expected True"
+        }
+      ],
+      "claim_boundary": "AABB overlap fixture.",
+      "boundary": "AABB overlap fixture."
+    },
+    {
+      "lab_id": "lab_beat_clock",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "idx",
+          "ok": true,
+          "detail": "expected 2"
+        },
+        {
+          "name": "phase",
+          "ok": true,
+          "detail": "expected 0.5"
+        },
+        {
+          "name": "license",
+          "ok": true,
+          "detail": "license_ok"
+        },
+        {
+          "name": "piracy",
+          "ok": true,
+          "detail": "no piracy"
+        }
+      ],
+      "claim_boundary": "Beat grid fixture. No pirated sample packs.",
+      "boundary": "Beat grid fixture. No pirated sample packs."
+    },
+    {
+      "lab_id": "lab_entity_fsm",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "ok",
+          "ok": true,
+          "detail": "expected True"
+        },
+        {
+          "name": "after",
+          "ok": true,
+          "detail": "expected Run"
+        }
+      ],
+      "claim_boundary": "Entity FSM fixture with illegal edge rejection.",
+      "boundary": "Entity FSM fixture with illegal edge rejection."
+    },
+    {
+      "lab_id": "lab_level_hash",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "len",
+          "ok": true,
+          "detail": "tiles len"
+        },
+        {
+          "name": "sum",
+          "ok": true,
+          "detail": "expected sha256:d9f2da580fadb6d1"
+        }
+      ],
+      "claim_boundary": "Level JSON pin with checksum.",
+      "boundary": "Level JSON pin with checksum."
+    },
+    {
+      "lab_id": "lab_input_actions",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "jump",
+          "ok": true,
+          "detail": "Jump"
+        },
+        {
+          "name": "rebind",
+          "ok": true,
+          "detail": "rebindable"
+        },
+        {
+          "name": "raw",
+          "ok": true,
+          "detail": "raw_only false"
+        }
+      ],
+      "claim_boundary": "Action-map fixture. Not scancode-only docs.",
+      "boundary": "Action-map fixture. Not scancode-only docs."
+    },
+    {
+      "lab_id": "lab_four_games_case",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "title",
+          "ok": true,
+          "detail": "optional title"
+        },
+        {
+          "name": "unmerged",
+          "ok": true,
+          "detail": "no unmerged req"
+        },
+        {
+          "name": "lens",
+          "ok": true,
+          "detail": "lens"
+        }
+      ],
+      "claim_boundary": "Optional four-game case study. No unmerged branch hard dependency.",
+      "boundary": "Optional four-game case study. No unmerged branch hard dependency."
+    },
+    {
+      "lab_id": "lab_playtest_metrics",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "rate",
+          "ok": true,
+          "detail": "rate"
+        },
+        {
+          "name": "vanity",
+          "ok": true,
+          "detail": "no vanity"
+        }
+      ],
+      "claim_boundary": "Playtest churn math. No vanity DAU claims.",
+      "boundary": "Playtest churn math. No vanity DAU claims."
+    },
+    {
+      "lab_id": "lab_game_a11y",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "captions",
+          "ok": true,
+          "detail": "captions"
+        },
+        {
+          "name": "remaps",
+          "ok": true,
+          "detail": "remaps"
+        },
+        {
+          "name": "cb",
+          "ok": true,
+          "detail": "colorblind_safe"
+        },
+        {
+          "name": "flash",
+          "ok": true,
+          "detail": "flash_hz\u22643"
+        }
+      ],
+      "claim_boundary": "Accessibility checklist fixture.",
+      "boundary": "Accessibility checklist fixture."
+    },
+    {
+      "lab_id": "lab_game_capstone",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "hash",
+          "ok": true,
+          "detail": "hash"
+        },
+        {
+          "name": "a11y",
+          "ok": true,
+          "detail": "a11y_ok"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs\u22656"
+        },
+        {
+          "name": "unmerged",
+          "ok": true,
+          "detail": "unmerged false"
+        },
+        {
+          "name": "note",
+          "ok": true,
+          "detail": "note"
+        }
+      ],
+      "claim_boundary": "Game capstone. No unmerged hard deps; a11y required.",
+      "boundary": "Game capstone. No unmerged hard deps; a11y required."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -2991,6 +4053,18 @@
     },
     {
       "lab_id": "lab_linux_perms_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_fspl_budget_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_estop_policy_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_game_a11y_negative",
       "ok": true
     }
   ],
@@ -3320,6 +4394,126 @@
     {
       "lab_id": "lab_incident_runbook",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fspl_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ofdm_numerology",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_5ga_feature_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_mcs_bler",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ntn_delay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_delay_spread",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_airan_policy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_spectrum_mask",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_oran_interfaces",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_radio_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_se2_pose",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fk_2r",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pid_step",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_traj_limits",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sensor_noise",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_estop_policy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_diff_drive",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fuse_scalar",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cmd_vel_schema",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_robot_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_loop",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_aabb_hit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_beat_clock",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_entity_fsm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_level_hash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_input_actions",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_four_games_case",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_playtest_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_a11y",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_capstone",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -3641,6 +4835,126 @@
     },
     {
       "lab_id": "lab_incident_runbook",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fspl_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ofdm_numerology",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_5ga_feature_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_mcs_bler",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ntn_delay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_delay_spread",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_airan_policy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_spectrum_mask",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_oran_interfaces",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_radio_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_se2_pose",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fk_2r",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pid_step",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_traj_limits",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sensor_noise",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_estop_policy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_diff_drive",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_fuse_scalar",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_cmd_vel_schema",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_robot_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_loop",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_aabb_hit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_beat_clock",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_entity_fsm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_level_hash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_input_actions",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_four_games_case",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_playtest_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_a11y",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_game_capstone",
       "failed_as_required": true
     }
   ],

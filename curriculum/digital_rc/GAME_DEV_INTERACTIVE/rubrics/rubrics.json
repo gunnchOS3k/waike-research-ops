@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-lab",
+    "title": "Arcade lab",
+    "criteria": [
+      {
+        "name": "loop_collide",
+        "weight": 20,
+        "desc": "Loop/AABB/FSM math"
+      },
+      {
+        "name": "a11y_license",
+        "weight": 20,
+        "desc": "A11y + license honesty"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong fields fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-assignment",
+    "title": "Arcade journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses GA-####"
+      },
+      {
+        "name": "no_piracy",
+        "weight": 30,
+        "desc": "No cracked packs"
+      },
+      {
+        "name": "optional_case",
+        "weight": 30,
+        "desc": "Case study optional / no unmerged hard dep"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-quiz",
+    "title": "Game knowledge",
+    "criteria": [
+      {
+        "name": "arcade_numbers",
+        "weight": 50,
+        "desc": "Original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-mid",
+    "title": "Mid Arcade audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone"
+      },
+      {
+        "name": "loop_audio_fsm",
+        "weight": 40,
+        "desc": "Loop/audio/FSM"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-final-knowledge",
+    "title": "Final arcade exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone"
+      },
+      {
+        "name": "a11y_metrics_ship",
+        "weight": 50,
+        "desc": "A11y/metrics/ship"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Piracy/flash negatives fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-project",
+    "title": "Ship checklist",
+    "criteria": [
+      {
+        "name": "a11y_ok",
+        "weight": 40,
+        "desc": "a11y_ok true"
+      },
+      {
+        "name": "no_unmerged",
+        "weight": 30,
+        "desc": "unmerged_branch_required false"
+      },
+      {
+        "name": "six_labs",
+        "weight": 30,
+        "desc": "labs_passed\u22656"
+      }
+    ]
+  },
+  {
+    "rubric_id": "GAME_DEV_INTERACTIVE-portfolio",
+    "title": "Arcade portfolio",
+    "criteria": [
+      {
+        "name": "keyboard_path",
+        "weight": 40,
+        "desc": "Keyboard-only notes"
+      },
+      {
+        "name": "no_vanity_dau",
+        "weight": 30,
+        "desc": "No fake DAU"
+      },
+      {
+        "name": "career_map",
+        "weight": 30,
+        "desc": "Aligned roles"
+      }
+    ]
+  }
+]

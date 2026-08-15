@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "rb-w2-1",
+      "kind": "mcq",
+      "stem": "Max reach L1+L2?",
+      "choices": [
+        "0.05 m",
+        "2 m",
+        "65 m",
+        "0.65 m"
+      ]
+    },
+    {
+      "id": "rb-w2-2",
+      "kind": "mcq",
+      "stem": "Beyond max reach?",
+      "choices": [
+        "reachable false",
+        "reachable true",
+        "Ignore",
+        "6G"
+      ]
+    },
+    {
+      "id": "rb-w2-3",
+      "kind": "mcq",
+      "stem": "Strong servos imply infinite reach?",
+      "choices": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Always"
+      ]
+    },
+    {
+      "id": "rb-w2-4",
+      "kind": "mcq",
+      "stem": "Lab needs FK x,y?",
+      "choices": [
+        "No",
+        "Screenshot",
+        "Yes",
+        "Audio"
+      ]
+    },
+    {
+      "id": "rb-w2-5",
+      "kind": "mcq",
+      "stem": "L2 length?",
+      "choices": [
+        "3 m",
+        "30 cm only labeled wrong",
+        "0",
+        "0.30 m"
+      ]
+    },
+    {
+      "id": "rb-w2-6",
+      "kind": "mcq",
+      "stem": "Joint limits this week?",
+      "choices": [
+        "Still need later",
+        "Fully mapped",
+        "Deleted",
+        "AI"
+      ]
+    }
+  ]
+}

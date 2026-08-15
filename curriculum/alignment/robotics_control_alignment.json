@@ -1,0 +1,38 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "ROBOTICS_CONTROL",
+  "track_ids": [
+    "ROBOTICS_CONTROL"
+  ],
+  "date_checked": "2026-08-15",
+  "benchmarks": [
+    {
+      "source_id": "INDUSTRIAL_ROBOT_OPERATOR_TOPICS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "kinematics",
+          "waike_weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "domain": "control",
+          "waike_weeks": [
+            3,
+            4
+          ]
+        },
+        {
+          "domain": "safety",
+          "waike_weeks": [
+            6,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "PUBLIC_REFERENCE_ONLY / RESTRICTED outlines. No exam dumps. Certs not granted."
+}

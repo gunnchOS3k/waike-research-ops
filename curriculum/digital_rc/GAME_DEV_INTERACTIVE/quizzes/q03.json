@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "ga-w3-1",
+      "kind": "mcq",
+      "stem": "Period @120 BPM?",
+      "choices": [
+        "1 s",
+        "2 s",
+        "0.5 s",
+        "0.12"
+      ]
+    },
+    {
+      "id": "ga-w3-2",
+      "kind": "mcq",
+      "stem": "pirated_sample_pack?",
+      "choices": [
+        "true",
+        "optional",
+        "required",
+        "false"
+      ]
+    },
+    {
+      "id": "ga-w3-3",
+      "kind": "mcq",
+      "stem": "license_ok?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "crack"
+      ]
+    },
+    {
+      "id": "ga-w3-4",
+      "kind": "mcq",
+      "stem": "t=1.25 beat index?",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "ga-w3-5",
+      "kind": "mcq",
+      "stem": "Latency calibration?",
+      "choices": [
+        "Done",
+        "Skip",
+        "Still need",
+        "Fake"
+      ]
+    },
+    {
+      "id": "ga-w3-6",
+      "kind": "mcq",
+      "stem": "Cracked packs in portfolio?",
+      "choices": [
+        "OK",
+        "Required",
+        "Extra",
+        "Fails"
+      ]
+    }
+  ]
+}

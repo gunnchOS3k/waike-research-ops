@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "WIRELESS_6G",
+  "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+  "track_ids": [
+    "WIRELESS_6G"
+  ],
+  "academy_id": "ACADEMY_NETWORKING",
+  "kinesthetic_hook": "Run the Gary Pier Radio Bench for ten weeks: FSPL \u2192 OFDM \u2192 5G-Advanced \u2192 NTN LEO delay \u2192 AI-RAN gated policy. Commercial standardized 6G does NOT exist today.",
+  "lesson_excerpt": "The Pier Radio Bench sits under the Gary pier canopy: a USRP-class SDR, a scratched\nThinkPad, and a laminated card that says COMMERCIAL_STANDARDIZED_6G=false. Week 1 is\nticket WR-4101. Beginners want a 6G slide deck. Operators compute free-space path loss\nfor a 3.5 GHz pier hop at 120 m using FSPL_dB = 20*log10(d_m) + 20*log10(f_MHz) - 27.55.\n\nPlug numbers on paper before any GUI: d=120, f=3500. T",
+  "worked_example": "d=120 m, f=3500 MHz \u2192 FSPL \u2248 20*log10(120)+20*log10(3500)-27.55 \u2248 84.9 dB.",
+  "assignment": "Journal WR-4101 with d_m, f_mhz, fspl_db, and commercial-6G=false. Submit lab_fspl_budget.",
+  "lab_hint": "lab_fspl_budget",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Pier Radio Bench \u2014 free-space path loss without marketing",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w01",
+        "title": "Pier Radio Bench \u2014 free-space path loss without marketing",
+        "body_md": "The Pier Radio Bench sits under the Gary pier canopy: a USRP-class SDR, a scratched\nThinkPad, and a laminated card that says COMMERCIAL_STANDARDIZED_6G=false. Week 1 is\nticket WR-4101. Beginners want a 6G slide deck. Operators compute free-space path loss\nfor a 3.5 GHz pier hop at 120 m using FSPL_dB = 20*log10(d_m) + 20*log10(f_MHz) - 27.55.\n\nPlug numbers on paper before any GUI: d=120, f=3500. That is the only number the lab\naccepts. Pasting a vendor '6G ready' banner into the journal fails the claim boundary.\n\nConsensus Ladder for WR-4101: observed = 120 m tape and 3.5 GHz center; inferred = FSPL\ndominates this short clear hop; still need = pier-railing multipath (week 6).\n\nFailure mode: claiming 'we have 6G coverage' because a slide said so. Operators speak\n`fixtures/wr4101/fspl.json` with d_m, f_mhz, fspl_db. Invented 6G standard IDs fail.\n\nResource rule: light math fixtures only while Product-Use QEMU is busy \u2014 no multi-GB\nSionna/DeepMIMO tarballs on this ticket. Accessibility: journals stay text-first; any\noptional plot needs an alt_text field in the portfolio later.",
+        "worked_example": "d=120 m, f=3500 MHz \u2192 FSPL \u2248 20*log10(120)+20*log10(3500)-27.55 \u2248 84.9 dB."
+      },
+      "lab_id": "lab_fspl_budget"
+    },
+    {
+      "week": 2,
+      "title": "OFDM numerology intuition \u2014 symbols without a fake 6G waveform",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w02",
+        "title": "OFDM numerology intuition \u2014 symbols without a fake 6G waveform",
+        "body_md": "Ticket WR-4202 ships a toy OFDM numerology card: \u0394f=30 kHz, N_sc=12 subcarriers per PRB,\nsymbol duration \u2248 1/\u0394f ignoring CP. Pier operators compute PRB bandwidth = 12*30e3 = 360 kHz\nfor scheduling math \u2014 not a marketing badge.\n\nOne slot with 14 symbols at \u03bc=1 is a teaching fixture, not a claim the pier ships Rel-18.\nThe lab asks for n_sc, delta_f_hz, prb_bw_hz, and symbol_duration_s. Empty JSON fails.\nA print('PASS') string raises AssertionError.\n\nConsensus Ladder: observed = numerology table; inferred = larger \u0394f shortens symbols;\nstill need = measured Doppler on the pier.\n\nFailure mode: renaming the week '6G waveform lab' and pasting a vendor constellation\nscreenshot with no math. Cyclic prefix is a named omission this week \u2014 honesty is skill.\n\nOperators keep a numbered ticket trail for w2-lab_ofdm_numerology and refuse noun-swapped decks from other academies. Detail mark w2-lab_ofdm_numerology-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w2-lab_ofdm_numerology-1.",
+        "worked_example": "PRB BW = 12\u00d730e3 = 360000 Hz; T_sym \u2248 1/30000 \u2248 33.33 \u03bcs (no CP)."
+      },
+      "lab_id": "lab_ofdm_numerology"
+    },
+    {
+      "week": 3,
+      "title": "5G-Advanced features map \u2014 Release labels without exam dumps",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w03",
+        "title": "5G-Advanced features map \u2014 Release labels without exam dumps",
+        "body_md": "Ticket WR-4303 is a feature map: RedCap, XR awareness, NTN early hooks, AI/ML study items \u2014\nall PUBLIC_REFERENCE_ONLY. List \u22653 Release-18/19 topic labels and one non-claim: this course\ndoes not grant 3GPP membership or dump exam items.\n\nLab checks features[] length \u22653 with name+release_tag and commercial_6g_exists=false.\nIf commercial_6g_exists is true, the lab fails.\n\nConsensus Ladder: observed = public overview titles; inferred = 5G-Advanced evolves 5G NR;\nstill need = measurements mapping to those titles.\n\nNO_AI week: hand-write the map. Generative fill inventing 'Rel-20 commercial 6G' fails the\nclaim boundary even if grammar is perfect. Alignment file only \u2014 no harvested stems.\n\nOperators keep a numbered ticket trail for w3-lab_5ga_feature_map and refuse noun-swapped decks from other academies. Detail mark w3-lab_5ga_feature_map-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w3-lab_5ga_feature_map-1.",
+        "worked_example": "\u22653 features with release tags; commercial_6g_exists=false."
+      },
+      "lab_id": "lab_5ga_feature_map"
+    },
+    {
+      "week": 4,
+      "title": "Link adaptation toy \u2014 MCS vs BLER on a fixture",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w04",
+        "title": "Link adaptation toy \u2014 MCS vs BLER on a fixture",
+        "body_md": "Ticket WR-4404 gives BLER for MCS 0..4 at SNR=8 dB: [0.40,0.22,0.09,0.18,0.35]. Pick the\nhighest MCS with BLER \u2264 0.1 \u2192 MCS 2 at 0.09. Lab checks snr_db, bler_cap, chosen_mcs,\nbler_at_choice.\n\nConsensus Ladder: observed = table; inferred = higher MCS needs headroom; still need =\nouter-loop CQI mapping (not claimed).\n\nFailure mode: always max MCS for 'throughput.' Empty {} fails. PASS string raises.\nOperators speak `fixtures/wr4404/bler_table.json` and defend the choice on a whiteboard.\n\nOperators keep a numbered ticket trail for w4-lab_mcs_bler and refuse noun-swapped decks from other academies. Detail mark w4-lab_mcs_bler-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w4-lab_mcs_bler-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w4-lab_mcs_bler-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w4-lab_mcs_bler-3.",
+        "worked_example": "SNR=8 dB, cap 0.1 \u2192 chosen_mcs=2 (BLER 0.09)."
+      },
+      "lab_id": "lab_mcs_bler"
+    },
+    {
+      "week": 5,
+      "title": "NTN LEO delay honesty \u2014 light-time, not sci-fi maps",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w05",
+        "title": "NTN LEO delay honesty \u2014 light-time, not sci-fi maps",
+        "body_md": "Ticket WR-4505: LEO altitude 550 km, slant \u2248700 km. Light-time \u2248 d/c; RTT \u2248 2*d/c.\nc=3e8, d=7e5 \u2192 one_way\u22482.333 ms, RTT\u22484.667 ms. Not GEO-class (~250 ms). Lab fails if\ngeo_comparable=true or ntn_as_6g_standard=true.\n\nConsensus Ladder: observed = altitude card; inferred = ms-class RTT for this toy slant;\nstill need = feeder/gateway scheduling (out of scope).\n\nMarketing fail: 'global 6G NTN' heatmap with no delay math. No constellation sim downloads \u2014\nfixture arithmetic only while Stream A runs.\n\nOperators keep a numbered ticket trail for w5-lab_ntn_delay and refuse noun-swapped decks from other academies. Detail mark w5-lab_ntn_delay-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w5-lab_ntn_delay-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w5-lab_ntn_delay-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w5-lab_ntn_delay-3.",
+        "worked_example": "d=700 km \u2192 one_way\u22482.333 ms, RTT\u22484.667 ms; geo_comparable=false."
+      },
+      "lab_id": "lab_ntn_delay"
+    },
+    {
+      "week": 6,
+      "title": "Channel tap toy \u2014 RMS delay spread on pier railing fixture",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w06",
+        "title": "Channel tap toy \u2014 RMS delay spread on pier railing fixture",
+        "body_md": "Ticket WR-4606: delays_ns=[0,120,350], powers_db=[0,-3,-10]. Compute discrete PDP RMS delay\nspread with linear powers. Lab checks tau_rms_ns within tolerance and tap_count=3.\n\nMultipath is a number, not a vibe. Claiming 'AI beamforming solved multipath' without taps\nfails. PHYSICAL sounding stays PHYSICAL_PENDING.\n\nConsensus Ladder: observed = tap table; inferred = late energy grows \u03c4_rms; still need =\nmeasured sounding. Empty {} fails. Wrong \u03c4_rms fails. PASS raises.\n\nOperators keep a numbered ticket trail for w6-lab_delay_spread and refuse noun-swapped decks from other academies. Detail mark w6-lab_delay_spread-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w6-lab_delay_spread-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w6-lab_delay_spread-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w6-lab_delay_spread-3.",
+        "worked_example": "Three-tap PDP \u2192 compute tau_rms_ns; tap_count=3."
+      },
+      "lab_id": "lab_delay_spread"
+    },
+    {
+      "week": 7,
+      "title": "AI-RAN control loop \u2014 gated policy, not magic autonomy",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w07",
+        "title": "AI-RAN control loop \u2014 gated policy, not magic autonomy",
+        "body_md": "Ticket WR-4707: observe KPI window \u2192 propose MCS/PRB action \u2192 human gate \u2192 apply.\nSubmit observe_kpis, proposed_action, human_gate=true, auto_apply_without_gate=false.\nUngated auto-apply fails.\n\nAI-RAN is research/systems with gates \u2014 not pier-wide 6G autonomy. NO_AI quiz week.\nConsensus Ladder: observed = KPI CSV; inferred = actions need gates; still need =\nclosed-loop field trial evidence (not claimed).\n\nOperators keep a numbered ticket trail for w7-lab_airan_policy and refuse noun-swapped decks from other academies. Detail mark w7-lab_airan_policy-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w7-lab_airan_policy-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w7-lab_airan_policy-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w7-lab_airan_policy-3.",
+        "worked_example": "human_gate=true; auto_apply_without_gate=false; action names MCS or PRB."
+      },
+      "lab_id": "lab_airan_policy"
+    },
+    {
+      "week": 8,
+      "title": "Spectrum honesty \u2014 masks and no unauthorized TX",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w08",
+        "title": "Spectrum honesty \u2014 masks and no unauthorized TX",
+        "body_md": "Ticket WR-4808: lab license narrative at 3.5 GHz, OBW 18 MHz. Submit center_ghz, obw_mhz,\nmask_ok, unauthorized_tx=false. Transmitting outside the narrative 'because SDR' fails ethics.\n\nConsensus Ladder: observed = license card; inferred = OBW fits mask; still need = real\nFCC/ITU filings (not fabricated). NO_AI week. No fake auction wins in journals.\n\nOperators keep a numbered ticket trail for w8-lab_spectrum_mask and refuse noun-swapped decks from other academies. Detail mark w8-lab_spectrum_mask-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w8-lab_spectrum_mask-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w8-lab_spectrum_mask-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w8-lab_spectrum_mask-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w8-lab_spectrum_mask-4.",
+        "worked_example": "center 3.5 GHz, OBW 18 MHz, mask_ok true, unauthorized_tx false."
+      },
+      "lab_id": "lab_spectrum_mask"
+    },
+    {
+      "week": 9,
+      "title": "O-RAN interface map \u2014 vocabulary without fake RIC production",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w09",
+        "title": "O-RAN interface map \u2014 vocabulary without fake RIC production",
+        "body_md": "Ticket WR-4909 maps A1/E2/O1/O2 to pier roles. Submit interfaces including A1,E2,O1 and\ndeployed_full_ric=false. Production Near-RT RIC claims without E2 logs fail.\n\nStay RESEARCH_LAB_SCALE. Consensus Ladder: observed = flashcards; inferred = control split\nexists in O-RAN talk; still need = E2 subscription logs (PHYSICAL_PENDING).\n\nFailure mode: noun-swapping a Cloud/DevOps deck. Empty {} fails. PASS raises.\n\nOperators keep a numbered ticket trail for w9-lab_oran_interfaces and refuse noun-swapped decks from other academies. Detail mark w9-lab_oran_interfaces-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w9-lab_oran_interfaces-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w9-lab_oran_interfaces-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w9-lab_oran_interfaces-3.",
+        "worked_example": "interfaces include A1,E2,O1; deployed_full_ric=false."
+      },
+      "lab_id": "lab_oran_interfaces"
+    },
+    {
+      "week": 10,
+      "title": "Capstone radio notebook \u2014 no Product-Use unmerged dependency",
+      "lesson": {
+        "lesson_id": "WIRELESS_6G-w10",
+        "title": "Capstone radio notebook \u2014 no Product-Use unmerged dependency",
+        "body_md": "Ticket WR-4910 assembles FSPL, numerology, MCS, NTN delay, AI-RAN gate, and spectrum digests\ninto one notebook hash. Capstone forbids consuming unmerged Product-Use packages and forbids\nclaiming vendor/3GPP certificates.\n\nSubmit notebook_sha256, includes_commercial_6g_false_statement=true,\nproduct_use_unmerged_consumed=false, labs_passed\u22656.\n\nCareer map: RF lab tech / RAN ops junior \u2014 certs aligned not granted. Accessibility:\ntext-only summary path required; optional plots need alt_text in portfolio JSON.\n\nOperators keep a numbered ticket trail for w10-lab_radio_capstone and refuse noun-swapped decks from other academies. Detail mark w10-lab_radio_capstone-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w10-lab_radio_capstone-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w10-lab_radio_capstone-2.",
+        "worked_example": "product_use_unmerged_consumed=false; commercial_6g false statement; labs_passed\u22656."
+      },
+      "lab_id": "lab_radio_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_fspl_budget",
+    "lab_ofdm_numerology",
+    "lab_5ga_feature_map",
+    "lab_mcs_bler",
+    "lab_ntn_delay",
+    "lab_delay_spread",
+    "lab_airan_policy",
+    "lab_spectrum_mask",
+    "lab_oran_interfaces",
+    "lab_radio_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "WIRELESS_6G-lab",
+    "WIRELESS_6G-assignment",
+    "WIRELESS_6G-quiz",
+    "WIRELESS_6G-mid",
+    "WIRELESS_6G-final-knowledge",
+    "WIRELESS_6G-practical",
+    "WIRELESS_6G-project",
+    "WIRELESS_6G-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "rf_lab_technician",
+      "ran_ops_junior",
+      "wireless_research_apprentice"
+    ],
+    "nice_categories": [
+      "analyze",
+      "build_and_deploy"
+    ],
+    "certs_aligned_not_granted": [
+      "CompTIA Network+ (wireless domains)",
+      "3GPP 5G NR overview (PUBLIC_REFERENCE_ONLY)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/wireless_6g_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      3,
+      8
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

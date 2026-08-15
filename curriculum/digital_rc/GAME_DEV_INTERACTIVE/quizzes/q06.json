@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "ga-w6-1",
+      "kind": "mcq",
+      "stem": "rebindable?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "ai"
+      ]
+    },
+    {
+      "id": "ga-w6-2",
+      "kind": "mcq",
+      "stem": "raw_only docs?",
+      "choices": [
+        "OK",
+        "Fails",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w6-3",
+      "kind": "mcq",
+      "stem": "Jump action needed?",
+      "choices": [
+        "No",
+        "Audio only",
+        "Yes",
+        "GPU"
+      ]
+    },
+    {
+      "id": "ga-w6-4",
+      "kind": "mcq",
+      "stem": "Device swap survival?",
+      "choices": [
+        "Impossible",
+        "Ignore",
+        "6G",
+        "Actions help"
+      ]
+    },
+    {
+      "id": "ga-w6-5",
+      "kind": "mcq",
+      "stem": "Week 6 ticket context: Empty {}?",
+      "choices": [
+        "Fails",
+        "PASS",
+        "Half",
+        "Auto"
+      ]
+    },
+    {
+      "id": "ga-w6-6",
+      "kind": "mcq",
+      "stem": "Week 9 link?",
+      "choices": [
+        "FSPL",
+        "A11y remaps",
+        "NTN",
+        "E-stop"
+      ]
+    }
+  ]
+}

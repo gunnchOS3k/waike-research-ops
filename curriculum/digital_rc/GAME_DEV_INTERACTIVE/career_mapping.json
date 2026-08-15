@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "gameplay_programmer_junior",
+    "technical_artist_apprentice",
+    "qa_playtest_tech"
+  ],
+  "nice_categories": [
+    "build_and_deploy",
+    "create"
+  ],
+  "certs_aligned_not_granted": [
+    "Unity Certified Associate topic labels (PUBLIC_REFERENCE_ONLY)",
+    "Godot fundamentals topic labels (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

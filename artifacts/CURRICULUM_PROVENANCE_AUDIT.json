@@ -3,17 +3,32 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0139,
+  "worst_jaccard": 0.0988,
   "worst_pair": [
-    "DATA_VIZ_BI",
-    "CLOUD_DEVOPS"
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
   ],
-  "worst_packaging_jaccard": 0.1244,
+  "worst_packaging_jaccard": 0.1316,
   "worst_packaging_pair": [
-    "SOFTWARE_BUILDER",
-    "AI_ML_EDGE"
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
   ],
   "pairs": [
+    {
+      "a": "ROBOTICS_CONTROL",
+      "b": "GAME_DEV_INTERACTIVE",
+      "jaccard_5gram": 0.0988
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "ROBOTICS_CONTROL",
+      "jaccard_5gram": 0.0689
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "GAME_DEV_INTERACTIVE",
+      "jaccard_5gram": 0.0686
+    },
     {
       "a": "DATA_VIZ_BI",
       "b": "CLOUD_DEVOPS",
@@ -38,28 +53,28 @@
       "a": "AI_ML_EDGE",
       "b": "DATA_VIZ_BI",
       "jaccard_5gram": 0.0005
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "CYBERSECURITY",
-      "jaccard_5gram": 0.0003
-    },
-    {
-      "a": "CYBERSECURITY",
-      "b": "AI_ML_EDGE",
-      "jaccard_5gram": 0.0003
-    },
-    {
-      "a": "SOFTWARE_BUILDER",
-      "b": "CLOUD_DEVOPS",
-      "jaccard_5gram": 0.0003
     }
   ],
   "packaging_pairs": [
     {
+      "a": "ROBOTICS_CONTROL",
+      "b": "GAME_DEV_INTERACTIVE",
+      "packaging_jaccard_5gram": 0.1316
+    },
+    {
       "a": "SOFTWARE_BUILDER",
       "b": "AI_ML_EDGE",
       "packaging_jaccard_5gram": 0.1244
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "GAME_DEV_INTERACTIVE",
+      "packaging_jaccard_5gram": 0.1158
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "ROBOTICS_CONTROL",
+      "packaging_jaccard_5gram": 0.1146
     },
     {
       "a": "DATA_VIZ_BI",
@@ -80,21 +95,6 @@
       "a": "PM_AGILE_LSS",
       "b": "DATA_VIZ_BI",
       "packaging_jaccard_5gram": 0.09
-    },
-    {
-      "a": "SOFTWARE_BUILDER",
-      "b": "CLOUD_DEVOPS",
-      "packaging_jaccard_5gram": 0.0897
-    },
-    {
-      "a": "AI_ML_EDGE",
-      "b": "DATA_VIZ_BI",
-      "packaging_jaccard_5gram": 0.0896
-    },
-    {
-      "a": "HARDWARE_ENGINEERING",
-      "b": "CLOUD_DEVOPS",
-      "packaging_jaccard_5gram": 0.0858
     }
   ],
   "key_distribution": {
@@ -155,6 +155,27 @@
       "n": 104
     },
     "CLOUD_DEVOPS": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "WIRELESS_6G": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "ROBOTICS_CONTROL": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "GAME_DEV_INTERACTIVE": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -236,6 +257,30 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.75
+    },
+    "WIRELESS_6G": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.5
+    },
+    "ROBOTICS_CONTROL": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6
+    },
+    "GAME_DEV_INTERACTIVE": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6667
     }
   },
   "exam_token_identical": 0,
@@ -251,7 +296,10 @@
     "PM_AGILE_LSS": 864,
     "AI_ML_EDGE": 972,
     "DATA_VIZ_BI": 881,
-    "CLOUD_DEVOPS": 871
+    "CLOUD_DEVOPS": 871,
+    "WIRELESS_6G": 941,
+    "ROBOTICS_CONTROL": 966,
+    "GAME_DEV_INTERACTIVE": 934
   },
   "lesson_padding_rejected": 0,
   "registry_size": 35,

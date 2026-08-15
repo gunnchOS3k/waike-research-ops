@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "rb-w10-1",
+      "kind": "mcq",
+      "stem": "estop_ok?",
+      "choices": [
+        "false",
+        "null",
+        "ai",
+        "true"
+      ]
+    },
+    {
+      "id": "rb-w10-2",
+      "kind": "mcq",
+      "stem": "labs_passed min?",
+      "choices": [
+        "6",
+        "1",
+        "3",
+        "100"
+      ]
+    },
+    {
+      "id": "rb-w10-3",
+      "kind": "mcq",
+      "stem": "Open device-os PR from this course?",
+      "choices": [
+        "Yes",
+        "No",
+        "Optional",
+        "Required"
+      ]
+    },
+    {
+      "id": "rb-w10-4",
+      "kind": "mcq",
+      "stem": "Fabricate injury stats?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w10-5",
+      "kind": "mcq",
+      "stem": "Career certs?",
+      "choices": [
+        "Granted",
+        "Hidden",
+        "Sold",
+        "Aligned not granted"
+      ]
+    },
+    {
+      "id": "rb-w10-6",
+      "kind": "mcq",
+      "stem": "E-stop sheet format?",
+      "choices": [
+        "Large-text printable",
+        "Tiny GIF only",
+        "Audio only",
+        "None"
+      ]
+    }
+  ]
+}

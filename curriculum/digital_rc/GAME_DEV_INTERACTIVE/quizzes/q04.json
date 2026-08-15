@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GAME_DEV_INTERACTIVE-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "ga-w4-1",
+      "kind": "mcq",
+      "stem": "Illegal edge should?",
+      "choices": [
+        "Fail transition_ok",
+        "Pass",
+        "Skip",
+        "AI fix"
+      ]
+    },
+    {
+      "id": "ga-w4-2",
+      "kind": "mcq",
+      "stem": "Boolean soup without table?",
+      "choices": [
+        "OK",
+        "Fails discipline",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "ga-w4-3",
+      "kind": "mcq",
+      "stem": "Blend trees claimed done?",
+      "choices": [
+        "Yes",
+        "Always",
+        "No \u2014 still need",
+        "AI"
+      ]
+    },
+    {
+      "id": "ga-w4-4",
+      "kind": "mcq",
+      "stem": "Idle\u2192Run legal?",
+      "choices": [
+        "Never",
+        "Only AI",
+        "Only audio",
+        "Yes on fixture"
+      ]
+    },
+    {
+      "id": "ga-w4-5",
+      "kind": "mcq",
+      "stem": "Week 4 ticket context: Empty {}?",
+      "choices": [
+        "Fails",
+        "PASS",
+        "Half",
+        "Auto"
+      ]
+    },
+    {
+      "id": "ga-w4-6",
+      "kind": "mcq",
+      "stem": "Week 4 ticket context: print PASS?",
+      "choices": [
+        "OK",
+        "Raises",
+        "Half",
+        "Skip"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "WIRELESS_6G-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "wr-w5-1",
+      "kind": "mcq",
+      "stem": "700 km one-way \u2192 ms \u2248?",
+      "choices": [
+        "2.33",
+        "0.23",
+        "23",
+        "250"
+      ]
+    },
+    {
+      "id": "wr-w5-2",
+      "kind": "mcq",
+      "stem": "RTT \u2248?",
+      "choices": [
+        "2.33 ms",
+        "4.67 ms",
+        "250 ms",
+        "1 s"
+      ]
+    },
+    {
+      "id": "wr-w5-3",
+      "kind": "mcq",
+      "stem": "geo_comparable?",
+      "choices": [
+        "true",
+        "null",
+        "false",
+        "6G"
+      ]
+    },
+    {
+      "id": "wr-w5-4",
+      "kind": "mcq",
+      "stem": "ntn_as_6g_standard?",
+      "choices": [
+        "true",
+        "Rel-20",
+        "optional",
+        "false"
+      ]
+    },
+    {
+      "id": "wr-w5-5",
+      "kind": "mcq",
+      "stem": "Heatmap without delay math?",
+      "choices": [
+        "Marketing fail",
+        "PASS",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "wr-w5-6",
+      "kind": "mcq",
+      "stem": "Altitude class?",
+      "choices": [
+        "GEO 35786 km",
+        "550 km LEO",
+        "Wi-Fi",
+        "Undersea"
+      ]
+    }
+  ]
+}

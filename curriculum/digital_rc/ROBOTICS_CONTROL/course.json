@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "ROBOTICS_CONTROL",
+  "title": "Robotics and Control \u2014 HarborBot Bay",
+  "track_ids": [
+    "ROBOTICS_CONTROL"
+  ],
+  "academy_id": "ACADEMY_HARDWARE",
+  "kinesthetic_hook": "Ten weeks in HarborBot Bay: frames \u2192 2R kinematics \u2192 PID \u2192 traj \u2192 sensing \u2192 E-stop \u2192 diff-drive \u2192 estimation \u2192 message schemas \u2192 safety capstone. Real commands on fixture math.",
+  "lesson_excerpt": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.\n\nLab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PASS raises.\n\nConsensus Ladder: observed = tape origin and tool offset; inferred = rotation ",
+  "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos.",
+  "assignment": "Compute RB-5101 pose/tool map. Submit lab_se2_pose.",
+  "lab_hint": "lab_se2_pose",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "HarborBot frames \u2014 SE(2) pose without cinematic hype",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w01",
+        "title": "HarborBot frames \u2014 SE(2) pose without cinematic hype",
+        "body_md": "HarborBot Bay ticket RB-5101: a diff-drive cart on taped pier coordinates. Pose is (x,y,theta)\nin meters/radians. Students compute a planar transform of a tool point and refuse 'AI nabbed\nthe box' stories without a frame diagram.\n\nLab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PASS raises.\n\nConsensus Ladder: observed = tape origin and tool offset; inferred = rotation mixes x/y;\nstill need = wheel slip model (later). Accessibility: ASCII frame diagrams required in journals.\n\nOperators keep a numbered ticket trail for w1-lab_se2_pose and refuse noun-swapped decks from other academies. Detail mark w1-lab_se2_pose-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w1-lab_se2_pose-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w1-lab_se2_pose-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w1-lab_se2_pose-3.",
+        "worked_example": "theta=\u03c0/2, tool offset (0.2,0) \u2192 tool maps to pier axes with sin/cos."
+      },
+      "lab_id": "lab_se2_pose"
+    },
+    {
+      "week": 2,
+      "title": "2R kinematics \u2014 reachability before torque myths",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w02",
+        "title": "2R kinematics \u2014 reachability before torque myths",
+        "body_md": "Ticket RB-5202: planar 2R arm with L1=0.35 m, L2=0.30 m. Forward kinematics to a target and\na reachability flag when hypot(x,y) > L1+L2. Lab checks x,y, reachable.\n\nConsensus Ladder: observed = link lengths; inferred = workspace is an annulus/disk bound;\nstill need = joint limits map. Failure: claiming infinite reach because 'servos are strong.'\n\nOperators keep a numbered ticket trail for w2-lab_fk_2r and refuse noun-swapped decks from other academies. Detail mark w2-lab_fk_2r-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w2-lab_fk_2r-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w2-lab_fk_2r-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w2-lab_fk_2r-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w2-lab_fk_2r-4.",
+        "worked_example": "L1=0.35, L2=0.30; point beyond 0.65 m \u2192 reachable=false."
+      },
+      "lab_id": "lab_fk_2r"
+    },
+    {
+      "week": 3,
+      "title": "PID on a fixture plant \u2014 gains with anti-windup note",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w03",
+        "title": "PID on a fixture plant \u2014 gains with anti-windup note",
+        "body_md": "Ticket RB-5303: discrete PID on e=[1.0,0.6,0.2] with Kp=1.2, Ki=0.4, Kd=0.1, dt=0.1.\nCompute u for the last step with simple rectangular integral and backward diff. Include\nanti_windup_note length \u22658 when integral magnitude is large.\n\nConsensus Ladder: observed = error series; inferred = D term reacts to slope; still need =\nreal motor plant ID. Empty fails. Wrong u fails.\n\nOperators keep a numbered ticket trail for w3-lab_pid_step and refuse noun-swapped decks from other academies. Detail mark w3-lab_pid_step-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w3-lab_pid_step-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w3-lab_pid_step-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w3-lab_pid_step-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w3-lab_pid_step-4.",
+        "worked_example": "Compute u_last from fixture gains; document anti-windup note."
+      },
+      "lab_id": "lab_pid_step"
+    },
+    {
+      "week": 4,
+      "title": "Trajectory limits \u2014 vmax/amax before cinematic paths",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w04",
+        "title": "Trajectory limits \u2014 vmax/amax before cinematic paths",
+        "body_md": "Ticket RB-5404: move 1.2 m with vmax=0.4 m/s and amax=0.5 m/s\u00b2. Compute minimum time for a\ntrapezoid/triangle profile bound and reject path_ok if commanded speed exceeds vmax.\n\nNO_AI week. Consensus Ladder: observed = limits card; inferred = time bounded by v/a;\nstill need = curvature limits. Failure: spline that ignores vmax 'because it looks smooth.'\n\nOperators keep a numbered ticket trail for w4-lab_traj_limits and refuse noun-swapped decks from other academies. Detail mark w4-lab_traj_limits-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w4-lab_traj_limits-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w4-lab_traj_limits-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w4-lab_traj_limits-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w4-lab_traj_limits-4.",
+        "worked_example": "Distance 1.2 m, vmax 0.4, amax 0.5 \u2192 compute t_min; path_ok respects vmax."
+      },
+      "lab_id": "lab_traj_limits"
+    },
+    {
+      "week": 5,
+      "title": "Sensor noise \u2014 mean/std and reject wild outliers",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w05",
+        "title": "Sensor noise \u2014 mean/std and reject wild outliers",
+        "body_md": "Ticket RB-5505: lidar range samples [1.01,1.00,0.99,1.02,3.50] m. Compute mean/std after\ndropping values beyond 1.5\u00d7IQR or a hard gate >2.0 m. Lab checks cleaned_n, mean, outlier_dropped.\n\nConsensus Ladder: observed = samples; inferred = 3.50 is outlier for pier aisle; still need =\ncalibrated bias. Failure: trusting raw max as truth.\n\nOperators keep a numbered ticket trail for w5-lab_sensor_noise and refuse noun-swapped decks from other academies. Detail mark w5-lab_sensor_noise-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w5-lab_sensor_noise-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w5-lab_sensor_noise-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w5-lab_sensor_noise-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w5-lab_sensor_noise-4.",
+        "worked_example": "Drop 3.50; cleaned_n=4; mean\u22481.005."
+      },
+      "lab_id": "lab_sensor_noise"
+    },
+    {
+      "week": 6,
+      "title": "E-stop policy \u2014 hard interrupt beats soft hope",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w06",
+        "title": "E-stop policy \u2014 hard interrupt beats soft hope",
+        "body_md": "Ticket RB-5606: E-stop must assert motors_disabled=true, brake_engaged=true, and\nresume_requires_human=true. Software 'slow down' without disable fails.\n\nConsensus Ladder: observed = E-stop wiring card; inferred = safety power path; still need =\nSIL certification (not claimed). Ethics: never bypass E-stop for a demo video.\n\nOperators keep a numbered ticket trail for w6-lab_estop_policy and refuse noun-swapped decks from other academies. Detail mark w6-lab_estop_policy-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w6-lab_estop_policy-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w6-lab_estop_policy-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w6-lab_estop_policy-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w6-lab_estop_policy-4.",
+        "worked_example": "motors_disabled, brake_engaged, resume_requires_human all true."
+      },
+      "lab_id": "lab_estop_policy"
+    },
+    {
+      "week": 7,
+      "title": "Diff-drive ICC \u2014 wheel speeds to body twist",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w07",
+        "title": "Diff-drive ICC \u2014 wheel speeds to body twist",
+        "body_md": "Ticket RB-5707: wheel base B=0.40 m, r=0.05 m, wheel rates \u03c9_l, \u03c9_r. Compute v and \u03c9_body.\nLab checks v, omega, and rejects if someone sets B=0.\n\nConsensus Ladder: observed = encoder rates; inferred = ICC geometry; still need = slip\ncompensation. Wrong kinematics fail even if the cart 'looks right' on video.\n\nOperators keep a numbered ticket trail for w7-lab_diff_drive and refuse noun-swapped decks from other academies. Detail mark w7-lab_diff_drive-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w7-lab_diff_drive-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w7-lab_diff_drive-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w7-lab_diff_drive-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w7-lab_diff_drive-4.",
+        "worked_example": "v=(r/2)*(\u03c9_l+\u03c9_r); \u03c9=(r/B)*(\u03c9_r-\u03c9_l)."
+      },
+      "lab_id": "lab_diff_drive"
+    },
+    {
+      "week": 8,
+      "title": "State estimation toy \u2014 fuse odom + range with covariance honesty",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w08",
+        "title": "State estimation toy \u2014 fuse odom + range with covariance honesty",
+        "body_md": "Ticket RB-5808: scalar fuse x_odom and x_range with variances. Compute Kalman-ish gain\nK = p/(p+r) and x_hat. Lab checks K, x_hat, and refuses cov_zero_lie=true.\n\nConsensus Ladder: observed = two measurements; inferred = lower variance dominates;\nstill need = full EKF on SE2. Failure: claiming perfect certainty (P=0).\n\nOperators keep a numbered ticket trail for w8-lab_fuse_scalar and refuse noun-swapped decks from other academies. Detail mark w8-lab_fuse_scalar-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w8-lab_fuse_scalar-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w8-lab_fuse_scalar-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w8-lab_fuse_scalar-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w8-lab_fuse_scalar-4.",
+        "worked_example": "K=p/(p+r); x_hat = x_odom + K*(x_range-x_odom); no zero-cov lie."
+      },
+      "lab_id": "lab_fuse_scalar"
+    },
+    {
+      "week": 9,
+      "title": "Message schemas \u2014 /cmd_vel shaped fixtures without fleet claims",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w09",
+        "title": "Message schemas \u2014 /cmd_vel shaped fixtures without fleet claims",
+        "body_md": "Ticket RB-5909: validate a cmd_vel-shaped JSON with linear.x and angular.z finite, and\nframe_id='base_link'. Claiming a 50-robot Harbor fleet deploy fails.\n\nNO_AI week. Consensus Ladder: observed = schema card; inferred = units m/s and rad/s;\nstill need = DDS/ROS distro pin (not claimed as production).\n\nOperators keep a numbered ticket trail for w9-lab_cmd_vel_schema and refuse noun-swapped decks from other academies. Detail mark w9-lab_cmd_vel_schema-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w9-lab_cmd_vel_schema-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w9-lab_cmd_vel_schema-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w9-lab_cmd_vel_schema-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w9-lab_cmd_vel_schema-4.",
+        "worked_example": "linear.x + angular.z finite; frame_id base_link; fleet_claim=false."
+      },
+      "lab_id": "lab_cmd_vel_schema"
+    },
+    {
+      "week": 10,
+      "title": "Capstone safety packet \u2014 E-stop + traj + fuse evidence",
+      "lesson": {
+        "lesson_id": "ROBOTICS_CONTROL-w10",
+        "title": "Capstone safety packet \u2014 E-stop + traj + fuse evidence",
+        "body_md": "Ticket RB-5910: assemble E-stop policy, traj limits, and fuse result digests. Capstone\nrequires estop_ok=true, labs_passed\u22656, and no_device_os_pr=true (do not open device-os PRs).\n\nCareer map: robotics technician / controls junior. Accessibility: emergency procedure\nsheet must be printable large-text. Portfolio forbids fabricated injury statistics.\n\nOperators keep a numbered ticket trail for w10-lab_robot_capstone and refuse noun-swapped decks from other academies. Detail mark w10-lab_robot_capstone-0.\n\nWhiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w10-lab_robot_capstone-1.\n\nIf a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w10-lab_robot_capstone-2.\n\nKeep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w10-lab_robot_capstone-3.\n\nWhen tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w10-lab_robot_capstone-4.",
+        "worked_example": "estop_ok true; labs_passed\u22656; no_device_os_pr true."
+      },
+      "lab_id": "lab_robot_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_se2_pose",
+    "lab_fk_2r",
+    "lab_pid_step",
+    "lab_traj_limits",
+    "lab_sensor_noise",
+    "lab_estop_policy",
+    "lab_diff_drive",
+    "lab_fuse_scalar",
+    "lab_cmd_vel_schema",
+    "lab_robot_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "ROBOTICS_CONTROL-lab",
+    "ROBOTICS_CONTROL-assignment",
+    "ROBOTICS_CONTROL-quiz",
+    "ROBOTICS_CONTROL-mid",
+    "ROBOTICS_CONTROL-final-knowledge",
+    "ROBOTICS_CONTROL-practical",
+    "ROBOTICS_CONTROL-project",
+    "ROBOTICS_CONTROL-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "robotics_technician",
+      "controls_junior",
+      "automation_apprentice"
+    ],
+    "nice_categories": [
+      "build_and_deploy",
+      "analyze"
+    ],
+    "certs_aligned_not_granted": [
+      "FANUC/ABB operator topic labels (PUBLIC_REFERENCE_ONLY)",
+      "OSHA machine-guarding awareness labels (not a license)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/robotics_control_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

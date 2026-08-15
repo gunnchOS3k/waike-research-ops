@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "WIRELESS_6G",
+  "quizzes": {
+    "WIRELESS_6G-q01": [
+      {
+        "id": "wr-w1-1",
+        "answer_index": 0,
+        "explanation": "Friis."
+      },
+      {
+        "id": "wr-w1-2",
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w1-3",
+        "answer_index": 2,
+        "explanation": "No marketing."
+      },
+      {
+        "id": "wr-w1-4",
+        "answer_index": 3,
+        "explanation": "Measured."
+      },
+      {
+        "id": "wr-w1-5",
+        "answer_index": 0,
+        "explanation": "Resource."
+      },
+      {
+        "id": "wr-w1-6",
+        "answer_index": 1,
+        "explanation": "No fake IDs."
+      }
+    ],
+    "WIRELESS_6G-q02": [
+      {
+        "id": "wr-w2-1",
+        "answer_index": 2,
+        "explanation": "12*30e3."
+      },
+      {
+        "id": "wr-w2-2",
+        "answer_index": 3,
+        "explanation": "1/\u0394f."
+      },
+      {
+        "id": "wr-w2-3",
+        "answer_index": 0,
+        "explanation": "Math."
+      },
+      {
+        "id": "wr-w2-4",
+        "answer_index": 1,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "wr-w2-5",
+        "answer_index": 2,
+        "explanation": "1/\u0394f."
+      },
+      {
+        "id": "wr-w2-6",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      }
+    ],
+    "WIRELESS_6G-q03": [
+      {
+        "id": "wr-w3-1",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w3-2",
+        "answer_index": 1,
+        "explanation": "Label."
+      },
+      {
+        "id": "wr-w3-3",
+        "answer_index": 2,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "wr-w3-4",
+        "answer_index": 3,
+        "explanation": "\u22653."
+      },
+      {
+        "id": "wr-w3-5",
+        "answer_index": 0,
+        "explanation": "Evolution."
+      },
+      {
+        "id": "wr-w3-6",
+        "answer_index": 1,
+        "explanation": "Fail."
+      }
+    ],
+    "WIRELESS_6G-q04": [
+      {
+        "id": "wr-w4-1",
+        "answer_index": 2,
+        "explanation": "0.09."
+      },
+      {
+        "id": "wr-w4-2",
+        "answer_index": 3,
+        "explanation": "Cap."
+      },
+      {
+        "id": "wr-w4-3",
+        "answer_index": 0,
+        "explanation": "Table."
+      },
+      {
+        "id": "wr-w4-4",
+        "answer_index": 1,
+        "explanation": "Empty."
+      },
+      {
+        "id": "wr-w4-5",
+        "answer_index": 2,
+        "explanation": "Boundary."
+      },
+      {
+        "id": "wr-w4-6",
+        "answer_index": 3,
+        "explanation": "0.1."
+      }
+    ],
+    "WIRELESS_6G-q05": [
+      {
+        "id": "wr-w5-1",
+        "answer_index": 0,
+        "explanation": "d/c."
+      },
+      {
+        "id": "wr-w5-2",
+        "answer_index": 1,
+        "explanation": "2*d/c."
+      },
+      {
+        "id": "wr-w5-3",
+        "answer_index": 2,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w5-4",
+        "answer_index": 3,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w5-5",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr-w5-6",
+        "answer_index": 1,
+        "explanation": "LEO."
+      }
+    ],
+    "WIRELESS_6G-q06": [
+      {
+        "id": "wr-w6-1",
+        "answer_index": 2,
+        "explanation": "3."
+      },
+      {
+        "id": "wr-w6-2",
+        "answer_index": 3,
+        "explanation": "dB."
+      },
+      {
+        "id": "wr-w6-3",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr-w6-4",
+        "answer_index": 1,
+        "explanation": "Pending."
+      },
+      {
+        "id": "wr-w6-5",
+        "answer_index": 2,
+        "explanation": "0."
+      },
+      {
+        "id": "wr-w6-6",
+        "answer_index": 3,
+        "explanation": "Yes."
+      }
+    ],
+    "WIRELESS_6G-q07": [
+      {
+        "id": "wr-w7-1",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w7-2",
+        "answer_index": 1,
+        "explanation": "true."
+      },
+      {
+        "id": "wr-w7-3",
+        "answer_index": 2,
+        "explanation": "Gated."
+      },
+      {
+        "id": "wr-w7-4",
+        "answer_index": 3,
+        "explanation": "Boundary."
+      },
+      {
+        "id": "wr-w7-5",
+        "answer_index": 0,
+        "explanation": "Concrete."
+      },
+      {
+        "id": "wr-w7-6",
+        "answer_index": 1,
+        "explanation": "NO_AI."
+      }
+    ],
+    "WIRELESS_6G-q08": [
+      {
+        "id": "wr-w8-1",
+        "answer_index": 2,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w8-2",
+        "answer_index": 3,
+        "explanation": "18."
+      },
+      {
+        "id": "wr-w8-3",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr-w8-4",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "wr-w8-5",
+        "answer_index": 2,
+        "explanation": "3.5."
+      },
+      {
+        "id": "wr-w8-6",
+        "answer_index": 3,
+        "explanation": "Fixture."
+      }
+    ],
+    "WIRELESS_6G-q09": [
+      {
+        "id": "wr-w9-1",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w9-2",
+        "answer_index": 1,
+        "explanation": "Vocab."
+      },
+      {
+        "id": "wr-w9-3",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "wr-w9-4",
+        "answer_index": 3,
+        "explanation": "Lab."
+      },
+      {
+        "id": "wr-w9-5",
+        "answer_index": 0,
+        "explanation": "Yes."
+      },
+      {
+        "id": "wr-w9-6",
+        "answer_index": 1,
+        "explanation": "Pending."
+      }
+    ],
+    "WIRELESS_6G-q10": [
+      {
+        "id": "wr-w10-1",
+        "answer_index": 2,
+        "explanation": "false."
+      },
+      {
+        "id": "wr-w10-2",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "wr-w10-3",
+        "answer_index": 0,
+        "explanation": "\u22656."
+      },
+      {
+        "id": "wr-w10-4",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "wr-w10-5",
+        "answer_index": 2,
+        "explanation": "No."
+      },
+      {
+        "id": "wr-w10-6",
+        "answer_index": 3,
+        "explanation": "Aligned."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "wr01",
+      "answer_index": 0,
+      "explanation": "Friis."
+    },
+    {
+      "id": "wr02",
+      "answer_index": 1,
+      "explanation": "Honesty."
+    },
+    {
+      "id": "wr03",
+      "answer_index": 2,
+      "explanation": "24*15e3."
+    },
+    {
+      "id": "wr04",
+      "answer_index": 3,
+      "explanation": "1/df."
+    },
+    {
+      "id": "wr05",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wr06",
+      "answer_index": 1,
+      "explanation": "0.07."
+    },
+    {
+      "id": "wr07",
+      "answer_index": 2,
+      "explanation": "d/c."
+    },
+    {
+      "id": "wr08",
+      "answer_index": 3,
+      "explanation": "Not GEO."
+    },
+    {
+      "id": "wr09",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wr10",
+      "answer_index": 1,
+      "explanation": "Grows."
+    },
+    {
+      "id": "wr11",
+      "answer_index": 2,
+      "explanation": "Gated."
+    },
+    {
+      "id": "wr12",
+      "answer_index": 3,
+      "explanation": "Concrete."
+    },
+    {
+      "id": "wr13",
+      "answer_index": 0,
+      "explanation": "Ethics."
+    },
+    {
+      "id": "wr14",
+      "answer_index": 1,
+      "explanation": "Numbers."
+    },
+    {
+      "id": "wr15",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wr16",
+      "answer_index": 3,
+      "explanation": "Vocab."
+    },
+    {
+      "id": "wr17",
+      "answer_index": 0,
+      "explanation": "No PU."
+    },
+    {
+      "id": "wr18",
+      "answer_index": 1,
+      "explanation": "Fixtures."
+    },
+    {
+      "id": "wr19",
+      "answer_index": 2,
+      "explanation": "Evolution."
+    },
+    {
+      "id": "wr20",
+      "answer_index": 3,
+      "explanation": ">=6."
+    }
+  ],
+  "final": [
+    {
+      "id": "wrf01",
+      "answer_index": 1,
+      "explanation": "Friis."
+    },
+    {
+      "id": "wrf02",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wrf03",
+      "answer_index": 3,
+      "explanation": "720e3."
+    },
+    {
+      "id": "wrf04",
+      "answer_index": 0,
+      "explanation": "Honesty."
+    },
+    {
+      "id": "wrf05",
+      "answer_index": 1,
+      "explanation": "Hand."
+    },
+    {
+      "id": "wrf06",
+      "answer_index": 2,
+      "explanation": "0.03."
+    },
+    {
+      "id": "wrf07",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "wrf08",
+      "answer_index": 0,
+      "explanation": "d/c."
+    },
+    {
+      "id": "wrf09",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wrf10",
+      "answer_index": 2,
+      "explanation": "PDP."
+    },
+    {
+      "id": "wrf11",
+      "answer_index": 3,
+      "explanation": "Gated."
+    },
+    {
+      "id": "wrf12",
+      "answer_index": 0,
+      "explanation": "Boundary."
+    },
+    {
+      "id": "wrf13",
+      "answer_index": 1,
+      "explanation": "No."
+    },
+    {
+      "id": "wrf14",
+      "answer_index": 2,
+      "explanation": "3.5."
+    },
+    {
+      "id": "wrf15",
+      "answer_index": 3,
+      "explanation": "Lab."
+    },
+    {
+      "id": "wrf16",
+      "answer_index": 0,
+      "explanation": "Pending."
+    },
+    {
+      "id": "wrf17",
+      "answer_index": 1,
+      "explanation": "Honesty."
+    },
+    {
+      "id": "wrf18",
+      "answer_index": 2,
+      "explanation": "Aligned."
+    },
+    {
+      "id": "wrf19",
+      "answer_index": 3,
+      "explanation": "A11y."
+    },
+    {
+      "id": "wrf20",
+      "answer_index": 0,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "wrf21",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wrf22",
+      "answer_index": 2,
+      "explanation": "Reject."
+    },
+    {
+      "id": "wrf23",
+      "answer_index": 3,
+      "explanation": "Fail."
+    },
+    {
+      "id": "wrf24",
+      "answer_index": 0,
+      "explanation": "Fixtures."
+    }
+  ]
+}

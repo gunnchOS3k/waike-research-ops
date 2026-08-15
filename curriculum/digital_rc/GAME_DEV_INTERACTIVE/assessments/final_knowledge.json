@@ -1,0 +1,269 @@
+{
+  "assessment_id": "GAME_DEV_INTERACTIVE-final",
+  "items": [
+    {
+      "id": "gaf01",
+      "kind": "mcq",
+      "stem": "Interpolating render frames while keeping fixed sim steps is?",
+      "choices": [
+        "Always forbidden",
+        "AI-only",
+        "Audio-only",
+        "An accepted pattern"
+      ]
+    },
+    {
+      "id": "gaf02",
+      "kind": "mcq",
+      "stem": "Handheld profiling marked PHYSICAL_PENDING means?",
+      "choices": [
+        "Await real measurement",
+        "Always DONE",
+        "Fabricate FPS",
+        "Skip ethics"
+      ]
+    },
+    {
+      "id": "gaf03",
+      "kind": "mcq",
+      "stem": "AABB separating-axis work reduces to?",
+      "choices": [
+        "Sphere-only math",
+        "Per-axis overlap tests",
+        "DAU charts",
+        "FSPL charts"
+      ]
+    },
+    {
+      "id": "gaf04",
+      "kind": "mcq",
+      "stem": "Swept collision tests after basic AABB are?",
+      "choices": [
+        "Finished forever in week 1",
+        "Deleted",
+        "Still needed later",
+        "Replaced by 6G"
+      ]
+    },
+    {
+      "id": "gaf05",
+      "kind": "mcq",
+      "stem": "Beat phase after indexing should lie in?",
+      "choices": [
+        "always exactly 2",
+        "degree-only space",
+        "dB space",
+        "[0,1)"
+      ]
+    },
+    {
+      "id": "gaf06",
+      "kind": "mcq",
+      "stem": "license_ok on audio week must read?",
+      "choices": [
+        "true",
+        "false",
+        "crack",
+        "null"
+      ]
+    },
+    {
+      "id": "gaf07",
+      "kind": "mcq",
+      "stem": "Idle\u2192Run on the fixture table is?",
+      "choices": [
+        "Always illegal",
+        "A legal edge",
+        "AI-only",
+        "Audio-only"
+      ]
+    },
+    {
+      "id": "gaf08",
+      "kind": "mcq",
+      "stem": "Claiming blend trees are finished after FSM week is?",
+      "choices": [
+        "Accurate",
+        "Required",
+        "Over-claim / still needed",
+        "Extra"
+      ]
+    },
+    {
+      "id": "gaf09",
+      "kind": "mcq",
+      "stem": "Level checksums primarily pin?",
+      "choices": [
+        "E-stop wiring",
+        "FSPL hops",
+        "NTN ephemeris",
+        "Canonical level edits"
+      ]
+    },
+    {
+      "id": "gaf10",
+      "kind": "mcq",
+      "stem": "Screenshot-only level proof without JSON should?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Earn cert",
+        "Earn DAU"
+      ]
+    },
+    {
+      "id": "gaf11",
+      "kind": "mcq",
+      "stem": "Action maps help when controllers change because?",
+      "choices": [
+        "They never matter",
+        "Semantic actions survive device swaps",
+        "They require 6G",
+        "They require E-stop"
+      ]
+    },
+    {
+      "id": "gaf12",
+      "kind": "mcq",
+      "stem": "Week-9 remaps relate to earlier input work by?",
+      "choices": [
+        "Deleting input week",
+        "Requiring NTN",
+        "Extending accessibility remapping",
+        "Requiring FSPL"
+      ]
+    },
+    {
+      "id": "gaf13",
+      "kind": "mcq",
+      "stem": "Hard-depending an unmerged game PR for the case study is?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Extra",
+        "A claim-boundary failure"
+      ]
+    },
+    {
+      "id": "gaf14",
+      "kind": "mcq",
+      "stem": "anime-aggressors appears in this course as?",
+      "choices": [
+        "An optional named example",
+        "A mandatory merge blocker",
+        "A device-os module",
+        "A NET-SEC ticket"
+      ]
+    },
+    {
+      "id": "gaf15",
+      "kind": "mcq",
+      "stem": "Playtest median/session metrics require?",
+      "choices": [
+        "Only vanity DAU slides",
+        "Arithmetic on the session list",
+        "Only VFX reels",
+        "Only cracked assets"
+      ]
+    },
+    {
+      "id": "gaf16",
+      "kind": "mcq",
+      "stem": "Statistical cohort significance after the small playtest is?",
+      "choices": [
+        "Already proven forever",
+        "Fake-OK",
+        "Still needed",
+        "Skipped"
+      ]
+    },
+    {
+      "id": "gaf17",
+      "kind": "mcq",
+      "stem": "colorblind_safe must be?",
+      "choices": [
+        "false",
+        "ignored",
+        "gpu-only",
+        "true"
+      ]
+    },
+    {
+      "id": "gaf18",
+      "kind": "mcq",
+      "stem": "Fabricating tests with disabled players is?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "gaf19",
+      "kind": "mcq",
+      "stem": "Should Product-Use consume this unmerged course branch?",
+      "choices": [
+        "Yes",
+        "No",
+        "Optional",
+        "Required"
+      ]
+    },
+    {
+      "id": "gaf20",
+      "kind": "mcq",
+      "stem": "Career credentials are?",
+      "choices": [
+        "Granted automatically",
+        "Sold",
+        "Aligned not granted",
+        "Hidden"
+      ]
+    },
+    {
+      "id": "gaf21",
+      "kind": "mcq",
+      "stem": "Keyboard-only path notes in the portfolio are?",
+      "choices": [
+        "Forbidden",
+        "GPU-only",
+        "Unnecessary",
+        "Required"
+      ]
+    },
+    {
+      "id": "gaf22",
+      "kind": "mcq",
+      "stem": "PASS-only lab bodies are?",
+      "choices": [
+        "Rejected via AssertionError",
+        "Accepted",
+        "Half credit",
+        "Auto A"
+      ]
+    },
+    {
+      "id": "gaf23",
+      "kind": "mcq",
+      "stem": "Empty {} submissions are?",
+      "choices": [
+        "PASS",
+        "Failures",
+        "Half credit",
+        "Silent skips"
+      ]
+    },
+    {
+      "id": "gaf24",
+      "kind": "mcq",
+      "stem": "Forge Arcade academy id is?",
+      "choices": [
+        "ACADEMY_CYBER",
+        "ACADEMY_HARDWARE",
+        "ACADEMY_SOFTWARE",
+        "ACADEMY_IT"
+      ]
+    }
+  ]
+}

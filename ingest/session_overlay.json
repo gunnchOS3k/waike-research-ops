@@ -160,5 +160,59 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "WIRELESS_6G-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "WIRELESS_6G-offline",
+      "labs": [
+        "lab_fspl_budget",
+        "lab_ofdm_numerology"
+      ],
+      "catalog_course_id": "WIRELESS_6G",
+      "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "ROBOTICS_CONTROL-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "ROBOTICS_CONTROL-offline",
+      "labs": [
+        "lab_se2_pose",
+        "lab_fk_2r"
+      ],
+      "catalog_course_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control \u2014 HarborBot Bay"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "GAME_DEV_INTERACTIVE-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "GAME_DEV_INTERACTIVE-offline",
+      "labs": [
+        "lab_game_loop",
+        "lab_aabb_hit"
+      ],
+      "catalog_course_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development \u2014 Forge Arcade Studio"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

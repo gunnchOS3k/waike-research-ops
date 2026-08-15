@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "WIRELESS_6G-lab",
+    "title": "Pier Radio lab",
+    "criteria": [
+      {
+        "name": "fspl_or_bler",
+        "weight": 20,
+        "desc": "FSPL/BLER/NTN math matches fixture"
+      },
+      {
+        "name": "honesty_flags",
+        "weight": 20,
+        "desc": "commercial_6g/NTN-standard flags honest"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong arithmetic fails"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS-only rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-assignment",
+    "title": "Radio journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses WR-#### tickets"
+      },
+      {
+        "name": "no_6g_brochure",
+        "weight": 30,
+        "desc": "No commercial 6G claim"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "AI mode tagged when used"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-quiz",
+    "title": "Radio knowledge",
+    "criteria": [
+      {
+        "name": "fixture_numbers",
+        "weight": 50,
+        "desc": "Original stems with Pier numbers"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-mid",
+    "title": "Mid Pier audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "fspl_ofdm_ntn",
+        "weight": 40,
+        "desc": "FSPL/OFDM/BLER/NTN"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-final-knowledge",
+    "title": "Final radio exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone items"
+      },
+      {
+        "name": "airan_oran_honesty",
+        "weight": 50,
+        "desc": "AI-RAN/O-RAN/6G honesty"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "6G-true/ungated negatives fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-project",
+    "title": "Radio notebook",
+    "criteria": [
+      {
+        "name": "digest",
+        "weight": 40,
+        "desc": "Notebook sha256 present"
+      },
+      {
+        "name": "no_pu_unmerged",
+        "weight": 30,
+        "desc": "No Product-Use unmerged consume"
+      },
+      {
+        "name": "six_labs",
+        "weight": 30,
+        "desc": "labs_passed\u22656"
+      }
+    ]
+  },
+  {
+    "rubric_id": "WIRELESS_6G-portfolio",
+    "title": "Radio portfolio",
+    "criteria": [
+      {
+        "name": "alt_text",
+        "weight": 40,
+        "desc": "Text path / plot alt_text"
+      },
+      {
+        "name": "claim_boundary",
+        "weight": 30,
+        "desc": "No commercial 6G / cert claim"
+      },
+      {
+        "name": "career_map",
+        "weight": 30,
+        "desc": "Aligned roles present"
+      }
+    ]
+  }
+]

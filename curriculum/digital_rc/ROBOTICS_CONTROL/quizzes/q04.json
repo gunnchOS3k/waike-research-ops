@@ -1,0 +1,72 @@
+{
+  "quiz_id": "ROBOTICS_CONTROL-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "rb-w4-1",
+      "kind": "mcq",
+      "stem": "vmax?",
+      "choices": [
+        "4 m/s",
+        "40",
+        "0",
+        "0.4 m/s"
+      ]
+    },
+    {
+      "id": "rb-w4-2",
+      "kind": "mcq",
+      "stem": "Ignore vmax for smooth look?",
+      "choices": [
+        "Fails",
+        "OK",
+        "Required",
+        "Extra"
+      ]
+    },
+    {
+      "id": "rb-w4-3",
+      "kind": "mcq",
+      "stem": "AI mode?",
+      "choices": [
+        "AI dumps",
+        "NO_AI",
+        "Skip",
+        "Auto"
+      ]
+    },
+    {
+      "id": "rb-w4-4",
+      "kind": "mcq",
+      "stem": "Distance?",
+      "choices": [
+        "12 m",
+        "0.12",
+        "1.2 m",
+        "120"
+      ]
+    },
+    {
+      "id": "rb-w4-5",
+      "kind": "mcq",
+      "stem": "amax?",
+      "choices": [
+        "5",
+        "50",
+        "0",
+        "0.5"
+      ]
+    },
+    {
+      "id": "rb-w4-6",
+      "kind": "mcq",
+      "stem": "Curvature limits?",
+      "choices": [
+        "Still need",
+        "Done",
+        "Deleted",
+        "6G"
+      ]
+    }
+  ]
+}
