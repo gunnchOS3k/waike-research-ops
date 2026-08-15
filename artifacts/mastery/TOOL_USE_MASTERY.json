@@ -1,0 +1,548 @@
+{
+  "schema": "waike.tool_use_mastery.v1",
+  "attempted": 10,
+  "passed": 10,
+  "pass_rate": 1.0,
+  "coverage_status": "PARTIAL",
+  "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
+  "mastery_complete": false,
+  "results": [
+    {
+      "lab_id": "lab_os_users",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "users"
+        },
+        {
+          "name": "kiosk_exists",
+          "ok": true,
+          "detail": "kiosk account present"
+        },
+        {
+          "name": "kiosk_no_sudo",
+          "ok": true,
+          "detail": "kiosk must not have sudo"
+        },
+        {
+          "name": "kiosk_not_rootish",
+          "ok": true,
+          "detail": "forbidden groups=[]"
+        },
+        {
+          "name": "lead_in_helpdesk",
+          "ok": true,
+          "detail": "groups=['helpdesk', 'staff']"
+        },
+        {
+          "name": "unique_homes",
+          "ok": true,
+          "detail": "each account needs its own home"
+        },
+        {
+          "name": "unique_uids",
+          "ok": true,
+          "detail": "UIDs collide"
+        }
+      ],
+      "submission_keys": [
+        "users"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_services",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "units"
+        },
+        {
+          "name": "cupsd_running",
+          "ok": true,
+          "detail": "print spooler down"
+        },
+        {
+          "name": "sshd_running",
+          "ok": true,
+          "detail": "remote admin path down"
+        },
+        {
+          "name": "tracker_off",
+          "ok": true,
+          "detail": "classroom image forbids toy-tracker"
+        },
+        {
+          "name": "cupsd_restart_budget",
+          "ok": true,
+          "detail": "restart loop too slow for kiosk"
+        }
+      ],
+      "submission_keys": [
+        "units"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_storage",
+      "course_id": "GENERAL_IT",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "size_bytes,used_bytes,reserved_bytes,free_ratio"
+        },
+        {
+          "name": "free_nonneg",
+          "ok": true,
+          "detail": "free=68719476736"
+        },
+        {
+          "name": "min_free",
+          "ok": true,
+          "detail": "free_ratio=0.2500"
+        },
+        {
+          "name": "used_lt_size",
+          "ok": true,
+          "detail": "used exceeds disk"
+        },
+        {
+          "name": "student_ratio",
+          "ok": true,
+          "detail": "student=0.25 computed=0.250000"
+        }
+      ],
+      "submission_keys": [
+        "free_ratio",
+        "min_free_ratio",
+        "reserved_bytes",
+        "size_bytes",
+        "used_bytes"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_cidr_math",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "cases"
+        },
+        {
+          "name": "10.20.30.40/26_net",
+          "ok": true,
+          "detail": "10.20.30.0"
+        },
+        {
+          "name": "10.20.30.40/26_bcast",
+          "ok": true,
+          "detail": "10.20.30.63"
+        },
+        {
+          "name": "10.20.30.40/26_usable",
+          "ok": true,
+          "detail": "usable=62"
+        },
+        {
+          "name": "10.20.30.80/28_net",
+          "ok": true,
+          "detail": "10.20.30.80"
+        },
+        {
+          "name": "10.20.30.80/28_bcast",
+          "ok": true,
+          "detail": "10.20.30.95"
+        },
+        {
+          "name": "10.20.30.80/28_usable",
+          "ok": true,
+          "detail": "usable=14"
+        }
+      ],
+      "submission_keys": [
+        "cases"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_datapath",
+      "course_id": "COMPUTER_NETWORKING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "student JSON present"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "dst_mac,ethertype,ttl,proto,dst_ip,lpm_iface,ttl1_forwarded,ttl1_after_decrement"
+        },
+        {
+          "name": "ethertype_ipv4",
+          "ok": true,
+          "detail": "0x800"
+        },
+        {
+          "name": "ipv4_version",
+          "ok": true,
+          "detail": "ver=4 ihl=5"
+        },
+        {
+          "name": "tcp",
+          "ok": true,
+          "detail": "proto=6"
+        },
+        {
+          "name": "dst_mac_unicast",
+          "ok": true,
+          "detail": "aaaaaaaaaa01"
+        },
+        {
+          "name": "student_ttl",
+          "ok": true,
+          "detail": "student=4 header=4"
+        },
+        {
+          "name": "student_dst",
+          "ok": true,
+          "detail": "student=10.20.40.9"
+        },
+        {
+          "name": "ttl_positive_after_dec",
+          "ok": true,
+          "detail": "ttl=4"
+        },
+        {
+          "name": "lpm_more_specific",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.0/24', 'nh': '10.20.30.1', 'iface': 'eth1'}"
+        },
+        {
+          "name": "nh",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.0/24', 'nh': '10.20.30.1', 'iface': 'eth1'}"
+        },
+        {
+          "name": "lpm_host_route",
+          "ok": true,
+          "detail": "{'prefix': '10.20.40.9/32', 'nh': '10.20.30.9', 'iface': 'host9'}"
+        },
+        {
+          "name": "ttl1_parsed_from_header",
+          "ok": true,
+          "detail": "header_ttl=1"
+        },
+        {
+          "name": "ttl1_decrement",
+          "ok": true,
+          "detail": "parsed_ttl=1 after=0"
+        },
+        {
+          "name": "ttl1_drop",
+          "ok": true,
+          "detail": "student_forwarded=False student_after=0 header_after=0"
+        }
+      ],
+      "submission_keys": [
+        "dst_ip",
+        "dst_mac",
+        "ethertype",
+        "lpm_iface",
+        "proto",
+        "ttl",
+        "ttl1_after_decrement",
+        "ttl1_forwarded"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_git_conflict",
+      "course_id": "SOFTWARE_BUILDER",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "two_parents",
+          "ok": true,
+          "detail": "parents=2"
+        },
+        {
+          "name": "keep_require_role",
+          "ok": true,
+          "detail": "missing require_role"
+        },
+        {
+          "name": "keep_hours",
+          "ok": true,
+          "detail": "missing HOURS"
+        },
+        {
+          "name": "single_entrypoint",
+          "ok": true,
+          "detail": "need exactly one open_hours"
+        }
+      ],
+      "submission_keys": [
+        "parents",
+        "resolved_text",
+        "survivor_tokens"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_authz",
+      "course_id": "SOFTWARE_BUILDER",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "desk_can_create",
+          "ok": true,
+          "detail": "desk create"
+        },
+        {
+          "name": "desk_can_close",
+          "ok": true,
+          "detail": "desk close"
+        },
+        {
+          "name": "reader_read_only",
+          "ok": true,
+          "detail": "reader={'checkout.read'}"
+        },
+        {
+          "name": "bot_no_close",
+          "ok": true,
+          "detail": "bot close"
+        },
+        {
+          "name": "bot_annotate",
+          "ok": true,
+          "detail": "bot annotate"
+        }
+      ],
+      "submission_keys": [
+        "roles"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_rest_api",
+      "course_id": "SOFTWARE_BUILDER",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "status_map",
+          "ok": true,
+          "detail": "got={('POST', '/api/v1/checkouts', 'reader', True): 403, ('POST', '/api/v1/checkouts', 'desk', False): 400, ('POST', '/api/v1/checkouts', 'desk', True): 201, ('GET', '/api/v1/checkouts/missing', 'desk', False): 404}"
+        },
+        {
+          "name": "idempotent_store",
+          "ok": true,
+          "detail": "store len"
+        }
+      ],
+      "submission_keys": [
+        "cases",
+        "store_len_after_idempotent_put"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_db_migration",
+      "course_id": "SOFTWARE_BUILDER",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "version",
+          "ok": true,
+          "detail": "version"
+        },
+        {
+          "name": "adds_returned_at",
+          "ok": true,
+          "detail": "forward"
+        },
+        {
+          "name": "nullable",
+          "ok": true,
+          "detail": "nullable"
+        },
+        {
+          "name": "no_delete_history",
+          "ok": true,
+          "detail": "delete"
+        },
+        {
+          "name": "down_drops_column",
+          "ok": true,
+          "detail": "down"
+        },
+        {
+          "name": "no_password",
+          "ok": true,
+          "detail": "secrets"
+        }
+      ],
+      "submission_keys": [
+        "down_sql",
+        "forward_sql",
+        "schema_version"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    },
+    {
+      "lab_id": "lab_frontend_ui",
+      "course_id": "SOFTWARE_BUILDER",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "filter_button",
+          "ok": true,
+          "detail": "filter name"
+        },
+        {
+          "name": "overdue_text",
+          "ok": true,
+          "detail": "overdue marker"
+        },
+        {
+          "name": "alert_role",
+          "ok": true,
+          "detail": "alert"
+        },
+        {
+          "name": "not_color_only",
+          "ok": true,
+          "detail": "color+text"
+        }
+      ],
+      "submission_keys": [
+        "tree"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
+    }
+  ],
+  "note": "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student validators. Not tool-use mastery COMPLETE; not a claim of autonomous lab solving."
+}
