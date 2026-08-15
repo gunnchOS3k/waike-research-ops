@@ -1,6 +1,6 @@
 {
   "schema": "waike.mastery_skill_graph.v1",
-  "generated_utc": "2026-08-15T18:41:47Z",
+  "generated_utc": "2026-08-15T18:59:13Z",
   "node_count": 242,
   "edge_count": 338,
   "forbidden_learner_labels": [

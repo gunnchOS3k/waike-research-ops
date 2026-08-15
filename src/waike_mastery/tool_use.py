@@ -311,11 +311,14 @@ def run_tool_use_mastery(lab_ids: list[str] | None = None) -> dict[str, Any]:
                 **r,
                 "fixture_style": "curriculum_cued_static_solver",
                 "open_ended_agentic_tool_use": False,
+                "real_execution": False,
             }
             for r in results
         ],
         "note": (
             "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student "
-            "validators. Not tool-use mastery COMPLETE; not a claim of autonomous lab solving."
+            "validators. Fixtures ≠ competence. Not tool-use mastery COMPLETE. "
+            "Real action runners are owned by gunnchAI TOOL_USE_REAL_EXEC.json."
         ),
+        "cross_ref": "gunnchAI artifacts/waike-mastery/TOOL_USE_REAL_EXEC.json",
     }

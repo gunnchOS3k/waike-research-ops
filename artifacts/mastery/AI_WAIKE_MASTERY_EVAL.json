@@ -135,8 +135,37 @@
       "WIRELESS_6G"
     ]
   },
+  "score_families": {
+    "MASTERY_001_HEURISTIC_9C": {
+      "id": "MASTERY_001_HEURISTIC_9C",
+      "score": 0.6442307692307693,
+      "role": "historical_diagnostic",
+      "counts_toward_curriculum_mastery": false
+    },
+    "MASTERY_002_HEURISTIC_12C": {
+      "id": "MASTERY_002_HEURISTIC_12C",
+      "score": 0.6298076923076923,
+      "role": "diagnostic_only",
+      "solver": "curriculum_overlap_v1",
+      "counts_toward_curriculum_mastery": false
+    },
+    "MASTERY_002_REAL_RUNTIME_12C": {
+      "id": "MASTERY_002_REAL_RUNTIME_12C",
+      "score": 0.16666666666666666,
+      "baseline_frozen": 0.16666666666666666,
+      "post_parser": 0.16666666666666666,
+      "role": "curriculum_mastery_only_path",
+      "counts_toward_curriculum_mastery": true,
+      "parser_version": "gunnchai.choice_parser.v2_final_only",
+      "items_attempted": 24,
+      "items_correct": 4,
+      "parser_failures": 7
+    },
+    "no_blended_average": true
+  },
   "mastery_scores": {
     "overall": 0.6298076923076923,
+    "score_family_id": "MASTERY_002_HEURISTIC_12C",
     "per_course": {
       "AI_ML_EDGE": {
         "correct": 64,
@@ -237,7 +266,8 @@
       "method": "isomorphic_choice_permutation"
     },
     "historical_baseline_001": 0.6442307692307693,
-    "published_without_false_pass": true
+    "published_without_false_pass": true,
+    "note": "This overall is MASTERY_002_HEURISTIC_12C diagnostic only \u2014 not curriculum mastery."
   },
   "mastery_policy": {
     "policy": {
@@ -437,7 +467,7 @@
       "may_publish_grades_without_human": false,
       "hitl_grading_required": true
     },
-    "generated_utc": "2026-08-15T18:41:47Z"
+    "generated_utc": "2026-08-15T18:59:14Z"
   },
   "infra_children": {
     "MODE_CONTRACT_PERMISSIONS": {
@@ -542,13 +572,16 @@
     "REAL_TEACHER_EFFECTIVENESS_VALIDATED": false,
     "USED_INSTRUCTOR_KEYS_IN_BENCHMARK_SOLVE": false,
     "SELF_GRADED": false,
-    "note": "Mastery-002: PASS only if all mastery_children pass. Curriculum-overlap is baseline infrastructure; gunnchAI runtime solver is separate. Historical 0.644 preserved as MASTERY_001_NINE_COURSE_BASELINE. REAL_*/HUMAN_E6/ACCREDITED stay false."
+    "note": "Mastery-002: PASS only if all mastery_children pass. Curriculum-overlap is baseline infrastructure; gunnchAI runtime solver is separate. Historical 0.644 preserved as MASTERY_001_NINE_COURSE_BASELINE. REAL_*/HUMAN_E6/ACCREDITED stay false.",
+    "MASTERY_001_HEURISTIC_9C": 0.6442307692307693,
+    "MASTERY_002_HEURISTIC_12C": 0.6298076923076923,
+    "MASTERY_002_REAL_RUNTIME_12C": 0.16666666666666666
   },
   "open": [
-    "WAIKE_AI_DIGITAL_MASTERY_PASS false until all mastery_children pass.",
-    "Curriculum-overlap solver remains baseline; gunnchAI runtime solver owns Mastery-002 scoring path.",
-    "Tool-use PARTIAL (includes computed WIRELESS/ROBOTICS/GAME labs) \u2260 COMPLETE.",
-    "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false.",
+    "WAIKE_AI_DIGITAL_MASTERY_PASS false until mastery_children earned (honesty \u2260 mastery).",
+    "Score families: MASTERY_001_HEURISTIC_9C / MASTERY_002_HEURISTIC_12C / MASTERY_002_REAL_RUNTIME_12C \u2014 no blend.",
+    "REAL_SOLVER_BASELINE_V1 frozen on gunnchAI at ~0.167; post-parser honest score owned by gunnchAI.",
+    "Tool-use fixtures PARTIAL; real runners on gunnchAI TOOL_USE_REAL_EXEC.",
     "device-os #116 untouched; gunnchAI #36 not a fourth stream."
   ],
   "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
