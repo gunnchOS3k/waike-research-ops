@@ -79,3 +79,28 @@ def educator_copilot_session(
         },
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
+
+
+def educator_evidence_suite(*, course_id: str = "GENERAL_IT") -> dict[str, Any]:
+    intents = [
+        "planning",
+        "first_time_teacher",
+        "live_support",
+        "grading_assist",
+        "feedback",
+        "analytics",
+    ]
+    sessions = [educator_copilot_session(course_id=course_id, intent=i) for i in intents]
+    return {
+        "schema": "waike.educator_copilot_evidence.v1",
+        "course_id": course_id,
+        "intents_covered": intents,
+        "sessions": sessions,
+        "hitl_ok": all(
+            s["permissions"]["hitl_grading_required"]
+            and not s["permissions"]["may_publish_grades_without_human"]
+            for s in sessions
+        ),
+        "HUMAN_LEARNING_CLAIMED": False,
+        "note": "Educator surfaces only; HITL required; no auto-publish.",
+    }

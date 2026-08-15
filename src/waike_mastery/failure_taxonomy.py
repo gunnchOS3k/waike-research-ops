@@ -1,6 +1,7 @@
 """Failure taxonomy for missed marks — first divergence, not only final wrong answer."""
 from __future__ import annotations
 
+import re
 from typing import Any
 
 TAXONOMY = [
@@ -37,6 +38,26 @@ TAXONOMY = [
 ]
 
 
+
+def infer_stem_signals(stem: str) -> dict[str, bool]:
+    """Soft signals from stem text only (no gold keys)."""
+    s = stem or ""
+    out: dict[str, bool] = {}
+    if re.search(r"\b(calculate|compute|how many|fspl|log10|throughput|cidr|/\d{1,2}\b)", s, re.I):
+        out["calc_mismatch"] = True
+    if re.search(r"\b(before|prerequisite|first must|depends on|prior week)\b", s, re.I):
+        out["prerequisite"] = True
+    if re.search(r"\b(vs\.?|versus|confus|difference between|which of the following is NOT)\b", s, re.I):
+        out["concept_confusion"] = True
+    if re.search(r"\b(therefore|implies|if .+ then|reason|because)\b", s, re.I):
+        out["reasoning"] = True
+    if re.search(r"\b(according to the (lesson|lab)|based on the (passage|notes)|from the text)\b", s, re.I):
+        out["grounding"] = True
+    if re.search(r"\b(select all|best describes|most nearly|ambiguous)\b", s, re.I):
+        out["ambiguous"] = True
+    return out
+
+
 def classify_miss(
     *,
     stem: str,
@@ -49,6 +70,8 @@ def classify_miss(
     blocked_runtime: bool = False,
     parser_failed: bool = False,
 ) -> dict[str, Any]:
+    soft = infer_stem_signals(stem)
+    calc_mismatch = calc_mismatch or soft.get("calc_mismatch", False)
     if used_keys:
         code = "POLICY_BLOCKED"
     elif parser_failed or chosen is None:
@@ -61,6 +84,16 @@ def classify_miss(
         code = "TOOL_EXECUTION_FAILURE"
     elif calc_mismatch:
         code = "CALCULATION_FAILURE"
+    elif soft.get("prerequisite"):
+        code = "PREREQUISITE_GAP"
+    elif soft.get("concept_confusion"):
+        code = "CONCEPT_CONFUSION"
+    elif soft.get("reasoning"):
+        code = "REASONING_FAILURE"
+    elif soft.get("grounding"):
+        code = "SOURCE_GROUNDING_FAILURE"
+    elif soft.get("ambiguous"):
+        code = "AMBIGUOUS_ITEM"
     elif expected_hint and chosen and expected_hint.lower() in (stem or "").lower():
         code = "INSTRUCTION_INTERPRETATION_FAILURE"
     else:

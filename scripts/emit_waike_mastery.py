@@ -21,7 +21,7 @@ from waike_mastery.corpus_inventory import build_corpus_inventory  # noqa: E402
 from waike_mastery.course_honesty import run_course_honesty  # noqa: E402
 from waike_mastery.diagnosis import diagnose_misconception, remediation_loop  # noqa: E402
 from waike_mastery.discover import emit_learning_contract  # noqa: E402
-from waike_mastery.educator import educator_copilot_session  # noqa: E402
+from waike_mastery.educator import educator_copilot_session, educator_evidence_suite  # noqa: E402
 from waike_mastery.failure_taxonomy import classify_miss, sample_taxonomy_report  # noqa: E402
 from waike_mastery.policy import evaluate_mastery_policy  # noqa: E402
 from waike_mastery.registry import build_assessable_registry  # noqa: E402
@@ -67,6 +67,7 @@ def main() -> int:
     educator = educator_copilot_session(
         course_id=contract["courses"][0]["course_id"], intent="grading_assist"
     )
+    educator_evidence = educator_evidence_suite(course_id=contract["courses"][0]["course_id"])
 
     # Failure taxonomy sample from incorrect curriculum-overlap rows (no key leak)
     misses: list[dict] = []
@@ -86,6 +87,29 @@ def main() -> int:
         if len(misses) >= 40:
             break
     taxonomy = sample_taxonomy_report(misses)
+
+    # Optional sync of MASTERY_002_REAL_RUNTIME_12C from adjacent gunnchAI artifacts (never blend).
+    real_runtime = {
+        "id": "MASTERY_002_REAL_RUNTIME_12C",
+        "score": None,
+        "baseline_frozen": 0.16666666666666666,
+        "role": "curriculum_mastery_only_path",
+        "counts_toward_curriculum_mastery": True,
+        "source": "awaiting_gunnchai_runtime_artifact",
+    }
+    gunn_eval = ROOT.parent / "gunnchAI3k" / "artifacts" / "waike-mastery" / "AI_WAIKE_MASTERY_EVAL.json"
+    if gunn_eval.is_file():
+        try:
+            g = json.loads(gunn_eval.read_text(encoding="utf-8"))
+            fam = (g.get("score_families") or {}).get("MASTERY_002_REAL_RUNTIME_12C") or {}
+            if fam.get("score") is not None:
+                real_runtime = {
+                    **real_runtime,
+                    **{k: fam[k] for k in ("score", "parser_version", "items_attempted", "items_correct", "parser_failures") if k in fam},
+                    "source": "gunnchai_AI_WAIKE_MASTERY_EVAL",
+                }
+        except Exception as exc:  # noqa: BLE001
+            real_runtime["source"] = f"gunnchai_read_failed:{exc}"
 
     expected_new = {"WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE"}
     discovered_ids = {c["course_id"] for c in contract["courses"]}
@@ -231,14 +255,7 @@ def main() -> int:
                 "solver": bench["solver"],
                 "counts_toward_curriculum_mastery": False,
             },
-            "MASTERY_002_REAL_RUNTIME_12C": {
-                "id": "MASTERY_002_REAL_RUNTIME_12C",
-                "score": None,
-                "role": "curriculum_mastery_only_path",
-                "owner": "gunnchAI runtime solver",
-                "counts_toward_curriculum_mastery": True,
-                "note": "Filled by gunnchAI GUNNCHAI_RUNTIME_SOLVER / eval suite — never replace with heuristic.",
-            },
+            "MASTERY_002_REAL_RUNTIME_12C": real_runtime,
             "no_blended_average": True,
         },
         "mastery_scores": {
@@ -275,6 +292,7 @@ def main() -> int:
             "demeaning_label_used": diag["demeaning_label_used"],
         },
         "educator_mode": educator,
+        "educator_evidence": educator_evidence,
         "infra_children": {k: {"pass": v} for k, v in infra_children.items()},
         "children": {k: {"pass": v} for k, v in infra_children.items()},
         "tokens": tokens,
@@ -282,7 +300,8 @@ def main() -> int:
             "WAIKE_AI_DIGITAL_MASTERY_PASS false until all mastery_children pass (claim honesty ≠ mastery).",
             "Score families: MASTERY_001_HEURISTIC_9C / MASTERY_002_HEURISTIC_12C / MASTERY_002_REAL_RUNTIME_12C — no blend.",
             "Curriculum-overlap is diagnostic; only gunnchAI MASTERY_002_REAL_RUNTIME_12C counts toward mastery.",
-            "Tool-use PARTIAL (fixtures) ≠ COMPLETE; real runners live on gunnchAI TOOL_USE_REAL_EXEC.",
+            "Tool-use PARTIAL (fixtures) ≠ COMPLETE; curriculum-integrated path lives on gunnchAI.",
+            "MODEL_CAPABILITY_LIMIT on available SmolLM2 GGUFs — ≥0.95 real-runtime unlikely without stronger model.",
             "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false.",
             "device-os #116 untouched; gunnchAI #36 not a fourth stream.",
         ],
@@ -317,6 +336,7 @@ def main() -> int:
     _write(out / "TOOL_USE_MASTERY.json", tool)
     _write(out / "MASTERY_BENCHMARK.json", {**bench, "grade_rows": bench["grade_rows"][:3]})
     _write(out / "AI_WAIKE_MASTERY_EVAL.json", eval_report)
+    _write(out / "EDUCATOR_COPILOT_EVIDENCE.json", educator_evidence)
     ingest = ROOT / "ingest" / "learning_contract"
     _write(ingest / "waike_gunnchai_learning_contract.v1.json", contract)
 

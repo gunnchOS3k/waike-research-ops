@@ -151,15 +151,15 @@
     },
     "MASTERY_002_REAL_RUNTIME_12C": {
       "id": "MASTERY_002_REAL_RUNTIME_12C",
-      "score": 0.16666666666666666,
+      "score": 0.375,
       "baseline_frozen": 0.16666666666666666,
-      "post_parser": 0.16666666666666666,
       "role": "curriculum_mastery_only_path",
       "counts_toward_curriculum_mastery": true,
+      "source": "gunnchai_AI_WAIKE_MASTERY_EVAL",
       "parser_version": "gunnchai.choice_parser.v2_final_only",
       "items_attempted": 24,
-      "items_correct": 4,
-      "parser_failures": 7
+      "items_correct": 9,
+      "parser_failures": 0
     },
     "no_blended_average": true
   },
@@ -467,7 +467,146 @@
       "may_publish_grades_without_human": false,
       "hitl_grading_required": true
     },
-    "generated_utc": "2026-08-15T18:59:14Z"
+    "generated_utc": "2026-08-15T19:23:12Z"
+  },
+  "educator_evidence": {
+    "schema": "waike.educator_copilot_evidence.v1",
+    "course_id": "AI_ML_EDGE",
+    "intents_covered": [
+      "planning",
+      "first_time_teacher",
+      "live_support",
+      "grading_assist",
+      "feedback",
+      "analytics"
+    ],
+    "sessions": [
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "planning",
+        "pack": {
+          "title": "Week plan",
+          "actions": [
+            "Map kinesthetic hook \u2192 lab \u2192 quiz for next session",
+            "Flag prerequisite edges from skill graph",
+            "Prepare isomorphic practice set"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "first_time_teacher",
+        "pack": {
+          "title": "First-time teacher checklist",
+          "actions": [
+            "Read instructor packet + answer keys offline",
+            "Run one lab empty-submission fail demo",
+            "Rehearse accessibility board contract"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "live_support",
+        "pack": {
+          "title": "Live classroom support",
+          "actions": [
+            "Socratic prompts only for learner-visible channel",
+            "Do not paste answer keys into learner chat",
+            "Escalate safety / integrity issues"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "grading_assist",
+        "pack": {
+          "title": "Grading assist (HITL)",
+          "actions": [
+            "Propose rubric scores",
+            "Require human confirm before publish",
+            "Never auto-submit LMS grades"
+          ],
+          "hitl_required": true,
+          "auto_publish_grades": false
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "feedback",
+        "pack": {
+          "title": "Feedback drafting",
+          "actions": [
+            "Skill-focused comments only",
+            "No demeaning labels",
+            "Point to remediation packet ids"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "analytics",
+        "pack": {
+          "title": "Section analytics",
+          "actions": [
+            "Aggregate mastery by domain",
+            "Surface CURRICULUM_DEFECT_CANDIDATE rates",
+            "Keep learner refs opaque"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:23:12Z"
+      }
+    ],
+    "hitl_ok": true,
+    "HUMAN_LEARNING_CLAIMED": false,
+    "note": "Educator surfaces only; HITL required; no auto-publish."
   },
   "infra_children": {
     "MODE_CONTRACT_PERMISSIONS": {
@@ -572,16 +711,15 @@
     "REAL_TEACHER_EFFECTIVENESS_VALIDATED": false,
     "USED_INSTRUCTOR_KEYS_IN_BENCHMARK_SOLVE": false,
     "SELF_GRADED": false,
-    "note": "Mastery-002: PASS only if all mastery_children pass. Curriculum-overlap is baseline infrastructure; gunnchAI runtime solver is separate. Historical 0.644 preserved as MASTERY_001_NINE_COURSE_BASELINE. REAL_*/HUMAN_E6/ACCREDITED stay false.",
-    "MASTERY_001_HEURISTIC_9C": 0.6442307692307693,
-    "MASTERY_002_HEURISTIC_12C": 0.6298076923076923,
-    "MASTERY_002_REAL_RUNTIME_12C": 0.16666666666666666
+    "note": "Mastery-002: PASS only if all mastery_children pass. Curriculum-overlap is baseline infrastructure; gunnchAI runtime solver is separate. Historical 0.644 preserved as MASTERY_001_NINE_COURSE_BASELINE. REAL_*/HUMAN_E6/ACCREDITED stay false."
   },
   "open": [
-    "WAIKE_AI_DIGITAL_MASTERY_PASS false until mastery_children earned (honesty \u2260 mastery).",
+    "WAIKE_AI_DIGITAL_MASTERY_PASS false until all mastery_children pass (claim honesty \u2260 mastery).",
     "Score families: MASTERY_001_HEURISTIC_9C / MASTERY_002_HEURISTIC_12C / MASTERY_002_REAL_RUNTIME_12C \u2014 no blend.",
-    "REAL_SOLVER_BASELINE_V1 frozen on gunnchAI at ~0.167; post-parser honest score owned by gunnchAI.",
-    "Tool-use fixtures PARTIAL; real runners on gunnchAI TOOL_USE_REAL_EXEC.",
+    "Curriculum-overlap is diagnostic; only gunnchAI MASTERY_002_REAL_RUNTIME_12C counts toward mastery.",
+    "Tool-use PARTIAL (fixtures) \u2260 COMPLETE; curriculum-integrated path lives on gunnchAI.",
+    "MODEL_CAPABILITY_LIMIT on available SmolLM2 GGUFs \u2014 \u22650.95 real-runtime unlikely without stronger model.",
+    "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false.",
     "device-os #116 untouched; gunnchAI #36 not a fourth stream."
   ],
   "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
