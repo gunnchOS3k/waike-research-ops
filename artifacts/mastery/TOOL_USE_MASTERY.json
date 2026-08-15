@@ -3,6 +3,9 @@
   "attempted": 10,
   "passed": 10,
   "pass_rate": 1.0,
+  "coverage_status": "PARTIAL",
+  "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
+  "mastery_complete": false,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -55,7 +58,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_services",
@@ -98,7 +103,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_storage",
@@ -145,7 +152,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_cidr_math",
@@ -198,7 +207,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_datapath",
@@ -293,7 +304,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_git_conflict",
@@ -338,7 +351,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_authz",
@@ -386,7 +401,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_rest_api",
@@ -420,7 +437,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_db_migration",
@@ -475,7 +494,9 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     },
     {
       "lab_id": "lab_frontend_ui",
@@ -518,8 +539,10 @@
       ],
       "how_i_would_only": false,
       "used_reference_import": false,
-      "used_instructor_keys": false
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false
     }
   ],
-  "note": "Submissions derived from student-facing materials; graded by isolated lab validators."
+  "note": "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student validators. Not tool-use mastery COMPLETE; not a claim of autonomous lab solving."
 }

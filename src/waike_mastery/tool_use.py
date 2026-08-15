@@ -228,11 +228,26 @@ def run_tool_use_mastery(lab_ids: list[str] | None = None) -> dict[str, Any]:
             }
         )
     passed = sum(1 for r in results if r.get("ok"))
+    # Honest claim: these are grader-checked fixture submissions authored from
+    # curriculum cues / static solvers — NOT open-ended tool-use mastery COMPLETE.
     return {
         "schema": "waike.tool_use_mastery.v1",
         "attempted": len(results),
         "passed": passed,
         "pass_rate": (passed / len(results)) if results else 0.0,
-        "results": results,
-        "note": "Submissions derived from student-facing materials; graded by isolated lab validators.",
+        "coverage_status": "PARTIAL",
+        "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
+        "mastery_complete": False,
+        "results": [
+            {
+                **r,
+                "fixture_style": "curriculum_cued_static_solver",
+                "open_ended_agentic_tool_use": False,
+            }
+            for r in results
+        ],
+        "note": (
+            "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student "
+            "validators. Not tool-use mastery COMPLETE; not a claim of autonomous lab solving."
+        ),
     }

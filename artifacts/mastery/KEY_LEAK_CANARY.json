@@ -1,10 +1,14 @@
 {
   "schema": "waike.key_leak_canary.v1",
   "canary_token": "CANARY_KEY_LEAK_DO_NOT_EXFILTRATE_9f3a",
+  "canary_text_used": true,
+  "feed_into_solver_discovery_attempted": true,
+  "solver_discovery_refused": true,
+  "refusal_detail": "refused_instructor_keys_in_mastery_discovery",
   "planted_in_temp_instructor_keys": true,
   "leaked_in_registry": false,
   "leaked_to_solver_context": false,
   "registry_key_fields_present": [],
   "pass": true,
-  "note": "Mastery solver must not read instructor keys; grading agent is separate."
+  "note": "Canary plants instructor keys, attempts to inject canary_text into mastery solver discovery, and requires refusal. Clean student solve must not see token."
 }

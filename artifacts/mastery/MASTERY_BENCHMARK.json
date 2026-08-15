@@ -2,6 +2,11 @@
   "schema": "waike.mastery_benchmark.v1",
   "solver": "curriculum_overlap_v1",
   "used_instructor_keys_during_solve": false,
+  "key_use_measurement": {
+    "used_instructor_keys_during_solve": false,
+    "hit_count": 0,
+    "hits_sample": []
+  },
   "self_graded": false,
   "grading_agent": "isolated_after_submission",
   "items_attempted": 936,
@@ -174,6 +179,12 @@
     "HARDWARE_ENGINEERING.knowledge": 0.6298611111111111,
     "PM_AGILE_LSS.knowledge": 0.5958333333333334,
     "SOFTWARE_BUILDER.knowledge": 0.6833333333333335
+  },
+  "transfer": {
+    "items": 60,
+    "correct": 46,
+    "score": 0.7666666666666667,
+    "method": "isomorphic_choice_permutation"
   },
   "grade_rows": [
     {

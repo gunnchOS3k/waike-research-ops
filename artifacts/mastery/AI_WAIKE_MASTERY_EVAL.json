@@ -1,6 +1,7 @@
 {
   "schema": "AI_WAIKE_MASTERY_EVAL.v1",
   "suite": "AI_WAIKE_MASTERY_EVAL",
+  "honesty_remediation": "2026-08-15-demote-false-mastery-pass",
   "corpus": {
     "discoverable_courses": 9,
     "course_ids": [
@@ -161,12 +162,38 @@
     },
     "items_attempted": 936,
     "items_correct": 603,
-    "solver": "curriculum_overlap_v1"
+    "solver": "curriculum_overlap_v1",
+    "transfer": {
+      "items": 60,
+      "correct": 46,
+      "score": 0.7666666666666667,
+      "method": "isomorphic_choice_permutation"
+    },
+    "published_without_false_pass": true
+  },
+  "mastery_policy": {
+    "policy": {
+      "overall_min": 0.95,
+      "per_course_min": 0.9,
+      "transfer_min": 0.9,
+      "forbidden_smoke_bar": 0.55
+    },
+    "earned": false,
+    "reasons_not_earned": [
+      "overall_score=0.6442 < policy_min=0.95",
+      "per_course_below_min=['AI_ML_EDGE', 'CLOUD_DEVOPS', 'COMPUTER_NETWORKING', 'CYBERSECURITY', 'DATA_VIZ_BI', 'GENERAL_IT', 'HARDWARE_ENGINEERING', 'PM_AGILE_LSS', 'SOFTWARE_BUILDER']",
+      "transfer_score=0.7666666666666667 < policy_min=0.9",
+      "tool_use_status=PARTIAL (need COMPLETE for mastery)",
+      "smoke_bar_0.55_is_not_mastery"
+    ]
   },
   "tool_use": {
     "attempted": 10,
     "passed": 10,
     "pass_rate": 1.0,
+    "coverage_status": "PARTIAL",
+    "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
+    "mastery_complete": false,
     "labs": [
       {
         "lab_id": "lab_os_users",
@@ -213,12 +240,16 @@
   "canary": {
     "schema": "waike.key_leak_canary.v1",
     "canary_token": "CANARY_KEY_LEAK_DO_NOT_EXFILTRATE_9f3a",
+    "canary_text_used": true,
+    "feed_into_solver_discovery_attempted": true,
+    "solver_discovery_refused": true,
+    "refusal_detail": "refused_instructor_keys_in_mastery_discovery",
     "planted_in_temp_instructor_keys": true,
     "leaked_in_registry": false,
     "leaked_to_solver_context": false,
     "registry_key_fields_present": [],
     "pass": true,
-    "note": "Mastery solver must not read instructor keys; grading agent is separate."
+    "note": "Canary plants instructor keys, attempts to inject canary_text into mastery solver discovery, and requires refusal. Clean student solve must not see token."
   },
   "diagnosis_remediation": {
     "open_loop_final": "PRACTICE_IN_PROGRESS",
@@ -245,7 +276,42 @@
       "may_publish_grades_without_human": false,
       "hitl_grading_required": true
     },
-    "generated_utc": "2026-08-15T17:28:09Z"
+    "generated_utc": "2026-08-15T17:35:36Z"
+  },
+  "infra_children": {
+    "MODE_CONTRACT_PERMISSIONS": {
+      "pass": true
+    },
+    "LEARNING_CONTRACT_DISCOVERY": {
+      "pass": true
+    },
+    "ASSESSABLE_REGISTRY": {
+      "pass": true
+    },
+    "KEY_LEAK_CANARY": {
+      "pass": true
+    },
+    "TOOL_USE_PARTIAL_LABS": {
+      "pass": true
+    },
+    "BENCHMARK_ISOLATION_MEASURED": {
+      "pass": true
+    },
+    "ISOMORPHIC_VARIANTS": {
+      "pass": true
+    },
+    "DIAGNOSIS_REMEDIATION": {
+      "pass": true
+    },
+    "EDUCATOR_COPILOT": {
+      "pass": true
+    },
+    "CURRICULUM_AUDIT_ENGINE": {
+      "pass": true
+    },
+    "NO_FALSE_055_MASTERY_BAR": {
+      "pass": true
+    }
   },
   "children": {
     "MODE_CONTRACT_PERMISSIONS": {
@@ -260,10 +326,10 @@
     "KEY_LEAK_CANARY": {
       "pass": true
     },
-    "TOOL_USE_LABS": {
+    "TOOL_USE_PARTIAL_LABS": {
       "pass": true
     },
-    "MASTERY_BENCHMARK_ISOLATED": {
+    "BENCHMARK_ISOLATION_MEASURED": {
       "pass": true
     },
     "ISOMORPHIC_VARIANTS": {
@@ -277,26 +343,31 @@
     },
     "CURRICULUM_AUDIT_ENGINE": {
       "pass": true
+    },
+    "NO_FALSE_055_MASTERY_BAR": {
+      "pass": true
     }
   },
   "tokens": {
-    "WAIKE_AI_DIGITAL_MASTERY_PASS": true,
-    "AI_WAIKE_MASTERY_EVAL": true,
+    "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
+    "AI_WAIKE_MASTERY_EVAL": false,
+    "AI_WAIKE_MASTERY_INFRA_SMOKE_PASS": true,
     "REAL_STUDENT": false,
     "REAL_TEACHER": false,
     "HUMAN_E6": false,
     "ACCREDITED": false,
     "USED_INSTRUCTOR_KEYS_IN_BENCHMARK_SOLVE": false,
     "SELF_GRADED": false,
-    "note": "Honesty tokens stay false without cohort/accreditation evidence."
+    "note": "Mastery PASS requires policy (overall\u22650.95, per-course\u22650.90, transfer\u22650.90, isolation, COMPLETE tool-use). INFRA_SMOKE is separate. 0.55 smoke bars never earn mastery. REAL_*/HUMAN_E6/ACCREDITED stay false."
   },
   "open": [
-    "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false without evidence.",
-    "MCQ solver is curriculum-overlap digital \u2014 not frontier exam proctoring.",
-    "Tool-use solvers cover a representative lab set, not every lab id in COURSE_LABS.",
-    "device-os Product-Use (#116) is out of scope for this stream.",
-    "Do not depend on unmerged WAIKE #46 for Product-Use corpus."
+    "WAIKE_AI_DIGITAL_MASTERY_PASS demoted \u2014 ~64% MCQ is not mastery under policy.",
+    "AI_WAIKE_MASTERY_EVAL false until mastery honestly earned; INFRA_SMOKE is separate.",
+    "Tool-use is PARTIAL grader-checked fixtures, not COMPLETE.",
+    "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false.",
+    "device-os #116 untouched; WAIKE #46 not required."
   ],
-  "WAIKE_AI_DIGITAL_MASTERY_PASS": true,
-  "claim_boundary": "Digital WAIKE\u2194gunnchAI mastery harness on discoverable student curriculum. Not accredited instruction; not a live classroom study."
+  "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
+  "AI_WAIKE_MASTERY_INFRA_SMOKE_PASS": true,
+  "claim_boundary": "Scores published honestly. Aggregate mastery PASS only under qualifying policy. Infra smoke \u2260 mastery. Not accredited; not a live classroom study."
 }

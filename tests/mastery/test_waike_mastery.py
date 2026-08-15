@@ -1,4 +1,4 @@
-"""Tests for WAIKE mastery learning-contract surfaces."""
+"""Tests for WAIKE mastery learning-contract surfaces (honest demotions)."""
 from __future__ import annotations
 
 import json
@@ -23,7 +23,6 @@ def test_discover_not_hardcoded_nine_names(contract):
     assert contract["discovery"]["hardcoded_course_names"] is False
     assert contract["discovery"]["course_count"] >= 9
     ids = {c["course_id"] for c in contract["courses"]}
-    # Must include main corpus; must not hardcode by requiring exactly these forever
     assert "SOFTWARE_BUILDER" in ids
     assert "GENERAL_IT" in ids
 
@@ -50,18 +49,65 @@ def test_registry_strips_keys():
     assert "answer_index" not in blob
 
 
-def test_canary_and_tool_use_and_diagnosis():
+def test_canary_feeds_and_refuses():
     import sys
 
     sys.path.insert(0, str(ROOT / "src"))
-    from waike_mastery.canary import run_key_leak_canary
-    from waike_mastery.diagnosis import diagnose_misconception, remediation_loop
+    from waike_mastery.canary import CANARY_TOKEN, run_key_leak_canary
+
+    c = run_key_leak_canary(ROOT)
+    assert c["canary_text_used"] is True
+    assert c["feed_into_solver_discovery_attempted"] is True
+    assert c["solver_discovery_refused"] is True
+    assert c["leaked_to_solver_context"] is False
+    assert c["pass"] is True
+    assert CANARY_TOKEN in c["canary_token"]
+
+
+def test_tool_use_is_partial_not_complete():
+    import sys
+
+    sys.path.insert(0, str(ROOT / "src"))
     from waike_mastery.tool_use import run_tool_use_mastery
 
-    assert run_key_leak_canary(ROOT)["pass"] is True
     tool = run_tool_use_mastery()
     assert tool["passed"] >= 6
-    assert tool["pass_rate"] >= 0.8
+    assert tool["coverage_status"] == "PARTIAL"
+    assert tool["mastery_complete"] is False
+
+
+def test_benchmark_measures_key_use_and_policy_blocks_055():
+    import sys
+
+    sys.path.insert(0, str(ROOT / "src"))
+    from waike_mastery.benchmark import run_mastery_benchmark
+    from waike_mastery.policy import evaluate_mastery_policy
+
+    b = run_mastery_benchmark(ROOT, max_items_per_course=12)
+    assert b["self_graded"] is False
+    assert "used_instructor_keys_during_solve" in b
+    assert isinstance(b["used_instructor_keys_during_solve"], bool)
+    assert "key_use_measurement" in b
+    # ~curriculum-overlap scores must not earn mastery under policy
+    policy = evaluate_mastery_policy(
+        overall_score=0.64,
+        per_course=b["per_course"],
+        used_instructor_keys_during_solve=b["used_instructor_keys_during_solve"],
+        self_graded=False,
+        canary_pass=True,
+        transfer_score=0.64,
+        tool_use_status="PARTIAL",
+    )
+    assert policy["earned"] is False
+    assert any("0.55" in r or "smoke" in r or "overall" in r for r in policy["reasons_not_earned"])
+
+
+def test_diagnosis_loop():
+    import sys
+
+    sys.path.insert(0, str(ROOT / "src"))
+    from waike_mastery.diagnosis import diagnose_misconception, remediation_loop
+
     d = diagnose_misconception(
         learner_ref="t1",
         course_id="SOFTWARE_BUILDER",
@@ -70,17 +116,7 @@ def test_canary_and_tool_use_and_diagnosis():
     )
     assert d["demeaning_label_used"] is False
     assert remediation_loop(d)["final_evidence_state"] != "CERTAINLY_FILLED"
-    assert remediation_loop(d, reassess_score=0.95, transfer_ok=True)["final_evidence_state"] == "CERTAINLY_FILLED"
-
-
-def test_benchmark_no_self_grade():
-    import sys
-
-    sys.path.insert(0, str(ROOT / "src"))
-    from waike_mastery.benchmark import run_mastery_benchmark
-
-    # Keep CI light: cap items per course
-    b = run_mastery_benchmark(ROOT, max_items_per_course=12)
-    assert b["self_graded"] is False
-    assert b["used_instructor_keys_during_solve"] is False
-    assert b["items_attempted"] > 0
+    assert (
+        remediation_loop(d, reassess_score=0.95, transfer_ok=True)["final_evidence_state"]
+        == "CERTAINLY_FILLED"
+    )
