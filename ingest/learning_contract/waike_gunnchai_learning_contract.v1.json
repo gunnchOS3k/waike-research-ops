@@ -1,13 +1,13 @@
 {
   "schema": "waike.gunnchai.learning_contract.v1",
-  "generated_utc": "2026-08-15T17:35:36Z",
+  "generated_utc": "2026-08-15T19:52:13Z",
   "owner_repo": "waike-research-ops",
   "consumer_repo": "gunnchAI3k",
   "discovery": {
     "method": "filesystem_scan",
     "glob": "curriculum/digital_rc/*/course.json",
     "hardcoded_course_names": false,
-    "course_count": 9
+    "course_count": 12
   },
   "permissions": {
     "MASTERY_BENCHMARK": {
@@ -229,6 +229,47 @@
       "student_facing_course_json": true
     },
     {
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development \u2014 Forge Arcade Studio",
+      "path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "track_ids": [
+        "GAME_DEV_INTERACTIVE"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_aabb_hit",
+        "lab_beat_clock",
+        "lab_entity_fsm",
+        "lab_four_games_case",
+        "lab_game_a11y",
+        "lab_game_capstone",
+        "lab_game_loop",
+        "lab_input_actions",
+        "lab_level_hash",
+        "lab_playtest_metrics"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
       "course_id": "GENERAL_IT",
       "title": "General IT \u2014 Operator to Support Specialist",
       "path": "curriculum/digital_rc/GENERAL_IT",
@@ -351,6 +392,47 @@
       "student_facing_course_json": true
     },
     {
+      "course_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control \u2014 HarborBot Bay",
+      "path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+      "academy_id": "ACADEMY_HARDWARE",
+      "track_ids": [
+        "ROBOTICS_CONTROL"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_cmd_vel_schema",
+        "lab_diff_drive",
+        "lab_estop_policy",
+        "lab_fk_2r",
+        "lab_fuse_scalar",
+        "lab_pid_step",
+        "lab_robot_capstone",
+        "lab_se2_pose",
+        "lab_sensor_noise",
+        "lab_traj_limits"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
       "course_id": "SOFTWARE_BUILDER",
       "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
       "path": "curriculum/digital_rc/SOFTWARE_BUILDER",
@@ -382,6 +464,47 @@
         "lab_observability",
         "lab_rest_api",
         "lab_security_review"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "WIRELESS_6G",
+      "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+      "path": "curriculum/digital_rc/WIRELESS_6G",
+      "academy_id": "ACADEMY_NETWORKING",
+      "track_ids": [
+        "WIRELESS_6G"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_5ga_feature_map",
+        "lab_airan_policy",
+        "lab_delay_spread",
+        "lab_fspl_budget",
+        "lab_mcs_bler",
+        "lab_ntn_delay",
+        "lab_ofdm_numerology",
+        "lab_oran_interfaces",
+        "lab_radio_capstone",
+        "lab_spectrum_mask"
       ],
       "assessment_files": [
         "assessments/mid_course.json",

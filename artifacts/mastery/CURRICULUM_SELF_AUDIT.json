@@ -1,7 +1,7 @@
 {
   "schema": "waike.curriculum_self_audit.v1",
-  "generated_utc": "2026-08-15T17:35:36Z",
-  "courses_audited": 9,
+  "generated_utc": "2026-08-15T19:52:13Z",
+  "courses_audited": 12,
   "defect_candidate_count": 0,
   "candidates": [],
   "note": "Candidates are not confirmed defects until human curriculum review."

@@ -1,21 +1,25 @@
 {
-  "schema": "AI_WAIKE_MASTERY_EVAL.v1",
+  "schema": "AI_WAIKE_MASTERY_EVAL.v2",
   "suite": "AI_WAIKE_MASTERY_EVAL",
-  "honesty_remediation": "2026-08-15-demote-false-mastery-pass",
+  "wave": "AI-WAIKE-MASTERY-002",
+  "honesty_remediation": "2026-08-15-mastery-002-corpus-normalize-real-solver-contract",
   "corpus": {
-    "discoverable_courses": 9,
+    "discoverable_courses": 12,
     "course_ids": [
       "AI_ML_EDGE",
       "CLOUD_DEVOPS",
       "COMPUTER_NETWORKING",
       "CYBERSECURITY",
       "DATA_VIZ_BI",
+      "GAME_DEV_INTERACTIVE",
       "GENERAL_IT",
       "HARDWARE_ENGINEERING",
       "PM_AGILE_LSS",
-      "SOFTWARE_BUILDER"
+      "ROBOTICS_CONTROL",
+      "SOFTWARE_BUILDER",
+      "WIRELESS_6G"
     ],
-    "assessable_items": 1016,
+    "assessable_items": 1358,
     "per_course_counts": {
       "AI_ML_EDGE": {
         "quiz": 60,
@@ -52,6 +56,13 @@
         "lab": 10,
         "total": 114
       },
+      "GAME_DEV_INTERACTIVE": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
       "GENERAL_IT": {
         "quiz": 60,
         "mid": 20,
@@ -73,7 +84,21 @@
         "lab": 10,
         "total": 114
       },
+      "ROBOTICS_CONTROL": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
       "SOFTWARE_BUILDER": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
+      "WIRELESS_6G": {
         "quiz": 60,
         "mid": 20,
         "final": 24,
@@ -81,13 +106,74 @@
         "total": 114
       }
     },
-    "skill_graph_nodes": 179,
-    "skill_graph_edges": 251,
+    "skill_graph_nodes": 242,
+    "skill_graph_edges": 338,
     "curriculum_defect_candidates": 0,
-    "source": "origin/main digital_rc (WAIKE #45 nine-course corpus); #46 not required"
+    "inventory_totals": {
+      "units_weeks": 120,
+      "lessons": 120,
+      "readings": 0,
+      "quiz_files": 120,
+      "labs": 110,
+      "assignments": 120,
+      "midterms": 12,
+      "finals_knowledge": 12,
+      "finals_practical": 12,
+      "projects_capstones_files": 12,
+      "rubrics_files": 108
+    },
+    "source": "filesystem discovery of curriculum/digital_rc/*/course.json from current accepted main (12-course universe after #46+#47)"
+  },
+  "corpus_version_diff": {
+    "old_courses": 9,
+    "old_items": 1016,
+    "new_courses": 12,
+    "new_items": 1358,
+    "added_courses": [
+      "GAME_DEV_INTERACTIVE",
+      "ROBOTICS_CONTROL",
+      "WIRELESS_6G"
+    ]
+  },
+  "score_families": {
+    "MASTERY_001_HEURISTIC_9C": {
+      "id": "MASTERY_001_HEURISTIC_9C",
+      "score": 0.6442307692307693,
+      "role": "historical_diagnostic",
+      "counts_toward_curriculum_mastery": false
+    },
+    "MASTERY_002_HEURISTIC_12C": {
+      "id": "MASTERY_002_HEURISTIC_12C",
+      "score": 0.6298076923076923,
+      "role": "diagnostic_only",
+      "solver": "curriculum_overlap_v1",
+      "counts_toward_curriculum_mastery": false
+    },
+    "MASTERY_002_REAL_RUNTIME_12C": {
+      "id": "MASTERY_002_REAL_RUNTIME_12C",
+      "score": 0.30833333333333335,
+      "role": "curriculum_mastery_only_path",
+      "solver": "gunnchai_llamacpp_v1",
+      "parser_version": "gunnchai.choice_parser.v2_final_only",
+      "counts_toward_curriculum_mastery": true,
+      "items_attempted": 120,
+      "items_correct": 37,
+      "parser_failures": 0,
+      "sample": "held_out_stratified_ge120",
+      "baseline_frozen": 0.16666666666666666,
+      "historical_solver_path_gain_24item": 0.375,
+      "SCORE_DELTA_LABEL": "SOLVER_PATH_GAIN",
+      "SOLVER_PATH_GAIN_NOTE": "0.375 is historical 24-item post-parser path-gain evidence; larger-sample score replaces it only as current runtime estimate.",
+      "MODEL_KNOWLEDGE_IMPROVED": false,
+      "EVALUATION_BUG_FIXED": true,
+      "note": "Larger-sample held-out estimate; does not alter REAL_SOLVER_BASELINE_V1\u22480.167."
+    },
+    "no_blended_average": true,
+    "note": "Heuristics must never replace or average into MASTERY_002_REAL_RUNTIME_12C."
   },
   "mastery_scores": {
-    "overall": 0.6442307692307693,
+    "overall": 0.6298076923076923,
+    "score_family_id": "MASTERY_002_HEURISTIC_12C",
     "per_course": {
       "AI_ML_EDGE": {
         "correct": 64,
@@ -114,6 +200,11 @@
         "total": 104,
         "score": 0.5961538461538461
       },
+      "GAME_DEV_INTERACTIVE": {
+        "correct": 51,
+        "total": 104,
+        "score": 0.49038461538461536
+      },
       "GENERAL_IT": {
         "correct": 69,
         "total": 104,
@@ -129,10 +220,20 @@
         "total": 104,
         "score": 0.6153846153846154
       },
+      "ROBOTICS_CONTROL": {
+        "correct": 70,
+        "total": 104,
+        "score": 0.6730769230769231
+      },
       "SOFTWARE_BUILDER": {
         "correct": 68,
         "total": 104,
         "score": 0.6538461538461539
+      },
+      "WIRELESS_6G": {
+        "correct": 62,
+        "total": 104,
+        "score": 0.5961538461538461
       }
     },
     "per_assessment_sample": {
@@ -155,13 +256,16 @@
       "COMPUTER_NETWORKING.knowledge": 0.5284722222222221,
       "CYBERSECURITY.knowledge": 0.6909722222222223,
       "DATA_VIZ_BI.knowledge": 0.6180555555555556,
+      "GAME_DEV_INTERACTIVE.knowledge": 0.49513888888888896,
       "GENERAL_IT.knowledge": 0.6354166666666666,
       "HARDWARE_ENGINEERING.knowledge": 0.6298611111111111,
       "PM_AGILE_LSS.knowledge": 0.5958333333333334,
-      "SOFTWARE_BUILDER.knowledge": 0.6833333333333335
+      "ROBOTICS_CONTROL.knowledge": 0.6298611111111111,
+      "SOFTWARE_BUILDER.knowledge": 0.6833333333333335,
+      "WIRELESS_6G.knowledge": 0.5888888888888889
     },
-    "items_attempted": 936,
-    "items_correct": 603,
+    "items_attempted": 1248,
+    "items_correct": 786,
     "solver": "curriculum_overlap_v1",
     "transfer": {
       "items": 60,
@@ -169,7 +273,17 @@
       "score": 0.7666666666666667,
       "method": "isomorphic_choice_permutation"
     },
-    "published_without_false_pass": true
+    "historical_baseline_001": 0.6442307692307693,
+    "published_without_false_pass": true,
+    "note": "This overall is MASTERY_002_HEURISTIC_12C diagnostic only \u2014 not curriculum mastery.",
+    "real_runtime_overall": 0.30833333333333335,
+    "real_runtime_items_attempted": 120,
+    "real_runtime_items_correct": 37,
+    "score_family_id_for_curriculum_mastery": "MASTERY_002_REAL_RUNTIME_12C",
+    "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
+    "MODEL_KNOWLEDGE_IMPROVED": false,
+    "baseline_frozen": 0.16666666666666666,
+    "historical_solver_path_gain_24item": 0.375
   },
   "mastery_policy": {
     "policy": {
@@ -180,16 +294,42 @@
     },
     "earned": false,
     "reasons_not_earned": [
-      "overall_score=0.6442 < policy_min=0.95",
-      "per_course_below_min=['AI_ML_EDGE', 'CLOUD_DEVOPS', 'COMPUTER_NETWORKING', 'CYBERSECURITY', 'DATA_VIZ_BI', 'GENERAL_IT', 'HARDWARE_ENGINEERING', 'PM_AGILE_LSS', 'SOFTWARE_BUILDER']",
+      "overall_score=0.6298 < policy_min=0.95",
+      "per_course_below_min=['AI_ML_EDGE', 'CLOUD_DEVOPS', 'COMPUTER_NETWORKING', 'CYBERSECURITY', 'DATA_VIZ_BI', 'GAME_DEV_INTERACTIVE', 'GENERAL_IT', 'HARDWARE_ENGINEERING', 'PM_AGILE_LSS', 'ROBOTICS_CONTROL', 'SOFTWARE_BUILDER', 'WIRELESS_6G']",
       "transfer_score=0.7666666666666667 < policy_min=0.9",
       "tool_use_status=PARTIAL (need COMPLETE for mastery)",
       "smoke_bar_0.55_is_not_mastery"
     ]
   },
+  "mastery_children": {
+    "OVERALL_GE_095": {
+      "pass": false
+    },
+    "PER_COURSE_GE_090": {
+      "pass": false
+    },
+    "TRANSFER_GE_090": {
+      "pass": false
+    },
+    "TOOL_USE_COMPLETE": {
+      "pass": false
+    },
+    "NO_KEY_LEAK": {
+      "pass": true
+    },
+    "ISOLATED_GRADE": {
+      "pass": true
+    },
+    "CORPUS_DISCOVERY": {
+      "pass": true
+    },
+    "COURSE_HONESTY": {
+      "pass": true
+    }
+  },
   "tool_use": {
-    "attempted": 10,
-    "passed": 10,
+    "attempted": 13,
+    "passed": 13,
     "pass_rate": 1.0,
     "coverage_status": "PARTIAL",
     "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
@@ -234,6 +374,18 @@
       {
         "lab_id": "lab_frontend_ui",
         "ok": true
+      },
+      {
+        "lab_id": "lab_fspl_budget",
+        "ok": true
+      },
+      {
+        "lab_id": "lab_pid_step",
+        "ok": true
+      },
+      {
+        "lab_id": "lab_game_loop",
+        "ok": true
       }
     ]
   },
@@ -250,6 +402,61 @@
     "registry_key_fields_present": [],
     "pass": true,
     "note": "Canary plants instructor keys, attempts to inject canary_text into mastery solver discovery, and requires refusal. Clean student solve must not see token."
+  },
+  "course_honesty": {
+    "schema": "waike.course_honesty.v1",
+    "checks": [
+      {
+        "course_id": "WIRELESS_6G",
+        "distinctions": {
+          "5g": true,
+          "5g_advanced": true,
+          "ntn": true,
+          "ai_ran": true,
+          "fr3": false,
+          "imt_2030": false,
+          "future_6g_research": true
+        },
+        "distinctions_ok": true,
+        "honesty_flags_present": true,
+        "claims_current_commercial_6g_standard": false,
+        "pass": true,
+        "detail": "Requires 5G/5GA/NTN/AI-RAN distinctions; never claim commercial standardized 6G."
+      },
+      {
+        "course_id": "ROBOTICS_CONTROL",
+        "needs": {
+          "pid": true,
+          "kinematics": true,
+          "sensor": true,
+          "estop": true,
+          "path_or_traj": true
+        },
+        "pass": true,
+        "detail": "Requires kinematics/PID/sensor/estop/trajectory reasoning surfaces."
+      },
+      {
+        "course_id": "GAME_DEV_INTERACTIVE",
+        "needs": {
+          "game_loop": true,
+          "input": true,
+          "state_fsm": true,
+          "mechanics": true,
+          "build_or_test": true
+        },
+        "pass": true,
+        "prose_concept_insufficient": true,
+        "detail": "Requires real loop/input/state/mechanics/build-test evidence, not prose concepts alone."
+      }
+    ],
+    "pass": true,
+    "claim_boundary": "Curriculum honesty surfaces for Mastery-002. Not a claim of commercial 6G or physical robot/game studio validation."
+  },
+  "failure_taxonomy": {
+    "miss_count": 40,
+    "counts": {
+      "MODEL_KNOWLEDGE_GAP": 40
+    }
   },
   "diagnosis_remediation": {
     "open_loop_final": "PRACTICE_IN_PROGRESS",
@@ -276,13 +483,155 @@
       "may_publish_grades_without_human": false,
       "hitl_grading_required": true
     },
-    "generated_utc": "2026-08-15T17:35:36Z"
+    "generated_utc": "2026-08-15T19:52:13Z"
+  },
+  "educator_evidence": {
+    "schema": "waike.educator_copilot_evidence.v1",
+    "course_id": "AI_ML_EDGE",
+    "intents_covered": [
+      "planning",
+      "first_time_teacher",
+      "live_support",
+      "grading_assist",
+      "feedback",
+      "analytics"
+    ],
+    "sessions": [
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "planning",
+        "pack": {
+          "title": "Week plan",
+          "actions": [
+            "Map kinesthetic hook \u2192 lab \u2192 quiz for next session",
+            "Flag prerequisite edges from skill graph",
+            "Prepare isomorphic practice set"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "first_time_teacher",
+        "pack": {
+          "title": "First-time teacher checklist",
+          "actions": [
+            "Read instructor packet + answer keys offline",
+            "Run one lab empty-submission fail demo",
+            "Rehearse accessibility board contract"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "live_support",
+        "pack": {
+          "title": "Live classroom support",
+          "actions": [
+            "Socratic prompts only for learner-visible channel",
+            "Do not paste answer keys into learner chat",
+            "Escalate safety / integrity issues"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "grading_assist",
+        "pack": {
+          "title": "Grading assist (HITL)",
+          "actions": [
+            "Propose rubric scores",
+            "Require human confirm before publish",
+            "Never auto-submit LMS grades"
+          ],
+          "hitl_required": true,
+          "auto_publish_grades": false
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "feedback",
+        "pack": {
+          "title": "Feedback drafting",
+          "actions": [
+            "Skill-focused comments only",
+            "No demeaning labels",
+            "Point to remediation packet ids"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      },
+      {
+        "schema": "waike.educator_copilot.v1",
+        "mode": "EDUCATOR_COPILOT",
+        "course_id": "AI_ML_EDGE",
+        "intent": "analytics",
+        "pack": {
+          "title": "Section analytics",
+          "actions": [
+            "Aggregate mastery by domain",
+            "Surface CURRICULUM_DEFECT_CANDIDATE rates",
+            "Keep learner refs opaque"
+          ]
+        },
+        "permissions": {
+          "may_read_instructor_keys": true,
+          "may_publish_grades_without_human": false,
+          "hitl_grading_required": true
+        },
+        "generated_utc": "2026-08-15T19:52:13Z"
+      }
+    ],
+    "hitl_ok": true,
+    "HUMAN_LEARNING_CLAIMED": false,
+    "note": "Educator surfaces only; HITL required; no auto-publish."
   },
   "infra_children": {
     "MODE_CONTRACT_PERMISSIONS": {
       "pass": true
     },
     "LEARNING_CONTRACT_DISCOVERY": {
+      "pass": true
+    },
+    "CORPUS_DISCOVERY_CURRENT": {
       "pass": true
     },
     "ASSESSABLE_REGISTRY": {
@@ -309,7 +658,13 @@
     "CURRICULUM_AUDIT_ENGINE": {
       "pass": true
     },
+    "COURSE_HONESTY_SURFACES": {
+      "pass": true
+    },
     "NO_FALSE_055_MASTERY_BAR": {
+      "pass": true
+    },
+    "BASELINE_001_PRESERVED": {
       "pass": true
     }
   },
@@ -320,6 +675,9 @@
     "LEARNING_CONTRACT_DISCOVERY": {
       "pass": true
     },
+    "CORPUS_DISCOVERY_CURRENT": {
+      "pass": true
+    },
     "ASSESSABLE_REGISTRY": {
       "pass": true
     },
@@ -344,7 +702,13 @@
     "CURRICULUM_AUDIT_ENGINE": {
       "pass": true
     },
+    "COURSE_HONESTY_SURFACES": {
+      "pass": true
+    },
     "NO_FALSE_055_MASTERY_BAR": {
+      "pass": true
+    },
+    "BASELINE_001_PRESERVED": {
       "pass": true
     }
   },
@@ -352,22 +716,295 @@
     "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
     "AI_WAIKE_MASTERY_EVAL": false,
     "AI_WAIKE_MASTERY_INFRA_SMOKE_PASS": true,
+    "WAIKE_AI_STUDENT_CORPUS_DISCOVERY_PASS": true,
+    "WAIKE_AI_NO_KEY_LEAK_PASS": true,
+    "MASTERY_001_NINE_COURSE_BASELINE": 0.6442307692307693,
     "REAL_STUDENT": false,
     "REAL_TEACHER": false,
     "HUMAN_E6": false,
     "ACCREDITED": false,
+    "REAL_STUDENT_MASTERY_VALIDATED": false,
+    "REAL_TEACHER_EFFECTIVENESS_VALIDATED": false,
     "USED_INSTRUCTOR_KEYS_IN_BENCHMARK_SOLVE": false,
     "SELF_GRADED": false,
-    "note": "Mastery PASS requires policy (overall\u22650.95, per-course\u22650.90, transfer\u22650.90, isolation, COMPLETE tool-use). INFRA_SMOKE is separate. 0.55 smoke bars never earn mastery. REAL_*/HUMAN_E6/ACCREDITED stay false."
+    "note": "Mastery-002: PASS only if all mastery_children pass. Curriculum-overlap is baseline infrastructure; gunnchAI runtime solver is separate. Historical 0.644 preserved as MASTERY_001_NINE_COURSE_BASELINE. REAL_*/HUMAN_E6/ACCREDITED stay false."
   },
   "open": [
-    "WAIKE_AI_DIGITAL_MASTERY_PASS demoted \u2014 ~64% MCQ is not mastery under policy.",
-    "AI_WAIKE_MASTERY_EVAL false until mastery honestly earned; INFRA_SMOKE is separate.",
-    "Tool-use is PARTIAL grader-checked fixtures, not COMPLETE.",
+    "WAIKE_AI_DIGITAL_MASTERY_PASS false until all mastery_children pass (claim honesty \u2260 mastery).",
+    "Score families: MASTERY_001_HEURISTIC_9C / MASTERY_002_HEURISTIC_12C / MASTERY_002_REAL_RUNTIME_12C \u2014 no blend.",
+    "Curriculum-overlap is diagnostic; only gunnchAI MASTERY_002_REAL_RUNTIME_12C counts toward mastery.",
+    "Tool-use PARTIAL (fixtures) \u2260 COMPLETE; curriculum-integrated path lives on gunnchAI.",
+    "MODEL_CAPABILITY_LIMIT on available SmolLM2 GGUFs \u2014 \u22650.95 real-runtime unlikely without stronger model.",
     "REAL_STUDENT / REAL_TEACHER / HUMAN_E6 / ACCREDITED remain false.",
-    "device-os #116 untouched; WAIKE #46 not required."
+    "device-os #116 untouched; gunnchAI #36 not a fourth stream.",
+    "Larger-sample held-out MASTERY_002_REAL_RUNTIME_12C=0.30833333333333335 (n=120); replaces 0.375 only as current estimate.",
+    "Plateau classification=MASTERY_002_PLATEAU_MERGE_READY; DIGITAL_MASTERY_PASS=false; baseline 0.1666... intact."
   ],
   "WAIKE_AI_DIGITAL_MASTERY_PASS": false,
   "AI_WAIKE_MASTERY_INFRA_SMOKE_PASS": true,
-  "claim_boundary": "Scores published honestly. Aggregate mastery PASS only under qualifying policy. Infra smoke \u2260 mastery. Not accredited; not a live classroom study."
+  "WAIKE_AI_STUDENT_CORPUS_DISCOVERY_PASS": true,
+  "claim_boundary": "Scores published honestly on current 12-course corpus. Aggregate mastery PASS only under qualifying policy + child gates. Not accredited; not a live classroom study.",
+  "larger_sample_real_runtime": {
+    "schema": "MASTERY_002_LARGER_SAMPLE_REAL_RUNTIME.v1",
+    "score_family_id": "MASTERY_002_REAL_RUNTIME_12C",
+    "role": "current_larger_sample_runtime_estimate",
+    "replaces_as_current_estimate_only": 0.375,
+    "does_not_alter_frozen_baseline": true,
+    "frozen_baseline": 0.16666666666666666,
+    "historical_solver_path_gain_24item": 0.375,
+    "MODEL_KNOWLEDGE_IMPROVED": false,
+    "sample_design": {
+      "per_course_quiz": 6,
+      "per_course_mid": 2,
+      "per_course_final": 2,
+      "courses": 12,
+      "target_items": 120,
+      "held_out": true,
+      "answer_keys_during_solve": false,
+      "no_tuning_after_results": true
+    },
+    "items_attempted": 120,
+    "items_correct": 37,
+    "parser_failures": 0,
+    "overall_score": 0.30833333333333335,
+    "per_course": {
+      "AI_ML_EDGE": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      },
+      "CLOUD_DEVOPS": {
+        "correct": 2,
+        "total": 10,
+        "score": 0.2
+      },
+      "COMPUTER_NETWORKING": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      },
+      "CYBERSECURITY": {
+        "correct": 2,
+        "total": 10,
+        "score": 0.2
+      },
+      "DATA_VIZ_BI": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      },
+      "GAME_DEV_INTERACTIVE": {
+        "correct": 3,
+        "total": 10,
+        "score": 0.3
+      },
+      "GENERAL_IT": {
+        "correct": 3,
+        "total": 10,
+        "score": 0.3
+      },
+      "HARDWARE_ENGINEERING": {
+        "correct": 2,
+        "total": 10,
+        "score": 0.2
+      },
+      "PM_AGILE_LSS": {
+        "correct": 1,
+        "total": 10,
+        "score": 0.1
+      },
+      "ROBOTICS_CONTROL": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      },
+      "SOFTWARE_BUILDER": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      },
+      "WIRELESS_6G": {
+        "correct": 4,
+        "total": 10,
+        "score": 0.4
+      }
+    },
+    "per_assessment_type": {
+      "quiz": {
+        "correct": 21,
+        "total": 72,
+        "score": 0.2916666666666667
+      },
+      "mid": {
+        "correct": 9,
+        "total": 24,
+        "score": 0.375
+      },
+      "final": {
+        "correct": 7,
+        "total": 24,
+        "score": 0.2916666666666667
+      }
+    },
+    "failure_rates": {
+      "parser": 0,
+      "reasoning": 0.025,
+      "knowledge": 0.5916666666666667,
+      "tool_required": 0,
+      "instruction": 0,
+      "calculation": 0.016666666666666666,
+      "concept_confusion": 0.016666666666666666,
+      "prerequisite": 0.041666666666666664
+    },
+    "failure_taxonomy": {
+      "schema": "gunnchai.failure_census.v1",
+      "miss_count": 83,
+      "counts": {
+        "MODEL_KNOWLEDGE_GAP": 71,
+        "CONCEPT_CONFUSION": 2,
+        "REASONING_FAILURE": 3,
+        "PREREQUISITE_GAP": 5,
+        "CALCULATION_FAILURE": 2
+      },
+      "by_course": {
+        "AI_ML_EDGE": {
+          "MODEL_KNOWLEDGE_GAP": 5,
+          "CONCEPT_CONFUSION": 1
+        },
+        "CLOUD_DEVOPS": {
+          "MODEL_KNOWLEDGE_GAP": 8
+        },
+        "COMPUTER_NETWORKING": {
+          "MODEL_KNOWLEDGE_GAP": 4,
+          "REASONING_FAILURE": 1,
+          "PREREQUISITE_GAP": 1
+        },
+        "CYBERSECURITY": {
+          "MODEL_KNOWLEDGE_GAP": 8
+        },
+        "DATA_VIZ_BI": {
+          "MODEL_KNOWLEDGE_GAP": 5,
+          "PREREQUISITE_GAP": 1
+        },
+        "GAME_DEV_INTERACTIVE": {
+          "MODEL_KNOWLEDGE_GAP": 7
+        },
+        "GENERAL_IT": {
+          "MODEL_KNOWLEDGE_GAP": 6,
+          "PREREQUISITE_GAP": 1
+        },
+        "HARDWARE_ENGINEERING": {
+          "MODEL_KNOWLEDGE_GAP": 7,
+          "PREREQUISITE_GAP": 1
+        },
+        "PM_AGILE_LSS": {
+          "MODEL_KNOWLEDGE_GAP": 8,
+          "CONCEPT_CONFUSION": 1
+        },
+        "ROBOTICS_CONTROL": {
+          "MODEL_KNOWLEDGE_GAP": 5,
+          "REASONING_FAILURE": 1
+        },
+        "SOFTWARE_BUILDER": {
+          "MODEL_KNOWLEDGE_GAP": 4,
+          "REASONING_FAILURE": 1,
+          "CALCULATION_FAILURE": 1
+        },
+        "WIRELESS_6G": {
+          "CALCULATION_FAILURE": 1,
+          "MODEL_KNOWLEDGE_GAP": 4,
+          "PREREQUISITE_GAP": 1
+        }
+      },
+      "by_assessment_type": {
+        "quiz": {
+          "MODEL_KNOWLEDGE_GAP": 45,
+          "CONCEPT_CONFUSION": 1,
+          "REASONING_FAILURE": 2,
+          "PREREQUISITE_GAP": 2,
+          "CALCULATION_FAILURE": 1
+        },
+        "mid": {
+          "MODEL_KNOWLEDGE_GAP": 13,
+          "PREREQUISITE_GAP": 2
+        },
+        "final": {
+          "MODEL_KNOWLEDGE_GAP": 13,
+          "PREREQUISITE_GAP": 1,
+          "CONCEPT_CONFUSION": 1,
+          "REASONING_FAILURE": 1,
+          "CALCULATION_FAILURE": 1
+        }
+      },
+      "by_skill": {},
+      "largest_classes": [
+        {
+          "code": "MODEL_KNOWLEDGE_GAP",
+          "n": 71
+        },
+        {
+          "code": "PREREQUISITE_GAP",
+          "n": 5
+        },
+        {
+          "code": "REASONING_FAILURE",
+          "n": 3
+        },
+        {
+          "code": "CONCEPT_CONFUSION",
+          "n": 2
+        },
+        {
+          "code": "CALCULATION_FAILURE",
+          "n": 2
+        }
+      ],
+      "taxonomy": [
+        "PARSER_FAILURE",
+        "MODEL_KNOWLEDGE_GAP",
+        "PREREQUISITE_GAP",
+        "CONCEPT_CONFUSION",
+        "REASONING_FAILURE",
+        "CALCULATION_FAILURE",
+        "INSTRUCTION_INTERPRETATION_FAILURE",
+        "TOOL_REQUIRED_NOT_USED",
+        "TOOL_SELECTION_FAILURE",
+        "TOOL_EXECUTION_FAILURE",
+        "SOURCE_GROUNDING_FAILURE",
+        "CONTEXT_LIMIT_FAILURE",
+        "PROMPT_FORMAT_FAILURE",
+        "AMBIGUOUS_ITEM",
+        "CURRICULUM_DEFECT_CANDIDATE",
+        "GRADER_DEFECT_CANDIDATE",
+        "UNKNOWN",
+        "VOCABULARY_FAILURE",
+        "TRANSFER_FAILURE",
+        "DEBUGGING_FAILURE",
+        "CODE_FAILURE",
+        "RUBRIC_FAILURE",
+        "PARTIAL_COMPLETION",
+        "CARELESS_ERROR",
+        "ACCESSIBILITY_BARRIER",
+        "AMBIGUOUS_PROMPT",
+        "POLICY_BLOCKED",
+        "RESOURCE_BLOCKED",
+        "DIAGNOSIS_UNCERTAIN"
+      ]
+    },
+    "tool_assist": {
+      "required_items": 8,
+      "assisted_ok": 3,
+      "note": "Curriculum tool assist on calc-like stems; computation only \u2014 not answer-key feed."
+    },
+    "parser_version": "gunnchai.choice_parser.v2_final_only",
+    "infer_path": "lean_mcq_v1",
+    "used_instructor_keys_during_solve": false,
+    "self_graded": false,
+    "answer_key_matched": false,
+    "status": "OK"
+  },
+  "plateau_evidence_pack": {
+    "classification": "MASTERY_002_PLATEAU_MERGE_READY",
+    "artifact": "artifacts/mastery/MASTERY_002_PLATEAU_EVIDENCE_PACK.json"
+  }
 }

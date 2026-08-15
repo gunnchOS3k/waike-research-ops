@@ -1,0 +1,310 @@
+{
+  "schema": "waike.corpus_inventory.v1",
+  "method": "filesystem_scan",
+  "hardcoded_course_names": false,
+  "course_count": 12,
+  "course_ids": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_VIZ_BI",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "assessable_items": 1358,
+  "per_course_assessable": {
+    "AI_ML_EDGE": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "CLOUD_DEVOPS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "COMPUTER_NETWORKING": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 6,
+      "total": 110
+    },
+    "CYBERSECURITY": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 7,
+      "total": 111
+    },
+    "DATA_VIZ_BI": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "GAME_DEV_INTERACTIVE": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "GENERAL_IT": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 7,
+      "total": 111
+    },
+    "HARDWARE_ENGINEERING": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "PM_AGILE_LSS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "ROBOTICS_CONTROL": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "SOFTWARE_BUILDER": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "WIRELESS_6G": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    }
+  },
+  "per_course_inventory": [
+    {
+      "course_id": "AI_ML_EDGE",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "CLOUD_DEVOPS",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "COMPUTER_NETWORKING",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 6,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "CYBERSECURITY",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 7,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "DATA_VIZ_BI",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "GENERAL_IT",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 7,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "HARDWARE_ENGINEERING",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "PM_AGILE_LSS",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "ROBOTICS_CONTROL",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "SOFTWARE_BUILDER",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "WIRELESS_6G",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    }
+  ],
+  "totals": {
+    "units_weeks": 120,
+    "lessons": 120,
+    "readings": 0,
+    "quiz_files": 120,
+    "labs": 110,
+    "assignments": 120,
+    "midterms": 12,
+    "finals_knowledge": 12,
+    "finals_practical": 12,
+    "projects_capstones_files": 12,
+    "rubrics_files": 108
+  },
+  "skill_graph_nodes": 242,
+  "skill_graph_edges": 338,
+  "corpus_hash_sha256": "26607ee01be6b1918b1868f9369a8dece85102b9ee3bd88aa9c6fbf035348e41",
+  "ai_policy": {
+    "may_read_instructor_keys_in_mastery_solve": false,
+    "self_grading_forbidden": true,
+    "educator_hitl_required": true
+  }
+}

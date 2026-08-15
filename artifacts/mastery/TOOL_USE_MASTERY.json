@@ -1,7 +1,7 @@
 {
   "schema": "waike.tool_use_mastery.v1",
-  "attempted": 10,
-  "passed": 10,
+  "attempted": 13,
+  "passed": 13,
   "pass_rate": 1.0,
   "coverage_status": "PARTIAL",
   "claim": "TOOL_USE_GRADER_CHECKED_FIXTURES",
@@ -60,7 +60,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_services",
@@ -105,7 +106,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_storage",
@@ -154,7 +156,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_cidr_math",
@@ -209,7 +212,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_datapath",
@@ -306,7 +310,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_git_conflict",
@@ -353,7 +358,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_authz",
@@ -403,7 +409,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_rest_api",
@@ -439,7 +446,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_db_migration",
@@ -496,7 +504,8 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     },
     {
       "lab_id": "lab_frontend_ui",
@@ -541,8 +550,143 @@
       "used_reference_import": false,
       "used_instructor_keys": false,
       "fixture_style": "curriculum_cued_static_solver",
-      "open_ended_agentic_tool_use": false
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
+    },
+    {
+      "lab_id": "lab_fspl_budget",
+      "course_id": "WIRELESS_6G",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "fspl",
+          "ok": true,
+          "detail": "expected 84.915"
+        },
+        {
+          "name": "no_commercial_6g",
+          "ok": true,
+          "detail": "must be false"
+        }
+      ],
+      "submission_keys": [
+        "artifact",
+        "commercial_6g_exists",
+        "d_m",
+        "f_mhz",
+        "fspl_db"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
+    },
+    {
+      "lab_id": "lab_pid_step",
+      "course_id": "ROBOTICS_CONTROL",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "u",
+          "ok": true,
+          "detail": "expected -0.08799999999999997"
+        },
+        {
+          "name": "anti",
+          "ok": true,
+          "detail": "anti_windup_note"
+        }
+      ],
+      "submission_keys": [
+        "Kd",
+        "Ki",
+        "Kp",
+        "anti_windup_note",
+        "artifact",
+        "dt",
+        "errors",
+        "u"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
+    },
+    {
+      "lab_id": "lab_game_loop",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "dt",
+          "ok": true,
+          "detail": "dt=1/60"
+        },
+        {
+          "name": "steps",
+          "ok": true,
+          "detail": "steps"
+        },
+        {
+          "name": "guard",
+          "ok": true,
+          "detail": "guard when frame_time>0.25"
+        },
+        {
+          "name": "guard_flag",
+          "ok": true,
+          "detail": "guard true on reference"
+        }
+      ],
+      "submission_keys": [
+        "artifact",
+        "dt",
+        "frame_time",
+        "spiral_of_death_guard",
+        "steps"
+      ],
+      "how_i_would_only": false,
+      "used_reference_import": false,
+      "used_instructor_keys": false,
+      "fixture_style": "curriculum_cued_static_solver",
+      "open_ended_agentic_tool_use": false,
+      "real_execution": false
     }
   ],
-  "note": "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student validators. Not tool-use mastery COMPLETE; not a claim of autonomous lab solving."
+  "note": "PARTIAL: grader-checked hardcoded/curriculum-cued fixtures that pass student validators. Fixtures \u2260 competence. Not tool-use mastery COMPLETE. Real action runners are owned by gunnchAI TOOL_USE_REAL_EXEC.json.",
+  "cross_ref": "gunnchAI artifacts/waike-mastery/TOOL_USE_REAL_EXEC.json"
 }

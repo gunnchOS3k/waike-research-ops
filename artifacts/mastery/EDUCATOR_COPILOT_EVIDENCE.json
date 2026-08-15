@@ -1,0 +1,139 @@
+{
+  "schema": "waike.educator_copilot_evidence.v1",
+  "course_id": "AI_ML_EDGE",
+  "intents_covered": [
+    "planning",
+    "first_time_teacher",
+    "live_support",
+    "grading_assist",
+    "feedback",
+    "analytics"
+  ],
+  "sessions": [
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "planning",
+      "pack": {
+        "title": "Week plan",
+        "actions": [
+          "Map kinesthetic hook \u2192 lab \u2192 quiz for next session",
+          "Flag prerequisite edges from skill graph",
+          "Prepare isomorphic practice set"
+        ]
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    },
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "first_time_teacher",
+      "pack": {
+        "title": "First-time teacher checklist",
+        "actions": [
+          "Read instructor packet + answer keys offline",
+          "Run one lab empty-submission fail demo",
+          "Rehearse accessibility board contract"
+        ]
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    },
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "live_support",
+      "pack": {
+        "title": "Live classroom support",
+        "actions": [
+          "Socratic prompts only for learner-visible channel",
+          "Do not paste answer keys into learner chat",
+          "Escalate safety / integrity issues"
+        ]
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    },
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "grading_assist",
+      "pack": {
+        "title": "Grading assist (HITL)",
+        "actions": [
+          "Propose rubric scores",
+          "Require human confirm before publish",
+          "Never auto-submit LMS grades"
+        ],
+        "hitl_required": true,
+        "auto_publish_grades": false
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    },
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "feedback",
+      "pack": {
+        "title": "Feedback drafting",
+        "actions": [
+          "Skill-focused comments only",
+          "No demeaning labels",
+          "Point to remediation packet ids"
+        ]
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    },
+    {
+      "schema": "waike.educator_copilot.v1",
+      "mode": "EDUCATOR_COPILOT",
+      "course_id": "AI_ML_EDGE",
+      "intent": "analytics",
+      "pack": {
+        "title": "Section analytics",
+        "actions": [
+          "Aggregate mastery by domain",
+          "Surface CURRICULUM_DEFECT_CANDIDATE rates",
+          "Keep learner refs opaque"
+        ]
+      },
+      "permissions": {
+        "may_read_instructor_keys": true,
+        "may_publish_grades_without_human": false,
+        "hitl_grading_required": true
+      },
+      "generated_utc": "2026-08-15T19:52:13Z"
+    }
+  ],
+  "hitl_ok": true,
+  "HUMAN_LEARNING_CLAIMED": false,
+  "note": "Educator surfaces only; HITL required; no auto-publish."
+}

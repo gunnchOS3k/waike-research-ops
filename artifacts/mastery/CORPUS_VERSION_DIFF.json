@@ -1,0 +1,97 @@
+{
+  "schema": "waike.corpus_version_diff.v1",
+  "old_corpus": {
+    "label": "MASTERY_001_NINE_COURSE_BASELINE",
+    "courses": 9,
+    "assessable_items": 1016,
+    "course_ids": [
+      "AI_ML_EDGE",
+      "CLOUD_DEVOPS",
+      "COMPUTER_NETWORKING",
+      "CYBERSECURITY",
+      "DATA_VIZ_BI",
+      "GENERAL_IT",
+      "HARDWARE_ENGINEERING",
+      "PM_AGILE_LSS",
+      "SOFTWARE_BUILDER"
+    ],
+    "overall_score_preserved": 0.6442307692307693,
+    "hash": "5503b9f8d39e716f051a486f143da896f58d005126590f76bed0507f7c6e54ef"
+  },
+  "new_corpus": {
+    "label": "MASTERY_002_CURRENT_MAIN",
+    "courses": 12,
+    "assessable_items": 1358,
+    "course_ids": [
+      "AI_ML_EDGE",
+      "CLOUD_DEVOPS",
+      "COMPUTER_NETWORKING",
+      "CYBERSECURITY",
+      "DATA_VIZ_BI",
+      "GAME_DEV_INTERACTIVE",
+      "GENERAL_IT",
+      "HARDWARE_ENGINEERING",
+      "PM_AGILE_LSS",
+      "ROBOTICS_CONTROL",
+      "SOFTWARE_BUILDER",
+      "WIRELESS_6G"
+    ],
+    "totals": {
+      "units_weeks": 120,
+      "lessons": 120,
+      "readings": 0,
+      "quiz_files": 120,
+      "labs": 110,
+      "assignments": 120,
+      "midterms": 12,
+      "finals_knowledge": 12,
+      "finals_practical": 12,
+      "projects_capstones_files": 12,
+      "rubrics_files": 108
+    },
+    "skill_graph_nodes": 242,
+    "skill_graph_edges": 338,
+    "hash": "26607ee01be6b1918b1868f9369a8dece85102b9ee3bd88aa9c6fbf035348e41"
+  },
+  "added_courses": [
+    "GAME_DEV_INTERACTIVE",
+    "ROBOTICS_CONTROL",
+    "WIRELESS_6G"
+  ],
+  "removed_courses": [],
+  "changed_items": {
+    "assessable_items_delta": 342,
+    "per_course_new_only": {
+      "GAME_DEV_INTERACTIVE": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
+      "ROBOTICS_CONTROL": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
+      "WIRELESS_6G": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      }
+    }
+  },
+  "changed_rubrics": {
+    "note": "rubric file counts regenerated via filesystem inventory",
+    "rubrics_files_total": 108
+  },
+  "expected_new_courses_present": {
+    "WIRELESS_6G": true,
+    "ROBOTICS_CONTROL": true,
+    "GAME_DEV_INTERACTIVE": true
+  }
+}

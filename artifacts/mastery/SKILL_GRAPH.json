@@ -1,8 +1,8 @@
 {
   "schema": "waike.mastery_skill_graph.v1",
-  "generated_utc": "2026-08-15T17:35:36Z",
-  "node_count": 179,
-  "edge_count": 251,
+  "generated_utc": "2026-08-15T19:52:13Z",
+  "node_count": 242,
+  "edge_count": 338,
   "forbidden_learner_labels": [
     "dumb",
     "slow",
@@ -744,6 +744,162 @@
       "learner_label_policy": "skill_focus_only"
     },
     {
+      "id": "course:GAME_DEV_INTERACTIVE",
+      "kind": "course",
+      "label": "Game Development \u2014 Forge Arcade Studio",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w01",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 1,
+      "label": "GAME_DEV_INTERACTIVE week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w02",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 2,
+      "label": "GAME_DEV_INTERACTIVE week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w03",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 3,
+      "label": "GAME_DEV_INTERACTIVE week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w04",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 4,
+      "label": "GAME_DEV_INTERACTIVE week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w05",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 5,
+      "label": "GAME_DEV_INTERACTIVE week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w06",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 6,
+      "label": "GAME_DEV_INTERACTIVE week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w07",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 7,
+      "label": "GAME_DEV_INTERACTIVE week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w08",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 8,
+      "label": "GAME_DEV_INTERACTIVE week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w09",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 9,
+      "label": "GAME_DEV_INTERACTIVE week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GAME_DEV_INTERACTIVE:w10",
+      "kind": "weekly_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "week": 10,
+      "label": "GAME_DEV_INTERACTIVE week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_aabb_hit",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_aabb_hit",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_beat_clock",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_beat_clock",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_entity_fsm",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_entity_fsm",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_four_games_case",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_four_games_case",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_game_a11y",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_game_a11y",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_game_capstone",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_game_capstone",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_game_loop",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_game_loop",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_input_actions",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_input_actions",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_level_hash",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_level_hash",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GAME_DEV_INTERACTIVE:lab_playtest_metrics",
+      "kind": "lab_skill",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "label": "lab_playtest_metrics",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
       "id": "course:GENERAL_IT",
       "kind": "course",
       "label": "General IT \u2014 Operator to Support Specialist",
@@ -1191,6 +1347,162 @@
       "learner_label_policy": "skill_focus_only"
     },
     {
+      "id": "course:ROBOTICS_CONTROL",
+      "kind": "course",
+      "label": "Robotics and Control \u2014 HarborBot Bay",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w01",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 1,
+      "label": "ROBOTICS_CONTROL week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w02",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 2,
+      "label": "ROBOTICS_CONTROL week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w03",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 3,
+      "label": "ROBOTICS_CONTROL week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w04",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 4,
+      "label": "ROBOTICS_CONTROL week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w05",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 5,
+      "label": "ROBOTICS_CONTROL week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w06",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 6,
+      "label": "ROBOTICS_CONTROL week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w07",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 7,
+      "label": "ROBOTICS_CONTROL week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w08",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 8,
+      "label": "ROBOTICS_CONTROL week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w09",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 9,
+      "label": "ROBOTICS_CONTROL week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:ROBOTICS_CONTROL:w10",
+      "kind": "weekly_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "week": 10,
+      "label": "ROBOTICS_CONTROL week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_cmd_vel_schema",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_cmd_vel_schema",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_diff_drive",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_diff_drive",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_estop_policy",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_estop_policy",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_fk_2r",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_fk_2r",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_fuse_scalar",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_fuse_scalar",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_pid_step",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_pid_step",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_robot_capstone",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_robot_capstone",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_se2_pose",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_se2_pose",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_sensor_noise",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_sensor_noise",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:ROBOTICS_CONTROL:lab_traj_limits",
+      "kind": "lab_skill",
+      "course_id": "ROBOTICS_CONTROL",
+      "label": "lab_traj_limits",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
       "id": "course:SOFTWARE_BUILDER",
       "kind": "course",
       "label": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
@@ -1344,6 +1656,162 @@
       "kind": "lab_skill",
       "course_id": "SOFTWARE_BUILDER",
       "label": "lab_security_review",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:WIRELESS_6G",
+      "kind": "course",
+      "label": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:WIRELESS_6G:w01",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 1,
+      "label": "WIRELESS_6G week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w02",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 2,
+      "label": "WIRELESS_6G week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w03",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 3,
+      "label": "WIRELESS_6G week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w04",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 4,
+      "label": "WIRELESS_6G week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w05",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 5,
+      "label": "WIRELESS_6G week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w06",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 6,
+      "label": "WIRELESS_6G week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w07",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 7,
+      "label": "WIRELESS_6G week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w08",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 8,
+      "label": "WIRELESS_6G week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w09",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 9,
+      "label": "WIRELESS_6G week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:WIRELESS_6G:w10",
+      "kind": "weekly_skill",
+      "course_id": "WIRELESS_6G",
+      "week": 10,
+      "label": "WIRELESS_6G week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_5ga_feature_map",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_5ga_feature_map",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_airan_policy",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_airan_policy",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_delay_spread",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_delay_spread",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_fspl_budget",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_fspl_budget",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_mcs_bler",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_mcs_bler",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_ntn_delay",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_ntn_delay",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_ofdm_numerology",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_ofdm_numerology",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_oran_interfaces",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_oran_interfaces",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_radio_capstone",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_radio_capstone",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:WIRELESS_6G:lab_spectrum_mask",
+      "kind": "lab_skill",
+      "course_id": "WIRELESS_6G",
+      "label": "lab_spectrum_mask",
       "learner_label_policy": "skill_focus_only"
     }
   ],
@@ -2039,6 +2507,151 @@
       "relation": "assesses"
     },
     {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w01",
+      "to": "skill:GAME_DEV_INTERACTIVE:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w02",
+      "to": "skill:GAME_DEV_INTERACTIVE:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w03",
+      "to": "skill:GAME_DEV_INTERACTIVE:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w04",
+      "to": "skill:GAME_DEV_INTERACTIVE:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w05",
+      "to": "skill:GAME_DEV_INTERACTIVE:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w06",
+      "to": "skill:GAME_DEV_INTERACTIVE:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w07",
+      "to": "skill:GAME_DEV_INTERACTIVE:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w08",
+      "to": "skill:GAME_DEV_INTERACTIVE:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GAME_DEV_INTERACTIVE",
+      "to": "skill:GAME_DEV_INTERACTIVE:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w09",
+      "to": "skill:GAME_DEV_INTERACTIVE:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w01",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_aabb_hit",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w02",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_beat_clock",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w03",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_entity_fsm",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w04",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_four_games_case",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w05",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_game_a11y",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w06",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_game_capstone",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w07",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_game_loop",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w08",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_input_actions",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w09",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_level_hash",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GAME_DEV_INTERACTIVE:w10",
+      "to": "lab:GAME_DEV_INTERACTIVE:lab_playtest_metrics",
+      "relation": "assesses"
+    },
+    {
       "from": "course:GENERAL_IT",
       "to": "skill:GENERAL_IT:w01",
       "relation": "includes"
@@ -2459,6 +3072,151 @@
       "relation": "assesses"
     },
     {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w01",
+      "to": "skill:ROBOTICS_CONTROL:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w02",
+      "to": "skill:ROBOTICS_CONTROL:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w03",
+      "to": "skill:ROBOTICS_CONTROL:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w04",
+      "to": "skill:ROBOTICS_CONTROL:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w05",
+      "to": "skill:ROBOTICS_CONTROL:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w06",
+      "to": "skill:ROBOTICS_CONTROL:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w07",
+      "to": "skill:ROBOTICS_CONTROL:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w08",
+      "to": "skill:ROBOTICS_CONTROL:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:ROBOTICS_CONTROL",
+      "to": "skill:ROBOTICS_CONTROL:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w09",
+      "to": "skill:ROBOTICS_CONTROL:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w01",
+      "to": "lab:ROBOTICS_CONTROL:lab_cmd_vel_schema",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w02",
+      "to": "lab:ROBOTICS_CONTROL:lab_diff_drive",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w03",
+      "to": "lab:ROBOTICS_CONTROL:lab_estop_policy",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w04",
+      "to": "lab:ROBOTICS_CONTROL:lab_fk_2r",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w05",
+      "to": "lab:ROBOTICS_CONTROL:lab_fuse_scalar",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w06",
+      "to": "lab:ROBOTICS_CONTROL:lab_pid_step",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w07",
+      "to": "lab:ROBOTICS_CONTROL:lab_robot_capstone",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w08",
+      "to": "lab:ROBOTICS_CONTROL:lab_se2_pose",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w09",
+      "to": "lab:ROBOTICS_CONTROL:lab_sensor_noise",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:ROBOTICS_CONTROL:w10",
+      "to": "lab:ROBOTICS_CONTROL:lab_traj_limits",
+      "relation": "assesses"
+    },
+    {
       "from": "course:SOFTWARE_BUILDER",
       "to": "skill:SOFTWARE_BUILDER:w01",
       "relation": "includes"
@@ -2601,6 +3359,151 @@
     {
       "from": "skill:SOFTWARE_BUILDER:w10",
       "to": "lab:SOFTWARE_BUILDER:lab_security_review",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w01",
+      "to": "skill:WIRELESS_6G:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w02",
+      "to": "skill:WIRELESS_6G:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w03",
+      "to": "skill:WIRELESS_6G:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w04",
+      "to": "skill:WIRELESS_6G:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w05",
+      "to": "skill:WIRELESS_6G:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w06",
+      "to": "skill:WIRELESS_6G:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w07",
+      "to": "skill:WIRELESS_6G:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w08",
+      "to": "skill:WIRELESS_6G:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:WIRELESS_6G",
+      "to": "skill:WIRELESS_6G:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w09",
+      "to": "skill:WIRELESS_6G:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w01",
+      "to": "lab:WIRELESS_6G:lab_5ga_feature_map",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w02",
+      "to": "lab:WIRELESS_6G:lab_airan_policy",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w03",
+      "to": "lab:WIRELESS_6G:lab_delay_spread",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w04",
+      "to": "lab:WIRELESS_6G:lab_fspl_budget",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w05",
+      "to": "lab:WIRELESS_6G:lab_mcs_bler",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w06",
+      "to": "lab:WIRELESS_6G:lab_ntn_delay",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w07",
+      "to": "lab:WIRELESS_6G:lab_ofdm_numerology",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w08",
+      "to": "lab:WIRELESS_6G:lab_oran_interfaces",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w09",
+      "to": "lab:WIRELESS_6G:lab_radio_capstone",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:WIRELESS_6G:w10",
+      "to": "lab:WIRELESS_6G:lab_spectrum_mask",
       "relation": "assesses"
     }
   ]
