@@ -61,5 +61,6 @@
   ],
   "lab_count": 110,
   "claim_boundary": "Independent re-verify after Ticket-arithmetic remediation. Cursor does not merge. REAL_*/COHORT/ACCREDITED stay false.",
-  "generated_at": "2026-08-15T18:14:46.571383+00:00"
+  "generated_at": "2026-08-15T18:14:46.571383+00:00",
+  "tip_after_commit": "3dd825f25c70a47de82faf05a265022f2f9521c4"
 }

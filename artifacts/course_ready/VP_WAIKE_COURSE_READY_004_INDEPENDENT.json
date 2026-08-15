@@ -2,7 +2,7 @@
   "packet": "WAIKE-COURSE-READY-004",
   "verifier": "independent_adversarial",
   "pr": "https://github.com/gunnchOS3k/waike-research-ops/pull/46",
-  "tip_verified": "PENDING_COMMIT",
+  "tip_verified": "3dd825f25c70a47de82faf05a265022f2f9521c4",
   "verdict": "PASS",
   "COURSE_DIGITAL_RC_BATCH": true,
   "demotions": {},
@@ -50,6 +50,6 @@
     "batch45_collapse_floor": 871
   },
   "defects": [],
-  "remediation": "Removed Ticket-arithmetic checkpoint trailers; extended strip_lesson_padding + repeated-trailer detector; rewrote week-unique depth; re-earned RC under ≥871.",
+  "remediation": "Removed Ticket-arithmetic checkpoint trailers; extended strip_lesson_padding + repeated-trailer detector; rewrote week-unique depth; re-earned RC under \u2265871.",
   "note": "Cursor does not merge."
 }
