@@ -9,13 +9,13 @@ fails. PHYSICAL sounding stays PHYSICAL_PENDING.
 Consensus Ladder: observed = tap table; inferred = late energy grows τ_rms; still need =
 measured sounding. Empty {} fails. Wrong τ_rms fails. PASS raises.
 
-Operators keep a numbered ticket trail for w6-lab_delay_spread and refuse noun-swapped decks from other academies. Detail mark w6-lab_delay_spread-0.
+Convert powers_db to linear, form the first and second moments of delay, then take the
+square root for τ_rms. Change the last tap power by −1 dB as a sensitivity check and
+note how τ_rms moves. PHYSICAL sounding stays PHYSICAL_PENDING until a real capture
+exists; AI beamforming slogans without taps score zero.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w6-lab_delay_spread-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w6-lab_delay_spread-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w6-lab_delay_spread-3.
+Submit delays_ns, powers_db, tau_rms_ns, and tap_count=3. Wrong moments fail even when
+the journal prose is polished.
 
 ## Worked example
 

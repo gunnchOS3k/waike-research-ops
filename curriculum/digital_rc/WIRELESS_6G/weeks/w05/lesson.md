@@ -10,13 +10,13 @@ still need = feeder/gateway scheduling (out of scope).
 Marketing fail: 'global 6G NTN' heatmap with no delay math. No constellation sim downloads —
 fixture arithmetic only while Stream A runs.
 
-Operators keep a numbered ticket trail for w5-lab_ntn_delay and refuse noun-swapped decks from other academies. Detail mark w5-lab_ntn_delay-0.
+Recompute light-time with a second slant (650 km) so learners practice d/c without
+memorizing one number. Compare both RTTs to a GEO-class ~250 ms figure and keep
+geo_comparable=false. ntn_as_6g_standard remains false: NTN features in 5G-Advanced
+talk are not a commercial standardized 6G ratification.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w5-lab_ntn_delay-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w5-lab_ntn_delay-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w5-lab_ntn_delay-3.
+Refuse constellation-sim downloads while Stream A QEMU is active. Fixture milliseconds
+are the graded artifact; heatmaps without delay math are marketing fails.
 
 ## Worked example
 

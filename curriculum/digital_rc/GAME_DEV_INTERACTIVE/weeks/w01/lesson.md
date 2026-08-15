@@ -7,13 +7,14 @@ interpolate; simulation steps stay fixed.
 Consensus Ladder: observed = clock card; inferred = fixed dt stabilizes physics; still need =
 profiling on target handheld (PHYSICAL_PENDING). Failure: 'just use delta everywhere' without guard.
 
-Operators keep a numbered ticket trail for w1-lab_game_loop and refuse noun-swapped decks from other academies. Detail mark w1-lab_game_loop-0.
+Implement the accumulator mental model: fixed dt=1/60, clamp spiral when frame_time
+exceeds 0.25 s, keep spiral_of_death_guard true on the reference path. Variable render
+interpolation is allowed; simulation steps stay fixed.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w1-lab_game_loop-1.
+Handheld profiling remains PHYSICAL_PENDING. 'Just use delta everywhere' without a
+guard fails the loop contract.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w1-lab_game_loop-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w1-lab_game_loop-3.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 1: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

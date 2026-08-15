@@ -6,15 +6,14 @@ a reachability flag when hypot(x,y) > L1+L2. Lab checks x,y, reachable.
 Consensus Ladder: observed = link lengths; inferred = workspace is an annulus/disk bound;
 still need = joint limits map. Failure: claiming infinite reach because 'servos are strong.'
 
-Operators keep a numbered ticket trail for w2-lab_fk_2r and refuse noun-swapped decks from other academies. Detail mark w2-lab_fk_2r-0.
+Plot the reachable disk of radius L1+L2=0.65 m and mark a forbidden point beyond it.
+Forward kinematics must report both Cartesian tip and reachable=false when outside.
+Strong-servo myths do not enlarge the workspace.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w2-lab_fk_2r-1.
+Joint-limit maps stay in 'still need'. Learners defend L1/L2 numbers from the fixture
+card, not from a cinematic robot trailer.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w2-lab_fk_2r-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w2-lab_fk_2r-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w2-lab_fk_2r-4.
+Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 2: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

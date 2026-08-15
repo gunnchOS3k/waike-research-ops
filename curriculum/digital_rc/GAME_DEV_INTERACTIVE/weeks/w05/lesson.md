@@ -6,15 +6,13 @@ canonical bytes. NO_AI week. Lab checks dims, len match, checksum_ok.
 Consensus Ladder: observed = level file; inferred = checksum pins edits; still need =
 streaming chunks. Failure: editor GUI screenshot as only artifact.
 
-Operators keep a numbered ticket trail for w5-lab_level_hash and refuse noun-swapped decks from other academies. Detail mark w5-lab_level_hash-0.
+Level JSON: tiles length equals width*height; checksum pins canonical bytes.
+NO_AI week. Editor GUI screenshots alone are not artifacts. Streaming chunks stay in
+'still need'.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w5-lab_level_hash-1.
+checksum_ok must be true only when the digest matches the canonical serialization.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w5-lab_level_hash-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w5-lab_level_hash-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w5-lab_level_hash-4.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 5: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

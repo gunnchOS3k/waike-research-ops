@@ -10,13 +10,13 @@ outer-loop CQI mapping (not claimed).
 Failure mode: always max MCS for 'throughput.' Empty {} fails. PASS string raises.
 Operators speak `fixtures/wr4404/bler_table.json` and defend the choice on a whiteboard.
 
-Operators keep a numbered ticket trail for w4-lab_mcs_bler and refuse noun-swapped decks from other academies. Detail mark w4-lab_mcs_bler-0.
+Walk the BLER table left to right and mark every MCS whose BLER ≤ 0.1 before picking
+the maximum eligible index. At SNR=8 dB the eligible set is {2}; chosen_mcs=2 with
+bler_at_choice=0.09. Document why MCS 3 and 4 are rejected even if throughput stories
+sound better in marketing.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w4-lab_mcs_bler-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w4-lab_mcs_bler-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w4-lab_mcs_bler-3.
+Outer-loop CQI mapping stays in the 'still need' ladder rung — do not claim the pier
+runs a live link-adaptation closed loop from this fixture alone.
 
 ## Worked example
 

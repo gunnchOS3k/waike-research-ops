@@ -13,9 +13,13 @@ still need = measurements mapping to those titles.
 NO_AI week: hand-write the map. Generative fill inventing 'Rel-20 commercial 6G' fails the
 claim boundary even if grammar is perfect. Alignment file only — no harvested stems.
 
-Operators keep a numbered ticket trail for w3-lab_5ga_feature_map and refuse noun-swapped decks from other academies. Detail mark w3-lab_5ga_feature_map-0.
+Build the feature map as three rows only: name, release_tag, PUBLIC_REFERENCE_ONLY.
+Example rows may include RedCap, NTN early hooks, and AI/ML study items — never a
+fabricated Rel-20 commercial-6G row. commercial_6g_exists stays false in JSON.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w3-lab_5ga_feature_map-1.
+NO_AI means hand labels. If a generative draft invents a ratified consumer 6G SKU,
+delete the row and rewrite from the alignment file. Membership in 3GPP is not granted
+by completing WR-4303.
 
 ## Worked example
 

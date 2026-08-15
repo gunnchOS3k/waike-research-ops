@@ -48,11 +48,17 @@ def test_each_course_has_depth():
             assert "evidence discipline week" not in low
             assert "evidence for this week lives in the submitted lab json" not in low
             assert "not in a screenshot of a green checkmark" not in low
+            assert "detail mark" not in low
+            assert "operators keep a numbered ticket trail for" not in low
+            assert "whiteboard the worked numbers before opening any gui" not in low
+            assert "if a volunteer asks for a certificate selfie" not in low
             stripped = strip_lesson_padding(raw)
-            assert len(stripped) >= 800, (cid, w["week"], len(stripped))
+            floor = 871 if cid in BATCH_004 else 800
+            assert len(stripped) >= floor, (cid, w["week"], len(stripped), floor)
             assert "Operator note: record evidence" not in stripped
             assert "Evidence discipline week" not in stripped
             assert "Evidence for this week lives" not in stripped
+            assert "Detail mark" not in stripped
         items = sum(len(w["quiz"]) for w in c["weeks"])
         assert items >= 48, (cid, items)
         assert len({w["lesson"][:120] for w in c["weeks"]}) == len(c["weeks"]), cid
@@ -77,6 +83,37 @@ def test_strip_lesson_padding_removes_lab_json_evidence_spam():
     assert "green checkmark" not in stripped.lower()
     assert len(stripped) >= 800
     assert len(stripped) < len(padded)
+
+
+def test_strip_lesson_padding_removes_detail_mark_trailer_spam():
+    real = (
+        "Harbor pier hop WR-4101 computes FSPL with d_m and f_mhz on the laminated Friis card "
+        "before any GUI. Commercial standardized 6G does not exist today; invented coverage "
+        "banners fail the claim boundary even when arithmetic is correct. " * 6
+    )
+    padded = (
+        real
+        + "\n\nOperators keep a numbered ticket trail for w1-lab_fspl_budget and refuse noun-swapped "
+        "decks from other academies. Detail mark w1-lab_fspl_budget-0.\n\n"
+        "Whiteboard the worked numbers before opening any GUI; the validator grades fields, not "
+        "vibes. Detail mark w1-lab_fspl_budget-1.\n\n"
+        "If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, "
+        "not granted. Detail mark w1-lab_fspl_budget-2.\n\n"
+        "Keep journals free of patron faces, passwords, and fabricated impact statistics. "
+        "Detail mark w1-lab_fspl_budget-3.\n\n"
+        "When tools disagree, name the observation first, then the inference, then what is still "
+        "needed. Detail mark w1-lab_fspl_budget-4.\n\n"
+        "Runnable labs must fail empty submissions and reject a file whose entire body is PASS. "
+        "Detail mark w1-lab_fspl_budget-5."
+    )
+    stripped = strip_lesson_padding(padded)
+    assert "Detail mark" not in stripped
+    assert "numbered ticket trail" not in stripped.lower()
+    assert "certificate selfie" not in stripped.lower()
+    assert len(stripped) < len(padded)
+    assert len(stripped) >= 800
+    assert "WR-4101" in stripped
+    assert "Commercial standardized 6G does not exist" in stripped
 
 
 def test_labs_compute_and_negatives_fail():

@@ -7,15 +7,11 @@ Consensus Ladder: observed = a11y checklist; inferred = defaults are not enough;
 still need = user testing with disabled players (not fabricated). Large-text menus required
 in student packet notes.
 
-Operators keep a numbered ticket trail for w9-lab_game_a11y and refuse noun-swapped decks from other academies. Detail mark w9-lab_game_a11y-0.
+Accessibility checklist: captions, remaps, colorblind_safe true; flash_hz≤3. NO_AI.
+Fabricating disabled-player test quotes is forbidden. Large-text menu notes belong in
+the student packet path.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w9-lab_game_a11y-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w9-lab_game_a11y-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w9-lab_game_a11y-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w9-lab_game_a11y-4.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 9: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

@@ -14,9 +14,13 @@ still need = measured Doppler on the pier.
 Failure mode: renaming the week '6G waveform lab' and pasting a vendor constellation
 screenshot with no math. Cyclic prefix is a named omission this week — honesty is skill.
 
-Operators keep a numbered ticket trail for w2-lab_ofdm_numerology and refuse noun-swapped decks from other academies. Detail mark w2-lab_ofdm_numerology-0.
+Draw one resource block as twelve vertical tones and mark Δf=30 kHz between them.
+Compute PRB bandwidth again with μ=0 (15 kHz) as a contrast case: 12*15e3=180 kHz.
+Write both results side by side so learners stop treating 'PRB' as a brand badge.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w2-lab_ofdm_numerology-1.
+Call out the cyclic-prefix omission in one sentence: CP is real on air interfaces and
+deliberately not scored this week. Anyone pasting a constellation PNG without
+n_sc/delta_f_hz/prb_bw_hz/symbol_duration_s fields fails the lab contract.
 
 ## Worked example
 

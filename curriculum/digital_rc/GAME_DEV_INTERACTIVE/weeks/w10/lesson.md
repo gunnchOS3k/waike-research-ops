@@ -7,15 +7,13 @@ Career map: gameplay programmer junior / QA playtest tech. Certs aligned not gra
 Portfolio must include keyboard-only path notes. No Product-Use package consumption of this
 unmerged course branch.
 
-Operators keep a numbered ticket trail for w10-lab_game_capstone and refuse noun-swapped decks from other academies. Detail mark w10-lab_game_capstone-0.
+Ship checklist: build_repro_hash, a11y_ok=true, labs_passed≥6, unmerged_branch_required
+false, and a four_games_optional_note. Keyboard-only path notes are required in the
+portfolio. Product-Use must not consume this unmerged course branch.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w10-lab_game_capstone-1.
+Career certs remain aligned, not granted.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w10-lab_game_capstone-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w10-lab_game_capstone-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w10-lab_game_capstone-4.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 10: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

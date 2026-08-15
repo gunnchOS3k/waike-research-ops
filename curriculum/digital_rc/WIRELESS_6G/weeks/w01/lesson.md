@@ -18,6 +18,15 @@ Resource rule: light math fixtures only while Product-Use QEMU is busy — no mu
 Sionna/DeepMIMO tarballs on this ticket. Accessibility: journals stay text-first; any
 optional plot needs an alt_text field in the portfolio later.
 
+Work the Friis card on paper with a second hop length (95 m at 3500 MHz) so the class
+sees how 20*log10(d) moves when the tape changes. Record both answers in the journal
+with units. The Pier Radio Bench treats invented '6G coverage radius' strings as claim
+boundary failures even when the arithmetic for FSPL is correct.
+
+Operators also name the antenna assumption: isotropic teaching model, not a measured
+panel pattern. If someone imports a vendor EIRP table without citing the fixture path
+`fixtures/wr4101/fspl.json`, stop the demo and return to the laminated card.
+
 ## Worked example
 
 d=120 m, f=3500 MHz → FSPL ≈ 20*log10(120)+20*log10(3500)-27.55 ≈ 84.9 dB.

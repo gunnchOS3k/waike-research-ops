@@ -6,15 +6,14 @@ resume_requires_human=true. Software 'slow down' without disable fails.
 Consensus Ladder: observed = E-stop wiring card; inferred = safety power path; still need =
 SIL certification (not claimed). Ethics: never bypass E-stop for a demo video.
 
-Operators keep a numbered ticket trail for w6-lab_estop_policy and refuse noun-swapped decks from other academies. Detail mark w6-lab_estop_policy-0.
+E-stop is hard: motors_disabled, brake_engaged, and resume_requires_human all true.
+Soft 'slow down eventually' stories fail. Bypass for demo video is an ethics fail, not
+a style choice. SIL certification is not claimed by this course.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w6-lab_estop_policy-1.
+Practice the printable large-text E-stop sheet path even when the cart is powered down
+for the classroom tabletop.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w6-lab_estop_policy-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w6-lab_estop_policy-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w6-lab_estop_policy-4.
+Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 6: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

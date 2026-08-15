@@ -30,9 +30,20 @@ def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
             reasons.append(f"week {w.get('week')}: lab-JSON-evidence depth padding")
         if "not in a screenshot of a green checkmark" in low:
             reasons.append(f"week {w.get('week')}: green-checkmark evidence padding")
+        if "detail mark" in low:
+            reasons.append(f"week {w.get('week')}: Detail-mark trailer padding")
+        if "operators keep a numbered ticket trail for" in low:
+            reasons.append(f"week {w.get('week')}: rotating ticket-trail trailer padding")
+        if "whiteboard the worked numbers before opening any gui" in low:
+            reasons.append(f"week {w.get('week')}: whiteboard-trailer padding")
+        if "if a volunteer asks for a certificate selfie" in low:
+            reasons.append(f"week {w.get('week')}: certificate-selfie trailer padding")
         stripped = strip_lesson_padding(raw)
         if len(stripped) < 800:
             reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")
+        # Prefer #45 post-collapse floor for new batches (871) when course is batch-004.
+        if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") and len(stripped) < 871:
+            reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 871 (#45 floor)")
     return (not reasons), reasons
 
 
@@ -79,8 +90,10 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
     need(int(prov.get("lesson_padding_rejected") or 0) == 0, "provenance rejected lesson padding")
     need(
-        int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= 800,
-        f"stripped lesson min {(prov.get('stripped_lesson_mins') or {}).get(cid)} < 800",
+        int((prov.get("stripped_lesson_mins") or {}).get(cid) or 0) >= (
+            871 if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") else 800
+        ),
+        f"stripped lesson min {(prov.get('stripped_lesson_mins') or {}).get(cid)} below floor",
     )
     need(prov.get("status") == "PASS", f"provenance {prov.get('status')}")
     need(bool(prov.get("key_balance_ok")), "answer keys collapsed")

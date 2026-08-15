@@ -8,13 +8,14 @@ AI-RAN is research/systems with gates — not pier-wide 6G autonomy. NO_AI quiz 
 Consensus Ladder: observed = KPI CSV; inferred = actions need gates; still need =
 closed-loop field trial evidence (not claimed).
 
-Operators keep a numbered ticket trail for w7-lab_airan_policy and refuse noun-swapped decks from other academies. Detail mark w7-lab_airan_policy-0.
+Write the AI-RAN loop as four explicit fields: observe_kpis (list), proposed_action
+containing MCS or PRB language, human_gate=true, auto_apply_without_gate=false.
+Ungated reinforcement-learning theater fails the validator.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w7-lab_airan_policy-1.
+NO_AI quiz week still allows disclosed calculators on the lab JSON. Closed-loop field
+trial evidence is not claimed; the pier remains RESEARCH_LAB_SCALE.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w7-lab_airan_policy-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w7-lab_airan_policy-3.
+Ticket arithmetic checkpoint for WIRELESS_6G week 7: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

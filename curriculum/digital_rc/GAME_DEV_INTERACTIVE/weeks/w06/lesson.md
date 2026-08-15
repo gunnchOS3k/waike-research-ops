@@ -6,15 +6,11 @@ Lab checks actions include Jump and rebindable.
 Consensus Ladder: observed = input table; inferred = actions survive device swaps;
 still need = accessibility remaps beyond defaults (week 9). Failure: hard-coded scancode-only docs.
 
-Operators keep a numbered ticket trail for w6-lab_input_actions and refuse noun-swapped decks from other academies. Detail mark w6-lab_input_actions-0.
+Actions, not scancodes: Jump must appear, rebindable=true, raw_only=false. Device swaps
+should not break design docs. Week 9 accessibility remaps extend this work; they do not
+delete it.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w6-lab_input_actions-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w6-lab_input_actions-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w6-lab_input_actions-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w6-lab_input_actions-4.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 6: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

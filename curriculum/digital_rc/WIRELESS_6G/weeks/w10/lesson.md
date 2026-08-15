@@ -10,11 +10,12 @@ product_use_unmerged_consumed=false, labs_passed≥6.
 Career map: RF lab tech / RAN ops junior — certs aligned not granted. Accessibility:
 text-only summary path required; optional plots need alt_text in portfolio JSON.
 
-Operators keep a numbered ticket trail for w10-lab_radio_capstone and refuse noun-swapped decks from other academies. Detail mark w10-lab_radio_capstone-0.
+Capstone notebook hashes prior digests and requires includes_commercial_6g_false_statement
+true, product_use_unmerged_consumed false, and labs_passed≥6. Career map roles are
+aligned, not granted. Optional plots need alt_text; a text-only summary path is required.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w10-lab_radio_capstone-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w10-lab_radio_capstone-2.
+Do not open device-os PRs from this packet. Do not consume unmerged Product-Use packages
+as a hard dependency for the notebook.
 
 ## Worked example
 

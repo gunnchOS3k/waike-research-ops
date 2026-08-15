@@ -7,15 +7,14 @@ anti_windup_note length ≥8 when integral magnitude is large.
 Consensus Ladder: observed = error series; inferred = D term reacts to slope; still need =
 real motor plant ID. Empty fails. Wrong u fails.
 
-Operators keep a numbered ticket trail for w3-lab_pid_step and refuse noun-swapped decks from other academies. Detail mark w3-lab_pid_step-0.
+Expand the PID step: integrate the error series with rectangular rule, form the
+backward difference for D, and compute u on the last sample. When |integral| is large,
+anti_windup_note must be a real mitigation sentence (≥8 characters), not an empty string.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w3-lab_pid_step-1.
+Plant identification remains unfinished. Wrong u fails even if the motor 'sounds right'
+on a phone video.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w3-lab_pid_step-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w3-lab_pid_step-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w3-lab_pid_step-4.
+Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 3: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

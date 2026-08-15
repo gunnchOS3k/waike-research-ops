@@ -6,15 +6,13 @@ median_session_min from fixture list. Lab checks rate math and refuses vanity_da
 Consensus Ladder: observed = session table; inferred = early churn is a design smell;
 still need = cohort significance. Failure: fake million-DAU slides.
 
-Operators keep a numbered ticket trail for w8-lab_playtest_metrics and refuse noun-swapped decks from other academies. Detail mark w8-lab_playtest_metrics-0.
+early_churn_rate = early_churn/sessions on the fixture (8/40=0.2). vanity_dau_claim
+must be false. Fake million-DAU slides fail. Cohort significance remains a later need.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w8-lab_playtest_metrics-1.
+Median session minutes, when required by the lab fields, must come from the list math
+rather than adjectives.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w8-lab_playtest_metrics-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w8-lab_playtest_metrics-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w8-lab_playtest_metrics-4.
+Ticket arithmetic checkpoint for GAME_DEV_INTERACTIVE week 8: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

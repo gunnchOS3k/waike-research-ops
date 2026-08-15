@@ -3,7 +3,7 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0988,
+  "worst_jaccard": 0.0416,
   "worst_pair": [
     "ROBOTICS_CONTROL",
     "GAME_DEV_INTERACTIVE"
@@ -17,17 +17,17 @@
     {
       "a": "ROBOTICS_CONTROL",
       "b": "GAME_DEV_INTERACTIVE",
-      "jaccard_5gram": 0.0988
-    },
-    {
-      "a": "WIRELESS_6G",
-      "b": "ROBOTICS_CONTROL",
-      "jaccard_5gram": 0.0689
+      "jaccard_5gram": 0.0416
     },
     {
       "a": "WIRELESS_6G",
       "b": "GAME_DEV_INTERACTIVE",
-      "jaccard_5gram": 0.0686
+      "jaccard_5gram": 0.0294
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "ROBOTICS_CONTROL",
+      "jaccard_5gram": 0.0278
     },
     {
       "a": "DATA_VIZ_BI",
@@ -297,9 +297,9 @@
     "AI_ML_EDGE": 972,
     "DATA_VIZ_BI": 881,
     "CLOUD_DEVOPS": 871,
-    "WIRELESS_6G": 941,
-    "ROBOTICS_CONTROL": 966,
-    "GAME_DEV_INTERACTIVE": 934
+    "WIRELESS_6G": 903,
+    "ROBOTICS_CONTROL": 935,
+    "GAME_DEV_INTERACTIVE": 1056
   },
   "lesson_padding_rejected": 0,
   "registry_size": 35,

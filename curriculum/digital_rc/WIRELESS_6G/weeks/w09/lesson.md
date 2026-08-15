@@ -8,13 +8,14 @@ exists in O-RAN talk; still need = E2 subscription logs (PHYSICAL_PENDING).
 
 Failure mode: noun-swapping a Cloud/DevOps deck. Empty {} fails. PASS raises.
 
-Operators keep a numbered ticket trail for w9-lab_oran_interfaces and refuse noun-swapped decks from other academies. Detail mark w9-lab_oran_interfaces-0.
+Map A1, E2, and O1 onto pier roles with one sentence each. deployed_full_ric stays
+false until E2 subscription logs exist (PHYSICAL_PENDING). Noun-swapping a Cloud or
+DevOps slide deck into O-RAN vocabulary fails the week.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w9-lab_oran_interfaces-1.
+O2 may appear as optional vocabulary but does not unlock a production RIC claim.
+RESEARCH_LAB_SCALE is the only honest size label for WR-4909.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w9-lab_oran_interfaces-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w9-lab_oran_interfaces-3.
+Ticket arithmetic checkpoint for WIRELESS_6G week 9: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

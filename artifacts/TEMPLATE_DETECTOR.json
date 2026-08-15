@@ -1,7 +1,7 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0988,
+  "worst_jaccard": 0.0416,
   "worst_pair": [
     "ROBOTICS_CONTROL",
     "GAME_DEV_INTERACTIVE"

@@ -54,14 +54,29 @@ CLONE_PREFIXES = ("Mid-course check:", "Capstone check:")
 LETTERS = "ABCD"
 
 # Depth padding the independent verifier strips before measuring ≥800.
-# Include batch-003 "Evidence for this week…" rubber-stamp and near-variants.
+# Include batch-003 Evidence/operator-note rubber-stamps and batch-004 Detail-mark /
+# rotating trailer spam invented to dodge those markers.
 _PAD_RE = re.compile(
     r"(Operator note: record evidence before changing shared systems\.\s*)+|"
     r"(Evidence discipline week \d+: keep ticket numbers, hashes, and fixture counts "
     r"in the journal; do not replace them with adjectives\.\s*)+|"
     r"(Evidence for this week lives in the submitted lab JSON and the numbered fixture "
     r"cases\s*[—\-–-]\s*not in a screenshot of a green checkmark\.\s*)+|"
-    r"(Evidence for this week lives in the submitted lab JSON[^\n]*\n*)+",
+    r"(Evidence for this week lives in the submitted lab JSON[^\n]*\n*)+|"
+    # Batch-004 Detail-mark / rotating trailer class
+    r"(Detail mark [^\n.]*\.\s*)+|"
+    r"(Operators keep a numbered ticket trail for [^\n]* and refuse noun-swapped decks "
+    r"from other academies\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
+    r"(Whiteboard the worked numbers before opening any GUI; the validator grades fields, "
+    r"not vibes\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
+    r"(If a volunteer asks for a certificate selfie, point them at career_mapping\.json: "
+    r"aligned, not granted\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
+    r"(Keep journals free of patron faces, passwords, and fabricated impact statistics\.\s*"
+    r"(?:Detail mark [^\n.]*\.\s*)*)+|"
+    r"(When tools disagree, name the observation first, then the inference, then what is "
+    r"still needed\.\s*(?:Detail mark [^\n.]*\.\s*)*)+|"
+    r"(Runnable labs must fail empty submissions and reject a file whose entire body is "
+    r"PASS\.\s*(?:Detail mark [^\n.]*\.\s*)*)+",
     re.I,
 )
 _PAD_MARKERS = (
@@ -69,12 +84,28 @@ _PAD_MARKERS = (
     "evidence discipline week",
     "evidence for this week lives in the submitted lab json",
     "not in a screenshot of a green checkmark",
+    # Batch-004 padding class — must be absent from authored bodies and stripped if present
+    "detail mark",
+    "operators keep a numbered ticket trail for",
+    "whiteboard the worked numbers before opening any gui",
+    "if a volunteer asks for a certificate selfie",
+    "keep journals free of patron faces, passwords, and fabricated impact statistics",
+    "when tools disagree, name the observation first, then the inference",
+    "runnable labs must fail empty submissions and reject a file whose entire body is pass",
 )
 
 
 def strip_lesson_padding(text: str) -> str:
-    """Remove operator-note / evidence-discipline / lab-JSON evidence spam before depth measurement."""
+    """Remove operator-note / evidence / Detail-mark trailer spam before depth measurement."""
     cleaned = _PAD_RE.sub("", text or "")
+    # Defense-in-depth: drop any remaining line that still carries Detail-mark spam.
+    kept: list[str] = []
+    for line in cleaned.splitlines():
+        low = line.lower()
+        if "detail mark" in low:
+            continue
+        kept.append(line)
+    cleaned = "\n".join(kept)
     return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
 
 
@@ -176,13 +207,18 @@ def audit() -> dict[str, Any]:
                 lesson_padding_rejected += 1
                 findings.append(
                     f"{cid} week {w['week']} uses operator-note/evidence-discipline/"
-                    f"lab-JSON-evidence depth padding"
+                    f"lab-JSON-evidence/Detail-mark trailer depth padding"
                 )
             stripped = strip_lesson_padding(raw)
             week_stripped_lens.append(len(stripped))
-            if len(stripped) < 800:
+            floor = (
+                871
+                if cid in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE")
+                else 800
+            )
+            if len(stripped) < floor:
                 findings.append(
-                    f"{cid} week {w['week']} stripped lesson depth {len(stripped)} < 800"
+                    f"{cid} week {w['week']} stripped lesson depth {len(stripped)} < {floor}"
                 )
         stripped_lesson_mins[cid] = min(week_stripped_lens) if week_stripped_lens else 0
 

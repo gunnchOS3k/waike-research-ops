@@ -26,31 +26,30 @@ def q(qid, stem, choices, ai, explanation):
 
 
 def ensure_lesson(body: str, tag: str = "") -> str:
+    """Require substantive authored depth. Never pad with Detail-mark / rotating trailers."""
+    del tag  # tag kept for call-site compatibility; must not be injected into body
     body = textwrap.dedent(body).strip()
-    # Extend with unique operator craft — not the banned evidence-padding markers.
-    extras = [
-        f"Operators keep a numbered ticket trail for {tag or 'this week'} and refuse noun-swapped decks from other academies.",
-        "Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes.",
-        "If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted.",
-        "Keep journals free of patron faces, passwords, and fabricated impact statistics.",
-        "When tools disagree, name the observation first, then the inference, then what is still needed.",
-        "Runnable labs must fail empty submissions and reject a file whose entire body is PASS.",
-    ]
-    i = 0
-    while len(body) < 920:
-        body = body + "\n\n" + extras[i % len(extras)] + f" Detail mark {tag}-{i}."
-        i += 1
-        if i > 20:
-            break
     low = body.lower()
     for bad in (
         "operator note: record evidence before changing shared systems",
         "evidence discipline week",
         "evidence for this week lives in the submitted lab json",
         "not in a screenshot of a green checkmark",
+        "detail mark",
+        "operators keep a numbered ticket trail for",
+        "whiteboard the worked numbers before opening any gui",
+        "if a volunteer asks for a certificate selfie",
+        "keep journals free of patron faces, passwords, and fabricated impact statistics",
+        "when tools disagree, name the observation first, then the inference",
+        "runnable labs must fail empty submissions and reject a file whose entire body is pass",
     ):
         if bad in low:
             raise ValueError(f"padding marker present: {bad}")
+    # Import locally to avoid generator import cycles when run as a script.
+    sys_path_note = ""  # placate linters; real check uses length only here
+    del sys_path_note
+    if len(body) < 871:
+        raise ValueError(f"lesson too short for #45 post-collapse floor: {len(body)} < 871")
     return body
 
 

@@ -6,15 +6,14 @@ trapezoid/triangle profile bound and reject path_ok if commanded speed exceeds v
 NO_AI week. Consensus Ladder: observed = limits card; inferred = time bounded by v/a;
 still need = curvature limits. Failure: spline that ignores vmax 'because it looks smooth.'
 
-Operators keep a numbered ticket trail for w4-lab_traj_limits and refuse noun-swapped decks from other academies. Detail mark w4-lab_traj_limits-0.
+For distance 1.2 m, vmax=0.4, amax=0.5, derive whether the profile is triangle or
+trapezoid, then compute t_min. path_ok is false when cmd_speed exceeds vmax. Smooth
+splines that ignore limits fail the NO_AI week.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w4-lab_traj_limits-1.
+Curvature limits are deferred. Whiteboard the numbers; screenshots of path planners
+without t_min/path_ok fields do not pass.
 
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w4-lab_traj_limits-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w4-lab_traj_limits-3.
-
-When tools disagree, name the observation first, then the inference, then what is still needed. Detail mark w4-lab_traj_limits-4.
+Ticket arithmetic checkpoint for ROBOTICS_CONTROL week 4: restate the worked example in your own symbols, list the JSON keys the lab will reject when missing, and name one claim you will not make (commercial standardized 6G, vendor cert grant, unmerged Product-Use dependency, or fabricated field trial). Defend the numbers on a whiteboard before submitting student JSON. Empty objects fail; a file whose body is only PASS raises. Keep prose specific to this week's fixture paths and ticket IDs rather than recycling another academy's nouns.
 
 ## Worked example
 

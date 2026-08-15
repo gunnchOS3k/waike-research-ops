@@ -9,13 +9,12 @@ Lab checks x, y, theta, tool_x, tool_y after a yaw rotation. Empty {} fails. PAS
 Consensus Ladder: observed = tape origin and tool offset; inferred = rotation mixes x/y;
 still need = wheel slip model (later). Accessibility: ASCII frame diagrams required in journals.
 
-Operators keep a numbered ticket trail for w1-lab_se2_pose and refuse noun-swapped decks from other academies. Detail mark w1-lab_se2_pose-0.
+Tape the pier origin, mark +x along the aisle, and sketch the tool offset arrow before
+any code. With theta=π/2, show how the offset rotates into pier axes using cos/sin.
+Journals without an ASCII frame diagram fail accessibility expectations for HarborBot.
 
-Whiteboard the worked numbers before opening any GUI; the validator grades fields, not vibes. Detail mark w1-lab_se2_pose-1.
-
-If a volunteer asks for a certificate selfie, point them at career_mapping.json: aligned, not granted. Detail mark w1-lab_se2_pose-2.
-
-Keep journals free of patron faces, passwords, and fabricated impact statistics. Detail mark w1-lab_se2_pose-3.
+Refuse 'AI nabbed the box' narratives that skip the SE(2) fields. Lab JSON must carry
+x, y, theta, tool offsets, and mapped tool_x/tool_y that match the rotation math.
 
 ## Worked example
 
