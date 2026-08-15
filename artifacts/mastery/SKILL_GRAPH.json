@@ -1,0 +1,2607 @@
+{
+  "schema": "waike.mastery_skill_graph.v1",
+  "generated_utc": "2026-08-15T17:28:09Z",
+  "node_count": 179,
+  "edge_count": 251,
+  "forbidden_learner_labels": [
+    "dumb",
+    "slow",
+    "hopeless",
+    "bad_student",
+    "low_iq",
+    "lazy"
+  ],
+  "nodes": [
+    {
+      "id": "course:AI_ML_EDGE",
+      "kind": "course",
+      "label": "AI/ML + Edge AI \u2014 EdgeForge Bench",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w01",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 1,
+      "label": "AI_ML_EDGE week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w02",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 2,
+      "label": "AI_ML_EDGE week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w03",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 3,
+      "label": "AI_ML_EDGE week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w04",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 4,
+      "label": "AI_ML_EDGE week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w05",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 5,
+      "label": "AI_ML_EDGE week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w06",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 6,
+      "label": "AI_ML_EDGE week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w07",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 7,
+      "label": "AI_ML_EDGE week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w08",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 8,
+      "label": "AI_ML_EDGE week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w09",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 9,
+      "label": "AI_ML_EDGE week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:AI_ML_EDGE:w10",
+      "kind": "weekly_skill",
+      "course_id": "AI_ML_EDGE",
+      "week": 10,
+      "label": "AI_ML_EDGE week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_cluster_assign",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_cluster_assign",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_data_split",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_data_split",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_eval_thresholds",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_eval_thresholds",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_feature_windows",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_feature_windows",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_overfit_gap",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_overfit_gap",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_quantize_budget",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_quantize_budget",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_rag_redact",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_rag_redact",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_score_model",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_score_model",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_supervised_metrics",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_supervised_metrics",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:AI_ML_EDGE:lab_tiny_mlp_forward",
+      "kind": "lab_skill",
+      "course_id": "AI_ML_EDGE",
+      "label": "lab_tiny_mlp_forward",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:CLOUD_DEVOPS",
+      "kind": "course",
+      "label": "Cloud + DevOps \u2014 ForgeCloud Platform",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w01",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 1,
+      "label": "CLOUD_DEVOPS week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w02",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 2,
+      "label": "CLOUD_DEVOPS week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w03",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 3,
+      "label": "CLOUD_DEVOPS week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w04",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 4,
+      "label": "CLOUD_DEVOPS week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w05",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 5,
+      "label": "CLOUD_DEVOPS week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w06",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 6,
+      "label": "CLOUD_DEVOPS week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w07",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 7,
+      "label": "CLOUD_DEVOPS week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w08",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 8,
+      "label": "CLOUD_DEVOPS week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w09",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 9,
+      "label": "CLOUD_DEVOPS week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CLOUD_DEVOPS:w10",
+      "kind": "weekly_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "week": 10,
+      "label": "CLOUD_DEVOPS week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_cicd_gate",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_cicd_gate",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_cloud_cost",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_cloud_cost",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_deploy_rollback_cloud",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_deploy_rollback_cloud",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_dockerfile_lint",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_dockerfile_lint",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_git_state",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_git_state",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_iam_secrets",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_iam_secrets",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_incident_runbook",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_incident_runbook",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_k8s_probes",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_k8s_probes",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_linux_perms",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_linux_perms",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CLOUD_DEVOPS:lab_slo_budget",
+      "kind": "lab_skill",
+      "course_id": "CLOUD_DEVOPS",
+      "label": "lab_slo_budget",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:COMPUTER_NETWORKING",
+      "kind": "course",
+      "label": "Computer Networking \u2014 Packets to Campus Edge",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w01",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 1,
+      "label": "COMPUTER_NETWORKING week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w02",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 2,
+      "label": "COMPUTER_NETWORKING week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w03",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 3,
+      "label": "COMPUTER_NETWORKING week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w04",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 4,
+      "label": "COMPUTER_NETWORKING week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w05",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 5,
+      "label": "COMPUTER_NETWORKING week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w06",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 6,
+      "label": "COMPUTER_NETWORKING week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w07",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 7,
+      "label": "COMPUTER_NETWORKING week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w08",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 8,
+      "label": "COMPUTER_NETWORKING week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w09",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 9,
+      "label": "COMPUTER_NETWORKING week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMPUTER_NETWORKING:w10",
+      "kind": "weekly_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "week": 10,
+      "label": "COMPUTER_NETWORKING week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_cidr_math",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_cidr_math",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_datapath",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_datapath",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_dns_resolution",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_dns_resolution",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_nat_acl",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_nat_acl",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_spf_routing",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_spf_routing",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMPUTER_NETWORKING:lab_vlan_mac",
+      "kind": "lab_skill",
+      "course_id": "COMPUTER_NETWORKING",
+      "label": "lab_vlan_mac",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:CYBERSECURITY",
+      "kind": "course",
+      "label": "Cybersecurity \u2014 Harbor SOC Foundations",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:CYBERSECURITY:w01",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 1,
+      "label": "CYBERSECURITY week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w02",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 2,
+      "label": "CYBERSECURITY week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w03",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 3,
+      "label": "CYBERSECURITY week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w04",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 4,
+      "label": "CYBERSECURITY week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w05",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 5,
+      "label": "CYBERSECURITY week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w06",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 6,
+      "label": "CYBERSECURITY week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w07",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 7,
+      "label": "CYBERSECURITY week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w08",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 8,
+      "label": "CYBERSECURITY week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w09",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 9,
+      "label": "CYBERSECURITY week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:CYBERSECURITY:w10",
+      "kind": "weekly_skill",
+      "course_id": "CYBERSECURITY",
+      "week": 10,
+      "label": "CYBERSECURITY week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_forensics_timeline",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_forensics_timeline",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_hardening_baseline",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_hardening_baseline",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_iam_rbac",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_iam_rbac",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_incident_playbook",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_incident_playbook",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_safe_vuln_detect",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_safe_vuln_detect",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_segmentation_zones",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_segmentation_zones",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:CYBERSECURITY:lab_siem_triage",
+      "kind": "lab_skill",
+      "course_id": "CYBERSECURITY",
+      "label": "lab_siem_triage",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:DATA_VIZ_BI",
+      "kind": "course",
+      "label": "Data Visualization + BI \u2014 Civic Metrics Studio",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w01",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 1,
+      "label": "DATA_VIZ_BI week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w02",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 2,
+      "label": "DATA_VIZ_BI week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w03",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 3,
+      "label": "DATA_VIZ_BI week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w04",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 4,
+      "label": "DATA_VIZ_BI week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w05",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 5,
+      "label": "DATA_VIZ_BI week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w06",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 6,
+      "label": "DATA_VIZ_BI week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w07",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 7,
+      "label": "DATA_VIZ_BI week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w08",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 8,
+      "label": "DATA_VIZ_BI week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w09",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 9,
+      "label": "DATA_VIZ_BI week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:DATA_VIZ_BI:w10",
+      "kind": "weekly_skill",
+      "course_id": "DATA_VIZ_BI",
+      "week": 10,
+      "label": "DATA_VIZ_BI week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_bi_refresh",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_bi_refresh",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_chart_encode",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_chart_encode",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_clean_nulls",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_clean_nulls",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_dashboard_layout",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_dashboard_layout",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_kpi_tree",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_kpi_tree",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_pandas_group",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_pandas_group",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_repro_hash",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_repro_hash",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_schema_nf",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_schema_nf",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_sql_join_counts",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_sql_join_counts",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:DATA_VIZ_BI:lab_stats_summary",
+      "kind": "lab_skill",
+      "course_id": "DATA_VIZ_BI",
+      "label": "lab_stats_summary",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:GENERAL_IT",
+      "kind": "course",
+      "label": "General IT \u2014 Operator to Support Specialist",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:GENERAL_IT:w01",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 1,
+      "label": "GENERAL_IT week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w02",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 2,
+      "label": "GENERAL_IT week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w03",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 3,
+      "label": "GENERAL_IT week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w04",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 4,
+      "label": "GENERAL_IT week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w05",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 5,
+      "label": "GENERAL_IT week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w06",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 6,
+      "label": "GENERAL_IT week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w07",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 7,
+      "label": "GENERAL_IT week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w08",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 8,
+      "label": "GENERAL_IT week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w09",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 9,
+      "label": "GENERAL_IT week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:GENERAL_IT:w10",
+      "kind": "weekly_skill",
+      "course_id": "GENERAL_IT",
+      "week": 10,
+      "label": "GENERAL_IT week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_automation_runbook",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_automation_runbook",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_backup",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_backup",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_dns_hosts",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_dns_hosts",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_os_users",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_os_users",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_services",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_services",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_storage",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_storage",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:GENERAL_IT:lab_ticket_queue",
+      "kind": "lab_skill",
+      "course_id": "GENERAL_IT",
+      "label": "lab_ticket_queue",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:HARDWARE_ENGINEERING",
+      "kind": "course",
+      "label": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w01",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 1,
+      "label": "HARDWARE_ENGINEERING week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w02",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 2,
+      "label": "HARDWARE_ENGINEERING week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w03",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 3,
+      "label": "HARDWARE_ENGINEERING week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w04",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 4,
+      "label": "HARDWARE_ENGINEERING week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w05",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 5,
+      "label": "HARDWARE_ENGINEERING week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w06",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 6,
+      "label": "HARDWARE_ENGINEERING week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w07",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 7,
+      "label": "HARDWARE_ENGINEERING week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w08",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 8,
+      "label": "HARDWARE_ENGINEERING week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w09",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 9,
+      "label": "HARDWARE_ENGINEERING week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:HARDWARE_ENGINEERING:w10",
+      "kind": "weekly_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "week": 10,
+      "label": "HARDWARE_ENGINEERING week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_bus_protocol",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_bus_protocol",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_devicetree",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_devicetree",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_failure_diagnosis",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_failure_diagnosis",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_logic_gate",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_logic_gate",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_pcb_erc_drc",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_pcb_erc_drc",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_power_budget",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_power_budget",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_rc_transient",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_rc_transient",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_spice_network",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_spice_network",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_thevenin",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_thevenin",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:HARDWARE_ENGINEERING:lab_zephyr_qemu",
+      "kind": "lab_skill",
+      "course_id": "HARDWARE_ENGINEERING",
+      "label": "lab_zephyr_qemu",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:PM_AGILE_LSS",
+      "kind": "course",
+      "label": "Process Improvement + Project Management \u2014 Device Lab Flow",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w01",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 1,
+      "label": "PM_AGILE_LSS week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w02",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 2,
+      "label": "PM_AGILE_LSS week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w03",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 3,
+      "label": "PM_AGILE_LSS week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w04",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 4,
+      "label": "PM_AGILE_LSS week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w05",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 5,
+      "label": "PM_AGILE_LSS week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w06",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 6,
+      "label": "PM_AGILE_LSS week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w07",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 7,
+      "label": "PM_AGILE_LSS week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w08",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 8,
+      "label": "PM_AGILE_LSS week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w09",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 9,
+      "label": "PM_AGILE_LSS week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:PM_AGILE_LSS:w10",
+      "kind": "weekly_skill",
+      "course_id": "PM_AGILE_LSS",
+      "week": 10,
+      "label": "PM_AGILE_LSS week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_change_status_ai",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_change_status_ai",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_charter",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_charter",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_control_chart",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_control_chart",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_dmaic_case",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_dmaic_case",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_pareto_rootcause",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_pareto_rootcause",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_raci",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_raci",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_risk_register",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_risk_register",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_sipoc_process",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_sipoc_process",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_sprint_board",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_sprint_board",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:PM_AGILE_LSS:lab_wbs_schedule",
+      "kind": "lab_skill",
+      "course_id": "PM_AGILE_LSS",
+      "label": "lab_wbs_schedule",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:SOFTWARE_BUILDER",
+      "kind": "course",
+      "label": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w01",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 1,
+      "label": "SOFTWARE_BUILDER week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w02",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 2,
+      "label": "SOFTWARE_BUILDER week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w03",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 3,
+      "label": "SOFTWARE_BUILDER week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w04",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 4,
+      "label": "SOFTWARE_BUILDER week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w05",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 5,
+      "label": "SOFTWARE_BUILDER week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w06",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 6,
+      "label": "SOFTWARE_BUILDER week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w07",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 7,
+      "label": "SOFTWARE_BUILDER week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w08",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 8,
+      "label": "SOFTWARE_BUILDER week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w09",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 9,
+      "label": "SOFTWARE_BUILDER week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:SOFTWARE_BUILDER:w10",
+      "kind": "weekly_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "week": 10,
+      "label": "SOFTWARE_BUILDER week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_authz",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_authz",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_automated_testing",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_automated_testing",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_db_migration",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_db_migration",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_deploy_rollback",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_deploy_rollback",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_frontend_ui",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_frontend_ui",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_git_conflict",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_git_conflict",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_github_actions_ci",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_github_actions_ci",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_observability",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_observability",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_rest_api",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_rest_api",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:SOFTWARE_BUILDER:lab_security_review",
+      "kind": "lab_skill",
+      "course_id": "SOFTWARE_BUILDER",
+      "label": "lab_security_review",
+      "learner_label_policy": "skill_focus_only"
+    }
+  ],
+  "edges": [
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w01",
+      "to": "skill:AI_ML_EDGE:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w02",
+      "to": "skill:AI_ML_EDGE:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w03",
+      "to": "skill:AI_ML_EDGE:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w04",
+      "to": "skill:AI_ML_EDGE:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w05",
+      "to": "skill:AI_ML_EDGE:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w06",
+      "to": "skill:AI_ML_EDGE:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w07",
+      "to": "skill:AI_ML_EDGE:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w08",
+      "to": "skill:AI_ML_EDGE:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:AI_ML_EDGE",
+      "to": "skill:AI_ML_EDGE:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w09",
+      "to": "skill:AI_ML_EDGE:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w01",
+      "to": "lab:AI_ML_EDGE:lab_cluster_assign",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w02",
+      "to": "lab:AI_ML_EDGE:lab_data_split",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w03",
+      "to": "lab:AI_ML_EDGE:lab_eval_thresholds",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w04",
+      "to": "lab:AI_ML_EDGE:lab_feature_windows",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w05",
+      "to": "lab:AI_ML_EDGE:lab_overfit_gap",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w06",
+      "to": "lab:AI_ML_EDGE:lab_quantize_budget",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w07",
+      "to": "lab:AI_ML_EDGE:lab_rag_redact",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w08",
+      "to": "lab:AI_ML_EDGE:lab_score_model",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w09",
+      "to": "lab:AI_ML_EDGE:lab_supervised_metrics",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:AI_ML_EDGE:w10",
+      "to": "lab:AI_ML_EDGE:lab_tiny_mlp_forward",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w01",
+      "to": "skill:CLOUD_DEVOPS:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w02",
+      "to": "skill:CLOUD_DEVOPS:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w03",
+      "to": "skill:CLOUD_DEVOPS:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w04",
+      "to": "skill:CLOUD_DEVOPS:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w05",
+      "to": "skill:CLOUD_DEVOPS:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w06",
+      "to": "skill:CLOUD_DEVOPS:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w07",
+      "to": "skill:CLOUD_DEVOPS:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w08",
+      "to": "skill:CLOUD_DEVOPS:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CLOUD_DEVOPS",
+      "to": "skill:CLOUD_DEVOPS:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w09",
+      "to": "skill:CLOUD_DEVOPS:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w01",
+      "to": "lab:CLOUD_DEVOPS:lab_cicd_gate",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w02",
+      "to": "lab:CLOUD_DEVOPS:lab_cloud_cost",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w03",
+      "to": "lab:CLOUD_DEVOPS:lab_deploy_rollback_cloud",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w04",
+      "to": "lab:CLOUD_DEVOPS:lab_dockerfile_lint",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w05",
+      "to": "lab:CLOUD_DEVOPS:lab_git_state",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w06",
+      "to": "lab:CLOUD_DEVOPS:lab_iam_secrets",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w07",
+      "to": "lab:CLOUD_DEVOPS:lab_incident_runbook",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w08",
+      "to": "lab:CLOUD_DEVOPS:lab_k8s_probes",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w09",
+      "to": "lab:CLOUD_DEVOPS:lab_linux_perms",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CLOUD_DEVOPS:w10",
+      "to": "lab:CLOUD_DEVOPS:lab_slo_budget",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w01",
+      "to": "skill:COMPUTER_NETWORKING:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w02",
+      "to": "skill:COMPUTER_NETWORKING:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w03",
+      "to": "skill:COMPUTER_NETWORKING:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w04",
+      "to": "skill:COMPUTER_NETWORKING:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w05",
+      "to": "skill:COMPUTER_NETWORKING:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w06",
+      "to": "skill:COMPUTER_NETWORKING:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w07",
+      "to": "skill:COMPUTER_NETWORKING:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w08",
+      "to": "skill:COMPUTER_NETWORKING:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMPUTER_NETWORKING",
+      "to": "skill:COMPUTER_NETWORKING:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w09",
+      "to": "skill:COMPUTER_NETWORKING:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w01",
+      "to": "lab:COMPUTER_NETWORKING:lab_cidr_math",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w02",
+      "to": "lab:COMPUTER_NETWORKING:lab_datapath",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w03",
+      "to": "lab:COMPUTER_NETWORKING:lab_dns_resolution",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w04",
+      "to": "lab:COMPUTER_NETWORKING:lab_nat_acl",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w05",
+      "to": "lab:COMPUTER_NETWORKING:lab_spf_routing",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMPUTER_NETWORKING:w06",
+      "to": "lab:COMPUTER_NETWORKING:lab_vlan_mac",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w01",
+      "to": "skill:CYBERSECURITY:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w02",
+      "to": "skill:CYBERSECURITY:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w03",
+      "to": "skill:CYBERSECURITY:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w04",
+      "to": "skill:CYBERSECURITY:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w05",
+      "to": "skill:CYBERSECURITY:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w06",
+      "to": "skill:CYBERSECURITY:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w07",
+      "to": "skill:CYBERSECURITY:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w08",
+      "to": "skill:CYBERSECURITY:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:CYBERSECURITY",
+      "to": "skill:CYBERSECURITY:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w09",
+      "to": "skill:CYBERSECURITY:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w01",
+      "to": "lab:CYBERSECURITY:lab_forensics_timeline",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w02",
+      "to": "lab:CYBERSECURITY:lab_hardening_baseline",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w03",
+      "to": "lab:CYBERSECURITY:lab_iam_rbac",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w04",
+      "to": "lab:CYBERSECURITY:lab_incident_playbook",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w05",
+      "to": "lab:CYBERSECURITY:lab_safe_vuln_detect",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w06",
+      "to": "lab:CYBERSECURITY:lab_segmentation_zones",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:CYBERSECURITY:w07",
+      "to": "lab:CYBERSECURITY:lab_siem_triage",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w01",
+      "to": "skill:DATA_VIZ_BI:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w02",
+      "to": "skill:DATA_VIZ_BI:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w03",
+      "to": "skill:DATA_VIZ_BI:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w04",
+      "to": "skill:DATA_VIZ_BI:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w05",
+      "to": "skill:DATA_VIZ_BI:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w06",
+      "to": "skill:DATA_VIZ_BI:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w07",
+      "to": "skill:DATA_VIZ_BI:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w08",
+      "to": "skill:DATA_VIZ_BI:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:DATA_VIZ_BI",
+      "to": "skill:DATA_VIZ_BI:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w09",
+      "to": "skill:DATA_VIZ_BI:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w01",
+      "to": "lab:DATA_VIZ_BI:lab_bi_refresh",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w02",
+      "to": "lab:DATA_VIZ_BI:lab_chart_encode",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w03",
+      "to": "lab:DATA_VIZ_BI:lab_clean_nulls",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w04",
+      "to": "lab:DATA_VIZ_BI:lab_dashboard_layout",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w05",
+      "to": "lab:DATA_VIZ_BI:lab_kpi_tree",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w06",
+      "to": "lab:DATA_VIZ_BI:lab_pandas_group",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w07",
+      "to": "lab:DATA_VIZ_BI:lab_repro_hash",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w08",
+      "to": "lab:DATA_VIZ_BI:lab_schema_nf",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w09",
+      "to": "lab:DATA_VIZ_BI:lab_sql_join_counts",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:DATA_VIZ_BI:w10",
+      "to": "lab:DATA_VIZ_BI:lab_stats_summary",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w01",
+      "to": "skill:GENERAL_IT:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w02",
+      "to": "skill:GENERAL_IT:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w03",
+      "to": "skill:GENERAL_IT:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w04",
+      "to": "skill:GENERAL_IT:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w05",
+      "to": "skill:GENERAL_IT:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w06",
+      "to": "skill:GENERAL_IT:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w07",
+      "to": "skill:GENERAL_IT:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w08",
+      "to": "skill:GENERAL_IT:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:GENERAL_IT",
+      "to": "skill:GENERAL_IT:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:GENERAL_IT:w09",
+      "to": "skill:GENERAL_IT:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:GENERAL_IT:w01",
+      "to": "lab:GENERAL_IT:lab_automation_runbook",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w02",
+      "to": "lab:GENERAL_IT:lab_backup",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w03",
+      "to": "lab:GENERAL_IT:lab_dns_hosts",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w04",
+      "to": "lab:GENERAL_IT:lab_os_users",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w05",
+      "to": "lab:GENERAL_IT:lab_services",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w06",
+      "to": "lab:GENERAL_IT:lab_storage",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:GENERAL_IT:w07",
+      "to": "lab:GENERAL_IT:lab_ticket_queue",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w01",
+      "to": "skill:HARDWARE_ENGINEERING:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w02",
+      "to": "skill:HARDWARE_ENGINEERING:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w03",
+      "to": "skill:HARDWARE_ENGINEERING:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w04",
+      "to": "skill:HARDWARE_ENGINEERING:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w05",
+      "to": "skill:HARDWARE_ENGINEERING:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w06",
+      "to": "skill:HARDWARE_ENGINEERING:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w07",
+      "to": "skill:HARDWARE_ENGINEERING:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w08",
+      "to": "skill:HARDWARE_ENGINEERING:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:HARDWARE_ENGINEERING",
+      "to": "skill:HARDWARE_ENGINEERING:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w09",
+      "to": "skill:HARDWARE_ENGINEERING:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w01",
+      "to": "lab:HARDWARE_ENGINEERING:lab_bus_protocol",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w02",
+      "to": "lab:HARDWARE_ENGINEERING:lab_devicetree",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w03",
+      "to": "lab:HARDWARE_ENGINEERING:lab_failure_diagnosis",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w04",
+      "to": "lab:HARDWARE_ENGINEERING:lab_logic_gate",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w05",
+      "to": "lab:HARDWARE_ENGINEERING:lab_pcb_erc_drc",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w06",
+      "to": "lab:HARDWARE_ENGINEERING:lab_power_budget",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w07",
+      "to": "lab:HARDWARE_ENGINEERING:lab_rc_transient",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w08",
+      "to": "lab:HARDWARE_ENGINEERING:lab_spice_network",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w09",
+      "to": "lab:HARDWARE_ENGINEERING:lab_thevenin",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:HARDWARE_ENGINEERING:w10",
+      "to": "lab:HARDWARE_ENGINEERING:lab_zephyr_qemu",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w01",
+      "to": "skill:PM_AGILE_LSS:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w02",
+      "to": "skill:PM_AGILE_LSS:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w03",
+      "to": "skill:PM_AGILE_LSS:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w04",
+      "to": "skill:PM_AGILE_LSS:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w05",
+      "to": "skill:PM_AGILE_LSS:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w06",
+      "to": "skill:PM_AGILE_LSS:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w07",
+      "to": "skill:PM_AGILE_LSS:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w08",
+      "to": "skill:PM_AGILE_LSS:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:PM_AGILE_LSS",
+      "to": "skill:PM_AGILE_LSS:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w09",
+      "to": "skill:PM_AGILE_LSS:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w01",
+      "to": "lab:PM_AGILE_LSS:lab_change_status_ai",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w02",
+      "to": "lab:PM_AGILE_LSS:lab_charter",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w03",
+      "to": "lab:PM_AGILE_LSS:lab_control_chart",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w04",
+      "to": "lab:PM_AGILE_LSS:lab_dmaic_case",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w05",
+      "to": "lab:PM_AGILE_LSS:lab_pareto_rootcause",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w06",
+      "to": "lab:PM_AGILE_LSS:lab_raci",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w07",
+      "to": "lab:PM_AGILE_LSS:lab_risk_register",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w08",
+      "to": "lab:PM_AGILE_LSS:lab_sipoc_process",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w09",
+      "to": "lab:PM_AGILE_LSS:lab_sprint_board",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:PM_AGILE_LSS:w10",
+      "to": "lab:PM_AGILE_LSS:lab_wbs_schedule",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w01",
+      "to": "skill:SOFTWARE_BUILDER:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w02",
+      "to": "skill:SOFTWARE_BUILDER:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w03",
+      "to": "skill:SOFTWARE_BUILDER:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w04",
+      "to": "skill:SOFTWARE_BUILDER:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w05",
+      "to": "skill:SOFTWARE_BUILDER:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w06",
+      "to": "skill:SOFTWARE_BUILDER:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w07",
+      "to": "skill:SOFTWARE_BUILDER:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w08",
+      "to": "skill:SOFTWARE_BUILDER:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:SOFTWARE_BUILDER",
+      "to": "skill:SOFTWARE_BUILDER:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w09",
+      "to": "skill:SOFTWARE_BUILDER:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w01",
+      "to": "lab:SOFTWARE_BUILDER:lab_authz",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w02",
+      "to": "lab:SOFTWARE_BUILDER:lab_automated_testing",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w03",
+      "to": "lab:SOFTWARE_BUILDER:lab_db_migration",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w04",
+      "to": "lab:SOFTWARE_BUILDER:lab_deploy_rollback",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w05",
+      "to": "lab:SOFTWARE_BUILDER:lab_frontend_ui",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w06",
+      "to": "lab:SOFTWARE_BUILDER:lab_git_conflict",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w07",
+      "to": "lab:SOFTWARE_BUILDER:lab_github_actions_ci",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w08",
+      "to": "lab:SOFTWARE_BUILDER:lab_observability",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w09",
+      "to": "lab:SOFTWARE_BUILDER:lab_rest_api",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:SOFTWARE_BUILDER:w10",
+      "to": "lab:SOFTWARE_BUILDER:lab_security_review",
+      "relation": "assesses"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "waike.assessable_item_registry.v1",
+  "generated_utc": "2026-08-15T17:28:09Z",
+  "course_count": 9,
+  "item_count": 1016,
+  "per_course": {
+    "AI_ML_EDGE": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "CLOUD_DEVOPS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "COMPUTER_NETWORKING": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 6,
+      "total": 110
+    },
+    "CYBERSECURITY": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 7,
+      "total": 111
+    },
+    "DATA_VIZ_BI": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "GENERAL_IT": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 7,
+      "total": 111
+    },
+    "HARDWARE_ENGINEERING": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "PM_AGILE_LSS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "SOFTWARE_BUILDER": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    }
+  },
+  "key_fields_stripped": [
+    "answer_index",
+    "answer_keys",
+    "correct",
+    "correct_choice",
+    "explanation",
+    "gold",
+    "instructor_keys",
+    "reference_submission",
+    "solution_key"
+  ],
+  "key_fields_present_in_registry": [],
+  "self_grading_forbidden": true,
+  "items": [
+    {
+      "item_id": "AI_ML_EDGE:aim-w1-1",
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "domain": "AI_ML_EDGE.knowledge",
+      "kind": "mcq",
+      "stem": "EF-2101 has 480 rows and a 20% time-ordered holdout. train_n?",
+      "choices": [
+        "384",
+        "96",
+        "400",
+        "480"
+      ],
+      "source": "curriculum/digital_rc/AI_ML_EDGE/quizzes/q01.json"
+    },
+    {
+      "item_id": "AI_ML_EDGE:aim-w1-2",
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "domain": "AI_ML_EDGE.knowledge",
+      "kind": "mcq",
+      "stem": "Why forbid shuffle before the occupancy holdout?",
+      "choices": [
+        "GPUs dislike shuffle",
+        "Midnight cleaning zeros would leak across folds",
+        "CSV forbids shuffle",
+        "Validators require alphabetical zones"
+      ],
+      "source": "curriculum/digital_rc/AI_ML_EDGE/quizzes/q01.json"
+    },
+    {
+      "item_id": "AI_ML_EDGE:aim-w1-3",
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "domain": "AI_ML_EDGE.knowledge",
+      "kind": "mcq",
+      "stem": "Which column is forbidden on EdgeForge?",
+      "choices": [
+        "zone_id letter",
+        "people_count",
+        "patron face embedding",
+        "rssi_dbm"
+      ],
+      "source": "curriculum/digital_rc/AI_ML_EDGE/quizzes/q01.json"
+    },
+    {
+      "item_id": "AI_ML_EDGE:aim-w1-4",
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "domain": "AI_ML_EDGE.knowledge",
+      "kind": "mcq",
+      "stem": "Observation vs inference for midnight zeros?",
+      "choices": [
+        "Inference: building empty",
+        "Inference: AP rebooted",
+        "Observation: model is biased",
+        "Observation: people_count==0 for 40 minutes"
+      ],
+      "source": "curriculum/digital_rc/AI_ML_EDGE/quizzes/q01.json"
+    },
+    {
+      "item_id": "AI_ML_EDGE:aim-w1-5",
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "domain": "AI_ML_EDGE.knowledge",
+      "kind": "mcq",
+      "stem": "Lab rejects which claim?",
+      "choices": [
+        "train_n with no split fields",
+        "train_n with shown split math",
+        "pathlib reads",
+        "csv.DictReader"
+      ],
+      "source": "curriculum/digital_rc/AI_ML_EDGE/quizzes/q01.json"
+    }
+  ],
+  "claim_boundary": "Student-facing assessable registry only. Instructor keys are not embedded. Scoring requires an isolated grading agent after submission.",
+  "items_omitted_for_size": 1011
+}

@@ -1,0 +1,19 @@
+name: waike-mastery
+on:
+  pull_request:
+    paths:
+      - 'src/waike_mastery/**'
+      - 'scripts/emit_waike_mastery.py'
+      - 'tests/mastery/**'
+      - 'contracts/**'
+  workflow_dispatch:
+jobs:
+  mastery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pytest -q tests/mastery
+      - run: python3 scripts/emit_waike_mastery.py

@@ -1,0 +1,396 @@
+{
+  "schema": "waike.gunnchai.learning_contract.v1",
+  "generated_utc": "2026-08-15T17:28:09Z",
+  "owner_repo": "waike-research-ops",
+  "consumer_repo": "gunnchAI3k",
+  "discovery": {
+    "method": "filesystem_scan",
+    "glob": "curriculum/digital_rc/*/course.json",
+    "hardcoded_course_names": false,
+    "course_count": 9
+  },
+  "permissions": {
+    "MASTERY_BENCHMARK": {
+      "may_read_student_materials": true,
+      "may_read_instructor_keys": false,
+      "may_self_grade": false,
+      "grading_agent": "isolated_after_submission"
+    },
+    "LEARNER_TUTOR": {
+      "may_read_student_materials": true,
+      "may_read_instructor_keys": false,
+      "may_disclose_answers": false,
+      "socratic_default": true
+    },
+    "EDUCATOR_COPILOT": {
+      "may_read_student_materials": true,
+      "may_read_instructor_keys": true,
+      "hitl_grading_required": true,
+      "may_publish_grades_without_human": false
+    }
+  },
+  "courses": [
+    {
+      "course_id": "AI_ML_EDGE",
+      "title": "AI/ML + Edge AI \u2014 EdgeForge Bench",
+      "path": "curriculum/digital_rc/AI_ML_EDGE",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "track_ids": [
+        "AI_ML_EDGE"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_cluster_assign",
+        "lab_data_split",
+        "lab_eval_thresholds",
+        "lab_feature_windows",
+        "lab_overfit_gap",
+        "lab_quantize_budget",
+        "lab_rag_redact",
+        "lab_score_model",
+        "lab_supervised_metrics",
+        "lab_tiny_mlp_forward"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "CLOUD_DEVOPS",
+      "title": "Cloud + DevOps \u2014 ForgeCloud Platform",
+      "path": "curriculum/digital_rc/CLOUD_DEVOPS",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "track_ids": [
+        "CLOUD_DEVOPS"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_cicd_gate",
+        "lab_cloud_cost",
+        "lab_deploy_rollback_cloud",
+        "lab_dockerfile_lint",
+        "lab_git_state",
+        "lab_iam_secrets",
+        "lab_incident_runbook",
+        "lab_k8s_probes",
+        "lab_linux_perms",
+        "lab_slo_budget"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "COMPUTER_NETWORKING",
+      "title": "Computer Networking \u2014 Packets to Campus Edge",
+      "path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "academy_id": "ACADEMY_NETWORKING",
+      "track_ids": [
+        "NETWORKING_INFRA"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_cidr_math",
+        "lab_datapath",
+        "lab_dns_resolution",
+        "lab_nat_acl",
+        "lab_spf_routing",
+        "lab_vlan_mac"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "CYBERSECURITY",
+      "title": "Cybersecurity \u2014 Harbor SOC Foundations",
+      "path": "curriculum/digital_rc/CYBERSECURITY",
+      "academy_id": "ACADEMY_CYBER",
+      "track_ids": [
+        "CYBER_SOC"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_forensics_timeline",
+        "lab_hardening_baseline",
+        "lab_iam_rbac",
+        "lab_incident_playbook",
+        "lab_safe_vuln_detect",
+        "lab_segmentation_zones",
+        "lab_siem_triage"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "DATA_VIZ_BI",
+      "title": "Data Visualization + BI \u2014 Civic Metrics Studio",
+      "path": "curriculum/digital_rc/DATA_VIZ_BI",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "track_ids": [
+        "DATA_VIZ_BI"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_bi_refresh",
+        "lab_chart_encode",
+        "lab_clean_nulls",
+        "lab_dashboard_layout",
+        "lab_kpi_tree",
+        "lab_pandas_group",
+        "lab_repro_hash",
+        "lab_schema_nf",
+        "lab_sql_join_counts",
+        "lab_stats_summary"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "GENERAL_IT",
+      "title": "General IT \u2014 Operator to Support Specialist",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "academy_id": "ACADEMY_IT",
+      "track_ids": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_automation_runbook",
+        "lab_backup",
+        "lab_dns_hosts",
+        "lab_os_users",
+        "lab_services",
+        "lab_storage",
+        "lab_ticket_queue"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+      "path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+      "academy_id": "ACADEMY_HARDWARE",
+      "track_ids": [
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_bus_protocol",
+        "lab_devicetree",
+        "lab_failure_diagnosis",
+        "lab_logic_gate",
+        "lab_pcb_erc_drc",
+        "lab_power_budget",
+        "lab_rc_transient",
+        "lab_spice_network",
+        "lab_thevenin",
+        "lab_zephyr_qemu"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "PM_AGILE_LSS",
+      "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+      "path": "curriculum/digital_rc/PM_AGILE_LSS",
+      "academy_id": "ACADEMY_PROCESS_PM",
+      "track_ids": [
+        "PM_AGILE_LSS"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_change_status_ai",
+        "lab_charter",
+        "lab_control_chart",
+        "lab_dmaic_case",
+        "lab_pareto_rootcause",
+        "lab_raci",
+        "lab_risk_register",
+        "lab_sipoc_process",
+        "lab_sprint_board",
+        "lab_wbs_schedule"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+      "path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "track_ids": [
+        "SOFTWARE_BUILDER"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_authz",
+        "lab_automated_testing",
+        "lab_db_migration",
+        "lab_deploy_rollback",
+        "lab_frontend_ui",
+        "lab_git_conflict",
+        "lab_github_actions_ci",
+        "lab_observability",
+        "lab_rest_api",
+        "lab_security_review"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    }
+  ],
+  "claim_boundary": "Machine-readable WAIKE\u2194gunnchAI learning contract from discoverable digital RC courses. Not an accredited program; not a claim that a live student/teacher cohort was evaluated."
+}

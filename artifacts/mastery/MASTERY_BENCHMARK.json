@@ -1,0 +1,324 @@
+{
+  "schema": "waike.mastery_benchmark.v1",
+  "solver": "curriculum_overlap_v1",
+  "used_instructor_keys_during_solve": false,
+  "self_graded": false,
+  "grading_agent": "isolated_after_submission",
+  "items_attempted": 936,
+  "items_correct": 603,
+  "overall_score": 0.6442307692307693,
+  "per_course": {
+    "AI_ML_EDGE": {
+      "correct": 64,
+      "total": 104,
+      "score": 0.6153846153846154
+    },
+    "CLOUD_DEVOPS": {
+      "correct": 80,
+      "total": 104,
+      "score": 0.7692307692307693
+    },
+    "COMPUTER_NETWORKING": {
+      "correct": 55,
+      "total": 104,
+      "score": 0.5288461538461539
+    },
+    "CYBERSECURITY": {
+      "correct": 73,
+      "total": 104,
+      "score": 0.7019230769230769
+    },
+    "DATA_VIZ_BI": {
+      "correct": 62,
+      "total": 104,
+      "score": 0.5961538461538461
+    },
+    "GENERAL_IT": {
+      "correct": 69,
+      "total": 104,
+      "score": 0.6634615384615384
+    },
+    "HARDWARE_ENGINEERING": {
+      "correct": 68,
+      "total": 104,
+      "score": 0.6538461538461539
+    },
+    "PM_AGILE_LSS": {
+      "correct": 64,
+      "total": 104,
+      "score": 0.6153846153846154
+    },
+    "SOFTWARE_BUILDER": {
+      "correct": 68,
+      "total": 104,
+      "score": 0.6538461538461539
+    }
+  },
+  "per_assessment": {
+    "AI_ML_EDGE:AI_ML_EDGE-q01": 0.8333333333333334,
+    "AI_ML_EDGE:AI_ML_EDGE-q02": 0.8333333333333334,
+    "AI_ML_EDGE:AI_ML_EDGE-q03": 0.5,
+    "AI_ML_EDGE:AI_ML_EDGE-q04": 0.16666666666666666,
+    "AI_ML_EDGE:AI_ML_EDGE-q05": 0.6666666666666666,
+    "AI_ML_EDGE:AI_ML_EDGE-q06": 0.6666666666666666,
+    "AI_ML_EDGE:AI_ML_EDGE-q07": 0.8333333333333334,
+    "AI_ML_EDGE:AI_ML_EDGE-q08": 0.8333333333333334,
+    "AI_ML_EDGE:AI_ML_EDGE-q09": 0.5,
+    "AI_ML_EDGE:AI_ML_EDGE-q10": 0.6666666666666666,
+    "AI_ML_EDGE:AI_ML_EDGE-mid": 0.5,
+    "AI_ML_EDGE:AI_ML_EDGE-final": 0.625,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q01": 0.8333333333333334,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q02": 1.0,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q03": 1.0,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q04": 0.3333333333333333,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q05": 0.8333333333333334,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q06": 0.5,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q07": 0.6666666666666666,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q08": 0.8333333333333334,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q09": 0.8333333333333334,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-q10": 0.8333333333333334,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-mid": 0.8,
+    "CLOUD_DEVOPS:CLOUD_DEVOPS-final": 0.75,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q01": 0.5,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q02": 0.3333333333333333,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q03": 0.8333333333333334,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q04": 0.5,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q05": 0.5,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q06": 0.3333333333333333,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q07": 0.6666666666666666,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q08": 0.6666666666666666,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q09": 0.5,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-q10": 0.5,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-mid": 0.3,
+    "COMPUTER_NETWORKING:COMPUTER_NETWORKING-final": 0.7083333333333334,
+    "CYBERSECURITY:CYBERSECURITY-q01": 0.8333333333333334,
+    "CYBERSECURITY:CYBERSECURITY-q02": 0.5,
+    "CYBERSECURITY:CYBERSECURITY-q03": 0.8333333333333334,
+    "CYBERSECURITY:CYBERSECURITY-q04": 0.8333333333333334,
+    "CYBERSECURITY:CYBERSECURITY-q05": 0.6666666666666666,
+    "CYBERSECURITY:CYBERSECURITY-q06": 0.6666666666666666,
+    "CYBERSECURITY:CYBERSECURITY-q07": 0.6666666666666666,
+    "CYBERSECURITY:CYBERSECURITY-q08": 0.6666666666666666,
+    "CYBERSECURITY:CYBERSECURITY-q09": 0.6666666666666666,
+    "CYBERSECURITY:CYBERSECURITY-q10": 0.5,
+    "CYBERSECURITY:CYBERSECURITY-mid": 0.75,
+    "CYBERSECURITY:CYBERSECURITY-final": 0.7083333333333334,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q01": 0.3333333333333333,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q02": 0.8333333333333334,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q03": 1.0,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q04": 0.3333333333333333,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q05": 0.5,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q06": 0.6666666666666666,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q07": 0.6666666666666666,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q08": 0.5,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q09": 0.6666666666666666,
+    "DATA_VIZ_BI:DATA_VIZ_BI-q10": 0.8333333333333334,
+    "DATA_VIZ_BI:DATA_VIZ_BI-mid": 0.5,
+    "DATA_VIZ_BI:DATA_VIZ_BI-final": 0.5833333333333334,
+    "GENERAL_IT:GENERAL_IT-q01": 0.5,
+    "GENERAL_IT:GENERAL_IT-q02": 0.5,
+    "GENERAL_IT:GENERAL_IT-q03": 0.6666666666666666,
+    "GENERAL_IT:GENERAL_IT-q04": 0.6666666666666666,
+    "GENERAL_IT:GENERAL_IT-q05": 0.8333333333333334,
+    "GENERAL_IT:GENERAL_IT-q06": 0.3333333333333333,
+    "GENERAL_IT:GENERAL_IT-q07": 0.6666666666666666,
+    "GENERAL_IT:GENERAL_IT-q08": 0.8333333333333334,
+    "GENERAL_IT:GENERAL_IT-q09": 0.3333333333333333,
+    "GENERAL_IT:GENERAL_IT-q10": 0.8333333333333334,
+    "GENERAL_IT:GENERAL_IT-mid": 0.75,
+    "GENERAL_IT:GENERAL_IT-final": 0.7083333333333334,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q01": 0.5,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q02": 0.8333333333333334,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q03": 0.6666666666666666,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q04": 0.5,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q05": 0.3333333333333333,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q06": 0.8333333333333334,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q07": 1.0,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q08": 0.5,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q09": 0.16666666666666666,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-q10": 0.8333333333333334,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-mid": 0.6,
+    "HARDWARE_ENGINEERING:HARDWARE_ENGINEERING-final": 0.7916666666666666,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q01": 0.3333333333333333,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q02": 0.5,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q03": 0.5,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q04": 0.6666666666666666,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q05": 0.5,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q06": 1.0,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q07": 0.3333333333333333,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q08": 0.5,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q09": 0.8333333333333334,
+    "PM_AGILE_LSS:PM_AGILE_LSS-q10": 0.6666666666666666,
+    "PM_AGILE_LSS:PM_AGILE_LSS-mid": 0.65,
+    "PM_AGILE_LSS:PM_AGILE_LSS-final": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q01": 1.0,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q02": 0.5,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q03": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q04": 0.8333333333333334,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q05": 0.5,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q06": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q07": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q08": 0.8333333333333334,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q09": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-q10": 0.6666666666666666,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-mid": 0.7,
+    "SOFTWARE_BUILDER:SOFTWARE_BUILDER-final": 0.5
+  },
+  "per_domain": {
+    "AI_ML_EDGE.knowledge": 0.6354166666666666,
+    "CLOUD_DEVOPS.knowledge": 0.7680555555555556,
+    "COMPUTER_NETWORKING.knowledge": 0.5284722222222221,
+    "CYBERSECURITY.knowledge": 0.6909722222222223,
+    "DATA_VIZ_BI.knowledge": 0.6180555555555556,
+    "GENERAL_IT.knowledge": 0.6354166666666666,
+    "HARDWARE_ENGINEERING.knowledge": 0.6298611111111111,
+    "PM_AGILE_LSS.knowledge": 0.5958333333333334,
+    "SOFTWARE_BUILDER.knowledge": 0.6833333333333335
+  },
+  "grade_rows": [
+    {
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q01",
+      "assessment_kind": "quiz",
+      "correct": 5,
+      "total": 6,
+      "score": 0.8333333333333334,
+      "self_graded": false,
+      "grader": "isolated_grading_agent",
+      "items": [
+        {
+          "id": "aim-w1-1",
+          "ok": false,
+          "expected": 0,
+          "got": 3
+        },
+        {
+          "id": "aim-w1-2",
+          "ok": true,
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "id": "aim-w1-3",
+          "ok": true,
+          "expected": 2,
+          "got": 2
+        },
+        {
+          "id": "aim-w1-4",
+          "ok": true,
+          "expected": 3,
+          "got": 3
+        },
+        {
+          "id": "aim-w1-5",
+          "ok": true,
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "id": "aim-w1-6",
+          "ok": true,
+          "expected": 1,
+          "got": 1
+        }
+      ]
+    },
+    {
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q02",
+      "assessment_kind": "quiz",
+      "correct": 5,
+      "total": 6,
+      "score": 0.8333333333333334,
+      "self_graded": false,
+      "grader": "isolated_grading_agent",
+      "items": [
+        {
+          "id": "aim-w2-1",
+          "ok": true,
+          "expected": 2,
+          "got": 2
+        },
+        {
+          "id": "aim-w2-2",
+          "ok": false,
+          "expected": 3,
+          "got": 0
+        },
+        {
+          "id": "aim-w2-3",
+          "ok": true,
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "id": "aim-w2-4",
+          "ok": true,
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "id": "aim-w2-5",
+          "ok": true,
+          "expected": 2,
+          "got": 2
+        },
+        {
+          "id": "aim-w2-6",
+          "ok": true,
+          "expected": 3,
+          "got": 3
+        }
+      ]
+    },
+    {
+      "course_id": "AI_ML_EDGE",
+      "assessment_id": "AI_ML_EDGE-q03",
+      "assessment_kind": "quiz",
+      "correct": 3,
+      "total": 6,
+      "score": 0.5,
+      "self_graded": false,
+      "grader": "isolated_grading_agent",
+      "items": [
+        {
+          "id": "aim-w3-1",
+          "ok": false,
+          "expected": 0,
+          "got": 3
+        },
+        {
+          "id": "aim-w3-2",
+          "ok": true,
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "id": "aim-w3-3",
+          "ok": false,
+          "expected": 2,
+          "got": 1
+        },
+        {
+          "id": "aim-w3-4",
+          "ok": true,
+          "expected": 3,
+          "got": 3
+        },
+        {
+          "id": "aim-w3-5",
+          "ok": false,
+          "expected": 0,
+          "got": 3
+        },
+        {
+          "id": "aim-w3-6",
+          "ok": true,
+          "expected": 1,
+          "got": 1
+        }
+      ]
+    }
+  ]
+}
