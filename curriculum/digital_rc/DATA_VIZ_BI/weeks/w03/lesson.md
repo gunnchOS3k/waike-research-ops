@@ -4,15 +4,11 @@ Ticket CM-3311 shows zone address repeated on every ticket row. That update anom
 
 Before: ticket rows carry zone_address text. After: zone_id FK only; address in zone_dim.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Repeating zone_address on every ticket is an update anomaly waiting for a rename. Move address into zone_dim; leave tickets with zone_id FK only. That is the 3NF-ish contract lab_schema_nf enforces.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Tell the anomaly story in one sentence: 'one rename missed forty ticket rows.' If your tables[] still list zone_address under tickets, the lab fails regardless of prose quality.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Normalization here is civic maintenance: fewer copy-paste address edits, fewer contradictory labels on the same zone letter across weeks of dashboards.
 
 ## Worked example
 

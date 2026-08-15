@@ -6,11 +6,11 @@ Generalization means the val fold stays sealed until the final score. The lab ch
 
 gap=0.99-0.61=0.38. Mitigation options: fewer features, time-ordered CV, early stop. Not: 'download a bigger model.'
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Gap is a first-class ticket field: train_acc minus val_acc. When gap ≥ 0.25 the mitigation note is mandatory — fewer features, stricter time-ordered CV, or early stop. 'Download a bigger checkpoint' is not a mitigation; it is a shopping list.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Seal the validation fold. Every peek that changes a hyperparameter after seeing val scores is a quiet restatement of the test set. EdgeForge treats that as the same class of failure as editing the golden JSON until it passes.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Mark leakage_flags when people_count sneaks into features. The honesty check fails if the gap is large and the note is empty, even when train_acc looks like a demo reel.
 
 ## Worked example
 

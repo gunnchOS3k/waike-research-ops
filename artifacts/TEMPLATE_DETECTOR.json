@@ -1,7 +1,7 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0211,
+  "worst_jaccard": 0.0139,
   "worst_pair": [
     "DATA_VIZ_BI",
     "CLOUD_DEVOPS"

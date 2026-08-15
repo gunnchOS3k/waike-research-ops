@@ -4,15 +4,13 @@ Ticket FC-4508 estimates a lab stack: 2 vCPU × hours + 50GB storage. You will c
 
 vcpu_hours=16, storage_gb=50 → cost_units=16+0.5=16.5; must_be_private=true.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Toy cost_units = vcpu_hours×1.0 + storage_gb×0.01. Example: 16 + 50×0.01 = 16.5. must_be_private=true for secret-bearing paths — public subnets fail the lab.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Do not claim these units as a real AWS invoice. Fixture rates only. Networking here is the private-subnet flag, not a BGP lab.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Journal the cost line and the subnet requirement together so finance and security reviews see the same artifact.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 5 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_cloud_cost` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

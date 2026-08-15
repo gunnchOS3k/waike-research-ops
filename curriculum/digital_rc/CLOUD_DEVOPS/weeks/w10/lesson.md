@@ -4,13 +4,11 @@ Capstone: an incident playbook that rolls back, rotates a leaked stub token, and
 
 heroics=false; automation_runbook_id='RB-FC-rollback'; token_rotated=true; timeline has detect/contain/recover.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Incident runbook RB-FC-rollback: heroics=false, token_rotated=true, timeline with detect/contain/recover stamps. Solo undocumented fixes fail honesty.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+DevSecOps trio: rollback, rotate, runbook. Missing automation_runbook_id fails the capstone lab. Ship perms/CI/SLO/rollback/probes/incident JSON without cert claims.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Heroics look fast and teach nothing. ForgeCloud prefers a boring executable runbook id another on-call can run at 02:00 without calling you.
 
 ## Worked example
 

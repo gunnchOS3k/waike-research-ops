@@ -4,15 +4,13 @@ Ticket FC-4614 reviews a role that can deploy but not iam:CreateUser. A secret f
 
 allowed=['ecr:Upload','ecs:UpdateService']; denied includes iam:CreateUser; plaintext_secrets_found=false.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Least privilege: allow ecr:Upload and ecs:UpdateService; deny iam:CreateUser on the deploy role. plaintext_secrets_found must be false after moving tokens to a vault stub path.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+A token in git is an incident precursor. Vault path length ≥4 is the stub contract — empty strings fail. Admin-by-default roles fail even when deploys 'work.'
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Pair IAM review with secrets hygiene every time you touch a deploy role. One without the other is cosplay DevSecOps.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 6 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_iam_secrets` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

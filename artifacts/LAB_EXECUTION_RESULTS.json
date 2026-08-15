@@ -1650,7 +1650,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
+          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
         },
         {
           "name": "cause",
@@ -2508,7 +2508,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
+          "detail": "need {'median_by_zone', 'open_count', 'freshness'}"
         },
         {
           "name": "max",

@@ -8,7 +8,11 @@ Feature leakage to refuse: do not include people_count as an input when it defin
 
 Confusion fixture: TP=40, FP=10, FN=5, TN=41. Precision=40/50=0.80. Recall=40/45≈0.889. F1=2*0.80*0.889/(0.80+0.889)≈0.842. Report three decimals.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Write the decision costs before you tune. A false quiet alarm skips a staff slot; a false busy alarm overstaffs and still wastes money, but the board ranked understaffing worse. That ranking is why precision on the busy class is not the only number on the ticket.
+
+Build the confusion table by hand on the night fold before you trust a library summary. TP/FP/FN must match the fixture counts exactly to three decimals on F1. If an assistant drafts the defense paragraph, tag AI_DISCLOSED — the arithmetic remains yours.
+
+Leakage check is a gate, not a tip: any feature that is a deterministic function of the busy rule fails the week even if the ROC looks pretty. EdgeForge would rather ship a weaker honest score than a perfect cheater.
 
 ## Worked example
 

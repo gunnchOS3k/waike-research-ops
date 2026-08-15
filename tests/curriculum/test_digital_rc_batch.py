@@ -37,13 +37,42 @@ def test_each_course_has_depth():
     for cid, c in COURSES.items():
         assert len(c["weeks"]) >= 8, cid
         for w in c["weeks"]:
-            stripped = strip_lesson_padding(w["lesson"])
+            raw = w["lesson"]
+            low = raw.lower()
+            # Padding markers must be absent from authored bodies (stripper is defense-in-depth).
+            assert "operator note: record evidence before changing shared systems" not in low
+            assert "evidence discipline week" not in low
+            assert "evidence for this week lives in the submitted lab json" not in low
+            assert "not in a screenshot of a green checkmark" not in low
+            stripped = strip_lesson_padding(raw)
             assert len(stripped) >= 800, (cid, w["week"], len(stripped))
             assert "Operator note: record evidence" not in stripped
             assert "Evidence discipline week" not in stripped
+            assert "Evidence for this week lives" not in stripped
         items = sum(len(w["quiz"]) for w in c["weeks"])
         assert items >= 48, (cid, items)
         assert len({w["lesson"][:120] for w in c["weeks"]}) == len(c["weeks"]), cid
+
+
+def test_strip_lesson_padding_removes_lab_json_evidence_spam():
+    spam = (
+        "Real body about ticket EF-2101 and time-ordered splits with enough civic detail "
+        "that operators can defend train_n on a whiteboard without a screenshot. " * 8
+    )
+    padded = (
+        spam
+        + "\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture "
+        "cases — not in a screenshot of a green checkmark.\n\n"
+        "Evidence for this week lives in the submitted lab JSON and the numbered fixture "
+        "cases — not in a screenshot of a green checkmark.\n\n"
+        "Evidence for this week lives in the submitted lab JSON and the numbered fixture "
+        "cases — not in a screenshot of a green checkmark."
+    )
+    stripped = strip_lesson_padding(padded)
+    assert "Evidence for this week lives" not in stripped
+    assert "green checkmark" not in stripped.lower()
+    assert len(stripped) >= 800
+    assert len(stripped) < len(padded)
 
 
 def test_labs_compute_and_negatives_fail():

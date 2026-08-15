@@ -4,15 +4,13 @@ Ticket CM-3404 asks for mean, median, and IQR of wait_min on the cleaned fixture
 
 Sorted waits [...]; median=12; Q1=8; Q3=18; IQR=10; mean inflated by 120 outlier.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Mean chases the 120-minute outlier; median stays near 12 for the board. IQR = Q3−Q1 = 10 on the fixture. Prefer median (+ IQR) when you brief wait times.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+NO_AI week: no generative fill of the statistics. Compute mean, median, and IQR on the provided values; calculator OK. A model that invents a 'smoothed mean' fails honesty.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Journal two sentences that explain why the board should not lead with the mean this week. Numbers first, adjectives never as a substitute for the sorted list.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 4 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_stats_summary` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

@@ -6,11 +6,11 @@ You will compute TPR=TP/(TP+FN) and FPR=FP/(FP+TN) at two named thresholds. The 
 
 At t=0.60: TP=6 FP=2 FN=2 TN=10 → TPR=0.75 FPR=1/6≈0.167. Board constraint FPR≤0.20 holds.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+An operating point is a staffing contract. Sweep thresholds on the twenty validation pairs and stop when FPR crosses 0.20. Do not hand the board an AUC and walk away — AUC does not schedule a Saturday volunteer.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Compute TPR and FPR from the confusion at the chosen t; show both fractions. If two thresholds meet the FPR cap, prefer the higher TPR and document the tie-break in one line.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+NO_AI week rule: generative fill of the fractions fails. Calculator OK. The board paragraph must name the threshold, the FPR, and the staffing implication without adjectives like 'robust AI.'
 
 ## Worked example
 

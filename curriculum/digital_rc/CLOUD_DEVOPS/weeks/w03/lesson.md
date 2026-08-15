@@ -4,15 +4,13 @@ Ticket FC-4303 reviews a Dockerfile: FROM python:3.12-slim@sha256:abc..., USER a
 
 pinned_digest=true, user_non_root=true, uses_latest=false → lint_ok.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Dockerfile lint: digest-pinned base, USER non-root, uses_latest=false. Floating :latest and root runtime fail lint_ok even when the image 'runs on my laptop.'
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Pinning is reproducibility for ops the way model digests are reproducibility for EdgeForge. Document the base name and the three flags in lab_dockerfile_lint.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+This week is not a full Kubernetes cluster. It is image hygiene that later probes depend on. Skip the meme FROM ubuntu:latest AS root.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 3 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_dockerfile_lint` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

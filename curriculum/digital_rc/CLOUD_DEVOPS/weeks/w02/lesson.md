@@ -4,15 +4,13 @@ Ticket FC-4206 needs a release branch that is 2 commits ahead of main with a kno
 
 ahead=2 behind=0 conflict_files=['services/api/health.py']; force_push_main=false.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Release branch state: ahead=2, behind=0, conflict on services/api/health.py. force_push_main must stay false — recoverable history beats a rewritten main.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Write a merge plan that integrates without destroying reviewers’ commits. Behind>0 means integrate main first; do not cosplay by force-pushing past the conflict.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Git is the rollback substrate for later weeks. If history is a vibe, digest pins and incident timelines have nothing solid to cite.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 2 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_git_state` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

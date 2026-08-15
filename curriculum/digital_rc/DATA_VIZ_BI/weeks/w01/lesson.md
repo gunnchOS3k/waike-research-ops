@@ -6,11 +6,11 @@ You will compute null_rate and drop/impute policy in JSON. Pretty Power BI theme
 
 200 rows, 10 null wait_min → null_rate=0.05. Negatives must be dropped, not absolute-valued into fake success.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Cleaning is a publish gate. CM-3102’s 10 nulls in 200 rows are a 0.05 null_rate; two negative waits are invalid measurements, not clever outliers to abs() into success.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Decide drop vs impute in writing before you open a charting tool. Imputing zero for null wait_min invents instantaneous service and will be read as propaganda by the mayor’s staff.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Studio rule: no theme packs, no Power BI wallpaper, until null_rate and negatives_dropped are honest in lab_clean_nulls. Pretty lies fail harder than ugly truths.
 
 ## Worked example
 

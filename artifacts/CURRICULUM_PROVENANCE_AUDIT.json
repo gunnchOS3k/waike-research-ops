@@ -3,7 +3,7 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0211,
+  "worst_jaccard": 0.0139,
   "worst_pair": [
     "DATA_VIZ_BI",
     "CLOUD_DEVOPS"
@@ -17,17 +17,7 @@
     {
       "a": "DATA_VIZ_BI",
       "b": "CLOUD_DEVOPS",
-      "jaccard_5gram": 0.0211
-    },
-    {
-      "a": "AI_ML_EDGE",
-      "b": "CLOUD_DEVOPS",
-      "jaccard_5gram": 0.0162
-    },
-    {
-      "a": "AI_ML_EDGE",
-      "b": "DATA_VIZ_BI",
-      "jaccard_5gram": 0.0133
+      "jaccard_5gram": 0.0139
     },
     {
       "a": "HARDWARE_ENGINEERING",
@@ -45,13 +35,23 @@
       "jaccard_5gram": 0.0037
     },
     {
-      "a": "SOFTWARE_BUILDER",
-      "b": "CLOUD_DEVOPS",
+      "a": "AI_ML_EDGE",
+      "b": "DATA_VIZ_BI",
       "jaccard_5gram": 0.0005
     },
     {
       "a": "GENERAL_IT",
       "b": "CYBERSECURITY",
+      "jaccard_5gram": 0.0003
+    },
+    {
+      "a": "CYBERSECURITY",
+      "b": "AI_ML_EDGE",
+      "jaccard_5gram": 0.0003
+    },
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "CLOUD_DEVOPS",
       "jaccard_5gram": 0.0003
     }
   ],
@@ -249,9 +249,9 @@
     "SOFTWARE_BUILDER": 860,
     "HARDWARE_ENGINEERING": 875,
     "PM_AGILE_LSS": 864,
-    "AI_ML_EDGE": 927,
-    "DATA_VIZ_BI": 936,
-    "CLOUD_DEVOPS": 925
+    "AI_ML_EDGE": 972,
+    "DATA_VIZ_BI": 881,
+    "CLOUD_DEVOPS": 871
   },
   "lesson_padding_rejected": 0,
   "registry_size": 35,

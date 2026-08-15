@@ -54,20 +54,26 @@ CLONE_PREFIXES = ("Mid-course check:", "Capstone check:")
 LETTERS = "ABCD"
 
 # Depth padding the independent verifier strips before measuring ≥800.
+# Include batch-003 "Evidence for this week…" rubber-stamp and near-variants.
 _PAD_RE = re.compile(
     r"(Operator note: record evidence before changing shared systems\.\s*)+|"
     r"(Evidence discipline week \d+: keep ticket numbers, hashes, and fixture counts "
-    r"in the journal; do not replace them with adjectives\.\s*)+",
+    r"in the journal; do not replace them with adjectives\.\s*)+|"
+    r"(Evidence for this week lives in the submitted lab JSON and the numbered fixture "
+    r"cases\s*[—\-–-]\s*not in a screenshot of a green checkmark\.\s*)+|"
+    r"(Evidence for this week lives in the submitted lab JSON[^\n]*\n*)+",
     re.I,
 )
 _PAD_MARKERS = (
     "operator note: record evidence before changing shared systems",
     "evidence discipline week",
+    "evidence for this week lives in the submitted lab json",
+    "not in a screenshot of a green checkmark",
 )
 
 
 def strip_lesson_padding(text: str) -> str:
-    """Remove operator-note / evidence-discipline spam before depth measurement."""
+    """Remove operator-note / evidence-discipline / lab-JSON evidence spam before depth measurement."""
     cleaned = _PAD_RE.sub("", text or "")
     return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
 
@@ -161,7 +167,7 @@ def audit() -> dict[str, Any]:
         if len(set(weeks)) < 8:
             findings.append(f"{cid} week openings not distinct")
 
-        # Raise RC depth gate: reject operator-note / evidence-discipline padding.
+        # Raise RC depth gate: reject operator-note / evidence-discipline / lab-JSON spam.
         week_stripped_lens: list[int] = []
         for w in COURSES[cid]["weeks"]:
             raw = w["lesson"]
@@ -169,7 +175,8 @@ def audit() -> dict[str, Any]:
             if any(m in raw_low for m in _PAD_MARKERS):
                 lesson_padding_rejected += 1
                 findings.append(
-                    f"{cid} week {w['week']} uses operator-note/evidence-discipline depth padding"
+                    f"{cid} week {w['week']} uses operator-note/evidence-discipline/"
+                    f"lab-JSON-evidence depth padding"
                 )
             stripped = strip_lesson_padding(raw)
             week_stripped_lens.append(len(stripped))

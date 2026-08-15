@@ -8,6 +8,12 @@ Consensus Ladder for EF-2101: observed = 480 rows with four columns; inferred = 
 
 Worked numbers: 480 rows, hold out last 96 (20%) for validation by time order, not shuffle — civic occupancy is autocorrelated. Training rows = 384. If someone shuffles first, midnight cleaning contaminates both folds and the F1 will lie.
 
+Name the failure mode before you touch pandas. On EF-2101 the idle janitor sweep is a remembered pattern in time, not a class label. If you shuffle, you teach the model that midnight zeros belong in daytime folds, and the F1 you celebrate is a leak costume.
+
+Operators speak paths: `fixtures/ef2101/occupancy.csv`, then `train_n` and `val_n` as integers you can defend on a whiteboard. The lab marks missing split fields; it does not grade a notebook theme. Zone letters A/B/C are the only spatial vocabulary — never a camera serial, never an embedding that could re-identify a patron.
+
+When a volunteer asks to 'just use sklearn train_test_split,' answer with the autocorrelation clock: last-keystroke times cluster. Time order is the civic control, the same way the library idle timer is a shared-kiosk control rather than a personal preference.
+
 ## Worked example
 
 480 rows × 0.80 = 384 train; 96 validation by time order (not shuffle).

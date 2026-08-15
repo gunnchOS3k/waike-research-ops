@@ -6,13 +6,11 @@ The lab checks retrieval hit ids, redaction count, and that biometric_claim is f
 
 Query retrieves chunks [R12,R19]. Redact 2 emails. biometric_claim must be false.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+RAG retrieves runbook chunks R12 and R19 for 'USB reset storm,' then redacts contact strings before any display path. biometric_claim must remain false — occupancy models do not identify humans.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Responsible AI is operational: disclose assistance on the harm note, name who is hurt by false quiet alarms (patrons waiting / understaffed desk), and ship metrics+digest+budget+RAG JSON in the portfolio.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Capstone refusal list: face galleries, unredacted emails, vendor cert claims, and any narrative that the model 'knows' a person. Fixture counts only; no fabricated city savings.
 
 ## Worked example
 

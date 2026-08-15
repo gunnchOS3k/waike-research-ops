@@ -4,15 +4,13 @@ Ticket CM-3605 builds a desk dashboard with three tiles: median wait by zone, op
 
 required_tiles=[median_by_zone, open_count, freshness]; max_tiles=3.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+First screen, three tiles: median_by_zone, open_count, freshness. max_tiles=3. A stock-photo fourth tile fails layout even if the PNG is beautiful.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Freshness is trust infrastructure — without a timestamp the board cannot know whether the median is from this hour or last month. ASCII sketches are acceptable; missing freshness is not.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+One question per screen means the three tiles argue the same desk question. Unrelated KPI collages belong on later pages, not the civic opening view.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 6 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_dashboard_layout` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

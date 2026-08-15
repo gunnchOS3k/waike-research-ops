@@ -4,15 +4,13 @@ Ticket FC-4410 encodes a pipeline: on pull_request → lint → test → upload-
 
 jobs=['lint','test','upload-report']; deploy_on_pr=false; on=['pull_request'].
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+PR pipeline: on pull_request → lint → test → upload-report. deploy_on_pr must be false. Ungated PR deploy is how fixtures become incidents.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+upload-report persists evidence; deleting it to hide a red build fails the gate spiritually even if JSON is hand-edited. Order matters — deploy-first pipelines fail cicd checks.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Explain in two lines why PR deploy is forbidden: unreviewed code must not mutate the ForgeCloud runtime the desk depends on.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 4 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_cicd_gate` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

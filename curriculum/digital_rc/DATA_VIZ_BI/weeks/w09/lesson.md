@@ -4,15 +4,13 @@ Ticket CM-3909 defines KPI desk_pressure = open_count * median_wait / staff_on_d
 
 open_count=6, median_wait=12, staff=3 → desk_pressure=24.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+desk_pressure = open_count × median_wait / staff_on_duty. Fixture 6×12/3 = 24. The formula must be auditable; secret KPI magic fails Studio.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Board sentence pattern: state the change, the number, and the next action. Adjective storms without numbers fail storytelling. Fabricating staff_on_duty upward to shrink pressure is an honesty failure.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+NO_AI for the formula evaluation this week when tagged; disclose assistance if a tool drafts the sentence, but the arithmetic stays local.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 9 close for DATA_VIZ_BI: ticket work ends when the lab JSON fields for `lab_kpi_tree` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

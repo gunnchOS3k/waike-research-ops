@@ -26,6 +26,10 @@ def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
             reasons.append(f"week {w.get('week')}: operator-note depth padding")
         if "evidence discipline week" in low:
             reasons.append(f"week {w.get('week')}: evidence-discipline depth padding")
+        if "evidence for this week lives in the submitted lab json" in low:
+            reasons.append(f"week {w.get('week')}: lab-JSON-evidence depth padding")
+        if "not in a screenshot of a green checkmark" in low:
+            reasons.append(f"week {w.get('week')}: green-checkmark evidence padding")
         stripped = strip_lesson_padding(raw)
         if len(stripped) < 800:
             reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")

@@ -6,13 +6,11 @@ If the digest mismatches the card, refuse to score — supply-chain basics. The 
 
 Model digest sha256:ef2803aa.... Threshold 0.55. Vector scores [0.62,0.40,0.81] → labels [1,0,1].
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Inference is applying a pinned card, not improvising on an unlocked laptop. Threshold 0.55 on scores [0.62,0.40,0.81] yields labels [1,0,1] only when model_digest matches sha256:ef2803aa.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Digest mismatch means refuse to score — supply chain is a verb. Do not 'hotfix' by pasting new weights into the card without rotating the digest in the change record.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Record predictions and the digest in the lab JSON. A screenshot of a dashboard gauge is not a substitute for those fields. EdgeForge will not accept a demo that cannot name its bytes.
 
 ## Worked example
 

@@ -4,15 +4,11 @@ ForgeCloud Platform starts on a Linux bastion that deploys nothing until permiss
 
 deploy_key mode 0666 → must be 0600; owner read/write only.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Permissions before YAML. A deploy key at 0666 is world writable; ForgeCloud requires 0600 (octal 384) and world_writable=false before any pipeline talk.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Cloud manifests cannot redeem a secret every login can rewrite. Bastion discipline is the first SRE muscle: name the mode, fix the mode, then consider containers.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+NO_AI week for the mode arithmetic when tagged. Journal the risk in one line: anyone with directory listing access can replace the key material and impersonate deploys.
 
 ## Worked example
 

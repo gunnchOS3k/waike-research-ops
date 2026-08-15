@@ -4,15 +4,13 @@ Ticket FC-4822 deploys image sha256:fc4822aa and must roll back to sha256:fc4810
 
 current=sha256:fc4822aa rollback_to=sha256:fc4810bb health=healthy migrate=ok.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Deploy current sha256:fc4822aa with rollback_to sha256:fc4810bb, migrate=ok, health=healthy. rollback_to == current is theater and fails.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Health gates traffic; migrate=ok before switch is fixture policy. starting forever is not healthy. Digest pins identify the exact artifact you can roll back to.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Document the health gate in two lines in the journal. Screenshots of a green UI without digest fields do not satisfy lab_deploy_rollback_cloud.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 8 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_deploy_rollback_cloud` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

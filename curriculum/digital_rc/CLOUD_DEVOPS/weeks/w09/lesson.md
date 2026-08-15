@@ -4,15 +4,13 @@ Ticket FC-4916 defines a Deployment with readinessProbe and livenessProbe HTTP p
 
 readiness=/readyz liveness=/healthz replicas=2 requests_cpu=100m → probe_ok.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Probes: readiness=/readyz, liveness=/healthz, replicas=2, requests_cpu=100m. replicas=20 without requests fails sanity. This is fundamentals — no CKA credential is granted.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Probes gate traffic and restarts honestly. Vanity replica counts without CPU requests are how clusters thrash under desk load.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+State the claim boundary in the assignment: alignment labels only. Portfolio text that says 'CKA complete' fails even if YAML validates.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Week 9 close for CLOUD_DEVOPS: ticket work ends when the lab JSON fields for `lab_k8s_probes` are filled with fixture math you can recompute aloud, and when you refuse one out-of-scope shortcut named in this week's pitfall list. The next shift must continue from your numbers without a private sidebar.
 
 ## Worked example
 

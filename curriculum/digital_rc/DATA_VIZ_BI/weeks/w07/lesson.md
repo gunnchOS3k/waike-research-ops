@@ -4,13 +4,11 @@ Industry workflows mention Tableau/Power BI patterns as PUBLIC_REFERENCE_ONLY. T
 
 refresh_minutes=10 (≤15); license_ok=true with attribution note only.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Refresh SLA ≤15 minutes; encode refresh_minutes and meets_sla honestly. license_ok means attribution and no piracy — WAIKE does not redistribute Tableau/Power BI binaries.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+PUBLIC_REFERENCE_ONLY forbids claiming a vendor gallery workbook as your portfolio. Domain labels are alignment; sample workbooks are not your labor.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
-
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Write the license_note in your own words. Cracked installers fail the course ethic the same way scanning hosts you do not own fails Harbor SOC.
 
 ## Worked example
 

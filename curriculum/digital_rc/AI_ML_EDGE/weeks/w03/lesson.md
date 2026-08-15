@@ -8,9 +8,11 @@ Responsible AI note: clusters are hypotheses for the maintenance log, not accusa
 
 Centroid A=(40,3000,0), B=(70,1200,5). Point p=(55,2000,2): distA=|15|+|1000|+|2|=1017; distB=|15|+|800|+|3|=818 → assign B.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+Choose k like you choose a maintenance bucket count: enough to separate thermal throttle from USB reset storms, not enough to invent a villain. Manhattan distance keeps the arithmetic audible — no kernel mythology required for three telemetry axes.
 
-Evidence for this week lives in the submitted lab JSON and the numbered fixture cases — not in a screenshot of a green checkmark.
+After assignment, recompute total distance from scratch. Relabeling clusters to match a preferred story without recomputing is the same fraud as rewriting a restore hash. The lab’s sum is the honesty check.
+
+Write one sentence in the journal that refuses staff blame: clusters are hypotheses for the rack log. If someone wants 'cluster 2 = intern error,' send them back to the Consensus Ladder — observation first, accusation never from unlabeled points.
 
 ## Worked example
 
