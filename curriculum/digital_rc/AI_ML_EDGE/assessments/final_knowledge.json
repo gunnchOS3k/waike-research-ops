@@ -1,0 +1,269 @@
+{
+  "assessment_id": "AI_ML_EDGE-final",
+  "items": [
+    {
+      "id": "aif01",
+      "kind": "mcq",
+      "stem": "New campus sends 900 rows; 10% time holdout. val_n?",
+      "choices": [
+        "810",
+        "90",
+        "9",
+        "900"
+      ]
+    },
+    {
+      "id": "aif02",
+      "kind": "mcq",
+      "stem": "Precision with TP=18 FP=6?",
+      "choices": [
+        "0.80",
+        "3.0",
+        "0.75",
+        "0.25"
+      ]
+    },
+    {
+      "id": "aif03",
+      "kind": "mcq",
+      "stem": "F1 with P=0.8 R=0.8?",
+      "choices": [
+        "1.6",
+        "0.64",
+        "0.5",
+        "0.8"
+      ]
+    },
+    {
+      "id": "aif04",
+      "kind": "mcq",
+      "stem": "Future frame in feature window?",
+      "choices": [
+        "Leakage \u2014 forbidden",
+        "Causal OK",
+        "Required",
+        "Only int8"
+      ]
+    },
+    {
+      "id": "aif05",
+      "kind": "mcq",
+      "stem": "ReLU of -2?",
+      "choices": [
+        "-2",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "aif06",
+      "kind": "mcq",
+      "stem": "Three scores 0.10,0.90,0.55 at t=0.55 \u2192 labels?",
+      "choices": [
+        "1,1,1",
+        "0,0,0",
+        "0,1,1",
+        "0,1,0"
+      ]
+    },
+    {
+      "id": "aif07",
+      "kind": "mcq",
+      "stem": "int8/fp32 size ratio for same param count?",
+      "choices": [
+        "1",
+        "4",
+        "0.5",
+        "0.25"
+      ]
+    },
+    {
+      "id": "aif08",
+      "kind": "mcq",
+      "stem": "PHYSICAL_PENDING means?",
+      "choices": [
+        "Digital budgets still gate device flash",
+        "Everything finished",
+        "Ignore SLA",
+        "Cert granted"
+      ]
+    },
+    {
+      "id": "aif09",
+      "kind": "mcq",
+      "stem": "Responsible harm note must mention?",
+      "choices": [
+        "GPU brand only",
+        "Who is hurt by false quiet",
+        "Stock prices",
+        "Slack emojis"
+      ]
+    },
+    {
+      "id": "aif10",
+      "kind": "mcq",
+      "stem": "Retrieval hits missing R-ids?",
+      "choices": [
+        "Automatic pass",
+        "Grants RAG cert",
+        "lab fails hit check",
+        "Skip redaction"
+      ]
+    },
+    {
+      "id": "aif11",
+      "kind": "mcq",
+      "stem": "Shuffle before occupancy split mainly risks?",
+      "choices": [
+        "Faster training",
+        "Better DNS",
+        "Cheaper cloud",
+        "Leakage of midnight patterns across folds"
+      ]
+    },
+    {
+      "id": "aif12",
+      "kind": "mcq",
+      "stem": "Operating point vs AUC worship?",
+      "choices": [
+        "Need threshold tied to FPR/TPR costs",
+        "AUC alone staffs the desk",
+        "Thresholds illegal",
+        "Only k-means"
+      ]
+    },
+    {
+      "id": "aif13",
+      "kind": "mcq",
+      "stem": "Model digest role at deploy?",
+      "choices": [
+        "Optional comment",
+        "Must match before score",
+        "Replace labels",
+        "Set k"
+      ]
+    },
+    {
+      "id": "aif14",
+      "kind": "mcq",
+      "stem": "Edge latency 15ms exactly vs SLA \u226415?",
+      "choices": [
+        "always false",
+        "undefined",
+        "budget_ok true",
+        "PHYSICAL_DONE"
+      ]
+    },
+    {
+      "id": "aif15",
+      "kind": "mcq",
+      "stem": "Email redaction count 0 when two emails present?",
+      "choices": [
+        "OK",
+        "Grants privacy cert",
+        "Ignores RAG",
+        "Fails redaction check"
+      ]
+    },
+    {
+      "id": "aif16",
+      "kind": "mcq",
+      "stem": "Hidden size 2 means?",
+      "choices": [
+        "Two hidden units in the tiny net",
+        "Two GPUs",
+        "Two campuses",
+        "Two certs"
+      ]
+    },
+    {
+      "id": "aif17",
+      "kind": "mcq",
+      "stem": "Val sealed until final score prevents?",
+      "choices": [
+        "Pathlib",
+        "Peeking/tuning on the report fold",
+        "USB power",
+        "SQL joins"
+      ]
+    },
+    {
+      "id": "aif18",
+      "kind": "mcq",
+      "stem": "Cluster narrative blaming a named staffer?",
+      "choices": [
+        "Required",
+        "Always true if k=2",
+        "Forbidden without evidence",
+        "PMI rule"
+      ]
+    },
+    {
+      "id": "aif19",
+      "kind": "mcq",
+      "stem": "hour_norm feature is?",
+      "choices": [
+        "PII face",
+        "SSN",
+        "Password",
+        "Scaled time-of-day input"
+      ]
+    },
+    {
+      "id": "aif20",
+      "kind": "mcq",
+      "stem": "Capstone portfolio includes?",
+      "choices": [
+        "Metrics+digest+budget+RAG JSON",
+        "Only meme",
+        "Vendor exam PDF",
+        "Cracked weights"
+      ]
+    },
+    {
+      "id": "aif21",
+      "kind": "mcq",
+      "stem": "AI_DISCLOSED on harm note?",
+      "choices": [
+        "Hide assistance",
+        "Tag assistance when used",
+        "Ban all tools",
+        "Force GPT"
+      ]
+    },
+    {
+      "id": "aif22",
+      "kind": "mcq",
+      "stem": "FPR formula reminder?",
+      "choices": [
+        "TP/(TP+FN)",
+        "TN/N",
+        "FP/(FP+TN)",
+        "FN/TP"
+      ]
+    },
+    {
+      "id": "aif23",
+      "kind": "mcq",
+      "stem": "Busy policy threshold is?",
+      "choices": [
+        "Gradient output",
+        "ImageNet default",
+        "Random",
+        "Library board choice"
+      ]
+    },
+    {
+      "id": "aif24",
+      "kind": "mcq",
+      "stem": "Print-only PASS as inference result?",
+      "choices": [
+        "Rejected by validator",
+        "Accepted",
+        "Equals label 1",
+        "Equals digest"
+      ]
+    }
+  ]
+}

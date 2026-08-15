@@ -3,17 +3,32 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.0074,
+  "worst_jaccard": 0.0211,
   "worst_pair": [
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS"
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS"
   ],
-  "worst_packaging_jaccard": 0.092,
+  "worst_packaging_jaccard": 0.1244,
   "worst_packaging_pair": [
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS"
+    "SOFTWARE_BUILDER",
+    "AI_ML_EDGE"
   ],
   "pairs": [
+    {
+      "a": "DATA_VIZ_BI",
+      "b": "CLOUD_DEVOPS",
+      "jaccard_5gram": 0.0211
+    },
+    {
+      "a": "AI_ML_EDGE",
+      "b": "CLOUD_DEVOPS",
+      "jaccard_5gram": 0.0162
+    },
+    {
+      "a": "AI_ML_EDGE",
+      "b": "DATA_VIZ_BI",
+      "jaccard_5gram": 0.0133
+    },
     {
       "a": "HARDWARE_ENGINEERING",
       "b": "PM_AGILE_LSS",
@@ -30,71 +45,56 @@
       "jaccard_5gram": 0.0037
     },
     {
+      "a": "SOFTWARE_BUILDER",
+      "b": "CLOUD_DEVOPS",
+      "jaccard_5gram": 0.0005
+    },
+    {
       "a": "GENERAL_IT",
       "b": "CYBERSECURITY",
       "jaccard_5gram": 0.0003
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "COMPUTER_NETWORKING",
-      "jaccard_5gram": 0.0
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "SOFTWARE_BUILDER",
-      "jaccard_5gram": 0.0
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "HARDWARE_ENGINEERING",
-      "jaccard_5gram": 0.0
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "PM_AGILE_LSS",
-      "jaccard_5gram": 0.0
     }
   ],
   "packaging_pairs": [
+    {
+      "a": "SOFTWARE_BUILDER",
+      "b": "AI_ML_EDGE",
+      "packaging_jaccard_5gram": 0.1244
+    },
+    {
+      "a": "DATA_VIZ_BI",
+      "b": "CLOUD_DEVOPS",
+      "packaging_jaccard_5gram": 0.1119
+    },
+    {
+      "a": "AI_ML_EDGE",
+      "b": "CLOUD_DEVOPS",
+      "packaging_jaccard_5gram": 0.0949
+    },
     {
       "a": "HARDWARE_ENGINEERING",
       "b": "PM_AGILE_LSS",
       "packaging_jaccard_5gram": 0.092
     },
     {
-      "a": "SOFTWARE_BUILDER",
-      "b": "PM_AGILE_LSS",
-      "packaging_jaccard_5gram": 0.0797
+      "a": "PM_AGILE_LSS",
+      "b": "DATA_VIZ_BI",
+      "packaging_jaccard_5gram": 0.09
     },
     {
       "a": "SOFTWARE_BUILDER",
-      "b": "HARDWARE_ENGINEERING",
-      "packaging_jaccard_5gram": 0.0784
+      "b": "CLOUD_DEVOPS",
+      "packaging_jaccard_5gram": 0.0897
     },
     {
-      "a": "GENERAL_IT",
-      "b": "SOFTWARE_BUILDER",
-      "packaging_jaccard_5gram": 0.0307
+      "a": "AI_ML_EDGE",
+      "b": "DATA_VIZ_BI",
+      "packaging_jaccard_5gram": 0.0896
     },
     {
-      "a": "COMPUTER_NETWORKING",
-      "b": "CYBERSECURITY",
-      "packaging_jaccard_5gram": 0.0249
-    },
-    {
-      "a": "CYBERSECURITY",
-      "b": "SOFTWARE_BUILDER",
-      "packaging_jaccard_5gram": 0.0245
-    },
-    {
-      "a": "COMPUTER_NETWORKING",
-      "b": "SOFTWARE_BUILDER",
-      "packaging_jaccard_5gram": 0.0224
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "HARDWARE_ENGINEERING",
-      "packaging_jaccard_5gram": 0.0222
+      "a": "HARDWARE_ENGINEERING",
+      "b": "CLOUD_DEVOPS",
+      "packaging_jaccard_5gram": 0.0858
     }
   ],
   "key_distribution": {
@@ -134,6 +134,27 @@
       "n": 104
     },
     "PM_AGILE_LSS": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "AI_ML_EDGE": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "DATA_VIZ_BI": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "CLOUD_DEVOPS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -191,6 +212,30 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.7143
+    },
+    "AI_ML_EDGE": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6667
+    },
+    "DATA_VIZ_BI": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.75
+    },
+    "CLOUD_DEVOPS": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.75
     }
   },
   "exam_token_identical": 0,
@@ -203,10 +248,13 @@
     "CYBERSECURITY": 804,
     "SOFTWARE_BUILDER": 860,
     "HARDWARE_ENGINEERING": 875,
-    "PM_AGILE_LSS": 864
+    "PM_AGILE_LSS": 864,
+    "AI_ML_EDGE": 927,
+    "DATA_VIZ_BI": 936,
+    "CLOUD_DEVOPS": 925
   },
   "lesson_padding_rejected": 0,
-  "registry_size": 26,
+  "registry_size": 35,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."
 }

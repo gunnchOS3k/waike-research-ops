@@ -9,8 +9,14 @@ from waike_course_ready.batch002.packaging import (
     rubrics_002, lab_readme_002, instructor_week_notes_002, presentation_002,
     instructor_packet_002, student_packet_002, group_project_002, portfolio_002,
 )
+from waike_course_ready.batch003.packaging import (
+    SYLLABUS_ASSESSMENT_003, SYLLABUS_CLAIM_003, SYLLABUS_DURATION_003,
+    rubrics_003, lab_readme_003, instructor_week_notes_003, presentation_003,
+    instructor_packet_003, student_packet_003, group_project_003, portfolio_003,
+)
 
 SYLLABUS_ASSESSMENT = {
+    **SYLLABUS_ASSESSMENT_003,
     **SYLLABUS_ASSESSMENT_002,
     "GENERAL_IT": (
         "Civic Tech Desk assessment mix: weekly operator quizzes (ticket 4417/4502 numbers, "
@@ -38,6 +44,7 @@ SYLLABUS_ASSESSMENT = {
 }
 
 SYLLABUS_DURATION = {
+    **SYLLABUS_DURATION_003,
     **SYLLABUS_DURATION_002,
     "GENERAL_IT": (
         "Ten public-desk weeks (about 6–8 hours/week including Saturday volunteer shadow). "
@@ -55,6 +62,7 @@ SYLLABUS_DURATION = {
 }
 
 SYLLABUS_CLAIM = {
+    **SYLLABUS_CLAIM_003,
     **SYLLABUS_CLAIM_002,
     "GENERAL_IT": (
         "Aligns to Google IT Support themes and CompTIA A+ V15 220-1201/1202 domain names. "
@@ -74,6 +82,8 @@ SYLLABUS_CLAIM = {
 
 
 def rubrics(course_id: str) -> list[dict[str, Any]]:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return rubrics_003(course_id)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return rubrics_002(course_id)
     if course_id == "GENERAL_IT":
@@ -203,6 +213,8 @@ def rubrics(course_id: str) -> list[dict[str, Any]]:
 
 
 def lab_readme(course_id: str, lab_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return lab_readme_003(course_id, lab_id)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return lab_readme_002(course_id, lab_id)
     spec = LAB_SPECS[lab_id]
@@ -249,6 +261,8 @@ def lab_readme(course_id: str, lab_id: str) -> str:
 
 
 def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return instructor_week_notes_003(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return instructor_week_notes_002(course_id, week)
     n = week["week"]
@@ -315,6 +329,8 @@ def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
 
 
 def presentation(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return presentation_003(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return presentation_002(course_id, week)
     n = week["week"]
@@ -348,6 +364,8 @@ def presentation(course_id: str, week: dict[str, Any]) -> str:
 
 
 def instructor_packet(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return instructor_packet_003(course_id)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return instructor_packet_002(course_id)
     if course_id == "GENERAL_IT":
@@ -378,6 +396,8 @@ def instructor_packet(course_id: str) -> str:
 
 
 def student_packet(course_id: str, hook: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return student_packet_003(course_id, hook)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return student_packet_002(course_id, hook)
     if course_id == "GENERAL_IT":
@@ -390,6 +410,8 @@ def student_packet(course_id: str, hook: str) -> str:
 
 
 def group_project(course_id: str, title: str, assignment: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return group_project_003(course_id, title, assignment)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return group_project_002(course_id, title, assignment)
     if course_id == "GENERAL_IT":
@@ -402,6 +424,8 @@ def group_project(course_id: str, title: str, assignment: str) -> str:
 
 
 def portfolio(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_003:
+        return portfolio_003(course_id)
     if course_id in SYLLABUS_ASSESSMENT_002:
         return portfolio_002(course_id)
     if course_id == "GENERAL_IT":

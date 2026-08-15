@@ -2,8 +2,8 @@
   "schema": "waike.taxonomy.eighteen_tracks.v1",
   "owner_repo": "waike-research-ops",
   "owner_truth": "programs/00_program_index.md plus six additional program files already on origin/main",
-  "date_checked": "2026-08-13",
-  "accepted_main_sha_at_packet_start": "5c5f6cafb1d60c7d67258b719b75cac42c18d750",
+  "date_checked": "2026-08-14",
+  "accepted_main_sha_at_packet_start": "d36e97d",
   "do_not_delete_advanced_tracks": true,
   "tracks": [
     {

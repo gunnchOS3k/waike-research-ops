@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "CLOUD_DEVOPS",
+  "title": "Cloud + DevOps \u2014 ForgeCloud Platform",
+  "track_ids": [
+    "CLOUD_DEVOPS"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Run ForgeCloud Platform for ten weeks: Linux perms \u2192 git \u2192 containers \u2192 CI \u2192 IAM/secrets \u2192 SLO \u2192 rollback \u2192 k8s probes \u2192 incident runbook.",
+  "lesson_excerpt": "ForgeCloud Platform starts on a Linux bastion that deploys nothing until permissions make sense. Ticket FC-4101 shows a deploy key file mode 0666 \u2014 world writable. You will compute the correct mode 0600 and refuse to continue CI until the lab's mode check passes. Cloud YAML cannot save a secret that every login can rewrite.\n\ndeploy_key mode 0666 \u2192 must be 0600; owner read/write only.\n\nEvidence for",
+  "worked_example": "0666 world-writable deploy key fails; 0600 passes.",
+  "assignment": "Submit lab_linux_perms with mode_octal=384 (0600) and rationale.",
+  "lab_hint": "lab_linux_perms",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "ForgeCloud \u2014 Linux permissions before the fancy YAML",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w01",
+        "title": "ForgeCloud \u2014 Linux permissions before the fancy YAML",
+        "body_md": "ForgeCloud Platform starts on a Linux bastion that deploys nothing until permissions make sense. Ticket FC-4101 shows a deploy key file mode 0666 \u2014 world writable. You will compute the correct mode 0600 and refuse to continue CI until the lab's mode check passes. Cloud YAML cannot save a secret that every login can rewrite.\n\ndeploy_key mode 0666 \u2192 must be 0600; owner read/write only.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "0666 world-writable deploy key fails; 0600 passes."
+      },
+      "lab_id": "lab_linux_perms"
+    },
+    {
+      "week": 2,
+      "title": "Git on ForgeCloud \u2014 history you can roll back",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w02",
+        "title": "Git on ForgeCloud \u2014 history you can roll back",
+        "body_md": "Ticket FC-4206 needs a release branch that is 2 commits ahead of main with a known conflict path services/api/health.py. You will report ahead/behind and list conflict files. Force-push to main is forbidden in the course ethic \u2014 same as production.\n\nahead=2 behind=0 conflict_files=['services/api/health.py']; force_push_main=false.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "ahead 2 / behind 0; conflict on services/api/health.py; no force-push main."
+      },
+      "lab_id": "lab_git_state"
+    },
+    {
+      "week": 3,
+      "title": "Containers \u2014 Dockerfile that refuses :latest and root",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w03",
+        "title": "Containers \u2014 Dockerfile that refuses :latest and root",
+        "body_md": "Ticket FC-4303 reviews a Dockerfile: FROM python:3.12-slim@sha256:abc..., USER app, no :latest. Running as root in the container fails the lab. Pin digests; do not worship floating tags on ForgeCloud.\n\npinned_digest=true, user_non_root=true, uses_latest=false \u2192 lint_ok.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "digest-pinned base, USER app, uses_latest=false \u2192 lint_ok."
+      },
+      "lab_id": "lab_dockerfile_lint"
+    },
+    {
+      "week": 4,
+      "title": "CI/CD gates \u2014 lint then test then upload, never ungated deploy",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w04",
+        "title": "CI/CD gates \u2014 lint then test then upload, never ungated deploy",
+        "body_md": "Ticket FC-4410 encodes a pipeline: on pull_request \u2192 lint \u2192 test \u2192 upload-report. A job that deploys on pull_request without gates fails. You will submit the job order and deploy_on_pr=false.\n\njobs=['lint','test','upload-report']; deploy_on_pr=false; on=['pull_request'].\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "PR pipeline lint\u2192test\u2192upload; deploy_on_pr must be false."
+      },
+      "lab_id": "lab_cicd_gate"
+    },
+    {
+      "week": 5,
+      "title": "Cloud primitives \u2014 compute, storage, network as costed blocks",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w05",
+        "title": "Cloud primitives \u2014 compute, storage, network as costed blocks",
+        "body_md": "Ticket FC-4508 estimates a lab stack: 2 vCPU \u00d7 hours + 50GB storage. You will compute cost_units = vcpu_hours*1.0 + storage_gb*0.01 on the fixture rates (toy currency). No claiming real AWS invoices. Networking is a private subnet flag must_be_private=true.\n\nvcpu_hours=16, storage_gb=50 \u2192 cost_units=16+0.5=16.5; must_be_private=true.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "16 vCPU-hours + 50GB \u2192 16.5 cost_units; private subnet required."
+      },
+      "lab_id": "lab_cloud_cost"
+    },
+    {
+      "week": 6,
+      "title": "IAM + secrets \u2014 least privilege and no plaintext tokens",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w06",
+        "title": "IAM + secrets \u2014 least privilege and no plaintext tokens",
+        "body_md": "Ticket FC-4614 reviews a role that can deploy but not iam:CreateUser. A secret found in plaintext in the fixture repo fails. You will mark actions_allowed and plaintext_secrets_found=false after moving the token to a vault stub path.\n\nallowed=['ecr:Upload','ecs:UpdateService']; denied includes iam:CreateUser; plaintext_secrets_found=false.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "Deploy role without CreateUser; vault path replaces plaintext token."
+      },
+      "lab_id": "lab_iam_secrets"
+    },
+    {
+      "week": 7,
+      "title": "Observability \u2014 error budgets before blame",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w07",
+        "title": "Observability \u2014 error budgets before blame",
+        "body_md": "Ticket FC-4719 sets SLO availability 99.5% over 10_000 requests. With 40 failures, availability=0.996 and budget_ok depends on the remaining error budget vs a 50-failure cap. You will compute availability and budget_ok. Blame-first chat without numbers fails.\n\nfailed=40 total=10000 \u2192 availability=0.996; failure_cap=50 \u2192 budget_ok=true.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "40/10000 \u2192 0.996 availability; under 50-failure cap \u2192 budget_ok."
+      },
+      "lab_id": "lab_slo_budget"
+    },
+    {
+      "week": 8,
+      "title": "Deploy + rollback \u2014 digest pins and health gates",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w08",
+        "title": "Deploy + rollback \u2014 digest pins and health gates",
+        "body_md": "Ticket FC-4822 deploys image sha256:fc4822aa and must roll back to sha256:fc4810bb if health\u2260healthy. rollback_to must differ from current. migrate must be ok before traffic switch in the fixture policy.\n\ncurrent=sha256:fc4822aa rollback_to=sha256:fc4810bb health=healthy migrate=ok.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "Pin current digest; rollback digest differs; health healthy; migrate ok."
+      },
+      "lab_id": "lab_deploy_rollback_cloud"
+    },
+    {
+      "week": 9,
+      "title": "Kubernetes fundamentals \u2014 probes before vanity replicas",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w09",
+        "title": "Kubernetes fundamentals \u2014 probes before vanity replicas",
+        "body_md": "Ticket FC-4916 defines a Deployment with readinessProbe and livenessProbe HTTP paths and replicas=2. replicas=20 without resource requests fails the lab's sanity check. This is fundamentals \u2014 not a claim of CKA certification.\n\nreadiness=/readyz liveness=/healthz replicas=2 requests_cpu=100m \u2192 probe_ok.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "probes /readyz+/healthz, replicas=2, cpu request 100m \u2192 probe_ok."
+      },
+      "lab_id": "lab_k8s_probes"
+    },
+    {
+      "week": 10,
+      "title": "DevSecOps + incident \u2014 automate recoveries without heroics",
+      "lesson": {
+        "lesson_id": "CLOUD_DEVOPS-w10",
+        "title": "DevSecOps + incident \u2014 automate recoveries without heroics",
+        "body_md": "Capstone: an incident playbook that rolls back, rotates a leaked stub token, and records timeline timestamps. Ticket FC-4A03 fails if heroics=true (solo undocumented fix) or if automation_runbook_id is missing. Infra automation means the runbook id is executable in the lab sense \u2014 not a vibe doc.\n\nheroics=false; automation_runbook_id='RB-FC-rollback'; token_rotated=true; timeline has detect/contain/recover.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "RB-FC-rollback; heroics=false; token_rotated=true; three timeline stamps."
+      },
+      "lab_id": "lab_incident_runbook"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_linux_perms",
+    "lab_git_state",
+    "lab_dockerfile_lint",
+    "lab_cicd_gate",
+    "lab_cloud_cost",
+    "lab_iam_secrets",
+    "lab_slo_budget",
+    "lab_deploy_rollback_cloud",
+    "lab_k8s_probes",
+    "lab_incident_runbook"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "CLOUD_DEVOPS-lab",
+    "CLOUD_DEVOPS-assignment",
+    "CLOUD_DEVOPS-quiz",
+    "CLOUD_DEVOPS-mid",
+    "CLOUD_DEVOPS-final-knowledge",
+    "CLOUD_DEVOPS-practical",
+    "CLOUD_DEVOPS-project",
+    "CLOUD_DEVOPS-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_devops",
+      "cloud_operations_technician",
+      "sre_junior"
+    ],
+    "nice_categories": [
+      "operate_and_maintain",
+      "build_and_deploy"
+    ],
+    "certs_aligned_not_granted": [
+      "AWS Cloud Practitioner topics (labels)",
+      "CKA topics (labels)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/cloud_devops_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      1,
+      7
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

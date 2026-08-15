@@ -1,0 +1,225 @@
+{
+  "assessment_id": "DATA_VIZ_BI-mid",
+  "items": [
+    {
+      "id": "dvm01",
+      "kind": "mcq",
+      "stem": "250 rows with 20 null waits. null_rate?",
+      "choices": [
+        "0.20",
+        "0.08",
+        "0.02",
+        "8"
+      ]
+    },
+    {
+      "id": "dvm02",
+      "kind": "mcq",
+      "stem": "Inner join matches 180 of 200 tickets to zones. joined_rows?",
+      "choices": [
+        "200",
+        "1000",
+        "180",
+        "5"
+      ]
+    },
+    {
+      "id": "dvm03",
+      "kind": "mcq",
+      "stem": "Cartesian risk for 200 tickets \u00d7 8 zones?",
+      "choices": [
+        "208",
+        "180",
+        "8",
+        "1600"
+      ]
+    },
+    {
+      "id": "dvm04",
+      "kind": "mcq",
+      "stem": "Tickets still embed full zone_address text. Primary modeling fix?",
+      "choices": [
+        "zone_id FK + zone_dim attributes",
+        "More copies",
+        "Delete SQL",
+        "Add faces"
+      ]
+    },
+    {
+      "id": "dvm05",
+      "kind": "mcq",
+      "stem": "IQR if Q1=7 and Q3=19?",
+      "choices": [
+        "26",
+        "12",
+        "7",
+        "19"
+      ]
+    },
+    {
+      "id": "dvm06",
+      "kind": "mcq",
+      "stem": "Board summary with a single 200-min outlier prefers?",
+      "choices": [
+        "Mean only",
+        "Only max",
+        "Median with IQR context",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dvm07",
+      "kind": "mcq",
+      "stem": "Encoding: pie of unique ticket_id for wait KPI?",
+      "choices": [
+        "Valid",
+        "Required",
+        "SQL",
+        "Invalid"
+      ]
+    },
+    {
+      "id": "dvm08",
+      "kind": "mcq",
+      "stem": "First dashboard screen max_tiles in Studio?",
+      "choices": [
+        "3",
+        "30",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "id": "dvm09",
+      "kind": "mcq",
+      "stem": "Refresh 12 minutes vs \u226415 SLA?",
+      "choices": [
+        "fails",
+        "meets",
+        "undefined",
+        "cartesian"
+      ]
+    },
+    {
+      "id": "dvm10",
+      "kind": "mcq",
+      "stem": "Redistributing Power BI installer in the repo?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden \u2014 reference workflows only",
+        "Grants PL-300"
+      ]
+    },
+    {
+      "id": "dvm11",
+      "kind": "mcq",
+      "stem": "groupby median B=14 on fixture \u2014 changing input without new hash?",
+      "choices": [
+        "Still reproducible",
+        "Improves F1",
+        "Required",
+        "Breaks repro claim"
+      ]
+    },
+    {
+      "id": "dvm12",
+      "kind": "mcq",
+      "stem": "desk_pressure open=8 wait=15 staff=4?",
+      "choices": [
+        "30",
+        "2",
+        "120",
+        "0.5"
+      ]
+    },
+    {
+      "id": "dvm13",
+      "kind": "mcq",
+      "stem": "Adjective-only board story?",
+      "choices": [
+        "Passes",
+        "Fails storytelling bar",
+        "Grants cert",
+        "SQL"
+      ]
+    },
+    {
+      "id": "dvm14",
+      "kind": "mcq",
+      "stem": "PNG dashboard without csv_sha256?",
+      "choices": [
+        "Complete",
+        "Ideal",
+        "Rejected for portfolio",
+        "CKA"
+      ]
+    },
+    {
+      "id": "dvm15",
+      "kind": "mcq",
+      "stem": "Negatives abs()'d into waits?",
+      "choices": [
+        "Honest",
+        "Required",
+        "Median",
+        "Invented success \u2014 fail clean policy"
+      ]
+    },
+    {
+      "id": "dvm16",
+      "kind": "mcq",
+      "stem": "Freshness tile missing?",
+      "choices": [
+        "Trust failure on first screen",
+        "OK",
+        "Boosts KPI",
+        "IAM"
+      ]
+    },
+    {
+      "id": "dvm17",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY for Tableau topics means?",
+      "choices": [
+        "Copy sample workbooks as yours",
+        "Domain labels only",
+        "Pirate keys",
+        "Skip charts"
+      ]
+    },
+    {
+      "id": "dvm18",
+      "kind": "mcq",
+      "stem": "NO_AI on stats week blocks?",
+      "choices": [
+        "Calculators",
+        "Paper",
+        "Generative fill of the numbers",
+        "SQL comments"
+      ]
+    },
+    {
+      "id": "dvm19",
+      "kind": "mcq",
+      "stem": "zone on x-axis channel type?",
+      "choices": [
+        "quantitative",
+        "password",
+        "biometric",
+        "nominal"
+      ]
+    },
+    {
+      "id": "dvm20",
+      "kind": "mcq",
+      "stem": "quality_ok needs negatives_dropped?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "2"
+      ]
+    }
+  ]
+}

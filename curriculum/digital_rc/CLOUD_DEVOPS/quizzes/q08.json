@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "cd-w8-1",
+      "kind": "mcq",
+      "stem": "rollback_to == current?",
+      "choices": [
+        "Theater \u2014 must differ",
+        "Valid rollback",
+        "Best",
+        "Required"
+      ]
+    },
+    {
+      "id": "cd-w8-2",
+      "kind": "mcq",
+      "stem": "health must be?",
+      "choices": [
+        "starting forever",
+        "healthy",
+        "unknown OK",
+        "PASS"
+      ]
+    },
+    {
+      "id": "cd-w8-3",
+      "kind": "mcq",
+      "stem": "migrate before traffic?",
+      "choices": [
+        "Skip always",
+        "Drop DB",
+        "ok required in fixture policy",
+        "Optional vibe"
+      ]
+    },
+    {
+      "id": "cd-w8-4",
+      "kind": "mcq",
+      "stem": "Digest pin helps?",
+      "choices": [
+        "Beauty",
+        "F1",
+        "Pie",
+        "Exact artifact identity"
+      ]
+    },
+    {
+      "id": "cd-w8-5",
+      "kind": "mcq",
+      "stem": "Failed health action?",
+      "choices": [
+        "Rollback to previous digest",
+        "Ignore",
+        "Force-push main",
+        "Delete logs"
+      ]
+    },
+    {
+      "id": "cd-w8-6",
+      "kind": "mcq",
+      "stem": "This lab is?",
+      "choices": [
+        "print-PASS",
+        "JSON digest/health checks",
+        "Live AWS bill",
+        "Exam dump"
+      ]
+    }
+  ]
+}

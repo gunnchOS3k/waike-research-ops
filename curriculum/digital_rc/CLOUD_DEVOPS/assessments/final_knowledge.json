@@ -1,0 +1,269 @@
+{
+  "assessment_id": "CLOUD_DEVOPS-final",
+  "items": [
+    {
+      "id": "cdf01",
+      "kind": "mcq",
+      "stem": "mode 0644 on private deploy key \u2014 acceptable?",
+      "choices": [
+        "Yes always",
+        "Only on Fridays",
+        "If PASS",
+        "No \u2014 still group/world readable vs 0600 target"
+      ]
+    },
+    {
+      "id": "cdf02",
+      "kind": "mcq",
+      "stem": "ahead=0 behind=2 meaning?",
+      "choices": [
+        "Need integrate main first",
+        "Ready to force-push",
+        "Detached forever",
+        "Shallow only"
+      ]
+    },
+    {
+      "id": "cdf03",
+      "kind": "mcq",
+      "stem": "Conflict path expected in fixture?",
+      "choices": [
+        "/etc/shadow",
+        "services/api/health.py",
+        "random PASS",
+        "C:\\Windows"
+      ]
+    },
+    {
+      "id": "cdf04",
+      "kind": "mcq",
+      "stem": "Digest-pinned FROM line purpose?",
+      "choices": [
+        "Beauty",
+        "Faster DNS",
+        "Reproducible base",
+        "Grant cert"
+      ]
+    },
+    {
+      "id": "cdf05",
+      "kind": "mcq",
+      "stem": "deploy_on_pr true?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Median",
+        "Fails gate"
+      ]
+    },
+    {
+      "id": "cdf06",
+      "kind": "mcq",
+      "stem": "upload-report missing?",
+      "choices": [
+        "Evidence gap risk",
+        "Ideal",
+        "Grants CKA",
+        "SQL"
+      ]
+    },
+    {
+      "id": "cdf07",
+      "kind": "mcq",
+      "stem": "storage_gb*0.01 with 200GB?",
+      "choices": [
+        "200",
+        "2.0",
+        "0.01",
+        "20"
+      ]
+    },
+    {
+      "id": "cdf08",
+      "kind": "mcq",
+      "stem": "Toy cost_units claim as real AWS invoice?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden claim",
+        "F1"
+      ]
+    },
+    {
+      "id": "cdf09",
+      "kind": "mcq",
+      "stem": "Vault path replaces?",
+      "choices": [
+        "Charts",
+        "Median",
+        "Faces",
+        "Plaintext token in git"
+      ]
+    },
+    {
+      "id": "cdf10",
+      "kind": "mcq",
+      "stem": "A ForgeCloud deploy role may call which ECS mutation in the fixture policy?",
+      "choices": [
+        "ecs:UpdateService",
+        "Always deny all ECS",
+        "Biometric enroll",
+        "Tableau publish"
+      ]
+    },
+    {
+      "id": "cdf11",
+      "kind": "mcq",
+      "stem": "availability 0.995 on 10_000 with how many fails?",
+      "choices": [
+        "5",
+        "50",
+        "500",
+        "0"
+      ]
+    },
+    {
+      "id": "cdf12",
+      "kind": "mcq",
+      "stem": "SLO note without numbers?",
+      "choices": [
+        "Good",
+        "Required",
+        "Fails ops bar",
+        "Pie"
+      ]
+    },
+    {
+      "id": "cdf13",
+      "kind": "mcq",
+      "stem": "migrate skipped but traffic switched?",
+      "choices": [
+        "OK",
+        "Required",
+        "CKA",
+        "Fails fixture policy"
+      ]
+    },
+    {
+      "id": "cdf14",
+      "kind": "mcq",
+      "stem": "rollback digest differs + healthy?",
+      "choices": [
+        "Valid path",
+        "Invalid",
+        "Only root",
+        "Only latest"
+      ]
+    },
+    {
+      "id": "cdf15",
+      "kind": "mcq",
+      "stem": "liveness /healthz purpose?",
+      "choices": [
+        "SSH backdoor",
+        "Restart honesty signal",
+        "Pie",
+        "Median"
+      ]
+    },
+    {
+      "id": "cdf16",
+      "kind": "mcq",
+      "stem": "CKA granted by probes week?",
+      "choices": [
+        "Yes",
+        "Automatic",
+        "No",
+        "If replicas=20"
+      ]
+    },
+    {
+      "id": "cdf17",
+      "kind": "mcq",
+      "stem": "After a stub credential appears in git history, what must the incident JSON show?",
+      "choices": [
+        "token_rotated remains false",
+        "Ignore vault",
+        "Print only PASS",
+        "token_rotated true after rotation"
+      ]
+    },
+    {
+      "id": "cdf18",
+      "kind": "mcq",
+      "stem": "Timeline missing recover stamp?",
+      "choices": [
+        "Incomplete timeline",
+        "OK",
+        "Grants cert",
+        "SQL"
+      ]
+    },
+    {
+      "id": "cdf19",
+      "kind": "mcq",
+      "stem": "DevSecOps trio this course?",
+      "choices": [
+        "Ignore secrets",
+        "Rollback + rotate + runbook",
+        "Pirate + force-push + root",
+        "Exam dump"
+      ]
+    },
+    {
+      "id": "cdf20",
+      "kind": "mcq",
+      "stem": "Private subnet flag?",
+      "choices": [
+        "always public",
+        "ignore",
+        "must_be_private true",
+        "PASS"
+      ]
+    },
+    {
+      "id": "cdf21",
+      "kind": "mcq",
+      "stem": "CI on pull_request first job?",
+      "choices": [
+        "deploy",
+        "drop",
+        "PASS",
+        "lint"
+      ]
+    },
+    {
+      "id": "cdf22",
+      "kind": "mcq",
+      "stem": "USER app in Dockerfile?",
+      "choices": [
+        "Non-root",
+        "Root",
+        "Windows",
+        "SQL"
+      ]
+    },
+    {
+      "id": "cdf23",
+      "kind": "mcq",
+      "stem": "Incident heroics definition?",
+      "choices": [
+        "Documented runbook",
+        "Solo undocumented fix",
+        "Median",
+        "Join"
+      ]
+    },
+    {
+      "id": "cdf24",
+      "kind": "mcq",
+      "stem": "Portfolio cert claim?",
+      "choices": [
+        "Allowed",
+        "Required CKA/AWS",
+        "Forbidden \u2014 labels only",
+        "PMI ATP"
+      ]
+    }
+  ]
+}

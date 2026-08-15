@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "dv-w6-1",
+      "kind": "mcq",
+      "stem": "First screen max_tiles?",
+      "choices": [
+        "12",
+        "100",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "id": "dv-w6-2",
+      "kind": "mcq",
+      "stem": "Freshness tile purpose?",
+      "choices": [
+        "Trust \u2014 know if data is stale",
+        "Decoration",
+        "GPU load",
+        "DNS"
+      ]
+    },
+    {
+      "id": "dv-w6-3",
+      "kind": "mcq",
+      "stem": "Stock photo tile?",
+      "choices": [
+        "Required",
+        "Fails Studio",
+        "Increases F1",
+        "SQL"
+      ]
+    },
+    {
+      "id": "dv-w6-4",
+      "kind": "mcq",
+      "stem": "median_by_zone tile?",
+      "choices": [
+        "Optional fluff",
+        "Forbidden",
+        "Required",
+        "Biometric"
+      ]
+    },
+    {
+      "id": "dv-w6-5",
+      "kind": "mcq",
+      "stem": "One question per screen means?",
+      "choices": [
+        "Many unrelated KPIs",
+        "No title",
+        "No legend",
+        "Coherent desk question"
+      ]
+    },
+    {
+      "id": "dv-w6-6",
+      "kind": "mcq",
+      "stem": "open_count shows?",
+      "choices": [
+        "Currently open tickets",
+        "Closed only",
+        "Passwords",
+        "Faces"
+      ]
+    }
+  ]
+}

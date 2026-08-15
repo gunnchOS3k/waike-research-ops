@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "cd-w1-1",
+      "kind": "mcq",
+      "stem": "0666 means?",
+      "choices": [
+        "Owner only",
+        "Setuid",
+        "World writable",
+        "Directory sticky"
+      ]
+    },
+    {
+      "id": "cd-w1-2",
+      "kind": "mcq",
+      "stem": "Required mode this week?",
+      "choices": [
+        "0777",
+        "0000",
+        "0666",
+        "0600"
+      ]
+    },
+    {
+      "id": "cd-w1-3",
+      "kind": "mcq",
+      "stem": "0600 octal as int?",
+      "choices": [
+        "384",
+        "600",
+        "666",
+        "64"
+      ]
+    },
+    {
+      "id": "cd-w1-4",
+      "kind": "mcq",
+      "stem": "World-writable deploy key risk?",
+      "choices": [
+        "Faster deploys",
+        "Anyone can rewrite the key material",
+        "Better F1",
+        "Free SSL"
+      ]
+    },
+    {
+      "id": "cd-w1-5",
+      "kind": "mcq",
+      "stem": "YAML before perms?",
+      "choices": [
+        "Best practice",
+        "Required",
+        "Fails ForgeCloud gate",
+        "Kubernetes only"
+      ]
+    },
+    {
+      "id": "cd-w1-6",
+      "kind": "mcq",
+      "stem": "Bastion role?",
+      "choices": [
+        "Public game server",
+        "Patron kiosk",
+        "DNS only",
+        "Controlled jump host for deploys"
+      ]
+    }
+  ]
+}

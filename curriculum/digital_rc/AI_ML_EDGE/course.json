@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "AI_ML_EDGE",
+  "title": "AI/ML + Edge AI \u2014 EdgeForge Bench",
+  "track_ids": [
+    "AI_ML_EDGE"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Run the Gary EdgeForge Bench for ten weeks: civic occupancy CSV \u2192 metrics \u2192 tiny net \u2192 quantized inference \u2192 redacted RAG.",
+  "lesson_excerpt": "The EdgeForge Bench in Gary is a rolling rack of three Coral-class USB accelerators and a battered ThinkPad that only sees the civic Wi-Fi. Week 1 is not 'learn Python.' It is naming columns so a sensor CSV becomes a matrix you can defend to a librarian. Ticket EF-2101 ships a 480-row occupancy CSV: timestamp_iso, zone_id, people_count, rssi_dbm. Beginners paste the file into a notebook and celebr",
+  "worked_example": "480 rows \u00d7 0.80 = 384 train; 96 validation by time order (not shuffle).",
+  "assignment": "Write a four-line operator journal for EF-2101 naming columns, train_n, val_n, and why shuffle is forbidden. Submit lab_data_split JSON. No face IDs.",
+  "lab_hint": "lab_data_split",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "EdgeForge Bench \u2014 Python tensors as civic tables",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w01",
+        "title": "EdgeForge Bench \u2014 Python tensors as civic tables",
+        "body_md": "The EdgeForge Bench in Gary is a rolling rack of three Coral-class USB accelerators and a battered ThinkPad that only sees the civic Wi-Fi. Week 1 is not 'learn Python.' It is naming columns so a sensor CSV becomes a matrix you can defend to a librarian. Ticket EF-2101 ships a 480-row occupancy CSV: timestamp_iso, zone_id, people_count, rssi_dbm. Beginners paste the file into a notebook and celebrate a DataFrame shape. Operators ask which rows are training candidates and which are the midnight janitor sweep that always reads people_count=0 for forty minutes.\n\nPython here is a broom, not a religion. You will use pathlib, csv.DictReader, and a hand-rolled mean \u2014 not a mystery import that hides a download. The lab rejects a submission that claims train_n without showing the split math. Privacy starts now: zone_id is a letter (A/B/C), never a camera MAC, never a patron face embedding.\n\nConsensus Ladder for EF-2101: observed = 480 rows with four columns; inferred = midnight zeros are cleaning, not empty buildings; still need = whether zone B's RSSI drop correlates with AP reboot logs (out of scope this week).\n\nWorked numbers: 480 rows, hold out last 96 (20%) for validation by time order, not shuffle \u2014 civic occupancy is autocorrelated. Training rows = 384. If someone shuffles first, midnight cleaning contaminates both folds and the F1 will lie.",
+        "worked_example": "480 rows \u00d7 0.80 = 384 train; 96 validation by time order (not shuffle)."
+      },
+      "lab_id": "lab_data_split"
+    },
+    {
+      "week": 2,
+      "title": "Supervised labels \u2014 desk occupancy as a class, not a vibe",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w02",
+        "title": "Supervised labels \u2014 desk occupancy as a class, not a vibe",
+        "body_md": "Supervised learning on EdgeForge means a label you can argue about. Ticket EF-2204 asks for a binary busy/quiet label on zone A using people_count\u22653 as busy. That threshold is a policy choice from the library board, not a neural insight. You will fit a logistic-style score on rssi_dbm and hour_of_day from the fixture \u2014 then count TP/FP/FN against the held-out 96 rows.\n\nBeginners chase accuracy. EdgeForge chases false quiet alarms: predicting quiet when the room is busy means understaffing the desk. The lab computes precision/recall/F1 from your confusion counts; a print of 'PASS' is not a metric.\n\nFeature leakage to refuse: do not include people_count as an input when it defines the label. That is cheating dressed as ML.\n\nConfusion fixture: TP=40, FP=10, FN=5, TN=41. Precision=40/50=0.80. Recall=40/45\u22480.889. F1=2*0.80*0.889/(0.80+0.889)\u22480.842. Report three decimals.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "TP=40 FP=10 FN=5 \u2192 precision=0.800 recall=0.889 F1\u22480.842."
+      },
+      "lab_id": "lab_supervised_metrics"
+    },
+    {
+      "week": 3,
+      "title": "Unsupervised clusters \u2014 failure modes without a teacher",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w03",
+        "title": "Unsupervised clusters \u2014 failure modes without a teacher",
+        "body_md": "Not every EdgeForge ticket has a label. Ticket EF-2309 dumps 60 anonymous fault vectors (temp_c, fan_rpm, usb_reset_count) from the three accelerators. Unsupervised work means choosing k and defending centroids \u2014 not inventing a story that 'cluster 2 is hackers.'\n\nYou will assign each point to the nearest of two centroids using Manhattan distance (|dx|+|dy|+|dz|). The lab checks your assignments and the sum of distances. If you relabel clusters to match a preferred narrative without recomputing, the sum fails.\n\nResponsible AI note: clusters are hypotheses for the maintenance log, not accusations about staff.\n\nCentroid A=(40,3000,0), B=(70,1200,5). Point p=(55,2000,2): distA=|15|+|1000|+|2|=1017; distB=|15|+|800|+|3|=818 \u2192 assign B.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "p=(55,2000,2) closer to B=(70,1200,5) with Manhattan 818 vs 1017."
+      },
+      "lab_id": "lab_cluster_assign"
+    },
+    {
+      "week": 4,
+      "title": "Evaluation curves \u2014 thresholds are staffing decisions",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w04",
+        "title": "Evaluation curves \u2014 thresholds are staffing decisions",
+        "body_md": "Week 4 turns the busy classifier into a curve. Ticket EF-2411 gives score/label pairs for 20 validation rows. Sweeping threshold t from high to low changes TPR and FPR. The library board asks which t keeps FPR\u22640.20 while maximizing TPR \u2014 that is an operating point, not a mystical AUC worship.\n\nYou will compute TPR=TP/(TP+FN) and FPR=FP/(FP+TN) at two named thresholds. The lab checks arithmetic. Claiming 'AUC=1 because we feel good' fails.\n\nAt t=0.60: TP=6 FP=2 FN=2 TN=10 \u2192 TPR=0.75 FPR=1/6\u22480.167. Board constraint FPR\u22640.20 holds.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "t=0.60 \u2192 TPR=0.75 FPR\u22480.167 (\u22640.20 constraint)."
+      },
+      "lab_id": "lab_eval_thresholds"
+    },
+    {
+      "week": 5,
+      "title": "Overfitting \u2014 when train glory means val shame",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w05",
+        "title": "Overfitting \u2014 when train glory means val shame",
+        "body_md": "Ticket EF-2502 shows a student model with train_acc=0.99 and val_acc=0.61. That gap is the week's villain. Overfitting on EdgeForge often comes from memorizing janitor midnight patterns that never appear in daytime validation \u2014 or from tuning on the test fold until it smiles.\n\nGeneralization means the val fold stays sealed until the final score. The lab checks gap=train_acc-val_acc and whether you marked leakage_flags correctly (e.g., people_count in features). A gap\u22650.25 with no mitigation note fails the honesty check.\n\ngap=0.99-0.61=0.38. Mitigation options: fewer features, time-ordered CV, early stop. Not: 'download a bigger model.'\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "train_acc=0.99 val_acc=0.61 \u2192 gap=0.38 (\u22650.25 triggers mitigation note)."
+      },
+      "lab_id": "lab_overfit_gap"
+    },
+    {
+      "week": 6,
+      "title": "Feature windows \u2014 telemetry that respects time",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w06",
+        "title": "Feature windows \u2014 telemetry that respects time",
+        "body_md": "Feature engineering on EdgeForge is mostly windows. Ticket EF-2607 needs a 5-sample trailing mean of rssi_dbm before the classifier sees raw noise. You will compute rolling means on a length-12 series and refuse future leakage (a window that includes t+1 when predicting t).\n\nCausal windows only look backward. The lab verifies your series and that uses_future is false.\n\nSeries [10,12,11,13,12,14,13,15,14,16,15,17]. Trailing mean at index 4 (0-based) with w=5 is mean(10,12,11,13,12)=11.6.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "w=5 at index 4 \u2192 mean(10,12,11,13,12)=11.6."
+      },
+      "lab_id": "lab_feature_windows"
+    },
+    {
+      "week": 7,
+      "title": "Tiny neural net \u2014 forward pass without mythology",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w07",
+        "title": "Tiny neural net \u2014 forward pass without mythology",
+        "body_md": "Neural foundations on EdgeForge stay tiny: one hidden layer, two inputs (windowed rssi, hour_norm), two hidden units, one sigmoid output. Ticket EF-2710 gives weights as JSON. You will compute the forward pass by hand (or with plain Python) and match the lab's expected y_hat within 1e-3.\n\nNo downloading ImageNet. No claiming 'deep learning' for a 2\u00d72\u00d71 net. The point is that a weight is a number you can audit.\n\nh = relu(W1\u00b7x+b1); y=\u03c3(W2\u00b7h+b2). Fixture expects y_hat\u22480.731 for the published x.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "Published fixture forward pass yields y_hat\u22480.731 (\u00b11e-3)."
+      },
+      "lab_id": "lab_tiny_mlp_forward"
+    },
+    {
+      "week": 8,
+      "title": "Deploy + inference \u2014 scoring JSON on the rack",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w08",
+        "title": "Deploy + inference \u2014 scoring JSON on the rack",
+        "body_md": "Deployment on EdgeForge is a scored JSON bundle pinned by sha256, not a demo laptop left unlocked. Ticket EF-2803 asks you to run inference on three feature vectors with the published model card (threshold 0.55) and record predictions + model_digest.\n\nIf the digest mismatches the card, refuse to score \u2014 supply-chain basics. The lab checks predictions and that digest matches.\n\nModel digest sha256:ef2803aa.... Threshold 0.55. Vector scores [0.62,0.40,0.81] \u2192 labels [1,0,1].\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "scores 0.62/0.40/0.81 at t=0.55 \u2192 labels 1/0/1 with matching digest."
+      },
+      "lab_id": "lab_score_model"
+    },
+    {
+      "week": 9,
+      "title": "Quantization + edge budget \u2014 int8 vs desk latency",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w09",
+        "title": "Quantization + edge budget \u2014 int8 vs desk latency",
+        "body_md": "Edge AI is a budget. Ticket EF-2915 compares fp32 weights (4 bytes \u00d7 1_000 params) vs int8 (1 byte \u00d7 1_000) and a latency SLA of \u226415 ms on the USB accelerator profile. Quantization is not free accuracy; you will record expected size ratio and whether the profiled latency_ms meets SLA.\n\nPHYSICAL_PENDING: actual Coral flash remains pending until digital budgets PASS.\n\nfp32_bytes=4000, int8_bytes=1000, ratio=0.25. latency_ms=12 \u226415 \u2192 budget_ok true.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "1000 params: fp32=4000B int8=1000B ratio=0.25; latency 12ms \u226415 \u2192 ok."
+      },
+      "lab_id": "lab_quantize_budget"
+    },
+    {
+      "week": 10,
+      "title": "RAG, privacy, responsibility \u2014 retrieve without leaking patrons",
+      "lesson": {
+        "lesson_id": "AI_ML_EDGE-w10",
+        "title": "RAG, privacy, responsibility \u2014 retrieve without leaking patrons",
+        "body_md": "Capstone week: a tiny RAG over EdgeForge runbooks. Ticket EF-2A01 retrieves top-k chunks for 'USB reset storm' and must redact any accidental email/phone patterns before display. Responsible AI means disclosing AI assistance, refusing biometric identification, and documenting who is harmed by a false quiet alarm.\n\nThe lab checks retrieval hit ids, redaction count, and that biometric_claim is false.\n\nQuery retrieves chunks [R12,R19]. Redact 2 emails. biometric_claim must be false.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.\n\nEvidence for this week lives in the submitted lab JSON and the numbered fixture cases \u2014 not in a screenshot of a green checkmark.",
+        "worked_example": "top_k hits R12,R19; redactions=2; biometric_claim=false."
+      },
+      "lab_id": "lab_rag_redact"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_data_split",
+    "lab_supervised_metrics",
+    "lab_cluster_assign",
+    "lab_eval_thresholds",
+    "lab_overfit_gap",
+    "lab_feature_windows",
+    "lab_tiny_mlp_forward",
+    "lab_score_model",
+    "lab_quantize_budget",
+    "lab_rag_redact"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "AI_ML_EDGE-lab",
+    "AI_ML_EDGE-assignment",
+    "AI_ML_EDGE-quiz",
+    "AI_ML_EDGE-mid",
+    "AI_ML_EDGE-final-knowledge",
+    "AI_ML_EDGE-practical",
+    "AI_ML_EDGE-project",
+    "AI_ML_EDGE-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "ml_ops_junior",
+      "edge_inference_technician",
+      "data_technician"
+    ],
+    "nice_categories": [
+      "analyze",
+      "build_and_deploy"
+    ],
+    "certs_aligned_not_granted": [
+      "Google Professional ML Engineer (domains)",
+      "AWS MLA-C01 (domains)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/ai_ml_edge_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      7
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

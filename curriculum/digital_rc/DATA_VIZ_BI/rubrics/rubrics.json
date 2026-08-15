@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "DATA_VIZ_BI-lab",
+    "title": "Studio lab",
+    "criteria": [
+      {
+        "name": "clean_sql_stats",
+        "weight": 20,
+        "desc": "Null/join/stat math correct"
+      },
+      {
+        "name": "encode_kpi",
+        "weight": 20,
+        "desc": "Encoding + KPI formula"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong fields fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-assignment",
+    "title": "Metrics journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses CM-#### tickets"
+      },
+      {
+        "name": "license_honesty",
+        "weight": 30,
+        "desc": "No piracy claims"
+      },
+      {
+        "name": "no_pii",
+        "weight": 30,
+        "desc": "No patron PII"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-quiz",
+    "title": "BI knowledge",
+    "criteria": [
+      {
+        "name": "studio_numbers",
+        "weight": 50,
+        "desc": "Original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-mid",
+    "title": "Mid Studio audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "clean_join_stats",
+        "weight": 40,
+        "desc": "Clean/SQL/stats/encode"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-final-knowledge",
+    "title": "Final BI exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone items"
+      },
+      {
+        "name": "kpi_repro",
+        "weight": 50,
+        "desc": "KPI + repro + license"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Cartesian/piracy negatives fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-project",
+    "title": "Hashed dashboard",
+    "criteria": [
+      {
+        "name": "three_tiles",
+        "weight": 40,
+        "desc": "First screen contract"
+      },
+      {
+        "name": "hashes",
+        "weight": 30,
+        "desc": "csv_sha256 present"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 30,
+        "desc": "No PL-300/Tableau claim"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DATA_VIZ_BI-portfolio",
+    "title": "Studio portfolio",
+    "criteria": [
+      {
+        "name": "quality_gates",
+        "weight": 40,
+        "desc": "null/negatives/freshness"
+      },
+      {
+        "name": "story",
+        "weight": 30,
+        "desc": "Numbered board sentence"
+      },
+      {
+        "name": "no_gallery_theft",
+        "weight": 30,
+        "desc": "No vendor gallery as yours"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "aim-w5-1",
+      "kind": "mcq",
+      "stem": "gap for 0.99 vs 0.61?",
+      "choices": [
+        "0.38",
+        "1.60",
+        "0.61",
+        "0.99"
+      ]
+    },
+    {
+      "id": "aim-w5-2",
+      "kind": "mcq",
+      "stem": "Sealed val fold means?",
+      "choices": [
+        "Delete val",
+        "Do not tune decisions on val until final score",
+        "Put val in train",
+        "Shuffle into train"
+      ]
+    },
+    {
+      "id": "aim-w5-3",
+      "kind": "mcq",
+      "stem": "Acceptable mitigation?",
+      "choices": [
+        "Download GPT weights",
+        "Hide the gap",
+        "Fewer features / time-ordered CV / early stop",
+        "Report only train_acc"
+      ]
+    },
+    {
+      "id": "aim-w5-4",
+      "kind": "mcq",
+      "stem": "people_count in features when it defines label?",
+      "choices": [
+        "Good engineering",
+        "Required for F1",
+        "Edge-only OK",
+        "Leakage flag"
+      ]
+    },
+    {
+      "id": "aim-w5-5",
+      "kind": "mcq",
+      "stem": "Janitor midnight memorization hurts?",
+      "choices": [
+        "Validation daytime scores",
+        "Train only",
+        "USB voltage",
+        "DNS"
+      ]
+    },
+    {
+      "id": "aim-w5-6",
+      "kind": "mcq",
+      "stem": "gap\u22650.25 without mitigation note?",
+      "choices": [
+        "Passes",
+        "Fails honesty check",
+        "Equals F1",
+        "Forces k=2"
+      ]
+    }
+  ]
+}

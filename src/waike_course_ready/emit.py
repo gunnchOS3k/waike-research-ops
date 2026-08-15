@@ -208,6 +208,9 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "SOFTWARE_BUILDER": "curriculum/alignment/software_builder_alignment.json",
             "HARDWARE_ENGINEERING": "curriculum/alignment/hardware_engineering_alignment.json",
             "PM_AGILE_LSS": "curriculum/alignment/pm_agile_lss_alignment.json",
+            "AI_ML_EDGE": "curriculum/alignment/ai_ml_edge_alignment.json",
+            "DATA_VIZ_BI": "curriculum/alignment/data_viz_bi_alignment.json",
+            "CLOUD_DEVOPS": "curriculum/alignment/cloud_devops_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

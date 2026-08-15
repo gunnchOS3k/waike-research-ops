@@ -1,0 +1,117 @@
+{
+  "packet": "WAIKE-COURSE-READY-003",
+  "role": "OWNER",
+  "taxonomy_map": {
+    "AI / ML / EDGE": {
+      "track_id": "AI_ML_EDGE",
+      "requirement_id": "WAIKE_COURSE_AI_ML_EDGE",
+      "program": "programs/ai_ml_edge.md",
+      "academy_id": "ACADEMY_SOFTWARE"
+    },
+    "DATA / BI / VISUALIZATION": {
+      "track_id": "DATA_VIZ_BI",
+      "requirement_id": "WAIKE_COURSE_DATA_VIZ_BI",
+      "program": "programs/data_visualization_and_business_intelligence.md",
+      "academy_id": "ACADEMY_SOFTWARE"
+    },
+    "CLOUD / DEVOPS": {
+      "track_id": "CLOUD_DEVOPS",
+      "requirement_id": "WAIKE_COURSE_CLOUD_DEVOPS",
+      "program": "programs/cloud_and_devops.md",
+      "academy_id": "ACADEMY_SOFTWARE"
+    }
+  },
+  "preserved_batches": {
+    "batch001_#43": [
+      "GENERAL_IT",
+      "COMPUTER_NETWORKING",
+      "CYBERSECURITY"
+    ],
+    "batch002_#44": [
+      "SOFTWARE_BUILDER",
+      "HARDWARE_ENGINEERING",
+      "PM_AGILE_LSS"
+    ],
+    "batch003_#45": [
+      "AI_ML_EDGE",
+      "DATA_VIZ_BI",
+      "CLOUD_DEVOPS"
+    ]
+  },
+  "counts": [
+    {
+      "course_id": "AI_ML_EDGE",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "labs": 10,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "presentations": 10,
+      "student": 1,
+      "instructor": 11,
+      "offline": 1,
+      "portfolio": 1,
+      "COURSE_DIGITAL_RC": true
+    },
+    {
+      "course_id": "DATA_VIZ_BI",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "labs": 10,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "presentations": 10,
+      "student": 1,
+      "instructor": 11,
+      "offline": 1,
+      "portfolio": 1,
+      "COURSE_DIGITAL_RC": true
+    },
+    {
+      "course_id": "CLOUD_DEVOPS",
+      "weeks": 10,
+      "lessons": 10,
+      "assignments": 10,
+      "labs": 10,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "mid": 20,
+      "final": 24,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "presentations": 10,
+      "student": 1,
+      "instructor": 11,
+      "offline": 1,
+      "portfolio": 1,
+      "COURSE_DIGITAL_RC": true
+    }
+  ],
+  "labs": {
+    "total": "80/80",
+    "batch_001": "20/20",
+    "batch_002": "30/30",
+    "batch_003": "30/30",
+    "ok": true,
+    "empty_wrong_printpass": true
+  },
+  "provenance_status": "PASS",
+  "template_status": "PASS",
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "cursor_merges": false
+}

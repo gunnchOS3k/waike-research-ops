@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "aim-w9-1",
+      "kind": "mcq",
+      "stem": "fp32 bytes for 1000 params?",
+      "choices": [
+        "4000",
+        "1000",
+        "8000",
+        "250"
+      ]
+    },
+    {
+      "id": "aim-w9-2",
+      "kind": "mcq",
+      "stem": "int8/fp32 size ratio?",
+      "choices": [
+        "1.0",
+        "0.25",
+        "4.0",
+        "0.5"
+      ]
+    },
+    {
+      "id": "aim-w9-3",
+      "kind": "mcq",
+      "stem": "SLA this week?",
+      "choices": [
+        "\u22641 ms",
+        "\u22641 s",
+        "\u226415 ms",
+        "No SLA"
+      ]
+    },
+    {
+      "id": "aim-w9-4",
+      "kind": "mcq",
+      "stem": "latency 12ms \u2192 budget_ok?",
+      "choices": [
+        "false",
+        "null",
+        "PHYSICAL_DONE",
+        "true"
+      ]
+    },
+    {
+      "id": "aim-w9-5",
+      "kind": "mcq",
+      "stem": "Device flash status until digital PASS?",
+      "choices": [
+        "PHYSICAL_PENDING",
+        "DONE",
+        "Skipped forever",
+        "PMI ATP"
+      ]
+    },
+    {
+      "id": "aim-w9-6",
+      "kind": "mcq",
+      "stem": "Quantization always keeps accuracy?",
+      "choices": [
+        "Yes",
+        "No \u2014 tradeoff must be measured",
+        "Only on GPU",
+        "Only if PASS printed"
+      ]
+    }
+  ]
+}

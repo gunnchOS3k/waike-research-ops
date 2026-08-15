@@ -1057,13 +1057,22 @@ from waike_course_ready.batch002.labs import (
     LABS_002, COURSE_LABS_002, LAB_SPECS_002, REFERENCE_002, WRONG_002,
     lab_authz, lab_git_conflict, lab_spice_network, lab_charter, lab_observability,
 )
+from waike_course_ready.batch003.labs import (
+    LABS_003, COURSE_LABS_003, LAB_SPECS_003, REFERENCE_003, WRONG_003,
+    lab_rag_redact, lab_clean_nulls, lab_linux_perms, lab_incident_runbook,
+)
 
 LABS.update(LABS_002)
-# Union — never clear #43 COURSE_LABS
+LABS.update(LABS_003)
+# Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
+COURSE_LABS.update(COURSE_LABS_003)
 LAB_SPECS.update(LAB_SPECS_002)
+LAB_SPECS.update(LAB_SPECS_003)
 REFERENCE.update(REFERENCE_002)
+REFERENCE.update(REFERENCE_003)
 WRONG.update(WRONG_002)
+WRONG.update(WRONG_003)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
@@ -1085,7 +1094,7 @@ def _ttl1_from_parsed_header(datapath_result: dict[str, Any]) -> bool:
 
 
 def run_all() -> dict[str, Any]:
-    """Execute #43 labs ∪ #44 labs. lab_count must be 50 when both batches registered."""
+    """Execute #43 ∪ #44 ∪ #45 labs. lab_count must be 80 when all three batches registered."""
     results = []
     empty_rows = []
     wrong_rows = []
@@ -1099,6 +1108,7 @@ def run_all() -> dict[str, Any]:
 
     no_sub_43 = run_lab("lab_os_users")
     no_sub_002 = run_lab("lab_git_conflict")
+    no_sub_003 = run_lab("lab_data_split")
     print_pass_raises = False
     try:
         _fail_if_print_pass("PASS")
@@ -1114,6 +1124,11 @@ def run_all() -> dict[str, Any]:
         print_pass_on_submit_002 = False
     except AssertionError:
         print_pass_on_submit_002 = True
+    try:
+        run_lab("lab_rag_redact", submission="PASS")
+        print_pass_on_submit_003 = False
+    except AssertionError:
+        print_pass_on_submit_003 = True
 
     negatives = []
     # #43 package negatives (must remain)
@@ -1141,6 +1156,13 @@ def run_all() -> dict[str, Any]:
     negatives.append({"lab_id": "lab_spice_network_negative", "ok": (not bad_spice.ok)})
     bad_charter = lab_charter({"problem": "x", "goal_metric": "better", "in_scope": [], "out_scope": [], "fabricated_outcomes": True})
     negatives.append({"lab_id": "lab_charter_negative", "ok": (not bad_charter.ok)})
+    # #45 package negatives
+    bad_rag = lab_rag_redact({"hits": ["X"], "redactions": 0, "biometric_claim": True})
+    negatives.append({"lab_id": "lab_rag_redact_negative", "ok": (not bad_rag.ok)})
+    bad_clean = lab_clean_nulls({"rows": 200, "nulls": 10, "null_rate": 0.5, "negatives_dropped": False})
+    negatives.append({"lab_id": "lab_clean_nulls_negative", "ok": (not bad_clean.ok)})
+    bad_perms = lab_linux_perms({"mode_octal": 0o666, "mode_str": "0666", "world_writable": True})
+    negatives.append({"lab_id": "lab_linux_perms_negative", "ok": (not bad_perms.ok)})
 
     datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
     ttl_ok = _ttl1_from_parsed_header(datapath)
@@ -1152,8 +1174,8 @@ def run_all() -> dict[str, Any]:
     wrong_ok = all(r["failed_as_required"] for r in wrong_rows)
     refs_ok = all(r["ok"] for r in results)
     neg_ok = all(n["ok"] for n in negatives)
-    print_ok = print_pass_raises and print_pass_on_submit_43 and print_pass_on_submit_002
-    no_sub_ok = (not no_sub_43["ok"]) and (not no_sub_002["ok"])
+    print_ok = print_pass_raises and print_pass_on_submit_43 and print_pass_on_submit_002 and print_pass_on_submit_003
+    no_sub_ok = (not no_sub_43["ok"]) and (not no_sub_002["ok"]) and (not no_sub_003["ok"])
     ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_ok and no_sub_ok and ttl_ok and computed_honesty
     return {
         "ok": ok,
@@ -1161,6 +1183,7 @@ def run_all() -> dict[str, Any]:
         "course_labs": {cid: list(ids) for cid, ids in COURSE_LABS.items()},
         "batch_001_lab_count": sum(len(COURSE_LABS[c]) for c in ("GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY") if c in COURSE_LABS),
         "batch_002_lab_count": sum(len(COURSE_LABS[c]) for c in ("SOFTWARE_BUILDER", "HARDWARE_ENGINEERING", "PM_AGILE_LSS") if c in COURSE_LABS),
+        "batch_003_lab_count": sum(len(COURSE_LABS[c]) for c in ("AI_ML_EDGE", "DATA_VIZ_BI", "CLOUD_DEVOPS") if c in COURSE_LABS),
         "results": results,
         "negatives_must_fail_and_did": negatives,
         "empty_submission_fails": empty_ok,

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "cd-w3-1",
+      "kind": "mcq",
+      "stem": ":latest on ForgeCloud?",
+      "choices": [
+        "Preferred",
+        "Required",
+        "Fails lint (uses_latest must be false)",
+        "Only AI"
+      ]
+    },
+    {
+      "id": "cd-w3-2",
+      "kind": "mcq",
+      "stem": "USER app means?",
+      "choices": [
+        "Root",
+        "Windows user",
+        "SQL user",
+        "Non-root runtime user"
+      ]
+    },
+    {
+      "id": "cd-w3-3",
+      "kind": "mcq",
+      "stem": "Digest pin purpose?",
+      "choices": [
+        "Reproducible base layer",
+        "Pretty logs",
+        "Faster Wi-Fi",
+        "Grants CKA"
+      ]
+    },
+    {
+      "id": "cd-w3-4",
+      "kind": "mcq",
+      "stem": "Root container?",
+      "choices": [
+        "lint_ok",
+        "Fails user_non_root",
+        "Required for Python",
+        "Tableau need"
+      ]
+    },
+    {
+      "id": "cd-w3-5",
+      "kind": "mcq",
+      "stem": "Base image example?",
+      "choices": [
+        "ubuntu:latest",
+        "FROM scratch:latest as root",
+        "python:3.12-slim@sha256:\u2026",
+        "PASS"
+      ]
+    },
+    {
+      "id": "cd-w3-6",
+      "kind": "mcq",
+      "stem": "Containers this week are?",
+      "choices": [
+        "Full k8s cluster",
+        "Live prod mutate",
+        "Exam dump",
+        "Dockerfile lint on fixture"
+      ]
+    }
+  ]
+}

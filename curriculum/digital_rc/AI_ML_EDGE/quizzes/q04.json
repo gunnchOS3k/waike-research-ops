@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "aim-w4-1",
+      "kind": "mcq",
+      "stem": "TPR formula?",
+      "choices": [
+        "FP/(FP+TN)",
+        "TP/(TP+FP)",
+        "TP/(TP+FN)",
+        "TN/(TN+FP)"
+      ]
+    },
+    {
+      "id": "aim-w4-2",
+      "kind": "mcq",
+      "stem": "FPR formula?",
+      "choices": [
+        "TP/(TP+FN)",
+        "FN/(FN+TP)",
+        "TN/N",
+        "FP/(FP+TN)"
+      ]
+    },
+    {
+      "id": "aim-w4-3",
+      "kind": "mcq",
+      "stem": "Board constraint this week?",
+      "choices": [
+        "FPR\u22640.20",
+        "Accuracy\u22650.99",
+        "k=2",
+        "GPU required"
+      ]
+    },
+    {
+      "id": "aim-w4-4",
+      "kind": "mcq",
+      "stem": "AUC worship without operating point?",
+      "choices": [
+        "Sufficient for staffing",
+        "Incomplete for EdgeForge desk decisions",
+        "Required by USB",
+        "Equals F1"
+      ]
+    },
+    {
+      "id": "aim-w4-5",
+      "kind": "mcq",
+      "stem": "At t=0.60 TP=6 FN=2. TPR?",
+      "choices": [
+        "0.50",
+        "0.80",
+        "0.75",
+        "1.00"
+      ]
+    },
+    {
+      "id": "aim-w4-6",
+      "kind": "mcq",
+      "stem": "Validation rows in EF-2411 fixture?",
+      "choices": [
+        "2",
+        "480",
+        "96",
+        "20"
+      ]
+    }
+  ]
+}

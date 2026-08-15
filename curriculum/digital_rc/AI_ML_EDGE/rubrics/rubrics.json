@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "AI_ML_EDGE-lab",
+    "title": "EdgeForge lab",
+    "criteria": [
+      {
+        "name": "split_or_metrics",
+        "weight": 20,
+        "desc": "Split/metrics/window math matches fixture"
+      },
+      {
+        "name": "digest_or_budget",
+        "weight": 20,
+        "desc": "Digest pin or int8 budget honest"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails student_artifact"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong arithmetic fails"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS-only rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-assignment",
+    "title": "Edge journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses EF-#### tickets"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "AI mode tagged when used"
+      },
+      {
+        "name": "no_biometrics",
+        "weight": 30,
+        "desc": "No face/ID claims"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-quiz",
+    "title": "Edge knowledge",
+    "criteria": [
+      {
+        "name": "fixture_numbers",
+        "weight": 50,
+        "desc": "Original stems with EdgeForge numbers"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys only in instructor/answer_keys.json"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-mid",
+    "title": "Mid EdgeForge audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 items not weekly clones / Jaccard<0.80"
+      },
+      {
+        "name": "split_metrics_deploy",
+        "weight": 40,
+        "desc": "Splits, metrics, windows, deploy"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-final-knowledge",
+    "title": "Final edge exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 items not weekly clones"
+      },
+      {
+        "name": "quant_rag_responsibility",
+        "weight": 50,
+        "desc": "Quantization, RAG, harm notes"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Leakage/digest negatives fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS string rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-project",
+    "title": "Redacted RAG portfolio",
+    "criteria": [
+      {
+        "name": "path_complete",
+        "weight": 40,
+        "desc": "split\u2192metrics\u2192score\u2192budget\u2192RAG"
+      },
+      {
+        "name": "redaction",
+        "weight": 30,
+        "desc": "Contact strings redacted"
+      },
+      {
+        "name": "no_fabricated_impact",
+        "weight": 30,
+        "desc": "Fixture counts only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "AI_ML_EDGE-portfolio",
+    "title": "Edge portfolio",
+    "criteria": [
+      {
+        "name": "lab_json",
+        "weight": 40,
+        "desc": "Lab results + empty-fail evidence"
+      },
+      {
+        "name": "digest_budget",
+        "weight": 30,
+        "desc": "Model digest + quant budget"
+      },
+      {
+        "name": "no_cert_claim",
+        "weight": 30,
+        "desc": "No MLA/Google ML cert claim"
+      }
+    ]
+  }
+]

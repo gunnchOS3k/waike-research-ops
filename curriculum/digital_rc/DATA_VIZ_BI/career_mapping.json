@@ -1,0 +1,14 @@
+{
+  "roles": [
+    "data_analyst_junior",
+    "bi_developer_junior",
+    "reporting_specialist"
+  ],
+  "nice_categories": [
+    "analyze"
+  ],
+  "certs_aligned_not_granted": [
+    "Microsoft PL-300 topics (labels)",
+    "Tableau Desktop Specialist topics (labels)"
+  ]
+}

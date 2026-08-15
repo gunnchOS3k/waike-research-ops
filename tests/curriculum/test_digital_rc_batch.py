@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from waike_course_ready.content import COURSES, COURSES_001, extra_assessment_items
 from waike_course_ready.batch002.content import COURSES_002
+from waike_course_ready.batch003.content import COURSES_003
 from waike_course_ready.exams import TOKEN_JACCARD_FAIL, nearest_weekly, token_identical
 from waike_course_ready.ingest import build_learner, build_product_catalog, build_teacher
 from waike_course_ready.labs import _fail_if_print_pass, run_all, run_lab
@@ -17,16 +18,19 @@ from waike_course_ready.provenance import audit, strip_lesson_padding
 
 BATCH_001 = {"GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY"}
 BATCH_002 = {"SOFTWARE_BUILDER", "HARDWARE_ENGINEERING", "PM_AGILE_LSS"}
+BATCH_003 = {"AI_ML_EDGE", "DATA_VIZ_BI", "CLOUD_DEVOPS"}
 
 
 def test_batch001_and_batch002_coexist_in_product_paths():
-    """#43 coverage must remain; #44 adds three courses. Do not replace COURSES."""
+    """#43/#44 coverage must remain; #45 adds three courses. Do not replace COURSES."""
     assert BATCH_001.issubset(set(COURSES))
     assert BATCH_002.issubset(set(COURSES))
-    assert set(COURSES) == BATCH_001 | BATCH_002
-    assert len(COURSES) == 6
+    assert BATCH_003.issubset(set(COURSES))
+    assert set(COURSES) == BATCH_001 | BATCH_002 | BATCH_003
+    assert len(COURSES) == 9
     assert set(COURSES_001) == BATCH_001
     assert set(COURSES_002) == BATCH_002
+    assert set(COURSES_003) == BATCH_003
 
 
 def test_each_course_has_depth():
@@ -49,10 +53,11 @@ def test_labs_compute_and_negatives_fail():
         "ttl1_from_parsed_header", "no_submission_fails", "negatives_must_fail_and_did",
         "computed_honesty_gate",
     )}
-    # #43 (20) ∪ #44 (30) when both batches are registered
-    assert bundle["lab_count"] == 50, bundle["lab_count"]
+    # #43 (20) ∪ #44 (30) ∪ #45 (30)
+    assert bundle["lab_count"] == 80, bundle["lab_count"]
     assert bundle.get("batch_001_lab_count") == 20
     assert bundle.get("batch_002_lab_count") == 30
+    assert bundle.get("batch_003_lab_count") == 30
     assert all(n["ok"] for n in bundle["negatives_must_fail_and_did"])
     assert bundle["empty_submission_fails"] is True
     assert bundle["wrong_submission_fails"] is True
@@ -82,6 +87,12 @@ def test_empty_and_print_pass_fail():
     except AssertionError:
         raised3 = True
     assert raised3
+    raised4 = False
+    try:
+        run_lab("lab_rag_redact", submission="PASS")
+    except AssertionError:
+        raised4 = True
+    assert raised4
 
 
 def test_mid_final_not_weekly_clones():
@@ -133,7 +144,8 @@ def test_product_catalog_ui_fields():
     ids = {c["course_id"] for c in cat["courses"]}
     assert BATCH_001.issubset(ids)
     assert BATCH_002.issubset(ids)
-    assert len(ids) == 6
+    assert BATCH_003.issubset(ids)
+    assert len(ids) == 9
     for course in cat["courses"]:
         for field in (
             "course_id",

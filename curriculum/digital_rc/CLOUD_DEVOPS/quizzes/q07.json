@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "cd-w7-1",
+      "kind": "mcq",
+      "stem": "availability for 40 fail / 10000?",
+      "choices": [
+        "0.960",
+        "0.995",
+        "0.996",
+        "1.0"
+      ]
+    },
+    {
+      "id": "cd-w7-2",
+      "kind": "mcq",
+      "stem": "failure_cap 50 and failed 40 \u2192 budget_ok?",
+      "choices": [
+        "false",
+        "null",
+        "PASS",
+        "true"
+      ]
+    },
+    {
+      "id": "cd-w7-3",
+      "kind": "mcq",
+      "stem": "Blame without numbers?",
+      "choices": [
+        "Fails ForgeCloud note",
+        "Good ops",
+        "Required",
+        "KPI"
+      ]
+    },
+    {
+      "id": "cd-w7-4",
+      "kind": "mcq",
+      "stem": "SLO target mentioned?",
+      "choices": [
+        "90%",
+        "99.5%",
+        "50%",
+        "0%"
+      ]
+    },
+    {
+      "id": "cd-w7-5",
+      "kind": "mcq",
+      "stem": "Observability needs?",
+      "choices": [
+        "Only vibes",
+        "Only screenshots",
+        "Counts + availability math",
+        "Faces"
+      ]
+    },
+    {
+      "id": "cd-w7-6",
+      "kind": "mcq",
+      "stem": "failed=60 vs cap 50 \u2192 budget_ok?",
+      "choices": [
+        "true",
+        "null",
+        "ignored",
+        "false"
+      ]
+    }
+  ]
+}

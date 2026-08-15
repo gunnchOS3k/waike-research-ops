@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "dv-w3-1",
+      "kind": "mcq",
+      "stem": "Repeating zone_address causes?",
+      "choices": [
+        "Faster joins",
+        "Update anomalies",
+        "Better F1",
+        "GPU heat"
+      ]
+    },
+    {
+      "id": "dv-w3-2",
+      "kind": "mcq",
+      "stem": "tickets should store?",
+      "choices": [
+        "Full address text always",
+        "SSN",
+        "zone_id FK",
+        "face embedding"
+      ]
+    },
+    {
+      "id": "dv-w3-3",
+      "kind": "mcq",
+      "stem": "zone_dim holds?",
+      "choices": [
+        "Passwords",
+        "Model weights",
+        "SSH keys",
+        "Address / label attributes"
+      ]
+    },
+    {
+      "id": "dv-w3-4",
+      "kind": "mcq",
+      "stem": "3NF-ish goal this week?",
+      "choices": [
+        "Remove repeating groups from tickets",
+        "More duplication",
+        "Drop SQL",
+        "Skip keys"
+      ]
+    },
+    {
+      "id": "dv-w3-5",
+      "kind": "mcq",
+      "stem": "Rename edit missing 40 rows is?",
+      "choices": [
+        "Success",
+        "Anomaly symptom",
+        "KPI win",
+        "RAG hit"
+      ]
+    },
+    {
+      "id": "dv-w3-6",
+      "kind": "mcq",
+      "stem": "Lab checks?",
+      "choices": [
+        "Pretty colors",
+        "print PASS",
+        "tables[] without repeating address on tickets",
+        "AUC"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "dv-w1-1",
+      "kind": "mcq",
+      "stem": "null_rate for 10 nulls in 200?",
+      "choices": [
+        "0.10",
+        "0.05",
+        "5",
+        "10"
+      ]
+    },
+    {
+      "id": "dv-w1-2",
+      "kind": "mcq",
+      "stem": "Negative wait_min handling?",
+      "choices": [
+        "abs() into dashboard",
+        "Impute 0 always",
+        "Drop as invalid",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "dv-w1-3",
+      "kind": "mcq",
+      "stem": "Charting before clean?",
+      "choices": [
+        "Best practice",
+        "Required for Tableau",
+        "PMI rule",
+        "Forbidden on Studio desk"
+      ]
+    },
+    {
+      "id": "dv-w1-4",
+      "kind": "mcq",
+      "stem": "CM-3102 columns include?",
+      "choices": [
+        "wait_min",
+        "face_id",
+        "password",
+        "SSN"
+      ]
+    },
+    {
+      "id": "dv-w1-5",
+      "kind": "mcq",
+      "stem": "null wait_min means?",
+      "choices": [
+        "Zero wait",
+        "Missing measurement",
+        "VIP patron",
+        "GPU idle"
+      ]
+    },
+    {
+      "id": "dv-w1-6",
+      "kind": "mcq",
+      "stem": "Mayor-facing negative average?",
+      "choices": [
+        "Clever",
+        "Required KPI",
+        "Invented metric \u2014 fails Studio",
+        "F1"
+      ]
+    }
+  ]
+}

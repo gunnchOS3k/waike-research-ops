@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "AI_ML_EDGE",
+  "quizzes": {
+    "AI_ML_EDGE-q01": [
+      {
+        "id": "aim-w1-1",
+        "answer_index": 0,
+        "explanation": "480*0.8=384."
+      },
+      {
+        "id": "aim-w1-2",
+        "answer_index": 1,
+        "explanation": "Autocorrelation."
+      },
+      {
+        "id": "aim-w1-3",
+        "answer_index": 2,
+        "explanation": "No faces."
+      },
+      {
+        "id": "aim-w1-4",
+        "answer_index": 3,
+        "explanation": "Name what you saw."
+      },
+      {
+        "id": "aim-w1-5",
+        "answer_index": 0,
+        "explanation": "Show the math."
+      },
+      {
+        "id": "aim-w1-6",
+        "answer_index": 1,
+        "explanation": "Civic Wi-Fi only."
+      }
+    ],
+    "AI_ML_EDGE-q02": [
+      {
+        "id": "aim-w2-1",
+        "answer_index": 2,
+        "explanation": "Leakage."
+      },
+      {
+        "id": "aim-w2-2",
+        "answer_index": 3,
+        "explanation": "40/50."
+      },
+      {
+        "id": "aim-w2-3",
+        "answer_index": 0,
+        "explanation": "FN-style staffing miss."
+      },
+      {
+        "id": "aim-w2-4",
+        "answer_index": 1,
+        "explanation": "Class imbalance / cost."
+      },
+      {
+        "id": "aim-w2-5",
+        "answer_index": 2,
+        "explanation": "Policy."
+      },
+      {
+        "id": "aim-w2-6",
+        "answer_index": 3,
+        "explanation": "No print-PASS."
+      }
+    ],
+    "AI_ML_EDGE-q03": [
+      {
+        "id": "aim-w3-1",
+        "answer_index": 0,
+        "explanation": "|15|+|1000|+|2|."
+      },
+      {
+        "id": "aim-w3-2",
+        "answer_index": 1,
+        "explanation": "No labels."
+      },
+      {
+        "id": "aim-w3-3",
+        "answer_index": 2,
+        "explanation": "No staff blame."
+      },
+      {
+        "id": "aim-w3-4",
+        "answer_index": 3,
+        "explanation": "Defend k."
+      },
+      {
+        "id": "aim-w3-5",
+        "answer_index": 0,
+        "explanation": "Sum fails."
+      },
+      {
+        "id": "aim-w3-6",
+        "answer_index": 1,
+        "explanation": "Telemetry."
+      }
+    ],
+    "AI_ML_EDGE-q04": [
+      {
+        "id": "aim-w4-1",
+        "answer_index": 2,
+        "explanation": "Recall."
+      },
+      {
+        "id": "aim-w4-2",
+        "answer_index": 3,
+        "explanation": "False positive rate."
+      },
+      {
+        "id": "aim-w4-3",
+        "answer_index": 0,
+        "explanation": "FPR cap."
+      },
+      {
+        "id": "aim-w4-4",
+        "answer_index": 1,
+        "explanation": "Need threshold."
+      },
+      {
+        "id": "aim-w4-5",
+        "answer_index": 2,
+        "explanation": "6/8."
+      },
+      {
+        "id": "aim-w4-6",
+        "answer_index": 3,
+        "explanation": "20 pairs."
+      }
+    ],
+    "AI_ML_EDGE-q05": [
+      {
+        "id": "aim-w5-1",
+        "answer_index": 0,
+        "explanation": "0.38."
+      },
+      {
+        "id": "aim-w5-2",
+        "answer_index": 1,
+        "explanation": "No peeking."
+      },
+      {
+        "id": "aim-w5-3",
+        "answer_index": 2,
+        "explanation": "Regularize."
+      },
+      {
+        "id": "aim-w5-4",
+        "answer_index": 3,
+        "explanation": "Leakage."
+      },
+      {
+        "id": "aim-w5-5",
+        "answer_index": 0,
+        "explanation": "Val."
+      },
+      {
+        "id": "aim-w5-6",
+        "answer_index": 1,
+        "explanation": "Must note."
+      }
+    ],
+    "AI_ML_EDGE-q06": [
+      {
+        "id": "aim-w6-1",
+        "answer_index": 2,
+        "explanation": "11.6."
+      },
+      {
+        "id": "aim-w6-2",
+        "answer_index": 3,
+        "explanation": "Lookahead."
+      },
+      {
+        "id": "aim-w6-3",
+        "answer_index": 0,
+        "explanation": "Backward."
+      },
+      {
+        "id": "aim-w6-4",
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "aim-w6-5",
+        "answer_index": 2,
+        "explanation": "Denoise."
+      },
+      {
+        "id": "aim-w6-6",
+        "answer_index": 3,
+        "explanation": "12."
+      }
+    ],
+    "AI_ML_EDGE-q07": [
+      {
+        "id": "aim-w7-1",
+        "answer_index": 0,
+        "explanation": "ReLU."
+      },
+      {
+        "id": "aim-w7-2",
+        "answer_index": 1,
+        "explanation": "Sigmoid."
+      },
+      {
+        "id": "aim-w7-3",
+        "answer_index": 2,
+        "explanation": "No."
+      },
+      {
+        "id": "aim-w7-4",
+        "answer_index": 3,
+        "explanation": "1e-3."
+      },
+      {
+        "id": "aim-w7-5",
+        "answer_index": 0,
+        "explanation": "Two feats."
+      },
+      {
+        "id": "aim-w7-6",
+        "answer_index": 1,
+        "explanation": "Audit."
+      }
+    ],
+    "AI_ML_EDGE-q08": [
+      {
+        "id": "aim-w8-1",
+        "answer_index": 2,
+        "explanation": "Below."
+      },
+      {
+        "id": "aim-w8-2",
+        "answer_index": 3,
+        "explanation": "Refuse."
+      },
+      {
+        "id": "aim-w8-3",
+        "answer_index": 0,
+        "explanation": "Pin."
+      },
+      {
+        "id": "aim-w8-4",
+        "answer_index": 1,
+        "explanation": "1/0/1."
+      },
+      {
+        "id": "aim-w8-5",
+        "answer_index": 2,
+        "explanation": "Apply model."
+      },
+      {
+        "id": "aim-w8-6",
+        "answer_index": 3,
+        "explanation": "Digest."
+      }
+    ],
+    "AI_ML_EDGE-q09": [
+      {
+        "id": "aim-w9-1",
+        "answer_index": 0,
+        "explanation": "4*1000."
+      },
+      {
+        "id": "aim-w9-2",
+        "answer_index": 1,
+        "explanation": "1/4."
+      },
+      {
+        "id": "aim-w9-3",
+        "answer_index": 2,
+        "explanation": "15ms."
+      },
+      {
+        "id": "aim-w9-4",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "aim-w9-5",
+        "answer_index": 0,
+        "explanation": "Pending."
+      },
+      {
+        "id": "aim-w9-6",
+        "answer_index": 1,
+        "explanation": "Tradeoff."
+      }
+    ],
+    "AI_ML_EDGE-q10": [
+      {
+        "id": "aim-w10-1",
+        "answer_index": 2,
+        "explanation": "Runbooks."
+      },
+      {
+        "id": "aim-w10-2",
+        "answer_index": 3,
+        "explanation": "false."
+      },
+      {
+        "id": "aim-w10-3",
+        "answer_index": 0,
+        "explanation": "Redact."
+      },
+      {
+        "id": "aim-w10-4",
+        "answer_index": 1,
+        "explanation": "Staffing."
+      },
+      {
+        "id": "aim-w10-5",
+        "answer_index": 2,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "aim-w10-6",
+        "answer_index": 3,
+        "explanation": "R12,R19."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "aim01",
+      "answer_index": 0,
+      "explanation": "600*0.75=450."
+    },
+    {
+      "id": "aim02",
+      "answer_index": 1,
+      "explanation": "Leakage."
+    },
+    {
+      "id": "aim03",
+      "answer_index": 2,
+      "explanation": "25/35\u22480.714."
+    },
+    {
+      "id": "aim04",
+      "answer_index": 3,
+      "explanation": "FPR 0.08."
+    },
+    {
+      "id": "aim05",
+      "answer_index": 0,
+      "explanation": "Gap."
+    },
+    {
+      "id": "aim06",
+      "answer_index": 1,
+      "explanation": "mean(6,8,10)=8."
+    },
+    {
+      "id": "aim07",
+      "answer_index": 2,
+      "explanation": "Above."
+    },
+    {
+      "id": "aim08",
+      "answer_index": 3,
+      "explanation": "Refuse."
+    },
+    {
+      "id": "aim09",
+      "answer_index": 0,
+      "explanation": "2000."
+    },
+    {
+      "id": "aim10",
+      "answer_index": 1,
+      "explanation": "false."
+    },
+    {
+      "id": "aim11",
+      "answer_index": 2,
+      "explanation": "Redact."
+    },
+    {
+      "id": "aim12",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "aim13",
+      "answer_index": 0,
+      "explanation": "3."
+    },
+    {
+      "id": "aim14",
+      "answer_index": 1,
+      "explanation": "Time."
+    },
+    {
+      "id": "aim15",
+      "answer_index": 2,
+      "explanation": "Staffing."
+    },
+    {
+      "id": "aim16",
+      "answer_index": 3,
+      "explanation": "No fill."
+    },
+    {
+      "id": "aim17",
+      "answer_index": 0,
+      "explanation": "Identity."
+    },
+    {
+      "id": "aim18",
+      "answer_index": 1,
+      "explanation": "Unsupervised."
+    },
+    {
+      "id": "aim19",
+      "answer_index": 2,
+      "explanation": "Count."
+    },
+    {
+      "id": "aim20",
+      "answer_index": 3,
+      "explanation": "Incomplete."
+    }
+  ],
+  "final": [
+    {
+      "id": "aif01",
+      "answer_index": 1,
+      "explanation": "90."
+    },
+    {
+      "id": "aif02",
+      "answer_index": 2,
+      "explanation": "18/24=0.75."
+    },
+    {
+      "id": "aif03",
+      "answer_index": 3,
+      "explanation": "0.8."
+    },
+    {
+      "id": "aif04",
+      "answer_index": 0,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "aif05",
+      "answer_index": 1,
+      "explanation": "0."
+    },
+    {
+      "id": "aif06",
+      "answer_index": 2,
+      "explanation": "0/1/1."
+    },
+    {
+      "id": "aif07",
+      "answer_index": 3,
+      "explanation": "0.25."
+    },
+    {
+      "id": "aif08",
+      "answer_index": 0,
+      "explanation": "Gate."
+    },
+    {
+      "id": "aif09",
+      "answer_index": 1,
+      "explanation": "Harm."
+    },
+    {
+      "id": "aif10",
+      "answer_index": 2,
+      "explanation": "Fails."
+    },
+    {
+      "id": "aif11",
+      "answer_index": 3,
+      "explanation": "Leak."
+    },
+    {
+      "id": "aif12",
+      "answer_index": 0,
+      "explanation": "Threshold."
+    },
+    {
+      "id": "aif13",
+      "answer_index": 1,
+      "explanation": "Match."
+    },
+    {
+      "id": "aif14",
+      "answer_index": 2,
+      "explanation": "true."
+    },
+    {
+      "id": "aif15",
+      "answer_index": 3,
+      "explanation": "Fails."
+    },
+    {
+      "id": "aif16",
+      "answer_index": 0,
+      "explanation": "Units."
+    },
+    {
+      "id": "aif17",
+      "answer_index": 1,
+      "explanation": "Peeking."
+    },
+    {
+      "id": "aif18",
+      "answer_index": 2,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "aif19",
+      "answer_index": 3,
+      "explanation": "Time feat."
+    },
+    {
+      "id": "aif20",
+      "answer_index": 0,
+      "explanation": "Artifacts."
+    },
+    {
+      "id": "aif21",
+      "answer_index": 1,
+      "explanation": "Disclose."
+    },
+    {
+      "id": "aif22",
+      "answer_index": 2,
+      "explanation": "FPR."
+    },
+    {
+      "id": "aif23",
+      "answer_index": 3,
+      "explanation": "Policy."
+    },
+    {
+      "id": "aif24",
+      "answer_index": 0,
+      "explanation": "Rejected."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "CLOUD_DEVOPS",
+  "lesson_ids": [
+    "CLOUD_DEVOPS-w01",
+    "CLOUD_DEVOPS-w02",
+    "CLOUD_DEVOPS-w03",
+    "CLOUD_DEVOPS-w04",
+    "CLOUD_DEVOPS-w05",
+    "CLOUD_DEVOPS-w06",
+    "CLOUD_DEVOPS-w07",
+    "CLOUD_DEVOPS-w08",
+    "CLOUD_DEVOPS-w09",
+    "CLOUD_DEVOPS-w10"
+  ],
+  "labs": [
+    "lab_linux_perms",
+    "lab_git_state",
+    "lab_dockerfile_lint",
+    "lab_cicd_gate",
+    "lab_cloud_cost",
+    "lab_iam_secrets",
+    "lab_slo_budget",
+    "lab_deploy_rollback_cloud",
+    "lab_k8s_probes",
+    "lab_incident_runbook"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

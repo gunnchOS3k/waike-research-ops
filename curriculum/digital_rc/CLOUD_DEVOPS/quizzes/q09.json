@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "cd-w9-1",
+      "kind": "mcq",
+      "stem": "readiness path fixture?",
+      "choices": [
+        "/admin",
+        "/delete",
+        "/readyz",
+        "/PASS"
+      ]
+    },
+    {
+      "id": "cd-w9-2",
+      "kind": "mcq",
+      "stem": "replicas=20 without requests?",
+      "choices": [
+        "probe_ok",
+        "Required",
+        "Tableau",
+        "Fails sanity"
+      ]
+    },
+    {
+      "id": "cd-w9-3",
+      "kind": "mcq",
+      "stem": "CKA granted by this week?",
+      "choices": [
+        "No \u2014 fundamentals only",
+        "Yes",
+        "Automatic",
+        "If PASS"
+      ]
+    },
+    {
+      "id": "cd-w9-4",
+      "kind": "mcq",
+      "stem": "liveness path?",
+      "choices": [
+        "/root",
+        "/healthz",
+        "/latest",
+        "/ssh"
+      ]
+    },
+    {
+      "id": "cd-w9-5",
+      "kind": "mcq",
+      "stem": "cpu request fixture?",
+      "choices": [
+        "64 CPU",
+        "0",
+        "100m",
+        "unlimited"
+      ]
+    },
+    {
+      "id": "cd-w9-6",
+      "kind": "mcq",
+      "stem": "Probes purpose?",
+      "choices": [
+        "Decorate YAML",
+        "Train ML",
+        "Pie",
+        "Gate traffic / restart policy honestly"
+      ]
+    }
+  ]
+}

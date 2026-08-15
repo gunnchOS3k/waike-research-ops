@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "dv-w5-1",
+      "kind": "mcq",
+      "stem": "zone on x is?",
+      "choices": [
+        "quantitative",
+        "nominal",
+        "temporal only",
+        "biometric"
+      ]
+    },
+    {
+      "id": "dv-w5-2",
+      "kind": "mcq",
+      "stem": "median_wait on y is?",
+      "choices": [
+        "nominal",
+        "password",
+        "quantitative",
+        "FK"
+      ]
+    },
+    {
+      "id": "dv-w5-3",
+      "kind": "mcq",
+      "stem": "Pie of ticket_ids?",
+      "choices": [
+        "Best practice",
+        "Required",
+        "SQL",
+        "Invalid encoding for this KPI"
+      ]
+    },
+    {
+      "id": "dv-w5-4",
+      "kind": "mcq",
+      "stem": "3D extrusion adds?",
+      "choices": [
+        "Chartjunk risk",
+        "Causal insight",
+        "F1",
+        "IAM"
+      ]
+    },
+    {
+      "id": "dv-w5-5",
+      "kind": "mcq",
+      "stem": "Preferred mark for zone comparison?",
+      "choices": [
+        "word cloud",
+        "bar",
+        "globe",
+        "radar of SSNs"
+      ]
+    },
+    {
+      "id": "dv-w5-6",
+      "kind": "mcq",
+      "stem": "Lab requires invalid_rejected?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "2"
+      ]
+    }
+  ]
+}

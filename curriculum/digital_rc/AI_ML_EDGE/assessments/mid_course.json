@@ -1,0 +1,225 @@
+{
+  "assessment_id": "AI_ML_EDGE-mid",
+  "items": [
+    {
+      "id": "aim01",
+      "kind": "mcq",
+      "stem": "EdgeForge holds 600 new rows and keeps a 25% time-ordered tail for validation. train_n?",
+      "choices": [
+        "450",
+        "150",
+        "600",
+        "75"
+      ]
+    },
+    {
+      "id": "aim02",
+      "kind": "mcq",
+      "stem": "A teammate adds people_count to features while the busy label is people_count\u22654. Verdict?",
+      "choices": [
+        "Clever feature",
+        "Label leakage \u2014 remove it",
+        "Required for F1",
+        "Only OK on GPU"
+      ]
+    },
+    {
+      "id": "aim03",
+      "kind": "mcq",
+      "stem": "Confusion on a night fold: TP=25 FP=5 FN=10. Recall?",
+      "choices": [
+        "0.80",
+        "0.50",
+        "0.714",
+        "2.5"
+      ]
+    },
+    {
+      "id": "aim04",
+      "kind": "mcq",
+      "stem": "Board asks for an operating point with FPR\u22640.10. Which pair is eligible?",
+      "choices": [
+        "TPR=0.9 FPR=0.20",
+        "TPR=0.95 FPR=0.15",
+        "TPR=0.6 FPR=0.12",
+        "TPR=0.7 FPR=0.08"
+      ]
+    },
+    {
+      "id": "aim05",
+      "kind": "mcq",
+      "stem": "train_acc=0.97 val_acc=0.70. gap and action?",
+      "choices": [
+        "0.27 \u2014 document mitigation",
+        "0.00 \u2014 ship",
+        "1.67 \u2014 retrain forever",
+        "0.70 \u2014 ignore train"
+      ]
+    },
+    {
+      "id": "aim06",
+      "kind": "mcq",
+      "stem": "Trailing window w=3 on [4,6,8,10] at last index causal mean?",
+      "choices": [
+        "10",
+        "8",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "id": "aim07",
+      "kind": "mcq",
+      "stem": "Sigmoid output 0.82 with deploy threshold 0.55 yields label?",
+      "choices": [
+        "0",
+        "null",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "aim08",
+      "kind": "mcq",
+      "stem": "Model card digest mismatches the file on disk. Next step?",
+      "choices": [
+        "Score anyway",
+        "Delete val",
+        "Shuffle",
+        "Refuse scoring"
+      ]
+    },
+    {
+      "id": "aim09",
+      "kind": "mcq",
+      "stem": "2000 fp32 params \u2192 int8 bytes if 1 byte/param?",
+      "choices": [
+        "2000",
+        "8000",
+        "500",
+        "4"
+      ]
+    },
+    {
+      "id": "aim10",
+      "kind": "mcq",
+      "stem": "Latency profile 18ms vs SLA 15ms. budget_ok?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "PHYSICAL_DONE"
+      ]
+    },
+    {
+      "id": "aim11",
+      "kind": "mcq",
+      "stem": "RAG chunk shows phone 555-0100. Display policy?",
+      "choices": [
+        "Show raw",
+        "Call the number",
+        "Redact before display",
+        "Embed as feature"
+      ]
+    },
+    {
+      "id": "aim12",
+      "kind": "mcq",
+      "stem": "biometric_claim on civic occupancy model?",
+      "choices": [
+        "Must be true",
+        "Optional admin true",
+        "Required for F1",
+        "Must be false"
+      ]
+    },
+    {
+      "id": "aim13",
+      "kind": "mcq",
+      "stem": "Manhattan from (10,10,10) to (10,10,13)?",
+      "choices": [
+        "3",
+        "0",
+        "30",
+        "13"
+      ]
+    },
+    {
+      "id": "aim14",
+      "kind": "mcq",
+      "stem": "Why time-order holdout on occupancy?",
+      "choices": [
+        "GPUs prefer it",
+        "Autocorrelation / cleaning cycles",
+        "SQL requires it",
+        "Random law"
+      ]
+    },
+    {
+      "id": "aim15",
+      "kind": "mcq",
+      "stem": "False quiet alarm primarily risks?",
+      "choices": [
+        "Overclocking USB",
+        "DNS failure",
+        "Understaffing the desk",
+        "Pie charts"
+      ]
+    },
+    {
+      "id": "aim16",
+      "kind": "mcq",
+      "stem": "NO_AI week on metrics math means?",
+      "choices": [
+        "No computers",
+        "No CSV",
+        "No lab",
+        "No generative fill of the arithmetic"
+      ]
+    },
+    {
+      "id": "aim17",
+      "kind": "mcq",
+      "stem": "Pinned inference digest is mainly for?",
+      "choices": [
+        "Supply-chain identity",
+        "Wallpaper",
+        "Faster Wi-Fi",
+        "Granting MLA"
+      ]
+    },
+    {
+      "id": "aim18",
+      "kind": "mcq",
+      "stem": "k=2 clustering without labels is?",
+      "choices": [
+        "Supervised",
+        "Unsupervised",
+        "Reinforcement",
+        "DNS"
+      ]
+    },
+    {
+      "id": "aim19",
+      "kind": "mcq",
+      "stem": "people_count column type on EF CSV?",
+      "choices": [
+        "face embedding",
+        "password",
+        "integer count",
+        "SSN"
+      ]
+    },
+    {
+      "id": "aim20",
+      "kind": "mcq",
+      "stem": "Portfolio without lab JSON?",
+      "choices": [
+        "OK if slides pretty",
+        "Grants cert",
+        "Replaces digest",
+        "Incomplete for EdgeForge"
+      ]
+    }
+  ]
+}

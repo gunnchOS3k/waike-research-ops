@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CLOUD_DEVOPS-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "cd-w2-1",
+      "kind": "mcq",
+      "stem": "ahead=2 means?",
+      "choices": [
+        "2 commits not in main",
+        "2 behind remote",
+        "2 conflicts always",
+        "2 tags"
+      ]
+    },
+    {
+      "id": "cd-w2-2",
+      "kind": "mcq",
+      "stem": "force-push main?",
+      "choices": [
+        "Required",
+        "Forbidden in ForgeCloud ethic",
+        "Silent OK",
+        "Only Fridays"
+      ]
+    },
+    {
+      "id": "cd-w2-3",
+      "kind": "mcq",
+      "stem": "Conflict file fixture?",
+      "choices": [
+        "README.md only",
+        "random.bin",
+        "services/api/health.py",
+        "PASS"
+      ]
+    },
+    {
+      "id": "cd-w2-4",
+      "kind": "mcq",
+      "stem": "behind=0 means?",
+      "choices": [
+        "Need rebase from main first",
+        "Detached HEAD",
+        "Shallow clone",
+        "Not behind main"
+      ]
+    },
+    {
+      "id": "cd-w2-5",
+      "kind": "mcq",
+      "stem": "Git purpose this week?",
+      "choices": [
+        "Recoverable history for rollback",
+        "Decorate dashboards",
+        "Train models",
+        "Pie charts"
+      ]
+    },
+    {
+      "id": "cd-w2-6",
+      "kind": "mcq",
+      "stem": "Merge plan must?",
+      "choices": [
+        "Delete .git",
+        "Avoid force-push main",
+        "Skip conflicts",
+        "Print PASS"
+      ]
+    }
+  ]
+}

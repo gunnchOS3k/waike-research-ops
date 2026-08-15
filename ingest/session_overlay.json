@@ -106,5 +106,59 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "AI_ML_EDGE-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "AI_ML_EDGE-offline",
+      "labs": [
+        "lab_data_split",
+        "lab_supervised_metrics"
+      ],
+      "catalog_course_id": "AI_ML_EDGE",
+      "title": "AI/ML + Edge AI \u2014 EdgeForge Bench"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "DATA_VIZ_BI-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "DATA_VIZ_BI-offline",
+      "labs": [
+        "lab_clean_nulls",
+        "lab_sql_join_counts"
+      ],
+      "catalog_course_id": "DATA_VIZ_BI",
+      "title": "Data Visualization + BI \u2014 Civic Metrics Studio"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "CLOUD_DEVOPS-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "CLOUD_DEVOPS-offline",
+      "labs": [
+        "lab_linux_perms",
+        "lab_git_state"
+      ],
+      "catalog_course_id": "CLOUD_DEVOPS",
+      "title": "Cloud + DevOps \u2014 ForgeCloud Platform"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

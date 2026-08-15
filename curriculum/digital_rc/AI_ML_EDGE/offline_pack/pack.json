@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "AI_ML_EDGE",
+  "lesson_ids": [
+    "AI_ML_EDGE-w01",
+    "AI_ML_EDGE-w02",
+    "AI_ML_EDGE-w03",
+    "AI_ML_EDGE-w04",
+    "AI_ML_EDGE-w05",
+    "AI_ML_EDGE-w06",
+    "AI_ML_EDGE-w07",
+    "AI_ML_EDGE-w08",
+    "AI_ML_EDGE-w09",
+    "AI_ML_EDGE-w10"
+  ],
+  "labs": [
+    "lab_data_split",
+    "lab_supervised_metrics",
+    "lab_cluster_assign",
+    "lab_eval_thresholds",
+    "lab_overfit_gap",
+    "lab_feature_windows",
+    "lab_tiny_mlp_forward",
+    "lab_score_model",
+    "lab_quantize_budget",
+    "lab_rag_redact"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

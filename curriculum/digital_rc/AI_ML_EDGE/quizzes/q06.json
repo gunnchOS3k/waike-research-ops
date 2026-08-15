@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "aim-w6-1",
+      "kind": "mcq",
+      "stem": "Trailing mean at index 4 for [10,12,11,13,12,...] w=5?",
+      "choices": [
+        "12.0",
+        "10.0",
+        "11.6",
+        "13.0"
+      ]
+    },
+    {
+      "id": "aim-w6-2",
+      "kind": "mcq",
+      "stem": "Future leakage means?",
+      "choices": [
+        "Using t-1",
+        "Using zone_id",
+        "Using pathlib",
+        "Using t+1 to predict t"
+      ]
+    },
+    {
+      "id": "aim-w6-3",
+      "kind": "mcq",
+      "stem": "Causal window looks?",
+      "choices": [
+        "Only backward (and present)",
+        "Only forward",
+        "Only shuffled",
+        "Only GPU"
+      ]
+    },
+    {
+      "id": "aim-w6-4",
+      "kind": "mcq",
+      "stem": "uses_future must be?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "2"
+      ]
+    },
+    {
+      "id": "aim-w6-5",
+      "kind": "mcq",
+      "stem": "Why window RSSI?",
+      "choices": [
+        "Decorate plots",
+        "Grant A+",
+        "Reduce noise before classify",
+        "Skip labels"
+      ]
+    },
+    {
+      "id": "aim-w6-6",
+      "kind": "mcq",
+      "stem": "Fixture series length?",
+      "choices": [
+        "5",
+        "96",
+        "480",
+        "12"
+      ]
+    }
+  ]
+}

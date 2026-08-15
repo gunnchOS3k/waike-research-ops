@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_VIZ_BI-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "dv-w9-1",
+      "kind": "mcq",
+      "stem": "desk_pressure for 6,12,3?",
+      "choices": [
+        "2",
+        "24",
+        "72",
+        "0.5"
+      ]
+    },
+    {
+      "id": "dv-w9-2",
+      "kind": "mcq",
+      "stem": "Adjective storm without number?",
+      "choices": [
+        "Good story",
+        "Required",
+        "Fails Studio storytelling",
+        "SQL"
+      ]
+    },
+    {
+      "id": "dv-w9-3",
+      "kind": "mcq",
+      "stem": "KPI formula must be?",
+      "choices": [
+        "Secret",
+        "Random",
+        "Biometric",
+        "Auditable"
+      ]
+    },
+    {
+      "id": "dv-w9-4",
+      "kind": "mcq",
+      "stem": "staff_on_duty in denominator?",
+      "choices": [
+        "Scales pressure by coverage",
+        "Ignored",
+        "Always 1",
+        "Password"
+      ]
+    },
+    {
+      "id": "dv-w9-5",
+      "kind": "mcq",
+      "stem": "Board sentence includes?",
+      "choices": [
+        "Only vibes",
+        "Change + number + action",
+        "Only logo",
+        "Face IDs"
+      ]
+    },
+    {
+      "id": "dv-w9-6",
+      "kind": "mcq",
+      "stem": "Fabricating staff_on_duty?",
+      "choices": [
+        "OK",
+        "Extra credit",
+        "Fails honesty",
+        "F1 boost"
+      ]
+    }
+  ]
+}

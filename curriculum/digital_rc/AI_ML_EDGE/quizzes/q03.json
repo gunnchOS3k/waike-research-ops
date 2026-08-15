@@ -1,0 +1,72 @@
+{
+  "quiz_id": "AI_ML_EDGE-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "aim-w3-1",
+      "kind": "mcq",
+      "stem": "Manhattan distance for (55,2000,2) to A=(40,3000,0)?",
+      "choices": [
+        "1017",
+        "15",
+        "818",
+        "0"
+      ]
+    },
+    {
+      "id": "aim-w3-2",
+      "kind": "mcq",
+      "stem": "Unsupervised means?",
+      "choices": [
+        "No GPU",
+        "No ground-truth labels for the clustering objective",
+        "No quiz",
+        "No CSV"
+      ]
+    },
+    {
+      "id": "aim-w3-3",
+      "kind": "mcq",
+      "stem": "Cluster 2 'is hackers' is?",
+      "choices": [
+        "Required claim",
+        "Always true if k=2",
+        "Forbidden narrative without evidence",
+        "A PMI rule"
+      ]
+    },
+    {
+      "id": "aim-w3-4",
+      "kind": "mcq",
+      "stem": "k choice on EdgeForge is?",
+      "choices": [
+        "Always 10",
+        "Fixed by USB",
+        "Random",
+        "A defended modeling choice"
+      ]
+    },
+    {
+      "id": "aim-w3-5",
+      "kind": "mcq",
+      "stem": "If you swap labels without recomputing distances?",
+      "choices": [
+        "total_distance check fails",
+        "Lab still passes",
+        "F1 improves",
+        "Accuracy=1"
+      ]
+    },
+    {
+      "id": "aim-w3-6",
+      "kind": "mcq",
+      "stem": "Fault vector features this week?",
+      "choices": [
+        "face_id",
+        "temp_c, fan_rpm, usb_reset_count",
+        "SSN",
+        "password"
+      ]
+    }
+  ]
+}
