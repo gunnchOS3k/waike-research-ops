@@ -1071,28 +1071,39 @@ from waike_course_ready.batch005.labs import (
     lab_attribution_cite, lab_feedback_rubric, lab_meeting_minutes,
     lab_ai_disclosure_modes, lab_accessibility_comm, lab_pd_capstone,
 )
+from waike_course_ready.batch006.labs import (
+    LABS_006, COURSE_LABS_006, LAB_SPECS_006, REFERENCE_006, WRONG_006,
+    lab_schema_ingest, lab_sql_select, lab_normalize_transform, lab_kpi_calc,
+    lab_dashboard_chart, lab_join_integrity, lab_pii_redact_etl,
+    lab_debug_pipeline, lab_freshness_sla, lab_dashboard_capstone,
+)
 
 LABS.update(LABS_002)
 LABS.update(LABS_003)
 LABS.update(LABS_004)
 LABS.update(LABS_005)
+LABS.update(LABS_006)
 # Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
 COURSE_LABS.update(COURSE_LABS_003)
 COURSE_LABS.update(COURSE_LABS_004)
 COURSE_LABS.update(COURSE_LABS_005)
+COURSE_LABS.update(COURSE_LABS_006)
 LAB_SPECS.update(LAB_SPECS_002)
 LAB_SPECS.update(LAB_SPECS_003)
 LAB_SPECS.update(LAB_SPECS_004)
 LAB_SPECS.update(LAB_SPECS_005)
+LAB_SPECS.update(LAB_SPECS_006)
 REFERENCE.update(REFERENCE_002)
 REFERENCE.update(REFERENCE_003)
 REFERENCE.update(REFERENCE_004)
 REFERENCE.update(REFERENCE_005)
+REFERENCE.update(REFERENCE_006)
 WRONG.update(WRONG_002)
 WRONG.update(WRONG_003)
 WRONG.update(WRONG_004)
 WRONG.update(WRONG_005)
+WRONG.update(WRONG_006)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
@@ -1131,6 +1142,7 @@ def run_all() -> dict[str, Any]:
     no_sub_003 = run_lab("lab_data_split")
     no_sub_004 = run_lab("lab_fspl_budget")
     no_sub_005 = run_lab("lab_consent_disclosure")
+    no_sub_006 = run_lab("lab_schema_ingest")
     print_pass_raises = False
     try:
         _fail_if_print_pass("PASS")
@@ -1161,6 +1173,11 @@ def run_all() -> dict[str, Any]:
         print_pass_on_submit_005 = False
     except AssertionError:
         print_pass_on_submit_005 = True
+    try:
+        run_lab("lab_schema_ingest", submission="PASS")
+        print_pass_on_submit_006 = False
+    except AssertionError:
+        print_pass_on_submit_006 = True
 
     negatives = []
     # #43 package negatives (must remain)
@@ -1224,6 +1241,24 @@ def run_all() -> dict[str, Any]:
         "color_only_signals": True, "large_print_available": False,
     })
     negatives.append({"lab_id": "lab_accessibility_comm_negative", "ok": (not bad_a11y_pd.ok)})
+    # Stream-B batch006 DATA_DASHBOARDS package negatives
+    bad_schema = lab_schema_ingest({
+        "table": "vibes", "columns": ["vibe_score"], "row_count": 0,
+        "source_sha256": "x", "invented_columns": True,
+    })
+    negatives.append({"lab_id": "lab_schema_ingest_negative", "ok": (not bad_schema.ok)})
+    bad_kpi = lab_kpi_calc({
+        "avg_headcount": -1, "p95_headcount": -2, "n": 0, "fabricated_lift": True,
+    })
+    negatives.append({"lab_id": "lab_kpi_calc_negative", "ok": (not bad_kpi.ok)})
+    bad_pii = lab_pii_redact_etl({
+        "redactions": 0, "pii_remaining": True, "biometric_claim": True, "fields_redacted": [],
+    })
+    negatives.append({"lab_id": "lab_pii_redact_etl_negative", "ok": (not bad_pii.ok)})
+    bad_fresh = lab_freshness_sla({
+        "lag_minutes": 900, "sla_minutes": 60, "sla_ok": True, "claim_live_when_stale": True,
+    })
+    negatives.append({"lab_id": "lab_freshness_sla_negative", "ok": (not bad_fresh.ok)})
 
     datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
     ttl_ok = _ttl1_from_parsed_header(datapath)
@@ -1238,10 +1273,12 @@ def run_all() -> dict[str, Any]:
     print_ok = (
         print_pass_raises and print_pass_on_submit_43 and print_pass_on_submit_002
         and print_pass_on_submit_003 and print_pass_on_submit_004 and print_pass_on_submit_005
+        and print_pass_on_submit_006
     )
     no_sub_ok = (
         (not no_sub_43["ok"]) and (not no_sub_002["ok"])
         and (not no_sub_003["ok"]) and (not no_sub_004["ok"]) and (not no_sub_005["ok"])
+        and (not no_sub_006["ok"])
     )
     ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_ok and no_sub_ok and ttl_ok and computed_honesty
     return {
@@ -1253,6 +1290,7 @@ def run_all() -> dict[str, Any]:
         "batch_003_lab_count": sum(len(COURSE_LABS[c]) for c in ("AI_ML_EDGE", "DATA_VIZ_BI", "CLOUD_DEVOPS") if c in COURSE_LABS),
         "batch_004_lab_count": sum(len(COURSE_LABS[c]) for c in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") if c in COURSE_LABS),
         "batch_005_lab_count": sum(len(COURSE_LABS[c]) for c in ("COMM_PD_ETHICS",) if c in COURSE_LABS),
+        "batch_006_lab_count": sum(len(COURSE_LABS[c]) for c in ("DATA_DASHBOARDS",) if c in COURSE_LABS),
         "results": results,
         "negatives_must_fail_and_did": negatives,
         "empty_submission_fails": empty_ok,

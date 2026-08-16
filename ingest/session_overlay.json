@@ -232,5 +232,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "DATA_DASHBOARDS-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "DATA_DASHBOARDS-offline",
+      "labs": [
+        "lab_schema_ingest",
+        "lab_sql_select"
+      ],
+      "catalog_course_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards \u2014 Pier Ledger Bench"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

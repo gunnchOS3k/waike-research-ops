@@ -1,0 +1,16 @@
+{
+  "practical_id": "DATA_DASHBOARDS-practical",
+  "labs": [
+    "lab_schema_ingest",
+    "lab_sql_select",
+    "lab_normalize_transform",
+    "lab_kpi_calc",
+    "lab_dashboard_chart",
+    "lab_join_integrity",
+    "lab_pii_redact_etl",
+    "lab_debug_pipeline",
+    "lab_freshness_sla",
+    "lab_dashboard_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

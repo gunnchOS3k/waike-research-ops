@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 120,
+  "lab_count": 130,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -147,6 +147,18 @@
       "lab_ai_disclosure_modes",
       "lab_accessibility_comm",
       "lab_pd_capstone"
+    ],
+    "DATA_DASHBOARDS": [
+      "lab_schema_ingest",
+      "lab_sql_select",
+      "lab_normalize_transform",
+      "lab_kpi_calc",
+      "lab_dashboard_chart",
+      "lab_join_integrity",
+      "lab_pii_redact_etl",
+      "lab_debug_pipeline",
+      "lab_freshness_sla",
+      "lab_dashboard_capstone"
     ]
   },
   "batch_001_lab_count": 20,
@@ -154,6 +166,7 @@
   "batch_003_lab_count": 30,
   "batch_004_lab_count": 30,
   "batch_005_lab_count": 10,
+  "batch_006_lab_count": 10,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1700,7 +1713,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
+          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
         },
         {
           "name": "cause",
@@ -2558,7 +2571,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
+          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -4494,6 +4507,451 @@
       ],
       "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
       "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_schema_ingest",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "table",
+          "ok": true,
+          "detail": "table=pier_visits"
+        },
+        {
+          "name": "columns_list",
+          "ok": true,
+          "detail": "\u22654 columns"
+        },
+        {
+          "name": "required_cols",
+          "ok": true,
+          "detail": "core cols"
+        },
+        {
+          "name": "row_count",
+          "ok": true,
+          "detail": "row_count \u22653"
+        },
+        {
+          "name": "sha",
+          "ok": true,
+          "detail": "source_sha256"
+        },
+        {
+          "name": "no_invented",
+          "ok": true,
+          "detail": "no invented columns"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_sql_select",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "has_where",
+          "ok": true,
+          "detail": "WHERE present"
+        },
+        {
+          "name": "threshold",
+          "ok": true,
+          "detail": "threshold=40"
+        },
+        {
+          "name": "filter_count",
+          "ok": true,
+          "detail": "filter_count \u22651"
+        },
+        {
+          "name": "sql_depth",
+          "ok": true,
+          "detail": "sql_text \u226524"
+        },
+        {
+          "name": "no_select_star_only",
+          "ok": true,
+          "detail": "not SELECT * alone"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_normalize_transform",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "map",
+          "ok": true,
+          "detail": "normalize_map \u22652"
+        },
+        {
+          "name": "rows_in",
+          "ok": true,
+          "detail": "rows_in \u22653"
+        },
+        {
+          "name": "rows_out",
+          "ok": true,
+          "detail": "rows_out \u2264 rows_in"
+        },
+        {
+          "name": "null_rate",
+          "ok": true,
+          "detail": "null_rate 0..1"
+        },
+        {
+          "name": "negatives_dropped",
+          "ok": true,
+          "detail": "negatives_dropped"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_kpi_calc",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "n",
+          "ok": true,
+          "detail": "n \u22653"
+        },
+        {
+          "name": "avg",
+          "ok": true,
+          "detail": "avg_headcount > 0"
+        },
+        {
+          "name": "p95",
+          "ok": true,
+          "detail": "p95 \u2265 avg"
+        },
+        {
+          "name": "no_fabricated",
+          "ok": true,
+          "detail": "fabricated_lift false"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_dashboard_chart",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "chart_type",
+          "ok": true,
+          "detail": "allowed type"
+        },
+        {
+          "name": "x_field",
+          "ok": true,
+          "detail": "x_field"
+        },
+        {
+          "name": "y_field",
+          "ok": true,
+          "detail": "y_field"
+        },
+        {
+          "name": "title",
+          "ok": true,
+          "detail": "title \u22658"
+        },
+        {
+          "name": "alt_text",
+          "ok": true,
+          "detail": "alt_text \u226512"
+        },
+        {
+          "name": "no_color_only",
+          "ok": true,
+          "detail": "color_only false"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_join_integrity",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "join_key",
+          "ok": true,
+          "detail": "join_key=pier_bay"
+        },
+        {
+          "name": "join_type",
+          "ok": true,
+          "detail": "inner|left"
+        },
+        {
+          "name": "orphan_count",
+          "ok": true,
+          "detail": "orphan_count=0 on fixture"
+        },
+        {
+          "name": "no_dup_meta",
+          "ok": true,
+          "detail": "no duplicate meta"
+        },
+        {
+          "name": "rows_joined",
+          "ok": true,
+          "detail": "rows_joined \u22653"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_pii_redact_etl",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "redactions",
+          "ok": true,
+          "detail": "redactions \u22651"
+        },
+        {
+          "name": "pii_gone",
+          "ok": true,
+          "detail": "pii_remaining false"
+        },
+        {
+          "name": "no_bio",
+          "ok": true,
+          "detail": "biometric_claim false"
+        },
+        {
+          "name": "fields",
+          "ok": true,
+          "detail": "fields_redacted"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_debug_pipeline",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "stage",
+          "ok": true,
+          "detail": "known stage"
+        },
+        {
+          "name": "error_code",
+          "ok": true,
+          "detail": "error_code"
+        },
+        {
+          "name": "fix_action",
+          "ok": true,
+          "detail": "fix_action \u226512"
+        },
+        {
+          "name": "rerun_ok",
+          "ok": true,
+          "detail": "stage_rerun_ok"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_freshness_sla",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "sla_minutes",
+          "ok": true,
+          "detail": "sla_minutes=60"
+        },
+        {
+          "name": "lag",
+          "ok": true,
+          "detail": "lag_minutes \u22650"
+        },
+        {
+          "name": "sla_ok_honest",
+          "ok": true,
+          "detail": "sla_ok matches lag\u2264sla"
+        },
+        {
+          "name": "no_stale_live",
+          "ok": true,
+          "detail": "no stale live claim"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_dashboard_capstone",
+      "course_id": "DATA_DASHBOARDS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "labs_passed \u22656"
+        },
+        {
+          "name": "schema_ok",
+          "ok": true,
+          "detail": "schema_ok true"
+        },
+        {
+          "name": "kpi_ok",
+          "ok": true,
+          "detail": "kpi_ok true"
+        },
+        {
+          "name": "chart_ok",
+          "ok": true,
+          "detail": "chart_ok true"
+        },
+        {
+          "name": "pii_ok",
+          "ok": true,
+          "detail": "pii_ok true"
+        },
+        {
+          "name": "freshness_ok",
+          "ok": true,
+          "detail": "freshness_ok true"
+        },
+        {
+          "name": "no_key_leak",
+          "ok": true,
+          "detail": "no_key_leak true"
+        },
+        {
+          "name": "no_fabricated",
+          "ok": true,
+          "detail": "fabricated_lift false"
+        }
+      ],
+      "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -4559,6 +5017,22 @@
     },
     {
       "lab_id": "lab_accessibility_comm_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_schema_ingest_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_kpi_calc_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_pii_redact_etl_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_freshness_sla_negative",
       "ok": true
     }
   ],
@@ -5048,6 +5522,46 @@
     {
       "lab_id": "lab_pd_capstone",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_schema_ingest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sql_select",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_normalize_transform",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_kpi_calc",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_chart",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_join_integrity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pii_redact_etl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_debug_pipeline",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_freshness_sla",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_capstone",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -5529,6 +6043,46 @@
     },
     {
       "lab_id": "lab_pd_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_schema_ingest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sql_select",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_normalize_transform",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_kpi_calc",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_chart",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_join_integrity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pii_redact_etl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_debug_pipeline",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_freshness_sla",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dashboard_capstone",
       "failed_as_required": true
     }
   ],

@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "junior_data_ops",
+    "dashboard_analyst_adjacent",
+    "etl_apprentice"
+  ],
+  "nice_categories": [
+    "analyze",
+    "operate_and_maintain"
+  ],
+  "certs_aligned_not_granted": [
+    "SQL associate domain labels (PUBLIC_REFERENCE_ONLY)",
+    "Data+ domain labels (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

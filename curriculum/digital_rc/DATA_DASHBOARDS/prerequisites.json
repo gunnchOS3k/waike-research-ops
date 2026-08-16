@@ -1,0 +1,10 @@
+{
+  "course_id": "DATA_DASHBOARDS",
+  "required": [
+    "Comfort with tables/CSV",
+    "Willingness to compute KPIs by hand when asked"
+  ],
+  "recommended": [
+    "DATA_VIZ_BI visual literacy (complementary, not a substitute)"
+  ]
+}

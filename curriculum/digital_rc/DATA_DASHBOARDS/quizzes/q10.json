@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "dl-w10-1",
+      "kind": "mcq",
+      "stem": "labs_passed minimum?",
+      "choices": [
+        "0",
+        "1",
+        "6",
+        "100"
+      ]
+    },
+    {
+      "id": "dl-w10-2",
+      "kind": "mcq",
+      "stem": "fabricated_lift must be?",
+      "choices": [
+        "true",
+        "null",
+        "PASS",
+        "false"
+      ]
+    },
+    {
+      "id": "dl-w10-3",
+      "kind": "mcq",
+      "stem": "no_key_leak must be?",
+      "choices": [
+        "true",
+        "false",
+        "optional",
+        "ignored"
+      ]
+    },
+    {
+      "id": "dl-w10-4",
+      "kind": "mcq",
+      "stem": "REAL_*_E6 this packet?",
+      "choices": [
+        "true",
+        "false",
+        "maybe",
+        "granted"
+      ]
+    },
+    {
+      "id": "dl-w10-5",
+      "kind": "mcq",
+      "stem": "Blend into historical 12C?",
+      "choices": [
+        "Always",
+        "Average",
+        "Never",
+        "Silent"
+      ]
+    },
+    {
+      "id": "dl-w10-6",
+      "kind": "mcq",
+      "stem": "Capstone without pii_ok?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Merge",
+        "Fail"
+      ]
+    }
+  ]
+}

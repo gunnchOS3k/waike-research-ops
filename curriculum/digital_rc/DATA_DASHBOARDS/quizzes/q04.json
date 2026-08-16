@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "dl-w4-1",
+      "kind": "mcq",
+      "stem": "avg_headcount is?",
+      "choices": [
+        "max only",
+        "CEO guess",
+        "sum/n",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dl-w4-2",
+      "kind": "mcq",
+      "stem": "fabricated_lift true should?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Cert",
+        "Fail"
+      ]
+    },
+    {
+      "id": "dl-w4-3",
+      "kind": "mcq",
+      "stem": "NO_AI week means?",
+      "choices": [
+        "Human arithmetic",
+        "Key dump",
+        "Auto merge",
+        "Unity"
+      ]
+    },
+    {
+      "id": "dl-w4-4",
+      "kind": "mcq",
+      "stem": "Green tile without math?",
+      "choices": [
+        "PASS",
+        "Incomplete",
+        "RC",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w4-5",
+      "kind": "mcq",
+      "stem": "p95 needs?",
+      "choices": [
+        "Random emoji",
+        "SSN",
+        "Sorted values",
+        "Key"
+      ]
+    },
+    {
+      "id": "dl-w4-6",
+      "kind": "mcq",
+      "stem": "Citywide +40% without denom?",
+      "choices": [
+        "Pass",
+        "Grant",
+        "Ignore",
+        "Fail honesty"
+      ]
+    }
+  ]
+}

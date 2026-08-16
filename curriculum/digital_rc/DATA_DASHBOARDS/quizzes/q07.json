@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "dl-w7-1",
+      "kind": "mcq",
+      "stem": "Raw email in public dash?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Required",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-w7-2",
+      "kind": "mcq",
+      "stem": "pii_remaining true should?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "Skip"
+      ]
+    },
+    {
+      "id": "dl-w7-3",
+      "kind": "mcq",
+      "stem": "biometric_claim true?",
+      "choices": [
+        "Pass",
+        "Ignore",
+        "Fail",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w7-4",
+      "kind": "mcq",
+      "stem": "redactions count \u2265?",
+      "choices": [
+        "0",
+        "-1",
+        "9999 required",
+        "1"
+      ]
+    },
+    {
+      "id": "dl-w7-5",
+      "kind": "mcq",
+      "stem": "Learner modes get keys?",
+      "choices": [
+        "Never",
+        "Always",
+        "Sometimes",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w7-6",
+      "kind": "mcq",
+      "stem": "Phone left in warehouse?",
+      "choices": [
+        "Passes",
+        "Fails lab",
+        "Grants",
+        "Unity"
+      ]
+    }
+  ]
+}

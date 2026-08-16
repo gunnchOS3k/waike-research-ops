@@ -1,0 +1,259 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "DATA_DASHBOARDS",
+  "title": "Data, Databases, and Dashboards \u2014 Pier Ledger Bench",
+  "track_ids": [
+    "DATA_DASHBOARDS"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Ten Pier Ledger Bench weeks: schema ingest \u2192 SQL select \u2192 normalize/transform \u2192 KPI calc \u2192 dashboard chart \u2192 join integrity \u2192 PII ETL redaction \u2192 pipeline debug \u2192 freshness SLA \u2192 dashboard capstone. Distinct from DATA_VIZ_BI visual rhetoric. Instructor keys stay out of learner modes.",
+  "lesson_excerpt": "Pier Ledger Bench opens with schema discipline, not a dashboard mock. Ticket DL-3101 drops a pier foot-traffic CSV into the desk warehouse. Before any chart, you declare table pier_visits with columns visit_id, pier_bay, ts_utc, headcount, and source_file \u2014 and you refuse invented columns like vibe_score that were never in the file.\n\nIngest means: count rows loaded, hash the source bytes, and reco",
+  "worked_example": "Declare pier_visits columns; load DL-3101 CSV; report row_count and sha256 of source.",
+  "assignment": "Submit lab_schema_ingest JSON for DL-3101. No invented columns.",
+  "lab_hint": "lab_schema_ingest",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Schema first \u2014 ingest without inventing columns",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w01",
+        "title": "Schema first \u2014 ingest without inventing columns",
+        "body_md": "Pier Ledger Bench opens with schema discipline, not a dashboard mock. Ticket DL-3101 drops a pier foot-traffic CSV into the desk warehouse. Before any chart, you declare table pier_visits with columns visit_id, pier_bay, ts_utc, headcount, and source_file \u2014 and you refuse invented columns like vibe_score that were never in the file.\n\nIngest means: count rows loaded, hash the source bytes, and record schema_version. Empty submissions fail. A submission that claims row_count without matching the fixture fails. DATA_VIZ_BI may later style the tile; this course owns the table contract first.\n\nPier Ledger Bench ticket DL-3101 refuses screenshot-only evidence: the grader reads JSON fields from `lab_schema_ingest`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.",
+        "worked_example": "Declare pier_visits columns; load DL-3101 CSV; report row_count and sha256 of source."
+      },
+      "lab_id": "lab_schema_ingest"
+    },
+    {
+      "week": 2,
+      "title": "SQL SELECT with pier filters \u2014 honest predicates",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w02",
+        "title": "SQL SELECT with pier filters \u2014 honest predicates",
+        "body_md": "Ticket DL-3204 asks which bays exceeded headcount 40 after 18:00 UTC. You write a SELECT with WHERE pier_bay IN (...) AND headcount > 40 AND ts_utc >= '18:00', not a SELECT * dump pasted into Slack.\n\nThe lab grades predicate honesty: filter_count must equal the fixture answer, and sql_text must include WHERE. Omitting filters while claiming 'all busy bays' fails. This is database literacy for operators, not BI storytelling.\n\nPier Ledger Bench ticket DL-3204 refuses screenshot-only evidence: the grader reads JSON fields from `lab_sql_select`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3204 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.",
+        "worked_example": "SELECT pier_bay, headcount FROM pier_visits WHERE headcount>40 AND hour>=18; filter_count matches fixture."
+      },
+      "lab_id": "lab_sql_select"
+    },
+    {
+      "week": 3,
+      "title": "Normalize and transform \u2014 clean before KPI",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w03",
+        "title": "Normalize and transform \u2014 clean before KPI",
+        "body_md": "DL-3307 receives messy bay labels ('Bay-A', 'bay_a', 'BAY A'). Transform maps them to canonical bay_a before any KPI. Null headcounts drop; negatives drop. null_rate and negatives_dropped must be honest.\n\nDATA_VIZ_BI might hide messy labels behind a legend; Pier Ledger refuses to chart until normalize_map covers every alias. Fabricating null_rate=0 while fixture shows nulls fails.\n\nPier Ledger Bench ticket DL-3307 refuses screenshot-only evidence: the grader reads JSON fields from `lab_normalize_transform`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3307 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3307 refuses screenshot-only evidence: the grader reads JSON fields from `lab_normalize_transform`.",
+        "worked_example": "Map three aliases\u2192bay_a; drop null/negative headcounts; report null_rate and rows_out."
+      },
+      "lab_id": "lab_normalize_transform"
+    },
+    {
+      "week": 4,
+      "title": "KPI calc \u2014 arithmetic before tiles (NO_AI)",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w04",
+        "title": "KPI calc \u2014 arithmetic before tiles (NO_AI)",
+        "body_md": "NO_AI authorship week. DL-3409 computes avg_headcount and p95_headcount from the cleaned table. You show the arithmetic: sum/n and the 95th percentile index \u2014 not a screenshot of a green tile.\n\nfabricated_lift must be false. Claiming 'citywide +40% engagement' without a denominator fails. Commercial standardized magic KPI engines are out of scope.\n\nPier Ledger Bench ticket DL-3409 refuses screenshot-only evidence: the grader reads JSON fields from `lab_kpi_calc`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3409 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3409 refuses screenshot-only evidence: the grader reads JSON fields from `lab_kpi_calc`.",
+        "worked_example": "avg=sum/n; p95 from sorted list; fabricated_lift=false."
+      },
+      "lab_id": "lab_kpi_calc"
+    },
+    {
+      "week": 5,
+      "title": "Dashboard chart contract \u2014 labeled axes",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w05",
+        "title": "Dashboard chart contract \u2014 labeled axes",
+        "body_md": "DL-3511 ships a chart contract JSON: chart_type, x_field, y_field, title, and alt_text \u226512 chars. Color-only encodings without labels fail. This is still Pier Ledger \u2014 the chart must cite the KPI fields from week 4, not invent a second dataset.\n\nDistinct from DATA_VIZ_BI deep visual rhetoric: here the bar is machine-verifiable fields + a11y alt_text.\n\nPier Ledger Bench ticket DL-3511 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_chart`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3511 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3511 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_chart`.",
+        "worked_example": "bar chart; x=pier_bay; y=avg_headcount; alt_text describes bars; color_only=false."
+      },
+      "lab_id": "lab_dashboard_chart"
+    },
+    {
+      "week": 6,
+      "title": "Join integrity \u2014 keys that match",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w06",
+        "title": "Join integrity \u2014 keys that match",
+        "body_md": "DL-3615 joins pier_visits to pier_meta on pier_bay. Orphan visit rows and duplicate meta keys fail. join_type must be inner or left with orphan_count reported honestly.\n\nA dashboard that silently drops orphans without saying so fails the honesty gate.\n\nPier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3615 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "inner join on pier_bay; orphan_count=0 on fixture; duplicate_meta_keys=false."
+      },
+      "lab_id": "lab_join_integrity"
+    },
+    {
+      "week": 7,
+      "title": "ETL PII redaction \u2014 desks keep secrets out",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w07",
+        "title": "ETL PII redaction \u2014 desks keep secrets out",
+        "body_md": "DL-3718 ETL must redact email and phone from volunteer notes before warehouse load. redactions \u22651, pii_remaining false, biometric_claim false. Shipping raw emails into a public dashboard fails.\n\nInstructor keys are unrelated and stay out of learner modes.\n\nPier Ledger Bench ticket DL-3718 refuses screenshot-only evidence: the grader reads JSON fields from `lab_pii_redact_etl`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3718 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3718 refuses screenshot-only evidence: the grader reads JSON fields from `lab_pii_redact_etl`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "Redact emails/phones; redactionsions\u22651; pii_remaining=false; biometric_claim=false."
+      },
+      "lab_id": "lab_pii_redact_etl"
+    },
+    {
+      "week": 8,
+      "title": "Debug the pipeline \u2014 name the broken stage",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w08",
+        "title": "Debug the pipeline \u2014 name the broken stage",
+        "body_md": "DL-3822 pipeline failed: ingest\u2192transform\u2192calc\u2192chart. Students name failed_stage, error_code, and fix_action. Guessing 'AI broke it' without a stage fails. Re-run evidence must show stage_rerun_ok true after the fix.\n\nThis is real tool-debug literacy for data operators.\n\nPier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3822 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.",
+        "worked_example": "failed_stage=transform; error_code=NULL_HEADCOUNT; fix_action=drop nulls; stage_rerun_ok=true."
+      },
+      "lab_id": "lab_debug_pipeline"
+    },
+    {
+      "week": 9,
+      "title": "Freshness SLA \u2014 stale tiles fail (NO_AI)",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w09",
+        "title": "Freshness SLA \u2014 stale tiles fail (NO_AI)",
+        "body_md": "NO_AI walkthrough. DL-3925 enforces freshness_minutes \u2264 60 for pier dashboards. Stale data with sla_ok true fails. lag_minutes must be computed from watermark vs now_fixture.\n\nOperators refuse to publish a 'live' tile when lag exceeds SLA.\n\nPier Ledger Bench ticket DL-3925 refuses screenshot-only evidence: the grader reads JSON fields from `lab_freshness_sla`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3925 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3925 refuses screenshot-only evidence: the grader reads JSON fields from `lab_freshness_sla`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "lag_minutes=12; sla_minutes=60; sla_ok=true; claim_live_when_stale=false."
+      },
+      "lab_id": "lab_freshness_sla"
+    },
+    {
+      "week": 10,
+      "title": "Dashboard capstone \u2014 ship the ledger path",
+      "lesson": {
+        "lesson_id": "DATA_DASHBOARDS-w10",
+        "title": "Dashboard capstone \u2014 ship the ledger path",
+        "body_md": "DL-3A30 closes Pier Ledger Bench: labs_passed \u22656, schema_ok, kpi_ok, chart_ok, pii_ok, freshness_ok true, fabricated_lift false, no_key_leak true. Portfolio claim boundary stays digital-fixture only; REAL_STUDENT_E6 / REAL_TEACHER_E6 remain false.\n\nDo not blend this course into historical mastery score families.\n\nPier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3A30 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.",
+        "worked_example": "labs_passed\u22656; honesty flags true; fabricated_lift false; no_key_leak true."
+      },
+      "lab_id": "lab_dashboard_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_schema_ingest",
+    "lab_sql_select",
+    "lab_normalize_transform",
+    "lab_kpi_calc",
+    "lab_dashboard_chart",
+    "lab_join_integrity",
+    "lab_pii_redact_etl",
+    "lab_debug_pipeline",
+    "lab_freshness_sla",
+    "lab_dashboard_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "DATA_DASHBOARDS-lab",
+    "DATA_DASHBOARDS-assignment",
+    "DATA_DASHBOARDS-quiz",
+    "DATA_DASHBOARDS-mid",
+    "DATA_DASHBOARDS-final-knowledge",
+    "DATA_DASHBOARDS-practical",
+    "DATA_DASHBOARDS-project",
+    "DATA_DASHBOARDS-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "junior_data_ops",
+      "dashboard_analyst_adjacent",
+      "etl_apprentice"
+    ],
+    "nice_categories": [
+      "analyze",
+      "operate_and_maintain"
+    ],
+    "certs_aligned_not_granted": [
+      "SQL associate domain labels (PUBLIC_REFERENCE_ONLY)",
+      "Data+ domain labels (PUBLIC_REFERENCE_ONLY)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/data_dashboards_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  },
+  "COURSE_DIGITAL_RC": true,
+  "packet": "STREAM-B-PKT-003",
+  "lift_status": "CLOSED_DIGITAL_RC",
+  "claim_boundary": "Full Pier Ledger Bench DIGITAL_RC package earned under provenance/template/lab/consumption bars. Distinct from DATA_VIZ_BI. Not student/teacher E6. Instructor key material stays out of learner ingest."
+}

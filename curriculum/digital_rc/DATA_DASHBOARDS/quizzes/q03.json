@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "dl-w3-1",
+      "kind": "mcq",
+      "stem": "Bay-A and bay_a should?",
+      "choices": [
+        "Canonicalize",
+        "Stay split",
+        "Delete DB",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "dl-w3-2",
+      "kind": "mcq",
+      "stem": "Negative headcount should?",
+      "choices": [
+        "Keep",
+        "Drop",
+        "Chart louder",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-w3-3",
+      "kind": "mcq",
+      "stem": "Fake null_rate=0 with nulls?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w3-4",
+      "kind": "mcq",
+      "stem": "Transform before KPI?",
+      "choices": [
+        "Optional vibe",
+        "Forbidden",
+        "Unity",
+        "Required"
+      ]
+    },
+    {
+      "id": "dl-w3-5",
+      "kind": "mcq",
+      "stem": "normalize_map covers?",
+      "choices": [
+        "All aliases",
+        "One alias",
+        "None",
+        "Passwords"
+      ]
+    },
+    {
+      "id": "dl-w3-6",
+      "kind": "mcq",
+      "stem": "rows_out vs rows_in when drops?",
+      "choices": [
+        "Always equal",
+        "rows_out < rows_in",
+        "Always larger",
+        "NaN"
+      ]
+    }
+  ]
+}

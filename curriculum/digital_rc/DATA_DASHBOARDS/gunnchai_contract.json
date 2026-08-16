@@ -1,0 +1,18 @@
+{
+  "schema": "waike.course_gunnchai_contract.v1",
+  "course_id": "DATA_DASHBOARDS",
+  "discovery": "filesystem_scan curriculum/digital_rc/DATA_DASHBOARDS",
+  "learner_modes_may_read_instructor_keys": false,
+  "socratic_default": true,
+  "educator_hitl_required": true,
+  "tools": [
+    "ingest",
+    "transform",
+    "calc",
+    "chart",
+    "debug"
+  ],
+  "transfer_checks": [
+    "new pier CSV without stem clone"
+  ]
+}

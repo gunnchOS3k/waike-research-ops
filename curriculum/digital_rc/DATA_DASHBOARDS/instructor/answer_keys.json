@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "DATA_DASHBOARDS",
+  "quizzes": {
+    "DATA_DASHBOARDS-q01": [
+      {
+        "id": "dl-w1-1",
+        "answer_index": 0,
+        "explanation": "schema first"
+      },
+      {
+        "id": "dl-w1-2",
+        "answer_index": 1,
+        "explanation": "fail invented columns"
+      },
+      {
+        "id": "dl-w1-3",
+        "answer_index": 2,
+        "explanation": "count+hash"
+      },
+      {
+        "id": "dl-w1-4",
+        "answer_index": 3,
+        "explanation": "schema/ETL"
+      },
+      {
+        "id": "dl-w1-5",
+        "answer_index": 0,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "dl-w1-6",
+        "answer_index": 1,
+        "explanation": "print-PASS forbidden"
+      }
+    ],
+    "DATA_DASHBOARDS-q02": [
+      {
+        "id": "dl-w2-1",
+        "answer_index": 2,
+        "explanation": "WHERE"
+      },
+      {
+        "id": "dl-w2-2",
+        "answer_index": 3,
+        "explanation": "fail mismatch"
+      },
+      {
+        "id": "dl-w2-3",
+        "answer_index": 0,
+        "explanation": "incomplete"
+      },
+      {
+        "id": "dl-w2-4",
+        "answer_index": 1,
+        "explanation": ">40"
+      },
+      {
+        "id": "dl-w2-5",
+        "answer_index": 2,
+        "explanation": "WHERE"
+      },
+      {
+        "id": "dl-w2-6",
+        "answer_index": 3,
+        "explanation": "fails"
+      }
+    ],
+    "DATA_DASHBOARDS-q03": [
+      {
+        "id": "dl-w3-1",
+        "answer_index": 0,
+        "explanation": "canonicalize"
+      },
+      {
+        "id": "dl-w3-2",
+        "answer_index": 1,
+        "explanation": "drop"
+      },
+      {
+        "id": "dl-w3-3",
+        "answer_index": 2,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w3-4",
+        "answer_index": 3,
+        "explanation": "required"
+      },
+      {
+        "id": "dl-w3-5",
+        "answer_index": 0,
+        "explanation": "all"
+      },
+      {
+        "id": "dl-w3-6",
+        "answer_index": 1,
+        "explanation": "smaller"
+      }
+    ],
+    "DATA_DASHBOARDS-q04": [
+      {
+        "id": "dl-w4-1",
+        "answer_index": 2,
+        "explanation": "sum/n"
+      },
+      {
+        "id": "dl-w4-2",
+        "answer_index": 3,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w4-3",
+        "answer_index": 0,
+        "explanation": "human"
+      },
+      {
+        "id": "dl-w4-4",
+        "answer_index": 1,
+        "explanation": "incomplete"
+      },
+      {
+        "id": "dl-w4-5",
+        "answer_index": 2,
+        "explanation": "sorted"
+      },
+      {
+        "id": "dl-w4-6",
+        "answer_index": 3,
+        "explanation": "fail"
+      }
+    ],
+    "DATA_DASHBOARDS-q05": [
+      {
+        "id": "dl-w5-1",
+        "answer_index": 0,
+        "explanation": "fields"
+      },
+      {
+        "id": "dl-w5-2",
+        "answer_index": 1,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w5-3",
+        "answer_index": 2,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w5-4",
+        "answer_index": 3,
+        "explanation": "KPI"
+      },
+      {
+        "id": "dl-w5-5",
+        "answer_index": 0,
+        "explanation": "JSON"
+      },
+      {
+        "id": "dl-w5-6",
+        "answer_index": 1,
+        "explanation": "distinct"
+      }
+    ],
+    "DATA_DASHBOARDS-q06": [
+      {
+        "id": "dl-w6-1",
+        "answer_index": 2,
+        "explanation": "pier_bay"
+      },
+      {
+        "id": "dl-w6-2",
+        "answer_index": 3,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w6-3",
+        "answer_index": 0,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w6-4",
+        "answer_index": 1,
+        "explanation": "reported"
+      },
+      {
+        "id": "dl-w6-5",
+        "answer_index": 2,
+        "explanation": "non-match"
+      },
+      {
+        "id": "dl-w6-6",
+        "answer_index": 3,
+        "explanation": "fail"
+      }
+    ],
+    "DATA_DASHBOARDS-q07": [
+      {
+        "id": "dl-w7-1",
+        "answer_index": 0,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w7-2",
+        "answer_index": 1,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w7-3",
+        "answer_index": 2,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w7-4",
+        "answer_index": 3,
+        "explanation": "\u22651"
+      },
+      {
+        "id": "dl-w7-5",
+        "answer_index": 0,
+        "explanation": "never"
+      },
+      {
+        "id": "dl-w7-6",
+        "answer_index": 1,
+        "explanation": "fails"
+      }
+    ],
+    "DATA_DASHBOARDS-q08": [
+      {
+        "id": "dl-w8-1",
+        "answer_index": 2,
+        "explanation": "stage"
+      },
+      {
+        "id": "dl-w8-2",
+        "answer_index": 3,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w8-3",
+        "answer_index": 0,
+        "explanation": "true"
+      },
+      {
+        "id": "dl-w8-4",
+        "answer_index": 1,
+        "explanation": "ingest"
+      },
+      {
+        "id": "dl-w8-5",
+        "answer_index": 2,
+        "explanation": "named"
+      },
+      {
+        "id": "dl-w8-6",
+        "answer_index": 3,
+        "explanation": "\u226512"
+      }
+    ],
+    "DATA_DASHBOARDS-q09": [
+      {
+        "id": "dl-w9-1",
+        "answer_index": 0,
+        "explanation": "60"
+      },
+      {
+        "id": "dl-w9-2",
+        "answer_index": 1,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-w9-3",
+        "answer_index": 2,
+        "explanation": "false"
+      },
+      {
+        "id": "dl-w9-4",
+        "answer_index": 3,
+        "explanation": "watermark"
+      },
+      {
+        "id": "dl-w9-5",
+        "answer_index": 0,
+        "explanation": "human"
+      },
+      {
+        "id": "dl-w9-6",
+        "answer_index": 1,
+        "explanation": "forbidden"
+      }
+    ],
+    "DATA_DASHBOARDS-q10": [
+      {
+        "id": "dl-w10-1",
+        "answer_index": 2,
+        "explanation": "\u22656"
+      },
+      {
+        "id": "dl-w10-2",
+        "answer_index": 3,
+        "explanation": "false"
+      },
+      {
+        "id": "dl-w10-3",
+        "answer_index": 0,
+        "explanation": "true"
+      },
+      {
+        "id": "dl-w10-4",
+        "answer_index": 1,
+        "explanation": "false"
+      },
+      {
+        "id": "dl-w10-5",
+        "answer_index": 2,
+        "explanation": "never"
+      },
+      {
+        "id": "dl-w10-6",
+        "answer_index": 3,
+        "explanation": "fail"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "dl-mid-01",
+      "answer_index": 0,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-02",
+      "answer_index": 1,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-03",
+      "answer_index": 2,
+      "explanation": "report orphans"
+    },
+    {
+      "id": "dl-mid-04",
+      "answer_index": 3,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-05",
+      "answer_index": 0,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-06",
+      "answer_index": 1,
+      "explanation": "false"
+    },
+    {
+      "id": "dl-mid-07",
+      "answer_index": 2,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-08",
+      "answer_index": 3,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-09",
+      "answer_index": 0,
+      "explanation": "fails"
+    },
+    {
+      "id": "dl-mid-10",
+      "answer_index": 1,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-11",
+      "answer_index": 2,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-12",
+      "answer_index": 3,
+      "explanation": "\u226512"
+    },
+    {
+      "id": "dl-mid-13",
+      "answer_index": 0,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-14",
+      "answer_index": 1,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-15",
+      "answer_index": 2,
+      "explanation": "fail"
+    },
+    {
+      "id": "dl-mid-16",
+      "answer_index": 3,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-17",
+      "answer_index": 0,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-18",
+      "answer_index": 1,
+      "explanation": "distinct"
+    },
+    {
+      "id": "dl-mid-19",
+      "answer_index": 2,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    },
+    {
+      "id": "dl-mid-20",
+      "answer_index": 3,
+      "explanation": "Machine-verifiable fields beat screenshots."
+    }
+  ],
+  "final": [
+    {
+      "id": "dl-fin-01",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-02",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-03",
+      "answer_index": 3,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-04",
+      "answer_index": 0,
+      "explanation": "fail"
+    },
+    {
+      "id": "dl-fin-05",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-06",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-07",
+      "answer_index": 3,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-08",
+      "answer_index": 0,
+      "explanation": "fail"
+    },
+    {
+      "id": "dl-fin-09",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-10",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-11",
+      "answer_index": 3,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-12",
+      "answer_index": 0,
+      "explanation": "false"
+    },
+    {
+      "id": "dl-fin-13",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-14",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-15",
+      "answer_index": 3,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-16",
+      "answer_index": 0,
+      "explanation": "raises"
+    },
+    {
+      "id": "dl-fin-17",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-18",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-19",
+      "answer_index": 3,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-20",
+      "answer_index": 0,
+      "explanation": "boundary"
+    },
+    {
+      "id": "dl-fin-21",
+      "answer_index": 1,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-22",
+      "answer_index": 2,
+      "explanation": "Full honesty bar; unblended families."
+    },
+    {
+      "id": "dl-fin-23",
+      "answer_index": 3,
+      "explanation": "never"
+    },
+    {
+      "id": "dl-fin-24",
+      "answer_index": 0,
+      "explanation": "Full honesty bar; unblended families."
+    }
+  ]
+}

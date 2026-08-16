@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "DATA_DASHBOARDS",
+  "lesson_ids": [
+    "DATA_DASHBOARDS-w01",
+    "DATA_DASHBOARDS-w02",
+    "DATA_DASHBOARDS-w03",
+    "DATA_DASHBOARDS-w04",
+    "DATA_DASHBOARDS-w05",
+    "DATA_DASHBOARDS-w06",
+    "DATA_DASHBOARDS-w07",
+    "DATA_DASHBOARDS-w08",
+    "DATA_DASHBOARDS-w09",
+    "DATA_DASHBOARDS-w10"
+  ],
+  "labs": [
+    "lab_schema_ingest",
+    "lab_sql_select",
+    "lab_normalize_transform",
+    "lab_kpi_calc",
+    "lab_dashboard_chart",
+    "lab_join_integrity",
+    "lab_pii_redact_etl",
+    "lab_debug_pipeline",
+    "lab_freshness_sla",
+    "lab_dashboard_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

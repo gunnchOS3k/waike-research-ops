@@ -1,0 +1,269 @@
+{
+  "assessment_id": "DATA_DASHBOARDS-final",
+  "items": [
+    {
+      "id": "dl-fin-01",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 1: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-02",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 2: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-03",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 3: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift"
+      ]
+    },
+    {
+      "id": "dl-fin-04",
+      "kind": "mcq",
+      "stem": "Freshness sla_ok when lag>SLA?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Bonus",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-fin-05",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 5: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-06",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 6: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-07",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 7: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift"
+      ]
+    },
+    {
+      "id": "dl-fin-08",
+      "kind": "mcq",
+      "stem": "Pipeline debug without failed_stage?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Auto",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-fin-09",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 9: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-10",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 10: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-11",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 11: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift"
+      ]
+    },
+    {
+      "id": "dl-fin-12",
+      "kind": "mcq",
+      "stem": "REAL_STUDENT_E6 after this packet?",
+      "choices": [
+        "false",
+        "true",
+        "granted",
+        "maybe"
+      ]
+    },
+    {
+      "id": "dl-fin-13",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 13: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-14",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 14: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-15",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 15: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift"
+      ]
+    },
+    {
+      "id": "dl-fin-16",
+      "kind": "mcq",
+      "stem": "Print-PASS submission?",
+      "choices": [
+        "Raises",
+        "Passes",
+        "Grants",
+        "Merges"
+      ]
+    },
+    {
+      "id": "dl-fin-17",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 17: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-18",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 18: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-19",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 19: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift"
+      ]
+    },
+    {
+      "id": "dl-fin-20",
+      "kind": "mcq",
+      "stem": "Commercial AI dashboard magic claim?",
+      "choices": [
+        "Out of boundary",
+        "Required",
+        "PASS",
+        "RC"
+      ]
+    },
+    {
+      "id": "dl-fin-21",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 21: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-22",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 22: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "Learner modes may open instructor keys"
+      ]
+    },
+    {
+      "id": "dl-fin-23",
+      "kind": "mcq",
+      "stem": "Cursor merge policy?",
+      "choices": [
+        "Always merges",
+        "Force push",
+        "Skip hooks",
+        "Never merges"
+      ]
+    },
+    {
+      "id": "dl-fin-24",
+      "kind": "mcq",
+      "stem": "Pier Ledger final item 24: capstone/path check for dashboard operators \u2014 correct stance?",
+      "choices": [
+        "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+        "One green screenshot closes DIGITAL_RC",
+        "Blend scores into historical 12C mastery",
+        "Learner modes may open instructor keys"
+      ]
+    }
+  ]
+}

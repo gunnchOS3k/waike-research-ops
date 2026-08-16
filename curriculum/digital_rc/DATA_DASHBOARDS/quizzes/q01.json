@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "dl-w1-1",
+      "kind": "mcq",
+      "stem": "DL-3101 must declare which before charts?",
+      "choices": [
+        "schema columns",
+        "vibe_score",
+        "CEO quote",
+        "palette"
+      ]
+    },
+    {
+      "id": "dl-w1-2",
+      "kind": "mcq",
+      "stem": "Invented column vibe_score should?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "Skip"
+      ]
+    },
+    {
+      "id": "dl-w1-3",
+      "kind": "mcq",
+      "stem": "Ingest honesty requires?",
+      "choices": [
+        "screenshot only",
+        "emoji",
+        "row_count+hash",
+        "mute"
+      ]
+    },
+    {
+      "id": "dl-w1-4",
+      "kind": "mcq",
+      "stem": "DATA_DASHBOARDS vs DATA_VIZ_BI this week?",
+      "choices": [
+        "only color theory",
+        "Unity",
+        "radio",
+        "schema/ETL"
+      ]
+    },
+    {
+      "id": "dl-w1-5",
+      "kind": "mcq",
+      "stem": "Empty {} for schema lab?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Partial",
+        "Auto"
+      ]
+    },
+    {
+      "id": "dl-w1-6",
+      "kind": "mcq",
+      "stem": "PASS-only file should?",
+      "choices": [
+        "Pass",
+        "Raise",
+        "Ignore",
+        "Merge"
+      ]
+    }
+  ]
+}

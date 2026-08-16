@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "dl-w8-1",
+      "kind": "mcq",
+      "stem": "Debug requires?",
+      "choices": [
+        "Only vibes",
+        "Unity",
+        "failed_stage",
+        "Key dump"
+      ]
+    },
+    {
+      "id": "dl-w8-2",
+      "kind": "mcq",
+      "stem": "AI broke it without stage?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Cert",
+        "Fail"
+      ]
+    },
+    {
+      "id": "dl-w8-3",
+      "kind": "mcq",
+      "stem": "stage_rerun_ok after fix?",
+      "choices": [
+        "true",
+        "false always",
+        "null",
+        "PASS"
+      ]
+    },
+    {
+      "id": "dl-w8-4",
+      "kind": "mcq",
+      "stem": "Pipeline order starts?",
+      "choices": [
+        "chart",
+        "ingest",
+        "merge",
+        "unity"
+      ]
+    },
+    {
+      "id": "dl-w8-5",
+      "kind": "mcq",
+      "stem": "error_code should be?",
+      "choices": [
+        "Empty",
+        "Emoji",
+        "Named",
+        "SSN"
+      ]
+    },
+    {
+      "id": "dl-w8-6",
+      "kind": "mcq",
+      "stem": "fix_action length?",
+      "choices": [
+        "0",
+        "PASS",
+        "Key",
+        "\u226512 chars"
+      ]
+    }
+  ]
+}

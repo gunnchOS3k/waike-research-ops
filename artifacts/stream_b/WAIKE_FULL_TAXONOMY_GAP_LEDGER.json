@@ -1,16 +1,17 @@
 {
   "schema": "waike.full_taxonomy_gap_ledger.v1",
-  "packet": "STREAM-B-PKT-002",
-  "generated_utc": "2026-08-16T17:15:39Z",
-  "waike_tip_base": "cf30a41d25fba1fbc3a528e0a9a3d4c975bd0e98",
+  "packet": "STREAM-B-PKT-003",
+  "generated_utc": "2026-08-16T19:52:04Z",
+  "waike_tip_base": "5a3cf859376f1260f5a5614c95eb27e16552c85c",
   "tracks_live": 18,
-  "digital_rc_course_count": 13,
+  "digital_rc_course_count": 14,
   "digital_rc_courses": [
     "AI_ML_EDGE",
     "CLOUD_DEVOPS",
     "COMM_PD_ETHICS",
     "COMPUTER_NETWORKING",
     "CYBERSECURITY",
+    "DATA_DASHBOARDS",
     "DATA_VIZ_BI",
     "GAME_DEV_INTERACTIVE",
     "GENERAL_IT",
@@ -77,10 +78,10 @@
       "title": "Data, Databases, and Dashboards",
       "extension_class": "FOUNDATION",
       "academy_id": "ACADEMY_SOFTWARE",
-      "status": "BELOW_BAR",
-      "mapped_course_id": null,
-      "remaining_rank": 1,
-      "note": "Foundation track still lacking standalone COURSE_DIGITAL_RC (distinct from DATA_VIZ_BI)."
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "DATA_DASHBOARDS",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package (distinct from DATA_VIZ_BI)."
     },
     {
       "track_id": "AI_ML_EDGE",
@@ -99,7 +100,7 @@
       "academy_id": "ACADEMY_HARDWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 2,
+      "remaining_rank": 1,
       "note": "Advanced extension; not authored as COURSE_DIGITAL_RC."
     },
     {
@@ -139,7 +140,7 @@
       "academy_id": "ACADEMY_SOFTWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 4,
+      "remaining_rank": 3,
       "note": "Research apprenticeship overlay; not COURSE_DIGITAL_RC."
     },
     {
@@ -179,7 +180,7 @@
       "academy_id": "ACADEMY_HARDWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 3,
+      "remaining_rank": 2,
       "note": "Advanced product lab extension; not COURSE_DIGITAL_RC."
     },
     {
@@ -205,23 +206,13 @@
   ],
   "remaining_ranked": [
     {
-      "track_id": "DATA_DASHBOARDS",
-      "title": "Data, Databases, and Dashboards",
-      "extension_class": "FOUNDATION",
-      "academy_id": "ACADEMY_SOFTWARE",
-      "status": "BELOW_BAR",
-      "mapped_course_id": null,
-      "remaining_rank": 1,
-      "note": "Foundation track still lacking standalone COURSE_DIGITAL_RC (distinct from DATA_VIZ_BI)."
-    },
-    {
       "track_id": "EMBEDDED_PROTOTYPING",
       "title": "Embedded Systems and Device Prototyping",
       "extension_class": "ADVANCED_EXTENSION",
       "academy_id": "ACADEMY_HARDWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 2,
+      "remaining_rank": 1,
       "note": "Advanced extension; not authored as COURSE_DIGITAL_RC."
     },
     {
@@ -231,7 +222,7 @@
       "academy_id": "ACADEMY_HARDWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 3,
+      "remaining_rank": 2,
       "note": "Advanced product lab extension; not COURSE_DIGITAL_RC."
     },
     {
@@ -241,7 +232,7 @@
       "academy_id": "ACADEMY_SOFTWARE",
       "status": "BELOW_BAR",
       "mapped_course_id": null,
-      "remaining_rank": 4,
+      "remaining_rank": 3,
       "note": "Research apprenticeship overlay; not COURSE_DIGITAL_RC."
     }
   ],
@@ -257,5 +248,6 @@
     "REAL_TEACHER_E6": false,
     "HUMAN_E6": false
   },
-  "claim_boundary": "Live 18-track taxonomy discovered. 13 product-path courses hold COURSE_DIGITAL_RC including COMM_PD_ETHICS. Remaining ranked for B-PKT-003 selection only \u2014 not started."
+  "claim_boundary": "Live 18-track taxonomy discovered. 13 product-path courses hold COURSE_DIGITAL_RC including COMM_PD_ETHICS. Remaining ranked for B-PKT-003 selection only \u2014 not started.",
+  "next_for_b_pkt_004": "EMBEDDED_PROTOTYPING"
 }

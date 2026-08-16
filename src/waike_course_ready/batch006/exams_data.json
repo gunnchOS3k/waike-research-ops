@@ -1,0 +1,581 @@
+{
+  "DATA_DASHBOARDS": {
+    "offset": 4,
+    "mid": [
+      {
+        "id": "dl-mid-01",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 1: which honesty gate holds for DL-301 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-02",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 2: which honesty gate holds for DL-302 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-03",
+        "kind": "mcq",
+        "stem": "Join orphans silently dropped without orphan_count?",
+        "choices": [
+          "Fails honesty",
+          "Passes",
+          "Grants cert",
+          "Required"
+        ],
+        "answer_index": 0,
+        "explanation": "report orphans"
+      },
+      {
+        "id": "dl-mid-04",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 4: which honesty gate holds for DL-304 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-05",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 5: which honesty gate holds for DL-305 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-06",
+        "kind": "mcq",
+        "stem": "fabricated_lift on KPI lab?",
+        "choices": [
+          "Must be false",
+          "Must be true",
+          "Ignored",
+          "Key"
+        ],
+        "answer_index": 0,
+        "explanation": "false"
+      },
+      {
+        "id": "dl-mid-07",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 7: which honesty gate holds for DL-307 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-08",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 8: which honesty gate holds for DL-308 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-09",
+        "kind": "mcq",
+        "stem": "WHERE missing on busy-bay SQL?",
+        "choices": [
+          "Fails",
+          "Passes",
+          "Bonus",
+          "Unity"
+        ],
+        "answer_index": 0,
+        "explanation": "fails"
+      },
+      {
+        "id": "dl-mid-10",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 10: which honesty gate holds for DL-310 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-11",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 11: which honesty gate holds for DL-311 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-12",
+        "kind": "mcq",
+        "stem": "alt_text on chart contract?",
+        "choices": [
+          "\u226512 chars",
+          "Optional empty",
+          "SSN",
+          "PASS"
+        ],
+        "answer_index": 0,
+        "explanation": "\u226512"
+      },
+      {
+        "id": "dl-mid-13",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 13: which honesty gate holds for DL-313 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-14",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 14: which honesty gate holds for DL-314 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-15",
+        "kind": "mcq",
+        "stem": "PII remaining after ETL?",
+        "choices": [
+          "Fail",
+          "Pass",
+          "Ignore",
+          "Merge"
+        ],
+        "answer_index": 0,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-mid-16",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 16: which honesty gate holds for DL-316 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-17",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 17: which honesty gate holds for DL-317 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-18",
+        "kind": "mcq",
+        "stem": "DATA_DASHBOARDS replaces DATA_VIZ_BI?",
+        "choices": [
+          "No \u2014 distinct bars",
+          "Yes identical",
+          "Delete BI",
+          "Unity"
+        ],
+        "answer_index": 0,
+        "explanation": "distinct"
+      },
+      {
+        "id": "dl-mid-19",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 19: which honesty gate holds for DL-319 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      },
+      {
+        "id": "dl-mid-20",
+        "kind": "mcq",
+        "stem": "Pier Ledger mid item 20: which honesty gate holds for DL-320 style work?",
+        "choices": [
+          "Schema/SQL/KPI fields must match fixtures",
+          "Screenshot of green tile is enough",
+          "Invent columns freely",
+          "Ship SSN in dashboards"
+        ],
+        "answer_index": 0,
+        "explanation": "Machine-verifiable fields beat screenshots."
+      }
+    ],
+    "final": [
+      {
+        "id": "dl-fin-01",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 1: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-02",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 2: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-03",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 3: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-04",
+        "kind": "mcq",
+        "stem": "Freshness sla_ok when lag>SLA?",
+        "choices": [
+          "Fail",
+          "Pass",
+          "Bonus",
+          "Cert"
+        ],
+        "answer_index": 0,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-fin-05",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 5: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-06",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 6: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-07",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 7: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-08",
+        "kind": "mcq",
+        "stem": "Pipeline debug without failed_stage?",
+        "choices": [
+          "Fail",
+          "Pass",
+          "Auto",
+          "Merge"
+        ],
+        "answer_index": 0,
+        "explanation": "fail"
+      },
+      {
+        "id": "dl-fin-09",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 9: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-10",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 10: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-11",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 11: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-12",
+        "kind": "mcq",
+        "stem": "REAL_STUDENT_E6 after this packet?",
+        "choices": [
+          "false",
+          "true",
+          "granted",
+          "maybe"
+        ],
+        "answer_index": 0,
+        "explanation": "false"
+      },
+      {
+        "id": "dl-fin-13",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 13: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-14",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 14: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-15",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 15: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-16",
+        "kind": "mcq",
+        "stem": "Print-PASS submission?",
+        "choices": [
+          "Raises",
+          "Passes",
+          "Grants",
+          "Merges"
+        ],
+        "answer_index": 0,
+        "explanation": "raises"
+      },
+      {
+        "id": "dl-fin-17",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 17: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-18",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 18: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-19",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 19: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-20",
+        "kind": "mcq",
+        "stem": "Commercial AI dashboard magic claim?",
+        "choices": [
+          "Out of boundary",
+          "Required",
+          "PASS",
+          "RC"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      },
+      {
+        "id": "dl-fin-21",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 21: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-22",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 22: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      },
+      {
+        "id": "dl-fin-23",
+        "kind": "mcq",
+        "stem": "Cursor merge policy?",
+        "choices": [
+          "Never merges",
+          "Always merges",
+          "Force push",
+          "Skip hooks"
+        ],
+        "answer_index": 0,
+        "explanation": "never"
+      },
+      {
+        "id": "dl-fin-24",
+        "kind": "mcq",
+        "stem": "Pier Ledger final item 24: capstone/path check for dashboard operators \u2014 correct stance?",
+        "choices": [
+          "labs_passed\u22656 with schema/kpi/chart/pii/freshness honesty; no_key_leak; no fabricated lift",
+          "One green screenshot closes DIGITAL_RC",
+          "Blend scores into historical 12C mastery",
+          "Learner modes may open instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "Full honesty bar; unblended families."
+      }
+    ]
+  }
+}

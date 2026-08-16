@@ -1,0 +1,15 @@
+{
+  "course_id": "DATA_DASHBOARDS",
+  "objectives": [
+    "Declare schemas and ingest with row_count + source hash",
+    "Write SQL SELECT with honest WHERE filters",
+    "Normalize aliases and drop null/negative measures",
+    "Compute avg/p95 KPIs without fabricated lift",
+    "Author chart contracts with labeled axes and alt_text",
+    "Join tables with orphan reporting",
+    "Redact PII in ETL before warehouse load",
+    "Debug pipeline stages with named error codes",
+    "Enforce freshness SLAs without stale-live claims",
+    "Close a dashboard capstone with no_key_leak"
+  ]
+}

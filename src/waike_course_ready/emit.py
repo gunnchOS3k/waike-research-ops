@@ -159,6 +159,91 @@ def emit_course(course_id: str) -> dict[str, Any]:
         _dump(base / "ai_use_policy.json", c["ai_use_policy"])
 
     # Full DIGITAL_RC extras (guides / skill graph / misconceptions / gunnchAI contract / a11y / readings)
+    if course_id == "DATA_DASHBOARDS":
+        _dump(base / "prerequisites.json", {
+            "course_id": course_id,
+            "required": ["Comfort with tables/CSV", "Willingness to compute KPIs by hand when asked"],
+            "recommended": ["DATA_VIZ_BI visual literacy (complementary, not a substitute)"],
+        })
+        _dump(base / "learning_objectives.json", {
+            "course_id": course_id,
+            "objectives": [
+                "Declare schemas and ingest with row_count + source hash",
+                "Write SQL SELECT with honest WHERE filters",
+                "Normalize aliases and drop null/negative measures",
+                "Compute avg/p95 KPIs without fabricated lift",
+                "Author chart contracts with labeled axes and alt_text",
+                "Join tables with orphan reporting",
+                "Redact PII in ETL before warehouse load",
+                "Debug pipeline stages with named error codes",
+                "Enforce freshness SLAs without stale-live claims",
+                "Close a dashboard capstone with no_key_leak",
+            ],
+        })
+        _dump(base / "readings.json", {
+            "course_id": course_id,
+            "items": [
+                {"week": 1, "title": "Pier Ledger schema card (fixture)", "reuse_class": "ORIGINAL"},
+                {"week": 2, "title": "SQL SELECT predicate discipline (fixture)", "reuse_class": "ORIGINAL"},
+                {"week": 5, "title": "Chart a11y alt-text checklist (fixture)", "reuse_class": "ORIGINAL"},
+                {"week": 7, "title": "ETL PII redaction notes (fixture)", "reuse_class": "ORIGINAL"},
+            ],
+        })
+        _dump(base / "a11y_checklist.json", {
+            "course_id": course_id,
+            "captions": True,
+            "plain_language": True,
+            "alt_text_required": True,
+            "color_only_signals_forbidden": True,
+            "large_print_available": True,
+            "keyboard_or_text_path": True,
+        })
+        _dump(base / "skill_graph.json", {
+            "schema": "waike.course_skill_graph.v1",
+            "course_id": course_id,
+            "nodes": [{"id": f"DATA_DASHBOARDS.w{w:02d}", "week": w} for w in range(1, 11)],
+            "edges": [{"from": f"DATA_DASHBOARDS.w{w:02d}", "to": f"DATA_DASHBOARDS.w{w+1:02d}", "relation": "prerequisite"} for w in range(1, 10)],
+        })
+        _dump(base / "misconceptions.json", {
+            "course_id": course_id,
+            "items": [
+                {"id": "M1", "misconception": "Dashboards can invent columns", "remediation": "Schema first; invented_columns fail"},
+                {"id": "M2", "misconception": "SELECT * is enough for busy-bay tickets", "remediation": "Add WHERE + filter_count"},
+                {"id": "M3", "misconception": "Green tiles prove KPI math", "remediation": "Show avg/p95 fields"},
+                {"id": "M4", "misconception": "Learner tutors may load answer keys", "remediation": "Permission denied; Socratic only"},
+            ],
+        })
+        _dump(base / "remediation.json", {
+            "course_id": course_id,
+            "loops": [
+                {"on": "M1", "practice_lab": "lab_schema_ingest", "reassess": "quiz w01"},
+                {"on": "M2", "practice_lab": "lab_sql_select", "reassess": "quiz w02"},
+                {"on": "M3", "practice_lab": "lab_kpi_calc", "reassess": "quiz w04"},
+                {"on": "M4", "practice_lab": "lab_dashboard_capstone", "reassess": "quiz w10"},
+            ],
+        })
+        _dump(base / "gunnchai_contract.json", {
+            "schema": "waike.course_gunnchai_contract.v1",
+            "course_id": course_id,
+            "discovery": "filesystem_scan curriculum/digital_rc/DATA_DASHBOARDS",
+            "learner_modes_may_read_instructor_keys": False,
+            "socratic_default": True,
+            "educator_hitl_required": True,
+            "tools": ["ingest", "transform", "calc", "chart", "debug"],
+            "transfer_checks": ["new pier CSV without stem clone"],
+        })
+        _write(base / "instructor" / "accessibility_and_udl_guide.md",
+               "# Accessibility / UDL — DATA_DASHBOARDS\n\n"
+               "Text-first journals, chart alt text, large-print packets, no color-only signals.\n"
+               "Fabricated disability quotes forbidden.\n")
+        _write(base / "instructor" / "misconceptions_remediation.md",
+               "# Misconceptions + remediation — DATA_DASHBOARDS\n\n"
+               "See misconceptions.json and remediation.json. Reassess after practice lab.\n")
+        _write(base / "guides" / "learner_ai_policy.md",
+               "# Learner AI policy — DATA_DASHBOARDS\n\n"
+               "Default AI_DISCLOSED. Weeks 4 and 9 are NO_AI authorship.\n"
+               "Never request instructor keys in learner modes.\n")
+
     if course_id == "COMM_PD_ETHICS":
         _dump(base / "prerequisites.json", {
             "course_id": course_id,
@@ -302,6 +387,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "ROBOTICS_CONTROL": "curriculum/alignment/robotics_control_alignment.json",
             "GAME_DEV_INTERACTIVE": "curriculum/alignment/game_dev_interactive_alignment.json",
             "COMM_PD_ETHICS": "curriculum/alignment/comm_pd_ethics_alignment.json",
+            "DATA_DASHBOARDS": "curriculum/alignment/data_dashboards_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

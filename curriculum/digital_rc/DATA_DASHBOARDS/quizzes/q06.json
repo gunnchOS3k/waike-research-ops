@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "dl-w6-1",
+      "kind": "mcq",
+      "stem": "Join key here?",
+      "choices": [
+        "ssn",
+        "password",
+        "pier_bay",
+        "unity"
+      ]
+    },
+    {
+      "id": "dl-w6-2",
+      "kind": "mcq",
+      "stem": "Silent orphan drop?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Cert",
+        "Fail honesty"
+      ]
+    },
+    {
+      "id": "dl-w6-3",
+      "kind": "mcq",
+      "stem": "duplicate_meta_keys true?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Ignore",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w6-4",
+      "kind": "mcq",
+      "stem": "orphan_count must be?",
+      "choices": [
+        "Hidden",
+        "Reported",
+        "Negative",
+        "NaN ok"
+      ]
+    },
+    {
+      "id": "dl-w6-5",
+      "kind": "mcq",
+      "stem": "inner join drops?",
+      "choices": [
+        "All rows",
+        "Schema",
+        "Non-matching keys",
+        "Labs"
+      ]
+    },
+    {
+      "id": "dl-w6-6",
+      "kind": "mcq",
+      "stem": "Empty join submission?",
+      "choices": [
+        "Pass",
+        "Auto",
+        "Grant",
+        "Fail"
+      ]
+    }
+  ]
+}
