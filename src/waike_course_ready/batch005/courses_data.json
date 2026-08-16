@@ -1,0 +1,931 @@
+{
+  "COMM_PD_ETHICS": {
+    "course_id": "COMM_PD_ETHICS",
+    "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+    "track_ids": [
+      "COMM_PD_ETHICS"
+    ],
+    "academy_id": "ACADEMY_PROF_DEV",
+    "kinesthetic_hook": "Ten Harbor Desk Voice weeks: consent \u2192 conflict \u2192 professional tickets \u2192 ethics ladder \u2192 attribution \u2192 feedback \u2192 minutes \u2192 AI disclosure \u2192 a11y \u2192 PD capstone. Instructor key material stay out of learner modes.",
+    "syllabus_hook": "Operational ethics and professional communication for public-desk apprentices: consent cards, recusal, ticket tone, observation ladders, citation discipline, feedback rubrics, minutes, AI disclosure modes, and accessible communication. ISC2/CompTIA professionalism names are PUBLIC_REFERENCE_ONLY alignment labels \u2014 not credentials granted.",
+    "career": {
+      "roles": [
+        "community_desk_coordinator",
+        "volunteer_lead",
+        "junior_comms_specialist"
+      ],
+      "nice_categories": [
+        "operate_and_maintain",
+        "communicate"
+      ],
+      "certs_aligned_not_granted": [
+        "ISC2 Code of Ethics themes (labels)",
+        "CompTIA professionalism domains (labels)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Consent on the walk-up desk \u2014 name audience and purpose",
+        "lesson": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'Improve the product' is not a purpose when the desk's real purpose is coaching a restore path.\n\nTicket PD-2101 is a walk-up library patron whose essay vanished after idle logout. The tutor may log ticket_id, device_role, and lesson_progress. It must not log SSN, library-card PAN, or passwords. Retention for coaching notes is 90 days unless the desk lead shortens it. Opt-out is spoken: ask the desk lead to disable AI coaching on that ticket.\n\nConsensus Ladder this week: observed = tutor banner missing audience line; inferred = consent incomplete; still need = desk lead confirmation before enabling logging. Fabricating 'ninety percent of patrons consented' is forbidden.\n\nYou will write a consent disclosure JSON that names audience, purpose, data_classes (\u22652, no ssn), retention_days > 0, opt_out_path, and ai_disclosure=true. Empty {} fails. A file that only says PASS raises. This is professional communication as an operational control, not a poster on the wall.",
+        "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true.",
+        "assignment": "Author consent JSON for PD-2101. Submit lab_consent_disclosure. No SSN classes.",
+        "lab_id": "lab_consent_disclosure",
+        "quiz": [
+          {
+            "id": "pd-w1-1",
+            "kind": "mcq",
+            "stem": "PD-2101 may log which class?",
+            "choices": [
+              "ssn",
+              "ticket_id",
+              "password",
+              "pan"
+            ],
+            "answer_index": 1,
+            "explanation": "ticket_id allowed."
+          },
+          {
+            "id": "pd-w1-2",
+            "kind": "mcq",
+            "stem": "retention_days 0 should?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Must be >0."
+          },
+          {
+            "id": "pd-w1-3",
+            "kind": "mcq",
+            "stem": "Audience 'everyone' is?",
+            "choices": [
+              "Precise",
+              "Too vague for desk consent",
+              "Required",
+              "Legal"
+            ],
+            "answer_index": 1,
+            "explanation": "Vague."
+          },
+          {
+            "id": "pd-w1-4",
+            "kind": "mcq",
+            "stem": "ai_disclosure must be?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "hidden"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "pd-w1-5",
+            "kind": "mcq",
+            "stem": "Opt-out path missing means?",
+            "choices": [
+              "Lab fails",
+              "Lab passes",
+              "Auto-approve",
+              "Cert grant"
+            ],
+            "answer_index": 0,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w1-6",
+            "kind": "mcq",
+            "stem": "Fabricated consent stats?",
+            "choices": [
+              "Allowed",
+              "Forbidden",
+              "Required",
+              "Graded A"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Conflict of interest \u2014 disclose and recuse",
+        "lesson": "Harbor Desk Voice treats conflict as a scheduling problem, not a moral panic. Ticket PD-2204: a Saturday volunteer mentors classmate Jordan on the portfolio while also sitting on the scoring panel for that same portfolio. Mentoring is fine. Scoring after private coaching is not. The fix is disclose_to=course lead and recuse=true when conflict_present=true.\n\nWrite the scenario in \u226540 characters with concrete roles. Rationale must explain the unfair advantage without attacking Jordan's identity. 'It's fine' is not a rationale. Recusal without disclosure still fails the desk culture: the lead needs to reassign the scorer.\n\nConsensus Ladder: observed = same person coaches and scores; inferred = grading advantage; still need = alternate scorer name; action = recuse and hand off. Do not invent injury statistics or claim accreditation from a recusal drill.\n\nThis week is AI_DISCLOSED for drafting the scenario, but the submitted JSON must be the learner's judgment. Instructor answer keys stay out of learner tutor modes.",
+        "worked_example": "conflict_present true \u2192 disclose_to course lead + recuse true; rationale names scoring+mentoring overlap.",
+        "assignment": "Write conflict JSON for PD-2204. Submit lab_conflict_interest.",
+        "lab_id": "lab_conflict_interest",
+        "quiz": [
+          {
+            "id": "pd-w2-1",
+            "kind": "mcq",
+            "stem": "When conflict_present true, recuse must be?",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "null"
+            ],
+            "answer_index": 1,
+            "explanation": "Must recuse."
+          },
+          {
+            "id": "pd-w2-2",
+            "kind": "mcq",
+            "stem": "disclose_to empty should?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Warn only",
+              "Auto-recuse"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w2-3",
+            "kind": "mcq",
+            "stem": "Scenario under 40 chars?",
+            "choices": [
+              "Pass",
+              "Fail depth check",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w2-4",
+            "kind": "mcq",
+            "stem": "Identity attack in rationale?",
+            "choices": [
+              "Allowed",
+              "Forbidden culture",
+              "Required",
+              "Funny"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "pd-w2-5",
+            "kind": "mcq",
+            "stem": "Learner tutor may read the instructor key store?",
+            "choices": [
+              "Yes",
+              "No",
+              "Sometimes",
+              "If NO_AI"
+            ],
+            "answer_index": 1,
+            "explanation": "No keys."
+          },
+          {
+            "id": "pd-w2-6",
+            "kind": "mcq",
+            "stem": "PD-2204 conflict is?",
+            "choices": [
+              "Mentoring only",
+              "Scoring after private coaching",
+              "Printing",
+              "DNS"
+            ],
+            "answer_index": 1,
+            "explanation": "Scoring+coach."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Professional tickets \u2014 no demeaning labels",
+        "lesson": "Professional communication on Harbor Desk Voice is a ticket with a subject \u22658 characters and a body \u226580 characters that names observation and next action. Channel must be email, ticket, or slack_work \u2014 not personal SMS for desk work. demeaning_labels must be false. promises_outcome must be false: you do not guarantee the essay will return.\n\nTicket PD-2307 body that works: idle logout at 1200s discarded unsaved textarea on kiosk 3; check auto-save; coach Save As; no reboot-and-hope. Body that fails: 'you are stupid and lazy' \u2014 banned tokens include stupid, lazy, hopeless, idiot.\n\nConsensus Ladder: observed = patron upset; inferred = session loss; still need = auto-save folder existence; action = restore path. Do not promise 'we will always recover every file.'\n\nThis is the week learners practice tone as a safety property: demeaning language escalates conflict and contaminates the evidence trail.",
+        "worked_example": "channel ticket; subject names kiosk; body \u226580 with restore path; demeaning_labels false; promises_outcome false.",
+        "assignment": "Draft professional ticket for PD-2307. Submit lab_professional_comm.",
+        "lab_id": "lab_professional_comm",
+        "quiz": [
+          {
+            "id": "pd-w3-1",
+            "kind": "mcq",
+            "stem": "Allowed channel?",
+            "choices": [
+              "sms",
+              "ticket",
+              "tiktok",
+              "carrier pigeon"
+            ],
+            "answer_index": 1,
+            "explanation": "ticket."
+          },
+          {
+            "id": "pd-w3-2",
+            "kind": "mcq",
+            "stem": "demeaning_labels must be?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "funny"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "pd-w3-3",
+            "kind": "mcq",
+            "stem": "promises_outcome true means?",
+            "choices": [
+              "Pass",
+              "Fail honesty",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w3-4",
+            "kind": "mcq",
+            "stem": "Body with 'stupid'?",
+            "choices": [
+              "Pass",
+              "Fail body_clean",
+              "Warn",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w3-5",
+            "kind": "mcq",
+            "stem": "Subject length floor?",
+            "choices": [
+              "1",
+              "8",
+              "80",
+              "200"
+            ],
+            "answer_index": 1,
+            "explanation": "\u22658."
+          },
+          {
+            "id": "pd-w3-6",
+            "kind": "mcq",
+            "stem": "Reboot-and-hope as first action?",
+            "choices": [
+              "Preferred",
+              "Scores zero on desk culture",
+              "Required",
+              "Legal"
+            ],
+            "answer_index": 1,
+            "explanation": "Zero."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Ethics ladder \u2014 observation before inference",
+        "lesson": "The Harbor Desk ethics ladder is observation \u2192 inference \u2192 need \u2192 action, with fabricated_impact forced false. Ticket PD-2409: three patrons report missing USB files after Friday close. Observation names the reports. Inference may say cleanup script. Need asks for cleanup schedule confirmation. Action pauses wipe and posts notice. Claiming 'this harmed 10,000 residents' without measurement is fabricated_impact and fails.\n\nNO_AI week for the ladder write-up: learners must separate what they saw from what they guess without a model filling gaps. AI may be used later to critique structure, but this week's submission is human-authored ladder JSON.\n\nConsensus Ladder is the lab itself. Confusing observation with inference is the most common Harbor Desk failure mode and it poisons meeting minutes next week. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "observation/inference/need/action depth floors; fabricated_impact false; NO_AI for authorship.",
+        "assignment": "Submit lab_ethics_ladder for PD-2409. NO_AI authorship.",
+        "lab_id": "lab_ethics_ladder",
+        "quiz": [
+          {
+            "id": "pd-w4-1",
+            "kind": "mcq",
+            "stem": "fabricated_impact must be?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "optional"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "pd-w4-2",
+            "kind": "mcq",
+            "stem": "First ladder rung?",
+            "choices": [
+              "action",
+              "observation",
+              "inference",
+              "need"
+            ],
+            "answer_index": 1,
+            "explanation": "observation."
+          },
+          {
+            "id": "pd-w4-3",
+            "kind": "mcq",
+            "stem": "Invented citywide harm stats?",
+            "choices": [
+              "OK",
+              "Fail fabricated_impact",
+              "Bonus",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w4-4",
+            "kind": "mcq",
+            "stem": "Week-4 ladder authorship AI mode?",
+            "choices": [
+              "AI_ALLOWED silent",
+              "NO_AI authorship",
+              "Keys OK",
+              "Self-grade"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          },
+          {
+            "id": "pd-w4-5",
+            "kind": "mcq",
+            "stem": "Need rung asks for?",
+            "choices": [
+              "Joke",
+              "Missing confirmation",
+              "Cert",
+              "Merge"
+            ],
+            "answer_index": 1,
+            "explanation": "Need."
+          },
+          {
+            "id": "pd-w4-6",
+            "kind": "mcq",
+            "stem": "USB wipe pause is which rung?",
+            "choices": [
+              "observation",
+              "action",
+              "audience",
+              "quiz"
+            ],
+            "answer_index": 1,
+            "explanation": "action."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Attribution \u2014 cite without dumping",
+        "lesson": "Harbor Desk Voice cites PUBLIC_REFERENCE_ONLY sources without harvesting exam stems. Ticket PD-2511 maps ISC2 ethics theme names to conflict drills. quote_chars \u2264120. paraphrase \u226540 characters in WAIKE words. reuse_class must be PUBLIC_REFERENCE_ONLY, FAIR_USE_PARAPHRASE, or ORIGINAL. FULL_COPY and 'verbatim dump' fail.\n\nLearners often paste chapter walls into journals. The lab rejects that. Alignment labels are not credentials granted. CompTIA/ISC2 names stay PUBLIC_REFERENCE_ONLY.\n\nConsensus Ladder: observed = source title present; inferred = reuse class chosen; still need = paraphrase quality; action = submit citation JSON. Do not claim the desk grants ISC2 certification. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "reuse_class PUBLIC_REFERENCE_ONLY; quote_chars\u2264120; paraphrase\u226540; no verbatim dump.",
+        "assignment": "Submit lab_attribution_cite for PD-2511.",
+        "lab_id": "lab_attribution_cite",
+        "quiz": [
+          {
+            "id": "pd-w5-1",
+            "kind": "mcq",
+            "stem": "quote_chars 9000 should?",
+            "choices": [
+              "Pass",
+              "Fail budget",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w5-2",
+            "kind": "mcq",
+            "stem": "reuse_class FULL_COPY?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Preferred",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w5-3",
+            "kind": "mcq",
+            "stem": "Certs from citation lab?",
+            "choices": [
+              "Granted",
+              "Aligned not granted",
+              "Automatic",
+              "Paid"
+            ],
+            "answer_index": 1,
+            "explanation": "Aligned only."
+          },
+          {
+            "id": "pd-w5-4",
+            "kind": "mcq",
+            "stem": "verbatim dump in paraphrase?",
+            "choices": [
+              "OK",
+              "Fails no_dump",
+              "Bonus",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w5-5",
+            "kind": "mcq",
+            "stem": "PUBLIC_REFERENCE_ONLY means?",
+            "choices": [
+              "Full republish OK",
+              "Topic labels only",
+              "Steal stems",
+              "Keys public"
+            ],
+            "answer_index": 1,
+            "explanation": "Labels."
+          },
+          {
+            "id": "pd-w5-6",
+            "kind": "mcq",
+            "stem": "Minimum paraphrase length?",
+            "choices": [
+              "4",
+              "40",
+              "400",
+              "0"
+            ],
+            "answer_index": 1,
+            "explanation": "\u226540."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Feedback rubric \u2014 evidence then score",
+        "lesson": "Feedback on Harbor Desk Voice is criterion \u2192 evidence \u2192 score 0..4 \u2192 next_action, with identity_attack false. Ticket PD-2615 scores a peer journal on observation/inference separation. Evidence must quote the journal behavior, not the person's identity. Score 9 fails. next_action must tell the learner what to try next.\n\nDemeaning feedback is an ethics failure even when the score is numerically correct. 'You always mess up because of who you are' is identity_attack and fails.\n\nConsensus Ladder: observed = journal text; inferred = separation quality; still need = one improvement; action = next_action line. Do not publish grades without human-in-the-loop when acting as educator copilot. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "score 0..4; evidence\u226524; identity_attack false; next_action\u226516.",
+        "assignment": "Submit lab_feedback_rubric for PD-2615.",
+        "lab_id": "lab_feedback_rubric",
+        "quiz": [
+          {
+            "id": "pd-w6-1",
+            "kind": "mcq",
+            "stem": "Valid score range?",
+            "choices": [
+              "0..4",
+              "1..100",
+              "-1..9",
+              "A..F only"
+            ],
+            "answer_index": 0,
+            "explanation": "0..4."
+          },
+          {
+            "id": "pd-w6-2",
+            "kind": "mcq",
+            "stem": "identity_attack true?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Bonus",
+              "Required"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w6-3",
+            "kind": "mcq",
+            "stem": "Evidence should cite?",
+            "choices": [
+              "Identity insults",
+              "Journal behavior",
+              "Gossip",
+              "SSN"
+            ],
+            "answer_index": 1,
+            "explanation": "Behavior."
+          },
+          {
+            "id": "pd-w6-4",
+            "kind": "mcq",
+            "stem": "Educator copilot publish without HITL?",
+            "choices": [
+              "OK",
+              "Forbidden",
+              "Preferred",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "pd-w6-5",
+            "kind": "mcq",
+            "stem": "next_action too short?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Ignore",
+              "Cert"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w6-6",
+            "kind": "mcq",
+            "stem": "Score 9 should?",
+            "choices": [
+              "Pass",
+              "Fail range",
+              "Round down",
+              "Star"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Meeting minutes \u2014 owners and due dates",
+        "lesson": "Meeting minutes for Harbor Desk Voice require attendees_count \u22652, parallel arrays of decisions/owners/due_dates (\u22652 each), and pii_redacted true. Ticket PD-2718 closes the USB wipe decision: Pause USB wipe / desk.lead / 2026-08-18 and Post Friday notice / volunteer.sat / 2026-08-17.\n\nUnequal array lengths fail. Patron names and card numbers must not appear. Minutes are professional communication artifacts that Saturday volunteers can continue without asking you.\n\nConsensus Ladder: observed = decisions spoken; inferred = ownership assigned; still need = due dates; action = publish redacted minutes. Fabricating attendance to look popular fails the ethics bar. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "attendees\u22652; parallel decisions/owners/due_dates; pii_redacted true.",
+        "assignment": "Submit lab_meeting_minutes for PD-2718.",
+        "lab_id": "lab_meeting_minutes",
+        "quiz": [
+          {
+            "id": "pd-w7-1",
+            "kind": "mcq",
+            "stem": "pii_redacted must be?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "optional"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "pd-w7-2",
+            "kind": "mcq",
+            "stem": "Unequal decision/owner lengths?",
+            "choices": [
+              "Pass",
+              "Fail aligned_lengths",
+              "Warn",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w7-3",
+            "kind": "mcq",
+            "stem": "attendees_count 1?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Bonus",
+              "OK solo"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w7-4",
+            "kind": "mcq",
+            "stem": "Patron PAN in minutes?",
+            "choices": [
+              "OK",
+              "Fails redaction culture",
+              "Required",
+              "Funny"
+            ],
+            "answer_index": 1,
+            "explanation": "Fails."
+          },
+          {
+            "id": "pd-w7-5",
+            "kind": "mcq",
+            "stem": "Minimum decisions?",
+            "choices": [
+              "0",
+              "2",
+              "20",
+              "100"
+            ],
+            "answer_index": 1,
+            "explanation": "\u22652."
+          },
+          {
+            "id": "pd-w7-6",
+            "kind": "mcq",
+            "stem": "Minutes help whom?",
+            "choices": [
+              "Only CEO",
+              "Next volunteer shift",
+              "Attackers",
+              "No one"
+            ],
+            "answer_index": 1,
+            "explanation": "Next shift."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "AI disclosure modes \u2014 keys stay out",
+        "lesson": "AI disclosure modes on Harbor Desk Voice are AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, and NO_AI. Ticket PD-2822 requires disclosed=true, learner-key-access=false, learner_facing=true. Learner tutor and mastery benchmark modes must not load the instructor key store. Educator copilot may read keys only with HITL grading \u2014 never to whisper finals to learners.\n\nFor NO_AI mode, rationale must say human-only or no ai. Silent AI use during NO_AI weeks fails honesty even if the JSON looks fine.\n\nConsensus Ladder: observed = mode banner; inferred = key access forbidden; still need = rationale sentence; action = submit disclosure JSON. This week wires the gunnchAI contract permission split into a lab students can run. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "mode valid; disclosed true; used_key material false; learner_facing true.",
+        "assignment": "Submit lab_ai_disclosure_modes for PD-2822.",
+        "lab_id": "lab_ai_disclosure_modes",
+        "quiz": [
+          {
+            "id": "pd-w8-1",
+            "kind": "mcq",
+            "stem": "Learner mode may use instructor key material?",
+            "choices": [
+              "Yes",
+              "No",
+              "If disclosed",
+              "On Fridays"
+            ],
+            "answer_index": 1,
+            "explanation": "No."
+          },
+          {
+            "id": "pd-w8-2",
+            "kind": "mcq",
+            "stem": "disclosed must be?",
+            "choices": [
+              "false",
+              "true",
+              "hidden",
+              "null"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "pd-w8-3",
+            "kind": "mcq",
+            "stem": "Valid mode?",
+            "choices": [
+              "AI_SECRET",
+              "AI_DISCLOSED",
+              "AI_CHEAT",
+              "KEY_LEAK"
+            ],
+            "answer_index": 1,
+            "explanation": "AI_DISCLOSED."
+          },
+          {
+            "id": "pd-w8-4",
+            "kind": "mcq",
+            "stem": "Educator publish grades without human?",
+            "choices": [
+              "OK",
+              "Forbidden HITL",
+              "Preferred",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "pd-w8-5",
+            "kind": "mcq",
+            "stem": "NO_AI rationale should mention?",
+            "choices": [
+              "keys ok",
+              "human-only / no ai",
+              "steal stems",
+              "merge"
+            ],
+            "answer_index": 1,
+            "explanation": "human-only."
+          },
+          {
+            "id": "pd-w8-6",
+            "kind": "mcq",
+            "stem": "Mastery benchmark self-grade?",
+            "choices": [
+              "Allowed",
+              "Forbidden",
+              "Required",
+              "Silent"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Accessible professional communication",
+        "lesson": "Accessibility is part of professional communication, not a sticker. Ticket PD-2925 requires captions=true, plain_language=true, alt_text\u226512 characters, color_only_signals=false, and large_print_available=true. Color-only 'red means fail' without text fails. Missing captions on desk explainer videos fails.\n\nNO_AI week for the a11y checklist walkthrough: learners inspect a real flyer mock and mark the five fields honestly. Fabricating disabled-patron quotes is forbidden.\n\nConsensus Ladder: observed = flyer uses red/green only; inferred = color_only_signals true (bad); still need = text labels; action = revise and resubmit. Large-print packets live in the student path. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "captions/plain_language/large_print true; color_only false; alt_text\u226512; NO_AI walkthrough.",
+        "assignment": "Submit lab_accessibility_comm for PD-2925. NO_AI.",
+        "lab_id": "lab_accessibility_comm",
+        "quiz": [
+          {
+            "id": "pd-w9-1",
+            "kind": "mcq",
+            "stem": "color_only_signals must be?",
+            "choices": [
+              "true",
+              "false",
+              "null",
+              "preferred"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "pd-w9-2",
+            "kind": "mcq",
+            "stem": "captions false?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w9-3",
+            "kind": "mcq",
+            "stem": "alt_text too short?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Ignore",
+              "Cert"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          },
+          {
+            "id": "pd-w9-4",
+            "kind": "mcq",
+            "stem": "Fabricated disability quotes?",
+            "choices": [
+              "OK",
+              "Forbidden",
+              "Required",
+              "Graded"
+            ],
+            "answer_index": 1,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "pd-w9-5",
+            "kind": "mcq",
+            "stem": "large_print_available?",
+            "choices": [
+              "false OK",
+              "must be true",
+              "Optional always",
+              "N/A"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "pd-w9-6",
+            "kind": "mcq",
+            "stem": "Week-9 a11y walkthrough AI mode?",
+            "choices": [
+              "Silent AI",
+              "NO_AI walkthrough",
+              "Keys OK",
+              "Self-grade"
+            ],
+            "answer_index": 1,
+            "explanation": "NO_AI."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Capstone \u2014 consent, conflict, a11y, no key leak",
+        "lesson": "The Harbor Desk Voice capstone bundles the ethics muscle: labs_passed\u22656, consent_ok, conflict_ok, a11y_ok, no_key_leak true, fabricated_impact false. Ticket PD-2A30 is a ship checklist for the professional development portfolio: show empty-fail evidence, claim boundary paragraph, accessibility notes, and career map (aligned not granted).\n\nCareer roles: community_desk_coordinator, volunteer_lead, junior_comms_specialist. Certs aligned not granted may list ISC2 ethics themes and CompTIA professionalism domains as labels only.\n\nConsensus Ladder: observed = nine lab JSONs; inferred = ready for portfolio; still need = human playtest of desk scripts (not claimed here); action = submit capstone JSON. REAL_STUDENT_E6 stays false. Cursor never merges. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "labs_passed\u22656; consent/conflict/a11y/no_key_leak true; fabricated_impact false.",
+        "assignment": "Submit lab_pd_capstone for PD-2A30. Portfolio notes required in assignment journal.",
+        "lab_id": "lab_pd_capstone",
+        "quiz": [
+          {
+            "id": "pd-w10-1",
+            "kind": "mcq",
+            "stem": "labs_passed minimum?",
+            "choices": [
+              "1",
+              "6",
+              "100",
+              "0"
+            ],
+            "answer_index": 1,
+            "explanation": "\u22656."
+          },
+          {
+            "id": "pd-w10-2",
+            "kind": "mcq",
+            "stem": "no_key_leak must be?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "optional"
+            ],
+            "answer_index": 1,
+            "explanation": "true."
+          },
+          {
+            "id": "pd-w10-3",
+            "kind": "mcq",
+            "stem": "fabricated_impact on capstone?",
+            "choices": [
+              "true OK",
+              "must be false",
+              "Required",
+              "Ignore"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "pd-w10-4",
+            "kind": "mcq",
+            "stem": "REAL_STUDENT_E6 this packet?",
+            "choices": [
+              "true",
+              "false",
+              "maybe",
+              "auto"
+            ],
+            "answer_index": 1,
+            "explanation": "false."
+          },
+          {
+            "id": "pd-w10-5",
+            "kind": "mcq",
+            "stem": "Certs from capstone?",
+            "choices": [
+              "Granted",
+              "Aligned not granted",
+              "Automatic",
+              "Paid"
+            ],
+            "answer_index": 1,
+            "explanation": "Aligned."
+          },
+          {
+            "id": "pd-w10-6",
+            "kind": "mcq",
+            "stem": "a11y_ok false?",
+            "choices": [
+              "Pass",
+              "Fail capstone",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "Fail."
+          }
+        ]
+      }
+    ]
+  }
+}

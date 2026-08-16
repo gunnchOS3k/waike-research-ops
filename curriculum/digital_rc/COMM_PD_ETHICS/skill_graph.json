@@ -1,0 +1,93 @@
+{
+  "schema": "waike.course_skill_graph.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "nodes": [
+    {
+      "id": "COMM_PD_ETHICS.w01",
+      "week": 1
+    },
+    {
+      "id": "COMM_PD_ETHICS.w02",
+      "week": 2
+    },
+    {
+      "id": "COMM_PD_ETHICS.w03",
+      "week": 3
+    },
+    {
+      "id": "COMM_PD_ETHICS.w04",
+      "week": 4
+    },
+    {
+      "id": "COMM_PD_ETHICS.w05",
+      "week": 5
+    },
+    {
+      "id": "COMM_PD_ETHICS.w06",
+      "week": 6
+    },
+    {
+      "id": "COMM_PD_ETHICS.w07",
+      "week": 7
+    },
+    {
+      "id": "COMM_PD_ETHICS.w08",
+      "week": 8
+    },
+    {
+      "id": "COMM_PD_ETHICS.w09",
+      "week": 9
+    },
+    {
+      "id": "COMM_PD_ETHICS.w10",
+      "week": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "COMM_PD_ETHICS.w01",
+      "to": "COMM_PD_ETHICS.w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w02",
+      "to": "COMM_PD_ETHICS.w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w03",
+      "to": "COMM_PD_ETHICS.w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w04",
+      "to": "COMM_PD_ETHICS.w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w05",
+      "to": "COMM_PD_ETHICS.w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w06",
+      "to": "COMM_PD_ETHICS.w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w07",
+      "to": "COMM_PD_ETHICS.w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w08",
+      "to": "COMM_PD_ETHICS.w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "COMM_PD_ETHICS.w09",
+      "to": "COMM_PD_ETHICS.w10",
+      "relation": "prerequisite"
+    }
+  ]
+}

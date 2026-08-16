@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "pd-w2-1",
+      "kind": "mcq",
+      "stem": "When conflict_present true, recuse must be?",
+      "choices": [
+        "false",
+        "true",
+        "optional",
+        "null"
+      ]
+    },
+    {
+      "id": "pd-w2-2",
+      "kind": "mcq",
+      "stem": "disclose_to empty should?",
+      "choices": [
+        "Pass",
+        "Warn only",
+        "Fail",
+        "Auto-recuse"
+      ]
+    },
+    {
+      "id": "pd-w2-3",
+      "kind": "mcq",
+      "stem": "Scenario under 40 chars?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Skip",
+        "Fail depth check"
+      ]
+    },
+    {
+      "id": "pd-w2-4",
+      "kind": "mcq",
+      "stem": "Identity attack in rationale?",
+      "choices": [
+        "Forbidden culture",
+        "Allowed",
+        "Required",
+        "Funny"
+      ]
+    },
+    {
+      "id": "pd-w2-5",
+      "kind": "mcq",
+      "stem": "Learner tutor may read the instructor key store?",
+      "choices": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "If NO_AI"
+      ]
+    },
+    {
+      "id": "pd-w2-6",
+      "kind": "mcq",
+      "stem": "PD-2204 conflict is?",
+      "choices": [
+        "Mentoring only",
+        "Printing",
+        "Scoring after private coaching",
+        "DNS"
+      ]
+    }
+  ]
+}

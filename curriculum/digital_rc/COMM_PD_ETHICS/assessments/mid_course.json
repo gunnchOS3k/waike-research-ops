@@ -1,0 +1,225 @@
+{
+  "assessment_id": "COMM_PD_ETHICS-mid",
+  "items": [
+    {
+      "id": "pdm01",
+      "kind": "mcq",
+      "stem": "Harbor consent audience should be?",
+      "choices": [
+        "everyone",
+        "internet",
+        "bots only",
+        "named patrons/volunteers"
+      ]
+    },
+    {
+      "id": "pdm02",
+      "kind": "mcq",
+      "stem": "SSN in data_classes?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Optional"
+      ]
+    },
+    {
+      "id": "pdm03",
+      "kind": "mcq",
+      "stem": "Conflict with scoring+mentoring requires?",
+      "choices": [
+        "Ignore",
+        "Disclose+recuse",
+        "Secret score",
+        "Public shame"
+      ]
+    },
+    {
+      "id": "pdm04",
+      "kind": "mcq",
+      "stem": "Professional channel SMS personal?",
+      "choices": [
+        "OK desk default",
+        "Required",
+        "Not allowed channel",
+        "Best"
+      ]
+    },
+    {
+      "id": "pdm05",
+      "kind": "mcq",
+      "stem": "promises_outcome true on restore ticket?",
+      "choices": [
+        "Honest",
+        "Preferred",
+        "Legal",
+        "Fails honesty gate"
+      ]
+    },
+    {
+      "id": "pdm06",
+      "kind": "mcq",
+      "stem": "Ethics ladder starts with?",
+      "choices": [
+        "Observation",
+        "Action slogans",
+        "Cert claim",
+        "Merge"
+      ]
+    },
+    {
+      "id": "pdm07",
+      "kind": "mcq",
+      "stem": "Fabricated impact statistics?",
+      "choices": [
+        "Encouraged",
+        "Fail the lab",
+        "Required mid",
+        "Graded A"
+      ]
+    },
+    {
+      "id": "pdm08",
+      "kind": "mcq",
+      "stem": "quote_chars above 120?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail attribution budget",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pdm09",
+      "kind": "mcq",
+      "stem": "Feedback identity_attack?",
+      "choices": [
+        "Allowed",
+        "Funny OK",
+        "Required",
+        "Must be false"
+      ]
+    },
+    {
+      "id": "pdm10",
+      "kind": "mcq",
+      "stem": "Meeting arrays misaligned?",
+      "choices": [
+        "Fail aligned_lengths",
+        "Pass",
+        "Auto-fix",
+        "Skip"
+      ]
+    },
+    {
+      "id": "pdm11",
+      "kind": "mcq",
+      "stem": "Learner tutor + answer keys?",
+      "choices": [
+        "Permitted",
+        "Hard fail permission",
+        "If Friday",
+        "Silent OK"
+      ]
+    },
+    {
+      "id": "pdm12",
+      "kind": "mcq",
+      "stem": "AI_DISCLOSED means?",
+      "choices": [
+        "Hide AI",
+        "Steal keys",
+        "Say AI was used",
+        "Self-grade"
+      ]
+    },
+    {
+      "id": "pdm13",
+      "kind": "mcq",
+      "stem": "Color-only fail signals?",
+      "choices": [
+        "A11y OK",
+        "Required",
+        "Preferred",
+        "Must set color_only_signals false"
+      ]
+    },
+    {
+      "id": "pdm14",
+      "kind": "mcq",
+      "stem": "Captions on desk video?",
+      "choices": [
+        "Required true in a11y lab",
+        "Optional always",
+        "Never",
+        "AI only"
+      ]
+    },
+    {
+      "id": "pdm15",
+      "kind": "mcq",
+      "stem": "Retention days zero?",
+      "choices": [
+        "Pass",
+        "Fail consent",
+        "Infinite OK",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pdm16",
+      "kind": "mcq",
+      "stem": "Opt-out path blank?",
+      "choices": [
+        "Pass",
+        "Implied",
+        "Fail consent",
+        "Legal"
+      ]
+    },
+    {
+      "id": "pdm17",
+      "kind": "mcq",
+      "stem": "Demeaning body tokens?",
+      "choices": [
+        "OK venting",
+        "Bonus realism",
+        "Required",
+        "Fail body_clean"
+      ]
+    },
+    {
+      "id": "pdm18",
+      "kind": "mcq",
+      "stem": "Recuse false while conflict true?",
+      "choices": [
+        "Fail recuse_when_conflict",
+        "Pass",
+        "Warn",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pdm19",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY grants cert?",
+      "choices": [
+        "Yes",
+        "No \u2014 labels only",
+        "Automatically",
+        "Paid"
+      ]
+    },
+    {
+      "id": "pdm20",
+      "kind": "mcq",
+      "stem": "Print-only PASS submission?",
+      "choices": [
+        "Pass lab",
+        "Preferred",
+        "Raises _fail_if_print_pass",
+        "Skip"
+      ]
+    }
+  ]
+}

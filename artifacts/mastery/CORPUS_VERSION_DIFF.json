@@ -20,11 +20,12 @@
   },
   "new_corpus": {
     "label": "MASTERY_002_CURRENT_MAIN",
-    "courses": 12,
-    "assessable_items": 1358,
+    "courses": 13,
+    "assessable_items": 1472,
     "course_ids": [
       "AI_ML_EDGE",
       "CLOUD_DEVOPS",
+      "COMM_PD_ETHICS",
       "COMPUTER_NETWORKING",
       "CYBERSECURITY",
       "DATA_VIZ_BI",
@@ -37,31 +38,39 @@
       "WIRELESS_6G"
     ],
     "totals": {
-      "units_weeks": 120,
-      "lessons": 120,
+      "units_weeks": 130,
+      "lessons": 130,
       "readings": 0,
-      "quiz_files": 120,
-      "labs": 110,
-      "assignments": 120,
-      "midterms": 12,
-      "finals_knowledge": 12,
-      "finals_practical": 12,
-      "projects_capstones_files": 12,
-      "rubrics_files": 108
+      "quiz_files": 130,
+      "labs": 120,
+      "assignments": 130,
+      "midterms": 13,
+      "finals_knowledge": 13,
+      "finals_practical": 13,
+      "projects_capstones_files": 13,
+      "rubrics_files": 117
     },
-    "skill_graph_nodes": 242,
-    "skill_graph_edges": 338,
-    "hash": "26607ee01be6b1918b1868f9369a8dece85102b9ee3bd88aa9c6fbf035348e41"
+    "skill_graph_nodes": 263,
+    "skill_graph_edges": 367,
+    "hash": "d72296faca15a739a7227cd79a2889af60bad6fa1240950bb5b2b4a965d1d046"
   },
   "added_courses": [
+    "COMM_PD_ETHICS",
     "GAME_DEV_INTERACTIVE",
     "ROBOTICS_CONTROL",
     "WIRELESS_6G"
   ],
   "removed_courses": [],
   "changed_items": {
-    "assessable_items_delta": 342,
+    "assessable_items_delta": 456,
     "per_course_new_only": {
+      "COMM_PD_ETHICS": {
+        "quiz": 60,
+        "mid": 20,
+        "final": 24,
+        "lab": 10,
+        "total": 114
+      },
       "GAME_DEV_INTERACTIVE": {
         "quiz": 60,
         "mid": 20,
@@ -87,7 +96,7 @@
   },
   "changed_rubrics": {
     "note": "rubric file counts regenerated via filesystem inventory",
-    "rubrics_files_total": 108
+    "rubrics_files_total": 117
   },
   "expected_new_courses_present": {
     "WIRELESS_6G": true,

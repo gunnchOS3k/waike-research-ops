@@ -1,8 +1,8 @@
 {
   "schema": "waike.assessable_item_registry.v1",
-  "generated_utc": "2026-08-15T19:52:13Z",
-  "course_count": 12,
-  "item_count": 1358,
+  "generated_utc": "2026-08-16T17:18:43Z",
+  "course_count": 13,
+  "item_count": 1472,
   "per_course": {
     "AI_ML_EDGE": {
       "quiz": 60,
@@ -12,6 +12,13 @@
       "total": 114
     },
     "CLOUD_DEVOPS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "COMM_PD_ETHICS": {
       "quiz": 60,
       "mid": 20,
       "final": 24,
@@ -3650,6 +3657,1780 @@
       "stem": "# lab_slo_budget \u2014 slo budget\n\nRunnable validator for lab_slo_budget. Empty/wrong/print-PASS fail.\n\n## Student artifact\nWorld-writable keys and heroics fail.\nA file whose entire body is PASS is rejected by _fail_if_print_pass.\n\n## How to run\nFrom the ForgeCloud folder, submit policy/math JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_slo_budget --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_slo_budget --empty\n```\n\nWrong numeric or policy fields must fail.\n",
       "choices": null,
       "source": "curriculum/digital_rc/CLOUD_DEVOPS/labs/lab_slo_budget"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "PD-2101 may log which class?",
+      "choices": [
+        "ssn",
+        "password",
+        "pan",
+        "ticket_id"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "retention_days 0 should?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Bonus",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Audience 'everyone' is?",
+      "choices": [
+        "Precise",
+        "Too vague for desk consent",
+        "Required",
+        "Legal"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "ai_disclosure must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "hidden"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Opt-out path missing means?",
+      "choices": [
+        "Lab passes",
+        "Auto-approve",
+        "Cert grant",
+        "Lab fails"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w1-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q01",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricated consent stats?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Graded A"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q01.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "When conflict_present true, recuse must be?",
+      "choices": [
+        "false",
+        "true",
+        "optional",
+        "null"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "disclose_to empty should?",
+      "choices": [
+        "Pass",
+        "Warn only",
+        "Fail",
+        "Auto-recuse"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Scenario under 40 chars?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Skip",
+        "Fail depth check"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Identity attack in rationale?",
+      "choices": [
+        "Forbidden culture",
+        "Allowed",
+        "Required",
+        "Funny"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Learner tutor may read the instructor key store?",
+      "choices": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "If NO_AI"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w2-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q02",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "PD-2204 conflict is?",
+      "choices": [
+        "Mentoring only",
+        "Printing",
+        "Scoring after private coaching",
+        "DNS"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q02.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Allowed channel?",
+      "choices": [
+        "sms",
+        "tiktok",
+        "carrier pigeon",
+        "ticket"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "demeaning_labels must be?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "funny"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "promises_outcome true means?",
+      "choices": [
+        "Pass",
+        "Fail honesty",
+        "Bonus",
+        "Cert"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Body with 'stupid'?",
+      "choices": [
+        "Pass",
+        "Warn",
+        "Fail body_clean",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Subject length floor?",
+      "choices": [
+        "1",
+        "80",
+        "200",
+        "8"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w3-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q03",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Reboot-and-hope as first action?",
+      "choices": [
+        "Scores zero on desk culture",
+        "Preferred",
+        "Required",
+        "Legal"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q03.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "fabricated_impact must be?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "optional"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "First ladder rung?",
+      "choices": [
+        "action",
+        "inference",
+        "observation",
+        "need"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Invented citywide harm stats?",
+      "choices": [
+        "OK",
+        "Bonus",
+        "Required",
+        "Fail fabricated_impact"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Week-4 ladder authorship AI mode?",
+      "choices": [
+        "NO_AI authorship",
+        "AI_ALLOWED silent",
+        "Keys OK",
+        "Self-grade"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Need rung asks for?",
+      "choices": [
+        "Joke",
+        "Missing confirmation",
+        "Cert",
+        "Merge"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w4-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q04",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "USB wipe pause is which rung?",
+      "choices": [
+        "observation",
+        "audience",
+        "action",
+        "quiz"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q04.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "quote_chars 9000 should?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Skip",
+        "Fail budget"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "reuse_class FULL_COPY?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Preferred",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Certs from citation lab?",
+      "choices": [
+        "Granted",
+        "Aligned not granted",
+        "Automatic",
+        "Paid"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "verbatim dump in paraphrase?",
+      "choices": [
+        "OK",
+        "Bonus",
+        "Fails no_dump",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY means?",
+      "choices": [
+        "Full republish OK",
+        "Steal stems",
+        "Keys public",
+        "Topic labels only"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w5-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q05",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Minimum paraphrase length?",
+      "choices": [
+        "40",
+        "4",
+        "400",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q05.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Valid score range?",
+      "choices": [
+        "1..100",
+        "0..4",
+        "-1..9",
+        "A..F only"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "identity_attack true?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Evidence should cite?",
+      "choices": [
+        "Identity insults",
+        "Gossip",
+        "SSN",
+        "Journal behavior"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Educator copilot publish without HITL?",
+      "choices": [
+        "Forbidden",
+        "OK",
+        "Preferred",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "next_action too short?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Ignore",
+        "Cert"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w6-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q06",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Score 9 should?",
+      "choices": [
+        "Pass",
+        "Round down",
+        "Fail range",
+        "Star"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q06.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "pii_redacted must be?",
+      "choices": [
+        "false",
+        "null",
+        "optional",
+        "true"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Unequal decision/owner lengths?",
+      "choices": [
+        "Fail aligned_lengths",
+        "Pass",
+        "Warn",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "attendees_count 1?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "OK solo"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Patron PAN in minutes?",
+      "choices": [
+        "OK",
+        "Required",
+        "Fails redaction culture",
+        "Funny"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Minimum decisions?",
+      "choices": [
+        "0",
+        "20",
+        "100",
+        "2"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w7-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q07",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Minutes help whom?",
+      "choices": [
+        "Next volunteer shift",
+        "Only CEO",
+        "Attackers",
+        "No one"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q07.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Learner mode may use instructor key material?",
+      "choices": [
+        "Yes",
+        "No",
+        "If disclosed",
+        "On Fridays"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "disclosed must be?",
+      "choices": [
+        "false",
+        "hidden",
+        "true",
+        "null"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Valid mode?",
+      "choices": [
+        "AI_SECRET",
+        "AI_CHEAT",
+        "KEY_LEAK",
+        "AI_DISCLOSED"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Educator publish grades without human?",
+      "choices": [
+        "Forbidden HITL",
+        "OK",
+        "Preferred",
+        "Auto"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "NO_AI rationale should mention?",
+      "choices": [
+        "keys ok",
+        "human-only / no ai",
+        "steal stems",
+        "merge"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w8-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q08",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Mastery benchmark self-grade?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Forbidden",
+        "Silent"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q08.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "color_only_signals must be?",
+      "choices": [
+        "true",
+        "null",
+        "preferred",
+        "false"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "captions false?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Bonus",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "alt_text too short?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Ignore",
+        "Cert"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricated disability quotes?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden",
+        "Graded"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "large_print_available?",
+      "choices": [
+        "false OK",
+        "Optional always",
+        "N/A",
+        "must be true"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w9-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q09",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Week-9 a11y walkthrough AI mode?",
+      "choices": [
+        "NO_AI walkthrough",
+        "Silent AI",
+        "Keys OK",
+        "Self-grade"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q09.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-1",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "labs_passed minimum?",
+      "choices": [
+        "1",
+        "6",
+        "100",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-2",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "no_key_leak must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "optional"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-3",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "fabricated_impact on capstone?",
+      "choices": [
+        "true OK",
+        "Required",
+        "Ignore",
+        "must be false"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-4",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "REAL_STUDENT_E6 this packet?",
+      "choices": [
+        "false",
+        "true",
+        "maybe",
+        "auto"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-5",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Certs from capstone?",
+      "choices": [
+        "Granted",
+        "Aligned not granted",
+        "Automatic",
+        "Paid"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pd-w10-6",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-q10",
+      "assessment_kind": "quiz",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "a11y_ok false?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail capstone",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/quizzes/q10.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm01",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Harbor consent audience should be?",
+      "choices": [
+        "everyone",
+        "internet",
+        "bots only",
+        "named patrons/volunteers"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm02",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "SSN in data_classes?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Optional"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm03",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Conflict with scoring+mentoring requires?",
+      "choices": [
+        "Ignore",
+        "Disclose+recuse",
+        "Secret score",
+        "Public shame"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm04",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Professional channel SMS personal?",
+      "choices": [
+        "OK desk default",
+        "Required",
+        "Not allowed channel",
+        "Best"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm05",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "promises_outcome true on restore ticket?",
+      "choices": [
+        "Honest",
+        "Preferred",
+        "Legal",
+        "Fails honesty gate"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm06",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Ethics ladder starts with?",
+      "choices": [
+        "Observation",
+        "Action slogans",
+        "Cert claim",
+        "Merge"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm07",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Fabricated impact statistics?",
+      "choices": [
+        "Encouraged",
+        "Fail the lab",
+        "Required mid",
+        "Graded A"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm08",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "quote_chars above 120?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail attribution budget",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm09",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Feedback identity_attack?",
+      "choices": [
+        "Allowed",
+        "Funny OK",
+        "Required",
+        "Must be false"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm10",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Meeting arrays misaligned?",
+      "choices": [
+        "Fail aligned_lengths",
+        "Pass",
+        "Auto-fix",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm11",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Learner tutor + answer keys?",
+      "choices": [
+        "Permitted",
+        "Hard fail permission",
+        "If Friday",
+        "Silent OK"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm12",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "AI_DISCLOSED means?",
+      "choices": [
+        "Hide AI",
+        "Steal keys",
+        "Say AI was used",
+        "Self-grade"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm13",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Color-only fail signals?",
+      "choices": [
+        "A11y OK",
+        "Required",
+        "Preferred",
+        "Must set color_only_signals false"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm14",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Captions on desk video?",
+      "choices": [
+        "Required true in a11y lab",
+        "Optional always",
+        "Never",
+        "AI only"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm15",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Retention days zero?",
+      "choices": [
+        "Pass",
+        "Fail consent",
+        "Infinite OK",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm16",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Opt-out path blank?",
+      "choices": [
+        "Pass",
+        "Implied",
+        "Fail consent",
+        "Legal"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm17",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Demeaning body tokens?",
+      "choices": [
+        "OK venting",
+        "Bonus realism",
+        "Required",
+        "Fail body_clean"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm18",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Recuse false while conflict true?",
+      "choices": [
+        "Fail recuse_when_conflict",
+        "Pass",
+        "Warn",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm19",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY grants cert?",
+      "choices": [
+        "Yes",
+        "No \u2014 labels only",
+        "Automatically",
+        "Paid"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdm20",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-mid",
+      "assessment_kind": "mid",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Print-only PASS submission?",
+      "choices": [
+        "Pass lab",
+        "Preferred",
+        "Raises _fail_if_print_pass",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/mid_course.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf01",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Capstone labs_passed floor?",
+      "choices": [
+        "6",
+        "1",
+        "50",
+        "0"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf02",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "no_key_leak on capstone?",
+      "choices": [
+        "false OK",
+        "must true",
+        "Optional",
+        "N/A"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf03",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "consent_ok false on capstone?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf04",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "a11y_ok required?",
+      "choices": [
+        "No",
+        "Maybe",
+        "AI decides",
+        "Yes true"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf05",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "conflict_ok meaning?",
+      "choices": [
+        "Conflicts handled with disclose/recuse",
+        "Ignore conflicts",
+        "Always fight",
+        "Hide"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf06",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Career certs in mapping?",
+      "choices": [
+        "Granted now",
+        "Aligned not granted",
+        "Printed plastic",
+        "Fake"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf07",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "HITL required for educator grade publish?",
+      "choices": [
+        "No",
+        "Never",
+        "Yes",
+        "Bot only"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf08",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Socratic learner default?",
+      "choices": [
+        "Dump answers",
+        "Leak keys",
+        "Merge",
+        "Question toward ladder rungs"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf09",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Minutes without due dates?",
+      "choices": [
+        "Fail dues check",
+        "Pass",
+        "OK",
+        "Bonus"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf10",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Attribution FULL_COPY?",
+      "choices": [
+        "Pass",
+        "Fail reuse_class",
+        "Preferred",
+        "Required"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf11",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Feedback score 0..4 includes?",
+      "choices": [
+        "9",
+        "100",
+        "3",
+        "-5"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf12",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Desk SMS for official ticket?",
+      "choices": [
+        "Allowed",
+        "Best practice",
+        "Encrypted OK",
+        "Wrong channel"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf13",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Observation vs inference swap?",
+      "choices": [
+        "Poisons ethics ladder",
+        "Harmless",
+        "Required",
+        "Funny"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf14",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Large print availability?",
+      "choices": [
+        "Ignore",
+        "Required true on a11y lab",
+        "Luxury",
+        "Never"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf15",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "AI mode during week 4 ladder?",
+      "choices": [
+        "Silent AI OK",
+        "Keys OK",
+        "NO_AI authorship",
+        "Self-grade"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf16",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Alt text purpose?",
+      "choices": [
+        "Decoration",
+        "Hide errors",
+        "Store SSN",
+        "Describe non-text content"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf17",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Portfolio claim boundary?",
+      "choices": [
+        "State digital fixture limits",
+        "Overclaim E6",
+        "Hide limits",
+        "Fake cohort"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf18",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Empty {} lab submission?",
+      "choices": [
+        "Pass",
+        "Must fail",
+        "Auto-fill",
+        "Ignore"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf19",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Wrong ethics fields?",
+      "choices": [
+        "Pass",
+        "Partial credit auto",
+        "Must fail",
+        "Skip"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf20",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "REAL_TEACHER_E6 this packet?",
+      "choices": [
+        "true",
+        "auto",
+        "maybe",
+        "false"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf21",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "gunnchAI learner disclose finals?",
+      "choices": [
+        "No \u2014 permission denied",
+        "Yes",
+        "Always",
+        "If asked twice"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf22",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Parallel owners for two decisions?",
+      "choices": [
+        "One owner total OK",
+        "Two owners aligned",
+        "Zero OK",
+        "Random"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf23",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Retention 90 days example means?",
+      "choices": [
+        "Infinite store",
+        "Zero",
+        "Positive finite retention",
+        "Illegal"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:pdf24",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "COMM_PD_ETHICS-final",
+      "assessment_kind": "final",
+      "domain": "COMM_PD_ETHICS.knowledge",
+      "kind": "mcq",
+      "stem": "Cursor merge policy?",
+      "choices": [
+        "Always merges",
+        "Force push",
+        "Silent",
+        "Never merges \u2014 DRAFT PR only"
+      ],
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/assessments/final_knowledge.json"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_accessibility_comm",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_accessibility_comm",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_accessibility_comm \u2014 accessibility comm\n\nRunnable validator for lab_accessibility_comm. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_accessibility_comm --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_accessibility_comm --empty\n```\n\nWrong ",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_accessibility_comm"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_ai_disclosure_modes",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_ai_disclosure_modes",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_ai_disclosure_modes \u2014 ai disclosure modes\n\nRunnable validator for lab_ai_disclosure_modes. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_ai_disclosure_modes --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_ai_disclosure_modes --empty\n```\n\nW",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_ai_disclosure_modes"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_attribution_cite",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_attribution_cite",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_attribution_cite \u2014 attribution cite\n\nRunnable validator for lab_attribution_cite. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_attribution_cite --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_attribution_cite --empty\n```\n\nWrong ethics/PD ",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_attribution_cite"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_conflict_interest",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_conflict_interest",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_conflict_interest \u2014 conflict interest\n\nRunnable validator for lab_conflict_interest. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_conflict_interest --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_conflict_interest --empty\n```\n\nWrong ethic",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_conflict_interest"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_consent_disclosure",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_consent_disclosure",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_consent_disclosure \u2014 consent disclosure\n\nRunnable validator for lab_consent_disclosure. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_consent_disclosure --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_consent_disclosure --empty\n```\n\nWrong ",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_consent_disclosure"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_ethics_ladder",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_ethics_ladder",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_ethics_ladder \u2014 ethics ladder\n\nRunnable validator for lab_ethics_ladder. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_ethics_ladder --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_ethics_ladder --empty\n```\n\nWrong ethics/PD policy fields m",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_ethics_ladder"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_feedback_rubric",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_feedback_rubric",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_feedback_rubric \u2014 feedback rubric\n\nRunnable validator for lab_feedback_rubric. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_feedback_rubric --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_feedback_rubric --empty\n```\n\nWrong ethics/PD polic",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_feedback_rubric"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_meeting_minutes",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_meeting_minutes",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_meeting_minutes \u2014 meeting minutes\n\nRunnable validator for lab_meeting_minutes. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_meeting_minutes --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_meeting_minutes --empty\n```\n\nWrong ethics/PD polic",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_meeting_minutes"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_pd_capstone",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_pd_capstone",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_pd_capstone \u2014 pd capstone\n\nRunnable validator for lab_pd_capstone. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_pd_capstone --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_pd_capstone --empty\n```\n\nWrong ethics/PD policy fields must fail.\n",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_pd_capstone"
+    },
+    {
+      "item_id": "COMM_PD_ETHICS:lab_professional_comm",
+      "course_id": "COMM_PD_ETHICS",
+      "assessment_id": "lab_professional_comm",
+      "assessment_kind": "lab",
+      "domain": "COMM_PD_ETHICS.labs",
+      "kind": "tool_use_lab",
+      "stem": "# lab_professional_comm \u2014 professional comm\n\nRunnable validator for lab_professional_comm. Empty/wrong/print-PASS fail. Harbor Desk Voice.\n\n## Student artifact\nEmpty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.\n\n## How to run\nFrom the Harbor Desk Voice folder, submit computed JSON.\n```\npython3 scripts/run_course_labs.py --lab lab_professional_comm --submission path/to/student.json\npython3 scripts/run_course_labs.py --lab lab_professional_comm --empty\n```\n\nWrong ethic",
+      "choices": null,
+      "source": "curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_professional_comm"
     },
     {
       "item_id": "COMPUTER_NETWORKING:net-w1-1",

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "pd-w3-1",
+      "kind": "mcq",
+      "stem": "Allowed channel?",
+      "choices": [
+        "sms",
+        "tiktok",
+        "carrier pigeon",
+        "ticket"
+      ]
+    },
+    {
+      "id": "pd-w3-2",
+      "kind": "mcq",
+      "stem": "demeaning_labels must be?",
+      "choices": [
+        "false",
+        "true",
+        "null",
+        "funny"
+      ]
+    },
+    {
+      "id": "pd-w3-3",
+      "kind": "mcq",
+      "stem": "promises_outcome true means?",
+      "choices": [
+        "Pass",
+        "Fail honesty",
+        "Bonus",
+        "Cert"
+      ]
+    },
+    {
+      "id": "pd-w3-4",
+      "kind": "mcq",
+      "stem": "Body with 'stupid'?",
+      "choices": [
+        "Pass",
+        "Warn",
+        "Fail body_clean",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pd-w3-5",
+      "kind": "mcq",
+      "stem": "Subject length floor?",
+      "choices": [
+        "1",
+        "80",
+        "200",
+        "8"
+      ]
+    },
+    {
+      "id": "pd-w3-6",
+      "kind": "mcq",
+      "stem": "Reboot-and-hope as first action?",
+      "choices": [
+        "Scores zero on desk culture",
+        "Preferred",
+        "Required",
+        "Legal"
+      ]
+    }
+  ]
+}

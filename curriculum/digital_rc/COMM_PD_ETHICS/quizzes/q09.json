@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "pd-w9-1",
+      "kind": "mcq",
+      "stem": "color_only_signals must be?",
+      "choices": [
+        "true",
+        "null",
+        "preferred",
+        "false"
+      ]
+    },
+    {
+      "id": "pd-w9-2",
+      "kind": "mcq",
+      "stem": "captions false?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Bonus",
+        "Skip"
+      ]
+    },
+    {
+      "id": "pd-w9-3",
+      "kind": "mcq",
+      "stem": "alt_text too short?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Ignore",
+        "Cert"
+      ]
+    },
+    {
+      "id": "pd-w9-4",
+      "kind": "mcq",
+      "stem": "Fabricated disability quotes?",
+      "choices": [
+        "OK",
+        "Required",
+        "Forbidden",
+        "Graded"
+      ]
+    },
+    {
+      "id": "pd-w9-5",
+      "kind": "mcq",
+      "stem": "large_print_available?",
+      "choices": [
+        "false OK",
+        "Optional always",
+        "N/A",
+        "must be true"
+      ]
+    },
+    {
+      "id": "pd-w9-6",
+      "kind": "mcq",
+      "stem": "Week-9 a11y walkthrough AI mode?",
+      "choices": [
+        "NO_AI walkthrough",
+        "Silent AI",
+        "Keys OK",
+        "Self-grade"
+      ]
+    }
+  ]
+}

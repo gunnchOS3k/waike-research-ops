@@ -1068,6 +1068,8 @@ from waike_course_ready.batch004.labs import (
 from waike_course_ready.batch005.labs import (
     LABS_005, COURSE_LABS_005, LAB_SPECS_005, REFERENCE_005, WRONG_005,
     lab_consent_disclosure, lab_conflict_interest, lab_professional_comm, lab_ethics_ladder,
+    lab_attribution_cite, lab_feedback_rubric, lab_meeting_minutes,
+    lab_ai_disclosure_modes, lab_accessibility_comm, lab_pd_capstone,
 )
 
 LABS.update(LABS_002)
@@ -1211,6 +1213,17 @@ def run_all() -> dict[str, Any]:
         "demeaning_labels": True, "promises_outcome": True,
     })
     negatives.append({"lab_id": "lab_professional_comm_negative", "ok": (not bad_comm.ok)})
+
+    bad_keys = lab_ai_disclosure_modes({
+        "mode": "NO_AI", "disclosed": False, "used_instructor_keys": True,
+        "learner_facing": False, "rationale": "keys ok",
+    })
+    negatives.append({"lab_id": "lab_ai_disclosure_modes_negative", "ok": (not bad_keys.ok)})
+    bad_a11y_pd = lab_accessibility_comm({
+        "captions": False, "plain_language": False, "alt_text": "x",
+        "color_only_signals": True, "large_print_available": False,
+    })
+    negatives.append({"lab_id": "lab_accessibility_comm_negative", "ok": (not bad_a11y_pd.ok)})
 
     datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
     ttl_ok = _ttl1_from_parsed_header(datapath)

@@ -40,6 +40,11 @@
       "jaccard_5gram": 0.0009
     },
     {
+      "a": "SOFTWARE_BUILDER",
+      "b": "COMM_PD_ETHICS",
+      "jaccard_5gram": 0.0007
+    },
+    {
       "a": "AI_ML_EDGE",
       "b": "DATA_VIZ_BI",
       "jaccard_5gram": 0.0005
@@ -48,11 +53,6 @@
       "a": "WIRELESS_6G",
       "b": "ROBOTICS_CONTROL",
       "jaccard_5gram": 0.0005
-    },
-    {
-      "a": "GENERAL_IT",
-      "b": "CYBERSECURITY",
-      "jaccard_5gram": 0.0003
     }
   ],
   "packaging_pairs": [
@@ -87,14 +87,14 @@
       "packaging_jaccard_5gram": 0.0949
     },
     {
-      "a": "HARDWARE_ENGINEERING",
-      "b": "PM_AGILE_LSS",
-      "packaging_jaccard_5gram": 0.092
+      "a": "WIRELESS_6G",
+      "b": "COMM_PD_ETHICS",
+      "packaging_jaccard_5gram": 0.0944
     },
     {
-      "a": "PM_AGILE_LSS",
-      "b": "DATA_VIZ_BI",
-      "packaging_jaccard_5gram": 0.09
+      "a": "GAME_DEV_INTERACTIVE",
+      "b": "COMM_PD_ETHICS",
+      "packaging_jaccard_5gram": 0.0922
     }
   ],
   "key_distribution": {
@@ -176,6 +176,13 @@
       "n": 104
     },
     "GAME_DEV_INTERACTIVE": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "COMM_PD_ETHICS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -281,6 +288,14 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.6667
+    },
+    "COMM_PD_ETHICS": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.7143
     }
   },
   "exam_token_identical": 0,
@@ -299,7 +314,8 @@
     "CLOUD_DEVOPS": 871,
     "WIRELESS_6G": 903,
     "ROBOTICS_CONTROL": 907,
-    "GAME_DEV_INTERACTIVE": 911
+    "GAME_DEV_INTERACTIVE": 911,
+    "COMM_PD_ETHICS": 907
   },
   "lesson_padding_rejected": 0,
   "repeated_trailer_findings": {},

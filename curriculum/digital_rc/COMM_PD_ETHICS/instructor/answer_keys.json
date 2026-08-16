@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "quizzes": {
+    "COMM_PD_ETHICS-q01": [
+      {
+        "id": "pd-w1-1",
+        "answer_index": 3,
+        "explanation": "ticket_id allowed."
+      },
+      {
+        "id": "pd-w1-2",
+        "answer_index": 0,
+        "explanation": "Must be >0."
+      },
+      {
+        "id": "pd-w1-3",
+        "answer_index": 1,
+        "explanation": "Vague."
+      },
+      {
+        "id": "pd-w1-4",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "pd-w1-5",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w1-6",
+        "answer_index": 0,
+        "explanation": "Forbidden."
+      }
+    ],
+    "COMM_PD_ETHICS-q02": [
+      {
+        "id": "pd-w2-1",
+        "answer_index": 1,
+        "explanation": "Must recuse."
+      },
+      {
+        "id": "pd-w2-2",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w2-3",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w2-4",
+        "answer_index": 0,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "pd-w2-5",
+        "answer_index": 1,
+        "explanation": "No keys."
+      },
+      {
+        "id": "pd-w2-6",
+        "answer_index": 2,
+        "explanation": "Scoring+coach."
+      }
+    ],
+    "COMM_PD_ETHICS-q03": [
+      {
+        "id": "pd-w3-1",
+        "answer_index": 3,
+        "explanation": "ticket."
+      },
+      {
+        "id": "pd-w3-2",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "pd-w3-3",
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w3-4",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w3-5",
+        "answer_index": 3,
+        "explanation": "\u22658."
+      },
+      {
+        "id": "pd-w3-6",
+        "answer_index": 0,
+        "explanation": "Zero."
+      }
+    ],
+    "COMM_PD_ETHICS-q04": [
+      {
+        "id": "pd-w4-1",
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "pd-w4-2",
+        "answer_index": 2,
+        "explanation": "observation."
+      },
+      {
+        "id": "pd-w4-3",
+        "answer_index": 3,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w4-4",
+        "answer_index": 0,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "pd-w4-5",
+        "answer_index": 1,
+        "explanation": "Need."
+      },
+      {
+        "id": "pd-w4-6",
+        "answer_index": 2,
+        "explanation": "action."
+      }
+    ],
+    "COMM_PD_ETHICS-q05": [
+      {
+        "id": "pd-w5-1",
+        "answer_index": 3,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w5-2",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w5-3",
+        "answer_index": 1,
+        "explanation": "Aligned only."
+      },
+      {
+        "id": "pd-w5-4",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w5-5",
+        "answer_index": 3,
+        "explanation": "Labels."
+      },
+      {
+        "id": "pd-w5-6",
+        "answer_index": 0,
+        "explanation": "\u226540."
+      }
+    ],
+    "COMM_PD_ETHICS-q06": [
+      {
+        "id": "pd-w6-1",
+        "answer_index": 1,
+        "explanation": "0..4."
+      },
+      {
+        "id": "pd-w6-2",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w6-3",
+        "answer_index": 3,
+        "explanation": "Behavior."
+      },
+      {
+        "id": "pd-w6-4",
+        "answer_index": 0,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "pd-w6-5",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w6-6",
+        "answer_index": 2,
+        "explanation": "Fail."
+      }
+    ],
+    "COMM_PD_ETHICS-q07": [
+      {
+        "id": "pd-w7-1",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "pd-w7-2",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w7-3",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w7-4",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pd-w7-5",
+        "answer_index": 3,
+        "explanation": "\u22652."
+      },
+      {
+        "id": "pd-w7-6",
+        "answer_index": 0,
+        "explanation": "Next shift."
+      }
+    ],
+    "COMM_PD_ETHICS-q08": [
+      {
+        "id": "pd-w8-1",
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "pd-w8-2",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "pd-w8-3",
+        "answer_index": 3,
+        "explanation": "AI_DISCLOSED."
+      },
+      {
+        "id": "pd-w8-4",
+        "answer_index": 0,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "pd-w8-5",
+        "answer_index": 1,
+        "explanation": "human-only."
+      },
+      {
+        "id": "pd-w8-6",
+        "answer_index": 2,
+        "explanation": "Forbidden."
+      }
+    ],
+    "COMM_PD_ETHICS-q09": [
+      {
+        "id": "pd-w9-1",
+        "answer_index": 3,
+        "explanation": "false."
+      },
+      {
+        "id": "pd-w9-2",
+        "answer_index": 0,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w9-3",
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pd-w9-4",
+        "answer_index": 2,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "pd-w9-5",
+        "answer_index": 3,
+        "explanation": "true."
+      },
+      {
+        "id": "pd-w9-6",
+        "answer_index": 0,
+        "explanation": "NO_AI."
+      }
+    ],
+    "COMM_PD_ETHICS-q10": [
+      {
+        "id": "pd-w10-1",
+        "answer_index": 1,
+        "explanation": "\u22656."
+      },
+      {
+        "id": "pd-w10-2",
+        "answer_index": 2,
+        "explanation": "true."
+      },
+      {
+        "id": "pd-w10-3",
+        "answer_index": 3,
+        "explanation": "false."
+      },
+      {
+        "id": "pd-w10-4",
+        "answer_index": 0,
+        "explanation": "false."
+      },
+      {
+        "id": "pd-w10-5",
+        "answer_index": 1,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "pd-w10-6",
+        "answer_index": 2,
+        "explanation": "Fail."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "pdm01",
+      "answer_index": 3,
+      "explanation": "Named."
+    },
+    {
+      "id": "pdm02",
+      "answer_index": 0,
+      "explanation": "Forbidden."
+    },
+    {
+      "id": "pdm03",
+      "answer_index": 1,
+      "explanation": "Disclose."
+    },
+    {
+      "id": "pdm04",
+      "answer_index": 2,
+      "explanation": "Not allowed."
+    },
+    {
+      "id": "pdm05",
+      "answer_index": 3,
+      "explanation": "Fails."
+    },
+    {
+      "id": "pdm06",
+      "answer_index": 0,
+      "explanation": "Observation."
+    },
+    {
+      "id": "pdm07",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm08",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm09",
+      "answer_index": 3,
+      "explanation": "False."
+    },
+    {
+      "id": "pdm10",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm11",
+      "answer_index": 1,
+      "explanation": "Hard fail."
+    },
+    {
+      "id": "pdm12",
+      "answer_index": 2,
+      "explanation": "Disclose."
+    },
+    {
+      "id": "pdm13",
+      "answer_index": 3,
+      "explanation": "Must false."
+    },
+    {
+      "id": "pdm14",
+      "answer_index": 0,
+      "explanation": "Required."
+    },
+    {
+      "id": "pdm15",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm16",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm17",
+      "answer_index": 3,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm18",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdm19",
+      "answer_index": 1,
+      "explanation": "No."
+    },
+    {
+      "id": "pdm20",
+      "answer_index": 2,
+      "explanation": "Raises."
+    }
+  ],
+  "final": [
+    {
+      "id": "pdf01",
+      "answer_index": 0,
+      "explanation": "\u22656."
+    },
+    {
+      "id": "pdf02",
+      "answer_index": 1,
+      "explanation": "true."
+    },
+    {
+      "id": "pdf03",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdf04",
+      "answer_index": 3,
+      "explanation": "Yes."
+    },
+    {
+      "id": "pdf05",
+      "answer_index": 0,
+      "explanation": "Handled."
+    },
+    {
+      "id": "pdf06",
+      "answer_index": 1,
+      "explanation": "Aligned."
+    },
+    {
+      "id": "pdf07",
+      "answer_index": 2,
+      "explanation": "Yes."
+    },
+    {
+      "id": "pdf08",
+      "answer_index": 3,
+      "explanation": "Question."
+    },
+    {
+      "id": "pdf09",
+      "answer_index": 0,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdf10",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdf11",
+      "answer_index": 2,
+      "explanation": "3."
+    },
+    {
+      "id": "pdf12",
+      "answer_index": 3,
+      "explanation": "Wrong."
+    },
+    {
+      "id": "pdf13",
+      "answer_index": 0,
+      "explanation": "Poisons."
+    },
+    {
+      "id": "pdf14",
+      "answer_index": 1,
+      "explanation": "Required."
+    },
+    {
+      "id": "pdf15",
+      "answer_index": 2,
+      "explanation": "NO_AI."
+    },
+    {
+      "id": "pdf16",
+      "answer_index": 3,
+      "explanation": "Describe."
+    },
+    {
+      "id": "pdf17",
+      "answer_index": 0,
+      "explanation": "State limits."
+    },
+    {
+      "id": "pdf18",
+      "answer_index": 1,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdf19",
+      "answer_index": 2,
+      "explanation": "Fail."
+    },
+    {
+      "id": "pdf20",
+      "answer_index": 3,
+      "explanation": "false."
+    },
+    {
+      "id": "pdf21",
+      "answer_index": 0,
+      "explanation": "No."
+    },
+    {
+      "id": "pdf22",
+      "answer_index": 1,
+      "explanation": "Two."
+    },
+    {
+      "id": "pdf23",
+      "answer_index": 2,
+      "explanation": "Finite."
+    },
+    {
+      "id": "pdf24",
+      "answer_index": 3,
+      "explanation": "Never."
+    }
+  ]
+}

@@ -84,11 +84,12 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(bool(labs.get("no_submission_fails")), "no-submission golden path still passes")
     need(all(n.get("ok") for n in labs.get("negatives_must_fail_and_did") or []), "package negatives did not fail")
     # Coexistence: #43 labs must still execute when this RC writer runs on the union product path.
-    need(int(labs.get("lab_count") or 0) >= 110, f"lab_count {labs.get('lab_count')} < 110 (#43∪#44∪#45∪#46)")
+    need(int(labs.get("lab_count") or 0) >= 120, f"lab_count {labs.get('lab_count')} < 120 (#43∪#44∪#45∪#46∪Stream-B)")
     need(int(labs.get("batch_001_lab_count") or 0) == 20, "#43 labs orphaned from run_all")
     need(int(labs.get("batch_002_lab_count") or 0) == 30, "#44 labs orphaned from run_all")
     need(int(labs.get("batch_003_lab_count") or 0) == 30, "#45 labs orphaned from run_all")
     need(int(labs.get("batch_004_lab_count") or 0) == 30, "#46 labs orphaned from run_all")
+    need(int(labs.get("batch_005_lab_count") or 0) == 10, "Stream-B COMM_PD labs orphaned from run_all")
     need(set(BATCH_001).issubset(set(COURSES)), "#43 courses missing from COURSES product path")
     depth_ok, depth_reasons = _lesson_depth_ok(cid)
     need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
@@ -136,7 +137,7 @@ def main() -> int:
         }
         batch_ok = batch_ok and earned
     payload = {
-        "packet": "WAIKE-COURSE-READY-004",
+        "packet": "STREAM-B-PKT-002",
         "COURSE_DIGITAL_RC_BATCH": batch_ok,
         "REAL_STUDENT_E6": False,
         "REAL_TEACHER_E6": False,
@@ -162,7 +163,7 @@ def main() -> int:
             "non-cloned packaging, stripped lesson depth ≥800 without operator-note padding, "
             "and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 "
             "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM) ∪ #45 (AI/Data/Cloud) ∪ #46 "
-            "(Wireless/Robotics/Game). Commercial standardized 6G does not exist today. "
+            "(Wireless/Robotics/Game) ∪ Stream-B (COMM_PD_ETHICS). Commercial standardized 6G does not exist today. "
             "Not a student/teacher E6. Not all 18 courses."
         ),
     }

@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 110,
+  "lab_count": 120,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -135,12 +135,25 @@
       "lab_playtest_metrics",
       "lab_game_a11y",
       "lab_game_capstone"
+    ],
+    "COMM_PD_ETHICS": [
+      "lab_consent_disclosure",
+      "lab_conflict_interest",
+      "lab_professional_comm",
+      "lab_ethics_ladder",
+      "lab_attribution_cite",
+      "lab_feedback_rubric",
+      "lab_meeting_minutes",
+      "lab_ai_disclosure_modes",
+      "lab_accessibility_comm",
+      "lab_pd_capstone"
     ]
   },
   "batch_001_lab_count": 20,
   "batch_002_lab_count": 30,
   "batch_003_lab_count": 30,
   "batch_004_lab_count": 30,
+  "batch_005_lab_count": 10,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1502,7 +1515,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'nRF52840', 'SSD1306', 'AMS1117-3.3'}"
+          "detail": "mpns={'AMS1117-3.3', 'SSD1306', 'nRF52840'}"
         },
         {
           "name": "total",
@@ -2545,7 +2558,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'median_by_zone', 'freshness', 'open_count'}"
+          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -4016,6 +4029,471 @@
       ],
       "claim_boundary": "Game capstone. No unmerged hard deps; a11y required.",
       "boundary": "Game capstone. No unmerged hard deps; a11y required."
+    },
+    {
+      "lab_id": "lab_consent_disclosure",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "audience_named",
+          "ok": true,
+          "detail": "audience required"
+        },
+        {
+          "name": "purpose_named",
+          "ok": true,
+          "detail": "purpose required"
+        },
+        {
+          "name": "data_classes_list",
+          "ok": true,
+          "detail": "\u22652 data classes"
+        },
+        {
+          "name": "no_ssn_class",
+          "ok": true,
+          "detail": "ssn forbidden in desk notes"
+        },
+        {
+          "name": "retention_positive",
+          "ok": true,
+          "detail": "retention_days > 0"
+        },
+        {
+          "name": "opt_out",
+          "ok": true,
+          "detail": "opt_out_path required"
+        },
+        {
+          "name": "ai_disclosed",
+          "ok": true,
+          "detail": "ai_disclosure must be true"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_conflict_interest",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "scenario",
+          "ok": true,
+          "detail": "scenario \u226540 chars"
+        },
+        {
+          "name": "disclose_named",
+          "ok": true,
+          "detail": "disclose_to required"
+        },
+        {
+          "name": "recuse_when_conflict",
+          "ok": true,
+          "detail": "must recuse when conflict_present"
+        },
+        {
+          "name": "rationale",
+          "ok": true,
+          "detail": "rationale \u226524 chars"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_professional_comm",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "channel",
+          "ok": true,
+          "detail": "allowed channel"
+        },
+        {
+          "name": "subject",
+          "ok": true,
+          "detail": "subject \u22658"
+        },
+        {
+          "name": "body_depth",
+          "ok": true,
+          "detail": "body \u226580"
+        },
+        {
+          "name": "no_demeaning",
+          "ok": true,
+          "detail": "demeaning_labels must be false"
+        },
+        {
+          "name": "no_outcome_promise",
+          "ok": true,
+          "detail": "no guaranteed outcome"
+        },
+        {
+          "name": "body_clean",
+          "ok": true,
+          "detail": "no demeaning words in body"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_ethics_ladder",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "observation",
+          "ok": true,
+          "detail": "observation \u226520"
+        },
+        {
+          "name": "inference",
+          "ok": true,
+          "detail": "inference \u226520"
+        },
+        {
+          "name": "need",
+          "ok": true,
+          "detail": "need \u226512"
+        },
+        {
+          "name": "action",
+          "ok": true,
+          "detail": "action \u226512"
+        },
+        {
+          "name": "no_fabricated_impact",
+          "ok": true,
+          "detail": "fabricated_impact must be false"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_attribution_cite",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "claim",
+          "ok": true,
+          "detail": "claim \u226524"
+        },
+        {
+          "name": "source",
+          "ok": true,
+          "detail": "source_title \u22658"
+        },
+        {
+          "name": "reuse_class",
+          "ok": true,
+          "detail": "allowed reuse_class"
+        },
+        {
+          "name": "quote_budget",
+          "ok": true,
+          "detail": "quote_chars \u2264120"
+        },
+        {
+          "name": "paraphrase",
+          "ok": true,
+          "detail": "paraphrase \u226540"
+        },
+        {
+          "name": "no_dump",
+          "ok": true,
+          "detail": "no verbatim dump"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_feedback_rubric",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "criterion",
+          "ok": true,
+          "detail": "criterion \u226512"
+        },
+        {
+          "name": "evidence",
+          "ok": true,
+          "detail": "evidence \u226524"
+        },
+        {
+          "name": "score_range",
+          "ok": true,
+          "detail": "score 0..4"
+        },
+        {
+          "name": "next_action",
+          "ok": true,
+          "detail": "next_action \u226516"
+        },
+        {
+          "name": "no_identity_attack",
+          "ok": true,
+          "detail": "identity_attack must be false"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_meeting_minutes",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "attendees",
+          "ok": true,
+          "detail": "\u22652 attendees"
+        },
+        {
+          "name": "decisions",
+          "ok": true,
+          "detail": "\u22652 decisions"
+        },
+        {
+          "name": "owners",
+          "ok": true,
+          "detail": "\u22652 owners"
+        },
+        {
+          "name": "dues",
+          "ok": true,
+          "detail": "\u22652 due_dates"
+        },
+        {
+          "name": "aligned_lengths",
+          "ok": true,
+          "detail": "parallel arrays"
+        },
+        {
+          "name": "pii_redacted",
+          "ok": true,
+          "detail": "pii_redacted true"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_ai_disclosure_modes",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mode",
+          "ok": true,
+          "detail": "valid mode"
+        },
+        {
+          "name": "disclosed",
+          "ok": true,
+          "detail": "disclosed true"
+        },
+        {
+          "name": "no_keys",
+          "ok": true,
+          "detail": "learner modes never use instructor keys"
+        },
+        {
+          "name": "learner_facing",
+          "ok": true,
+          "detail": "learner_facing true"
+        },
+        {
+          "name": "rationale",
+          "ok": true,
+          "detail": "rationale \u226524"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_accessibility_comm",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "captions",
+          "ok": true,
+          "detail": "captions true"
+        },
+        {
+          "name": "plain_language",
+          "ok": true,
+          "detail": "plain_language true"
+        },
+        {
+          "name": "alt_text",
+          "ok": true,
+          "detail": "alt_text \u226512"
+        },
+        {
+          "name": "no_color_only",
+          "ok": true,
+          "detail": "color_only_signals false"
+        },
+        {
+          "name": "large_print",
+          "ok": true,
+          "detail": "large_print_available true"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_pd_capstone",
+      "course_id": "COMM_PD_ETHICS",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "labs_passed \u22656"
+        },
+        {
+          "name": "consent_ok",
+          "ok": true,
+          "detail": "consent_ok"
+        },
+        {
+          "name": "conflict_ok",
+          "ok": true,
+          "detail": "conflict_ok"
+        },
+        {
+          "name": "a11y_ok",
+          "ok": true,
+          "detail": "a11y_ok"
+        },
+        {
+          "name": "no_key_leak",
+          "ok": true,
+          "detail": "no_key_leak"
+        },
+        {
+          "name": "no_fabricated",
+          "ok": true,
+          "detail": "fabricated_impact false"
+        }
+      ],
+      "claim_boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
+      "boundary": "COMM_PD_ETHICS Harbor Desk Voice fixture. Not a student/teacher E6. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -4065,6 +4543,22 @@
     },
     {
       "lab_id": "lab_game_a11y_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_consent_disclosure_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_professional_comm_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_ai_disclosure_modes_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_accessibility_comm_negative",
       "ok": true
     }
   ],
@@ -4514,6 +5008,46 @@
     {
       "lab_id": "lab_game_capstone",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_consent_disclosure",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_conflict_interest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_professional_comm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ethics_ladder",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_attribution_cite",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_feedback_rubric",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_meeting_minutes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ai_disclosure_modes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_accessibility_comm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pd_capstone",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -4955,6 +5489,46 @@
     },
     {
       "lab_id": "lab_game_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_consent_disclosure",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_conflict_interest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_professional_comm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ethics_ladder",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_attribution_cite",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_feedback_rubric",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_meeting_minutes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ai_disclosure_modes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_accessibility_comm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_pd_capstone",
       "failed_as_required": true
     }
   ],

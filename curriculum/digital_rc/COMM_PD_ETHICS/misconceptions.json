@@ -1,0 +1,25 @@
+{
+  "course_id": "COMM_PD_ETHICS",
+  "items": [
+    {
+      "id": "M1",
+      "misconception": "Consent can say audience=everyone",
+      "remediation": "Name concrete audiences"
+    },
+    {
+      "id": "M2",
+      "misconception": "Mentoring+scoring is fine if friendly",
+      "remediation": "Disclose and recuse"
+    },
+    {
+      "id": "M3",
+      "misconception": "Inference is an observation",
+      "remediation": "Rewrite ladder rungs"
+    },
+    {
+      "id": "M4",
+      "misconception": "Learner tutors may load answer keys",
+      "remediation": "Permission denied; Socratic only"
+    }
+  ]
+}

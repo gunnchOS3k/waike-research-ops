@@ -1,13 +1,13 @@
 {
   "schema": "waike.gunnchai.learning_contract.v1",
-  "generated_utc": "2026-08-15T19:52:13Z",
+  "generated_utc": "2026-08-16T17:18:43Z",
   "owner_repo": "waike-research-ops",
   "consumer_repo": "gunnchAI3k",
   "discovery": {
     "method": "filesystem_scan",
     "glob": "curriculum/digital_rc/*/course.json",
     "hardcoded_course_names": false,
-    "course_count": 12
+    "course_count": 13
   },
   "permissions": {
     "MASTERY_BENCHMARK": {
@@ -103,6 +103,47 @@
         "lab_k8s_probes",
         "lab_linux_perms",
         "lab_slo_budget"
+      ],
+      "assessment_files": [
+        "assessments/mid_course.json",
+        "assessments/final_knowledge.json",
+        "assessments/final_practical.json"
+      ],
+      "has_instructor_keys": true,
+      "student_facing_course_json": true
+    },
+    {
+      "course_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+      "path": "curriculum/digital_rc/COMM_PD_ETHICS",
+      "academy_id": "ACADEMY_PROF_DEV",
+      "track_ids": [
+        "COMM_PD_ETHICS"
+      ],
+      "weeks": 10,
+      "quiz_files": [
+        "quizzes/q01.json",
+        "quizzes/q02.json",
+        "quizzes/q03.json",
+        "quizzes/q04.json",
+        "quizzes/q05.json",
+        "quizzes/q06.json",
+        "quizzes/q07.json",
+        "quizzes/q08.json",
+        "quizzes/q09.json",
+        "quizzes/q10.json"
+      ],
+      "lab_ids": [
+        "lab_accessibility_comm",
+        "lab_ai_disclosure_modes",
+        "lab_attribution_cite",
+        "lab_conflict_interest",
+        "lab_consent_disclosure",
+        "lab_ethics_ladder",
+        "lab_feedback_rubric",
+        "lab_meeting_minutes",
+        "lab_pd_capstone",
+        "lab_professional_comm"
       ],
       "assessment_files": [
         "assessments/mid_course.json",

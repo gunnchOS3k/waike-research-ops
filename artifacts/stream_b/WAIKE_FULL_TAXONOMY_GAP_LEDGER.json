@@ -1,0 +1,261 @@
+{
+  "schema": "waike.full_taxonomy_gap_ledger.v1",
+  "packet": "STREAM-B-PKT-002",
+  "generated_utc": "2026-08-16T17:15:39Z",
+  "waike_tip_base": "cf30a41d25fba1fbc3a528e0a9a3d4c975bd0e98",
+  "tracks_live": 18,
+  "digital_rc_course_count": 13,
+  "digital_rc_courses": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_VIZ_BI",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "full_18_course_digital_rc": false,
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_IT",
+      "status": "COVERED_VIA_GENERAL_IT",
+      "mapped_course_id": "GENERAL_IT",
+      "remaining_rank": null,
+      "note": "Mapped into GENERAL_IT product path; no standalone package"
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_IT",
+      "status": "COVERED_VIA_GENERAL_IT",
+      "mapped_course_id": "GENERAL_IT",
+      "remaining_rank": null,
+      "note": "Mapped into GENERAL_IT product path; no standalone package"
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder Zero-to-Hero",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "SOFTWARE_BUILDER",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_NETWORKING",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": null,
+      "note": "Not authored"
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_CYBER",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": null,
+      "note": "Not authored"
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 1,
+      "note": "Foundation track still lacking standalone COURSE_DIGITAL_RC (distinct from DATA_VIZ_BI)."
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "title": "AI/ML and Edge AI Foundations",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "AI_ML_EDGE",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 2,
+      "note": "Advanced extension; not authored as COURSE_DIGITAL_RC."
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_NETWORKING",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "WIRELESS_6G",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_PROCESS_PM",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "PM_AGILE_LSS",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development and Interactive Media",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "GAME_DEV_INTERACTIVE",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "extension_class": "RESEARCH_APPRENTICESHIP",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 4,
+      "note": "Research apprenticeship overlay; not COURSE_DIGITAL_RC."
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "title": "Cloud and DevOps",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "CLOUD_DEVOPS",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_PROF_DEV",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "COMM_PD_ETHICS",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "ROBOTICS_CONTROL",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 3,
+      "note": "Advanced product lab extension; not COURSE_DIGITAL_RC."
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "HARDWARE_ENGINEERING",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "title": "Data Visualization and Business Intelligence",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "DATA_VIZ_BI",
+      "remaining_rank": null,
+      "note": "Standalone COURSE_DIGITAL_RC package"
+    }
+  ],
+  "remaining_ranked": [
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "extension_class": "FOUNDATION",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 1,
+      "note": "Foundation track still lacking standalone COURSE_DIGITAL_RC (distinct from DATA_VIZ_BI)."
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 2,
+      "note": "Advanced extension; not authored as COURSE_DIGITAL_RC."
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "extension_class": "ADVANCED_EXTENSION",
+      "academy_id": "ACADEMY_HARDWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 3,
+      "note": "Advanced product lab extension; not COURSE_DIGITAL_RC."
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "extension_class": "RESEARCH_APPRENTICESHIP",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "status": "BELOW_BAR",
+      "mapped_course_id": null,
+      "remaining_rank": 4,
+      "note": "Research apprenticeship overlay; not COURSE_DIGITAL_RC."
+    }
+  ],
+  "next_for_B_PKT_003": {
+    "track_id": "DATA_DASHBOARDS",
+    "rationale": "Highest-ranked remaining track without standalone COURSE_DIGITAL_RC after COMM_PD_ETHICS closed. Select only \u2014 do not start in B-PKT-002.",
+    "started": false
+  },
+  "this_packet_closed": {
+    "course_id": "COMM_PD_ETHICS",
+    "COMM_PD_ETHICS_COURSE_DIGITAL_RC": true,
+    "REAL_STUDENT_E6": false,
+    "REAL_TEACHER_E6": false,
+    "HUMAN_E6": false
+  },
+  "claim_boundary": "Live 18-track taxonomy discovered. 13 product-path courses hold COURSE_DIGITAL_RC including COMM_PD_ETHICS. Remaining ranked for B-PKT-003 selection only \u2014 not started."
+}

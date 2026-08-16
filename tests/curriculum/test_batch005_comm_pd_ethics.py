@@ -1,4 +1,4 @@
-"""STREAM-B-PKT-001: COMM_PD_ETHICS executable labs must execute."""
+"""STREAM-B-PKT-002: COMM_PD_ETHICS full DIGITAL_RC labs must execute."""
 from __future__ import annotations
 
 import sys
@@ -14,13 +14,20 @@ from waike_course_ready.batch005.labs import (  # noqa: E402
     lab_conflict_interest,
     lab_ethics_ladder,
     lab_professional_comm,
+    lab_pd_capstone,
 )
 from waike_course_ready.labs import COURSE_LABS, run_lab  # noqa: E402
+from waike_course_ready.content import COURSES  # noqa: E402
+
+
+def test_comm_pd_ethics_in_product_path():
+    assert "COMM_PD_ETHICS" in COURSES
+    assert len(COURSES["COMM_PD_ETHICS"]["weeks"]) == 10
 
 
 def test_comm_pd_ethics_labs_registered():
     assert "COMM_PD_ETHICS" in COURSE_LABS
-    assert len(COURSE_LABS["COMM_PD_ETHICS"]) == 4
+    assert len(COURSE_LABS["COMM_PD_ETHICS"]) == 10
 
 
 def test_reference_submissions_pass():
@@ -49,3 +56,4 @@ def test_direct_handlers():
     assert lab_conflict_interest(REFERENCE_005["lab_conflict_interest"]).ok
     assert lab_professional_comm(REFERENCE_005["lab_professional_comm"]).ok
     assert lab_ethics_ladder(REFERENCE_005["lab_ethics_ladder"]).ok
+    assert lab_pd_capstone(REFERENCE_005["lab_pd_capstone"]).ok

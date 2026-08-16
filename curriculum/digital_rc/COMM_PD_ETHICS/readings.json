@@ -1,0 +1,25 @@
+{
+  "course_id": "COMM_PD_ETHICS",
+  "items": [
+    {
+      "week": 1,
+      "title": "Harbor Desk consent card (fixture)",
+      "reuse_class": "ORIGINAL"
+    },
+    {
+      "week": 2,
+      "title": "ISC2 ethics theme names",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "week": 5,
+      "title": "CompTIA professionalism domain labels",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "week": 9,
+      "title": "Plain-language a11y checklist (fixture)",
+      "reuse_class": "ORIGINAL"
+    }
+  ]
+}

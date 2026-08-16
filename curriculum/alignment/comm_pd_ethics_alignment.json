@@ -1,0 +1,77 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "track_ids": [
+    "COMM_PD_ETHICS"
+  ],
+  "date_checked": "2026-08-16",
+  "benchmarks": [
+    {
+      "source_id": "ISC2_ETHICS_THEMES",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "protect_society",
+          "waike_weeks": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "domain": "act_honorably",
+          "waike_weeks": [
+            3,
+            6,
+            7
+          ]
+        },
+        {
+          "domain": "provide_diligent_service",
+          "waike_weeks": [
+            5,
+            8,
+            10
+          ]
+        },
+        {
+          "domain": "advance_profession",
+          "waike_weeks": [
+            5,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "COMPTIA_PROFESSIONALISM_DOMAINS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "communication",
+          "waike_weeks": [
+            3,
+            7
+          ]
+        },
+        {
+          "domain": "ethics",
+          "waike_weeks": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "domain": "documentation",
+          "waike_weeks": [
+            5,
+            7,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Alignment labels only. No credentials granted. No exam stem harvest."
+}

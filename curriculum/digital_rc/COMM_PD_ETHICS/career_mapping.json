@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "community_desk_coordinator",
+    "volunteer_lead",
+    "junior_comms_specialist"
+  ],
+  "nice_categories": [
+    "operate_and_maintain",
+    "communicate"
+  ],
+  "certs_aligned_not_granted": [
+    "ISC2 Code of Ethics themes (labels)",
+    "CompTIA professionalism domains (labels)"
+  ]
+}

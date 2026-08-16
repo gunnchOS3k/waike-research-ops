@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "pd-w5-1",
+      "kind": "mcq",
+      "stem": "quote_chars 9000 should?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Skip",
+        "Fail budget"
+      ]
+    },
+    {
+      "id": "pd-w5-2",
+      "kind": "mcq",
+      "stem": "reuse_class FULL_COPY?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Preferred",
+        "Required"
+      ]
+    },
+    {
+      "id": "pd-w5-3",
+      "kind": "mcq",
+      "stem": "Certs from citation lab?",
+      "choices": [
+        "Granted",
+        "Aligned not granted",
+        "Automatic",
+        "Paid"
+      ]
+    },
+    {
+      "id": "pd-w5-4",
+      "kind": "mcq",
+      "stem": "verbatim dump in paraphrase?",
+      "choices": [
+        "OK",
+        "Bonus",
+        "Fails no_dump",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pd-w5-5",
+      "kind": "mcq",
+      "stem": "PUBLIC_REFERENCE_ONLY means?",
+      "choices": [
+        "Full republish OK",
+        "Steal stems",
+        "Keys public",
+        "Topic labels only"
+      ]
+    },
+    {
+      "id": "pd-w5-6",
+      "kind": "mcq",
+      "stem": "Minimum paraphrase length?",
+      "choices": [
+        "40",
+        "4",
+        "400",
+        "0"
+      ]
+    }
+  ]
+}

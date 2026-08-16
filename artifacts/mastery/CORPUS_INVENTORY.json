@@ -2,10 +2,11 @@
   "schema": "waike.corpus_inventory.v1",
   "method": "filesystem_scan",
   "hardcoded_course_names": false,
-  "course_count": 12,
+  "course_count": 13,
   "course_ids": [
     "AI_ML_EDGE",
     "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
     "COMPUTER_NETWORKING",
     "CYBERSECURITY",
     "DATA_VIZ_BI",
@@ -17,7 +18,7 @@
     "SOFTWARE_BUILDER",
     "WIRELESS_6G"
   ],
-  "assessable_items": 1358,
+  "assessable_items": 1472,
   "per_course_assessable": {
     "AI_ML_EDGE": {
       "quiz": 60,
@@ -27,6 +28,13 @@
       "total": 114
     },
     "CLOUD_DEVOPS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "COMM_PD_ETHICS": {
       "quiz": 60,
       "mid": 20,
       "final": 24,
@@ -122,6 +130,21 @@
     },
     {
       "course_id": "CLOUD_DEVOPS",
+      "units_weeks": 10,
+      "lessons": 10,
+      "readings": 0,
+      "quiz_files": 10,
+      "labs": 10,
+      "assignments": 10,
+      "midterm": true,
+      "final_knowledge": true,
+      "final_practical": true,
+      "projects_capstones_files": 1,
+      "rubrics_files": 9,
+      "has_instructor_keys": true
+    },
+    {
+      "course_id": "COMM_PD_ETHICS",
       "units_weeks": 10,
       "lessons": 10,
       "readings": 0,
@@ -287,21 +310,21 @@
     }
   ],
   "totals": {
-    "units_weeks": 120,
-    "lessons": 120,
+    "units_weeks": 130,
+    "lessons": 130,
     "readings": 0,
-    "quiz_files": 120,
-    "labs": 110,
-    "assignments": 120,
-    "midterms": 12,
-    "finals_knowledge": 12,
-    "finals_practical": 12,
-    "projects_capstones_files": 12,
-    "rubrics_files": 108
+    "quiz_files": 130,
+    "labs": 120,
+    "assignments": 130,
+    "midterms": 13,
+    "finals_knowledge": 13,
+    "finals_practical": 13,
+    "projects_capstones_files": 13,
+    "rubrics_files": 117
   },
-  "skill_graph_nodes": 242,
-  "skill_graph_edges": 338,
-  "corpus_hash_sha256": "26607ee01be6b1918b1868f9369a8dece85102b9ee3bd88aa9c6fbf035348e41",
+  "skill_graph_nodes": 263,
+  "skill_graph_edges": 367,
+  "corpus_hash_sha256": "d72296faca15a739a7227cd79a2889af60bad6fa1240950bb5b2b4a965d1d046",
   "ai_policy": {
     "may_read_instructor_keys_in_mastery_solve": false,
     "self_grading_forbidden": true,

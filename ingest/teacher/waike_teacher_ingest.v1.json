@@ -1,7 +1,7 @@
 {
   "schema": "waike.teacher_ingest.v1",
   "role": "educator",
-  "generated_utc": "2026-08-15T18:13:37Z",
+  "generated_utc": "2026-08-16T17:14:50Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -22434,6 +22434,1878 @@
         "GAME_DEV_INTERACTIVE-assignment",
         "GAME_DEV_INTERACTIVE-practical",
         "GAME_DEV_INTERACTIVE-project"
+      ],
+      "instructor_notes": "Keys stay out of learner ingest. Run labs with computing validators.",
+      "presentation": [
+        "week_01.md",
+        "week_02.md",
+        "week_03.md",
+        "week_04.md",
+        "week_05.md",
+        "week_06.md",
+        "week_07.md",
+        "week_08.md",
+        "week_09.md",
+        "week_10.md"
+      ]
+    },
+    {
+      "course_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+      "track_ids": [
+        "COMM_PD_ETHICS"
+      ],
+      "academy_id": "ACADEMY_PROF_DEV",
+      "kinesthetic_hook": "Ten Harbor Desk Voice weeks: consent \u2192 conflict \u2192 professional tickets \u2192 ethics ladder \u2192 attribution \u2192 feedback \u2192 minutes \u2192 AI disclosure \u2192 a11y \u2192 PD capstone. Instructor key material stay out of learner modes.",
+      "lesson_excerpt": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'I",
+      "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true.",
+      "assignment": "Author consent JSON for PD-2101. Submit lab_consent_disclosure. No SSN classes.",
+      "lab_hint": "lab_consent_disclosure",
+      "syllabus": {
+        "weeks": 10,
+        "hook": "Operational ethics and professional communication for public-desk apprentices: consent cards, recusal, ticket tone, observation ladders, citation discipline, feedback rubrics, minutes, AI disclosure modes, and accessible communication. ISC2/CompTIA professionalism names are PUBLIC_REFERENCE_ONLY alignment labels \u2014 not credentials granted."
+      },
+      "weeks": [
+        {
+          "week": 1,
+          "title": "Consent on the walk-up desk \u2014 name audience and purpose",
+          "lesson_id": "COMM_PD_ETHICS-w01",
+          "body_md": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'Improve the product' is not a purpose when the desk's real purpose is coaching a restore path.\n\nTicket PD-2101 is a walk-up library patron whose essay vanished after idle logout. The tutor may log ticket_id, device_role, and lesson_progress. It must not log SSN, library-card PAN, or passwords. Retention for coaching notes is 90 days unless the desk lead shortens it. Opt-out is spoken: ask the desk lead to disable AI coaching on that ticket.\n\nConsensus Ladder this week: observed = tutor banner missing audience line; inferred = consent incomplete; still need = desk lead confirmation before enabling logging. Fabricating 'ninety percent of patrons consented' is forbidden.\n\nYou will write a consent disclosure JSON that names audience, purpose, data_classes (\u22652, no ssn), retention_days > 0, opt_out_path, and ai_disclosure=true. Empty {} fails. A file that only says PASS raises. This is professional communication as an operational control, not a poster on the wall.",
+          "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true."
+        },
+        {
+          "week": 2,
+          "title": "Conflict of interest \u2014 disclose and recuse",
+          "lesson_id": "COMM_PD_ETHICS-w02",
+          "body_md": "Harbor Desk Voice treats conflict as a scheduling problem, not a moral panic. Ticket PD-2204: a Saturday volunteer mentors classmate Jordan on the portfolio while also sitting on the scoring panel for that same portfolio. Mentoring is fine. Scoring after private coaching is not. The fix is disclose_to=course lead and recuse=true when conflict_present=true.\n\nWrite the scenario in \u226540 characters with concrete roles. Rationale must explain the unfair advantage without attacking Jordan's identity. 'It's fine' is not a rationale. Recusal without disclosure still fails the desk culture: the lead needs to reassign the scorer.\n\nConsensus Ladder: observed = same person coaches and scores; inferred = grading advantage; still need = alternate scorer name; action = recuse and hand off. Do not invent injury statistics or claim accreditation from a recusal drill.\n\nThis week is AI_DISCLOSED for drafting the scenario, but the submitted JSON must be the learner's judgment. Instructor answer keys stay out of learner tutor modes.",
+          "worked_example": "conflict_present true \u2192 disclose_to course lead + recuse true; rationale names scoring+mentoring overlap."
+        },
+        {
+          "week": 3,
+          "title": "Professional tickets \u2014 no demeaning labels",
+          "lesson_id": "COMM_PD_ETHICS-w03",
+          "body_md": "Professional communication on Harbor Desk Voice is a ticket with a subject \u22658 characters and a body \u226580 characters that names observation and next action. Channel must be email, ticket, or slack_work \u2014 not personal SMS for desk work. demeaning_labels must be false. promises_outcome must be false: you do not guarantee the essay will return.\n\nTicket PD-2307 body that works: idle logout at 1200s discarded unsaved textarea on kiosk 3; check auto-save; coach Save As; no reboot-and-hope. Body that fails: 'you are stupid and lazy' \u2014 banned tokens include stupid, lazy, hopeless, idiot.\n\nConsensus Ladder: observed = patron upset; inferred = session loss; still need = auto-save folder existence; action = restore path. Do not promise 'we will always recover every file.'\n\nThis is the week learners practice tone as a safety property: demeaning language escalates conflict and contaminates the evidence trail.",
+          "worked_example": "channel ticket; subject names kiosk; body \u226580 with restore path; demeaning_labels false; promises_outcome false."
+        },
+        {
+          "week": 4,
+          "title": "Ethics ladder \u2014 observation before inference",
+          "lesson_id": "COMM_PD_ETHICS-w04",
+          "body_md": "The Harbor Desk ethics ladder is observation \u2192 inference \u2192 need \u2192 action, with fabricated_impact forced false. Ticket PD-2409: three patrons report missing USB files after Friday close. Observation names the reports. Inference may say cleanup script. Need asks for cleanup schedule confirmation. Action pauses wipe and posts notice. Claiming 'this harmed 10,000 residents' without measurement is fabricated_impact and fails.\n\nNO_AI week for the ladder write-up: learners must separate what they saw from what they guess without a model filling gaps. AI may be used later to critique structure, but this week's submission is human-authored ladder JSON.\n\nConsensus Ladder is the lab itself. Confusing observation with inference is the most common Harbor Desk failure mode and it poisons meeting minutes next week. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "observation/inference/need/action depth floors; fabricated_impact false; NO_AI for authorship."
+        },
+        {
+          "week": 5,
+          "title": "Attribution \u2014 cite without dumping",
+          "lesson_id": "COMM_PD_ETHICS-w05",
+          "body_md": "Harbor Desk Voice cites PUBLIC_REFERENCE_ONLY sources without harvesting exam stems. Ticket PD-2511 maps ISC2 ethics theme names to conflict drills. quote_chars \u2264120. paraphrase \u226540 characters in WAIKE words. reuse_class must be PUBLIC_REFERENCE_ONLY, FAIR_USE_PARAPHRASE, or ORIGINAL. FULL_COPY and 'verbatim dump' fail.\n\nLearners often paste chapter walls into journals. The lab rejects that. Alignment labels are not credentials granted. CompTIA/ISC2 names stay PUBLIC_REFERENCE_ONLY.\n\nConsensus Ladder: observed = source title present; inferred = reuse class chosen; still need = paraphrase quality; action = submit citation JSON. Do not claim the desk grants ISC2 certification. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "reuse_class PUBLIC_REFERENCE_ONLY; quote_chars\u2264120; paraphrase\u226540; no verbatim dump."
+        },
+        {
+          "week": 6,
+          "title": "Feedback rubric \u2014 evidence then score",
+          "lesson_id": "COMM_PD_ETHICS-w06",
+          "body_md": "Feedback on Harbor Desk Voice is criterion \u2192 evidence \u2192 score 0..4 \u2192 next_action, with identity_attack false. Ticket PD-2615 scores a peer journal on observation/inference separation. Evidence must quote the journal behavior, not the person's identity. Score 9 fails. next_action must tell the learner what to try next.\n\nDemeaning feedback is an ethics failure even when the score is numerically correct. 'You always mess up because of who you are' is identity_attack and fails.\n\nConsensus Ladder: observed = journal text; inferred = separation quality; still need = one improvement; action = next_action line. Do not publish grades without human-in-the-loop when acting as educator copilot. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "score 0..4; evidence\u226524; identity_attack false; next_action\u226516."
+        },
+        {
+          "week": 7,
+          "title": "Meeting minutes \u2014 owners and due dates",
+          "lesson_id": "COMM_PD_ETHICS-w07",
+          "body_md": "Meeting minutes for Harbor Desk Voice require attendees_count \u22652, parallel arrays of decisions/owners/due_dates (\u22652 each), and pii_redacted true. Ticket PD-2718 closes the USB wipe decision: Pause USB wipe / desk.lead / 2026-08-18 and Post Friday notice / volunteer.sat / 2026-08-17.\n\nUnequal array lengths fail. Patron names and card numbers must not appear. Minutes are professional communication artifacts that Saturday volunteers can continue without asking you.\n\nConsensus Ladder: observed = decisions spoken; inferred = ownership assigned; still need = due dates; action = publish redacted minutes. Fabricating attendance to look popular fails the ethics bar. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "attendees\u22652; parallel decisions/owners/due_dates; pii_redacted true."
+        },
+        {
+          "week": 8,
+          "title": "AI disclosure modes \u2014 keys stay out",
+          "lesson_id": "COMM_PD_ETHICS-w08",
+          "body_md": "AI disclosure modes on Harbor Desk Voice are AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, and NO_AI. Ticket PD-2822 requires disclosed=true, learner-key-access=false, learner_facing=true. Learner tutor and mastery benchmark modes must not load the instructor key store. Educator copilot may read keys only with HITL grading \u2014 never to whisper finals to learners.\n\nFor NO_AI mode, rationale must say human-only or no ai. Silent AI use during NO_AI weeks fails honesty even if the JSON looks fine.\n\nConsensus Ladder: observed = mode banner; inferred = key access forbidden; still need = rationale sentence; action = submit disclosure JSON. This week wires the gunnchAI contract permission split into a lab students can run. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "mode valid; disclosed true; used_key material false; learner_facing true."
+        },
+        {
+          "week": 9,
+          "title": "Accessible professional communication",
+          "lesson_id": "COMM_PD_ETHICS-w09",
+          "body_md": "Accessibility is part of professional communication, not a sticker. Ticket PD-2925 requires captions=true, plain_language=true, alt_text\u226512 characters, color_only_signals=false, and large_print_available=true. Color-only 'red means fail' without text fails. Missing captions on desk explainer videos fails.\n\nNO_AI week for the a11y checklist walkthrough: learners inspect a real flyer mock and mark the five fields honestly. Fabricating disabled-patron quotes is forbidden.\n\nConsensus Ladder: observed = flyer uses red/green only; inferred = color_only_signals true (bad); still need = text labels; action = revise and resubmit. Large-print packets live in the student path. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "captions/plain_language/large_print true; color_only false; alt_text\u226512; NO_AI walkthrough."
+        },
+        {
+          "week": 10,
+          "title": "Capstone \u2014 consent, conflict, a11y, no key leak",
+          "lesson_id": "COMM_PD_ETHICS-w10",
+          "body_md": "The Harbor Desk Voice capstone bundles the ethics muscle: labs_passed\u22656, consent_ok, conflict_ok, a11y_ok, no_key_leak true, fabricated_impact false. Ticket PD-2A30 is a ship checklist for the professional development portfolio: show empty-fail evidence, claim boundary paragraph, accessibility notes, and career map (aligned not granted).\n\nCareer roles: community_desk_coordinator, volunteer_lead, junior_comms_specialist. Certs aligned not granted may list ISC2 ethics themes and CompTIA professionalism domains as labels only.\n\nConsensus Ladder: observed = nine lab JSONs; inferred = ready for portfolio; still need = human playtest of desk scripts (not claimed here); action = submit capstone JSON. REAL_STUDENT_E6 stays false. Cursor never merges. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+          "worked_example": "labs_passed\u22656; consent/conflict/a11y/no_key_leak true; fabricated_impact false."
+        }
+      ],
+      "assignments": [
+        {
+          "id": "a01",
+          "prompt": "Author consent JSON for PD-2101. Submit lab_consent_disclosure. No SSN classes."
+        },
+        {
+          "id": "a02",
+          "prompt": "Write conflict JSON for PD-2204. Submit lab_conflict_interest."
+        },
+        {
+          "id": "a03",
+          "prompt": "Draft professional ticket for PD-2307. Submit lab_professional_comm."
+        },
+        {
+          "id": "a04",
+          "prompt": "Submit lab_ethics_ladder for PD-2409. NO_AI authorship."
+        },
+        {
+          "id": "a05",
+          "prompt": "Submit lab_attribution_cite for PD-2511."
+        },
+        {
+          "id": "a06",
+          "prompt": "Submit lab_feedback_rubric for PD-2615."
+        },
+        {
+          "id": "a07",
+          "prompt": "Submit lab_meeting_minutes for PD-2718."
+        },
+        {
+          "id": "a08",
+          "prompt": "Submit lab_ai_disclosure_modes for PD-2822."
+        },
+        {
+          "id": "a09",
+          "prompt": "Submit lab_accessibility_comm for PD-2925. NO_AI."
+        },
+        {
+          "id": "a10",
+          "prompt": "Submit lab_pd_capstone for PD-2A30. Portfolio notes required in assignment journal."
+        }
+      ],
+      "labs": [
+        "lab_consent_disclosure",
+        "lab_conflict_interest",
+        "lab_professional_comm",
+        "lab_ethics_ladder",
+        "lab_attribution_cite",
+        "lab_feedback_rubric",
+        "lab_meeting_minutes",
+        "lab_ai_disclosure_modes",
+        "lab_accessibility_comm",
+        "lab_pd_capstone"
+      ],
+      "quizzes": [
+        {
+          "quiz_id": "COMM_PD_ETHICS-q01",
+          "week": 1,
+          "items": [
+            {
+              "id": "pd-w1-1",
+              "kind": "mcq",
+              "stem": "PD-2101 may log which class?",
+              "choices": [
+                "ssn",
+                "password",
+                "pan",
+                "ticket_id"
+              ]
+            },
+            {
+              "id": "pd-w1-2",
+              "kind": "mcq",
+              "stem": "retention_days 0 should?",
+              "choices": [
+                "Fail",
+                "Pass",
+                "Bonus",
+                "Skip"
+              ]
+            },
+            {
+              "id": "pd-w1-3",
+              "kind": "mcq",
+              "stem": "Audience 'everyone' is?",
+              "choices": [
+                "Precise",
+                "Too vague for desk consent",
+                "Required",
+                "Legal"
+              ]
+            },
+            {
+              "id": "pd-w1-4",
+              "kind": "mcq",
+              "stem": "ai_disclosure must be?",
+              "choices": [
+                "false",
+                "null",
+                "true",
+                "hidden"
+              ]
+            },
+            {
+              "id": "pd-w1-5",
+              "kind": "mcq",
+              "stem": "Opt-out path missing means?",
+              "choices": [
+                "Lab passes",
+                "Auto-approve",
+                "Cert grant",
+                "Lab fails"
+              ]
+            },
+            {
+              "id": "pd-w1-6",
+              "kind": "mcq",
+              "stem": "Fabricated consent stats?",
+              "choices": [
+                "Forbidden",
+                "Allowed",
+                "Required",
+                "Graded A"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q02",
+          "week": 2,
+          "items": [
+            {
+              "id": "pd-w2-1",
+              "kind": "mcq",
+              "stem": "When conflict_present true, recuse must be?",
+              "choices": [
+                "false",
+                "true",
+                "optional",
+                "null"
+              ]
+            },
+            {
+              "id": "pd-w2-2",
+              "kind": "mcq",
+              "stem": "disclose_to empty should?",
+              "choices": [
+                "Pass",
+                "Warn only",
+                "Fail",
+                "Auto-recuse"
+              ]
+            },
+            {
+              "id": "pd-w2-3",
+              "kind": "mcq",
+              "stem": "Scenario under 40 chars?",
+              "choices": [
+                "Pass",
+                "Bonus",
+                "Skip",
+                "Fail depth check"
+              ]
+            },
+            {
+              "id": "pd-w2-4",
+              "kind": "mcq",
+              "stem": "Identity attack in rationale?",
+              "choices": [
+                "Forbidden culture",
+                "Allowed",
+                "Required",
+                "Funny"
+              ]
+            },
+            {
+              "id": "pd-w2-5",
+              "kind": "mcq",
+              "stem": "Learner tutor may read the instructor key store?",
+              "choices": [
+                "Yes",
+                "No",
+                "Sometimes",
+                "If NO_AI"
+              ]
+            },
+            {
+              "id": "pd-w2-6",
+              "kind": "mcq",
+              "stem": "PD-2204 conflict is?",
+              "choices": [
+                "Mentoring only",
+                "Printing",
+                "Scoring after private coaching",
+                "DNS"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q03",
+          "week": 3,
+          "items": [
+            {
+              "id": "pd-w3-1",
+              "kind": "mcq",
+              "stem": "Allowed channel?",
+              "choices": [
+                "sms",
+                "tiktok",
+                "carrier pigeon",
+                "ticket"
+              ]
+            },
+            {
+              "id": "pd-w3-2",
+              "kind": "mcq",
+              "stem": "demeaning_labels must be?",
+              "choices": [
+                "false",
+                "true",
+                "null",
+                "funny"
+              ]
+            },
+            {
+              "id": "pd-w3-3",
+              "kind": "mcq",
+              "stem": "promises_outcome true means?",
+              "choices": [
+                "Pass",
+                "Fail honesty",
+                "Bonus",
+                "Cert"
+              ]
+            },
+            {
+              "id": "pd-w3-4",
+              "kind": "mcq",
+              "stem": "Body with 'stupid'?",
+              "choices": [
+                "Pass",
+                "Warn",
+                "Fail body_clean",
+                "Ignore"
+              ]
+            },
+            {
+              "id": "pd-w3-5",
+              "kind": "mcq",
+              "stem": "Subject length floor?",
+              "choices": [
+                "1",
+                "80",
+                "200",
+                "8"
+              ]
+            },
+            {
+              "id": "pd-w3-6",
+              "kind": "mcq",
+              "stem": "Reboot-and-hope as first action?",
+              "choices": [
+                "Scores zero on desk culture",
+                "Preferred",
+                "Required",
+                "Legal"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q04",
+          "week": 4,
+          "items": [
+            {
+              "id": "pd-w4-1",
+              "kind": "mcq",
+              "stem": "fabricated_impact must be?",
+              "choices": [
+                "true",
+                "false",
+                "null",
+                "optional"
+              ]
+            },
+            {
+              "id": "pd-w4-2",
+              "kind": "mcq",
+              "stem": "First ladder rung?",
+              "choices": [
+                "action",
+                "inference",
+                "observation",
+                "need"
+              ]
+            },
+            {
+              "id": "pd-w4-3",
+              "kind": "mcq",
+              "stem": "Invented citywide harm stats?",
+              "choices": [
+                "OK",
+                "Bonus",
+                "Required",
+                "Fail fabricated_impact"
+              ]
+            },
+            {
+              "id": "pd-w4-4",
+              "kind": "mcq",
+              "stem": "Week-4 ladder authorship AI mode?",
+              "choices": [
+                "NO_AI authorship",
+                "AI_ALLOWED silent",
+                "Keys OK",
+                "Self-grade"
+              ]
+            },
+            {
+              "id": "pd-w4-5",
+              "kind": "mcq",
+              "stem": "Need rung asks for?",
+              "choices": [
+                "Joke",
+                "Missing confirmation",
+                "Cert",
+                "Merge"
+              ]
+            },
+            {
+              "id": "pd-w4-6",
+              "kind": "mcq",
+              "stem": "USB wipe pause is which rung?",
+              "choices": [
+                "observation",
+                "audience",
+                "action",
+                "quiz"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q05",
+          "week": 5,
+          "items": [
+            {
+              "id": "pd-w5-1",
+              "kind": "mcq",
+              "stem": "quote_chars 9000 should?",
+              "choices": [
+                "Pass",
+                "Bonus",
+                "Skip",
+                "Fail budget"
+              ]
+            },
+            {
+              "id": "pd-w5-2",
+              "kind": "mcq",
+              "stem": "reuse_class FULL_COPY?",
+              "choices": [
+                "Fail",
+                "Pass",
+                "Preferred",
+                "Required"
+              ]
+            },
+            {
+              "id": "pd-w5-3",
+              "kind": "mcq",
+              "stem": "Certs from citation lab?",
+              "choices": [
+                "Granted",
+                "Aligned not granted",
+                "Automatic",
+                "Paid"
+              ]
+            },
+            {
+              "id": "pd-w5-4",
+              "kind": "mcq",
+              "stem": "verbatim dump in paraphrase?",
+              "choices": [
+                "OK",
+                "Bonus",
+                "Fails no_dump",
+                "Ignore"
+              ]
+            },
+            {
+              "id": "pd-w5-5",
+              "kind": "mcq",
+              "stem": "PUBLIC_REFERENCE_ONLY means?",
+              "choices": [
+                "Full republish OK",
+                "Steal stems",
+                "Keys public",
+                "Topic labels only"
+              ]
+            },
+            {
+              "id": "pd-w5-6",
+              "kind": "mcq",
+              "stem": "Minimum paraphrase length?",
+              "choices": [
+                "40",
+                "4",
+                "400",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q06",
+          "week": 6,
+          "items": [
+            {
+              "id": "pd-w6-1",
+              "kind": "mcq",
+              "stem": "Valid score range?",
+              "choices": [
+                "1..100",
+                "0..4",
+                "-1..9",
+                "A..F only"
+              ]
+            },
+            {
+              "id": "pd-w6-2",
+              "kind": "mcq",
+              "stem": "identity_attack true?",
+              "choices": [
+                "Pass",
+                "Bonus",
+                "Fail",
+                "Required"
+              ]
+            },
+            {
+              "id": "pd-w6-3",
+              "kind": "mcq",
+              "stem": "Evidence should cite?",
+              "choices": [
+                "Identity insults",
+                "Gossip",
+                "SSN",
+                "Journal behavior"
+              ]
+            },
+            {
+              "id": "pd-w6-4",
+              "kind": "mcq",
+              "stem": "Educator copilot publish without HITL?",
+              "choices": [
+                "Forbidden",
+                "OK",
+                "Preferred",
+                "Auto"
+              ]
+            },
+            {
+              "id": "pd-w6-5",
+              "kind": "mcq",
+              "stem": "next_action too short?",
+              "choices": [
+                "Pass",
+                "Fail",
+                "Ignore",
+                "Cert"
+              ]
+            },
+            {
+              "id": "pd-w6-6",
+              "kind": "mcq",
+              "stem": "Score 9 should?",
+              "choices": [
+                "Pass",
+                "Round down",
+                "Fail range",
+                "Star"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q07",
+          "week": 7,
+          "items": [
+            {
+              "id": "pd-w7-1",
+              "kind": "mcq",
+              "stem": "pii_redacted must be?",
+              "choices": [
+                "false",
+                "null",
+                "optional",
+                "true"
+              ]
+            },
+            {
+              "id": "pd-w7-2",
+              "kind": "mcq",
+              "stem": "Unequal decision/owner lengths?",
+              "choices": [
+                "Fail aligned_lengths",
+                "Pass",
+                "Warn",
+                "Ignore"
+              ]
+            },
+            {
+              "id": "pd-w7-3",
+              "kind": "mcq",
+              "stem": "attendees_count 1?",
+              "choices": [
+                "Pass",
+                "Fail",
+                "Bonus",
+                "OK solo"
+              ]
+            },
+            {
+              "id": "pd-w7-4",
+              "kind": "mcq",
+              "stem": "Patron PAN in minutes?",
+              "choices": [
+                "OK",
+                "Required",
+                "Fails redaction culture",
+                "Funny"
+              ]
+            },
+            {
+              "id": "pd-w7-5",
+              "kind": "mcq",
+              "stem": "Minimum decisions?",
+              "choices": [
+                "0",
+                "20",
+                "100",
+                "2"
+              ]
+            },
+            {
+              "id": "pd-w7-6",
+              "kind": "mcq",
+              "stem": "Minutes help whom?",
+              "choices": [
+                "Next volunteer shift",
+                "Only CEO",
+                "Attackers",
+                "No one"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q08",
+          "week": 8,
+          "items": [
+            {
+              "id": "pd-w8-1",
+              "kind": "mcq",
+              "stem": "Learner mode may use instructor key material?",
+              "choices": [
+                "Yes",
+                "No",
+                "If disclosed",
+                "On Fridays"
+              ]
+            },
+            {
+              "id": "pd-w8-2",
+              "kind": "mcq",
+              "stem": "disclosed must be?",
+              "choices": [
+                "false",
+                "hidden",
+                "true",
+                "null"
+              ]
+            },
+            {
+              "id": "pd-w8-3",
+              "kind": "mcq",
+              "stem": "Valid mode?",
+              "choices": [
+                "AI_SECRET",
+                "AI_CHEAT",
+                "KEY_LEAK",
+                "AI_DISCLOSED"
+              ]
+            },
+            {
+              "id": "pd-w8-4",
+              "kind": "mcq",
+              "stem": "Educator publish grades without human?",
+              "choices": [
+                "Forbidden HITL",
+                "OK",
+                "Preferred",
+                "Auto"
+              ]
+            },
+            {
+              "id": "pd-w8-5",
+              "kind": "mcq",
+              "stem": "NO_AI rationale should mention?",
+              "choices": [
+                "keys ok",
+                "human-only / no ai",
+                "steal stems",
+                "merge"
+              ]
+            },
+            {
+              "id": "pd-w8-6",
+              "kind": "mcq",
+              "stem": "Mastery benchmark self-grade?",
+              "choices": [
+                "Allowed",
+                "Required",
+                "Forbidden",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q09",
+          "week": 9,
+          "items": [
+            {
+              "id": "pd-w9-1",
+              "kind": "mcq",
+              "stem": "color_only_signals must be?",
+              "choices": [
+                "true",
+                "null",
+                "preferred",
+                "false"
+              ]
+            },
+            {
+              "id": "pd-w9-2",
+              "kind": "mcq",
+              "stem": "captions false?",
+              "choices": [
+                "Fail",
+                "Pass",
+                "Bonus",
+                "Skip"
+              ]
+            },
+            {
+              "id": "pd-w9-3",
+              "kind": "mcq",
+              "stem": "alt_text too short?",
+              "choices": [
+                "Pass",
+                "Fail",
+                "Ignore",
+                "Cert"
+              ]
+            },
+            {
+              "id": "pd-w9-4",
+              "kind": "mcq",
+              "stem": "Fabricated disability quotes?",
+              "choices": [
+                "OK",
+                "Required",
+                "Forbidden",
+                "Graded"
+              ]
+            },
+            {
+              "id": "pd-w9-5",
+              "kind": "mcq",
+              "stem": "large_print_available?",
+              "choices": [
+                "false OK",
+                "Optional always",
+                "N/A",
+                "must be true"
+              ]
+            },
+            {
+              "id": "pd-w9-6",
+              "kind": "mcq",
+              "stem": "Week-9 a11y walkthrough AI mode?",
+              "choices": [
+                "NO_AI walkthrough",
+                "Silent AI",
+                "Keys OK",
+                "Self-grade"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "COMM_PD_ETHICS-q10",
+          "week": 10,
+          "items": [
+            {
+              "id": "pd-w10-1",
+              "kind": "mcq",
+              "stem": "labs_passed minimum?",
+              "choices": [
+                "1",
+                "6",
+                "100",
+                "0"
+              ]
+            },
+            {
+              "id": "pd-w10-2",
+              "kind": "mcq",
+              "stem": "no_key_leak must be?",
+              "choices": [
+                "false",
+                "null",
+                "true",
+                "optional"
+              ]
+            },
+            {
+              "id": "pd-w10-3",
+              "kind": "mcq",
+              "stem": "fabricated_impact on capstone?",
+              "choices": [
+                "true OK",
+                "Required",
+                "Ignore",
+                "must be false"
+              ]
+            },
+            {
+              "id": "pd-w10-4",
+              "kind": "mcq",
+              "stem": "REAL_STUDENT_E6 this packet?",
+              "choices": [
+                "false",
+                "true",
+                "maybe",
+                "auto"
+              ]
+            },
+            {
+              "id": "pd-w10-5",
+              "kind": "mcq",
+              "stem": "Certs from capstone?",
+              "choices": [
+                "Granted",
+                "Aligned not granted",
+                "Automatic",
+                "Paid"
+              ]
+            },
+            {
+              "id": "pd-w10-6",
+              "kind": "mcq",
+              "stem": "a11y_ok false?",
+              "choices": [
+                "Pass",
+                "Bonus",
+                "Fail capstone",
+                "Skip"
+              ]
+            }
+          ]
+        }
+      ],
+      "assessments": {
+        "mid_course": [
+          {
+            "id": "pdm01",
+            "stem": "Harbor consent audience should be?",
+            "choices": [
+              "everyone",
+              "internet",
+              "bots only",
+              "named patrons/volunteers"
+            ]
+          },
+          {
+            "id": "pdm02",
+            "stem": "SSN in data_classes?",
+            "choices": [
+              "Forbidden",
+              "Allowed",
+              "Required",
+              "Optional"
+            ]
+          },
+          {
+            "id": "pdm03",
+            "stem": "Conflict with scoring+mentoring requires?",
+            "choices": [
+              "Ignore",
+              "Disclose+recuse",
+              "Secret score",
+              "Public shame"
+            ]
+          },
+          {
+            "id": "pdm04",
+            "stem": "Professional channel SMS personal?",
+            "choices": [
+              "OK desk default",
+              "Required",
+              "Not allowed channel",
+              "Best"
+            ]
+          },
+          {
+            "id": "pdm05",
+            "stem": "promises_outcome true on restore ticket?",
+            "choices": [
+              "Honest",
+              "Preferred",
+              "Legal",
+              "Fails honesty gate"
+            ]
+          },
+          {
+            "id": "pdm06",
+            "stem": "Ethics ladder starts with?",
+            "choices": [
+              "Observation",
+              "Action slogans",
+              "Cert claim",
+              "Merge"
+            ]
+          },
+          {
+            "id": "pdm07",
+            "stem": "Fabricated impact statistics?",
+            "choices": [
+              "Encouraged",
+              "Fail the lab",
+              "Required mid",
+              "Graded A"
+            ]
+          },
+          {
+            "id": "pdm08",
+            "stem": "quote_chars above 120?",
+            "choices": [
+              "Pass",
+              "Bonus",
+              "Fail attribution budget",
+              "Ignore"
+            ]
+          },
+          {
+            "id": "pdm09",
+            "stem": "Feedback identity_attack?",
+            "choices": [
+              "Allowed",
+              "Funny OK",
+              "Required",
+              "Must be false"
+            ]
+          },
+          {
+            "id": "pdm10",
+            "stem": "Meeting arrays misaligned?",
+            "choices": [
+              "Fail aligned_lengths",
+              "Pass",
+              "Auto-fix",
+              "Skip"
+            ]
+          },
+          {
+            "id": "pdm11",
+            "stem": "Learner tutor + answer keys?",
+            "choices": [
+              "Permitted",
+              "Hard fail permission",
+              "If Friday",
+              "Silent OK"
+            ]
+          },
+          {
+            "id": "pdm12",
+            "stem": "AI_DISCLOSED means?",
+            "choices": [
+              "Hide AI",
+              "Steal keys",
+              "Say AI was used",
+              "Self-grade"
+            ]
+          },
+          {
+            "id": "pdm13",
+            "stem": "Color-only fail signals?",
+            "choices": [
+              "A11y OK",
+              "Required",
+              "Preferred",
+              "Must set color_only_signals false"
+            ]
+          },
+          {
+            "id": "pdm14",
+            "stem": "Captions on desk video?",
+            "choices": [
+              "Required true in a11y lab",
+              "Optional always",
+              "Never",
+              "AI only"
+            ]
+          },
+          {
+            "id": "pdm15",
+            "stem": "Retention days zero?",
+            "choices": [
+              "Pass",
+              "Fail consent",
+              "Infinite OK",
+              "Ignore"
+            ]
+          },
+          {
+            "id": "pdm16",
+            "stem": "Opt-out path blank?",
+            "choices": [
+              "Pass",
+              "Implied",
+              "Fail consent",
+              "Legal"
+            ]
+          },
+          {
+            "id": "pdm17",
+            "stem": "Demeaning body tokens?",
+            "choices": [
+              "OK venting",
+              "Bonus realism",
+              "Required",
+              "Fail body_clean"
+            ]
+          },
+          {
+            "id": "pdm18",
+            "stem": "Recuse false while conflict true?",
+            "choices": [
+              "Fail recuse_when_conflict",
+              "Pass",
+              "Warn",
+              "Ignore"
+            ]
+          },
+          {
+            "id": "pdm19",
+            "stem": "PUBLIC_REFERENCE_ONLY grants cert?",
+            "choices": [
+              "Yes",
+              "No \u2014 labels only",
+              "Automatically",
+              "Paid"
+            ]
+          },
+          {
+            "id": "pdm20",
+            "stem": "Print-only PASS submission?",
+            "choices": [
+              "Pass lab",
+              "Preferred",
+              "Raises _fail_if_print_pass",
+              "Skip"
+            ]
+          }
+        ],
+        "final_knowledge": [
+          {
+            "id": "pdf01",
+            "stem": "Capstone labs_passed floor?",
+            "choices": [
+              "6",
+              "1",
+              "50",
+              "0"
+            ]
+          },
+          {
+            "id": "pdf02",
+            "stem": "no_key_leak on capstone?",
+            "choices": [
+              "false OK",
+              "must true",
+              "Optional",
+              "N/A"
+            ]
+          },
+          {
+            "id": "pdf03",
+            "stem": "consent_ok false on capstone?",
+            "choices": [
+              "Pass",
+              "Bonus",
+              "Fail",
+              "Skip"
+            ]
+          },
+          {
+            "id": "pdf04",
+            "stem": "a11y_ok required?",
+            "choices": [
+              "No",
+              "Maybe",
+              "AI decides",
+              "Yes true"
+            ]
+          },
+          {
+            "id": "pdf05",
+            "stem": "conflict_ok meaning?",
+            "choices": [
+              "Conflicts handled with disclose/recuse",
+              "Ignore conflicts",
+              "Always fight",
+              "Hide"
+            ]
+          },
+          {
+            "id": "pdf06",
+            "stem": "Career certs in mapping?",
+            "choices": [
+              "Granted now",
+              "Aligned not granted",
+              "Printed plastic",
+              "Fake"
+            ]
+          },
+          {
+            "id": "pdf07",
+            "stem": "HITL required for educator grade publish?",
+            "choices": [
+              "No",
+              "Never",
+              "Yes",
+              "Bot only"
+            ]
+          },
+          {
+            "id": "pdf08",
+            "stem": "Socratic learner default?",
+            "choices": [
+              "Dump answers",
+              "Leak keys",
+              "Merge",
+              "Question toward ladder rungs"
+            ]
+          },
+          {
+            "id": "pdf09",
+            "stem": "Minutes without due dates?",
+            "choices": [
+              "Fail dues check",
+              "Pass",
+              "OK",
+              "Bonus"
+            ]
+          },
+          {
+            "id": "pdf10",
+            "stem": "Attribution FULL_COPY?",
+            "choices": [
+              "Pass",
+              "Fail reuse_class",
+              "Preferred",
+              "Required"
+            ]
+          },
+          {
+            "id": "pdf11",
+            "stem": "Feedback score 0..4 includes?",
+            "choices": [
+              "9",
+              "100",
+              "3",
+              "-5"
+            ]
+          },
+          {
+            "id": "pdf12",
+            "stem": "Desk SMS for official ticket?",
+            "choices": [
+              "Allowed",
+              "Best practice",
+              "Encrypted OK",
+              "Wrong channel"
+            ]
+          },
+          {
+            "id": "pdf13",
+            "stem": "Observation vs inference swap?",
+            "choices": [
+              "Poisons ethics ladder",
+              "Harmless",
+              "Required",
+              "Funny"
+            ]
+          },
+          {
+            "id": "pdf14",
+            "stem": "Large print availability?",
+            "choices": [
+              "Ignore",
+              "Required true on a11y lab",
+              "Luxury",
+              "Never"
+            ]
+          },
+          {
+            "id": "pdf15",
+            "stem": "AI mode during week 4 ladder?",
+            "choices": [
+              "Silent AI OK",
+              "Keys OK",
+              "NO_AI authorship",
+              "Self-grade"
+            ]
+          },
+          {
+            "id": "pdf16",
+            "stem": "Alt text purpose?",
+            "choices": [
+              "Decoration",
+              "Hide errors",
+              "Store SSN",
+              "Describe non-text content"
+            ]
+          },
+          {
+            "id": "pdf17",
+            "stem": "Portfolio claim boundary?",
+            "choices": [
+              "State digital fixture limits",
+              "Overclaim E6",
+              "Hide limits",
+              "Fake cohort"
+            ]
+          },
+          {
+            "id": "pdf18",
+            "stem": "Empty {} lab submission?",
+            "choices": [
+              "Pass",
+              "Must fail",
+              "Auto-fill",
+              "Ignore"
+            ]
+          },
+          {
+            "id": "pdf19",
+            "stem": "Wrong ethics fields?",
+            "choices": [
+              "Pass",
+              "Partial credit auto",
+              "Must fail",
+              "Skip"
+            ]
+          },
+          {
+            "id": "pdf20",
+            "stem": "REAL_TEACHER_E6 this packet?",
+            "choices": [
+              "true",
+              "auto",
+              "maybe",
+              "false"
+            ]
+          },
+          {
+            "id": "pdf21",
+            "stem": "gunnchAI learner disclose finals?",
+            "choices": [
+              "No \u2014 permission denied",
+              "Yes",
+              "Always",
+              "If asked twice"
+            ]
+          },
+          {
+            "id": "pdf22",
+            "stem": "Parallel owners for two decisions?",
+            "choices": [
+              "One owner total OK",
+              "Two owners aligned",
+              "Zero OK",
+              "Random"
+            ]
+          },
+          {
+            "id": "pdf23",
+            "stem": "Retention 90 days example means?",
+            "choices": [
+              "Infinite store",
+              "Zero",
+              "Positive finite retention",
+              "Illegal"
+            ]
+          },
+          {
+            "id": "pdf24",
+            "stem": "Cursor merge policy?",
+            "choices": [
+              "Always merges",
+              "Force push",
+              "Silent",
+              "Never merges \u2014 DRAFT PR only"
+            ]
+          }
+        ],
+        "practical_labs": [
+          "lab_consent_disclosure",
+          "lab_conflict_interest",
+          "lab_professional_comm",
+          "lab_ethics_ladder",
+          "lab_attribution_cite",
+          "lab_feedback_rubric",
+          "lab_meeting_minutes",
+          "lab_ai_disclosure_modes",
+          "lab_accessibility_comm",
+          "lab_pd_capstone"
+        ]
+      },
+      "portfolio": {
+        "no_pii": true
+      },
+      "offline_pack": {
+        "lesson_ids": [
+          "COMM_PD_ETHICS-w01",
+          "COMM_PD_ETHICS-w02",
+          "COMM_PD_ETHICS-w03",
+          "COMM_PD_ETHICS-w04",
+          "COMM_PD_ETHICS-w05",
+          "COMM_PD_ETHICS-w06",
+          "COMM_PD_ETHICS-w07",
+          "COMM_PD_ETHICS-w08",
+          "COMM_PD_ETHICS-w09",
+          "COMM_PD_ETHICS-w10"
+        ],
+        "session_shape": {
+          "lesson_id": "COMM_PD_ETHICS-w01",
+          "role": "learner",
+          "offline_pack": "COMM_PD_ETHICS-offline",
+          "labs": [
+            "lab_consent_disclosure",
+            "lab_conflict_interest"
+          ]
+        }
+      },
+      "answer_keys": {
+        "quizzes": {
+          "COMM_PD_ETHICS-q01": [
+            {
+              "id": "pd-w1-1",
+              "answer_index": 3,
+              "explanation": "ticket_id allowed."
+            },
+            {
+              "id": "pd-w1-2",
+              "answer_index": 0,
+              "explanation": "Must be >0."
+            },
+            {
+              "id": "pd-w1-3",
+              "answer_index": 1,
+              "explanation": "Vague."
+            },
+            {
+              "id": "pd-w1-4",
+              "answer_index": 2,
+              "explanation": "true."
+            },
+            {
+              "id": "pd-w1-5",
+              "answer_index": 3,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w1-6",
+              "answer_index": 0,
+              "explanation": "Forbidden."
+            }
+          ],
+          "COMM_PD_ETHICS-q02": [
+            {
+              "id": "pd-w2-1",
+              "answer_index": 1,
+              "explanation": "Must recuse."
+            },
+            {
+              "id": "pd-w2-2",
+              "answer_index": 2,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w2-3",
+              "answer_index": 3,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w2-4",
+              "answer_index": 0,
+              "explanation": "Forbidden."
+            },
+            {
+              "id": "pd-w2-5",
+              "answer_index": 1,
+              "explanation": "No keys."
+            },
+            {
+              "id": "pd-w2-6",
+              "answer_index": 2,
+              "explanation": "Scoring+coach."
+            }
+          ],
+          "COMM_PD_ETHICS-q03": [
+            {
+              "id": "pd-w3-1",
+              "answer_index": 3,
+              "explanation": "ticket."
+            },
+            {
+              "id": "pd-w3-2",
+              "answer_index": 0,
+              "explanation": "false."
+            },
+            {
+              "id": "pd-w3-3",
+              "answer_index": 1,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w3-4",
+              "answer_index": 2,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w3-5",
+              "answer_index": 3,
+              "explanation": "\u22658."
+            },
+            {
+              "id": "pd-w3-6",
+              "answer_index": 0,
+              "explanation": "Zero."
+            }
+          ],
+          "COMM_PD_ETHICS-q04": [
+            {
+              "id": "pd-w4-1",
+              "answer_index": 1,
+              "explanation": "false."
+            },
+            {
+              "id": "pd-w4-2",
+              "answer_index": 2,
+              "explanation": "observation."
+            },
+            {
+              "id": "pd-w4-3",
+              "answer_index": 3,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w4-4",
+              "answer_index": 0,
+              "explanation": "NO_AI."
+            },
+            {
+              "id": "pd-w4-5",
+              "answer_index": 1,
+              "explanation": "Need."
+            },
+            {
+              "id": "pd-w4-6",
+              "answer_index": 2,
+              "explanation": "action."
+            }
+          ],
+          "COMM_PD_ETHICS-q05": [
+            {
+              "id": "pd-w5-1",
+              "answer_index": 3,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w5-2",
+              "answer_index": 0,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w5-3",
+              "answer_index": 1,
+              "explanation": "Aligned only."
+            },
+            {
+              "id": "pd-w5-4",
+              "answer_index": 2,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w5-5",
+              "answer_index": 3,
+              "explanation": "Labels."
+            },
+            {
+              "id": "pd-w5-6",
+              "answer_index": 0,
+              "explanation": "\u226540."
+            }
+          ],
+          "COMM_PD_ETHICS-q06": [
+            {
+              "id": "pd-w6-1",
+              "answer_index": 1,
+              "explanation": "0..4."
+            },
+            {
+              "id": "pd-w6-2",
+              "answer_index": 2,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w6-3",
+              "answer_index": 3,
+              "explanation": "Behavior."
+            },
+            {
+              "id": "pd-w6-4",
+              "answer_index": 0,
+              "explanation": "Forbidden."
+            },
+            {
+              "id": "pd-w6-5",
+              "answer_index": 1,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w6-6",
+              "answer_index": 2,
+              "explanation": "Fail."
+            }
+          ],
+          "COMM_PD_ETHICS-q07": [
+            {
+              "id": "pd-w7-1",
+              "answer_index": 3,
+              "explanation": "true."
+            },
+            {
+              "id": "pd-w7-2",
+              "answer_index": 0,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w7-3",
+              "answer_index": 1,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w7-4",
+              "answer_index": 2,
+              "explanation": "Fails."
+            },
+            {
+              "id": "pd-w7-5",
+              "answer_index": 3,
+              "explanation": "\u22652."
+            },
+            {
+              "id": "pd-w7-6",
+              "answer_index": 0,
+              "explanation": "Next shift."
+            }
+          ],
+          "COMM_PD_ETHICS-q08": [
+            {
+              "id": "pd-w8-1",
+              "answer_index": 1,
+              "explanation": "No."
+            },
+            {
+              "id": "pd-w8-2",
+              "answer_index": 2,
+              "explanation": "true."
+            },
+            {
+              "id": "pd-w8-3",
+              "answer_index": 3,
+              "explanation": "AI_DISCLOSED."
+            },
+            {
+              "id": "pd-w8-4",
+              "answer_index": 0,
+              "explanation": "Forbidden."
+            },
+            {
+              "id": "pd-w8-5",
+              "answer_index": 1,
+              "explanation": "human-only."
+            },
+            {
+              "id": "pd-w8-6",
+              "answer_index": 2,
+              "explanation": "Forbidden."
+            }
+          ],
+          "COMM_PD_ETHICS-q09": [
+            {
+              "id": "pd-w9-1",
+              "answer_index": 3,
+              "explanation": "false."
+            },
+            {
+              "id": "pd-w9-2",
+              "answer_index": 0,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w9-3",
+              "answer_index": 1,
+              "explanation": "Fail."
+            },
+            {
+              "id": "pd-w9-4",
+              "answer_index": 2,
+              "explanation": "Forbidden."
+            },
+            {
+              "id": "pd-w9-5",
+              "answer_index": 3,
+              "explanation": "true."
+            },
+            {
+              "id": "pd-w9-6",
+              "answer_index": 0,
+              "explanation": "NO_AI."
+            }
+          ],
+          "COMM_PD_ETHICS-q10": [
+            {
+              "id": "pd-w10-1",
+              "answer_index": 1,
+              "explanation": "\u22656."
+            },
+            {
+              "id": "pd-w10-2",
+              "answer_index": 2,
+              "explanation": "true."
+            },
+            {
+              "id": "pd-w10-3",
+              "answer_index": 3,
+              "explanation": "false."
+            },
+            {
+              "id": "pd-w10-4",
+              "answer_index": 0,
+              "explanation": "false."
+            },
+            {
+              "id": "pd-w10-5",
+              "answer_index": 1,
+              "explanation": "Aligned."
+            },
+            {
+              "id": "pd-w10-6",
+              "answer_index": 2,
+              "explanation": "Fail."
+            }
+          ]
+        },
+        "mid": [
+          {
+            "id": "pdm01",
+            "answer_index": 3
+          },
+          {
+            "id": "pdm02",
+            "answer_index": 0
+          },
+          {
+            "id": "pdm03",
+            "answer_index": 1
+          },
+          {
+            "id": "pdm04",
+            "answer_index": 2
+          },
+          {
+            "id": "pdm05",
+            "answer_index": 3
+          },
+          {
+            "id": "pdm06",
+            "answer_index": 0
+          },
+          {
+            "id": "pdm07",
+            "answer_index": 1
+          },
+          {
+            "id": "pdm08",
+            "answer_index": 2
+          },
+          {
+            "id": "pdm09",
+            "answer_index": 3
+          },
+          {
+            "id": "pdm10",
+            "answer_index": 0
+          },
+          {
+            "id": "pdm11",
+            "answer_index": 1
+          },
+          {
+            "id": "pdm12",
+            "answer_index": 2
+          },
+          {
+            "id": "pdm13",
+            "answer_index": 3
+          },
+          {
+            "id": "pdm14",
+            "answer_index": 0
+          },
+          {
+            "id": "pdm15",
+            "answer_index": 1
+          },
+          {
+            "id": "pdm16",
+            "answer_index": 2
+          },
+          {
+            "id": "pdm17",
+            "answer_index": 3
+          },
+          {
+            "id": "pdm18",
+            "answer_index": 0
+          },
+          {
+            "id": "pdm19",
+            "answer_index": 1
+          },
+          {
+            "id": "pdm20",
+            "answer_index": 2
+          }
+        ],
+        "final": [
+          {
+            "id": "pdf01",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf02",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf03",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf04",
+            "answer_index": 3
+          },
+          {
+            "id": "pdf05",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf06",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf07",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf08",
+            "answer_index": 3
+          },
+          {
+            "id": "pdf09",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf10",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf11",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf12",
+            "answer_index": 3
+          },
+          {
+            "id": "pdf13",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf14",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf15",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf16",
+            "answer_index": 3
+          },
+          {
+            "id": "pdf17",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf18",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf19",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf20",
+            "answer_index": 3
+          },
+          {
+            "id": "pdf21",
+            "answer_index": 0
+          },
+          {
+            "id": "pdf22",
+            "answer_index": 1
+          },
+          {
+            "id": "pdf23",
+            "answer_index": 2
+          },
+          {
+            "id": "pdf24",
+            "answer_index": 3
+          }
+        ]
+      },
+      "rubrics": [
+        "COMM_PD_ETHICS-lab",
+        "COMM_PD_ETHICS-assignment",
+        "COMM_PD_ETHICS-practical",
+        "COMM_PD_ETHICS-project"
       ],
       "instructor_notes": "Keys stay out of learner ingest. Run labs with computing validators.",
       "presentation": [

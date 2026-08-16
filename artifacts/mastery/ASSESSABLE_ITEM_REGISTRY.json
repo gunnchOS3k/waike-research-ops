@@ -1,8 +1,8 @@
 {
   "schema": "waike.assessable_item_registry.v1",
-  "generated_utc": "2026-08-15T19:52:13Z",
-  "course_count": 12,
-  "item_count": 1358,
+  "generated_utc": "2026-08-16T17:18:43Z",
+  "course_count": 13,
+  "item_count": 1472,
   "per_course": {
     "AI_ML_EDGE": {
       "quiz": 60,
@@ -12,6 +12,13 @@
       "total": 114
     },
     "CLOUD_DEVOPS": {
+      "quiz": 60,
+      "mid": 20,
+      "final": 24,
+      "lab": 10,
+      "total": 114
+    },
+    "COMM_PD_ETHICS": {
       "quiz": 60,
       "mid": 20,
       "final": 24,
@@ -185,5 +192,5 @@
     }
   ],
   "claim_boundary": "Student-facing assessable registry only. Instructor keys are not embedded. Scoring requires an isolated grading agent after submission.",
-  "items_omitted_for_size": 1353
+  "items_omitted_for_size": 1467
 }
