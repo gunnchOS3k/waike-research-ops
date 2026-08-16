@@ -1,0 +1,19 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "title": "Communication, Professional Development, and Ethics — Harbor Desk Voice",
+  "track_ids": ["COMM_PD_ETHICS"],
+  "academy_id": "ACADEMY_PROF_DEV",
+  "packet": "STREAM-B-PKT-001",
+  "COURSE_DIGITAL_RC": false,
+  "lift_status": "BEGINNING",
+  "kinesthetic_hook": "Practice consent disclosures, conflict recusal, professional tickets, and the observation→inference→need→action ladder on Harbor Desk fixtures.",
+  "syllabus_hook": "STREAM-B begins executable ethics/PD labs. Full 10-week DIGITAL_RC package not claimed this packet.",
+  "runnable_labs": [
+    "lab_consent_disclosure",
+    "lab_conflict_interest",
+    "lab_professional_comm",
+    "lab_ethics_ladder"
+  ],
+  "claim_boundary": "Executable labs only. COURSE_DIGITAL_RC=false until full package bar. Not student/teacher E6."
+}
