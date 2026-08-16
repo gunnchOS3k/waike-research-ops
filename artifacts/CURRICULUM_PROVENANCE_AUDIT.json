@@ -87,14 +87,14 @@
       "packaging_jaccard_5gram": 0.0949
     },
     {
-      "a": "WIRELESS_6G",
-      "b": "COMM_PD_ETHICS",
-      "packaging_jaccard_5gram": 0.0944
+      "a": "HARDWARE_ENGINEERING",
+      "b": "PM_AGILE_LSS",
+      "packaging_jaccard_5gram": 0.092
     },
     {
-      "a": "GAME_DEV_INTERACTIVE",
-      "b": "COMM_PD_ETHICS",
-      "packaging_jaccard_5gram": 0.0922
+      "a": "PM_AGILE_LSS",
+      "b": "DATA_VIZ_BI",
+      "packaging_jaccard_5gram": 0.09
     }
   ],
   "key_distribution": {

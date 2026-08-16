@@ -1515,7 +1515,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'AMS1117-3.3', 'SSD1306', 'nRF52840'}"
+          "detail": "mpns={'AMS1117-3.3', 'nRF52840', 'SSD1306'}"
         },
         {
           "name": "total",
@@ -2558,7 +2558,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
+          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
         },
         {
           "name": "max",

@@ -1,7 +1,7 @@
 {
   "schema": "waike.teacher_ingest.v1",
   "role": "educator",
-  "generated_utc": "2026-08-16T17:14:50Z",
+  "generated_utc": "2026-08-16T17:26:55Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",

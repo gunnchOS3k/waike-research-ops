@@ -11,6 +11,7 @@ from waike_course_ready.content import COURSES, COURSES_001, extra_assessment_it
 from waike_course_ready.batch002.content import COURSES_002
 from waike_course_ready.batch003.content import COURSES_003
 from waike_course_ready.batch004.content import COURSES_004
+from waike_course_ready.batch005.content import COURSES_005
 from waike_course_ready.exams import TOKEN_JACCARD_FAIL, nearest_weekly, token_identical
 from waike_course_ready.ingest import build_learner, build_product_catalog, build_teacher
 from waike_course_ready.labs import _fail_if_print_pass, run_all, run_lab
@@ -25,20 +26,23 @@ BATCH_001 = {"GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY"}
 BATCH_002 = {"SOFTWARE_BUILDER", "HARDWARE_ENGINEERING", "PM_AGILE_LSS"}
 BATCH_003 = {"AI_ML_EDGE", "DATA_VIZ_BI", "CLOUD_DEVOPS"}
 BATCH_004 = {"WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE"}
+BATCH_005 = {"COMM_PD_ETHICS"}
 
 
 def test_batch001_and_batch002_coexist_in_product_paths():
-    """#43/#44/#45 coverage must remain; #46 adds three courses. Do not replace COURSES."""
+    """#43/#44/#45/#46 coverage must remain; Stream-B adds COMM_PD_ETHICS. Do not replace COURSES."""
     assert BATCH_001.issubset(set(COURSES))
     assert BATCH_002.issubset(set(COURSES))
     assert BATCH_003.issubset(set(COURSES))
     assert BATCH_004.issubset(set(COURSES))
-    assert set(COURSES) == BATCH_001 | BATCH_002 | BATCH_003 | BATCH_004
-    assert len(COURSES) == 12
+    assert BATCH_005.issubset(set(COURSES))
+    assert set(COURSES) == BATCH_001 | BATCH_002 | BATCH_003 | BATCH_004 | BATCH_005
+    assert len(COURSES) == 13
     assert set(COURSES_001) == BATCH_001
     assert set(COURSES_002) == BATCH_002
     assert set(COURSES_003) == BATCH_003
     assert set(COURSES_004) == BATCH_004
+    assert set(COURSES_005) == BATCH_005
 
 
 def test_each_course_has_depth():
@@ -59,7 +63,7 @@ def test_each_course_has_depth():
             assert "ticket arithmetic checkpoint" not in low
             assert "restate the worked example in your own symbols" not in low
             stripped = strip_lesson_padding(raw)
-            floor = 871 if cid in BATCH_004 else 800
+            floor = 871 if cid in (BATCH_004 | BATCH_005) else 800
             assert len(stripped) >= floor, (cid, w["week"], len(stripped), floor)
             assert "Operator note: record evidence" not in stripped
             assert "Evidence discipline week" not in stripped
@@ -179,12 +183,13 @@ def test_labs_compute_and_negatives_fail():
         "ttl1_from_parsed_header", "no_submission_fails", "negatives_must_fail_and_did",
         "computed_honesty_gate",
     )}
-    # #43 (20) ∪ #44 (30) ∪ #45 (30) ∪ #46 (30)
-    assert bundle["lab_count"] >= 110, bundle["lab_count"]
+    # #43 (20) ∪ #44 (30) ∪ #45 (30) ∪ #46 (30) ∪ Stream-B COMM_PD (10)
+    assert bundle["lab_count"] >= 120, bundle["lab_count"]
     assert bundle.get("batch_001_lab_count") == 20
     assert bundle.get("batch_002_lab_count") == 30
     assert bundle.get("batch_003_lab_count") == 30
     assert bundle.get("batch_004_lab_count") == 30
+    assert bundle.get("batch_005_lab_count") == 10
     assert all(n["ok"] for n in bundle["negatives_must_fail_and_did"])
     assert bundle["empty_submission_fails"] is True
     assert bundle["wrong_submission_fails"] is True
@@ -226,6 +231,12 @@ def test_empty_and_print_pass_fail():
     except AssertionError:
         raised5 = True
     assert raised5
+    raised6 = False
+    try:
+        run_lab("lab_consent_disclosure", submission="PASS")
+    except AssertionError:
+        raised6 = True
+    assert raised6
 
 
 def test_mid_final_not_weekly_clones():
@@ -279,7 +290,8 @@ def test_product_catalog_ui_fields():
     assert BATCH_002.issubset(ids)
     assert BATCH_003.issubset(ids)
     assert BATCH_004.issubset(ids)
-    assert len(ids) == 12
+    assert BATCH_005.issubset(ids)
+    assert len(ids) == 13
     for course in cat["courses"]:
         for field in (
             "course_id",

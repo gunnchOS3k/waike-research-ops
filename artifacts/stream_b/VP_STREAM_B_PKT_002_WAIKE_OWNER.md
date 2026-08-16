@@ -25,3 +25,10 @@ test -f artifacts/stream_b/WAIKE_FULL_TAXONOMY_GAP_LEDGER.json
 
 ## Key leak check
 Learner ingest must not contain `answer_keys` / `instructor_keys` / `answer_index` markers as key fields (policy prose scrubbed to avoid false positives).
+
+## Remediation (post independent FAIL)
+- `test_digital_rc_batch` now expects `len(COURSES)==13` with `BATCH_005={COMM_PD_ETHICS}`
+- Catalog asserts include COMM_PD; lab_count ≥120 / batch_005_lab_count==10
+- De-shelled COMM_PD lab READMEs (worst pairwise token Jaccard ≈0.43, was ~0.95)
+- Re-ran labs/provenance/template/consumption/RC writer + pytest green locally
+

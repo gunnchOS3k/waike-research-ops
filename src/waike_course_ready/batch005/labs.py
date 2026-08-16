@@ -265,14 +265,76 @@ COURSE_LABS_005 = {
 }
 
 LAB_SPECS_005 = {
-    lid: {
-        "title": lid.replace("lab_", "").replace("_", " "),
-        "readme": f"Runnable validator for {lid}. Empty/wrong/print-PASS fail. Harbor Desk Voice.",
+    "lab_consent_disclosure": {
+        "title": "consent disclosure",
+        "readme": "Harbor Desk Voice consent card for ticket PD-2101. Students submit audience, purpose, data_classes (\u22652, no ssn), retention_days > 0, opt_out_path, and ai_disclosure=true. Vague audience='everyone' fails. This is operational consent, not a wall poster.",
         "required_keys": [],
-        "wrong_hint": "Wrong ethics/PD policy fields must fail.",
+        "wrong_hint": "SSN classes, retention_days=0, blank opt-out, or ai_disclosure false must fail.",
         "course_id": COURSE,
-    }
-    for lid in LABS_005
+    },
+    "lab_conflict_interest": {
+        "title": "conflict of interest",
+        "readme": "PD-2204 conflict drill: mentoring plus scoring the same portfolio. Submit scenario (\u226540 chars), conflict_present, disclose_to, recuse, and rationale (\u226524). When conflict_present is true, recuse must be true after disclosure to the course lead.",
+        "required_keys": [],
+        "wrong_hint": "Short scenarios, empty disclose_to, or recuse=false while conflict_present=true fail.",
+        "course_id": COURSE,
+    },
+    "lab_professional_comm": {
+        "title": "professional communication",
+        "readme": "PD-2307 professional ticket. Channel must be email|ticket|slack_work. Subject \u22658, body \u226580 with observation and next action. demeaning_labels and promises_outcome must be false. Banned body tokens include stupid/lazy/hopeless/idiot.",
+        "required_keys": [],
+        "wrong_hint": "SMS channel, demeaning labels, outcome promises, or banned body words fail.",
+        "course_id": COURSE,
+    },
+    "lab_ethics_ladder": {
+        "title": "ethics ladder",
+        "readme": "PD-2409 observation\u2192inference\u2192need\u2192action ladder (NO_AI authorship week). Each rung has a minimum length. fabricated_impact must be false \u2014 invented citywide harm stats fail.",
+        "required_keys": [],
+        "wrong_hint": "Short rungs or fabricated_impact=true fail the ladder honesty gate.",
+        "course_id": COURSE,
+    },
+    "lab_attribution_cite": {
+        "title": "attribution cite",
+        "readme": "PD-2511 citation discipline. reuse_class \u2208 {PUBLIC_REFERENCE_ONLY, FAIR_USE_PARAPHRASE, ORIGINAL}. quote_chars \u2264120. paraphrase \u226540 in WAIKE words. Verbatim dumps fail. Certs stay aligned-not-granted.",
+        "required_keys": [],
+        "wrong_hint": "FULL_COPY, quote_chars>120, or 'verbatim dump' paraphrase fail.",
+        "course_id": COURSE,
+    },
+    "lab_feedback_rubric": {
+        "title": "feedback rubric",
+        "readme": "PD-2615 peer feedback: criterion, evidence (\u226524 on journal behavior), score 0..4, next_action \u226516. identity_attack must be false. Educator HITL still required before any grade publish.",
+        "required_keys": [],
+        "wrong_hint": "Score outside 0..4, identity_attack true, or thin evidence/next_action fail.",
+        "course_id": COURSE,
+    },
+    "lab_meeting_minutes": {
+        "title": "meeting minutes",
+        "readme": "PD-2718 minutes: attendees_count \u22652; parallel decisions/owners/due_dates arrays (\u22652 each); pii_redacted true. Unequal array lengths fail. Patron PANs must not appear.",
+        "required_keys": [],
+        "wrong_hint": "Solo attendees, misaligned arrays, or pii_redacted false fail.",
+        "course_id": COURSE,
+    },
+    "lab_ai_disclosure_modes": {
+        "title": "AI disclosure modes",
+        "readme": "PD-2822 AI mode honesty. mode \u2208 {AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI}. disclosed=true, used_instructor_keys=false, learner_facing=true. Learner tutors never open the instructor key store. NO_AI rationale must say human-only/no ai.",
+        "required_keys": [],
+        "wrong_hint": "Key access true, disclosed false, or invalid mode fail.",
+        "course_id": COURSE,
+    },
+    "lab_accessibility_comm": {
+        "title": "accessibility communication",
+        "readme": "PD-2925 accessible professional communication (NO_AI walkthrough). captions, plain_language, large_print_available true; color_only_signals false; alt_text \u226512. Fabricated disability quotes forbidden.",
+        "required_keys": [],
+        "wrong_hint": "Missing captions, color-only signals, or tiny alt_text fail.",
+        "course_id": COURSE,
+    },
+    "lab_pd_capstone": {
+        "title": "PD capstone",
+        "readme": "PD-2A30 ship checklist: labs_passed \u22656; consent_ok, conflict_ok, a11y_ok, no_key_leak true; fabricated_impact false. Portfolio claim boundary stays digital-fixture only; REAL_*_E6 false.",
+        "required_keys": [],
+        "wrong_hint": "labs_passed<6, any honesty flag false, or fabricated_impact true fail.",
+        "course_id": COURSE,
+    },
 }
 
 REFERENCE_005 = {

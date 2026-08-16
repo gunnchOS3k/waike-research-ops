@@ -92,16 +92,39 @@ def rubrics_005(course_id: str) -> list[dict[str, Any]]:
 
 def lab_readme_005(course_id: str, lab_id: str) -> str:
     spec = LAB_SPECS_005[lab_id]
+    how = {
+        "lab_consent_disclosure": "Write the PD-2101 consent JSON from the walk-up desk script.",
+        "lab_conflict_interest": "Author the PD-2204 disclose+recuse JSON before scoring starts.",
+        "lab_professional_comm": "Draft the PD-2307 ticket body from the idle-logout observation.",
+        "lab_ethics_ladder": "Fill the PD-2409 ladder under NO_AI authorship rules.",
+        "lab_attribution_cite": "Cite ISC2 theme labels for PD-2511 without dumping chapters.",
+        "lab_feedback_rubric": "Score the peer journal for PD-2615 with evidence, not identity attacks.",
+        "lab_meeting_minutes": "Publish redacted PD-2718 minutes with owners and due dates.",
+        "lab_ai_disclosure_modes": "Declare the PD-2822 AI mode without opening the instructor key store.",
+        "lab_accessibility_comm": "Walk the PD-2925 flyer checklist under NO_AI.",
+        "lab_pd_capstone": "Assemble the PD-2A30 ship checklist from prior lab evidence.",
+    }.get(lab_id, "Submit Harbor Desk Voice JSON for this lab.")
+    artifact = {
+        "lab_consent_disclosure": "Required keys: audience, purpose, data_classes, retention_days, opt_out_path, ai_disclosure.",
+        "lab_conflict_interest": "Required keys: scenario, conflict_present, disclose_to, recuse, rationale.",
+        "lab_professional_comm": "Required keys: channel, subject, body, demeaning_labels, promises_outcome.",
+        "lab_ethics_ladder": "Required keys: observation, inference, need, action, fabricated_impact.",
+        "lab_attribution_cite": "Required keys: claim, source_title, reuse_class, quote_chars, paraphrase.",
+        "lab_feedback_rubric": "Required keys: criterion, evidence, score, next_action, identity_attack.",
+        "lab_meeting_minutes": "Required keys: attendees_count, decisions, owners, due_dates, pii_redacted.",
+        "lab_ai_disclosure_modes": "Required keys: mode, disclosed, used_instructor_keys, learner_facing, rationale.",
+        "lab_accessibility_comm": "Required keys: captions, plain_language, alt_text, color_only_signals, large_print_available.",
+        "lab_pd_capstone": "Required keys: labs_passed, consent_ok, conflict_ok, a11y_ok, no_key_leak, fabricated_impact.",
+    }.get(lab_id, "Submit non-empty JSON; empty {} fails; PASS raises.")
     return "\n".join([
         f"# {lab_id} — {spec['title']}", "", spec["readme"], "",
-        "## Student artifact",
-        "Empty {} fails. PASS raises. Harbor Desk Voice ethics/PD fields must be honest.",
-        "", "## How to run",
-        "From the Harbor Desk Voice folder, submit computed JSON.",
+        "## Student artifact", artifact,
+        "Empty {} fails. A file whose entire body is PASS raises _fail_if_print_pass.",
+        "", "## How to run", how,
         "```",
         f"python3 scripts/run_course_labs.py --lab {lab_id} --submission path/to/student.json",
         f"python3 scripts/run_course_labs.py --lab {lab_id} --empty",
-        "```", "", spec["wrong_hint"], "",
+        "```", "", "## Wrong submissions", spec["wrong_hint"], "",
     ])
 
 
