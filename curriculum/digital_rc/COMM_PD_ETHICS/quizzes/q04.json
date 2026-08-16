@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "pd-w4-1",
+      "kind": "mcq",
+      "stem": "fabricated_impact must be?",
+      "choices": [
+        "true",
+        "false",
+        "null",
+        "optional"
+      ]
+    },
+    {
+      "id": "pd-w4-2",
+      "kind": "mcq",
+      "stem": "First ladder rung?",
+      "choices": [
+        "action",
+        "inference",
+        "observation",
+        "need"
+      ]
+    },
+    {
+      "id": "pd-w4-3",
+      "kind": "mcq",
+      "stem": "Invented citywide harm stats?",
+      "choices": [
+        "OK",
+        "Bonus",
+        "Required",
+        "Fail fabricated_impact"
+      ]
+    },
+    {
+      "id": "pd-w4-4",
+      "kind": "mcq",
+      "stem": "Week-4 ladder authorship AI mode?",
+      "choices": [
+        "NO_AI authorship",
+        "AI_ALLOWED silent",
+        "Keys OK",
+        "Self-grade"
+      ]
+    },
+    {
+      "id": "pd-w4-5",
+      "kind": "mcq",
+      "stem": "Need rung asks for?",
+      "choices": [
+        "Joke",
+        "Missing confirmation",
+        "Cert",
+        "Merge"
+      ]
+    },
+    {
+      "id": "pd-w4-6",
+      "kind": "mcq",
+      "stem": "USB wipe pause is which rung?",
+      "choices": [
+        "observation",
+        "audience",
+        "action",
+        "quiz"
+      ]
+    }
+  ]
+}

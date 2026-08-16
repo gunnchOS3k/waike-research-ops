@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "pd-w1-1",
+      "kind": "mcq",
+      "stem": "PD-2101 may log which class?",
+      "choices": [
+        "ssn",
+        "password",
+        "pan",
+        "ticket_id"
+      ]
+    },
+    {
+      "id": "pd-w1-2",
+      "kind": "mcq",
+      "stem": "retention_days 0 should?",
+      "choices": [
+        "Fail",
+        "Pass",
+        "Bonus",
+        "Skip"
+      ]
+    },
+    {
+      "id": "pd-w1-3",
+      "kind": "mcq",
+      "stem": "Audience 'everyone' is?",
+      "choices": [
+        "Precise",
+        "Too vague for desk consent",
+        "Required",
+        "Legal"
+      ]
+    },
+    {
+      "id": "pd-w1-4",
+      "kind": "mcq",
+      "stem": "ai_disclosure must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "hidden"
+      ]
+    },
+    {
+      "id": "pd-w1-5",
+      "kind": "mcq",
+      "stem": "Opt-out path missing means?",
+      "choices": [
+        "Lab passes",
+        "Auto-approve",
+        "Cert grant",
+        "Lab fails"
+      ]
+    },
+    {
+      "id": "pd-w1-6",
+      "kind": "mcq",
+      "stem": "Fabricated consent stats?",
+      "choices": [
+        "Forbidden",
+        "Allowed",
+        "Required",
+        "Graded A"
+      ]
+    }
+  ]
+}

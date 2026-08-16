@@ -161,6 +161,19 @@
         "GAME_DEV_INTERACTIVE"
       ],
       "academy_id": "ACADEMY_SOFTWARE"
+    },
+    {
+      "course_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+      "kinesthetic_hook": "Ten Harbor Desk Voice weeks: consent \u2192 conflict \u2192 professional tickets \u2192 ethics ladder \u2192 attribution \u2192 feedback \u2192 minutes \u2192 AI disclosure \u2192 a11y \u2192 PD capstone. Instructor key material stay out of learner modes.",
+      "lesson_excerpt": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'Improve the product' is not a purpose when the desk's real purpose is coaching a restore path.",
+      "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true.",
+      "assignment": "Author consent JSON for PD-2101. Submit lab_consent_disclosure. No SSN classes.",
+      "lab_hint": "lab_consent_disclosure",
+      "track_ids": [
+        "COMM_PD_ETHICS"
+      ],
+      "academy_id": "ACADEMY_PROF_DEV"
     }
   ]
 }

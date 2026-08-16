@@ -1,0 +1,269 @@
+{
+  "assessment_id": "COMM_PD_ETHICS-final",
+  "items": [
+    {
+      "id": "pdf01",
+      "kind": "mcq",
+      "stem": "Capstone labs_passed floor?",
+      "choices": [
+        "6",
+        "1",
+        "50",
+        "0"
+      ]
+    },
+    {
+      "id": "pdf02",
+      "kind": "mcq",
+      "stem": "no_key_leak on capstone?",
+      "choices": [
+        "false OK",
+        "must true",
+        "Optional",
+        "N/A"
+      ]
+    },
+    {
+      "id": "pdf03",
+      "kind": "mcq",
+      "stem": "consent_ok false on capstone?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail",
+        "Skip"
+      ]
+    },
+    {
+      "id": "pdf04",
+      "kind": "mcq",
+      "stem": "a11y_ok required?",
+      "choices": [
+        "No",
+        "Maybe",
+        "AI decides",
+        "Yes true"
+      ]
+    },
+    {
+      "id": "pdf05",
+      "kind": "mcq",
+      "stem": "conflict_ok meaning?",
+      "choices": [
+        "Conflicts handled with disclose/recuse",
+        "Ignore conflicts",
+        "Always fight",
+        "Hide"
+      ]
+    },
+    {
+      "id": "pdf06",
+      "kind": "mcq",
+      "stem": "Career certs in mapping?",
+      "choices": [
+        "Granted now",
+        "Aligned not granted",
+        "Printed plastic",
+        "Fake"
+      ]
+    },
+    {
+      "id": "pdf07",
+      "kind": "mcq",
+      "stem": "HITL required for educator grade publish?",
+      "choices": [
+        "No",
+        "Never",
+        "Yes",
+        "Bot only"
+      ]
+    },
+    {
+      "id": "pdf08",
+      "kind": "mcq",
+      "stem": "Socratic learner default?",
+      "choices": [
+        "Dump answers",
+        "Leak keys",
+        "Merge",
+        "Question toward ladder rungs"
+      ]
+    },
+    {
+      "id": "pdf09",
+      "kind": "mcq",
+      "stem": "Minutes without due dates?",
+      "choices": [
+        "Fail dues check",
+        "Pass",
+        "OK",
+        "Bonus"
+      ]
+    },
+    {
+      "id": "pdf10",
+      "kind": "mcq",
+      "stem": "Attribution FULL_COPY?",
+      "choices": [
+        "Pass",
+        "Fail reuse_class",
+        "Preferred",
+        "Required"
+      ]
+    },
+    {
+      "id": "pdf11",
+      "kind": "mcq",
+      "stem": "Feedback score 0..4 includes?",
+      "choices": [
+        "9",
+        "100",
+        "3",
+        "-5"
+      ]
+    },
+    {
+      "id": "pdf12",
+      "kind": "mcq",
+      "stem": "Desk SMS for official ticket?",
+      "choices": [
+        "Allowed",
+        "Best practice",
+        "Encrypted OK",
+        "Wrong channel"
+      ]
+    },
+    {
+      "id": "pdf13",
+      "kind": "mcq",
+      "stem": "Observation vs inference swap?",
+      "choices": [
+        "Poisons ethics ladder",
+        "Harmless",
+        "Required",
+        "Funny"
+      ]
+    },
+    {
+      "id": "pdf14",
+      "kind": "mcq",
+      "stem": "Large print availability?",
+      "choices": [
+        "Ignore",
+        "Required true on a11y lab",
+        "Luxury",
+        "Never"
+      ]
+    },
+    {
+      "id": "pdf15",
+      "kind": "mcq",
+      "stem": "AI mode during week 4 ladder?",
+      "choices": [
+        "Silent AI OK",
+        "Keys OK",
+        "NO_AI authorship",
+        "Self-grade"
+      ]
+    },
+    {
+      "id": "pdf16",
+      "kind": "mcq",
+      "stem": "Alt text purpose?",
+      "choices": [
+        "Decoration",
+        "Hide errors",
+        "Store SSN",
+        "Describe non-text content"
+      ]
+    },
+    {
+      "id": "pdf17",
+      "kind": "mcq",
+      "stem": "Portfolio claim boundary?",
+      "choices": [
+        "State digital fixture limits",
+        "Overclaim E6",
+        "Hide limits",
+        "Fake cohort"
+      ]
+    },
+    {
+      "id": "pdf18",
+      "kind": "mcq",
+      "stem": "Empty {} lab submission?",
+      "choices": [
+        "Pass",
+        "Must fail",
+        "Auto-fill",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pdf19",
+      "kind": "mcq",
+      "stem": "Wrong ethics fields?",
+      "choices": [
+        "Pass",
+        "Partial credit auto",
+        "Must fail",
+        "Skip"
+      ]
+    },
+    {
+      "id": "pdf20",
+      "kind": "mcq",
+      "stem": "REAL_TEACHER_E6 this packet?",
+      "choices": [
+        "true",
+        "auto",
+        "maybe",
+        "false"
+      ]
+    },
+    {
+      "id": "pdf21",
+      "kind": "mcq",
+      "stem": "gunnchAI learner disclose finals?",
+      "choices": [
+        "No \u2014 permission denied",
+        "Yes",
+        "Always",
+        "If asked twice"
+      ]
+    },
+    {
+      "id": "pdf22",
+      "kind": "mcq",
+      "stem": "Parallel owners for two decisions?",
+      "choices": [
+        "One owner total OK",
+        "Two owners aligned",
+        "Zero OK",
+        "Random"
+      ]
+    },
+    {
+      "id": "pdf23",
+      "kind": "mcq",
+      "stem": "Retention 90 days example means?",
+      "choices": [
+        "Infinite store",
+        "Zero",
+        "Positive finite retention",
+        "Illegal"
+      ]
+    },
+    {
+      "id": "pdf24",
+      "kind": "mcq",
+      "stem": "Cursor merge policy?",
+      "choices": [
+        "Always merges",
+        "Force push",
+        "Silent",
+        "Never merges \u2014 DRAFT PR only"
+      ]
+    }
+  ]
+}

@@ -1,19 +1,259 @@
 {
   "schema": "waike.course_package.v1",
   "course_id": "COMM_PD_ETHICS",
-  "title": "Communication, Professional Development, and Ethics — Harbor Desk Voice",
-  "track_ids": ["COMM_PD_ETHICS"],
+  "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+  "track_ids": [
+    "COMM_PD_ETHICS"
+  ],
   "academy_id": "ACADEMY_PROF_DEV",
-  "packet": "STREAM-B-PKT-001",
-  "COURSE_DIGITAL_RC": false,
-  "lift_status": "BEGINNING",
-  "kinesthetic_hook": "Practice consent disclosures, conflict recusal, professional tickets, and the observation→inference→need→action ladder on Harbor Desk fixtures.",
-  "syllabus_hook": "STREAM-B begins executable ethics/PD labs. Full 10-week DIGITAL_RC package not claimed this packet.",
-  "runnable_labs": [
+  "kinesthetic_hook": "Ten Harbor Desk Voice weeks: consent \u2192 conflict \u2192 professional tickets \u2192 ethics ladder \u2192 attribution \u2192 feedback \u2192 minutes \u2192 AI disclosure \u2192 a11y \u2192 PD capstone. Instructor key material stay out of learner modes.",
+  "lesson_excerpt": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'Improve the product' is not a purpose when the desk's real purpose is coaching a restore path.\n\nTicket PD-2101 is a walk-",
+  "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true.",
+  "assignment": "Author consent JSON for PD-2101. Submit lab_consent_disclosure. No SSN classes.",
+  "lab_hint": "lab_consent_disclosure",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Consent on the walk-up desk \u2014 name audience and purpose",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w01",
+        "title": "Consent on the walk-up desk \u2014 name audience and purpose",
+        "body_md": "Harbor Desk Voice opens with a consent card, not a slogan. When a patron asks the desk AI tutor for help on ticket PD-2101, you must say who hears the log, why it is kept, which data classes are stored, how many days it lives, and how to opt out. 'Everyone' is not an audience. 'Improve the product' is not a purpose when the desk's real purpose is coaching a restore path.\n\nTicket PD-2101 is a walk-up library patron whose essay vanished after idle logout. The tutor may log ticket_id, device_role, and lesson_progress. It must not log SSN, library-card PAN, or passwords. Retention for coaching notes is 90 days unless the desk lead shortens it. Opt-out is spoken: ask the desk lead to disable AI coaching on that ticket.\n\nConsensus Ladder this week: observed = tutor banner missing audience line; inferred = consent incomplete; still need = desk lead confirmation before enabling logging. Fabricating 'ninety percent of patrons consented' is forbidden.\n\nYou will write a consent disclosure JSON that names audience, purpose, data_classes (\u22652, no ssn), retention_days > 0, opt_out_path, and ai_disclosure=true. Empty {} fails. A file that only says PASS raises. This is professional communication as an operational control, not a poster on the wall.",
+        "worked_example": "Audience 'Saturday volunteers + walk-up patrons'; purpose 'ticket coaching logs'; classes ticket_id/device_role; retention 90; opt-out via desk lead; ai_disclosure true."
+      },
+      "lab_id": "lab_consent_disclosure"
+    },
+    {
+      "week": 2,
+      "title": "Conflict of interest \u2014 disclose and recuse",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w02",
+        "title": "Conflict of interest \u2014 disclose and recuse",
+        "body_md": "Harbor Desk Voice treats conflict as a scheduling problem, not a moral panic. Ticket PD-2204: a Saturday volunteer mentors classmate Jordan on the portfolio while also sitting on the scoring panel for that same portfolio. Mentoring is fine. Scoring after private coaching is not. The fix is disclose_to=course lead and recuse=true when conflict_present=true.\n\nWrite the scenario in \u226540 characters with concrete roles. Rationale must explain the unfair advantage without attacking Jordan's identity. 'It's fine' is not a rationale. Recusal without disclosure still fails the desk culture: the lead needs to reassign the scorer.\n\nConsensus Ladder: observed = same person coaches and scores; inferred = grading advantage; still need = alternate scorer name; action = recuse and hand off. Do not invent injury statistics or claim accreditation from a recusal drill.\n\nThis week is AI_DISCLOSED for drafting the scenario, but the submitted JSON must be the learner's judgment. Instructor answer keys stay out of learner tutor modes.",
+        "worked_example": "conflict_present true \u2192 disclose_to course lead + recuse true; rationale names scoring+mentoring overlap."
+      },
+      "lab_id": "lab_conflict_interest"
+    },
+    {
+      "week": 3,
+      "title": "Professional tickets \u2014 no demeaning labels",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w03",
+        "title": "Professional tickets \u2014 no demeaning labels",
+        "body_md": "Professional communication on Harbor Desk Voice is a ticket with a subject \u22658 characters and a body \u226580 characters that names observation and next action. Channel must be email, ticket, or slack_work \u2014 not personal SMS for desk work. demeaning_labels must be false. promises_outcome must be false: you do not guarantee the essay will return.\n\nTicket PD-2307 body that works: idle logout at 1200s discarded unsaved textarea on kiosk 3; check auto-save; coach Save As; no reboot-and-hope. Body that fails: 'you are stupid and lazy' \u2014 banned tokens include stupid, lazy, hopeless, idiot.\n\nConsensus Ladder: observed = patron upset; inferred = session loss; still need = auto-save folder existence; action = restore path. Do not promise 'we will always recover every file.'\n\nThis is the week learners practice tone as a safety property: demeaning language escalates conflict and contaminates the evidence trail.",
+        "worked_example": "channel ticket; subject names kiosk; body \u226580 with restore path; demeaning_labels false; promises_outcome false."
+      },
+      "lab_id": "lab_professional_comm"
+    },
+    {
+      "week": 4,
+      "title": "Ethics ladder \u2014 observation before inference",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w04",
+        "title": "Ethics ladder \u2014 observation before inference",
+        "body_md": "The Harbor Desk ethics ladder is observation \u2192 inference \u2192 need \u2192 action, with fabricated_impact forced false. Ticket PD-2409: three patrons report missing USB files after Friday close. Observation names the reports. Inference may say cleanup script. Need asks for cleanup schedule confirmation. Action pauses wipe and posts notice. Claiming 'this harmed 10,000 residents' without measurement is fabricated_impact and fails.\n\nNO_AI week for the ladder write-up: learners must separate what they saw from what they guess without a model filling gaps. AI may be used later to critique structure, but this week's submission is human-authored ladder JSON.\n\nConsensus Ladder is the lab itself. Confusing observation with inference is the most common Harbor Desk failure mode and it poisons meeting minutes next week. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "observation/inference/need/action depth floors; fabricated_impact false; NO_AI for authorship."
+      },
+      "lab_id": "lab_ethics_ladder"
+    },
+    {
+      "week": 5,
+      "title": "Attribution \u2014 cite without dumping",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w05",
+        "title": "Attribution \u2014 cite without dumping",
+        "body_md": "Harbor Desk Voice cites PUBLIC_REFERENCE_ONLY sources without harvesting exam stems. Ticket PD-2511 maps ISC2 ethics theme names to conflict drills. quote_chars \u2264120. paraphrase \u226540 characters in WAIKE words. reuse_class must be PUBLIC_REFERENCE_ONLY, FAIR_USE_PARAPHRASE, or ORIGINAL. FULL_COPY and 'verbatim dump' fail.\n\nLearners often paste chapter walls into journals. The lab rejects that. Alignment labels are not credentials granted. CompTIA/ISC2 names stay PUBLIC_REFERENCE_ONLY.\n\nConsensus Ladder: observed = source title present; inferred = reuse class chosen; still need = paraphrase quality; action = submit citation JSON. Do not claim the desk grants ISC2 certification. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "reuse_class PUBLIC_REFERENCE_ONLY; quote_chars\u2264120; paraphrase\u226540; no verbatim dump."
+      },
+      "lab_id": "lab_attribution_cite"
+    },
+    {
+      "week": 6,
+      "title": "Feedback rubric \u2014 evidence then score",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w06",
+        "title": "Feedback rubric \u2014 evidence then score",
+        "body_md": "Feedback on Harbor Desk Voice is criterion \u2192 evidence \u2192 score 0..4 \u2192 next_action, with identity_attack false. Ticket PD-2615 scores a peer journal on observation/inference separation. Evidence must quote the journal behavior, not the person's identity. Score 9 fails. next_action must tell the learner what to try next.\n\nDemeaning feedback is an ethics failure even when the score is numerically correct. 'You always mess up because of who you are' is identity_attack and fails.\n\nConsensus Ladder: observed = journal text; inferred = separation quality; still need = one improvement; action = next_action line. Do not publish grades without human-in-the-loop when acting as educator copilot. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "score 0..4; evidence\u226524; identity_attack false; next_action\u226516."
+      },
+      "lab_id": "lab_feedback_rubric"
+    },
+    {
+      "week": 7,
+      "title": "Meeting minutes \u2014 owners and due dates",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w07",
+        "title": "Meeting minutes \u2014 owners and due dates",
+        "body_md": "Meeting minutes for Harbor Desk Voice require attendees_count \u22652, parallel arrays of decisions/owners/due_dates (\u22652 each), and pii_redacted true. Ticket PD-2718 closes the USB wipe decision: Pause USB wipe / desk.lead / 2026-08-18 and Post Friday notice / volunteer.sat / 2026-08-17.\n\nUnequal array lengths fail. Patron names and card numbers must not appear. Minutes are professional communication artifacts that Saturday volunteers can continue without asking you.\n\nConsensus Ladder: observed = decisions spoken; inferred = ownership assigned; still need = due dates; action = publish redacted minutes. Fabricating attendance to look popular fails the ethics bar. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "attendees\u22652; parallel decisions/owners/due_dates; pii_redacted true."
+      },
+      "lab_id": "lab_meeting_minutes"
+    },
+    {
+      "week": 8,
+      "title": "AI disclosure modes \u2014 keys stay out",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w08",
+        "title": "AI disclosure modes \u2014 keys stay out",
+        "body_md": "AI disclosure modes on Harbor Desk Voice are AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, and NO_AI. Ticket PD-2822 requires disclosed=true, learner-key-access=false, learner_facing=true. Learner tutor and mastery benchmark modes must not load the instructor key store. Educator copilot may read keys only with HITL grading \u2014 never to whisper finals to learners.\n\nFor NO_AI mode, rationale must say human-only or no ai. Silent AI use during NO_AI weeks fails honesty even if the JSON looks fine.\n\nConsensus Ladder: observed = mode banner; inferred = key access forbidden; still need = rationale sentence; action = submit disclosure JSON. This week wires the gunnchAI contract permission split into a lab students can run. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "mode valid; disclosed true; used_key material false; learner_facing true."
+      },
+      "lab_id": "lab_ai_disclosure_modes"
+    },
+    {
+      "week": 9,
+      "title": "Accessible professional communication",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w09",
+        "title": "Accessible professional communication",
+        "body_md": "Accessibility is part of professional communication, not a sticker. Ticket PD-2925 requires captions=true, plain_language=true, alt_text\u226512 characters, color_only_signals=false, and large_print_available=true. Color-only 'red means fail' without text fails. Missing captions on desk explainer videos fails.\n\nNO_AI week for the a11y checklist walkthrough: learners inspect a real flyer mock and mark the five fields honestly. Fabricating disabled-patron quotes is forbidden.\n\nConsensus Ladder: observed = flyer uses red/green only; inferred = color_only_signals true (bad); still need = text labels; action = revise and resubmit. Large-print packets live in the student path. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "captions/plain_language/large_print true; color_only false; alt_text\u226512; NO_AI walkthrough."
+      },
+      "lab_id": "lab_accessibility_comm"
+    },
+    {
+      "week": 10,
+      "title": "Capstone \u2014 consent, conflict, a11y, no key leak",
+      "lesson": {
+        "lesson_id": "COMM_PD_ETHICS-w10",
+        "title": "Capstone \u2014 consent, conflict, a11y, no key leak",
+        "body_md": "The Harbor Desk Voice capstone bundles the ethics muscle: labs_passed\u22656, consent_ok, conflict_ok, a11y_ok, no_key_leak true, fabricated_impact false. Ticket PD-2A30 is a ship checklist for the professional development portfolio: show empty-fail evidence, claim boundary paragraph, accessibility notes, and career map (aligned not granted).\n\nCareer roles: community_desk_coordinator, volunteer_lead, junior_comms_specialist. Certs aligned not granted may list ISC2 ethics themes and CompTIA professionalism domains as labels only.\n\nConsensus Ladder: observed = nine lab JSONs; inferred = ready for portfolio; still need = human playtest of desk scripts (not claimed here); action = submit capstone JSON. REAL_STUDENT_E6 stays false. Cursor never merges. Harbor Desk Voice insists on numbered ticket IDs in journals so a Saturday volunteer can continue without a hallway interrogation. Write the next action as a verb phrase a stranger can execute. Keep patron faces, passwords, and invented harm counts out of the packet. If two tools disagree, write what you saw, then what you guessed, then the missing fact before changing shared systems. Professional development here is measured by reproducible desk artifacts, not by slogans about culture.",
+        "worked_example": "labs_passed\u22656; consent/conflict/a11y/no_key_leak true; fabricated_impact false."
+      },
+      "lab_id": "lab_pd_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
     "lab_consent_disclosure",
     "lab_conflict_interest",
     "lab_professional_comm",
-    "lab_ethics_ladder"
+    "lab_ethics_ladder",
+    "lab_attribution_cite",
+    "lab_feedback_rubric",
+    "lab_meeting_minutes",
+    "lab_ai_disclosure_modes",
+    "lab_accessibility_comm",
+    "lab_pd_capstone"
   ],
-  "claim_boundary": "Executable labs only. COURSE_DIGITAL_RC=false until full package bar. Not student/teacher E6."
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "COMM_PD_ETHICS-lab",
+    "COMM_PD_ETHICS-assignment",
+    "COMM_PD_ETHICS-quiz",
+    "COMM_PD_ETHICS-mid",
+    "COMM_PD_ETHICS-final-knowledge",
+    "COMM_PD_ETHICS-practical",
+    "COMM_PD_ETHICS-project",
+    "COMM_PD_ETHICS-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "community_desk_coordinator",
+      "volunteer_lead",
+      "junior_comms_specialist"
+    ],
+    "nice_categories": [
+      "operate_and_maintain",
+      "communicate"
+    ],
+    "certs_aligned_not_granted": [
+      "ISC2 Code of Ethics themes (labels)",
+      "CompTIA professionalism domains (labels)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/comm_pd_ethics_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  },
+  "COURSE_DIGITAL_RC": true,
+  "packet": "STREAM-B-PKT-002",
+  "lift_status": "CLOSED_DIGITAL_RC",
+  "claim_boundary": "Full Harbor Desk Voice DIGITAL_RC package earned under provenance/template/lab/consumption bars. Not student/teacher E6. Instructor key material stays out of learner ingest."
 }

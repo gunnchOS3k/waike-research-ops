@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "pd-w10-1",
+      "kind": "mcq",
+      "stem": "labs_passed minimum?",
+      "choices": [
+        "1",
+        "6",
+        "100",
+        "0"
+      ]
+    },
+    {
+      "id": "pd-w10-2",
+      "kind": "mcq",
+      "stem": "no_key_leak must be?",
+      "choices": [
+        "false",
+        "null",
+        "true",
+        "optional"
+      ]
+    },
+    {
+      "id": "pd-w10-3",
+      "kind": "mcq",
+      "stem": "fabricated_impact on capstone?",
+      "choices": [
+        "true OK",
+        "Required",
+        "Ignore",
+        "must be false"
+      ]
+    },
+    {
+      "id": "pd-w10-4",
+      "kind": "mcq",
+      "stem": "REAL_STUDENT_E6 this packet?",
+      "choices": [
+        "false",
+        "true",
+        "maybe",
+        "auto"
+      ]
+    },
+    {
+      "id": "pd-w10-5",
+      "kind": "mcq",
+      "stem": "Certs from capstone?",
+      "choices": [
+        "Granted",
+        "Aligned not granted",
+        "Automatic",
+        "Paid"
+      ]
+    },
+    {
+      "id": "pd-w10-6",
+      "kind": "mcq",
+      "stem": "a11y_ok false?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Fail capstone",
+        "Skip"
+      ]
+    }
+  ]
+}

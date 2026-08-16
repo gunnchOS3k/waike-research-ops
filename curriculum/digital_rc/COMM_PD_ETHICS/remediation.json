@@ -1,0 +1,25 @@
+{
+  "course_id": "COMM_PD_ETHICS",
+  "loops": [
+    {
+      "on": "M1",
+      "practice_lab": "lab_consent_disclosure",
+      "reassess": "quiz w01"
+    },
+    {
+      "on": "M2",
+      "practice_lab": "lab_conflict_interest",
+      "reassess": "quiz w02"
+    },
+    {
+      "on": "M3",
+      "practice_lab": "lab_ethics_ladder",
+      "reassess": "quiz w04"
+    },
+    {
+      "on": "M4",
+      "practice_lab": "lab_ai_disclosure_modes",
+      "reassess": "quiz w08"
+    }
+  ]
+}

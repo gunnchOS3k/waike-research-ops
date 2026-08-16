@@ -1,0 +1,16 @@
+{
+  "schema": "waike.course_gunnchai_contract.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "discovery": "filesystem_scan curriculum/digital_rc/COMM_PD_ETHICS",
+  "learner_modes_may_read_instructor_keys": false,
+  "socratic_default": true,
+  "educator_hitl_required": true,
+  "tools": [
+    "curriculum_lookup",
+    "ladder_prompt",
+    "misconception_hint"
+  ],
+  "transfer_checks": [
+    "new desk scenario without stem clone"
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "COMM_PD_ETHICS": {
+    "mid": [
+      {
+        "id": "pdm01",
+        "kind": "mcq",
+        "stem": "Harbor consent audience should be?",
+        "choices": [
+          "everyone",
+          "named patrons/volunteers",
+          "internet",
+          "bots only"
+        ],
+        "answer_index": 1,
+        "explanation": "Named."
+      },
+      {
+        "id": "pdm02",
+        "kind": "mcq",
+        "stem": "SSN in data_classes?",
+        "choices": [
+          "Allowed",
+          "Forbidden",
+          "Required",
+          "Optional"
+        ],
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "pdm03",
+        "kind": "mcq",
+        "stem": "Conflict with scoring+mentoring requires?",
+        "choices": [
+          "Ignore",
+          "Disclose+recuse",
+          "Secret score",
+          "Public shame"
+        ],
+        "answer_index": 1,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "pdm04",
+        "kind": "mcq",
+        "stem": "Professional channel SMS personal?",
+        "choices": [
+          "OK desk default",
+          "Not allowed channel",
+          "Required",
+          "Best"
+        ],
+        "answer_index": 1,
+        "explanation": "Not allowed."
+      },
+      {
+        "id": "pdm05",
+        "kind": "mcq",
+        "stem": "promises_outcome true on restore ticket?",
+        "choices": [
+          "Honest",
+          "Fails honesty gate",
+          "Preferred",
+          "Legal"
+        ],
+        "answer_index": 1,
+        "explanation": "Fails."
+      },
+      {
+        "id": "pdm06",
+        "kind": "mcq",
+        "stem": "Ethics ladder starts with?",
+        "choices": [
+          "Action slogans",
+          "Observation",
+          "Cert claim",
+          "Merge"
+        ],
+        "answer_index": 1,
+        "explanation": "Observation."
+      },
+      {
+        "id": "pdm07",
+        "kind": "mcq",
+        "stem": "Fabricated impact statistics?",
+        "choices": [
+          "Encouraged",
+          "Fail the lab",
+          "Required mid",
+          "Graded A"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm08",
+        "kind": "mcq",
+        "stem": "quote_chars above 120?",
+        "choices": [
+          "Pass",
+          "Fail attribution budget",
+          "Bonus",
+          "Ignore"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm09",
+        "kind": "mcq",
+        "stem": "Feedback identity_attack?",
+        "choices": [
+          "Allowed",
+          "Must be false",
+          "Funny OK",
+          "Required"
+        ],
+        "answer_index": 1,
+        "explanation": "False."
+      },
+      {
+        "id": "pdm10",
+        "kind": "mcq",
+        "stem": "Meeting arrays misaligned?",
+        "choices": [
+          "Pass",
+          "Fail aligned_lengths",
+          "Auto-fix",
+          "Skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm11",
+        "kind": "mcq",
+        "stem": "Learner tutor + answer keys?",
+        "choices": [
+          "Permitted",
+          "Hard fail permission",
+          "If Friday",
+          "Silent OK"
+        ],
+        "answer_index": 1,
+        "explanation": "Hard fail."
+      },
+      {
+        "id": "pdm12",
+        "kind": "mcq",
+        "stem": "AI_DISCLOSED means?",
+        "choices": [
+          "Hide AI",
+          "Say AI was used",
+          "Steal keys",
+          "Self-grade"
+        ],
+        "answer_index": 1,
+        "explanation": "Disclose."
+      },
+      {
+        "id": "pdm13",
+        "kind": "mcq",
+        "stem": "Color-only fail signals?",
+        "choices": [
+          "A11y OK",
+          "Must set color_only_signals false",
+          "Required",
+          "Preferred"
+        ],
+        "answer_index": 1,
+        "explanation": "Must false."
+      },
+      {
+        "id": "pdm14",
+        "kind": "mcq",
+        "stem": "Captions on desk video?",
+        "choices": [
+          "Optional always",
+          "Required true in a11y lab",
+          "Never",
+          "AI only"
+        ],
+        "answer_index": 1,
+        "explanation": "Required."
+      },
+      {
+        "id": "pdm15",
+        "kind": "mcq",
+        "stem": "Retention days zero?",
+        "choices": [
+          "Pass",
+          "Fail consent",
+          "Infinite OK",
+          "Ignore"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm16",
+        "kind": "mcq",
+        "stem": "Opt-out path blank?",
+        "choices": [
+          "Pass",
+          "Fail consent",
+          "Implied",
+          "Legal"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm17",
+        "kind": "mcq",
+        "stem": "Demeaning body tokens?",
+        "choices": [
+          "OK venting",
+          "Fail body_clean",
+          "Bonus realism",
+          "Required"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm18",
+        "kind": "mcq",
+        "stem": "Recuse false while conflict true?",
+        "choices": [
+          "Pass",
+          "Fail recuse_when_conflict",
+          "Warn",
+          "Ignore"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdm19",
+        "kind": "mcq",
+        "stem": "PUBLIC_REFERENCE_ONLY grants cert?",
+        "choices": [
+          "Yes",
+          "No \u2014 labels only",
+          "Automatically",
+          "Paid"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "pdm20",
+        "kind": "mcq",
+        "stem": "Print-only PASS submission?",
+        "choices": [
+          "Pass lab",
+          "Raises _fail_if_print_pass",
+          "Preferred",
+          "Skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Raises."
+      }
+    ],
+    "final": [
+      {
+        "id": "pdf01",
+        "kind": "mcq",
+        "stem": "Capstone labs_passed floor?",
+        "choices": [
+          "1",
+          "6",
+          "50",
+          "0"
+        ],
+        "answer_index": 1,
+        "explanation": "\u22656."
+      },
+      {
+        "id": "pdf02",
+        "kind": "mcq",
+        "stem": "no_key_leak on capstone?",
+        "choices": [
+          "false OK",
+          "must true",
+          "Optional",
+          "N/A"
+        ],
+        "answer_index": 1,
+        "explanation": "true."
+      },
+      {
+        "id": "pdf03",
+        "kind": "mcq",
+        "stem": "consent_ok false on capstone?",
+        "choices": [
+          "Pass",
+          "Fail",
+          "Bonus",
+          "Skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdf04",
+        "kind": "mcq",
+        "stem": "a11y_ok required?",
+        "choices": [
+          "No",
+          "Yes true",
+          "Maybe",
+          "AI decides"
+        ],
+        "answer_index": 1,
+        "explanation": "Yes."
+      },
+      {
+        "id": "pdf05",
+        "kind": "mcq",
+        "stem": "conflict_ok meaning?",
+        "choices": [
+          "Ignore conflicts",
+          "Conflicts handled with disclose/recuse",
+          "Always fight",
+          "Hide"
+        ],
+        "answer_index": 1,
+        "explanation": "Handled."
+      },
+      {
+        "id": "pdf06",
+        "kind": "mcq",
+        "stem": "Career certs in mapping?",
+        "choices": [
+          "Granted now",
+          "Aligned not granted",
+          "Printed plastic",
+          "Fake"
+        ],
+        "answer_index": 1,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "pdf07",
+        "kind": "mcq",
+        "stem": "HITL required for educator grade publish?",
+        "choices": [
+          "No",
+          "Yes",
+          "Never",
+          "Bot only"
+        ],
+        "answer_index": 1,
+        "explanation": "Yes."
+      },
+      {
+        "id": "pdf08",
+        "kind": "mcq",
+        "stem": "Socratic learner default?",
+        "choices": [
+          "Dump answers",
+          "Question toward ladder rungs",
+          "Leak keys",
+          "Merge"
+        ],
+        "answer_index": 1,
+        "explanation": "Question."
+      },
+      {
+        "id": "pdf09",
+        "kind": "mcq",
+        "stem": "Minutes without due dates?",
+        "choices": [
+          "Pass",
+          "Fail dues check",
+          "OK",
+          "Bonus"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdf10",
+        "kind": "mcq",
+        "stem": "Attribution FULL_COPY?",
+        "choices": [
+          "Pass",
+          "Fail reuse_class",
+          "Preferred",
+          "Required"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdf11",
+        "kind": "mcq",
+        "stem": "Feedback score 0..4 includes?",
+        "choices": [
+          "9",
+          "3",
+          "100",
+          "-5"
+        ],
+        "answer_index": 1,
+        "explanation": "3."
+      },
+      {
+        "id": "pdf12",
+        "kind": "mcq",
+        "stem": "Desk SMS for official ticket?",
+        "choices": [
+          "Allowed",
+          "Wrong channel",
+          "Best practice",
+          "Encrypted OK"
+        ],
+        "answer_index": 1,
+        "explanation": "Wrong."
+      },
+      {
+        "id": "pdf13",
+        "kind": "mcq",
+        "stem": "Observation vs inference swap?",
+        "choices": [
+          "Harmless",
+          "Poisons ethics ladder",
+          "Required",
+          "Funny"
+        ],
+        "answer_index": 1,
+        "explanation": "Poisons."
+      },
+      {
+        "id": "pdf14",
+        "kind": "mcq",
+        "stem": "Large print availability?",
+        "choices": [
+          "Ignore",
+          "Required true on a11y lab",
+          "Luxury",
+          "Never"
+        ],
+        "answer_index": 1,
+        "explanation": "Required."
+      },
+      {
+        "id": "pdf15",
+        "kind": "mcq",
+        "stem": "AI mode during week 4 ladder?",
+        "choices": [
+          "Silent AI OK",
+          "NO_AI authorship",
+          "Keys OK",
+          "Self-grade"
+        ],
+        "answer_index": 1,
+        "explanation": "NO_AI."
+      },
+      {
+        "id": "pdf16",
+        "kind": "mcq",
+        "stem": "Alt text purpose?",
+        "choices": [
+          "Decoration",
+          "Describe non-text content",
+          "Hide errors",
+          "Store SSN"
+        ],
+        "answer_index": 1,
+        "explanation": "Describe."
+      },
+      {
+        "id": "pdf17",
+        "kind": "mcq",
+        "stem": "Portfolio claim boundary?",
+        "choices": [
+          "Overclaim E6",
+          "State digital fixture limits",
+          "Hide limits",
+          "Fake cohort"
+        ],
+        "answer_index": 1,
+        "explanation": "State limits."
+      },
+      {
+        "id": "pdf18",
+        "kind": "mcq",
+        "stem": "Empty {} lab submission?",
+        "choices": [
+          "Pass",
+          "Must fail",
+          "Auto-fill",
+          "Ignore"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdf19",
+        "kind": "mcq",
+        "stem": "Wrong ethics fields?",
+        "choices": [
+          "Pass",
+          "Must fail",
+          "Partial credit auto",
+          "Skip"
+        ],
+        "answer_index": 1,
+        "explanation": "Fail."
+      },
+      {
+        "id": "pdf20",
+        "kind": "mcq",
+        "stem": "REAL_TEACHER_E6 this packet?",
+        "choices": [
+          "true",
+          "false",
+          "auto",
+          "maybe"
+        ],
+        "answer_index": 1,
+        "explanation": "false."
+      },
+      {
+        "id": "pdf21",
+        "kind": "mcq",
+        "stem": "gunnchAI learner disclose finals?",
+        "choices": [
+          "Yes",
+          "No \u2014 permission denied",
+          "Always",
+          "If asked twice"
+        ],
+        "answer_index": 1,
+        "explanation": "No."
+      },
+      {
+        "id": "pdf22",
+        "kind": "mcq",
+        "stem": "Parallel owners for two decisions?",
+        "choices": [
+          "One owner total OK",
+          "Two owners aligned",
+          "Zero OK",
+          "Random"
+        ],
+        "answer_index": 1,
+        "explanation": "Two."
+      },
+      {
+        "id": "pdf23",
+        "kind": "mcq",
+        "stem": "Retention 90 days example means?",
+        "choices": [
+          "Infinite store",
+          "Positive finite retention",
+          "Zero",
+          "Illegal"
+        ],
+        "answer_index": 1,
+        "explanation": "Finite."
+      },
+      {
+        "id": "pdf24",
+        "kind": "mcq",
+        "stem": "Cursor merge policy?",
+        "choices": [
+          "Always merges",
+          "Never merges \u2014 DRAFT PR only",
+          "Force push",
+          "Silent"
+        ],
+        "answer_index": 1,
+        "explanation": "Never."
+      }
+    ],
+    "offset": 3
+  }
+}

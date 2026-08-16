@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "COMM_PD_ETHICS",
+  "lesson_ids": [
+    "COMM_PD_ETHICS-w01",
+    "COMM_PD_ETHICS-w02",
+    "COMM_PD_ETHICS-w03",
+    "COMM_PD_ETHICS-w04",
+    "COMM_PD_ETHICS-w05",
+    "COMM_PD_ETHICS-w06",
+    "COMM_PD_ETHICS-w07",
+    "COMM_PD_ETHICS-w08",
+    "COMM_PD_ETHICS-w09",
+    "COMM_PD_ETHICS-w10"
+  ],
+  "labs": [
+    "lab_consent_disclosure",
+    "lab_conflict_interest",
+    "lab_professional_comm",
+    "lab_ethics_ladder",
+    "lab_attribution_cite",
+    "lab_feedback_rubric",
+    "lab_meeting_minutes",
+    "lab_ai_disclosure_modes",
+    "lab_accessibility_comm",
+    "lab_pd_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

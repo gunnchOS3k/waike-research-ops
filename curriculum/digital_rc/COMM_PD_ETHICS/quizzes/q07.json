@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "pd-w7-1",
+      "kind": "mcq",
+      "stem": "pii_redacted must be?",
+      "choices": [
+        "false",
+        "null",
+        "optional",
+        "true"
+      ]
+    },
+    {
+      "id": "pd-w7-2",
+      "kind": "mcq",
+      "stem": "Unequal decision/owner lengths?",
+      "choices": [
+        "Fail aligned_lengths",
+        "Pass",
+        "Warn",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "pd-w7-3",
+      "kind": "mcq",
+      "stem": "attendees_count 1?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "OK solo"
+      ]
+    },
+    {
+      "id": "pd-w7-4",
+      "kind": "mcq",
+      "stem": "Patron PAN in minutes?",
+      "choices": [
+        "OK",
+        "Required",
+        "Fails redaction culture",
+        "Funny"
+      ]
+    },
+    {
+      "id": "pd-w7-5",
+      "kind": "mcq",
+      "stem": "Minimum decisions?",
+      "choices": [
+        "0",
+        "20",
+        "100",
+        "2"
+      ]
+    },
+    {
+      "id": "pd-w7-6",
+      "kind": "mcq",
+      "stem": "Minutes help whom?",
+      "choices": [
+        "Next volunteer shift",
+        "Only CEO",
+        "Attackers",
+        "No one"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "COMM_PD_ETHICS-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "pd-w8-1",
+      "kind": "mcq",
+      "stem": "Learner mode may use instructor key material?",
+      "choices": [
+        "Yes",
+        "No",
+        "If disclosed",
+        "On Fridays"
+      ]
+    },
+    {
+      "id": "pd-w8-2",
+      "kind": "mcq",
+      "stem": "disclosed must be?",
+      "choices": [
+        "false",
+        "hidden",
+        "true",
+        "null"
+      ]
+    },
+    {
+      "id": "pd-w8-3",
+      "kind": "mcq",
+      "stem": "Valid mode?",
+      "choices": [
+        "AI_SECRET",
+        "AI_CHEAT",
+        "KEY_LEAK",
+        "AI_DISCLOSED"
+      ]
+    },
+    {
+      "id": "pd-w8-4",
+      "kind": "mcq",
+      "stem": "Educator publish grades without human?",
+      "choices": [
+        "Forbidden HITL",
+        "OK",
+        "Preferred",
+        "Auto"
+      ]
+    },
+    {
+      "id": "pd-w8-5",
+      "kind": "mcq",
+      "stem": "NO_AI rationale should mention?",
+      "choices": [
+        "keys ok",
+        "human-only / no ai",
+        "steal stems",
+        "merge"
+      ]
+    },
+    {
+      "id": "pd-w8-6",
+      "kind": "mcq",
+      "stem": "Mastery benchmark self-grade?",
+      "choices": [
+        "Allowed",
+        "Required",
+        "Forbidden",
+        "Silent"
+      ]
+    }
+  ]
+}

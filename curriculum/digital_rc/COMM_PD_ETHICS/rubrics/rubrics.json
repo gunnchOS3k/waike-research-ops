@@ -1,0 +1,165 @@
+[
+  {
+    "rubric_id": "COMM_PD_ETHICS-lab",
+    "title": "Harbor Desk lab",
+    "criteria": [
+      {
+        "name": "ethics_fields",
+        "weight": 20,
+        "desc": "Consent/conflict/ladder fields honest"
+      },
+      {
+        "name": "no_key_leak",
+        "weight": 20,
+        "desc": "No instructor keys in learner artifacts"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 20,
+        "desc": "Empty JSON fails"
+      },
+      {
+        "name": "wrong_fails",
+        "weight": 20,
+        "desc": "Wrong policy fields fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 20,
+        "desc": "PASS-only rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-assignment",
+    "title": "Desk journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses PD-#### tickets"
+      },
+      {
+        "name": "no_pii",
+        "weight": 30,
+        "desc": "No PAN/password/SSN"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "AI mode tagged when used"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-quiz",
+    "title": "Ethics knowledge",
+    "criteria": [
+      {
+        "name": "desk_numbers",
+        "weight": 50,
+        "desc": "Original stems with PD tickets"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-mid",
+    "title": "Mid Harbor audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "consent_conflict_tone",
+        "weight": 40,
+        "desc": "Consent/conflict/tone"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-final-knowledge",
+    "title": "Final ethics exam",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone"
+      },
+      {
+        "name": "a11y_keys_capstone",
+        "weight": 50,
+        "desc": "A11y/key-leak/capstone"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-practical",
+    "title": "Ten-lab practical",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Empty fails; reference passes"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "SSN/demeaning/key-leak negatives fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-project",
+    "title": "PD ship checklist",
+    "criteria": [
+      {
+        "name": "a11y_ok",
+        "weight": 40,
+        "desc": "a11y_ok true"
+      },
+      {
+        "name": "no_key_leak",
+        "weight": 30,
+        "desc": "no_key_leak true"
+      },
+      {
+        "name": "six_labs",
+        "weight": 30,
+        "desc": "labs_passed\u22656"
+      }
+    ]
+  },
+  {
+    "rubric_id": "COMM_PD_ETHICS-portfolio",
+    "title": "Voice portfolio",
+    "criteria": [
+      {
+        "name": "claim_boundary",
+        "weight": 40,
+        "desc": "Digital fixture limits stated"
+      },
+      {
+        "name": "a11y_notes",
+        "weight": 30,
+        "desc": "Large-print / captions notes"
+      },
+      {
+        "name": "career_map",
+        "weight": 30,
+        "desc": "Aligned roles"
+      }
+    ]
+  }
+]

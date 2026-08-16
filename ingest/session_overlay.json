@@ -214,5 +214,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "COMM_PD_ETHICS-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "COMM_PD_ETHICS-offline",
+      "labs": [
+        "lab_consent_disclosure",
+        "lab_conflict_interest"
+      ],
+      "catalog_course_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

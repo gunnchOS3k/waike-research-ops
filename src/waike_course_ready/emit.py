@@ -158,6 +158,93 @@ def emit_course(course_id: str) -> dict[str, Any]:
     if c.get("ai_use_policy"):
         _dump(base / "ai_use_policy.json", c["ai_use_policy"])
 
+    # Full DIGITAL_RC extras (guides / skill graph / misconceptions / gunnchAI contract / a11y / readings)
+    if course_id == "COMM_PD_ETHICS":
+        _dump(base / "prerequisites.json", {
+            "course_id": course_id,
+            "required": ["Digital literacy for ticket journals", "Willingness to recuse on conflict"],
+            "recommended": ["GENERAL_IT desk culture exposure"],
+        })
+        _dump(base / "learning_objectives.json", {
+            "course_id": course_id,
+            "objectives": [
+                "Author consent disclosures with audience/purpose/retention/opt-out",
+                "Disclose and recuse on scoring conflicts",
+                "Write professional tickets without demeaning labels",
+                "Separate observation from inference on the ethics ladder",
+                "Cite PUBLIC_REFERENCE_ONLY sources without dumps",
+                "Give evidence-based feedback without identity attacks",
+                "Publish redacted minutes with owners and due dates",
+                "Disclose AI modes without instructor key access in learner paths",
+                "Ship accessible professional communication (captions/alt/large-print)",
+                "Close a PD capstone with no_key_leak and a11y_ok",
+            ],
+        })
+        _dump(base / "readings.json", {
+            "course_id": course_id,
+            "items": [
+                {"week": 1, "title": "Harbor Desk consent card (fixture)", "reuse_class": "ORIGINAL"},
+                {"week": 2, "title": "ISC2 ethics theme names", "reuse_class": "PUBLIC_REFERENCE_ONLY"},
+                {"week": 5, "title": "CompTIA professionalism domain labels", "reuse_class": "PUBLIC_REFERENCE_ONLY"},
+                {"week": 9, "title": "Plain-language a11y checklist (fixture)", "reuse_class": "ORIGINAL"},
+            ],
+        })
+        _dump(base / "a11y_checklist.json", {
+            "course_id": course_id,
+            "captions": True,
+            "plain_language": True,
+            "alt_text_required": True,
+            "color_only_signals_forbidden": True,
+            "large_print_available": True,
+            "keyboard_or_text_path": True,
+        })
+        _dump(base / "skill_graph.json", {
+            "schema": "waike.course_skill_graph.v1",
+            "course_id": course_id,
+            "nodes": [{"id": f"COMM_PD_ETHICS.w{w:02d}", "week": w} for w in range(1, 11)],
+            "edges": [{"from": f"COMM_PD_ETHICS.w{w:02d}", "to": f"COMM_PD_ETHICS.w{w+1:02d}", "relation": "prerequisite"} for w in range(1, 10)],
+        })
+        _dump(base / "misconceptions.json", {
+            "course_id": course_id,
+            "items": [
+                {"id": "M1", "misconception": "Consent can say audience=everyone", "remediation": "Name concrete audiences"},
+                {"id": "M2", "misconception": "Mentoring+scoring is fine if friendly", "remediation": "Disclose and recuse"},
+                {"id": "M3", "misconception": "Inference is an observation", "remediation": "Rewrite ladder rungs"},
+                {"id": "M4", "misconception": "Learner tutors may load answer keys", "remediation": "Permission denied; Socratic only"},
+            ],
+        })
+        _dump(base / "remediation.json", {
+            "course_id": course_id,
+            "loops": [
+                {"on": "M1", "practice_lab": "lab_consent_disclosure", "reassess": "quiz w01"},
+                {"on": "M2", "practice_lab": "lab_conflict_interest", "reassess": "quiz w02"},
+                {"on": "M3", "practice_lab": "lab_ethics_ladder", "reassess": "quiz w04"},
+                {"on": "M4", "practice_lab": "lab_ai_disclosure_modes", "reassess": "quiz w08"},
+            ],
+        })
+        _dump(base / "gunnchai_contract.json", {
+            "schema": "waike.course_gunnchai_contract.v1",
+            "course_id": course_id,
+            "discovery": "filesystem_scan curriculum/digital_rc/COMM_PD_ETHICS",
+            "learner_modes_may_read_instructor_keys": False,
+            "socratic_default": True,
+            "educator_hitl_required": True,
+            "tools": ["curriculum_lookup", "ladder_prompt", "misconception_hint"],
+            "transfer_checks": ["new desk scenario without stem clone"],
+        })
+        _write(base / "instructor" / "accessibility_and_udl_guide.md",
+               "# Accessibility / UDL — COMM_PD_ETHICS\n\n"
+               "Text-first journals, captions, alt text, large-print packets, no color-only signals.\n"
+               "Fabricated disability quotes forbidden.\n")
+        _write(base / "instructor" / "misconceptions_remediation.md",
+               "# Misconceptions + remediation — COMM_PD_ETHICS\n\n"
+               "See misconceptions.json and remediation.json. Reassess after practice lab.\n")
+        _write(base / "guides" / "learner_ai_policy.md",
+               "# Learner AI policy — COMM_PD_ETHICS\n\n"
+               "Default AI_DISCLOSED. Weeks 4 and 9 are NO_AI authorship.\n"
+               "Never request instructor keys in learner modes.\n")
+
+
     package = {
         "schema": "waike.course_package.v1",
         "course_id": course_id,
@@ -214,6 +301,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "WIRELESS_6G": "curriculum/alignment/wireless_6g_alignment.json",
             "ROBOTICS_CONTROL": "curriculum/alignment/robotics_control_alignment.json",
             "GAME_DEV_INTERACTIVE": "curriculum/alignment/game_dev_interactive_alignment.json",
+            "COMM_PD_ETHICS": "curriculum/alignment/comm_pd_ethics_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

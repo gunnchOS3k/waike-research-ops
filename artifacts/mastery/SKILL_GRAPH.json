@@ -1,8 +1,8 @@
 {
   "schema": "waike.mastery_skill_graph.v1",
-  "generated_utc": "2026-08-15T19:52:13Z",
-  "node_count": 242,
-  "edge_count": 338,
+  "generated_utc": "2026-08-16T17:18:43Z",
+  "node_count": 263,
+  "edge_count": 367,
   "forbidden_learner_labels": [
     "dumb",
     "slow",
@@ -322,6 +322,162 @@
       "kind": "lab_skill",
       "course_id": "CLOUD_DEVOPS",
       "label": "lab_slo_budget",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "course:COMM_PD_ETHICS",
+      "kind": "course",
+      "label": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+      "privacy_safe": true
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w01",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 1,
+      "label": "COMM_PD_ETHICS week 1 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w02",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 2,
+      "label": "COMM_PD_ETHICS week 2 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w03",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 3,
+      "label": "COMM_PD_ETHICS week 3 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w04",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 4,
+      "label": "COMM_PD_ETHICS week 4 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w05",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 5,
+      "label": "COMM_PD_ETHICS week 5 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w06",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 6,
+      "label": "COMM_PD_ETHICS week 6 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w07",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 7,
+      "label": "COMM_PD_ETHICS week 7 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w08",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 8,
+      "label": "COMM_PD_ETHICS week 8 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w09",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 9,
+      "label": "COMM_PD_ETHICS week 9 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "skill:COMM_PD_ETHICS:w10",
+      "kind": "weekly_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "week": 10,
+      "label": "COMM_PD_ETHICS week 10 practice",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_accessibility_comm",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_accessibility_comm",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_ai_disclosure_modes",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_ai_disclosure_modes",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_attribution_cite",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_attribution_cite",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_conflict_interest",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_conflict_interest",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_consent_disclosure",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_consent_disclosure",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_ethics_ladder",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_ethics_ladder",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_feedback_rubric",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_feedback_rubric",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_meeting_minutes",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_meeting_minutes",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_pd_capstone",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_pd_capstone",
+      "learner_label_policy": "skill_focus_only"
+    },
+    {
+      "id": "lab:COMM_PD_ETHICS:lab_professional_comm",
+      "kind": "lab_skill",
+      "course_id": "COMM_PD_ETHICS",
+      "label": "lab_professional_comm",
       "learner_label_policy": "skill_focus_only"
     },
     {
@@ -2104,6 +2260,151 @@
     {
       "from": "skill:CLOUD_DEVOPS:w10",
       "to": "lab:CLOUD_DEVOPS:lab_slo_budget",
+      "relation": "assesses"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w01",
+      "relation": "includes"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w02",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w01",
+      "to": "skill:COMM_PD_ETHICS:w02",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w03",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w02",
+      "to": "skill:COMM_PD_ETHICS:w03",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w04",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w03",
+      "to": "skill:COMM_PD_ETHICS:w04",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w05",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w04",
+      "to": "skill:COMM_PD_ETHICS:w05",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w06",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w05",
+      "to": "skill:COMM_PD_ETHICS:w06",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w07",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w06",
+      "to": "skill:COMM_PD_ETHICS:w07",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w08",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w07",
+      "to": "skill:COMM_PD_ETHICS:w08",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w09",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w08",
+      "to": "skill:COMM_PD_ETHICS:w09",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "course:COMM_PD_ETHICS",
+      "to": "skill:COMM_PD_ETHICS:w10",
+      "relation": "includes"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w09",
+      "to": "skill:COMM_PD_ETHICS:w10",
+      "relation": "prerequisite"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w01",
+      "to": "lab:COMM_PD_ETHICS:lab_accessibility_comm",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w02",
+      "to": "lab:COMM_PD_ETHICS:lab_ai_disclosure_modes",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w03",
+      "to": "lab:COMM_PD_ETHICS:lab_attribution_cite",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w04",
+      "to": "lab:COMM_PD_ETHICS:lab_conflict_interest",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w05",
+      "to": "lab:COMM_PD_ETHICS:lab_consent_disclosure",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w06",
+      "to": "lab:COMM_PD_ETHICS:lab_ethics_ladder",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w07",
+      "to": "lab:COMM_PD_ETHICS:lab_feedback_rubric",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w08",
+      "to": "lab:COMM_PD_ETHICS:lab_meeting_minutes",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w09",
+      "to": "lab:COMM_PD_ETHICS:lab_pd_capstone",
+      "relation": "assesses"
+    },
+    {
+      "from": "skill:COMM_PD_ETHICS:w10",
+      "to": "lab:COMM_PD_ETHICS:lab_professional_comm",
       "relation": "assesses"
     },
     {
