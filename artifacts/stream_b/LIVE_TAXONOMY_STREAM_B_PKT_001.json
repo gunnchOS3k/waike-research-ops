@@ -1,0 +1,75 @@
+{
+  "schema": "waike.stream_b.live_taxonomy.v1",
+  "packet": "STREAM-B-PKT-001",
+  "waike_main_tip": "7a0d4fe3d0f3da39d105ef21a97d1fd1d792c997",
+  "source": "curriculum/taxonomy/eighteen_tracks.json + academy_map_18_to_7.json + artifacts/COURSE_DIGITAL_RC.json",
+  "tracks_live": 18,
+  "academies": 7,
+  "product_path_courses_with_COURSE_DIGITAL_RC": [
+    "GENERAL_IT",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "SOFTWARE_BUILDER",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "AI_ML_EDGE",
+    "DATA_VIZ_BI",
+    "CLOUD_DEVOPS",
+    "WIRELESS_6G",
+    "ROBOTICS_CONTROL",
+    "GAME_DEV_INTERACTIVE"
+  ],
+  "digital_rc_count": 12,
+  "full_18_course_digital_rc": false,
+  "below_highest_DIGITAL_RC_bar": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "status": "BELOW_BAR",
+      "note": "Mapped into GENERAL_IT product path; no standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "status": "BELOW_BAR",
+      "note": "Mapped into GENERAL_IT product path; no standalone COURSE_DIGITAL_RC package"
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "status": "BELOW_BAR",
+      "note": "Track present; not authored as COURSE_DIGITAL_RC this cycle"
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "status": "BELOW_BAR",
+      "note": "Advanced extension; not authored as COURSE_DIGITAL_RC this cycle"
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "status": "BELOW_BAR",
+      "note": "Research apprenticeship overlay; not COURSE_DIGITAL_RC"
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "status": "LIFTING",
+      "note": "STREAM-B-PKT-001 begins lift: 4 executable labs (batch005); COURSE_DIGITAL_RC still false"
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "status": "BELOW_BAR",
+      "note": "Advanced extension; not authored as COURSE_DIGITAL_RC this cycle"
+    }
+  ],
+  "this_packet_lift": {
+    "course_id": "COMM_PD_ETHICS",
+    "labs": [
+      "lab_consent_disclosure",
+      "lab_conflict_interest",
+      "lab_professional_comm",
+      "lab_ethics_ladder"
+    ],
+    "COURSE_DIGITAL_RC": false,
+    "REAL_STUDENT_E6": false,
+    "REAL_TEACHER_E6": false,
+    "HUMAN_E6": false
+  },
+  "claim_boundary": "LIVE 18-track taxonomy discovered. 12 product-path courses hold COURSE_DIGITAL_RC. Stream B begins lifting COMM_PD_ETHICS via executable labs only — not full RC, not student/teacher E6."
+}
