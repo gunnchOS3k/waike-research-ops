@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "dl-w5-1",
+      "kind": "mcq",
+      "stem": "Chart contract needs?",
+      "choices": [
+        "x/y fields",
+        "Only hex color",
+        "SSN",
+        "Unity"
+      ]
+    },
+    {
+      "id": "dl-w5-2",
+      "kind": "mcq",
+      "stem": "alt_text <12 should?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "Skip"
+      ]
+    },
+    {
+      "id": "dl-w5-3",
+      "kind": "mcq",
+      "stem": "color_only without labels?",
+      "choices": [
+        "Pass",
+        "Best",
+        "Fail",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-w5-4",
+      "kind": "mcq",
+      "stem": "Chart must cite?",
+      "choices": [
+        "Random CSV",
+        "Passwords",
+        "Keys",
+        "Prior KPI fields"
+      ]
+    },
+    {
+      "id": "dl-w5-5",
+      "kind": "mcq",
+      "stem": "Machine-verifiable chart means?",
+      "choices": [
+        "JSON fields graded",
+        "Vibes",
+        "Selfie",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-w5-6",
+      "kind": "mcq",
+      "stem": "DATA_VIZ_BI overlap?",
+      "choices": [
+        "Identical",
+        "Related but distinct bar",
+        "Replace",
+        "Delete"
+      ]
+    }
+  ]
+}

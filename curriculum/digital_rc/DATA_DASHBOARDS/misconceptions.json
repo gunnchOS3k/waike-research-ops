@@ -1,0 +1,25 @@
+{
+  "course_id": "DATA_DASHBOARDS",
+  "items": [
+    {
+      "id": "M1",
+      "misconception": "Dashboards can invent columns",
+      "remediation": "Schema first; invented_columns fail"
+    },
+    {
+      "id": "M2",
+      "misconception": "SELECT * is enough for busy-bay tickets",
+      "remediation": "Add WHERE + filter_count"
+    },
+    {
+      "id": "M3",
+      "misconception": "Green tiles prove KPI math",
+      "remediation": "Show avg/p95 fields"
+    },
+    {
+      "id": "M4",
+      "misconception": "Learner tutors may load answer keys",
+      "remediation": "Permission denied; Socratic only"
+    }
+  ]
+}

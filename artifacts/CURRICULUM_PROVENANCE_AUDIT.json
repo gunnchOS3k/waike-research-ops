@@ -45,13 +45,13 @@
       "jaccard_5gram": 0.0007
     },
     {
-      "a": "AI_ML_EDGE",
-      "b": "DATA_VIZ_BI",
+      "a": "HARDWARE_ENGINEERING",
+      "b": "DATA_DASHBOARDS",
       "jaccard_5gram": 0.0005
     },
     {
-      "a": "WIRELESS_6G",
-      "b": "ROBOTICS_CONTROL",
+      "a": "AI_ML_EDGE",
+      "b": "DATA_VIZ_BI",
       "jaccard_5gram": 0.0005
     }
   ],
@@ -72,6 +72,11 @@
       "packaging_jaccard_5gram": 0.1158
     },
     {
+      "a": "COMM_PD_ETHICS",
+      "b": "DATA_DASHBOARDS",
+      "packaging_jaccard_5gram": 0.1148
+    },
+    {
       "a": "WIRELESS_6G",
       "b": "ROBOTICS_CONTROL",
       "packaging_jaccard_5gram": 0.1146
@@ -90,11 +95,6 @@
       "a": "HARDWARE_ENGINEERING",
       "b": "PM_AGILE_LSS",
       "packaging_jaccard_5gram": 0.092
-    },
-    {
-      "a": "PM_AGILE_LSS",
-      "b": "DATA_VIZ_BI",
-      "packaging_jaccard_5gram": 0.09
     }
   ],
   "key_distribution": {
@@ -183,6 +183,13 @@
       "n": 104
     },
     "COMM_PD_ETHICS": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "DATA_DASHBOARDS": {
       "A": 26,
       "B": 26,
       "C": 26,
@@ -296,6 +303,14 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.7143
+    },
+    "DATA_DASHBOARDS": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.6667
     }
   },
   "exam_token_identical": 0,
@@ -315,7 +330,8 @@
     "WIRELESS_6G": 903,
     "ROBOTICS_CONTROL": 907,
     "GAME_DEV_INTERACTIVE": 911,
-    "COMM_PD_ETHICS": 907
+    "COMM_PD_ETHICS": 907,
+    "DATA_DASHBOARDS": 925
   },
   "lesson_padding_rejected": 0,
   "repeated_trailer_findings": {},

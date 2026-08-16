@@ -1,0 +1,931 @@
+{
+  "DATA_DASHBOARDS": {
+    "course_id": "DATA_DASHBOARDS",
+    "title": "Data, Databases, and Dashboards \u2014 Pier Ledger Bench",
+    "track_ids": [
+      "DATA_DASHBOARDS"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Ten Pier Ledger Bench weeks: schema ingest \u2192 SQL select \u2192 normalize/transform \u2192 KPI calc \u2192 dashboard chart \u2192 join integrity \u2192 PII ETL redaction \u2192 pipeline debug \u2192 freshness SLA \u2192 dashboard capstone. Distinct from DATA_VIZ_BI visual rhetoric. Instructor keys stay out of learner modes.",
+    "syllabus_hook": "Operational data literacy for pier operators: schemas, SQL predicates, transforms, KPI arithmetic, chart contracts, joins, PII redaction, pipeline debug, and freshness SLAs. Machine-verifiable JSON labs. Not a student/teacher E6. Not Unity. Not Anime/Pedestrian scope.",
+    "career": {
+      "roles": [
+        "junior_data_ops",
+        "dashboard_analyst_adjacent",
+        "etl_apprentice"
+      ],
+      "nice_categories": [
+        "analyze",
+        "operate_and_maintain"
+      ],
+      "certs_aligned_not_granted": [
+        "SQL associate domain labels (PUBLIC_REFERENCE_ONLY)",
+        "Data+ domain labels (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Schema first \u2014 ingest without inventing columns",
+        "lesson": "Pier Ledger Bench opens with schema discipline, not a dashboard mock. Ticket DL-3101 drops a pier foot-traffic CSV into the desk warehouse. Before any chart, you declare table pier_visits with columns visit_id, pier_bay, ts_utc, headcount, and source_file \u2014 and you refuse invented columns like vibe_score that were never in the file.\n\nIngest means: count rows loaded, hash the source bytes, and record schema_version. Empty submissions fail. A submission that claims row_count without matching the fixture fails. DATA_VIZ_BI may later style the tile; this course owns the table contract first.\n\nPier Ledger Bench ticket DL-3101 refuses screenshot-only evidence: the grader reads JSON fields from `lab_schema_ingest`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.",
+        "worked_example": "Declare pier_visits columns; load DL-3101 CSV; report row_count and sha256 of source.",
+        "assignment": "Submit lab_schema_ingest JSON for DL-3101. No invented columns.",
+        "lab_id": "lab_schema_ingest",
+        "quiz": [
+          {
+            "id": "dl-w1-1",
+            "kind": "mcq",
+            "stem": "DL-3101 must declare which before charts?",
+            "choices": [
+              "vibe_score",
+              "schema columns",
+              "CEO quote",
+              "palette"
+            ],
+            "answer_index": 1,
+            "explanation": "schema first"
+          },
+          {
+            "id": "dl-w1-2",
+            "kind": "mcq",
+            "stem": "Invented column vibe_score should?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 1,
+            "explanation": "fail invented columns"
+          },
+          {
+            "id": "dl-w1-3",
+            "kind": "mcq",
+            "stem": "Ingest honesty requires?",
+            "choices": [
+              "row_count+hash",
+              "screenshot only",
+              "emoji",
+              "mute"
+            ],
+            "answer_index": 0,
+            "explanation": "count+hash"
+          },
+          {
+            "id": "dl-w1-4",
+            "kind": "mcq",
+            "stem": "DATA_DASHBOARDS vs DATA_VIZ_BI this week?",
+            "choices": [
+              "schema/ETL",
+              "only color theory",
+              "Unity",
+              "radio"
+            ],
+            "answer_index": 0,
+            "explanation": "schema/ETL"
+          },
+          {
+            "id": "dl-w1-5",
+            "kind": "mcq",
+            "stem": "Empty {} for schema lab?",
+            "choices": [
+              "Pass",
+              "Fail",
+              "Partial",
+              "Auto"
+            ],
+            "answer_index": 1,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "dl-w1-6",
+            "kind": "mcq",
+            "stem": "PASS-only file should?",
+            "choices": [
+              "Raise",
+              "Pass",
+              "Ignore",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "print-PASS forbidden"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "SQL SELECT with pier filters \u2014 honest predicates",
+        "lesson": "Ticket DL-3204 asks which bays exceeded headcount 40 after 18:00 UTC. You write a SELECT with WHERE pier_bay IN (...) AND headcount > 40 AND ts_utc >= '18:00', not a SELECT * dump pasted into Slack.\n\nThe lab grades predicate honesty: filter_count must equal the fixture answer, and sql_text must include WHERE. Omitting filters while claiming 'all busy bays' fails. This is database literacy for operators, not BI storytelling.\n\nPier Ledger Bench ticket DL-3204 refuses screenshot-only evidence: the grader reads JSON fields from `lab_sql_select`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3204 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.",
+        "worked_example": "SELECT pier_bay, headcount FROM pier_visits WHERE headcount>40 AND hour>=18; filter_count matches fixture.",
+        "assignment": "Author lab_sql_select for DL-3204 with WHERE + filter_count.",
+        "lab_id": "lab_sql_select",
+        "quiz": [
+          {
+            "id": "dl-w2-1",
+            "kind": "mcq",
+            "stem": "Honest busy-bay query needs?",
+            "choices": [
+              "WHERE",
+              "SELECT * only",
+              "DROP",
+              "GRANT"
+            ],
+            "answer_index": 0,
+            "explanation": "WHERE"
+          },
+          {
+            "id": "dl-w2-2",
+            "kind": "mcq",
+            "stem": "filter_count mismatch should?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "fail mismatch"
+          },
+          {
+            "id": "dl-w2-3",
+            "kind": "mcq",
+            "stem": "SELECT * dump to Slack is?",
+            "choices": [
+              "Incomplete",
+              "Best practice",
+              "Required",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "incomplete"
+          },
+          {
+            "id": "dl-w2-4",
+            "kind": "mcq",
+            "stem": "DL-3204 threshold headcount?",
+            "choices": [
+              ">40",
+              ">4000",
+              "0",
+              "NaN"
+            ],
+            "answer_index": 0,
+            "explanation": ">40"
+          },
+          {
+            "id": "dl-w2-5",
+            "kind": "mcq",
+            "stem": "sql_text must contain?",
+            "choices": [
+              "WHERE",
+              "UNITY",
+              "MERGE",
+              "KEY"
+            ],
+            "answer_index": 0,
+            "explanation": "WHERE"
+          },
+          {
+            "id": "dl-w2-6",
+            "kind": "mcq",
+            "stem": "Wrong filter claiming all busy?",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Grants cert",
+              "Merges"
+            ],
+            "answer_index": 0,
+            "explanation": "fails"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Normalize and transform \u2014 clean before KPI",
+        "lesson": "DL-3307 receives messy bay labels ('Bay-A', 'bay_a', 'BAY A'). Transform maps them to canonical bay_a before any KPI. Null headcounts drop; negatives drop. null_rate and negatives_dropped must be honest.\n\nDATA_VIZ_BI might hide messy labels behind a legend; Pier Ledger refuses to chart until normalize_map covers every alias. Fabricating null_rate=0 while fixture shows nulls fails.\n\nPier Ledger Bench ticket DL-3307 refuses screenshot-only evidence: the grader reads JSON fields from `lab_normalize_transform`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3307 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3307 refuses screenshot-only evidence: the grader reads JSON fields from `lab_normalize_transform`.",
+        "worked_example": "Map three aliases\u2192bay_a; drop null/negative headcounts; report null_rate and rows_out.",
+        "assignment": "Submit lab_normalize_transform for DL-3307.",
+        "lab_id": "lab_normalize_transform",
+        "quiz": [
+          {
+            "id": "dl-w3-1",
+            "kind": "mcq",
+            "stem": "Bay-A and bay_a should?",
+            "choices": [
+              "Canonicalize",
+              "Stay split",
+              "Delete DB",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "canonicalize"
+          },
+          {
+            "id": "dl-w3-2",
+            "kind": "mcq",
+            "stem": "Negative headcount should?",
+            "choices": [
+              "Drop",
+              "Keep",
+              "Chart louder",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "drop"
+          },
+          {
+            "id": "dl-w3-3",
+            "kind": "mcq",
+            "stem": "Fake null_rate=0 with nulls?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w3-4",
+            "kind": "mcq",
+            "stem": "Transform before KPI?",
+            "choices": [
+              "Required",
+              "Optional vibe",
+              "Forbidden",
+              "Unity"
+            ],
+            "answer_index": 0,
+            "explanation": "required"
+          },
+          {
+            "id": "dl-w3-5",
+            "kind": "mcq",
+            "stem": "normalize_map covers?",
+            "choices": [
+              "All aliases",
+              "One alias",
+              "None",
+              "Passwords"
+            ],
+            "answer_index": 0,
+            "explanation": "all"
+          },
+          {
+            "id": "dl-w3-6",
+            "kind": "mcq",
+            "stem": "rows_out vs rows_in when drops?",
+            "choices": [
+              "rows_out < rows_in",
+              "Always equal",
+              "Always larger",
+              "NaN"
+            ],
+            "answer_index": 0,
+            "explanation": "smaller"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "KPI calc \u2014 arithmetic before tiles (NO_AI)",
+        "lesson": "NO_AI authorship week. DL-3409 computes avg_headcount and p95_headcount from the cleaned table. You show the arithmetic: sum/n and the 95th percentile index \u2014 not a screenshot of a green tile.\n\nfabricated_lift must be false. Claiming 'citywide +40% engagement' without a denominator fails. Commercial standardized magic KPI engines are out of scope.\n\nPier Ledger Bench ticket DL-3409 refuses screenshot-only evidence: the grader reads JSON fields from `lab_kpi_calc`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3409 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3409 refuses screenshot-only evidence: the grader reads JSON fields from `lab_kpi_calc`.",
+        "worked_example": "avg=sum/n; p95 from sorted list; fabricated_lift=false.",
+        "assignment": "Hand-calc lab_kpi_calc for DL-3409 under NO_AI.",
+        "lab_id": "lab_kpi_calc",
+        "quiz": [
+          {
+            "id": "dl-w4-1",
+            "kind": "mcq",
+            "stem": "avg_headcount is?",
+            "choices": [
+              "sum/n",
+              "max only",
+              "CEO guess",
+              "PASS"
+            ],
+            "answer_index": 0,
+            "explanation": "sum/n"
+          },
+          {
+            "id": "dl-w4-2",
+            "kind": "mcq",
+            "stem": "fabricated_lift true should?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w4-3",
+            "kind": "mcq",
+            "stem": "NO_AI week means?",
+            "choices": [
+              "Human arithmetic",
+              "Key dump",
+              "Auto merge",
+              "Unity"
+            ],
+            "answer_index": 0,
+            "explanation": "human"
+          },
+          {
+            "id": "dl-w4-4",
+            "kind": "mcq",
+            "stem": "Green tile without math?",
+            "choices": [
+              "Incomplete",
+              "PASS",
+              "RC",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "incomplete"
+          },
+          {
+            "id": "dl-w4-5",
+            "kind": "mcq",
+            "stem": "p95 needs?",
+            "choices": [
+              "Sorted values",
+              "Random emoji",
+              "SSN",
+              "Key"
+            ],
+            "answer_index": 0,
+            "explanation": "sorted"
+          },
+          {
+            "id": "dl-w4-6",
+            "kind": "mcq",
+            "stem": "Citywide +40% without denom?",
+            "choices": [
+              "Fail honesty",
+              "Pass",
+              "Grant",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Dashboard chart contract \u2014 labeled axes",
+        "lesson": "DL-3511 ships a chart contract JSON: chart_type, x_field, y_field, title, and alt_text \u226512 chars. Color-only encodings without labels fail. This is still Pier Ledger \u2014 the chart must cite the KPI fields from week 4, not invent a second dataset.\n\nDistinct from DATA_VIZ_BI deep visual rhetoric: here the bar is machine-verifiable fields + a11y alt_text.\n\nPier Ledger Bench ticket DL-3511 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_chart`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3511 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3511 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_chart`.",
+        "worked_example": "bar chart; x=pier_bay; y=avg_headcount; alt_text describes bars; color_only=false.",
+        "assignment": "Submit lab_dashboard_chart for DL-3511.",
+        "lab_id": "lab_dashboard_chart",
+        "quiz": [
+          {
+            "id": "dl-w5-1",
+            "kind": "mcq",
+            "stem": "Chart contract needs?",
+            "choices": [
+              "x/y fields",
+              "Only hex color",
+              "SSN",
+              "Unity"
+            ],
+            "answer_index": 0,
+            "explanation": "fields"
+          },
+          {
+            "id": "dl-w5-2",
+            "kind": "mcq",
+            "stem": "alt_text <12 should?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w5-3",
+            "kind": "mcq",
+            "stem": "color_only without labels?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Best",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w5-4",
+            "kind": "mcq",
+            "stem": "Chart must cite?",
+            "choices": [
+              "Prior KPI fields",
+              "Random CSV",
+              "Passwords",
+              "Keys"
+            ],
+            "answer_index": 0,
+            "explanation": "KPI"
+          },
+          {
+            "id": "dl-w5-5",
+            "kind": "mcq",
+            "stem": "Machine-verifiable chart means?",
+            "choices": [
+              "JSON fields graded",
+              "Vibes",
+              "Selfie",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "JSON"
+          },
+          {
+            "id": "dl-w5-6",
+            "kind": "mcq",
+            "stem": "DATA_VIZ_BI overlap?",
+            "choices": [
+              "Related but distinct bar",
+              "Identical",
+              "Replace",
+              "Delete"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Join integrity \u2014 keys that match",
+        "lesson": "DL-3615 joins pier_visits to pier_meta on pier_bay. Orphan visit rows and duplicate meta keys fail. join_type must be inner or left with orphan_count reported honestly.\n\nA dashboard that silently drops orphans without saying so fails the honesty gate.\n\nPier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3615 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "inner join on pier_bay; orphan_count=0 on fixture; duplicate_meta_keys=false.",
+        "assignment": "Submit lab_join_integrity for DL-3615.",
+        "lab_id": "lab_join_integrity",
+        "quiz": [
+          {
+            "id": "dl-w6-1",
+            "kind": "mcq",
+            "stem": "Join key here?",
+            "choices": [
+              "pier_bay",
+              "ssn",
+              "password",
+              "unity"
+            ],
+            "answer_index": 0,
+            "explanation": "pier_bay"
+          },
+          {
+            "id": "dl-w6-2",
+            "kind": "mcq",
+            "stem": "Silent orphan drop?",
+            "choices": [
+              "Fail honesty",
+              "Pass",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w6-3",
+            "kind": "mcq",
+            "stem": "duplicate_meta_keys true?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Ignore",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w6-4",
+            "kind": "mcq",
+            "stem": "orphan_count must be?",
+            "choices": [
+              "Reported",
+              "Hidden",
+              "Negative",
+              "NaN ok"
+            ],
+            "answer_index": 0,
+            "explanation": "reported"
+          },
+          {
+            "id": "dl-w6-5",
+            "kind": "mcq",
+            "stem": "inner join drops?",
+            "choices": [
+              "Non-matching keys",
+              "All rows",
+              "Schema",
+              "Labs"
+            ],
+            "answer_index": 0,
+            "explanation": "non-match"
+          },
+          {
+            "id": "dl-w6-6",
+            "kind": "mcq",
+            "stem": "Empty join submission?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Auto",
+              "Grant"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "ETL PII redaction \u2014 desks keep secrets out",
+        "lesson": "DL-3718 ETL must redact email and phone from volunteer notes before warehouse load. redactions \u22651, pii_remaining false, biometric_claim false. Shipping raw emails into a public dashboard fails.\n\nInstructor keys are unrelated and stay out of learner modes.\n\nPier Ledger Bench ticket DL-3718 refuses screenshot-only evidence: the grader reads JSON fields from `lab_pii_redact_etl`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3718 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3718 refuses screenshot-only evidence: the grader reads JSON fields from `lab_pii_redact_etl`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "Redact emails/phones; redactionsions\u22651; pii_remaining=false; biometric_claim=false.",
+        "assignment": "Submit lab_pii_redact_etl for DL-3718.",
+        "lab_id": "lab_pii_redact_etl",
+        "quiz": [
+          {
+            "id": "dl-w7-1",
+            "kind": "mcq",
+            "stem": "Raw email in public dash?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Required",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w7-2",
+            "kind": "mcq",
+            "stem": "pii_remaining true should?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Skip"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w7-3",
+            "kind": "mcq",
+            "stem": "biometric_claim true?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Ignore",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w7-4",
+            "kind": "mcq",
+            "stem": "redactions count \u2265?",
+            "choices": [
+              "1",
+              "0",
+              "-1",
+              "9999 required"
+            ],
+            "answer_index": 0,
+            "explanation": "\u22651"
+          },
+          {
+            "id": "dl-w7-5",
+            "kind": "mcq",
+            "stem": "Learner modes get keys?",
+            "choices": [
+              "Never",
+              "Always",
+              "Sometimes",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "never"
+          },
+          {
+            "id": "dl-w7-6",
+            "kind": "mcq",
+            "stem": "Phone left in warehouse?",
+            "choices": [
+              "Fails lab",
+              "Passes",
+              "Grants",
+              "Unity"
+            ],
+            "answer_index": 0,
+            "explanation": "fails"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Debug the pipeline \u2014 name the broken stage",
+        "lesson": "DL-3822 pipeline failed: ingest\u2192transform\u2192calc\u2192chart. Students name failed_stage, error_code, and fix_action. Guessing 'AI broke it' without a stage fails. Re-run evidence must show stage_rerun_ok true after the fix.\n\nThis is real tool-debug literacy for data operators.\n\nPier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3822 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.",
+        "worked_example": "failed_stage=transform; error_code=NULL_HEADCOUNT; fix_action=drop nulls; stage_rerun_ok=true.",
+        "assignment": "Submit lab_debug_pipeline for DL-3822.",
+        "lab_id": "lab_debug_pipeline",
+        "quiz": [
+          {
+            "id": "dl-w8-1",
+            "kind": "mcq",
+            "stem": "Debug requires?",
+            "choices": [
+              "failed_stage",
+              "Only vibes",
+              "Unity",
+              "Key dump"
+            ],
+            "answer_index": 0,
+            "explanation": "stage"
+          },
+          {
+            "id": "dl-w8-2",
+            "kind": "mcq",
+            "stem": "AI broke it without stage?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w8-3",
+            "kind": "mcq",
+            "stem": "stage_rerun_ok after fix?",
+            "choices": [
+              "true",
+              "false always",
+              "null",
+              "PASS"
+            ],
+            "answer_index": 0,
+            "explanation": "true"
+          },
+          {
+            "id": "dl-w8-4",
+            "kind": "mcq",
+            "stem": "Pipeline order starts?",
+            "choices": [
+              "ingest",
+              "chart",
+              "merge",
+              "unity"
+            ],
+            "answer_index": 0,
+            "explanation": "ingest"
+          },
+          {
+            "id": "dl-w8-5",
+            "kind": "mcq",
+            "stem": "error_code should be?",
+            "choices": [
+              "Named",
+              "Empty",
+              "Emoji",
+              "SSN"
+            ],
+            "answer_index": 0,
+            "explanation": "named"
+          },
+          {
+            "id": "dl-w8-6",
+            "kind": "mcq",
+            "stem": "fix_action length?",
+            "choices": [
+              "\u226512 chars",
+              "0",
+              "PASS",
+              "Key"
+            ],
+            "answer_index": 0,
+            "explanation": "\u226512"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Freshness SLA \u2014 stale tiles fail (NO_AI)",
+        "lesson": "NO_AI walkthrough. DL-3925 enforces freshness_minutes \u2264 60 for pier dashboards. Stale data with sla_ok true fails. lag_minutes must be computed from watermark vs now_fixture.\n\nOperators refuse to publish a 'live' tile when lag exceeds SLA.\n\nPier Ledger Bench ticket DL-3925 refuses screenshot-only evidence: the grader reads JSON fields from `lab_freshness_sla`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3925 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3925 refuses screenshot-only evidence: the grader reads JSON fields from `lab_freshness_sla`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.",
+        "worked_example": "lag_minutes=12; sla_minutes=60; sla_ok=true; claim_live_when_stale=false.",
+        "assignment": "Submit lab_freshness_sla for DL-3925 under NO_AI.",
+        "lab_id": "lab_freshness_sla",
+        "quiz": [
+          {
+            "id": "dl-w9-1",
+            "kind": "mcq",
+            "stem": "SLA example minutes?",
+            "choices": [
+              "60",
+              "0",
+              "99999",
+              "NaN"
+            ],
+            "answer_index": 0,
+            "explanation": "60"
+          },
+          {
+            "id": "dl-w9-2",
+            "kind": "mcq",
+            "stem": "sla_ok true when lag>SLA?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          },
+          {
+            "id": "dl-w9-3",
+            "kind": "mcq",
+            "stem": "claim_live_when_stale?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key"
+            ],
+            "answer_index": 0,
+            "explanation": "false"
+          },
+          {
+            "id": "dl-w9-4",
+            "kind": "mcq",
+            "stem": "lag from?",
+            "choices": [
+              "watermark vs now",
+              "Guess",
+              "CEO",
+              "Unity"
+            ],
+            "answer_index": 0,
+            "explanation": "watermark"
+          },
+          {
+            "id": "dl-w9-5",
+            "kind": "mcq",
+            "stem": "NO_AI week 9 means?",
+            "choices": [
+              "Human walkthrough",
+              "Key leak",
+              "Auto merge",
+              "Anime"
+            ],
+            "answer_index": 0,
+            "explanation": "human"
+          },
+          {
+            "id": "dl-w9-6",
+            "kind": "mcq",
+            "stem": "Stale live banner?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "PASS",
+              "Grant"
+            ],
+            "answer_index": 0,
+            "explanation": "forbidden"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Dashboard capstone \u2014 ship the ledger path",
+        "lesson": "DL-3A30 closes Pier Ledger Bench: labs_passed \u22656, schema_ok, kpi_ok, chart_ok, pii_ok, freshness_ok true, fabricated_lift false, no_key_leak true. Portfolio claim boundary stays digital-fixture only; REAL_STUDENT_E6 / REAL_TEACHER_E6 remain false.\n\nDo not blend this course into historical mastery score families.\n\nPier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.\n\nDistinct from DATA_VIZ_BI chart storytelling \u2014 this week owns schema, SQL, or pipeline honesty before any dashboard tile.\n\nCommercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.\n\nKeep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.\n\nWork the numbers for DL-3A30 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.\n\nPier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.",
+        "worked_example": "labs_passed\u22656; honesty flags true; fabricated_lift false; no_key_leak true.",
+        "assignment": "Assemble lab_dashboard_capstone ship checklist.",
+        "lab_id": "lab_dashboard_capstone",
+        "quiz": [
+          {
+            "id": "dl-w10-1",
+            "kind": "mcq",
+            "stem": "labs_passed minimum?",
+            "choices": [
+              "6",
+              "0",
+              "1",
+              "100"
+            ],
+            "answer_index": 0,
+            "explanation": "\u22656"
+          },
+          {
+            "id": "dl-w10-2",
+            "kind": "mcq",
+            "stem": "fabricated_lift must be?",
+            "choices": [
+              "false",
+              "true",
+              "null",
+              "PASS"
+            ],
+            "answer_index": 0,
+            "explanation": "false"
+          },
+          {
+            "id": "dl-w10-3",
+            "kind": "mcq",
+            "stem": "no_key_leak must be?",
+            "choices": [
+              "true",
+              "false",
+              "optional",
+              "ignored"
+            ],
+            "answer_index": 0,
+            "explanation": "true"
+          },
+          {
+            "id": "dl-w10-4",
+            "kind": "mcq",
+            "stem": "REAL_*_E6 this packet?",
+            "choices": [
+              "false",
+              "true",
+              "maybe",
+              "granted"
+            ],
+            "answer_index": 0,
+            "explanation": "false"
+          },
+          {
+            "id": "dl-w10-5",
+            "kind": "mcq",
+            "stem": "Blend into historical 12C?",
+            "choices": [
+              "Never",
+              "Always",
+              "Average",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "never"
+          },
+          {
+            "id": "dl-w10-6",
+            "kind": "mcq",
+            "stem": "Capstone without pii_ok?",
+            "choices": [
+              "Fail",
+              "Pass",
+              "Bonus",
+              "Merge"
+            ],
+            "answer_index": 0,
+            "explanation": "fail"
+          }
+        ]
+      }
+    ]
+  }
+}

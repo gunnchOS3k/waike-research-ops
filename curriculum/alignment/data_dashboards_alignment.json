@@ -1,0 +1,29 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "DATA_DASHBOARDS",
+  "track_ids": ["DATA_DASHBOARDS"],
+  "date_checked": "2026-08-16",
+  "benchmarks": [
+    {
+      "source_id": "SQL_ASSOCIATE_DOMAIN_LABELS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "schema_and_select", "waike_weeks": [1, 2]},
+        {"domain": "transform_and_join", "waike_weeks": [3, 6]},
+        {"domain": "aggregate_kpi", "waike_weeks": [4, 5]}
+      ]
+    },
+    {
+      "source_id": "DATA_PLUS_DOMAIN_LABELS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "data_quality_pii", "waike_weeks": [7, 8]},
+        {"domain": "freshness_and_delivery", "waike_weeks": [9, 10]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "DATA_VIZ_BI": "DATA_VIZ_BI owns visual rhetoric and BI storytelling; DATA_DASHBOARDS owns schema/SQL/ETL/KPI/freshness machine-verifiable labs."
+  },
+  "claim_boundary": "Domain labels only — credentials not granted. Not student/teacher E6."
+}

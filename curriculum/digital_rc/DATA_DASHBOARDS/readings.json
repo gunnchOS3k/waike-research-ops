@@ -1,0 +1,25 @@
+{
+  "course_id": "DATA_DASHBOARDS",
+  "items": [
+    {
+      "week": 1,
+      "title": "Pier Ledger schema card (fixture)",
+      "reuse_class": "ORIGINAL"
+    },
+    {
+      "week": 2,
+      "title": "SQL SELECT predicate discipline (fixture)",
+      "reuse_class": "ORIGINAL"
+    },
+    {
+      "week": 5,
+      "title": "Chart a11y alt-text checklist (fixture)",
+      "reuse_class": "ORIGINAL"
+    },
+    {
+      "week": 7,
+      "title": "ETL PII redaction notes (fixture)",
+      "reuse_class": "ORIGINAL"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "dl-w9-1",
+      "kind": "mcq",
+      "stem": "SLA example minutes?",
+      "choices": [
+        "60",
+        "0",
+        "99999",
+        "NaN"
+      ]
+    },
+    {
+      "id": "dl-w9-2",
+      "kind": "mcq",
+      "stem": "sla_ok true when lag>SLA?",
+      "choices": [
+        "Pass",
+        "Fail",
+        "Bonus",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-w9-3",
+      "kind": "mcq",
+      "stem": "claim_live_when_stale?",
+      "choices": [
+        "Must be true",
+        "Ignored",
+        "Must be false",
+        "Key"
+      ]
+    },
+    {
+      "id": "dl-w9-4",
+      "kind": "mcq",
+      "stem": "lag from?",
+      "choices": [
+        "Guess",
+        "CEO",
+        "Unity",
+        "watermark vs now"
+      ]
+    },
+    {
+      "id": "dl-w9-5",
+      "kind": "mcq",
+      "stem": "NO_AI week 9 means?",
+      "choices": [
+        "Human walkthrough",
+        "Key leak",
+        "Auto merge",
+        "Anime"
+      ]
+    },
+    {
+      "id": "dl-w9-6",
+      "kind": "mcq",
+      "stem": "Stale live banner?",
+      "choices": [
+        "Required",
+        "Forbidden",
+        "PASS",
+        "Grant"
+      ]
+    }
+  ]
+}

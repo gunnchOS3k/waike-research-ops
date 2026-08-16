@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DATA_DASHBOARDS-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "dl-w2-1",
+      "kind": "mcq",
+      "stem": "Honest busy-bay query needs?",
+      "choices": [
+        "SELECT * only",
+        "DROP",
+        "WHERE",
+        "GRANT"
+      ]
+    },
+    {
+      "id": "dl-w2-2",
+      "kind": "mcq",
+      "stem": "filter_count mismatch should?",
+      "choices": [
+        "Pass",
+        "Bonus",
+        "Ignore",
+        "Fail"
+      ]
+    },
+    {
+      "id": "dl-w2-3",
+      "kind": "mcq",
+      "stem": "SELECT * dump to Slack is?",
+      "choices": [
+        "Incomplete",
+        "Best practice",
+        "Required",
+        "Cert"
+      ]
+    },
+    {
+      "id": "dl-w2-4",
+      "kind": "mcq",
+      "stem": "DL-3204 threshold headcount?",
+      "choices": [
+        ">4000",
+        ">40",
+        "0",
+        "NaN"
+      ]
+    },
+    {
+      "id": "dl-w2-5",
+      "kind": "mcq",
+      "stem": "sql_text must contain?",
+      "choices": [
+        "UNITY",
+        "MERGE",
+        "WHERE",
+        "KEY"
+      ]
+    },
+    {
+      "id": "dl-w2-6",
+      "kind": "mcq",
+      "stem": "Wrong filter claiming all busy?",
+      "choices": [
+        "Passes",
+        "Grants cert",
+        "Merges",
+        "Fails"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "assessment_id": "DATA_DASHBOARDS-mid",
+  "items": [
+    {
+      "id": "dl-mid-01",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 1: which honesty gate holds for DL-301 style work?",
+      "choices": [
+        "Schema/SQL/KPI fields must match fixtures",
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-02",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 2: which honesty gate holds for DL-302 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-03",
+      "kind": "mcq",
+      "stem": "Join orphans silently dropped without orphan_count?",
+      "choices": [
+        "Passes",
+        "Grants cert",
+        "Fails honesty",
+        "Required"
+      ]
+    },
+    {
+      "id": "dl-mid-04",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 4: which honesty gate holds for DL-304 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards",
+        "Schema/SQL/KPI fields must match fixtures"
+      ]
+    },
+    {
+      "id": "dl-mid-05",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 5: which honesty gate holds for DL-305 style work?",
+      "choices": [
+        "Schema/SQL/KPI fields must match fixtures",
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-06",
+      "kind": "mcq",
+      "stem": "fabricated_lift on KPI lab?",
+      "choices": [
+        "Must be true",
+        "Must be false",
+        "Ignored",
+        "Key"
+      ]
+    },
+    {
+      "id": "dl-mid-07",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 7: which honesty gate holds for DL-307 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-08",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 8: which honesty gate holds for DL-308 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards",
+        "Schema/SQL/KPI fields must match fixtures"
+      ]
+    },
+    {
+      "id": "dl-mid-09",
+      "kind": "mcq",
+      "stem": "WHERE missing on busy-bay SQL?",
+      "choices": [
+        "Fails",
+        "Passes",
+        "Bonus",
+        "Unity"
+      ]
+    },
+    {
+      "id": "dl-mid-10",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 10: which honesty gate holds for DL-310 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-11",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 11: which honesty gate holds for DL-311 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-12",
+      "kind": "mcq",
+      "stem": "alt_text on chart contract?",
+      "choices": [
+        "Optional empty",
+        "SSN",
+        "PASS",
+        "\u226512 chars"
+      ]
+    },
+    {
+      "id": "dl-mid-13",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 13: which honesty gate holds for DL-313 style work?",
+      "choices": [
+        "Schema/SQL/KPI fields must match fixtures",
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-14",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 14: which honesty gate holds for DL-314 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-15",
+      "kind": "mcq",
+      "stem": "PII remaining after ETL?",
+      "choices": [
+        "Pass",
+        "Ignore",
+        "Fail",
+        "Merge"
+      ]
+    },
+    {
+      "id": "dl-mid-16",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 16: which honesty gate holds for DL-316 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards",
+        "Schema/SQL/KPI fields must match fixtures"
+      ]
+    },
+    {
+      "id": "dl-mid-17",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 17: which honesty gate holds for DL-317 style work?",
+      "choices": [
+        "Schema/SQL/KPI fields must match fixtures",
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-18",
+      "kind": "mcq",
+      "stem": "DATA_DASHBOARDS replaces DATA_VIZ_BI?",
+      "choices": [
+        "Yes identical",
+        "No \u2014 distinct bars",
+        "Delete BI",
+        "Unity"
+      ]
+    },
+    {
+      "id": "dl-mid-19",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 19: which honesty gate holds for DL-319 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Schema/SQL/KPI fields must match fixtures",
+        "Ship SSN in dashboards"
+      ]
+    },
+    {
+      "id": "dl-mid-20",
+      "kind": "mcq",
+      "stem": "Pier Ledger mid item 20: which honesty gate holds for DL-320 style work?",
+      "choices": [
+        "Screenshot of green tile is enough",
+        "Invent columns freely",
+        "Ship SSN in dashboards",
+        "Schema/SQL/KPI fields must match fixtures"
+      ]
+    }
+  ]
+}
