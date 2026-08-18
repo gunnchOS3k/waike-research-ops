@@ -36,13 +36,16 @@ Product Charter **layer 14**. Surfaced via Ecosystem Portal `WAIKE` docs; pairs 
 
 ## Try / inspect in 5 minutes
 
+Counts below are file-backed: **18** catalog IDs in `curriculum/catalog.yaml`, **14** digital-RC packages under `curriculum/digital_rc/`. Do not collapse those numbers.
+
 ```bash
-# Browse the Knowledge OS entrypoints
-ls docs knowledge_maps programs
-# Run unit tests if present
-python3 -m pytest -q tests 2>/dev/null || true
+python3 -m pip install pytest
+PYTHONPATH=src python3 -m pytest -q tests/test_pathway_schema.py tests/journeys
 ```
-Start: `docs/00_WAIKE_KNOWLEDGE_OS.md`, `knowledge_maps/waike_skill_tree.yaml`.
+
+Start: `docs/00_WAIKE_KNOWLEDGE_OS.md`, `instructor_training/instructor_onboarding_path.md`, `docs/uml/README.md`.
+
+Learner walk: `tests/journeys/test_learner_journey.py` (SOFTWARE_BUILDER). Instructor walk: `tests/journeys/test_instructor_journey.py`.
 
 ## Architecture
 
@@ -65,8 +68,11 @@ Content consumed by portal/education surfaces; tutor bridge references `gunnchAI
 ## Tests
 
 ```bash
-python3 -m pytest -q tests
+PYTHONPATH=src python3 -m pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py
+PYTHONPATH=src python3 -m pytest -q tests
 ```
+
+Pathway schema: start, prereqs, objectives, lessons, labs, assessment/rubrics, anonymous completion, instructor packet. UML: `docs/uml/`. Supporting 6G note (not a paper): `docs/research/6G_WORKLOAD_RELEVANCE.md`.
 
 ## Evidence
 

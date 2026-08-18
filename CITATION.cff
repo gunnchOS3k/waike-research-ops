@@ -1,9 +1,15 @@
 cff-version: 1.2.0
-title: "gunnchOS3k MLV 6G Research Artifact"
-message: "If you use this software, please cite it."
+title: waike-research-ops
+message: "If you use this education/ops tree, please cite it."
 authors:
   - family-names: Gunn
     given-names: Edmund
-    name-particle: Jr.
+    suffix: Jr.
+repository-code: https://github.com/gunnchOS3k/waike-research-ops
 license: MIT
-repository-code: 'https://github.com/gunnchOS3k/waike-research-ops'
+type: software
+abstract: >
+  WAIKE education and research-ops curriculum packages, validators, and
+  instructor/learner journeys for the gunnchOS3k portfolio. Supporting
+  workload only — not a RAN paper, not a University of Oulu affiliation claim,
+  and not an accredited degree program.
