@@ -1,0 +1,10 @@
+{
+  "course_id": "DATA_VIZ_BI",
+  "required": [
+    "Comfort with tables/CSV",
+    "Will not decorate charts in place of labeled encodings"
+  ],
+  "recommended": [
+    "GENERAL_IT operator literacy"
+  ]
+}

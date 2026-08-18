@@ -1,0 +1,10 @@
+{
+  "course_id": "CLOUD_DEVOPS",
+  "required": [
+    "Willingness to learn Linux permissions in week 1 from zero if needed",
+    "No plaintext tokens in submitted artifacts"
+  ],
+  "recommended": [
+    "SOFTWARE_BUILDER git/CI vocabulary"
+  ]
+}

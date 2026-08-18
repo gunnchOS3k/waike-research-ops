@@ -1,0 +1,10 @@
+{
+  "course_id": "AI_ML_EDGE",
+  "required": [
+    "Comfort reading CSV/tables",
+    "Will not treat classroom models as production autonomy"
+  ],
+  "recommended": [
+    "SOFTWARE_BUILDER local command fluency"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "course_id": "GAME_DEV_INTERACTIVE",
+  "required": [
+    "Can name a game loop, input event, and finite state without claiming a shipped title"
+  ],
+  "recommended": [
+    "SOFTWARE_BUILDER git and automated-test habits"
+  ]
+}

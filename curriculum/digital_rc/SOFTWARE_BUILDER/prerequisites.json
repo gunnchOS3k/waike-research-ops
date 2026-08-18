@@ -1,0 +1,10 @@
+{
+  "course_id": "SOFTWARE_BUILDER",
+  "required": [
+    "Can edit a text file and run a local command",
+    "Will not commit secrets or paste PASS as a lab artifact"
+  ],
+  "recommended": [
+    "GENERAL_IT folder and ticket habits"
+  ]
+}

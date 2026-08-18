@@ -9,6 +9,7 @@ from typing import Any
 from waike_course_ready.content import COURSES, extra_assessment_items
 from waike_course_ready.exams import exam_is_restatement
 from waike_course_ready.labs import COURSE_LABS
+from waike_ops.prereqs import COURSE_PREREQS
 from waike_course_ready.packaging import (
     SYLLABUS_ASSESSMENT,
     SYLLABUS_CLAIM,
@@ -430,6 +431,10 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "portfolio_artifacts": 1,
         },
     }
+    if course_id not in COURSE_PREREQS:
+        raise KeyError(f"missing authored prerequisites for {course_id}")
+    _dump(base / "prerequisites.json", COURSE_PREREQS[course_id])
+
     _dump(base / "course.json", package)
     return package
 
