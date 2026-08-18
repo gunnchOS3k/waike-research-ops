@@ -1,2 +1,11 @@
 __pycache__/
 artifacts/_lab_tmp/
+.env
+.env.local
+grades/
+transcripts/
+*.p12
+tools/private_transcript_ingestion/private/
+tools/private_transcript_ingestion/*.csv
+!tools/private_transcript_ingestion/README.md
+!tools/private_transcript_ingestion/DO_NOT_COMMIT_PRIVATE_RECORDS.md

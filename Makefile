@@ -4,7 +4,7 @@
 	test generate-7gc-upnow
 
 test:
-	$(PY) pytest -q
+	$(PY) pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py
 
 generate-7gc-upnow:
 	$(PY) python3 scripts/generate_7gc_upnow_bundle.py

@@ -24,4 +24,4 @@ jobs:
           python3 scripts/detect_templated_courses.py
           python3 scripts/prove_product_consumption.py
           python3 scripts/write_course_digital_rc.py
-          python3 -m pytest -q tests/curriculum/test_digital_rc_batch.py
+          python3 -m pytest -q tests/curriculum/test_digital_rc_batch.py tests/test_pathway_schema.py tests/journeys
