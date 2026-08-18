@@ -1,0 +1,10 @@
+{
+  "course_id": "WIRELESS_6G",
+  "required": [
+    "Algebra for FSPL (distance, frequency, dB)",
+    "Accept that commercial standardized 6G does not exist today"
+  ],
+  "recommended": [
+    "COMPUTER_NETWORKING local naming and delay honesty"
+  ]
+}

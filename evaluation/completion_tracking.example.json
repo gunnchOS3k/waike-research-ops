@@ -1,0 +1,10 @@
+{
+  "schema": "waike.completion_tracking.v1",
+  "course_id": "SOFTWARE_BUILDER",
+  "week": 1,
+  "artifact_id": "lab_git_conflict",
+  "artifact_submitted": true,
+  "lab_id": "lab_git_conflict",
+  "lab_ok": true,
+  "opaque_learner_ref": "fixture-learner"
+}

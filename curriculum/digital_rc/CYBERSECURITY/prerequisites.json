@@ -1,0 +1,10 @@
+{
+  "course_id": "CYBERSECURITY",
+  "required": [
+    "Authorized-fixture-only rule: do not scan or exploit systems you do not own",
+    "Ticket-journal discipline without PII"
+  ],
+  "recommended": [
+    "COMPUTER_NETWORKING name-resolution and port literacy"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "course_id": "HARDWARE_ENGINEERING",
+  "required": [
+    "Can submit lab JSON and treat Device Lab benches as digital-first unless EVT is in scope"
+  ],
+  "recommended": [
+    "GENERAL_IT power/storage triage order"
+  ]
+}

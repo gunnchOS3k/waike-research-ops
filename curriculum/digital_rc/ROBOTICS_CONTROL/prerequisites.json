@@ -1,0 +1,10 @@
+{
+  "course_id": "ROBOTICS_CONTROL",
+  "required": [
+    "Treat e-stop / safe-state as non-negotiable in every lab",
+    "Digital-first: physical robot motion is out of scope unless EVT is scheduled"
+  ],
+  "recommended": [
+    "HARDWARE_ENGINEERING GPIO/I2C vocabulary"
+  ]
+}

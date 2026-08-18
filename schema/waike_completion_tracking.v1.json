@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_completion_tracking.v1.json",
+  "title": "PII-free WAIKE completion checklist (no names, grades, transcripts)",
+  "type": "object",
+  "required": ["schema", "course_id", "artifact_id", "week", "artifact_submitted"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "waike.completion_tracking.v1" },
+    "course_id": { "type": "string" },
+    "week": { "type": "integer", "minimum": 1 },
+    "artifact_id": { "type": "string" },
+    "artifact_submitted": { "type": "boolean" },
+    "lab_id": { "type": "string" },
+    "lab_ok": { "type": "boolean" },
+    "opaque_learner_ref": {
+      "type": "string",
+      "description": "Optional opaque token. Must not be an email, name, or student id."
+    }
+  },
+  "not": {
+    "anyOf": [
+      { "required": ["email"] },
+      { "required": ["name"] },
+      { "required": ["grade"] },
+      { "required": ["transcript"] },
+      { "required": ["gpa"] },
+      { "required": ["student_id"] }
+    ]
+  }
+}

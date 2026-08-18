@@ -1,46 +1,40 @@
-        # Reproducibility — WAIKE Research Ops
+# Reproducibility — WAIKE Research Ops
 
-        ## Clone / setup / run
+Education/ops content plus Python validators. This repo does not produce RF results.
 
-        ```bash
-        git clone https://github.com/gunnchOS3k/{name}.git
+```bash
+git clone https://github.com/gunnchOS3k/waike-research-ops.git
 cd waike-research-ops
-# See README.md for repo-specific setup
-python3 scripts/check_required_files.py
-# Expected: CI smoke pass; tests pass or documented skip
-        ```
+python3 -m pip install pytest
+PYTHONPATH=src python3 -m pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py
+```
 
-        ## Expected outputs
+Expected: pytest PASS. Digital-RC count is **14 packages discovered from** `curriculum/digital_rc/*/course.json` — do not report 18 as COURSE_DIGITAL_RC.
 
-        - Required documentation files present (`python3 scripts/check_required_files.py`)
-        - Tests pass **or** documented smoke-only path for docs-only repos
-        - No claim of field deployment from synthetic outputs alone
+Optional full lab bundle (heavier):
 
-        ## Tool versions
+```bash
+PYTHONPATH=src python3 scripts/emit_digital_rc.py
+PYTHONPATH=src python3 scripts/run_course_labs.py
+```
 
-        | Tool | Version guidance |
-        |------|------------------|
-        | Python | 3.10+ where `requirements.txt` exists |
-        | Node | 18+ LTS where `package.json` exists |
-        | Make | GNU Make where `Makefile` exists |
+## Tool versions
 
-        Record exact versions in PR / release notes when publishing.
+| Tool | Guidance |
+|---|---|
+| Python | 3.12 in CI; 3.10+ locally |
+| pytest | installed in CI via pip |
 
-        ## Fresh machine checklist
+Record the commit SHA in any supervisor packet.
 
-        - [ ] Clone repo
-        - [ ] Create clean venv / `npm ci`
-        - [ ] Run `scripts/check_required_files.py`
-        - [ ] Run test command from README
-        - [ ] Compare outputs to `results/` or CI logs
-        - [ ] Log environment in `reproducibility/FRESH_MACHINE_LOG.md` (optional)
+## Evidence discipline
 
-        ## Evidence discipline
+**Real today:** course packages, schema tests, runnable lab validators, anonymous completion schema.
 
-        **Real today:** Curriculum maps, validation scripts, smoke tests
+**Synthetic / demo-only:** campus scenario packs, mock evaluation dashboards.
 
-        **Synthetic / demo-only:** Pilot outcome placeholders
+**Not claimed:** accredited transcripts, partner classroom HUMAN_E6, citywide impact, Oulu affiliation, commercial 6G.
 
-        **Planned:** Cohort pilots, community partner deployments
+## Privacy
 
-        **Not claimed:** Completed citywide educational impact proof
+No grades, transcripts, or PII in git. Local-only path: `tools/private_transcript_ingestion/`.

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_pathway.v1.json",
+  "title": "WAIKE digital-RC pathway overlay (file-backed, not invented counts)",
+  "type": "object",
+  "required": [
+    "schema",
+    "course_id",
+    "title",
+    "start",
+    "prereqs",
+    "objectives",
+    "lessons",
+    "labs",
+    "assessment",
+    "rubrics",
+    "completion_tracking",
+    "instructor_guidance"
+  ],
+  "properties": {
+    "schema": { "const": "waike.pathway.v1" },
+    "course_id": { "type": "string" },
+    "title": { "type": "string" },
+    "start": {
+      "type": "object",
+      "required": ["student_packet_ref", "kinesthetic_hook", "week_1_title"],
+      "properties": {
+        "student_packet_ref": { "type": "string" },
+        "kinesthetic_hook": { "type": "string", "minLength": 20 },
+        "week_1_title": { "type": "string" }
+      }
+    },
+    "prereqs": {
+      "type": "object",
+      "required": ["course_id", "required", "recommended"],
+      "properties": {
+        "course_id": { "type": "string" },
+        "required": { "type": "array", "items": { "type": "string" } },
+        "recommended": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 8,
+      "items": { "type": "string", "minLength": 8 }
+    },
+    "lessons": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["week", "lesson_id", "title", "body_ref"],
+        "properties": {
+          "week": { "type": "integer", "minimum": 1 },
+          "lesson_id": { "type": "string" },
+          "title": { "type": "string" },
+          "body_ref": { "type": "string" }
+        }
+      }
+    },
+    "labs": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "type": "string" }
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["quizzes_ref", "assessments"],
+      "properties": {
+        "quizzes_ref": { "type": "array", "minItems": 8 },
+        "assessments": { "type": "object" }
+      }
+    },
+    "rubrics": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "completion_tracking": {
+      "type": "object",
+      "required": ["schema", "mode", "pii_forbidden"],
+      "properties": {
+        "schema": { "const": "waike.completion_tracking.v1" },
+        "mode": { "const": "anonymous_artifact_checklist" },
+        "pii_forbidden": { "const": true }
+      }
+    },
+    "instructor_guidance": {
+      "type": "object",
+      "required": ["instructor_packet_ref"],
+      "properties": {
+        "instructor_packet_ref": { "type": "string" }
+      }
+    }
+  }
+}
