@@ -18,20 +18,32 @@ SCHEMA = json.loads((ROOT / "schema" / "waike_pathway.v1.json").read_text(encodi
 REQUIRED = SCHEMA["required"]
 
 
+def _digital_rc_course_ids(root: Path) -> list[str]:
+    base = root / "curriculum" / "digital_rc"
+    return sorted(
+        p.name for p in base.iterdir() if p.is_dir() and (p / "course.json").is_file()
+    )
+
+
 def test_digital_rc_count_comes_from_files_not_a_slogan():
     dirs = discover_course_dirs(ROOT)
     ids = {p.name for p in dirs}
-    assert len(dirs) == 14
+    on_disk = _digital_rc_course_ids(ROOT)
+    assert len(dirs) == len(on_disk)
+    assert ids == set(on_disk)
     assert "SOFTWARE_BUILDER" in ids
     assert "DATA_DASHBOARDS" in ids
+    assert "EMBEDDED_PROTOTYPING" in ids
+    assert "GUNNCHOS_PRODUCT_LAB" in ids
     # Catalog 18 is a different universe — do not collapse counts.
     catalog = (ROOT / "curriculum" / "catalog.yaml").read_text(encoding="utf-8")
     assert catalog.count("course_id:") >= 18
 
 
 def test_each_digital_rc_pathway_has_required_fields_and_refs():
+    dirs = discover_course_dirs(ROOT)
     pathways = build_all_pathways(ROOT)
-    assert len(pathways) == 14
+    assert len(pathways) == len(dirs)
     seen = set()
     for pathway in pathways:
         for key in REQUIRED:
