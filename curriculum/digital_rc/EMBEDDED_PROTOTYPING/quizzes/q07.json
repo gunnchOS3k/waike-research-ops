@@ -1,0 +1,72 @@
+{
+  "quiz_id": "EMBEDDED_PROTOTYPING-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "ep-w7-1",
+      "kind": "mcq",
+      "stem": "EP-4707: which field is checked first?",
+      "choices": [
+        "Machine JSON fields",
+        "GUI screenshot",
+        "Instructor keys",
+        "Vendor cert"
+      ]
+    },
+    {
+      "id": "ep-w7-2",
+      "kind": "mcq",
+      "stem": "lab_ep_zephyr_qemu empty submission?",
+      "choices": [
+        "Passes",
+        "Fails student_artifact",
+        "Bonus credit",
+        "Grants cert"
+      ]
+    },
+    {
+      "id": "ep-w7-3",
+      "kind": "mcq",
+      "stem": "Week 7 PHYSICAL_PENDING scope?",
+      "choices": [
+        "Ship anyway",
+        "Ignore boundary",
+        "No solder/OTA without EVT",
+        "Mute claim"
+      ]
+    },
+    {
+      "id": "ep-w7-4",
+      "kind": "mcq",
+      "stem": "EP-4707 learner may load answer keys?",
+      "choices": [
+        "Required",
+        "Optional",
+        "Auto-grant",
+        "Forbidden \u2014 instructor only"
+      ]
+    },
+    {
+      "id": "ep-w7-5",
+      "kind": "mcq",
+      "stem": "Week 7 track boundary vs HARDWARE_ENGINEERING?",
+      "choices": [
+        "Subsystem firmware/bus/QEMU",
+        "SPICE-only duplicate",
+        "Networking ACL",
+        "Game loop"
+      ]
+    },
+    {
+      "id": "ep-w7-6",
+      "kind": "mcq",
+      "stem": "EP-4707 print-PASS body?",
+      "choices": [
+        "Auto-pass",
+        "Raises AssertionError",
+        "Extra credit",
+        "Silent accept"
+      ]
+    }
+  ]
+}

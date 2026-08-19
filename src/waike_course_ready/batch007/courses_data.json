@@ -1,0 +1,1860 @@
+{
+  "EMBEDDED_PROTOTYPING": {
+    "course_id": "EMBEDDED_PROTOTYPING",
+    "title": "Embedded Systems and Device Prototyping \u2014 ForgeSense Subsystem Bench",
+    "track_ids": [
+      "EMBEDDED_PROTOTYPING"
+    ],
+    "academy_id": "ACADEMY_HARDWARE",
+    "kinesthetic_hook": "Ten ForgeSense Subsystem Bench weeks: memory map \u2192 GPIO \u2192 I2C \u2192 SPI \u2192 ADC \u2192 ISR \u2192 Zephyr QEMU \u2192 DT overlay \u2192 sleep \u2192 capstone. Digital-first; PHYSICAL_PENDING for solder/OTA.",
+    "syllabus_hook": "Standalone EMBEDDED_PROTOTYPING COURSE_DIGITAL_RC: MCU map, GPIO, I2C/SPI, ADC scaling, ISR latency, Zephyr west/QEMU, devicetree overlay, sleep modes, subsystem capstone. Complements HARDWARE_ENGINEERING SPICE path \u2014 does not replace it. Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "embedded_apprentice",
+        "firmware_technician",
+        "device_lab_integrator"
+      ],
+      "nice_categories": [
+        "build_and_deploy",
+        "operate_and_maintain"
+      ],
+      "certs_aligned_not_granted": [
+        "Zephyr developer topic labels (PUBLIC_REFERENCE_ONLY)",
+        "IPC/J-STD-001 awareness labels (not a license)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "MCU memory map \u2014 flash vs SRAM before first boot",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4101: MCU memory map \u2014 flash vs SRAM before first boot. Map the nRF52840-class memory regions for ForgeSense subsystem firmware. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "flash_base=0x00000000, sram_base=0x20000000, vector_table_offset=0x100",
+        "assignment": "Submit lab_ep_memory_map JSON for EP-4101. Map the nRF52840-class memory regions for ForgeSense subsystem firmware.",
+        "lab_id": "lab_ep_memory_map",
+        "quiz": [
+          {
+            "id": "ep-w1-1",
+            "kind": "mcq",
+            "stem": "EP-4101: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w1-2",
+            "kind": "mcq",
+            "stem": "lab_ep_memory_map empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w1-3",
+            "kind": "mcq",
+            "stem": "Week 1 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w1-4",
+            "kind": "mcq",
+            "stem": "EP-4101 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w1-5",
+            "kind": "mcq",
+            "stem": "Week 1 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w1-6",
+            "kind": "mcq",
+            "stem": "EP-4101 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "GPIO contract \u2014 direction, pull, and safe defaults",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4202: GPIO contract \u2014 direction, pull, and safe defaults. Author GPIO contract JSON before any Zephyr pinmux call. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "pin=LED0, direction=out, default_level=0, pull=none",
+        "assignment": "Submit lab_ep_gpio_contract JSON for EP-4202. Author GPIO contract JSON before any Zephyr pinmux call.",
+        "lab_id": "lab_ep_gpio_contract",
+        "quiz": [
+          {
+            "id": "ep-w2-1",
+            "kind": "mcq",
+            "stem": "EP-4202: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w2-2",
+            "kind": "mcq",
+            "stem": "lab_ep_gpio_contract empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w2-3",
+            "kind": "mcq",
+            "stem": "Week 2 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w2-4",
+            "kind": "mcq",
+            "stem": "EP-4202 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w2-5",
+            "kind": "mcq",
+            "stem": "Week 2 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w2-6",
+            "kind": "mcq",
+            "stem": "EP-4202 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "I2C timing \u2014 address, frequency, and NACK recovery",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4303: I2C timing \u2014 address, frequency, and NACK recovery. SSD1306-class address 0x3C at 100 kHz with explicit NACK plan. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "bus=i2c1, addr=0x3C, freq_khz=100, nack_recovery=true",
+        "assignment": "Submit lab_ep_i2c_timing JSON for EP-4303. SSD1306-class address 0x3C at 100 kHz with explicit NACK plan.",
+        "lab_id": "lab_ep_i2c_timing",
+        "quiz": [
+          {
+            "id": "ep-w3-1",
+            "kind": "mcq",
+            "stem": "EP-4303: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w3-2",
+            "kind": "mcq",
+            "stem": "lab_ep_i2c_timing empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w3-3",
+            "kind": "mcq",
+            "stem": "Week 3 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w3-4",
+            "kind": "mcq",
+            "stem": "EP-4303 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w3-5",
+            "kind": "mcq",
+            "stem": "Week 3 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w3-6",
+            "kind": "mcq",
+            "stem": "EP-4303 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "SPI flash read \u2014 opcode and length honesty",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4404: SPI flash read \u2014 opcode and length honesty. NO_AI week: hand-author SPI read frame fields. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "opcode=0x03, addr=0x00001000, read_len=16, crc_ok=true",
+        "assignment": "Submit lab_ep_spi_flash JSON for EP-4404. NO_AI week: hand-author SPI read frame fields.",
+        "lab_id": "lab_ep_spi_flash",
+        "quiz": [
+          {
+            "id": "ep-w4-1",
+            "kind": "mcq",
+            "stem": "EP-4404: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w4-2",
+            "kind": "mcq",
+            "stem": "lab_ep_spi_flash empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w4-3",
+            "kind": "mcq",
+            "stem": "Week 4 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w4-4",
+            "kind": "mcq",
+            "stem": "EP-4404 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w4-5",
+            "kind": "mcq",
+            "stem": "Week 4 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w4-6",
+            "kind": "mcq",
+            "stem": "EP-4404 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "ADC scaling \u2014 counts to millivolts",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4505: ADC scaling \u2014 counts to millivolts. Convert 12-bit ADC count to millivolts with stated vref. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "raw=2048, vref_mv=3300, resolution_bits=12, mv=1650",
+        "assignment": "Submit lab_ep_adc_scale JSON for EP-4505. Convert 12-bit ADC count to millivolts with stated vref.",
+        "lab_id": "lab_ep_adc_scale",
+        "quiz": [
+          {
+            "id": "ep-w5-1",
+            "kind": "mcq",
+            "stem": "EP-4505: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w5-2",
+            "kind": "mcq",
+            "stem": "lab_ep_adc_scale empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w5-3",
+            "kind": "mcq",
+            "stem": "Week 5 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w5-4",
+            "kind": "mcq",
+            "stem": "EP-4505 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w5-5",
+            "kind": "mcq",
+            "stem": "Week 5 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w5-6",
+            "kind": "mcq",
+            "stem": "EP-4505 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "ISR vs polling \u2014 latency budget",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4606: ISR vs polling \u2014 latency budget. Choose ISR when edge latency must stay under 250 \u00b5s. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "mode=isr, max_latency_us=250, missed_edges=0",
+        "assignment": "Submit lab_ep_isr_vs_poll JSON for EP-4606. Choose ISR when edge latency must stay under 250 \u00b5s.",
+        "lab_id": "lab_ep_isr_vs_poll",
+        "quiz": [
+          {
+            "id": "ep-w6-1",
+            "kind": "mcq",
+            "stem": "EP-4606: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w6-2",
+            "kind": "mcq",
+            "stem": "lab_ep_isr_vs_poll empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w6-3",
+            "kind": "mcq",
+            "stem": "Week 6 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w6-4",
+            "kind": "mcq",
+            "stem": "EP-4606 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w6-5",
+            "kind": "mcq",
+            "stem": "Week 6 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w6-6",
+            "kind": "mcq",
+            "stem": "EP-4606 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Zephyr west + QEMU \u2014 digital boot before iron",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4707: Zephyr west + QEMU \u2014 digital boot before iron. west build -b qemu_cortex_m0; no board flash claim without EVT. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "board=qemu_cortex_m0, qemu_ok=true, physical_status=PHYSICAL_PENDING",
+        "assignment": "Submit lab_ep_zephyr_qemu JSON for EP-4707. west build -b qemu_cortex_m0; no board flash claim without EVT.",
+        "lab_id": "lab_ep_zephyr_qemu",
+        "quiz": [
+          {
+            "id": "ep-w7-1",
+            "kind": "mcq",
+            "stem": "EP-4707: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w7-2",
+            "kind": "mcq",
+            "stem": "lab_ep_zephyr_qemu empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w7-3",
+            "kind": "mcq",
+            "stem": "Week 7 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w7-4",
+            "kind": "mcq",
+            "stem": "EP-4707 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w7-5",
+            "kind": "mcq",
+            "stem": "Week 7 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w7-6",
+            "kind": "mcq",
+            "stem": "EP-4707 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Devicetree overlay \u2014 I2C1 and LED0 nodes",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4808: Devicetree overlay \u2014 I2C1 and LED0 nodes. Overlay enables &i2c1 and led0; deleting &soc is unsafe. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "overlay_has_i2c1=true, overlay_has_led0=true, delete_soc=false",
+        "assignment": "Submit lab_ep_dt_overlay JSON for EP-4808. Overlay enables &i2c1 and led0; deleting &soc is unsafe.",
+        "lab_id": "lab_ep_dt_overlay",
+        "quiz": [
+          {
+            "id": "ep-w8-1",
+            "kind": "mcq",
+            "stem": "EP-4808: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w8-2",
+            "kind": "mcq",
+            "stem": "lab_ep_dt_overlay empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w8-3",
+            "kind": "mcq",
+            "stem": "Week 8 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w8-4",
+            "kind": "mcq",
+            "stem": "EP-4808 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w8-5",
+            "kind": "mcq",
+            "stem": "Week 8 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w8-6",
+            "kind": "mcq",
+            "stem": "EP-4808 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Sleep modes \u2014 wake source honesty",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4909: Sleep modes \u2014 wake source honesty. NO_AI week: document wake source without inventing uA draw. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "sleep_mode=SYSTEM_OFF, wake_gpio=BTN0, wake_latency_ms=5",
+        "assignment": "Submit lab_ep_sleep_mode JSON for EP-4909. NO_AI week: document wake source without inventing uA draw.",
+        "lab_id": "lab_ep_sleep_mode",
+        "quiz": [
+          {
+            "id": "ep-w9-1",
+            "kind": "mcq",
+            "stem": "EP-4909: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w9-2",
+            "kind": "mcq",
+            "stem": "lab_ep_sleep_mode empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w9-3",
+            "kind": "mcq",
+            "stem": "Week 9 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w9-4",
+            "kind": "mcq",
+            "stem": "EP-4909 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w9-5",
+            "kind": "mcq",
+            "stem": "Week 9 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w9-6",
+            "kind": "mcq",
+            "stem": "EP-4909 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Subsystem capstone \u2014 QEMU + DT + bus evidence",
+        "lesson": "ForgeSense Subsystem Bench ticket EP-4A10: Subsystem capstone \u2014 QEMU + DT + bus evidence. Assemble ForgeSense subsystem packet from prior lab digests. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "labs_passed\u22656, qemu_ok=true, dt_ok=true, physical_status=PHYSICAL_PENDING",
+        "assignment": "Submit lab_ep_subsystem_capstone JSON for EP-4A10. Assemble ForgeSense subsystem packet from prior lab digests.",
+        "lab_id": "lab_ep_subsystem_capstone",
+        "quiz": [
+          {
+            "id": "ep-w10-1",
+            "kind": "mcq",
+            "stem": "EP-4A10: which field is checked first?",
+            "choices": [
+              "Machine JSON fields",
+              "GUI screenshot",
+              "Instructor keys",
+              "Vendor cert"
+            ],
+            "answer_index": 0,
+            "explanation": "fields first"
+          },
+          {
+            "id": "ep-w10-2",
+            "kind": "mcq",
+            "stem": "lab_ep_subsystem_capstone empty submission?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus credit",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "ep-w10-3",
+            "kind": "mcq",
+            "stem": "Week 10 PHYSICAL_PENDING scope?",
+            "choices": [
+              "No solder/OTA without EVT",
+              "Ship anyway",
+              "Ignore boundary",
+              "Mute claim"
+            ],
+            "answer_index": 0,
+            "explanation": "physical pending"
+          },
+          {
+            "id": "ep-w10-4",
+            "kind": "mcq",
+            "stem": "EP-4A10 learner may load answer keys?",
+            "choices": [
+              "Forbidden \u2014 instructor only",
+              "Required",
+              "Optional",
+              "Auto-grant"
+            ],
+            "answer_index": 0,
+            "explanation": "no key leak"
+          },
+          {
+            "id": "ep-w10-5",
+            "kind": "mcq",
+            "stem": "Week 10 track boundary vs HARDWARE_ENGINEERING?",
+            "choices": [
+              "Subsystem firmware/bus/QEMU",
+              "SPICE-only duplicate",
+              "Networking ACL",
+              "Game loop"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct track"
+          },
+          {
+            "id": "ep-w10-6",
+            "kind": "mcq",
+            "stem": "EP-4A10 print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Extra credit",
+              "Silent accept"
+            ],
+            "answer_index": 0,
+            "explanation": "print pass forbidden"
+          }
+        ]
+      }
+    ]
+  },
+  "GUNNCHOS_PRODUCT_LAB": {
+    "course_id": "GUNNCHOS_PRODUCT_LAB",
+    "title": "gunnchOS Device OS and Product Lab \u2014 Product Bench",
+    "track_ids": [
+      "GUNNCHOS_PRODUCT_LAB"
+    ],
+    "academy_id": "ACADEMY_HARDWARE",
+    "kinesthetic_hook": "Ten gunnchOS Product Lab weeks: charter \u2192 compat matrix \u2192 checkout FSM \u2192 compose health \u2192 privacy BOM \u2192 guest protocol \u2192 release notes \u2192 CI tokens \u2192 dep pin \u2192 capstone.",
+    "syllabus_hook": "Product lab COURSE_DIGITAL_RC: scope charter, accepted-main compatibility pins, checkout workflow, compose health, privacy BOM, guest protocol contract, semver release notes, CI gate tokens, cross-repo dependency hygiene. Does not merge device-os #103. Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "product_ops_apprentice",
+        "device_lab_integrator",
+        "release_coordinator_junior"
+      ],
+      "nice_categories": [
+        "operate_and_maintain",
+        "securely_provision"
+      ],
+      "certs_aligned_not_granted": [
+        "PMI CAPM domain labels (PUBLIC_REFERENCE_ONLY)",
+        "Privacy engineering topic labels (not a cert)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Product charter \u2014 scope without fabricated impact",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5101: Product charter \u2014 scope without fabricated impact. Charter Device Lab product scope; no invented community numbers. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "problem=checkout latency, goal_metric=median_wait_minutes, fabricated_outcomes=false",
+        "assignment": "Submit lab_gpl_product_charter JSON for GPL-5101. Charter Device Lab product scope; no invented community numbers.",
+        "lab_id": "lab_gpl_product_charter",
+        "quiz": [
+          {
+            "id": "gpl-w1-1",
+            "kind": "mcq",
+            "stem": "GPL-5101: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w1-2",
+            "kind": "mcq",
+            "stem": "Week 1 lab_gpl_product_charter empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w1-3",
+            "kind": "mcq",
+            "stem": "GPL-5101 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w1-4",
+            "kind": "mcq",
+            "stem": "Week 1 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w1-5",
+            "kind": "mcq",
+            "stem": "GPL-5101 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w1-6",
+            "kind": "mcq",
+            "stem": "Week 1 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Compatibility matrix \u2014 device-os \u00d7 gunnchAI pins",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5202: Compatibility matrix \u2014 device-os \u00d7 gunnchAI pins. Versioned compatibility check on accepted-main pair only. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "device_os_sha=d5c2d17, gunnchai_sha=d357846, contract_ok=true",
+        "assignment": "Submit lab_gpl_compat_matrix JSON for GPL-5202. Versioned compatibility check on accepted-main pair only.",
+        "lab_id": "lab_gpl_compat_matrix",
+        "quiz": [
+          {
+            "id": "gpl-w2-1",
+            "kind": "mcq",
+            "stem": "GPL-5202: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w2-2",
+            "kind": "mcq",
+            "stem": "Week 2 lab_gpl_compat_matrix empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w2-3",
+            "kind": "mcq",
+            "stem": "GPL-5202 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w2-4",
+            "kind": "mcq",
+            "stem": "Week 2 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w2-5",
+            "kind": "mcq",
+            "stem": "GPL-5202 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w2-6",
+            "kind": "mcq",
+            "stem": "Week 2 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Checkout flow \u2014 ticket states and handoff",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5303: Checkout flow \u2014 ticket states and handoff. Model checkout FSM without opening unmerged device-os PRs. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "states=[requested,approved,checked_out,returned], orphan_state=false",
+        "assignment": "Submit lab_gpl_checkout_flow JSON for GPL-5303. Model checkout FSM without opening unmerged device-os PRs.",
+        "lab_id": "lab_gpl_checkout_flow",
+        "quiz": [
+          {
+            "id": "gpl-w3-1",
+            "kind": "mcq",
+            "stem": "GPL-5303: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w3-2",
+            "kind": "mcq",
+            "stem": "Week 3 lab_gpl_checkout_flow empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w3-3",
+            "kind": "mcq",
+            "stem": "GPL-5303 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w3-4",
+            "kind": "mcq",
+            "stem": "Week 3 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w3-5",
+            "kind": "mcq",
+            "stem": "GPL-5303 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w3-6",
+            "kind": "mcq",
+            "stem": "Week 3 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Compose health \u2014 migrate before healthy",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5404: Compose health \u2014 migrate before healthy. NO_AI week: digest pin and rollback pointer honesty. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "migrate_ok=true, health=healthy, rollback_to!=current_digest",
+        "assignment": "Submit lab_gpl_compose_health JSON for GPL-5404. NO_AI week: digest pin and rollback pointer honesty.",
+        "lab_id": "lab_gpl_compose_health",
+        "quiz": [
+          {
+            "id": "gpl-w4-1",
+            "kind": "mcq",
+            "stem": "GPL-5404: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w4-2",
+            "kind": "mcq",
+            "stem": "Week 4 lab_gpl_compose_health empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w4-3",
+            "kind": "mcq",
+            "stem": "GPL-5404 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w4-4",
+            "kind": "mcq",
+            "stem": "Week 4 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w4-5",
+            "kind": "mcq",
+            "stem": "GPL-5404 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w4-6",
+            "kind": "mcq",
+            "stem": "Week 4 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Privacy BOM \u2014 field inventory without PII",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5505: Privacy BOM \u2014 field inventory without PII. Privacy BOM digital inventory; no biometric claim. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "fields=[camera,mic,location], pii_in_bom=false, retention_days=30",
+        "assignment": "Submit lab_gpl_privacy_bom JSON for GPL-5505. Privacy BOM digital inventory; no biometric claim.",
+        "lab_id": "lab_gpl_privacy_bom",
+        "quiz": [
+          {
+            "id": "gpl-w5-1",
+            "kind": "mcq",
+            "stem": "GPL-5505: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w5-2",
+            "kind": "mcq",
+            "stem": "Week 5 lab_gpl_privacy_bom empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w5-3",
+            "kind": "mcq",
+            "stem": "GPL-5505 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w5-4",
+            "kind": "mcq",
+            "stem": "Week 5 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w5-5",
+            "kind": "mcq",
+            "stem": "GPL-5505 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w5-6",
+            "kind": "mcq",
+            "stem": "Week 5 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Guest protocol \u2014 ping/boot_status contract",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5606: Guest protocol \u2014 ping/boot_status contract. Guest agent protocol fields; obsolete click-collector rejected. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "ping_ok=true, boot_status=ready, protocol_version=wp011r",
+        "assignment": "Submit lab_gpl_guest_protocol JSON for GPL-5606. Guest agent protocol fields; obsolete click-collector rejected.",
+        "lab_id": "lab_gpl_guest_protocol",
+        "quiz": [
+          {
+            "id": "gpl-w6-1",
+            "kind": "mcq",
+            "stem": "GPL-5606: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w6-2",
+            "kind": "mcq",
+            "stem": "Week 6 lab_gpl_guest_protocol empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w6-3",
+            "kind": "mcq",
+            "stem": "GPL-5606 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w6-4",
+            "kind": "mcq",
+            "stem": "Week 6 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w6-5",
+            "kind": "mcq",
+            "stem": "GPL-5606 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w6-6",
+            "kind": "mcq",
+            "stem": "Week 6 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Release notes \u2014 semver and breaking flag",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5707: Release notes \u2014 semver and breaking flag. Semver bump with explicit breaking_change false unless true. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "semver=1.4.0, breaking=false, changelog_entries=3",
+        "assignment": "Submit lab_gpl_release_notes JSON for GPL-5707. Semver bump with explicit breaking_change false unless true.",
+        "lab_id": "lab_gpl_release_notes",
+        "quiz": [
+          {
+            "id": "gpl-w7-1",
+            "kind": "mcq",
+            "stem": "GPL-5707: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w7-2",
+            "kind": "mcq",
+            "stem": "Week 7 lab_gpl_release_notes empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w7-3",
+            "kind": "mcq",
+            "stem": "GPL-5707 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w7-4",
+            "kind": "mcq",
+            "stem": "Week 7 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w7-5",
+            "kind": "mcq",
+            "stem": "GPL-5707 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w7-6",
+            "kind": "mcq",
+            "stem": "Week 7 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "CI gate tokens \u2014 honest pass/fail",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5808: CI gate tokens \u2014 honest pass/fail. Report CI tokens; fabricated_green must be false. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "tokens_passed=4, tokens_total=4, fabricated_green=false",
+        "assignment": "Submit lab_gpl_ci_tokens JSON for GPL-5808. Report CI tokens; fabricated_green must be false.",
+        "lab_id": "lab_gpl_ci_tokens",
+        "quiz": [
+          {
+            "id": "gpl-w8-1",
+            "kind": "mcq",
+            "stem": "GPL-5808: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w8-2",
+            "kind": "mcq",
+            "stem": "Week 8 lab_gpl_ci_tokens empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w8-3",
+            "kind": "mcq",
+            "stem": "GPL-5808 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w8-4",
+            "kind": "mcq",
+            "stem": "Week 8 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w8-5",
+            "kind": "mcq",
+            "stem": "GPL-5808 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w8-6",
+            "kind": "mcq",
+            "stem": "Week 8 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Cross-repo dependency pin \u2014 no preview in accepted",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5909: Cross-repo dependency pin \u2014 no preview in accepted. NO_AI week: refuse preview SHA in accepted-main pin. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "preview_sha_in_accepted=false, pin_file=CURRENT_ACCEPTED_MAIN.json",
+        "assignment": "Submit lab_gpl_dep_pin JSON for GPL-5909. NO_AI week: refuse preview SHA in accepted-main pin.",
+        "lab_id": "lab_gpl_dep_pin",
+        "quiz": [
+          {
+            "id": "gpl-w9-1",
+            "kind": "mcq",
+            "stem": "GPL-5909: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w9-2",
+            "kind": "mcq",
+            "stem": "Week 9 lab_gpl_dep_pin empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w9-3",
+            "kind": "mcq",
+            "stem": "GPL-5909 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w9-4",
+            "kind": "mcq",
+            "stem": "Week 9 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w9-5",
+            "kind": "mcq",
+            "stem": "GPL-5909 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w9-6",
+            "kind": "mcq",
+            "stem": "Week 9 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Product lab capstone \u2014 charter+compat+CI evidence",
+        "lesson": "gunnchOS Product Lab Bench ticket GPL-5A10: Product lab capstone \u2014 charter+compat+CI evidence. Assemble gunnchOS product lab packet; do not merge device-os #103. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "labs_passed\u22656, compat_ok=true, no_device_os_pr=true, no_key_leak=true",
+        "assignment": "Submit lab_gpl_product_capstone JSON for GPL-5A10. Assemble gunnchOS product lab packet; do not merge device-os #103.",
+        "lab_id": "lab_gpl_product_capstone",
+        "quiz": [
+          {
+            "id": "gpl-w10-1",
+            "kind": "mcq",
+            "stem": "GPL-5A10: preview SHA in accepted-main pin?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Always allowed",
+              "Skip check"
+            ],
+            "answer_index": 0,
+            "explanation": "no preview in accepted"
+          },
+          {
+            "id": "gpl-w10-2",
+            "kind": "mcq",
+            "stem": "Week 10 lab_gpl_product_capstone empty JSON?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Grants cert",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "empty fails"
+          },
+          {
+            "id": "gpl-w10-3",
+            "kind": "mcq",
+            "stem": "GPL-5A10 may open device-os #103?",
+            "choices": [
+              "Forbidden for students",
+              "Required merge",
+              "Bonus",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no unmerged PR"
+          },
+          {
+            "id": "gpl-w10-4",
+            "kind": "mcq",
+            "stem": "Week 10 fabricated_outcomes in charter?",
+            "choices": [
+              "Must be false",
+              "Must be true",
+              "Ignored",
+              "Key leak OK"
+            ],
+            "answer_index": 0,
+            "explanation": "no fabricated impact"
+          },
+          {
+            "id": "gpl-w10-5",
+            "kind": "mcq",
+            "stem": "GPL-5A10 scope vs SOFTWARE_BUILDER?",
+            "choices": [
+              "Product/compat/privacy pins",
+              "Git conflict only",
+              "Wireless FSPL",
+              "Game state"
+            ],
+            "answer_index": 0,
+            "explanation": "distinct"
+          },
+          {
+            "id": "gpl-w10-6",
+            "kind": "mcq",
+            "stem": "Week 10 REAL_STUDENT_E6 claim?",
+            "choices": [
+              "No \u2014 COURSE_DIGITAL_RC only",
+              "Yes granted",
+              "Auto E6",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "no E6 claim"
+          }
+        ]
+      }
+    ]
+  }
+}

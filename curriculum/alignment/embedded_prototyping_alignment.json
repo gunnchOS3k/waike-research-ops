@@ -1,0 +1,20 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "track_ids": ["EMBEDDED_PROTOTYPING"],
+  "date_checked": "2026-08-19",
+  "benchmarks": [
+    {
+      "source_id": "ZEPHYR_DEVELOPER_TOPIC_LABELS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "west_qemu_build", "waike_weeks": [7]},
+        {"domain": "devicetree_overlay", "waike_weeks": [8]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "HARDWARE_ENGINEERING": "HARDWARE_ENGINEERING owns SPICE/PCB path; EMBEDDED_PROTOTYPING owns firmware/bus/QEMU subsystem bench."
+  },
+  "claim_boundary": "PHYSICAL_PENDING for solder/OTA. Not student/teacher E6."
+}

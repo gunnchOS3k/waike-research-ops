@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "lesson_ids": [
+    "GUNNCHOS_PRODUCT_LAB-w01",
+    "GUNNCHOS_PRODUCT_LAB-w02",
+    "GUNNCHOS_PRODUCT_LAB-w03",
+    "GUNNCHOS_PRODUCT_LAB-w04",
+    "GUNNCHOS_PRODUCT_LAB-w05",
+    "GUNNCHOS_PRODUCT_LAB-w06",
+    "GUNNCHOS_PRODUCT_LAB-w07",
+    "GUNNCHOS_PRODUCT_LAB-w08",
+    "GUNNCHOS_PRODUCT_LAB-w09",
+    "GUNNCHOS_PRODUCT_LAB-w10"
+  ],
+  "labs": [
+    "lab_gpl_product_charter",
+    "lab_gpl_compat_matrix",
+    "lab_gpl_checkout_flow",
+    "lab_gpl_compose_health",
+    "lab_gpl_privacy_bom",
+    "lab_gpl_guest_protocol",
+    "lab_gpl_release_notes",
+    "lab_gpl_ci_tokens",
+    "lab_gpl_dep_pin",
+    "lab_gpl_product_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

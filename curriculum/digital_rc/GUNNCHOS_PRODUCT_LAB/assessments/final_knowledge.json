@@ -1,0 +1,269 @@
+{
+  "assessment_id": "GUNNCHOS_PRODUCT_LAB-final",
+  "items": [
+    {
+      "id": "gpl-fin-01",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 1: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-02",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 2: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-03",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 3: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-04",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 4: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-05",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 5: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-06",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 6: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-07",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 7: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-08",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 8: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-09",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 9: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-10",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 10: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-11",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 11: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-12",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 12: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-13",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 13: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-14",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 14: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-15",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 15: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-16",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 16: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-17",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 17: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-18",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 18: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-19",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 19: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-20",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 20: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-21",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 21: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "gpl-fin-22",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 22: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-23",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 23: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "gpl-fin-24",
+      "kind": "mcq",
+      "stem": "GUNNCHOS_PRODUCT_LAB final gate 24: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "EMBEDDED_PROTOTYPING-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "ep-w4-1",
+      "kind": "mcq",
+      "stem": "EP-4404: which field is checked first?",
+      "choices": [
+        "GUI screenshot",
+        "Instructor keys",
+        "Machine JSON fields",
+        "Vendor cert"
+      ]
+    },
+    {
+      "id": "ep-w4-2",
+      "kind": "mcq",
+      "stem": "lab_ep_spi_flash empty submission?",
+      "choices": [
+        "Passes",
+        "Bonus credit",
+        "Grants cert",
+        "Fails student_artifact"
+      ]
+    },
+    {
+      "id": "ep-w4-3",
+      "kind": "mcq",
+      "stem": "Week 4 PHYSICAL_PENDING scope?",
+      "choices": [
+        "No solder/OTA without EVT",
+        "Ship anyway",
+        "Ignore boundary",
+        "Mute claim"
+      ]
+    },
+    {
+      "id": "ep-w4-4",
+      "kind": "mcq",
+      "stem": "EP-4404 learner may load answer keys?",
+      "choices": [
+        "Required",
+        "Forbidden \u2014 instructor only",
+        "Optional",
+        "Auto-grant"
+      ]
+    },
+    {
+      "id": "ep-w4-5",
+      "kind": "mcq",
+      "stem": "Week 4 track boundary vs HARDWARE_ENGINEERING?",
+      "choices": [
+        "SPICE-only duplicate",
+        "Networking ACL",
+        "Subsystem firmware/bus/QEMU",
+        "Game loop"
+      ]
+    },
+    {
+      "id": "ep-w4-6",
+      "kind": "mcq",
+      "stem": "EP-4404 print-PASS body?",
+      "choices": [
+        "Auto-pass",
+        "Extra credit",
+        "Silent accept",
+        "Raises AssertionError"
+      ]
+    }
+  ]
+}

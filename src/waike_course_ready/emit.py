@@ -389,6 +389,8 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "GAME_DEV_INTERACTIVE": "curriculum/alignment/game_dev_interactive_alignment.json",
             "COMM_PD_ETHICS": "curriculum/alignment/comm_pd_ethics_alignment.json",
             "DATA_DASHBOARDS": "curriculum/alignment/data_dashboards_alignment.json",
+            "EMBEDDED_PROTOTYPING": "curriculum/alignment/embedded_prototyping_alignment.json",
+            "GUNNCHOS_PRODUCT_LAB": "curriculum/alignment/gunnchos_product_lab_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

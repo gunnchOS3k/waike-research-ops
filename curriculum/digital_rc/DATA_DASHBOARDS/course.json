@@ -251,9 +251,5 @@
     "presentation_materials": 10,
     "offline_pack": 1,
     "portfolio_artifacts": 1
-  },
-  "COURSE_DIGITAL_RC": true,
-  "packet": "STREAM-B-PKT-003",
-  "lift_status": "CLOSED_DIGITAL_RC",
-  "claim_boundary": "Full Pier Ledger Bench DIGITAL_RC package earned under provenance/template/lab/consumption bars. Distinct from DATA_VIZ_BI. Not student/teacher E6. Instructor key material stays out of learner ingest."
+  }
 }

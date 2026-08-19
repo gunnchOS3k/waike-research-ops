@@ -1,0 +1,72 @@
+{
+  "quiz_id": "EMBEDDED_PROTOTYPING-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "ep-w8-1",
+      "kind": "mcq",
+      "stem": "EP-4808: which field is checked first?",
+      "choices": [
+        "GUI screenshot",
+        "Instructor keys",
+        "Machine JSON fields",
+        "Vendor cert"
+      ]
+    },
+    {
+      "id": "ep-w8-2",
+      "kind": "mcq",
+      "stem": "lab_ep_dt_overlay empty submission?",
+      "choices": [
+        "Passes",
+        "Bonus credit",
+        "Grants cert",
+        "Fails student_artifact"
+      ]
+    },
+    {
+      "id": "ep-w8-3",
+      "kind": "mcq",
+      "stem": "Week 8 PHYSICAL_PENDING scope?",
+      "choices": [
+        "No solder/OTA without EVT",
+        "Ship anyway",
+        "Ignore boundary",
+        "Mute claim"
+      ]
+    },
+    {
+      "id": "ep-w8-4",
+      "kind": "mcq",
+      "stem": "EP-4808 learner may load answer keys?",
+      "choices": [
+        "Required",
+        "Forbidden \u2014 instructor only",
+        "Optional",
+        "Auto-grant"
+      ]
+    },
+    {
+      "id": "ep-w8-5",
+      "kind": "mcq",
+      "stem": "Week 8 track boundary vs HARDWARE_ENGINEERING?",
+      "choices": [
+        "SPICE-only duplicate",
+        "Networking ACL",
+        "Subsystem firmware/bus/QEMU",
+        "Game loop"
+      ]
+    },
+    {
+      "id": "ep-w8-6",
+      "kind": "mcq",
+      "stem": "EP-4808 print-PASS body?",
+      "choices": [
+        "Auto-pass",
+        "Extra credit",
+        "Silent accept",
+        "Raises AssertionError"
+      ]
+    }
+  ]
+}

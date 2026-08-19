@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "quizzes": {
+    "EMBEDDED_PROTOTYPING-q01": [
+      {
+        "id": "ep-w1-1",
+        "answer_index": 0,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w1-2",
+        "answer_index": 1,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w1-3",
+        "answer_index": 2,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w1-4",
+        "answer_index": 3,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w1-5",
+        "answer_index": 0,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w1-6",
+        "answer_index": 1,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q02": [
+      {
+        "id": "ep-w2-1",
+        "answer_index": 2,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w2-2",
+        "answer_index": 3,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w2-3",
+        "answer_index": 0,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w2-4",
+        "answer_index": 1,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w2-5",
+        "answer_index": 2,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w2-6",
+        "answer_index": 3,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q03": [
+      {
+        "id": "ep-w3-1",
+        "answer_index": 0,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w3-2",
+        "answer_index": 1,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w3-3",
+        "answer_index": 2,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w3-4",
+        "answer_index": 3,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w3-5",
+        "answer_index": 0,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w3-6",
+        "answer_index": 1,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q04": [
+      {
+        "id": "ep-w4-1",
+        "answer_index": 2,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w4-2",
+        "answer_index": 3,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w4-3",
+        "answer_index": 0,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w4-4",
+        "answer_index": 1,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w4-5",
+        "answer_index": 2,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w4-6",
+        "answer_index": 3,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q05": [
+      {
+        "id": "ep-w5-1",
+        "answer_index": 0,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w5-2",
+        "answer_index": 1,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w5-3",
+        "answer_index": 2,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w5-4",
+        "answer_index": 3,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w5-5",
+        "answer_index": 0,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w5-6",
+        "answer_index": 1,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q06": [
+      {
+        "id": "ep-w6-1",
+        "answer_index": 2,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w6-2",
+        "answer_index": 3,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w6-3",
+        "answer_index": 0,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w6-4",
+        "answer_index": 1,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w6-5",
+        "answer_index": 2,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w6-6",
+        "answer_index": 3,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q07": [
+      {
+        "id": "ep-w7-1",
+        "answer_index": 0,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w7-2",
+        "answer_index": 1,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w7-3",
+        "answer_index": 2,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w7-4",
+        "answer_index": 3,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w7-5",
+        "answer_index": 0,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w7-6",
+        "answer_index": 1,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q08": [
+      {
+        "id": "ep-w8-1",
+        "answer_index": 2,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w8-2",
+        "answer_index": 3,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w8-3",
+        "answer_index": 0,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w8-4",
+        "answer_index": 1,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w8-5",
+        "answer_index": 2,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w8-6",
+        "answer_index": 3,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q09": [
+      {
+        "id": "ep-w9-1",
+        "answer_index": 0,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w9-2",
+        "answer_index": 1,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w9-3",
+        "answer_index": 2,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w9-4",
+        "answer_index": 3,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w9-5",
+        "answer_index": 0,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w9-6",
+        "answer_index": 1,
+        "explanation": "print pass forbidden"
+      }
+    ],
+    "EMBEDDED_PROTOTYPING-q10": [
+      {
+        "id": "ep-w10-1",
+        "answer_index": 2,
+        "explanation": "fields first"
+      },
+      {
+        "id": "ep-w10-2",
+        "answer_index": 3,
+        "explanation": "empty fails"
+      },
+      {
+        "id": "ep-w10-3",
+        "answer_index": 0,
+        "explanation": "physical pending"
+      },
+      {
+        "id": "ep-w10-4",
+        "answer_index": 1,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "ep-w10-5",
+        "answer_index": 2,
+        "explanation": "distinct track"
+      },
+      {
+        "id": "ep-w10-6",
+        "answer_index": 3,
+        "explanation": "print pass forbidden"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "ep-mid-01",
+      "answer_index": 1,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-02",
+      "answer_index": 2,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-03",
+      "answer_index": 3,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-04",
+      "answer_index": 0,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-05",
+      "answer_index": 1,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-06",
+      "answer_index": 2,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-07",
+      "answer_index": 3,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-08",
+      "answer_index": 0,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-09",
+      "answer_index": 1,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-10",
+      "answer_index": 2,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-11",
+      "answer_index": 3,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-12",
+      "answer_index": 0,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-13",
+      "answer_index": 1,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-14",
+      "answer_index": 2,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-15",
+      "answer_index": 3,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-16",
+      "answer_index": 0,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-17",
+      "answer_index": 1,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-18",
+      "answer_index": 2,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-19",
+      "answer_index": 3,
+      "explanation": "fields beat screenshots"
+    },
+    {
+      "id": "ep-mid-20",
+      "answer_index": 0,
+      "explanation": "fields beat screenshots"
+    }
+  ],
+  "final": [
+    {
+      "id": "ep-fin-01",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-02",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-03",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-04",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-05",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-06",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-07",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-08",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-09",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-10",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-11",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-12",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-13",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-14",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-15",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-16",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-17",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-18",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-19",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-20",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-21",
+      "answer_index": 2,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-22",
+      "answer_index": 3,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-23",
+      "answer_index": 0,
+      "explanation": "no key leak; negatives enforced"
+    },
+    {
+      "id": "ep-fin-24",
+      "answer_index": 1,
+      "explanation": "no key leak; negatives enforced"
+    }
+  ]
+}

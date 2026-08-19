@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "title": "Embedded Systems and Device Prototyping \u2014 ForgeSense Subsystem Bench",
+  "track_ids": [
+    "EMBEDDED_PROTOTYPING"
+  ],
+  "academy_id": "ACADEMY_HARDWARE",
+  "kinesthetic_hook": "Ten ForgeSense Subsystem Bench weeks: memory map \u2192 GPIO \u2192 I2C \u2192 SPI \u2192 ADC \u2192 ISR \u2192 Zephyr QEMU \u2192 DT overlay \u2192 sleep \u2192 capstone. Digital-first; PHYSICAL_PENDING for solder/OTA.",
+  "lesson_excerpt": "ForgeSense Subsystem Bench ticket EP-4101: MCU memory map \u2014 flash vs SRAM before first boot. Map the nRF52840-class memory regions for ForgeSense subsystem firmware. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. ",
+  "worked_example": "flash_base=0x00000000, sram_base=0x20000000, vector_table_offset=0x100",
+  "assignment": "Submit lab_ep_memory_map JSON for EP-4101. Map the nRF52840-class memory regions for ForgeSense subsystem firmware.",
+  "lab_hint": "lab_ep_memory_map",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "MCU memory map \u2014 flash vs SRAM before first boot",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w01",
+        "title": "MCU memory map \u2014 flash vs SRAM before first boot",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4101: MCU memory map \u2014 flash vs SRAM before first boot. Map the nRF52840-class memory regions for ForgeSense subsystem firmware. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "flash_base=0x00000000, sram_base=0x20000000, vector_table_offset=0x100"
+      },
+      "lab_id": "lab_ep_memory_map"
+    },
+    {
+      "week": 2,
+      "title": "GPIO contract \u2014 direction, pull, and safe defaults",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w02",
+        "title": "GPIO contract \u2014 direction, pull, and safe defaults",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4202: GPIO contract \u2014 direction, pull, and safe defaults. Author GPIO contract JSON before any Zephyr pinmux call. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "pin=LED0, direction=out, default_level=0, pull=none"
+      },
+      "lab_id": "lab_ep_gpio_contract"
+    },
+    {
+      "week": 3,
+      "title": "I2C timing \u2014 address, frequency, and NACK recovery",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w03",
+        "title": "I2C timing \u2014 address, frequency, and NACK recovery",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4303: I2C timing \u2014 address, frequency, and NACK recovery. SSD1306-class address 0x3C at 100 kHz with explicit NACK plan. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "bus=i2c1, addr=0x3C, freq_khz=100, nack_recovery=true"
+      },
+      "lab_id": "lab_ep_i2c_timing"
+    },
+    {
+      "week": 4,
+      "title": "SPI flash read \u2014 opcode and length honesty",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w04",
+        "title": "SPI flash read \u2014 opcode and length honesty",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4404: SPI flash read \u2014 opcode and length honesty. NO_AI week: hand-author SPI read frame fields. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "opcode=0x03, addr=0x00001000, read_len=16, crc_ok=true"
+      },
+      "lab_id": "lab_ep_spi_flash"
+    },
+    {
+      "week": 5,
+      "title": "ADC scaling \u2014 counts to millivolts",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w05",
+        "title": "ADC scaling \u2014 counts to millivolts",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4505: ADC scaling \u2014 counts to millivolts. Convert 12-bit ADC count to millivolts with stated vref. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "raw=2048, vref_mv=3300, resolution_bits=12, mv=1650"
+      },
+      "lab_id": "lab_ep_adc_scale"
+    },
+    {
+      "week": 6,
+      "title": "ISR vs polling \u2014 latency budget",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w06",
+        "title": "ISR vs polling \u2014 latency budget",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4606: ISR vs polling \u2014 latency budget. Choose ISR when edge latency must stay under 250 \u00b5s. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "mode=isr, max_latency_us=250, missed_edges=0"
+      },
+      "lab_id": "lab_ep_isr_vs_poll"
+    },
+    {
+      "week": 7,
+      "title": "Zephyr west + QEMU \u2014 digital boot before iron",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w07",
+        "title": "Zephyr west + QEMU \u2014 digital boot before iron",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4707: Zephyr west + QEMU \u2014 digital boot before iron. west build -b qemu_cortex_m0; no board flash claim without EVT. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "board=qemu_cortex_m0, qemu_ok=true, physical_status=PHYSICAL_PENDING"
+      },
+      "lab_id": "lab_ep_zephyr_qemu"
+    },
+    {
+      "week": 8,
+      "title": "Devicetree overlay \u2014 I2C1 and LED0 nodes",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w08",
+        "title": "Devicetree overlay \u2014 I2C1 and LED0 nodes",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4808: Devicetree overlay \u2014 I2C1 and LED0 nodes. Overlay enables &i2c1 and led0; deleting &soc is unsafe. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "overlay_has_i2c1=true, overlay_has_led0=true, delete_soc=false"
+      },
+      "lab_id": "lab_ep_dt_overlay"
+    },
+    {
+      "week": 9,
+      "title": "Sleep modes \u2014 wake source honesty",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w09",
+        "title": "Sleep modes \u2014 wake source honesty",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4909: Sleep modes \u2014 wake source honesty. NO_AI week: document wake source without inventing uA draw. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "sleep_mode=SYSTEM_OFF, wake_gpio=BTN0, wake_latency_ms=5"
+      },
+      "lab_id": "lab_ep_sleep_mode"
+    },
+    {
+      "week": 10,
+      "title": "Subsystem capstone \u2014 QEMU + DT + bus evidence",
+      "lesson": {
+        "lesson_id": "EMBEDDED_PROTOTYPING-w10",
+        "title": "Subsystem capstone \u2014 QEMU + DT + bus evidence",
+        "body_md": "ForgeSense Subsystem Bench ticket EP-4A10: Subsystem capstone \u2014 QEMU + DT + bus evidence. Assemble ForgeSense subsystem packet from prior lab digests. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks \u2014 this course owns firmware/bus/QEMU path. Journal EP-4A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "labs_passed\u22656, qemu_ok=true, dt_ok=true, physical_status=PHYSICAL_PENDING"
+      },
+      "lab_id": "lab_ep_subsystem_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_ep_memory_map",
+    "lab_ep_gpio_contract",
+    "lab_ep_i2c_timing",
+    "lab_ep_spi_flash",
+    "lab_ep_adc_scale",
+    "lab_ep_isr_vs_poll",
+    "lab_ep_zephyr_qemu",
+    "lab_ep_dt_overlay",
+    "lab_ep_sleep_mode",
+    "lab_ep_subsystem_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "EMBEDDED_PROTOTYPING-lab",
+    "EMBEDDED_PROTOTYPING-assignment",
+    "EMBEDDED_PROTOTYPING-quiz",
+    "EMBEDDED_PROTOTYPING-mid",
+    "EMBEDDED_PROTOTYPING-final-knowledge",
+    "EMBEDDED_PROTOTYPING-practical",
+    "EMBEDDED_PROTOTYPING-project",
+    "EMBEDDED_PROTOTYPING-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "embedded_apprentice",
+      "firmware_technician",
+      "device_lab_integrator"
+    ],
+    "nice_categories": [
+      "build_and_deploy",
+      "operate_and_maintain"
+    ],
+    "certs_aligned_not_granted": [
+      "Zephyr developer topic labels (PUBLIC_REFERENCE_ONLY)",
+      "IPC/J-STD-001 awareness labels (not a license)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/embedded_prototyping_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required": [
+    "Accepted-main SHA pins only \u2014 no preview SHA in accepted-main claims",
+    "Do not open or merge device-os #103 from student labs"
+  ],
+  "recommended": [
+    "SOFTWARE_BUILDER compose/deploy vocabulary",
+    "GENERAL_IT ticket discipline"
+  ]
+}
