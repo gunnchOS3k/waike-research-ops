@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "product_ops_apprentice",
+    "device_lab_integrator",
+    "release_coordinator_junior"
+  ],
+  "nice_categories": [
+    "operate_and_maintain",
+    "securely_provision"
+  ],
+  "certs_aligned_not_granted": [
+    "PMI CAPM domain labels (PUBLIC_REFERENCE_ONLY)",
+    "Privacy engineering topic labels (not a cert)"
+  ]
+}

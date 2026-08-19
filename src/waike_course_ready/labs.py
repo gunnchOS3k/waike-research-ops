@@ -1077,33 +1077,41 @@ from waike_course_ready.batch006.labs import (
     lab_dashboard_chart, lab_join_integrity, lab_pii_redact_etl,
     lab_debug_pipeline, lab_freshness_sla, lab_dashboard_capstone,
 )
+from waike_course_ready.batch007.labs import (
+    LABS_007, COURSE_LABS_007, LAB_SPECS_007, REFERENCE_007, WRONG_007,
+)
 
 LABS.update(LABS_002)
 LABS.update(LABS_003)
 LABS.update(LABS_004)
 LABS.update(LABS_005)
 LABS.update(LABS_006)
+LABS.update(LABS_007)
 # Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
 COURSE_LABS.update(COURSE_LABS_003)
 COURSE_LABS.update(COURSE_LABS_004)
 COURSE_LABS.update(COURSE_LABS_005)
 COURSE_LABS.update(COURSE_LABS_006)
+COURSE_LABS.update(COURSE_LABS_007)
 LAB_SPECS.update(LAB_SPECS_002)
 LAB_SPECS.update(LAB_SPECS_003)
 LAB_SPECS.update(LAB_SPECS_004)
 LAB_SPECS.update(LAB_SPECS_005)
 LAB_SPECS.update(LAB_SPECS_006)
+LAB_SPECS.update(LAB_SPECS_007)
 REFERENCE.update(REFERENCE_002)
 REFERENCE.update(REFERENCE_003)
 REFERENCE.update(REFERENCE_004)
 REFERENCE.update(REFERENCE_005)
 REFERENCE.update(REFERENCE_006)
+REFERENCE.update(REFERENCE_007)
 WRONG.update(WRONG_002)
 WRONG.update(WRONG_003)
 WRONG.update(WRONG_004)
 WRONG.update(WRONG_005)
 WRONG.update(WRONG_006)
+WRONG.update(WRONG_007)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
@@ -1291,6 +1299,7 @@ def run_all() -> dict[str, Any]:
         "batch_004_lab_count": sum(len(COURSE_LABS[c]) for c in ("WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE") if c in COURSE_LABS),
         "batch_005_lab_count": sum(len(COURSE_LABS[c]) for c in ("COMM_PD_ETHICS",) if c in COURSE_LABS),
         "batch_006_lab_count": sum(len(COURSE_LABS[c]) for c in ("DATA_DASHBOARDS",) if c in COURSE_LABS),
+        "batch_007_lab_count": sum(len(COURSE_LABS[c]) for c in ("EMBEDDED_PROTOTYPING", "GUNNCHOS_PRODUCT_LAB") if c in COURSE_LABS),
         "results": results,
         "negatives_must_fail_and_did": negatives,
         "empty_submission_fails": empty_ok,

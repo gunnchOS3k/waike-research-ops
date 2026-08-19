@@ -1,0 +1,16 @@
+{
+  "practical_id": "EMBEDDED_PROTOTYPING-practical",
+  "labs": [
+    "lab_ep_memory_map",
+    "lab_ep_gpio_contract",
+    "lab_ep_i2c_timing",
+    "lab_ep_spi_flash",
+    "lab_ep_adc_scale",
+    "lab_ep_isr_vs_poll",
+    "lab_ep_zephyr_qemu",
+    "lab_ep_dt_overlay",
+    "lab_ep_sleep_mode",
+    "lab_ep_subsystem_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

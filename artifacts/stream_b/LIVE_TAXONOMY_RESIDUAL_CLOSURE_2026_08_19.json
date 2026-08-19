@@ -1,0 +1,74 @@
+{
+  "schema": "waike.full_taxonomy_gap_ledger.v1",
+  "packet": "RESIDUAL-CLOSURE-2026-08-19-FOLLOWUP",
+  "generated_utc": "2026-08-19T04:30:00Z",
+  "supersedes_ledger_note": "artifacts/stream_b/WAIKE_FULL_TAXONOMY_GAP_LEDGER.json (2026-08-16) remains historical baseline; this file is the post-batch007 live disposition.",
+  "tracks_live": 18,
+  "digital_rc_course_count": 16,
+  "digital_rc_courses": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_DASHBOARDS",
+    "DATA_VIZ_BI",
+    "EMBEDDED_PROTOTYPING",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "full_18_course_digital_rc": false,
+  "taxonomy_id_hygiene": {
+    "NETWORKING_INFRA": {
+      "status": "COVERED_VIA_COMPUTER_NETWORKING",
+      "mapped_course_id": "COMPUTER_NETWORKING",
+      "note": "Legacy ledger ID; product path is COMPUTER_NETWORKING package on accepted-main."
+    },
+    "CYBER_SOC": {
+      "status": "COVERED_VIA_CYBERSECURITY",
+      "mapped_course_id": "CYBERSECURITY",
+      "note": "Legacy ledger ID; product path is CYBERSECURITY package on accepted-main."
+    }
+  },
+  "tracks": [
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "EMBEDDED_PROTOTYPING",
+      "remaining_rank": null,
+      "note": "batch007 standalone COURSE_DIGITAL_RC; complements HARDWARE_ENGINEERING integration."
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "status": "DIGITAL_RC_EARNED",
+      "mapped_course_id": "GUNNCHOS_PRODUCT_LAB",
+      "remaining_rank": null,
+      "note": "batch007 standalone COURSE_DIGITAL_RC; does not merge device-os #103."
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "status": "HUMAN_PENDING",
+      "mapped_course_id": null,
+      "remaining_rank": 1,
+      "note": "Research overlay only — see docs/SEVEN_GC_APPRENTICESHIP_OVERLAY_STATUS.md. Do not invent 19th course."
+    }
+  ],
+  "WAIKE_DIGITAL_TRACKS_REMAINING": [
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "status": "HUMAN_PENDING",
+      "authorable": false,
+      "note": "Research overlay / human facilitation — not a standalone digital_rc tree"
+    }
+  ],
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "HUMAN_E6": false,
+  "claim_boundary": "16 COURSE_DIGITAL_RC packages on product path. 1 research overlay HUMAN_PENDING. full_18 false without inventing courses or claiming E6."
+}

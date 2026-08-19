@@ -1,0 +1,72 @@
+{
+  "quiz_id": "EMBEDDED_PROTOTYPING-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "ep-w6-1",
+      "kind": "mcq",
+      "stem": "EP-4606: which field is checked first?",
+      "choices": [
+        "GUI screenshot",
+        "Instructor keys",
+        "Machine JSON fields",
+        "Vendor cert"
+      ]
+    },
+    {
+      "id": "ep-w6-2",
+      "kind": "mcq",
+      "stem": "lab_ep_isr_vs_poll empty submission?",
+      "choices": [
+        "Passes",
+        "Bonus credit",
+        "Grants cert",
+        "Fails student_artifact"
+      ]
+    },
+    {
+      "id": "ep-w6-3",
+      "kind": "mcq",
+      "stem": "Week 6 PHYSICAL_PENDING scope?",
+      "choices": [
+        "No solder/OTA without EVT",
+        "Ship anyway",
+        "Ignore boundary",
+        "Mute claim"
+      ]
+    },
+    {
+      "id": "ep-w6-4",
+      "kind": "mcq",
+      "stem": "EP-4606 learner may load answer keys?",
+      "choices": [
+        "Required",
+        "Forbidden \u2014 instructor only",
+        "Optional",
+        "Auto-grant"
+      ]
+    },
+    {
+      "id": "ep-w6-5",
+      "kind": "mcq",
+      "stem": "Week 6 track boundary vs HARDWARE_ENGINEERING?",
+      "choices": [
+        "SPICE-only duplicate",
+        "Networking ACL",
+        "Subsystem firmware/bus/QEMU",
+        "Game loop"
+      ]
+    },
+    {
+      "id": "ep-w6-6",
+      "kind": "mcq",
+      "stem": "EP-4606 print-PASS body?",
+      "choices": [
+        "Auto-pass",
+        "Extra credit",
+        "Silent accept",
+        "Raises AssertionError"
+      ]
+    }
+  ]
+}

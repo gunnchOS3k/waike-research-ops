@@ -1,0 +1,1160 @@
+{
+  "EMBEDDED_PROTOTYPING": {
+    "offset": 5,
+    "mid": [
+      {
+        "id": "ep-mid-01",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 1: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-02",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 2: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-03",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 3: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-04",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 4: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-05",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 5: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-06",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 6: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-07",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 7: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-08",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 8: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-09",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 9: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-10",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 10: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-11",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 11: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-12",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 12: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-13",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 13: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-14",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 14: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-15",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 15: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-16",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 16: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-17",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 17: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-18",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 18: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-19",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 19: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "ep-mid-20",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING mid audit item 20: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      }
+    ],
+    "final": [
+      {
+        "id": "ep-fin-01",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 1: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-02",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 2: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-03",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 3: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-04",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 4: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-05",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 5: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-06",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 6: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-07",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 7: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-08",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 8: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-09",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 9: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-10",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 10: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-11",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 11: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-12",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 12: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-13",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 13: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-14",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 14: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-15",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 15: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-16",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 16: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-17",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 17: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-18",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 18: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-19",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 19: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-20",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 20: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-21",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 21: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-22",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 22: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-23",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 23: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "ep-fin-24",
+        "kind": "mcq",
+        "stem": "EMBEDDED_PROTOTYPING final gate 24: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      }
+    ]
+  },
+  "GUNNCHOS_PRODUCT_LAB": {
+    "offset": 6,
+    "mid": [
+      {
+        "id": "gpl-mid-01",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 1: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-02",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 2: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-03",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 3: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-04",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 4: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-05",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 5: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-06",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 6: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-07",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 7: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-08",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 8: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-09",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 9: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-10",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 10: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-11",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 11: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-12",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 12: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-13",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 13: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-14",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 14: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-15",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 15: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-16",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 16: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-17",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 17: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-18",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 18: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-19",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 19: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      },
+      {
+        "id": "gpl-mid-20",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB mid audit item 20: lab JSON must beat screenshot-only evidence?",
+        "choices": [
+          "Yes \u2014 machine fields first",
+          "Screenshot is enough",
+          "Invent columns freely",
+          "Ship instructor keys"
+        ],
+        "answer_index": 0,
+        "explanation": "fields beat screenshots"
+      }
+    ],
+    "final": [
+      {
+        "id": "gpl-fin-01",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 1: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-02",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 2: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-03",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 3: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-04",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 4: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-05",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 5: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-06",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 6: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-07",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 7: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-08",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 8: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-09",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 9: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-10",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 10: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-11",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 11: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-12",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 12: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-13",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 13: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-14",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 14: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-15",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 15: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-16",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 16: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-17",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 17: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-18",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 18: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-19",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 19: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-20",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 20: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-21",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 21: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-22",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 22: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-23",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 23: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      },
+      {
+        "id": "gpl-fin-24",
+        "kind": "mcq",
+        "stem": "GUNNCHOS_PRODUCT_LAB final gate 24: capstone requires no_key_leak and empty-submission fail?",
+        "choices": [
+          "Yes \u2014 enforced",
+          "No \u2014 keys allowed",
+          "PASS-only accepted",
+          "Skip negatives"
+        ],
+        "answer_index": 0,
+        "explanation": "no key leak; negatives enforced"
+      }
+    ]
+  }
+}

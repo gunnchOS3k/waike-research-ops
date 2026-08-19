@@ -1,0 +1,72 @@
+{
+  "quiz_id": "GUNNCHOS_PRODUCT_LAB-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "gpl-w5-1",
+      "kind": "mcq",
+      "stem": "GPL-5505: preview SHA in accepted-main pin?",
+      "choices": [
+        "Required",
+        "Forbidden",
+        "Always allowed",
+        "Skip check"
+      ]
+    },
+    {
+      "id": "gpl-w5-2",
+      "kind": "mcq",
+      "stem": "Week 5 lab_gpl_privacy_bom empty JSON?",
+      "choices": [
+        "Passes",
+        "Grants cert",
+        "Fails student_artifact",
+        "Silent"
+      ]
+    },
+    {
+      "id": "gpl-w5-3",
+      "kind": "mcq",
+      "stem": "GPL-5505 may open device-os #103?",
+      "choices": [
+        "Required merge",
+        "Bonus",
+        "Silent",
+        "Forbidden for students"
+      ]
+    },
+    {
+      "id": "gpl-w5-4",
+      "kind": "mcq",
+      "stem": "Week 5 fabricated_outcomes in charter?",
+      "choices": [
+        "Must be false",
+        "Must be true",
+        "Ignored",
+        "Key leak OK"
+      ]
+    },
+    {
+      "id": "gpl-w5-5",
+      "kind": "mcq",
+      "stem": "GPL-5505 scope vs SOFTWARE_BUILDER?",
+      "choices": [
+        "Git conflict only",
+        "Product/compat/privacy pins",
+        "Wireless FSPL",
+        "Game state"
+      ]
+    },
+    {
+      "id": "gpl-w5-6",
+      "kind": "mcq",
+      "stem": "Week 5 REAL_STUDENT_E6 claim?",
+      "choices": [
+        "Yes granted",
+        "Auto E6",
+        "No \u2014 COURSE_DIGITAL_RC only",
+        "Silent"
+      ]
+    }
+  ]
+}

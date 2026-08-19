@@ -109,4 +109,20 @@ COURSE_PREREQS: dict[str, dict[str, list[str] | str]] = {
         ],
         "recommended": ["DATA_VIZ_BI visual literacy (complementary, not a substitute)"],
     },
+    "EMBEDDED_PROTOTYPING": {
+        "course_id": "EMBEDDED_PROTOTYPING",
+        "required": [
+            "Treat Zephyr/QEMU as digital-first; PHYSICAL_PENDING for solder/OTA without EVT",
+            "Submit lab JSON — empty/wrong/print-PASS fail",
+        ],
+        "recommended": ["HARDWARE_ENGINEERING SPICE/GPIO vocabulary"],
+    },
+    "GUNNCHOS_PRODUCT_LAB": {
+        "course_id": "GUNNCHOS_PRODUCT_LAB",
+        "required": [
+            "Accepted-main SHA pins only — no preview SHA in accepted-main claims",
+            "Do not open or merge device-os #103 from student labs",
+        ],
+        "recommended": ["SOFTWARE_BUILDER compose/deploy vocabulary", "GENERAL_IT ticket discipline"],
+    },
 }

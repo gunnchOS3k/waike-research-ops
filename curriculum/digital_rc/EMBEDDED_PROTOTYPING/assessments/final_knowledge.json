@@ -1,0 +1,269 @@
+{
+  "assessment_id": "EMBEDDED_PROTOTYPING-final",
+  "items": [
+    {
+      "id": "ep-fin-01",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 1: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-02",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 2: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-03",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 3: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-04",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 4: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-05",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 5: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-06",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 6: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-07",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 7: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-08",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 8: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-09",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 9: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-10",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 10: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-11",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 11: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-12",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 12: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-13",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 13: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-14",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 14: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-15",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 15: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-16",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 16: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-17",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 17: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-18",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 18: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-19",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 19: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-20",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 20: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-21",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 21: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Yes \u2014 enforced",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-22",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 22: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives",
+        "Yes \u2014 enforced"
+      ]
+    },
+    {
+      "id": "ep-fin-23",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 23: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "Yes \u2014 enforced",
+        "No \u2014 keys allowed",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    },
+    {
+      "id": "ep-fin-24",
+      "kind": "mcq",
+      "stem": "EMBEDDED_PROTOTYPING final gate 24: capstone requires no_key_leak and empty-submission fail?",
+      "choices": [
+        "No \u2014 keys allowed",
+        "Yes \u2014 enforced",
+        "PASS-only accepted",
+        "Skip negatives"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required": [
+    "Treat Zephyr/QEMU as digital-first; PHYSICAL_PENDING for solder/OTA without EVT",
+    "Submit lab JSON \u2014 empty/wrong/print-PASS fail"
+  ],
+  "recommended": [
+    "HARDWARE_ENGINEERING SPICE/GPIO vocabulary"
+  ]
+}

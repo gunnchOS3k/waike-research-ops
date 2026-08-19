@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "title": "gunnchOS Device OS and Product Lab \u2014 Product Bench",
+  "track_ids": [
+    "GUNNCHOS_PRODUCT_LAB"
+  ],
+  "academy_id": "ACADEMY_HARDWARE",
+  "kinesthetic_hook": "Ten gunnchOS Product Lab weeks: charter \u2192 compat matrix \u2192 checkout FSM \u2192 compose health \u2192 privacy BOM \u2192 guest protocol \u2192 release notes \u2192 CI tokens \u2192 dep pin \u2192 capstone.",
+  "lesson_excerpt": "gunnchOS Product Lab Bench ticket GPL-5101: Product charter \u2014 scope without fabricated impact. Charter Device Lab product scope; no invented community numbers. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show c",
+  "worked_example": "problem=checkout latency, goal_metric=median_wait_minutes, fabricated_outcomes=false",
+  "assignment": "Submit lab_gpl_product_charter JSON for GPL-5101. Charter Device Lab product scope; no invented community numbers.",
+  "lab_hint": "lab_gpl_product_charter",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Product charter \u2014 scope without fabricated impact",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w01",
+        "title": "Product charter \u2014 scope without fabricated impact",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5101: Product charter \u2014 scope without fabricated impact. Charter Device Lab product scope; no invented community numbers. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "problem=checkout latency, goal_metric=median_wait_minutes, fabricated_outcomes=false"
+      },
+      "lab_id": "lab_gpl_product_charter"
+    },
+    {
+      "week": 2,
+      "title": "Compatibility matrix \u2014 device-os \u00d7 gunnchAI pins",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w02",
+        "title": "Compatibility matrix \u2014 device-os \u00d7 gunnchAI pins",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5202: Compatibility matrix \u2014 device-os \u00d7 gunnchAI pins. Versioned compatibility check on accepted-main pair only. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "device_os_sha=d5c2d17, gunnchai_sha=d357846, contract_ok=true"
+      },
+      "lab_id": "lab_gpl_compat_matrix"
+    },
+    {
+      "week": 3,
+      "title": "Checkout flow \u2014 ticket states and handoff",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w03",
+        "title": "Checkout flow \u2014 ticket states and handoff",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5303: Checkout flow \u2014 ticket states and handoff. Model checkout FSM without opening unmerged device-os PRs. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "states=[requested,approved,checked_out,returned], orphan_state=false"
+      },
+      "lab_id": "lab_gpl_checkout_flow"
+    },
+    {
+      "week": 4,
+      "title": "Compose health \u2014 migrate before healthy",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w04",
+        "title": "Compose health \u2014 migrate before healthy",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5404: Compose health \u2014 migrate before healthy. NO_AI week: digest pin and rollback pointer honesty. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "migrate_ok=true, health=healthy, rollback_to!=current_digest"
+      },
+      "lab_id": "lab_gpl_compose_health"
+    },
+    {
+      "week": 5,
+      "title": "Privacy BOM \u2014 field inventory without PII",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w05",
+        "title": "Privacy BOM \u2014 field inventory without PII",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5505: Privacy BOM \u2014 field inventory without PII. Privacy BOM digital inventory; no biometric claim. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "fields=[camera,mic,location], pii_in_bom=false, retention_days=30"
+      },
+      "lab_id": "lab_gpl_privacy_bom"
+    },
+    {
+      "week": 6,
+      "title": "Guest protocol \u2014 ping/boot_status contract",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w06",
+        "title": "Guest protocol \u2014 ping/boot_status contract",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5606: Guest protocol \u2014 ping/boot_status contract. Guest agent protocol fields; obsolete click-collector rejected. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "ping_ok=true, boot_status=ready, protocol_version=wp011r"
+      },
+      "lab_id": "lab_gpl_guest_protocol"
+    },
+    {
+      "week": 7,
+      "title": "Release notes \u2014 semver and breaking flag",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w07",
+        "title": "Release notes \u2014 semver and breaking flag",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5707: Release notes \u2014 semver and breaking flag. Semver bump with explicit breaking_change false unless true. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "semver=1.4.0, breaking=false, changelog_entries=3"
+      },
+      "lab_id": "lab_gpl_release_notes"
+    },
+    {
+      "week": 8,
+      "title": "CI gate tokens \u2014 honest pass/fail",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w08",
+        "title": "CI gate tokens \u2014 honest pass/fail",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5808: CI gate tokens \u2014 honest pass/fail. Report CI tokens; fabricated_green must be false. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5808: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "tokens_passed=4, tokens_total=4, fabricated_green=false"
+      },
+      "lab_id": "lab_gpl_ci_tokens"
+    },
+    {
+      "week": 9,
+      "title": "Cross-repo dependency pin \u2014 no preview in accepted",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w09",
+        "title": "Cross-repo dependency pin \u2014 no preview in accepted",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5909: Cross-repo dependency pin \u2014 no preview in accepted. NO_AI week: refuse preview SHA in accepted-main pin. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "preview_sha_in_accepted=false, pin_file=CURRENT_ACCEPTED_MAIN.json"
+      },
+      "lab_id": "lab_gpl_dep_pin"
+    },
+    {
+      "week": 10,
+      "title": "Product lab capstone \u2014 charter+compat+CI evidence",
+      "lesson": {
+        "lesson_id": "GUNNCHOS_PRODUCT_LAB-w10",
+        "title": "Product lab capstone \u2014 charter+compat+CI evidence",
+        "body_md": "gunnchOS Product Lab Bench ticket GPL-5A10: Product lab capstone \u2014 charter+compat+CI evidence. Assemble gunnchOS product lab packet; do not merge device-os #103. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk \u2014 this course owns product/compat/privacy/CI contract. Journal GPL-5A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5A10: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.",
+        "worked_example": "labs_passed\u22656, compat_ok=true, no_device_os_pr=true, no_key_leak=true"
+      },
+      "lab_id": "lab_gpl_product_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_gpl_product_charter",
+    "lab_gpl_compat_matrix",
+    "lab_gpl_checkout_flow",
+    "lab_gpl_compose_health",
+    "lab_gpl_privacy_bom",
+    "lab_gpl_guest_protocol",
+    "lab_gpl_release_notes",
+    "lab_gpl_ci_tokens",
+    "lab_gpl_dep_pin",
+    "lab_gpl_product_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "GUNNCHOS_PRODUCT_LAB-lab",
+    "GUNNCHOS_PRODUCT_LAB-assignment",
+    "GUNNCHOS_PRODUCT_LAB-quiz",
+    "GUNNCHOS_PRODUCT_LAB-mid",
+    "GUNNCHOS_PRODUCT_LAB-final-knowledge",
+    "GUNNCHOS_PRODUCT_LAB-practical",
+    "GUNNCHOS_PRODUCT_LAB-project",
+    "GUNNCHOS_PRODUCT_LAB-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "product_ops_apprentice",
+      "device_lab_integrator",
+      "release_coordinator_junior"
+    ],
+    "nice_categories": [
+      "operate_and_maintain",
+      "securely_provision"
+    ],
+    "certs_aligned_not_granted": [
+      "PMI CAPM domain labels (PUBLIC_REFERENCE_ONLY)",
+      "Privacy engineering topic labels (not a cert)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/gunnchos_product_lab_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

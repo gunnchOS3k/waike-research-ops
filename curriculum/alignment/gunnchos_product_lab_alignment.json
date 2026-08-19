@@ -1,0 +1,20 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "track_ids": ["GUNNCHOS_PRODUCT_LAB"],
+  "date_checked": "2026-08-19",
+  "benchmarks": [
+    {
+      "source_id": "PMI_CAPM_DOMAIN_LABELS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "charter_scope", "waike_weeks": [1]},
+        {"domain": "release_coordination", "waike_weeks": [7, 8]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "SOFTWARE_BUILDER": "SOFTWARE_BUILDER owns ForgeDesk git/CI; GUNNCHOS_PRODUCT_LAB owns product charter/compat/privacy/accepted-main pins."
+  },
+  "claim_boundary": "Does not merge device-os #103. Not student/teacher E6."
+}
