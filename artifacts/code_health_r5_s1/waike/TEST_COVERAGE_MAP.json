@@ -1,0 +1,20 @@
+{
+  "metrics": {
+    "symbol": "waike_curriculum.evaluation.metrics.completion_rate",
+    "tests": [
+      "tests/test_evaluation_metrics.py::test_completion_rate_empty_progress_is_zero",
+      "tests/test_evaluation_metrics.py::test_completion_rate_nonzero_progress_is_half"
+    ]
+  },
+  "exams": {
+    "symbol": "waike_course_ready.batch002.exams.extra_assessment_items_002",
+    "tests": [
+      "tests/test_batch002_exams_validation.py::test_batch002_valid_exams_have_required_bank_sizes",
+      "tests/test_batch002_exams_validation.py::test_batch002_rejects_undersized_rebalanced_banks"
+    ]
+  },
+  "labs_preserved_kill": {
+    "symbol": "waike_course_ready.batch002.labs",
+    "kind": "invert_condition"
+  }
+}

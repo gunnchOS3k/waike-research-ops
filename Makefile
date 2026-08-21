@@ -1,10 +1,15 @@
 .PHONY: deepen-courses implement-issues validate-issue-completion validate-readiness \
 	audit-issues validate-depth generate-syllabi generate-assignments generate-group-projects \
 	generate-case-studies generate-rubrics export-catalog validate-curriculum e2e map smoke \
-	test generate-7gc-upnow
+	test generate-7gc-upnow code-health-r5-s1
 
 test:
-	$(PY) pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py
+	$(PY) pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py \
+		tests/test_evaluation_metrics.py tests/test_batch002_exams_validation.py
+
+code-health-r5-s1: test
+	$(PY) python3 scripts/run_r5_s1_mutation_kills.py
+	$(PY) python3 scripts/write_r5_s1_evidence.py
 
 generate-7gc-upnow:
 	$(PY) python3 scripts/generate_7gc_upnow_bundle.py
