@@ -1,0 +1,31 @@
+{
+  "repository": "waike-research-ops",
+  "MUTATED_FILES_COMMITTED": false,
+  "baseline_pass": true,
+  "mutations": [
+    {
+      "path": "src/waike_curriculum/evaluation/metrics.py",
+      "kind": "flip_return_zero",
+      "mutated_returncode": 2,
+      "mutation_outcome": "MUTATION_KILLED",
+      "expected_outcome": "MUTATION_KILLED"
+    },
+    {
+      "path": "src/waike_course_ready/batch002/exams.py",
+      "kind": "remove_validation",
+      "mutated_returncode": 2,
+      "mutation_outcome": "MUTATION_KILLED",
+      "expected_outcome": "MUTATION_KILLED"
+    },
+    {
+      "path": "src/waike_course_ready/batch002/labs.py",
+      "kind": "invert_condition",
+      "mutated_returncode": 2,
+      "mutation_outcome": "MUTATION_KILLED",
+      "expected_outcome": "MUTATION_KILLED"
+    }
+  ],
+  "WAIKE_METRICS_MUTATION_KILLED": true,
+  "WAIKE_EXAM_MUTATION_KILLED": true,
+  "WAIKE_EXISTING_LABS_MUTATION_STILL_KILLED": true
+}
