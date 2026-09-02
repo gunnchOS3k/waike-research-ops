@@ -1,8 +1,8 @@
 # WAIKE Taxonomy Reconciliation
 
-Generated (UTC): `2026-09-02T19:10:21Z`
-Source commit: `29f8b6815cb4dd235b15074f140d2493d225dc67`
-Registry hash (sha256): `52465769eac641e6c52005f7a0ba4476de8ba7dd02554e22a8269cb8693ed8b7`
+Generated (UTC): `2026-09-02T19:10:40Z`
+Source commit: `1143291feece93730aa4f503d138a7b5c32a275e`
+Registry hash (sha256): `abcec08b31374dc05ed6af1294678b8516c4b7d949c8c4914fa1c0aad14a0dcb`
 
 ## Exact counts
 
@@ -34,7 +34,7 @@ Registry hash (sha256): `52465769eac641e6c52005f7a0ba4476de8ba7dd02554e22a8269cb
 | `COMM_PD_ETHICS` | `ACADEMY_PROF_DEV` | `FOUNDATION` | `digital_rc_present` | `WAIKE_COURSE_COMM_PD_ETHICS` |
 | `ROBOTICS_CONTROL` | `ACADEMY_HARDWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_ROBOTICS_CONTROL`, `robotics_control` |
 | `GUNNCHOS_PRODUCT_LAB` | `ACADEMY_HARDWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_GUNNCHOS_PRODUCT_LAB` |
-| `HARDWARE_ENGINEERING` | `ACADEMY_HARDWARE` | `FOUNDATION` | `covered_via_shared_package` | `WAIKE_COURSE_HARDWARE_ENGINEERING`, `hardware_engineering` |
+| `HARDWARE_ENGINEERING` | `ACADEMY_HARDWARE` | `FOUNDATION` | `digital_rc_present` | `WAIKE_COURSE_HARDWARE_ENGINEERING`, `hardware_engineering` |
 | `DATA_VIZ_BI` | `ACADEMY_SOFTWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_DATA_VIZ_BI` |
 
 ## Package mappings (not aliases when multi-track)

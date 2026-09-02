@@ -2,8 +2,8 @@
   "schema": "waike.taxonomy.canonical_track_registry.export.v1",
   "schema_version": "1.0.0",
   "compatibility_version": "waike.taxonomy.consumer.v1",
-  "source_commit_sha": "29f8b6815cb4dd235b15074f140d2493d225dc67",
-  "registry_hash": "52465769eac641e6c52005f7a0ba4476de8ba7dd02554e22a8269cb8693ed8b7",
+  "source_commit_sha": "1143291feece93730aa4f503d138a7b5c32a275e",
+  "registry_hash": "abcec08b31374dc05ed6af1294678b8516c4b7d949c8c4914fa1c0aad14a0dcb",
   "track_count": 18,
   "tracks": [
     {
@@ -573,14 +573,17 @@
         "programs/hardware_engineering.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_shared_package",
+        "state": "digital_rc_present",
         "facets": {
           "covering_package_ids": [
             "HARDWARE_ENGINEERING"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": false,
+          "package_lists_extra_track_ids": [
+            "EMBEDDED_PROTOTYPING"
+          ]
         }
       },
       "latest_compatible_package_version": null,
