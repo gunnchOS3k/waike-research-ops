@@ -1,0 +1,910 @@
+{
+  "schema": "waike.taxonomy.reconciliation.v1",
+  "generated_utc": "2026-09-02T19:09:57Z",
+  "source_commit_sha": "8eb2827dc58ffa391842da1bfb1ee665c25a31a7",
+  "registry_hash": "52465769eac641e6c52005f7a0ba4476de8ba7dd02554e22a8269cb8693ed8b7",
+  "validation_errors": [],
+  "exact_counts": {
+    "canonical_tracks": 18,
+    "historical_aliases": 32,
+    "digital_rc_package_dirs": 16,
+    "package_mappings": 4,
+    "unresolved_collisions": 2,
+    "mismatches": 3,
+    "similar_titles_not_aliased": 3
+  },
+  "canonical_tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "stable_uuid": "e101e1fa-69d3-53c8-ad81-ffac3ffdfbdb",
+      "title": "Digital Confidence to Computer Operator",
+      "academy_id": "ACADEMY_IT",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_DIGITAL_CONFIDENCE",
+        "digital_confidence"
+      ],
+      "content_maturity": {
+        "state": "covered_via_shared_package",
+        "facets": {
+          "covering_package_ids": [
+            "GENERAL_IT"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": true,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "stable_uuid": "53830235-627e-52ad-b5ca-11b8c080c056",
+      "title": "IT Support and Hardware Foundations",
+      "academy_id": "ACADEMY_IT",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_IT_SUPPORT_HARDWARE",
+        "it_support_hardware"
+      ],
+      "content_maturity": {
+        "state": "covered_via_shared_package",
+        "facets": {
+          "covering_package_ids": [
+            "GENERAL_IT"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "stable_uuid": "8ea79715-fe5c-56b1-a470-e19857b8ac03",
+      "title": "Software Builder Zero-to-Hero",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_SOFTWARE_BUILDER",
+        "software_builder"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "SOFTWARE_BUILDER"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "stable_uuid": "cc63fa67-0970-524c-94be-fc255557a3e7",
+      "title": "Networking and Internet Infrastructure",
+      "academy_id": "ACADEMY_NETWORKING",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_NETWORKING_INFRA",
+        "COMPUTER_NETWORKING"
+      ],
+      "content_maturity": {
+        "state": "covered_via_historical_package_id",
+        "facets": {
+          "covering_package_ids": [
+            "COMPUTER_NETWORKING"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "stable_uuid": "6aeeff06-cd9b-525d-ac11-7718798574e4",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "academy_id": "ACADEMY_CYBER",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_CYBER_SOC",
+        "CYBERSECURITY",
+        "cybersecurity"
+      ],
+      "content_maturity": {
+        "state": "covered_via_historical_package_id",
+        "facets": {
+          "covering_package_ids": [
+            "CYBERSECURITY"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "stable_uuid": "6561588e-5bbf-50ce-a670-576488cec7a0",
+      "title": "Data, Databases, and Dashboards",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_DATA_DASHBOARDS"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "DATA_DASHBOARDS"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "stable_uuid": "af84615b-3a16-57e2-8c0c-fc2454a59c98",
+      "title": "AI/ML and Edge AI Foundations",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_AI_ML_EDGE",
+        "ai_ml_edge"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "AI_ML_EDGE"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "stable_uuid": "b2c6ff1f-58e2-5909-a1b5-e85706cbb310",
+      "title": "Embedded Systems and Device Prototyping",
+      "academy_id": "ACADEMY_HARDWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_EMBEDDED_PROTOTYPING",
+        "embedded_prototyping"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "EMBEDDED_PROTOTYPING",
+            "HARDWARE_ENGINEERING"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "stable_uuid": "86ac8c51-7c27-5c9d-b54c-3f60e907495c",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "academy_id": "ACADEMY_NETWORKING",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_WIRELESS_6G"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "WIRELESS_6G"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "stable_uuid": "3b4d36bd-1229-5891-83d4-7b2bd5f0f396",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "academy_id": "ACADEMY_PROCESS_PM",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_PM_AGILE_LSS",
+        "pm_agile_lss"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "PM_AGILE_LSS"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "stable_uuid": "e41731bc-73ce-539d-849f-e70ee2258ddb",
+      "title": "Game Development and Interactive Media",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_GAME_DEV_INTERACTIVE",
+        "game_dev_interactive"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "GAME_DEV_INTERACTIVE"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "stable_uuid": "258e0fd5-5040-5626-8e21-a551d6a12220",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "RESEARCH_APPRENTICESHIP",
+      "historical_aliases": [
+        "WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP",
+        "seven_gc_apprenticeship"
+      ],
+      "content_maturity": {
+        "state": "program_shell_only",
+        "facets": {
+          "covering_package_ids": [],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "stable_uuid": "eaed7226-c6a4-5049-8ffc-6abc382d69d4",
+      "title": "Cloud and DevOps",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_CLOUD_DEVOPS",
+        "cloud_devops"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "CLOUD_DEVOPS"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": true,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "stable_uuid": "b97cd9cd-a55f-558a-9d71-03d681f99b58",
+      "title": "Communication, Professional Development, and Ethics",
+      "academy_id": "ACADEMY_PROF_DEV",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_COMM_PD_ETHICS"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "COMM_PD_ETHICS"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "stable_uuid": "a0d59af4-466e-5435-b3c9-db55ae405748",
+      "title": "Robotics and Control",
+      "academy_id": "ACADEMY_HARDWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_ROBOTICS_CONTROL",
+        "robotics_control"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "ROBOTICS_CONTROL"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": true,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "stable_uuid": "41fc4ee7-23c7-5648-a56c-9184aa4b2214",
+      "title": "gunnchOS Device OS and Product Lab",
+      "academy_id": "ACADEMY_HARDWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_GUNNCHOS_PRODUCT_LAB"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "GUNNCHOS_PRODUCT_LAB"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "stable_uuid": "dfe752d4-c60d-5e2c-9f2c-aa8394004c17",
+      "title": "Hardware Engineering",
+      "academy_id": "ACADEMY_HARDWARE",
+      "extension_class": "FOUNDATION",
+      "historical_aliases": [
+        "WAIKE_COURSE_HARDWARE_ENGINEERING",
+        "hardware_engineering"
+      ],
+      "content_maturity": {
+        "state": "covered_via_shared_package",
+        "facets": {
+          "covering_package_ids": [
+            "HARDWARE_ENGINEERING"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": true,
+          "standalone_1to1_package": false
+        }
+      }
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "stable_uuid": "caedf9a4-60c0-507f-ba76-983edea2d862",
+      "title": "Data Visualization and Business Intelligence",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "extension_class": "ADVANCED_EXTENSION",
+      "historical_aliases": [
+        "WAIKE_COURSE_DATA_VIZ_BI"
+      ],
+      "content_maturity": {
+        "state": "digital_rc_present",
+        "facets": {
+          "covering_package_ids": [
+            "DATA_VIZ_BI"
+          ],
+          "has_owner_program": true,
+          "has_lessons_snake_folder": false,
+          "standalone_1to1_package": true
+        }
+      }
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "WAIKE_COURSE_DIGITAL_CONFIDENCE",
+      "canonical_track_id": "DIGITAL_CONFIDENCE"
+    },
+    {
+      "alias": "digital_confidence",
+      "canonical_track_id": "DIGITAL_CONFIDENCE"
+    },
+    {
+      "alias": "WAIKE_COURSE_IT_SUPPORT_HARDWARE",
+      "canonical_track_id": "IT_SUPPORT_HARDWARE"
+    },
+    {
+      "alias": "it_support_hardware",
+      "canonical_track_id": "IT_SUPPORT_HARDWARE"
+    },
+    {
+      "alias": "WAIKE_COURSE_SOFTWARE_BUILDER",
+      "canonical_track_id": "SOFTWARE_BUILDER"
+    },
+    {
+      "alias": "software_builder",
+      "canonical_track_id": "SOFTWARE_BUILDER"
+    },
+    {
+      "alias": "WAIKE_COURSE_NETWORKING_INFRA",
+      "canonical_track_id": "NETWORKING_INFRA"
+    },
+    {
+      "alias": "COMPUTER_NETWORKING",
+      "canonical_track_id": "NETWORKING_INFRA"
+    },
+    {
+      "alias": "WAIKE_COURSE_CYBER_SOC",
+      "canonical_track_id": "CYBER_SOC"
+    },
+    {
+      "alias": "CYBERSECURITY",
+      "canonical_track_id": "CYBER_SOC"
+    },
+    {
+      "alias": "cybersecurity",
+      "canonical_track_id": "CYBER_SOC"
+    },
+    {
+      "alias": "WAIKE_COURSE_DATA_DASHBOARDS",
+      "canonical_track_id": "DATA_DASHBOARDS"
+    },
+    {
+      "alias": "WAIKE_COURSE_AI_ML_EDGE",
+      "canonical_track_id": "AI_ML_EDGE"
+    },
+    {
+      "alias": "ai_ml_edge",
+      "canonical_track_id": "AI_ML_EDGE"
+    },
+    {
+      "alias": "WAIKE_COURSE_EMBEDDED_PROTOTYPING",
+      "canonical_track_id": "EMBEDDED_PROTOTYPING"
+    },
+    {
+      "alias": "embedded_prototyping",
+      "canonical_track_id": "EMBEDDED_PROTOTYPING"
+    },
+    {
+      "alias": "WAIKE_COURSE_WIRELESS_6G",
+      "canonical_track_id": "WIRELESS_6G"
+    },
+    {
+      "alias": "WAIKE_COURSE_PM_AGILE_LSS",
+      "canonical_track_id": "PM_AGILE_LSS"
+    },
+    {
+      "alias": "pm_agile_lss",
+      "canonical_track_id": "PM_AGILE_LSS"
+    },
+    {
+      "alias": "WAIKE_COURSE_GAME_DEV_INTERACTIVE",
+      "canonical_track_id": "GAME_DEV_INTERACTIVE"
+    },
+    {
+      "alias": "game_dev_interactive",
+      "canonical_track_id": "GAME_DEV_INTERACTIVE"
+    },
+    {
+      "alias": "WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP",
+      "canonical_track_id": "SEVEN_GC_APPRENTICESHIP"
+    },
+    {
+      "alias": "seven_gc_apprenticeship",
+      "canonical_track_id": "SEVEN_GC_APPRENTICESHIP"
+    },
+    {
+      "alias": "WAIKE_COURSE_CLOUD_DEVOPS",
+      "canonical_track_id": "CLOUD_DEVOPS"
+    },
+    {
+      "alias": "cloud_devops",
+      "canonical_track_id": "CLOUD_DEVOPS"
+    },
+    {
+      "alias": "WAIKE_COURSE_COMM_PD_ETHICS",
+      "canonical_track_id": "COMM_PD_ETHICS"
+    },
+    {
+      "alias": "WAIKE_COURSE_ROBOTICS_CONTROL",
+      "canonical_track_id": "ROBOTICS_CONTROL"
+    },
+    {
+      "alias": "robotics_control",
+      "canonical_track_id": "ROBOTICS_CONTROL"
+    },
+    {
+      "alias": "WAIKE_COURSE_GUNNCHOS_PRODUCT_LAB",
+      "canonical_track_id": "GUNNCHOS_PRODUCT_LAB"
+    },
+    {
+      "alias": "WAIKE_COURSE_HARDWARE_ENGINEERING",
+      "canonical_track_id": "HARDWARE_ENGINEERING"
+    },
+    {
+      "alias": "hardware_engineering",
+      "canonical_track_id": "HARDWARE_ENGINEERING"
+    },
+    {
+      "alias": "WAIKE_COURSE_DATA_VIZ_BI",
+      "canonical_track_id": "DATA_VIZ_BI"
+    }
+  ],
+  "package_status": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "content_maturity_state": "covered_via_shared_package",
+      "standalone_1to1_package": false,
+      "package_mappings": [
+        {
+          "package_id": "GENERAL_IT",
+          "covers_track_ids": [
+            "DIGITAL_CONFIDENCE",
+            "IT_SUPPORT_HARDWARE"
+          ],
+          "relationship": "shared_digital_rc_package",
+          "evidence": "curriculum/digital_rc/GENERAL_IT/course.json track_ids; artifacts/stream_b/WAIKE_FULL_TAXONOMY_GAP_LEDGER.json COVERED_VIA_GENERAL_IT"
+        }
+      ],
+      "covering_package_ids": [
+        "GENERAL_IT"
+      ]
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "content_maturity_state": "covered_via_shared_package",
+      "standalone_1to1_package": false,
+      "package_mappings": [
+        {
+          "package_id": "GENERAL_IT",
+          "covers_track_ids": [
+            "DIGITAL_CONFIDENCE",
+            "IT_SUPPORT_HARDWARE"
+          ],
+          "relationship": "shared_digital_rc_package",
+          "evidence": "curriculum/digital_rc/GENERAL_IT/course.json track_ids; artifacts/stream_b/WAIKE_FULL_TAXONOMY_GAP_LEDGER.json COVERED_VIA_GENERAL_IT"
+        }
+      ],
+      "covering_package_ids": [
+        "GENERAL_IT"
+      ]
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "SOFTWARE_BUILDER"
+      ]
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "content_maturity_state": "covered_via_historical_package_id",
+      "standalone_1to1_package": false,
+      "package_mappings": [
+        {
+          "package_id": "COMPUTER_NETWORKING",
+          "covers_track_ids": [
+            "NETWORKING_INFRA"
+          ],
+          "relationship": "historical_package_id",
+          "evidence": "curriculum/digital_rc/COMPUTER_NETWORKING/course.json track_ids"
+        }
+      ],
+      "covering_package_ids": [
+        "COMPUTER_NETWORKING"
+      ]
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "content_maturity_state": "covered_via_historical_package_id",
+      "standalone_1to1_package": false,
+      "package_mappings": [
+        {
+          "package_id": "CYBERSECURITY",
+          "covers_track_ids": [
+            "CYBER_SOC"
+          ],
+          "relationship": "historical_package_id",
+          "evidence": "curriculum/digital_rc/CYBERSECURITY/course.json track_ids"
+        }
+      ],
+      "covering_package_ids": [
+        "CYBERSECURITY"
+      ]
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "DATA_DASHBOARDS"
+      ]
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "AI_ML_EDGE"
+      ]
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [
+        {
+          "package_id": "HARDWARE_ENGINEERING",
+          "covers_track_ids": [
+            "HARDWARE_ENGINEERING",
+            "EMBEDDED_PROTOTYPING"
+          ],
+          "relationship": "shared_digital_rc_package",
+          "evidence": "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json track_ids (multi); EMBEDDED_PROTOTYPING also has standalone package"
+        }
+      ],
+      "covering_package_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING"
+      ]
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "WIRELESS_6G"
+      ]
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "PM_AGILE_LSS"
+      ]
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "GAME_DEV_INTERACTIVE"
+      ]
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "content_maturity_state": "program_shell_only",
+      "standalone_1to1_package": false,
+      "package_mappings": [],
+      "covering_package_ids": []
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "CLOUD_DEVOPS"
+      ]
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "COMM_PD_ETHICS"
+      ]
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "ROBOTICS_CONTROL"
+      ]
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "GUNNCHOS_PRODUCT_LAB"
+      ]
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "content_maturity_state": "covered_via_shared_package",
+      "standalone_1to1_package": false,
+      "package_mappings": [
+        {
+          "package_id": "HARDWARE_ENGINEERING",
+          "covers_track_ids": [
+            "HARDWARE_ENGINEERING",
+            "EMBEDDED_PROTOTYPING"
+          ],
+          "relationship": "shared_digital_rc_package",
+          "evidence": "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json track_ids (multi); EMBEDDED_PROTOTYPING also has standalone package"
+        }
+      ],
+      "covering_package_ids": [
+        "HARDWARE_ENGINEERING"
+      ]
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
+      "package_mappings": [],
+      "covering_package_ids": [
+        "DATA_VIZ_BI"
+      ]
+    }
+  ],
+  "digital_rc_packages_on_disk": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_DASHBOARDS",
+    "DATA_VIZ_BI",
+    "EMBEDDED_PROTOTYPING",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "package_mappings": [
+    {
+      "package_id": "GENERAL_IT",
+      "covers_track_ids": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "relationship": "shared_digital_rc_package",
+      "evidence": "curriculum/digital_rc/GENERAL_IT/course.json track_ids; artifacts/stream_b/WAIKE_FULL_TAXONOMY_GAP_LEDGER.json COVERED_VIA_GENERAL_IT"
+    },
+    {
+      "package_id": "COMPUTER_NETWORKING",
+      "covers_track_ids": [
+        "NETWORKING_INFRA"
+      ],
+      "relationship": "historical_package_id",
+      "evidence": "curriculum/digital_rc/COMPUTER_NETWORKING/course.json track_ids"
+    },
+    {
+      "package_id": "CYBERSECURITY",
+      "covers_track_ids": [
+        "CYBER_SOC"
+      ],
+      "relationship": "historical_package_id",
+      "evidence": "curriculum/digital_rc/CYBERSECURITY/course.json track_ids"
+    },
+    {
+      "package_id": "HARDWARE_ENGINEERING",
+      "covers_track_ids": [
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING"
+      ],
+      "relationship": "shared_digital_rc_package",
+      "evidence": "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json track_ids (multi); EMBEDDED_PROTOTYPING also has standalone package"
+    }
+  ],
+  "mismatches": [
+    {
+      "kind": "shared_package_also_has_standalone_track_package",
+      "package_id": "HARDWARE_ENGINEERING",
+      "covers_track_ids": [
+        "HARDWARE_ENGINEERING",
+        "EMBEDDED_PROTOTYPING"
+      ],
+      "note": "EMBEDDED_PROTOTYPING also has curriculum/digital_rc/EMBEDDED_PROTOTYPING; package_mappings records multi-cover without aliasing."
+    },
+    {
+      "kind": "gap_ledger_stale_vs_disk",
+      "detail": "WAIKE_FULL_TAXONOMY_GAP_LEDGER.json marked NETWORKING_INFRA/CYBER_SOC BELOW_BAR; disk has COMPUTER_NETWORKING and CYBERSECURITY packages mapping 1:1."
+    },
+    {
+      "kind": "gap_ledger_package_count_stale",
+      "ledger_digital_rc_course_count": 14,
+      "disk_digital_rc_dir_count": 16,
+      "note": "Ledger predates EMBEDDED_PROTOTYPING and GUNNCHOS_PRODUCT_LAB package dirs."
+    }
+  ],
+  "historical_ids": [
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "WAIKE_COURSE_AI_ML_EDGE",
+    "WAIKE_COURSE_CLOUD_DEVOPS",
+    "WAIKE_COURSE_COMM_PD_ETHICS",
+    "WAIKE_COURSE_CYBER_SOC",
+    "WAIKE_COURSE_DATA_DASHBOARDS",
+    "WAIKE_COURSE_DATA_VIZ_BI",
+    "WAIKE_COURSE_DIGITAL_CONFIDENCE",
+    "WAIKE_COURSE_EMBEDDED_PROTOTYPING",
+    "WAIKE_COURSE_GAME_DEV_INTERACTIVE",
+    "WAIKE_COURSE_GUNNCHOS_PRODUCT_LAB",
+    "WAIKE_COURSE_HARDWARE_ENGINEERING",
+    "WAIKE_COURSE_IT_SUPPORT_HARDWARE",
+    "WAIKE_COURSE_NETWORKING_INFRA",
+    "WAIKE_COURSE_PM_AGILE_LSS",
+    "WAIKE_COURSE_ROBOTICS_CONTROL",
+    "WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP",
+    "WAIKE_COURSE_SOFTWARE_BUILDER",
+    "WAIKE_COURSE_WIRELESS_6G",
+    "cybersecurity"
+  ],
+  "unresolved_collisions": [
+    {
+      "raw_id": "GENERAL_IT",
+      "reason": "shared_digital_rc_package_covers_two_tracks",
+      "covers_track_ids": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "resolution": "package_mappings_only_not_alias"
+    },
+    {
+      "raw_id": "general_it",
+      "reason": "snake_of_multi_track_package_not_alias",
+      "covers_track_ids": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "resolution": "left_unresolved_fail_closed"
+    }
+  ],
+  "similar_titles_not_aliased": [
+    {
+      "candidate": "networking",
+      "near_track": "NETWORKING_INFRA",
+      "reason": "lessons/by_course/networking exists but is not exact snake of track_id or 1:1 historical package id; not invented"
+    },
+    {
+      "candidate": "software_engineering",
+      "near_track": "SOFTWARE_BUILDER",
+      "reason": "similar title/folder; no explicit track_id evidence"
+    },
+    {
+      "candidate": "data_visualization_bi",
+      "near_track": "DATA_VIZ_BI",
+      "reason": "similar folder name; not exact snake of DATA_VIZ_BI"
+    }
+  ],
+  "what_this_pr_fixes": [
+    "Canonical 18-track registry with deterministic uuid5 stable IDs",
+    "Evidence-only historical alias map + fail-closed resolve_track_id",
+    "Explicit package_mappings for multi-track and historical package IDs",
+    "Deterministic consumer export with registry_hash",
+    "Reconciliation reports separating contract work from remaining content gaps"
+  ],
+  "remaining_content_work": [
+    "SEVEN_GC_APPRENTICESHIP still has no digital_rc package (program shell only)",
+    "DIGITAL_CONFIDENCE and IT_SUPPORT_HARDWARE remain shared under GENERAL_IT (no standalone packages)",
+    "Package version fields are null until versioned package manifests exist",
+    "Track-level prerequisites arrays are empty pending evidence-backed prerequisite graph",
+    "Stale gap ledger should be refreshed in a follow-up content/ops packet",
+    "Similar-title lesson folders (networking, software_engineering, \u2026) remain unresolved by design"
+  ]
+}
