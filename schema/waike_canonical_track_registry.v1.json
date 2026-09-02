@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_canonical_track_registry.v1.json",
+  "title": "WAIKE canonical track registry v1",
+  "type": "object",
+  "required": ["schema", "schema_version", "compatibility_version", "track_count", "tracks", "package_mappings"],
+  "properties": {
+    "schema": { "const": "waike.taxonomy.canonical_track_registry.v1" },
+    "schema_version": { "type": "string" },
+    "compatibility_version": { "const": "waike.taxonomy.consumer.v1" },
+    "track_count": { "const": 18 },
+    "tracks": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "required": [
+          "stable_uuid",
+          "track_id",
+          "title",
+          "historical_aliases",
+          "academy_id",
+          "extension_class",
+          "authoritative_source_paths",
+          "prerequisites",
+          "content_maturity",
+          "latest_compatible_package_version",
+          "deprecation"
+        ]
+      }
+    },
+    "package_mappings": { "type": "array" }
+  }
+}

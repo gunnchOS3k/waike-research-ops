@@ -96,3 +96,11 @@ e2e-tooling:
 
 e2e-sionna e2e-deepmimo e2e-aerial e2e-oran:
 	@echo "Optional target $@ — requires external install"
+
+.PHONY: taxonomy-validate taxonomy-export taxonomy-reconcile
+taxonomy-validate:
+	$(PY) python3 scripts/validate_canonical_track_registry.py --expect-unknown GENERAL_IT --expect-unknown NOT_A_REAL_TRACK
+taxonomy-export:
+	$(PY) python3 scripts/export_canonical_track_registry.py
+taxonomy-reconcile:
+	$(PY) python3 scripts/generate_taxonomy_reconciliation.py
