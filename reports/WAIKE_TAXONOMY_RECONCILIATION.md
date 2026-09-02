@@ -1,7 +1,7 @@
 # WAIKE Taxonomy Reconciliation
 
-Generated (UTC): `2026-09-02T19:11:17Z`
-Source commit: `b44a45e15bf2ab840ad18701b65430a10f3a7623`
+Generated (UTC): `2026-09-02T19:11:18Z`
+Source commit: `c5d5f9290fdcfe8b397773fd3fe4e37f15bdb6e2`
 Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e896d9c4ac`
 
 ## Exact counts
