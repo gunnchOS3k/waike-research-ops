@@ -5,7 +5,8 @@
 
 test:
 	$(PY) pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py \
-		tests/test_evaluation_metrics.py tests/test_batch002_exams_validation.py
+		tests/test_evaluation_metrics.py tests/test_batch002_exams_validation.py \
+		tests/test_canonical_track_registry.py tests/test_taxonomy_contract.py
 
 code-health-r5-s1: test
 	$(PY) python3 scripts/run_r5_s1_mutation_kills.py
@@ -95,3 +96,11 @@ e2e-tooling:
 
 e2e-sionna e2e-deepmimo e2e-aerial e2e-oran:
 	@echo "Optional target $@ — requires external install"
+
+.PHONY: taxonomy-validate taxonomy-export taxonomy-reconcile
+taxonomy-validate:
+	$(PY) python3 scripts/validate_canonical_track_registry.py --expect-unknown GENERAL_IT --expect-unknown NOT_A_REAL_TRACK
+taxonomy-export:
+	$(PY) python3 scripts/export_canonical_track_registry.py
+taxonomy-reconcile:
+	$(PY) python3 scripts/generate_taxonomy_reconciliation.py

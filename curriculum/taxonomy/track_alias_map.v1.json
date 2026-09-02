@@ -1,0 +1,171 @@
+{
+  "schema": "waike.taxonomy.track_alias_map.v1",
+  "schema_version": "1.0.0",
+  "rule": "Fail closed. No fuzzy match. Multi-track package IDs are not aliases.",
+  "aliases": [
+    {
+      "alias": "COMPUTER_NETWORKING",
+      "canonical_track_id": "NETWORKING_INFRA",
+      "alias_kind": "historical_package_id"
+    },
+    {
+      "alias": "CYBERSECURITY",
+      "canonical_track_id": "CYBER_SOC",
+      "alias_kind": "historical_package_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_AI_ML_EDGE",
+      "canonical_track_id": "AI_ML_EDGE",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_CLOUD_DEVOPS",
+      "canonical_track_id": "CLOUD_DEVOPS",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_COMM_PD_ETHICS",
+      "canonical_track_id": "COMM_PD_ETHICS",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_CYBER_SOC",
+      "canonical_track_id": "CYBER_SOC",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_DATA_DASHBOARDS",
+      "canonical_track_id": "DATA_DASHBOARDS",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_DATA_VIZ_BI",
+      "canonical_track_id": "DATA_VIZ_BI",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_DIGITAL_CONFIDENCE",
+      "canonical_track_id": "DIGITAL_CONFIDENCE",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_EMBEDDED_PROTOTYPING",
+      "canonical_track_id": "EMBEDDED_PROTOTYPING",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_GAME_DEV_INTERACTIVE",
+      "canonical_track_id": "GAME_DEV_INTERACTIVE",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_GUNNCHOS_PRODUCT_LAB",
+      "canonical_track_id": "GUNNCHOS_PRODUCT_LAB",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_HARDWARE_ENGINEERING",
+      "canonical_track_id": "HARDWARE_ENGINEERING",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_IT_SUPPORT_HARDWARE",
+      "canonical_track_id": "IT_SUPPORT_HARDWARE",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_NETWORKING_INFRA",
+      "canonical_track_id": "NETWORKING_INFRA",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_PM_AGILE_LSS",
+      "canonical_track_id": "PM_AGILE_LSS",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_ROBOTICS_CONTROL",
+      "canonical_track_id": "ROBOTICS_CONTROL",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP",
+      "canonical_track_id": "SEVEN_GC_APPRENTICESHIP",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_SOFTWARE_BUILDER",
+      "canonical_track_id": "SOFTWARE_BUILDER",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "WAIKE_COURSE_WIRELESS_6G",
+      "canonical_track_id": "WIRELESS_6G",
+      "alias_kind": "requirement_id"
+    },
+    {
+      "alias": "ai_ml_edge",
+      "canonical_track_id": "AI_ML_EDGE",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "cloud_devops",
+      "canonical_track_id": "CLOUD_DEVOPS",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "cybersecurity",
+      "canonical_track_id": "CYBER_SOC",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "digital_confidence",
+      "canonical_track_id": "DIGITAL_CONFIDENCE",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "embedded_prototyping",
+      "canonical_track_id": "EMBEDDED_PROTOTYPING",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "game_dev_interactive",
+      "canonical_track_id": "GAME_DEV_INTERACTIVE",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "hardware_engineering",
+      "canonical_track_id": "HARDWARE_ENGINEERING",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "it_support_hardware",
+      "canonical_track_id": "IT_SUPPORT_HARDWARE",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "pm_agile_lss",
+      "canonical_track_id": "PM_AGILE_LSS",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "robotics_control",
+      "canonical_track_id": "ROBOTICS_CONTROL",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "seven_gc_apprenticeship",
+      "canonical_track_id": "SEVEN_GC_APPRENTICESHIP",
+      "alias_kind": "snake_folder_or_program_id"
+    },
+    {
+      "alias": "software_builder",
+      "canonical_track_id": "SOFTWARE_BUILDER",
+      "alias_kind": "snake_folder_or_program_id"
+    }
+  ],
+  "non_alias_package_ids": [
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING"
+  ]
+}
