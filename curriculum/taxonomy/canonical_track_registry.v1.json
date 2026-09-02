@@ -583,7 +583,10 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": false,
+          "package_lists_extra_track_ids": [
+            "EMBEDDED_PROTOTYPING"
+          ]
         }
       },
       "latest_compatible_package_version": null,

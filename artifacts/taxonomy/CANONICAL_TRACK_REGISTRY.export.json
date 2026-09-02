@@ -2,8 +2,8 @@
   "schema": "waike.taxonomy.canonical_track_registry.export.v1",
   "schema_version": "1.0.0",
   "compatibility_version": "waike.taxonomy.consumer.v1",
-  "source_commit_sha": "1143291feece93730aa4f503d138a7b5c32a275e",
-  "registry_hash": "abcec08b31374dc05ed6af1294678b8516c4b7d949c8c4914fa1c0aad14a0dcb",
+  "source_commit_sha": "e6b31c50a039c7d9391e58b73f86465cfe6438d4",
+  "registry_hash": "7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e896d9c4ac",
   "track_count": 18,
   "tracks": [
     {
@@ -573,7 +573,7 @@
         "programs/hardware_engineering.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "digital_rc_present",
+        "state": "covered_via_shared_package",
         "facets": {
           "covering_package_ids": [
             "HARDWARE_ENGINEERING"
