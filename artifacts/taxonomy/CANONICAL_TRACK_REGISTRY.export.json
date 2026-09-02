@@ -2,7 +2,7 @@
   "schema": "waike.taxonomy.canonical_track_registry.export.v1",
   "schema_version": "1.0.0",
   "compatibility_version": "waike.taxonomy.consumer.v1",
-  "source_commit_sha": "8eb2827dc58ffa391842da1bfb1ee665c25a31a7",
+  "source_commit_sha": "29f8b6815cb4dd235b15074f140d2493d225dc67",
   "registry_hash": "52465769eac641e6c52005f7a0ba4476de8ba7dd02554e22a8269cb8693ed8b7",
   "track_count": 18,
   "tracks": [
