@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "sgc-w6-1",
+      "kind": "mcq",
+      "stem": "SGC-6606: commercial_6g_exists must be?",
+      "choices": [
+        "false",
+        "true",
+        "null meaning true",
+        "vendor decides"
+      ]
+    },
+    {
+      "id": "sgc-w6-2",
+      "kind": "mcq",
+      "stem": "SGC-6606: Vendor '6G ready' vs fixture?",
+      "choices": [
+        "Always true",
+        "fixture_supports=false typically",
+        "Grants cert",
+        "Field done"
+      ]
+    },
+    {
+      "id": "sgc-w6-3",
+      "kind": "mcq",
+      "stem": "SGC-6606: Upgrading SIMULATED to MEASURED_FIELD in analysis?",
+      "choices": [
+        "Required",
+        "Extra",
+        "Fails",
+        "Silent"
+      ]
+    },
+    {
+      "id": "sgc-w6-4",
+      "kind": "mcq",
+      "stem": "SGC-6606: O-RAN labels status?",
+      "choices": [
+        "Production RIC proof",
+        "Exam dump",
+        "Cert",
+        "PUBLIC_REFERENCE_ONLY vocabulary"
+      ]
+    },
+    {
+      "id": "sgc-w6-5",
+      "kind": "mcq",
+      "stem": "SGC-6606: docs_cited false?",
+      "choices": [
+        "Fails literacy check",
+        "Passes",
+        "Bonus",
+        "Mentor"
+      ]
+    },
+    {
+      "id": "sgc-w6-6",
+      "kind": "mcq",
+      "stem": "SGC-6606: Open-source demo equals carrier deployment?",
+      "choices": [
+        "Yes",
+        "No",
+        "If SHA set",
+        "If Discord yes"
+      ]
+    }
+  ]
+}

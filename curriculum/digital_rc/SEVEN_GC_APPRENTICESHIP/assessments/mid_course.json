@@ -1,0 +1,225 @@
+{
+  "assessment_id": "SEVEN_GC_APPRENTICESHIP-mid",
+  "items": [
+    {
+      "id": "sgc-mid-01",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 1: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation",
+        "Yes \u2014 digital honesty before field claims"
+      ]
+    },
+    {
+      "id": "sgc-mid-02",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 2: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Yes \u2014 digital honesty before field claims",
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-03",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 3: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Yes \u2014 digital honesty before field claims",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-04",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 4: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Yes \u2014 digital honesty before field claims",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-05",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 5: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation",
+        "Yes \u2014 digital honesty before field claims"
+      ]
+    },
+    {
+      "id": "sgc-mid-06",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 6: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Yes \u2014 digital honesty before field claims",
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-07",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 7: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Yes \u2014 digital honesty before field claims",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-08",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 8: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Yes \u2014 digital honesty before field claims",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-09",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 9: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation",
+        "Yes \u2014 digital honesty before field claims"
+      ]
+    },
+    {
+      "id": "sgc-mid-10",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 10: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Yes \u2014 digital honesty before field claims",
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-11",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 11: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Yes \u2014 digital honesty before field claims",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-12",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 12: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Yes \u2014 digital honesty before field claims",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-13",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 13: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation",
+        "Yes \u2014 digital honesty before field claims"
+      ]
+    },
+    {
+      "id": "sgc-mid-14",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 14: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Yes \u2014 digital honesty before field claims",
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-15",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 15: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Yes \u2014 digital honesty before field claims",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-16",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 16: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Yes \u2014 digital honesty before field claims",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-17",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 17: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation",
+        "Yes \u2014 digital honesty before field claims"
+      ]
+    },
+    {
+      "id": "sgc-mid-18",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 18: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Yes \u2014 digital honesty before field claims",
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-19",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 19: digital apprenticeship honesty item \u2014 SIMULATED fixtures must stay labeled; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Yes \u2014 digital honesty before field claims",
+        "Ship instructor keys to learners",
+        "Invent partner participation"
+      ]
+    },
+    {
+      "id": "sgc-mid-20",
+      "kind": "mcq",
+      "stem": "SEVEN_GC mid audit 20: digital apprenticeship honesty item \u2014 mentor_signed stays false without review; OK?",
+      "choices": [
+        "Mark MEASURED_FIELD anyway",
+        "Ship instructor keys to learners",
+        "Yes \u2014 digital honesty before field claims",
+        "Invent partner participation"
+      ]
+    }
+  ]
+}

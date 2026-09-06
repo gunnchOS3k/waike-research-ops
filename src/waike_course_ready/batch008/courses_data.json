@@ -1,0 +1,949 @@
+{
+  "SEVEN_GC_APPRENTICESHIP": {
+    "course_id": "SEVEN_GC_APPRENTICESHIP",
+    "title": "7GC AI-RAN Research Apprenticeship",
+    "track_ids": [
+      "SEVEN_GC_APPRENTICESHIP"
+    ],
+    "academy_id": "ACADEMY_SOFTWARE",
+    "kinesthetic_hook": "Run the Gary 7GC Research Desk for ten digital weeks: evidence classes \u2192 repo recon \u2192 SIMULATED baseline \u2192 experiment design \u2192 controlled run \u2192 vendor claim audit \u2192 capstone, then apprenticeship extension handoff/robustness \u2014 without inventing mentor or field completion.",
+    "syllabus_hook": "This is the first-class digital COURSE_DIGITAL_RC for SEVEN_GC_APPRENTICESHIP authorized by programs/seven_gc_apprenticeship.md. Delivery formats: Workshop (2h + one lab), Bootcamp (2-week portfolio starter), Course (weeks 1\u20138), Apprenticeship (weeks 1\u201310 digital + weeks 11\u201312 EXTERNAL mentor/hardware/field scaffolds). Extension class remains RESEARCH_APPRENTICESHIP. HUMAN_PENDING / EXTERNAL_* gates prohibit fabricating mentor sign-off, hardware measurements, and field pilots \u2014 not digital curriculum authoring. Sibling research repos are REPO_CONNECTED when present; otherwise UNAVAILABLE. Commercial standardized 6G does not exist today.",
+    "career": {
+      "roles": [
+        "wireless_research_apprentice",
+        "ran_systems_analyst_junior",
+        "reproducible_research_technician"
+      ],
+      "nice_categories": [
+        "analyze",
+        "build_and_deploy"
+      ],
+      "certs_aligned_not_granted": [
+        "3GPP/O-RAN topic labels (PUBLIC_REFERENCE_ONLY)",
+        "AI-RAN study-item vocabulary (not membership)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        4,
+        7
+      ],
+      "tutor_commands": {
+        "lesson": "/waike lesson seven_gc_apprenticeship",
+        "explain": "/explain",
+        "quiz_practice": "/quizme"
+      },
+      "graded_answers_protected": true,
+      "ai_never_silently_grades": true
+    },
+    "delivery_formats": {
+      "workshop_hours": 2,
+      "bootcamp_weeks": 2,
+      "course_weeks": 8,
+      "apprenticeship_weeks": 12,
+      "external_gates": [
+        "EXTERNAL_HUMAN_GATE",
+        "EXTERNAL_PHYSICAL_GATE",
+        "EXTERNAL_FIELD_GATE"
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Research apprenticeship intuition \u2014 vocabulary, safety, claim boundaries",
+        "lesson": "At the Gary 7GC Research Desk, week 1 is ticket SGC-6101: name what kind of evidence you hold before arguing about AI-RAN gains. Beginners hear 'digital twin' and invent pier coverage maps. Operators separate SIMULATED fixtures, DIGITAL_REPRODUCTION baselines, MEASURED_HARDWARE captures, MEASURED_FIELD trials, and HUMAN_REVIEW sign-offs. Commercial standardized 6G does not exist today; AI-RAN language stays research/systems with gates. Privacy is operational: no SSNs, no library PANs, no RF partner NDAs pasted into Discord. Consensus Ladder for SGC-6101: observed = labeled fixture row; inferred = simulation is not pier measurement; still need = EXTERNAL_PHYSICAL_GATE when hardware arrives. Failure mode: marking HUMAN_REVIEW complete because a template checkbox exists. Empty {} fails. A body that is only PASS raises. Journals cite programs/seven_gc_apprenticeship.md purpose without inventing campus pilot outcomes.",
+        "worked_example": "classes=[SIMULATED,DIGITAL_REPRODUCTION,MEASURED_HARDWARE,MEASURED_FIELD,HUMAN_REVIEW]; pii_in_notes=false",
+        "assignment": "Submit lab_sgc_evidence_class JSON for SGC-6101. Classify five evidence snippets; mark privacy violations; refuse fabricated mentor sign-off.",
+        "lab_id": "lab_sgc_evidence_class",
+        "quiz": [
+          {
+            "id": "sgc-w1-1",
+            "kind": "mcq",
+            "stem": "SGC-6101: Which evidence class is a synthetic KPI JSON labeled for later replacement?",
+            "choices": [
+              "SIMULATED",
+              "MEASURED_FIELD",
+              "HUMAN_REVIEW",
+              "Mentor seal"
+            ],
+            "answer_index": 0,
+            "explanation": "Labeled fixture."
+          },
+          {
+            "id": "sgc-w1-2",
+            "kind": "mcq",
+            "stem": "SGC-6101: May week-1 journals store patron PANs for 'research realism'?",
+            "choices": [
+              "No \u2014 privacy forbids PII in notes",
+              "Yes if Discord private",
+              "Yes for mentors",
+              "Required"
+            ],
+            "answer_index": 0,
+            "explanation": "No PII."
+          },
+          {
+            "id": "sgc-w1-3",
+            "kind": "mcq",
+            "stem": "SGC-6101: Commercial standardized 6G exists today?",
+            "choices": [
+              "False \u2014 course refuses the claim",
+              "True pier-wide",
+              "True if vendor slide",
+              "True after quiz"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "sgc-w1-4",
+            "kind": "mcq",
+            "stem": "SGC-6101: HUMAN_REVIEW marked complete because a form exists?",
+            "choices": [
+              "Forbidden without real review",
+              "Auto-complete",
+              "Extra credit",
+              "Required"
+            ],
+            "answer_index": 0,
+            "explanation": "External gate."
+          },
+          {
+            "id": "sgc-w1-5",
+            "kind": "mcq",
+            "stem": "SGC-6101: Consensus Ladder still-need for pier SDR?",
+            "choices": [
+              "EXTERNAL_PHYSICAL_GATE / measured capture",
+              "Ignore",
+              "Invent BLER",
+              "Ship cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Physical gate."
+          },
+          {
+            "id": "sgc-w1-6",
+            "kind": "mcq",
+            "stem": "SGC-6101: Empty {} on lab_sgc_evidence_class?",
+            "choices": [
+              "Fails student_artifact",
+              "Passes",
+              "Bonus",
+              "Grants cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Empty fails."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Tools setup \u2014 repository reconnaissance without hardware",
+        "lesson": "Ticket SGC-6202 teaches repo navigation as research skill. Read knowledge_maps/course_repo_map.yaml and programs/research_apprenticeship_reproducible_research.md as PUBLIC_REFERENCE_ONLY maps \u2014 do not silently claim sibling repos are present if they are not checked out. Identify purpose, README/setup, inputs, outputs, tests, evidence folders, and limitations. Baseline commands stay LOCAL_SOFTWARE or REPO_CONNECTED deterministic paths. Never mutate production infrastructure or invent clone SHAs. If a mapped sibling (7gc-digital-twin, spectrumx-ai-ran-gary) is unavailable, record UNAVAILABLE honestly and continue on waike-research-ops fixtures. Consensus Ladder: observed = map row; inferred = demo target exists in docs; still need = actual clone at recorded SHA. Screenshots without paths fail. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them.",
+        "worked_example": "repo_id=waike-research-ops; purpose=reproducible_research_map; has_tests=true; evidence_path=results/",
+        "assignment": "Submit lab_sgc_repo_recon JSON for SGC-6202. Recon the apprenticeship map repo: purpose, setup, inputs, outputs, tests, limitations.",
+        "lab_id": "lab_sgc_repo_recon",
+        "quiz": [
+          {
+            "id": "sgc-w2-1",
+            "kind": "mcq",
+            "stem": "SGC-6202: Primary recon map for apprenticeship repos?",
+            "choices": [
+              "knowledge_maps/course_repo_map.yaml",
+              "Random Twitter thread",
+              "Vendor NDAs",
+              "Instructor keys"
+            ],
+            "answer_index": 0,
+            "explanation": "Map file."
+          },
+          {
+            "id": "sgc-w2-2",
+            "kind": "mcq",
+            "stem": "SGC-6202: Sibling repo missing locally \u2014 honest field?",
+            "choices": [
+              "UNAVAILABLE with no fake SHA",
+              "Invent SHA",
+              "Mark MEASURED_FIELD",
+              "Skip ethics"
+            ],
+            "answer_index": 0,
+            "explanation": "Unavailable."
+          },
+          {
+            "id": "sgc-w2-3",
+            "kind": "mcq",
+            "stem": "SGC-6202: Mutating production RAN from a student laptop?",
+            "choices": [
+              "Forbidden",
+              "Required lab",
+              "Extra credit",
+              "Silent OK"
+            ],
+            "answer_index": 0,
+            "explanation": "No prod mutate."
+          },
+          {
+            "id": "sgc-w2-4",
+            "kind": "mcq",
+            "stem": "SGC-6202: Repo recon evidence path should be?",
+            "choices": [
+              "Named folder such as results/",
+              "Any Desktop clutter",
+              "Instructor keys",
+              "Discord DM"
+            ],
+            "answer_index": 0,
+            "explanation": "Named path."
+          },
+          {
+            "id": "sgc-w2-5",
+            "kind": "mcq",
+            "stem": "SGC-6202: Execution mode for local README/tests only?",
+            "choices": [
+              "LOCAL_SOFTWARE or REPO_CONNECTED",
+              "MEASURED_FIELD",
+              "HUMAN_REVIEW complete",
+              "TX on air"
+            ],
+            "answer_index": 0,
+            "explanation": "Digital modes."
+          },
+          {
+            "id": "sgc-w2-6",
+            "kind": "mcq",
+            "stem": "SGC-6202: print-PASS body?",
+            "choices": [
+              "Raises AssertionError",
+              "Auto-pass",
+              "Mentor sign",
+              "Field complete"
+            ],
+            "answer_index": 0,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Baseline reproduction \u2014 measurement literacy on SIMULATED fixtures",
+        "lesson": "Ticket SGC-6303 runs a deterministic SIMULATED KPI window under fixtures/sgc_baseline/. Learners record command, python version, cwd, output digest, and evidence_class=SIMULATED. The fixture is labeled for replacement by MEASURED_HARDWARE later \u2014 never rename it as field measured. Variables and controls stay named: seed, window_id, kpi_names. Stochastic storytelling without a seed fails. Hashes must be 64 hex characters. Consensus Ladder: observed = fixture bytes; inferred = baseline reproducible locally; still need = pier SDR capture. Empty {} fails. print-PASS raises. Do not invent bler curves or beamforming gains beyond fixture fields. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "fixture=fixtures/sgc_baseline/kpi_window.json; evidence_class=SIMULATED; output_sha256_len=64",
+        "assignment": "Submit lab_sgc_baseline_repro JSON for SGC-6303. Reproduce the deterministic SIMULATED KPI baseline; capture command, env, hash.",
+        "lab_id": "lab_sgc_baseline_repro",
+        "quiz": [
+          {
+            "id": "sgc-w3-1",
+            "kind": "mcq",
+            "stem": "SGC-6303: Baseline fixture evidence_class?",
+            "choices": [
+              "SIMULATED",
+              "MEASURED_FIELD",
+              "HUMAN_REVIEW",
+              "Partner signed"
+            ],
+            "answer_index": 0,
+            "explanation": "Simulated."
+          },
+          {
+            "id": "sgc-w3-2",
+            "kind": "mcq",
+            "stem": "SGC-6303: output_sha256 length?",
+            "choices": [
+              "64 hex chars",
+              "8",
+              "Any string PASS",
+              "Empty"
+            ],
+            "answer_index": 0,
+            "explanation": "SHA-256 hex."
+          },
+          {
+            "id": "sgc-w3-3",
+            "kind": "mcq",
+            "stem": "SGC-6303: Rename SIMULATED to MEASURED_FIELD without capture?",
+            "choices": [
+              "Fails honesty",
+              "Required",
+              "Extra credit",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "No rename."
+          },
+          {
+            "id": "sgc-w3-4",
+            "kind": "mcq",
+            "stem": "SGC-6303: Seed omitted on stochastic story?",
+            "choices": [
+              "Fails literacy",
+              "OK always",
+              "Mentor fix",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "Need seed."
+          },
+          {
+            "id": "sgc-w3-5",
+            "kind": "mcq",
+            "stem": "SGC-6303: Still-need after local baseline?",
+            "choices": [
+              "Hardware/field measurement later",
+              "Cert grant",
+              "Delete fixture",
+              "Fake partner"
+            ],
+            "answer_index": 0,
+            "explanation": "Later measure."
+          },
+          {
+            "id": "sgc-w3-6",
+            "kind": "mcq",
+            "stem": "SGC-6303: Wrong submission inventing beamforming_dB=12?",
+            "choices": [
+              "Must fail",
+              "Passes",
+              "Required",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "No invent."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Experiment design \u2014 question, variables, controls before any run",
+        "lesson": "Ticket SGC-6404 forbids running the controlled experiment until the design JSON exists. Learners state a testable research question, hypothesis, independent variable, dependent variable, controls, confounds, and claim/evidence matching. Example teaching scaffold: IV=mcs_index, DV=bler, control=snr_db on the SIMULATED table \u2014 not a claim that Gary pier closed a live loop. Confound examples include seed leakage and unlabeled vendor CSV merges. NO_AI week: hand-author the design. Consensus Ladder: observed = design fields; inferred = one IV change is planned; still need = run artifacts next week. Designs that promise MEASURED_FIELD without EXTERNAL_FIELD_GATE fail honesty. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures.",
+        "worked_example": "iv=mcs_index; dv=bler; control=snr_db; confound=seed_leak; claim_match=true",
+        "assignment": "Submit lab_sgc_experiment_design JSON for SGC-6404. NO_AI week: hand-author research question, hypothesis, IV/DV/controls, evidence plan.",
+        "lab_id": "lab_sgc_experiment_design",
+        "quiz": [
+          {
+            "id": "sgc-w4-1",
+            "kind": "mcq",
+            "stem": "SGC-6404: NO_AI week means?",
+            "choices": [
+              "Hand-author design JSON",
+              "Paste ChatGPT into keys",
+              "Skip lab",
+              "Invent field"
+            ],
+            "answer_index": 0,
+            "explanation": "Hand author."
+          },
+          {
+            "id": "sgc-w4-2",
+            "kind": "mcq",
+            "stem": "SGC-6404: IV/DV example on SIMULATED MCS table?",
+            "choices": [
+              "IV=mcs_index DV=bler",
+              "IV=mentor DV=cert",
+              "IV=6G DV=exists",
+              "IV=PII DV=ticket"
+            ],
+            "answer_index": 0,
+            "explanation": "MCS/BLER."
+          },
+          {
+            "id": "sgc-w4-3",
+            "kind": "mcq",
+            "stem": "SGC-6404: Design promising MEASURED_FIELD without gate?",
+            "choices": [
+              "Fails honesty",
+              "Required",
+              "Auto-pass",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Honesty."
+          },
+          {
+            "id": "sgc-w4-4",
+            "kind": "mcq",
+            "stem": "SGC-6404: Confound example?",
+            "choices": [
+              "seed_leak or unlabeled vendor CSV",
+              "Using JSON",
+              "Reading README",
+              "Hashing"
+            ],
+            "answer_index": 0,
+            "explanation": "Confound."
+          },
+          {
+            "id": "sgc-w4-5",
+            "kind": "mcq",
+            "stem": "SGC-6404: claim_match true means?",
+            "choices": [
+              "Claim text matches planned evidence class",
+              "Mentor signed",
+              "Field done",
+              "6G exists"
+            ],
+            "answer_index": 0,
+            "explanation": "Match."
+          },
+          {
+            "id": "sgc-w4-6",
+            "kind": "mcq",
+            "stem": "SGC-6404: Run controlled experiment before design?",
+            "choices": [
+              "Forbidden this week",
+              "Required",
+              "Extra",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "Design first."
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Controlled SIMULATED experiment \u2014 one permitted variable",
+        "lesson": "Ticket SGC-6505 executes the week-4 design on the SIMULATED MCS/BLER table. Change only the permitted independent variable (mcs_index) while holding snr_db. Preserve raw artifact paths and label evidence_class=SIMULATED. Distinguish observation (table values) from inference (higher MCS needs headroom). Do not invent pier throughput. Auto-apply AI-RAN policies without human_gate language fail research ethics even in simulation. Consensus Ladder: observed = two JSON digests; inferred = DV moved with IV; still need = MEASURED_HARDWARE confirmation. Empty {} fails. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "baseline_mcs=2; trial_mcs=3; snr_db=8; evidence_class=SIMULATED; raw_preserved=true",
+        "assignment": "Submit lab_sgc_controlled_sim JSON for SGC-6505. Change one permitted IV on the SIMULATED fixture; preserve raw outputs.",
+        "lab_id": "lab_sgc_controlled_sim",
+        "quiz": [
+          {
+            "id": "sgc-w5-1",
+            "kind": "mcq",
+            "stem": "SGC-6505: How many IVs may change in controlled sim?",
+            "choices": [
+              "One permitted IV",
+              "All at once",
+              "None ever",
+              "Only mentor picks secretly"
+            ],
+            "answer_index": 0,
+            "explanation": "One IV."
+          },
+          {
+            "id": "sgc-w5-2",
+            "kind": "mcq",
+            "stem": "SGC-6505: evidence_class for this run?",
+            "choices": [
+              "SIMULATED",
+              "MEASURED_FIELD",
+              "HUMAN_REVIEW",
+              "Partner"
+            ],
+            "answer_index": 0,
+            "explanation": "Simulated."
+          },
+          {
+            "id": "sgc-w5-3",
+            "kind": "mcq",
+            "stem": "SGC-6505: raw_preserved false?",
+            "choices": [
+              "Fails lab",
+              "Passes",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Preserve raw."
+          },
+          {
+            "id": "sgc-w5-4",
+            "kind": "mcq",
+            "stem": "SGC-6505: Ungated auto-apply AI-RAN in sim write-up?",
+            "choices": [
+              "Fails ethics narrative",
+              "Required",
+              "Extra",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Gates."
+          },
+          {
+            "id": "sgc-w5-5",
+            "kind": "mcq",
+            "stem": "SGC-6505: Observation vs inference?",
+            "choices": [
+              "Table values vs 'needs headroom' story",
+              "Same thing",
+              "Mentor only",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "Split."
+          },
+          {
+            "id": "sgc-w5-6",
+            "kind": "mcq",
+            "stem": "SGC-6505: Invent pier throughput from fixture?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Extra",
+              "Auto"
+            ],
+            "answer_index": 0,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Industry/vendor reality \u2014 standards vs products vs your fixture",
+        "lesson": "Ticket SGC-6606 is documentation literacy week. Parse week-5 outputs with deterministic tooling and compare a vendor '6G ready' slogan to what the fixture actually supports. commercial_6g_exists must remain false. Open-source repo demos are not carrier deployments. O-RAN vocabulary may appear as PUBLIC_REFERENCE_ONLY labels without claiming a production Near-RT RIC. Consensus Ladder: observed = fixture KPI delta; inferred = slogan overclaims; still need = standards document citations without exam dumps. Analysis that upgrades SIMULATED to MEASURED_FIELD without new evidence fails. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "vendor_claim=6G ready; fixture_supports=false; commercial_6g_exists=false; docs_cited=true",
+        "assignment": "Submit lab_sgc_analysis JSON for SGC-6606. Parse SIMULATED results; map vendor claim vs fixture support; refuse commercial-6G exists.",
+        "lab_id": "lab_sgc_analysis",
+        "quiz": [
+          {
+            "id": "sgc-w6-1",
+            "kind": "mcq",
+            "stem": "SGC-6606: commercial_6g_exists must be?",
+            "choices": [
+              "false",
+              "true",
+              "null meaning true",
+              "vendor decides"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "sgc-w6-2",
+            "kind": "mcq",
+            "stem": "SGC-6606: Vendor '6G ready' vs fixture?",
+            "choices": [
+              "fixture_supports=false typically",
+              "Always true",
+              "Grants cert",
+              "Field done"
+            ],
+            "answer_index": 0,
+            "explanation": "Overclaim."
+          },
+          {
+            "id": "sgc-w6-3",
+            "kind": "mcq",
+            "stem": "SGC-6606: Upgrading SIMULATED to MEASURED_FIELD in analysis?",
+            "choices": [
+              "Fails",
+              "Required",
+              "Extra",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "Fails."
+          },
+          {
+            "id": "sgc-w6-4",
+            "kind": "mcq",
+            "stem": "SGC-6606: O-RAN labels status?",
+            "choices": [
+              "PUBLIC_REFERENCE_ONLY vocabulary",
+              "Production RIC proof",
+              "Exam dump",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Reference."
+          },
+          {
+            "id": "sgc-w6-5",
+            "kind": "mcq",
+            "stem": "SGC-6606: docs_cited false?",
+            "choices": [
+              "Fails literacy check",
+              "Passes",
+              "Bonus",
+              "Mentor"
+            ],
+            "answer_index": 0,
+            "explanation": "Cite docs."
+          },
+          {
+            "id": "sgc-w6-6",
+            "kind": "mcq",
+            "stem": "SGC-6606: Open-source demo equals carrier deployment?",
+            "choices": [
+              "No",
+              "Yes",
+              "If SHA set",
+              "If Discord yes"
+            ],
+            "answer_index": 0,
+            "explanation": "No."
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Research frontier + ethics \u2014 claim audit and validity limits",
+        "lesson": "Ticket SGC-6707 is the claim-audit week. Learners list what results do and do not establish. Supported may include a local SIMULATED delta under fixed SNR. Unsupported includes field BLER, partner participation, student outcome statistics, and mentor signatures. Privacy/security: no unauthorized TX narratives, no private competition IQ. Unsupported generalization across 7GC campuses fails. NO_AI quiz week still allows disclosed calculators on lab JSON. Consensus Ladder: observed = audit lists; inferred = digital course can complete without field; still need = EXTERNAL_HUMAN_GATE / EXTERNAL_PHYSICAL_GATE / EXTERNAL_FIELD_GATE as named open gates. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "supports=['local_sim_delta']; does_not_support=['field_bler','mentor_signoff']; human_gate=EXTERNAL_HUMAN_GATE",
+        "assignment": "Submit lab_sgc_claim_audit JSON for SGC-6707. Audit claims: list supported vs unsupported; name external gates still open.",
+        "lab_id": "lab_sgc_claim_audit",
+        "quiz": [
+          {
+            "id": "sgc-w7-1",
+            "kind": "mcq",
+            "stem": "SGC-6707: Supported claim example?",
+            "choices": [
+              "local_sim_delta under fixed SNR",
+              "field_bler",
+              "mentor_signoff",
+              "partner logos"
+            ],
+            "answer_index": 0,
+            "explanation": "Local sim."
+          },
+          {
+            "id": "sgc-w7-2",
+            "kind": "mcq",
+            "stem": "SGC-6707: does_not_support should include?",
+            "choices": [
+              "field_bler and mentor_signoff",
+              "JSON hashing",
+              "README paths",
+              "Python version"
+            ],
+            "answer_index": 0,
+            "explanation": "Unsupported."
+          },
+          {
+            "id": "sgc-w7-3",
+            "kind": "mcq",
+            "stem": "SGC-6707: human_gate value?",
+            "choices": [
+              "EXTERNAL_HUMAN_GATE",
+              "COMPLETE",
+              "SIGNED",
+              "SKIP"
+            ],
+            "answer_index": 0,
+            "explanation": "External."
+          },
+          {
+            "id": "sgc-w7-4",
+            "kind": "mcq",
+            "stem": "SGC-6707: Campus generalization without evidence?",
+            "choices": [
+              "Unsupported",
+              "Required",
+              "Auto",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Unsupported."
+          },
+          {
+            "id": "sgc-w7-5",
+            "kind": "mcq",
+            "stem": "SGC-6707: Private competition IQ in notes?",
+            "choices": [
+              "Ethics fail",
+              "Required",
+              "Extra",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Fail."
+          },
+          {
+            "id": "sgc-w7-6",
+            "kind": "mcq",
+            "stem": "SGC-6707: Digital course can complete without field?",
+            "choices": [
+              "Yes \u2014 list open gates",
+              "No forever",
+              "Only with forged signoff",
+              "Only TX"
+            ],
+            "answer_index": 0,
+            "explanation": "Yes."
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Digital capstone package \u2014 reproducible research without mentor fiction",
+        "lesson": "Ticket SGC-6808 assembles the digital course capstone: research question, environment, provenance, method, fixture description, result digests, limitations, SIMULATED/DIGITAL_REPRODUCTION labels, README, evidence hashes, presentation notes, and reflection without PII. mentor_signed must be false; optional mentor-review placeholder is EXTERNAL_HUMAN_GATE only. Capstone forbids inventing physical evidence for credit. Strong simulated packages complete the digital course while listing physical follow-on work. Consensus Ladder: observed = package files; inferred = digital bar met; still need = mentor/hardware/field when scheduled. product_use_unmerged_consumed stays false. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures.",
+        "worked_example": "labs_passed>=6; mentor_signed=false; evidence_class=SIMULATED; includes_limitations=true",
+        "assignment": "Submit lab_sgc_capstone_package JSON for SGC-6808. Assemble README, provenance, hashes, limitations, presentation; mentor_signed stays false.",
+        "lab_id": "lab_sgc_capstone_package",
+        "quiz": [
+          {
+            "id": "sgc-w8-1",
+            "kind": "mcq",
+            "stem": "SGC-6808: mentor_signed in digital capstone?",
+            "choices": [
+              "false",
+              "true",
+              "optional true without review",
+              "auto"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "sgc-w8-2",
+            "kind": "mcq",
+            "stem": "SGC-6808: labs_passed minimum spirit?",
+            "choices": [
+              ">=6 prior lab digests",
+              "0",
+              "Screenshot only",
+              "PASS string"
+            ],
+            "answer_index": 0,
+            "explanation": "Six labs."
+          },
+          {
+            "id": "sgc-w8-3",
+            "kind": "mcq",
+            "stem": "SGC-6808: includes_limitations false?",
+            "choices": [
+              "Fails capstone honesty",
+              "Passes",
+              "Bonus",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Need limits."
+          },
+          {
+            "id": "sgc-w8-4",
+            "kind": "mcq",
+            "stem": "SGC-6808: Invent physical evidence for credit?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Extra",
+              "Silent"
+            ],
+            "answer_index": 0,
+            "explanation": "Forbidden."
+          },
+          {
+            "id": "sgc-w8-5",
+            "kind": "mcq",
+            "stem": "SGC-6808: Portfolio PII?",
+            "choices": [
+              "Forbidden",
+              "Required faces",
+              "Library PANs OK",
+              "Passwords OK"
+            ],
+            "answer_index": 0,
+            "explanation": "No PII."
+          },
+          {
+            "id": "sgc-w8-6",
+            "kind": "mcq",
+            "stem": "SGC-6808: product_use_unmerged_consumed?",
+            "choices": [
+              "false",
+              "true",
+              "ignored",
+              "required true"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Apprenticeship extension \u2014 cross-repo map and clean handoff",
+        "lesson": "Ticket SGC-6909 starts the 12-week apprenticeship extension digitally: a clean independent invocation reproduces the baseline digest, and learners map at least three entries from course_repo_map.yaml (digital twin, AI-RAN, beam selection, edge, NTN, waike-research-ops) with demo commands and evidence_class expectations. Unavailable siblings are recorded without fake SHAs. mutated_prod must be false. Mentor check-ins remain EXTERNAL_HUMAN_GATE. Consensus Ladder: observed = second-run digest match; inferred = handoff works; still need = live mentor pairing. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "independent_repro=true; map_rows>=3; unavailable_ok=true; mutated_prod=false",
+        "assignment": "Submit lab_sgc_repro_handoff JSON for SGC-6909. Independent digital invocation reproduces digest; map \u22653 apprenticeship repos honestly.",
+        "lab_id": "lab_sgc_repro_handoff",
+        "quiz": [
+          {
+            "id": "sgc-w9-1",
+            "kind": "mcq",
+            "stem": "SGC-6909: independent_repro true means?",
+            "choices": [
+              "Second clean run matches digest",
+              "Mentor signed",
+              "Field done",
+              "TX OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Match."
+          },
+          {
+            "id": "sgc-w9-2",
+            "kind": "mcq",
+            "stem": "SGC-6909: map_rows minimum?",
+            "choices": [
+              ">=3 apprenticeship map entries",
+              "0",
+              "1 fake",
+              "Only vendor"
+            ],
+            "answer_index": 0,
+            "explanation": "Three."
+          },
+          {
+            "id": "sgc-w9-3",
+            "kind": "mcq",
+            "stem": "SGC-6909: unavailable_ok?",
+            "choices": [
+              "true \u2014 record UNAVAILABLE",
+              "false \u2014 invent SHA",
+              "Must clone air-gapped prod",
+              "Ignore"
+            ],
+            "answer_index": 0,
+            "explanation": "OK."
+          },
+          {
+            "id": "sgc-w9-4",
+            "kind": "mcq",
+            "stem": "SGC-6909: mutated_prod?",
+            "choices": [
+              "false",
+              "true",
+              "optional",
+              "required"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "sgc-w9-5",
+            "kind": "mcq",
+            "stem": "SGC-6909: Mentor check-in completion digitally?",
+            "choices": [
+              "EXTERNAL_HUMAN_GATE only",
+              "Auto complete",
+              "Force true",
+              "Skip ethics"
+            ],
+            "answer_index": 0,
+            "explanation": "External."
+          },
+          {
+            "id": "sgc-w9-6",
+            "kind": "mcq",
+            "stem": "SGC-6909: Fake SHA for missing spectrumx repo?",
+            "choices": [
+              "Forbidden",
+              "Required",
+              "Extra",
+              "OK"
+            ],
+            "answer_index": 0,
+            "explanation": "Forbidden."
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Robustness iteration \u2014 sensitivity without fabricated field gains",
+        "lesson": "Ticket SGC-6A10 iterates the controlled experiment across snr_db variants on the SIMULATED table. Learners report whether the qualitative claim stays stable and keep field_gain_invented=false. Weeks 11\u201312 (review packet + final presentation with mentor) stay scaffolded as EXTERNAL_HUMAN_GATE / EXTERNAL_FIELD_GATE instructions \u2014 not digitally marked complete. Consensus Ladder: observed = three digests; inferred = sensitivity exists; still need = hardware sweep. Empty {} fails. print-PASS raises. Career map roles are aligned, not granted. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "snr_db_variants=[6,8,10]; claim_stable=false_unless_documented; field_gain_invented=false",
+        "assignment": "Submit lab_sgc_robustness JSON for SGC-6A10. Sweep one control on SIMULATED table; document sensitivity; refuse invented field gains.",
+        "lab_id": "lab_sgc_robustness",
+        "quiz": [
+          {
+            "id": "sgc-w10-1",
+            "kind": "mcq",
+            "stem": "SGC-6A10: snr_db_variants example?",
+            "choices": [
+              "[6,8,10]",
+              "[PASS]",
+              "[]",
+              "[mentor]"
+            ],
+            "answer_index": 0,
+            "explanation": "Sweep."
+          },
+          {
+            "id": "sgc-w10-2",
+            "kind": "mcq",
+            "stem": "SGC-6A10: field_gain_invented?",
+            "choices": [
+              "false",
+              "true",
+              "optional true",
+              "auto"
+            ],
+            "answer_index": 0,
+            "explanation": "False."
+          },
+          {
+            "id": "sgc-w10-3",
+            "kind": "mcq",
+            "stem": "SGC-6A10: Weeks 11\u201312 mentor presentation digitally marked complete?",
+            "choices": [
+              "No \u2014 external gates",
+              "Yes always",
+              "If quiz passed",
+              "If SIMULATED"
+            ],
+            "answer_index": 0,
+            "explanation": "External."
+          },
+          {
+            "id": "sgc-w10-4",
+            "kind": "mcq",
+            "stem": "SGC-6A10: claim_stable without documenting sensitivity?",
+            "choices": [
+              "Must not silently claim stability",
+              "Always stable",
+              "Ignore",
+              "Cert"
+            ],
+            "answer_index": 0,
+            "explanation": "Document."
+          },
+          {
+            "id": "sgc-w10-5",
+            "kind": "mcq",
+            "stem": "SGC-6A10: Career roles in portfolio?",
+            "choices": [
+              "Aligned not granted",
+              "Granted certs",
+              "ISC2 membership",
+              "3GPP membership"
+            ],
+            "answer_index": 0,
+            "explanation": "Aligned."
+          },
+          {
+            "id": "sgc-w10-6",
+            "kind": "mcq",
+            "stem": "SGC-6A10: Empty robustness JSON?",
+            "choices": [
+              "Fails",
+              "Passes",
+              "Bonus",
+              "Field complete"
+            ],
+            "answer_index": 0,
+            "explanation": "Fails."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -82,7 +82,7 @@ def _build() -> dict:
             "kind": "gap_ledger_package_count_stale",
             "ledger_digital_rc_course_count": 14,
             "disk_digital_rc_dir_count": len(pkgs),
-            "note": "Ledger predates EMBEDDED_PROTOTYPING and GUNNCHOS_PRODUCT_LAB package dirs.",
+            "note": "Ledger predates EMBEDDED_PROTOTYPING, GUNNCHOS_PRODUCT_LAB, and SEVEN_GC_APPRENTICESHIP package dirs.",
         }
     )
 
@@ -136,12 +136,12 @@ def _build() -> dict:
         "Reconciliation reports separating contract work from remaining content gaps",
     ]
     remaining_content_work = [
-        "SEVEN_GC_APPRENTICESHIP still has no digital_rc package (program shell only)",
         "DIGITAL_CONFIDENCE and IT_SUPPORT_HARDWARE remain shared under GENERAL_IT (no standalone packages)",
-        "Package version fields are null until versioned package manifests exist",
+        "Package version fields remain sparse until versioned package manifests exist for all tracks",
         "Track-level prerequisites arrays are empty pending evidence-backed prerequisite graph",
         "Stale gap ledger should be refreshed in a follow-up content/ops packet",
         "Similar-title lesson folders (networking, software_engineering, …) remain unresolved by design",
+        "SEVEN_GC EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open (digital package does not claim field completion)",
     ]
 
     payload = {

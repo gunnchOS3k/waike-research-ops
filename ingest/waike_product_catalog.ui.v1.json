@@ -187,6 +187,45 @@
         "DATA_DASHBOARDS"
       ],
       "academy_id": "ACADEMY_SOFTWARE"
+    },
+    {
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping \u2014 ForgeSense Subsystem Bench",
+      "kinesthetic_hook": "Ten ForgeSense Subsystem Bench weeks: memory map \u2192 GPIO \u2192 I2C \u2192 SPI \u2192 ADC \u2192 ISR \u2192 Zephyr QEMU \u2192 DT overlay \u2192 sleep \u2192 capstone. Digital-first; PHYSICAL_PENDING for solder/OTA.",
+      "lesson_excerpt": "ForgeSense Subsystem Bench ticket EP-4101: MCU memory map \u2014 flash vs SRAM before first boot. Map the nRF52840-class memory regions for ForgeSense subsystem firmware. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. ",
+      "worked_example": "flash_base=0x00000000, sram_base=0x20000000, vector_table_offset=0x100",
+      "assignment": "Submit lab_ep_memory_map JSON for EP-4101. Map the nRF52840-class memory regions for ForgeSense subsystem firmware.",
+      "lab_hint": "lab_ep_memory_map",
+      "track_ids": [
+        "EMBEDDED_PROTOTYPING"
+      ],
+      "academy_id": "ACADEMY_HARDWARE"
+    },
+    {
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab \u2014 Product Bench",
+      "kinesthetic_hook": "Ten gunnchOS Product Lab weeks: charter \u2192 compat matrix \u2192 checkout FSM \u2192 compose health \u2192 privacy BOM \u2192 guest protocol \u2192 release notes \u2192 CI tokens \u2192 dep pin \u2192 capstone.",
+      "lesson_excerpt": "gunnchOS Product Lab Bench ticket GPL-5101: Product charter \u2014 scope without fabricated impact. Charter Device Lab product scope; no invented community numbers. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY \u2014 original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show c",
+      "worked_example": "problem=checkout latency, goal_metric=median_wait_minutes, fabricated_outcomes=false",
+      "assignment": "Submit lab_gpl_product_charter JSON for GPL-5101. Charter Device Lab product scope; no invented community numbers.",
+      "lab_hint": "lab_gpl_product_charter",
+      "track_ids": [
+        "GUNNCHOS_PRODUCT_LAB"
+      ],
+      "academy_id": "ACADEMY_HARDWARE"
+    },
+    {
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "kinesthetic_hook": "Run the Gary 7GC Research Desk for ten digital weeks: evidence classes \u2192 repo recon \u2192 SIMULATED baseline \u2192 experiment design \u2192 controlled run \u2192 vendor claim audit \u2192 capstone, then apprenticeship extension handoff/robustness \u2014 without inventing mentor or field completion.",
+      "lesson_excerpt": "At the Gary 7GC Research Desk, week 1 is ticket SGC-6101: name what kind of evidence you hold before arguing about AI-RAN gains. Beginners hear 'digital twin' and invent pier coverage maps. Operators separate SIMULATED fixtures, DIGITAL_REPRODUCTION baselines, MEASURED_HARDWARE captures, MEASURED_FIELD trials, and HUMAN_REVIEW sign-offs. Commercial standardized 6G does not exist today; AI-RAN lang",
+      "worked_example": "classes=[SIMULATED,DIGITAL_REPRODUCTION,MEASURED_HARDWARE,MEASURED_FIELD,HUMAN_REVIEW]; pii_in_notes=false",
+      "assignment": "Submit lab_sgc_evidence_class JSON for SGC-6101. Classify five evidence snippets; mark privacy violations; refuse fabricated mentor sign-off.",
+      "lab_hint": "lab_sgc_evidence_class",
+      "track_ids": [
+        "SEVEN_GC_APPRENTICESHIP"
+      ],
+      "academy_id": "ACADEMY_SOFTWARE"
     }
   ]
 }

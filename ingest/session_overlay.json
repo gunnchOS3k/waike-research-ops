@@ -250,5 +250,59 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "EMBEDDED_PROTOTYPING-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "EMBEDDED_PROTOTYPING-offline",
+      "labs": [
+        "lab_ep_memory_map",
+        "lab_ep_gpio_contract"
+      ],
+      "catalog_course_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping \u2014 ForgeSense Subsystem Bench"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "GUNNCHOS_PRODUCT_LAB-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "GUNNCHOS_PRODUCT_LAB-offline",
+      "labs": [
+        "lab_gpl_product_charter",
+        "lab_gpl_compat_matrix"
+      ],
+      "catalog_course_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab \u2014 Product Bench"
+    },
+    "mock": false,
+    "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "SEVEN_GC_APPRENTICESHIP-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "SEVEN_GC_APPRENTICESHIP-offline",
+      "labs": [
+        "lab_sgc_evidence_class",
+        "lab_sgc_repo_recon"
+      ],
+      "catalog_course_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

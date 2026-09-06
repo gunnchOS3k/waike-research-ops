@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "sgc-w2-1",
+      "kind": "mcq",
+      "stem": "SGC-6202: Primary recon map for apprenticeship repos?",
+      "choices": [
+        "knowledge_maps/course_repo_map.yaml",
+        "Random Twitter thread",
+        "Vendor NDAs",
+        "Instructor keys"
+      ]
+    },
+    {
+      "id": "sgc-w2-2",
+      "kind": "mcq",
+      "stem": "SGC-6202: Sibling repo missing locally \u2014 honest field?",
+      "choices": [
+        "Invent SHA",
+        "UNAVAILABLE with no fake SHA",
+        "Mark MEASURED_FIELD",
+        "Skip ethics"
+      ]
+    },
+    {
+      "id": "sgc-w2-3",
+      "kind": "mcq",
+      "stem": "SGC-6202: Mutating production RAN from a student laptop?",
+      "choices": [
+        "Required lab",
+        "Extra credit",
+        "Forbidden",
+        "Silent OK"
+      ]
+    },
+    {
+      "id": "sgc-w2-4",
+      "kind": "mcq",
+      "stem": "SGC-6202: Repo recon evidence path should be?",
+      "choices": [
+        "Any Desktop clutter",
+        "Instructor keys",
+        "Discord DM",
+        "Named folder such as results/"
+      ]
+    },
+    {
+      "id": "sgc-w2-5",
+      "kind": "mcq",
+      "stem": "SGC-6202: Execution mode for local README/tests only?",
+      "choices": [
+        "LOCAL_SOFTWARE or REPO_CONNECTED",
+        "MEASURED_FIELD",
+        "HUMAN_REVIEW complete",
+        "TX on air"
+      ]
+    },
+    {
+      "id": "sgc-w2-6",
+      "kind": "mcq",
+      "stem": "SGC-6202: print-PASS body?",
+      "choices": [
+        "Auto-pass",
+        "Raises AssertionError",
+        "Mentor sign",
+        "Field complete"
+      ]
+    }
+  ]
+}

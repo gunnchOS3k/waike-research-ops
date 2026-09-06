@@ -1,0 +1,262 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "title": "7GC AI-RAN Research Apprenticeship",
+  "track_ids": [
+    "SEVEN_GC_APPRENTICESHIP"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Run the Gary 7GC Research Desk for ten digital weeks: evidence classes \u2192 repo recon \u2192 SIMULATED baseline \u2192 experiment design \u2192 controlled run \u2192 vendor claim audit \u2192 capstone, then apprenticeship extension handoff/robustness \u2014 without inventing mentor or field completion.",
+  "lesson_excerpt": "At the Gary 7GC Research Desk, week 1 is ticket SGC-6101: name what kind of evidence you hold before arguing about AI-RAN gains. Beginners hear 'digital twin' and invent pier coverage maps. Operators separate SIMULATED fixtures, DIGITAL_REPRODUCTION baselines, MEASURED_HARDWARE captures, MEASURED_FIELD trials, and HUMAN_REVIEW sign-offs. Commercial standardized 6G does not exist today; AI-RAN lang",
+  "worked_example": "classes=[SIMULATED,DIGITAL_REPRODUCTION,MEASURED_HARDWARE,MEASURED_FIELD,HUMAN_REVIEW]; pii_in_notes=false",
+  "assignment": "Submit lab_sgc_evidence_class JSON for SGC-6101. Classify five evidence snippets; mark privacy violations; refuse fabricated mentor sign-off.",
+  "lab_hint": "lab_sgc_evidence_class",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Research apprenticeship intuition \u2014 vocabulary, safety, claim boundaries",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w01",
+        "title": "Research apprenticeship intuition \u2014 vocabulary, safety, claim boundaries",
+        "body_md": "At the Gary 7GC Research Desk, week 1 is ticket SGC-6101: name what kind of evidence you hold before arguing about AI-RAN gains. Beginners hear 'digital twin' and invent pier coverage maps. Operators separate SIMULATED fixtures, DIGITAL_REPRODUCTION baselines, MEASURED_HARDWARE captures, MEASURED_FIELD trials, and HUMAN_REVIEW sign-offs. Commercial standardized 6G does not exist today; AI-RAN language stays research/systems with gates. Privacy is operational: no SSNs, no library PANs, no RF partner NDAs pasted into Discord. Consensus Ladder for SGC-6101: observed = labeled fixture row; inferred = simulation is not pier measurement; still need = EXTERNAL_PHYSICAL_GATE when hardware arrives. Failure mode: marking HUMAN_REVIEW complete because a template checkbox exists. Empty {} fails. A body that is only PASS raises. Journals cite programs/seven_gc_apprenticeship.md purpose without inventing campus pilot outcomes.",
+        "worked_example": "classes=[SIMULATED,DIGITAL_REPRODUCTION,MEASURED_HARDWARE,MEASURED_FIELD,HUMAN_REVIEW]; pii_in_notes=false"
+      },
+      "lab_id": "lab_sgc_evidence_class"
+    },
+    {
+      "week": 2,
+      "title": "Tools setup \u2014 repository reconnaissance without hardware",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w02",
+        "title": "Tools setup \u2014 repository reconnaissance without hardware",
+        "body_md": "Ticket SGC-6202 teaches repo navigation as research skill. Read knowledge_maps/course_repo_map.yaml and programs/research_apprenticeship_reproducible_research.md as PUBLIC_REFERENCE_ONLY maps \u2014 do not silently claim sibling repos are present if they are not checked out. Identify purpose, README/setup, inputs, outputs, tests, evidence folders, and limitations. Baseline commands stay LOCAL_SOFTWARE or REPO_CONNECTED deterministic paths. Never mutate production infrastructure or invent clone SHAs. If a mapped sibling (7gc-digital-twin, spectrumx-ai-ran-gary) is unavailable, record UNAVAILABLE honestly and continue on waike-research-ops fixtures. Consensus Ladder: observed = map row; inferred = demo target exists in docs; still need = actual clone at recorded SHA. Screenshots without paths fail. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them.",
+        "worked_example": "repo_id=waike-research-ops; purpose=reproducible_research_map; has_tests=true; evidence_path=results/"
+      },
+      "lab_id": "lab_sgc_repo_recon"
+    },
+    {
+      "week": 3,
+      "title": "Baseline reproduction \u2014 measurement literacy on SIMULATED fixtures",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w03",
+        "title": "Baseline reproduction \u2014 measurement literacy on SIMULATED fixtures",
+        "body_md": "Ticket SGC-6303 runs a deterministic SIMULATED KPI window under fixtures/sgc_baseline/. Learners record command, python version, cwd, output digest, and evidence_class=SIMULATED. The fixture is labeled for replacement by MEASURED_HARDWARE later \u2014 never rename it as field measured. Variables and controls stay named: seed, window_id, kpi_names. Stochastic storytelling without a seed fails. Hashes must be 64 hex characters. Consensus Ladder: observed = fixture bytes; inferred = baseline reproducible locally; still need = pier SDR capture. Empty {} fails. print-PASS raises. Do not invent bler curves or beamforming gains beyond fixture fields. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "fixture=fixtures/sgc_baseline/kpi_window.json; evidence_class=SIMULATED; output_sha256_len=64"
+      },
+      "lab_id": "lab_sgc_baseline_repro"
+    },
+    {
+      "week": 4,
+      "title": "Experiment design \u2014 question, variables, controls before any run",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w04",
+        "title": "Experiment design \u2014 question, variables, controls before any run",
+        "body_md": "Ticket SGC-6404 forbids running the controlled experiment until the design JSON exists. Learners state a testable research question, hypothesis, independent variable, dependent variable, controls, confounds, and claim/evidence matching. Example teaching scaffold: IV=mcs_index, DV=bler, control=snr_db on the SIMULATED table \u2014 not a claim that Gary pier closed a live loop. Confound examples include seed leakage and unlabeled vendor CSV merges. NO_AI week: hand-author the design. Consensus Ladder: observed = design fields; inferred = one IV change is planned; still need = run artifacts next week. Designs that promise MEASURED_FIELD without EXTERNAL_FIELD_GATE fail honesty. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures.",
+        "worked_example": "iv=mcs_index; dv=bler; control=snr_db; confound=seed_leak; claim_match=true"
+      },
+      "lab_id": "lab_sgc_experiment_design"
+    },
+    {
+      "week": 5,
+      "title": "Controlled SIMULATED experiment \u2014 one permitted variable",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w05",
+        "title": "Controlled SIMULATED experiment \u2014 one permitted variable",
+        "body_md": "Ticket SGC-6505 executes the week-4 design on the SIMULATED MCS/BLER table. Change only the permitted independent variable (mcs_index) while holding snr_db. Preserve raw artifact paths and label evidence_class=SIMULATED. Distinguish observation (table values) from inference (higher MCS needs headroom). Do not invent pier throughput. Auto-apply AI-RAN policies without human_gate language fail research ethics even in simulation. Consensus Ladder: observed = two JSON digests; inferred = DV moved with IV; still need = MEASURED_HARDWARE confirmation. Empty {} fails. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "baseline_mcs=2; trial_mcs=3; snr_db=8; evidence_class=SIMULATED; raw_preserved=true"
+      },
+      "lab_id": "lab_sgc_controlled_sim"
+    },
+    {
+      "week": 6,
+      "title": "Industry/vendor reality \u2014 standards vs products vs your fixture",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w06",
+        "title": "Industry/vendor reality \u2014 standards vs products vs your fixture",
+        "body_md": "Ticket SGC-6606 is documentation literacy week. Parse week-5 outputs with deterministic tooling and compare a vendor '6G ready' slogan to what the fixture actually supports. commercial_6g_exists must remain false. Open-source repo demos are not carrier deployments. O-RAN vocabulary may appear as PUBLIC_REFERENCE_ONLY labels without claiming a production Near-RT RIC. Consensus Ladder: observed = fixture KPI delta; inferred = slogan overclaims; still need = standards document citations without exam dumps. Analysis that upgrades SIMULATED to MEASURED_FIELD without new evidence fails. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "vendor_claim=6G ready; fixture_supports=false; commercial_6g_exists=false; docs_cited=true"
+      },
+      "lab_id": "lab_sgc_analysis"
+    },
+    {
+      "week": 7,
+      "title": "Research frontier + ethics \u2014 claim audit and validity limits",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w07",
+        "title": "Research frontier + ethics \u2014 claim audit and validity limits",
+        "body_md": "Ticket SGC-6707 is the claim-audit week. Learners list what results do and do not establish. Supported may include a local SIMULATED delta under fixed SNR. Unsupported includes field BLER, partner participation, student outcome statistics, and mentor signatures. Privacy/security: no unauthorized TX narratives, no private competition IQ. Unsupported generalization across 7GC campuses fails. NO_AI quiz week still allows disclosed calculators on lab JSON. Consensus Ladder: observed = audit lists; inferred = digital course can complete without field; still need = EXTERNAL_HUMAN_GATE / EXTERNAL_PHYSICAL_GATE / EXTERNAL_FIELD_GATE as named open gates. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance.",
+        "worked_example": "supports=['local_sim_delta']; does_not_support=['field_bler','mentor_signoff']; human_gate=EXTERNAL_HUMAN_GATE"
+      },
+      "lab_id": "lab_sgc_claim_audit"
+    },
+    {
+      "week": 8,
+      "title": "Digital capstone package \u2014 reproducible research without mentor fiction",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w08",
+        "title": "Digital capstone package \u2014 reproducible research without mentor fiction",
+        "body_md": "Ticket SGC-6808 assembles the digital course capstone: research question, environment, provenance, method, fixture description, result digests, limitations, SIMULATED/DIGITAL_REPRODUCTION labels, README, evidence hashes, presentation notes, and reflection without PII. mentor_signed must be false; optional mentor-review placeholder is EXTERNAL_HUMAN_GATE only. Capstone forbids inventing physical evidence for credit. Strong simulated packages complete the digital course while listing physical follow-on work. Consensus Ladder: observed = package files; inferred = digital bar met; still need = mentor/hardware/field when scheduled. product_use_unmerged_consumed stays false. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures.",
+        "worked_example": "labs_passed>=6; mentor_signed=false; evidence_class=SIMULATED; includes_limitations=true"
+      },
+      "lab_id": "lab_sgc_capstone_package"
+    },
+    {
+      "week": 9,
+      "title": "Apprenticeship extension \u2014 cross-repo map and clean handoff",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w09",
+        "title": "Apprenticeship extension \u2014 cross-repo map and clean handoff",
+        "body_md": "Ticket SGC-6909 starts the 12-week apprenticeship extension digitally: a clean independent invocation reproduces the baseline digest, and learners map at least three entries from course_repo_map.yaml (digital twin, AI-RAN, beam selection, edge, NTN, waike-research-ops) with demo commands and evidence_class expectations. Unavailable siblings are recorded without fake SHAs. mutated_prod must be false. Mentor check-ins remain EXTERNAL_HUMAN_GATE. Consensus Ladder: observed = second-run digest match; inferred = handoff works; still need = live mentor pairing. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "independent_repro=true; map_rows>=3; unavailable_ok=true; mutated_prod=false"
+      },
+      "lab_id": "lab_sgc_repro_handoff"
+    },
+    {
+      "week": 10,
+      "title": "Robustness iteration \u2014 sensitivity without fabricated field gains",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w10",
+        "title": "Robustness iteration \u2014 sensitivity without fabricated field gains",
+        "body_md": "Ticket SGC-6A10 iterates the controlled experiment across snr_db variants on the SIMULATED table. Learners report whether the qualitative claim stays stable and keep field_gain_invented=false. Weeks 11\u201312 (review packet + final presentation with mentor) stay scaffolded as EXTERNAL_HUMAN_GATE / EXTERNAL_FIELD_GATE instructions \u2014 not digitally marked complete. Consensus Ladder: observed = three digests; inferred = sensitivity exists; still need = hardware sweep. Empty {} fails. print-PASS raises. Career map roles are aligned, not granted. Apprentices speak Consensus Ladder rungs out loud: observed, inferred, still-need. SIMULATED fixtures stay labeled until a MEASURED_HARDWARE capture replaces them. Mentor approval stays EXTERNAL_HUMAN_GATE; portfolios never invent signatures. Gary 7GC Research Desk tickets refuse vendor throughput theater without provenance. Repo SHAs and fixture hashes belong in journals before any slide deck claim.",
+        "worked_example": "snr_db_variants=[6,8,10]; claim_stable=false_unless_documented; field_gain_invented=false"
+      },
+      "lab_id": "lab_sgc_robustness"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_sgc_evidence_class",
+    "lab_sgc_repo_recon",
+    "lab_sgc_baseline_repro",
+    "lab_sgc_experiment_design",
+    "lab_sgc_controlled_sim",
+    "lab_sgc_analysis",
+    "lab_sgc_claim_audit",
+    "lab_sgc_capstone_package",
+    "lab_sgc_repro_handoff",
+    "lab_sgc_robustness"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "SEVEN_GC_APPRENTICESHIP-lab",
+    "SEVEN_GC_APPRENTICESHIP-assignment",
+    "SEVEN_GC_APPRENTICESHIP-quiz",
+    "SEVEN_GC_APPRENTICESHIP-mid",
+    "SEVEN_GC_APPRENTICESHIP-final-knowledge",
+    "SEVEN_GC_APPRENTICESHIP-practical",
+    "SEVEN_GC_APPRENTICESHIP-project",
+    "SEVEN_GC_APPRENTICESHIP-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "wireless_research_apprentice",
+      "ran_systems_analyst_junior",
+      "reproducible_research_technician"
+    ],
+    "nice_categories": [
+      "analyze",
+      "build_and_deploy"
+    ],
+    "certs_aligned_not_granted": [
+      "3GPP/O-RAN topic labels (PUBLIC_REFERENCE_ONLY)",
+      "AI-RAN study-item vocabulary (not membership)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/seven_gc_apprenticeship_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      7
+    ],
+    "tutor_commands": {
+      "lesson": "/waike lesson seven_gc_apprenticeship",
+      "explain": "/explain",
+      "quiz_practice": "/quizme"
+    },
+    "graded_answers_protected": true,
+    "ai_never_silently_grades": true
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

@@ -1,14 +1,14 @@
 # WAIKE Taxonomy Reconciliation
 
-Generated (UTC): `2026-09-02T19:34:18Z`
-Source commit: `34bfdc9f5048b85e1dbc1b232e01ea743b01cb9a`
-Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e896d9c4ac`
+Generated (UTC): `2026-09-06T18:49:05Z`
+Source commit: `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`
+Registry hash (sha256): `aee5e4726adfbdab9d036efa1687dceb51efa28bb020603bb84fd8486d5b2942`
 
 ## Exact counts
 
 - Canonical tracks: **18**
 - Historical aliases: **32**
-- Digital RC package dirs on disk (`ls curriculum/digital_rc`): **16**
+- Digital RC package dirs on disk (`ls curriculum/digital_rc`): **17**
 - Package mappings: **4**
 - Unresolved collisions: **2**
 - Mismatches recorded: **3**
@@ -29,7 +29,7 @@ Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e
 | `WIRELESS_6G` | `ACADEMY_NETWORKING` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_WIRELESS_6G` |
 | `PM_AGILE_LSS` | `ACADEMY_PROCESS_PM` | `FOUNDATION` | `digital_rc_present` | `WAIKE_COURSE_PM_AGILE_LSS`, `pm_agile_lss` |
 | `GAME_DEV_INTERACTIVE` | `ACADEMY_SOFTWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_GAME_DEV_INTERACTIVE`, `game_dev_interactive` |
-| `SEVEN_GC_APPRENTICESHIP` | `ACADEMY_SOFTWARE` | `RESEARCH_APPRENTICESHIP` | `program_shell_only` | `WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP`, `seven_gc_apprenticeship` |
+| `SEVEN_GC_APPRENTICESHIP` | `ACADEMY_SOFTWARE` | `RESEARCH_APPRENTICESHIP` | `digital_rc_present` | `WAIKE_COURSE_SEVEN_GC_APPRENTICESHIP`, `seven_gc_apprenticeship` |
 | `CLOUD_DEVOPS` | `ACADEMY_SOFTWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_CLOUD_DEVOPS`, `cloud_devops` |
 | `COMM_PD_ETHICS` | `ACADEMY_PROF_DEV` | `FOUNDATION` | `digital_rc_present` | `WAIKE_COURSE_COMM_PD_ETHICS` |
 | `ROBOTICS_CONTROL` | `ACADEMY_HARDWARE` | `ADVANCED_EXTENSION` | `digital_rc_present` | `WAIKE_COURSE_ROBOTICS_CONTROL`, `robotics_control` |
@@ -46,7 +46,7 @@ Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e
 
 ## Digital RC packages on disk
 
-`AI_ML_EDGE`, `CLOUD_DEVOPS`, `COMM_PD_ETHICS`, `COMPUTER_NETWORKING`, `CYBERSECURITY`, `DATA_DASHBOARDS`, `DATA_VIZ_BI`, `EMBEDDED_PROTOTYPING`, `GAME_DEV_INTERACTIVE`, `GENERAL_IT`, `GUNNCHOS_PRODUCT_LAB`, `HARDWARE_ENGINEERING`, `PM_AGILE_LSS`, `ROBOTICS_CONTROL`, `SOFTWARE_BUILDER`, `WIRELESS_6G`
+`AI_ML_EDGE`, `CLOUD_DEVOPS`, `COMM_PD_ETHICS`, `COMPUTER_NETWORKING`, `CYBERSECURITY`, `DATA_DASHBOARDS`, `DATA_VIZ_BI`, `EMBEDDED_PROTOTYPING`, `GAME_DEV_INTERACTIVE`, `GENERAL_IT`, `GUNNCHOS_PRODUCT_LAB`, `HARDWARE_ENGINEERING`, `PM_AGILE_LSS`, `ROBOTICS_CONTROL`, `SEVEN_GC_APPRENTICESHIP`, `SOFTWARE_BUILDER`, `WIRELESS_6G`
 
 ## Historical IDs retained as aliases
 
@@ -61,7 +61,7 @@ Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e
 
 - `shared_package_also_has_standalone_track_package`: EMBEDDED_PROTOTYPING also has curriculum/digital_rc/EMBEDDED_PROTOTYPING; package_mappings records multi-cover without aliasing.
 - `gap_ledger_stale_vs_disk`: WAIKE_FULL_TAXONOMY_GAP_LEDGER.json marked NETWORKING_INFRA/CYBER_SOC BELOW_BAR; disk has COMPUTER_NETWORKING and CYBERSECURITY packages mapping 1:1.
-- `gap_ledger_package_count_stale`: Ledger predates EMBEDDED_PROTOTYPING and GUNNCHOS_PRODUCT_LAB package dirs.
+- `gap_ledger_package_count_stale`: Ledger predates EMBEDDED_PROTOTYPING, GUNNCHOS_PRODUCT_LAB, and SEVEN_GC_APPRENTICESHIP package dirs.
 
 ## Similar titles intentionally NOT aliased
 
@@ -79,9 +79,9 @@ Registry hash (sha256): `7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e
 
 ## Remaining content work (out of contract scope)
 
-- SEVEN_GC_APPRENTICESHIP still has no digital_rc package (program shell only)
 - DIGITAL_CONFIDENCE and IT_SUPPORT_HARDWARE remain shared under GENERAL_IT (no standalone packages)
-- Package version fields are null until versioned package manifests exist
+- Package version fields remain sparse until versioned package manifests exist for all tracks
 - Track-level prerequisites arrays are empty pending evidence-backed prerequisite graph
 - Stale gap ledger should be refreshed in a follow-up content/ops packet
 - Similar-title lesson folders (networking, software_engineering, …) remain unresolved by design
+- SEVEN_GC EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open (digital package does not claim field completion)

@@ -1080,6 +1080,9 @@ from waike_course_ready.batch006.labs import (
 from waike_course_ready.batch007.labs import (
     LABS_007, COURSE_LABS_007, LAB_SPECS_007, REFERENCE_007, WRONG_007,
 )
+from waike_course_ready.batch008.labs import (
+    LABS_008, COURSE_LABS_008, LAB_SPECS_008, REFERENCE_008, WRONG_008,
+)
 
 LABS.update(LABS_002)
 LABS.update(LABS_003)
@@ -1087,6 +1090,7 @@ LABS.update(LABS_004)
 LABS.update(LABS_005)
 LABS.update(LABS_006)
 LABS.update(LABS_007)
+LABS.update(LABS_008)
 # Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
 COURSE_LABS.update(COURSE_LABS_003)
@@ -1094,24 +1098,28 @@ COURSE_LABS.update(COURSE_LABS_004)
 COURSE_LABS.update(COURSE_LABS_005)
 COURSE_LABS.update(COURSE_LABS_006)
 COURSE_LABS.update(COURSE_LABS_007)
+COURSE_LABS.update(COURSE_LABS_008)
 LAB_SPECS.update(LAB_SPECS_002)
 LAB_SPECS.update(LAB_SPECS_003)
 LAB_SPECS.update(LAB_SPECS_004)
 LAB_SPECS.update(LAB_SPECS_005)
 LAB_SPECS.update(LAB_SPECS_006)
 LAB_SPECS.update(LAB_SPECS_007)
+LAB_SPECS.update(LAB_SPECS_008)
 REFERENCE.update(REFERENCE_002)
 REFERENCE.update(REFERENCE_003)
 REFERENCE.update(REFERENCE_004)
 REFERENCE.update(REFERENCE_005)
 REFERENCE.update(REFERENCE_006)
 REFERENCE.update(REFERENCE_007)
+REFERENCE.update(REFERENCE_008)
 WRONG.update(WRONG_002)
 WRONG.update(WRONG_003)
 WRONG.update(WRONG_004)
 WRONG.update(WRONG_005)
 WRONG.update(WRONG_006)
 WRONG.update(WRONG_007)
+WRONG.update(WRONG_008)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])

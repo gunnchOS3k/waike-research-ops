@@ -36,7 +36,7 @@ Product Charter **layer 14**. Surfaced via Ecosystem Portal `WAIKE` docs; pairs 
 
 ## Try / inspect in 5 minutes
 
-Counts below are file-backed: **18** catalog IDs in `curriculum/catalog.yaml`, **14** digital-RC packages under `curriculum/digital_rc/`. Do not collapse those numbers.
+Counts below are file-backed: **18** catalog IDs in `curriculum/catalog.yaml`, **17** digital-RC packages under `curriculum/digital_rc/` (SEVEN_GC_APPRENTICESHIP included; DIGITAL_CONFIDENCE/IT_SUPPORT_HARDWARE still share GENERAL_IT). Do not collapse those numbers.
 
 ```bash
 python3 -m pip install pytest

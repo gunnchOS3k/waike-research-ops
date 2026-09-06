@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "quizzes": {
+    "SEVEN_GC_APPRENTICESHIP-q01": [
+      {
+        "id": "sgc-w1-1",
+        "answer_index": 2,
+        "explanation": "Labeled fixture."
+      },
+      {
+        "id": "sgc-w1-2",
+        "answer_index": 3,
+        "explanation": "No PII."
+      },
+      {
+        "id": "sgc-w1-3",
+        "answer_index": 0,
+        "explanation": "False."
+      },
+      {
+        "id": "sgc-w1-4",
+        "answer_index": 1,
+        "explanation": "External gate."
+      },
+      {
+        "id": "sgc-w1-5",
+        "answer_index": 2,
+        "explanation": "Physical gate."
+      },
+      {
+        "id": "sgc-w1-6",
+        "answer_index": 3,
+        "explanation": "Empty fails."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q02": [
+      {
+        "id": "sgc-w2-1",
+        "answer_index": 0,
+        "explanation": "Map file."
+      },
+      {
+        "id": "sgc-w2-2",
+        "answer_index": 1,
+        "explanation": "Unavailable."
+      },
+      {
+        "id": "sgc-w2-3",
+        "answer_index": 2,
+        "explanation": "No prod mutate."
+      },
+      {
+        "id": "sgc-w2-4",
+        "answer_index": 3,
+        "explanation": "Named path."
+      },
+      {
+        "id": "sgc-w2-5",
+        "answer_index": 0,
+        "explanation": "Digital modes."
+      },
+      {
+        "id": "sgc-w2-6",
+        "answer_index": 1,
+        "explanation": "Forbidden."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q03": [
+      {
+        "id": "sgc-w3-1",
+        "answer_index": 2,
+        "explanation": "Simulated."
+      },
+      {
+        "id": "sgc-w3-2",
+        "answer_index": 3,
+        "explanation": "SHA-256 hex."
+      },
+      {
+        "id": "sgc-w3-3",
+        "answer_index": 0,
+        "explanation": "No rename."
+      },
+      {
+        "id": "sgc-w3-4",
+        "answer_index": 1,
+        "explanation": "Need seed."
+      },
+      {
+        "id": "sgc-w3-5",
+        "answer_index": 2,
+        "explanation": "Later measure."
+      },
+      {
+        "id": "sgc-w3-6",
+        "answer_index": 3,
+        "explanation": "No invent."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q04": [
+      {
+        "id": "sgc-w4-1",
+        "answer_index": 0,
+        "explanation": "Hand author."
+      },
+      {
+        "id": "sgc-w4-2",
+        "answer_index": 1,
+        "explanation": "MCS/BLER."
+      },
+      {
+        "id": "sgc-w4-3",
+        "answer_index": 2,
+        "explanation": "Honesty."
+      },
+      {
+        "id": "sgc-w4-4",
+        "answer_index": 3,
+        "explanation": "Confound."
+      },
+      {
+        "id": "sgc-w4-5",
+        "answer_index": 0,
+        "explanation": "Match."
+      },
+      {
+        "id": "sgc-w4-6",
+        "answer_index": 1,
+        "explanation": "Design first."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q05": [
+      {
+        "id": "sgc-w5-1",
+        "answer_index": 2,
+        "explanation": "One IV."
+      },
+      {
+        "id": "sgc-w5-2",
+        "answer_index": 3,
+        "explanation": "Simulated."
+      },
+      {
+        "id": "sgc-w5-3",
+        "answer_index": 0,
+        "explanation": "Preserve raw."
+      },
+      {
+        "id": "sgc-w5-4",
+        "answer_index": 1,
+        "explanation": "Gates."
+      },
+      {
+        "id": "sgc-w5-5",
+        "answer_index": 2,
+        "explanation": "Split."
+      },
+      {
+        "id": "sgc-w5-6",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q06": [
+      {
+        "id": "sgc-w6-1",
+        "answer_index": 0,
+        "explanation": "False."
+      },
+      {
+        "id": "sgc-w6-2",
+        "answer_index": 1,
+        "explanation": "Overclaim."
+      },
+      {
+        "id": "sgc-w6-3",
+        "answer_index": 2,
+        "explanation": "Fails."
+      },
+      {
+        "id": "sgc-w6-4",
+        "answer_index": 3,
+        "explanation": "Reference."
+      },
+      {
+        "id": "sgc-w6-5",
+        "answer_index": 0,
+        "explanation": "Cite docs."
+      },
+      {
+        "id": "sgc-w6-6",
+        "answer_index": 1,
+        "explanation": "No."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q07": [
+      {
+        "id": "sgc-w7-1",
+        "answer_index": 2,
+        "explanation": "Local sim."
+      },
+      {
+        "id": "sgc-w7-2",
+        "answer_index": 3,
+        "explanation": "Unsupported."
+      },
+      {
+        "id": "sgc-w7-3",
+        "answer_index": 0,
+        "explanation": "External."
+      },
+      {
+        "id": "sgc-w7-4",
+        "answer_index": 1,
+        "explanation": "Unsupported."
+      },
+      {
+        "id": "sgc-w7-5",
+        "answer_index": 2,
+        "explanation": "Fail."
+      },
+      {
+        "id": "sgc-w7-6",
+        "answer_index": 3,
+        "explanation": "Yes."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q08": [
+      {
+        "id": "sgc-w8-1",
+        "answer_index": 0,
+        "explanation": "False."
+      },
+      {
+        "id": "sgc-w8-2",
+        "answer_index": 1,
+        "explanation": "Six labs."
+      },
+      {
+        "id": "sgc-w8-3",
+        "answer_index": 2,
+        "explanation": "Need limits."
+      },
+      {
+        "id": "sgc-w8-4",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      },
+      {
+        "id": "sgc-w8-5",
+        "answer_index": 0,
+        "explanation": "No PII."
+      },
+      {
+        "id": "sgc-w8-6",
+        "answer_index": 1,
+        "explanation": "False."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q09": [
+      {
+        "id": "sgc-w9-1",
+        "answer_index": 2,
+        "explanation": "Match."
+      },
+      {
+        "id": "sgc-w9-2",
+        "answer_index": 3,
+        "explanation": "Three."
+      },
+      {
+        "id": "sgc-w9-3",
+        "answer_index": 0,
+        "explanation": "OK."
+      },
+      {
+        "id": "sgc-w9-4",
+        "answer_index": 1,
+        "explanation": "False."
+      },
+      {
+        "id": "sgc-w9-5",
+        "answer_index": 2,
+        "explanation": "External."
+      },
+      {
+        "id": "sgc-w9-6",
+        "answer_index": 3,
+        "explanation": "Forbidden."
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q10": [
+      {
+        "id": "sgc-w10-1",
+        "answer_index": 0,
+        "explanation": "Sweep."
+      },
+      {
+        "id": "sgc-w10-2",
+        "answer_index": 1,
+        "explanation": "False."
+      },
+      {
+        "id": "sgc-w10-3",
+        "answer_index": 2,
+        "explanation": "External."
+      },
+      {
+        "id": "sgc-w10-4",
+        "answer_index": 3,
+        "explanation": "Document."
+      },
+      {
+        "id": "sgc-w10-5",
+        "answer_index": 0,
+        "explanation": "Aligned."
+      },
+      {
+        "id": "sgc-w10-6",
+        "answer_index": 1,
+        "explanation": "Fails."
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "sgc-mid-01",
+      "answer_index": 3,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-02",
+      "answer_index": 0,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-03",
+      "answer_index": 1,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-04",
+      "answer_index": 2,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-05",
+      "answer_index": 3,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-06",
+      "answer_index": 0,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-07",
+      "answer_index": 1,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-08",
+      "answer_index": 2,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-09",
+      "answer_index": 3,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-10",
+      "answer_index": 0,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-11",
+      "answer_index": 1,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-12",
+      "answer_index": 2,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-13",
+      "answer_index": 3,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-14",
+      "answer_index": 0,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-15",
+      "answer_index": 1,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-16",
+      "answer_index": 2,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-17",
+      "answer_index": 3,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-18",
+      "answer_index": 0,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-19",
+      "answer_index": 1,
+      "explanation": "Digital honesty."
+    },
+    {
+      "id": "sgc-mid-20",
+      "answer_index": 2,
+      "explanation": "Digital honesty."
+    }
+  ],
+  "final": [
+    {
+      "id": "sgc-fin-01",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-02",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-03",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-04",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-05",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-06",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-07",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-08",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-09",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-10",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-11",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-12",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-13",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-14",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-15",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-16",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-17",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-18",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-19",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-20",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-21",
+      "answer_index": 0,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-22",
+      "answer_index": 1,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-23",
+      "answer_index": 2,
+      "explanation": "Honor boundaries."
+    },
+    {
+      "id": "sgc-fin-24",
+      "answer_index": 3,
+      "explanation": "Honor boundaries."
+    }
+  ]
+}

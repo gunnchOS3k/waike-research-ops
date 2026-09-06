@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "sgc-w5-1",
+      "kind": "mcq",
+      "stem": "SGC-6505: How many IVs may change in controlled sim?",
+      "choices": [
+        "All at once",
+        "None ever",
+        "One permitted IV",
+        "Only mentor picks secretly"
+      ]
+    },
+    {
+      "id": "sgc-w5-2",
+      "kind": "mcq",
+      "stem": "SGC-6505: evidence_class for this run?",
+      "choices": [
+        "MEASURED_FIELD",
+        "HUMAN_REVIEW",
+        "Partner",
+        "SIMULATED"
+      ]
+    },
+    {
+      "id": "sgc-w5-3",
+      "kind": "mcq",
+      "stem": "SGC-6505: raw_preserved false?",
+      "choices": [
+        "Fails lab",
+        "Passes",
+        "Bonus",
+        "Cert"
+      ]
+    },
+    {
+      "id": "sgc-w5-4",
+      "kind": "mcq",
+      "stem": "SGC-6505: Ungated auto-apply AI-RAN in sim write-up?",
+      "choices": [
+        "Required",
+        "Fails ethics narrative",
+        "Extra",
+        "OK"
+      ]
+    },
+    {
+      "id": "sgc-w5-5",
+      "kind": "mcq",
+      "stem": "SGC-6505: Observation vs inference?",
+      "choices": [
+        "Same thing",
+        "Mentor only",
+        "Table values vs 'needs headroom' story",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "sgc-w5-6",
+      "kind": "mcq",
+      "stem": "SGC-6505: Invent pier throughput from fixture?",
+      "choices": [
+        "Required",
+        "Extra",
+        "Auto",
+        "Forbidden"
+      ]
+    }
+  ]
+}

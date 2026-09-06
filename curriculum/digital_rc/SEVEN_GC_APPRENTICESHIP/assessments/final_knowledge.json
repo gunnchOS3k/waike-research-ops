@@ -1,0 +1,269 @@
+{
+  "assessment_id": "SEVEN_GC_APPRENTICESHIP-final",
+  "items": [
+    {
+      "id": "sgc-fin-01",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 1: regarding evidence classes \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor evidence classes without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-02",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 2: regarding repo recon UNAVAILABLE \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor repo recon UNAVAILABLE without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-03",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 3: regarding baseline sha256 \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor baseline sha256 without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-04",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 4: regarding design-before-run \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor design-before-run without fabricating field/mentor completion"
+      ]
+    },
+    {
+      "id": "sgc-fin-05",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 5: regarding one IV change \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor one IV change without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-06",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 6: regarding commercial_6g_exists false \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor commercial_6g_exists false without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-07",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 7: regarding claim audit gates \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor claim audit gates without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-08",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 8: regarding capstone limitations \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor capstone limitations without fabricating field/mentor completion"
+      ]
+    },
+    {
+      "id": "sgc-fin-09",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 9: regarding independent repro \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor independent repro without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-10",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 10: regarding snr sweep no field invention \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor snr sweep no field invention without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-11",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 11: regarding EXTERNAL_HUMAN_GATE \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor EXTERNAL_HUMAN_GATE without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-12",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 12: regarding EXTERNAL_PHYSICAL_GATE \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor EXTERNAL_PHYSICAL_GATE without fabricating field/mentor completion"
+      ]
+    },
+    {
+      "id": "sgc-fin-13",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 13: regarding EXTERNAL_FIELD_GATE \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor EXTERNAL_FIELD_GATE without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-14",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 14: regarding no PII \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor no PII without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-15",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 15: regarding print-PASS forbidden \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor print-PASS forbidden without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-16",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 16: regarding empty JSON fails \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor empty JSON fails without fabricating field/mentor completion"
+      ]
+    },
+    {
+      "id": "sgc-fin-17",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 17: regarding gunnchAI practice only \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor gunnchAI practice only without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-18",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 18: regarding workshop vs apprenticeship formats \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor workshop vs apprenticeship formats without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-19",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 19: regarding Consensus Ladder \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor Consensus Ladder without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-20",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 20: regarding PUBLIC_REFERENCE_ONLY standards \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor PUBLIC_REFERENCE_ONLY standards without fabricating field/mentor completion"
+      ]
+    },
+    {
+      "id": "sgc-fin-21",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 21: regarding no prod mutation \u2014 correct digital-course stance?",
+      "choices": [
+        "Honor no prod mutation without fabricating field/mentor completion",
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-22",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 22: regarding portfolio without mentor fiction \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Honor portfolio without mentor fiction without fabricating field/mentor completion",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-23",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 23: regarding weeks 11-12 external \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Honor weeks 11-12 external without fabricating field/mentor completion",
+        "Leak answer keys"
+      ]
+    },
+    {
+      "id": "sgc-fin-24",
+      "kind": "mcq",
+      "stem": "SEVEN_GC final 24: regarding RESEARCH_APPRENTICESHIP class retained \u2014 correct digital-course stance?",
+      "choices": [
+        "Forge MEASURED_FIELD for credit",
+        "Collapse track into WIRELESS_6G",
+        "Leak answer keys",
+        "Honor RESEARCH_APPRENTICESHIP class retained without fabricating field/mentor completion"
+      ]
+    }
+  ]
+}

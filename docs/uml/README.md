@@ -4,7 +4,7 @@ Authoritative architecture for **this repository**: education/ops content and va
 
 | Lane | Meaning |
 |---|---|
-| **current/** | Catalog, 14 digital-RC packages, ingest, labs, tests in this checkout |
+| **current/** | Catalog, 17 digital-RC packages, ingest, labs, tests in this checkout |
 | **future/** | Partner execution, accredited programs, named-learner LMS |
 | **legacy/** | Generic spine mermaid under `docs/diagrams/` |
 

@@ -1,0 +1,195 @@
+[
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-lab",
+    "title": "Research Desk lab",
+    "criteria": [
+      {
+        "name": "machine_fields",
+        "weight": 25,
+        "desc": "Lab JSON fields honest"
+      },
+      {
+        "name": "evidence_class",
+        "weight": 25,
+        "desc": "SIMULATED/DIGITAL labeled"
+      },
+      {
+        "name": "empty_fails",
+        "weight": 25,
+        "desc": "Empty fails"
+      },
+      {
+        "name": "print_pass",
+        "weight": 25,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-assignment",
+    "title": "Research journal",
+    "criteria": [
+      {
+        "name": "ticket_ids",
+        "weight": 40,
+        "desc": "Uses SGC tickets"
+      },
+      {
+        "name": "no_pii",
+        "weight": 30,
+        "desc": "No secrets/PII"
+      },
+      {
+        "name": "ai_disclosure",
+        "weight": 30,
+        "desc": "AI mode tagged"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-quiz",
+    "title": "Knowledge check",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "Original stems"
+      },
+      {
+        "name": "key_hidden",
+        "weight": 50,
+        "desc": "Keys instructor-only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-mid",
+    "title": "Mid audit",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 60,
+        "desc": "20 non-clone items"
+      },
+      {
+        "name": "honesty",
+        "weight": 40,
+        "desc": "Simulated vs measured discipline"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-final-knowledge",
+    "title": "Final knowledge",
+    "criteria": [
+      {
+        "name": "original_stems",
+        "weight": 50,
+        "desc": "24 non-clone"
+      },
+      {
+        "name": "external_gates",
+        "weight": 50,
+        "desc": "EXTERNAL_* gates named"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-practical",
+    "title": "Practical labs",
+    "criteria": [
+      {
+        "name": "student_json",
+        "weight": 40,
+        "desc": "Reference passes; empty fails"
+      },
+      {
+        "name": "negatives",
+        "weight": 30,
+        "desc": "Wrong submissions fail"
+      },
+      {
+        "name": "print_pass",
+        "weight": 30,
+        "desc": "PASS rejected"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-project",
+    "title": "Capstone package",
+    "criteria": [
+      {
+        "name": "question_quality",
+        "weight": 10,
+        "desc": "Testable question"
+      },
+      {
+        "name": "setup_provenance",
+        "weight": 10,
+        "desc": "Env/SHA/fixture"
+      },
+      {
+        "name": "method",
+        "weight": 10,
+        "desc": "Method clarity"
+      },
+      {
+        "name": "experiment_design",
+        "weight": 10,
+        "desc": "IV/DV/controls"
+      },
+      {
+        "name": "evidence_integrity",
+        "weight": 10,
+        "desc": "Hashes/raw preserved"
+      },
+      {
+        "name": "analysis",
+        "weight": 10,
+        "desc": "No overclaim"
+      },
+      {
+        "name": "claim_discipline",
+        "weight": 10,
+        "desc": "Supports/does-not-support"
+      },
+      {
+        "name": "limitations",
+        "weight": 10,
+        "desc": "Limitations explicit"
+      },
+      {
+        "name": "communication",
+        "weight": 10,
+        "desc": "Presentation clarity"
+      },
+      {
+        "name": "portfolio_quality",
+        "weight": 10,
+        "desc": "README + artifacts"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-portfolio",
+    "title": "Portfolio",
+    "criteria": [
+      {
+        "name": "claim_boundary",
+        "weight": 40,
+        "desc": "EXTERNAL gates + SIMULATED labels"
+      },
+      {
+        "name": "machine_artifacts",
+        "weight": 30,
+        "desc": "Lab JSON digests"
+      },
+      {
+        "name": "career_map",
+        "weight": 30,
+        "desc": "Aligned roles not granted"
+      }
+    ]
+  }
+]

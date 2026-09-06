@@ -125,4 +125,16 @@ COURSE_PREREQS: dict[str, dict[str, list[str] | str]] = {
         ],
         "recommended": ["SOFTWARE_BUILDER compose/deploy vocabulary", "GENERAL_IT ticket discipline"],
     },
+    "SEVEN_GC_APPRENTICESHIP": {
+        "course_id": "SEVEN_GC_APPRENTICESHIP",
+        "required": [
+            "Will label SIMULATED fixtures and refuse fabricated mentor/field completion",
+            "Can submit lab JSON — empty/wrong/print-PASS fail",
+            "Will not mutate production infrastructure from student labs",
+        ],
+        "recommended": [
+            "WIRELESS_6G claim-boundary vocabulary (complementary)",
+            "programs/research_apprenticeship_reproducible_research.md habits",
+        ],
+    },
 }

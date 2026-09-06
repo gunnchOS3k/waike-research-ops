@@ -6,7 +6,7 @@ WAIKE is **not** an extra dissertation paper and **not** a RAN. It is a supporti
 
 | Characteristic | Where it shows up | What it is not |
 |---|---|---|
-| Package depth | 14 digital-RC `course.json` trees, lesson length floors, lab JSON validators | A 6G air-interface result |
+| Package depth | 17 digital-RC `course.json` trees, lesson length floors, lab JSON validators | A 6G air-interface result |
 | Lab honesty | Empty/`PASS` fail; reference submissions pass (`src/waike_course_ready/labs.py`) | Over-the-air measurement |
 | Claim boundary | `WIRELESS_6G` forbids commercial standardized 6G; FSPL/NTN delay fixtures | Spectrum license or 3GPP product |
 | Cross-repo apprenticeship map | `knowledge_maps/course_repo_map.yaml` → twin, SpectrumX, beam, NTN, edge-io | Those repos' RF claims |

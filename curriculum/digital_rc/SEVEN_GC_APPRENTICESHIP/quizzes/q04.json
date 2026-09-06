@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "sgc-w4-1",
+      "kind": "mcq",
+      "stem": "SGC-6404: NO_AI week means?",
+      "choices": [
+        "Hand-author design JSON",
+        "Paste ChatGPT into keys",
+        "Skip lab",
+        "Invent field"
+      ]
+    },
+    {
+      "id": "sgc-w4-2",
+      "kind": "mcq",
+      "stem": "SGC-6404: IV/DV example on SIMULATED MCS table?",
+      "choices": [
+        "IV=mentor DV=cert",
+        "IV=mcs_index DV=bler",
+        "IV=6G DV=exists",
+        "IV=PII DV=ticket"
+      ]
+    },
+    {
+      "id": "sgc-w4-3",
+      "kind": "mcq",
+      "stem": "SGC-6404: Design promising MEASURED_FIELD without gate?",
+      "choices": [
+        "Required",
+        "Auto-pass",
+        "Fails honesty",
+        "Cert"
+      ]
+    },
+    {
+      "id": "sgc-w4-4",
+      "kind": "mcq",
+      "stem": "SGC-6404: Confound example?",
+      "choices": [
+        "Using JSON",
+        "Reading README",
+        "Hashing",
+        "seed_leak or unlabeled vendor CSV"
+      ]
+    },
+    {
+      "id": "sgc-w4-5",
+      "kind": "mcq",
+      "stem": "SGC-6404: claim_match true means?",
+      "choices": [
+        "Claim text matches planned evidence class",
+        "Mentor signed",
+        "Field done",
+        "6G exists"
+      ]
+    },
+    {
+      "id": "sgc-w4-6",
+      "kind": "mcq",
+      "stem": "SGC-6404: Run controlled experiment before design?",
+      "choices": [
+        "Required",
+        "Forbidden this week",
+        "Extra",
+        "Silent"
+      ]
+    }
+  ]
+}

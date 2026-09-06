@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "sgc-w9-1",
+      "kind": "mcq",
+      "stem": "SGC-6909: independent_repro true means?",
+      "choices": [
+        "Mentor signed",
+        "Field done",
+        "Second clean run matches digest",
+        "TX OK"
+      ]
+    },
+    {
+      "id": "sgc-w9-2",
+      "kind": "mcq",
+      "stem": "SGC-6909: map_rows minimum?",
+      "choices": [
+        "0",
+        "1 fake",
+        "Only vendor",
+        ">=3 apprenticeship map entries"
+      ]
+    },
+    {
+      "id": "sgc-w9-3",
+      "kind": "mcq",
+      "stem": "SGC-6909: unavailable_ok?",
+      "choices": [
+        "true \u2014 record UNAVAILABLE",
+        "false \u2014 invent SHA",
+        "Must clone air-gapped prod",
+        "Ignore"
+      ]
+    },
+    {
+      "id": "sgc-w9-4",
+      "kind": "mcq",
+      "stem": "SGC-6909: mutated_prod?",
+      "choices": [
+        "true",
+        "false",
+        "optional",
+        "required"
+      ]
+    },
+    {
+      "id": "sgc-w9-5",
+      "kind": "mcq",
+      "stem": "SGC-6909: Mentor check-in completion digitally?",
+      "choices": [
+        "Auto complete",
+        "Force true",
+        "EXTERNAL_HUMAN_GATE only",
+        "Skip ethics"
+      ]
+    },
+    {
+      "id": "sgc-w9-6",
+      "kind": "mcq",
+      "stem": "SGC-6909: Fake SHA for missing spectrumx repo?",
+      "choices": [
+        "Required",
+        "Extra",
+        "OK",
+        "Forbidden"
+      ]
+    }
+  ]
+}

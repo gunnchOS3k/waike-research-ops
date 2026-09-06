@@ -391,6 +391,7 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "DATA_DASHBOARDS": "curriculum/alignment/data_dashboards_alignment.json",
             "EMBEDDED_PROTOTYPING": "curriculum/alignment/embedded_prototyping_alignment.json",
             "GUNNCHOS_PRODUCT_LAB": "curriculum/alignment/gunnchos_product_lab_alignment.json",
+            "SEVEN_GC_APPRENTICESHIP": "curriculum/alignment/seven_gc_apprenticeship_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {
@@ -436,6 +437,71 @@ def emit_course(course_id: str) -> dict[str, Any]:
     if course_id not in COURSE_PREREQS:
         raise KeyError(f"missing authored prerequisites for {course_id}")
     _dump(base / "prerequisites.json", COURSE_PREREQS[course_id])
+
+    # Preserve course-owned SIMULATED fixtures and SEVEN_GC metadata.
+    if course_id == "SEVEN_GC_APPRENTICESHIP":
+        import shutil
+
+        src = Path(__file__).resolve().parent / "batch008" / "fixtures"
+        if src.is_dir():
+            dst = base / "fixtures"
+            if dst.exists():
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
+        tutor = {
+            "track_id": course_id,
+            "commands": {
+                "lesson": "/waike lesson seven_gc_apprenticeship",
+                "explain": "/explain",
+                "quiz_practice": "/quizme",
+            },
+            "policy": {
+                "practice_tutoring_allowed": True,
+                "graded_answers_protected": True,
+                "ai_never_silently_grades": True,
+                "learner_citations_learner_visible_only": True,
+                "instructor_context_separate": True,
+            },
+            "live_model_required_for_package": False,
+            "gunnchai_pin": "4b4f411710e8cdb8102a7e11502f8497f68156b1",
+        }
+        _dump(base / "gunnchai_tutor_cards.json", tutor)
+        delivery = c.get("delivery_formats") or {}
+        if delivery:
+            _dump(base / "delivery_formats.json", delivery)
+        _write(
+            base / "README.md",
+            "\n".join(
+                [
+                    f"# {c['title']}",
+                    "",
+                    c.get("syllabus_hook", ""),
+                    "",
+                    "## Claim boundary",
+                    SYLLABUS_CLAIM[course_id],
+                    "",
+                    "Fixtures under `fixtures/sgc_baseline/` are labeled **SIMULATED**.",
+                    "",
+                ]
+            ),
+        )
+        _write(
+            base / "PROVENANCE.md",
+            "\n".join(
+                [
+                    "# Provenance — SEVEN_GC_APPRENTICESHIP",
+                    "",
+                    "- Owner program: `programs/seven_gc_apprenticeship.md`",
+                    "- Taxonomy: `curriculum/taxonomy/canonical_track_registry.v1.json`",
+                    "- Repo map: `knowledge_maps/course_repo_map.yaml`",
+                    "- Related apprenticeship shells: `programs/research_apprenticeship_*.md` (structure/ethics only; not silent clones)",
+                    "- Neighbor digital_rc packages provide schema conventions only",
+                    "- gunnchAI tutor command names from `gunnchAI3k` @ `4b4f411710e8cdb8102a7e11502f8497f68156b1`",
+                    "- Empirical status: no fabricated field/hardware/mentor completion",
+                    "",
+                ]
+            ),
+        )
 
     _dump(base / "course.json", package)
     return package

@@ -1,0 +1,33 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "track_ids": ["SEVEN_GC_APPRENTICESHIP"],
+  "date_checked": "2026-09-06",
+  "benchmarks": [
+    {
+      "source_id": "WAIKE_PROGRAM_SEVEN_GC_APPRENTICESHIP",
+      "reuse_class": "OWNER_PROGRAM",
+      "coverage": [
+        {"domain": "research_apprenticeship_purpose", "waike_weeks": [1]},
+        {"domain": "reproducible_setup", "waike_weeks": [2, 3]},
+        {"domain": "experiment_design", "waike_weeks": [4, 5]},
+        {"domain": "industry_vendor_literacy", "waike_weeks": [6]},
+        {"domain": "ethics_claim_audit", "waike_weeks": [7]},
+        {"domain": "capstone_portfolio", "waike_weeks": [8]},
+        {"domain": "apprenticeship_extension", "waike_weeks": [9, 10]}
+      ]
+    },
+    {
+      "source_id": "O_RAN_AI_RAN_TOPIC_LABELS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "ai_ran_vocabulary", "waike_weeks": [1, 6, 7]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "WIRELESS_6G": "WIRELESS_6G owns Pier Radio Bench FSPL/OFDM/NTN labs; SEVEN_GC owns research-apprenticeship evidence classes, experiment design, and EXTERNAL gate discipline.",
+    "GUNNCHOS_PRODUCT_LAB": "Product Lab owns charter/compat/privacy pins; SEVEN_GC owns reproducible research apprenticeship packaging."
+  },
+  "claim_boundary": "Digital COURSE_DIGITAL_RC only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Does not invent field measurements, mentor sign-off, or commercial standardized 6G. Not student/teacher E6."
+}

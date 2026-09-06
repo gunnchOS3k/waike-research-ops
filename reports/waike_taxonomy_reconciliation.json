@@ -1,13 +1,13 @@
 {
   "schema": "waike.taxonomy.reconciliation.v1",
-  "generated_utc": "2026-09-02T19:34:18Z",
-  "source_commit_sha": "34bfdc9f5048b85e1dbc1b232e01ea743b01cb9a",
-  "registry_hash": "7c72905b45ca2bbe55650b89ef0ccd66ae15269be84b5cf18a2b89e896d9c4ac",
+  "generated_utc": "2026-09-06T18:49:05Z",
+  "source_commit_sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+  "registry_hash": "aee5e4726adfbdab9d036efa1687dceb51efa28bb020603bb84fd8486d5b2942",
   "validation_errors": [],
   "exact_counts": {
     "canonical_tracks": 18,
     "historical_aliases": 32,
-    "digital_rc_package_dirs": 16,
+    "digital_rc_package_dirs": 17,
     "package_mappings": 4,
     "unresolved_collisions": 2,
     "mismatches": 3,
@@ -267,12 +267,14 @@
         "seven_gc_apprenticeship"
       ],
       "content_maturity": {
-        "state": "program_shell_only",
+        "state": "digital_rc_present",
         "facets": {
-          "covering_package_ids": [],
+          "covering_package_ids": [
+            "SEVEN_GC_APPRENTICESHIP"
+          ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true
         }
       }
     },
@@ -690,10 +692,12 @@
     },
     {
       "track_id": "SEVEN_GC_APPRENTICESHIP",
-      "content_maturity_state": "program_shell_only",
-      "standalone_1to1_package": false,
+      "content_maturity_state": "digital_rc_present",
+      "standalone_1to1_package": true,
       "package_mappings": [],
-      "covering_package_ids": []
+      "covering_package_ids": [
+        "SEVEN_GC_APPRENTICESHIP"
+      ]
     },
     {
       "track_id": "CLOUD_DEVOPS",
@@ -775,6 +779,7 @@
     "HARDWARE_ENGINEERING",
     "PM_AGILE_LSS",
     "ROBOTICS_CONTROL",
+    "SEVEN_GC_APPRENTICESHIP",
     "SOFTWARE_BUILDER",
     "WIRELESS_6G"
   ],
@@ -831,8 +836,8 @@
     {
       "kind": "gap_ledger_package_count_stale",
       "ledger_digital_rc_course_count": 14,
-      "disk_digital_rc_dir_count": 16,
-      "note": "Ledger predates EMBEDDED_PROTOTYPING and GUNNCHOS_PRODUCT_LAB package dirs."
+      "disk_digital_rc_dir_count": 17,
+      "note": "Ledger predates EMBEDDED_PROTOTYPING, GUNNCHOS_PRODUCT_LAB, and SEVEN_GC_APPRENTICESHIP package dirs."
     }
   ],
   "historical_ids": [
@@ -903,11 +908,11 @@
     "Reconciliation reports separating contract work from remaining content gaps"
   ],
   "remaining_content_work": [
-    "SEVEN_GC_APPRENTICESHIP still has no digital_rc package (program shell only)",
     "DIGITAL_CONFIDENCE and IT_SUPPORT_HARDWARE remain shared under GENERAL_IT (no standalone packages)",
-    "Package version fields are null until versioned package manifests exist",
+    "Package version fields remain sparse until versioned package manifests exist for all tracks",
     "Track-level prerequisites arrays are empty pending evidence-backed prerequisite graph",
     "Stale gap ledger should be refreshed in a follow-up content/ops packet",
-    "Similar-title lesson folders (networking, software_engineering, \u2026) remain unresolved by design"
+    "Similar-title lesson folders (networking, software_engineering, \u2026) remain unresolved by design",
+    "SEVEN_GC EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open (digital package does not claim field completion)"
   ]
 }

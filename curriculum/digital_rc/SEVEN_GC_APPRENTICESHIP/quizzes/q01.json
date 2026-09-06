@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "sgc-w1-1",
+      "kind": "mcq",
+      "stem": "SGC-6101: Which evidence class is a synthetic KPI JSON labeled for later replacement?",
+      "choices": [
+        "MEASURED_FIELD",
+        "HUMAN_REVIEW",
+        "SIMULATED",
+        "Mentor seal"
+      ]
+    },
+    {
+      "id": "sgc-w1-2",
+      "kind": "mcq",
+      "stem": "SGC-6101: May week-1 journals store patron PANs for 'research realism'?",
+      "choices": [
+        "Yes if Discord private",
+        "Yes for mentors",
+        "Required",
+        "No \u2014 privacy forbids PII in notes"
+      ]
+    },
+    {
+      "id": "sgc-w1-3",
+      "kind": "mcq",
+      "stem": "SGC-6101: Commercial standardized 6G exists today?",
+      "choices": [
+        "False \u2014 course refuses the claim",
+        "True pier-wide",
+        "True if vendor slide",
+        "True after quiz"
+      ]
+    },
+    {
+      "id": "sgc-w1-4",
+      "kind": "mcq",
+      "stem": "SGC-6101: HUMAN_REVIEW marked complete because a form exists?",
+      "choices": [
+        "Auto-complete",
+        "Forbidden without real review",
+        "Extra credit",
+        "Required"
+      ]
+    },
+    {
+      "id": "sgc-w1-5",
+      "kind": "mcq",
+      "stem": "SGC-6101: Consensus Ladder still-need for pier SDR?",
+      "choices": [
+        "Ignore",
+        "Invent BLER",
+        "EXTERNAL_PHYSICAL_GATE / measured capture",
+        "Ship cert"
+      ]
+    },
+    {
+      "id": "sgc-w1-6",
+      "kind": "mcq",
+      "stem": "SGC-6101: Empty {} on lab_sgc_evidence_class?",
+      "choices": [
+        "Passes",
+        "Bonus",
+        "Grants cert",
+        "Fails student_artifact"
+      ]
+    }
+  ]
+}
