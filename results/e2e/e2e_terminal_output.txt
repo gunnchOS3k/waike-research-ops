@@ -1,10 +1,22 @@
 {
   "repos": 6
 }
-Wrote /Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/results/e2e
+Wrote /Users/gunnchos/dev/waike-learning-os-workspace/waike-research-ops/results/e2e
 Wrote results/campus_learning/
+..........................F............................................. [ 85%]
 ............                                                             [100%]
-12 passed in 0.41s
-PASS {"pass": true, "checks": ["ok: research_apprenticeship_digital_twin.md", "ok: research_apprenticeship_edge_measurement.md", "ok: research_apprenticeship_beam_selection.md", "ok: research_apprenticeship_ntn_resilience.md", "ok: research_apprenticeship_6g_ai_ran.md", "ok: research_apprenticeship_reproducible_research.md"]}
-/Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/scripts/run_all_tool_exports.py': [Errno 2] No such file or directory
-/Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/scripts/check_optional_backends.py': [Errno 2] No such file or directory
+=================================== FAILURES ===================================
+___________________ test_software_builder_instructor_journey ___________________
+
+    def test_software_builder_instructor_journey():
+        """Instructor: onboarding → packet → keys present → HITL / no publish-without-human."""
+        text = ONBOARDING.read_text(encoding="utf-8")
+>       assert "HITL" in text or "human" in text.lower()
+E       AssertionError: assert ('HITL' in '# instructor onboarding path.md\n\nFacilitation, grading, UDL, gunnchAI3k boundaries.\n' or 'human' in '# instructor onboarding path.md\n\nfacilitation, grading, udl, gunnchai3k boundaries.\n')
+E        +  where '# instructor onboarding path.md\n\nfacilitation, grading, udl, gunnchai3k boundaries.\n' = <built-in method lower of str object at 0x1069d7a30>()
+E        +    where <built-in method lower of str object at 0x1069d7a30> = '# instructor onboarding path.md\n\nFacilitation, grading, UDL, gunnchAI3k boundaries.\n'.lower
+
+tests/journeys/test_instructor_journey.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED tests/journeys/test_instructor_journey.py::test_software_builder_instructor_journey
+1 failed, 83 passed in 2.04s

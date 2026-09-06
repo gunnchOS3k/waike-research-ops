@@ -14,6 +14,7 @@ from waike_course_ready.batch004.content import COURSES_004
 from waike_course_ready.batch005.content import COURSES_005
 from waike_course_ready.batch006.content import COURSES_006
 from waike_course_ready.batch007.content import COURSES_007
+from waike_course_ready.batch008.content import COURSES_008
 from waike_course_ready.exams import TOKEN_JACCARD_FAIL, nearest_weekly, token_identical
 from waike_course_ready.ingest import build_learner, build_product_catalog, build_teacher
 from waike_course_ready.labs import _fail_if_print_pass, run_all, run_lab
@@ -31,6 +32,7 @@ BATCH_004 = {"WIRELESS_6G", "ROBOTICS_CONTROL", "GAME_DEV_INTERACTIVE"}
 BATCH_005 = {"COMM_PD_ETHICS"}
 BATCH_006 = {"DATA_DASHBOARDS"}
 BATCH_007 = {"EMBEDDED_PROTOTYPING", "GUNNCHOS_PRODUCT_LAB"}
+BATCH_008 = {"SEVEN_GC_APPRENTICESHIP"}
 
 
 def test_batch001_and_batch002_coexist_in_product_paths():
@@ -42,8 +44,9 @@ def test_batch001_and_batch002_coexist_in_product_paths():
     assert BATCH_005.issubset(set(COURSES))
     assert BATCH_006.issubset(set(COURSES))
     assert BATCH_007.issubset(set(COURSES))
-    assert set(COURSES) == BATCH_001 | BATCH_002 | BATCH_003 | BATCH_004 | BATCH_005 | BATCH_006 | BATCH_007
-    assert len(COURSES) == 16
+    assert BATCH_008.issubset(set(COURSES))
+    assert set(COURSES) == BATCH_001 | BATCH_002 | BATCH_003 | BATCH_004 | BATCH_005 | BATCH_006 | BATCH_007 | BATCH_008
+    assert len(COURSES) == 17
     assert set(COURSES_001) == BATCH_001
     assert set(COURSES_002) == BATCH_002
     assert set(COURSES_003) == BATCH_003
@@ -51,6 +54,7 @@ def test_batch001_and_batch002_coexist_in_product_paths():
     assert set(COURSES_005) == BATCH_005
     assert set(COURSES_006) == BATCH_006
     assert set(COURSES_007) == BATCH_007
+    assert set(COURSES_008) == BATCH_008
 
 
 def test_each_course_has_depth():
@@ -71,7 +75,7 @@ def test_each_course_has_depth():
             assert "ticket arithmetic checkpoint" not in low
             assert "restate the worked example in your own symbols" not in low
             stripped = strip_lesson_padding(raw)
-            floor = 871 if cid in (BATCH_004 | BATCH_005 | BATCH_006 | BATCH_007) else 800
+            floor = 871 if cid in (BATCH_004 | BATCH_005 | BATCH_006 | BATCH_007 | BATCH_008) else 800
             assert len(stripped) >= floor, (cid, w["week"], len(stripped), floor)
             assert "Operator note: record evidence" not in stripped
             assert "Evidence discipline week" not in stripped
@@ -309,7 +313,8 @@ def test_product_catalog_ui_fields():
     assert BATCH_005.issubset(ids)
     assert BATCH_006.issubset(ids)
     assert BATCH_007.issubset(ids)
-    assert len(ids) == 16
+    assert BATCH_008.issubset(ids)
+    assert len(ids) == 17
     for course in cat["courses"]:
         for field in (
             "course_id",

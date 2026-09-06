@@ -1,0 +1,11 @@
+{
+  "workshop_hours": 2,
+  "bootcamp_weeks": 2,
+  "course_weeks": 8,
+  "apprenticeship_weeks": 12,
+  "external_gates": [
+    "EXTERNAL_HUMAN_GATE",
+    "EXTERNAL_PHYSICAL_GATE",
+    "EXTERNAL_FIELD_GATE"
+  ]
+}

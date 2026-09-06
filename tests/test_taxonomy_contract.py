@@ -121,12 +121,13 @@ def test_registry_hash_stable_under_key_reorder():
 
 def test_digital_rc_package_dir_count_is_exact():
     pkgs = digital_rc_package_dirs(ROOT)
-    assert len(pkgs) == 16
+    assert len(pkgs) == 17
     assert "GENERAL_IT" in pkgs
     assert "COMPUTER_NETWORKING" in pkgs
     assert "CYBERSECURITY" in pkgs
     assert "EMBEDDED_PROTOTYPING" in pkgs
     assert "GUNNCHOS_PRODUCT_LAB" in pkgs
+    assert "SEVEN_GC_APPRENTICESHIP" in pkgs
     assert "DIGITAL_CONFIDENCE" not in pkgs
     assert "NETWORKING_INFRA" not in pkgs
     assert "CYBER_SOC" not in pkgs

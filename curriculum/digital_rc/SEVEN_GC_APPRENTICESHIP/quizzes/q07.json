@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "sgc-w7-1",
+      "kind": "mcq",
+      "stem": "SGC-6707: Supported claim example?",
+      "choices": [
+        "field_bler",
+        "mentor_signoff",
+        "local_sim_delta under fixed SNR",
+        "partner logos"
+      ]
+    },
+    {
+      "id": "sgc-w7-2",
+      "kind": "mcq",
+      "stem": "SGC-6707: does_not_support should include?",
+      "choices": [
+        "JSON hashing",
+        "README paths",
+        "Python version",
+        "field_bler and mentor_signoff"
+      ]
+    },
+    {
+      "id": "sgc-w7-3",
+      "kind": "mcq",
+      "stem": "SGC-6707: human_gate value?",
+      "choices": [
+        "EXTERNAL_HUMAN_GATE",
+        "COMPLETE",
+        "SIGNED",
+        "SKIP"
+      ]
+    },
+    {
+      "id": "sgc-w7-4",
+      "kind": "mcq",
+      "stem": "SGC-6707: Campus generalization without evidence?",
+      "choices": [
+        "Required",
+        "Unsupported",
+        "Auto",
+        "Cert"
+      ]
+    },
+    {
+      "id": "sgc-w7-5",
+      "kind": "mcq",
+      "stem": "SGC-6707: Private competition IQ in notes?",
+      "choices": [
+        "Required",
+        "Extra",
+        "Ethics fail",
+        "OK"
+      ]
+    },
+    {
+      "id": "sgc-w7-6",
+      "kind": "mcq",
+      "stem": "SGC-6707: Digital course can complete without field?",
+      "choices": [
+        "No forever",
+        "Only with forged signoff",
+        "Only TX",
+        "Yes \u2014 list open gates"
+      ]
+    }
+  ]
+}

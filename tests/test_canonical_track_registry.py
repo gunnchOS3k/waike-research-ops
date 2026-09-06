@@ -113,7 +113,7 @@ def test_package_mapping_not_alias_when_multi_track():
 
 def test_digital_rc_disk_count_method():
     pkgs = digital_rc_package_dirs(ROOT)
-    assert len(pkgs) == 16
+    assert len(pkgs) == 17
     assert "GENERAL_IT" in pkgs
     assert "COMPUTER_NETWORKING" in pkgs
 

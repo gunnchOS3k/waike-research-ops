@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "sgc-w10-1",
+      "kind": "mcq",
+      "stem": "SGC-6A10: snr_db_variants example?",
+      "choices": [
+        "[6,8,10]",
+        "[PASS]",
+        "[]",
+        "[mentor]"
+      ]
+    },
+    {
+      "id": "sgc-w10-2",
+      "kind": "mcq",
+      "stem": "SGC-6A10: field_gain_invented?",
+      "choices": [
+        "true",
+        "false",
+        "optional true",
+        "auto"
+      ]
+    },
+    {
+      "id": "sgc-w10-3",
+      "kind": "mcq",
+      "stem": "SGC-6A10: Weeks 11\u201312 mentor presentation digitally marked complete?",
+      "choices": [
+        "Yes always",
+        "If quiz passed",
+        "No \u2014 external gates",
+        "If SIMULATED"
+      ]
+    },
+    {
+      "id": "sgc-w10-4",
+      "kind": "mcq",
+      "stem": "SGC-6A10: claim_stable without documenting sensitivity?",
+      "choices": [
+        "Always stable",
+        "Ignore",
+        "Cert",
+        "Must not silently claim stability"
+      ]
+    },
+    {
+      "id": "sgc-w10-5",
+      "kind": "mcq",
+      "stem": "SGC-6A10: Career roles in portfolio?",
+      "choices": [
+        "Aligned not granted",
+        "Granted certs",
+        "ISC2 membership",
+        "3GPP membership"
+      ]
+    },
+    {
+      "id": "sgc-w10-6",
+      "kind": "mcq",
+      "stem": "SGC-6A10: Empty robustness JSON?",
+      "choices": [
+        "Passes",
+        "Fails",
+        "Bonus",
+        "Field complete"
+      ]
+    }
+  ]
+}

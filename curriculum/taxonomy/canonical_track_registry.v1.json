@@ -399,24 +399,25 @@
       "authoritative_source_paths": [
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
-        "programs/seven_gc_apprenticeship.md"
+        "programs/seven_gc_apprenticeship.md",
+        "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/course.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/seven_gc_apprenticeship.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "program_shell_only",
+        "state": "digital_rc_present",
         "facets": {
-          "covering_package_ids": [],
+          "covering_package_ids": ["SEVEN_GC_APPRENTICESHIP"],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0",
       "deprecation": null,
-      "note": "Not collapsed into another academy. Remains an advanced overlay."
+      "note": "First-class digital COURSE_DIGITAL_RC. RESEARCH_APPRENTICESHIP retained; EXTERNAL human/physical/field gates remain open. Not collapsed into another academy."
     },
     {
       "stable_uuid": "eaed7226-c6a4-5049-8ffc-6abc382d69d4",

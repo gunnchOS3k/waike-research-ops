@@ -1,0 +1,16 @@
+{
+  "practical_id": "SEVEN_GC_APPRENTICESHIP-practical",
+  "labs": [
+    "lab_sgc_evidence_class",
+    "lab_sgc_repo_recon",
+    "lab_sgc_baseline_repro",
+    "lab_sgc_experiment_design",
+    "lab_sgc_controlled_sim",
+    "lab_sgc_analysis",
+    "lab_sgc_claim_audit",
+    "lab_sgc_capstone_package",
+    "lab_sgc_repro_handoff",
+    "lab_sgc_robustness"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

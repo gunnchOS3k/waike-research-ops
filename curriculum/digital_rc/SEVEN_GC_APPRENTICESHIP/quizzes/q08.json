@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "sgc-w8-1",
+      "kind": "mcq",
+      "stem": "SGC-6808: mentor_signed in digital capstone?",
+      "choices": [
+        "false",
+        "true",
+        "optional true without review",
+        "auto"
+      ]
+    },
+    {
+      "id": "sgc-w8-2",
+      "kind": "mcq",
+      "stem": "SGC-6808: labs_passed minimum spirit?",
+      "choices": [
+        "0",
+        ">=6 prior lab digests",
+        "Screenshot only",
+        "PASS string"
+      ]
+    },
+    {
+      "id": "sgc-w8-3",
+      "kind": "mcq",
+      "stem": "SGC-6808: includes_limitations false?",
+      "choices": [
+        "Passes",
+        "Bonus",
+        "Fails capstone honesty",
+        "Cert"
+      ]
+    },
+    {
+      "id": "sgc-w8-4",
+      "kind": "mcq",
+      "stem": "SGC-6808: Invent physical evidence for credit?",
+      "choices": [
+        "Required",
+        "Extra",
+        "Silent",
+        "Forbidden"
+      ]
+    },
+    {
+      "id": "sgc-w8-5",
+      "kind": "mcq",
+      "stem": "SGC-6808: Portfolio PII?",
+      "choices": [
+        "Forbidden",
+        "Required faces",
+        "Library PANs OK",
+        "Passwords OK"
+      ]
+    },
+    {
+      "id": "sgc-w8-6",
+      "kind": "mcq",
+      "stem": "SGC-6808: product_use_unmerged_consumed?",
+      "choices": [
+        "true",
+        "false",
+        "ignored",
+        "required true"
+      ]
+    }
+  ]
+}

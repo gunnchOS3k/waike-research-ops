@@ -1,0 +1,17 @@
+{
+  "track_id": "SEVEN_GC_APPRENTICESHIP",
+  "commands": {
+    "lesson": "/waike lesson seven_gc_apprenticeship",
+    "explain": "/explain",
+    "quiz_practice": "/quizme"
+  },
+  "policy": {
+    "practice_tutoring_allowed": true,
+    "graded_answers_protected": true,
+    "ai_never_silently_grades": true,
+    "learner_citations_learner_visible_only": true,
+    "instructor_context_separate": true
+  },
+  "live_model_required_for_package": false,
+  "gunnchai_pin": "4b4f411710e8cdb8102a7e11502f8497f68156b1"
+}

@@ -1,0 +1,15 @@
+{
+  "label": "SIMULATED",
+  "replacement_note": "Replace with MEASURED_HARDWARE KPI capture when pier/SDR evidence exists.",
+  "window_id": "SGC-KPI-7",
+  "seed": 7,
+  "snr_db": 8,
+  "mcs_bler": {
+    "0": 0.4,
+    "1": 0.22,
+    "2": 0.09,
+    "3": 0.18,
+    "4": 0.35
+  },
+  "commercial_6g_exists": false
+}

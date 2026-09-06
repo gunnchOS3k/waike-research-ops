@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "wireless_research_apprentice",
+    "ran_systems_analyst_junior",
+    "reproducible_research_technician"
+  ],
+  "nice_categories": [
+    "analyze",
+    "build_and_deploy"
+  ],
+  "certs_aligned_not_granted": [
+    "3GPP/O-RAN topic labels (PUBLIC_REFERENCE_ONLY)",
+    "AI-RAN study-item vocabulary (not membership)"
+  ]
+}

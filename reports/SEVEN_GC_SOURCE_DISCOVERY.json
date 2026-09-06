@@ -1,0 +1,109 @@
+{
+  "schema": "waike.seven_gc.source_discovery.v1",
+  "generated_utc": "2026-09-06T18:51:15Z",
+  "waike_accepted_main": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+  "working_branch": "cursor/waike-seven-gc-digital-course-normalization",
+  "working_head_at_discovery": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+  "sources": [
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "programs/seven_gc_apprenticeship.md",
+      "purpose": "Owner program authorizing digital course formats/outcomes/labs",
+      "allowed_use": "AUTHORITATIVE_CURRICULUM_SOURCE",
+      "digital_curriculum_relevance": "high",
+      "empirical_evidence_status": "none_claimed",
+      "human_physical_dependencies": "mentor review and field pilots EXTERNAL"
+    },
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "curriculum/taxonomy/canonical_track_registry.v1.json",
+      "purpose": "Stable UUID and maturity for SEVEN_GC_APPRENTICESHIP",
+      "allowed_use": "TAXONOMY_IDENTITY",
+      "digital_curriculum_relevance": "high",
+      "empirical_evidence_status": "n/a",
+      "human_physical_dependencies": "none"
+    },
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "knowledge_maps/course_repo_map.yaml",
+      "purpose": "Map apprenticeship sibling repos and demo commands",
+      "allowed_use": "REPO_CONNECTED_LAB_TARGETS",
+      "digital_curriculum_relevance": "high",
+      "empirical_evidence_status": "siblings may be UNAVAILABLE",
+      "human_physical_dependencies": "none for digital path"
+    },
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "programs/research_apprenticeship_*.md",
+      "purpose": "Ethics/synthetic-data/mentor-check-in scaffolds",
+      "allowed_use": "STRUCTURE_ETHICS_ONLY_NOT_SILENT_CLONE",
+      "digital_curriculum_relevance": "medium",
+      "empirical_evidence_status": "none",
+      "human_physical_dependencies": "mentor check-ins EXTERNAL"
+    },
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "curriculum/digital_rc/WIRELESS_6G/",
+      "purpose": "Mature digital_rc schema conventions",
+      "allowed_use": "STRUCTURE_CONVENTIONS_ONLY",
+      "digital_curriculum_relevance": "schema_only",
+      "empirical_evidence_status": "n/a",
+      "human_physical_dependencies": "none"
+    },
+    {
+      "repo": "gunnchOS3k/waike-research-ops",
+      "sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0",
+      "path": "docs/SEVEN_GC_APPRENTICESHIP_OVERLAY_STATUS.md",
+      "purpose": "Historical HUMAN_PENDING policy (superseded for digital authoring)",
+      "allowed_use": "POLICY_CONTEXT_UPDATED_THIS_PR",
+      "digital_curriculum_relevance": "high",
+      "empirical_evidence_status": "n/a",
+      "human_physical_dependencies": "EXTERNAL gates remain"
+    },
+    {
+      "repo": "gunnchOS3k/gunnchAI3k",
+      "sha": "4b4f411710e8cdb8102a7e11502f8497f68156b1",
+      "path": "src/tutor/waikeTutorCards.ts",
+      "purpose": "Tutor command names /waike lesson /explain /quizme",
+      "allowed_use": "COMMAND_METADATA_ONLY",
+      "digital_curriculum_relevance": "medium",
+      "empirical_evidence_status": "hardcoded mocks noted upstream",
+      "human_physical_dependencies": "live model not required for curriculum package"
+    },
+    {
+      "repo": "gunnchOS3k/gunnchos-waike-learning-platform",
+      "sha": "577929203e5cc7ac143c07daa2d0deef7df8c943",
+      "path": "reports/SEVEN_GC_SOURCE_BLOCKS_18_OF_18.md",
+      "purpose": "Platform Gate B blocker documentation (READ-ONLY this pass)",
+      "allowed_use": "READ_ONLY_CONTEXT",
+      "digital_curriculum_relevance": "blocker_context",
+      "empirical_evidence_status": "n/a",
+      "human_physical_dependencies": "none"
+    }
+  ],
+  "rejected": [
+    {
+      "path": "Silent clone of WIRELESS_6G pier labs as SEVEN_GC content",
+      "reason": "Would collapse track identity and invent RF narrative without apprenticeship purpose"
+    },
+    {
+      "path": "Fabricated MEASURED_FIELD / mentor_signed completion",
+      "reason": "Violates non-invention doctrine and EXTERNAL_* gates"
+    },
+    {
+      "path": "Sibling research repos as required runtime without clone",
+      "reason": "Unavailable deps must be recorded honestly (UNAVAILABLE)"
+    }
+  ],
+  "reusable_material": [
+    "programs/seven_gc_apprenticeship.md outline and formats",
+    "course_repo_map.yaml repo IDs/demo targets",
+    "digital_rc package schema from mature courses",
+    "gunnchAI tutor command names"
+  ]
+}

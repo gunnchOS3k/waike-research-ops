@@ -1,32 +1,36 @@
-# SEVEN_GC_APPRENTICESHIP — research overlay status
+# SEVEN_GC_APPRENTICESHIP — digital course status
 
-**Status:** `HUMAN_PENDING` / research overlay only  
-**Date:** 2026-08-19  
-**Policy:** Do **not** invent a 19th standalone `COURSE_DIGITAL_RC` package.
+**Status:** `COURSE_DIGITAL_RC` present under `curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/`  
+**Date:** 2026-09-06  
+**Policy:** Digital curriculum authoring is authorized by `programs/seven_gc_apprenticeship.md`.  
+`HUMAN_PENDING` / `EXTERNAL_*` gates prohibit fabricating mentor, hardware, field, or learner-outcome completion — **not** digital course authoring.
 
 ## What this track is
 
-`SEVEN_GC_APPRENTICESHIP` is a **research apprenticeship overlay** mapped in
-`curriculum/taxonomy/academy_map_18_to_7.json` under `ACADEMY_SOFTWARE`. It
-coordinates multi-repo research apprenticeships via `knowledge_maps/course_repo_map.yaml`
-(7gc-digital-twin, spectrumx-ai-ran-gary, readygary-6g-beam-selection, etc.).
+`SEVEN_GC_APPRENTICESHIP` is a **first-class digital research apprenticeship course** mapped in
+`curriculum/taxonomy/academy_map_18_to_7.json` under `ACADEMY_SOFTWARE` with
+`extension_class: RESEARCH_APPRENTICESHIP`. It also coordinates multi-repo research
+apprenticeships via `knowledge_maps/course_repo_map.yaml` (7gc-digital-twin,
+spectrumx-ai-ran-gary, readygary-6g-beam-selection, etc.) as **REPO_CONNECTED**
+targets when present.
 
-## What was completed in residual closure Phase 0 follow-up
+## What is digitally complete
 
-- **EMBEDDED_PROTOTYPING** — standalone `COURSE_DIGITAL_RC` package (batch007)
-- **GUNNCHOS_PRODUCT_LAB** — standalone `COURSE_DIGITAL_RC` package (batch007)
-- **Taxonomy ledger hygiene** — `NETWORKING_INFRA` / `CYBER_SOC` marked
-  `COVERED_VIA` `COMPUTER_NETWORKING` / `CYBERSECURITY` (not BELOW_BAR orphans)
+- Standalone `COURSE_DIGITAL_RC` package (batch008)
+- Learner + instructor packets, lessons, quizzes, labs, rubrics, portfolio, capstone
+- SIMULATED / DIGITAL_REPRODUCTION labs with labeled fixtures
+- gunnchAI tutor card metadata (`/waike lesson`, `/explain`, `/quizme` practice)
 
-## What remains human / research pending
+## What remains external / human / physical / field
 
-- Lift apprenticeship overlay evidence to an equivalent bar **without** creating a
-  19th course tree or claiming `REAL_STUDENT_E6` / `REAL_TEACHER_E6`.
-- Campus/site human facilitation, EVT scheduling, and cross-repo research pairing
-  are **HUMAN_PENDING**.
+- Mentor approval / HUMAN_REVIEW completion → `EXTERNAL_HUMAN_GATE`
+- Hardware measurement captures → `EXTERNAL_PHYSICAL_GATE`
+- Campus/field pilots and partner participation → `EXTERNAL_FIELD_GATE`
+- `REAL_STUDENT_E6` / `REAL_TEACHER_E6` remain **false**
 
 ## Claim boundary
 
-`COURSE_DIGITAL_RC` count remains **16 authored packages** on the product path
-(14 prior + 2 batch007). `full_18_course_digital_rc` stays **false** until
-human research overlay closure — not via invented course scaffolding.
+`COURSE_DIGITAL_RC` package dirs on the product path include SEVEN_GC.
+`full_18_course_digital_rc` stays **false** while DIGITAL_CONFIDENCE and
+IT_SUPPORT_HARDWARE remain shared under GENERAL_IT (and other covering mappings).
+Do **not** claim field apprenticeship complete from this digital package alone.

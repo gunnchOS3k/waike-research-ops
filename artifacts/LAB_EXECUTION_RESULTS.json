@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 130,
+  "lab_count": 160,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -159,6 +159,42 @@
       "lab_debug_pipeline",
       "lab_freshness_sla",
       "lab_dashboard_capstone"
+    ],
+    "EMBEDDED_PROTOTYPING": [
+      "lab_ep_memory_map",
+      "lab_ep_gpio_contract",
+      "lab_ep_i2c_timing",
+      "lab_ep_spi_flash",
+      "lab_ep_adc_scale",
+      "lab_ep_isr_vs_poll",
+      "lab_ep_zephyr_qemu",
+      "lab_ep_dt_overlay",
+      "lab_ep_sleep_mode",
+      "lab_ep_subsystem_capstone"
+    ],
+    "GUNNCHOS_PRODUCT_LAB": [
+      "lab_gpl_product_charter",
+      "lab_gpl_compat_matrix",
+      "lab_gpl_checkout_flow",
+      "lab_gpl_compose_health",
+      "lab_gpl_privacy_bom",
+      "lab_gpl_guest_protocol",
+      "lab_gpl_release_notes",
+      "lab_gpl_ci_tokens",
+      "lab_gpl_dep_pin",
+      "lab_gpl_product_capstone"
+    ],
+    "SEVEN_GC_APPRENTICESHIP": [
+      "lab_sgc_evidence_class",
+      "lab_sgc_repo_recon",
+      "lab_sgc_baseline_repro",
+      "lab_sgc_experiment_design",
+      "lab_sgc_controlled_sim",
+      "lab_sgc_analysis",
+      "lab_sgc_claim_audit",
+      "lab_sgc_capstone_package",
+      "lab_sgc_repro_handoff",
+      "lab_sgc_robustness"
     ]
   },
   "batch_001_lab_count": 20,
@@ -167,6 +203,7 @@
   "batch_004_lab_count": 30,
   "batch_005_lab_count": 10,
   "batch_006_lab_count": 10,
+  "batch_007_lab_count": 20,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -348,7 +385,7 @@
         {
           "name": "archive_exists",
           "ok": true,
-          "detail": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/artifacts/_lab_tmp/backup/desk.tgz"
+          "detail": "/Users/gunnchos/dev/waike-learning-os-workspace/waike-research-ops/artifacts/_lab_tmp/backup/desk.tgz"
         },
         {
           "name": "hash_match",
@@ -1528,7 +1565,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'AMS1117-3.3', 'nRF52840', 'SSD1306'}"
+          "detail": "mpns={'SSD1306', 'AMS1117-3.3', 'nRF52840'}"
         },
         {
           "name": "total",
@@ -2571,7 +2608,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
+          "detail": "need {'open_count', 'freshness', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -4952,6 +4989,1121 @@
       ],
       "claim_boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds.",
       "boundary": "DATA_DASHBOARDS Pier Ledger Bench fixture. Not a student/teacher E6. Distinct from DATA_VIZ_BI. Instructor keys stay out of learner modes. COURSE_DIGITAL_RC only when full package bar holds."
+    },
+    {
+      "lab_id": "lab_ep_memory_map",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "flash",
+          "ok": true,
+          "detail": "flash"
+        },
+        {
+          "name": "sram",
+          "ok": true,
+          "detail": "sram"
+        },
+        {
+          "name": "vto",
+          "ok": true,
+          "detail": "vto"
+        },
+        {
+          "name": "physical",
+          "ok": true,
+          "detail": "physical"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_gpio_contract",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "pin",
+          "ok": true,
+          "detail": "pin"
+        },
+        {
+          "name": "dir",
+          "ok": true,
+          "detail": "dir"
+        },
+        {
+          "name": "level",
+          "ok": true,
+          "detail": "level"
+        },
+        {
+          "name": "pull",
+          "ok": true,
+          "detail": "pull"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_i2c_timing",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "bus",
+          "ok": true,
+          "detail": "bus"
+        },
+        {
+          "name": "addr",
+          "ok": true,
+          "detail": "addr"
+        },
+        {
+          "name": "freq",
+          "ok": true,
+          "detail": "freq"
+        },
+        {
+          "name": "nack",
+          "ok": true,
+          "detail": "nack"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_spi_flash",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "op",
+          "ok": true,
+          "detail": "op"
+        },
+        {
+          "name": "len",
+          "ok": true,
+          "detail": "len"
+        },
+        {
+          "name": "crc",
+          "ok": true,
+          "detail": "crc"
+        },
+        {
+          "name": "addr",
+          "ok": true,
+          "detail": "addr"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_adc_scale",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "raw",
+          "ok": true,
+          "detail": "raw"
+        },
+        {
+          "name": "vref",
+          "ok": true,
+          "detail": "vref"
+        },
+        {
+          "name": "bits",
+          "ok": true,
+          "detail": "bits"
+        },
+        {
+          "name": "mv",
+          "ok": true,
+          "detail": "mv"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_isr_vs_poll",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mode",
+          "ok": true,
+          "detail": "mode"
+        },
+        {
+          "name": "lat",
+          "ok": true,
+          "detail": "lat"
+        },
+        {
+          "name": "miss",
+          "ok": true,
+          "detail": "miss"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_zephyr_qemu",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "board",
+          "ok": true,
+          "detail": "board"
+        },
+        {
+          "name": "qemu",
+          "ok": true,
+          "detail": "qemu"
+        },
+        {
+          "name": "physical",
+          "ok": true,
+          "detail": "physical"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_dt_overlay",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "i2c",
+          "ok": true,
+          "detail": "i2c"
+        },
+        {
+          "name": "led",
+          "ok": true,
+          "detail": "led"
+        },
+        {
+          "name": "soc",
+          "ok": true,
+          "detail": "soc"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_sleep_mode",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mode",
+          "ok": true,
+          "detail": "mode"
+        },
+        {
+          "name": "gpio",
+          "ok": true,
+          "detail": "gpio"
+        },
+        {
+          "name": "lat",
+          "ok": true,
+          "detail": "lat"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_ep_subsystem_capstone",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs"
+        },
+        {
+          "name": "qemu",
+          "ok": true,
+          "detail": "qemu"
+        },
+        {
+          "name": "dt",
+          "ok": true,
+          "detail": "dt"
+        },
+        {
+          "name": "physical",
+          "ok": true,
+          "detail": "physical"
+        },
+        {
+          "name": "keys",
+          "ok": true,
+          "detail": "keys"
+        }
+      ],
+      "claim_boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA.",
+      "boundary": "EMBEDDED_PROTOTYPING ForgeSense Subsystem Bench. Not student/teacher E6. PHYSICAL_PENDING for solder/OTA."
+    },
+    {
+      "lab_id": "lab_gpl_product_charter",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "problem",
+          "ok": true,
+          "detail": "problem"
+        },
+        {
+          "name": "goal",
+          "ok": true,
+          "detail": "goal"
+        },
+        {
+          "name": "scope",
+          "ok": true,
+          "detail": "scope"
+        },
+        {
+          "name": "out",
+          "ok": true,
+          "detail": "out"
+        },
+        {
+          "name": "fab",
+          "ok": true,
+          "detail": "fab"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_compat_matrix",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "dos",
+          "ok": true,
+          "detail": "dos"
+        },
+        {
+          "name": "ai",
+          "ok": true,
+          "detail": "ai"
+        },
+        {
+          "name": "ok",
+          "ok": true,
+          "detail": "ok"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_checkout_flow",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "states",
+          "ok": true,
+          "detail": "states"
+        },
+        {
+          "name": "orphan",
+          "ok": true,
+          "detail": "orphan"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_compose_health",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mig",
+          "ok": true,
+          "detail": "mig"
+        },
+        {
+          "name": "health",
+          "ok": true,
+          "detail": "health"
+        },
+        {
+          "name": "rb",
+          "ok": true,
+          "detail": "rb"
+        },
+        {
+          "name": "digest",
+          "ok": true,
+          "detail": "digest"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_privacy_bom",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "fields",
+          "ok": true,
+          "detail": "fields"
+        },
+        {
+          "name": "pii",
+          "ok": true,
+          "detail": "pii"
+        },
+        {
+          "name": "ret",
+          "ok": true,
+          "detail": "ret"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_guest_protocol",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "ping",
+          "ok": true,
+          "detail": "ping"
+        },
+        {
+          "name": "boot",
+          "ok": true,
+          "detail": "boot"
+        },
+        {
+          "name": "ver",
+          "ok": true,
+          "detail": "ver"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_release_notes",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "sem",
+          "ok": true,
+          "detail": "sem"
+        },
+        {
+          "name": "brk",
+          "ok": true,
+          "detail": "brk"
+        },
+        {
+          "name": "entries",
+          "ok": true,
+          "detail": "entries"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_ci_tokens",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "pass",
+          "ok": true,
+          "detail": "pass"
+        },
+        {
+          "name": "tot",
+          "ok": true,
+          "detail": "tot"
+        },
+        {
+          "name": "fab",
+          "ok": true,
+          "detail": "fab"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_dep_pin",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "prev",
+          "ok": true,
+          "detail": "prev"
+        },
+        {
+          "name": "pin",
+          "ok": true,
+          "detail": "pin"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_gpl_product_capstone",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs"
+        },
+        {
+          "name": "compat",
+          "ok": true,
+          "detail": "compat"
+        },
+        {
+          "name": "pr",
+          "ok": true,
+          "detail": "pr"
+        },
+        {
+          "name": "keys",
+          "ok": true,
+          "detail": "keys"
+        }
+      ],
+      "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
+      "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_sgc_evidence_class",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "classes_len",
+          "ok": true,
+          "detail": "classes"
+        },
+        {
+          "name": "pii",
+          "ok": true,
+          "detail": "pii"
+        },
+        {
+          "name": "mentor",
+          "ok": true,
+          "detail": "mentor"
+        },
+        {
+          "name": "c6g",
+          "ok": true,
+          "detail": "c6g"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_repo_recon",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "repo",
+          "ok": true,
+          "detail": "repo"
+        },
+        {
+          "name": "tests",
+          "ok": true,
+          "detail": "tests"
+        },
+        {
+          "name": "evidence",
+          "ok": true,
+          "detail": "evidence"
+        },
+        {
+          "name": "prod",
+          "ok": true,
+          "detail": "prod"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_baseline_repro",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "class",
+          "ok": true,
+          "detail": "class"
+        },
+        {
+          "name": "sha",
+          "ok": true,
+          "detail": "sha"
+        },
+        {
+          "name": "seed",
+          "ok": true,
+          "detail": "seed"
+        },
+        {
+          "name": "fixture",
+          "ok": true,
+          "detail": "fixture"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_experiment_design",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "iv",
+          "ok": true,
+          "detail": "iv"
+        },
+        {
+          "name": "dv",
+          "ok": true,
+          "detail": "dv"
+        },
+        {
+          "name": "match",
+          "ok": true,
+          "detail": "match"
+        },
+        {
+          "name": "plan",
+          "ok": true,
+          "detail": "plan"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_controlled_sim",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "class",
+          "ok": true,
+          "detail": "class"
+        },
+        {
+          "name": "raw",
+          "ok": true,
+          "detail": "raw"
+        },
+        {
+          "name": "gate",
+          "ok": true,
+          "detail": "gate"
+        },
+        {
+          "name": "iv_changed",
+          "ok": true,
+          "detail": "iv"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_analysis",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "c6g",
+          "ok": true,
+          "detail": "c6g"
+        },
+        {
+          "name": "support",
+          "ok": true,
+          "detail": "support"
+        },
+        {
+          "name": "docs",
+          "ok": true,
+          "detail": "docs"
+        },
+        {
+          "name": "delta",
+          "ok": true,
+          "detail": "delta"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_claim_audit",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "supports",
+          "ok": true,
+          "detail": "supports"
+        },
+        {
+          "name": "dns",
+          "ok": true,
+          "detail": "dns"
+        },
+        {
+          "name": "human",
+          "ok": true,
+          "detail": "human"
+        },
+        {
+          "name": "physical",
+          "ok": true,
+          "detail": "physical"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_capstone_package",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs",
+          "ok": true,
+          "detail": "labs"
+        },
+        {
+          "name": "mentor",
+          "ok": true,
+          "detail": "mentor"
+        },
+        {
+          "name": "limits",
+          "ok": true,
+          "detail": "limits"
+        },
+        {
+          "name": "unmerged",
+          "ok": true,
+          "detail": "unmerged"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_repro_handoff",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "repro",
+          "ok": true,
+          "detail": "repro"
+        },
+        {
+          "name": "rows",
+          "ok": true,
+          "detail": "rows"
+        },
+        {
+          "name": "prod",
+          "ok": true,
+          "detail": "prod"
+        },
+        {
+          "name": "digest",
+          "ok": true,
+          "detail": "digest"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
+    },
+    {
+      "lab_id": "lab_sgc_robustness",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "variants",
+          "ok": true,
+          "detail": "variants"
+        },
+        {
+          "name": "field",
+          "ok": true,
+          "detail": "field"
+        },
+        {
+          "name": "class",
+          "ok": true,
+          "detail": "class"
+        },
+        {
+          "name": "doc",
+          "ok": true,
+          "detail": "doc"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Gary 7GC Research Desk. Digital curriculum only. EXTERNAL_HUMAN/PHYSICAL/FIELD gates remain open. Not student/teacher E6. Commercial standardized 6G does not exist today."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -5562,6 +6714,126 @@
     {
       "lab_id": "lab_dashboard_capstone",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_memory_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_gpio_contract",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_i2c_timing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_spi_flash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_adc_scale",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_isr_vs_poll",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_zephyr_qemu",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_dt_overlay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_sleep_mode",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_subsystem_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_product_charter",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_compat_matrix",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_checkout_flow",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_compose_health",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_privacy_bom",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_guest_protocol",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_release_notes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_ci_tokens",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_dep_pin",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_product_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_evidence_class",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_repo_recon",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_baseline_repro",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_experiment_design",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_controlled_sim",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_analysis",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_claim_audit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_capstone_package",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_repro_handoff",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_robustness",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -6083,6 +7355,126 @@
     },
     {
       "lab_id": "lab_dashboard_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_memory_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_gpio_contract",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_i2c_timing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_spi_flash",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_adc_scale",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_isr_vs_poll",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_zephyr_qemu",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_dt_overlay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_sleep_mode",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ep_subsystem_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_product_charter",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_compat_matrix",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_checkout_flow",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_compose_health",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_privacy_bom",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_guest_protocol",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_release_notes",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_ci_tokens",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_dep_pin",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_gpl_product_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_evidence_class",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_repo_recon",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_baseline_repro",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_experiment_design",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_controlled_sim",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_analysis",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_claim_audit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_capstone_package",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_repro_handoff",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sgc_robustness",
       "failed_as_required": true
     }
   ],
