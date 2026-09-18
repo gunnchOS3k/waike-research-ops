@@ -1,0 +1,25 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+ts-jest[config] (WARN) 
+    The "ts-jest" config option "isolatedModules" is deprecated and will be removed in v30.0.0. Please use "isolatedModules: true" in /Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/gunnchAI3k/.worktrees/stream-b-digital-exhaustion/tsconfig.json instead, see https://www.typescriptlang.org/tsconfig/#isolatedModules
+  
+PASS tests/system-layer/pre_human_exhaustion.test.ts
+  tool_registry
+    ✓ deny-by-default for unknown tools and stamps provenance (3 ms)
+  runtime_metrics
+    ✓ records latency and memory samples (1 ms)
+  SYNTHETIC pre-human suite
+    ✓ passes labeled synthetic fixtures (2 ms)
+
+PASS tests/tutor/promptInjectionAndHallucination.test.ts
+  promptInjectionGuard
+    ✓ blocks classic injection and wraps untrusted content (1 ms)
+  hallucinationGuard
+    ✓ flags fabricated citations and absolute claims without sources (4 ms)
+
+Test Suites: 2 passed, 2 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        2.277 s
+Ran all test suites matching /tests\/system-layer\/pre_human_exhaustion.test.ts|tests\/tutor\/promptInjectionAndHallucination.test.ts/i.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+JEST_EXIT=0
