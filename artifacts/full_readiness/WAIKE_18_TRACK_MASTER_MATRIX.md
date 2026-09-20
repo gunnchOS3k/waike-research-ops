@@ -1,6 +1,6 @@
 # WAIKE 18-Track Master Readiness Matrix
 
-Generated: `2026-09-20T16:15:36Z` · commit `28e9df40a8fa9ff32be594c394dd53bd53804dd1`
+Generated: `2026-09-20T16:17:05Z` · commit `ea93cbbf3338f80faad3c386bac9e77260f9991b`
 
 | Track | Level | independent_entry_point | lessons | labs | digital_package | review_packet | human_academic_review | field_pilot |
 |---|---|---|---|---|---|---|---|---|

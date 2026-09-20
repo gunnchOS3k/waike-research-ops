@@ -1,7 +1,7 @@
 {
   "schema": "waike.pr59.ci_reproduction.v1",
-  "generated_at": "2026-09-20T16:16:35Z",
-  "reproduced_from_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "generated_at": "2026-09-20T16:17:05Z",
+  "reproduced_from_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "parent_pr": 59,
   "parent_head_at_prompt": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
   "failed_ci_run_id": 35520557472,
@@ -26,5 +26,6 @@
     "TEMPLATE_DETECTOR.json": "artifacts/TEMPLATE_DETECTOR.json",
     "PRODUCT_CONSUMPTION_PROOF.json": "artifacts/PRODUCT_CONSUMPTION_PROOF.json",
     "COURSE_DIGITAL_RC.json": "artifacts/COURSE_DIGITAL_RC.json"
-  }
+  },
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b"
 }

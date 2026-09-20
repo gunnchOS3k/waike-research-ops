@@ -1,7 +1,7 @@
 {
   "schema": "waike.full_readiness.18_track_authored_distinctness_audit.v1",
-  "generated_at": "2026-09-20T16:15:36Z",
-  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "generated_at": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "tracks_audited": 18,
   "method": "Token Jaccard on syllabus+w01 (+distinctiveness README sections) with review-scaffold stopwords removed; lab id Jaccard secondary.",
   "worst_pairs": [
@@ -90,5 +90,6 @@
   },
   "all_tracks_have_unique_tokens": true,
   "pass": true,
-  "claim_boundary": "Authored distinctness spot-check for digital packages only."
+  "claim_boundary": "Authored distinctness spot-check for digital packages only.",
+  "reproduced_from_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b"
 }

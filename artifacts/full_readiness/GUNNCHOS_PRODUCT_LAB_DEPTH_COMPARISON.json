@@ -1,7 +1,7 @@
 {
   "schema": "waike.full_readiness.gunnchos_product_lab_depth_comparison.v1",
-  "generated_at": "2026-09-20T16:15:36Z",
-  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "generated_at": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "reference_track": "SOFTWARE_BUILDER",
   "subject_track": "GUNNCHOS_PRODUCT_LAB",
   "reference": {
@@ -54,5 +54,6 @@
   },
   "gaps": [],
   "all_floors_met": true,
-  "notes": "Structural comparison only (bytes/counts). Not a claim of equal narrative quality or field validation."
+  "notes": "Structural comparison only (bytes/counts). Not a claim of equal narrative quality or field validation.",
+  "reproduced_from_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b"
 }

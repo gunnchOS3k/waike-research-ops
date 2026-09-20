@@ -1,7 +1,7 @@
 {
   "schema": "waike.full_readiness.global_gates.v1",
-  "generated_utc": "2026-09-20T16:15:36Z",
-  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "generated_utc": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "WAIKE_CANONICAL_18_TRACKS_PASS": true,
   "WAIKE_18_INDEPENDENT_ENTRY_POINTS_PASS": true,
   "WAIKE_18_CONTENT_AUTHORED_PASS": true,

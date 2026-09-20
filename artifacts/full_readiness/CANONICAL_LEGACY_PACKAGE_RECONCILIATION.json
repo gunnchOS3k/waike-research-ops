@@ -1,7 +1,7 @@
 {
   "schema": "waike.full_readiness.canonical_legacy_package_reconciliation.v1",
-  "generated_at": "2026-09-20T16:15:39Z",
-  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "generated_at": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "canonical_track_count": 18,
   "legacy_product_course_count": 17,
   "legacy_product_courses": [
