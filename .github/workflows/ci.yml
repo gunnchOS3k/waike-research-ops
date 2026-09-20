@@ -23,6 +23,7 @@ jobs:
           python3 scripts/validate_curriculum_provenance.py
           python3 scripts/detect_templated_courses.py
           python3 scripts/prove_product_consumption.py
+          python3 scripts/full_readiness/emit_canonical_legacy_reconciliation.py
           python3 scripts/write_course_digital_rc.py
           make test
           make code-health-r5-s1

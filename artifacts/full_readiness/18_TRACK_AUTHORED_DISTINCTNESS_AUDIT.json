@@ -1,0 +1,94 @@
+{
+  "schema": "waike.full_readiness.18_track_authored_distinctness_audit.v1",
+  "generated_at": "2026-09-20T16:15:36Z",
+  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "tracks_audited": 18,
+  "method": "Token Jaccard on syllabus+w01 (+distinctiveness README sections) with review-scaffold stopwords removed; lab id Jaccard secondary.",
+  "worst_pairs": [
+    {
+      "a": "EMBEDDED_PROTOTYPING",
+      "b": "GUNNCHOS_PRODUCT_LAB",
+      "jaccard": 0.4065,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "EMBEDDED_PROTOTYPING",
+      "b": "HARDWARE_ENGINEERING",
+      "jaccard": 0.246,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "COMM_PD_ETHICS",
+      "jaccard": 0.2191,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "GUNNCHOS_PRODUCT_LAB",
+      "b": "HARDWARE_ENGINEERING",
+      "jaccard": 0.2008,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "PM_AGILE_LSS",
+      "b": "GUNNCHOS_PRODUCT_LAB",
+      "jaccard": 0.2,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "WIRELESS_6G",
+      "jaccard": 0.1927,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "ROBOTICS_CONTROL",
+      "jaccard": 0.1903,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "EMBEDDED_PROTOTYPING",
+      "jaccard": 0.1901,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "GUNNCHOS_PRODUCT_LAB",
+      "jaccard": 0.189,
+      "lab_id_jaccard": 0.0
+    },
+    {
+      "a": "WIRELESS_6G",
+      "b": "SEVEN_GC_APPRENTICESHIP",
+      "jaccard": 0.1864,
+      "lab_id_jaccard": 0.0
+    }
+  ],
+  "worst_jaccard": 0.4065,
+  "lab_id_clone_pairs": [],
+  "per_track_unique_token_floor_8": {
+    "DIGITAL_CONFIDENCE": true,
+    "IT_SUPPORT_HARDWARE": true,
+    "SOFTWARE_BUILDER": true,
+    "NETWORKING_INFRA": true,
+    "CYBER_SOC": true,
+    "DATA_DASHBOARDS": true,
+    "AI_ML_EDGE": true,
+    "EMBEDDED_PROTOTYPING": true,
+    "WIRELESS_6G": true,
+    "PM_AGILE_LSS": true,
+    "GAME_DEV_INTERACTIVE": true,
+    "SEVEN_GC_APPRENTICESHIP": true,
+    "CLOUD_DEVOPS": true,
+    "COMM_PD_ETHICS": true,
+    "ROBOTICS_CONTROL": true,
+    "GUNNCHOS_PRODUCT_LAB": true,
+    "HARDWARE_ENGINEERING": true,
+    "DATA_VIZ_BI": true
+  },
+  "all_tracks_have_unique_tokens": true,
+  "pass": true,
+  "claim_boundary": "Authored distinctness spot-check for digital packages only."
+}

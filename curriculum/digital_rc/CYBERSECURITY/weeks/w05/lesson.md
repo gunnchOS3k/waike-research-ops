@@ -1,23 +1,13 @@
-# Week 5: Hardening baselines & secure config
+# Week 5: Hardening the image — guest off, keys on, bot sudo off
 
-**Track:** CYBER_SOC
-**content_ref:** `../CYBERSECURITY/weeks/w05/lesson.md`
+The Harbor workstation image: guest_login false, ssh_password_auth false, unattended_upgrades true, open_ports {22,443}, world_writable_home false, ai_agent_sudo false. That last flag is the 2026 identity lesson bolted onto a baseline that would otherwise look like 2014 CIS.
 
-## Objectives
-- Match baseline flags
-- ai_agent_sudo false
-- NIST family names as labels
+We use NIST SP 800-53 family names (AC, IA, SI, AU) as labels. We do not claim a FedRAMP boundary. Hardening is a diff against a fixture JSON, not a scan of the school's real network.
 
-## Body (track overlay)
-Hardening is a fixture JSON diff.
+Patch pipelines are availability and integrity. An image that never patches is a museum. An image that patches during public hours is week 9 of General IT — here it is a control.
 
-Shared lesson body is maintained under the legacy package at `../CYBERSECURITY/weeks/w05/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
+World-writable homes are how essays become everyone else's essays. Mode 777 is not hospitality. The image also disables guest login because a 'guest' on a SOC-adjacent workstation is an unowned session. If a visitor needs a browser, they use the Civic Tech Desk kiosk — a different image, a different zone, a different promise.
 
 ## Worked example
+
 All six baseline flags must match. Mutating ai_agent_sudo true fails the lab.
-
-## Assessment mode
-AI_RESTRICTED
-
-## Claim refusals
-- No FedRAMP claim

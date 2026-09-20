@@ -20,7 +20,10 @@
     "lab_segmentation_zones",
     "lab_incident_playbook",
     "lab_safe_vuln_detect",
-    "lab_forensics_timeline"
+    "lab_forensics_timeline",
+    "lab_phishing_defense",
+    "lab_threat_model",
+    "lab_secure_config_audit"
   ],
   "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
 }

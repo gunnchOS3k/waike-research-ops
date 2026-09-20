@@ -1,12 +1,12 @@
 {
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.1099,
+  "worst_jaccard": 0.0822,
   "worst_pair": [
     "EMBEDDED_PROTOTYPING",
     "GUNNCHOS_PRODUCT_LAB"
   ],
-  "worst_packaging_jaccard": 0.1736,
+  "worst_packaging_jaccard": 0.1592,
   "worst_packaging_pair": [
     "EMBEDDED_PROTOTYPING",
     "GUNNCHOS_PRODUCT_LAB"

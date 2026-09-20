@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Pier Radio Bench: PUBLIC_REFERENCE_ONLY for 3GPP/IEEE; no commercial-6G brochure claims; Friis/numerology worked examples stay NO_AI on exams.
+
 
 ## Reviewer checks
 

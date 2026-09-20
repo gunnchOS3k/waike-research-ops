@@ -1,16 +1,6 @@
-# Group project — Hardware Engineering (ForgeSense Node)
+# Group project — Hardware Engineering + Embedded Prototyping — ForgeSense Node
 
-## Brief
-Design and document a **sensor node fixture** (temperature or door contact). Roles: schematic owner + safety/HITL reviewer.
+Digitally validate ForgeSense subsystem (budget+bus+DT+QEMU+diagnosis). PHYSICAL_PENDING for solder.
 
-## Deliverables
-1. Schematic PDF + BOM with sources.
-2. Bring-up log with polarity check and measured rails.
-3. ESD procedure checklist completed.
-4. Claim boundary: bench-only unless EXTERNAL_PHYSICAL_GATE opens.
-
-## Rubric anchors
-Safety · Documentation · Measurement honesty · HITL power-on
-
-## Explicit non-claims
-Not a UL listing; not production manufacturing sign-off.
+Seed assignment cue:
+Submit diagnosis JSON + subsystem validation packet linking labs 5–9.

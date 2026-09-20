@@ -1,0 +1,30 @@
+{
+  "schema": "waike.pr59.ci_reproduction.v1",
+  "generated_at": "2026-09-20T16:16:35Z",
+  "reproduced_from_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "parent_pr": 59,
+  "parent_head_at_prompt": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "failed_ci_run_id": 35520557472,
+  "root_cause": "write_course_digital_rc.py required batch_001_lab_count==20 after batch009 expanded GENERAL_IT+COMPUTER_NETWORKING+CYBERSECURITY to 27 labs; all courses failed with \"#43 labs orphaned from run_all\".",
+  "fix": "Pin batch_001==27 (>=20 floor), add batch_007==20, raise lab_count floor to 187, require canonical\u2194legacy reconciliation; deepen GUNNCHOS packets in batch007 packaging; depth detector FP fixes; expand substantive pilot READMEs.",
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "per_course_rc_fail_reasons": {},
+  "lab_batch_counts": {
+    "lab_count": 187,
+    "batch_001_lab_count": 27,
+    "batch_002_lab_count": 30,
+    "batch_003_lab_count": 30,
+    "batch_004_lab_count": 30,
+    "batch_005_lab_count": 10,
+    "batch_006_lab_count": 10,
+    "batch_007_lab_count": 20
+  },
+  "artifact_paths": {
+    "COURSE_COUNTS.json": "artifacts/COURSE_COUNTS.json",
+    "LAB_EXECUTION_RESULTS.json": "artifacts/LAB_EXECUTION_RESULTS.json",
+    "CURRICULUM_PROVENANCE_AUDIT.json": "artifacts/CURRICULUM_PROVENANCE_AUDIT.json",
+    "TEMPLATE_DETECTOR.json": "artifacts/TEMPLATE_DETECTOR.json",
+    "PRODUCT_CONSUMPTION_PROOF.json": "artifacts/PRODUCT_CONSUMPTION_PROOF.json",
+    "COURSE_DIGITAL_RC.json": "artifacts/COURSE_DIGITAL_RC.json"
+  }
+}

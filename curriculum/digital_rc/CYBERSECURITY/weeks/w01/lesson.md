@@ -1,24 +1,13 @@
-# Week 1: Security foundations & Harbor governance
+# Week 1: Harbor SOC — principles, governance, and the model that is also an asset
 
-**Track:** CYBER_SOC
-**content_ref:** `../CYBERSECURITY/weeks/w01/lesson.md`
+Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The 2026-09-01 ISC2 CC outline renames the second domain toward governance and threads AI through all five. We prefer that upcoming outline. We do not copy ISC2 items.
 
-## Objectives
-- Apply CIA including AI helpers
-- Name GRC owner
-- Refuse exam dumps
+Integrity for an AI helper means the training set and prompts are not a suggestion box for poisoning. If a bot summarizes tickets, a poisoned note can become a 'fact' in the next shift's head. Confidentiality means the model does not get raw patron essays. Availability means a model outage is a degraded SOC, not an excuse to skip containment.
 
-## Body (track overlay)
-CYBER_SOC is defensive SOC education. Governance first.
+Governance is GRC in small letters: who owns the kiosk image, who can approve sudo for a bot, what law or policy forbids storing library PANs. Transparency and bias are security-culture issues when a model triages which tickets look 'urgent.'
 
-Shared lesson body is maintained under the legacy package at `../CYBERSECURITY/weeks/w01/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
+Security+ SY0-701 General Security Concepts (CIA, AAA, Zero Trust as words you can place) is the second alignment label. Still not an item harvest. Harbor's physical room is a spare office with two displays: one for the fixture SIEM, one for the ticket queue. Nobody 'hunts' on the public kiosk VLAN from a personal laptop. If the only screen is a phone, you export the JSON and read it like a log — you do not install random APK 'SOC tools' from a store screenshot.
 
 ## Worked example
+
 A triage bot with sudo would violate least privilege for a non-human identity and would turn a prompt injection into root. Harbor policy: bots read, humans close.
-
-## Assessment mode
-AI_DISCLOSED
-
-## Claim refusals
-- No cert grant
-- No offensive tooling

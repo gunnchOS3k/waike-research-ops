@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+ForgeSense: QEMU/digital path preferred; PHYSICAL_PENDING must stay honest; AI may explain register maps but lab JSON validators are NO_AI for graded submits.
+
 
 ## Reviewer checks
 

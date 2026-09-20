@@ -243,8 +243,5 @@
     "presentation_materials": 10,
     "offline_pack": 1,
     "portfolio_artifacts": 1
-  },
-  "package_version": "1.0.0-pre.18track",
-  "compatibility_version": "waike.taxonomy.consumer.v1",
-  "track_id": "SOFTWARE_BUILDER"
+  }
 }

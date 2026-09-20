@@ -249,6 +249,22 @@ def validate_registry(
 
 
 def digital_rc_package_dirs(repo_root: Path | None = None) -> list[str]:
-    """Exact disk count method: child dirs of curriculum/digital_rc that exist."""
+    """Primary digital_rc content packages (17), excluding canonical alias entry overlays.
+
+    Alias track entry dirs (DIGITAL_CONFIDENCE, IT_SUPPORT_HARDWARE, NETWORKING_INFRA,
+    CYBER_SOC) may exist for independent addressability but share legacy content trees.
+    Disk count for product-path coexistence remains the 17 COURSES package directories.
+    """
     base = (repo_root or ROOT) / "curriculum" / "digital_rc"
-    return sorted(p.name for p in base.iterdir() if p.is_dir())
+    # Canonical alias entries over shared legacy packages — not additional product courses.
+    alias_entries = {
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE",
+        "NETWORKING_INFRA",
+        "CYBER_SOC",
+    }
+    return sorted(
+        p.name
+        for p in base.iterdir()
+        if p.is_dir() and p.name not in alias_entries and not p.name.startswith(".")
+    )

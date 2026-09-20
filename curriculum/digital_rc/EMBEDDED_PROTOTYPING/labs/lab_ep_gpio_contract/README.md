@@ -1,18 +1,9 @@
-# lab_ep_gpio_contract
+# lab_ep_gpio_contract — ep_gpio_contract
 
-GPIO contract before pinmux.
+lab_ep_gpio_contract fixture JSON.
 
-**Classification:** DIGITAL
+Empty {} fails. PASS raises.
 
-## Student artifact
-Keys: `pin, direction, default_level, pull`.
-Empty {} fails. PASS-only body fails.
-
-## How to run
-```
 python3 scripts/run_course_labs.py --lab lab_ep_gpio_contract --submission path/to/student.json
-python3 scripts/run_course_labs.py --lab lab_ep_gpio_contract --empty
-```
 
-## No-hardware fallback
-Submit fixture JSON. Mark PHYSICAL_PENDING for solder/OTA/EVT claims without evidence.
+Wrong/empty/print-PASS fail.

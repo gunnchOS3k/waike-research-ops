@@ -1,29 +1,32 @@
-# gunnchOS Device OS & Product Lab — Product Bench
+# gunnchOS Device OS and Product Lab — Product Bench
 
 ## Who this is for
-Builders shipping Device Lab product contracts: requirements, architecture, privacy, release eng, telemetry honesty, and validation — tied to real gunnchOS concepts.
+Product lab COURSE_DIGITAL_RC: scope charter, accepted-main compatibility pins, checkout workflow, compose health, privacy BOM, guest protocol contract, semver release notes, CI gate tokens, cross-repo dependency hygiene. Does not merge device-os #103. Not student/teacher E6.
 
 ## Tracks and academy
-- track_id: GUNNCHOS_PRODUCT_LAB
+- Tracks: GUNNCHOS_PRODUCT_LAB
 - Academy: ACADEMY_HARDWARE
 
 ## Duration
-Ten weeks. Digital compose and contract fixtures first. PHYSICAL_PENDING for iron/OTA/EVT.
+Ten Product Lab weeks (~6–8 hours/week). Compose/compat/privacy focus; NO_AI weeks 4 and 9. Accepted-main pins only.
 
 ## Weekly map
-- Week 01: Product charter / requirements
-- Week 02: Compat matrix / architecture pins
-- Week 03: Checkout FSM / user stories
-- Week 04: Compose health (NO_AI)
-- Week 05: Privacy BOM / security-privacy
-- Week 06: Guest protocol / Device OS interface
-- Week 07: Release notes
-- Week 08: CI tokens / testing / a11y gates
-- Week 09: Dependency pin / telemetry honesty (NO_AI)
-- Week 10: Product validation capstone
+- Week 01: Product charter — scope without fabricated impact
+- Week 02: Compatibility matrix — device-os × gunnchAI pins
+- Week 03: Checkout flow — ticket states and handoff
+- Week 04: Compose health — migrate before healthy
+- Week 05: Privacy BOM — field inventory without PII
+- Week 06: Guest protocol — ping/boot_status contract
+- Week 07: Release notes — semver and breaking flag
+- Week 08: CI gate tokens — honest pass/fail
+- Week 09: Cross-repo dependency pin — no preview in accepted
+- Week 10: Product lab capstone — charter+compat+CI evidence
 
 ## Assessments
-Quizzes, mid, final, 10 labs, portfolio. Answer keys not in learner ingest.
+gunnchOS Product Lab Bench: weekly GPL quizzes on charter/compat/checkout/compose/privacy/guest/semver/CI/pins, mid (20 original), final (24 original), practical over ten labs, product capstone with no_device_os_pr. Does not merge device-os #103.
 
 ## Claim boundary
-No fabricated EVT. Do not merge device-os #103 as course evidence. No community impact invention.
+PMI/privacy topic labels PUBLIC_REFERENCE_ONLY. Does not merge device-os #103. COURSE_DIGITAL_RC only — not REAL_STUDENT_E6 / REAL_TEACHER_E6.
+
+## Kinesthetic hook
+Ten gunnchOS Product Lab weeks: charter → compat matrix → checkout FSM → compose health → privacy BOM → guest protocol → release notes → CI tokens → dep pin → capstone.

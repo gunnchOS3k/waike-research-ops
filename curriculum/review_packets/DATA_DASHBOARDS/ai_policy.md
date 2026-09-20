@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Pier Ledger Bench: AI may draft SQL critiques under AI_DISCLOSED; schema-change practicals default AI_RESTRICTED; dashboard KPI claims must cite fixture rows, not invented impact.
+
 
 ## Reviewer checks
 

@@ -19,7 +19,11 @@
     "lab_vlan_mac",
     "lab_spf_routing",
     "lab_nat_acl",
-    "lab_dns_resolution"
+    "lab_dns_resolution",
+    "lab_wifi_fundamentals",
+    "lab_transport_ports",
+    "lab_packet_capture_fixture",
+    "lab_ops_runbook"
   ],
   "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
 }

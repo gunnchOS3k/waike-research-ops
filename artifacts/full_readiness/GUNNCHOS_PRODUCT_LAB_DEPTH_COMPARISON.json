@@ -1,0 +1,58 @@
+{
+  "schema": "waike.full_readiness.gunnchos_product_lab_depth_comparison.v1",
+  "generated_at": "2026-09-20T16:15:36Z",
+  "source_commit": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "reference_track": "SOFTWARE_BUILDER",
+  "subject_track": "GUNNCHOS_PRODUCT_LAB",
+  "reference": {
+    "track_id": "SOFTWARE_BUILDER",
+    "week_lesson_files": 10,
+    "week_lesson_bytes_min": 1019,
+    "week_lesson_bytes_median": 1214,
+    "labs_on_disk": 10,
+    "assignments": 10,
+    "rubrics": 8,
+    "instructor_packet_bytes": 460,
+    "student_packet_bytes": 352,
+    "has_ai_policy": true,
+    "has_portfolio": true,
+    "has_syllabus": true,
+    "course_week_count": 10
+  },
+  "subject": {
+    "track_id": "GUNNCHOS_PRODUCT_LAB",
+    "week_lesson_files": 10,
+    "week_lesson_bytes_min": 1237,
+    "week_lesson_bytes_median": 1278,
+    "labs_on_disk": 10,
+    "assignments": 10,
+    "rubrics": 8,
+    "instructor_packet_bytes": 1705,
+    "student_packet_bytes": 1269,
+    "has_ai_policy": true,
+    "has_portfolio": true,
+    "has_syllabus": true,
+    "course_week_count": 10
+  },
+  "floors": {
+    "week_lesson_files": 10,
+    "week_lesson_bytes_min": 1019,
+    "labs_on_disk": 10,
+    "assignments": 10,
+    "rubrics": 8,
+    "instructor_packet_bytes": 460,
+    "student_packet_bytes": 352
+  },
+  "meets_floor": {
+    "week_lesson_files": true,
+    "week_lesson_bytes_min": true,
+    "labs_on_disk": true,
+    "assignments": true,
+    "rubrics": true,
+    "instructor_packet_bytes": true,
+    "student_packet_bytes": true
+  },
+  "gaps": [],
+  "all_floors_met": true,
+  "notes": "Structural comparison only (bytes/counts). Not a claim of equal narrative quality or field validation."
+}

@@ -42,7 +42,7 @@
       "weeks": 10,
       "full_lessons": 10,
       "assignments": 10,
-      "runnable_labs": 6,
+      "runnable_labs": 10,
       "quizzes": 10,
       "quiz_items": 60,
       "mid_course_items": 20,
@@ -71,7 +71,7 @@
       "weeks": 10,
       "full_lessons": 10,
       "assignments": 10,
-      "runnable_labs": 7,
+      "runnable_labs": 10,
       "quizzes": 10,
       "quiz_items": 60,
       "mid_course_items": 20,
@@ -503,7 +503,7 @@
     }
   },
   "lab_execution_ok": true,
-  "lab_count": 160,
+  "lab_count": 187,
   "empty_submission_fails": true,
   "wrong_submission_fails": true,
   "print_pass_raises": true,
@@ -631,9 +631,9 @@
       "n": 104
     }
   },
-  "worst_packaging_jaccard": 0.1736,
+  "worst_packaging_jaccard": 0.1592,
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
   "worst_exam_weekly_token_jaccard": 0.75,
-  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, stripped lesson depth \u2265800 without operator-note padding, and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 (IT/Networking/Cyber) \u222a #44 (Software/Hardware/PM) \u222a #45 (AI/Data/Cloud) \u222a #46 (Wireless/Robotics/Game) \u222a Stream-B (COMM_PD_ETHICS \u222a DATA_DASHBOARDS). Commercial standardized 6G does not exist today. Not a student/teacher E6. Not all 18 courses."
+  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, stripped lesson depth \u2265800 without operator-note padding, and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 (IT/Networking/Cyber) \u222a #44 (Software/Hardware/PM) \u222a #45 (AI/Data/Cloud) \u222a #46 (Wireless/Robotics/Game) \u222a Stream-B (COMM_PD_ETHICS \u222a DATA_DASHBOARDS) \u222a batch_007 (EMBEDDED_PROTOTYPING \u222a GUNNCHOS_PRODUCT_LAB) \u222a batch_008 (SEVEN_GC_APPRENTICESHIP) \u2014 17 legacy digital_rc product courses. Canonical readiness is 18 track_ids via shared-package reconciliation (DIGITAL_CONFIDENCE+IT_SUPPORT_HARDWARE\u2192GENERAL_IT; NETWORKING_INFRA\u2192COMPUTER_NETWORKING; CYBER_SOC\u2192CYBERSECURITY). Commercial standardized 6G does not exist today. Not a student/teacher E6. Not a field/human academic claim."
 }
