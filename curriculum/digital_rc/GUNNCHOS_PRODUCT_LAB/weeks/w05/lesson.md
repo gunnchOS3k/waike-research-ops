@@ -9,8 +9,9 @@
 - Refuse biometric claims without evidence
 
 ## Body
-Privacy BOM lists camera/mic/location-class fields with pii_in_bom=false and retention_days. Security/privacy is a product requirement, not a slide. Accessibility note: disclose what is recorded in text, not color alone.
+Privacy BOM is a product requirement: list sensing fields (camera, mic, location-class), keep pii_in_bom=false, set retention_days. Accessibility requires the disclosure in text, not an icon color alone.
 
+Security/privacy review refuses biometric product claims without evidence and refuses storing library-card PANs 'just in case.'
 ## Worked example
 fields=[camera,mic,location], pii_in_bom=false, retention_days=30
 

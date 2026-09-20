@@ -1,18 +1,16 @@
 {
   "schema": "waike.course_package.v1",
   "course_id": "NETWORKING_INFRA",
-  "track_id": "NETWORKING_INFRA",
   "title": "Networking Infrastructure \u2014 Packet Range Campus Edge",
-  "version": "1.0.0",
   "track_ids": [
     "NETWORKING_INFRA"
   ],
   "academy_id": "ACADEMY_NETWORKING",
-  "kinesthetic_hook": "Parse frames, run LPM, SPF a four-router town, and ship an ops runbook \u2014 all on safe local fixtures.",
-  "shared_content_package": "COMPUTER_NETWORKING",
-  "ai_use_policy": {
-    "ref": "ai_use_policy.json"
-  },
+  "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
+  "lesson_excerpt": "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire agreed to that, not because the Internet is polite.\n\nEncapsulation is dressing: HTTP inside TCP inside IP inside Ethernet. Each header is a sticky",
+  "worked_example": "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. Peel Ethernet first (ethertype 0x0800), then IP, then TCP.",
+  "assignment": "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label who reads each header. No vendor GUI screenshots required.",
+  "lab_hint": "lab_cidr_math",
   "syllabus": {
     "path": "syllabus.md",
     "weeks": 10
@@ -207,8 +205,7 @@
   "presentation_materials_ref": "presentation/",
   "offline_pack_ref": "offline_pack/pack.json",
   "portfolio": {
-    "path": "portfolio/",
-    "outcomes_ref": "portfolio/outcomes.json"
+    "path": "portfolio/"
   },
   "career_mapping": {
     "roles": [
@@ -219,9 +216,26 @@
       "CCNA 200-301 v1.1"
     ]
   },
-  "glossary_ref": "glossary.md",
-  "references_ref": "references.md",
-  "accessibility_notes_ref": "accessibility_notes.md",
+  "alignment_ref": "curriculum/alignment/networking_alignment.json",
+  "ai_use_policy": {
+    "ref": "ai_use_policy.json",
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "notes": "CIDR/datapath practicals AI_RESTRICTED."
+  },
   "provenance": {
     "original_waike": true,
     "reuse_class_note": "See sources/benchmark_registry.json",
@@ -250,10 +264,12 @@
     "portfolio_artifacts": 1,
     "portfolio_outcomes": 1
   },
+  "package_version": "1.0.0-pre.18track",
+  "compatibility_version": "waike.taxonomy.consumer.v1",
+  "track_id": "NETWORKING_INFRA",
+  "version": "1.0.0",
   "shared_content": {
     "mode": "symlink_shared_tree",
     "root": "../COMPUTER_NETWORKING"
-  },
-  "package_version": "1.0.0-pre.18track",
-  "alignment_ref": "curriculum/alignment/networking_alignment.json"
+  }
 }

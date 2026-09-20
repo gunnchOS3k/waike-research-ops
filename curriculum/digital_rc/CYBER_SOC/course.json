@@ -1,18 +1,16 @@
 {
   "schema": "waike.course_package.v1",
   "course_id": "CYBER_SOC",
-  "track_id": "CYBER_SOC",
   "title": "Cyber SOC \u2014 Harbor Defensive Operations",
-  "version": "1.0.0",
   "track_ids": [
     "CYBER_SOC"
   ],
   "academy_id": "ACADEMY_CYBER",
-  "kinesthetic_hook": "Triage fixture SIEM, enforce RBAC, defend phishing, and walk an IR clock \u2014 defensive sandboxed labs only.",
-  "shared_content_package": "CYBERSECURITY",
-  "ai_use_policy": {
-    "ref": "ai_use_policy.json"
-  },
+  "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",
+  "lesson_excerpt": "Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The 2026-09-01 ISC2 CC outline renames the second domain toward governance and threads AI through all five. We prefer that upcoming outline. We do not copy ISC2 items.\n\nIntegrity for an AI helper means the training set and prompts are not a suggestion box for poisoning.",
+  "worked_example": "A triage bot with sudo would violate least privilege for a non-human identity and would turn a prompt injection into root. Harbor policy: bots read, humans close.",
+  "assignment": "Write a one-page Harbor governance memo: CIA applied to the ticket-summarizer bot, one GRC owner, and one prohibited data class.",
+  "lab_hint": "lab_hardening_baseline",
   "syllabus": {
     "path": "syllabus.md",
     "weeks": 10
@@ -207,8 +205,7 @@
   "presentation_materials_ref": "presentation/",
   "offline_pack_ref": "offline_pack/pack.json",
   "portfolio": {
-    "path": "portfolio/",
-    "outcomes_ref": "portfolio/outcomes.json"
+    "path": "portfolio/"
   },
   "career_mapping": {
     "roles": [
@@ -224,9 +221,27 @@
       "CompTIA Security+ SY0-701"
     ]
   },
-  "glossary_ref": "glossary.md",
-  "references_ref": "references.md",
-  "accessibility_notes_ref": "accessibility_notes.md",
+  "alignment_ref": "curriculum/alignment/cybersecurity_alignment.json",
+  "ai_use_policy": {
+    "ref": "ai_use_policy.json",
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "notes": "Defensive only. IR/parser practicals NO_AI.",
+    "defensive_only": true
+  },
   "provenance": {
     "original_waike": true,
     "reuse_class_note": "See sources/benchmark_registry.json",
@@ -255,10 +270,12 @@
     "portfolio_artifacts": 1,
     "portfolio_outcomes": 1
   },
+  "package_version": "1.0.0-pre.18track",
+  "compatibility_version": "waike.taxonomy.consumer.v1",
+  "track_id": "CYBER_SOC",
+  "version": "1.0.0",
   "shared_content": {
     "mode": "symlink_shared_tree",
     "root": "../CYBERSECURITY"
-  },
-  "package_version": "1.0.0-pre.18track",
-  "alignment_ref": "curriculum/alignment/cybersecurity_alignment.json"
+  }
 }

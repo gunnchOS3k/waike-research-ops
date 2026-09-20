@@ -9,10 +9,9 @@
 - Treat DT as the hardware/software interface contract
 
 ## Body
-Devicetree overlays are how firmware names hardware. Enabling &i2c1 and led0 is required. Deleting &soc is unsafe and fails the lab. This is the HW/SW interface week: the overlay is the contract Device OS guests will later assume.
+Devicetree overlays name hardware for firmware. Enable &i2c1 and led0. delete_soc=true is unsafe and fails. This overlay is the HW/SW interface contract that higher layers (including Device OS guests) will assume.
 
-No-hardware fallback: overlay JSON/text fixture check.
-
+No-hardware fallback: overlay fixture check. Claiming board bring-up complete from overlay text alone fails honesty.
 ## Worked example
 overlay_has_i2c1=true, overlay_has_led0=true, delete_soc=false
 

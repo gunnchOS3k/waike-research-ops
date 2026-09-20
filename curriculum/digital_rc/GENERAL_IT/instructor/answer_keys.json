@@ -1,4 +1,27 @@
 {
-  "note": "Track-specific items; shared lab keys remain in GENERAL_IT/instructor/answer_keys.json",
-  "items": {}
+  "note": "Track-specific quiz/mid/final keys. Shared lab keys remain in GENERAL_IT/instructor/answer_keys.json.",
+  "mid_course": {
+    "it-m01": 1,
+    "it-m02": 1,
+    "it-m03": 1,
+    "it-m04": 1,
+    "it-m05": 1,
+    "it-m06": 1,
+    "it-m07": 1,
+    "it-m08": 1
+  },
+  "final_knowledge": {
+    "it-m01": 1,
+    "it-m02": 1,
+    "it-m03": 1,
+    "it-m04": 1,
+    "it-m05": 1,
+    "it-m06": 1,
+    "it-m07": 1,
+    "it-m08": 1,
+    "it-f01": 1,
+    "it-f02": 1,
+    "it-f03": 1,
+    "it-f04": 1
+  }
 }

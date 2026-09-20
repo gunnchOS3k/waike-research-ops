@@ -8,5 +8,7 @@
   ],
   "summary": "Harbor SOC lab lab_incident_playbook.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_incident_playbook/",
+  "track_id": "CYBER_SOC"
 }

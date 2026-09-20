@@ -1,12 +1,14 @@
-# References — Cybersecurity / CYBER_SOC
+# References — CYBERSECURITY
 
-Primary / official references only (PUBLIC_REFERENCE_ONLY):
+Real references for study alignment. Public pages are not free to dump into quizzes.
 
-- NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide (process skeleton).
-- NIST SP 800-53 control family names (AC, IA, SI, AU) as labels — not a FedRAMP claim.
-- ISC2 Certified in Cybersecurity (CC) domain outline pages (upcoming 2026 topics as labels only — no item banks).
-- CompTIA Security+ SY0-701 exam objectives page (alignment labels only).
-- NICE Workforce Framework work-role language (open) for career mapping adjectives.
-- OWASP theme names for secure development awareness — no copied item banks.
+1. NIST SP 800-61 Rev. 2 Computer Security Incident Handling Guide
+2. NIST Cybersecurity Framework 2.0
+3. MITRE ATT&CK — https://attack.mitre.org/
+4. CIS Controls v8 overview
+5. OWASP Top 10 — https://owasp.org/www-project-top-ten/
 
-CYBER_SOC is defensive educational only. No exploit kits. No malware construction. No unauthorized scanning.
+## Local WAIKE anchors
+- `curriculum/digital_rc/CYBERSECURITY/syllabus.md`
+- `ACCESSIBILITY_AND_LOW_COST.md`
+- `REPRODUCIBILITY.md`

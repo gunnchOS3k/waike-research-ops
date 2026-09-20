@@ -1,11 +1,14 @@
 # References — GUNNCHOS_PRODUCT_LAB
 
-Primary / official references only (PUBLIC_REFERENCE_ONLY):
+Real references for study alignment. Public pages are not free to dump into quizzes.
 
-- Semantic Versioning 2.0.0 (semver.org) for release note flags.
-- OpenAPI/HTTP problem-details theme labels when referencing API error bodies (structure only).
-- WCAG 2.2 overview pages for a11y gate vocabulary (not a conformance claim).
-- gunnchOS / Device OS internal contract snapshots in-repo (accepted-main pins) — cite digests, do not invent merges.
-- SPDX license list for dependency license naming when present in fixtures.
+1. gunnchos-device-os architecture docs (sibling repo when present)
+2. Android developer guides — https://developer.android.com/
+3. W3C WCAG 2.2
+4. NIST Privacy Framework
+5. Semantic Versioning 2.0.0 — https://semver.org/
 
-No fabricated EVT reports. No textbook reproduction.
+## Local WAIKE anchors
+- `curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/syllabus.md`
+- `ACCESSIBILITY_AND_LOW_COST.md`
+- `REPRODUCIBILITY.md`

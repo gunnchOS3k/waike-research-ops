@@ -18,6 +18,5 @@
     "certs_aligned_not_granted": true,
     "physical_pending_when_unproven": true
   },
-  "package_entry": "CYBER_SOC",
   "shared_content_from": "CYBERSECURITY"
 }

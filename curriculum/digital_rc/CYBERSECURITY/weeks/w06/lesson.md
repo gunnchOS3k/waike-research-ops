@@ -1,13 +1,24 @@
-# Week 6: Segmentation that survives a stolen laptop
+# Week 6: Phishing defense (report, do not harvest)
 
-A stolen staff laptop should not become a SOC pass. That's the point of zones and device posture. Harbor's matrix already denies guest→staff. Stolen-laptop story: revoke the identity (week 2), watch the logs (week 4), and do not widen the matrix 'temporarily.'
+**Track:** CYBER_SOC
+**content_ref:** `../CYBERSECURITY/weeks/w06/lesson.md`
 
-Microseg is a word. A usable version here: kiosk processes cannot open SMB to staff file shares. If you need a file, you use the desk procedure from General IT, not a hole in the firewall.
+## Objectives
+- ≥2 indicators
+- report/quarantine
+- no_credential_harvest true
 
-Cloud security concept: security groups are ACLs with opinions. We write the opinion in the matrix rather than clicking a console.
+## Body (track overlay)
+DEFENSIVE ONLY. No phishing kits.
 
-Tabletop: laptop gone at 16:12, reported 16:40. Containment is identity revoke and session kill, not a press release. At 16:41 you also mark the laptop's last DHCP lease as untrusted and watch whether it still talks. A stolen device that keeps renewing is still in the story until the lease dies or you see it on a foreign SSID.
+Shared lesson body is maintained under the legacy package at `../CYBERSECURITY/weeks/w06/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
 
 ## Worked example
-
 Revoke omar's sessions before rewriting the zone matrix. Matrix widen is not containment.
+
+## Assessment mode
+NO_AI
+
+## Claim refusals
+- No credential harvest
+- No phishing kit construction

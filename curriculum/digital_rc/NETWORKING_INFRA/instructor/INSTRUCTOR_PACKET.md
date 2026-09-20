@@ -9,5 +9,5 @@
 - Public pages ≠ free to copy
 
 ## Keys / HITL
-- Keys: `instructor/answer_keys.json` stay instructor-only.
+- Keys: `instructor/answer_keys.json` stay instructor-only (never learner ingest).
 - HITL: human-in-the-loop grading and release gates; AI never silently grades.

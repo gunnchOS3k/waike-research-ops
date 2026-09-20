@@ -1,13 +1,23 @@
-# Week 2: CIDR as a land survey, not a guessing game
+# Week 2: IP addressing & subnetting as land survey
 
-10.20.30.40/26 is not 'a class C with a funny number.' /26 means 26 bits of network, 6 bits of host, 64 addresses, network 10.20.30.0, broadcast 10.20.30.63, 62 usable if you still believe in network and broadcast addresses. The host .40 lives in that block the way a house lives on a surveyed lot.
+**Track:** NETWORKING_INFRA
+**content_ref:** `../COMPUTER_NETWORKING/weeks/w02/lesson.md`
 
-A second block 10.20.30.80/28 is 16 addresses, .80–.95, 14 usable. If you put a printer at .96 you are in the next lot and the ACL you wrote for /28 will not save you.
+## Objectives
+- Compute /26 and /28 lots
+- Explain LPM
+- Place IPv6 link-local without full design claim
 
-Longest prefix match is how a router chooses among overlapping lots. /32 beats /24 beats /16 beats /0. This is the same idea you will wire into the datapath lab, and it is why 'add a more specific' is a real change, not a superstition.
+## Body (track overlay)
+CIDR is survey work. Host ≠ network. Bitwise honesty for kiosk VLANs.
 
-IPv6 appears as a parallel survey (128 bits, no broadcast). We do not pretend a 10-week course makes you an IPv6 designer. You will be able to say why fe80:: is link-local and why it is not a public plan.
+Shared lesson body is maintained under the legacy package at `../COMPUTER_NETWORKING/weeks/w02/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
 
 ## Worked example
-
 10.20.30.40/26 → net 10.20.30.0 bcast 10.20.30.63 usable 62. 10.20.30.80/28 → net 10.20.30.80 bcast 10.20.30.95 usable 14.
+
+## Assessment mode
+AI_RESTRICTED
+
+## Claim refusals
+- No production IP plan without change ticket

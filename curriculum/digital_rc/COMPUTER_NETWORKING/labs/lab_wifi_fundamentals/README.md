@@ -1,14 +1,9 @@
-# lab_wifi_fundamentals — Wi-Fi fundamentals on Packet Range guest SSID
+# lab_wifi_fundamentals (entry: NETWORKING_INFRA)
 
-Configure a guest SSID plan: band, channel, WPA3 (or lab-only OPEN), guest isolation true. No unauthorized RF transmit claims.
+**content_ref:** `../COMPUTER_NETWORKING/labs/lab_wifi_fundamentals/`
 
-## Student artifact
-Keys: `ssid, band_ghz, channel, auth, guest_isolated`.
-Empty {} fails. A file whose entire body is PASS raises _fail_if_print_pass.
+Shared lab body/validator lives in the legacy package. Classification: DIGITAL.
 
-## How to run
 ```
 python3 scripts/run_course_labs.py --lab lab_wifi_fundamentals --submission path/to/student.json
-python3 scripts/run_course_labs.py --lab lab_wifi_fundamentals --empty
 ```
-

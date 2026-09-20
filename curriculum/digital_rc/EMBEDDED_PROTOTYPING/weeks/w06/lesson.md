@@ -9,10 +9,9 @@
 - Keep ISR work short — defer heavy work
 
 ## Body
-Realtime is a budget, not a brand. If an edge must be seen within 250 µs, polling loops that sometimes run longer fail the budget — use ISR mode and keep the handler short. missed_edges must be 0 on the fixture acceptance window.
+Realtime is a budget. If an edge must be observed within 250 µs, a polling loop that sometimes runs longer fails — choose mode=isr, keep the handler short, and defer heavy work. missed_edges must be 0 on the acceptance window.
 
-No-hardware fallback: reason from the latency table in the lab README.
-
+Connectivity note: ISR latency budgets matter for button/wake paths that later feed Device OS guest boot_status. No hard-realtime certification is granted.
 ## Worked example
 mode=isr, max_latency_us=250, missed_edges=0
 

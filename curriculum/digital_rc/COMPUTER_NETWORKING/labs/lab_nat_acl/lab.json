@@ -9,5 +9,7 @@
   ],
   "summary": "Legacy Packet Range lab lab_nat_acl.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_nat_acl/",
+  "track_id": "NETWORKING_INFRA"
 }

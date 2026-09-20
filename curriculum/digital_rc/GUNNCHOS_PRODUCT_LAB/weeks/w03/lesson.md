@@ -9,8 +9,9 @@
 - Keep handoff explicit between desk and volunteer
 
 ## Body
-Checkout flow is the product spine for Device Lab. States must be complete; orphan states fail. This is requirements-to-FSM translation, not opening unmerged device-os PRs.
+Checkout flow is the product spine for Device Lab. Map user stories to FSM states: a volunteer requests a device, desk lead approves, checkout happens, return closes the loop. orphan_state=true fails because the next shift cannot tell who holds the unit.
 
+Industrial design interaction this week is a constraint note only (weight, port reach, label readability) — not a fabricated EVT photo. Keep states explicit so SOFTWARE_BUILDER ForgeDesk tickets and Product Lab charters do not silently diverge.
 ## Worked example
 states=[requested,approved,checked_out,returned], orphan_state=false
 

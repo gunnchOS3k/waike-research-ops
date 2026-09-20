@@ -11,7 +11,8 @@
         "path": "weeks/w01/lesson.md",
         "lab_id": "lab_ticket_queue"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Ticket language that names subsystems"
     },
     {
       "week": 2,
@@ -21,7 +22,8 @@
         "path": "weeks/w02/lesson.md",
         "lab_id": "lab_os_users"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Filesystem/media choices for recovery sticks"
     },
     {
       "week": 3,
@@ -31,7 +33,8 @@
         "path": "weeks/w03/lesson.md",
         "lab_id": "lab_os_users"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Privilege groups for desk.lead vs kiosk"
     },
     {
       "week": 4,
@@ -41,7 +44,8 @@
         "path": "weeks/w04/lesson.md",
         "lab_id": "lab_backup"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Capacity/quota before disk-full panic"
     },
     {
       "week": 5,
@@ -51,7 +55,8 @@
         "path": "weeks/w05/lesson.md",
         "lab_id": "lab_ticket_queue"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "SE1 vs SE3 hardware impact"
     },
     {
       "week": 6,
@@ -61,7 +66,8 @@
         "path": "weeks/w06/lesson.md",
         "lab_id": "lab_storage"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Power-first hardware triage"
     },
     {
       "week": 7,
@@ -71,7 +77,8 @@
         "path": "weeks/w07/lesson.md",
         "lab_id": "lab_dns_hosts"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Link lights before blaming phones"
     },
     {
       "week": 8,
@@ -81,7 +88,8 @@
         "path": "weeks/w08/lesson.md",
         "lab_id": "lab_services"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Service hygiene vs malware-analog"
     },
     {
       "week": 9,
@@ -91,7 +99,8 @@
         "path": "weeks/w09/lesson.md",
         "lab_id": "lab_automation_runbook"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Snapshot/change window before image writes"
     },
     {
       "week": 10,
@@ -101,7 +110,8 @@
         "path": "weeks/w10/lesson.md",
         "lab_id": "lab_automation_runbook"
       },
-      "track_focus": "Support + hardware foundations: power-first triage, storage/memory checks, ESD-safe handling, and change windows."
+      "track_focus": "Hardware triage and ESD-safe support",
+      "track_emphasis": "Capstone: mixed desk + hardware incidents"
     }
   ]
 }

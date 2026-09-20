@@ -1,11 +1,14 @@
 # References — EMBEDDED_PROTOTYPING
 
-Primary / official references only (PUBLIC_REFERENCE_ONLY):
+Real references for study alignment. Public pages are not free to dump into quizzes.
 
-- Zephyr Project documentation (west, boards, devicetree) — structure citations only.
-- Arm Cortex-M generic user guide topic labels for vector tables / exceptions.
-- Nordic nRF52 series product pages for memory-map class labels (fixture is WAIKE-owned wording).
-- I2C-bus specification topic labels (NXP historical umbrella) for 100 kHz mode naming.
-- JEDEC SPI flash command set topic labels for READ (0x03) class opcodes.
+1. Barr — Programming Embedded Systems
+2. ARM Cortex-M documentation (arm.com)
+3. USB-IF specifications overview
+4. IPC-A-610 acceptability of electronic assemblies (overview)
+5. NIST IR 8259 IoT device cybersecurity capability core baseline
 
-No textbook reproduction. No fabricated EVT reports.
+## Local WAIKE anchors
+- `curriculum/digital_rc/EMBEDDED_PROTOTYPING/syllabus.md`
+- `ACCESSIBILITY_AND_LOW_COST.md`
+- `REPRODUCIBILITY.md`

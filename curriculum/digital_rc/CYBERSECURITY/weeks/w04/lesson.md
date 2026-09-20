@@ -1,13 +1,23 @@
-# Week 4: SIEM triage — bursts are a look, not a conviction
+# Week 4: Telemetry, logs & SIEM triage
 
-AUTH_FAIL lines for ada four times from 10.20.30.5 cross the threshold of 3. cal fails once. bea succeeds. Your note says 'burst on ada,' not 'ada is the attacker.' Bursts are a look. Conviction needs more.
+**Track:** CYBER_SOC
+**content_ref:** `../CYBERSECURITY/weeks/w04/lesson.md`
 
-Alert fatigue is how SOCs die. A bot may cluster bursts. A human still owns the close. That is the 2026 ops guidance in our own words.
+## Objectives
+- Count AUTH_FAIL bursts
+- Burst notes without attacker conviction
+- No passwords in logs
 
-Logs must not contain passwords. If a fixture line has `password=`, the lab author failed — and you will file a bug, not reuse it.
+## Body (track overlay)
+Bursts are a look.
 
-Security+ operations domain is the alignment label: alerting and monitoring as verbs. Harbor's shift handoff is a six-line paste: burst users, threshold, window, what you looked at, what you did not conclude, and who owns the next look. A handoff that says 'ada weird' is how Sunday starts from zero. Thresholds are policy, not vibes.
+Shared lesson body is maintained under the legacy package at `../CYBERSECURITY/weeks/w04/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
 
 ## Worked example
-
 counts ada=4, cal=1, threshold=3 → bursts=['ada']. Note: burst, not attacker.
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No SIEM against hosts you do not own

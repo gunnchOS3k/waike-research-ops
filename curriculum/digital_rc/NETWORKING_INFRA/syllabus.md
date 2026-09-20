@@ -1,15 +1,15 @@
 # Networking Infrastructure — Packet Range Campus Edge
 
 ## Who this is for
-Operators who need campus edge literacy: models, L2/L3, DNS/DHCP, Wi-Fi fundamentals, troubleshooting, and security basics without unauthorized capture.
+Campus edge operators: models, L2/L3, DNS/DHCP, Wi-Fi fundamentals, troubleshooting, security basics.
 
 ## Tracks and academy
-- course_id / track_id: NETWORKING_INFRA
-- Legacy shared content package: COMPUTER_NETWORKING/
+- course_id / track_id: `NETWORKING_INFRA`
+- Legacy shared content: `COMPUTER_NETWORKING/` (content_ref; not blind full duplication)
 - Academy: ACADEMY_NETWORKING
 
 ## Duration
-Ten weeks (~8–10 hours/week). Shared labs live under `COMPUTER_NETWORKING/labs/`; this entry re-exports them under canonical track_id `NETWORKING_INFRA`.
+Ten weeks (~8–10 hours/week).
 
 ## Weekly map
 - Week 01: Network models & encapsulation on the Packet Range
@@ -24,7 +24,8 @@ Ten weeks (~8–10 hours/week). Shared labs live under `COMPUTER_NETWORKING/labs
 - Week 10: Modern ops runbook & campus edge capstone
 
 ## Assessments
-Weekly quizzes, mid (20), final (24), practical labs (10), portfolio. Answer keys stay in `instructor/answer_keys.json` and are **not** in learner ingest.
+Weekly quizzes, mid (20), final (24), practical labs (10), portfolio/capstone.
+Answer keys live in `instructor/answer_keys.json` and are **not** in learner ingest.
 
 ## Claim boundary
-Aligns to public standards topic labels only. Does not grant vendor certs. Shared lesson/lab bodies referenced via content_ref — not blind full-tree duplication.
+Public standards topic labels only. Certs aligned not granted. Shared bodies via content_ref.

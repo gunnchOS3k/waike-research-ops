@@ -8,5 +8,7 @@
   ],
   "summary": "Legacy Packet Range lab lab_cidr_math.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_cidr_math/",
+  "track_id": "NETWORKING_INFRA"
 }

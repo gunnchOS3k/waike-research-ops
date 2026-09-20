@@ -9,8 +9,9 @@
 - NO_AI for digest/rollback fields
 
 ## Body
-HW/SW interface at the compose layer: image digest pins, migrate, health, rollback pointer. Skipping migrate fails. This is Device OS local honesty — not a physical flash claim.
+HW/SW interface at the compose layer: pin the image digest, run migrate, then allow health=healthy. rollback_to must point at the previous digest, never the current one. Skipping migrate is how Device Lab weekends strand volunteers on a half-applied schema.
 
+NO_AI for digest and rollback fields. PHYSICAL_PENDING if anyone claims a physical flash for this digital compose target.
 ## Worked example
 migrate_ok=true, health=healthy, rollback_to≠current_digest
 

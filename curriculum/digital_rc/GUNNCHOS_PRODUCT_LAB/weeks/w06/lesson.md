@@ -9,8 +9,9 @@
 - Reject obsolete click-collector protocols
 
 ## Body
-Guest agent protocol is the Device OS boundary. ping/boot_status contract must hold. Telemetry later rides on honest protocol fields — not silent keystroke collectors.
+Guest agent protocol is the Device OS boundary learners can actually test: ping_ok, boot_status=ready, protocol_version pinned. Obsolete click-collector protocols are rejected — telemetry must ride on honest fields.
 
+This week ties product architecture to the guest contract without opening unmerged device-os PRs as Product-Use evidence.
 ## Worked example
 ping_ok=true, boot_status=ready, protocol_version=wp011r
 

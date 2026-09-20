@@ -1,15 +1,15 @@
 # Cyber SOC — Harbor Defensive Operations
 
 ## Who this is for
-Learners entering security operations with a hard defensive boundary: no exploit kits, no malware, no unauthorized scanning.
+Security operations learners with a hard defensive boundary: no exploit kits, malware, or unauthorized scanning.
 
 ## Tracks and academy
-- course_id / track_id: CYBER_SOC
-- Legacy shared content package: CYBERSECURITY/
+- course_id / track_id: `CYBER_SOC`
+- Legacy shared content: `CYBERSECURITY/` (content_ref; not blind full duplication)
 - Academy: ACADEMY_CYBER
 
 ## Duration
-Ten weeks (~8–10 hours/week). Shared labs live under `CYBERSECURITY/labs/`; this entry re-exports them under canonical track_id `CYBER_SOC`.
+Ten weeks (~8–10 hours/week).
 
 ## Weekly map
 - Week 01: Security foundations & Harbor governance
@@ -24,7 +24,8 @@ Ten weeks (~8–10 hours/week). Shared labs live under `CYBERSECURITY/labs/`; th
 - Week 10: Secure config audit & Harbor capstone
 
 ## Assessments
-Weekly quizzes, mid (20), final (24), practical labs (10), portfolio. Answer keys stay in `instructor/answer_keys.json` and are **not** in learner ingest.
+Weekly quizzes, mid (20), final (24), practical labs (10), portfolio/capstone.
+Answer keys live in `instructor/answer_keys.json` and are **not** in learner ingest.
 
 ## Claim boundary
-Aligns to public standards topic labels only. Does not grant vendor certs. Shared lesson/lab bodies referenced via content_ref — not blind full-tree duplication.
+Public standards topic labels only. Certs aligned not granted. Shared bodies via content_ref.

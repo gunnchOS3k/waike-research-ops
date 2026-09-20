@@ -11,5 +11,7 @@
   ],
   "summary": "Audit fixture JSON only. live_scan must be false. No scanning of networks you do not own.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_secure_config_audit/",
+  "track_id": "CYBER_SOC"
 }

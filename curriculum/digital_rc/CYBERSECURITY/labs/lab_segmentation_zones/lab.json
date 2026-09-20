@@ -8,5 +8,7 @@
   ],
   "summary": "Harbor SOC lab lab_segmentation_zones.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_segmentation_zones/",
+  "track_id": "CYBER_SOC"
 }

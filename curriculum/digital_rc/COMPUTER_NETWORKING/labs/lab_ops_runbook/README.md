@@ -1,14 +1,9 @@
-# lab_ops_runbook — Modern ops troubleshooting runbook
+# lab_ops_runbook (entry: NETWORKING_INFRA)
 
-Write a three-check runbook for Yard→Roof failure. fabricated_outage must be false.
+**content_ref:** `../COMPUTER_NETWORKING/labs/lab_ops_runbook/`
 
-## Student artifact
-Keys: `symptom, checks, escalate_if, fabricated_outage`.
-Empty {} fails. A file whose entire body is PASS raises _fail_if_print_pass.
+Shared lab body/validator lives in the legacy package. Classification: DIGITAL.
 
-## How to run
 ```
 python3 scripts/run_course_labs.py --lab lab_ops_runbook --submission path/to/student.json
-python3 scripts/run_course_labs.py --lab lab_ops_runbook --empty
 ```
-

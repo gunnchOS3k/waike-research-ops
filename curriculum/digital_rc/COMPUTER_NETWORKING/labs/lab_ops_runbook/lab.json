@@ -11,5 +11,7 @@
   ],
   "summary": "Write a three-check runbook for Yard\u2192Roof failure. fabricated_outage must be false.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_ops_runbook/",
+  "track_id": "NETWORKING_INFRA"
 }

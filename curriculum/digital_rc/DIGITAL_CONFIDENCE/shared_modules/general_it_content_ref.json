@@ -11,7 +11,8 @@
         "path": "weeks/w01/lesson.md",
         "lab_id": "lab_ticket_queue"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Name remember/calculate/talk before acting"
     },
     {
       "week": 2,
@@ -21,7 +22,8 @@
         "path": "weeks/w02/lesson.md",
         "lab_id": "lab_os_users"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Same verbs on two OS images"
     },
     {
       "week": 3,
@@ -31,7 +33,8 @@
         "path": "weeks/w03/lesson.md",
         "lab_id": "lab_os_users"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Kiosk never in sudo"
     },
     {
       "week": 4,
@@ -41,7 +44,8 @@
         "path": "weeks/w04/lesson.md",
         "lab_id": "lab_backup"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Backup is a practiced restore"
     },
     {
       "week": 5,
@@ -51,7 +55,8 @@
         "path": "weeks/w05/lesson.md",
         "lab_id": "lab_ticket_queue"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Severity by impact; no reboot-and-hope"
     },
     {
       "week": 6,
@@ -61,7 +66,8 @@
         "path": "weeks/w06/lesson.md",
         "lab_id": "lab_storage"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Structured triage handoff"
     },
     {
       "week": 7,
@@ -71,7 +77,8 @@
         "path": "weeks/w07/lesson.md",
         "lab_id": "lab_dns_hosts"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Name resolution before driver folklore"
     },
     {
       "week": 8,
@@ -81,7 +88,8 @@
         "path": "weeks/w08/lesson.md",
         "lab_id": "lab_services"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Services that keep Saturday r\u00e9sum\u00e9s printing"
     },
     {
       "week": 9,
@@ -91,7 +99,8 @@
         "path": "weeks/w09/lesson.md",
         "lab_id": "lab_automation_runbook"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Snapshot before apply"
     },
     {
       "week": 10,
@@ -101,7 +110,8 @@
         "path": "weeks/w10/lesson.md",
         "lab_id": "lab_automation_runbook"
       },
-      "track_focus": "Operator confidence: naming remember/calculate/talk failures, safe paths, privacy, and ticket honesty on shared kiosks."
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "After-hours without heroics"
     }
   ]
 }

@@ -18,6 +18,5 @@
     "certs_aligned_not_granted": true,
     "physical_pending_when_unproven": true
   },
-  "package_entry": "NETWORKING_INFRA",
   "shared_content_from": "COMPUTER_NETWORKING"
 }

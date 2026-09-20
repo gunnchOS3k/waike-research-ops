@@ -9,5 +9,7 @@
   ],
   "summary": "Harbor SOC lab lab_siem_triage.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_siem_triage/",
+  "track_id": "CYBER_SOC"
 }

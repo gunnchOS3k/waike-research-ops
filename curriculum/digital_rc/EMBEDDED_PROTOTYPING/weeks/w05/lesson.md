@@ -9,10 +9,9 @@
 - Tie actuators/sensors to scaled units in the journal
 
 ## Body
-raw=2048 on a 12-bit ADC with vref_mv=3300 is 1650 mV: mv = raw * vref / (2^bits - 1) with the fixture's stated convention (lab accepts ~1650±50). Units matter for actuators: a duty cycle driven from unscaled counts is a latent hazard.
+raw=2048 on a 12-bit ADC with vref_mv=3300 yields about 1650 mV using the fixture convention mv ≈ raw * vref / (2^bits - 1) (lab accepts ±50 mV). Show the arithmetic in the JSON; a GUI needle screenshot is not acceptance.
 
-No-hardware fallback: compute from fixture raw values.
-
+Sensors feed actuators: driving a motor from unscaled counts is a latent hazard. No-hardware fallback uses fixture raw values. Do not claim metrology-lab calibration.
 ## Worked example
 raw=2048, vref_mv=3300, resolution_bits=12, mv=1650
 

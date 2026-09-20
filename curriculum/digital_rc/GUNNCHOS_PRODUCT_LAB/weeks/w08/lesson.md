@@ -9,8 +9,9 @@
 - Include a11y-related gate tokens when present in fixture
 
 ## Body
-Testing is CI tokens with honest pass/fail. Accessibility gates (when listed in fixture) count — color-only UI failures are product defects. fabricated_green must be false.
+Testing is CI tokens with honest counts. fabricated_green=false is non-negotiable. When the fixture lists an a11y gate token, it counts — color-only UI statuses are product defects, not polish.
 
+Screenshots of a green badge PNG are not acceptance; the lab recomputes tokens.
 ## Worked example
 tokens_passed=4, tokens_total=4, fabricated_green=false
 

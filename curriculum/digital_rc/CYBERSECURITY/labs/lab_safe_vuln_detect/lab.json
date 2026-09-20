@@ -9,5 +9,7 @@
   ],
   "summary": "Harbor SOC lab lab_safe_vuln_detect.",
   "empty_fails": true,
-  "print_pass_fails": true
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_safe_vuln_detect/",
+  "track_id": "CYBER_SOC"
 }

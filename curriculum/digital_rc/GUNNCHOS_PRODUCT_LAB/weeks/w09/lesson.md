@@ -9,8 +9,9 @@
 - NO_AI for pin authorship
 
 ## Body
-Dependency pins and telemetry share an honesty rule: only accepted digests, no preview in accepted, no fabricated field telemetry. PHYSICAL_PENDING for any hardware EVT pin.
+Cross-repo dependency pins and telemetry share one honesty rule: accepted-main digests only. preview_sha_in_accepted must be false. Name the pin_file. NO_AI authorship for the pin.
 
+Fabricated telemetry volumes ('millions of devices') fail the same honesty gate as fabricated community impact.
 ## Worked example
 preview_sha_in_accepted=false, pin_file=CURRENT_ACCEPTED_MAIN.json
 
