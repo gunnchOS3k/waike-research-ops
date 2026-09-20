@@ -1,7 +1,7 @@
 {
   "schema": "waike.learner_ingest.v1",
   "role": "learner",
-  "generated_utc": "2026-09-06T18:49:25Z",
+  "generated_utc": "2026-09-20T15:38:23Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -1483,7 +1483,11 @@
         "lab_vlan_mac",
         "lab_spf_routing",
         "lab_nat_acl",
-        "lab_dns_resolution"
+        "lab_dns_resolution",
+        "lab_wifi_fundamentals",
+        "lab_transport_ports",
+        "lab_packet_capture_fixture",
+        "lab_ops_runbook"
       ],
       "quizzes": [
         {
@@ -2658,7 +2662,11 @@
           "lab_vlan_mac",
           "lab_spf_routing",
           "lab_nat_acl",
-          "lab_dns_resolution"
+          "lab_dns_resolution",
+          "lab_wifi_fundamentals",
+          "lab_transport_ports",
+          "lab_packet_capture_fixture",
+          "lab_ops_runbook"
         ]
       },
       "portfolio": {
@@ -2825,7 +2833,10 @@
         "lab_segmentation_zones",
         "lab_incident_playbook",
         "lab_safe_vuln_detect",
-        "lab_forensics_timeline"
+        "lab_forensics_timeline",
+        "lab_phishing_defense",
+        "lab_threat_model",
+        "lab_secure_config_audit"
       ],
       "quizzes": [
         {
@@ -4001,7 +4012,10 @@
           "lab_segmentation_zones",
           "lab_incident_playbook",
           "lab_safe_vuln_detect",
-          "lab_forensics_timeline"
+          "lab_forensics_timeline",
+          "lab_phishing_defense",
+          "lab_threat_model",
+          "lab_secure_config_audit"
         ]
       },
       "portfolio": {

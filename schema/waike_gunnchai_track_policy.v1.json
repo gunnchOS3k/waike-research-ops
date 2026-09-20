@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_gunnchai_track_policy.v1.json",
+  "title": "gunnchAI per-track tutoring and grading policy",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "track_id",
+    "allowed_tutoring",
+    "hints",
+    "code_help",
+    "assessment_restrictions",
+    "grading_guardrails",
+    "citations",
+    "lab_safety",
+    "domain_hallucination_risks",
+    "instructor_escalation"
+  ],
+  "properties": {
+    "schema_version": { "const": "waike.gunnchai.track_policy.v1" },
+    "track_id": { "type": "string" },
+    "title": { "type": "string" },
+    "allowed_tutoring": { "type": "object" },
+    "hints": { "type": "object" },
+    "code_help": { "type": "object" },
+    "assessment_restrictions": { "type": "object" },
+    "grading_guardrails": {
+      "type": "object",
+      "required": ["HITL", "mayPublishGradesWithoutHuman"],
+      "properties": {
+        "HITL": { "const": true },
+        "mayPublishGradesWithoutHuman": { "const": false }
+      }
+    },
+    "citations": { "type": "object" },
+    "lab_safety": { "type": "object" },
+    "domain_hallucination_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "instructor_escalation": { "type": "object" },
+    "offensive_cyber": { "type": "object" }
+  },
+  "additionalProperties": true
+}

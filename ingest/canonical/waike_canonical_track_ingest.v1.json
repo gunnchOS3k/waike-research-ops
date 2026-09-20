@@ -1,0 +1,351 @@
+{
+  "schema": "waike.canonical_track_ingest.v1",
+  "role": "platform_ingest_index",
+  "generated_utc": "2026-09-20T15:38:23Z",
+  "track_count": 18,
+  "package_dir_count": 17,
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "package_dir": "GENERAL_IT",
+      "package_course_id": "GENERAL_IT",
+      "title": "General IT \u2014 Operator to Support Specialist",
+      "academy_id": "ACADEMY_IT",
+      "digital_rc_path": "curriculum/digital_rc/GENERAL_IT",
+      "canonical_package_manifest": "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json",
+      "shared_package": true,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DIGITAL_CONFIDENCE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "package_dir": "GENERAL_IT",
+      "package_course_id": "GENERAL_IT",
+      "title": "General IT \u2014 Operator to Support Specialist",
+      "academy_id": "ACADEMY_IT",
+      "digital_rc_path": "curriculum/digital_rc/GENERAL_IT",
+      "canonical_package_manifest": "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json",
+      "shared_package": true,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=IT_SUPPORT_HARDWARE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "course_id": "SOFTWARE_BUILDER",
+      "package_dir": "SOFTWARE_BUILDER",
+      "package_course_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder \u2014 ForgeDesk to Device Lab Deploy",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+      "canonical_package_manifest": "curriculum/canonical_packages/SOFTWARE_BUILDER/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=SOFTWARE_BUILDER",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "course_id": "NETWORKING_INFRA",
+      "package_dir": "COMPUTER_NETWORKING",
+      "package_course_id": "COMPUTER_NETWORKING",
+      "title": "Computer Networking \u2014 Packets to Campus Edge",
+      "academy_id": "ACADEMY_NETWORKING",
+      "digital_rc_path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "canonical_package_manifest": "curriculum/canonical_packages/NETWORKING_INFRA/PACKAGE_MANIFEST.v1.json",
+      "shared_package": true,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=NETWORKING_INFRA",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "course_id": "CYBER_SOC",
+      "package_dir": "CYBERSECURITY",
+      "package_course_id": "CYBERSECURITY",
+      "title": "Cybersecurity \u2014 Harbor SOC Foundations",
+      "academy_id": "ACADEMY_CYBER",
+      "digital_rc_path": "curriculum/digital_rc/CYBERSECURITY",
+      "canonical_package_manifest": "curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json",
+      "shared_package": true,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=CYBER_SOC",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "course_id": "DATA_DASHBOARDS",
+      "package_dir": "DATA_DASHBOARDS",
+      "package_course_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards \u2014 Pier Ledger Bench",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/DATA_DASHBOARDS",
+      "canonical_package_manifest": "curriculum/canonical_packages/DATA_DASHBOARDS/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DATA_DASHBOARDS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "course_id": "AI_ML_EDGE",
+      "package_dir": "AI_ML_EDGE",
+      "package_course_id": "AI_ML_EDGE",
+      "title": "AI/ML + Edge AI \u2014 EdgeForge Bench",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/AI_ML_EDGE",
+      "canonical_package_manifest": "curriculum/canonical_packages/AI_ML_EDGE/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=AI_ML_EDGE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "course_id": "EMBEDDED_PROTOTYPING",
+      "package_dir": "EMBEDDED_PROTOTYPING",
+      "package_course_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping \u2014 ForgeSense Subsystem Bench",
+      "academy_id": "ACADEMY_HARDWARE",
+      "digital_rc_path": "curriculum/digital_rc/EMBEDDED_PROTOTYPING",
+      "canonical_package_manifest": "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=EMBEDDED_PROTOTYPING",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "course_id": "WIRELESS_6G",
+      "package_dir": "WIRELESS_6G",
+      "package_course_id": "WIRELESS_6G",
+      "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+      "academy_id": "ACADEMY_NETWORKING",
+      "digital_rc_path": "curriculum/digital_rc/WIRELESS_6G",
+      "canonical_package_manifest": "curriculum/canonical_packages/WIRELESS_6G/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=WIRELESS_6G",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "course_id": "PM_AGILE_LSS",
+      "package_dir": "PM_AGILE_LSS",
+      "package_course_id": "PM_AGILE_LSS",
+      "title": "Process Improvement + Project Management \u2014 Device Lab Flow",
+      "academy_id": "ACADEMY_PROCESS_PM",
+      "digital_rc_path": "curriculum/digital_rc/PM_AGILE_LSS",
+      "canonical_package_manifest": "curriculum/canonical_packages/PM_AGILE_LSS/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=PM_AGILE_LSS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "course_id": "GAME_DEV_INTERACTIVE",
+      "package_dir": "GAME_DEV_INTERACTIVE",
+      "package_course_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development \u2014 Forge Arcade Studio",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+      "canonical_package_manifest": "curriculum/canonical_packages/GAME_DEV_INTERACTIVE/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=GAME_DEV_INTERACTIVE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "package_dir": "SEVEN_GC_APPRENTICESHIP",
+      "package_course_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP",
+      "canonical_package_manifest": "curriculum/canonical_packages/SEVEN_GC_APPRENTICESHIP/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=SEVEN_GC_APPRENTICESHIP",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "course_id": "CLOUD_DEVOPS",
+      "package_dir": "CLOUD_DEVOPS",
+      "package_course_id": "CLOUD_DEVOPS",
+      "title": "Cloud + DevOps \u2014 ForgeCloud Platform",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/CLOUD_DEVOPS",
+      "canonical_package_manifest": "curriculum/canonical_packages/CLOUD_DEVOPS/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=CLOUD_DEVOPS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "course_id": "COMM_PD_ETHICS",
+      "package_dir": "COMM_PD_ETHICS",
+      "package_course_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+      "academy_id": "ACADEMY_PROF_DEV",
+      "digital_rc_path": "curriculum/digital_rc/COMM_PD_ETHICS",
+      "canonical_package_manifest": "curriculum/canonical_packages/COMM_PD_ETHICS/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=COMM_PD_ETHICS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "course_id": "ROBOTICS_CONTROL",
+      "package_dir": "ROBOTICS_CONTROL",
+      "package_course_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control \u2014 HarborBot Bay",
+      "academy_id": "ACADEMY_HARDWARE",
+      "digital_rc_path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+      "canonical_package_manifest": "curriculum/canonical_packages/ROBOTICS_CONTROL/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=ROBOTICS_CONTROL",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "course_id": "GUNNCHOS_PRODUCT_LAB",
+      "package_dir": "GUNNCHOS_PRODUCT_LAB",
+      "package_course_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab \u2014 Product Bench",
+      "academy_id": "ACADEMY_HARDWARE",
+      "digital_rc_path": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB",
+      "canonical_package_manifest": "curriculum/canonical_packages/GUNNCHOS_PRODUCT_LAB/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=GUNNCHOS_PRODUCT_LAB",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "course_id": "HARDWARE_ENGINEERING",
+      "package_dir": "HARDWARE_ENGINEERING",
+      "package_course_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
+      "academy_id": "ACADEMY_HARDWARE",
+      "digital_rc_path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+      "canonical_package_manifest": "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=HARDWARE_ENGINEERING",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "course_id": "DATA_VIZ_BI",
+      "package_dir": "DATA_VIZ_BI",
+      "package_course_id": "DATA_VIZ_BI",
+      "title": "Data Visualization + BI \u2014 Civic Metrics Studio",
+      "academy_id": "ACADEMY_SOFTWARE",
+      "digital_rc_path": "curriculum/digital_rc/DATA_VIZ_BI",
+      "canonical_package_manifest": "curriculum/canonical_packages/DATA_VIZ_BI/PACKAGE_MANIFEST.v1.json",
+      "shared_package": false,
+      "ingest_addressable": true,
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DATA_VIZ_BI",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "week_count": 10
+    }
+  ]
+}
