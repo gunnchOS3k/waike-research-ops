@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_ep_adc_scale",
+  "classification": "DIGITAL",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "raw",
+    "vref_mv",
+    "resolution_bits",
+    "mv"
+  ],
+  "summary": "ADC counts to mV.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

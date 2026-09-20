@@ -197,7 +197,7 @@ def test_labs_compute_and_negatives_fail():
     )}
     # #43 (20) ∪ #44 (30) ∪ #45 (30) ∪ #46 (30) ∪ Stream-B COMM_PD (10) ∪ DATA_DASHBOARDS (10)
     assert bundle["lab_count"] >= 150, bundle["lab_count"]
-    assert bundle.get("batch_001_lab_count") == 20
+    assert bundle.get("batch_001_lab_count") == 27  # batch009 expanded networking+cyber to 10 labs each
     assert bundle.get("batch_002_lab_count") == 30
     assert bundle.get("batch_003_lab_count") == 30
     assert bundle.get("batch_004_lab_count") == 30

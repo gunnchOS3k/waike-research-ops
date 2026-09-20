@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_safe_vuln_detect",
+  "title": "lab_safe_vuln_detect",
+  "classification": "SIMULATED",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "unsafe_result",
+    "safe_raises"
+  ],
+  "summary": "Harbor SOC lab lab_safe_vuln_detect.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

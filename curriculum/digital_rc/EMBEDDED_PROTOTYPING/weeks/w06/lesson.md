@@ -1,7 +1,27 @@
-# Week 6: ISR vs polling — latency budget
+# Week 6: ISR vs polling — realtime latency budget
 
-ForgeSense Subsystem Bench ticket EP-4606: ISR vs polling — latency budget. Choose ISR when edge latency must stay under 250 µs. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks — this course owns firmware/bus/QEMU path. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** EP-4606  
+**Lab:** `lab_ep_isr_vs_poll`
+
+## Objectives
+- Choose ISR when edge latency must stay under 250 µs
+- Bound missed_edges
+- Keep ISR work short — defer heavy work
+
+## Body
+Realtime is a budget, not a brand. If an edge must be seen within 250 µs, polling loops that sometimes run longer fail the budget — use ISR mode and keep the handler short. missed_edges must be 0 on the fixture acceptance window.
+
+No-hardware fallback: reason from the latency table in the lab README.
 
 ## Worked example
-
 mode=isr, max_latency_us=250, missed_edges=0
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No claiming hard realtime certification
+- No unbounded work inside ISR
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_ep_isr_vs_poll` and `EP-4606`. Empty {} fails. A file whose body is only PASS raises.

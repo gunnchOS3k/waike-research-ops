@@ -1,0 +1,23 @@
+{
+  "track_id": "NETWORKING_INFRA",
+  "schema": "waike.portfolio_outcomes.v1",
+  "career_roles_aligned_not_granted": [
+    "junior_network_technician",
+    "campus_edge_operator"
+  ],
+  "learning_outcomes": [
+    "Parse Ethernet/IPv4 frames on authorized fixtures",
+    "Compute CIDR lots and LPM decisions",
+    "Explain VLAN isolation and STP as a loop breaker",
+    "Build SPF costs on a four-router town graph",
+    "Order ACLs and map NAT without permit-any-any wallpaper",
+    "Write an ops runbook without fabricating outages"
+  ],
+  "honesty": {
+    "no_fabricated_community_impact": true,
+    "certs_aligned_not_granted": true,
+    "physical_pending_when_unproven": true
+  },
+  "package_entry": "NETWORKING_INFRA",
+  "shared_content_from": "COMPUTER_NETWORKING"
+}

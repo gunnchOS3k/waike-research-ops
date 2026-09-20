@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_dhcp_lease_math",
+  "classification": "DIGITAL",
+  "title": "DHCP pool sizing from fixture counts",
+  "acceptance": "pool_size, lease_seconds, exhaustion_eta fields",
+  "empty_fails": true,
+  "screenshot_not_acceptance": true
+}

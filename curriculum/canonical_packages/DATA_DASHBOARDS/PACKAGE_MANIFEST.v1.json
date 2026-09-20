@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "DATA_DASHBOARDS",
+  "title": "Data, Databases, and Dashboards",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "68aa24439205f8f7458faee1229b89689bdb75aa4335f1a661fe47e2eeb54291",
+  "dependencies": [
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/DATA_DASHBOARDS",
+      "note": "Primary package directory (DATA_DASHBOARDS)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/DATA_DASHBOARDS",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "DATA_DASHBOARDS",
+  "course_id": "DATA_DASHBOARDS",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/DATA_DASHBOARDS/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

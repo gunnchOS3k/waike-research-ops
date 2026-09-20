@@ -1,0 +1,15 @@
+{
+  "lab_id": "lab_packet_capture_fixture",
+  "title": "Authorized fixture frame parse (not cafe Wireshark)",
+  "classification": "SIMULATED",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "frames",
+    "ethertype",
+    "dst_ip",
+    "authorized_fixture"
+  ],
+  "summary": "Parse classroom-crafted frames only. authorized_fixture must be true. No live capture on networks you do not own.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

@@ -1,0 +1,180 @@
+{
+  "schema": "waike.full_readiness.gunnchai_18_track_policy_index.v1",
+  "generated_utc": "2026-09-20T15:40:08Z",
+  "policy_count": 18,
+  "count": 18,
+  "HITL_global": true,
+  "mayPublishGradesWithoutHuman": false,
+  "global_defaults": {
+    "mayPublishGradesWithoutHuman": false,
+    "HITL": true,
+    "offensive_exploit_assistance": false,
+    "socratic_default": true
+  },
+  "policies": [
+    "gunnchai/track_policies/DIGITAL_CONFIDENCE.policy.json",
+    "gunnchai/track_policies/IT_SUPPORT_HARDWARE.policy.json",
+    "gunnchai/track_policies/SOFTWARE_BUILDER.policy.json",
+    "gunnchai/track_policies/NETWORKING_INFRA.policy.json",
+    "gunnchai/track_policies/CYBER_SOC.policy.json",
+    "gunnchai/track_policies/DATA_DASHBOARDS.policy.json",
+    "gunnchai/track_policies/AI_ML_EDGE.policy.json",
+    "gunnchai/track_policies/EMBEDDED_PROTOTYPING.policy.json",
+    "gunnchai/track_policies/WIRELESS_6G.policy.json",
+    "gunnchai/track_policies/PM_AGILE_LSS.policy.json",
+    "gunnchai/track_policies/GAME_DEV_INTERACTIVE.policy.json",
+    "gunnchai/track_policies/SEVEN_GC_APPRENTICESHIP.policy.json",
+    "gunnchai/track_policies/CLOUD_DEVOPS.policy.json",
+    "gunnchai/track_policies/COMM_PD_ETHICS.policy.json",
+    "gunnchai/track_policies/ROBOTICS_CONTROL.policy.json",
+    "gunnchai/track_policies/GUNNCHOS_PRODUCT_LAB.policy.json",
+    "gunnchai/track_policies/HARDWARE_ENGINEERING.policy.json",
+    "gunnchai/track_policies/DATA_VIZ_BI.policy.json"
+  ],
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "policy_path": "gunnchai/track_policies/DIGITAL_CONFIDENCE.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "policy_path": "gunnchai/track_policies/IT_SUPPORT_HARDWARE.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "policy_path": "gunnchai/track_policies/SOFTWARE_BUILDER.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "policy_path": "gunnchai/track_policies/NETWORKING_INFRA.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "policy_path": "gunnchai/track_policies/CYBER_SOC.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "DEFENSIVE_ONLY"
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "policy_path": "gunnchai/track_policies/DATA_DASHBOARDS.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "policy_path": "gunnchai/track_policies/AI_ML_EDGE.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "policy_path": "gunnchai/track_policies/EMBEDDED_PROTOTYPING.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "policy_path": "gunnchai/track_policies/WIRELESS_6G.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "policy_path": "gunnchai/track_policies/PM_AGILE_LSS.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "LIMITED_EXAMPLES_ONLY"
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "policy_path": "gunnchai/track_policies/GAME_DEV_INTERACTIVE.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "policy_path": "gunnchai/track_policies/SEVEN_GC_APPRENTICESHIP.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "policy_path": "gunnchai/track_policies/CLOUD_DEVOPS.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "policy_path": "gunnchai/track_policies/COMM_PD_ETHICS.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "LIMITED_EXAMPLES_ONLY"
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "policy_path": "gunnchai/track_policies/ROBOTICS_CONTROL.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "policy_path": "gunnchai/track_policies/GUNNCHOS_PRODUCT_LAB.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "policy_path": "gunnchai/track_policies/HARDWARE_ENGINEERING.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "policy_path": "gunnchai/track_policies/DATA_VIZ_BI.policy.json",
+      "mayPublishGradesWithoutHuman": false,
+      "HITL": true,
+      "offensive_exploit_assistance": false,
+      "code_help_mode": "ALLOWED_WITH_SOCRATIC_GUARDS"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+track_id: SEVEN_GC_APPRENTICESHIP
+title: "7GC AI-RAN Research Apprenticeship"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: research_methods
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: wireless_dsp
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: ai_ml
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: NIST_AI_RMF
+    status: draft
+    note: "Evidence/claim boundaries for AI systems \u2014 draft"
+    accreditation: false
+  - framework: SFIA9
+    status: draft
+    note: "Research / specialist themes \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:24Z
+generator: scripts/full_readiness/generate_agent10_packets.py

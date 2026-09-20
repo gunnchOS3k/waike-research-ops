@@ -1,7 +1,27 @@
-# Week 1: Product charter — scope without fabricated impact
+# Week 1: Requirements & product charter without fabricated impact
 
-gunnchOS Product Lab Bench ticket GPL-5101: Product charter — scope without fabricated impact. Charter Device Lab product scope; no invented community numbers. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5101: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** GPL-5101  
+**Lab:** `lab_gpl_product_charter`
+
+## Objectives
+- Write problem, goal_metric, fabricated_outcomes=false
+- Scope Device Lab product without invented community numbers
+- Separate product lab from SOFTWARE_BUILDER ForgeDesk ownership
+
+## Body
+gunnchOS Product Lab opens with a charter, not a press release. Name the problem (e.g., checkout latency), a measurable goal_metric (median_wait_minutes), and set fabricated_outcomes=false. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists.
+
+User stories this week are one-liners tied to Device Lab roles (desk lead, volunteer, forge-bot) — not fictional citywide impact stats.
 
 ## Worked example
-
 problem=checkout latency, goal_metric=median_wait_minutes, fabricated_outcomes=false
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No invented community outcome percentages
+- No EVT completion claim without evidence
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_product_charter` and `GPL-5101`. Empty {} fails. A file whose body is only PASS raises.

@@ -1,0 +1,21 @@
+{
+  "track_id": "CYBER_SOC",
+  "schema": "waike.portfolio_outcomes.v1",
+  "career_roles_aligned_not_granted": [
+    "soc_analyst_adjacent",
+    "security_operations_junior"
+  ],
+  "learning_outcomes": [
+    "Triage SIEM bursts without convicting on look alone",
+    "Apply RBAC including non-human identities",
+    "Follow detect\u2192contain\u2192eradicate\u2192recover\u2192lessons order",
+    "Defend against phishing on fixtures without credential harvest",
+    "Audit secure config on fixtures only",
+    "Document DFIR timelines with hashes and claim refusals"
+  ],
+  "honesty": {
+    "no_fabricated_community_impact": true,
+    "certs_aligned_not_granted": true,
+    "physical_pending_when_unproven": true
+  }
+}

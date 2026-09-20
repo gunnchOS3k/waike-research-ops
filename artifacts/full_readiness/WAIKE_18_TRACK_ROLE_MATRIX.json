@@ -1,0 +1,562 @@
+{
+  "schema": "waike.full_readiness.role_matrix.v1",
+  "generated_utc": "2026-09-20T15:40:08Z",
+  "evidence_class": "DIGITAL_ONLY",
+  "physical_pixel_validation": "OUT_OF_SCOPE",
+  "claim_boundary": "Digital role surfaces only; no physical Pixel journey claimed.",
+  "status_vocab": [
+    "PASS",
+    "PARTIAL",
+    "MISSING",
+    "HUMAN_REQUIRED"
+  ],
+  "roles": [
+    "learner",
+    "instructor",
+    "grader",
+    "guardian",
+    "admin"
+  ],
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/DIGITAL_CONFIDENCE.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/IT_SUPPORT_HARDWARE.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/SOFTWARE_BUILDER.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/NETWORKING_INFRA.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Defensive SOC labs only; offensive exploit assistance forbidden in tutoring",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/CYBER_SOC.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/DATA_DASHBOARDS.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/AI_ML_EDGE.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "roles": {
+        "learner": {
+          "status": "PARTIAL",
+          "note": "Digital theory/sim PASS; physical bench labs PHYSICAL_HARDWARE_REQUIRED / HUMAN_REQUIRED for sign-off",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/EMBEDDED_PROTOTYPING.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "roles": {
+        "learner": {
+          "status": "PARTIAL",
+          "note": "Digital theory/sim PASS; physical bench labs PHYSICAL_HARDWARE_REQUIRED / HUMAN_REQUIRED for sign-off",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/WIRELESS_6G.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/PM_AGILE_LSS.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/GAME_DEV_INTERACTIVE.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "HUMAN_REQUIRED",
+          "note": "Research apprenticeship mentoring and grading require human faculty oversight",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "HUMAN_REQUIRED",
+          "note": "Research apprenticeship mentoring and grading require human faculty oversight",
+          "evidence": "gunnchai/track_policies/SEVEN_GC_APPRENTICESHIP.policy.json"
+        },
+        "guardian": {
+          "status": "HUMAN_REQUIRED",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/CLOUD_DEVOPS.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/COMM_PD_ETHICS.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "roles": {
+        "learner": {
+          "status": "PARTIAL",
+          "note": "Digital theory/sim PASS; physical bench labs PHYSICAL_HARDWARE_REQUIRED / HUMAN_REQUIRED for sign-off",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/ROBOTICS_CONTROL.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "roles": {
+        "learner": {
+          "status": "PARTIAL",
+          "note": "Digital theory/sim PASS; physical bench labs PHYSICAL_HARDWARE_REQUIRED / HUMAN_REQUIRED for sign-off",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/GUNNCHOS_PRODUCT_LAB.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "roles": {
+        "learner": {
+          "status": "PARTIAL",
+          "note": "Digital theory/sim PASS; physical bench labs PHYSICAL_HARDWARE_REQUIRED / HUMAN_REQUIRED for sign-off",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/HARDWARE_ENGINEERING.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "roles": {
+        "learner": {
+          "status": "PASS",
+          "note": "Lessons/labs/quizzes addressable via shared or 1:1 package",
+          "evidence": "ingest/canonical/waike_canonical_track_ingest.v1.json"
+        },
+        "instructor": {
+          "status": "PASS",
+          "note": "Teacher ingest + instructor materials refs present on digital_rc package",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "grader": {
+          "status": "PARTIAL",
+          "note": "Automated draft scoring allowed; final publish requires HITL (mayPublishGradesWithoutHuman=false)",
+          "evidence": "gunnchai/track_policies/DATA_VIZ_BI.policy.json"
+        },
+        "guardian": {
+          "status": "PARTIAL",
+          "note": "Child-safe / oversight policy digital; institutional enrollment HUMAN_REQUIRED",
+          "evidence": "docs/08_GUNNCHAI3K_TUTOR_REQUIREMENTS.md"
+        },
+        "admin": {
+          "status": "PARTIAL",
+          "note": "Package lifecycle + catalog addressable; production auth/ops HUMAN_REQUIRED for go-live",
+          "evidence": "artifacts/full_readiness/WAIKE_PLATFORM_18_TRACK_INGESTION.json"
+        }
+      }
+    }
+  ]
+}

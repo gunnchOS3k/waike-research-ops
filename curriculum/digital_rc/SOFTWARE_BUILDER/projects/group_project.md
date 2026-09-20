@@ -1,6 +1,16 @@
-# Group project — Software Builder — ForgeDesk to Device Lab Deploy
+# Group project — Software Builder (ForgeDesk → Device Lab Deploy)
 
-Ship issue→PR→CI→migrate→compose digest deploy→SLO note using ForgeDesk fixtures.
+## Brief
+Ship a **capstone packet**: issue, PR, CI report, deploy record, SLO note. Roles: builder + reviewer (HITL).
 
-Seed assignment cue:
-Ship capstone packet: issue, PR, CI report, deploy record, SLO note; disclose AI modes.
+## Deliverables
+1. Linked issue + PR with review comments.
+2. CI report path + deploy digest.
+3. Migration note with rollback.
+4. AI disclosure + claim boundary paragraph.
+
+## Rubric anchors
+Empty-fail honesty · Review quality · Rollback · No secret leakage
+
+## Explicit non-claims
+No PMI/vendor certs; no physical device completion without evidence.

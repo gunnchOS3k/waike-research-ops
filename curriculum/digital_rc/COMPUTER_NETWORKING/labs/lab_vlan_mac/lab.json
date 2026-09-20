@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_vlan_mac",
+  "title": "lab_vlan_mac",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "egress"
+  ],
+  "summary": "Legacy Packet Range lab lab_vlan_mac.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

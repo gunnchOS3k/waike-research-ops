@@ -1,7 +1,25 @@
-# Week 4: Compose health — migrate before healthy
+# Week 4: Device OS compose health — migrate before healthy
 
-gunnchOS Product Lab Bench ticket GPL-5404: Compose health — migrate before healthy. NO_AI week: digest pin and rollback pointer honesty. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5404: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** GPL-5404  
+**Lab:** `lab_gpl_compose_health`
+
+## Objectives
+- Require migrate_ok before health=healthy
+- Keep rollback_to ≠ current_digest
+- NO_AI for digest/rollback fields
+
+## Body
+HW/SW interface at the compose layer: image digest pins, migrate, health, rollback pointer. Skipping migrate fails. This is Device OS local honesty — not a physical flash claim.
 
 ## Worked example
+migrate_ok=true, health=healthy, rollback_to≠current_digest
 
-migrate_ok=true, health=healthy, rollback_to!=current_digest
+## Assessment mode
+NO_AI
+
+## Claim refusals
+- No physical flash claim for compose target
+- No rollback_to == current
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_compose_health` and `GPL-5404`. Empty {} fails. A file whose body is only PASS raises.

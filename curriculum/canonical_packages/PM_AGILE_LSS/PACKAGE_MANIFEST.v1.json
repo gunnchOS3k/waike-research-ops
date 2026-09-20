@@ -1,0 +1,27 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "PM_AGILE_LSS",
+  "title": "Project Management, Agile, and Lean Six Sigma",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "216cd83e873a8ea261c72da58a89941e16f613d309531c0792fc7eacbc9e285e",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/PM_AGILE_LSS",
+      "note": "Primary package directory (PM_AGILE_LSS)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/PM_AGILE_LSS",
+  "deprecation": null,
+  "academy_id": "ACADEMY_PROCESS_PM",
+  "package_dir": "PM_AGILE_LSS",
+  "course_id": "PM_AGILE_LSS",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/PM_AGILE_LSS/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

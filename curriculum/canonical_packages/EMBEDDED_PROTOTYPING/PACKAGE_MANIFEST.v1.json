@@ -1,0 +1,35 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "EMBEDDED_PROTOTYPING",
+  "title": "Embedded Systems and Device Prototyping",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "1ce89bcaea0e35d0aa3c89add6ba47a93d21be1575061408fea1f21561a4753d",
+  "dependencies": [
+    "HARDWARE_ENGINEERING"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/EMBEDDED_PROTOTYPING",
+      "note": "Primary package directory (EMBEDDED_PROTOTYPING)"
+    },
+    {
+      "ref_kind": "sibling_track",
+      "path": "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json",
+      "track_id": "HARDWARE_ENGINEERING",
+      "note": "Shared package abstraction; do not blind-duplicate course trees"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/EMBEDDED_PROTOTYPING",
+  "deprecation": null,
+  "academy_id": "ACADEMY_HARDWARE",
+  "package_dir": "EMBEDDED_PROTOTYPING",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

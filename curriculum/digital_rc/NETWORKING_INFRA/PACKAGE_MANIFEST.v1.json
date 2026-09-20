@@ -1,0 +1,21 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "NETWORKING_INFRA",
+  "title": "Networking and Internet Infrastructure",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "5893380ec618c42eb5fa5189425f42dc9acdf15445def4e6853666458265fc74",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "note": "Minimal entry pointer to shared legacy package COMPUTER_NETWORKING"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+  "deprecation": null,
+  "entry_kind": "alias_pointer",
+  "legacy_package_dir": "COMPUTER_NETWORKING"
+}

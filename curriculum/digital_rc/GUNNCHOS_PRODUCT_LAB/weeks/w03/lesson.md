@@ -1,7 +1,24 @@
-# Week 3: Checkout flow — ticket states and handoff
+# Week 3: User stories & checkout FSM handoff
 
-gunnchOS Product Lab Bench ticket GPL-5303: Checkout flow — ticket states and handoff. Model checkout FSM without opening unmerged device-os PRs. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5303: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** GPL-5303  
+**Lab:** `lab_gpl_checkout_flow`
+
+## Objectives
+- Model states requested→approved→checked_out→returned
+- Forbid orphan_state
+- Keep handoff explicit between desk and volunteer
+
+## Body
+Checkout flow is the product spine for Device Lab. States must be complete; orphan states fail. This is requirements-to-FSM translation, not opening unmerged device-os PRs.
 
 ## Worked example
-
 states=[requested,approved,checked_out,returned], orphan_state=false
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No claiming production Device Lab metrics without fixture
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_checkout_flow` and `GPL-5303`. Empty {} fails. A file whose body is only PASS raises.

@@ -1,0 +1,25 @@
+{
+  "modes": [
+    "EXPLAIN",
+    "HINT",
+    "QUESTION_ME",
+    "DEBUG_WITH_ME",
+    "REVIEW_MY_WORK",
+    "COMPARE_APPROACHES",
+    "PRACTICE"
+  ],
+  "assessment_modes": [
+    "AI_ALLOWED",
+    "AI_RESTRICTED",
+    "AI_DISCLOSED",
+    "NO_AI"
+  ],
+  "default_weekly": "AI_DISCLOSED",
+  "no_ai_weeks": [
+    5,
+    10
+  ],
+  "notes": "DIGITAL_CONFIDENCE: AI may tutor shared GENERAL_IT content; track-specific assessments may be NO_AI; keys/HITL instructor-only.",
+  "graded_answers_protected": true,
+  "ai_never_silently_grades": true
+}

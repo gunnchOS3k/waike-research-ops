@@ -1,0 +1,27 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "SOFTWARE_BUILDER",
+  "title": "Software Builder Zero-to-Hero",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "4e87b1c497c22b110e590066197290227a3ccb306565636efbb7a6a54a5f367c",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+      "note": "Primary package directory (SOFTWARE_BUILDER)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "SOFTWARE_BUILDER",
+  "course_id": "SOFTWARE_BUILDER",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/SOFTWARE_BUILDER/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

@@ -1,9 +1,18 @@
-# lab_ep_memory_map — ep_memory_map
+# lab_ep_memory_map
 
-lab_ep_memory_map fixture JSON.
+MCU memory map fixture.
 
-Empty {} fails. PASS raises.
+**Classification:** DIGITAL
 
+## Student artifact
+Keys: `flash_base, sram_base, vector_table_offset, physical_status`.
+Empty {} fails. PASS-only body fails.
+
+## How to run
+```
 python3 scripts/run_course_labs.py --lab lab_ep_memory_map --submission path/to/student.json
+python3 scripts/run_course_labs.py --lab lab_ep_memory_map --empty
+```
 
-Wrong/empty/print-PASS fail.
+## No-hardware fallback
+Submit fixture JSON. Mark PHYSICAL_PENDING for solder/OTA/EVT claims without evidence.

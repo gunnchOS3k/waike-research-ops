@@ -1,0 +1,26 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "IT_SUPPORT_HARDWARE",
+  "title": "IT Support and Hardware Foundations",
+  "demonstrable_outcomes": [
+    "Complete hardware triage worksheets with evidence order",
+    "Show ESD checklist + measured rail/LED notes on fixtures",
+    "Produce CHG record with rollback for desk policy change",
+    "Separate bench support skills from cert/job guarantees"
+  ],
+  "roles_aligned_not_guaranteed": [
+    "it_support_technician",
+    "hardware_support_specialist"
+  ],
+  "certs_aligned_not_granted": [
+    "Google IT Support",
+    "CompTIA A+ V15"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "shares_modules_from": "GENERAL_IT",
+  "honest_limits": [
+    "Outcomes are demonstrable via shared labs + track assessments only.",
+    "No employment guarantee."
+  ]
+}

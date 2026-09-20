@@ -1,0 +1,22 @@
+track_id: CYBER_SOC
+title: "Cybersecurity Foundations and SOC Readiness"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: cybersecurity
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: NIST_NICE
+    status: draft
+    note: "Protect/Detect/Respond work roles \u2014 draft"
+    accreditation: false
+  - framework: ISC2_CC
+    status: draft
+    note: "Security concepts \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:23Z
+generator: scripts/full_readiness/generate_agent10_packets.py

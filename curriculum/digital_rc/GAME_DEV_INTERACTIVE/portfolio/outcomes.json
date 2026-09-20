@@ -1,0 +1,24 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "GAME_DEV_INTERACTIVE",
+  "title": "Game Development \u2014 Forge Arcade Studio",
+  "demonstrable_outcomes": [
+    "Ship a playable vertical slice with remappable inputs note",
+    "Record playtest observations separately from design intentions",
+    "Document asset licenses for third-party media",
+    "Provide reduced-motion or caption plan where applicable"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "honest_limits": [
+    "Completion demonstrates listed artifacts under stated evidence classes only.",
+    "No employment, salary, or admission outcomes are promised.",
+    "External mentor/hardware/field gates remain open until separately evidenced."
+  ],
+  "required_portfolio_artifacts": [
+    "lab_result_json_or_digest",
+    "claim_boundary_paragraph",
+    "ai_disclosure_log",
+    "accessibility_notes_excerpt"
+  ]
+}

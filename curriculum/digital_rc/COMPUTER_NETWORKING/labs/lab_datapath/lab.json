@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_datapath",
+  "title": "lab_datapath",
+  "classification": "SIMULATED",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "iface",
+    "ttl",
+    "nh"
+  ],
+  "summary": "Legacy Packet Range lab lab_datapath.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

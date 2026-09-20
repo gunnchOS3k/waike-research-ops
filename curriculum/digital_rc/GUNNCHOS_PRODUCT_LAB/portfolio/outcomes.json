@@ -1,0 +1,17 @@
+{
+  "track_id": "GUNNCHOS_PRODUCT_LAB",
+  "schema": "waike.portfolio_outcomes.v1",
+  "learning_outcomes": [
+    "Charter product scope without fabricated impact",
+    "Maintain device-os \u00d7 gunnchAI compat pins",
+    "Model checkout FSM and compose health/rollback",
+    "Publish Privacy BOM and guest protocol contracts",
+    "Run release eng + CI tokens with fabricated_green=false",
+    "Validate product packet with PHYSICAL_PENDING where needed"
+  ],
+  "honesty": {
+    "no_fabricated_community_impact": true,
+    "no_unmerged_pr_as_accepted": true,
+    "physical_pending_when_unproven": true
+  }
+}

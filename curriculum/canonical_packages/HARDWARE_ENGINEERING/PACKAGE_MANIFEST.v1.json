@@ -1,0 +1,33 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "HARDWARE_ENGINEERING",
+  "title": "Hardware Engineering",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "8882eeee81f7d30b6a22c513ac29eff1c5a92d70b9ff87c58776b9dfc90b2cff",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+      "note": "Primary package directory (HARDWARE_ENGINEERING)"
+    },
+    {
+      "ref_kind": "sibling_track",
+      "path": "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json",
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "note": "Shared package abstraction; do not blind-duplicate course trees"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+  "deprecation": null,
+  "academy_id": "ACADEMY_HARDWARE",
+  "package_dir": "HARDWARE_ENGINEERING",
+  "course_id": "HARDWARE_ENGINEERING",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

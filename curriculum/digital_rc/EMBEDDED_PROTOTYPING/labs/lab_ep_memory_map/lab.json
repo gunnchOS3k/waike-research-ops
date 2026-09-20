@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_ep_memory_map",
+  "classification": "DIGITAL",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "flash_base",
+    "sram_base",
+    "vector_table_offset",
+    "physical_status"
+  ],
+  "summary": "MCU memory map fixture.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

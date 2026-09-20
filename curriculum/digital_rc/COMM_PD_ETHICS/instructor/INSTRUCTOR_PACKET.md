@@ -5,3 +5,7 @@
 - Guides: instructor/accessibility_and_udl_guide.md, instructor/misconceptions_remediation.md
 - Do not claim vendor certs or student/teacher E6 without evidence
 - Cursor does not merge; REAL_*_E6 remain false
+
+## Keys / HITL
+- Keys: `instructor/answer_keys.json` stay instructor-only.
+- HITL: human-in-the-loop grading and release gates; AI never silently grades.

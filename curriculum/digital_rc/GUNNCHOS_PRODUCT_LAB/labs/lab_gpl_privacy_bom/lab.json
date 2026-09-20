@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_privacy_bom",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "fields",
+    "pii_in_bom",
+    "retention_days"
+  ],
+  "summary": "Privacy BOM.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

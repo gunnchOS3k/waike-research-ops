@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_transport_ports",
+  "title": "Transport ports and three-way handshake",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "map",
+    "handshake",
+    "refuse_telnet"
+  ],
+  "summary": "Map https/dns/ssh ports; handshake SYN\u2192SYN-ACK\u2192ACK; refuse_telnet true.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

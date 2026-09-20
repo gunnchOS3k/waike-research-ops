@@ -1,0 +1,381 @@
+{
+  "schema": "waike.full_readiness.standards_alignment_matrix.v1",
+  "generated_at": "2026-09-20T15:41:24Z",
+  "disclaimer": "Draft alignments only. Not accredited, not endorsed, not official certification training.",
+  "track_count": 18,
+  "rows": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator",
+      "internal_skills": [
+        "digital_confidence",
+        "it_support"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Digital literacy / IT user support themes \u2014 draft"
+        },
+        {
+          "framework": "CompTIA_A+",
+          "note": "Operator/end-user skills overlap \u2014 draft, not cert prep"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/DIGITAL_CONFIDENCE.yaml"
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations",
+      "internal_skills": [
+        "it_support",
+        "digital_confidence"
+      ],
+      "external_draft": [
+        {
+          "framework": "CompTIA_A+",
+          "note": "Hardware/support themes \u2014 draft"
+        },
+        {
+          "framework": "SFIA9",
+          "note": "IT infrastructure themes \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/IT_SUPPORT_HARDWARE.yaml"
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder Zero-to-Hero",
+      "internal_skills": [
+        "programming",
+        "software_engineering"
+      ],
+      "external_draft": [
+        {
+          "framework": "SWEBOK",
+          "note": "Construction/testing themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "SDF/SE knowledge areas \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/SOFTWARE_BUILDER.yaml"
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure",
+      "internal_skills": [
+        "networking"
+      ],
+      "external_draft": [
+        {
+          "framework": "Cisco_CCNA",
+          "note": "Routing/switching topic shape \u2014 draft"
+        },
+        {
+          "framework": "CompTIA_Network+",
+          "note": "Foundational networking \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/NETWORKING_INFRA.yaml"
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "internal_skills": [
+        "cybersecurity"
+      ],
+      "external_draft": [
+        {
+          "framework": "NIST_NICE",
+          "note": "Protect/Detect/Respond work roles \u2014 draft"
+        },
+        {
+          "framework": "ISC2_CC",
+          "note": "Security concepts \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/CYBER_SOC.yaml"
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "internal_skills": [
+        "data_databases_viz"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Data management / analytics themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "Information Management \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/DATA_DASHBOARDS.yaml"
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "title": "AI/ML and Edge AI Foundations",
+      "internal_skills": [
+        "ai_ml",
+        "edge_embedded"
+      ],
+      "external_draft": [
+        {
+          "framework": "NIST_AI_RMF",
+          "note": "Map/Measure/Manage themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "AI/ML knowledge areas \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/AI_ML_EDGE.yaml"
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "internal_skills": [
+        "edge_embedded",
+        "hardware"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Systems development / hardware themes \u2014 draft"
+        },
+        {
+          "framework": "ABET_computing",
+          "note": "Design/experiment outcomes \u2014 draft only"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/EMBEDDED_PROTOTYPING.yaml"
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "internal_skills": [
+        "wireless_dsp",
+        "networking"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Radio/network specialist themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "Networking/systems \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/WIRELESS_6G.yaml"
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "internal_skills": [
+        "project_process"
+      ],
+      "external_draft": [
+        {
+          "framework": "PMI_CAPM_PMP",
+          "note": "Charter/risk/schedule themes \u2014 draft"
+        },
+        {
+          "framework": "Lean_Six_Sigma",
+          "note": "DMAIC vocabulary \u2014 draft, not belt award"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/PM_AGILE_LSS.yaml"
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development and Interactive Media",
+      "internal_skills": [
+        "programming",
+        "software_engineering"
+      ],
+      "external_draft": [
+        {
+          "framework": "ACM_CS2023",
+          "note": "Graphics/HCI/SE \u2014 draft"
+        },
+        {
+          "framework": "SWEBOK",
+          "note": "Design/construction \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/GAME_DEV_INTERACTIVE.yaml"
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "internal_skills": [
+        "research_methods",
+        "wireless_dsp",
+        "ai_ml"
+      ],
+      "external_draft": [
+        {
+          "framework": "NIST_AI_RMF",
+          "note": "Evidence/claim boundaries for AI systems \u2014 draft"
+        },
+        {
+          "framework": "SFIA9",
+          "note": "Research / specialist themes \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/SEVEN_GC_APPRENTICESHIP.yaml"
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "title": "Cloud and DevOps",
+      "internal_skills": [
+        "cloud_devops",
+        "software_engineering"
+      ],
+      "external_draft": [
+        {
+          "framework": "Linux_Cloud_Open_Source",
+          "note": "Linux/CI/CD themes \u2014 draft"
+        },
+        {
+          "framework": "SWEBOK",
+          "note": "Software configuration / process \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/CLOUD_DEVOPS.yaml"
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics",
+      "internal_skills": [
+        "professional_development"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Communication / ethics themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "SEP (Society/Ethics/Profession) \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/COMM_PD_ETHICS.yaml"
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control",
+      "internal_skills": [
+        "robotics",
+        "hardware"
+      ],
+      "external_draft": [
+        {
+          "framework": "ABET_computing",
+          "note": "Design/experiment \u2014 draft only"
+        },
+        {
+          "framework": "SFIA9",
+          "note": "Systems engineering themes \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/ROBOTICS_CONTROL.yaml"
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "internal_skills": [
+        "hardware",
+        "software_engineering",
+        "product_lab"
+      ],
+      "external_draft": [
+        {
+          "framework": "SWEBOK",
+          "note": "Product/process themes \u2014 draft"
+        },
+        {
+          "framework": "SFIA9",
+          "note": "Product development \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/GUNNCHOS_PRODUCT_LAB.yaml"
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering",
+      "internal_skills": [
+        "hardware"
+      ],
+      "external_draft": [
+        {
+          "framework": "ABET_computing",
+          "note": "Design outcomes \u2014 draft only"
+        },
+        {
+          "framework": "SFIA9",
+          "note": "Hardware engineering themes \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/HARDWARE_ENGINEERING.yaml"
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "title": "Data Visualization and Business Intelligence",
+      "internal_skills": [
+        "data_databases_viz"
+      ],
+      "external_draft": [
+        {
+          "framework": "SFIA9",
+          "note": "Visualisation / BI themes \u2014 draft"
+        },
+        {
+          "framework": "ACM_CS2023",
+          "note": "HCI / Information Management \u2014 draft"
+        }
+      ],
+      "accreditation_claim": false,
+      "external_mapping_status": "draft",
+      "yaml_path": "standards_alignment/by_track/DATA_VIZ_BI.yaml"
+    }
+  ]
+}

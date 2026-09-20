@@ -1,0 +1,27 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "COMM_PD_ETHICS",
+  "title": "Communication, Professional Development, and Ethics",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "c7e907e5dc8232a3e1600b215c0cead06cad39b41a10c44a872033989324ccc6",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/COMM_PD_ETHICS",
+      "note": "Primary package directory (COMM_PD_ETHICS)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/COMM_PD_ETHICS",
+  "deprecation": null,
+  "academy_id": "ACADEMY_PROF_DEV",
+  "package_dir": "COMM_PD_ETHICS",
+  "course_id": "COMM_PD_ETHICS",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/COMM_PD_ETHICS/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

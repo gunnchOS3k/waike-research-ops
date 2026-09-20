@@ -1,0 +1,25 @@
+track_id: CLOUD_DEVOPS
+title: "Cloud and DevOps"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: cloud_devops
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: software_engineering
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: Linux_Cloud_Open_Source
+    status: draft
+    note: "Linux/CI/CD themes \u2014 draft"
+    accreditation: false
+  - framework: SWEBOK
+    status: draft
+    note: "Software configuration / process \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:24Z
+generator: scripts/full_readiness/generate_agent10_packets.py

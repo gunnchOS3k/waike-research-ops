@@ -1,0 +1,25 @@
+track_id: SOFTWARE_BUILDER
+title: "Software Builder Zero-to-Hero"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: programming
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: software_engineering
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: SWEBOK
+    status: draft
+    note: "Construction/testing themes \u2014 draft"
+    accreditation: false
+  - framework: ACM_CS2023
+    status: draft
+    note: "SDF/SE knowledge areas \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:23Z
+generator: scripts/full_readiness/generate_agent10_packets.py

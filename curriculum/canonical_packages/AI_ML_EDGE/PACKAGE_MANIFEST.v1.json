@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "AI_ML_EDGE",
+  "title": "AI/ML and Edge AI Foundations",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "9a6b3326cd1b056b04283a93eb9d69343ab8432f664d5f32ce5c2a8ee4186323",
+  "dependencies": [
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/AI_ML_EDGE",
+      "note": "Primary package directory (AI_ML_EDGE)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/AI_ML_EDGE",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "AI_ML_EDGE",
+  "course_id": "AI_ML_EDGE",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/AI_ML_EDGE/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "GAME_DEV_INTERACTIVE",
+  "title": "Game Development and Interactive Media",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "f57d50a8cf8915b4d0f0a7fdcc97520745328a058c8820a21a8274b0c4c2ed0b",
+  "dependencies": [
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+      "note": "Primary package directory (GAME_DEV_INTERACTIVE)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "GAME_DEV_INTERACTIVE",
+  "course_id": "GAME_DEV_INTERACTIVE",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/GAME_DEV_INTERACTIVE/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

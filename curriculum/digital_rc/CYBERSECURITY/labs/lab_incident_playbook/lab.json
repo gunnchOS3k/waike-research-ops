@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_incident_playbook",
+  "title": "lab_incident_playbook",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "steps"
+  ],
+  "summary": "Harbor SOC lab lab_incident_playbook.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

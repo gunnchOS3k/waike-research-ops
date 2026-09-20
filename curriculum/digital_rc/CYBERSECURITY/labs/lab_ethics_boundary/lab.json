@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_ethics_boundary",
+  "classification": "DIGITAL",
+  "title": "Ethics boundary card \u2014 refuse unauthorized access scenarios",
+  "acceptance": "refused_actions[] includes unauthorized access / malware authoring",
+  "defensive_only": true,
+  "empty_fails": true
+}

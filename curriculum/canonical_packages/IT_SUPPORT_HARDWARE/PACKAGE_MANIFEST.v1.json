@@ -1,0 +1,46 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "IT_SUPPORT_HARDWARE",
+  "title": "IT Support and Hardware Foundations",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "fce0c6ceeb48ef9162e617b4e257bd26fc58a6004fbe0004c10c00a11472c9b4",
+  "dependencies": [
+    "DIGITAL_CONFIDENCE"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "note": "Primary package directory (GENERAL_IT)"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "note": "Track IT_SUPPORT_HARDWARE addressability without duplicating GENERAL_IT content tree"
+    },
+    {
+      "ref_kind": "sibling_track",
+      "path": "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json",
+      "track_id": "DIGITAL_CONFIDENCE",
+      "note": "Shared package abstraction; do not blind-duplicate course trees"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/IT_SUPPORT_HARDWARE",
+      "note": "Track-named entry directory (Agents 1-5); primary content remains GENERAL_IT \u2014 no blind duplication"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/IT_SUPPORT_HARDWARE",
+  "deprecation": null,
+  "academy_id": "ACADEMY_IT",
+  "package_dir": "GENERAL_IT",
+  "course_id": "GENERAL_IT",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": true,
+    "blind_duplication": false
+  },
+  "entry_digital_rc_path": "curriculum/digital_rc/IT_SUPPORT_HARDWARE"
+}

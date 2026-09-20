@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_nat_acl",
+  "title": "lab_nat_acl",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "decisions",
+    "nat"
+  ],
+  "summary": "Legacy Packet Range lab lab_nat_acl.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

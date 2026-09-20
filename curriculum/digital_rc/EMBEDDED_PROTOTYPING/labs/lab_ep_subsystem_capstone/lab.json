@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_ep_subsystem_capstone",
+  "classification": "OPTIONAL_PHYSICAL",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "labs_passed",
+    "qemu_ok",
+    "dt_ok",
+    "physical_status"
+  ],
+  "summary": "Subsystem packet; physical optional.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

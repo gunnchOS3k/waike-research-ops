@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_product_charter",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "problem",
+    "goal_metric",
+    "fabricated_outcomes"
+  ],
+  "summary": "Product charter honesty.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

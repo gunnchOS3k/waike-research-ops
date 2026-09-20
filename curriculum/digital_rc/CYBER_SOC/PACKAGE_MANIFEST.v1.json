@@ -1,0 +1,23 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "CYBER_SOC",
+  "title": "Cybersecurity Foundations and SOC Readiness",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "759ad08d25a69effe52365c0baf8dd895ffed616b26fb372879a84b7d4be3f29",
+  "dependencies": [
+    "NETWORKING_INFRA"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/CYBERSECURITY",
+      "note": "Minimal entry pointer to shared legacy package CYBERSECURITY"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/CYBERSECURITY",
+  "deprecation": null,
+  "entry_kind": "alias_pointer",
+  "legacy_package_dir": "CYBERSECURITY"
+}

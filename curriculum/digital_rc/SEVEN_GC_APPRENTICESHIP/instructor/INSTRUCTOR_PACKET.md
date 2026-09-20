@@ -8,3 +8,7 @@ Remediation: re-run baseline with seed before allowing claim upgrades.
 Simulated-vs-measured guidance: never mark MEASURED_* without real captures.
 External human/physical/field gate notes: forms/rubrics/slots allowed; completion forbidden without evidence.
 gunnchAI may /explain and /quizme for practice; AI never silently grades.
+
+## Keys / HITL
+- Keys: `instructor/answer_keys.json` stay instructor-only.
+- HITL: human-in-the-loop grading and release gates; AI never silently grades.

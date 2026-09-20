@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "DATA_VIZ_BI",
+  "title": "Data Visualization and Business Intelligence",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "bd934fef7909e2341fd751aefe5b556ac9f71e7debf857ebe3f19fb273e4225b",
+  "dependencies": [
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/DATA_VIZ_BI",
+      "note": "Primary package directory (DATA_VIZ_BI)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/DATA_VIZ_BI",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "DATA_VIZ_BI",
+  "course_id": "DATA_VIZ_BI",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/DATA_VIZ_BI/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

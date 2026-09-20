@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "CLOUD_DEVOPS",
+  "title": "Cloud and DevOps",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "aa720a1be82e3af9bb02656de82e37540ff8d9edf795a80f1f3d0612ca9e237e",
+  "dependencies": [
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/CLOUD_DEVOPS",
+      "note": "Primary package directory (CLOUD_DEVOPS)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/CLOUD_DEVOPS",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "CLOUD_DEVOPS",
+  "course_id": "CLOUD_DEVOPS",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/CLOUD_DEVOPS/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

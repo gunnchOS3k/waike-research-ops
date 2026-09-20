@@ -1,0 +1,44 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "DIGITAL_CONFIDENCE",
+  "title": "Digital Confidence to Computer Operator",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "28296f0f9120b51ab5c54c0530f1f957a8893a1674b0352480ba6e4cc2364ddc",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "note": "Primary package directory (GENERAL_IT)"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "note": "Track DIGITAL_CONFIDENCE addressability without duplicating GENERAL_IT content tree"
+    },
+    {
+      "ref_kind": "sibling_track",
+      "path": "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json",
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "note": "Shared package abstraction; do not blind-duplicate course trees"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/DIGITAL_CONFIDENCE",
+      "note": "Track-named entry directory (Agents 1-5); primary content remains GENERAL_IT \u2014 no blind duplication"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/DIGITAL_CONFIDENCE",
+  "deprecation": null,
+  "academy_id": "ACADEMY_IT",
+  "package_dir": "GENERAL_IT",
+  "course_id": "GENERAL_IT",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": true,
+    "blind_duplication": false
+  },
+  "entry_digital_rc_path": "curriculum/digital_rc/DIGITAL_CONFIDENCE"
+}

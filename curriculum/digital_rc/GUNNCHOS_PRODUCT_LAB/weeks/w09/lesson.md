@@ -1,7 +1,25 @@
-# Week 9: Cross-repo dependency pin — no preview in accepted
+# Week 9: Cross-repo dependency pin & telemetry honesty
 
-gunnchOS Product Lab Bench ticket GPL-5909: Cross-repo dependency pin — no preview in accepted. NO_AI week: refuse preview SHA in accepted-main pin. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** GPL-5909  
+**Lab:** `lab_gpl_dep_pin`
+
+## Objectives
+- Refuse preview SHA in accepted-main pin
+- Name pin_file
+- NO_AI for pin authorship
+
+## Body
+Dependency pins and telemetry share an honesty rule: only accepted digests, no preview in accepted, no fabricated field telemetry. PHYSICAL_PENDING for any hardware EVT pin.
 
 ## Worked example
-
 preview_sha_in_accepted=false, pin_file=CURRENT_ACCEPTED_MAIN.json
+
+## Assessment mode
+NO_AI
+
+## Claim refusals
+- No preview in accepted
+- No fabricated telemetry volumes
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_dep_pin` and `GPL-5909`. Empty {} fails. A file whose body is only PASS raises.

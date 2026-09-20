@@ -1,0 +1,29 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "WIRELESS_6G",
+  "title": "Wireless, DSP, and 6G Foundations",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "a9673e67b016d46ba7dcf27dfb58cf1a4f0e531abec96581f4d514c7dac92d29",
+  "dependencies": [
+    "NETWORKING_INFRA"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/WIRELESS_6G",
+      "note": "Primary package directory (WIRELESS_6G)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/WIRELESS_6G",
+  "deprecation": null,
+  "academy_id": "ACADEMY_NETWORKING",
+  "package_dir": "WIRELESS_6G",
+  "course_id": "WIRELESS_6G",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/WIRELESS_6G/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

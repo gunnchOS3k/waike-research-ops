@@ -1,0 +1,3411 @@
+{
+  "schema": "waike.full_readiness.master_matrix.v1",
+  "generated_utc": "2026-09-20T15:42:21Z",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "columns": [
+    "canonical_identity",
+    "independent_entry_point",
+    "syllabus",
+    "objectives",
+    "modules",
+    "lessons",
+    "labs",
+    "assignments",
+    "quizzes",
+    "summative_assessment",
+    "capstone_project",
+    "group_activity",
+    "case_studies",
+    "rubrics",
+    "student_packet",
+    "instructor_packet",
+    "portfolio_outcomes",
+    "career_outcomes",
+    "glossary",
+    "references",
+    "standards_mapping",
+    "accessibility_notes",
+    "ai_policy",
+    "gunnchai_tutor_contract",
+    "digital_package",
+    "compile",
+    "schema",
+    "offline",
+    "waike_learner",
+    "waike_instructor",
+    "waike_grader",
+    "waike_guardian_relevance",
+    "waike_admin",
+    "device_phone",
+    "device_handheld",
+    "device_student",
+    "device_coder",
+    "review_packet",
+    "human_academic_review",
+    "human_accessibility_review",
+    "field_pilot"
+  ],
+  "allowed_statuses": [
+    "EXTERNAL_REQUIRED",
+    "HUMAN_REQUIRED",
+    "MISSING",
+    "NOT_APPLICABLE_WITH_RATIONALE",
+    "PARTIAL",
+    "PASS"
+  ],
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/DIGITAL_CONFIDENCE",
+        "curriculum/digital_rc/GENERAL_IT"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#DIGITAL_CONFIDENCE"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/digital_confidence_to_operator.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/DIGITAL_CONFIDENCE.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DIGITAL_CONFIDENCE.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DIGITAL_CONFIDENCE.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/DIGITAL_CONFIDENCE"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DIGITAL_CONFIDENCE/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/DIGITAL_CONFIDENCE"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_DIGITAL_CONFIDENCE",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/IT_SUPPORT_HARDWARE",
+        "curriculum/digital_rc/GENERAL_IT"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#IT_SUPPORT_HARDWARE"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/it_support_hardware.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/IT_SUPPORT_HARDWARE.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/IT_SUPPORT_HARDWARE.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/IT_SUPPORT_HARDWARE.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/IT_SUPPORT_HARDWARE"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/IT_SUPPORT_HARDWARE/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/IT_SUPPORT_HARDWARE"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_IT_SUPPORT_HARDWARE",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder Zero-to-Hero",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/SOFTWARE_BUILDER"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#SOFTWARE_BUILDER"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/SOFTWARE_BUILDER/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/software_builder.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/SOFTWARE_BUILDER.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/SOFTWARE_BUILDER.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/SOFTWARE_BUILDER.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/SOFTWARE_BUILDER"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SOFTWARE_BUILDER/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/SOFTWARE_BUILDER"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_SOFTWARE_BUILDER",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/NETWORKING_INFRA",
+        "curriculum/digital_rc/COMPUTER_NETWORKING"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#NETWORKING_INFRA"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/NETWORKING_INFRA/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/networking_infrastructure.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/labs",
+          "note": "n=14"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/NETWORKING_INFRA.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/NETWORKING_INFRA.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/NETWORKING_INFRA.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/NETWORKING_INFRA"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/NETWORKING_INFRA/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/NETWORKING_INFRA"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_NETWORKING_INFRA",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/CYBER_SOC",
+        "curriculum/digital_rc/CYBERSECURITY"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#CYBER_SOC"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/cybersecurity_soc.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/labs",
+          "note": "n=13"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/CYBER_SOC.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/CYBER_SOC.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/CYBER_SOC.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/CYBER_SOC"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CYBER_SOC/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/CYBER_SOC"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_CYBER_SOC",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/DATA_DASHBOARDS"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#DATA_DASHBOARDS"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/DATA_DASHBOARDS/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/data_databases_dashboards.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/DATA_DASHBOARDS.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DATA_DASHBOARDS.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DATA_DASHBOARDS.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/DATA_DASHBOARDS"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_DASHBOARDS/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/DATA_DASHBOARDS"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_DATA_DASHBOARDS",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "title": "AI/ML and Edge AI Foundations",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/AI_ML_EDGE"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#AI_ML_EDGE"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/AI_ML_EDGE/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/ai_ml_edge.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/AI_ML_EDGE.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/AI_ML_EDGE.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/AI_ML_EDGE.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/AI_ML_EDGE"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/AI_ML_EDGE/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/AI_ML_EDGE"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_AI_ML_EDGE",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/EMBEDDED_PROTOTYPING"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#EMBEDDED_PROTOTYPING"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/embedded_prototyping.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/EMBEDDED_PROTOTYPING.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/EMBEDDED_PROTOTYPING.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/EMBEDDED_PROTOTYPING.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/EMBEDDED_PROTOTYPING"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/EMBEDDED_PROTOTYPING/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/EMBEDDED_PROTOTYPING"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_EMBEDDED_PROTOTYPING",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/WIRELESS_6G"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#WIRELESS_6G"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/WIRELESS_6G/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/wireless_6g_foundations.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/WIRELESS_6G.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/WIRELESS_6G.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/WIRELESS_6G.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/WIRELESS_6G"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/WIRELESS_6G/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/WIRELESS_6G"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_WIRELESS_6G",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/PM_AGILE_LSS"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#PM_AGILE_LSS"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/PM_AGILE_LSS/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/pm_agile_lss.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/PM_AGILE_LSS.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/PM_AGILE_LSS.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/PM_AGILE_LSS.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/PM_AGILE_LSS"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/PM_AGILE_LSS/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/PM_AGILE_LSS"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_PM_AGILE_LSS",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development and Interactive Media",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/GAME_DEV_INTERACTIVE"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#GAME_DEV_INTERACTIVE"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/GAME_DEV_INTERACTIVE/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/game_dev_interactive.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/GAME_DEV_INTERACTIVE.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/GAME_DEV_INTERACTIVE.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/GAME_DEV_INTERACTIVE.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/GAME_DEV_INTERACTIVE"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GAME_DEV_INTERACTIVE/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/GAME_DEV_INTERACTIVE"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_GAME_DEV_INTERACTIVE",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "extension_class": "RESEARCH_APPRENTICESHIP",
+      "package_dirs": [
+        "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#SEVEN_GC_APPRENTICESHIP"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/SEVEN_GC_APPRENTICESHIP/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/seven_gc_apprenticeship.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/SEVEN_GC_APPRENTICESHIP.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/SEVEN_GC_APPRENTICESHIP.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/SEVEN_GC_APPRENTICESHIP.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/SEVEN_GC_APPRENTICESHIP"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_SEVEN_GC_APPRENTICESHIP",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "title": "Cloud and DevOps",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/CLOUD_DEVOPS"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#CLOUD_DEVOPS"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/CLOUD_DEVOPS/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/cloud_and_devops.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/CLOUD_DEVOPS.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/CLOUD_DEVOPS.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/CLOUD_DEVOPS.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/CLOUD_DEVOPS"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/CLOUD_DEVOPS/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/CLOUD_DEVOPS"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_CLOUD_DEVOPS",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/COMM_PD_ETHICS"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#COMM_PD_ETHICS"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/COMM_PD_ETHICS/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/communication_professional_development_and_ethics.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/COMM_PD_ETHICS.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/COMM_PD_ETHICS.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/COMM_PD_ETHICS.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/COMM_PD_ETHICS"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/COMM_PD_ETHICS/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/COMM_PD_ETHICS"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_COMM_PD_ETHICS",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/ROBOTICS_CONTROL"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#ROBOTICS_CONTROL"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/ROBOTICS_CONTROL/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/robotics_and_control.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/ROBOTICS_CONTROL.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/ROBOTICS_CONTROL.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/ROBOTICS_CONTROL.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/ROBOTICS_CONTROL"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/ROBOTICS_CONTROL/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/ROBOTICS_CONTROL"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_ROBOTICS_CONTROL",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#GUNNCHOS_PRODUCT_LAB"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/GUNNCHOS_PRODUCT_LAB/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/gunnchos_device_os_and_product_lab.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/weeks"
+        },
+        "lessons": {
+          "status": "PARTIAL",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/GUNNCHOS_PRODUCT_LAB.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/GUNNCHOS_PRODUCT_LAB.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/GUNNCHOS_PRODUCT_LAB.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/GUNNCHOS_PRODUCT_LAB"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_GUNNCHOS_PRODUCT_LAB",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering",
+      "extension_class": "FOUNDATION",
+      "package_dirs": [
+        "curriculum/digital_rc/HARDWARE_ENGINEERING"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#HARDWARE_ENGINEERING"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/hardware_engineering.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/HARDWARE_ENGINEERING.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/HARDWARE_ENGINEERING.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/HARDWARE_ENGINEERING.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/HARDWARE_ENGINEERING"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/HARDWARE_ENGINEERING/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/HARDWARE_ENGINEERING"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_HARDWARE_ENGINEERING",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "title": "Data Visualization and Business Intelligence",
+      "extension_class": "ADVANCED_EXTENSION",
+      "package_dirs": [
+        "curriculum/digital_rc/DATA_VIZ_BI"
+      ],
+      "cells": {
+        "canonical_identity": {
+          "status": "PASS",
+          "evidence": "curriculum/taxonomy/eighteen_tracks.json#DATA_VIZ_BI"
+        },
+        "independent_entry_point": {
+          "status": "PASS",
+          "evidence": "curriculum/canonical_packages/DATA_VIZ_BI/PACKAGE_MANIFEST.v1.json"
+        },
+        "syllabus": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/syllabus.md"
+        },
+        "objectives": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/programs/data_visualization_and_business_intelligence.md"
+        },
+        "modules": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/weeks"
+        },
+        "lessons": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/weeks",
+          "note": "n=10"
+        },
+        "labs": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/labs",
+          "note": "n=10"
+        },
+        "assignments": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/assignments"
+        },
+        "quizzes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/quizzes"
+        },
+        "summative_assessment": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/assessments"
+        },
+        "capstone_project": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/projects"
+        },
+        "group_activity": {
+          "status": "PARTIAL",
+          "evidence": "group_projects/by_course (legacy) or package projects",
+          "note": "verify track-specific group brief"
+        },
+        "case_studies": {
+          "status": "PARTIAL",
+          "evidence": "case_studies/7gc",
+          "note": "campus case studies shared; track mapping varies"
+        },
+        "rubrics": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/rubrics"
+        },
+        "student_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/student/STUDENT_PACKET.md"
+        },
+        "instructor_packet": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/instructor/INSTRUCTOR_PACKET.md"
+        },
+        "portfolio_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/portfolio"
+        },
+        "career_outcomes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/career_mapping.json"
+        },
+        "glossary": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/glossary.md"
+        },
+        "references": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/references.md"
+        },
+        "standards_mapping": {
+          "status": "PASS",
+          "evidence": "standards_alignment/by_track/DATA_VIZ_BI.yaml"
+        },
+        "accessibility_notes": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/accessibility_notes.md"
+        },
+        "ai_policy": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DATA_VIZ_BI.policy.json"
+        },
+        "gunnchai_tutor_contract": {
+          "status": "PASS",
+          "evidence": "gunnchai/track_policies/DATA_VIZ_BI.policy.json"
+        },
+        "digital_package": {
+          "status": "PASS",
+          "evidence": "curriculum/digital_rc/DATA_VIZ_BI"
+        },
+        "compile": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/course.json"
+        },
+        "schema": {
+          "status": "PASS",
+          "evidence": "schema/waike_course_package.v1.json"
+        },
+        "offline": {
+          "status": "PASS",
+          "evidence": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/18-track-full-readiness-closure/curriculum/digital_rc/DATA_VIZ_BI/offline_pack"
+        },
+        "waike_learner": {
+          "status": "PARTIAL",
+          "evidence": "ingest/learner/waike_learner_ingest.v1.json",
+          "note": "17 package dirs historically; need 18 track_id keys"
+        },
+        "waike_instructor": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json"
+        },
+        "waike_grader": {
+          "status": "PARTIAL",
+          "evidence": "ingest/teacher/waike_teacher_ingest.v1.json#answer_keys"
+        },
+        "waike_guardian_relevance": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json",
+          "note": "guardian relevance varies by track"
+        },
+        "waike_admin": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_ROLE_MATRIX.json"
+        },
+        "device_phone": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_handheld": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_student": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "device_coder": {
+          "status": "PARTIAL",
+          "evidence": "artifacts/full_readiness/WAIKE_18_TRACK_DEVICE_MATRIX.json"
+        },
+        "review_packet": {
+          "status": "PASS",
+          "evidence": "curriculum/review_packets/DATA_VIZ_BI"
+        },
+        "human_academic_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human academic sign-off on file"
+        },
+        "human_accessibility_review": {
+          "status": "HUMAN_REQUIRED",
+          "evidence": "",
+          "note": "No human accessibility sign-off on file"
+        },
+        "field_pilot": {
+          "status": "EXTERNAL_REQUIRED",
+          "evidence": "pilot/track_DATA_VIZ_BI",
+          "note": "Pilot packet may exist; field execution absent"
+        }
+      },
+      "readiness_level": "L6_PILOT_READY",
+      "automatable_pass": true,
+      "gate_blockers": []
+    }
+  ],
+  "claim_boundary": "Digital/pre-human matrix only. Human academic/accessibility and field pilot remain HUMAN_REQUIRED/EXTERNAL_REQUIRED absent evidence."
+}

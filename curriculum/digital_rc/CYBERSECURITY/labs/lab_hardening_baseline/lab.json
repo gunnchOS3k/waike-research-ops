@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_hardening_baseline",
+  "title": "lab_hardening_baseline",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "baseline"
+  ],
+  "summary": "Harbor SOC lab lab_hardening_baseline.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

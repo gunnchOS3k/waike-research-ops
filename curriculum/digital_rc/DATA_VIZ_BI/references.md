@@ -1,0 +1,3 @@
+# References — DATA_VIZ_BI
+
+PUBLIC_REFERENCE_ONLY citations as named in lessons. No textbook reproduction. No fabricated DOIs.

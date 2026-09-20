@@ -1,0 +1,25 @@
+track_id: DIGITAL_CONFIDENCE
+title: "Digital Confidence to Computer Operator"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: digital_confidence
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: it_support
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: SFIA9
+    status: draft
+    note: "Digital literacy / IT user support themes \u2014 draft"
+    accreditation: false
+  - framework: CompTIA_A+
+    status: draft
+    note: "Operator/end-user skills overlap \u2014 draft, not cert prep"
+    accreditation: false
+generated_at: 2026-09-20T15:41:23Z
+generator: scripts/full_readiness/generate_agent10_packets.py

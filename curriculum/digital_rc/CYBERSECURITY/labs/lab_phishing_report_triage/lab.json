@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_phishing_report_triage",
+  "classification": "DIGITAL",
+  "title": "Phishing report triage \u2014 defensive headers only",
+  "acceptance": "disposition + evidence fields; no lure-crafting instructions",
+  "defensive_only": true,
+  "empty_fails": true
+}

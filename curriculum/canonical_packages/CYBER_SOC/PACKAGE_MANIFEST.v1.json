@@ -1,0 +1,40 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "CYBER_SOC",
+  "title": "Cybersecurity Foundations and SOC Readiness",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "759ad08d25a69effe52365c0baf8dd895ffed616b26fb372879a84b7d4be3f29",
+  "dependencies": [
+    "NETWORKING_INFRA"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/CYBERSECURITY",
+      "note": "Primary package directory (CYBERSECURITY)"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/CYBERSECURITY",
+      "note": "Track CYBER_SOC addressability without duplicating CYBERSECURITY content tree"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/CYBER_SOC",
+      "note": "Track-named entry directory (Agents 1-5); primary content remains CYBERSECURITY \u2014 no blind duplication"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/CYBER_SOC",
+  "deprecation": null,
+  "academy_id": "ACADEMY_CYBER",
+  "package_dir": "CYBERSECURITY",
+  "course_id": "CYBERSECURITY",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": true,
+    "blind_duplication": false
+  },
+  "entry_digital_rc_path": "curriculum/digital_rc/CYBER_SOC"
+}

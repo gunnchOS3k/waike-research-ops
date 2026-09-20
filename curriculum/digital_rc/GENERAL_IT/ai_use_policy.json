@@ -1,0 +1,20 @@
+{
+  "modes": [
+    "EXPLAIN",
+    "HINT",
+    "QUESTION_ME",
+    "DEBUG_WITH_ME",
+    "REVIEW_MY_WORK",
+    "COMPARE_APPROACHES",
+    "PRACTICE"
+  ],
+  "assessment_modes": [
+    "AI_ALLOWED",
+    "AI_RESTRICTED",
+    "AI_DISCLOSED",
+    "NO_AI"
+  ],
+  "mayPublishGradesWithoutHuman": false,
+  "HITL_required": true,
+  "notes": "Package GENERAL_IT default policy."
+}

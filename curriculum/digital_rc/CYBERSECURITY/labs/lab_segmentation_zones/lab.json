@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_segmentation_zones",
+  "title": "lab_segmentation_zones",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "matrix"
+  ],
+  "summary": "Harbor SOC lab lab_segmentation_zones.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}
