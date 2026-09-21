@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Interactive lab: AI may brainstorm mechanics under AI_DISCLOSED; combat/frame-data practicals that score fixtures are AI_RESTRICTED; no asset copyright dumps.
+
 
 ## Reviewer checks
 

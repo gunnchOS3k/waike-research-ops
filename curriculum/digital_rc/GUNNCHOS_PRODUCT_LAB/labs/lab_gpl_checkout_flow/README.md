@@ -1,18 +1,9 @@
-# lab_gpl_checkout_flow
+# lab_gpl_checkout_flow — gpl_checkout_flow
 
-Checkout FSM.
+lab_gpl_checkout_flow fixture JSON.
 
-**Classification:** DIGITAL
+Empty {} fails. PASS raises.
 
-## Student artifact
-Keys: `states, orphan_state`.
-Empty {} fails. PASS-only body fails.
-
-## How to run
-```
 python3 scripts/run_course_labs.py --lab lab_gpl_checkout_flow --submission path/to/student.json
-python3 scripts/run_course_labs.py --lab lab_gpl_checkout_flow --empty
-```
 
-## Honesty
-No fabricated community impact. PHYSICAL_PENDING for EVT/OTA/carrier without evidence. Do not treat unmerged device-os PRs as accepted pins.
+Wrong/empty/print-PASS fail.

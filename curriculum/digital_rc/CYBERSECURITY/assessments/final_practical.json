@@ -7,7 +7,10 @@
     "lab_segmentation_zones",
     "lab_incident_playbook",
     "lab_safe_vuln_detect",
-    "lab_forensics_timeline"
+    "lab_forensics_timeline",
+    "lab_phishing_defense",
+    "lab_threat_model",
+    "lab_secure_config_audit"
   ],
   "pass_rule": "all listed labs ok=true AND package negatives fail"
 }

@@ -10,6 +10,21 @@
 
 Product Bench: charter, Device OS modes, no fabricated impact numbers.
 
+
+
+## Product-lab distinctiveness (anti-clone)
+
+This track is **not** an embedded firmware course and **not** a hardware bring-up syllabus.
+Reviewers should see product-ops vocabulary that EMBEDDED_PROTOTYPING does not own:
+
+- product charter fields: problem statement, non-goals, success metric id
+- compatibility matrix rows with version pins and rollback owners
+- checkout latency fixtures (`median_wait_minutes`) rather than GPIO/I2C timings
+- release-note honesty: refuse fabricated EVT, refusal of institutional adoption claims
+- HITL score publish gate before any external gunnchOS surface announcement
+
+If a lab only renames ForgeSense register work as "product," reject it as noun-swapped filler.
+
 ## Scope and audience
 
 - **Audience:** WAIKE Level 1–4 learners (Gary UPNOW, apprentices, 7GC campus cohorts) unless program file narrows further.

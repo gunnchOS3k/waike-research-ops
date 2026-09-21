@@ -1,0 +1,232 @@
+{
+  "schema": "waike.full_readiness.canonical_legacy_package_reconciliation.v1",
+  "generated_at": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
+  "canonical_track_count": 18,
+  "legacy_product_course_count": 17,
+  "legacy_product_courses": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_DASHBOARDS",
+    "DATA_VIZ_BI",
+    "EMBEDDED_PROTOTYPING",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SEVEN_GC_APPRENTICESHIP",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "mapping": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "legacy_digital_rc_id": "GENERAL_IT",
+      "shared_package": true,
+      "canonical_manifest": "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/DIGITAL_CONFIDENCE",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "legacy_digital_rc_id": "GENERAL_IT",
+      "shared_package": true,
+      "canonical_manifest": "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/IT_SUPPORT_HARDWARE",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "legacy_digital_rc_id": "SOFTWARE_BUILDER",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/SOFTWARE_BUILDER/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "legacy_digital_rc_id": "COMPUTER_NETWORKING",
+      "shared_package": true,
+      "canonical_manifest": "curriculum/canonical_packages/NETWORKING_INFRA/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/NETWORKING_INFRA",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "legacy_digital_rc_id": "CYBERSECURITY",
+      "shared_package": true,
+      "canonical_manifest": "curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/CYBER_SOC",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "legacy_digital_rc_id": "DATA_DASHBOARDS",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/DATA_DASHBOARDS/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/DATA_DASHBOARDS",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "legacy_digital_rc_id": "AI_ML_EDGE",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/AI_ML_EDGE/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/AI_ML_EDGE",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "legacy_digital_rc_id": "EMBEDDED_PROTOTYPING",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/EMBEDDED_PROTOTYPING",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "legacy_digital_rc_id": "WIRELESS_6G",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/WIRELESS_6G/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/WIRELESS_6G",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "legacy_digital_rc_id": "PM_AGILE_LSS",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/PM_AGILE_LSS/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/PM_AGILE_LSS",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "legacy_digital_rc_id": "GAME_DEV_INTERACTIVE",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/GAME_DEV_INTERACTIVE/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "legacy_digital_rc_id": "SEVEN_GC_APPRENTICESHIP",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/SEVEN_GC_APPRENTICESHIP/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "legacy_digital_rc_id": "CLOUD_DEVOPS",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/CLOUD_DEVOPS/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/CLOUD_DEVOPS",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "legacy_digital_rc_id": "COMM_PD_ETHICS",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/COMM_PD_ETHICS/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/COMM_PD_ETHICS",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "legacy_digital_rc_id": "ROBOTICS_CONTROL",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/ROBOTICS_CONTROL/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "legacy_digital_rc_id": "GUNNCHOS_PRODUCT_LAB",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/GUNNCHOS_PRODUCT_LAB/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "legacy_digital_rc_id": "HARDWARE_ENGINEERING",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "legacy_digital_rc_id": "DATA_VIZ_BI",
+      "shared_package": false,
+      "canonical_manifest": "curriculum/canonical_packages/DATA_VIZ_BI/PACKAGE_MANIFEST.v1.json",
+      "digital_rc_path": "curriculum/digital_rc/DATA_VIZ_BI",
+      "legacy_in_COURSES_product_path": true,
+      "addressable": true,
+      "ok": true
+    }
+  ],
+  "shared_package_groups": [
+    {
+      "legacy": "GENERAL_IT",
+      "tracks": [
+        "DIGITAL_CONFIDENCE",
+        "IT_SUPPORT_HARDWARE"
+      ]
+    },
+    {
+      "legacy": "COMPUTER_NETWORKING",
+      "tracks": [
+        "NETWORKING_INFRA"
+      ]
+    },
+    {
+      "legacy": "CYBERSECURITY",
+      "tracks": [
+        "CYBER_SOC"
+      ]
+    }
+  ],
+  "all_canonical_tracks_addressable": true,
+  "ok": true,
+  "claim_boundary": "Reconciles 18 canonical track_ids to 17 legacy digital_rc product courses. Not a field/human claim."
+}

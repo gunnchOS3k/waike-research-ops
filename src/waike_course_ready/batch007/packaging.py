@@ -122,10 +122,91 @@ def presentation_007(course_id: str, week: dict[str, Any]) -> str:
 
 
 def instructor_packet_007(course_id: str) -> str:
-    return f"# Instructor packet — {course_id}\n\nKeys in instructor/answer_keys.json only.\n"
+    if course_id == "GUNNCHOS_PRODUCT_LAB":
+        return "\n".join([
+            "# Instructor packet — GUNNCHOS_PRODUCT_LAB",
+            "",
+            "## Purpose",
+            "Run the gunnchOS Product Lab Bench (charter → compatibility → checkout) without fabricating EVT, field, or adoption evidence.",
+            "",
+            "## Keys and HITL",
+            "- Keys: `instructor/answer_keys.json` (not in learner ingest)",
+            "- Do not publish scores without human review of portfolio claims",
+            "- Reject physical-device claims without Device Lab evidence class",
+            "",
+            "## Labs",
+            "- Run `python3 scripts/run_course_labs.py` — empty `{}`, wrong fixtures, and print-PASS must fail",
+            "- Emphasize product charter honesty, compat matrix, and checkout flow JSON",
+            "- Classification default: DIGITAL / SIMULATED; PHYSICAL only with evidence class",
+            "",
+            "## AI policy modes",
+            "- Tutoring: EXPLAIN / HINT / QUESTION_ME / DEBUG_WITH_ME / REVIEW_MY_WORK / COMPARE_APPROACHES / PRACTICE",
+            "- Assessment: AI_ALLOWED / AI_RESTRICTED / AI_DISCLOSED / NO_AI",
+            "- Graded charter metrics and compat matrices: prefer AI_DISCLOSED or NO_AI",
+            "",
+            "## Prep and pacing",
+            "1. Weeks 1–2: charter scope without fabricated impact numbers",
+            "2. Weeks 3–5: compatibility matrix + checkout latency fixtures",
+            "3. Weeks 6–8: release notes honesty + rollback narrative",
+            "4. Weeks 9–10: portfolio packet with claim boundary checklist",
+            "",
+            "## Common misconceptions",
+            "- Product lab ≠ EVT complete",
+            "- Compatibility rows need fixture IDs, not marketing adjectives",
+            "- Checkout improvements must cite median_wait_minutes from lab JSON",
+            "",
+            "## UDL / accessibility",
+            "- Prefer text + JSON artifacts over color-only status",
+            "- Offer keyboard-only paths for UI checklists",
+            "- Cost assumption: existing laptop; Device Lab hardware opt-in",
+            "",
+            "## Claim refusals",
+            "- No PMI / vendor cert grants",
+            "- No institutional adoption claims",
+            "- No fabricated community-impact percentages",
+            "",
+        ])
+    return (
+        f"# Instructor packet — {course_id}\n\n"
+        "- Keys: `instructor/answer_keys.json` (not in learner ingest)\n"
+        "- Labs: run `python3 scripts/run_course_labs.py` — empty/wrong must fail\n"
+        "- AI policy modes: EXPLAIN/HINT/QUESTION_ME/DEBUG_WITH_ME/REVIEW_MY_WORK/COMPARE_APPROACHES/PRACTICE\n"
+        "- Assessment modes: AI_ALLOWED / AI_RESTRICTED / AI_DISCLOSED / NO_AI\n"
+        "- Do not claim certs or physical completion without evidence\n"
+        "- Public pages ≠ free to copy\n"
+    )
 
 
 def student_packet_007(course_id: str, hook: str) -> str:
+    if course_id == "GUNNCHOS_PRODUCT_LAB":
+        return "\n".join([
+            "# Student packet — GUNNCHOS_PRODUCT_LAB",
+            "",
+            "## What you will build",
+            "A product-lab portfolio: charter, compatibility matrix, checkout-flow evidence, and honest release notes for gunnchOS surfaces.",
+            "",
+            "## Materials",
+            f"- Hook: {hook}",
+            "- Package: `curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/`",
+            "- Syllabus: `syllabus.md`",
+            "- Labs under `labs/` (validators reject empty/wrong/print-PASS)",
+            "- Assignments `a01.md`–`a10.md` with named deliverables",
+            "",
+            "## Completion criteria",
+            "1. Weekly lessons read; lab JSON validators green on honest fixtures",
+            "2. Assignments name deliverables (charter fields, matrix rows, checkout metric)",
+            "3. Portfolio outcomes without fabricated EVT/field claims",
+            "4. AI use disclosed when required by assessment mode",
+            "",
+            "## Troubleshooting",
+            "- If a lab prints PASS without JSON: that is a fail — fix the artifact",
+            "- If you lack Device Lab hardware: stay on DIGITAL/SIMULATED and label it",
+            "- Instructor keys are not in learner ingest — ask via HITL channels only",
+            "",
+            "## Claim boundary",
+            "Digitally validated product-lab practice only. Not field validation, not institutional adoption, not accreditation.",
+            "",
+        ])
     return f"# Student packet — {course_id}\n\n{hook}\n\nSubmit lab JSON; empty/wrong/print-PASS fail.\n"
 
 

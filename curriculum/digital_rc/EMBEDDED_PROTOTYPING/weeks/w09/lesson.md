@@ -1,27 +1,7 @@
-# Week 9: Power & sleep — wake source honesty
+# Week 9: Sleep modes — wake source honesty
 
-**Ticket:** EP-4909  
-**Lab:** `lab_ep_sleep_mode`
-
-## Objectives
-- Name sleep_mode and wake_gpio
-- Bound wake_latency_ms without inventing µA
-- NO_AI for wake documentation fields
-
-## Body
-Power is a first-class embedded topic. SYSTEM_OFF with wake on BTN0 and wake_latency_ms=5 is the fixture story. Do not invent microamp draw numbers without a meter log — mark PHYSICAL_PENDING for measured current.
-
-Device security angle: wake sources are attack surface. Document them; do not leave undocumented debug wakes in 'temporary' overlays.
+ForgeSense Subsystem Bench ticket EP-4909: Sleep modes — wake source honesty. NO_AI week: document wake source without inventing uA draw. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks — this course owns firmware/bus/QEMU path. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4909: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
 
 ## Worked example
+
 sleep_mode=SYSTEM_OFF, wake_gpio=BTN0, wake_latency_ms=5
-
-## Assessment mode
-NO_AI
-
-## Claim refusals
-- No invented µA figures
-- No undocumented debug wake in submitted overlay
-
-## Journal prompt
-Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_ep_sleep_mode` and `EP-4909`. Empty {} fails. A file whose body is only PASS raises.
