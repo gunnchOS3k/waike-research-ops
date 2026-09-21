@@ -10,53 +10,15 @@
   "teacher_course_count": 17,
   "owner_session_overlay_count": 17,
   "current_product_layer": {
-    "imported": true,
-    "packs": [
-      "waike_gary_upnow_intro",
-      "wireless_basics_101",
-      "python_starter_pack",
-      "DIGITAL_CONFIDENCE",
-      "IT_SUPPORT_HARDWARE",
-      "SOFTWARE_BUILDER",
-      "NETWORKING_INFRA",
-      "CYBER_SOC",
-      "DATA_DASHBOARDS",
-      "AI_ML_EDGE",
-      "EMBEDDED_PROTOTYPING",
-      "WIRELESS_6G",
-      "PM_AGILE_LSS",
-      "GAME_DEV_INTERACTIVE",
-      "SEVEN_GC_APPRENTICESHIP",
-      "CLOUD_DEVOPS",
-      "COMM_PD_ETHICS",
-      "ROBOTICS_CONTROL",
-      "GUNNCHOS_PRODUCT_LAB",
-      "HARDWARE_ENGINEERING",
-      "DATA_VIZ_BI"
-    ],
-    "learner_session_ok": true,
-    "teacher_session_ok": true,
-    "learner_has_educator_block": true,
-    "session_shape_keys": [
-      "accessibility",
-      "account",
-      "course_id",
-      "educator",
-      "labs",
-      "lesson_id",
-      "offline_pack",
-      "profile",
-      "progress",
-      "role",
-      "tutor"
-    ],
-    "claim_boundary": "Digital WAIKE learning runtime using repo lesson packs and 18-course seeds. Not a full LMS, not production cloud sync, not curriculum-complete."
+    "imported": false,
+    "reason": "device-os_not_adjacent"
   },
   "honest_limit": "device-os origin/main WAIKE UI still hardcodes three offline packs. This packet proves schema-compatible catalog + session-shaped overlay + live run_session on those existing packs. It does not mega-PR device-os or copy curriculum bodies into device-os.",
   "wrote": {
-    "learner": "/Users/gunnchos/dev/waike-learning-os-workspace/waike-research-ops/ingest/learner/waike_learner_ingest.v1.json",
-    "teacher": "/Users/gunnchos/dev/waike-learning-os-workspace/waike-research-ops/ingest/teacher/waike_teacher_ingest.v1.json",
-    "catalog": "/Users/gunnchos/dev/waike-learning-os-workspace/waike-research-ops/ingest/waike_product_catalog.ui.v1.json"
+    "learner": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/pr59-ci-depth-quality-closure/ingest/learner/waike_learner_ingest.v1.json",
+    "teacher": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/pr59-ci-depth-quality-closure/ingest/teacher/waike_teacher_ingest.v1.json",
+    "catalog": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/pr59-ci-depth-quality-closure/ingest/waike_product_catalog.ui.v1.json",
+    "canonical_tracks": "/Users/gunnchos/Downloads/gunnchos-7gc-research-product-spine/repos/waike-research-ops/.worktrees/pr59-ci-depth-quality-closure/ingest/canonical/waike_canonical_track_ingest.v1.json"
   },
   "ok": true
 }

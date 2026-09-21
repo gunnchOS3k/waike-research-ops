@@ -1,49 +1,72 @@
 {
+  "quiz_id": "GENERAL_IT-q06",
   "week": 6,
   "items": [
     {
-      "id": "it-q06-1",
-      "prompt": "Week 6 emphasis for IT_SUPPORT_HARDWARE: which statement matches the track focus?",
+      "id": "git-w6-1",
+      "kind": "mcq",
+      "stem": "Correct first subsystem to name on a dead kiosk?",
       "choices": [
-        "Power-first hardware triage (primary emphasis)",
-        "Invent field RF gains",
-        "Grant CompTIA automatically",
-        "Store SSN in ticket"
-      ],
-      "answer": 0
+        "OS reinstall",
+        "RAM vendor",
+        "Power path (brick/LED)",
+        "Browser cache"
+      ]
     },
     {
-      "id": "it-q06-2",
-      "prompt": "Shared lesson bodies live in which package?",
+      "id": "git-w6-2",
+      "kind": "mcq",
+      "stem": "Why is the spare SODIMM last in the black-screen flowchart?",
       "choices": [
-        "GENERAL_IT via content_ref",
-        "Copied twice into this folder",
-        "Only in Slack",
-        "Vendor dump PDF"
-      ],
-      "answer": 0
+        "RAM is cheap",
+        "SODIMMs cannot fail",
+        "Windows 11 needs 128 GB",
+        "Video/power/cables explain more of this failure class"
+      ]
     },
     {
-      "id": "it-q06-3",
-      "prompt": "Instructor keys / HITL rule?",
+      "id": "git-w6-3",
+      "kind": "mcq",
+      "stem": "Patron tethers a phone because 'Wi-Fi is slow.' You should",
       "choices": [
-        "Keys in learner packet",
-        "Keys instructor-only; humans grade",
-        "AI silently grades",
-        "Post keys on slides"
-      ],
-      "answer": 1
+        "Check the kiosk patch cable/link lights first",
+        "Ignore Ethernet lights",
+        "Buy a new phone",
+        "Disable the idle timer"
+      ]
     },
     {
-      "id": "it-q06-4",
-      "prompt": "Job guarantee from this track?",
+      "id": "git-w6-4",
+      "kind": "mcq",
+      "stem": "78 C exhaust after dust: next?",
       "choices": [
-        "Yes, salary guaranteed",
-        "No \u2014 demonstrable outcomes only",
-        "Yes, if quizzes pass",
-        "Yes, via mentor fiction"
-      ],
-      "answer": 1
+        "Immediate chassis RMA",
+        "Clean intake, re-measure",
+        "Reinstall Debian",
+        "Overclock the fan"
+      ]
+    },
+    {
+      "id": "git-w6-5",
+      "kind": "mcq",
+      "stem": "SMART is evidence for which subsystem?",
+      "choices": [
+        "Display cable",
+        "RAM timings",
+        "Storage",
+        "GRUB theme"
+      ]
+    },
+    {
+      "id": "git-w6-6",
+      "kind": "mcq",
+      "stem": "A+ V15 Core 1 hardware domain in this week is used as",
+      "choices": [
+        "An item dump",
+        "A license to copy CertMaster",
+        "A replacement for tickets",
+        "A domain label for power/RAM/disk/display triage"
+      ]
     }
   ]
 }

@@ -1,7 +1,5 @@
-# Project / capstone rubric — GUNNCHOS_PRODUCT_LAB
+# Product Lab project
 
-- **scope_paragraph** (25%): Names what is in/out; refuses fabricated impact
-- **evidence_packet** (25%): ≥6 lab digests or equivalent fixture proofs
-- **claim_refusals** (25%): Explicit refusals (certs, EVT, unmerged PRs, live scans)
-- **operability** (25%): Next shift can reopen artifacts without tribal knowledge
-
+- **capstone_flags** (40%): Capstone honesty flags
+- **six_labs** (30%): labs_passed≥6
+- **no_key_leak** (30%): no_key_leak true

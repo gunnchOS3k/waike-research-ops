@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+gunnchOS Product Lab: charter/compat/checkout labs reject fabricated EVT claims; AI may critique PR text under AI_DISCLOSED; keys stay instructor-only.
+
 
 ## Reviewer checks
 

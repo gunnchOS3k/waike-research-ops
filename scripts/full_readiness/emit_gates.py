@@ -54,8 +54,11 @@ for t in tracks:
     gates['TRACK_PLATFORM_INGEST_PASS']=True
     gates['TRACK_ROLE_MATRIX_PASS']=True
     gates['TRACK_DEVICE_MATRIX_PASS']=True
-    gates['TRACK_HUMAN_REVIEW_PACKET_READY']=(ROOT/'curriculum/review_packets'/tid/'README.md').exists()
-    gates['TRACK_PILOT_PACKET_READY']=(ROOT/'pilot'/f'track_{tid}'/'README.md').exists()
+    rev_readme = ROOT/'curriculum/review_packets'/tid/'README.md'
+    pil_readme = ROOT/'pilot'/f'track_{tid}'/'README.md'
+    # Heading-only packets are not ready: require substantive README bodies.
+    gates['TRACK_HUMAN_REVIEW_PACKET_READY']=rev_readme.exists() and rev_readme.stat().st_size >= 800
+    gates['TRACK_PILOT_PACKET_READY']=pil_readme.exists() and pil_readme.stat().st_size >= 400
     if tid=='SEVEN_GC_APPRENTICESHIP':
         gates['SEVEN_GC_APPRENTICESHIP_ACADEMIC_REVIEW_PACKET_READY']=True
         gates['SEVEN_GC_APPRENTICESHIP_HUMAN_ACADEMIC_REVIEW_PASS']=False
@@ -112,6 +115,53 @@ pre=all(auto.values()) and all(v for k,v in g.items() if k.startswith('WAIKE_') 
  'WAIKE_18_HUMAN_ACADEMIC_REVIEW_PASS','WAIKE_18_HUMAN_ACCESSIBILITY_REVIEW_PASS','WAIKE_18_FIELD_VALIDATION_PASS','WAIKE_18_INSTITUTIONAL_ADOPTION_PASS','WAIKE_18_PRE_HUMAN_FULL_READINESS_PASS','WAIKE_18_PILOT_READY_PASS'))
 g['WAIKE_18_PRE_HUMAN_FULL_READINESS_PASS']=pre
 g['WAIKE_18_PILOT_READY_PASS']=pre
+# Honesty overlays: do not preserve L6/pilot from stale artifacts when CI/depth fail.
+depth_path = OUT/'DEPTH_ANTI_FILLER_REPORT.json'
+rc_path = ROOT/'artifacts'/'COURSE_DIGITAL_RC.json'
+recon_path = OUT/'CANONICAL_LEGACY_PACKAGE_RECONCILIATION.json'
+distinct_path = OUT/'18_TRACK_AUTHORED_DISTINCTNESS_AUDIT.json'
+gpl_path = OUT/'GUNNCHOS_PRODUCT_LAB_DEPTH_COMPARISON.json'
+if depth_path.exists():
+    depth = json.loads(depth_path.read_text())
+    subst = int(depth.get('substantive_warning_count') or depth.get('summary',{}).get('warning_count') or 0)
+    g['WAIKE_18_DEPTH_SUBSTANTIVE_WARNINGS_ZERO'] = subst == 0
+    if subst != 0:
+        pre = False
+if rc_path.exists():
+    rc = json.loads(rc_path.read_text())
+    g['COURSE_DIGITAL_RC_BATCH'] = bool(rc.get('COURSE_DIGITAL_RC_BATCH'))
+    if not rc.get('COURSE_DIGITAL_RC_BATCH'):
+        pre = False
+if recon_path.exists():
+    recon = json.loads(recon_path.read_text())
+    g['CANONICAL_LEGACY_RECONCILIATION_OK'] = bool(recon.get('ok'))
+    if not recon.get('ok'):
+        pre = False
+if distinct_path.exists():
+    dist = json.loads(distinct_path.read_text())
+    g['WAIKE_18_AUTHORED_DISTINCTNESS_PASS'] = bool(dist.get('pass'))
+    if not dist.get('pass'):
+        pre = False
+if gpl_path.exists():
+    gpl = json.loads(gpl_path.read_text())
+    g['GUNNCHOS_PRODUCT_LAB_MEETS_SOFTWARE_BUILDER_FLOOR'] = bool(gpl.get('all_floors_met'))
+    if not gpl.get('all_floors_met'):
+        pre = False
+# Recompute pilot/pre-human after honesty overlays; downgrade levels if needed.
+g['WAIKE_18_PRE_HUMAN_FULL_READINESS_PASS']=pre
+g['WAIKE_18_PILOT_READY_PASS']=pre
+if not pre:
+    for tid, level in list(levels.items()):
+        if level == 'L6_PILOT_READY':
+            levels[tid] = 'L5_HUMAN_REVIEW_READY'
+            # rewrite track gate file readiness
+            tp = OUT/'tracks'/f'{tid}_GATES.json'
+            if tp.exists():
+                tg = json.loads(tp.read_text())
+                tg['readiness_level'] = 'L5_HUMAN_REVIEW_READY'
+                tg['downgraded_reason'] = 'global honesty overlay (CI/depth/recon/distinctness/GPL floor)'
+                tp.write_text(json.dumps(tg, indent=2)+'\n')
+    g['readiness_levels']=levels
 g['readiness_levels']=levels
 g['per_track_automatable_pass']=auto
 g['tracks_not_automatable_pass']=[k for k,v in auto.items() if not v]

@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Control loop labs: sim-first; AI may explain PID intuition; scored trajectory JSON is NO_AI; PHYSICAL hardware opt-in only.
+
 
 ## Reviewer checks
 

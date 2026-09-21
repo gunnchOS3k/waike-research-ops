@@ -1,26 +1,7 @@
-# Week 6: ISR vs polling — realtime latency budget
+# Week 6: ISR vs polling — latency budget
 
-**Ticket:** EP-4606  
-**Lab:** `lab_ep_isr_vs_poll`
+ForgeSense Subsystem Bench ticket EP-4606: ISR vs polling — latency budget. Choose ISR when edge latency must stay under 250 µs. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from HARDWARE_ENGINEERING SPICE weeks — this course owns firmware/bus/QEMU path. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal EP-4606: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
 
-## Objectives
-- Choose ISR when edge latency must stay under 250 µs
-- Bound missed_edges
-- Keep ISR work short — defer heavy work
-
-## Body
-Realtime is a budget. If an edge must be observed within 250 µs, a polling loop that sometimes runs longer fails — choose mode=isr, keep the handler short, and defer heavy work. missed_edges must be 0 on the acceptance window.
-
-Connectivity note: ISR latency budgets matter for button/wake paths that later feed Device OS guest boot_status. No hard-realtime certification is granted.
 ## Worked example
+
 mode=isr, max_latency_us=250, missed_edges=0
-
-## Assessment mode
-AI_DISCLOSED
-
-## Claim refusals
-- No claiming hard realtime certification
-- No unbounded work inside ISR
-
-## Journal prompt
-Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_ep_isr_vs_poll` and `EP-4606`. Empty {} fails. A file whose body is only PASS raises.

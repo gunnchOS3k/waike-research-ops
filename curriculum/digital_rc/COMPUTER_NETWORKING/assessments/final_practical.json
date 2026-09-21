@@ -6,7 +6,11 @@
     "lab_vlan_mac",
     "lab_spf_routing",
     "lab_nat_acl",
-    "lab_dns_resolution"
+    "lab_dns_resolution",
+    "lab_wifi_fundamentals",
+    "lab_transport_ports",
+    "lab_packet_capture_fixture",
+    "lab_ops_runbook"
   ],
   "pass_rule": "all listed labs ok=true AND package negatives fail"
 }

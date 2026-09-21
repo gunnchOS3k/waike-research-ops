@@ -10,3 +10,4 @@ tools/private_transcript_ingestion/*.csv
 !tools/private_transcript_ingestion/README.md
 !tools/private_transcript_ingestion/DO_NOT_COMMIT_PRIVATE_RECORDS.md
 .venv/
+.venv/

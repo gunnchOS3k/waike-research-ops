@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Harbor Desk Voice: consent/recusal/AI disclosure required; ethics critiques AI_DISCLOSED; no credential-grant claims in portfolios.
+
 
 ## Reviewer checks
 

@@ -1,26 +1,9 @@
-# Week 5: Security, privacy & Privacy BOM
+# Week 5: Privacy BOM — field inventory without PII
 
-**Ticket:** GPL-5505  
-**Lab:** `lab_gpl_privacy_bom`
+gunnchOS Product Lab Bench ticket GPL-5505: Privacy BOM — field inventory without PII. Privacy BOM digital inventory; no biometric claim. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5505: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
 
-## Objectives
-- Inventory fields without PII in BOM
-- Set retention_days
-- Refuse biometric claims without evidence
+Week-5 release-note refusal: draft one sentence you will not publish (institutional adoption / accreditation) and keep HITL before share.
 
-## Body
-Privacy BOM is a product requirement: list sensing fields (camera, mic, location-class), keep pii_in_bom=false, set retention_days. Accessibility requires the disclosure in text, not an icon color alone.
-
-Security/privacy review refuses biometric product claims without evidence and refuses storing library-card PANs 'just in case.'
 ## Worked example
+
 fields=[camera,mic,location], pii_in_bom=false, retention_days=30
-
-## Assessment mode
-AI_DISCLOSED
-
-## Claim refusals
-- No biometric product claim without evidence
-- No PII in BOM
-
-## Journal prompt
-Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_privacy_bom` and `GPL-5505`. Empty {} fails. A file whose body is only PASS raises.

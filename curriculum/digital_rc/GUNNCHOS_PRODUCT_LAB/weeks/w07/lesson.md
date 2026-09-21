@@ -1,26 +1,9 @@
-# Week 7: Release engineering — semver & breaking flags
+# Week 7: Release notes — semver and breaking flag
 
-**Ticket:** GPL-5707  
-**Lab:** `lab_gpl_release_notes`
+gunnchOS Product Lab Bench ticket GPL-5707: Release notes — semver and breaking flag. Semver bump with explicit breaking_change false unless true. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5707: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
 
-## Objectives
-- Ship semver with explicit breaking flag
-- Require changelog_entries ≥ 1
-- Tie release notes to docs consumers
+Week-7 portfolio boundary: list three claim refusals tied to gunnchOS surfaces; keys stay in instructor-only key store (not learner ingest).
 
-## Body
-Release engineering is customer-facing truth: semver, explicit breaking flag, changelog entries. Docs consumers (desk leads, volunteers) must see the same breaking_change boolean the CI gate saw.
-
-If enclosure fit would break, say so with evidence; do not invent industrial-design EVT photos.
 ## Worked example
+
 semver=1.4.0, breaking=false, changelog_entries=3
-
-## Assessment mode
-AI_DISCLOSED
-
-## Claim refusals
-- No silent breaking changes
-- No cert grant via release notes
-
-## Journal prompt
-Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_release_notes` and `GPL-5707`. Empty {} fails. A file whose body is only PASS raises.

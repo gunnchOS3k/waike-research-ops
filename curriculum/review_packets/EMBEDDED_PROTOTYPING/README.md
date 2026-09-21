@@ -10,6 +10,14 @@
 
 ForgeSense subsystems. Has standalone package plus shared HARDWARE_ENGINEERING coverage — do not treat shared package alone as full embedded readiness.
 
+
+
+## Embedded distinctiveness (anti-clone)
+
+This track owns **memory maps, GPIO contracts, I2C timing, and QEMU/digital bring-up**.
+It is not a product-charter or checkout-latency course. Reject labs that only swap
+"register" for "metric" without peripheral fixtures.
+
 ## Scope and audience
 
 - **Audience:** WAIKE Level 1–4 learners (Gary UPNOW, apprentices, 7GC campus cohorts) unless program file narrows further.
