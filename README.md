@@ -113,3 +113,12 @@ Education/ops only · no commercial 6G · no certification · Cursor DRAFT-only.
 Prior short README: [docs/history/README_PRE_WP012.md](docs/history/README_PRE_WP012.md).
 
 > No transcripts, grades, or PII in this public repo. Use `tools/private_transcript_ingestion/` locally only.
+
+## Feedback & Suggestions
+
+Tried this project? File public feedback via the ecosystem hub:
+
+https://github.com/gunnchOS3k/gunnchos-research-portal/blob/main/FEEDBACK.md
+
+Security vulnerabilities: private only — https://github.com/gunnchOS3k/gunnchos-research-portal/blob/main/SECURITY.md
+

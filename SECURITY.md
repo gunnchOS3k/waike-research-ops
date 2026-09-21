@@ -16,3 +16,5 @@ Do **not** open public issues for sensitive vulnerabilities.
 - No secrets, tokens, or private competition datasets in issues or PRs.
 - Privacy-preserving, opt-in telemetry only for field measurement repos.
 - Hardware artifacts are conceptual EVT-0 — not certified consumer products.
+
+Do not post exploitable security details publicly. Prefer private advisories: https://github.com/gunnchOS3k/gunnchos-research-portal/security/advisories/new
