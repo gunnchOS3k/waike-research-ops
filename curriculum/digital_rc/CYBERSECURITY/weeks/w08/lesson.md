@@ -1,25 +1,13 @@
-# Week 8: Detection, triage & safe vuln concepts
+# Week 8: Authorized toy parser — detect the length lie, do not grow an exploit kit
 
-**Track:** CYBER_SOC
-**content_ref:** `../CYBERSECURITY/weeks/w08/lesson.md`
+Berkeley CS161 uses authorized vulnerable targets in a course VM. We take the depth pattern, not the projects. Harbor's course CTF is a length-prefixed toy parser: first byte claims payload length. The unsafe parser trusts it. A message `\x14short` claims 20 bytes and only has 5. The safe parser raises.
 
-## Objectives
-- Detect length-lie in toy parser
-- Safe parser raises
-- No shellcode/live scan
+You will write a detector and a safe parser. You will not write shellcode, you will not scan random IPs, you will not reuse anyone's exam binary. This is the only vulnerability lab in the course and it is sandboxed on purpose.
 
-## Body (track overlay)
-Authorized toy parser. Defensive bounds checks only.
+Security+ threats/vulnerabilities domain is the alignment label. Mitigations here are bounds checks and refusing to run the unsafe function in production images.
 
-Shared lesson body is maintained under the legacy package at `../CYBERSECURITY/weeks/w08/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
+If you find a real bug in WAIKE software outside this fixture, you report it — you do not 'practice' on it.
 
 ## Worked example
+
 unsafe(\x14short) returns a short slice (the lie). safe(\x14short) raises ValueError. safe(\x04abcd)==b'abcd'.
-
-## Assessment mode
-NO_AI
-
-## Claim refusals
-- No shellcode
-- No malware
-- No random IP scans

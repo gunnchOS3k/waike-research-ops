@@ -83,15 +83,30 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     need(bool(labs.get("ttl1_from_parsed_header")), "TTL=1 check is tautology, not parsed header")
     need(bool(labs.get("no_submission_fails")), "no-submission golden path still passes")
     need(all(n.get("ok") for n in labs.get("negatives_must_fail_and_did") or []), "package negatives did not fail")
-    # Coexistence: #43 labs must still execute when this RC writer runs on the union product path.
-    need(int(labs.get("lab_count") or 0) >= 130, f"lab_count {labs.get('lab_count')} < 130 (#43∪#44∪#45∪#46∪Stream-B)")
-    need(int(labs.get("batch_001_lab_count") or 0) == 20, "#43 labs orphaned from run_all")
+    # Coexistence: legacy batches must still execute on the union product path.
+    # Floors preserve #43–#46 + Stream-B; exact counts pin post-batch009 enrichment
+    # (GENERAL_IT=7, COMPUTER_NETWORKING=10, CYBERSECURITY=10 → batch_001=27) and
+    # batch_007 (EMBEDDED+GUNNCHOS=20). Stricter than the historical ==20 orphan check.
+    need(int(labs.get("lab_count") or 0) >= 187, f"lab_count {labs.get('lab_count')} < 187 (legacy∪canonical enrichment)")
+    need(int(labs.get("batch_001_lab_count") or 0) >= 20, "#43 labs orphaned from run_all (floor 20)")
+    need(int(labs.get("batch_001_lab_count") or 0) == 27, "#43 batch lab count drift (expected 27 after batch009)")
     need(int(labs.get("batch_002_lab_count") or 0) == 30, "#44 labs orphaned from run_all")
     need(int(labs.get("batch_003_lab_count") or 0) == 30, "#45 labs orphaned from run_all")
     need(int(labs.get("batch_004_lab_count") or 0) == 30, "#46 labs orphaned from run_all")
     need(int(labs.get("batch_005_lab_count") or 0) == 10, "Stream-B COMM_PD labs orphaned from run_all")
     need(int(labs.get("batch_006_lab_count") or 0) == 10, "Stream-B DATA_DASHBOARDS labs orphaned from run_all")
+    need(int(labs.get("batch_007_lab_count") or 0) == 20, "batch_007 EMBEDDED/GUNNCHOS labs orphaned from run_all")
     need(set(BATCH_001).issubset(set(COURSES)), "#43 courses missing from COURSES product path")
+    # Canonical 18-track readiness must coexist with the 17-dir legacy product path.
+    recon_path = ROOT / "artifacts" / "full_readiness" / "CANONICAL_LEGACY_PACKAGE_RECONCILIATION.json"
+    if recon_path.exists():
+        recon = json.loads(recon_path.read_text(encoding="utf-8"))
+        need(bool(recon.get("ok")), "canonical↔legacy reconciliation failed")
+        need(int(recon.get("canonical_track_count") or 0) == 18, "canonical track count != 18")
+        need(int(recon.get("legacy_product_course_count") or 0) == 17, "legacy product course count != 17")
+        need(bool(recon.get("all_canonical_tracks_addressable")), "canonical tracks not addressable")
+    else:
+        need(False, "CANONICAL_LEGACY_PACKAGE_RECONCILIATION.json missing")
     depth_ok, depth_reasons = _lesson_depth_ok(cid)
     need(depth_ok, "lesson depth/padding: " + "; ".join(depth_reasons[:3]))
     need(int(prov.get("lesson_padding_rejected") or 0) == 0, "provenance rejected lesson padding")
@@ -167,9 +182,14 @@ def main() -> int:
             "non-cloned packaging, stripped lesson depth ≥800 without operator-note padding, "
             "and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 "
             "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM) ∪ #45 (AI/Data/Cloud) ∪ #46 "
-            "(Wireless/Robotics/Game) ∪ Stream-B (COMM_PD_ETHICS ∪ DATA_DASHBOARDS). "
+            "(Wireless/Robotics/Game) ∪ Stream-B (COMM_PD_ETHICS ∪ DATA_DASHBOARDS) ∪ "
+            "batch_007 (EMBEDDED_PROTOTYPING ∪ GUNNCHOS_PRODUCT_LAB) ∪ batch_008 "
+            "(SEVEN_GC_APPRENTICESHIP) — 17 legacy digital_rc product courses. "
+            "Canonical readiness is 18 track_ids via shared-package reconciliation "
+            "(DIGITAL_CONFIDENCE+IT_SUPPORT_HARDWARE→GENERAL_IT; NETWORKING_INFRA→"
+            "COMPUTER_NETWORKING; CYBER_SOC→CYBERSECURITY). "
             "Commercial standardized 6G does not exist today. "
-            "Not a student/teacher E6. Not all 18 courses."
+            "Not a student/teacher E6. Not a field/human academic claim."
         ),
     }
     out = ROOT / "artifacts" / "COURSE_DIGITAL_RC.json"

@@ -6,7 +6,3 @@
 - Assessment modes: AI_ALLOWED / AI_RESTRICTED / AI_DISCLOSED / NO_AI
 - Do not claim vendor certs or physical completion without evidence
 - Public pages ≠ free to copy
-
-## Keys / HITL
-- Keys: `instructor/answer_keys.json` stay instructor-only.
-- HITL: human-in-the-loop grading and release gates; AI never silently grades.

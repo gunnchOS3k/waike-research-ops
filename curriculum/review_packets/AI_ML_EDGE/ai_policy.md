@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+EdgeForge Bench: tutoring EXPLAIN/HINT allowed; graded model-card and eval JSON practicals are NO_AI or AI_DISCLOSED; never accept print-PASS as edge deployment evidence.
+
 
 ## Reviewer checks
 

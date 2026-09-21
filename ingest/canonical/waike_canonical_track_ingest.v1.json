@@ -1,7 +1,7 @@
 {
   "schema": "waike.canonical_track_ingest.v1",
   "role": "platform_ingest_index",
-  "generated_utc": "2026-09-20T15:38:23Z",
+  "generated_utc": "2026-09-20T16:15:35Z",
   "track_count": 18,
   "package_dir_count": 17,
   "tracks": [

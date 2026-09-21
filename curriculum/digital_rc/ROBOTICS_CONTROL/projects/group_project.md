@@ -1,16 +1,5 @@
-# Group project — Robotics Control (HarborBot Bay)
+# Group project — ROBOTICS_CONTROL
 
-## Brief
-Demonstrate a **safe simulated control loop** with optional physical follow-on scaffold. Roles: controls engineer + safety officer.
+## Robotics and Control — HarborBot Bay
 
-## Deliverables
-1. PID experiment packet with plots and parameters.
-2. Safety checklist (estop, HITL enable, enclosure).
-3. Sim-to-real gap note (what would change on hardware).
-4. Claim boundary keeping EXTERNAL_PHYSICAL_GATE open unless measured.
-
-## Rubric anchors
-Safety · Control evidence · Honesty of sim · HITL enable
-
-## Explicit non-claims
-Not industrial robot certification; not unsupervised physical operation.
+Ship RB-5910 via lab_robot_capstone. Portfolio + career map.

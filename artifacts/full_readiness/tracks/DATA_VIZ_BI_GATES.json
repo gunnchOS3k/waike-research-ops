@@ -1,7 +1,7 @@
 {
   "track_id": "DATA_VIZ_BI",
-  "generated_utc": "2026-09-20T15:44:56Z",
-  "source_commit": "88c7ebf64cea126d5aaaf7fea8d200daf5e31cf3",
+  "generated_utc": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "readiness_level": "L6_PILOT_READY",
   "gates": {
     "TRACK_CANONICAL_ID_PASS": true,

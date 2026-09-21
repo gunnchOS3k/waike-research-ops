@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Cloud path: AI may explain YAML; production-like rollback practicals AI_RESTRICTED; empty deploy manifests must fail validators.
+
 
 ## Reviewer checks
 

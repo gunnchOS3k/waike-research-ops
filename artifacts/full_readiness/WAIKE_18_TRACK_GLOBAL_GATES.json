@@ -1,7 +1,7 @@
 {
   "schema": "waike.full_readiness.global_gates.v1",
-  "generated_utc": "2026-09-20T15:44:56Z",
-  "source_commit": "88c7ebf64cea126d5aaaf7fea8d200daf5e31cf3",
+  "generated_utc": "2026-09-20T16:17:05Z",
+  "source_commit": "ea93cbbf3338f80faad3c386bac9e77260f9991b",
   "WAIKE_CANONICAL_18_TRACKS_PASS": true,
   "WAIKE_18_INDEPENDENT_ENTRY_POINTS_PASS": true,
   "WAIKE_18_CONTENT_AUTHORED_PASS": true,
@@ -31,6 +31,11 @@
   "WAIKE_18_INSTITUTIONAL_ADOPTION_PASS": false,
   "WAIKE_18_PRE_HUMAN_FULL_READINESS_PASS": true,
   "WAIKE_18_PILOT_READY_PASS": true,
+  "WAIKE_18_DEPTH_SUBSTANTIVE_WARNINGS_ZERO": true,
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "CANONICAL_LEGACY_RECONCILIATION_OK": true,
+  "WAIKE_18_AUTHORED_DISTINCTNESS_PASS": true,
+  "GUNNCHOS_PRODUCT_LAB_MEETS_SOFTWARE_BUILDER_FLOOR": true,
   "readiness_levels": {
     "DIGITAL_CONFIDENCE": "L6_PILOT_READY",
     "IT_SUPPORT_HARDWARE": "L6_PILOT_READY",

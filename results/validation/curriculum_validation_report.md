@@ -1,6 +1,6 @@
 # Curriculum validation report
 
-Generated: 2026-09-06T18:50:22.645352+00:00
+Generated: 2026-09-20T16:16:38.176328+00:00
 
 - validate_curriculum.py: PASS
 - validate_syllabi.py: PASS

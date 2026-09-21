@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Seven-GC dossier: AI may outline evidence maps; graded apprenticeship artifacts and HITL mentor review stay human-gated; no accreditation language.
+
 
 ## Reviewer checks
 

@@ -12,7 +12,8 @@ AI_ALLOWED, AI_RESTRICTED, AI_DISCLOSED, NO_AI
 
 ## Package notes
 
-(none)
+Viz bench: AI may suggest chart types; graded dashboard fidelity checks against fixture tables are AI_RESTRICTED; no misleading insight without data path.
+
 
 ## Reviewer checks
 

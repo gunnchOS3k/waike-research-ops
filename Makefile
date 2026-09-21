@@ -6,7 +6,8 @@
 test:
 	$(PY) pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py \
 		tests/test_evaluation_metrics.py tests/test_batch002_exams_validation.py \
-		tests/test_canonical_track_registry.py tests/test_taxonomy_contract.py
+		tests/test_canonical_track_registry.py tests/test_taxonomy_contract.py \
+		tests/test_canonical_legacy_reconciliation.py
 
 code-health-r5-s1: test
 	$(PY) python3 scripts/run_r5_s1_mutation_kills.py

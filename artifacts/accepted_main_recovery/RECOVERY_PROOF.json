@@ -1,0 +1,33 @@
+{
+  "schema": "accepted_main_recovery.v1",
+  "generated_at_utc": "2026-09-21T14:36:59Z",
+  "repo": "waike-research-ops",
+  "original_pr": 60,
+  "recovery_branch": "recovery/pr60-accepted-main-convergence",
+  "merge_authorized": false,
+  "method": "git merge --no-ff <exact-missing-child-tip> onto current origin/main",
+  "history_rewrite": false,
+  "force_push": false,
+  "main_sha": "696f4647eba2d0a01bcc14ac2ac390d7ee9d9745",
+  "missing_child_sha": "63ba9f25ac6b8d8d1b6dd118923566fd51c57b62",
+  "merge_base": "28e9df40a8fa9ff32be594c394dd53bd53804dd1",
+  "commits_missing_before": 2,
+  "recovery_branch_sha": "899ce5a1ebe2656dec73eac81134dc4647998abf",
+  "child_tip_is_ancestor_of_recovery": true,
+  "diff_summary": {
+    "files_changed": 240,
+    "insertions": 5822,
+    "deletions": 5135,
+    "shortstat": "240 files changed, 5822 insertions(+), 5135 deletions(-)"
+  },
+  "duplicate_work_check": "child_tip_not_ancestor_of_main_before_recovery; recovery_tree_equals_tip_tree; main_unique_content_preserved",
+  "conflicts": "none",
+  "ci": {
+    "status": "pass",
+    "command": "make test",
+    "detail": "45 passed",
+    "updated_at_utc": "2026-09-21T14:38:59Z",
+    "github_ci": "will_run_on_draft_pr"
+  },
+  "owner_landing_note": "DO NOT MERGE until owner approval. Prefer normal merge commit (no squash/rebase)."
+}

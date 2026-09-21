@@ -3,12 +3,12 @@
   "status": "PASS",
   "BATCH_TEMPLATED_COURSES": 0,
   "BATCH_STUB_COURSES": 0,
-  "worst_jaccard": 0.1099,
+  "worst_jaccard": 0.0822,
   "worst_pair": [
     "EMBEDDED_PROTOTYPING",
     "GUNNCHOS_PRODUCT_LAB"
   ],
-  "worst_packaging_jaccard": 0.1736,
+  "worst_packaging_jaccard": 0.1592,
   "worst_packaging_pair": [
     "EMBEDDED_PROTOTYPING",
     "GUNNCHOS_PRODUCT_LAB"
@@ -17,7 +17,7 @@
     {
       "a": "EMBEDDED_PROTOTYPING",
       "b": "GUNNCHOS_PRODUCT_LAB",
-      "jaccard_5gram": 0.1099
+      "jaccard_5gram": 0.0822
     },
     {
       "a": "DATA_VIZ_BI",
@@ -35,14 +35,14 @@
       "jaccard_5gram": 0.005
     },
     {
-      "a": "DATA_DASHBOARDS",
-      "b": "GUNNCHOS_PRODUCT_LAB",
-      "jaccard_5gram": 0.005
-    },
-    {
       "a": "SOFTWARE_BUILDER",
       "b": "PM_AGILE_LSS",
       "jaccard_5gram": 0.0049
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "GUNNCHOS_PRODUCT_LAB",
+      "jaccard_5gram": 0.0042
     },
     {
       "a": "SOFTWARE_BUILDER",
@@ -59,7 +59,7 @@
     {
       "a": "EMBEDDED_PROTOTYPING",
       "b": "GUNNCHOS_PRODUCT_LAB",
-      "packaging_jaccard_5gram": 0.1736
+      "packaging_jaccard_5gram": 0.1592
     },
     {
       "a": "ROBOTICS_CONTROL",
@@ -378,7 +378,7 @@
     "COMM_PD_ETHICS": 907,
     "DATA_DASHBOARDS": 925,
     "EMBEDDED_PROTOTYPING": 973,
-    "GUNNCHOS_PRODUCT_LAB": 981,
+    "GUNNCHOS_PRODUCT_LAB": 1104,
     "SEVEN_GC_APPRENTICESHIP": 914
   },
   "lesson_padding_rejected": 0,
