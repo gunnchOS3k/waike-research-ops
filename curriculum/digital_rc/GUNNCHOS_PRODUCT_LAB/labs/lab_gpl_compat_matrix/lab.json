@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_compat_matrix",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "device_os_sha",
+    "gunnchai_sha",
+    "contract_ok"
+  ],
+  "summary": "Accepted-main compat pins.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

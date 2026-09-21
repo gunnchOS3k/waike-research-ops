@@ -1,0 +1,8 @@
+{
+  "schema": "waike.full_readiness.canonical_package_entry_validation.v1",
+  "expected_tracks": 18,
+  "addressable_ok": 18,
+  "error_count": 0,
+  "errors": [],
+  "pass": true
+}

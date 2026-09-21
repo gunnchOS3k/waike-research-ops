@@ -1,0 +1,19 @@
+{
+  "modes": [
+    "EXPLAIN",
+    "HINT",
+    "QUESTION_ME",
+    "DEBUG_WITH_ME",
+    "REVIEW_MY_WORK",
+    "COMPARE_APPROACHES",
+    "PRACTICE"
+  ],
+  "assessment_modes": [
+    "AI_ALLOWED",
+    "AI_RESTRICTED",
+    "AI_DISCLOSED",
+    "NO_AI"
+  ],
+  "default_weekly": "AI_DISCLOSED",
+  "notes": "CIDR/datapath practicals AI_RESTRICTED; quizzes AI_DISCLOSED; capstone disclosure table required."
+}

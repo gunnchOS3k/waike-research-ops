@@ -1,13 +1,23 @@
-# Week 5: Reliability on an unreliable wire — sequences, ACKs, AIMD on paper
+# Week 5: Transport — TCP reliability & ports
 
-TCP (current spec RFC 9293) pretends the wire is reliable by numbering bytes and refusing to live on hope. Sequence 1000, payload 200 bytes, ACK 1200 means 'I have everything before 1200.' If ACK 1000 returns, none of that payload is safe yet.
+**Track:** NETWORKING_INFRA
+**content_ref:** `../COMPUTER_NETWORKING/weeks/w05/lesson.md`
 
-The three-way handshake is not a personality test. SYN, SYN-ACK, ACK. Data before the handshake completes is a bug in your mental model (or an experimental Fast Open you will not implement here).
+## Objectives
+- Map https/dns/ssh
+- ACK from seq+len
+- Refuse telnet
 
-Congestion control in this course is AIMD arithmetic: cwnd 10, loss, halve to 5, then +1 per RTT. You will compute a table for 8 RTTs. You will not port a C++ TCP stack. That is the CS144 shape we refuse to copy and the WAIKE shape we can actually grade offline.
+## Body (track overlay)
+Transport overlay pairs AIMD with lab_transport_ports.
 
-Flow control (rwnd) is the receiver's remaining belly. Congestion control is the network's remaining belly. Mixing those two words is how people tune the wrong knob.
+Shared lesson body is maintained under the legacy package at `../COMPUTER_NETWORKING/weeks/w05/lesson.md`. Read that module in full; this overlay adds track-id framing, assessment mode, and claim refusals.
 
 ## Worked example
-
 seq=1000 len=200 → ACK 1200 on full receipt. cwnd 10, loss → 5, then 6,7,8... on additive increase per RTT without further loss.
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No copying CS144 TCP stacks

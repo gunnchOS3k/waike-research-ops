@@ -1,0 +1,546 @@
+{
+  "schema": "waike.full_readiness.device_matrix.v1",
+  "generated_utc": "2026-09-20T15:39:22Z",
+  "evidence_class": "DIGITAL_CLASSIFICATION",
+  "physical_pixel_validation": "OUT_OF_SCOPE",
+  "claim_boundary": "Classifications are digital engineering judgments only; no physical Pixel campaign claimed.",
+  "classification_vocab": [
+    "FULL_NATIVE",
+    "FULL_VIA_ADAPTER",
+    "SUPPORTED_WITH_FALLBACK",
+    "COMPANION_ONLY",
+    "NOT_APPLICABLE",
+    "PHYSICAL_HARDWARE_REQUIRED"
+  ],
+  "devices": [
+    "phone",
+    "handheld_hybrid",
+    "student_14_5",
+    "ds_xl_coder",
+    "edge_io"
+  ],
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator",
+      "devices": {
+        "phone": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Reading + light activities via adapter"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "No measurement dependency"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations",
+      "devices": {
+        "phone": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Read lessons/quizzes; coding labs fallback to larger screen or companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "Desktop/laptop hardware labs; not edge_io primary"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "PHYSICAL_PC_HARDWARE",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "virtual machine + photo/checklist labs"
+        }
+      ]
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder Zero-to-Hero",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Review + quizzes; IDE work on laptop/coder"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "COMPANION_ONLY",
+          "note": "Measurement/companion where relevant; not primary LMS"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure",
+      "devices": {
+        "phone": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Read lessons/quizzes; coding labs fallback to larger screen or companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Optional packet/sensor companion; digital packet labs otherwise"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "devices": {
+        "phone": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Read lessons/quizzes; coding labs fallback to larger screen or companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Optional packet/sensor companion; digital packet labs otherwise"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "View dashboards; authoring needs larger screen"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "No I/O measurement dependency"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "title": "AI/ML and Edge AI Foundations",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Review + quizzes; IDE work on laptop/coder"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "COMPANION_ONLY",
+          "note": "Measurement/companion where relevant; not primary LMS"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Schematic/docs companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Toolchain + sim native; physical bench still required for some labs"
+        },
+        "ds_xl_coder": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Firmware/sim FULL; flashing/measurement PHYSICAL_HARDWARE_REQUIRED"
+        },
+        "edge_io": {
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "note": "Bring-up / sensing labs need hardware; firmware theory digital"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "BENCH_BRINGUP",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "simulators + recorded waveforms"
+        }
+      ]
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Theory + sim viewer"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "note": "RF/measurement labs need edge_io or equivalent; digital twin/sim fallback for theory"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "RF_MEASUREMENT",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "sim/digital twin scenarios"
+        }
+      ]
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "devices": {
+        "phone": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Reading + light activities via adapter"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "No measurement dependency"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development and Interactive Media",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Review + quizzes; IDE work on laptop/coder"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "COMPANION_ONLY",
+          "note": "Measurement/companion where relevant; not primary LMS"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Reading + notes"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Campus measurement optional; research can use digital twin exports"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "title": "Cloud and DevOps",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Review + quizzes; IDE work on laptop/coder"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "COMPANION_ONLY",
+          "note": "Measurement/companion where relevant; not primary LMS"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics",
+      "devices": {
+        "phone": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Reading + light activities via adapter"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "No measurement dependency"
+        }
+      },
+      "lab_level_exceptions": []
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control",
+      "devices": {
+        "phone": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Read lessons/quizzes; coding labs fallback to larger screen or companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Control sims native; physical robot labs PHYSICAL_HARDWARE_REQUIRED"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Optional sensing; robot base may be separate hardware"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "PHYSICAL_ROBOT",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "HarborBot sim"
+        }
+      ]
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Companion UX; Device OS work on larger devices"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Device OS product flows via adapter when image available"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary Device OS / product bench host"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary engineering host"
+        },
+        "edge_io": {
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "note": "Some product I/O rings/sensors physical; digital package otherwise"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "DEVICE_OS_FLASH_OR_IO",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "emulator / recorded device lab sessions"
+        }
+      ]
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "Schematic/docs companion"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Toolchain + sim native; physical bench still required for some labs"
+        },
+        "ds_xl_coder": {
+          "classification": "SUPPORTED_WITH_FALLBACK",
+          "note": "Firmware/sim FULL; flashing/measurement PHYSICAL_HARDWARE_REQUIRED"
+        },
+        "edge_io": {
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "note": "Bring-up / sensing labs need hardware; firmware theory digital"
+        }
+      },
+      "lab_level_exceptions": [
+        {
+          "lab_class": "BENCH_BRINGUP",
+          "classification": "PHYSICAL_HARDWARE_REQUIRED",
+          "digital_fallback": "simulators + recorded waveforms"
+        }
+      ]
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "title": "Data Visualization and Business Intelligence",
+      "devices": {
+        "phone": {
+          "classification": "COMPANION_ONLY",
+          "note": "View dashboards; authoring needs larger screen"
+        },
+        "handheld_hybrid": {
+          "classification": "FULL_VIA_ADAPTER",
+          "note": "Adapter UI for lessons/labs; complex IDEs may fall back"
+        },
+        "student_14_5": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary student laptop surface"
+        },
+        "ds_xl_coder": {
+          "classification": "FULL_NATIVE",
+          "note": "Primary coding / analysis surface"
+        },
+        "edge_io": {
+          "classification": "NOT_APPLICABLE",
+          "note": "No I/O measurement dependency"
+        }
+      },
+      "lab_level_exceptions": []
+    }
+  ]
+}

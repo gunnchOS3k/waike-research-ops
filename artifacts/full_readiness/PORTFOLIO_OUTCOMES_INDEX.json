@@ -1,0 +1,394 @@
+{
+  "schema": "waike.full_readiness.portfolio_outcomes_index.v1",
+  "generated_at": "2026-09-20T15:41:24Z",
+  "track_count": 18,
+  "tracks_with_portfolio": 18,
+  "entries": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator",
+      "package_id": "DIGITAL_CONFIDENCE",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "source": "curriculum/digital_rc/DIGITAL_CONFIDENCE/portfolio/PORTFOLIO.md"
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations",
+      "package_id": "IT_SUPPORT_HARDWARE",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "source": "curriculum/digital_rc/IT_SUPPORT_HARDWARE/portfolio/PORTFOLIO.md"
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "title": "Software Builder Zero-to-Hero",
+      "package_id": "SOFTWARE_BUILDER",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure",
+      "package_id": "NETWORKING_INFRA",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true,
+          "track_id": "NETWORKING_INFRA"
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness",
+      "package_id": "CYBER_SOC",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true,
+          "track_id": "CYBER_SOC"
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "title": "Data, Databases, and Dashboards",
+      "package_id": "DATA_DASHBOARDS",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "title": "AI/ML and Edge AI Foundations",
+      "package_id": "AI_ML_EDGE",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "title": "Embedded Systems and Device Prototyping",
+      "package_id": "EMBEDDED_PROTOTYPING",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "title": "Wireless, DSP, and 6G Foundations",
+      "package_id": "WIRELESS_6G",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "title": "Project Management, Agile, and Lean Six Sigma",
+      "package_id": "PM_AGILE_LSS",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "title": "Game Development and Interactive Media",
+      "package_id": "GAME_DEV_INTERACTIVE",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship",
+      "package_id": "SEVEN_GC_APPRENTICESHIP",
+      "program_outcomes": [
+        "Explain core concepts using plain-English intuition (WAIKE Consensus Ladder layer 1).",
+        "Apply academic foundations with labs (layer 2\u20133).",
+        "Map work to industry standards (layer 4\u20135) \u2014 *needs source review for exact objectives*.",
+        "Connect to gunnchOS research/product where applicable (layer 7\u20138)."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "title": "Cloud and DevOps",
+      "package_id": "CLOUD_DEVOPS",
+      "program_outcomes": [],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "title": "Communication, Professional Development, and Ethics",
+      "package_id": "COMM_PD_ETHICS",
+      "program_outcomes": [],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "title": "Robotics and Control",
+      "package_id": "ROBOTICS_CONTROL",
+      "program_outcomes": [],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "title": "gunnchOS Device OS and Product Lab",
+      "package_id": "GUNNCHOS_PRODUCT_LAB",
+      "program_outcomes": [
+        "Write testable user stories and non-functional requirements for a Device OS surface.",
+        "Map system architecture across apps, services, and capability adapters without inventing unmerged hardware.",
+        "Exercise digital Device Lab / simulator paths before any PHYSICAL_PENDING step.",
+        "Apply accessibility, privacy, and security review checklists to a release candidate.",
+        "Produce a portfolio packet with provenance, claim boundary, and reproducibility notes."
+      ],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "title": "Hardware Engineering",
+      "package_id": "HARDWARE_ENGINEERING",
+      "program_outcomes": [],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "title": "Data Visualization and Business Intelligence",
+      "package_id": "DATA_VIZ_BI",
+      "program_outcomes": [],
+      "portfolio_artifacts": [
+        {
+          "required": [
+            "lab_result_json",
+            "change_or_intent_or_policy",
+            "scope_paragraph"
+          ],
+          "no_pii": true
+        }
+      ],
+      "portfolio_present": true,
+      "gap": null
+    }
+  ],
+  "notes": [
+    "Aggregated from packages when present; absence is recorded as gap.",
+    "Does not claim learner portfolios were submitted."
+  ]
+}

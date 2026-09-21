@@ -1,0 +1,24 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "WIRELESS_6G",
+  "title": "Wireless / 5G-Advanced / NTN / AI-RAN \u2014 Pier Radio Bench",
+  "demonstrable_outcomes": [
+    "Run a pier radio bench simulation with labeled SIMULATED KPIs",
+    "Compute a basic link-budget worksheet for a fixture scenario",
+    "Document NTN vs terrestrial assumptions separately",
+    "Keep physical TX behind HITL + EXTERNAL_PHYSICAL_GATE"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "honest_limits": [
+    "Completion demonstrates listed artifacts under stated evidence classes only.",
+    "No employment, salary, or admission outcomes are promised.",
+    "External mentor/hardware/field gates remain open until separately evidenced."
+  ],
+  "required_portfolio_artifacts": [
+    "lab_result_json_or_digest",
+    "claim_boundary_paragraph",
+    "ai_disclosure_log",
+    "accessibility_notes_excerpt"
+  ]
+}

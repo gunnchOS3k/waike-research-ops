@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_gpl_dep_pin",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "preview_sha_in_accepted",
+    "pin_file"
+  ],
+  "summary": "Dependency pin honesty.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

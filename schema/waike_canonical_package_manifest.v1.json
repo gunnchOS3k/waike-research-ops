@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://waike.gunnchos.org/schema/waike_canonical_package_manifest.v1.json",
+  "title": "WAIKE canonical package entry manifest (track-addressable)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "track_id",
+    "title",
+    "package_version",
+    "compatibility_version",
+    "source_commit",
+    "content_hash",
+    "dependencies",
+    "shared_content_refs",
+    "digital_rc_path",
+    "deprecation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "waike.canonical_package_manifest.v1"
+    },
+    "track_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "package_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+([-.][0-9A-Za-z.]+)?$"
+    },
+    "compatibility_version": {
+      "type": "string"
+    },
+    "source_commit": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "sha256 of referenced course.json (or pointer target)"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared_content_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ref_kind",
+          "path"
+        ],
+        "properties": {
+          "ref_kind": {
+            "type": "string",
+            "enum": [
+              "digital_rc_package",
+              "sibling_track",
+              "legacy_alias",
+              "shared_module"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "track_id": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "digital_rc_path": {
+      "type": "string"
+    },
+    "deprecation": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "academy_id": {
+      "type": "string"
+    },
+    "package_dir": {
+      "type": "string"
+    },
+    "addressability": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

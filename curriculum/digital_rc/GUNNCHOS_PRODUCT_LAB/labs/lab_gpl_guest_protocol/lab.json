@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_guest_protocol",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "ping_ok",
+    "boot_status",
+    "protocol_version"
+  ],
+  "summary": "Guest protocol.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

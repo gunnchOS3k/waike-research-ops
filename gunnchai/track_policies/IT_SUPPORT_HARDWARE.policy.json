@@ -1,0 +1,67 @@
+{
+  "schema_version": "waike.gunnchai.track_policy.v1",
+  "track_id": "IT_SUPPORT_HARDWARE",
+  "title": "IT Support and Hardware Foundations",
+  "package_dir": "GENERAL_IT",
+  "allowed_tutoring": {
+    "socratic_default": true,
+    "source_grounded": true,
+    "may_disclose_answer_keys": false,
+    "active_exam_cheating": "FORBIDDEN",
+    "persona": "gunnchAI3k"
+  },
+  "hints": {
+    "allowed": true,
+    "style": "progressive_scaffold",
+    "may_reveal_final_numeric_key": false
+  },
+  "code_help": {
+    "mode": "ALLOWED_WITH_SOCRATIC_GUARDS",
+    "may_write_full_solutions_before_attempt": false,
+    "may_review_learner_code": true
+  },
+  "assessment_restrictions": {
+    "during_timed_assessment": "HINTS_ONLY_NO_ANSWERS",
+    "may_read_instructor_keys_as_learner_tutor": false,
+    "integrity": "refuse_active_exam_cheating"
+  },
+  "grading_guardrails": {
+    "HITL": true,
+    "mayPublishGradesWithoutHuman": false,
+    "may_self_grade_as_mastery_benchmark": false,
+    "draft_scores_ok": true
+  },
+  "citations": {
+    "required_for_factual_claims": true,
+    "prefer_course_materials": true,
+    "forbid_fabricated_references": true
+  },
+  "lab_safety": {
+    "summary": "ESD basics; no mains work without instructor",
+    "physical_hardware_required_for_some_labs": true,
+    "digital_fallback_required_when_no_bench": true
+  },
+  "domain_hallucination_risks": [
+    "unsafe hardware advice (mains voltage)",
+    "data-destructive repair steps"
+  ],
+  "instructor_escalation": {
+    "triggers": [
+      "safety_risk",
+      "integrity_violation",
+      "grade_publish_request",
+      "unresolvable_lab_blocker",
+      "guardian_concern"
+    ],
+    "required": true
+  },
+  "offensive_cyber": {
+    "assistance_allowed": false,
+    "policy": "FORBID_OFFENSIVE_EXPLOIT_ASSISTANCE_ALL_TRACKS",
+    "allowed_scope": "not_applicable_or_defensive_hygiene_only",
+    "explicit_forbids": [
+      "exploit_development",
+      "unauthorized_access_coaching"
+    ]
+  }
+}

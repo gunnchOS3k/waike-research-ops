@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_ep_isr_vs_poll",
+  "classification": "DIGITAL",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "mode",
+    "max_latency_us",
+    "missed_edges"
+  ],
+  "summary": "ISR latency budget.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

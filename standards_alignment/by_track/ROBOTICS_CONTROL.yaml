@@ -1,0 +1,25 @@
+track_id: ROBOTICS_CONTROL
+title: "Robotics and Control"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: robotics
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: hardware
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: ABET_computing
+    status: draft
+    note: "Design/experiment \u2014 draft only"
+    accreditation: false
+  - framework: SFIA9
+    status: draft
+    note: "Systems engineering themes \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:24Z
+generator: scripts/full_readiness/generate_agent10_packets.py

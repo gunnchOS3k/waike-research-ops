@@ -1,0 +1,24 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "SEVEN_GC_APPRENTICESHIP",
+  "title": "7GC AI-RAN Research Apprenticeship",
+  "demonstrable_outcomes": [
+    "Classify evidence without upgrading labels",
+    "Reproduce a SIMULATED KPI baseline with command, seed, and digest",
+    "Design and run a one-IV controlled simulation with raw artifacts preserved",
+    "Ship a digital capstone with mentor_signed=false unless EXTERNAL_HUMAN_GATE completes"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "honest_limits": [
+    "Completion demonstrates listed artifacts under stated evidence classes only.",
+    "No employment, salary, or admission outcomes are promised.",
+    "External mentor/hardware/field gates remain open until separately evidenced."
+  ],
+  "required_portfolio_artifacts": [
+    "lab_result_json_or_digest",
+    "claim_boundary_paragraph",
+    "ai_disclosure_log",
+    "accessibility_notes_excerpt"
+  ]
+}

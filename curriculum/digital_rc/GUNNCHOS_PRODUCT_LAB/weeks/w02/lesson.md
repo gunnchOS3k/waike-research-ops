@@ -1,7 +1,27 @@
-# Week 2: Compatibility matrix — device-os × gunnchAI pins
+# Week 2: Architecture & compatibility matrix (device-os × gunnchAI)
 
-gunnchOS Product Lab Bench ticket GPL-5202: Compatibility matrix — device-os × gunnchAI pins. Versioned compatibility check on accepted-main pair only. PHYSICAL_PENDING covers soldering, OTA, and carrier claims unless EVT evidence exists. Zephyr/KiCad/gunnchOS docs are PUBLIC_REFERENCE_ONLY — original WAIKE fixture wording only. Empty {} fails. A file whose body is only PASS raises. Show computed JSON fields; GUI screenshots are not acceptance. Distinct from SOFTWARE_BUILDER ForgeDesk — this course owns product/compat/privacy/CI contract. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs. Journal GPL-5202: restate the worked numbers, name one claim you refuse (commercial standardized 6G, vendor cert grant, unmerged device-os PR, fabricated field trial), and keep prose specific to this week's lab_id and ticket IDs.
+**Ticket:** GPL-5202  
+**Lab:** `lab_gpl_compat_matrix`
+
+## Objectives
+- Pin accepted-main SHAs only
+- Record contract_ok from versioned check
+- Refuse preview SHAs in accepted pins
+
+## Body
+Architecture here is the compatibility contract between gunnchos-device-os and gunnchAI pins. Use accepted-main pair digests only. Unmerged PRs (including device-os #103 class) are not Product-Use evidence.
+
+Industrial design interaction: note form-factor constraints as requirements inputs — do not invent physical EVT photos.
 
 ## Worked example
-
 device_os_sha=d5c2d17, gunnchai_sha=d357846, contract_ok=true
+
+## Assessment mode
+AI_DISCLOSED
+
+## Claim refusals
+- No unmerged PR as accepted pin
+- No fabricated hardware EVT photos
+
+## Journal prompt
+Restate the worked numbers, name one claim you refuse from the list above, and keep prose specific to `lab_gpl_compat_matrix` and `GPL-5202`. Empty {} fails. A file whose body is only PASS raises.

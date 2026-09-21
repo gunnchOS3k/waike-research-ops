@@ -1,0 +1,117 @@
+{
+  "schema": "waike.shared_modules.content_ref.v1",
+  "covering_package_id": "GENERAL_IT",
+  "do_not_duplicate_lessons": true,
+  "modules": [
+    {
+      "week": 1,
+      "title": "Three jobs a computer actually has",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w01/lesson.md",
+        "lab_id": "lab_ticket_queue"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Name remember/calculate/talk before acting"
+    },
+    {
+      "week": 2,
+      "title": "Two operating systems, one pair of hands",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w02/lesson.md",
+        "lab_id": "lab_os_users"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Same verbs on two OS images"
+    },
+    {
+      "week": 3,
+      "title": "Users, groups, and sudo you can type",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w03/lesson.md",
+        "lab_id": "lab_os_users"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Kiosk never in sudo"
+    },
+    {
+      "week": 4,
+      "title": "Storage, snapshots, and restore proof",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w04/lesson.md",
+        "lab_id": "lab_backup"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Backup is a practiced restore"
+    },
+    {
+      "week": 5,
+      "title": "Tickets are promises",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w05/lesson.md",
+        "lab_id": "lab_ticket_queue"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Severity by impact; no reboot-and-hope"
+    },
+    {
+      "week": 6,
+      "title": "Hardware triage order",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w06/lesson.md",
+        "lab_id": "lab_storage"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Structured triage handoff"
+    },
+    {
+      "week": 7,
+      "title": "Names on the LAN",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w07/lesson.md",
+        "lab_id": "lab_dns_hosts"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Name resolution before driver folklore"
+    },
+    {
+      "week": 8,
+      "title": "Services and printers",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w08/lesson.md",
+        "lab_id": "lab_services"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Services that keep Saturday r\u00e9sum\u00e9s printing"
+    },
+    {
+      "week": 9,
+      "title": "Change windows and rollback",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w09/lesson.md",
+        "lab_id": "lab_automation_runbook"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "Snapshot before apply"
+    },
+    {
+      "week": 10,
+      "title": "After-hours desk survival",
+      "content_ref": {
+        "package_id": "GENERAL_IT",
+        "path": "weeks/w10/lesson.md",
+        "lab_id": "lab_automation_runbook"
+      },
+      "track_focus": "Operator confidence on shared kiosks",
+      "track_emphasis": "After-hours without heroics"
+    }
+  ]
+}

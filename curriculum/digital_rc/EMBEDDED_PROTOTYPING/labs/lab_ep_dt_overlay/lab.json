@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_ep_dt_overlay",
+  "classification": "DIGITAL",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "overlay_has_i2c1",
+    "overlay_has_led0",
+    "delete_soc"
+  ],
+  "summary": "Devicetree overlay contract.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

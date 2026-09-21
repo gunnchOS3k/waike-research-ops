@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_release_notes",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "semver",
+    "breaking",
+    "changelog_entries"
+  ],
+  "summary": "Release notes.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

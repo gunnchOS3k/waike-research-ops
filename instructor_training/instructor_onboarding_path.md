@@ -4,7 +4,7 @@ Facilitation, grading, UDL, gunnchAI3k boundaries. This is ops guidance, not an 
 
 ## Start here (digital-RC example)
 
-Use **SOFTWARE_BUILDER** as the executable walk. Do not collapse catalog (18) and digital-RC (14) counts.
+Use **SOFTWARE_BUILDER** as the executable walk. Do not collapse catalog (18) and digital-RC package directories (17 historical; 18 canonical entry points) counts.
 
 1. Read [`docs/LIMITATIONS_AND_NON_CLAIMS.md`](../docs/LIMITATIONS_AND_NON_CLAIMS.md). No carrier 6G, no Oulu affiliation, no certification granted.
 2. Open [`curriculum/digital_rc/SOFTWARE_BUILDER/instructor/INSTRUCTOR_PACKET.md`](../curriculum/digital_rc/SOFTWARE_BUILDER/instructor/INSTRUCTOR_PACKET.md).

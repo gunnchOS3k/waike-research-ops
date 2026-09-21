@@ -1,0 +1,30 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "ROBOTICS_CONTROL",
+  "title": "Robotics and Control",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "0f7983afd7fc74f770274cecd194336b8402b1ee1dcdb5c517acac0e0f3e091f",
+  "dependencies": [
+    "HARDWARE_ENGINEERING",
+    "EMBEDDED_PROTOTYPING"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+      "note": "Primary package directory (ROBOTICS_CONTROL)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+  "deprecation": null,
+  "academy_id": "ACADEMY_HARDWARE",
+  "package_dir": "ROBOTICS_CONTROL",
+  "course_id": "ROBOTICS_CONTROL",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/ROBOTICS_CONTROL/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

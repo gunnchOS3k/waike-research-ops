@@ -1,0 +1,557 @@
+{
+  "schema": "waike.full_readiness.platform_18_track_ingestion.v1",
+  "generated_utc": "2026-09-20T15:40:26Z",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "owner_repo": "waike-research-ops",
+  "evidence_class": "DIGITAL_ONLY",
+  "physical_pixel_validation": "OUT_OF_SCOPE",
+  "lp_accepted_main_at_prompt": "e1fa0ee3205f57b7e1976b4aa437342f448aaece",
+  "all_18_compile_addressable": true,
+  "canonical_track_count": 18,
+  "package_dir_count": 17,
+  "historical_ingest_course_count": 17,
+  "claim_boundary": "Digital compile/addressability + API mapping only; no physical Pixel / on-device LP proof.",
+  "claims": {
+    "all_18_track_ids_addressable": true,
+    "package_dir_count": 17,
+    "track_count": 18,
+    "blind_duplication": false,
+    "full_lp_runtime_integration": "PARTIAL \u2014 canonical track ingest index emitted; LP list/open/render paths documented, not executed on-device"
+  },
+  "ingest_artifacts": {
+    "learner_package_keyed": "ingest/learner/waike_learner_ingest.v1.json",
+    "teacher_package_keyed": "ingest/teacher/waike_teacher_ingest.v1.json",
+    "canonical_track_keyed": "ingest/canonical/waike_canonical_track_ingest.v1.json",
+    "product_catalog": "ingest/waike_product_catalog.ui.v1.json"
+  },
+  "lp_api_surface_documented": [
+    "GET /api/courses (list; filter by track_id)",
+    "GET /api/courses/{id} (open; resolve canonical track_id -> package)",
+    "GET /api/lessons/{lesson_id} (render week/lesson body)",
+    "POST /api/assessments/{id}/submit (learner submit; keys never in learner ingest)"
+  ],
+  "tracks": [
+    {
+      "track_id": "DIGITAL_CONFIDENCE",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/DIGITAL_CONFIDENCE/course.json",
+      "legacy_package_id": "GENERAL_IT",
+      "digital_rc_path": "curriculum/digital_rc/GENERAL_IT",
+      "shared_package": true,
+      "content_hash": "fa4dee1409e35a97e703170a36e68f6a2db014484bfe794924d334b2e574fc15",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DIGITAL_CONFIDENCE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "IT_SUPPORT_HARDWARE",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/IT_SUPPORT_HARDWARE/course.json",
+      "legacy_package_id": "GENERAL_IT",
+      "digital_rc_path": "curriculum/digital_rc/GENERAL_IT",
+      "shared_package": true,
+      "content_hash": "fa4dee1409e35a97e703170a36e68f6a2db014484bfe794924d334b2e574fc15",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=IT_SUPPORT_HARDWARE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "SOFTWARE_BUILDER",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/SOFTWARE_BUILDER/course.json",
+      "legacy_package_id": "SOFTWARE_BUILDER",
+      "digital_rc_path": "curriculum/digital_rc/SOFTWARE_BUILDER",
+      "shared_package": false,
+      "content_hash": "4e87b1c497c22b110e590066197290227a3ccb306565636efbb7a6a54a5f367c",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=SOFTWARE_BUILDER",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "NETWORKING_INFRA",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/NETWORKING_INFRA/course.json",
+      "legacy_package_id": "COMPUTER_NETWORKING",
+      "digital_rc_path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "shared_package": true,
+      "content_hash": "f09f64b51f365d3f44769e3f2bdbb08a713b06dc1c61e740fdc3034136a7680e",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=NETWORKING_INFRA",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "CYBER_SOC",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/CYBER_SOC/course.json",
+      "legacy_package_id": "CYBERSECURITY",
+      "digital_rc_path": "curriculum/digital_rc/CYBERSECURITY",
+      "shared_package": true,
+      "content_hash": "eaed11b8b2b48984e516b9f36670186dae4f1fcd2c8587e92048b189f841f0e9",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=CYBER_SOC",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "DATA_DASHBOARDS",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/DATA_DASHBOARDS/course.json",
+      "legacy_package_id": "DATA_DASHBOARDS",
+      "digital_rc_path": "curriculum/digital_rc/DATA_DASHBOARDS",
+      "shared_package": false,
+      "content_hash": "68aa24439205f8f7458faee1229b89689bdb75aa4335f1a661fe47e2eeb54291",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DATA_DASHBOARDS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "AI_ML_EDGE",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/AI_ML_EDGE/course.json",
+      "legacy_package_id": "AI_ML_EDGE",
+      "digital_rc_path": "curriculum/digital_rc/AI_ML_EDGE",
+      "shared_package": false,
+      "content_hash": "9a6b3326cd1b056b04283a93eb9d69343ab8432f664d5f32ce5c2a8ee4186323",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=AI_ML_EDGE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "EMBEDDED_PROTOTYPING",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/EMBEDDED_PROTOTYPING/course.json",
+      "legacy_package_id": "EMBEDDED_PROTOTYPING",
+      "digital_rc_path": "curriculum/digital_rc/EMBEDDED_PROTOTYPING",
+      "shared_package": false,
+      "content_hash": "1ce89bcaea0e35d0aa3c89add6ba47a93d21be1575061408fea1f21561a4753d",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=EMBEDDED_PROTOTYPING",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "WIRELESS_6G",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/WIRELESS_6G/course.json",
+      "legacy_package_id": "WIRELESS_6G",
+      "digital_rc_path": "curriculum/digital_rc/WIRELESS_6G",
+      "shared_package": false,
+      "content_hash": "a9673e67b016d46ba7dcf27dfb58cf1a4f0e531abec96581f4d514c7dac92d29",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=WIRELESS_6G",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "PM_AGILE_LSS",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/PM_AGILE_LSS/course.json",
+      "legacy_package_id": "PM_AGILE_LSS",
+      "digital_rc_path": "curriculum/digital_rc/PM_AGILE_LSS",
+      "shared_package": false,
+      "content_hash": "216cd83e873a8ea261c72da58a89941e16f613d309531c0792fc7eacbc9e285e",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=PM_AGILE_LSS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "GAME_DEV_INTERACTIVE",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json",
+      "legacy_package_id": "GAME_DEV_INTERACTIVE",
+      "digital_rc_path": "curriculum/digital_rc/GAME_DEV_INTERACTIVE",
+      "shared_package": false,
+      "content_hash": "f57d50a8cf8915b4d0f0a7fdcc97520745328a058c8820a21a8274b0c4c2ed0b",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=GAME_DEV_INTERACTIVE",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "SEVEN_GC_APPRENTICESHIP",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/course.json",
+      "legacy_package_id": "SEVEN_GC_APPRENTICESHIP",
+      "digital_rc_path": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP",
+      "shared_package": false,
+      "content_hash": "59631b395fe0170870d63a3aac6a9200454d2e69287a4404dcca4d0b477f5fe0",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=SEVEN_GC_APPRENTICESHIP",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "CLOUD_DEVOPS",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/CLOUD_DEVOPS/course.json",
+      "legacy_package_id": "CLOUD_DEVOPS",
+      "digital_rc_path": "curriculum/digital_rc/CLOUD_DEVOPS",
+      "shared_package": false,
+      "content_hash": "aa720a1be82e3af9bb02656de82e37540ff8d9edf795a80f1f3d0612ca9e237e",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=CLOUD_DEVOPS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "COMM_PD_ETHICS",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/COMM_PD_ETHICS/course.json",
+      "legacy_package_id": "COMM_PD_ETHICS",
+      "digital_rc_path": "curriculum/digital_rc/COMM_PD_ETHICS",
+      "shared_package": false,
+      "content_hash": "c7e907e5dc8232a3e1600b215c0cead06cad39b41a10c44a872033989324ccc6",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=COMM_PD_ETHICS",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "ROBOTICS_CONTROL",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/ROBOTICS_CONTROL/course.json",
+      "legacy_package_id": "ROBOTICS_CONTROL",
+      "digital_rc_path": "curriculum/digital_rc/ROBOTICS_CONTROL",
+      "shared_package": false,
+      "content_hash": "0f7983afd7fc74f770274cecd194336b8402b1ee1dcdb5c517acac0e0f3e091f",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=ROBOTICS_CONTROL",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "GUNNCHOS_PRODUCT_LAB",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/course.json",
+      "legacy_package_id": "GUNNCHOS_PRODUCT_LAB",
+      "digital_rc_path": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB",
+      "shared_package": false,
+      "content_hash": "4d9322c6bc48bf4499230399e5322612389e90203dd4096541e32e9160780f47",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=GUNNCHOS_PRODUCT_LAB",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "HARDWARE_ENGINEERING",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json",
+      "legacy_package_id": "HARDWARE_ENGINEERING",
+      "digital_rc_path": "curriculum/digital_rc/HARDWARE_ENGINEERING",
+      "shared_package": false,
+      "content_hash": "8882eeee81f7d30b6a22c513ac29eff1c5a92d70b9ff87c58776b9dfc90b2cff",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=HARDWARE_ENGINEERING",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    },
+    {
+      "track_id": "DATA_VIZ_BI",
+      "compile": true,
+      "canonical_manifest": true,
+      "digital_rc_entry": "curriculum/digital_rc/DATA_VIZ_BI/course.json",
+      "legacy_package_id": "DATA_VIZ_BI",
+      "digital_rc_path": "curriculum/digital_rc/DATA_VIZ_BI",
+      "shared_package": false,
+      "content_hash": "bd934fef7909e2341fd751aefe5b556ac9f71e7debf857ebe3f19fb273e4225b",
+      "listed_in_historical_ingest_by_package_id": true,
+      "open_render_digital": true,
+      "assessment_discovery": true,
+      "rubric_discovery": true,
+      "offline_package": true,
+      "progress_surface": "PARTIAL",
+      "schema_validate": {
+        "course_package_schema": "waike.course_package.v1",
+        "manifest_schema": "waike.canonical_package_manifest.v1",
+        "status": "PASS"
+      },
+      "lp_apis": {
+        "list_courses": "GET /api/courses (filter by track_id)",
+        "open_course": "GET /api/courses/{id} where id resolves via track_id=DATA_VIZ_BI",
+        "render_lesson": "GET /api/lessons/{lesson_id} from package weeks",
+        "physical_pixel_validation": "OUT_OF_SCOPE"
+      },
+      "digital_ingest_status": "PASS",
+      "evidence_notes": "Digital package+manifest addressable by track_id; LP physical Pixel validation OUT_OF_SCOPE"
+    }
+  ]
+}

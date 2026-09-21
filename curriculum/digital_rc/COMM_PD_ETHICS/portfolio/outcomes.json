@@ -1,0 +1,24 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "COMM_PD_ETHICS",
+  "title": "Communication, Professional Development, and Ethics \u2014 Harbor Desk Voice",
+  "demonstrable_outcomes": [
+    "Deliver a stakeholder briefing with claim boundary and accessibility notes",
+    "Maintain an AI disclosure log without leaking instructor keys",
+    "Facilitate a consensus-ladder discussion",
+    "Publish a portfolio story that refuses fabricated endorsements"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "honest_limits": [
+    "Completion demonstrates listed artifacts under stated evidence classes only.",
+    "No employment, salary, or admission outcomes are promised.",
+    "External mentor/hardware/field gates remain open until separately evidenced."
+  ],
+  "required_portfolio_artifacts": [
+    "lab_result_json_or_digest",
+    "claim_boundary_paragraph",
+    "ai_disclosure_log",
+    "accessibility_notes_excerpt"
+  ]
+}

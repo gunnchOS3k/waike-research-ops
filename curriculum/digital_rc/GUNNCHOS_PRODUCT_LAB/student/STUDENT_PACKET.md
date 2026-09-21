@@ -1,5 +1,7 @@
 # Student packet — GUNNCHOS_PRODUCT_LAB
 
-Ten gunnchOS Product Lab weeks: charter → compat matrix → checkout FSM → compose health → privacy BOM → guest protocol → release notes → CI tokens → dep pin → capstone.
+Ten Product Lab weeks: charter → compat → checkout → compose → privacy → guest → release → CI → dep pin → capstone.
 
-Submit lab JSON; empty/wrong/print-PASS fail.
+Submit computed lab JSON. Empty fails. Do not paste PASS.
+No fabricated community numbers. PHYSICAL_PENDING for EVT/OTA/carrier without evidence.
+Disclose AI; weeks 4 and 9 are NO_AI for digest/pin authorship.

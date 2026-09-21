@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_cidr_math",
+  "title": "lab_cidr_math",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "cases"
+  ],
+  "summary": "Legacy Packet Range lab lab_cidr_math.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_cidr_math/",
+  "track_id": "NETWORKING_INFRA"
+}

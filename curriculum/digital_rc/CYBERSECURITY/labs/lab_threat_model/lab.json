@@ -1,0 +1,17 @@
+{
+  "lab_id": "lab_threat_model",
+  "title": "Harbor desk threat model (defensive)",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "asset",
+    "threats",
+    "controls",
+    "offensive_scope"
+  ],
+  "summary": "Name asset, \u22653 threats, \u22652 controls. offensive_scope must be none. No exploit steps.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_threat_model/",
+  "track_id": "CYBER_SOC"
+}

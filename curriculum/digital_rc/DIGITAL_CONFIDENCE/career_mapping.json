@@ -1,0 +1,16 @@
+{
+  "roles": [
+    "service_desk_technician",
+    "computer_operator",
+    "junior_sysadmin"
+  ],
+  "nice_categories": [
+    "operate_and_maintain"
+  ],
+  "certs_aligned_not_granted": [
+    "Google IT Support",
+    "CompTIA A+ V15"
+  ],
+  "track_id": "DIGITAL_CONFIDENCE",
+  "no_placement_guarantee": true
+}

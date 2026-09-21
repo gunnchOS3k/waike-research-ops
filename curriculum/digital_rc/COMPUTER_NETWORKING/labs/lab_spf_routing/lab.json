@@ -1,0 +1,15 @@
+{
+  "lab_id": "lab_spf_routing",
+  "title": "lab_spf_routing",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "cost_d",
+    "via"
+  ],
+  "summary": "Legacy Packet Range lab lab_spf_routing.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_spf_routing/",
+  "track_id": "NETWORKING_INFRA"
+}

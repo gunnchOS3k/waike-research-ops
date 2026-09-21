@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_gpl_compose_health",
+  "classification": "SIMULATED",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "migrate_ok",
+    "health",
+    "rollback_to"
+  ],
+  "summary": "Compose migrate/health/rollback.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

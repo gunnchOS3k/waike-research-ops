@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_log_hygiene",
+  "classification": "DIGITAL",
+  "title": "Log hygiene \u2014 PII redaction before ticket attach",
+  "acceptance": "redacted_sample + rules[]; raw secrets fail",
+  "defensive_only": true,
+  "empty_fails": true
+}

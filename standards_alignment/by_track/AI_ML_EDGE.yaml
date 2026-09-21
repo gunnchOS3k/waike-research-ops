@@ -1,0 +1,25 @@
+track_id: AI_ML_EDGE
+title: "AI/ML and Edge AI Foundations"
+accreditation_claim: false
+external_mapping_status: draft
+disclaimer: >
+  WAIKE mappings are draft alignments to internal skill taxonomy and
+  external framework themes. Not accredited, not endorsed, not cert training.
+internal_skill_taxonomy:
+  - skill_id: ai_ml
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+  - skill_id: edge_embedded
+    source: knowledge_maps/waike_skill_tree.yaml
+    confidence: provisional
+external_frameworks_draft:
+  - framework: NIST_AI_RMF
+    status: draft
+    note: "Map/Measure/Manage themes \u2014 draft"
+    accreditation: false
+  - framework: ACM_CS2023
+    status: draft
+    note: "AI/ML knowledge areas \u2014 draft"
+    accreditation: false
+generated_at: 2026-09-20T15:41:23Z
+generator: scripts/full_readiness/generate_agent10_packets.py

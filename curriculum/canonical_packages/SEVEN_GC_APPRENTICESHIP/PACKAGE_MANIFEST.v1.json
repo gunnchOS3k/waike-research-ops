@@ -1,0 +1,31 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "SEVEN_GC_APPRENTICESHIP",
+  "title": "7GC AI-RAN Research Apprenticeship",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "59631b395fe0170870d63a3aac6a9200454d2e69287a4404dcca4d0b477f5fe0",
+  "dependencies": [
+    "WIRELESS_6G",
+    "AI_ML_EDGE",
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP",
+      "note": "Primary package directory (SEVEN_GC_APPRENTICESHIP)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP",
+  "deprecation": null,
+  "academy_id": "ACADEMY_SOFTWARE",
+  "package_dir": "SEVEN_GC_APPRENTICESHIP",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/SEVEN_GC_APPRENTICESHIP/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

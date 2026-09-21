@@ -1,0 +1,3 @@
+# Accessibility notes — COMM_PD_ETHICS
+
+Text not color-only; digital fallbacks for optional physical; human a11y review required.

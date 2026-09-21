@@ -1,0 +1,18 @@
+{
+  "lab_id": "lab_wifi_fundamentals",
+  "title": "Wi-Fi fundamentals on Packet Range guest SSID",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "ssid",
+    "band_ghz",
+    "channel",
+    "auth",
+    "guest_isolated"
+  ],
+  "summary": "Configure a guest SSID plan: band, channel, WPA3 (or lab-only OPEN), guest isolation true. No unauthorized RF transmit claims.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_wifi_fundamentals/",
+  "track_id": "NETWORKING_INFRA"
+}

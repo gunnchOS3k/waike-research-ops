@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_pcap_filter",
+  "classification": "DIGITAL",
+  "title": "Packet filter read \u2014 safe synthetic pcap summary",
+  "acceptance": "Filter expression + count fields; no offensive payload crafting",
+  "empty_fails": true,
+  "screenshot_not_acceptance": true
+}

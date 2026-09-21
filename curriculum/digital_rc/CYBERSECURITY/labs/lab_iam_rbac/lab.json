@@ -1,0 +1,14 @@
+{
+  "lab_id": "lab_iam_rbac",
+  "title": "lab_iam_rbac",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "allow"
+  ],
+  "summary": "Harbor SOC lab lab_iam_rbac.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_iam_rbac/",
+  "track_id": "CYBER_SOC"
+}

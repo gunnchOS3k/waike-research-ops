@@ -1,0 +1,23 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "IT_SUPPORT_HARDWARE",
+  "title": "IT Support and Hardware Foundations",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "4ab7f63150826b24575dbda7fd8a6c6a81745132741e38db6bb3537a0a2ef013",
+  "dependencies": [
+    "DIGITAL_CONFIDENCE"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/GENERAL_IT",
+      "note": "Minimal entry pointer to shared legacy package GENERAL_IT"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/GENERAL_IT",
+  "deprecation": null,
+  "entry_kind": "alias_pointer",
+  "legacy_package_dir": "GENERAL_IT"
+}

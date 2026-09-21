@@ -1,0 +1,17 @@
+{
+  "track_id": "EMBEDDED_PROTOTYPING",
+  "schema": "waike.portfolio_outcomes.v1",
+  "learning_outcomes": [
+    "Map MCU flash/SRAM and vector offset",
+    "Author GPIO/I2C/SPI contracts with recovery plans",
+    "Scale ADC counts with stated vref",
+    "Budget ISR latency vs polling",
+    "Boot via Zephyr QEMU before iron",
+    "Validate DT overlays without deleting SoC",
+    "Document sleep/wake without inventing \u00b5A"
+  ],
+  "honesty": {
+    "physical_pending_when_unproven": true,
+    "no_fabricated_evt": true
+  }
+}

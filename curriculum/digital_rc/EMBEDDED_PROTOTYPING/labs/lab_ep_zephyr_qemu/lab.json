@@ -1,0 +1,13 @@
+{
+  "lab_id": "lab_ep_zephyr_qemu",
+  "classification": "SIMULATED",
+  "course_id": "EMBEDDED_PROTOTYPING",
+  "required_keys": [
+    "board",
+    "qemu_ok",
+    "physical_status"
+  ],
+  "summary": "QEMU boot before iron.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}

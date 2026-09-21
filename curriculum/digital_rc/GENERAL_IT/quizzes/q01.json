@@ -1,72 +1,49 @@
 {
-  "quiz_id": "GENERAL_IT-q01",
   "week": 1,
   "items": [
     {
-      "id": "git-w1-1",
-      "kind": "mcq",
-      "stem": "Ticket 4417 lost an essay after 20 idle minutes. Which job failed first?",
+      "id": "it-q01-1",
+      "prompt": "Week 1 emphasis for IT_SUPPORT_HARDWARE: which statement matches the track focus?",
       "choices": [
-        "Remember (session/files)",
-        "Talk (network)",
-        "Calculate (CPU thermal)",
-        "Print spooler"
-      ]
+        "Ticket language that names subsystems",
+        "Invent field RF gains",
+        "Grant CompTIA automatically",
+        "Store SSN in ticket"
+      ],
+      "answer": 0
     },
     {
-      "id": "git-w1-2",
-      "kind": "mcq",
-      "stem": "Idle logout is 1200 seconds. How many minutes is that?",
+      "id": "it-q01-2",
+      "prompt": "Shared lesson bodies live in which package?",
       "choices": [
-        "12",
-        "20",
-        "15",
-        "1200"
-      ]
+        "GENERAL_IT via content_ref",
+        "Copied twice into this folder",
+        "Only in Slack",
+        "Vendor dump PDF"
+      ],
+      "answer": 0
     },
     {
-      "id": "git-w1-3",
-      "kind": "mcq",
-      "stem": "A patron dictates a password at the desk. What do you record in the ticket?",
+      "id": "it-q01-3",
+      "prompt": "Instructor keys / HITL rule?",
       "choices": [
-        "The password in plaintext",
-        "A screenshot of the login form",
-        "'credential reset requested' and no secret",
-        "The library card PAN"
-      ]
+        "Keys in learner packet",
+        "Keys instructor-only; humans grade",
+        "AI silently grades",
+        "Post keys on slides"
+      ],
+      "answer": 1
     },
     {
-      "id": "git-w1-4",
-      "kind": "mcq",
-      "stem": "Which statement is an observation, not an inference?",
+      "id": "it-q01-4",
+      "prompt": "Job guarantee from this track?",
       "choices": [
-        "The kiosk is broken",
-        "The Internet is down",
-        "Someone hacked the kiosk",
-        "The textarea was empty after idle logout at 14:28"
-      ]
-    },
-    {
-      "id": "git-w1-5",
-      "kind": "mcq",
-      "stem": "Why does the lab mark extra Desktop folders as clutter?",
-      "choices": [
-        "Required paths are the contract; extras are not the job",
-        "Desktop is faster storage",
-        "Windows forbids Desktop folders",
-        "Antivirus scans Desktop only"
-      ]
-    },
-    {
-      "id": "git-w1-6",
-      "kind": "mcq",
-      "stem": "Which restore method is acceptable for 4417 besides Undo?",
-      "choices": [
-        "Disable the idle timer forever",
-        "Copy from auto-save or previous export if present",
-        "Reimage the kiosk immediately",
-        "Post the essay to Discord"
-      ]
+        "Yes, salary guaranteed",
+        "No \u2014 demonstrable outcomes only",
+        "Yes, if quizzes pass",
+        "Yes, via mentor fiction"
+      ],
+      "answer": 1
     }
   ]
 }

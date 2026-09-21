@@ -1,5 +1,7 @@
 # Student packet — EMBEDDED_PROTOTYPING
 
-Ten ForgeSense Subsystem Bench weeks: memory map → GPIO → I2C → SPI → ADC → ISR → Zephyr QEMU → DT overlay → sleep → capstone. Digital-first; PHYSICAL_PENDING for solder/OTA.
+Ten ForgeSense weeks: memory map → GPIO → I2C → SPI → ADC → ISR → QEMU → DT → sleep → capstone.
 
-Submit lab JSON; empty/wrong/print-PASS fail.
+Submit computed lab JSON. Empty fails. Do not paste PASS.
+Mark PHYSICAL_PENDING for solder/OTA/EVT without evidence.
+Disclose AI modes; weeks 4 and 9 are NO_AI for frame/wake fields.

@@ -1,0 +1,30 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "GUNNCHOS_PRODUCT_LAB",
+  "title": "gunnchOS Device OS and Product Lab",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "4d9322c6bc48bf4499230399e5322612389e90203dd4096541e32e9160780f47",
+  "dependencies": [
+    "HARDWARE_ENGINEERING",
+    "SOFTWARE_BUILDER"
+  ],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB",
+      "note": "Primary package directory (GUNNCHOS_PRODUCT_LAB)"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB",
+  "deprecation": null,
+  "academy_id": "ACADEMY_HARDWARE",
+  "package_dir": "GUNNCHOS_PRODUCT_LAB",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/GUNNCHOS_PRODUCT_LAB/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": false,
+    "blind_duplication": false
+  }
+}

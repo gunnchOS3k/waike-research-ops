@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_traceroute_explain",
+  "classification": "DIGITAL",
+  "title": "Path explanation from fixture hops",
+  "acceptance": "hop table + one refused claim (no live campus scan required)",
+  "empty_fails": true,
+  "screenshot_not_acceptance": true
+}

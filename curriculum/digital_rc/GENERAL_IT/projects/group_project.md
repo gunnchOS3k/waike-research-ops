@@ -1,5 +1,17 @@
-# Group project — General IT — Operator to Support Specialist
+# Group project — IT_SUPPORT_HARDWARE
 
-Submit the after-hours packet: tickets, lab result JSON, CHG-88, recorder notes, and a scope paragraph. Pair required.
+## Brief
+Resolve a **mixed desk + hardware incident set** (thermal, no-display, storage SMART) using shared GENERAL_IT labs. Roles: bench tech + change recorder.
 
-Roles: operator and recorder. Swap at 30 minutes. Notes that require the operator's memory fail.
+## Deliverables
+1. Triage sheets with power→storage→memory→OS evidence order.
+2. ESD checklist completed.
+3. CHG window + rollback for one policy/image step.
+4. Claim boundary: bench fixtures only.
+
+## Rubric anchors
+Safety · Triage order · HITL change discipline · Honesty
+
+## Explicit non-claims
+No UL listing; no cert grant; no job guarantee.
+

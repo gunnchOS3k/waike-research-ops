@@ -1,6 +1,16 @@
-# Group project — Process Improvement + Project Management — Device Lab Flow
+# Group project — PM / Agile / LSS (Device Lab Flow)
 
-Run end-to-end improvement simulation with charter→DMAIC→change→status→AI critique artifacts.
+## Brief
+Improve one **device lab flow** (intake → bench → evidence → release). Roles: flow owner + metrics recorder.
 
-Seed assignment cue:
-Ship capstone bundle: charter→DMAIC→change→status→AI critique disclosure.
+## Deliverables
+1. Current-state SIPOC + future-state board with WIP limits.
+2. Risk register with one HITL go/no-go gate.
+3. Two-week burndown/throughput note from fixture tickets.
+4. Retrospective with three owned actions.
+
+## Rubric anchors
+Evidence · WIP discipline · Risk honesty · Facilitation quality
+
+## Explicit non-claims
+Does not grant PMI/LSS credentials; not a consulting engagement.

@@ -1,0 +1,17 @@
+{
+  "lab_id": "lab_phishing_defense",
+  "title": "Phishing defense on Harbor fixture mail",
+  "classification": "DIGITAL",
+  "course_id": "CYBERSECURITY",
+  "required_keys": [
+    "indicators",
+    "action",
+    "report_path",
+    "no_credential_harvest"
+  ],
+  "summary": "DEFENSIVE ONLY. Identify \u22652 indicators on fixture mail. Report \u2014 do not harvest credentials. No phishing kits.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../CYBERSECURITY/labs/lab_phishing_defense/",
+  "track_id": "CYBER_SOC"
+}

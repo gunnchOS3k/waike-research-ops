@@ -1,0 +1,8 @@
+{
+  "lab_id": "lab_wifi_survey_sim",
+  "classification": "SIMULATED",
+  "title": "Wi-Fi survey simulation \u2014 RSSI bands without claiming site survey certification",
+  "acceptance": "JSON with bands[], no invented floorplan measurements as field-validated",
+  "empty_fails": true,
+  "screenshot_not_acceptance": true
+}

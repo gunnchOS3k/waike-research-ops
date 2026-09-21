@@ -1,0 +1,26 @@
+{
+  "schema": "waike.portfolio.outcomes.v1",
+  "track_id": "DIGITAL_CONFIDENCE",
+  "title": "Digital Confidence to Computer Operator",
+  "demonstrable_outcomes": [
+    "Produce operator journals with Consensus Ladder rungs",
+    "Demonstrate idle-logout literacy and non-PII ticket notes",
+    "Complete restore digest proof via shared backup lab",
+    "Refuse job-guarantee language in portfolio"
+  ],
+  "roles_aligned_not_guaranteed": [
+    "computer_operator",
+    "service_desk_technician"
+  ],
+  "certs_aligned_not_granted": [
+    "Google IT Support",
+    "CompTIA A+ V15"
+  ],
+  "job_guarantee": false,
+  "placement_guarantee": false,
+  "shares_modules_from": "GENERAL_IT",
+  "honest_limits": [
+    "Outcomes are demonstrable via shared labs + track assessments only.",
+    "No employment guarantee."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "waike.canonical_package_manifest.v1",
+  "track_id": "NETWORKING_INFRA",
+  "title": "Networking and Internet Infrastructure",
+  "package_version": "1.0.0",
+  "compatibility_version": "waike.course_package.v1",
+  "source_commit": "c13179eaec0b23cf5a18b7dec9043e193bcb9460",
+  "content_hash": "5893380ec618c42eb5fa5189425f42dc9acdf15445def4e6853666458265fc74",
+  "dependencies": [],
+  "shared_content_refs": [
+    {
+      "ref_kind": "digital_rc_package",
+      "path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "note": "Primary package directory (COMPUTER_NETWORKING)"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/COMPUTER_NETWORKING",
+      "note": "Track NETWORKING_INFRA addressability without duplicating COMPUTER_NETWORKING content tree"
+    },
+    {
+      "ref_kind": "legacy_alias",
+      "path": "curriculum/digital_rc/NETWORKING_INFRA",
+      "note": "Track-named entry directory (Agents 1-5); primary content remains COMPUTER_NETWORKING \u2014 no blind duplication"
+    }
+  ],
+  "digital_rc_path": "curriculum/digital_rc/NETWORKING_INFRA",
+  "deprecation": null,
+  "academy_id": "ACADEMY_NETWORKING",
+  "package_dir": "COMPUTER_NETWORKING",
+  "course_id": "COMPUTER_NETWORKING",
+  "addressability": {
+    "canonical_entry": "curriculum/canonical_packages/NETWORKING_INFRA/PACKAGE_MANIFEST.v1.json",
+    "resolves_via_shared_package": true,
+    "blind_duplication": false
+  },
+  "entry_digital_rc_path": "curriculum/digital_rc/NETWORKING_INFRA"
+}

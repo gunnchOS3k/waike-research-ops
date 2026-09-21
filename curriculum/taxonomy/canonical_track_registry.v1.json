@@ -25,24 +25,30 @@
         "programs/digital_confidence_to_operator.md",
         "lessons/by_course/digital_confidence",
         "programs/digital_confidence.md",
-        "curriculum/digital_rc/GENERAL_IT/course.json"
+        "curriculum/digital_rc/GENERAL_IT/course.json",
+        "curriculum/canonical_packages/DIGITAL_CONFIDENCE/PACKAGE_MANIFEST.v1.json",
+        "curriculum/digital_rc/DIGITAL_CONFIDENCE/course.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/digital_confidence_to_operator.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_shared_package",
+        "state": "canonical_entry_over_shared_content",
         "facets": {
           "covering_package_ids": [
-            "GENERAL_IT"
+            "DIGITAL_CONFIDENCE"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true,
+          "shared_content_roots": [
+            "GENERAL_IT"
+          ]
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -59,24 +65,30 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/it_support_hardware.md",
-        "curriculum/digital_rc/GENERAL_IT/course.json"
+        "curriculum/digital_rc/GENERAL_IT/course.json",
+        "curriculum/canonical_packages/IT_SUPPORT_HARDWARE/PACKAGE_MANIFEST.v1.json",
+        "curriculum/digital_rc/IT_SUPPORT_HARDWARE/course.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/it_support_hardware.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_shared_package",
+        "state": "canonical_entry_over_shared_content",
         "facets": {
           "covering_package_ids": [
-            "GENERAL_IT"
+            "IT_SUPPORT_HARDWARE"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true,
+          "shared_content_roots": [
+            "GENERAL_IT"
+          ]
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -93,7 +105,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/software_builder.md",
-        "curriculum/digital_rc/SOFTWARE_BUILDER/course.json"
+        "curriculum/digital_rc/SOFTWARE_BUILDER/course.json",
+        "curriculum/canonical_packages/SOFTWARE_BUILDER/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -107,10 +120,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -127,24 +141,30 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/networking_infrastructure.md",
-        "curriculum/digital_rc/COMPUTER_NETWORKING/course.json"
+        "curriculum/digital_rc/COMPUTER_NETWORKING/course.json",
+        "curriculum/canonical_packages/NETWORKING_INFRA/PACKAGE_MANIFEST.v1.json",
+        "curriculum/digital_rc/NETWORKING_INFRA/course.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/networking_infrastructure.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_historical_package_id",
+        "state": "canonical_entry_over_shared_content",
         "facets": {
           "covering_package_ids": [
-            "COMPUTER_NETWORKING"
+            "NETWORKING_INFRA"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true,
+          "shared_content_roots": [
+            "COMPUTER_NETWORKING"
+          ]
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -162,24 +182,30 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/cybersecurity_soc.md",
-        "curriculum/digital_rc/CYBERSECURITY/course.json"
+        "curriculum/digital_rc/CYBERSECURITY/course.json",
+        "curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json",
+        "curriculum/digital_rc/CYBER_SOC/course.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/cybersecurity_soc.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_historical_package_id",
+        "state": "canonical_entry_over_shared_content",
         "facets": {
           "covering_package_ids": [
-            "CYBERSECURITY"
+            "CYBER_SOC"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": false
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true,
+          "shared_content_roots": [
+            "CYBERSECURITY"
+          ]
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -195,7 +221,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/data_databases_dashboards.md",
-        "curriculum/digital_rc/DATA_DASHBOARDS/course.json"
+        "curriculum/digital_rc/DATA_DASHBOARDS/course.json",
+        "curriculum/canonical_packages/DATA_DASHBOARDS/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -209,10 +236,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -229,7 +257,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/ai_ml_edge.md",
-        "curriculum/digital_rc/AI_ML_EDGE/course.json"
+        "curriculum/digital_rc/AI_ML_EDGE/course.json",
+        "curriculum/canonical_packages/AI_ML_EDGE/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -243,10 +272,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -264,7 +294,8 @@
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/embedded_prototyping.md",
         "curriculum/digital_rc/EMBEDDED_PROTOTYPING/course.json",
-        "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json"
+        "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json",
+        "curriculum/canonical_packages/EMBEDDED_PROTOTYPING/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -274,15 +305,15 @@
         "state": "digital_rc_present",
         "facets": {
           "covering_package_ids": [
-            "EMBEDDED_PROTOTYPING",
-            "HARDWARE_ENGINEERING"
+            "EMBEDDED_PROTOTYPING"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -298,7 +329,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/wireless_6g_foundations.md",
-        "curriculum/digital_rc/WIRELESS_6G/course.json"
+        "curriculum/digital_rc/WIRELESS_6G/course.json",
+        "curriculum/canonical_packages/WIRELESS_6G/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -312,10 +344,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -332,7 +365,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/pm_agile_lss.md",
-        "curriculum/digital_rc/PM_AGILE_LSS/course.json"
+        "curriculum/digital_rc/PM_AGILE_LSS/course.json",
+        "curriculum/canonical_packages/PM_AGILE_LSS/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -346,10 +380,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -366,7 +401,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/game_dev_interactive.md",
-        "curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json"
+        "curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json",
+        "curriculum/canonical_packages/GAME_DEV_INTERACTIVE/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -380,10 +416,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -400,7 +437,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/seven_gc_apprenticeship.md",
-        "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/course.json"
+        "curriculum/digital_rc/SEVEN_GC_APPRENTICESHIP/course.json",
+        "curriculum/canonical_packages/SEVEN_GC_APPRENTICESHIP/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -409,13 +447,16 @@
       "content_maturity": {
         "state": "digital_rc_present",
         "facets": {
-          "covering_package_ids": ["SEVEN_GC_APPRENTICESHIP"],
+          "covering_package_ids": [
+            "SEVEN_GC_APPRENTICESHIP"
+          ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": "1.0.0",
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null,
       "note": "First-class digital COURSE_DIGITAL_RC. RESEARCH_APPRENTICESHIP retained; EXTERNAL human/physical/field gates remain open. Not collapsed into another academy."
     },
@@ -434,7 +475,8 @@
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/cloud_and_devops.md",
         "lessons/by_course/cloud_devops",
-        "curriculum/digital_rc/CLOUD_DEVOPS/course.json"
+        "curriculum/digital_rc/CLOUD_DEVOPS/course.json",
+        "curriculum/canonical_packages/CLOUD_DEVOPS/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -448,10 +490,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -467,7 +510,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/communication_professional_development_and_ethics.md",
-        "curriculum/digital_rc/COMM_PD_ETHICS/course.json"
+        "curriculum/digital_rc/COMM_PD_ETHICS/course.json",
+        "curriculum/canonical_packages/COMM_PD_ETHICS/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -481,10 +525,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -502,7 +547,8 @@
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/robotics_and_control.md",
         "lessons/by_course/robotics_control",
-        "curriculum/digital_rc/ROBOTICS_CONTROL/course.json"
+        "curriculum/digital_rc/ROBOTICS_CONTROL/course.json",
+        "curriculum/canonical_packages/ROBOTICS_CONTROL/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -516,10 +562,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -535,7 +582,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/gunnchos_device_os_and_product_lab.md",
-        "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/course.json"
+        "curriculum/digital_rc/GUNNCHOS_PRODUCT_LAB/course.json",
+        "curriculum/canonical_packages/GUNNCHOS_PRODUCT_LAB/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -549,10 +597,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -570,27 +619,29 @@
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/hardware_engineering.md",
         "lessons/by_course/hardware_engineering",
-        "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json"
+        "curriculum/digital_rc/HARDWARE_ENGINEERING/course.json",
+        "curriculum/canonical_packages/HARDWARE_ENGINEERING/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
         "programs/hardware_engineering.md#learning-outcomes"
       ],
       "content_maturity": {
-        "state": "covered_via_shared_package",
+        "state": "digital_rc_present",
         "facets": {
           "covering_package_ids": [
             "HARDWARE_ENGINEERING"
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": true,
-          "standalone_1to1_package": false,
+          "standalone_1to1_package": true,
           "package_lists_extra_track_ids": [
             "EMBEDDED_PROTOTYPING"
-          ]
+          ],
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     },
     {
@@ -606,7 +657,8 @@
         "curriculum/taxonomy/eighteen_tracks.json",
         "curriculum/taxonomy/academy_map_18_to_7.json",
         "programs/data_visualization_and_business_intelligence.md",
-        "curriculum/digital_rc/DATA_VIZ_BI/course.json"
+        "curriculum/digital_rc/DATA_VIZ_BI/course.json",
+        "curriculum/canonical_packages/DATA_VIZ_BI/PACKAGE_MANIFEST.v1.json"
       ],
       "prerequisites": [],
       "outcome_refs": [
@@ -620,10 +672,11 @@
           ],
           "has_owner_program": true,
           "has_lessons_snake_folder": false,
-          "standalone_1to1_package": true
+          "standalone_1to1_package": true,
+          "canonical_entry_package": true
         }
       },
-      "latest_compatible_package_version": null,
+      "latest_compatible_package_version": "1.0.0-pre.18track",
       "deprecation": null
     }
   ],

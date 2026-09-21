@@ -1,0 +1,15 @@
+{
+  "lab_id": "lab_dns_resolution",
+  "title": "lab_dns_resolution",
+  "classification": "DIGITAL",
+  "course_id": "COMPUTER_NETWORKING",
+  "required_keys": [
+    "first",
+    "second"
+  ],
+  "summary": "Legacy Packet Range lab lab_dns_resolution.",
+  "empty_fails": true,
+  "print_pass_fails": true,
+  "content_ref": "../COMPUTER_NETWORKING/labs/lab_dns_resolution/",
+  "track_id": "NETWORKING_INFRA"
+}

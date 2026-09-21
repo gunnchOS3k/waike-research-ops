@@ -1,72 +1,49 @@
 {
-  "quiz_id": "GENERAL_IT-q08",
   "week": 8,
   "items": [
     {
-      "id": "git-w8-1",
-      "kind": "mcq",
-      "stem": "toy-tracker must be",
+      "id": "it-q08-1",
+      "prompt": "Week 8 emphasis for IT_SUPPORT_HARDWARE: which statement matches the track focus?",
       "choices": [
-        "enabled and active",
-        "in sudo",
-        "disabled and inactive",
-        "bound to port 631"
-      ]
+        "cups/sshd vs malware-analog service hygiene",
+        "Invent field RF gains",
+        "Grant CompTIA automatically",
+        "Store SSN in ticket"
+      ],
+      "answer": 0
     },
     {
-      "id": "git-w8-2",
-      "kind": "mcq",
-      "stem": "cupsd restart_sec=120 is bad because",
+      "id": "it-q08-2",
+      "prompt": "Shared lesson bodies live in which package?",
       "choices": [
-        "systemd forbids it",
-        "IPP uses 120",
-        "SSH needs 120",
-        "The public queue reforms into a rumor before cups returns"
-      ]
+        "GENERAL_IT via content_ref",
+        "Copied twice into this folder",
+        "Only in Slack",
+        "Vendor dump PDF"
+      ],
+      "answer": 0
     },
     {
-      "id": "git-w8-3",
-      "kind": "mcq",
-      "stem": "Printer balloon says offline; lpstat shows paused. You",
+      "id": "it-q08-3",
+      "prompt": "Instructor keys / HITL rule?",
       "choices": [
-        "Resume/restart cups after confirming the device is powered",
-        "Buy toner first",
-        "Reinstall Windows",
-        "Disable sshd"
-      ]
+        "Keys in learner packet",
+        "Keys instructor-only; humans grade",
+        "AI silently grades",
+        "Post keys on slides"
+      ],
+      "answer": 1
     },
     {
-      "id": "git-w8-4",
-      "kind": "mcq",
-      "stem": "The closet recovery VM is for",
+      "id": "it-q08-4",
+      "prompt": "Job guarantee from this track?",
       "choices": [
-        "Production kiosks",
-        "Practicing useradd behind a snapshot",
-        "Hosting toy-tracker for patrons",
-        "Public Wi-Fi"
-      ]
-    },
-    {
-      "id": "git-w8-5",
-      "kind": "mcq",
-      "stem": "Type-2 hypervisor in one honest sentence is",
-      "choices": [
-        "A switch ASIC",
-        "A DNS zone",
-        "A hypervisor that runs on an existing OS",
-        "A CompTIA exam item"
-      ]
-    },
-    {
-      "id": "git-w8-6",
-      "kind": "mcq",
-      "stem": "sshd on the desk image is",
-      "choices": [
-        "Forbidden",
-        "A guest Wi-Fi portal",
-        "Port 631",
-        "Required for staff recovery in this lab"
-      ]
+        "Yes, salary guaranteed",
+        "No \u2014 demonstrable outcomes only",
+        "Yes, if quizzes pass",
+        "Yes, via mentor fiction"
+      ],
+      "answer": 1
     }
   ]
 }

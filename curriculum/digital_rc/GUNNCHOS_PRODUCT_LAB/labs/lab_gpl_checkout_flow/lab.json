@@ -1,0 +1,12 @@
+{
+  "lab_id": "lab_gpl_checkout_flow",
+  "classification": "DIGITAL",
+  "course_id": "GUNNCHOS_PRODUCT_LAB",
+  "required_keys": [
+    "states",
+    "orphan_state"
+  ],
+  "summary": "Checkout FSM.",
+  "empty_fails": true,
+  "print_pass_fails": true
+}
