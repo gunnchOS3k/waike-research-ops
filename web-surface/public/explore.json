@@ -1,0 +1,112 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "nodes": [
+    {
+      "id": "overview",
+      "label": "Overview"
+    },
+    {
+      "id": "what-is-this",
+      "label": "What is this?"
+    },
+    {
+      "id": "why-does-it-exist",
+      "label": "Why does it exist?"
+    },
+    {
+      "id": "where-does-it-fit",
+      "label": "Where does it fit?"
+    }
+  ],
+  "rows": [
+    {
+      "source": "README.md",
+      "scenario_id": "Overview",
+      "site_id": "WAIKE",
+      "ethical_framing": "# waike-research-ops **WAIKE** \u2014 Wireless + Artificial Intelligence Kinesthetic Education research operations for equitable learning pathways (Gary UPNOW context and broader gunnchOS3k education). > **Current release/state:** `INTEGRATED` digitally \u2014 education/ops content; partner/external program execution remains EXTERNAL_PENDING where noted. Ecosystem portal: [gunnchos-research-portal](https://github.com/gunnchOS3"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What is this?",
+      "site_id": "WAIKE",
+      "ethical_framing": "Curriculum maps, standards alignment drafts, templates, and ops tooling for WAIKE programs \u2014 not a carrier product."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Why does it exist?",
+      "site_id": "WAIKE",
+      "ethical_framing": "Education and workforce pathways need an explicit ops layer alongside devices, OS, and AI."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Where does it fit?",
+      "site_id": "WAIKE",
+      "ethical_framing": "Product Charter **layer 14**. Surfaced via Ecosystem Portal `WAIKE` docs; pairs with `gunnchAI3k` tutoring."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What is real today?",
+      "site_id": "WAIKE",
+      "ethical_framing": "- Knowledge OS outlines and skill-tree YAML - Program/templates under `programs/`, `templates/`, `knowledge_maps/` - Public docs without transcripts/grades/PII"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What is simulated / modelled?",
+      "site_id": "WAIKE",
+      "ethical_framing": "- Partial standards mappings until objective completion - Scenario/campus curriculum packages that are research/education artifacts"
+    }
+  ],
+  "sources": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "# waike-research-ops **WAIKE** \u2014 Wireless + Artificial Intelligence Kinesthetic Education research operations for equitable learning pathways (Gary UPNOW context and broader gunnchOS3k education). > **Current release/state:** `INTEGRATED` digitally \u2014 education/ops content; partner/external program execution remains EXTERNAL_PENDING where noted. Ecosystem portal: [gunnchos-research-portal](https://github.com/gunnchOS3"
+    },
+    {
+      "id": "what-is-this",
+      "title": "What is this?",
+      "body": "Curriculum maps, standards alignment drafts, templates, and ops tooling for WAIKE programs \u2014 not a carrier product."
+    },
+    {
+      "id": "why-does-it-exist",
+      "title": "Why does it exist?",
+      "body": "Education and workforce pathways need an explicit ops layer alongside devices, OS, and AI."
+    },
+    {
+      "id": "where-does-it-fit",
+      "title": "Where does it fit?",
+      "body": "Product Charter **layer 14**. Surfaced via Ecosystem Portal `WAIKE` docs; pairs with `gunnchAI3k` tutoring."
+    },
+    {
+      "id": "what-is-real-today",
+      "title": "What is real today?",
+      "body": "- Knowledge OS outlines and skill-tree YAML - Program/templates under `programs/`, `templates/`, `knowledge_maps/` - Public docs without transcripts/grades/PII"
+    },
+    {
+      "id": "what-is-simulated-modelled",
+      "title": "What is simulated / modelled?",
+      "body": "- Partial standards mappings until objective completion - Scenario/campus curriculum packages that are research/education artifacts"
+    }
+  ],
+  "artifacts": [
+    "results/apprenticeships/research_apprenticeship_index.md",
+    "results/assignment_packs/ai_ml_data_assignments.md",
+    "results/assignment_packs/ai_ran_digital_twin_research_assignments.md",
+    "results/assignment_packs/cloud_devops_assignments.md",
+    "results/assignment_packs/communication_ethics_professional_dev_assignments.md",
+    "results/assignment_packs/cybersecurity_assignments.md",
+    "results/assignment_packs/data_visualization_bi_assignments.md",
+    "results/assignment_packs/digital_confidence_assignments.md",
+    "results/assignment_packs/edge_ai_embedded_assignments.md",
+    "results/assignment_packs/game_development_interactive_media_assignments.md",
+    "results/assignment_packs/general_it_assignments.md",
+    "results/assignment_packs/gunnchos_device_os_product_lab_assignments.md"
+  ],
+  "methods": "# Reproducibility \u2014 WAIKE Research Ops Education/ops content plus Python validators. This repo does not produce RF results. ```bash git clone https://github.com/gunnchOS3k/waike-research-ops.git cd waike-research-ops python3 -m pip install pytest PYTHONPATH=src python3 -m pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py ``` Expected: pytest PASS. Digital-RC count is **14 packages discovered from** `curriculum/digital_rc/*/course.json` \u2014 do not report 18 as COURSE_DIGITAL_RC. Optional full lab bundle (heavier): ```bash PYTHONPATH=src python3 scripts/emit_digital_rc.py PYTHONPATH=src python3 scripts/run_course_labs.py ``` ## Tool versions | Tool |",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false
+}
