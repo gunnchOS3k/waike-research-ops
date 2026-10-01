@@ -1,0 +1,21 @@
+{
+  "repo": "waike-research-ops",
+  "productName": "WAIKE research ops",
+  "family": "WAIKE",
+  "classification": "STATIC_RESEARCH_SURFACE_WORKER",
+  "acceptedSha": "34ae043abbd38c89bd30f7ae1ae7cf8cc06645a0",
+  "status": "STAGING_WORKER",
+  "summary": "Research-operations and curriculum-track tooling for WAIKE. The learner shell is a different Worker.",
+  "capabilities": [
+    "See how this repo differs from the campus learner shell",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "Not a live institutional gradebook",
+    "Not the waike-campus learner application"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/waike-research-ops",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-waike-ops"
+}

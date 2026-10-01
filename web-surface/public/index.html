@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>WAIKE research ops · gunnchOS</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-surfacekit="v2" data-theme="dark">
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top">
+    <p class="mark">gunnchOS</p>
+    <nav class="tools" aria-label="Surface">
+      <button type="button" id="theme-toggle">Light theme</button>
+      <a id="portal-return" href="#return" aria-label="Return to gunnchOS">← gunnchOS</a>
+    </nav>
+  </header>
+  <main id="content">
+    <p class="kicker">WAIKE · STAGING_WORKER</p>
+    <h1>WAIKE research ops</h1>
+    <p class="lead">Research-operations and curriculum-track tooling for WAIKE. The learner shell is a different Worker.</p>
+    
+    <p><a class="cta" id="primary-action" href="#explore">Explore evidence</a></p>
+    <section id="explore" aria-labelledby="explore-title">
+      <h2 id="explore-title">Explore evidence</h2>
+      <p id="diagram-note"></p>
+      <div class="layout">
+        <div>
+          <svg id="diagram" role="img" aria-labelledby="diagram-note" viewBox="0 0 640 160"></svg>
+          <label for="row-select">Repository record</label>
+          <select id="row-select"></select>
+          <label for="row-filter">Filter records</label>
+          <input id="row-filter" type="search" placeholder="Filter by text in the repository records">
+        </div>
+        <div id="detail" tabindex="0" aria-live="polite"></div>
+      </div>
+      <div id="directory"></div>
+      <table id="evidence">
+        <caption>Records copied from this repository</caption>
+        <thead><tr id="evidence-head"></tr></thead>
+        <tbody id="evidence-body"></tbody>
+      </table>
+    </section>
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <div class="cards"><article><h3>Overview</h3><p># waike-research-ops **WAIKE** — Wireless + Artificial Intelligence Kinesthetic Education research operations for equitable learning pathways (Gary UPNOW context and broader gunnchOS3k education). &gt; **Current release/state:** `INTEGRATED` digitally — education/ops content; partner/external program execution remains EXTERNAL_PENDING where noted. Ecosystem portal: [gunnchos-research-portal](https://github.com/gunnchOS3</p></article><article><h3>What is this?</h3><p>Curriculum maps, standards alignment drafts, templates, and ops tooling for WAIKE programs — not a carrier product.</p></article><article><h3>Why does it exist?</h3><p>Education and workforce pathways need an explicit ops layer alongside devices, OS, and AI.</p></article></div>
+    </section>
+    <section id="methods" aria-labelledby="methods-title">
+      <h2 id="methods-title">Methods</h2>
+      <p># Reproducibility — WAIKE Research Ops Education/ops content plus Python validators. This repo does not produce RF results. ```bash git clone https://github.com/gunnchOS3k/waike-research-ops.git cd waike-research-ops python3 -m pip install pytest PYTHONPATH=src python3 -m pytest -q tests/test_pathway_schema.py tests/journeys tests/curriculum/test_digital_rc_batch.py ``` Expected: pytest PASS. Digital-RC count is **14 packages discovered from** `curriculum/digital_rc/*/course.json` — do not report 18 as COURSE_DIGITAL_RC. Optional full lab bundle (heavier): ```bash PYTHONPATH=src python3 scripts/emit_digital_rc.py PYTHONPATH=src python3 scripts/run_course_labs.py ``` ## Tool versions | Tool |</p>
+      <p>Native research runtimes stay on a local checkout. This page shows repository records only.</p>
+    </section>
+    <section id="artifacts" aria-labelledby="artifacts-title">
+      <h2 id="artifacts-title">Artifacts</h2>
+      <ul><li><code>results/apprenticeships/research_apprenticeship_index.md</code></li><li><code>results/assignment_packs/ai_ml_data_assignments.md</code></li><li><code>results/assignment_packs/ai_ran_digital_twin_research_assignments.md</code></li><li><code>results/assignment_packs/cloud_devops_assignments.md</code></li><li><code>results/assignment_packs/communication_ethics_professional_dev_assignments.md</code></li><li><code>results/assignment_packs/cybersecurity_assignments.md</code></li><li><code>results/assignment_packs/data_visualization_bi_assignments.md</code></li><li><code>results/assignment_packs/digital_confidence_assignments.md</code></li><li><code>results/assignment_packs/edge_ai_embedded_assignments.md</code></li><li><code>results/assignment_packs/game_development_interactive_media_assignments.md</code></li><li><code>results/assignment_packs/general_it_assignments.md</code></li><li><code>results/assignment_packs/gunnchos_device_os_product_lab_assignments.md</code></li></ul>
+    </section>
+    <section id="source" aria-labelledby="source-title">
+      <h2 id="source-title">Source</h2>
+      <p><a href="https://github.com/gunnchOS3k/waike-research-ops">Source repository</a></p>
+      <p>Pinned source <code>34ae043abbd38c89bd30f7ae1ae7cf8cc06645a0</code></p>
+    </section>
+    <section id="limits" aria-labelledby="limits-title">
+      <h2 id="limits-title">Limitations</h2>
+      <ul><li>Not a live institutional gradebook</li><li>Not the waike-campus learner application</li></ul>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About / Build status / Evidence</h2>
+      <h2 id="what">What is this?</h2>
+      <p>Research-operations and curriculum-track tooling for WAIKE. The learner shell is a different Worker.</p>
+      <p>The research code is not executing here. This is a research surface.</p>
+      <h2 id="why">Why does it exist?</h2>
+      <p>It gives this repository a public web surface inside the gunnchOS ecosystem without pretending the original runtime runs on Cloudflare Workers.</p>
+      <h2 id="today">What can I actually do with it today?</h2>
+      <p>Use the primary action to inspect repository records, then open the source for the local toolchain.</p>
+      <h2 id="unfinished">What is not finished?</h2>
+      <ul><li>Not a live institutional gradebook</li><li>Not the waike-campus learner application</li></ul>
+      <p class="badge">STAGING_WORKER</p>
+      <p>Runtime mode on this page: PRECOMPUTED. No remote model call is made.</p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
