@@ -1,0 +1,24 @@
+{
+  "version": "packet-fixture/1.0.0-review",
+  "frame_hex": "aaaaaaaaaa01aaaaaaaaaa02080045000028000100000106cd84c000020ec6336409c35001bb00000000000000005002100000000000",
+  "parsed": {
+    "dst_mac": "aa:aa:aa:aa:aa:01",
+    "ethertype": "0x0800",
+    "ip_header_bytes": 20,
+    "ip_total_bytes": 40,
+    "ttl": 1,
+    "proto": 6,
+    "src_ip": "192.0.2.14",
+    "dst_ip": "198.51.100.9",
+    "source_sha256": "ede4fd923251df6ce84f165e79546911aca9001950991a4f1bab3bb471ad009d",
+    "src_port": 50000,
+    "dst_port": 443
+  },
+  "decision": {
+    "action": "drop",
+    "reason": "ttl_expired"
+  },
+  "physical_measurement": false,
+  "competency_demonstrated": false,
+  "boundary": "Synthetic bytes; IPv4 checksum checked; no TCP checksum, ICMP, MAC rewrite, packet transmission, real DNS/DHCP or latency measurement."
+}

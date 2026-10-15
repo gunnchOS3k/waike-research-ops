@@ -1,6 +1,6 @@
 {
   "schema": "waike.full_delivery.evidence.v1",
-  "sourceCommit": "49e2b096cde1ed14156b15ecf5fcc93c3ac55afc",
+  "sourceCommit": "d47276492014c984e458460a99179369ef88c213",
   "overall": "INCOMPLETE",
   "courses": [
     {
@@ -680,7 +680,7 @@
         "lab_spf_routing",
         "lab_vlan_mac"
       ],
-      "public_exercise_files": 3,
+      "public_exercise_files": 5,
       "course_complete": false,
       "lessons": [
         {
@@ -702,7 +702,7 @@
           "unit": 2,
           "id": "COMPUTER_NETWORKING-w02",
           "source": "curriculum/digital_rc/COMPUTER_NETWORKING/weeks/w02/lesson.md",
-          "sha256": "906aba75734b23570aa203114d9d8f89868d6e6aa1b950504a0fbacadb806cb4",
+          "sha256": "1a1d0f5bf8765de6419232d96342f58d3b9c8754ef87c55db59c8fdb0f937742",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -717,7 +717,7 @@
           "unit": 3,
           "id": "COMPUTER_NETWORKING-w03",
           "source": "curriculum/digital_rc/COMPUTER_NETWORKING/weeks/w03/lesson.md",
-          "sha256": "99b138cc73cf05e531a2594d68e4ccdfb37c4a3d68c6279d05a3db2330bf5bcd",
+          "sha256": "33c1a6458020887840dbe200fdb813e22efe841793d43ed22cc76805116d5775",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -732,7 +732,7 @@
           "unit": 4,
           "id": "COMPUTER_NETWORKING-w04",
           "source": "curriculum/digital_rc/COMPUTER_NETWORKING/weeks/w04/lesson.md",
-          "sha256": "0803ef8b332ab123dec3d8c857f7560885e2539791fced7c6a91b636985c9243",
+          "sha256": "dfd68f00b8682fa69225c5d408c04ad6711a92da51af434557b8e48888c8383c",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -792,7 +792,7 @@
           "unit": 8,
           "id": "COMPUTER_NETWORKING-w08",
           "source": "curriculum/digital_rc/COMPUTER_NETWORKING/weeks/w08/lesson.md",
-          "sha256": "c83f5c9b63d269334392a1d16644b4c674b6608b368617da437f5078c200e0c3",
+          "sha256": "5f580fb81ffd2d0791e0dc24562ef0e63c5e363151667f45c0e43dd2c1a1569f",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -822,7 +822,7 @@
           "unit": 10,
           "id": "COMPUTER_NETWORKING-w10",
           "source": "curriculum/digital_rc/COMPUTER_NETWORKING/weeks/w10/lesson.md",
-          "sha256": "30523c18232908233778d532f62daa7a2cfa45cefecbb53d14ee76707a27314f",
+          "sha256": "cb86b72c148f9e4a0fc872e5e480602965002e2a267f30f61914ab6f9e713cc0",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -834,7 +834,37 @@
           "independent_evidence_verified": false
         }
       ],
-      "contentRootSha256": "6e9e41850ca06a834882b4f3991762aabdb32d5537e8416cac1f5db5227e34be"
+      "contentRootSha256": "c251debd2ce86914dab1d411fd61e5ccfabf1c42b4bbe2e16e8f85c9702ecb87",
+      "source_bound_local_practice": {
+        "contentCommit": "d47276492014c984e458460a99179369ef88c213",
+        "public_resources": [
+          {
+            "source": "curriculum/digital_rc/COMPUTER_NETWORKING/learner_exercises/packet_model/README.md",
+            "sha256": "109e6e71b89779896016b5e1bdc138d24ebabc3747df624ab0e423c41a794c56"
+          },
+          {
+            "source": "curriculum/digital_rc/COMPUTER_NETWORKING/learner_exercises/packet_model/network_model.py",
+            "sha256": "04f150f11cc03b05e0b9db039403ba9e489d69f6ff085997b1d33ab92b278f39"
+          },
+          {
+            "source": "curriculum/digital_rc/COMPUTER_NETWORKING/learner_exercises/packet_model/packet_fixture.py",
+            "sha256": "1e24851d3f428059fb02135792074a2b0a319e252bab923ae46d0131e2272226"
+          },
+          {
+            "source": "curriculum/digital_rc/COMPUTER_NETWORKING/learner_exercises/packet_model/test_network_model.py",
+            "sha256": "91e8423bf29f4e7175e7a04ecf46f176bb4f9f49f96d870d9bc77e4fcef03177"
+          },
+          {
+            "source": "curriculum/digital_rc/COMPUTER_NETWORKING/learner_exercises/packet_model/test_packet_fixture.py",
+            "sha256": "50d4732c7ad966864ad7057ca168e72276d1025cd01e5c4985b5a18cd8a6acad"
+          }
+        ],
+        "engineering_verified": true,
+        "all_course_labs_verified": false,
+        "independent_learner_verified": false,
+        "human_educational_accepted": false,
+        "scope": "Authored standard-library local exercise; examples are not private assessment keys, physical measurements, or an instructor grade."
+      }
     },
     {
       "trackId": "CYBER_SOC",
@@ -1027,21 +1057,21 @@
         "lab_schema_ingest",
         "lab_sql_select"
       ],
-      "public_exercise_files": 0,
+      "public_exercise_files": 4,
       "course_complete": false,
       "lessons": [
         {
           "unit": 1,
           "id": "DATA_DASHBOARDS-w01",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w01/lesson.md",
-          "sha256": "ae106950ef273182885ac8c0c50aff500c7c180cede8a76b63c3793d294d13b1",
+          "sha256": "204ccbb0b098147a346678bec4e733a90875930dd43891a3e0967bb8e199eacf",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1049,14 +1079,14 @@
           "unit": 2,
           "id": "DATA_DASHBOARDS-w02",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w02/lesson.md",
-          "sha256": "5adca3c74ee1e85e5c5cad6b4a35a3b46a9690e7e10de270b655ffc0b2064812",
+          "sha256": "58d00767f1b86bc17c9145200cd897395c8ccfc45d798d3e9838293453a378ab",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1064,14 +1094,14 @@
           "unit": 3,
           "id": "DATA_DASHBOARDS-w03",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w03/lesson.md",
-          "sha256": "55f070b17f1132ee7369cb8736ad7867b9376ba1ea0749c9bfefc5a5b5f51b71",
+          "sha256": "03d7303c7caa2d385eb129fb7abafe34a166b2d75c4fe74b05550052162df3ba",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1079,14 +1109,14 @@
           "unit": 4,
           "id": "DATA_DASHBOARDS-w04",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w04/lesson.md",
-          "sha256": "891bc95c5a16891fab2709148acea85434c760a92ebda8c69bea36f07dd2bdc6",
+          "sha256": "88aebc1f1bac7c2811c929f0dd723c483f3be879ccb7c5807643ed84bdabca48",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1094,14 +1124,14 @@
           "unit": 5,
           "id": "DATA_DASHBOARDS-w05",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w05/lesson.md",
-          "sha256": "f47d2d5cf45fd5b1a779660d48a6a75fada459259a8a2787913ad63f9cf94893",
+          "sha256": "22153c22f076ff50118a710e8c690db2e876c6ee5fd0fed3bb61d28e22c02d69",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1109,14 +1139,14 @@
           "unit": 6,
           "id": "DATA_DASHBOARDS-w06",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w06/lesson.md",
-          "sha256": "abf282c75dbd77d01fa811bbb168284adcb78754f42f3eb65bdb0ee532aba61c",
+          "sha256": "6f1d24b625331507fd74052d45156ec1118a48d0e7d37d2631aa880035210982",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1124,14 +1154,14 @@
           "unit": 7,
           "id": "DATA_DASHBOARDS-w07",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w07/lesson.md",
-          "sha256": "cfa88e07d1bb696284f6bb180324a44d4576f93d6358ea9c060fc2461f1ea4ce",
+          "sha256": "40d94f309700a24671a14d2e02d6bbd4610d934d4fc7a67b39c59a816787df21",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1139,14 +1169,14 @@
           "unit": 8,
           "id": "DATA_DASHBOARDS-w08",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w08/lesson.md",
-          "sha256": "f054f20bca5042e7b3670778c5d96a48c3eadb512ed27da85808bcee2d908dd7",
+          "sha256": "824730e288e7b3dd059cc77d4237eb0056344e4ef2605e03e2cd0335b4547034",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1154,14 +1184,14 @@
           "unit": 9,
           "id": "DATA_DASHBOARDS-w09",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w09/lesson.md",
-          "sha256": "e3c38ee8c861e77ec120fce378b08e2d22f0077e7b280139695e1d22886050f8",
+          "sha256": "46412eed122cc66e9eda20de9391270b06de2b5372f383b5a454085f7f0aed25",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         },
@@ -1169,19 +1199,45 @@
           "unit": 10,
           "id": "DATA_DASHBOARDS-w10",
           "source": "curriculum/digital_rc/DATA_DASHBOARDS/weeks/w10/lesson.md",
-          "sha256": "2e34d20ceab76d57a927a80a4929e9a3f5c4c1201129231e49e27540dcf8d1b1",
+          "sha256": "fd8e703d1a0fa79e069ba56603cb715e0cc60509ac5ba37a568ad244f137bfed",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
           "assessed": false,
           "learner_acceptance_pending": true,
-          "expanded_this_continuation": false,
-          "note": "Technical and pedagogical acceptance not established; quiz evaluation is formative.",
+          "expanded_this_continuation": true,
+          "note": "Substantive Pier Ledger instruction and runnable source-bound local worked example; independent execution and human educational acceptance remain pending.",
           "human_educational_accepted": false,
           "independent_evidence_verified": false
         }
       ],
-      "contentRootSha256": "1746ed4e6761abed42c4c0bf332dd77dbcd48fac1f3417c87d367592b0fe3631"
+      "contentRootSha256": "3d09a577c1b7e0b001633e3993bff39c4f9bd2ca1a8f47ba102052aaba19a0dc",
+      "source_bound_local_practice": {
+        "contentCommit": "d47276492014c984e458460a99179369ef88c213",
+        "public_resources": [
+          {
+            "source": "curriculum/digital_rc/DATA_DASHBOARDS/learner_exercises/pier_ledger/README.md",
+            "sha256": "f2690bd7f604e3bbef5932d57e12869a96452440e5dfa41abd3b84cafd2644b1"
+          },
+          {
+            "source": "curriculum/digital_rc/DATA_DASHBOARDS/learner_exercises/pier_ledger/case_data.py",
+            "sha256": "88e3edfd0d593b54e5ea651c871c0e56547b8cd198a78077d2c57b368a19544c"
+          },
+          {
+            "source": "curriculum/digital_rc/DATA_DASHBOARDS/learner_exercises/pier_ledger/ledger.py",
+            "sha256": "2e4f195743f0b9d200883fcdf0aca2d3f478fe108b39d480746c9a5a80dde43a"
+          },
+          {
+            "source": "curriculum/digital_rc/DATA_DASHBOARDS/learner_exercises/pier_ledger/test_ledger.py",
+            "sha256": "c594d0006fcd52c19d69c3fc0e47f7c0d11432e6420751906d7cb91156ee74f1"
+          }
+        ],
+        "engineering_verified": true,
+        "all_course_labs_verified": false,
+        "independent_learner_verified": false,
+        "human_educational_accepted": false,
+        "scope": "Authored standard-library local exercise; examples are not private assessment keys, physical measurements, or an instructor grade."
+      }
     },
     {
       "trackId": "AI_ML_EDGE",
@@ -3292,5 +3348,6 @@
     "LEARNER_ACCEPTANCE_PENDING": "True for every course."
   },
   "updated": "2026-10-15",
-  "evidence_scope": "Automated engineering acceptance, not human educational acceptance or real learner mastery."
+  "evidence_scope": "Automated engineering acceptance, not human educational acceptance or real learner mastery.",
+  "sourceMeaning": "Exact content checkpoint; later report-only commits may follow without changing canonical lesson/resource bytes."
 }

@@ -1,0 +1,64 @@
+{
+  "version": "pier-ledger/1.0.0-review",
+  "evidence_type": "computed_local_practice",
+  "source_sha256": "c9c8b2d7df0975aad08027e9f52f481d2bccf4ace6853f0a887158c1748baa0a",
+  "columns": [
+    "visit_id",
+    "pier_bay",
+    "ts_utc",
+    "headcount",
+    "source_file"
+  ],
+  "rows_in": 6,
+  "rows_out": 4,
+  "rejected": [
+    {
+      "visit_id": "v5",
+      "reason": "missing_headcount"
+    },
+    {
+      "visit_id": "v6",
+      "reason": "negative_headcount"
+    }
+  ],
+  "missing_rate_raw": 0.16666666666666666,
+  "threshold": 40,
+  "selected_rows": [
+    [
+      "v3",
+      60
+    ],
+    [
+      "v4",
+      80
+    ]
+  ],
+  "group_summary": [
+    {
+      "pier_bay": "bay_a",
+      "n": 3,
+      "mean_headcount": 40.0
+    },
+    {
+      "pier_bay": "bay_b",
+      "n": 1,
+      "mean_headcount": 80.0
+    }
+  ],
+  "mean_headcount": 50.0,
+  "p95_nearest_rank": 80,
+  "join": {
+    "inner_rows": 4,
+    "orphan_ids": []
+  },
+  "freshness": {
+    "as_of": "2026-10-01T19:00:00+00:00",
+    "newest_valid_observation": "2026-10-01T18:15:00+00:00",
+    "age_minutes": 45.0,
+    "sla_minutes": 30,
+    "within_policy": false
+  },
+  "claim_boundary": "Original fictional counts; no real visitors, operational SLA or causal effect measured.",
+  "competency_demonstrated": false,
+  "instructor_review": "pending"
+}

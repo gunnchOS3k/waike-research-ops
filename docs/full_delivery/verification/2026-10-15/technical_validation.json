@@ -1,0 +1,42 @@
+{
+  "schema": "waike.technical-verification.v1",
+  "contentCommit": "d47276492014c984e458460a99179369ef88c213",
+  "date": "2026-10-15",
+  "scope": "Local authored fictional examples and regression checks. Not authentic learner evidence or human acceptance.",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "checks": [
+    {
+      "suite": "DC/CIDR/export/source binding/Pier CLI/packet CLI",
+      "passed": 90
+    },
+    {
+      "suite": "Pier Ledger public contracts",
+      "passed": 14
+    },
+    {
+      "suite": "Network arithmetic + packet/service contracts",
+      "passed": 19
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "packet_default.json",
+      "sha256": "79093695da46fd5b3f43ffdea1bc21d82ef057e1c0f4ed7b7249a126d0e48cb0"
+    },
+    {
+      "path": "packet_ttl1.json",
+      "sha256": "b0ff1f71c569a3878d55c878626ed7fc8bed660bc0d7e29e28d5ed09322fb36d"
+    },
+    {
+      "path": "pier_practice.json",
+      "sha256": "d0800cf7465c3f5e8daa74aa7c34eef7534f5875e10cce3a94a52aaf3efa2eb7"
+    },
+    {
+      "path": "pier_stale.json",
+      "sha256": "98c05dd12fadc13c32c58c5baf8e5331780a63cc129d5990e8501b2675f1ea79"
+    }
+  ],
+  "human_educational_reviewed": false,
+  "course_complete": false,
+  "next": "Continue Cybersecurity actual fictional log evidence and authorized independent-assessment integration; regenerate source-pinned delivery through platform owner."
+}
