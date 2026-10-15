@@ -21,7 +21,7 @@ def test_all_tracks_full_lessons_no_private_keys():
         assert not any('/instructor/' in x['path'] for key in ('lessons','quizzes','assignments','labs','references','portfolio','resources') for x in track[key])
     assert '"answer_index"' not in json.dumps(bundle)
 
-@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC"])
+@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC","CYBERSECURITY"])
 def test_lesson_rendering_matches_authoring_source(package):
     folder=ROOT/"curriculum/digital_rc"/package
     course=json.loads((folder/'course.json').read_text())
@@ -37,3 +37,16 @@ def test_manifest_source_binding_rejects_legacy_directory():
     track=next(t for t in module.build()['tracks'] if t['trackId']=='CYBER_SOC')
     assert all('/CYBERSECURITY/' in l['path'] and '## Guided practice' in l['markdown'] for l in track['lessons'])
     assert len(track['resources'])==3
+
+
+def test_export_rejects_deliberately_changed_manifest(monkeypatch):
+    original=Path.read_text
+    def altered(path,*args,**kwargs):
+        value=original(path,*args,**kwargs)
+        if path==ROOT/'curriculum/canonical_packages/CYBER_SOC/PACKAGE_MANIFEST.v1.json':
+            manifest=json.loads(value);manifest['package_dir']='CYBER_SOC'
+            return json.dumps(manifest)
+        return value
+    monkeypatch.setattr(Path,'read_text',altered)
+    with pytest.raises(ValueError,match='binding mismatch'):
+        module.build()
