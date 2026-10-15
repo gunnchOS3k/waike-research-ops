@@ -1,6 +1,6 @@
 # WAIKE 18-course completeness matrix
 
-**Overall: INCOMPLETE.** No course is marked complete. Source at inventory: `607710b3300bee4566a6d4601272a5f868751429`.
+**Overall: INCOMPLETE.** No course is marked complete. Source at inventory: `9468d8f9f2fd55a9bf02068efde3c2b3427ddad0`.
 
 All 180 lessons are PARTIALLY_AUTHORED review candidates, RENDERABLE and linked to INTERACTIVE formative quizzes; all are unASSESSED as authentic learner outcomes and LEARNER_ACCEPTANCE_PENDING. Forty weekly lessons in four shared packages were expanded with specific guided and independent practice in this continuation. The two General IT tracks share one ten-unit source; they are not two independently authored courses.
 
@@ -37,7 +37,7 @@ Finish General IT artifact schemas and verify independent submissions against th
 
 - GENERAL_IT: ten lessons expanded; full archive restore, account, service, ticket and change evidence still need learner execution and review. Historical packets/offline bundles must be regenerated before release.
 - SOFTWARE_BUILDER: a six-test downloadable example and ten expanded lessons; an actual first-programming prerequisite path and full infrastructure practicals remain distinct requirements.
-- NETWORKING_INFRA: ten expanded lessons and seven-test local model; canonical /32 host-count behavior needs reconciliation (the current local lab reports zero). Packet parsing and physical-network validation are separate.
+- NETWORKING_INFRA: ten expanded lessons and seven-test local model; canonical /32 host counting and malformed/empty evidence rejection are corrected and regression-tested. Packet parsing and physical-network validation are separate.
 - CYBER_SOC: ten expanded lessons and seven-test local model; actual protected evidence intake, case assessment and authorized operations remain required.
 - Other tracks: authored weekly files are readable and quiz practice runs; every minimum-course standard still requires substantive inspection. No blanket FULLY_AUTHORED flag is asserted.
 - All tracks: final assessment validity, human educational acceptance, learner pilots, accessibility beyond automated checks, and owner release approval remain open.
