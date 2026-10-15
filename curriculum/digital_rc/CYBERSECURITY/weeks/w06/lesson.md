@@ -6,7 +6,19 @@ Microseg is a word. A usable version here: kiosk processes cannot open SMB to st
 
 Cloud security concept: security groups are ACLs with opinions. We write the opinion in the matrix rather than clicking a console.
 
-Tabletop: laptop gone at 16:12, reported 16:40. Containment is identity revoke and session kill, not a press release. At 16:41 you also mark the laptop's last DHCP lease as untrusted and watch whether it still talks. A stolen device that keeps renewing is still in the story until the lease dies or you see it on a foreign SSID.
+Tabletop: the fictional laptop is reported missing at 16:40. An authorized responder considers session revocation, device access restrictions and evidence preservation according to the incident plan. A recorded DHCP lease is evidence of an allocation, not proof of current physical presence. Lease expiry does not itself revoke identity or guarantee that a device cannot communicate. Do not claim a foreign SSID or ongoing traffic without corresponding observations.
+
+## Concept and scope
+
+Segmentation limits permitted communication paths according to a policy. Phishing defense includes identity, user reporting, message handling and response; neither a separate subnet nor a convincing visual appearance establishes message legitimacy.
+
+## Guided practice
+
+Draw fictional staff, guest and response zones. Specify permitted flows with purpose and direction. Then analyze a message requesting a password through an unfamiliar link. Expected result: preserve a redacted report and use an established reporting channel; do not enter a credential to test the link.
+
+## Independent evidence
+
+Write a denial test for guest access to the response zone and a process for reporting a suspected phish. Keep simulation separate from performed firewall or email-system changes. Do not send a deceptive message to real users as an unapproved exercise.
 
 ## Worked example
 

@@ -8,6 +8,18 @@ CCNA v1.1 Network Access is the alignment label: VLANs, trunks, STP later. We co
 
 A loop without STP is how the Packet Range went dark in a previous cohort: two cables into the same closet, broadcast joy, CPU 100% on the cheap switch. Week 6 returns to that scar.
 
+## Concept and scope
+
+A learning Ethernet switch associates source MAC addresses with ports within a forwarding domain. Unknown destination behavior and broadcast forwarding are bounded by the VLAN. A MAC address observed in one VLAN does not automatically authorize forwarding in another.
+
+## Guided practice
+
+Draw a fictional table with MAC A on port 1 in VLAN 20 and MAC B on port 2 in VLAN 30. Predict forwarding for a frame to A arriving in VLAN 20, then the same destination arriving in VLAN 30. Expected interpretation: the second lookup must use VLAN 30, not reuse VLAN 20's entry. Explain the unknown-destination policy of your model rather than assuming all switches use an identical configuration.
+
+## Independent evidence
+
+Add a third port in VLAN 20 and trace source learning followed by a destination lookup. Record the input table and output decision. Do not change a campus switch to test this exercise.
+
 ## Worked example
 
 mac_table[(aa:aa:aa:aa:aa:10, 20)] = Gi1/0/8. Lookup with VLAN 30 misses. Isolation holds.

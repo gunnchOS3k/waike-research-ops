@@ -8,6 +8,18 @@ Patch pipelines are availability and integrity. An image that never patches is a
 
 World-writable homes are how essays become everyone else's essays. Mode 777 is not hospitality. The image also disables guest login because a 'guest' on a SOC-adjacent workstation is an unowned session. If a visitor needs a browser, they use the Civic Tech Desk kiosk — a different image, a different zone, a different promise.
 
+## Concept and scope
+
+Hardening reduces unnecessary exposure through documented configuration, patching and access controls. A baseline must name its system/version and operational requirements. A change can break a needed function even when a checklist item appears more restrictive.
+
+## Guided practice
+
+Create a fictional before/after configuration table for guest login, privileged automation and audit retention. For each proposed change, add a verification step, authorized approver and recovery path. Expected result: you can explain why the control is needed and how you would detect disruption.
+
+## Independent evidence
+
+Review the baseline against one alternate device role. Identify a setting that cannot be copied blindly. Do not disable accounts, services or endpoint protection on a real shared device for this lesson.
+
 ## Worked example
 
 All six baseline flags must match. Mutating ai_agent_sudo true fails the lab.

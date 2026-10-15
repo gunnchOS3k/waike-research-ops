@@ -8,6 +8,18 @@ Longest prefix match is how a router chooses among overlapping lots. /32 beats /
 
 IPv6 appears as a parallel survey (128 bits, no broadcast). We do not pretend a 10-week course makes you an IPv6 designer. You will be able to say why fe80:: is link-local and why it is not a public plan.
 
+## Concept and scope
+
+An IPv4 prefix identifies a block by its leading bits. A /26 contains 64 addresses; under the ordinary multi-access subnet convention, the first identifies the network and the last is broadcast. /31 point-to-point links and /32 host routes need separate interpretation.
+
+## Guided practice
+
+Predict the block containing 192.0.2.70/26. Its network is 192.0.2.64 and broadcast is 192.0.2.127, with 62 ordinary host addresses. Run the model test to compare. Expected result: all three values match. If one differs, check whether you rounded to a 64-address boundary before subtracting reserved addresses.
+
+## Independent evidence
+
+Solve a different /28 using a documentation address. Show the block size, boundary, broadcast and convention for usable addresses. Add /31 and /32 tests to the worked example; document where the canonical lab's contract differs.
+
 ## Worked example
 
 10.20.30.40/26 → net 10.20.30.0 bcast 10.20.30.63 usable 62. 10.20.30.80/28 → net 10.20.30.80 bcast 10.20.30.95 usable 14.

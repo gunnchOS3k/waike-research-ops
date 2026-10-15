@@ -8,6 +8,18 @@ SaaS vs IaaS vs PaaS is a placement quiz, not a shopping list. Harbor's SIEM fix
 
 Zero Trust as architecture: no implicit trust because the source IP is 'inside.' The kiosk VLAN is still hostile. A volunteer who 'temporarily' trunks kiosk into staff so a label printer works has created a SOC-adjacent path they cannot see. Write the exception with an expiry, or do not do it. Harbor's Saturday rule is: if the printer needs a hole, the hole is a ticket, not a cable.
 
+## Concept and scope
+
+A threat model describes assets, actors, trust boundaries, entry points and assumptions. An arrow crossing a trust boundary is a place to ask how identity, data and authorization are checked. A diagram alone does not establish that its controls exist.
+
+## Guided practice
+
+Draw a fictional browser → Hub → event store flow. Mark where an untrusted response becomes parsed data and where an authenticated actor is resolved. Expected result: a claimed role in a browser request is not treated as proof of authority. Add one failure path for each boundary.
+
+## Independent evidence
+
+Propose a test for cross-learner record access and a separate test for cross-site access. Use fabricated IDs in an authorized test environment. Do not attempt those requests against a real service without permission.
+
 ## Worked example
 
 matrix[(kiosk,soc)]=deny; [(soc,kiosk)]=allow_syslog_only; [(guest,staff)]=deny.

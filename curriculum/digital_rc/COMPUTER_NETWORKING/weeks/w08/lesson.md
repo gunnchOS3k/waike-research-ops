@@ -8,6 +8,18 @@ NTP, syslog, SNMP appear as a CCNA IP Services chorus. In WAIKE you will timesta
 
 A cache that never expires is how a moved printer becomes a ghost. TTL 300 on an A record is a policy. Set it, write it, do not blame 'the Internet.' When Roof moves to a new address at 16:00 and Pier still prints to the old one at 16:10, the liar is the cache, not the cable.
 
+## Concept and scope
+
+DHCP supplies configured network parameters; DNS maps names and record types; NAT translates selected address or port information. These functions are related operationally but a success in one is not proof that the others or the application work.
+
+## Guided practice
+
+Build a fictional diagnosis table with columns address configuration, name result, connection result and application response. Include one case where lookup succeeds but the connection fails. Expected interpretation: replacing DNS configuration is not yet justified. Include another case where a private name is absent from a public resolver; identify the intended authorized resolver before taking action.
+
+## Independent evidence
+
+Write a five-step troubleshooting procedure that tests one layer at a time. Record which outcomes are simulated. Avoid sending private hostnames or real packet captures to public tools for this exercise.
+
 ## Worked example
 
 First resolve desk.gary.waike.example → 203.0.113.14 via auth_walk. Second → cache. NAT inside 10.20.30.14 outside 192.0.2.88.

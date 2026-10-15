@@ -8,6 +8,18 @@ Security+ threats/vulnerabilities domain is the alignment label. Mitigations her
 
 If you find a real bug in WAIKE software outside this fixture, you report it — you do not 'practice' on it.
 
+## Concept and scope
+
+A parser treats external bytes as untrusted input. Length fields, encodings and bounds need validation before use. Detecting an inconsistency is different from exploiting it. A local toy result does not establish that a real product has a vulnerability.
+
+## Guided practice
+
+On paper, define a toy record declaring 4 payload bytes but containing only 2. Specify rejection before any payload access. Expected result: the record is classified malformed, with a bounded error that reveals no secret or memory contents. Compare with a valid record of exactly 4 bytes.
+
+## Independent evidence
+
+Add empty, oversized and unsupported-type cases to a test plan. Keep all input fictional and local. Do not adapt this exercise into exploitation, scanning or fuzzing of an unapproved target.
+
 ## Worked example
 
 unsafe(\x14short) returns a short slice (the lie). safe(\x14short) raises ValueError. safe(\x04abcd)==b'abcd'.

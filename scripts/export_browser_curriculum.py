@@ -39,7 +39,7 @@ def build(root=ROOT):
             quizzes.append(quiz)
             assignments.append(item(folder/f'assignments/a{n:02d}.md'))
         labs = [item(p, p.parent.name) for p in sorted((folder/'labs').glob('*/README.md'))]
-        extras = [item(p) for p in [folder/'glossary.md', folder/'syllabus.md', folder/'rubrics/rubrics.json'] if p.is_file()]
+        extras = [item(p) for p in [folder/'glossary.md', folder/'syllabus.md', folder/'rubrics/rubrics.json', folder/'references.md', folder/'prerequisites.json'] if p.is_file()]
         resources = [item(p) for p in sorted((folder/'learner_exercises').rglob('*')) if p.is_file() and p.suffix in ('.py','.md')]
         portfolio = [item(p) for p in sorted((folder/'portfolio').glob('*.md'))]
         digest = hashlib.sha256(json.dumps([x['sha256'] for x in lessons+quizzes+assignments+labs+extras+portfolio+resources]).encode()).hexdigest()

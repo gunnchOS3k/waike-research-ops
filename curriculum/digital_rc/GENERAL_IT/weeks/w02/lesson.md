@@ -2,11 +2,11 @@
 
 The Civic Tech Desk dual-boots a Windows 11 image for walk-up patrons and a Debian bookworm image for staff recovery. You will not memorize every click. You will learn the same three verbs on both: list, copy, and permission. On Windows those verbs are Explorer, `robocopy` or copy, and icacls. On Debian they are `ls`, `cp`, and `chmod`/`chown`.
 
-File systems are not fashion. The staff recovery stick is ext4. The patron share that must be read by Windows is exFAT. NTFS is fine for the internal Windows volume. FAT32 still appears on old camera cards and lies about files over 4 GiB. When a 4.7 GiB video 'disappears' on a camera card, the card is not haunted — FAT32 refused the write.
+File systems are not fashion. The staff recovery stick is ext4. The patron share that must be read by Windows is exFAT. NTFS is fine for the internal Windows volume. FAT32 has a maximum individual file size of 4 GiB minus 1 byte. A 4.7 GiB file exceeds that limit. Inspect the actual filesystem and copy error rather than assuming that every camera card uses FAT32.
 
-Task Manager and `top` answer the same question: who is burning CPU and who is waiting on disk. A kiosk that feels 'frozen' with disk 100% and CPU 4% is a storage job, not a virus story. You will capture that evidence before you reboot, because reboot erases the graph.
+Task Manager and a process monitor such as `top` can provide CPU and memory observations. Storage activity may require additional views or tools. A high disk-active-time reading with low CPU use suggests a storage-related bottleneck, but it does not establish a root cause or rule out malware. Capture relevant observations before restarting, because some live context will be lost.
 
-Updates are operational procedures. The desk patches Windows after 21:00 local on Wednesdays and Debian with unattended-upgrades, but never both images in the same hour. A dual-boot machine that patches both at once can leave GRUB confused and a Saturday volunteer with no kiosk.
+Updates are operational procedures. In this fictional desk, maintenance windows are scheduled and recovery is prepared first. A dual-boot machine normally runs one installed operating system at a time; this lesson does not establish a special simultaneous-update mechanism or a general claim that updates confuse GRUB. Check the actual boot, encryption and update configuration before planning maintenance.
 
 ## Learn the distinction
 
@@ -28,4 +28,4 @@ A file manager reporting a full disk is evidence about storage, not proof that R
 
 ## Worked example
 
-A 4.7 GiB `.mkv` copied to a FAT32 camera card ends as a 0-byte or missing file. Reformat is the wrong first step. Copy to the NTFS staff volume, then to the patron exFAT share.
+A 4.7 GiB file exceeds FAT32's individual-file limit. The copy should report failure; exact partial-file behavior depends on the tool. Preserve the original, verify the destination filesystem, and choose authorized compatible storage. Reformatting would erase existing destination data and is not the first diagnostic step.

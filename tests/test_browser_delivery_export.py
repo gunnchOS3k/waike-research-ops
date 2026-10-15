@@ -21,7 +21,7 @@ def test_all_tracks_full_lessons_no_private_keys():
         assert not any('/instructor/' in x['path'] for key in ('lessons','quizzes','assignments','labs','references','portfolio','resources') for x in track[key])
     assert '"answer_index"' not in json.dumps(bundle)
 
-@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER"])
+@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC"])
 def test_lesson_rendering_matches_authoring_source(package):
     folder=ROOT/"curriculum/digital_rc"/package
     course=json.loads((folder/'course.json').read_text())

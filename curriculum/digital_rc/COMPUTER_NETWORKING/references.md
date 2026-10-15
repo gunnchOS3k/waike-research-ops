@@ -12,3 +12,7 @@ Real references for study alignment. Public pages are not free to dump into quiz
 - `curriculum/digital_rc/COMPUTER_NETWORKING/syllabus.md`
 - `ACCESSIBILITY_AND_LOW_COST.md`
 - `REPRODUCIBILITY.md`
+
+## Full delivery revision, 2026-10-14
+
+Original guided activities, worked-example code and tests received substantive AI assistance. Local fixtures do not establish real network behavior, intrusion detection or occupational readiness. Human technical and educational review remains pending.
