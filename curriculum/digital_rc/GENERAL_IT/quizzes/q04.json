@@ -16,7 +16,7 @@
     {
       "id": "git-w4-2",
       "kind": "mcq",
-      "stem": "Why fail at 15% free instead of 0%?",
+      "stem": "Why does this classroom fixture require 15% usable free capacity?",
       "choices": [
         "Disks explode at 15%",
         "ext4 cannot use last 15%",
@@ -29,7 +29,7 @@
       "kind": "mcq",
       "stem": "A backup that has never been restored is",
       "choices": [
-        "A rumor until a restore hash matches",
+        "A copy whose recoverability has not yet been verified",
         "3-2-1 compliant by default",
         "Better than snapshots",
         "A substitute for RAID"
@@ -41,7 +41,7 @@
       "stem": "ssn.txt in the archive should",
       "choices": [
         "Be encrypted and kept forever",
-        "Fail the lab \u2014 PII does not belong there",
+        "Fail the lab — PII does not belong there",
         "Be emailed to the instructor",
         "Be stored in ticket 4417"
       ]
@@ -49,11 +49,11 @@
     {
       "id": "git-w4-5",
       "kind": "mcq",
-      "stem": "3-2-1 at this desk includes",
+      "stem": "Which plan includes the offsite part of the 3-2-1 strategy?",
       "choices": [
         "Three identical cloud buckets only",
         "RAID 0 only",
-        "Volume + locked USB + off-box closet PC",
+        "Primary files, a separate-media backup, and an authorized recoverable copy at a separate site",
         "A screenshot of File Explorer"
       ]
     },

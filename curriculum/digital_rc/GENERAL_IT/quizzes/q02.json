@@ -5,11 +5,11 @@
     {
       "id": "git-w2-1",
       "kind": "mcq",
-      "stem": "A 4.7 GiB video vanishes on a camera card. Most likely filesystem limit?",
+      "stem": "A file is 4.7 GiB and the verified destination filesystem is FAT32. Which limit prevents a complete copy?",
       "choices": [
         "ext4 16 TiB file cap",
         "exFAT forbids video",
-        "FAT32 4 GiB file cap",
+        "FAT32 maximum individual file size: 4 GiB minus 1 byte",
         "NTFS compression"
       ]
     },
@@ -27,9 +27,9 @@
     {
       "id": "git-w2-3",
       "kind": "mcq",
-      "stem": "Why not patch Windows and Debian in the same hour on a dual-boot kiosk?",
+      "stem": "What is a sound approach to maintaining a dual-boot practice computer?",
       "choices": [
-        "Bootloader/update collision risk during the only public hours",
+        "Use an authorized maintenance window, verify recovery and document the actual boot/update configuration",
         "Licensing",
         "Debian cannot be patched",
         "Windows 11 forbids GRUB"
@@ -60,7 +60,7 @@
     {
       "id": "git-w2-6",
       "kind": "mcq",
-      "stem": "Patron share that Windows and a camera must both read: pick",
+      "stem": "Both target devices document exFAT support. Which listed filesystem fits their shared removable-media requirement?",
       "choices": [
         "ext4",
         "ZFS",
