@@ -40,11 +40,12 @@ def build(root=ROOT):
             assignments.append(item(folder/f'assignments/a{n:02d}.md'))
         labs = [item(p, p.parent.name) for p in sorted((folder/'labs').glob('*/README.md'))]
         extras = [item(p) for p in [folder/'glossary.md', folder/'syllabus.md', folder/'rubrics/rubrics.json'] if p.is_file()]
+        resources = [item(p) for p in sorted((folder/'learner_exercises').rglob('*')) if p.is_file() and p.suffix in ('.py','.md')]
         portfolio = [item(p) for p in sorted((folder/'portfolio').glob('*.md'))]
-        digest = hashlib.sha256(json.dumps([x['sha256'] for x in lessons+quizzes+assignments+labs+extras+portfolio]).encode()).hexdigest()
+        digest = hashlib.sha256(json.dumps([x['sha256'] for x in lessons+quizzes+assignments+labs+extras+portfolio+resources]).encode()).hexdigest()
         output.append(dict(trackId=t['track_id'], title=t['title'], packId=manifest['package_dir'], contentRootSha256=digest,
                            sourceCommit=sha, offlinePackDeclared=False, lessons=lessons, quizzes=quizzes,
-                           assignments=assignments, labs=labs, portfolio=portfolio, references=extras,
+                           assignments=assignments, labs=labs, portfolio=portfolio, references=extras, resources=resources,
                            prerequisites=json.loads((folder/'prerequisites.json').read_text())))
     assert len(output)==18
     # Explicit field allowlist above; these sentinel checks guard accidental future expansion.

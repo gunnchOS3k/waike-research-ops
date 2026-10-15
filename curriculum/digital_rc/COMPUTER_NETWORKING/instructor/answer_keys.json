@@ -16,7 +16,7 @@
       {
         "id": "net-w1-3",
         "answer_index": 3,
-        "explanation": "Chopping is the design."
+        "explanation": "TCP payload limit is 1460 bytes; ceil(2000/1460)=2. Actual count may be higher."
       },
       {
         "id": "net-w1-4",

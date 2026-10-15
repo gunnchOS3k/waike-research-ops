@@ -561,24 +561,38 @@ def _net_weeks() -> list[dict[str, Any]]:
             "week": 1,
             "title": "Packets are chopped on purpose",
             "lesson": (
-                "The WAIKE Packet Range is a table, a switch, and four Raspberry-class endpoints named "
-                "Pier, Yard, Shed, and Roof. Nothing here is magic. A message that cannot fit in one "
-                "frame is chopped. Ethernet carries 1500-ish bytes of payload because the local wire "
-                "agreed to that, not because the Internet is polite.\n\n"
-                "Encapsulation is dressing: HTTP inside TCP inside IP inside Ethernet. Each header is "
+                "The WAIKE Packet Range is a synthetic teaching fixture with four endpoints named "
+                "Pier, Yard, Shed, and Roof, not evidence of a deployed campus. In this fixture, the "
+                "path MTU is 1500 bytes: one IP packet can occupy at most 1500 bytes, including its IP "
+                "header. The Ethernet header is outside that limit. Other links can have different MTUs. "
+                "TCP divides its byte stream into segments; that is different from IP fragmentation.\n\n"
+                "For an HTTPS example using TCP, the nesting is HTTP data inside TLS records inside "
+                "TCP segments inside IP packets inside Ethernet frames. HTTP/3 uses QUIC over UDP, so "
+                "this example is not the only web stack. Each header is "
                 "a sticky note for a different worker. The sticky note you peel first on receive is "
                 "the one you added last on send. Learners who skip that sentence try to debug TCP "
                 "checksums when the Ethernet destination MAC is wrong.\n\n"
                 "Multiplexing is why port 443 and port 22 can share one IP. The 5-tuple (src IP, dst IP, "
-                "protocol, src port, dst port) is the conversation ID. If you only look at IPs you will "
+                "protocol, src port, dst port) distinguishes transport flows at a given observation point. "
+                "NAT can rewrite the tuple. If you only look at IPs you will "
                 "swear two students are 'the same traffic.'\n\n"
                 "CS144's public weekly shape (principles → transport → switching → congestion → routing) "
                 "is a structure we acknowledge. We do not copy Stanford code. This week's lab starts "
-                "an original Ethernet/IPv4 parse you will finish in the datapath lab."
+                "an original Ethernet/IPv4 parse you will finish in the datapath lab.\n\n"
+                "Technical source: RFC 9293 sections 3.7 and 3.7.1, "
+                "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.7. "
+                "Before running code, predict the payload capacity, calculate it, then explain the "
+                "assumptions. A large application write alone does not tell you an exact packet count."
             ),
             "worked_example": (
-                "A 2000-byte application buffer on a 1500 MTU path becomes at least two IP datagrams. "
-                "Peel Ethernet first (ethertype 0x0800), then IP, then TCP."
+                "Assume IPv4 without options (20-byte header), TCP without options (20-byte header), "
+                "a 1500-byte path MTU, and no IP fragmentation. TCP payload capacity is "
+                "1500 - 20 - 20 = 1460 bytes. Sending 2000 TCP stream bytes requires at least "
+                "ceil(2000/1460) = 2 data segments, for example 1460 + 540. Actual segment count can "
+                "be higher. TLS adds its own bytes before TCP. On receive, peel Ethernet "
+                "(ethertype 0x0800), then IPv4, then TCP. Independent practice: repeat for "
+                "MTU 1280 with a 40-byte IPv6 header and 20-byte TCP header; state why your result "
+                "does not count acknowledgments or retransmissions."
             ),
             "assignment": (
                 "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label "
@@ -592,9 +606,9 @@ def _net_weeks() -> list[dict[str, Any]]:
                 _q("net-w1-2", "The 5-tuple includes",
                    ["Only MACs", "src/dst IP, protocol, src/dst port", "Only DNS names", "VLAN 1 only"], 1,
                    "Conversation ID."),
-                _q("net-w1-3", "MTU 1500 and a 2000-byte buffer implies",
-                   ["One frame always", "At least two IP datagrams", "NAT failure", "OSPF hello"], 1,
-                   "Chopping is the design."),
+                _q("net-w1-3", "IPv4 20-byte header, TCP 20-byte header, MTU 1500, no fragmentation: minimum data segments for 2000 stream bytes?",
+                   ["One segment", "Two segments", "NAT failure", "Exactly 2000 segments"], 1,
+                   "TCP payload limit is 1460 bytes; ceil(2000/1460)=2. Actual count may be higher."),
                 _q("net-w1-4", "Two students share an IP but different TCP ports. They are",
                    ["The same 5-tuple", "Different conversations", "A broadcast storm", "A /32 host route"], 1,
                    "Ports multiplex."),

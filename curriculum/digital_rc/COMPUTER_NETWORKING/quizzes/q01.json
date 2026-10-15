@@ -27,12 +27,12 @@
     {
       "id": "net-w1-3",
       "kind": "mcq",
-      "stem": "MTU 1500 and a 2000-byte buffer implies",
+      "stem": "IPv4 20-byte header, TCP 20-byte header, MTU 1500, no fragmentation: minimum data segments for 2000 stream bytes?",
       "choices": [
-        "One frame always",
+        "One segment",
         "NAT failure",
-        "OSPF hello",
-        "At least two IP datagrams"
+        "Exactly 2000 segments",
+        "Two segments"
       ]
     },
     {
