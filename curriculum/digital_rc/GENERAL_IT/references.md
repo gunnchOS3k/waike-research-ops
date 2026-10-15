@@ -12,3 +12,10 @@ Real references for study alignment. Public pages are not free to dump into quiz
 - `curriculum/digital_rc/GENERAL_IT/syllabus.md`
 - `ACCESSIBILITY_AND_LOW_COST.md`
 - `REPRODUCIBILITY.md`
+
+## Full delivery teaching revision, 2026-10-14
+
+- CISA, Data Backup Options: https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf — primary guidance for the 3-2-1 strategy; not evidence of a tested backup in this course.
+- Microsoft, All about computer memory: https://support.microsoft.com/en-us/windows/experience/compatibility/all-about-computer-memory — distinction between RAM and storage.
+
+Guided exercises, fixture interpretations and capstone review criteria were authored with substantive AI assistance; human technical and educational review remains pending. No learner testing is asserted.

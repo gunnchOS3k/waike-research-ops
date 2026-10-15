@@ -8,6 +8,29 @@ Group project: staff a two-person after-hours rotation. One person is operator, 
 
 You will also write one paragraph on what this course is not: not a SOC, not a CCNA, not a license to image random laptops in the neighborhood. Scope is a professional habit.
 
+## Capstone: a reproducible handoff
+
+You are coordinating a fictional desk with three incidents and one proposed change. Use the earlier units' methods together. Begin with a scope statement: fictional data, no live system changes, and no claim of professional certification. Prepare a file inventory, access table, capacity calculation, restore evidence, resolver table, service-status interpretation and CHG-88 runbook.
+
+## Guided rehearsal
+
+1. Give each incident a ticket ID, observed symptom and affected task. Distinguish observed, simulated and unknown values.
+2. Choose a next test for each ticket. Explain what each possible result would imply.
+3. Restore the fictional files into an empty destination and compare the complete inventory.
+4. Evaluate used=220 GiB with the same reserve and policy. Show the arithmetic and an action proposal; do not delete files to satisfy a number.
+5. Rehearse the change with a verification failure and record rollback.
+6. Prepare a handoff that another operator can follow without asking for hidden context.
+
+Expected result: evidence supports each conclusion; failed tests remain visible; no real credentials or patron data appear. If you cannot reproduce a result, mark the item unresolved and provide the next safe test. An unresolved item is not a passing result.
+
+## Independent review criteria
+
+A reviewer should check technical correctness, privacy, safe scope, reproducibility and communication separately. Reading all ten lessons or scoring well on recognition questions does not replace the practical evidence. Record reviewer identity and consent only through an authorized assessment system. Without an actual reviewer, retain `pending review`; do not create a fictitious signature.
+
+## Reflection
+
+Choose one mistaken inference you corrected. Explain the original observation, why it was insufficient, the additional test, and the remaining uncertainty. Identify a next pathway using your demonstrated skills rather than a claim of occupational readiness.
+
 ## Worked example
 
 Capstone scoring: tickets with subsystems, passing lab hashes, CHG in window, recorder notes usable by a stranger, no PII.
