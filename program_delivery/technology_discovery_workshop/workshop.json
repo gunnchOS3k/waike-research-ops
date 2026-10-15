@@ -1,0 +1,21 @@
+{
+  "schema": "waike.instructor-led-workshop.v1",
+  "id": "WAIKE-TECH-DISCOVERY-01",
+  "title": "WAIKE Technology Discovery Workshop",
+  "version": "1.0.0-owner-review",
+  "status": "CONDITIONAL_DELIVERY_CANDIDATE",
+  "curriculumSourceCommit": "33a101852f4fefb0eb239bcffa60a65d71102e2c",
+  "trackId": "DIGITAL_CONFIDENCE",
+  "sessions": [{"number":1,"minutes":120,"units":[1,4,5]},{"number":2,"minutes":120,"units":[6,10],"independentUnit":11}],
+  "prerequisites": ["A permitted device and browser, plain-text editor and file manager", "Permission to save small fictional files", "An accessibility helper or instructor support when needed"],
+  "objectives": ["Locate, rename and reopen a fictional saved file", "Restore unchanged bytes from a preserved copy", "Separate observations from guesses and protect private information", "Calculate a changed capacity case and explain a safe action", "Demonstrate a fresh task and explain the method to a reviewer"],
+  "proposedLearnerLimit": 25,
+  "capacityValidated": false,
+  "staffing": "Lead instructor plus assistant recommended for 25; confirm observed-assessment time and accommodations before accepting a booking.",
+  "humanEducationalReview": "pending",
+  "releaseApproved": false,
+  "institutionalDeliveryReady": false,
+  "completionClaim": "Workshop participation and criterion evidence only; no WAIKE course completion, certification or occupational-readiness claim.",
+  "softwareLicense": "Repository license applies to code; this does not license publication prose or artwork.",
+  "sourcePolicy": "Delivery orchestration only. Teach and evaluate through the existing GENERAL_IT Digital Confidence guide, grader and Hub rubric. Do not copy their answers or create another curriculum."
+}
