@@ -43,8 +43,14 @@ def build(root=ROOT):
         resources = [item(p) for p in sorted((folder/'learner_exercises').rglob('*')) if p.is_file() and p.suffix in ('.py','.md')]
         portfolio = [item(p) for p in sorted((folder/'portfolio').glob('*.md'))]
         digest = hashlib.sha256(json.dumps([x['sha256'] for x in lessons+quizzes+assignments+labs+extras+portfolio+resources]).encode()).hexdigest()
+        delivery=None
+        dpath=folder/'delivery/digital_confidence.json'
+        if t['track_id']=='DIGITAL_CONFIDENCE' and dpath.is_file():
+            code=(root/'src/waike_course_ready/digital_confidence.py').read_bytes()
+            delivery=dict(definition=json.loads(dpath.read_text()), revision=hashlib.sha256(dpath.read_bytes()+code).hexdigest(), sourcePath=dpath.relative_to(root).as_posix())
+            digest=hashlib.sha256((digest+delivery['revision']).encode()).hexdigest()
         output.append(dict(trackId=t['track_id'], title=t['title'], packId=manifest['package_dir'], contentRootSha256=digest,
-                           sourceCommit=sha, offlinePackDeclared=False, lessons=lessons, quizzes=quizzes,
+                           sourceCommit=sha, offlinePackDeclared=False, delivery=delivery, lessons=lessons, quizzes=quizzes,
                            assignments=assignments, labs=labs, portfolio=portfolio, references=extras, resources=resources,
                            prerequisites=json.loads((folder/'prerequisites.json').read_text())))
     assert len(output)==18
