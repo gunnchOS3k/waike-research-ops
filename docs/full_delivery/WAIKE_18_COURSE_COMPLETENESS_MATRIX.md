@@ -1,6 +1,6 @@
 # WAIKE 18-course completeness matrix
 
-**Overall: INCOMPLETE.** No course is marked complete. Current content checkpoint: `d47276492014c984e458460a99179369ef88c213`. Earlier inventory remains in Git history.
+**Overall: INCOMPLETE.** No course is marked complete. Current content checkpoint: `a96338ff6a4b45b5bc7ce0abfc4447051e80cf97`. Earlier inventory remains in Git history.
 
 All 180 lessons are PARTIALLY_AUTHORED review candidates, RENDERABLE and linked to INTERACTIVE formative quizzes; all are unASSESSED as authentic learner outcomes and LEARNER_ACCEPTANCE_PENDING. Fifty unique weekly lessons in five canonical packages now have expanded subject-specific instruction; the new Pier Ledger ten-unit expansion is described below. This is a content count, not a complete-course decision. The two General IT tracks share one ten-unit source; they are not two independently authored courses.
 
@@ -81,3 +81,7 @@ The 90-check combined run covers DC, CIDR, browser exporter/source binding and b
 Remaining concrete gates: full independent-assessment intake and instructor review for these courses; actual chart/accessibility review; all existing native labs beyond the worked examples; secure production runtime and authorized records; offline artifacts; human educational review. Sixteen course pathways beyond the specifically expanded practicals still require substantive completion work. Every course remains INCOMPLETE. Historical declaration-only lab contracts are retained, and their weak source-verification semantics are now explicitly qualified rather than described as actual execution.
 
 Next executable curriculum verification: `/private/tmp/waike-full-hub-env/bin/python -m pytest -q tests/test_browser_delivery_export.py tests/test_pier_ledger_delivery.py tests/test_packet_fixture_delivery.py tests/test_digital_confidence_delivery.py tests/test_cidr_student_evidence.py`. Then continue Cybersecurity’s fictional log evidence intake and independent incident reasoning, followed by the remaining canonical courses. Platform/site lanes own source-pin regeneration and browser/production acceptance.
+
+## Dated-source correction
+
+Content checkpoint `a96338ff6a4b45b5bc7ce0abfc4447051e80cf97` corrects canonical CYBERSECURITY references to the ISC2 outline effective September 1, 2026 and NIST SP 800-61 Rev. 3 (April 2025), with verified primary links. The original incident-order fixture remains reproducible and explicitly historical; it is not presented as a universal current NIST sequence. Existing CYBER_SOC/weeks is a symlink into canonical CYBERSECURITY/weeks, while its course.json remains a historical snapshot; synchronization tests now resolve the active authoring source correctly. The combined targeted suite now passes 91 checks. No human acceptance or new course-completion claim is made.

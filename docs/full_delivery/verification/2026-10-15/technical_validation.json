@@ -7,7 +7,7 @@
   "checks": [
     {
       "suite": "DC/CIDR/export/source binding/Pier CLI/packet CLI",
-      "passed": 90
+      "passed": 91
     },
     {
       "suite": "Pier Ledger public contracts",
@@ -38,5 +38,11 @@
   ],
   "human_educational_reviewed": false,
   "course_complete": false,
-  "next": "Continue Cybersecurity actual fictional log evidence and authorized independent-assessment integration; regenerate source-pinned delivery through platform owner."
+  "next": "Continue Cybersecurity actual fictional log evidence and authorized independent-assessment integration; regenerate source-pinned delivery through platform owner.",
+  "latestContentCommit": "a96338ff6a4b45b5bc7ce0abfc4447051e80cf97",
+  "datedSourceCorrection": {
+    "isc2Outline": "effective 2026-09-01",
+    "nistIncidentResponse": "SP 800-61 Rev. 3, April 2025, supersedes Rev. 2",
+    "verified": "2026-10-15"
+  }
 }

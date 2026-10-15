@@ -1,6 +1,6 @@
 {
   "schema": "waike.full_delivery.evidence.v1",
-  "sourceCommit": "d47276492014c984e458460a99179369ef88c213",
+  "sourceCommit": "a96338ff6a4b45b5bc7ce0abfc4447051e80cf97",
   "overall": "INCOMPLETE",
   "courses": [
     {
@@ -889,7 +889,7 @@
           "unit": 1,
           "id": "CYBERSECURITY-w01",
           "source": "curriculum/digital_rc/CYBERSECURITY/weeks/w01/lesson.md",
-          "sha256": "e487d68a2af0997ed4fa268ae5ded3f035b89e56f54a91c1005847b1e47f9121",
+          "sha256": "d8fa325dd47bfd7889dd505761bd4f56adaa6b32d3ebdef36cc3542eb3e66cc7",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -919,7 +919,7 @@
           "unit": 3,
           "id": "CYBERSECURITY-w03",
           "source": "curriculum/digital_rc/CYBERSECURITY/weeks/w03/lesson.md",
-          "sha256": "603deed5da6e64f006777427c1a24a824cc55d4ea3921036df945e2df3f1492f",
+          "sha256": "762dfd3221969076be74abbd6530d4bccee7bfc690d6748ee6143c12524f431a",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -979,7 +979,7 @@
           "unit": 7,
           "id": "CYBERSECURITY-w07",
           "source": "curriculum/digital_rc/CYBERSECURITY/weeks/w07/lesson.md",
-          "sha256": "6939e58dbe88f44c035acf9ab88c097c7c0307a25b7b89778922fdeab5364b2d",
+          "sha256": "52b54dfb39e9b8e55b563fe10f9ef9eda39543c3c73b7efa4b5031d5a942f50a",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -1024,7 +1024,7 @@
           "unit": 10,
           "id": "CYBERSECURITY-w10",
           "source": "curriculum/digital_rc/CYBERSECURITY/weeks/w10/lesson.md",
-          "sha256": "17efb4bf20dd0ed3bf952e87f07b416074917f7384a6fb098777e58b0c9ceb63",
+          "sha256": "a4160fcb277f51f879f85d05c3c67adaa18c544a3f9fe4e133074cdab72e44d4",
           "authoring": "PARTIALLY_AUTHORED",
           "renderable": true,
           "interactive": true,
@@ -1036,7 +1036,7 @@
           "independent_evidence_verified": false
         }
       ],
-      "contentRootSha256": "873b9af7574c23922933a928a754c7cebcd68eab639965d160142d36605895b4"
+      "contentRootSha256": "5bb77bde79016c2bb356a9b063875a949dea90e254c92f04c240b40a6c76e117"
     },
     {
       "trackId": "DATA_DASHBOARDS",
