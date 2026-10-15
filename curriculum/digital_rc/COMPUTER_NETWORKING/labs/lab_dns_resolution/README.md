@@ -15,3 +15,7 @@ python3 scripts/run_course_labs.py --lab lab_dns_resolution --empty
 ```
 
 Calling the first hit a cache miss-order fails.
+
+## Source-bound practice and limits
+
+The historical first_how/second_how artifact is a simplified declared-state contract, not proof of real recursive DNS traffic. The new PositiveDnsCache exercise executes positive A-record expiry against a local dictionary, including exact expiry and zero TTL. Its fixture_authority label describes that local lookup, not a root/TLD/authoritative exchange. Do not translate not_in_fixture into a measured NXDOMAIN claim. See learner_exercises/packet_model/README.md for exact execution, expected results, independent evidence criteria and troubleshooting. No production network configuration or physical validation is performed.

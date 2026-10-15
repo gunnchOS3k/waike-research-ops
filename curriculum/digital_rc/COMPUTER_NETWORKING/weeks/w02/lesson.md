@@ -1,6 +1,6 @@
 # Week 2: CIDR as a land survey, not a guessing game
 
-10.20.30.40/26 is not 'a class C with a funny number.' /26 means 26 bits of network, 6 bits of host, 64 addresses, network 10.20.30.0, broadcast 10.20.30.63, 62 usable if you still believe in network and broadcast addresses. The host .40 lives in that block the way a house lives on a surveyed lot.
+10.20.30.40/26 is not 'a class C with a funny number.' /26 means 26 bits of network, 6 bits of host, 64 addresses, network 10.20.30.0, broadcast 10.20.30.63, 62 ordinary host addresses under the multi-access subnet convention; /31 point-to-point and /32 host-route cases need separate treatment. The host .40 lives in that block the way a house lives on a surveyed lot.
 
 A second block 10.20.30.80/28 is 16 addresses, .80–.95, 14 usable. If you put a printer at .96 you are in the next lot and the ACL you wrote for /28 will not save you.
 
@@ -19,6 +19,10 @@ Predict the block containing 192.0.2.70/26. Its network is 192.0.2.64 and broadc
 ## Independent evidence
 
 Solve a different /28 using a documentation address. Show the block size, boundary, broadcast and convention for usable addresses. Add /31 and /32 tests to the worked example; document where the canonical lab's contract differs.
+
+## IPv6 addressing activity
+
+The extended packet resource provides ipv6_prefix. Run its service_trace example for 2001:db8:20::7/64. Expected result: network 2001:db8:20::/64 with 2^64 addresses and no broadcast. This is a block size, not an assignable-device count. Compare /128 and explain why IPv4’s network/broadcast subtraction does not apply. Use documentation addresses only; no real adapter configuration is required.
 
 ## Worked example
 

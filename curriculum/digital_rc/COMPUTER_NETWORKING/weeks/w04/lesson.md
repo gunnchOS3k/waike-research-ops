@@ -20,6 +20,10 @@ Run the model with a default route to uplink and 192.0.2.64/26 to desk. For dest
 
 Add a /32 route for the destination and verify precedence. Then remove all matching routes and verify the no-route result. Explain why these calculations alone do not validate the canonical byte-parsing datapath lab.
 
+## Actual byte-parsing extension
+
+Save packet_fixture.py and test_packet_fixture.py with network_model.py. Run `python3 packet_fixture.py`, then repeat with `--ttl 1` and `--destination 203.0.113.4`. The default crafted destination 198.51.100.9 selects eth1 with TTL 3; the TTL=1 fixture drops; the changed destination uses the default uplink. Header offsets are relative to the IP layer: TTL is byte 8 there, byte 22 in this untagged Ethernet fixture. Source bytes and SHA-256 accompany each result. Run both public test files: 19 tests pass. The extended README explains checksum validation, unsupported fragments and actual parsing limits. The fixture does not validate a TCP checksum, rewrite a frame or send traffic. Preserve negative results rather than disabling a rejection.
+
 ## Worked example
 
 dst 10.20.40.9 matches /24 better than /16. nh 10.20.30.1 iface eth1. TTL 4→3. Host route /32 wins when present.

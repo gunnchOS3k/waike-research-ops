@@ -1,25 +1,21 @@
-# Week 8: DHCP, DNS, NAT — services that lie for us on purpose
+# Week 8: DHCP, DNS, NAT — configured services and explicit state
 
-DHCP hands out leases so Pier does not keep a paper IP ledger. DNS walks stub → TLD → authoritative, then caches. The lab's second lookup must hit cache. NAT maps 10.20.30.14 to 192.0.2.88 so the library cache on the far side can answer without knowing our inside lot.
+DHCP provides network configuration through a lease process. DNS associates names with resource records. NAT translates selected network address or port information. These are defined mechanisms with lifetimes and policies, not evidence that protocols are deceptive. An address configuration, name answer, successful connection and correct application response support different claims.
 
-Lying is the feature: NAT lies about addresses, DNS lies about 'this name is that number for now,' DHCP lies about 'you may use this for 3600 seconds.' Troubleshooting is asking which liar expired.
+A typical stub resolver asks a recursive resolver. If it has no usable cached answer, that resolver can follow referrals from root to top-level and authoritative servers. This course’s local dictionary model does not implement that exchange. DNS answers are not always one name mapped to one address: record types, aliases, multiple records and policy matter. A TTL limits how long a particular cached positive result can be reused; it does not certify the result or guarantee availability.
 
-NTP, syslog, SNMP appear as a CCNA IP Services chorus. In WAIKE you will timestamp lab JSON and write one syslog line. You will not stand up a full NMS.
-
-A cache that never expires is how a moved printer becomes a ghost. TTL 300 on an A record is a policy. Set it, write it, do not blame 'the Internet.' When Roof moves to a new address at 16:00 and Pier still prints to the old one at 16:10, the liar is the cache, not the cable.
-
-## Concept and scope
-
-DHCP supplies configured network parameters; DNS maps names and record types; NAT translates selected address or port information. These functions are related operationally but a success in one is not proof that the others or the application work.
+DHCP lease expiry and DNS cache expiry are independent state. DHCP renewal occurs before normal lease expiry in a complete client; our arithmetic function omits renewal and network messages. NAT is not a firewall permission grant. A working address translation alone establishes neither authorization nor application health.
 
 ## Guided practice
 
-Build a fictional diagnosis table with columns address configuration, name result, connection result and application response. Include one case where lookup succeeds but the connection fails. Expected interpretation: replacing DNS configuration is not yet justified. Include another case where a private name is absent from a public resolver; identify the intended authorized resolver before taking action.
+Use service_trace.py from the extended packet resource README. The first fictional lookup at model second 0 gets 203.0.113.14 with TTL 300. Change the local authoritative fixture to .15. Expected result: a second lookup at 299 uses cached .14; at 300 the entry expires and the new .15 is retrieved. A zero-TTL answer is not reused. No real DNS queries or private hostnames leave your device.
+
+A separate fictional lease begins at second 100 with duration 3600. At 3699 it is active with one second remaining; at 3700 it is expired. Compare this with the cache timeline rather than assuming both clocks expire together. Run the 19 public packet/model tests and inspect the exact-boundary cases.
 
 ## Independent evidence
 
-Write a five-step troubleshooting procedure that tests one layer at a time. Record which outcomes are simulated. Avoid sending private hostnames or real packet captures to public tools for this exercise.
+Choose or receive changed cache and lease parameters. Predict a hit, exact expiry, zero TTL and lease expiry before running. Create a diagnosis table with address configuration, name result, connection result and application response; include a case where DNS succeeds but the connection fails. Identify the next safe observation without changing a real network. Preserve modeled versus observed outcomes and explain why the local dictionary’s not_in_fixture result is not a measured NXDOMAIN reply. Submit predictions, source/code version, outputs and limitations through the existing authorized assignment; instructor review remains pending.
 
 ## Worked example
 
-First resolve desk.gary.waike.example → 203.0.113.14 via auth_walk. Second → cache. NAT inside 10.20.30.14 outside 192.0.2.88.
+At second 0, cache desk.example=.14 for 300 seconds. A changed fixture authority at .15 does not alter the cached .14 at second299; expiry at300 fetches .15. A lease starting100 with duration3600 expires at3700. These separate local models send no messages.

@@ -6,7 +6,7 @@ Unknown unicasts flood inside the VLAN, not across it. That sentence is the diff
 
 CCNA v1.1 Network Access is the alignment label: VLANs, trunks, STP later. We configure none of that on a real Cisco in this packet. We compute forwarding on a fixture so the idea is testable offline.
 
-A loop without STP is how the Packet Range went dark in a previous cohort: two cables into the same closet, broadcast joy, CPU 100% on the cheap switch. Week 6 returns to that scar.
+Consider a hypothetical layer-2 loop with redundant links and no loop-prevention mechanism. Repeated frames can consume resources. This is an instructional scenario, not evidence of a prior cohort outage or a measured switch CPU load. Week 6 examines the modeled topology.
 
 ## Concept and scope
 

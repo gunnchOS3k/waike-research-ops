@@ -14,11 +14,13 @@ An integrated network claim needs linked evidence: intent, inputs, implementatio
 
 ## Guided practice
 
-Assemble prefix calculations, encapsulation diagram, forwarding cases, ACL traces and a diagnosis record. Run the seven downloadable model tests, preserve the output, then deliberately reverse longest-prefix selection and observe the test failure. Restore and rerun. Expected result: your evidence identifies the controlled defect and the corrected version.
+Assemble prefix calculations, encapsulation diagram, forwarding cases, ACL traces and a diagnosis record. Run all 19 downloadable arithmetic, byte-parser and service-state tests, preserve actual header bytes and outputs, then deliberately reverse longest-prefix selection and observe the test failure. Restore and rerun. Expected result: your evidence identifies the controlled defect and the corrected version.
 
 ## Independent evidence
 
 Submit a claim-to-test table with one unsupported claim explicitly rejected. Keep physical-network observations separate from local calculations. Completion requires the canonical practical artifacts and authorized review; page visits and this worked example are insufficient.
+
+The packet resource’s independent task defines five review criteria and changed-input boundaries. Include byte-to-field mapping, prefix/TTL reasoning, cache/lease timing and a mutation test. Keep any declared canonical lab artifact alongside actual source-bound execution evidence; the original field validators do not themselves prove that the supplied packet bytes were parsed. Public tests and code remain worked examples, and authorized independent review is still required.
 
 ## Worked example
 

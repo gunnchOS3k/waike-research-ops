@@ -15,3 +15,7 @@ python3 scripts/run_course_labs.py --lab lab_datapath --empty
 ```
 
 ttl1_forwarded true, or after_decrement 1, fails the drop check.
+
+## Source-bound practice and limits
+
+The original validator checks declared parse fields against its historical fixture contract; it does not itself consume a submitted Ethernet byte buffer. The new downloadable packet_fixture.py actually creates and parses a separate documentation-address fixture, validates IPv4 header checksum, then passes parsed values to a forwarding model. Keep its source bytes, hash and actual output alongside any historical lab artifact; the two fixture address sets are intentionally distinct. See learner_exercises/packet_model/README.md for exact execution, expected results, independent evidence criteria and troubleshooting. No production network configuration or physical validation is performed.
