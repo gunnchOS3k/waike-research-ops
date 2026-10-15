@@ -1,21 +1,23 @@
 # Week 8: Debug the pipeline — name the broken stage
 
-DL-3822 pipeline failed: ingest→transform→calc→chart. Students name failed_stage, error_code, and fix_action. Guessing 'AI broke it' without a stage fails. Re-run evidence must show stage_rerun_ok true after the fix.
+Debugging starts by distinguishing an input failure from an implementation defect. A schema mismatch, unknown alias or duplicate observation ID can be a correct rejection. An incorrect filter result for a valid input indicates a different problem. Reading the first relevant error and reproducing the smallest failing case is more useful than changing unrelated lines.
 
-This is real tool-debug literacy for data operators.
+A meaningful regression test fails when a real contract violation is introduced and passes after the defect is repaired. Test outputs document behavior of specified cases. They do not prove all possible inputs correct or establish that a learner worked independently.
 
-Pier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.
+## Guided practice
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+Run all 14 public contract tests in an unchanged copy. Expected result: all pass. Then change the SQL comparison from `headcount > ?` to `headcount >= ?`. Rerun the suite. The threshold-equality case must fail because v2=40 is now wrongly selected for the strict predicate. Preserve that failing output. Repair the comparison and rerun; the test should pass again. Do not modify expected values merely to hide the defect.
 
-Commercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.
+Try a second defect in a separate copy: treat an empty headcount as zero. Predict which cleanup, denominator and mean checks should change. Use the named assertion and input row to explain the failure. Restore the reference before continuing.
 
-Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
+## Independent evidence and recovery
 
-Work the numbers for DL-3822 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
+Choose a relevant defect in your independent program, predict a test that detects it, preserve failure and repair output, and explain the root cause. Include a stage diagram: bytes → schema → cleanup → SQL → summaries → export. A file-not-found error usually needs a folder or filename correction, not a new statistical formula. Keep the original source and distinguish data repair from code repair in the journal.
 
-Pier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.
+## Runnable resources
+
+Open the Pier Ledger README in this course’s downloadable learner resources. Save case_data.py, ledger.py and test_ledger.py together. The guide specifies execution, expected results, troubleshooting, independent criteria and return navigation.
 
 ## Worked example
 
-failed_stage=transform; error_code=NULL_HEADCOUNT; fix_action=drop nulls; stage_rerun_ok=true.
+Mutation: change > to >=. At threshold40, v2 must now wrongly appear; the strict-predicate test fails. Restore > and preserve the passing rerun alongside the failure.

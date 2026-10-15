@@ -1,21 +1,23 @@
 # Week 10: Dashboard capstone — ship the ledger path
 
-DL-3A30 closes Pier Ledger Bench: labs_passed ≥6, schema_ok, kpi_ok, chart_ok, pii_ok, freshness_ok true, fabricated_lift false, no_key_leak true. Portfolio claim boundary stays digital-fixture only; REAL_STUDENT_E6 / REAL_TEACHER_E6 remain false.
+The capstone connects the original question to an inspectable chain of evidence. A report should make it possible to identify input bytes, transformations, selected population, formulas, join behavior, time assumptions and remaining limitations. A screenshot of a dashboard or a list of true flags cannot supply that chain by itself.
 
-Do not blend this course into historical mastery score families.
+The course has a new runnable worked example and an independent variation in its Pier Ledger resources. Public tests and reference outputs are practice. The historical capstone validator checks declared fields and broad constraints; “labs_passed ≥6” alone does not independently establish that six laboratories executed or that their evidence belongs to this attempt.
 
-Pier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.
+## Guided practice
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+Reproduce the six-row example, complete the changed-threshold and stale-time runs, and retain the actual source, code version, JSON reports and test output. Build a text-first reader explanation with an accessible chart and equivalent table. Expected result: another person can trace the reported mean of 50 to four retained observations and understand both excluded rows. State that all data is fictional and no operational benefit or learner mastery was measured.
 
-Commercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.
+## Independent project and assessment
 
-Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
+Use an instructor-issued seed and build your own analysis as specified in the resource guide. Deliver source bytes, source hash, code, predicted values, tests, failure-and-repair history, chart/table, privacy review and assistance disclosure. Demonstrate changed inputs in front of a reviewer where feasible. Review criteria cover source integrity, correct arithmetic and filtering, joins/time/privacy, meaningful tests, and explanation. No criterion is automatically mastered from submission or green tests.
 
-Work the numbers for DL-3A30 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
+Use the existing authorized WAIKE assignment and portfolio workflow when available; the local example does not create records or grades. Keep human review pending, revise unmet criteria, and retain earlier attempts. This project supports a learning judgment, not a credential, employment guarantee or permission to process private institutional data.
 
-Pier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.
+## Runnable resources
+
+Open the Pier Ledger README in this course’s downloadable learner resources. Save case_data.py, ledger.py and test_ledger.py together. The guide specifies execution, expected results, troubleshooting, independent criteria and return navigation.
 
 ## Worked example
 
-labs_passed≥6; honesty flags true; fabricated_lift false; no_key_leak true.
+Portfolio chain: original fictional CSV → byte hash → validated rows/rejections → actual SQL → derived metrics → accessible table/chart → explicit limitations → authorized review pending.

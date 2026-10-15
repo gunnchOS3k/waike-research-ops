@@ -21,7 +21,7 @@ def test_all_tracks_full_lessons_no_private_keys():
         assert not any('/instructor/' in x['path'] for key in ('lessons','quizzes','assignments','labs','references','portfolio','resources') for x in track[key])
     assert '"answer_index"' not in json.dumps(bundle)
 
-@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC","CYBERSECURITY"])
+@pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC","CYBERSECURITY","DATA_DASHBOARDS"])
 def test_lesson_rendering_matches_authoring_source(package):
     folder=ROOT/"curriculum/digital_rc"/package
     course=json.loads((folder/'course.json').read_text())
@@ -50,3 +50,14 @@ def test_export_rejects_deliberately_changed_manifest(monkeypatch):
     monkeypatch.setattr(Path,'read_text',altered)
     with pytest.raises(ValueError,match='binding mismatch'):
         module.build()
+
+
+def test_data_pipeline_is_downloadable_and_preserves_human_review():
+    track=next(t for t in module.build()['tracks'] if t['trackId']=='DATA_DASHBOARDS')
+    assert {Path(r['path']).name for r in track['resources']}=={'README.md','case_data.py','ledger.py','test_ledger.py'}
+    assert all('pier_ledger' in r['path'] for r in track['resources'])
+    assert all('## Guided practice' in lesson['markdown'] for lesson in track['lessons'])
+    assert all('## Independent' in lesson['markdown'] for lesson in track['lessons'])
+    code=next(r['markdown'] for r in track['resources'] if r['id']=='ledger')
+    assert "'competency_demonstrated': False" in code
+    assert "'instructor_review': 'pending'" in code

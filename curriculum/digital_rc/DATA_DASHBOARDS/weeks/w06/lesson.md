@@ -1,23 +1,23 @@
 # Week 6: Join integrity — keys that match
 
-DL-3615 joins pier_visits to pier_meta on pier_bay. Orphan visit rows and duplicate meta keys fail. join_type must be inner or left with orphan_count reported honestly.
+A join combines records using a key, but matching keys alone do not guarantee the intended cardinality. Each cleaned observation belongs to one bay. The metadata table must have at most one row per bay for this many-observations-to-one-label relationship. Duplicate metadata keys would multiply joined observations and can inflate aggregates.
 
-A dashboard that silently drops orphans without saying so fails the honesty gate.
+An inner join retains only matching observations. A left join retains every observation and supplies NULL for missing metadata. Choosing an inner join without counting unmatched rows can hide data loss. The worked example uses a left join to identify orphans separately and reports the number an inner join would retain.
 
-Pier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.
+## Guided practice
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+The default metadata includes bay_a and bay_b. Expected result: inner_rows=4 and orphan_ids is empty. In a copy of ledger.py remove bay_b from DEFAULT_META, then create a new report. Expected result: inner_rows=3 and orphan_ids contains v4. The overall source report still has four cleaned observations: the join audit exposes the unmatched row instead of erasing it.
 
-Commercial 'AI dashboard magic' claims fail the claim boundary even when arithmetic is correct.
+Add a duplicate bay_a metadata row in a separate copy. Expected result: a clear duplicate-metadata rejection before SQL insertion. The rule prevents an accidental fan-out; it does not resolve which real-world record would be authoritative. Restore the original file and rerun the contract tests.
 
-Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
+## Independent evidence and recovery
 
-Work the numbers for DL-3615 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
+Define the intended join relationship for the issued case. Include a missing key, a duplicate key and a fully matched example. Predict row counts before execution and show the actual differences. Investigate the source and metadata before modifying either; never delete an orphan solely to pass a check. Preserve the original tables, chosen policy and output for reviewer inspection. The historical lab's declared orphan count is not itself a re-execution of the join.
 
-Pier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.
+## Runnable resources
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+Open the Pier Ledger README in this course’s downloadable learner resources. Save case_data.py, ledger.py and test_ledger.py together. The guide specifies execution, expected results, troubleshooting, independent criteria and return navigation.
 
 ## Worked example
 
-inner join on pier_bay; orphan_count=0 on fixture; duplicate_meta_keys=false.
+With both metadata keys, inner_rows=4 and no orphans. Remove bay_b: inner_rows=3 and orphan_ids=[v4]. A duplicate bay_a key is rejected before it can multiply rows.
