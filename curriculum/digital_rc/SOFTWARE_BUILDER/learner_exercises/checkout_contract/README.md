@@ -1,5 +1,7 @@
 # Checkout contract worked example
 
+New to programming? Start with the downloadable **Your first program** guide and its `capacity.py` / `test_capacity.py` files, then return here.
+
 Prerequisites: Python 3.11+ on a computer you control, a text editor and ability to open a terminal in a folder. Uses Python's standard library only. No network service, packages, accounts or real library data are needed.
 
 Download `checkout.py` and `test_checkout.py` into the same empty folder. From that folder run:

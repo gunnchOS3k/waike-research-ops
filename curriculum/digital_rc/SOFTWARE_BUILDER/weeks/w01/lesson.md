@@ -20,6 +20,10 @@ Document both original requirements, the final decision and a test that would de
 
 If a result differs, preserve the failing output and the exact file revision. Change one assumption at a time, rerun the relevant check, and explain what the new evidence supports. Do not mark an unperformed step complete.
 
+## First-programming bridge
+
+If variables, functions or tests are new, open **Your first program** in the reader’s downloadable worked examples before attempting the infrastructure lab. Save `capacity.py` and `test_capacity.py` with its README in one folder. The guide teaches assignment versus comparison, numeric types, branches, return values, exceptions and boundary tests through the Digital Confidence capacity case. It includes a separate workload-planning challenge with a reviewer rubric. A checked fixture does not establish independent programming competence. Return here to specify a requirement and observable acceptance criteria for your own function.
+
 ## Worked example
 
 Parents A and B both touch def open_hours. A adds require_role('desk'). B adds HOURS={...}. Survivor must include both tokens.
