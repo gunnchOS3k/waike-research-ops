@@ -344,14 +344,24 @@ def lab_cidr_math(fixture: Any = None, submission: Any = None) -> LabResult:
             return _result("lab_cidr_math", "COMPUTER_NETWORKING", pre, "IPv4 arithmetic. Not a Cisco simulator.")
         cases = data["cases"]
     checks = list(pre)
-    for c in cases:
-        net = ipaddress.IPv4Network(c["cidr"], strict=False)
-        usable = int(net.num_addresses) - 2 if net.prefixlen <= 30 else 0
-        if net.prefixlen == 31:
-            usable = 2
+    if not isinstance(cases, list) or not cases or len(cases) > 64:
+        checks.append(_check("cases_present", False, "Supply 1–64 IPv4 arithmetic cases"))
+        return _result("lab_cidr_math", "COMPUTER_NETWORKING", checks, "IPv4 arithmetic. Not a Cisco simulator.")
+    for index, c in enumerate(cases):
+        if not isinstance(c, dict) or not isinstance(c.get("cidr"), str):
+            checks.append(_check(f"case_{index}_shape", False, "A case must contain a string IPv4 prefix"))
+            continue
+        try:
+            net = ipaddress.IPv4Network(c["cidr"], strict=False)
+        except (ValueError, TypeError):
+            checks.append(_check(f"case_{index}_prefix", False, "Invalid IPv4 prefix"))
+            continue
+        # Ordinary multi-access subnets reserve network/broadcast. RFC 4632's
+        # host-route /32 contains one address; /31 uses the p2p convention.
+        usable = int(net.num_addresses) - 2 if net.prefixlen <= 30 else int(net.num_addresses)
         checks.append(_check(f"{c['cidr']}_net", str(net.network_address) == c.get("network"), str(net.network_address)))
         checks.append(_check(f"{c['cidr']}_bcast", str(net.broadcast_address) == c.get("broadcast"), str(net.broadcast_address)))
-        checks.append(_check(f"{c['cidr']}_usable", usable == c.get("usable"), f"usable={usable}"))
+        checks.append(_check(f"{c['cidr']}_usable", type(c.get("usable")) is int and usable == c.get("usable"), f"usable={usable}"))
     return _result("lab_cidr_math", "COMPUTER_NETWORKING", checks, "IPv4 arithmetic. Not a Cisco simulator.")
 
 

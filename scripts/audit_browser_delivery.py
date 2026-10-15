@@ -40,7 +40,7 @@ lines+=['','Counts are delivery evidence only. ASSESSED is false even where soft
         '## Known specific gaps','',
         '- GENERAL_IT: ten lessons expanded; full archive restore, account, service, ticket and change evidence still need learner execution and review. Historical packets/offline bundles must be regenerated before release.',
         '- SOFTWARE_BUILDER: a six-test downloadable example and ten expanded lessons; an actual first-programming prerequisite path and full infrastructure practicals remain distinct requirements.',
-        '- NETWORKING_INFRA: ten expanded lessons and seven-test local model; canonical /32 host-count behavior needs reconciliation (the current local lab reports zero). Packet parsing and physical-network validation are separate.',
+        '- NETWORKING_INFRA: ten expanded lessons and seven-test local model; canonical /32 host counting and malformed/empty evidence rejection are corrected and regression-tested. Packet parsing and physical-network validation are separate.',
         '- CYBER_SOC: ten expanded lessons and seven-test local model; actual protected evidence intake, case assessment and authorized operations remain required.',
         '- Other tracks: authored weekly files are readable and quiz practice runs; every minimum-course standard still requires substantive inspection. No blanket FULLY_AUTHORED flag is asserted.',
         '- All tracks: final assessment validity, human educational acceptance, learner pilots, accessibility beyond automated checks, and owner release approval remain open.', '']

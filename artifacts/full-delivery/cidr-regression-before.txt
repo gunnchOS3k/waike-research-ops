@@ -1,0 +1,190 @@
+...FFFFFFFF.                                                             [100%]
+=================================== FAILURES ===================================
+________ test_correct_independently_supplied_arithmetic[192.0.2.1/32-1] ________
+
+cidr = '192.0.2.1/32', usable = 1
+
+    @pytest.mark.parametrize('cidr,usable',[('192.0.2.70/26',62),('192.0.2.5/30',2),('192.0.2.0/31',2),('192.0.2.1/32',1)])
+    def test_correct_independently_supplied_arithmetic(cidr,usable):
+>       assert lab_cidr_math(submission={'cases':[case(cidr,usable)]}).ok
+E       AssertionError: assert False
+E        +  where False = LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=False, checks=[{'name': 'student_artifact', 'ok'...: '192.0.2.1/32_usable', 'ok': False, 'detail': 'usable=0'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.').ok
+E        +    where LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=False, checks=[{'name': 'student_artifact', 'ok'...: '192.0.2.1/32_usable', 'ok': False, 'detail': 'usable=0'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.') = lab_cidr_math(submission={'cases': [{'cidr': '192.0.2.1/32', 'network': '192.0.2.1', 'broadcast': '192.0.2.1', 'usable': 1}]})
+
+tests/test_cidr_student_evidence.py:15: AssertionError
+_____________________ test_zero_is_wrong_for_a_host_route ______________________
+
+    def test_zero_is_wrong_for_a_host_route():
+>       assert not lab_cidr_math(submission={'cases':[case('192.0.2.1/32',0)]}).ok
+E       AssertionError: assert not True
+E        +  where True = LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...': '192.0.2.1/32_usable', 'ok': True, 'detail': 'usable=0'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.').ok
+E        +    where LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...': '192.0.2.1/32_usable', 'ok': True, 'detail': 'usable=0'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.') = lab_cidr_math(submission={'cases': [{'cidr': '192.0.2.1/32', 'network': '192.0.2.1', 'broadcast': '192.0.2.1', 'usable': 0}]})
+
+tests/test_cidr_student_evidence.py:18: AssertionError
+_____ test_missing_malformed_or_non_numeric_evidence_never_passes[cases0] ______
+
+cases = []
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+E       AssertionError: assert not True
+E        +  where True = LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...}, {'name': 'required_keys', 'ok': True, 'detail': 'cases'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.').ok
+E        +    where LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...}, {'name': 'required_keys', 'ok': True, 'detail': 'cases'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.') = lab_cidr_math(submission={'cases': []})
+
+tests/test_cidr_student_evidence.py:22: AssertionError
+______ test_missing_malformed_or_non_numeric_evidence_never_passes[None] _______
+
+cases = None
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cidr_student_evidence.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fixture = None, submission = {'cases': None}
+
+    def lab_cidr_math(fixture: Any = None, submission: Any = None) -> LabResult:
+        cases = fixture
+        pre: list[dict[str, Any]] = []
+        if cases is None:
+            data, pre = _require_student("lab_cidr_math", "COMPUTER_NETWORKING", submission, ["cases"], "")
+            if data is None:
+                return _result("lab_cidr_math", "COMPUTER_NETWORKING", pre, "IPv4 arithmetic. Not a Cisco simulator.")
+            cases = data["cases"]
+        checks = list(pre)
+>       for c in cases:
+                 ^^^^^
+E       TypeError: 'NoneType' object is not iterable
+
+src/waike_course_ready/labs.py:347: TypeError
+_____ test_missing_malformed_or_non_numeric_evidence_never_passes[cases2] ______
+
+cases = {}
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+E       AssertionError: assert not True
+E        +  where True = LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...}, {'name': 'required_keys', 'ok': True, 'detail': 'cases'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.').ok
+E        +    where LabResult(lab_id='lab_cidr_math', course_id='COMPUTER_NETWORKING', ok=True, checks=[{'name': 'student_artifact', 'ok':...}, {'name': 'required_keys', 'ok': True, 'detail': 'cases'}], claim_boundary='IPv4 arithmetic. Not a Cisco simulator.') = lab_cidr_math(submission={'cases': {}})
+
+tests/test_cidr_student_evidence.py:22: AssertionError
+______ test_missing_malformed_or_non_numeric_evidence_never_passes[PASS] _______
+
+cases = 'PASS'
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cidr_student_evidence.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fixture = None, submission = {'cases': 'PASS'}
+
+    def lab_cidr_math(fixture: Any = None, submission: Any = None) -> LabResult:
+        cases = fixture
+        pre: list[dict[str, Any]] = []
+        if cases is None:
+            data, pre = _require_student("lab_cidr_math", "COMPUTER_NETWORKING", submission, ["cases"], "")
+            if data is None:
+                return _result("lab_cidr_math", "COMPUTER_NETWORKING", pre, "IPv4 arithmetic. Not a Cisco simulator.")
+            cases = data["cases"]
+        checks = list(pre)
+        for c in cases:
+>           net = ipaddress.IPv4Network(c["cidr"], strict=False)
+                                        ^^^^^^^^^
+E           TypeError: string indices must be integers, not 'str'
+
+src/waike_course_ready/labs.py:348: TypeError
+_____ test_missing_malformed_or_non_numeric_evidence_never_passes[cases4] ______
+
+cases = [{}]
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cidr_student_evidence.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fixture = None, submission = {'cases': [{}]}
+
+    def lab_cidr_math(fixture: Any = None, submission: Any = None) -> LabResult:
+        cases = fixture
+        pre: list[dict[str, Any]] = []
+        if cases is None:
+            data, pre = _require_student("lab_cidr_math", "COMPUTER_NETWORKING", submission, ["cases"], "")
+            if data is None:
+                return _result("lab_cidr_math", "COMPUTER_NETWORKING", pre, "IPv4 arithmetic. Not a Cisco simulator.")
+            cases = data["cases"]
+        checks = list(pre)
+        for c in cases:
+>           net = ipaddress.IPv4Network(c["cidr"], strict=False)
+                                        ^^^^^^^^^
+E           KeyError: 'cidr'
+
+src/waike_course_ready/labs.py:348: KeyError
+_____ test_missing_malformed_or_non_numeric_evidence_never_passes[cases5] ______
+
+cases = [{'cidr': 'not-a-prefix'}]
+
+    @pytest.mark.parametrize('cases',[[],None,{},'PASS',[{}],[{'cidr':'not-a-prefix'}],[case('192.0.2.1/32',True)]])
+    def test_missing_malformed_or_non_numeric_evidence_never_passes(cases):
+>       assert not lab_cidr_math(submission={'cases':cases}).ok
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cidr_student_evidence.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/waike_course_ready/labs.py:348: in lab_cidr_math
+    net = ipaddress.IPv4Network(c["cidr"], strict=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ipaddress.py:1535: in __init__
+    self.network_address = IPv4Address(addr)
+                           ^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ipaddress.py:1305: in __init__
+    self._ip = self._ip_int_from_string(addr_str)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'ipaddress.IPv4Address'>, ip_str = 'not-a-prefix'
+
+    @classmethod
+    def _ip_int_from_string(cls, ip_str):
+        """Turn the given IP string into an integer for comparison.
+    
+        Args:
+            ip_str: A string, the IP ip_str.
+    
+        Returns:
+            The IP ip_str as an integer.
+    
+        Raises:
+            AddressValueError: if ip_str isn't a valid IPv4 Address.
+    
+        """
+        if not ip_str:
+            raise AddressValueError('Address cannot be empty')
+    
+        octets = ip_str.split('.')
+        if len(octets) != 4:
+>           raise AddressValueError("Expected 4 octets in %r" % ip_str)
+E           ipaddress.AddressValueError: Expected 4 octets in 'not-a-prefix'
+
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ipaddress.py:1201: AddressValueError
+=========================== short test summary info ============================
+FAILED tests/test_cidr_student_evidence.py::test_correct_independently_supplied_arithmetic[192.0.2.1/32-1]
+FAILED tests/test_cidr_student_evidence.py::test_zero_is_wrong_for_a_host_route
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[cases0]
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[None]
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[cases2]
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[PASS]
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[cases4]
+FAILED tests/test_cidr_student_evidence.py::test_missing_malformed_or_non_numeric_evidence_never_passes[cases5]
+8 failed, 4 passed in 0.18s
