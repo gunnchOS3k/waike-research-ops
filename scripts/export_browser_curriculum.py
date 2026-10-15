@@ -12,6 +12,11 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 
+def verify_binding(root, track, package):
+    bindings=json.loads((root/'curriculum/canonical_packages/SOURCE_BINDINGS.json').read_text())['bindings']
+    if bindings.get(track)!=package:
+        raise ValueError(f'Canonical source binding mismatch: {track} -> {package}')
+
 def build(root=ROOT):
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
     tracks = json.loads((root/'curriculum/taxonomy/eighteen_tracks.json').read_text())['tracks']
@@ -22,6 +27,7 @@ def build(root=ROOT):
                     path=path.relative_to(root).as_posix(), sha256=hashlib.sha256(text.encode()).hexdigest(), markdown=text)
     for t in tracks:
         manifest = json.loads((root/f"curriculum/canonical_packages/{t['track_id']}/PACKAGE_MANIFEST.v1.json").read_text())
+        verify_binding(root,t['track_id'],manifest['package_dir'])
         folder = root/'curriculum/digital_rc'/manifest['package_dir']
         course = json.loads((folder/'course.json').read_text())
         lessons, quizzes, assignments = [], [], []

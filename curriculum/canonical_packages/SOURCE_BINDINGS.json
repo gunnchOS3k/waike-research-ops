@@ -1,0 +1,24 @@
+{
+  "schema": "waike.source-bindings.v1",
+  "policy": "Review changes to these canonical pointers together with manifests. Legacy track-named directories are historical snapshots, not browser authoring sources.",
+  "bindings": {
+    "SOFTWARE_BUILDER": "SOFTWARE_BUILDER",
+    "PM_AGILE_LSS": "PM_AGILE_LSS",
+    "NETWORKING_INFRA": "COMPUTER_NETWORKING",
+    "GAME_DEV_INTERACTIVE": "GAME_DEV_INTERACTIVE",
+    "AI_ML_EDGE": "AI_ML_EDGE",
+    "IT_SUPPORT_HARDWARE": "GENERAL_IT",
+    "COMM_PD_ETHICS": "COMM_PD_ETHICS",
+    "WIRELESS_6G": "WIRELESS_6G",
+    "DATA_DASHBOARDS": "DATA_DASHBOARDS",
+    "GUNNCHOS_PRODUCT_LAB": "GUNNCHOS_PRODUCT_LAB",
+    "EMBEDDED_PROTOTYPING": "EMBEDDED_PROTOTYPING",
+    "DATA_VIZ_BI": "DATA_VIZ_BI",
+    "CLOUD_DEVOPS": "CLOUD_DEVOPS",
+    "HARDWARE_ENGINEERING": "HARDWARE_ENGINEERING",
+    "SEVEN_GC_APPRENTICESHIP": "SEVEN_GC_APPRENTICESHIP",
+    "ROBOTICS_CONTROL": "ROBOTICS_CONTROL",
+    "CYBER_SOC": "CYBERSECURITY",
+    "DIGITAL_CONFIDENCE": "GENERAL_IT"
+  }
+}

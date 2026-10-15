@@ -29,3 +29,11 @@ def test_lesson_rendering_matches_authoring_source(package):
         expected=f"# Week {w['week']}: {w['title']}\n\n{w['lesson']['body_md']}\n\n## Worked example\n\n{w['lesson']['worked_example']}\n"
         assert (folder/f"weeks/w{w['week']:02d}/lesson.md").read_text()==expected
         assert 'Expected result' in expected or 'Expected interpretation' in expected
+
+def test_manifest_source_binding_rejects_legacy_directory():
+    module.verify_binding(ROOT,'CYBER_SOC','CYBERSECURITY')
+    with pytest.raises(ValueError,match='binding mismatch'):
+        module.verify_binding(ROOT,'CYBER_SOC','CYBER_SOC')
+    track=next(t for t in module.build()['tracks'] if t['trackId']=='CYBER_SOC')
+    assert all('/CYBERSECURITY/' in l['path'] and '## Guided practice' in l['markdown'] for l in track['lessons'])
+    assert len(track['resources'])==3
