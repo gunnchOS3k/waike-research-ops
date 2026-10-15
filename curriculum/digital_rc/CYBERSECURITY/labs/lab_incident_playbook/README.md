@@ -15,3 +15,7 @@ python3 scripts/run_course_labs.py --lab lab_incident_playbook --empty
 ```
 
 Putting eradicate first fails contain_before_wipe.
+
+## Historical fixture versus current guidance
+
+The original fixed ordering contract remains unchanged for reproducible classroom practice. Current background is NIST SP 800-61 Rev. 3 (April 2025), which supersedes Rev. 2: https://csrc.nist.gov/pubs/sp/800/61/r3/final . Passing this simplified ordering check does not demonstrate conformity to the current guidance or the ability to conduct a real incident response. Keep any simulated action distinct from an authorized performed action.

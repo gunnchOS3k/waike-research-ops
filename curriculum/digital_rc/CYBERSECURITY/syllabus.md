@@ -23,7 +23,7 @@ Ten Harbor SOC weeks. Week 8 is the only vulnerability lab and it stays on the l
 - Week 10: Harbor capstone — evidence locker design then operate
 
 ## Assessments
-Harbor SOC assessment mix: weekly ops quizzes, a mid-course on upcoming ISC2 CC 2026-09-01 domains in WAIKE words (20 original items), a final on hardening/IR/toy-parser/forensics (24 original items), a practical over seven fixture labs that reject empty submissions, and an evidence-locker design checkpoint before the policy checker. Burst notes that say 'attacker' fail. Scanning hosts you do not own fails the course, not just the lab.
+Harbor SOC assessment mix: weekly ops quizzes, a mid-course on ISC2 CC domains effective 2026-09-01 in WAIKE words (20 original items), a final on hardening/IR/toy-parser/forensics (24 original items), a practical over seven fixture labs that reject empty submissions, and an evidence-locker design checkpoint before the policy checker. Burst notes that say 'attacker' fail. Scanning hosts you do not own fails the course, not just the lab.
 
 ## Claim boundary
 Prefers ISC2 CC outline effective 2026-09-01; dual-maps current CC and Security+ SY0-701; cites CS161 project-depth pattern only. No item harvests. Instructor keys stay out of the learner packet.

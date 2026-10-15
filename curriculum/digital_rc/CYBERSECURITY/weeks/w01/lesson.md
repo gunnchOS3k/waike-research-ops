@@ -1,6 +1,6 @@
 # Week 1: Harbor SOC — principles, governance, and the model that is also an asset
 
-Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The 2026-09-01 ISC2 CC outline renames the second domain toward governance and threads AI through all five. We prefer that upcoming outline. We do not copy ISC2 items.
+Harbor SOC is a classroom security operations center for WAIKE. Confidentiality, integrity, and availability still run the place. The ISC2 CC outline effective September 1, 2026 is the current study-alignment reference for this October 2026 edition. Its domains include Security Governance and Security Operations and Incident Response. This is WAIKE-authored instruction, not ISC2 exam content or certification.
 
 Integrity for an AI helper means the training set and prompts are not a suggestion box for poisoning. If a bot summarizes tickets, a poisoned note can become a 'fact' in the next shift's head. Confidentiality means the model does not get raw patron essays. Availability means a model outage is a degraded SOC, not an excuse to skip containment.
 
@@ -19,6 +19,10 @@ List fictional assets for Harbor SOC: redacted event records, analyst accounts, 
 ## Independent evidence
 
 Choose a control, describe how to test it without sensitive information and state the residual risk. Mark the Harbor scenario as fictional; do not imply a deployed SOC or measured protection.
+
+## Versioned primary references
+
+ISC2 CC current outline (effective September 1, 2026): https://www.isc2.org/certifications/cc/cc-certification-exam-outline . NIST SP 800-61 Rev. 3 publication and supersession record: https://csrc.nist.gov/pubs/sp/800/61/r3/final . Checked October 15, 2026. These references identify current source versions; assessment-validity and professional-readiness judgments remain separate.
 
 ## Worked example
 

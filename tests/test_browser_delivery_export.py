@@ -24,7 +24,10 @@ def test_all_tracks_full_lessons_no_private_keys():
 @pytest.mark.parametrize("package", ["GENERAL_IT","SOFTWARE_BUILDER","COMPUTER_NETWORKING","CYBER_SOC","CYBERSECURITY","DATA_DASHBOARDS"])
 def test_lesson_rendering_matches_authoring_source(package):
     folder=ROOT/"curriculum/digital_rc"/package
-    course=json.loads((folder/'course.json').read_text())
+    # Legacy CYBER_SOC/weeks is an existing symlink into canonical CYBERSECURITY.
+    # Its historical course.json is a snapshot, not the active authoring source.
+    authoring_folder=(folder/'weeks').resolve().parent
+    course=json.loads((authoring_folder/'course.json').read_text())
     for w in course['weeks']:
         expected=f"# Week {w['week']}: {w['title']}\n\n{w['lesson']['body_md']}\n\n## Worked example\n\n{w['lesson']['worked_example']}\n"
         assert (folder/f"weeks/w{w['week']:02d}/lesson.md").read_text()==expected
@@ -61,3 +64,17 @@ def test_data_pipeline_is_downloadable_and_preserves_human_review():
     code=next(r['markdown'] for r in track['resources'] if r['id']=='ledger')
     assert "'competency_demonstrated': False" in code
     assert "'instructor_review': 'pending'" in code
+
+
+def test_cyber_current_standards_are_dated_and_historical_fixture_is_explicit():
+    track=next(t for t in module.build()['tracks'] if t['trackId']=='CYBER_SOC')
+    assert all('/CYBERSECURITY/' in l['path'] for l in track['lessons'])
+    first=track['lessons'][0]['markdown']; incident=track['lessons'][6]['markdown']
+    assert 'effective September 1, 2026' in first and 'upcoming outline' not in first
+    assert 'https://www.isc2.org/certifications/cc/cc-certification-exam-outline' in first
+    assert 'Rev. 3' in incident and 'supersedes Rev. 2' in incident
+    assert 'https://csrc.nist.gov/pubs/sp/800/61/r3/final' in incident
+    assert 'not a claim that Rev. 3 mandates one universal linear sequence' in incident
+    assert not any('upcoming CC' in l['markdown'] or 'CC upcoming' in l['markdown'] for l in track['lessons'])
+    references=next(r['markdown'] for r in track['references'] if r['id']=='references')
+    assert 'Rev. 3' in references and 'historical' in references

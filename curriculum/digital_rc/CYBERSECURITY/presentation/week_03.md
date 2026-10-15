@@ -4,7 +4,7 @@
 matrix[(kiosk,soc)]=deny; [(soc,kiosk)]=allow_syslog_only; [(guest,staff)]=deny.
 
 ## Slide 2 — Teaching beat
-Networking and cloud security on the upcoming CC outline is not a vendor catalog. Harbor uses three zones: kiosk, staff, soc. Kiosk to SOC is deny. SOC to kiosk is allow_syslog_only. Guest to staff is deny. Shared responsibility in cloud language means: if we used a SaaS ticketing tool, they patch the app, we still classify data.
+Networking and cloud security on the ISC2 CC outline effective September 1, 2026 is not a vendor catalog. Harbor uses three zones: kiosk, staff, soc. Kiosk to SOC is deny. SOC to kiosk is allow_syslog_only. Guest to staff is deny. Shared responsibility in cloud language means: if we used a SaaS ticketing tool, they patch the app, we still classify data.
 
 ## Slide 3 — Live work
 Write the Harbor note on the board: 'burst on ada' vs 'ada is the attacker'. Only the first passes.
