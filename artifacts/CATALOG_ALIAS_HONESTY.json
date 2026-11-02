@@ -1,0 +1,45 @@
+{
+  "schema": "waike_catalog_alias_honesty_v1",
+  "prepared_at": "2026-11-02T02:05:00Z",
+  "floor_tip": "5a18707",
+  "published_tip": "ef0b975",
+  "full_18_course_digital_rc": false,
+  "HUMAN": false,
+  "RC2": false,
+  "V1": false,
+  "instructional_completeness_claimed": false,
+  "note": "Catalog alias rows map alternate taxonomy IDs onto existing COURSE_DIGITAL_RC keys. Aliasing ≠ inventing a true digital-RC course or flipping full_18.",
+  "aliases": [
+    {
+      "catalog_track_id": "DIGITAL_CONFIDENCE",
+      "maps_to_course_digital_rc_key": "GENERAL_IT",
+      "invent_course_digital_rc_true": false
+    },
+    {
+      "catalog_track_id": "IT_SUPPORT_HARDWARE",
+      "maps_to_course_digital_rc_key": "HARDWARE_ENGINEERING",
+      "invent_course_digital_rc_true": false
+    },
+    {
+      "catalog_track_id": "NETWORKING_INFRA",
+      "maps_to_course_digital_rc_key": "COMPUTER_NETWORKING",
+      "invent_course_digital_rc_true": false
+    },
+    {
+      "catalog_track_id": "CYBER_SOC",
+      "maps_to_course_digital_rc_key": "CYBERSECURITY",
+      "invent_course_digital_rc_true": false
+    }
+  ],
+  "residuals_not_aliased_to_true": [
+    "EMBEDDED_PROTOTYPING",
+    "GUNNCHOS_PRODUCT_LAB",
+    "SEVEN_GC_APPRENTICESHIP"
+  ],
+  "gates": {
+    "FULL_18_FALSE_HONEST": true,
+    "CATALOG_ALIAS_NEQ_INVENTED_TRUE": true,
+    "NO_INVENTED_DIGITAL_RC_TRUE": true,
+    "HUMAN_CURRICULUM_ACCEPTANCE": false
+  }
+}

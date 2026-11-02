@@ -67,6 +67,29 @@ def test_honesty_stamp_lists_known_non_true_ids():
     )
 
 
+def test_catalog_alias_honesty_does_not_invent_true_or_flip_full_18():
+    alias = _load(ROOT / "artifacts" / "CATALOG_ALIAS_HONESTY.json")
+    residual = _load(ROOT / "artifacts" / "FULL_18_RESIDUAL_HONESTY.json")
+    rc = _load(COURSE_RC)
+
+    assert alias["full_18_course_digital_rc"] is False
+    assert alias["HUMAN"] is False
+    assert alias["RC2"] is False
+    assert alias["V1"] is False
+    assert alias["instructional_completeness_claimed"] is False
+    assert alias["gates"]["FULL_18_FALSE_HONEST"] is True
+    assert alias["gates"]["CATALOG_ALIAS_NEQ_INVENTED_TRUE"] is True
+    assert alias["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
+    for row in alias["aliases"]:
+        assert row["invent_course_digital_rc_true"] is False
+        assert row["maps_to_course_digital_rc_key"] in rc["courses"]
+    assert sorted(alias["residuals_not_aliased_to_true"]) == sorted(
+        residual["course_digital_rc_not_true_ids"]
+        if "course_digital_rc_not_true_ids" in residual
+        else [r["id"] for r in residual["residuals"]]
+    )
+
+
 def test_full_18_residual_honesty_does_not_invent_true_flags():
     residual_path = ROOT / "artifacts" / "FULL_18_RESIDUAL_HONESTY.json"
     residual = _load(residual_path)
