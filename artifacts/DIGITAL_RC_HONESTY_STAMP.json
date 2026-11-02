@@ -1,0 +1,39 @@
+{
+  "schema": "waike_digital_rc_honesty_stamp_v1",
+  "prepared_at": "2026-11-02T00:50:00Z",
+  "source_artifact": "artifacts/COURSE_DIGITAL_RC.json",
+  "companion_ledger": "artifacts/PATHWAY_DISK_VS_CATALOG_LEDGER.json",
+  "HUMAN": false,
+  "RC2": false,
+  "V1": false,
+  "HUMAN_E6": false,
+  "REAL_STUDENT_E6": false,
+  "REAL_TEACHER_E6": false,
+  "full_18_course_digital_rc": false,
+  "course_digital_rc_true_count": 14,
+  "course_digital_rc_true_ids": [
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_DASHBOARDS",
+    "DATA_VIZ_BI",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G"
+  ],
+  "course_digital_rc_not_true_ids": [
+    "EMBEDDED_PROTOTYPING",
+    "GUNNCHOS_PRODUCT_LAB",
+    "SEVEN_GC_APPRENTICESHIP"
+  ],
+  "catalog_vs_true_gap_count": 4,
+  "catalog_vs_true_gap_note": "18 catalog track IDs minus 14 COURSE_DIGITAL_RC keys leaves a gap of 4; three are named above (2 on-disk dirs awaiting RC keys + 1 catalog-only). Remaining gap is catalog-id aliasing (e.g. DIGITAL_CONFIDENCE/NETWORKING_INFRA/CYBER_SOC/IT_SUPPORT_HARDWARE vs GENERAL_IT/COMPUTER_NETWORKING/CYBERSECURITY/HARDWARE_ENGINEERING) and must not be invented as new digital-RC courses.",
+  "instructional_completeness_claimed": false,
+  "note": "Companion honesty stamp only. Does not invent missing digital-RC courses or flip HUMAN/RC2/V1. Dir presence ≠ instructional completeness."
+}
