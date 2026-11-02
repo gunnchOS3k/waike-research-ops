@@ -1,0 +1,36 @@
+{
+  "schema": "waike_full_18_residual_honesty_v1",
+  "prepared_at": "2026-11-02T01:10:00Z",
+  "floor_tip": "5a18707",
+  "full_18_course_digital_rc": false,
+  "HUMAN": false,
+  "RC2": false,
+  "V1": false,
+  "HUMAN_E6": false,
+  "instructional_completeness_claimed": false,
+  "residuals": [
+    {
+      "id": "EMBEDDED_PROTOTYPING",
+      "kind": "dir_present_without_course_digital_rc_key",
+      "invent_course_digital_rc_true": false,
+      "note": "On-disk curriculum package exists; COURSE_DIGITAL_RC.json does not yet key it true. Do not invent a true flag."
+    },
+    {
+      "id": "GUNNCHOS_PRODUCT_LAB",
+      "kind": "dir_present_without_course_digital_rc_key",
+      "invent_course_digital_rc_true": false,
+      "note": "On-disk curriculum package exists; COURSE_DIGITAL_RC.json does not yet key it true. Do not invent a true flag."
+    },
+    {
+      "id": "SEVEN_GC_APPRENTICESHIP",
+      "kind": "catalog_only_no_digital_rc_dir",
+      "invent_course_digital_rc_true": false,
+      "note": "Catalog track only — no digital_rc dir. Research overlay status stays HUMAN_PENDING; do not invent a 19th course or flip full_18."
+    }
+  ],
+  "gates": {
+    "FULL_18_FALSE_HONEST": true,
+    "NO_INVENTED_DIGITAL_RC_TRUE": true,
+    "HUMAN_CURRICULUM_ACCEPTANCE": false
+  }
+}

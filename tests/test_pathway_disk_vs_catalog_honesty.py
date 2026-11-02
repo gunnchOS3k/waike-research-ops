@@ -65,3 +65,29 @@ def test_honesty_stamp_lists_known_non_true_ids():
     assert stamp["catalog_vs_true_gap_count"] == (
         ledger["counts"]["catalog_track_ids"] - ledger["counts"]["course_digital_rc_keys"]
     )
+
+
+def test_full_18_residual_honesty_does_not_invent_true_flags():
+    residual_path = ROOT / "artifacts" / "FULL_18_RESIDUAL_HONESTY.json"
+    residual = _load(residual_path)
+    stamp = _load(STAMP)
+    ledger = _load(LEDGER)
+
+    assert residual["full_18_course_digital_rc"] is False
+    assert residual["HUMAN"] is False
+    assert residual["RC2"] is False
+    assert residual["V1"] is False
+    assert residual["instructional_completeness_claimed"] is False
+    assert residual["gates"]["FULL_18_FALSE_HONEST"] is True
+    assert residual["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
+    assert residual["gates"]["HUMAN_CURRICULUM_ACCEPTANCE"] is False
+
+    residual_ids = sorted(row["id"] for row in residual["residuals"])
+    assert residual_ids == sorted(stamp["course_digital_rc_not_true_ids"])
+    assert "SEVEN_GC_APPRENTICESHIP" in residual_ids
+    assert "EMBEDDED_PROTOTYPING" in residual_ids
+    assert "GUNNCHOS_PRODUCT_LAB" in residual_ids
+    for row in residual["residuals"]:
+        assert row["invent_course_digital_rc_true"] is False
+    assert set(ledger["dirs_present_not_in_course_digital_rc_keys"]).issubset(set(residual_ids))
+    assert set(ledger["catalog_missing_digital_rc_dir"]).issubset(set(residual_ids))
