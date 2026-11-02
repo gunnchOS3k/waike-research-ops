@@ -12,7 +12,7 @@ Journal week 6 (SIPOC and process map): keep the artifact id, fixture counts, an
 
 Week 6 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 6 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+SIPOC lists Suppliers, Inputs, Process, Outputs and Customers at a high level, usually five to seven steps, and it fixes the project boundary before detailed mapping: intake starts when a ticket arrives and resolve ends when the requester confirms.
 
 ## Worked example
 

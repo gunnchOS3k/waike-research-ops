@@ -12,7 +12,7 @@ Journal week 3 (WBS and schedule — critical path): keep the artifact id, fixtu
 
 Week 3 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 3 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+Float is latest start minus earliest start: on the critical path it is zero, while C (two days, running beside B's three) carries one day of float, so a one-day slip on C does not move the nine-day finish.
 
 ## Worked example
 

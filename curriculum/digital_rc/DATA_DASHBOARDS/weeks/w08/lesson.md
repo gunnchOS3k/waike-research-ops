@@ -14,7 +14,7 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3822 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3822 refuses screenshot-only evidence: the grader reads JSON fields from `lab_debug_pipeline`.
+Rerun stages one at a time from the last good checkpoint and compare row counts and null rates between them; the stage where they change unexpectedly is the broken one, and the fix is proven by rerunning only that stage and everything downstream.
 
 ## Worked example
 

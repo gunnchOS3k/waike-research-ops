@@ -1,6 +1,6 @@
 {
   "schema": "waike_pathway_disk_vs_catalog_ledger_v1",
-  "prepared_at": "2026-11-02T23:20:00Z",
+  "prepared_at": "2026-11-02T23:25:36Z",
   "HUMAN": false,
   "RC2": false,
   "V1": false,
@@ -10,7 +10,7 @@
     "catalog_track_ids": 18,
     "digital_rc_dirs_on_disk": 16,
     "course_digital_rc_keys": 16,
-    "course_digital_rc_true": 11
+    "course_digital_rc_true": 16
   },
   "digital_rc_dirs_on_disk": [
     "AI_ML_EDGE",
@@ -64,11 +64,5 @@
     "INSTRUCTIONAL_COMPLETENESS_CLAIMED": false,
     "HUMAN_CURRICULUM_ACCEPTANCE": false
   },
-  "keyed_courses_failing_digital_rc_gate": [
-    "DATA_DASHBOARDS",
-    "GAME_DEV_INTERACTIVE",
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS",
-    "SOFTWARE_BUILDER"
-  ]
+  "keyed_courses_failing_digital_rc_gate": []
 }

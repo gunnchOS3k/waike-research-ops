@@ -14,7 +14,7 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3409 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3409 refuses screenshot-only evidence: the grader reads JSON fields from `lab_kpi_calc`.
+The mean moves with a single surge while p95 shows the tail visitors actually feel; state the p95 method you used, nearest-rank or interpolated, because the two differ on small samples.
 
 ## Worked example
 

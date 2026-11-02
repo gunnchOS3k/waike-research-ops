@@ -6,7 +6,7 @@ PHYSICAL_PENDING: scope capture of the real RC. Digital validation is mandatory 
 
 Show the week 3 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-Reset RC: τ=R·C. With R=1kΩ and C=1µF, τ=1ms. Charging V(t)=V0(1−e^{−t/τ}); at t=τ, Vt≈0.632·V0. Firmware that samples reset too early sees a lie. Lab checks τ and Vt math to stated precision. PHYSICAL_PENDING: scope capture of the real RC stays pending; digital validation is mandatory first. Cite timing concepts; do not invent scope screenshots.
+Reset RC: τ=R·C. With R=1kΩ and C=1µF, τ=1ms. Charging V(t)=V0(1−e^{−t/τ}); at t=τ, Vt≈0.632·V0. Wait about five time constants before trusting the line, when the capacitor sits above 99 percent of V0; with a 1 ms time constant that is 5 ms, and the MCU's power-on-reset or brown-out threshold, not the RC alone, decides when the core leaves reset. Lab checks τ and Vt math to stated precision. PHYSICAL_PENDING: scope capture of the real RC stays pending; digital validation is mandatory first. Cite timing concepts; do not invent scope screenshots.
 
 Journal week 3 (RC timing for the reset pin): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 

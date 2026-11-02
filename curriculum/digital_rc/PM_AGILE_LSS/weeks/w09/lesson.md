@@ -12,7 +12,7 @@ Journal week 9 (DMAIC case with real artifacts): keep the artifact id, fixture c
 
 Week 9 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 9 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+Each DMAIC phase has an exit artifact: a charter for Define, a baseline with its measurement method for Measure, a verified cause for Analyze, a piloted change for Improve, and a control plan with an owner for Control.
 
 ## Worked example
 

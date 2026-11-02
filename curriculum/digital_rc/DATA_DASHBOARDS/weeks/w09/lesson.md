@@ -14,9 +14,9 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3925 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3925 refuses screenshot-only evidence: the grader reads JSON fields from `lab_freshness_sla`.
+Freshness lag is now minus the newest source timestamp, not minus the time the job last ran, because a job can succeed on stale input.
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+When lag exceeds the SLA, the tile shows its data timestamp and a stale state instead of looking live.
 
 ## Worked example
 

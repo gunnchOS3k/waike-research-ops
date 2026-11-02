@@ -6,7 +6,7 @@ OWASP ASVS themes are domain labels — no copied item banks. Practical assessme
 
 Compose and CI logs for week 9 are evidence; adjectives are not. Keep digest and status fields typed.
 
-Score findings with id, severity band, and evidence. At least one high or critical must name the intentional IDOR fixture on checkout ids. Empty looks-fine reviews fail. Also watch missing login rate limits and verbose 500s that leak stack traces. OWASP ASVS themes are domain labels — no copied item banks. Practical assessment mode: NO_AI.
+Score findings with id, severity band, and evidence. At least one high or critical must name the intentional IDOR fixture on checkout ids. Empty looks-fine reviews fail. Also watch missing login rate limits and verbose 500s that leak stack traces. Severity combines likelihood and impact: an insecure direct object reference on checkout records is high because any signed-in reader can enumerate ids, and the fix is a server-side ownership check, not hiding the id in the UI. Practical assessment mode: NO_AI.
 
 Journal week 9 (Security review — findings with severity bands): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 

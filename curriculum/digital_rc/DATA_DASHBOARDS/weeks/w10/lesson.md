@@ -14,7 +14,7 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3A30 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3A30 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_capstone`.
+The capstone ships the whole ledger path, from ingest through transform, KPI, chart and freshness check, as one reproducible run, so a reviewer starting from the raw fixture CSV reaches the same tile numbers.
 
 ## Worked example
 

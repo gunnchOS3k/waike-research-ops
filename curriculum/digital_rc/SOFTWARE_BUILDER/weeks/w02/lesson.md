@@ -6,7 +6,7 @@ You will build a route table in JSON and prove each case. The lab computes expec
 
 Secure-development practice: validate input before storage, return problem-style errors without stack traces, never echo secrets. GitHub Actions will later call these routes in CI against an in-memory store.
 
-Status codes are evidence. Inventing a device_id must yield 404 with a problem body that names the missing resource, never a 200 with null. A reader POST to a write route yields 403; a desk POST without device_id yields 400; a successful desk POST yields 201 plus Location /api/v1/checkouts/{id}. The lab recomputes expected status from method, path, role, and body keys — a screenshot of Postman is not acceptance. Idempotent PUT on the same checkout id must not mint a second row. Secure-dev habit: validate before storage, never echo secrets, keep error bodies stable for CI asserts.
+Status codes are evidence. Inventing a device_id must yield 404 with a problem body that names the missing resource, never a 200 with null. A reader POST to a write route yields 403; a desk POST without device_id yields 400; a successful desk POST yields 201 plus Location /api/v1/checkouts/{id}. The lab recomputes expected status from method, path, role, and body keys — a screenshot of Postman is not acceptance. PUT is idempotent by definition: repeating the same request leaves server state as if it ran once, so the handler upserts by checkout id and answers the repeat with 200 or 204, while a retried POST needs an Idempotency-Key header to avoid duplicates. Secure-dev habit: validate before storage, never echo secrets, keep error bodies stable for CI asserts.
 
 ## Worked example
 

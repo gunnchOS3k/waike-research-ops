@@ -14,9 +14,9 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3615 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3615 refuses screenshot-only evidence: the grader reads JSON fields from `lab_join_integrity`.
+An inner join silently drops rows whose key has no match, so count orphans on each side with a left join before trusting any total.
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+Duplicate keys in the lookup table multiply rows after the join, so prove the dimension key is unique or the headcount sum inflates.
 
 ## Worked example
 

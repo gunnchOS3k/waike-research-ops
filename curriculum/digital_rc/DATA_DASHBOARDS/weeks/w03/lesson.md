@@ -14,7 +14,7 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3307 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3307 refuses screenshot-only evidence: the grader reads JSON fields from `lab_normalize_transform`.
+Normalization maps every alias to one canonical key before aggregation, because grouping on raw labels splits one bay into three rows and undercounts each; keep the mapping table so the transform re-runs cleanly on the next file.
 
 ## Worked example
 

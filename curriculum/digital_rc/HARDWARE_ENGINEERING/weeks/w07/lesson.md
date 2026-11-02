@@ -6,7 +6,7 @@ EMBEDDED_PROTOTYPING integration: same app will bind I2C in DT next week.
 
 Show the week 7 arithmetic or parse fields the lab recomputes; GUI screenshots are not acceptance.
 
-west build -b qemu_cortex_m0 for the ForgeSense app. physical_status must remain PHYSICAL_PENDING until digital build and QEMU boot logs pass. Claiming board flashed without hardware evidence fails. Zephyr docs are PUBLIC_REFERENCE_ONLY; your west/CMake fragments are original WAIKE wording for ForgeSense.
+Then run west build -t run so QEMU boots the image and prints to the console; a passing QEMU boot proves the build, kernel start and UART console, while GPIO timing, power draw and radio behaviour stay unverified until real hardware. physical_status must remain PHYSICAL_PENDING until digital build and QEMU boot logs pass. Claiming board flashed without hardware evidence fails. Zephyr docs are PUBLIC_REFERENCE_ONLY; your west/CMake fragments are original WAIKE wording for ForgeSense.
 
 Journal week 7 (Zephyr west + QEMU before hardware): keep the artifact id, fixture counts, and computed fields; adjectives are not evidence.
 

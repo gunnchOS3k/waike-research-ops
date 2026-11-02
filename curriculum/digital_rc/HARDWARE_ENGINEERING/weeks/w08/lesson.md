@@ -12,7 +12,7 @@ Journal week 8 (Devicetree overlay — I2C1 and LED0): keep the artifact id, fix
 
 Week 8 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
 
-Week 8 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
+After the build, open build/zephyr/zephyr.dts to confirm &i2c1 reads status "okay" and led0 resolves to the intended GPIO; an overlay that compiles against the wrong node label silently leaves the default board configuration in place.
 
 ## Worked example
 

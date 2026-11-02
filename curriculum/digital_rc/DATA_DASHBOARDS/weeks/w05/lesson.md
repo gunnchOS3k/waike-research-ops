@@ -14,7 +14,7 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3511 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3511 refuses screenshot-only evidence: the grader reads JSON fields from `lab_dashboard_chart`.
+Bar charts of averages start the value axis at zero so bar length stays proportional, every axis carries units, and colour is never the only cue, so the alt text names the busiest and quietest bays in words.
 
 ## Worked example
 

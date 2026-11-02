@@ -6,7 +6,7 @@ Journal week 6 (Automated tests that catch the silent 200): keep the artifact id
 
 Acceptance for week 6 still names ticket-linked digests, HTTP status fields, schema_version, DOM contracts, role actions, JUnit counts, workflow gates, digests, severity bands, or error-budget arithmetic the next shift can reopen without tribal knowledge.
 
-Acceptance for week 6 still names ticket-linked digests, HTTP status fields, schema_version, DOM contracts, role actions, JUnit counts, workflow gates, digests, severity bands, or error-budget arithmetic the next shift can reopen without tribal knowledge.
+Assert the status code before the body so a 200 carrying an error message still fails, and keep skipped tests visible in the JUnit report: skipped=1 means one behaviour went unchecked, not that it passed.
 
 ## Worked example
 

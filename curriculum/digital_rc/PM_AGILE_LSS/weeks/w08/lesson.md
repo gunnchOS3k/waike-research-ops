@@ -12,7 +12,7 @@ Journal week 8 (Control chart on wait times): keep the artifact id, fixture coun
 
 Week 8 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 8 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+A point outside the limits signals a special cause to investigate, but limits computed from data that already contains an extreme wait are inflated by it, which is why baseline limits are usually set from a stable period and then held fixed.
 
 ## Worked example
 

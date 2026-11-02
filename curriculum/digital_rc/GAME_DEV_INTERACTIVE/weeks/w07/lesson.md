@@ -15,8 +15,7 @@ Pick one lens (combat timing, beat sync, ecology sim, or racing physics) and att
 fixture metrics without claiming those repos must be merged.
 
 Optional GA-6707 case study may cite anime-aggressors, beatlink-party, earth-species, or
-foot-racing — or none — with required_unmerged_branch=false. Hard-depending unmerged game
-or Product-Use PRs fails the claim boundary. Attach fixture metrics for one lens without
+foot-racing — or none — with required_unmerged_branch=false. An optional case study may reference one of the four games only through public, merged releases; if a feature you need lives on an unmerged branch, write the study against a clearly labelled hypothetical scenario instead. Attach fixture metrics for one lens without
 demanding merges.
 
 ## Worked example

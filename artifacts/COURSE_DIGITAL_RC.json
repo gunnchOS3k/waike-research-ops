@@ -1,7 +1,7 @@
 {
   "packet": "STREAM-B-PKT-003",
-  "COURSE_DIGITAL_RC_BATCH": false,
-  "DATA_DASHBOARDS_COURSE_DIGITAL_RC": false,
+  "COURSE_DIGITAL_RC_BATCH": true,
+  "DATA_DASHBOARDS_COURSE_DIGITAL_RC": true,
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
   "HUMAN_E6": false,
@@ -121,10 +121,8 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 2: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 6: stripped lesson 797 < 800"
-      ]
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "HARDWARE_ENGINEERING": {
       "syllabus": 1,
@@ -152,10 +150,8 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 3: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 7: repeated-sentence depth padding"
-      ]
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "PM_AGILE_LSS": {
       "syllabus": 1,
@@ -183,10 +179,8 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 2: repeated-sentence depth padding; week 2: stripped lesson 796 < 800; week 3: repeated-sentence depth padding"
-      ]
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "AI_ML_EDGE": {
       "syllabus": 1,
@@ -359,10 +353,8 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 7: repeated-sentence depth padding"
-      ]
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "COMM_PD_ETHICS": {
       "syllabus": 1,
@@ -419,10 +411,8 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 3: repeated-sentence depth padding; week 4: repeated-sentence depth padding; week 4: stripped lesson 868 < 871 (#45 floor)"
-      ]
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
     },
     "EMBEDDED_PROTOTYPING": {
       "syllabus": 1,

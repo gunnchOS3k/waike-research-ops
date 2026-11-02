@@ -27,32 +27,32 @@
     {
       "a": "HARDWARE_ENGINEERING",
       "b": "PM_AGILE_LSS",
-      "jaccard_5gram": 0.0074
+      "jaccard_5gram": 0.0059
     },
     {
       "a": "SOFTWARE_BUILDER",
       "b": "PM_AGILE_LSS",
-      "jaccard_5gram": 0.0049
-    },
-    {
-      "a": "DATA_DASHBOARDS",
-      "b": "GUNNCHOS_PRODUCT_LAB",
-      "jaccard_5gram": 0.0039
+      "jaccard_5gram": 0.0042
     },
     {
       "a": "SOFTWARE_BUILDER",
       "b": "HARDWARE_ENGINEERING",
-      "jaccard_5gram": 0.0037
+      "jaccard_5gram": 0.0033
     },
     {
       "a": "DATA_DASHBOARDS",
-      "b": "EMBEDDED_PROTOTYPING",
-      "jaccard_5gram": 0.0037
+      "b": "GUNNCHOS_PRODUCT_LAB",
+      "jaccard_5gram": 0.0032
     },
     {
       "a": "HARDWARE_ENGINEERING",
       "b": "EMBEDDED_PROTOTYPING",
-      "jaccard_5gram": 0.0025
+      "jaccard_5gram": 0.0031
+    },
+    {
+      "a": "DATA_DASHBOARDS",
+      "b": "EMBEDDED_PROTOTYPING",
+      "jaccard_5gram": 0.0031
     }
   ],
   "packaging_pairs": [
@@ -353,7 +353,7 @@
     "CYBERSECURITY": 804,
     "SOFTWARE_BUILDER": 860,
     "HARDWARE_ENGINEERING": 875,
-    "PM_AGILE_LSS": 864,
+    "PM_AGILE_LSS": 884,
     "AI_ML_EDGE": 972,
     "DATA_VIZ_BI": 881,
     "CLOUD_DEVOPS": 871,
@@ -361,7 +361,7 @@
     "ROBOTICS_CONTROL": 907,
     "GAME_DEV_INTERACTIVE": 911,
     "COMM_PD_ETHICS": 907,
-    "DATA_DASHBOARDS": 925,
+    "DATA_DASHBOARDS": 937,
     "EMBEDDED_PROTOTYPING": 932,
     "GUNNCHOS_PRODUCT_LAB": 927
   },

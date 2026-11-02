@@ -12,7 +12,7 @@ Journal week 4 (Sprint board under capacity): keep the artifact id, fixture coun
 
 Week 4 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 4 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+Capacity comes from available person-days times the team's historical focus factor, not from the wish list; committing 18 of 20 points leaves room for unplanned support tickets, and unfinished stories return to the backlog instead of counting as partly done.
 
 ## Worked example
 

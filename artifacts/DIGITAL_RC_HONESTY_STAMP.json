@@ -1,6 +1,6 @@
 {
   "schema": "waike_digital_rc_honesty_stamp_v1",
-  "prepared_at": "2026-11-02T23:20:00Z",
+  "prepared_at": "2026-11-02T23:25:36Z",
   "source_artifact": "artifacts/COURSE_DIGITAL_RC.json",
   "companion_ledger": "artifacts/PATHWAY_DISK_VS_CATALOG_LEDGER.json",
   "HUMAN": false,
@@ -10,30 +10,30 @@
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
   "full_18_course_digital_rc": false,
-  "course_digital_rc_true_count": 11,
+  "course_digital_rc_true_count": 16,
   "course_digital_rc_true_ids": [
     "AI_ML_EDGE",
     "CLOUD_DEVOPS",
     "COMM_PD_ETHICS",
     "COMPUTER_NETWORKING",
     "CYBERSECURITY",
+    "DATA_DASHBOARDS",
     "DATA_VIZ_BI",
     "EMBEDDED_PROTOTYPING",
+    "GAME_DEV_INTERACTIVE",
     "GENERAL_IT",
     "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
     "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
     "WIRELESS_6G"
   ],
   "course_digital_rc_not_true_ids": [
-    "DATA_DASHBOARDS",
-    "GAME_DEV_INTERACTIVE",
-    "HARDWARE_ENGINEERING",
-    "PM_AGILE_LSS",
-    "SEVEN_GC_APPRENTICESHIP",
-    "SOFTWARE_BUILDER"
+    "SEVEN_GC_APPRENTICESHIP"
   ],
   "catalog_vs_true_gap_count": 2,
-  "catalog_vs_true_gap_note": "18 catalog track IDs vs 16 COURSE_DIGITAL_RC keys; 11 keys pass the writer gate. Remaining catalog IDs are aliases or the catalog-only apprenticeship overlay and must not be invented as new digital-RC courses.",
+  "catalog_vs_true_gap_note": "18 catalog track IDs vs 16 COURSE_DIGITAL_RC keys; 16 keys pass the writer gate. Remaining catalog IDs are aliases or the catalog-only apprenticeship overlay and must not be invented as new digital-RC courses.",
   "instructional_completeness_claimed": false,
   "note": "Companion honesty stamp only. Does not invent missing digital-RC courses or flip HUMAN/RC2/V1. Dir presence ≠ instructional completeness."
 }

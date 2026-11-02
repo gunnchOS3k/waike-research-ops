@@ -12,7 +12,7 @@ Journal week 7 (Pareto and root cause): keep the artifact id, fixture counts, an
 
 Week 7 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 7 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+Sort categories by count from largest to smallest, accumulate each one's share of the total, and stop at the first category where the running share reaches 80 percent; root-cause work such as five whys starts with those vital few.
 
 ## Worked example
 

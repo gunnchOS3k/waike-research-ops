@@ -14,9 +14,9 @@ Keep PAN/SSN out of fixture CSVs. Fabricated citywide KPI lifts fail.
 
 Work the numbers for DL-3718 on paper before opening a GUI. Empty {} fails; a file whose body is only PASS raises.
 
-Pier Ledger Bench ticket DL-3718 refuses screenshot-only evidence: the grader reads JSON fields from `lab_pii_redact_etl`.
+Redact at ingest, before rows reach the warehouse, because anything stored in a raw table is copied into backups and extracts.
 
-Distinct from DATA_VIZ_BI chart storytelling — this week owns schema, SQL, or pipeline honesty before any dashboard tile.
+Pattern-based redaction needs fixtures with awkward cases such as plus-addressed emails and international phone formats, and the redaction count is reported from the run, not assumed.
 
 ## Worked example
 

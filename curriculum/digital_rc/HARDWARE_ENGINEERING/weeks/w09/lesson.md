@@ -12,7 +12,7 @@ Journal week 9 (PCB schematic/layout ERC/DRC + BOM): keep the artifact id, fixtu
 
 Week 9 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
 
-Week 9 digital validators must pass before any PHYSICAL_PENDING soldering or instrument claim; show the arithmetic or parse fields the lab recomputes.
+ERC catches schematic faults such as an unconnected power pin or two outputs driving one net, DRC checks layout clearances and track widths against the fab's rules, and the BOM names exact parts, for example an AMS1117-3.3 whose roughly 1.1 V dropout at load needs about 4.4 V or more at its input.
 
 ## Worked example
 

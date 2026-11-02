@@ -12,7 +12,7 @@ Journal week 2 (RACI for the improvement team): keep the artifact id, fixture co
 
 Week 2 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
 
-Week 2 metrics use fixture counts only; fabricated community outcomes fail, and WAIKE alignment labels do not grant PMI or ASQ credentials.
+Responsible people do the work and can be several, the Accountable person signs off and is exactly one, Consulted roles give input before the decision, and Informed roles are told afterwards.
 
 ## Worked example
 

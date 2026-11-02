@@ -1,6 +1,6 @@
 {
   "schema": "waike_full_18_residual_honesty_v1",
-  "prepared_at": "2026-11-02T23:20:00Z",
+  "prepared_at": "2026-11-02T23:25:36Z",
   "floor_tip": "5a18707",
   "full_18_course_digital_rc": false,
   "HUMAN": false,
@@ -10,55 +10,10 @@
   "instructional_completeness_claimed": false,
   "residuals": [
     {
-      "id": "DATA_DASHBOARDS",
-      "kind": "keyed_course_fails_digital_rc_gate",
-      "invent_course_digital_rc_true": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 3: repeated-sentence depth padding; week 4: repeated-sentence depth padding; week 4: stripped lesson 868 < 871 (#45 floor)"
-      ],
-      "note": "Evaluated by write_course_digital_rc.py and failed; fix content, never the flag."
-    },
-    {
-      "id": "GAME_DEV_INTERACTIVE",
-      "kind": "keyed_course_fails_digital_rc_gate",
-      "invent_course_digital_rc_true": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 7: repeated-sentence depth padding"
-      ],
-      "note": "Evaluated by write_course_digital_rc.py and failed; fix content, never the flag."
-    },
-    {
-      "id": "HARDWARE_ENGINEERING",
-      "kind": "keyed_course_fails_digital_rc_gate",
-      "invent_course_digital_rc_true": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 3: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 7: repeated-sentence depth padding"
-      ],
-      "note": "Evaluated by write_course_digital_rc.py and failed; fix content, never the flag."
-    },
-    {
-      "id": "PM_AGILE_LSS",
-      "kind": "keyed_course_fails_digital_rc_gate",
-      "invent_course_digital_rc_true": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 2: repeated-sentence depth padding; week 2: stripped lesson 796 < 800; week 3: repeated-sentence depth padding"
-      ],
-      "note": "Evaluated by write_course_digital_rc.py and failed; fix content, never the flag."
-    },
-    {
       "id": "SEVEN_GC_APPRENTICESHIP",
       "kind": "catalog_only_no_digital_rc_dir",
       "invent_course_digital_rc_true": false,
       "note": "Catalog track only - no digital_rc dir. Research overlay stays HUMAN_PENDING; do not invent a 19th course or flip full_18."
-    },
-    {
-      "id": "SOFTWARE_BUILDER",
-      "kind": "keyed_course_fails_digital_rc_gate",
-      "invent_course_digital_rc_true": false,
-      "rc_fail_reasons": [
-        "lesson depth/padding: week 2: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 6: stripped lesson 797 < 800"
-      ],
-      "note": "Evaluated by write_course_digital_rc.py and failed; fix content, never the flag."
     }
   ],
   "gates": {
