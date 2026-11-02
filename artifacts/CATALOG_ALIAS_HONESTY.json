@@ -1,6 +1,6 @@
 {
   "schema": "waike_catalog_alias_honesty_v1",
-  "prepared_at": "2026-11-02T02:05:00Z",
+  "prepared_at": "2026-11-02T23:20:00Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
   "full_18_course_digital_rc": false,
@@ -8,7 +8,7 @@
   "RC2": false,
   "V1": false,
   "instructional_completeness_claimed": false,
-  "note": "Catalog alias rows map alternate taxonomy IDs onto existing COURSE_DIGITAL_RC keys. Aliasing \u2260 inventing a true digital-RC course or flipping full_18.",
+  "note": "Catalog alias rows map alternate taxonomy IDs onto existing COURSE_DIGITAL_RC keys. Aliasing ≠ inventing a true digital-RC course or flipping full_18.",
   "aliases": [
     {
       "catalog_track_id": "DIGITAL_CONFIDENCE",
@@ -32,9 +32,12 @@
     }
   ],
   "residuals_not_aliased_to_true": [
-    "EMBEDDED_PROTOTYPING",
-    "GUNNCHOS_PRODUCT_LAB",
-    "SEVEN_GC_APPRENTICESHIP"
+    "DATA_DASHBOARDS",
+    "GAME_DEV_INTERACTIVE",
+    "HARDWARE_ENGINEERING",
+    "PM_AGILE_LSS",
+    "SEVEN_GC_APPRENTICESHIP",
+    "SOFTWARE_BUILDER"
   ],
   "gates": {
     "FULL_18_FALSE_HONEST": true,

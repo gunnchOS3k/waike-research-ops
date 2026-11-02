@@ -45,8 +45,11 @@ def test_honesty_stamp_lists_known_non_true_ids():
         for cid, row in rc["courses"].items()
         if row.get("COURSE_DIGITAL_RC") is True
     )
+    keyed_failing = sorted(set(rc["courses"]) - set(true_ids))
+    assert sorted(ledger["keyed_courses_failing_digital_rc_gate"]) == keyed_failing
     expected_not_true = sorted(
-        set(ledger["dirs_present_not_in_course_digital_rc_keys"])
+        set(keyed_failing)
+        | set(ledger["dirs_present_not_in_course_digital_rc_keys"])
         | set(ledger["catalog_missing_digital_rc_dir"])
     )
 
@@ -105,13 +108,17 @@ def test_full_18_residual_honesty_does_not_invent_true_flags():
     assert residual["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
     assert residual["gates"]["HUMAN_CURRICULUM_ACCEPTANCE"] is False
 
+    rc = _load(COURSE_RC)
     residual_ids = sorted(row["id"] for row in residual["residuals"])
     assert residual_ids == sorted(stamp["course_digital_rc_not_true_ids"])
     assert "SEVEN_GC_APPRENTICESHIP" in residual_ids
-    assert "EMBEDDED_PROTOTYPING" in residual_ids
-    assert "GUNNCHOS_PRODUCT_LAB" in residual_ids
     for row in residual["residuals"]:
         assert row["invent_course_digital_rc_true"] is False
+        if row["kind"] == "keyed_course_fails_digital_rc_gate":
+            assert rc["courses"][row["id"]]["COURSE_DIGITAL_RC"] is False
+            assert row["rc_fail_reasons"], f"{row['id']} residual must name its gate failures"
+    for cid, course in rc["courses"].items():
+        assert (cid in residual_ids) == (course["COURSE_DIGITAL_RC"] is not True), cid
     assert set(ledger["dirs_present_not_in_course_digital_rc_keys"]).issubset(set(residual_ids))
     assert set(ledger["catalog_missing_digital_rc_dir"]).issubset(set(residual_ids))
 

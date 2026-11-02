@@ -1,7 +1,7 @@
 {
   "packet": "STREAM-B-PKT-003",
-  "COURSE_DIGITAL_RC_BATCH": true,
-  "DATA_DASHBOARDS_COURSE_DIGITAL_RC": true,
+  "COURSE_DIGITAL_RC_BATCH": false,
+  "DATA_DASHBOARDS_COURSE_DIGITAL_RC": false,
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
   "HUMAN_E6": false,
@@ -121,8 +121,10 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": true,
-      "rc_fail_reasons": []
+      "COURSE_DIGITAL_RC": false,
+      "rc_fail_reasons": [
+        "lesson depth/padding: week 2: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 6: stripped lesson 797 < 800"
+      ]
     },
     "HARDWARE_ENGINEERING": {
       "syllabus": 1,
@@ -150,8 +152,10 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": true,
-      "rc_fail_reasons": []
+      "COURSE_DIGITAL_RC": false,
+      "rc_fail_reasons": [
+        "lesson depth/padding: week 3: repeated-sentence depth padding; week 6: repeated-sentence depth padding; week 7: repeated-sentence depth padding"
+      ]
     },
     "PM_AGILE_LSS": {
       "syllabus": 1,
@@ -179,8 +183,10 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": true,
-      "rc_fail_reasons": []
+      "COURSE_DIGITAL_RC": false,
+      "rc_fail_reasons": [
+        "lesson depth/padding: week 2: repeated-sentence depth padding; week 2: stripped lesson 796 < 800; week 3: repeated-sentence depth padding"
+      ]
     },
     "AI_ML_EDGE": {
       "syllabus": 1,
@@ -353,8 +359,10 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
-      "COURSE_DIGITAL_RC": true,
-      "rc_fail_reasons": []
+      "COURSE_DIGITAL_RC": false,
+      "rc_fail_reasons": [
+        "lesson depth/padding: week 7: repeated-sentence depth padding"
+      ]
     },
     "COMM_PD_ETHICS": {
       "syllabus": 1,
@@ -411,12 +419,72 @@
       "template_status": "ORIGINAL",
       "key_balance_ok": true,
       "exam_items_original": true,
+      "COURSE_DIGITAL_RC": false,
+      "rc_fail_reasons": [
+        "lesson depth/padding: week 3: repeated-sentence depth padding; week 4: repeated-sentence depth padding; week 4: stripped lesson 868 < 871 (#45 floor)"
+      ]
+    },
+    "EMBEDDED_PROTOTYPING": {
+      "syllabus": 1,
+      "weeks": 10,
+      "full_lessons": 10,
+      "assignments": 10,
+      "runnable_labs": 10,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "mid_course_items": 20,
+      "final_items": 24,
+      "mid_course_items_original": 20,
+      "final_items_original": 24,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "answer_keys": 13,
+      "student_materials": 1,
+      "instructor_materials": 11,
+      "presentation_materials": 10,
+      "offline_pack": 1,
+      "portfolio_artifacts": 1,
+      "benchmark_sources": 35,
+      "provenance_status": "PASS",
+      "template_status": "ORIGINAL",
+      "key_balance_ok": true,
+      "exam_items_original": true,
+      "COURSE_DIGITAL_RC": true,
+      "rc_fail_reasons": []
+    },
+    "GUNNCHOS_PRODUCT_LAB": {
+      "syllabus": 1,
+      "weeks": 10,
+      "full_lessons": 10,
+      "assignments": 10,
+      "runnable_labs": 10,
+      "quizzes": 10,
+      "quiz_items": 60,
+      "mid_course_items": 20,
+      "final_items": 24,
+      "mid_course_items_original": 20,
+      "final_items_original": 24,
+      "practicals": 1,
+      "projects": 1,
+      "rubrics": 8,
+      "answer_keys": 13,
+      "student_materials": 1,
+      "instructor_materials": 11,
+      "presentation_materials": 10,
+      "offline_pack": 1,
+      "portfolio_artifacts": 1,
+      "benchmark_sources": 35,
+      "provenance_status": "PASS",
+      "template_status": "ORIGINAL",
+      "key_balance_ok": true,
+      "exam_items_original": true,
       "COURSE_DIGITAL_RC": true,
       "rc_fail_reasons": []
     }
   },
   "lab_execution_ok": true,
-  "lab_count": 130,
+  "lab_count": 150,
   "empty_submission_fails": true,
   "wrong_submission_fails": true,
   "print_pass_raises": true,
@@ -521,9 +589,23 @@
       "C": 26,
       "D": 26,
       "n": 104
+    },
+    "EMBEDDED_PROTOTYPING": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
+    },
+    "GUNNCHOS_PRODUCT_LAB": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
     }
   },
-  "worst_packaging_jaccard": 0.1316,
+  "worst_packaging_jaccard": 0.1736,
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
   "worst_exam_weekly_token_jaccard": 0.75,

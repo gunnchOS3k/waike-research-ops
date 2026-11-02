@@ -132,6 +132,37 @@ def strip_lesson_padding(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", cleaned).strip()
 
 
+_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+_REPEAT_MIN_CHARS = 40
+
+
+def repeated_lesson_sentences(text: str) -> list[str]:
+    """Sentences (≥40 chars) that appear more than once verbatim in one lesson."""
+    seen: set[str] = set()
+    repeats: list[str] = []
+    for sentence in _SENTENCE_SPLIT_RE.split(text or ""):
+        key = " ".join(sentence.split()).lower()
+        if len(key) < _REPEAT_MIN_CHARS:
+            continue
+        if key in seen and key not in repeats:
+            repeats.append(key)
+        seen.add(key)
+    return repeats
+
+
+def dedupe_lesson_sentences(text: str) -> str:
+    """Drop verbatim repeats so depth floors measure distinct prose only."""
+    seen: set[str] = set()
+    kept: list[str] = []
+    for sentence in _SENTENCE_SPLIT_RE.split(text or ""):
+        key = " ".join(sentence.split()).lower()
+        if len(key) >= _REPEAT_MIN_CHARS and key in seen:
+            continue
+        seen.add(key)
+        kept.append(sentence)
+    return " ".join(kept)
+
+
 def _normalize_trailer_blob(text: str) -> str:
     """Normalize course/week/ticket tokens so synonym pads compare as one body."""
     t = (text or "").lower()

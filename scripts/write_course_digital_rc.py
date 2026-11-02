@@ -10,7 +10,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from waike_course_ready.content import COURSES  # noqa: E402
-from waike_course_ready.provenance import strip_lesson_padding  # noqa: E402
+from waike_course_ready.provenance import (  # noqa: E402
+    dedupe_lesson_sentences,
+    repeated_lesson_sentences,
+    strip_lesson_padding,
+)
 
 BATCH_001 = ("GENERAL_IT", "COMPUTER_NETWORKING", "CYBERSECURITY")
 
@@ -42,7 +46,9 @@ def _lesson_depth_ok(cid: str) -> tuple[bool, list[str]]:
             reasons.append(f"week {w.get('week')}: Ticket-arithmetic checkpoint trailer padding")
         if "restate the worked example in your own symbols" in low:
             reasons.append(f"week {w.get('week')}: worked-example-checkpoint trailer padding")
-        stripped = strip_lesson_padding(raw)
+        if repeated_lesson_sentences(raw):
+            reasons.append(f"week {w.get('week')}: repeated-sentence depth padding")
+        stripped = dedupe_lesson_sentences(strip_lesson_padding(raw))
         if len(stripped) < 800:
             reasons.append(f"week {w.get('week')}: stripped lesson {len(stripped)} < 800")
         # Prefer #45 post-collapse floor for new batches (871) when course is batch-004.
