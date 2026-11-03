@@ -1,0 +1,10 @@
+{
+  "course_id": "NETWORKING_INFRA",
+  "required": [
+    "Algebra with units (ms, bytes, dB)",
+    "Documentation ASNs and 2001:db8::/32 only \u2014 no real company prefixes"
+  ],
+  "recommended": [
+    "COMPUTER_NETWORKING addressing and name-resolution literacy"
+  ]
+}

@@ -1067,6 +1067,84 @@
       "why_selected": "MBR-or-GPT week of IT_SUPPORT_HARDWARE.",
       "date_checked": "2026-11-03",
       "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "IETF_RFC4271_BGP4",
+      "institution": "IETF / RFC Editor",
+      "course_or_cert": "RFC 4271 A Border Gateway Protocol 4 (BGP-4)",
+      "current_version": "January 2006 Standards Track",
+      "url": "https://www.rfc-editor.org/rfc/rfc4271",
+      "source_type": "open_internet_standard",
+      "topic_domains": [
+        "bgp_decision_process",
+        "path_attributes"
+      ],
+      "assessment_patterns": [
+        "best_path_recompute"
+      ],
+      "license": "IETF RFC; specification text is citable; do not paste large verbatim excerpts",
+      "attribution": "RFC 4271 Section 9.1 decision process, IETF.",
+      "why_selected": "BGP best-path week of NETWORKING_INFRA; the lab uses a simplified tie-break order on documentation ASNs.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "IETF_RFC5952_IPV6_TEXT",
+      "institution": "IETF / RFC Editor",
+      "course_or_cert": "RFC 5952 A Recommendation for IPv6 Address Text Representation",
+      "current_version": "August 2010 Standards Track",
+      "url": "https://www.rfc-editor.org/rfc/rfc5952",
+      "source_type": "open_internet_standard",
+      "topic_domains": [
+        "ipv6_canonical_text"
+      ],
+      "assessment_patterns": [
+        "address_compression"
+      ],
+      "license": "IETF RFC; specification text is citable; do not paste large verbatim excerpts",
+      "attribution": "RFC 5952 canonical IPv6 text rules, IETF.",
+      "why_selected": "IPv6 text and prefixes week of NETWORKING_INFRA.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "IETF_RFC7323_TCP_EXTENSIONS",
+      "institution": "IETF / RFC Editor",
+      "course_or_cert": "RFC 7323 TCP Extensions for High Performance",
+      "current_version": "September 2014 Standards Track",
+      "url": "https://www.rfc-editor.org/rfc/rfc7323",
+      "source_type": "open_internet_standard",
+      "topic_domains": [
+        "window_scale",
+        "bandwidth_delay_product"
+      ],
+      "assessment_patterns": [
+        "bdp_recompute"
+      ],
+      "license": "IETF RFC; specification text is citable; do not paste large verbatim excerpts",
+      "attribution": "RFC 7323 window scale option, IETF.",
+      "why_selected": "Bandwidth-delay product week of NETWORKING_INFRA.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "IETF_RFC1034_DNS",
+      "institution": "IETF / RFC Editor",
+      "course_or_cert": "RFC 1034 Domain Names - Concepts and Facilities",
+      "current_version": "November 1987 STD 13",
+      "url": "https://www.rfc-editor.org/rfc/rfc1034",
+      "source_type": "open_internet_standard",
+      "topic_domains": [
+        "dns_ttl_caching"
+      ],
+      "assessment_patterns": [
+        "stale_window_recompute"
+      ],
+      "license": "IETF RFC; specification text is citable; do not paste large verbatim excerpts",
+      "attribution": "RFC 1034 resource-record TTL and caching, IETF.",
+      "why_selected": "DNS TTL planning week of NETWORKING_INFRA.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
     }
   ]
 }

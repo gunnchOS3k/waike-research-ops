@@ -1,0 +1,8 @@
+{
+  "required": [
+    "lab_result_json",
+    "change_or_intent_or_policy",
+    "scope_paragraph"
+  ],
+  "no_pii": true
+}

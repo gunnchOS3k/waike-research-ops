@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "network_operations_center_trainee",
+    "noc_technician_apprentice",
+    "isp_field_support_assistant"
+  ],
+  "nice_categories": [
+    "operate_and_maintain",
+    "oversee_and_govern"
+  ],
+  "certs_aligned_not_granted": [
+    "Cisco CCNA 200-301 network-fundamentals labels (PUBLIC_REFERENCE_ONLY; no exam items)",
+    "IETF RFC 4271 / 5952 / 7323 / 1034 vocabulary (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

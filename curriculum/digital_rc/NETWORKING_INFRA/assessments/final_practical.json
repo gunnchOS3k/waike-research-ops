@@ -1,0 +1,16 @@
+{
+  "practical_id": "NETWORKING_INFRA-practical",
+  "labs": [
+    "lab_nif_latency_budget",
+    "lab_nif_ipv6_text",
+    "lab_nif_bdp_window",
+    "lab_nif_bgp_path",
+    "lab_nif_dns_ttl",
+    "lab_nif_cdn_offload",
+    "lab_nif_optical_budget",
+    "lab_nif_availability",
+    "lab_nif_p95_billing",
+    "lab_nif_design_packet"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

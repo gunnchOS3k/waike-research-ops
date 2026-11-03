@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "nif-w2-1",
+      "kind": "mcq",
+      "stem": "What is the RFC 5952 form of 2001:0DB8:0000:0000:0001:0000:0000:0001?",
+      "choices": [
+        "2001:db8::1:0:0:1",
+        "2001:db8:0:0:1::1",
+        "2001:DB8::1::1",
+        "2001:db8:0:0:1:0:0:1"
+      ]
+    },
+    {
+      "id": "nif-w2-2",
+      "kind": "mcq",
+      "stem": "When two zero runs are equally long, which one becomes ::?",
+      "choices": [
+        "The last",
+        "The first",
+        "Both",
+        "Neither"
+      ]
+    },
+    {
+      "id": "nif-w2-3",
+      "kind": "mcq",
+      "stem": "Can :: replace a single all-zero group?",
+      "choices": [
+        "Yes",
+        "Only in uppercase",
+        "No",
+        "Only at the end"
+      ]
+    },
+    {
+      "id": "nif-w2-4",
+      "kind": "mcq",
+      "stem": "How many /64 subnets fit in a /48?",
+      "choices": [
+        "16",
+        "256",
+        "4,096",
+        "65,536"
+      ]
+    },
+    {
+      "id": "nif-w2-5",
+      "kind": "mcq",
+      "stem": "Which block is reserved for documentation?",
+      "choices": [
+        "2001:db8::/32",
+        "2606:4700::/32",
+        "fe80::/10",
+        "::/0"
+      ]
+    },
+    {
+      "id": "nif-w2-6",
+      "kind": "mcq",
+      "stem": "Why keep LAN segments at /64?",
+      "choices": [
+        "It saves addresses",
+        "Address autoconfiguration expects it",
+        "It is faster",
+        "Routers cannot route /64"
+      ]
+    }
+  ]
+}

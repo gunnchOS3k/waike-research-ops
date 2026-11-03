@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "NETWORKING_INFRA",
+  "quizzes": {
+    "NETWORKING_INFRA-q01": [
+      {
+        "id": "nif-w1-1",
+        "answer_index": 2,
+        "explanation": "c / n"
+      },
+      {
+        "id": "nif-w1-2",
+        "answer_index": 3,
+        "explanation": "km \u00d7 n / c"
+      },
+      {
+        "id": "nif-w1-3",
+        "answer_index": 0,
+        "explanation": "12,000 bits"
+      },
+      {
+        "id": "nif-w1-4",
+        "answer_index": 1,
+        "explanation": "bits per second"
+      },
+      {
+        "id": "nif-w1-5",
+        "answer_index": 2,
+        "explanation": "real path"
+      },
+      {
+        "id": "nif-w1-6",
+        "answer_index": 3,
+        "explanation": "index"
+      }
+    ],
+    "NETWORKING_INFRA-q02": [
+      {
+        "id": "nif-w2-1",
+        "answer_index": 0,
+        "explanation": "first longest run"
+      },
+      {
+        "id": "nif-w2-2",
+        "answer_index": 1,
+        "explanation": "tie rule"
+      },
+      {
+        "id": "nif-w2-3",
+        "answer_index": 2,
+        "explanation": "two or more"
+      },
+      {
+        "id": "nif-w2-4",
+        "answer_index": 3,
+        "explanation": "2^16"
+      },
+      {
+        "id": "nif-w2-5",
+        "answer_index": 0,
+        "explanation": "RFC 3849"
+      },
+      {
+        "id": "nif-w2-6",
+        "answer_index": 1,
+        "explanation": "SLAAC"
+      }
+    ],
+    "NETWORKING_INFRA-q03": [
+      {
+        "id": "nif-w3-1",
+        "answer_index": 2,
+        "explanation": "rate \u00d7 RTT / 8"
+      },
+      {
+        "id": "nif-w3-2",
+        "answer_index": 3,
+        "explanation": "window\u00d78/RTT"
+      },
+      {
+        "id": "nif-w3-3",
+        "answer_index": 0,
+        "explanation": "65,535 \u00d7 256"
+      },
+      {
+        "id": "nif-w3-4",
+        "answer_index": 1,
+        "explanation": "window bound"
+      },
+      {
+        "id": "nif-w3-5",
+        "answer_index": 2,
+        "explanation": "middlebox"
+      },
+      {
+        "id": "nif-w3-6",
+        "answer_index": 3,
+        "explanation": "inverse"
+      }
+    ],
+    "NETWORKING_INFRA-q04": [
+      {
+        "id": "nif-w4-1",
+        "answer_index": 0,
+        "explanation": "policy"
+      },
+      {
+        "id": "nif-w4-2",
+        "answer_index": 1,
+        "explanation": "lp 100 < 200"
+      },
+      {
+        "id": "nif-w4-3",
+        "answer_index": 2,
+        "explanation": "next step"
+      },
+      {
+        "id": "nif-w4-4",
+        "answer_index": 3,
+        "explanation": "lowest"
+      },
+      {
+        "id": "nif-w4-5",
+        "answer_index": 0,
+        "explanation": "origin IGP"
+      },
+      {
+        "id": "nif-w4-6",
+        "answer_index": 1,
+        "explanation": "reference"
+      }
+    ],
+    "NETWORKING_INFRA-q05": [
+      {
+        "id": "nif-w5-1",
+        "answer_index": 2,
+        "explanation": "cached + TTL"
+      },
+      {
+        "id": "nif-w5-2",
+        "answer_index": 3,
+        "explanation": "6,600 \u2212 5,000"
+      },
+      {
+        "id": "nif-w5-3",
+        "answer_index": 0,
+        "explanation": "full TTL"
+      },
+      {
+        "id": "nif-w5-4",
+        "answer_index": 1,
+        "explanation": "one TTL before"
+      },
+      {
+        "id": "nif-w5-5",
+        "answer_index": 2,
+        "explanation": "caches"
+      },
+      {
+        "id": "nif-w5-6",
+        "answer_index": 3,
+        "explanation": "overlap"
+      }
+    ],
+    "NETWORKING_INFRA-q06": [
+      {
+        "id": "nif-w6-1",
+        "answer_index": 0,
+        "explanation": "miss \u00d7 total"
+      },
+      {
+        "id": "nif-w6-2",
+        "answer_index": 1,
+        "explanation": "\u00d7150,000\u00d78"
+      },
+      {
+        "id": "nif-w6-3",
+        "answer_index": 2,
+        "explanation": "8% \u2192 4%"
+      },
+      {
+        "id": "nif-w6-4",
+        "answer_index": 3,
+        "explanation": "1 \u2212 hit"
+      },
+      {
+        "id": "nif-w6-5",
+        "answer_index": 0,
+        "explanation": "all requests"
+      },
+      {
+        "id": "nif-w6-6",
+        "answer_index": 1,
+        "explanation": "cache keys"
+      }
+    ],
+    "NETWORKING_INFRA-q07": [
+      {
+        "id": "nif-w7-1",
+        "answer_index": 2,
+        "explanation": "sum"
+      },
+      {
+        "id": "nif-w7-2",
+        "answer_index": 3,
+        "explanation": "0 \u2212 16.6 + 23"
+      },
+      {
+        "id": "nif-w7-3",
+        "answer_index": 0,
+        "explanation": "6.4 \u2265 3"
+      },
+      {
+        "id": "nif-w7-4",
+        "answer_index": 1,
+        "explanation": "logarithms"
+      },
+      {
+        "id": "nif-w7-5",
+        "answer_index": 2,
+        "explanation": "hidden loss"
+      },
+      {
+        "id": "nif-w7-6",
+        "answer_index": 3,
+        "explanation": "hygiene"
+      }
+    ],
+    "NETWORKING_INFRA-q08": [
+      {
+        "id": "nif-w8-1",
+        "answer_index": 0,
+        "explanation": "1 \u2212 0.001\u00b2"
+      },
+      {
+        "id": "nif-w8-2",
+        "answer_index": 1,
+        "explanation": "all must work"
+      },
+      {
+        "id": "nif-w8-3",
+        "answer_index": 2,
+        "explanation": "product"
+      },
+      {
+        "id": "nif-w8-4",
+        "answer_index": 3,
+        "explanation": "\u00d7 525,600"
+      },
+      {
+        "id": "nif-w8-5",
+        "answer_index": 0,
+        "explanation": "weakest serial part"
+      },
+      {
+        "id": "nif-w8-6",
+        "answer_index": 1,
+        "explanation": "shared cause"
+      }
+    ],
+    "NETWORKING_INFRA-q09": [
+      {
+        "id": "nif-w9-1",
+        "answer_index": 2,
+        "explanation": "ceil(19) \u2212 1"
+      },
+      {
+        "id": "nif-w9-2",
+        "answer_index": 3,
+        "explanation": "index 18"
+      },
+      {
+        "id": "nif-w9-3",
+        "answer_index": 0,
+        "explanation": "720 \u00d7 0.35"
+      },
+      {
+        "id": "nif-w9-4",
+        "answer_index": 1,
+        "explanation": "5%"
+      },
+      {
+        "id": "nif-w9-5",
+        "answer_index": 2,
+        "explanation": "432 \u00d7 5 min"
+      },
+      {
+        "id": "nif-w9-6",
+        "answer_index": 3,
+        "explanation": "contract"
+      }
+    ],
+    "NETWORKING_INFRA-q10": [
+      {
+        "id": "nif-w10-1",
+        "answer_index": 0,
+        "explanation": "RFC 5398"
+      },
+      {
+        "id": "nif-w10-2",
+        "answer_index": 1,
+        "explanation": "safety"
+      },
+      {
+        "id": "nif-w10-3",
+        "answer_index": 2,
+        "explanation": "compare"
+      },
+      {
+        "id": "nif-w10-4",
+        "answer_index": 3,
+        "explanation": "method"
+      },
+      {
+        "id": "nif-w10-5",
+        "answer_index": 0,
+        "explanation": "boundary"
+      },
+      {
+        "id": "nif-w10-6",
+        "answer_index": 1,
+        "explanation": "oral check"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "nif-mid-01",
+      "answer_index": 2,
+      "explanation": "2,000 \u00d7 1.468 / 299,792"
+    },
+    {
+      "id": "nif-mid-02",
+      "answer_index": 3,
+      "explanation": "72,000 bits / 1e10"
+    },
+    {
+      "id": "nif-mid-03",
+      "answer_index": 0,
+      "explanation": "physics"
+    },
+    {
+      "id": "nif-mid-04",
+      "answer_index": 1,
+      "explanation": "lowercase, drop leading zeros, compress the zero run"
+    },
+    {
+      "id": "nif-mid-05",
+      "answer_index": 2,
+      "explanation": "2^8"
+    },
+    {
+      "id": "nif-mid-06",
+      "answer_index": 3,
+      "explanation": "1e8 \u00d7 0.04 / 8"
+    },
+    {
+      "id": "nif-mid-07",
+      "answer_index": 0,
+      "explanation": "window\u00d78/0.16"
+    },
+    {
+      "id": "nif-mid-08",
+      "answer_index": 1,
+      "explanation": "shortest path"
+    },
+    {
+      "id": "nif-mid-09",
+      "answer_index": 2,
+      "explanation": "policy"
+    },
+    {
+      "id": "nif-mid-10",
+      "answer_index": 3,
+      "explanation": "full TTL"
+    },
+    {
+      "id": "nif-mid-11",
+      "answer_index": 0,
+      "explanation": "one TTL before"
+    },
+    {
+      "id": "nif-mid-12",
+      "answer_index": 1,
+      "explanation": "miss \u00d7 total"
+    },
+    {
+      "id": "nif-mid-13",
+      "answer_index": 2,
+      "explanation": "800\u00d7200,000\u00d78"
+    },
+    {
+      "id": "nif-mid-14",
+      "answer_index": 3,
+      "explanation": "7 + 1 + 0.4"
+    },
+    {
+      "id": "nif-mid-15",
+      "answer_index": 0,
+      "explanation": "\u22123 \u2212 18 + 20"
+    },
+    {
+      "id": "nif-mid-16",
+      "answer_index": 1,
+      "explanation": "1 \u2212 0.01\u00b2"
+    },
+    {
+      "id": "nif-mid-17",
+      "answer_index": 2,
+      "explanation": "product"
+    },
+    {
+      "id": "nif-mid-18",
+      "answer_index": 3,
+      "explanation": "0.001 \u00d7 525,600"
+    },
+    {
+      "id": "nif-mid-19",
+      "answer_index": 0,
+      "explanation": "5%"
+    },
+    {
+      "id": "nif-mid-20",
+      "answer_index": 1,
+      "explanation": "billing method"
+    }
+  ],
+  "final": [
+    {
+      "id": "nif-fin-01",
+      "answer_index": 3,
+      "explanation": "physics"
+    },
+    {
+      "id": "nif-fin-02",
+      "answer_index": 0,
+      "explanation": "bits"
+    },
+    {
+      "id": "nif-fin-03",
+      "answer_index": 1,
+      "explanation": "first longest run"
+    },
+    {
+      "id": "nif-fin-04",
+      "answer_index": 2,
+      "explanation": "standard"
+    },
+    {
+      "id": "nif-fin-05",
+      "answer_index": 3,
+      "explanation": "BDP"
+    },
+    {
+      "id": "nif-fin-06",
+      "answer_index": 0,
+      "explanation": "BDP"
+    },
+    {
+      "id": "nif-fin-07",
+      "answer_index": 1,
+      "explanation": "order"
+    },
+    {
+      "id": "nif-fin-08",
+      "answer_index": 2,
+      "explanation": "policy"
+    },
+    {
+      "id": "nif-fin-09",
+      "answer_index": 3,
+      "explanation": "planning"
+    },
+    {
+      "id": "nif-fin-10",
+      "answer_index": 0,
+      "explanation": "overlap"
+    },
+    {
+      "id": "nif-fin-11",
+      "answer_index": 1,
+      "explanation": "miss ratio"
+    },
+    {
+      "id": "nif-fin-12",
+      "answer_index": 2,
+      "explanation": "miss ratio"
+    },
+    {
+      "id": "nif-fin-13",
+      "answer_index": 3,
+      "explanation": "hygiene"
+    },
+    {
+      "id": "nif-fin-14",
+      "answer_index": 0,
+      "explanation": "margin"
+    },
+    {
+      "id": "nif-fin-15",
+      "answer_index": 1,
+      "explanation": "shared cause"
+    },
+    {
+      "id": "nif-fin-16",
+      "answer_index": 2,
+      "explanation": "weakest link"
+    },
+    {
+      "id": "nif-fin-17",
+      "answer_index": 3,
+      "explanation": "contract"
+    },
+    {
+      "id": "nif-fin-18",
+      "answer_index": 0,
+      "explanation": "bursts"
+    },
+    {
+      "id": "nif-fin-19",
+      "answer_index": 1,
+      "explanation": "documentation only"
+    },
+    {
+      "id": "nif-fin-20",
+      "answer_index": 2,
+      "explanation": "boundary"
+    },
+    {
+      "id": "nif-fin-21",
+      "answer_index": 3,
+      "explanation": "window scaling"
+    },
+    {
+      "id": "nif-fin-22",
+      "answer_index": 0,
+      "explanation": "reference"
+    },
+    {
+      "id": "nif-fin-23",
+      "answer_index": 1,
+      "explanation": "recompute"
+    },
+    {
+      "id": "nif-fin-24",
+      "answer_index": 2,
+      "explanation": "boundary"
+    }
+  ]
+}

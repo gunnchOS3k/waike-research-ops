@@ -48,6 +48,11 @@ _NEGATIVES: dict[str, list[tuple[str, dict[str, Any]]]] = {
         ("lab_ish_raid_capacity", {"raid_is_backup": True}),
         ("lab_ish_fault_isolation", {"replaced_parts_before_isolating": True}),
     ],
+    labs_nif.COURSE: [
+        ("lab_nif_design_packet", {"production_peering_claim": True}),
+        ("lab_nif_design_packet", {"asn": 13335}),
+        ("lab_nif_design_packet", {"ipv6_prefix": "2606:4700::/48"}),
+    ],
 }
 
 
@@ -56,5 +61,5 @@ def negatives_009() -> list[dict[str, Any]]:
     for course in BATCH_COURSE_IDS:
         for lab_id, override in _NEGATIVES[course]:
             res = LABS_009[lab_id]({**REFERENCE_009[lab_id], **override})
-            rows.append({"lab_id": f"{lab_id}_negative", "ok": not res.ok})
+            rows.append({"lab_id": f"{lab_id}_{next(iter(override))}_negative", "ok": not res.ok})
     return rows

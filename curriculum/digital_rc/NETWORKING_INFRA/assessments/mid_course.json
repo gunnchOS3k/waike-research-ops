@@ -1,0 +1,225 @@
+{
+  "assessment_id": "NETWORKING_INFRA-mid",
+  "items": [
+    {
+      "id": "nif-mid-01",
+      "kind": "mcq",
+      "stem": "A 2,000 km fiber route with index 1.468 has about how much propagation delay?",
+      "choices": [
+        "About 6.7 ms",
+        "About 20 ms",
+        "About 9.8 ms",
+        "About 2 ms"
+      ]
+    },
+    {
+      "id": "nif-mid-02",
+      "kind": "mcq",
+      "stem": "A 9,000-byte jumbo frame at 10 Gbit/s takes how long to serialize?",
+      "choices": [
+        "72 \u00b5s",
+        "0.9 \u00b5s",
+        "720 \u00b5s",
+        "7.2 \u00b5s"
+      ]
+    },
+    {
+      "id": "nif-mid-03",
+      "kind": "mcq",
+      "stem": "Why can a satellite link never match a short fiber path's latency?",
+      "choices": [
+        "Propagation distance dominates",
+        "Satellites are slow computers",
+        "Packets are larger",
+        "DNS is slower"
+      ]
+    },
+    {
+      "id": "nif-mid-04",
+      "kind": "mcq",
+      "stem": "A neighbour table lists the link-local address FE80:0000:0000:0000:0204:61FF:FE9D:F156. How should the change record write it?",
+      "choices": [
+        "fe80::0204:61ff:fe9d:f156",
+        "fe80::204:61ff:fe9d:f156",
+        "FE80::204:61FF:FE9D:F156",
+        "fe80:0:0:0:204:61ff:fe9d:f156"
+      ]
+    },
+    {
+      "id": "nif-mid-05",
+      "kind": "mcq",
+      "stem": "How many /56 prefixes fit in a /48?",
+      "choices": [
+        "65,536",
+        "8",
+        "256",
+        "16"
+      ]
+    },
+    {
+      "id": "nif-mid-06",
+      "kind": "mcq",
+      "stem": "What is the BDP of 100 Mbit/s at 40 ms RTT?",
+      "choices": [
+        "4,000,000 bytes",
+        "40,000 bytes",
+        "100,000 bytes",
+        "500,000 bytes"
+      ]
+    },
+    {
+      "id": "nif-mid-07",
+      "kind": "mcq",
+      "stem": "A transfer over 160 ms with a 65,535-byte window caps at about?",
+      "choices": [
+        "3.28 Mbit/s",
+        "6.55 Mbit/s",
+        "13.1 Mbit/s",
+        "65.5 Mbit/s"
+      ]
+    },
+    {
+      "id": "nif-mid-08",
+      "kind": "mcq",
+      "stem": "Two routes have equal local preference; one AS_PATH has 2 ASNs, the other 5. Which wins?",
+      "choices": [
+        "The 5-ASN route",
+        "The 2-ASN route",
+        "Lowest router ID",
+        "Neither"
+      ]
+    },
+    {
+      "id": "nif-mid-09",
+      "kind": "mcq",
+      "stem": "An operator wants all traffic to prefer one upstream regardless of path length. Which attribute?",
+      "choices": [
+        "Lower MED",
+        "Router ID",
+        "Higher local preference",
+        "Origin"
+      ]
+    },
+    {
+      "id": "nif-mid-10",
+      "kind": "mcq",
+      "stem": "A record with TTL 300 changes at t=10,000. Worst-case stale window?",
+      "choices": [
+        "10,000 seconds",
+        "0 seconds",
+        "3,600 seconds",
+        "300 seconds"
+      ]
+    },
+    {
+      "id": "nif-mid-11",
+      "kind": "mcq",
+      "stem": "A migration is at t=86,400 and the current TTL is 86,400. By when must it be lowered?",
+      "choices": [
+        "t = 0",
+        "t = 43,200",
+        "t = 86,399",
+        "t = 86,400"
+      ]
+    },
+    {
+      "id": "nif-mid-12",
+      "kind": "mcq",
+      "stem": "At 8,000 rps and a 0.90 hit ratio, how many requests reach origin?",
+      "choices": [
+        "7,200 per second",
+        "800 per second",
+        "90 per second",
+        "8,000 per second"
+      ]
+    },
+    {
+      "id": "nif-mid-13",
+      "kind": "mcq",
+      "stem": "800 rps of 200 KB objects need about how much origin bandwidth?",
+      "choices": [
+        "160 Mbit/s",
+        "12.8 Gbit/s",
+        "1.28 Gbit/s",
+        "200 Mbit/s"
+      ]
+    },
+    {
+      "id": "nif-mid-14",
+      "kind": "mcq",
+      "stem": "A 20 km span with 2 connectors and 4 splices has how much loss by the course coefficients?",
+      "choices": [
+        "7.0 dB",
+        "10.0 dB",
+        "4.4 dB",
+        "8.4 dB"
+      ]
+    },
+    {
+      "id": "nif-mid-15",
+      "kind": "mcq",
+      "stem": "Tx \u22123 dBm, loss 18 dB, sensitivity \u221220 dBm. Margin and verdict?",
+      "choices": [
+        "\u22121 dB, fails",
+        "5 dB, passes",
+        "3 dB, passes",
+        "17 dB, passes"
+      ]
+    },
+    {
+      "id": "nif-mid-16",
+      "kind": "mcq",
+      "stem": "Two 99% links in parallel are available about how much?",
+      "choices": [
+        "98%",
+        "99.99%",
+        "99.5%",
+        "100%"
+      ]
+    },
+    {
+      "id": "nif-mid-17",
+      "kind": "mcq",
+      "stem": "A 99.9% firewall in series with a 99.99% switch is available about how much?",
+      "choices": [
+        "99.99%",
+        "99.95%",
+        "99.89%",
+        "100.89%"
+      ]
+    },
+    {
+      "id": "nif-mid-18",
+      "kind": "mcq",
+      "stem": "What is 99.9% availability in downtime per year?",
+      "choices": [
+        "About 52.6 minutes",
+        "About 5.3 minutes",
+        "About 8,760 minutes",
+        "About 525.6 minutes"
+      ]
+    },
+    {
+      "id": "nif-mid-19",
+      "kind": "mcq",
+      "stem": "A month has 8,640 five-minute samples. How many are discarded at the 95th percentile?",
+      "choices": [
+        "432",
+        "864",
+        "43",
+        "8,208"
+      ]
+    },
+    {
+      "id": "nif-mid-20",
+      "kind": "mcq",
+      "stem": "Why do providers sample in five-minute averages?",
+      "choices": [
+        "It is the law",
+        "It smooths microbursts into a billable record",
+        "It doubles bills",
+        "Routers cannot count faster"
+      ]
+    }
+  ]
+}

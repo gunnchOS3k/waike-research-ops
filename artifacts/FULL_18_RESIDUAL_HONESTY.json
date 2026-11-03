@@ -1,6 +1,6 @@
 {
   "schema": "waike_full_18_residual_honesty_v1",
-  "prepared_at": "2026-11-03T03:02:52Z",
+  "prepared_at": "2026-11-03T03:05:03Z",
   "floor_tip": "5a18707",
   "full_18_course_digital_rc": false,
   "HUMAN": false,
@@ -15,17 +15,14 @@
     "HUMAN_CURRICULUM_ACCEPTANCE": false
   },
   "full_18_missing": {
-    "catalog_ids_with_own_true_package": 16,
+    "catalog_ids_with_own_true_package": 17,
     "catalog_track_ids": 18,
-    "alias_only_catalog_ids": [
-      "NETWORKING_INFRA"
-    ],
+    "alias_only_catalog_ids": [],
     "writer_computes_full_18": true,
     "full_18_course_digital_rc": false,
     "needed": [
-      "Catalog tracks without their own passing course: HARDWARE_ENGINEERING, NETWORKING_INFRA",
-      "Alias rows never satisfy a catalog track; replace them with own packages.",
-      "Courses still list other catalog tracks in track_ids: EMBEDDED_PROTOTYPING, NETWORKING_INFRA"
+      "Catalog tracks without their own passing course: HARDWARE_ENGINEERING",
+      "Courses still list other catalog tracks in track_ids: EMBEDDED_PROTOTYPING"
     ],
     "verification_boundary": "Cursor-implementation state from the writer gate; not independent verification or HUMAN acceptance."
   }

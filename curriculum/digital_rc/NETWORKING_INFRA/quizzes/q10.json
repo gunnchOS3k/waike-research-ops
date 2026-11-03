@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "nif-w10-1",
+      "kind": "mcq",
+      "stem": "Which ASN range is reserved for documentation?",
+      "choices": [
+        "64496\u201364511",
+        "13335\u201313350",
+        "1\u2013100",
+        "65535 only"
+      ]
+    },
+    {
+      "id": "nif-w10-2",
+      "kind": "mcq",
+      "stem": "Why must training packets avoid real ASNs and prefixes?",
+      "choices": [
+        "They are too long",
+        "They can leak into configs and hijack traffic",
+        "They cost money",
+        "They are secret"
+      ]
+    },
+    {
+      "id": "nif-w10-3",
+      "kind": "mcq",
+      "stem": "Does 0.9993991 meet a 0.999 target?",
+      "choices": [
+        "No",
+        "Only with RAID",
+        "Yes",
+        "Cannot tell"
+      ]
+    },
+    {
+      "id": "nif-w10-4",
+      "kind": "mcq",
+      "stem": "What does 'recompute rather than restate' mean here?",
+      "choices": [
+        "Copy last term's figures",
+        "Round everything to 1",
+        "Skip the math",
+        "Derive each number from its inputs"
+      ]
+    },
+    {
+      "id": "nif-w10-5",
+      "kind": "mcq",
+      "stem": "What must the final line of the packet say?",
+      "choices": [
+        "No production peering claim",
+        "Guaranteed uptime",
+        "Certified by Cisco",
+        "Live customer service"
+      ]
+    },
+    {
+      "id": "nif-w10-6",
+      "kind": "mcq",
+      "stem": "How do mentors check the packet?",
+      "choices": [
+        "Check the font",
+        "Ask the author to derive a random number at the whiteboard",
+        "Count pages",
+        "Accept it unread"
+      ]
+    }
+  ]
+}

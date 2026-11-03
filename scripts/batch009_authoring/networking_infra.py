@@ -282,7 +282,7 @@ MID = [
     ("A 2,000 km fiber route with index 1.468 has about how much propagation delay?", ["About 9.8 ms", "About 6.7 ms", "About 20 ms", "About 2 ms"], "2,000 × 1.468 / 299,792"),
     ("A 9,000-byte jumbo frame at 10 Gbit/s takes how long to serialize?", ["7.2 µs", "72 µs", "0.9 µs", "720 µs"], "72,000 bits / 1e10"),
     ("Why can a satellite link never match a short fiber path's latency?", ["Propagation distance dominates", "Satellites are slow computers", "Packets are larger", "DNS is slower"], "physics"),
-    ("What is the RFC 5952 form of 2001:0db8:0000:0000:0000:0000:0000:0001?", ["2001:db8::1", "2001:db8:0:0:0:0:0:1", "2001:DB8::1", "2001:db8::0:1"], "longest run"),
+    ("A neighbour table lists the link-local address FE80:0000:0000:0000:0204:61FF:FE9D:F156. How should the change record write it?", ["fe80::204:61ff:fe9d:f156", "fe80::0204:61ff:fe9d:f156", "FE80::204:61FF:FE9D:F156", "fe80:0:0:0:204:61ff:fe9d:f156"], "lowercase, drop leading zeros, compress the zero run"),
     ("How many /56 prefixes fit in a /48?", ["256", "65,536", "8", "16"], "2^8"),
     ("What is the BDP of 100 Mbit/s at 40 ms RTT?", ["500,000 bytes", "4,000,000 bytes", "40,000 bytes", "100,000 bytes"], "1e8 × 0.04 / 8"),
     ("A transfer over 160 ms with a 65,535-byte window caps at about?", ["3.28 Mbit/s", "6.55 Mbit/s", "13.1 Mbit/s", "65.5 Mbit/s"], "window×8/0.16"),

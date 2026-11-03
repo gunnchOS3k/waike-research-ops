@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "NETWORKING_INFRA",
+  "title": "Networking and Internet Infrastructure \u2014 Backbone Room",
+  "track_ids": [
+    "NETWORKING_INFRA"
+  ],
+  "academy_id": "ACADEMY_NETWORKING",
+  "kinesthetic_hook": "Ten Backbone Room change requests: budget fiber latency \u2192 write IPv6 canonically \u2192 size TCP windows \u2192 pick a BGP path \u2192 plan a DNS cutover \u2192 size CDN offload \u2192 budget an optical span \u2192 compute availability \u2192 read a 95th-percentile bill \u2192 submit a design packet.",
+  "lesson_excerpt": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so the signal moves at roughly 204,000 km/s. Divide the route length by that speed: 1,145 km takes about 5.6067 milliseconds.",
+  "worked_example": "1,145 km \u00d7 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B \u00d7 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms",
+  "assignment": "Submit lab_nif_latency_budget JSON for NIF-5101: route_km, packet_bytes, link_gbps, propagation_ms, serialization_ms, one_way_ms.",
+  "lab_hint": "lab_nif_latency_budget",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Fiber latency budget \u2014 light is slower in glass",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w01",
+        "title": "Fiber latency budget \u2014 light is slower in glass",
+        "body_md": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so the signal moves at roughly 204,000 km/s. Divide the route length by that speed: 1,145 km takes about 5.6067 milliseconds. That is propagation, and no upgrade fixes it short of a straighter path. Serialization is the time to clock a packet's bits onto the wire: 1,500 bytes is 12,000 bits, which takes 0.012 ms at one gigabit per second and would take ten times longer on a 100-megabit link. Add them for a one-way floor of about 5.619 ms, before any queueing or equipment delay. Route length is not the straight-line distance on a map; cables follow railways and roads, so ask for the measured route. Using the vacuum speed understates delay by about a third and leads to promises the backbone cannot keep.",
+        "worked_example": "1,145 km \u00d7 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B \u00d7 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms"
+      },
+      "lab_id": "lab_nif_latency_budget"
+    },
+    {
+      "week": 2,
+      "title": "IPv6 text and prefixes \u2014 one canonical way to write an address",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w02",
+        "title": "IPv6 text and prefixes \u2014 one canonical way to write an address",
+        "body_md": "NIF-5202 began as an outage: two engineers searched the change log for the same router address and missed each other because they had typed it differently. IPv6 addresses are 128 bits, written as eight groups of four hex digits, and RFC 5952 sets one canonical text form so tools and people agree. Write hex in lowercase, drop leading zeros in each group, and replace the longest run of two or more all-zero groups with a double colon, choosing the first run if two are equally long. A single zero group stays as 0. So 2001:0DB8:0000:0000:0001:0000:0000:0001 has two runs of two zero groups; the first one collapses and the result is 2001:db8::1:0:0:1. The 2001:db8::/32 block is reserved for documentation, which is why this course uses it. Prefix math is about counting bits: a site receives a /48, and LAN segments are /64, so 64 minus 48 leaves 16 bits for subnet numbers, which is 65,536 subnets. Never squeeze a LAN smaller than /64; address autoconfiguration expects it.",
+        "worked_example": "2001:0DB8:0000:0000:0001:0000:0000:0001 \u2192 2001:db8::1:0:0:1; /48 site \u2192 /64 subnets: 2^16 = 65,536"
+      },
+      "lab_id": "lab_nif_ipv6_text"
+    },
+    {
+      "week": 3,
+      "title": "Bandwidth-delay product \u2014 why one connection cannot fill the pipe",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w03",
+        "title": "Bandwidth-delay product \u2014 why one connection cannot fill the pipe",
+        "body_md": "NIF-5303: a research group pays for a one-gigabit link to a partner 80 milliseconds away and complains that a single file transfer crawls at a few megabits. TCP may only have one window of unacknowledged bytes in flight, then must wait for acknowledgements to return. The bandwidth-delay product says how many bytes the pipe holds: one gigabit per second times 0.08 seconds is 80 million bits, or 10,000,000 bytes. The original TCP header allows a window of at most 65,535 bytes, so the sender stalls after 64 KiB each round trip; throughput is window times eight divided by the round-trip time, about 6.55 Mbit/s here, less than one percent of the link. RFC 7323 window scaling shifts the advertised window left by a negotiated count; a shift of 8 multiplies 65,535 by 256 to about 16.8 MB, enough to cover the 10 MB product. The fix is end-host tuning and checking that no middlebox strips the option, not buying a bigger link.",
+        "worked_example": "1 Gbit/s \u00d7 0.080 s / 8 = 10,000,000 B BDP; 65,535-byte window \u00d7 8 / 0.080 s = 6.55 Mbit/s; window scale shift 8 (65,535 \u00d7 256 \u2265 10 MB)"
+      },
+      "lab_id": "lab_nif_bdp_window"
+    },
+    {
+      "week": 4,
+      "title": "BGP best path \u2014 policy first, then the shorter story",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w04",
+        "title": "BGP best path \u2014 policy first, then the shorter story",
+        "body_md": "NIF-5404 asks why traffic to a partner network leaves through the long transit path instead of the direct one. Border Gateway Protocol routers hear several routes to the same prefix and pick one by walking an ordered list of attributes, stopping at the first that differs. This course uses a simplified order: highest local preference, shortest AS_PATH, lowest origin code with IGP before EGP before incomplete, lowest MED, then lowest router ID. Local preference is the operator's own policy, so it outranks everything about the route's length. Here R1 offers a one-hop path through documentation AS 64500 but carries local preference 100, while R2 and R3 both carry 200, so R1 is out at the first step even though its path is shortest. R2 and R3 each have four AS numbers, a tie, so the origin decides: R2 is IGP and R3 is EGP, and R2 wins. The deciding attribute is origin. Real routers add steps such as weight and eBGP-over-iBGP; RFC 4271 is the reference, and vendor documents list their full order.",
+        "worked_example": "R1 lp100 [64500]; R2 lp200 len4 IGP; R3 lp200 len4 EGP \u2192 local_pref removes R1, AS_PATH ties, origin IGP<EGP \u2192 R2"
+      },
+      "lab_id": "lab_nif_bgp_path"
+    },
+    {
+      "week": 5,
+      "title": "DNS TTL \u2014 planning a change the world sees late",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w05",
+        "title": "DNS TTL \u2014 planning a change the world sees late",
+        "body_md": "NIF-5505 is a cutover: a public website moves to new servers at t = 5,000 seconds and the old servers will be switched off soon after. Resolvers that looked up the name keep the answer for its time to live, and RFC 1034 lets them reuse it without asking again. A resolver that cached the record at t = 3,000 with a TTL of 3,600 seconds will hand out the old address until t = 6,600, so its users see the old site for 1,600 seconds after the change. In the worst case a resolver caches the old answer one second before the change and stays stale for the whole TTL, 3,600 seconds. The fix is planning: lower the TTL to something short, such as 300 seconds, at least one old TTL before the change, so by t = 1,400 at the latest, and raise it again once the new servers are stable. Keep the old servers answering until the worst-case window has passed. A change is not live when the zone file is saved; it is live when the last cache has expired.",
+        "worked_example": "TTL 3600; resolver cached at t=3000 \u2192 expires 6600; record changed at 5000 \u2192 stale window 1600 s; worst case 3600 s; lower TTL by t=1400"
+      },
+      "lab_id": "lab_nif_dns_ttl"
+    },
+    {
+      "week": 6,
+      "title": "CDN offload \u2014 the miss ratio is what the origin pays for",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w06",
+        "title": "CDN offload \u2014 the miss ratio is what the origin pays for",
+        "body_md": "NIF-5606: a public broadcaster expects 12,000 requests per second for a live results page, each object about 150 kilobytes, and its origin servers sit behind a two-gigabit link. A content delivery network answers from edge caches when it can, and only the misses travel back to the origin. The origin's load scales with the miss ratio, one minus the hit ratio. At a 92 percent hit ratio, 8 percent of 12,000 is 960 requests per second, and 960 times 150,000 bytes times 8 bits is 1.152 gigabits per second, uncomfortably close to the two-gigabit link. Raising the hit ratio to 96 percent halves the misses to 480 requests per second and 0.576 Gbit/s. Four points of hit ratio halved the origin's work, which is why cache keys, longer TTLs for static images, and stripping needless query strings matter. The edge still delivers all 14.4 Gbit/s to viewers, so the CDN contract must cover that. Multiplying by the hit ratio instead of the miss ratio gives a number that looks impressive and is wrong.",
+        "worked_example": "12,000 rps \u00d7 150 KB: hit 0.92 \u2192 960 rps, 1.152 Gbit/s at origin; hit 0.96 \u2192 480 rps, 0.576 Gbit/s; edge serves 14.4 Gbit/s total"
+      },
+      "lab_id": "lab_nif_cdn_offload"
+    },
+    {
+      "week": 7,
+      "title": "Optical link budget \u2014 loss, margin, and the 3 dB rule",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w07",
+        "title": "Optical link budget \u2014 loss, margin, and the 3 dB rule",
+        "body_md": "NIF-5707 is a NO_AI week: do the decibel arithmetic on paper first. A field team must confirm that optics with a 0 dBm transmitter and a receiver sensitivity of \u221223 dBm will work over a new 40 km span. Decibels add, which is why engineers like them. The planning coefficients are 0.35 dB per kilometre of fiber, 0.5 dB for each mated connector, and 0.1 dB for each fusion splice. Forty kilometres costs 14 dB, four connectors cost 2, and six splices cost 0.6, for 16.6 dB in total. The light arrives at \u221216.6 dBm, and the receiver can still read it down to \u221223, so the margin is 6.4 dB. The backbone rule asks for at least 3 dB of margin to cover ageing, dirty connectors, temperature, and the repair splices a backhoe will eventually require, so this span passes. Counting only fiber loss would claim 9 dB of margin and hide two decibels of connectors. Clean and inspect every connector before measuring, and compare the light meter's reading with the budget.",
+        "worked_example": "40 km \u00d7 0.35 + 4 \u00d7 0.5 + 6 \u00d7 0.1 = 16.6 dB loss; margin = 0 \u2212 16.6 \u2212 (\u221223) = 6.4 dB \u2265 3 \u2192 passes"
+      },
+      "lab_id": "lab_nif_optical_budget"
+    },
+    {
+      "week": 8,
+      "title": "Availability \u2014 redundancy in parallel, single points in series",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w08",
+        "title": "Availability \u2014 redundancy in parallel, single points in series",
+        "body_md": "NIF-5808: a regional exchange's design has two core routers sharing traffic, each available 99.9 percent of the time, followed by one power feed at 99.95 percent and one fiber uplink at 99.99 percent. The question from management is how many minutes a year customers should expect to lose. A redundant pair fails only when both members are down at once, so its unavailability is the product of theirs: 0.001 times 0.001 is one in a million, making the pair 0.999999 available, assuming failures are independent. Parts in series all have to work, so their availabilities multiply: 0.999999 times 0.9995 times 0.9999 is about 0.9993991. A year has 525,600 minutes, so expected downtime is about 315.9 minutes, more than five hours, almost all of it from the single power feed. Spending more on routers would barely move the result; a second feed would. Shared causes such as one power strip feeding both routers break the independence assumption and must be designed away.",
+        "worked_example": "pair 1 \u2212 (0.001 \u00d7 0.001) = 0.999999; \u00d7 0.9995 \u00d7 0.9999 = 0.9993991; downtime (1 \u2212 A) \u00d7 525,600 = 315.9 min/yr"
+      },
+      "lab_id": "lab_nif_availability"
+    },
+    {
+      "week": 9,
+      "title": "95th-percentile billing \u2014 the bursts you do not pay for",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w09",
+        "title": "95th-percentile billing \u2014 the bursts you do not pay for",
+        "body_md": "NIF-5909, the second NO_AI week, is a disputed transit invoice. Many internet transit contracts bill on the 95th percentile: the provider records average throughput every five minutes, sorts the month's samples, throws away the top five percent, and bills the highest remaining sample. The course fixture has twenty samples between 289 and 905 Mbit/s. With twenty samples, five percent is one, so the bill uses the sample at sorted index ceil(0.95 \u00d7 20) \u2212 1, which is index 18 counting from zero. Sorted, that is 720 Mbit/s, while the 905 Mbit/s burst at the top is discarded. At $0.35 per Mbit/s the charge is $252. Billing the peak would charge $316.75, and billing the mean would undercount the busy hours. A real month has about 8,640 samples, so roughly 432 five-minute periods, about 36 hours, can burst without raising the bill. Know where your provider samples, whether inbound and outbound are compared, and check their arithmetic before paying.",
+        "worked_example": "20 five-minute samples sorted; index ceil(0.95 \u00d7 20) \u2212 1 = 18 \u2192 720 Mbit/s \u00d7 $0.35 = $252; the single 905 Mbit/s burst is free"
+      },
+      "lab_id": "lab_nif_p95_billing"
+    },
+    {
+      "week": 10,
+      "title": "Backbone design packet \u2014 documentation numbers, recomputed",
+      "lesson": {
+        "lesson_id": "NETWORKING_INFRA-w10",
+        "title": "Backbone design packet \u2014 documentation numbers, recomputed",
+        "body_md": "NIF-5A10 closes the term with a design packet for the regional backbone that the class has been building. It uses only documentation numbers: an autonomous system number from 64496 to 64511, here 64500, and an IPv6 prefix inside 2001:db8::/32, here 2001:db8:4400::/48. Using a real company's ASN or prefix in a training packet can leak into configurations and hijack someone else's traffic, so the reviewer rejects it on sight. The packet recomputes rather than restates: the 1,145 km route's propagation delay, the availability of the redundant core with its serial power feed and uplink compared with the 0.999 target, and the 6.4 dB optical margin. It cites RFC 4271, 5952, 7323, and 1034 for the behaviour it relies on. The final line says plainly that the packet is a classroom exercise and makes no claim about production peering or real customer service. Mentors pick one number at random and ask the author to derive it at the whiteboard.",
+        "worked_example": "ASN 64500, prefix 2001:db8:4400::/48, 1,145 km \u2192 5.6067 ms, availability 0.9993991 vs target 0.999 met, margin 6.4 dB, production_peering_claim false"
+      },
+      "lab_id": "lab_nif_design_packet"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_nif_latency_budget",
+    "lab_nif_ipv6_text",
+    "lab_nif_bdp_window",
+    "lab_nif_bgp_path",
+    "lab_nif_dns_ttl",
+    "lab_nif_cdn_offload",
+    "lab_nif_optical_budget",
+    "lab_nif_availability",
+    "lab_nif_p95_billing",
+    "lab_nif_design_packet"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "NETWORKING_INFRA-lab",
+    "NETWORKING_INFRA-assignment",
+    "NETWORKING_INFRA-quiz",
+    "NETWORKING_INFRA-mid",
+    "NETWORKING_INFRA-final-knowledge",
+    "NETWORKING_INFRA-practical",
+    "NETWORKING_INFRA-project",
+    "NETWORKING_INFRA-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "network_operations_center_trainee",
+      "noc_technician_apprentice",
+      "isp_field_support_assistant"
+    ],
+    "nice_categories": [
+      "operate_and_maintain",
+      "oversee_and_govern"
+    ],
+    "certs_aligned_not_granted": [
+      "Cisco CCNA 200-301 network-fundamentals labels (PUBLIC_REFERENCE_ONLY; no exam items)",
+      "IETF RFC 4271 / 5952 / 7323 / 1034 vocabulary (PUBLIC_REFERENCE_ONLY)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/networking_infra_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      7,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

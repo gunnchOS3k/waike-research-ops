@@ -3,7 +3,7 @@
   "course_id": "COMPUTER_NETWORKING",
   "title": "Computer Networking \u2014 Packets to Campus Edge",
   "track_ids": [
-    "NETWORKING_INFRA"
+    "COMPUTER_NETWORKING"
   ],
   "academy_id": "ACADEMY_NETWORKING",
   "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",

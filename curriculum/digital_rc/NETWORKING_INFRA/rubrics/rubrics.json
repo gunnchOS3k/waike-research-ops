@@ -1,0 +1,150 @@
+[
+  {
+    "rubric_id": "NETWORKING_INFRA-lab",
+    "title": "Change-request lab recompute",
+    "criteria": [
+      {
+        "name": "recomputed",
+        "weight": 45,
+        "desc": "Delays, windows, and budgets match the recomputation"
+      },
+      {
+        "name": "documentation_numbers",
+        "weight": 25,
+        "desc": "Only documentation ASNs and prefixes"
+      },
+      {
+        "name": "rejects_stub",
+        "weight": 30,
+        "desc": "Empty and PASS-only submissions are refused"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-assignment",
+    "title": "NIF change request",
+    "criteria": [
+      {
+        "name": "request_ref",
+        "weight": 35,
+        "desc": "Names the change request and its inputs"
+      },
+      {
+        "name": "risk",
+        "weight": 35,
+        "desc": "States the risk and the rollback"
+      },
+      {
+        "name": "ai_mode",
+        "weight": 30,
+        "desc": "AI mode disclosed; NO_AI weeks on paper"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-quiz",
+    "title": "Weekly backbone check",
+    "criteria": [
+      {
+        "name": "infra_fit",
+        "weight": 50,
+        "desc": "Stems use the week's link or protocol"
+      },
+      {
+        "name": "key_custody",
+        "weight": 50,
+        "desc": "Answer key kept by the instructor"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-mid",
+    "title": "Midterm: infrastructure arithmetic",
+    "criteria": [
+      {
+        "name": "new_links",
+        "weight": 60,
+        "desc": "Twenty items on links not used weekly"
+      },
+      {
+        "name": "units",
+        "weight": 40,
+        "desc": "ms, bytes, dB, and availability"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-final-knowledge",
+    "title": "Final: design trade-offs",
+    "criteria": [
+      {
+        "name": "new_links",
+        "weight": 50,
+        "desc": "Twenty-four items beyond weekly stems"
+      },
+      {
+        "name": "judgement",
+        "weight": 50,
+        "desc": "Chooses the change that moves the weakest link"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-practical",
+    "title": "Practical: whiteboard derivation",
+    "criteria": [
+      {
+        "name": "derive",
+        "weight": 50,
+        "desc": "Derives one packet number from its inputs"
+      },
+      {
+        "name": "altered_inputs",
+        "weight": 50,
+        "desc": "Changed distances or ratios change the result"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-project",
+    "title": "Backbone design packet",
+    "criteria": [
+      {
+        "name": "labs_passed",
+        "weight": 30,
+        "desc": "Six or more change-request labs passed"
+      },
+      {
+        "name": "recomputed",
+        "weight": 40,
+        "desc": "Latency, availability, and margin recomputed"
+      },
+      {
+        "name": "no_peering_claim",
+        "weight": 30,
+        "desc": "production_peering_claim false"
+      }
+    ]
+  },
+  {
+    "rubric_id": "NETWORKING_INFRA-portfolio",
+    "title": "NOC trainee portfolio",
+    "criteria": [
+      {
+        "name": "runbook",
+        "weight": 40,
+        "desc": "One cutover runbook with TTL timeline"
+      },
+      {
+        "name": "bill_check",
+        "weight": 30,
+        "desc": "One transit bill checked against samples"
+      },
+      {
+        "name": "roles",
+        "weight": 30,
+        "desc": "NOC trainee roles; no CCNA implied"
+      }
+    ]
+  }
+]

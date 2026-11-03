@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "nif-w6-1",
+      "kind": "mcq",
+      "stem": "At a 92% hit ratio and 12,000 rps, how many requests reach the origin?",
+      "choices": [
+        "960 per second",
+        "11,040 per second",
+        "9,200 per second",
+        "120 per second"
+      ]
+    },
+    {
+      "id": "nif-w6-2",
+      "kind": "mcq",
+      "stem": "What origin bandwidth do 960 rps of 150 KB objects need?",
+      "choices": [
+        "144 Mbit/s",
+        "1.152 Gbit/s",
+        "14.4 Gbit/s",
+        "0.96 Gbit/s"
+      ]
+    },
+    {
+      "id": "nif-w6-3",
+      "kind": "mcq",
+      "stem": "Raising the hit ratio from 92% to 96% does what to origin load?",
+      "choices": [
+        "Cuts it by 4%",
+        "Doubles it",
+        "Halves it",
+        "No change"
+      ]
+    },
+    {
+      "id": "nif-w6-4",
+      "kind": "mcq",
+      "stem": "Which ratio does origin load scale with?",
+      "choices": [
+        "The hit ratio",
+        "The TTL",
+        "The object count",
+        "The miss ratio"
+      ]
+    },
+    {
+      "id": "nif-w6-5",
+      "kind": "mcq",
+      "stem": "Total edge delivery for 12,000 rps of 150 KB is about?",
+      "choices": [
+        "14.4 Gbit/s",
+        "1.44 Gbit/s",
+        "144 Gbit/s",
+        "1.152 Gbit/s"
+      ]
+    },
+    {
+      "id": "nif-w6-6",
+      "kind": "mcq",
+      "stem": "Which change usually raises the hit ratio?",
+      "choices": [
+        "Shorter TTLs on images",
+        "Stripping needless query strings from cache keys",
+        "Disabling caching",
+        "Adding random parameters"
+      ]
+    }
+  ]
+}

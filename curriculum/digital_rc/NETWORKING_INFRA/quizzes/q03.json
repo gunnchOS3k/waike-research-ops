@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "nif-w3-1",
+      "kind": "mcq",
+      "stem": "What is the BDP of 1 Gbit/s at 80 ms RTT?",
+      "choices": [
+        "80,000,000 bytes",
+        "65,535 bytes",
+        "10,000,000 bytes",
+        "1,000,000 bytes"
+      ]
+    },
+    {
+      "id": "nif-w3-2",
+      "kind": "mcq",
+      "stem": "A 65,535-byte window over 80 ms caps throughput at about?",
+      "choices": [
+        "1,000 Mbit/s",
+        "65.5 Mbit/s",
+        "0.8 Mbit/s",
+        "6.55 Mbit/s"
+      ]
+    },
+    {
+      "id": "nif-w3-3",
+      "kind": "mcq",
+      "stem": "Which window scale shift first covers a 10 MB BDP?",
+      "choices": [
+        "8",
+        "4",
+        "0",
+        "14"
+      ]
+    },
+    {
+      "id": "nif-w3-4",
+      "kind": "mcq",
+      "stem": "Why does buying a bigger link not fix NIF-5303?",
+      "choices": [
+        "Links never help",
+        "The window, not the link, limits a single flow",
+        "Latency doubles",
+        "It costs nothing"
+      ]
+    },
+    {
+      "id": "nif-w3-5",
+      "kind": "mcq",
+      "stem": "What can silently break window scaling?",
+      "choices": [
+        "IPv6",
+        "Long passwords",
+        "A middlebox stripping the option",
+        "DNS"
+      ]
+    },
+    {
+      "id": "nif-w3-6",
+      "kind": "mcq",
+      "stem": "Doubling the RTT with a fixed window does what to throughput?",
+      "choices": [
+        "Doubles it",
+        "No change",
+        "Quadruples it",
+        "Halves it"
+      ]
+    }
+  ]
+}

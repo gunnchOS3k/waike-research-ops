@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "nif-w4-1",
+      "kind": "mcq",
+      "stem": "Which attribute is compared first in the course's simplified order?",
+      "choices": [
+        "Local preference",
+        "AS_PATH length",
+        "MED",
+        "Router ID"
+      ]
+    },
+    {
+      "id": "nif-w4-2",
+      "kind": "mcq",
+      "stem": "Why is R1 eliminated despite the shortest path?",
+      "choices": [
+        "Its router ID is high",
+        "Its local preference is lower",
+        "Its MED is zero",
+        "It is EGP"
+      ]
+    },
+    {
+      "id": "nif-w4-3",
+      "kind": "mcq",
+      "stem": "R2 and R3 both have four-AS paths. What decides next?",
+      "choices": [
+        "Router ID",
+        "Local preference again",
+        "Origin code",
+        "Path colour"
+      ]
+    },
+    {
+      "id": "nif-w4-4",
+      "kind": "mcq",
+      "stem": "Which origin code is preferred?",
+      "choices": [
+        "EGP",
+        "Incomplete",
+        "All equal",
+        "IGP"
+      ]
+    },
+    {
+      "id": "nif-w4-5",
+      "kind": "mcq",
+      "stem": "Which route wins NIF-5404?",
+      "choices": [
+        "R2",
+        "R1",
+        "R3",
+        "None"
+      ]
+    },
+    {
+      "id": "nif-w4-6",
+      "kind": "mcq",
+      "stem": "Where is the authoritative BGP specification?",
+      "choices": [
+        "RFC 5952",
+        "RFC 4271",
+        "RFC 1034",
+        "RFC 7489"
+      ]
+    }
+  ]
+}

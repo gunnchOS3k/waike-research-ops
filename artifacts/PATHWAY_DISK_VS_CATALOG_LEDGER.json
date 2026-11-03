@@ -1,6 +1,6 @@
 {
   "schema": "waike_pathway_disk_vs_catalog_ledger_v1",
-  "prepared_at": "2026-11-03T03:02:52Z",
+  "prepared_at": "2026-11-03T03:05:03Z",
   "HUMAN": false,
   "RC2": false,
   "V1": false,
@@ -8,9 +8,9 @@
   "full_18_course_digital_rc": false,
   "counts": {
     "catalog_track_ids": 18,
-    "digital_rc_dirs_on_disk": 20,
-    "course_digital_rc_keys": 20,
-    "course_digital_rc_true": 20
+    "digital_rc_dirs_on_disk": 21,
+    "course_digital_rc_keys": 21,
+    "course_digital_rc_true": 21
   },
   "digital_rc_dirs_on_disk": [
     "AI_ML_EDGE",
@@ -28,6 +28,7 @@
     "GUNNCHOS_PRODUCT_LAB",
     "HARDWARE_ENGINEERING",
     "IT_SUPPORT_HARDWARE",
+    "NETWORKING_INFRA",
     "PM_AGILE_LSS",
     "ROBOTICS_CONTROL",
     "SEVEN_GC_APPRENTICESHIP",
@@ -50,6 +51,7 @@
     "GUNNCHOS_PRODUCT_LAB",
     "HARDWARE_ENGINEERING",
     "IT_SUPPORT_HARDWARE",
+    "NETWORKING_INFRA",
     "PM_AGILE_LSS",
     "ROBOTICS_CONTROL",
     "SEVEN_GC_APPRENTICESHIP",

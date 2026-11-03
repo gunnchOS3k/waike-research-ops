@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "nif-w9-1",
+      "kind": "mcq",
+      "stem": "With 20 samples, which sorted index (from zero) is billed?",
+      "choices": [
+        "19",
+        "20",
+        "18",
+        "0"
+      ]
+    },
+    {
+      "id": "nif-w9-2",
+      "kind": "mcq",
+      "stem": "What is the billed rate in the course fixture?",
+      "choices": [
+        "905 Mbit/s",
+        "640 Mbit/s",
+        "455 Mbit/s",
+        "720 Mbit/s"
+      ]
+    },
+    {
+      "id": "nif-w9-3",
+      "kind": "mcq",
+      "stem": "At $0.35 per Mbit/s, what is the charge?",
+      "choices": [
+        "$252",
+        "$316.75",
+        "$224",
+        "$35"
+      ]
+    },
+    {
+      "id": "nif-w9-4",
+      "kind": "mcq",
+      "stem": "How many samples are free bursts with 20 samples?",
+      "choices": [
+        "Zero",
+        "One",
+        "Two",
+        "Five"
+      ]
+    },
+    {
+      "id": "nif-w9-5",
+      "kind": "mcq",
+      "stem": "Roughly how many hours of bursting does a 30-day month allow?",
+      "choices": [
+        "About 3.6",
+        "About 360",
+        "About 36",
+        "None"
+      ]
+    },
+    {
+      "id": "nif-w9-6",
+      "kind": "mcq",
+      "stem": "Why is billing the peak wrong under this contract?",
+      "choices": [
+        "Peaks are illegal",
+        "Peaks are averages",
+        "It is cheaper",
+        "The top 5% of samples are discarded"
+      ]
+    }
+  ]
+}

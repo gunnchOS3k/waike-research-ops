@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "nif-w1-1",
+      "kind": "mcq",
+      "stem": "About how fast does light travel in fiber with index 1.468?",
+      "choices": [
+        "About 300,000 km/s",
+        "About 1,468 km/s",
+        "About 204,000 km/s",
+        "About 100,000 km/s"
+      ]
+    },
+    {
+      "id": "nif-w1-2",
+      "kind": "mcq",
+      "stem": "What is the propagation delay over 1,145 km of fiber?",
+      "choices": [
+        "About 3.82 ms",
+        "About 11.45 ms",
+        "About 0.56 ms",
+        "About 5.61 ms"
+      ]
+    },
+    {
+      "id": "nif-w1-3",
+      "kind": "mcq",
+      "stem": "How long does a 1,500-byte packet take to serialize at 1 Gbit/s?",
+      "choices": [
+        "0.012 ms",
+        "1.5 ms",
+        "0.0015 ms",
+        "12 ms"
+      ]
+    },
+    {
+      "id": "nif-w1-4",
+      "kind": "mcq",
+      "stem": "Which delay can a faster link reduce?",
+      "choices": [
+        "Propagation",
+        "Serialization",
+        "Both equally",
+        "Neither"
+      ]
+    },
+    {
+      "id": "nif-w1-5",
+      "kind": "mcq",
+      "stem": "Why ask for the measured route length?",
+      "choices": [
+        "Maps are illegal",
+        "Fiber shrinks",
+        "Cables follow roads and railways, not straight lines",
+        "To add serialization"
+      ]
+    },
+    {
+      "id": "nif-w1-6",
+      "kind": "mcq",
+      "stem": "What error does using the vacuum speed of light cause?",
+      "choices": [
+        "Overstates delay",
+        "No error",
+        "Doubles serialization",
+        "Understates delay by about a third"
+      ]
+    }
+  ]
+}

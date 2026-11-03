@@ -1,0 +1,50 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "NETWORKING_INFRA",
+  "track_ids": [
+    "NETWORKING_INFRA"
+  ],
+  "date_checked": "2026-11-03",
+  "benchmarks": [
+    {
+      "source_id": "IETF_RFC5952_IPV6_TEXT",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "ipv6_canonical_text", "waike_weeks": [2]}
+      ]
+    },
+    {
+      "source_id": "IETF_RFC7323_TCP_EXTENSIONS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "window_scale_and_bdp", "waike_weeks": [3]}
+      ]
+    },
+    {
+      "source_id": "IETF_RFC4271_BGP4",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "bgp_best_path", "waike_weeks": [4]}
+      ]
+    },
+    {
+      "source_id": "IETF_RFC1034_DNS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "dns_ttl_caching", "waike_weeks": [5]}
+      ]
+    },
+    {
+      "source_id": "CISCO_CCNA_200_301_V1_1",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {"domain": "ip_connectivity", "waike_weeks": [2, 4]},
+        {"domain": "network_fundamentals", "waike_weeks": [1, 7]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "COMPUTER_NETWORKING": "COMPUTER_NETWORKING (Packets to Campus Edge) teaches campus networking from packets and protocols up. NETWORKING_INFRA is the backbone room: fibre latency, IPv6 text, bandwidth-delay product, BGP path choice, DNS TTL planning, CDN offload, optical budgets, availability, and 95th-percentile transit billing."
+  },
+  "claim_boundary": "Documentation ASNs (64496-64511) and 2001:db8::/32 only; no production peering or transit claim. CCNA used as topic labels only. Not student/teacher E6."
+}

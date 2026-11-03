@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "nif-w5-1",
+      "kind": "mcq",
+      "stem": "Cached at 3,000 with TTL 3,600. When does that resolver's copy expire?",
+      "choices": [
+        "t = 3,600",
+        "t = 5,000",
+        "t = 6,600",
+        "t = 8,600"
+      ]
+    },
+    {
+      "id": "nif-w5-2",
+      "kind": "mcq",
+      "stem": "The record changed at 5,000. How long does that resolver serve stale data?",
+      "choices": [
+        "3,600 seconds",
+        "0 seconds",
+        "5,000 seconds",
+        "1,600 seconds"
+      ]
+    },
+    {
+      "id": "nif-w5-3",
+      "kind": "mcq",
+      "stem": "What is the worst-case stale window for TTL 3,600?",
+      "choices": [
+        "3,600 seconds",
+        "1,600 seconds",
+        "300 seconds",
+        "None"
+      ]
+    },
+    {
+      "id": "nif-w5-4",
+      "kind": "mcq",
+      "stem": "By when must the TTL be lowered for a change at 5,000?",
+      "choices": [
+        "t = 4,999",
+        "t = 1,400",
+        "t = 5,000",
+        "t = 6,600"
+      ]
+    },
+    {
+      "id": "nif-w5-5",
+      "kind": "mcq",
+      "stem": "When is a DNS change actually live everywhere?",
+      "choices": [
+        "When the zone is saved",
+        "Immediately",
+        "When the last cache has expired",
+        "After a reboot"
+      ]
+    },
+    {
+      "id": "nif-w5-6",
+      "kind": "mcq",
+      "stem": "Why keep old servers answering after the change?",
+      "choices": [
+        "For fun",
+        "To double cost",
+        "DNS requires it forever",
+        "Stale resolvers still send users there"
+      ]
+    }
+  ]
+}

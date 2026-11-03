@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 190,
+  "lab_count": 200,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -231,6 +231,18 @@
       "lab_ish_imaging_time",
       "lab_ish_sanitize_decision",
       "lab_ish_service_report"
+    ],
+    "NETWORKING_INFRA": [
+      "lab_nif_latency_budget",
+      "lab_nif_ipv6_text",
+      "lab_nif_bdp_window",
+      "lab_nif_bgp_path",
+      "lab_nif_dns_ttl",
+      "lab_nif_cdn_offload",
+      "lab_nif_optical_budget",
+      "lab_nif_availability",
+      "lab_nif_p95_billing",
+      "lab_nif_design_packet"
     ]
   },
   "batch_001_lab_count": 20,
@@ -241,7 +253,7 @@
   "batch_006_lab_count": 10,
   "batch_007_lab_count": 20,
   "batch_008_lab_count": 10,
-  "batch_009_lab_count": 30,
+  "batch_009_lab_count": 40,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -2646,7 +2658,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'freshness', 'median_by_zone'}"
+          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -7232,6 +7244,396 @@
       ],
       "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
       "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_latency_budget",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "route km, packet bytes, link Gbit/s > 0"
+        },
+        {
+          "name": "propagation_recomputed",
+          "ok": true,
+          "detail": "5.607 ms"
+        },
+        {
+          "name": "serialization_recomputed",
+          "ok": true,
+          "detail": "0.0120 ms"
+        },
+        {
+          "name": "one_way_recomputed",
+          "ok": true,
+          "detail": "5.619 ms"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_ipv6_text",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "address_parses",
+          "ok": true,
+          "detail": "valid IPv6 text"
+        },
+        {
+          "name": "rfc5952_form",
+          "ok": true,
+          "detail": "expected 2001:db8::1:0:0:1"
+        },
+        {
+          "name": "prefix_lengths",
+          "ok": true,
+          "detail": "site prefix shorter than subnet prefix"
+        },
+        {
+          "name": "subnet_count_recomputed",
+          "ok": true,
+          "detail": "2^(64-48)"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_bdp_window",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "rate, RTT, window > 0"
+        },
+        {
+          "name": "bdp_recomputed",
+          "ok": true,
+          "detail": "10000000 B"
+        },
+        {
+          "name": "window_cap_recomputed",
+          "ok": true,
+          "detail": "6.55 Mbit/s"
+        },
+        {
+          "name": "scale_shift_recomputed",
+          "ok": true,
+          "detail": "RFC 7323 shift 8"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_bgp_path",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "best_route_recomputed",
+          "ok": true,
+          "detail": "expected R2"
+        },
+        {
+          "name": "tie_breaker_named",
+          "ok": true,
+          "detail": "last elimination by origin"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_dns_ttl",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "integer seconds; cached before the change"
+        },
+        {
+          "name": "stale_until_s_recomputed",
+          "ok": true,
+          "detail": "stale_until_s=6600"
+        },
+        {
+          "name": "stale_window_s_recomputed",
+          "ok": true,
+          "detail": "stale_window_s=1600"
+        },
+        {
+          "name": "worst_case_s_recomputed",
+          "ok": true,
+          "detail": "worst_case_s=3600"
+        },
+        {
+          "name": "lower_ttl_one_old_ttl_ahead",
+          "ok": true,
+          "detail": "lower the TTL at least one old TTL before the change"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_cdn_offload",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "rate, object size, \u22652 hit-ratio scenarios"
+        },
+        {
+          "name": "scenarios_recomputed",
+          "ok": true,
+          "detail": "wrong=0"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_optical_budget",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "span, counts, powers"
+        },
+        {
+          "name": "loss_recomputed",
+          "ok": true,
+          "detail": "16.60 dB"
+        },
+        {
+          "name": "margin_recomputed",
+          "ok": true,
+          "detail": "6.40 dB"
+        },
+        {
+          "name": "pass_needs_3db_margin",
+          "ok": true,
+          "detail": "margin \u2265 3 dB"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_availability",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "two redundant parts and \u22651 serial part, each 0 < A < 1"
+        },
+        {
+          "name": "availability_recomputed",
+          "ok": true,
+          "detail": "0.999399"
+        },
+        {
+          "name": "downtime_recomputed",
+          "ok": true,
+          "detail": "315.9 min/yr"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_p95_billing",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "\u226520 five-minute samples and a price"
+        },
+        {
+          "name": "p95_recomputed",
+          "ok": true,
+          "detail": "720.0 Mbit/s"
+        },
+        {
+          "name": "bill_recomputed",
+          "ok": true,
+          "detail": "$252.00"
+        },
+        {
+          "name": "free_burst_count",
+          "ok": true,
+          "detail": "top 5% are not billed"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_nif_design_packet",
+      "course_id": "NETWORKING_INFRA",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "\u22656 prior labs"
+        },
+        {
+          "name": "documentation_asn",
+          "ok": true,
+          "detail": "RFC 5398 documentation ASN"
+        },
+        {
+          "name": "documentation_prefix",
+          "ok": true,
+          "detail": "inside 2001:db8::/32 (RFC 3849)"
+        },
+        {
+          "name": "latency_recomputed",
+          "ok": true,
+          "detail": "5.607 ms propagation"
+        },
+        {
+          "name": "availability_recomputed",
+          "ok": true,
+          "detail": "0.999399"
+        },
+        {
+          "name": "target_verdict",
+          "ok": true,
+          "detail": "computed A vs target"
+        },
+        {
+          "name": "optical_margin",
+          "ok": true,
+          "detail": "\u22653 dB, recomputed"
+        },
+        {
+          "name": "no_production_claim",
+          "ok": true,
+          "detail": "design exercise only"
+        }
+      ],
+      "claim_boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6.",
+      "boundary": "NETWORKING_INFRA Backbone Room. Documentation ASNs and prefixes, planning coefficients, and synthetic traffic samples only; no production peering or transit claims. Not student/teacher E6."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -7328,39 +7730,51 @@
       "ok": true
     },
     {
-      "lab_id": "lab_soc_shift_handoff_negative",
+      "lab_id": "lab_soc_shift_handoff_offensive_tooling_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_soc_attack_map_negative",
+      "lab_id": "lab_soc_attack_map_actor_attribution_claim_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_soc_detection_metrics_negative",
+      "lab_id": "lab_soc_detection_metrics_needs_tuning_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_dco_safety_plan_negative",
+      "lab_id": "lab_dco_safety_plan_real_passwords_included_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_dco_link_check_negative",
+      "lab_id": "lab_dco_link_check_safe_to_open_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_dco_backup_321_negative",
+      "lab_id": "lab_dco_backup_321_restore_tested_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_ish_service_report_negative",
+      "lab_id": "lab_ish_service_report_customer_data_retained_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_ish_raid_capacity_negative",
+      "lab_id": "lab_ish_raid_capacity_raid_is_backup_negative",
       "ok": true
     },
     {
-      "lab_id": "lab_ish_fault_isolation_negative",
+      "lab_id": "lab_ish_fault_isolation_replaced_parts_before_isolating_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_nif_design_packet_production_peering_claim_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_nif_design_packet_asn_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_nif_design_packet_ipv6_prefix_negative",
       "ok": true
     }
   ],
@@ -8130,6 +8544,46 @@
     {
       "lab_id": "lab_ish_service_report",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_latency_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_ipv6_text",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_bdp_window",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_bgp_path",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_dns_ttl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_cdn_offload",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_optical_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_availability",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_p95_billing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_design_packet",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -8891,6 +9345,46 @@
     },
     {
       "lab_id": "lab_ish_service_report",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_latency_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_ipv6_text",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_bdp_window",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_bgp_path",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_dns_ttl",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_cdn_offload",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_optical_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_availability",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_p95_billing",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_nif_design_packet",
       "failed_as_required": true
     }
   ],

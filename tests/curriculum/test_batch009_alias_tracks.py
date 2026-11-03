@@ -136,6 +136,19 @@ def test_ish_graders_recompute_from_submitted_inputs():
     assert labs_ish.mbr_limit(512) == 2_199_023_255_552
 
 
+def test_nif_graders_recompute_from_submitted_inputs():
+    ref = labs_nif.REFERENCE_NIF
+    lat = ref["lab_nif_latency_budget"]
+    assert not labs_nif.lab_nif_latency_budget({**lat, "route_km": 2000}).ok
+    moved = labs_nif.latency_budget(2000, 1500, 1.0)
+    assert labs_nif.lab_nif_latency_budget({**lat, "route_km": 2000, **{k: round(v, 4) for k, v in moved.items()}}).ok
+    bdp = ref["lab_nif_bdp_window"]
+    assert not labs_nif.lab_nif_bdp_window({**bdp, "rtt_ms": 20}).ok
+    assert labs_nif.bgp_best(labs_nif.BGP_ROUTES) == ("R2", "origin")
+    assert round(labs_nif.optical_budget(40, 4, 6, 0.0, -23.0)["margin_db"], 2) == 6.4
+    assert round(lat["propagation_ms"], 2) == 5.61
+
+
 @pytest.mark.parametrize("cid", BATCH_COURSE_IDS)
 def test_enabled_tracks_are_on_product_path_with_reachable_references(cid):
     assert COURSES[cid]["track_ids"] == [cid]

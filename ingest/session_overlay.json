@@ -358,5 +358,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "NETWORKING_INFRA-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "NETWORKING_INFRA-offline",
+      "labs": [
+        "lab_nif_latency_budget",
+        "lab_nif_ipv6_text"
+      ],
+      "catalog_course_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure \u2014 Backbone Room"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "NETWORKING_INFRA",
+  "lesson_ids": [
+    "NETWORKING_INFRA-w01",
+    "NETWORKING_INFRA-w02",
+    "NETWORKING_INFRA-w03",
+    "NETWORKING_INFRA-w04",
+    "NETWORKING_INFRA-w05",
+    "NETWORKING_INFRA-w06",
+    "NETWORKING_INFRA-w07",
+    "NETWORKING_INFRA-w08",
+    "NETWORKING_INFRA-w09",
+    "NETWORKING_INFRA-w10"
+  ],
+  "labs": [
+    "lab_nif_latency_budget",
+    "lab_nif_ipv6_text",
+    "lab_nif_bdp_window",
+    "lab_nif_bgp_path",
+    "lab_nif_dns_ttl",
+    "lab_nif_cdn_offload",
+    "lab_nif_optical_budget",
+    "lab_nif_availability",
+    "lab_nif_p95_billing",
+    "lab_nif_design_packet"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

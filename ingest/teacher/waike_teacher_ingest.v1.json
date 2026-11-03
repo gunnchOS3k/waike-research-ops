@@ -1,7 +1,7 @@
 {
   "schema": "waike.teacher_ingest.v1",
   "role": "educator",
-  "generated_utc": "2026-11-03T03:02:52Z",
+  "generated_utc": "2026-11-03T03:05:03Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -1873,7 +1873,7 @@
       "course_id": "COMPUTER_NETWORKING",
       "title": "Computer Networking \u2014 Packets to Campus Edge",
       "track_ids": [
-        "NETWORKING_INFRA"
+        "COMPUTER_NETWORKING"
       ],
       "academy_id": "ACADEMY_NETWORKING",
       "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
@@ -37409,6 +37409,1878 @@
         "IT_SUPPORT_HARDWARE-assignment",
         "IT_SUPPORT_HARDWARE-practical",
         "IT_SUPPORT_HARDWARE-project"
+      ],
+      "instructor_notes": "Keys stay out of learner ingest. Run labs with computing validators.",
+      "presentation": [
+        "week_01.md",
+        "week_02.md",
+        "week_03.md",
+        "week_04.md",
+        "week_05.md",
+        "week_06.md",
+        "week_07.md",
+        "week_08.md",
+        "week_09.md",
+        "week_10.md"
+      ]
+    },
+    {
+      "course_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure \u2014 Backbone Room",
+      "track_ids": [
+        "NETWORKING_INFRA"
+      ],
+      "academy_id": "ACADEMY_NETWORKING",
+      "kinesthetic_hook": "Ten Backbone Room change requests: budget fiber latency \u2192 write IPv6 canonically \u2192 size TCP windows \u2192 pick a BGP path \u2192 plan a DNS cutover \u2192 size CDN offload \u2192 budget an optical span \u2192 compute availability \u2192 read a 95th-percentile bill \u2192 submit a design packet.",
+      "lesson_excerpt": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so th",
+      "worked_example": "1,145 km \u00d7 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B \u00d7 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms",
+      "assignment": "Submit lab_nif_latency_budget JSON for NIF-5101: route_km, packet_bytes, link_gbps, propagation_ms, serialization_ms, one_way_ms.",
+      "lab_hint": "lab_nif_latency_budget",
+      "syllabus": {
+        "weeks": 10,
+        "hook": "NETWORKING_INFRA COURSE_DIGITAL_RC: internet-scale infrastructure arithmetic \u2014 fiber propagation, IPv6 text and prefix math, bandwidth-delay product, BGP path selection, DNS caching, CDN offload, optical link budgets, availability in series and parallel, and 95th-percentile transit billing. Documentation ASNs and prefixes only. Distinct from COMPUTER_NETWORKING (campus LAN, subnetting, switching). Not student/teacher E6."
+      },
+      "weeks": [
+        {
+          "week": 1,
+          "title": "Fiber latency budget \u2014 light is slower in glass",
+          "lesson_id": "NETWORKING_INFRA-w01",
+          "body_md": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so the signal moves at roughly 204,000 km/s. Divide the route length by that speed: 1,145 km takes about 5.6067 milliseconds. That is propagation, and no upgrade fixes it short of a straighter path. Serialization is the time to clock a packet's bits onto the wire: 1,500 bytes is 12,000 bits, which takes 0.012 ms at one gigabit per second and would take ten times longer on a 100-megabit link. Add them for a one-way floor of about 5.619 ms, before any queueing or equipment delay. Route length is not the straight-line distance on a map; cables follow railways and roads, so ask for the measured route. Using the vacuum speed understates delay by about a third and leads to promises the backbone cannot keep.",
+          "worked_example": "1,145 km \u00d7 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B \u00d7 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms"
+        },
+        {
+          "week": 2,
+          "title": "IPv6 text and prefixes \u2014 one canonical way to write an address",
+          "lesson_id": "NETWORKING_INFRA-w02",
+          "body_md": "NIF-5202 began as an outage: two engineers searched the change log for the same router address and missed each other because they had typed it differently. IPv6 addresses are 128 bits, written as eight groups of four hex digits, and RFC 5952 sets one canonical text form so tools and people agree. Write hex in lowercase, drop leading zeros in each group, and replace the longest run of two or more all-zero groups with a double colon, choosing the first run if two are equally long. A single zero group stays as 0. So 2001:0DB8:0000:0000:0001:0000:0000:0001 has two runs of two zero groups; the first one collapses and the result is 2001:db8::1:0:0:1. The 2001:db8::/32 block is reserved for documentation, which is why this course uses it. Prefix math is about counting bits: a site receives a /48, and LAN segments are /64, so 64 minus 48 leaves 16 bits for subnet numbers, which is 65,536 subnets. Never squeeze a LAN smaller than /64; address autoconfiguration expects it.",
+          "worked_example": "2001:0DB8:0000:0000:0001:0000:0000:0001 \u2192 2001:db8::1:0:0:1; /48 site \u2192 /64 subnets: 2^16 = 65,536"
+        },
+        {
+          "week": 3,
+          "title": "Bandwidth-delay product \u2014 why one connection cannot fill the pipe",
+          "lesson_id": "NETWORKING_INFRA-w03",
+          "body_md": "NIF-5303: a research group pays for a one-gigabit link to a partner 80 milliseconds away and complains that a single file transfer crawls at a few megabits. TCP may only have one window of unacknowledged bytes in flight, then must wait for acknowledgements to return. The bandwidth-delay product says how many bytes the pipe holds: one gigabit per second times 0.08 seconds is 80 million bits, or 10,000,000 bytes. The original TCP header allows a window of at most 65,535 bytes, so the sender stalls after 64 KiB each round trip; throughput is window times eight divided by the round-trip time, about 6.55 Mbit/s here, less than one percent of the link. RFC 7323 window scaling shifts the advertised window left by a negotiated count; a shift of 8 multiplies 65,535 by 256 to about 16.8 MB, enough to cover the 10 MB product. The fix is end-host tuning and checking that no middlebox strips the option, not buying a bigger link.",
+          "worked_example": "1 Gbit/s \u00d7 0.080 s / 8 = 10,000,000 B BDP; 65,535-byte window \u00d7 8 / 0.080 s = 6.55 Mbit/s; window scale shift 8 (65,535 \u00d7 256 \u2265 10 MB)"
+        },
+        {
+          "week": 4,
+          "title": "BGP best path \u2014 policy first, then the shorter story",
+          "lesson_id": "NETWORKING_INFRA-w04",
+          "body_md": "NIF-5404 asks why traffic to a partner network leaves through the long transit path instead of the direct one. Border Gateway Protocol routers hear several routes to the same prefix and pick one by walking an ordered list of attributes, stopping at the first that differs. This course uses a simplified order: highest local preference, shortest AS_PATH, lowest origin code with IGP before EGP before incomplete, lowest MED, then lowest router ID. Local preference is the operator's own policy, so it outranks everything about the route's length. Here R1 offers a one-hop path through documentation AS 64500 but carries local preference 100, while R2 and R3 both carry 200, so R1 is out at the first step even though its path is shortest. R2 and R3 each have four AS numbers, a tie, so the origin decides: R2 is IGP and R3 is EGP, and R2 wins. The deciding attribute is origin. Real routers add steps such as weight and eBGP-over-iBGP; RFC 4271 is the reference, and vendor documents list their full order.",
+          "worked_example": "R1 lp100 [64500]; R2 lp200 len4 IGP; R3 lp200 len4 EGP \u2192 local_pref removes R1, AS_PATH ties, origin IGP<EGP \u2192 R2"
+        },
+        {
+          "week": 5,
+          "title": "DNS TTL \u2014 planning a change the world sees late",
+          "lesson_id": "NETWORKING_INFRA-w05",
+          "body_md": "NIF-5505 is a cutover: a public website moves to new servers at t = 5,000 seconds and the old servers will be switched off soon after. Resolvers that looked up the name keep the answer for its time to live, and RFC 1034 lets them reuse it without asking again. A resolver that cached the record at t = 3,000 with a TTL of 3,600 seconds will hand out the old address until t = 6,600, so its users see the old site for 1,600 seconds after the change. In the worst case a resolver caches the old answer one second before the change and stays stale for the whole TTL, 3,600 seconds. The fix is planning: lower the TTL to something short, such as 300 seconds, at least one old TTL before the change, so by t = 1,400 at the latest, and raise it again once the new servers are stable. Keep the old servers answering until the worst-case window has passed. A change is not live when the zone file is saved; it is live when the last cache has expired.",
+          "worked_example": "TTL 3600; resolver cached at t=3000 \u2192 expires 6600; record changed at 5000 \u2192 stale window 1600 s; worst case 3600 s; lower TTL by t=1400"
+        },
+        {
+          "week": 6,
+          "title": "CDN offload \u2014 the miss ratio is what the origin pays for",
+          "lesson_id": "NETWORKING_INFRA-w06",
+          "body_md": "NIF-5606: a public broadcaster expects 12,000 requests per second for a live results page, each object about 150 kilobytes, and its origin servers sit behind a two-gigabit link. A content delivery network answers from edge caches when it can, and only the misses travel back to the origin. The origin's load scales with the miss ratio, one minus the hit ratio. At a 92 percent hit ratio, 8 percent of 12,000 is 960 requests per second, and 960 times 150,000 bytes times 8 bits is 1.152 gigabits per second, uncomfortably close to the two-gigabit link. Raising the hit ratio to 96 percent halves the misses to 480 requests per second and 0.576 Gbit/s. Four points of hit ratio halved the origin's work, which is why cache keys, longer TTLs for static images, and stripping needless query strings matter. The edge still delivers all 14.4 Gbit/s to viewers, so the CDN contract must cover that. Multiplying by the hit ratio instead of the miss ratio gives a number that looks impressive and is wrong.",
+          "worked_example": "12,000 rps \u00d7 150 KB: hit 0.92 \u2192 960 rps, 1.152 Gbit/s at origin; hit 0.96 \u2192 480 rps, 0.576 Gbit/s; edge serves 14.4 Gbit/s total"
+        },
+        {
+          "week": 7,
+          "title": "Optical link budget \u2014 loss, margin, and the 3 dB rule",
+          "lesson_id": "NETWORKING_INFRA-w07",
+          "body_md": "NIF-5707 is a NO_AI week: do the decibel arithmetic on paper first. A field team must confirm that optics with a 0 dBm transmitter and a receiver sensitivity of \u221223 dBm will work over a new 40 km span. Decibels add, which is why engineers like them. The planning coefficients are 0.35 dB per kilometre of fiber, 0.5 dB for each mated connector, and 0.1 dB for each fusion splice. Forty kilometres costs 14 dB, four connectors cost 2, and six splices cost 0.6, for 16.6 dB in total. The light arrives at \u221216.6 dBm, and the receiver can still read it down to \u221223, so the margin is 6.4 dB. The backbone rule asks for at least 3 dB of margin to cover ageing, dirty connectors, temperature, and the repair splices a backhoe will eventually require, so this span passes. Counting only fiber loss would claim 9 dB of margin and hide two decibels of connectors. Clean and inspect every connector before measuring, and compare the light meter's reading with the budget.",
+          "worked_example": "40 km \u00d7 0.35 + 4 \u00d7 0.5 + 6 \u00d7 0.1 = 16.6 dB loss; margin = 0 \u2212 16.6 \u2212 (\u221223) = 6.4 dB \u2265 3 \u2192 passes"
+        },
+        {
+          "week": 8,
+          "title": "Availability \u2014 redundancy in parallel, single points in series",
+          "lesson_id": "NETWORKING_INFRA-w08",
+          "body_md": "NIF-5808: a regional exchange's design has two core routers sharing traffic, each available 99.9 percent of the time, followed by one power feed at 99.95 percent and one fiber uplink at 99.99 percent. The question from management is how many minutes a year customers should expect to lose. A redundant pair fails only when both members are down at once, so its unavailability is the product of theirs: 0.001 times 0.001 is one in a million, making the pair 0.999999 available, assuming failures are independent. Parts in series all have to work, so their availabilities multiply: 0.999999 times 0.9995 times 0.9999 is about 0.9993991. A year has 525,600 minutes, so expected downtime is about 315.9 minutes, more than five hours, almost all of it from the single power feed. Spending more on routers would barely move the result; a second feed would. Shared causes such as one power strip feeding both routers break the independence assumption and must be designed away.",
+          "worked_example": "pair 1 \u2212 (0.001 \u00d7 0.001) = 0.999999; \u00d7 0.9995 \u00d7 0.9999 = 0.9993991; downtime (1 \u2212 A) \u00d7 525,600 = 315.9 min/yr"
+        },
+        {
+          "week": 9,
+          "title": "95th-percentile billing \u2014 the bursts you do not pay for",
+          "lesson_id": "NETWORKING_INFRA-w09",
+          "body_md": "NIF-5909, the second NO_AI week, is a disputed transit invoice. Many internet transit contracts bill on the 95th percentile: the provider records average throughput every five minutes, sorts the month's samples, throws away the top five percent, and bills the highest remaining sample. The course fixture has twenty samples between 289 and 905 Mbit/s. With twenty samples, five percent is one, so the bill uses the sample at sorted index ceil(0.95 \u00d7 20) \u2212 1, which is index 18 counting from zero. Sorted, that is 720 Mbit/s, while the 905 Mbit/s burst at the top is discarded. At $0.35 per Mbit/s the charge is $252. Billing the peak would charge $316.75, and billing the mean would undercount the busy hours. A real month has about 8,640 samples, so roughly 432 five-minute periods, about 36 hours, can burst without raising the bill. Know where your provider samples, whether inbound and outbound are compared, and check their arithmetic before paying.",
+          "worked_example": "20 five-minute samples sorted; index ceil(0.95 \u00d7 20) \u2212 1 = 18 \u2192 720 Mbit/s \u00d7 $0.35 = $252; the single 905 Mbit/s burst is free"
+        },
+        {
+          "week": 10,
+          "title": "Backbone design packet \u2014 documentation numbers, recomputed",
+          "lesson_id": "NETWORKING_INFRA-w10",
+          "body_md": "NIF-5A10 closes the term with a design packet for the regional backbone that the class has been building. It uses only documentation numbers: an autonomous system number from 64496 to 64511, here 64500, and an IPv6 prefix inside 2001:db8::/32, here 2001:db8:4400::/48. Using a real company's ASN or prefix in a training packet can leak into configurations and hijack someone else's traffic, so the reviewer rejects it on sight. The packet recomputes rather than restates: the 1,145 km route's propagation delay, the availability of the redundant core with its serial power feed and uplink compared with the 0.999 target, and the 6.4 dB optical margin. It cites RFC 4271, 5952, 7323, and 1034 for the behaviour it relies on. The final line says plainly that the packet is a classroom exercise and makes no claim about production peering or real customer service. Mentors pick one number at random and ask the author to derive it at the whiteboard.",
+          "worked_example": "ASN 64500, prefix 2001:db8:4400::/48, 1,145 km \u2192 5.6067 ms, availability 0.9993991 vs target 0.999 met, margin 6.4 dB, production_peering_claim false"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "a01",
+          "prompt": "Submit lab_nif_latency_budget JSON for NIF-5101: route_km, packet_bytes, link_gbps, propagation_ms, serialization_ms, one_way_ms."
+        },
+        {
+          "id": "a02",
+          "prompt": "Submit lab_nif_ipv6_text JSON for NIF-5202: full, compressed, site_prefix_len, subnet_len, subnet_count."
+        },
+        {
+          "id": "a03",
+          "prompt": "Submit lab_nif_bdp_window JSON for NIF-5303: rate_mbps, rtt_ms, window_bytes, bdp_bytes, max_throughput_mbps, window_scale_shift."
+        },
+        {
+          "id": "a04",
+          "prompt": "Submit lab_nif_bgp_path JSON for NIF-5404: best_route and deciding_attribute with a sentence per eliminated route."
+        },
+        {
+          "id": "a05",
+          "prompt": "Submit lab_nif_dns_ttl JSON for NIF-5505: ttl_s, cached_at_s, changed_at_s, stale_until_s, stale_window_s, worst_case_s, lower_ttl_by_s."
+        },
+        {
+          "id": "a06",
+          "prompt": "Submit lab_nif_cdn_offload JSON for NIF-5606: total_rps, object_kb, two scenarios with origin_rps and origin_gbps."
+        },
+        {
+          "id": "a07",
+          "prompt": "Submit lab_nif_optical_budget JSON for NIF-5707 (NO_AI): km, connectors, splices, tx_dbm, rx_sens_dbm, loss_db, margin_db, passes."
+        },
+        {
+          "id": "a08",
+          "prompt": "Submit lab_nif_availability JSON for NIF-5808: parallel_pair, serial, availability, downtime_min_per_year."
+        },
+        {
+          "id": "a09",
+          "prompt": "Submit lab_nif_p95_billing JSON for NIF-5909 (NO_AI): samples_mbps, usd_per_mbps, p95_mbps, bill_usd, free_burst_samples."
+        },
+        {
+          "id": "a10",
+          "prompt": "Submit lab_nif_design_packet JSON for NIF-5A10: labs_passed, asn, ipv6_prefix, recomputed latency/availability/optical, production_peering_claim false."
+        }
+      ],
+      "labs": [
+        "lab_nif_latency_budget",
+        "lab_nif_ipv6_text",
+        "lab_nif_bdp_window",
+        "lab_nif_bgp_path",
+        "lab_nif_dns_ttl",
+        "lab_nif_cdn_offload",
+        "lab_nif_optical_budget",
+        "lab_nif_availability",
+        "lab_nif_p95_billing",
+        "lab_nif_design_packet"
+      ],
+      "quizzes": [
+        {
+          "quiz_id": "NETWORKING_INFRA-q01",
+          "week": 1,
+          "items": [
+            {
+              "id": "nif-w1-1",
+              "kind": "mcq",
+              "stem": "About how fast does light travel in fiber with index 1.468?",
+              "choices": [
+                "About 300,000 km/s",
+                "About 1,468 km/s",
+                "About 204,000 km/s",
+                "About 100,000 km/s"
+              ]
+            },
+            {
+              "id": "nif-w1-2",
+              "kind": "mcq",
+              "stem": "What is the propagation delay over 1,145 km of fiber?",
+              "choices": [
+                "About 3.82 ms",
+                "About 11.45 ms",
+                "About 0.56 ms",
+                "About 5.61 ms"
+              ]
+            },
+            {
+              "id": "nif-w1-3",
+              "kind": "mcq",
+              "stem": "How long does a 1,500-byte packet take to serialize at 1 Gbit/s?",
+              "choices": [
+                "0.012 ms",
+                "1.5 ms",
+                "0.0015 ms",
+                "12 ms"
+              ]
+            },
+            {
+              "id": "nif-w1-4",
+              "kind": "mcq",
+              "stem": "Which delay can a faster link reduce?",
+              "choices": [
+                "Propagation",
+                "Serialization",
+                "Both equally",
+                "Neither"
+              ]
+            },
+            {
+              "id": "nif-w1-5",
+              "kind": "mcq",
+              "stem": "Why ask for the measured route length?",
+              "choices": [
+                "Maps are illegal",
+                "Fiber shrinks",
+                "Cables follow roads and railways, not straight lines",
+                "To add serialization"
+              ]
+            },
+            {
+              "id": "nif-w1-6",
+              "kind": "mcq",
+              "stem": "What error does using the vacuum speed of light cause?",
+              "choices": [
+                "Overstates delay",
+                "No error",
+                "Doubles serialization",
+                "Understates delay by about a third"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q02",
+          "week": 2,
+          "items": [
+            {
+              "id": "nif-w2-1",
+              "kind": "mcq",
+              "stem": "What is the RFC 5952 form of 2001:0DB8:0000:0000:0001:0000:0000:0001?",
+              "choices": [
+                "2001:db8::1:0:0:1",
+                "2001:db8:0:0:1::1",
+                "2001:DB8::1::1",
+                "2001:db8:0:0:1:0:0:1"
+              ]
+            },
+            {
+              "id": "nif-w2-2",
+              "kind": "mcq",
+              "stem": "When two zero runs are equally long, which one becomes ::?",
+              "choices": [
+                "The last",
+                "The first",
+                "Both",
+                "Neither"
+              ]
+            },
+            {
+              "id": "nif-w2-3",
+              "kind": "mcq",
+              "stem": "Can :: replace a single all-zero group?",
+              "choices": [
+                "Yes",
+                "Only in uppercase",
+                "No",
+                "Only at the end"
+              ]
+            },
+            {
+              "id": "nif-w2-4",
+              "kind": "mcq",
+              "stem": "How many /64 subnets fit in a /48?",
+              "choices": [
+                "16",
+                "256",
+                "4,096",
+                "65,536"
+              ]
+            },
+            {
+              "id": "nif-w2-5",
+              "kind": "mcq",
+              "stem": "Which block is reserved for documentation?",
+              "choices": [
+                "2001:db8::/32",
+                "2606:4700::/32",
+                "fe80::/10",
+                "::/0"
+              ]
+            },
+            {
+              "id": "nif-w2-6",
+              "kind": "mcq",
+              "stem": "Why keep LAN segments at /64?",
+              "choices": [
+                "It saves addresses",
+                "Address autoconfiguration expects it",
+                "It is faster",
+                "Routers cannot route /64"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q03",
+          "week": 3,
+          "items": [
+            {
+              "id": "nif-w3-1",
+              "kind": "mcq",
+              "stem": "What is the BDP of 1 Gbit/s at 80 ms RTT?",
+              "choices": [
+                "80,000,000 bytes",
+                "65,535 bytes",
+                "10,000,000 bytes",
+                "1,000,000 bytes"
+              ]
+            },
+            {
+              "id": "nif-w3-2",
+              "kind": "mcq",
+              "stem": "A 65,535-byte window over 80 ms caps throughput at about?",
+              "choices": [
+                "1,000 Mbit/s",
+                "65.5 Mbit/s",
+                "0.8 Mbit/s",
+                "6.55 Mbit/s"
+              ]
+            },
+            {
+              "id": "nif-w3-3",
+              "kind": "mcq",
+              "stem": "Which window scale shift first covers a 10 MB BDP?",
+              "choices": [
+                "8",
+                "4",
+                "0",
+                "14"
+              ]
+            },
+            {
+              "id": "nif-w3-4",
+              "kind": "mcq",
+              "stem": "Why does buying a bigger link not fix NIF-5303?",
+              "choices": [
+                "Links never help",
+                "The window, not the link, limits a single flow",
+                "Latency doubles",
+                "It costs nothing"
+              ]
+            },
+            {
+              "id": "nif-w3-5",
+              "kind": "mcq",
+              "stem": "What can silently break window scaling?",
+              "choices": [
+                "IPv6",
+                "Long passwords",
+                "A middlebox stripping the option",
+                "DNS"
+              ]
+            },
+            {
+              "id": "nif-w3-6",
+              "kind": "mcq",
+              "stem": "Doubling the RTT with a fixed window does what to throughput?",
+              "choices": [
+                "Doubles it",
+                "No change",
+                "Quadruples it",
+                "Halves it"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q04",
+          "week": 4,
+          "items": [
+            {
+              "id": "nif-w4-1",
+              "kind": "mcq",
+              "stem": "Which attribute is compared first in the course's simplified order?",
+              "choices": [
+                "Local preference",
+                "AS_PATH length",
+                "MED",
+                "Router ID"
+              ]
+            },
+            {
+              "id": "nif-w4-2",
+              "kind": "mcq",
+              "stem": "Why is R1 eliminated despite the shortest path?",
+              "choices": [
+                "Its router ID is high",
+                "Its local preference is lower",
+                "Its MED is zero",
+                "It is EGP"
+              ]
+            },
+            {
+              "id": "nif-w4-3",
+              "kind": "mcq",
+              "stem": "R2 and R3 both have four-AS paths. What decides next?",
+              "choices": [
+                "Router ID",
+                "Local preference again",
+                "Origin code",
+                "Path colour"
+              ]
+            },
+            {
+              "id": "nif-w4-4",
+              "kind": "mcq",
+              "stem": "Which origin code is preferred?",
+              "choices": [
+                "EGP",
+                "Incomplete",
+                "All equal",
+                "IGP"
+              ]
+            },
+            {
+              "id": "nif-w4-5",
+              "kind": "mcq",
+              "stem": "Which route wins NIF-5404?",
+              "choices": [
+                "R2",
+                "R1",
+                "R3",
+                "None"
+              ]
+            },
+            {
+              "id": "nif-w4-6",
+              "kind": "mcq",
+              "stem": "Where is the authoritative BGP specification?",
+              "choices": [
+                "RFC 5952",
+                "RFC 4271",
+                "RFC 1034",
+                "RFC 7489"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q05",
+          "week": 5,
+          "items": [
+            {
+              "id": "nif-w5-1",
+              "kind": "mcq",
+              "stem": "Cached at 3,000 with TTL 3,600. When does that resolver's copy expire?",
+              "choices": [
+                "t = 3,600",
+                "t = 5,000",
+                "t = 6,600",
+                "t = 8,600"
+              ]
+            },
+            {
+              "id": "nif-w5-2",
+              "kind": "mcq",
+              "stem": "The record changed at 5,000. How long does that resolver serve stale data?",
+              "choices": [
+                "3,600 seconds",
+                "0 seconds",
+                "5,000 seconds",
+                "1,600 seconds"
+              ]
+            },
+            {
+              "id": "nif-w5-3",
+              "kind": "mcq",
+              "stem": "What is the worst-case stale window for TTL 3,600?",
+              "choices": [
+                "3,600 seconds",
+                "1,600 seconds",
+                "300 seconds",
+                "None"
+              ]
+            },
+            {
+              "id": "nif-w5-4",
+              "kind": "mcq",
+              "stem": "By when must the TTL be lowered for a change at 5,000?",
+              "choices": [
+                "t = 4,999",
+                "t = 1,400",
+                "t = 5,000",
+                "t = 6,600"
+              ]
+            },
+            {
+              "id": "nif-w5-5",
+              "kind": "mcq",
+              "stem": "When is a DNS change actually live everywhere?",
+              "choices": [
+                "When the zone is saved",
+                "Immediately",
+                "When the last cache has expired",
+                "After a reboot"
+              ]
+            },
+            {
+              "id": "nif-w5-6",
+              "kind": "mcq",
+              "stem": "Why keep old servers answering after the change?",
+              "choices": [
+                "For fun",
+                "To double cost",
+                "DNS requires it forever",
+                "Stale resolvers still send users there"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q06",
+          "week": 6,
+          "items": [
+            {
+              "id": "nif-w6-1",
+              "kind": "mcq",
+              "stem": "At a 92% hit ratio and 12,000 rps, how many requests reach the origin?",
+              "choices": [
+                "960 per second",
+                "11,040 per second",
+                "9,200 per second",
+                "120 per second"
+              ]
+            },
+            {
+              "id": "nif-w6-2",
+              "kind": "mcq",
+              "stem": "What origin bandwidth do 960 rps of 150 KB objects need?",
+              "choices": [
+                "144 Mbit/s",
+                "1.152 Gbit/s",
+                "14.4 Gbit/s",
+                "0.96 Gbit/s"
+              ]
+            },
+            {
+              "id": "nif-w6-3",
+              "kind": "mcq",
+              "stem": "Raising the hit ratio from 92% to 96% does what to origin load?",
+              "choices": [
+                "Cuts it by 4%",
+                "Doubles it",
+                "Halves it",
+                "No change"
+              ]
+            },
+            {
+              "id": "nif-w6-4",
+              "kind": "mcq",
+              "stem": "Which ratio does origin load scale with?",
+              "choices": [
+                "The hit ratio",
+                "The TTL",
+                "The object count",
+                "The miss ratio"
+              ]
+            },
+            {
+              "id": "nif-w6-5",
+              "kind": "mcq",
+              "stem": "Total edge delivery for 12,000 rps of 150 KB is about?",
+              "choices": [
+                "14.4 Gbit/s",
+                "1.44 Gbit/s",
+                "144 Gbit/s",
+                "1.152 Gbit/s"
+              ]
+            },
+            {
+              "id": "nif-w6-6",
+              "kind": "mcq",
+              "stem": "Which change usually raises the hit ratio?",
+              "choices": [
+                "Shorter TTLs on images",
+                "Stripping needless query strings from cache keys",
+                "Disabling caching",
+                "Adding random parameters"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q07",
+          "week": 7,
+          "items": [
+            {
+              "id": "nif-w7-1",
+              "kind": "mcq",
+              "stem": "What is the total loss for 40 km, 4 connectors, and 6 splices?",
+              "choices": [
+                "14.0 dB",
+                "20.6 dB",
+                "16.6 dB",
+                "10.0 dB"
+              ]
+            },
+            {
+              "id": "nif-w7-2",
+              "kind": "mcq",
+              "stem": "With tx 0 dBm and sensitivity \u221223 dBm, what is the margin?",
+              "choices": [
+                "9.0 dB",
+                "23 dB",
+                "\u22126.4 dB",
+                "6.4 dB"
+              ]
+            },
+            {
+              "id": "nif-w7-3",
+              "kind": "mcq",
+              "stem": "Does the span pass the 3 dB rule?",
+              "choices": [
+                "Yes",
+                "No",
+                "Only at night",
+                "Cannot tell"
+              ]
+            },
+            {
+              "id": "nif-w7-4",
+              "kind": "mcq",
+              "stem": "Why do engineers like decibels for budgets?",
+              "choices": [
+                "They are larger numbers",
+                "Losses add instead of multiply",
+                "They are metric",
+                "They avoid physics"
+              ]
+            },
+            {
+              "id": "nif-w7-5",
+              "kind": "mcq",
+              "stem": "What does counting only fiber loss do?",
+              "choices": [
+                "Understates the margin",
+                "Nothing",
+                "Overstates the margin",
+                "Fails every span"
+              ]
+            },
+            {
+              "id": "nif-w7-6",
+              "kind": "mcq",
+              "stem": "What should happen before measuring with a light meter?",
+              "choices": [
+                "Bend the fiber",
+                "Remove the splices",
+                "Raise the transmitter",
+                "Clean and inspect every connector"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q08",
+          "week": 8,
+          "items": [
+            {
+              "id": "nif-w8-1",
+              "kind": "mcq",
+              "stem": "Two 99.9% routers in parallel give what availability?",
+              "choices": [
+                "0.999999",
+                "0.998",
+                "0.9999",
+                "0.999"
+              ]
+            },
+            {
+              "id": "nif-w8-2",
+              "kind": "mcq",
+              "stem": "What happens to availability for parts in series?",
+              "choices": [
+                "They add",
+                "They multiply",
+                "The best one wins",
+                "They average"
+              ]
+            },
+            {
+              "id": "nif-w8-3",
+              "kind": "mcq",
+              "stem": "What is the design's overall availability?",
+              "choices": [
+                "About 0.9984",
+                "About 0.99999",
+                "About 0.9993991",
+                "About 0.9999"
+              ]
+            },
+            {
+              "id": "nif-w8-4",
+              "kind": "mcq",
+              "stem": "About how many minutes of downtime per year does it imply?",
+              "choices": [
+                "About 841",
+                "About 53",
+                "About 5",
+                "About 316"
+              ]
+            },
+            {
+              "id": "nif-w8-5",
+              "kind": "mcq",
+              "stem": "Which single change would help most?",
+              "choices": [
+                "A second power feed",
+                "Faster routers",
+                "More router RAM",
+                "A new logo"
+              ]
+            },
+            {
+              "id": "nif-w8-6",
+              "kind": "mcq",
+              "stem": "What breaks the independence assumption?",
+              "choices": [
+                "Different colours",
+                "Both routers on one power strip",
+                "Separate racks",
+                "Separate feeds"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q09",
+          "week": 9,
+          "items": [
+            {
+              "id": "nif-w9-1",
+              "kind": "mcq",
+              "stem": "With 20 samples, which sorted index (from zero) is billed?",
+              "choices": [
+                "19",
+                "20",
+                "18",
+                "0"
+              ]
+            },
+            {
+              "id": "nif-w9-2",
+              "kind": "mcq",
+              "stem": "What is the billed rate in the course fixture?",
+              "choices": [
+                "905 Mbit/s",
+                "640 Mbit/s",
+                "455 Mbit/s",
+                "720 Mbit/s"
+              ]
+            },
+            {
+              "id": "nif-w9-3",
+              "kind": "mcq",
+              "stem": "At $0.35 per Mbit/s, what is the charge?",
+              "choices": [
+                "$252",
+                "$316.75",
+                "$224",
+                "$35"
+              ]
+            },
+            {
+              "id": "nif-w9-4",
+              "kind": "mcq",
+              "stem": "How many samples are free bursts with 20 samples?",
+              "choices": [
+                "Zero",
+                "One",
+                "Two",
+                "Five"
+              ]
+            },
+            {
+              "id": "nif-w9-5",
+              "kind": "mcq",
+              "stem": "Roughly how many hours of bursting does a 30-day month allow?",
+              "choices": [
+                "About 3.6",
+                "About 360",
+                "About 36",
+                "None"
+              ]
+            },
+            {
+              "id": "nif-w9-6",
+              "kind": "mcq",
+              "stem": "Why is billing the peak wrong under this contract?",
+              "choices": [
+                "Peaks are illegal",
+                "Peaks are averages",
+                "It is cheaper",
+                "The top 5% of samples are discarded"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "NETWORKING_INFRA-q10",
+          "week": 10,
+          "items": [
+            {
+              "id": "nif-w10-1",
+              "kind": "mcq",
+              "stem": "Which ASN range is reserved for documentation?",
+              "choices": [
+                "64496\u201364511",
+                "13335\u201313350",
+                "1\u2013100",
+                "65535 only"
+              ]
+            },
+            {
+              "id": "nif-w10-2",
+              "kind": "mcq",
+              "stem": "Why must training packets avoid real ASNs and prefixes?",
+              "choices": [
+                "They are too long",
+                "They can leak into configs and hijack traffic",
+                "They cost money",
+                "They are secret"
+              ]
+            },
+            {
+              "id": "nif-w10-3",
+              "kind": "mcq",
+              "stem": "Does 0.9993991 meet a 0.999 target?",
+              "choices": [
+                "No",
+                "Only with RAID",
+                "Yes",
+                "Cannot tell"
+              ]
+            },
+            {
+              "id": "nif-w10-4",
+              "kind": "mcq",
+              "stem": "What does 'recompute rather than restate' mean here?",
+              "choices": [
+                "Copy last term's figures",
+                "Round everything to 1",
+                "Skip the math",
+                "Derive each number from its inputs"
+              ]
+            },
+            {
+              "id": "nif-w10-5",
+              "kind": "mcq",
+              "stem": "What must the final line of the packet say?",
+              "choices": [
+                "No production peering claim",
+                "Guaranteed uptime",
+                "Certified by Cisco",
+                "Live customer service"
+              ]
+            },
+            {
+              "id": "nif-w10-6",
+              "kind": "mcq",
+              "stem": "How do mentors check the packet?",
+              "choices": [
+                "Check the font",
+                "Ask the author to derive a random number at the whiteboard",
+                "Count pages",
+                "Accept it unread"
+              ]
+            }
+          ]
+        }
+      ],
+      "assessments": {
+        "mid_course": [
+          {
+            "id": "nif-mid-01",
+            "stem": "A 2,000 km fiber route with index 1.468 has about how much propagation delay?",
+            "choices": [
+              "About 6.7 ms",
+              "About 20 ms",
+              "About 9.8 ms",
+              "About 2 ms"
+            ]
+          },
+          {
+            "id": "nif-mid-02",
+            "stem": "A 9,000-byte jumbo frame at 10 Gbit/s takes how long to serialize?",
+            "choices": [
+              "72 \u00b5s",
+              "0.9 \u00b5s",
+              "720 \u00b5s",
+              "7.2 \u00b5s"
+            ]
+          },
+          {
+            "id": "nif-mid-03",
+            "stem": "Why can a satellite link never match a short fiber path's latency?",
+            "choices": [
+              "Propagation distance dominates",
+              "Satellites are slow computers",
+              "Packets are larger",
+              "DNS is slower"
+            ]
+          },
+          {
+            "id": "nif-mid-04",
+            "stem": "A neighbour table lists the link-local address FE80:0000:0000:0000:0204:61FF:FE9D:F156. How should the change record write it?",
+            "choices": [
+              "fe80::0204:61ff:fe9d:f156",
+              "fe80::204:61ff:fe9d:f156",
+              "FE80::204:61FF:FE9D:F156",
+              "fe80:0:0:0:204:61ff:fe9d:f156"
+            ]
+          },
+          {
+            "id": "nif-mid-05",
+            "stem": "How many /56 prefixes fit in a /48?",
+            "choices": [
+              "65,536",
+              "8",
+              "256",
+              "16"
+            ]
+          },
+          {
+            "id": "nif-mid-06",
+            "stem": "What is the BDP of 100 Mbit/s at 40 ms RTT?",
+            "choices": [
+              "4,000,000 bytes",
+              "40,000 bytes",
+              "100,000 bytes",
+              "500,000 bytes"
+            ]
+          },
+          {
+            "id": "nif-mid-07",
+            "stem": "A transfer over 160 ms with a 65,535-byte window caps at about?",
+            "choices": [
+              "3.28 Mbit/s",
+              "6.55 Mbit/s",
+              "13.1 Mbit/s",
+              "65.5 Mbit/s"
+            ]
+          },
+          {
+            "id": "nif-mid-08",
+            "stem": "Two routes have equal local preference; one AS_PATH has 2 ASNs, the other 5. Which wins?",
+            "choices": [
+              "The 5-ASN route",
+              "The 2-ASN route",
+              "Lowest router ID",
+              "Neither"
+            ]
+          },
+          {
+            "id": "nif-mid-09",
+            "stem": "An operator wants all traffic to prefer one upstream regardless of path length. Which attribute?",
+            "choices": [
+              "Lower MED",
+              "Router ID",
+              "Higher local preference",
+              "Origin"
+            ]
+          },
+          {
+            "id": "nif-mid-10",
+            "stem": "A record with TTL 300 changes at t=10,000. Worst-case stale window?",
+            "choices": [
+              "10,000 seconds",
+              "0 seconds",
+              "3,600 seconds",
+              "300 seconds"
+            ]
+          },
+          {
+            "id": "nif-mid-11",
+            "stem": "A migration is at t=86,400 and the current TTL is 86,400. By when must it be lowered?",
+            "choices": [
+              "t = 0",
+              "t = 43,200",
+              "t = 86,399",
+              "t = 86,400"
+            ]
+          },
+          {
+            "id": "nif-mid-12",
+            "stem": "At 8,000 rps and a 0.90 hit ratio, how many requests reach origin?",
+            "choices": [
+              "7,200 per second",
+              "800 per second",
+              "90 per second",
+              "8,000 per second"
+            ]
+          },
+          {
+            "id": "nif-mid-13",
+            "stem": "800 rps of 200 KB objects need about how much origin bandwidth?",
+            "choices": [
+              "160 Mbit/s",
+              "12.8 Gbit/s",
+              "1.28 Gbit/s",
+              "200 Mbit/s"
+            ]
+          },
+          {
+            "id": "nif-mid-14",
+            "stem": "A 20 km span with 2 connectors and 4 splices has how much loss by the course coefficients?",
+            "choices": [
+              "7.0 dB",
+              "10.0 dB",
+              "4.4 dB",
+              "8.4 dB"
+            ]
+          },
+          {
+            "id": "nif-mid-15",
+            "stem": "Tx \u22123 dBm, loss 18 dB, sensitivity \u221220 dBm. Margin and verdict?",
+            "choices": [
+              "\u22121 dB, fails",
+              "5 dB, passes",
+              "3 dB, passes",
+              "17 dB, passes"
+            ]
+          },
+          {
+            "id": "nif-mid-16",
+            "stem": "Two 99% links in parallel are available about how much?",
+            "choices": [
+              "98%",
+              "99.99%",
+              "99.5%",
+              "100%"
+            ]
+          },
+          {
+            "id": "nif-mid-17",
+            "stem": "A 99.9% firewall in series with a 99.99% switch is available about how much?",
+            "choices": [
+              "99.99%",
+              "99.95%",
+              "99.89%",
+              "100.89%"
+            ]
+          },
+          {
+            "id": "nif-mid-18",
+            "stem": "What is 99.9% availability in downtime per year?",
+            "choices": [
+              "About 52.6 minutes",
+              "About 5.3 minutes",
+              "About 8,760 minutes",
+              "About 525.6 minutes"
+            ]
+          },
+          {
+            "id": "nif-mid-19",
+            "stem": "A month has 8,640 five-minute samples. How many are discarded at the 95th percentile?",
+            "choices": [
+              "432",
+              "864",
+              "43",
+              "8,208"
+            ]
+          },
+          {
+            "id": "nif-mid-20",
+            "stem": "Why do providers sample in five-minute averages?",
+            "choices": [
+              "It is the law",
+              "It smooths microbursts into a billable record",
+              "It doubles bills",
+              "Routers cannot count faster"
+            ]
+          }
+        ],
+        "final_knowledge": [
+          {
+            "id": "nif-fin-01",
+            "stem": "A sales team promises 2 ms one-way across 1,145 km of fiber. What do you say?",
+            "choices": [
+              "Fine with a faster router",
+              "Possible on Sundays",
+              "Only with IPv6",
+              "Impossible; propagation alone is about 5.6 ms"
+            ]
+          },
+          {
+            "id": "nif-fin-02",
+            "stem": "Upgrading a link from 1 to 10 Gbit/s reduces which part of a 1,145 km budget?",
+            "choices": [
+              "Serialization only",
+              "Propagation",
+              "Both by ten",
+              "Neither"
+            ]
+          },
+          {
+            "id": "nif-fin-03",
+            "stem": "Two engineers write 2001:DB8:0:0:1::1 and 2001:db8::1:0:0:1 for the same address. Which is canonical?",
+            "choices": [
+              "2001:DB8:0:0:1::1",
+              "2001:db8::1:0:0:1",
+              "Both",
+              "Neither"
+            ]
+          },
+          {
+            "id": "nif-fin-04",
+            "stem": "A customer asks for a /72 on a LAN to save space. Your answer?",
+            "choices": [
+              "Agree",
+              "Use /128 everywhere",
+              "Keep LANs at /64; autoconfiguration expects it",
+              "Use IPv4"
+            ]
+          },
+          {
+            "id": "nif-fin-05",
+            "stem": "A long-haul transfer stalls at 6 Mbit/s on a 1 Gbit/s link. First check?",
+            "choices": [
+              "Buy 10 Gbit/s",
+              "Change DNS",
+              "Replace the fiber",
+              "TCP window scaling on both hosts and middleboxes"
+            ]
+          },
+          {
+            "id": "nif-fin-06",
+            "stem": "Why does a 200 ms path need a larger window than a 20 ms path at the same rate?",
+            "choices": [
+              "The bandwidth-delay product is ten times larger",
+              "Packets are larger",
+              "DNS is slower",
+              "BGP prefers it"
+            ]
+          },
+          {
+            "id": "nif-fin-07",
+            "stem": "A route has the shortest AS_PATH but loses. Most likely reason?",
+            "choices": [
+              "Router IDs are random",
+              "Another route has higher local preference",
+              "IPv6 broke it",
+              "TTL expired"
+            ]
+          },
+          {
+            "id": "nif-fin-08",
+            "stem": "Why is local preference above AS_PATH in the order?",
+            "choices": [
+              "It is shorter",
+              "It is newer",
+              "It encodes the operator's own policy",
+              "It is random"
+            ]
+          },
+          {
+            "id": "nif-fin-09",
+            "stem": "A cutover is planned for tomorrow and the TTL is one day. What should you have done?",
+            "choices": [
+              "Nothing",
+              "Raised the TTL",
+              "Deleted the record",
+              "Lowered the TTL at least a day earlier"
+            ]
+          },
+          {
+            "id": "nif-fin-10",
+            "stem": "Why keep old servers running after a DNS change?",
+            "choices": [
+              "Resolvers can serve the old answer for up to one TTL",
+              "To test BGP",
+              "For backups",
+              "DNS changes are instant"
+            ]
+          },
+          {
+            "id": "nif-fin-11",
+            "stem": "The origin link is near capacity at a 92% hit ratio. Highest-leverage fix?",
+            "choices": [
+              "Lower the TTL",
+              "Raise the hit ratio; misses drive origin load",
+              "Disable the CDN",
+              "Add query strings"
+            ]
+          },
+          {
+            "id": "nif-fin-12",
+            "stem": "A report says 'the CDN offloads 92%, so origin sees 11,040 rps of 12,000'. What is wrong?",
+            "choices": [
+              "Nothing",
+              "It should be 12,000",
+              "It multiplied by the hit ratio instead of the miss ratio",
+              "It ignored DNS"
+            ]
+          },
+          {
+            "id": "nif-fin-13",
+            "stem": "A span measures 4 dB worse than budget. Likely first cause?",
+            "choices": [
+              "Wrong IPv6 prefix",
+              "BGP origin",
+              "DNS TTL",
+              "Dirty or damaged connectors"
+            ]
+          },
+          {
+            "id": "nif-fin-14",
+            "stem": "Why require 3 dB of optical margin?",
+            "choices": [
+              "Ageing, temperature, and repair splices add loss over time",
+              "It looks tidy",
+              "Receivers like round numbers",
+              "It is the transmitter power"
+            ]
+          },
+          {
+            "id": "nif-fin-15",
+            "stem": "Both core routers share one power strip. What does that do to the availability estimate?",
+            "choices": [
+              "Nothing",
+              "It is overstated; failures are not independent",
+              "It improves",
+              "It doubles"
+            ]
+          },
+          {
+            "id": "nif-fin-16",
+            "stem": "The serial power feed dominates downtime. Most effective investment?",
+            "choices": [
+              "Faster routers",
+              "Larger optics",
+              "A second independent feed",
+              "A new website"
+            ]
+          },
+          {
+            "id": "nif-fin-17",
+            "stem": "A provider bills the month's peak sample under a 95th-percentile contract. What do you do?",
+            "choices": [
+              "Pay it",
+              "Ignore it",
+              "Switch to IPv6",
+              "Dispute it with the sorted samples and index"
+            ]
+          },
+          {
+            "id": "nif-fin-18",
+            "stem": "Why does 95th-percentile billing reward scheduling backups at quiet times?",
+            "choices": [
+              "Short bursts in the top 5% are not billed",
+              "Night traffic is free by law",
+              "Backups are invisible",
+              "It lowers latency"
+            ]
+          },
+          {
+            "id": "nif-fin-19",
+            "stem": "A design packet uses AS 13335 and 2606:4700::/32. Verdict?",
+            "choices": [
+              "Accept",
+              "Reject; those are real allocations, not documentation",
+              "Accept if reviewed",
+              "Accept with a footnote"
+            ]
+          },
+          {
+            "id": "nif-fin-20",
+            "stem": "Which statement belongs in every backbone design packet in this course?",
+            "choices": [
+              "Guaranteed five nines",
+              "Certified CCNA design",
+              "No production peering claim",
+              "Live traffic carried"
+            ]
+          },
+          {
+            "id": "nif-fin-21",
+            "stem": "Which public reference governs the TCP window scale option?",
+            "choices": [
+              "RFC 1034",
+              "RFC 4271",
+              "RFC 7489",
+              "RFC 7323"
+            ]
+          },
+          {
+            "id": "nif-fin-22",
+            "stem": "Which use of Cisco CCNA material is acceptable here?",
+            "choices": [
+              "Topic labels only, no exam items",
+              "Copying exam questions",
+              "Selling vouchers",
+              "Claiming certification"
+            ]
+          },
+          {
+            "id": "nif-fin-23",
+            "stem": "A packet restates last term's availability figure without inputs. What should the reviewer do?",
+            "choices": [
+              "Accept it",
+              "Ask for the recomputation from inputs",
+              "Round it up",
+              "Delete the packet"
+            ]
+          },
+          {
+            "id": "nif-fin-24",
+            "stem": "What does completing the Backbone Room course claim?",
+            "choices": [
+              "CCNP certification",
+              "ISP employment",
+              "Infrastructure practice with recomputed labs, not a certification or production role",
+              "Peering authority"
+            ]
+          }
+        ],
+        "practical_labs": [
+          "lab_nif_latency_budget",
+          "lab_nif_ipv6_text",
+          "lab_nif_bdp_window",
+          "lab_nif_bgp_path",
+          "lab_nif_dns_ttl",
+          "lab_nif_cdn_offload",
+          "lab_nif_optical_budget",
+          "lab_nif_availability",
+          "lab_nif_p95_billing",
+          "lab_nif_design_packet"
+        ]
+      },
+      "portfolio": {
+        "no_pii": true
+      },
+      "offline_pack": {
+        "lesson_ids": [
+          "NETWORKING_INFRA-w01",
+          "NETWORKING_INFRA-w02",
+          "NETWORKING_INFRA-w03",
+          "NETWORKING_INFRA-w04",
+          "NETWORKING_INFRA-w05",
+          "NETWORKING_INFRA-w06",
+          "NETWORKING_INFRA-w07",
+          "NETWORKING_INFRA-w08",
+          "NETWORKING_INFRA-w09",
+          "NETWORKING_INFRA-w10"
+        ],
+        "session_shape": {
+          "lesson_id": "NETWORKING_INFRA-w01",
+          "role": "learner",
+          "offline_pack": "NETWORKING_INFRA-offline",
+          "labs": [
+            "lab_nif_latency_budget",
+            "lab_nif_ipv6_text"
+          ]
+        }
+      },
+      "answer_keys": {
+        "quizzes": {
+          "NETWORKING_INFRA-q01": [
+            {
+              "id": "nif-w1-1",
+              "answer_index": 2,
+              "explanation": "c / n"
+            },
+            {
+              "id": "nif-w1-2",
+              "answer_index": 3,
+              "explanation": "km \u00d7 n / c"
+            },
+            {
+              "id": "nif-w1-3",
+              "answer_index": 0,
+              "explanation": "12,000 bits"
+            },
+            {
+              "id": "nif-w1-4",
+              "answer_index": 1,
+              "explanation": "bits per second"
+            },
+            {
+              "id": "nif-w1-5",
+              "answer_index": 2,
+              "explanation": "real path"
+            },
+            {
+              "id": "nif-w1-6",
+              "answer_index": 3,
+              "explanation": "index"
+            }
+          ],
+          "NETWORKING_INFRA-q02": [
+            {
+              "id": "nif-w2-1",
+              "answer_index": 0,
+              "explanation": "first longest run"
+            },
+            {
+              "id": "nif-w2-2",
+              "answer_index": 1,
+              "explanation": "tie rule"
+            },
+            {
+              "id": "nif-w2-3",
+              "answer_index": 2,
+              "explanation": "two or more"
+            },
+            {
+              "id": "nif-w2-4",
+              "answer_index": 3,
+              "explanation": "2^16"
+            },
+            {
+              "id": "nif-w2-5",
+              "answer_index": 0,
+              "explanation": "RFC 3849"
+            },
+            {
+              "id": "nif-w2-6",
+              "answer_index": 1,
+              "explanation": "SLAAC"
+            }
+          ],
+          "NETWORKING_INFRA-q03": [
+            {
+              "id": "nif-w3-1",
+              "answer_index": 2,
+              "explanation": "rate \u00d7 RTT / 8"
+            },
+            {
+              "id": "nif-w3-2",
+              "answer_index": 3,
+              "explanation": "window\u00d78/RTT"
+            },
+            {
+              "id": "nif-w3-3",
+              "answer_index": 0,
+              "explanation": "65,535 \u00d7 256"
+            },
+            {
+              "id": "nif-w3-4",
+              "answer_index": 1,
+              "explanation": "window bound"
+            },
+            {
+              "id": "nif-w3-5",
+              "answer_index": 2,
+              "explanation": "middlebox"
+            },
+            {
+              "id": "nif-w3-6",
+              "answer_index": 3,
+              "explanation": "inverse"
+            }
+          ],
+          "NETWORKING_INFRA-q04": [
+            {
+              "id": "nif-w4-1",
+              "answer_index": 0,
+              "explanation": "policy"
+            },
+            {
+              "id": "nif-w4-2",
+              "answer_index": 1,
+              "explanation": "lp 100 < 200"
+            },
+            {
+              "id": "nif-w4-3",
+              "answer_index": 2,
+              "explanation": "next step"
+            },
+            {
+              "id": "nif-w4-4",
+              "answer_index": 3,
+              "explanation": "lowest"
+            },
+            {
+              "id": "nif-w4-5",
+              "answer_index": 0,
+              "explanation": "origin IGP"
+            },
+            {
+              "id": "nif-w4-6",
+              "answer_index": 1,
+              "explanation": "reference"
+            }
+          ],
+          "NETWORKING_INFRA-q05": [
+            {
+              "id": "nif-w5-1",
+              "answer_index": 2,
+              "explanation": "cached + TTL"
+            },
+            {
+              "id": "nif-w5-2",
+              "answer_index": 3,
+              "explanation": "6,600 \u2212 5,000"
+            },
+            {
+              "id": "nif-w5-3",
+              "answer_index": 0,
+              "explanation": "full TTL"
+            },
+            {
+              "id": "nif-w5-4",
+              "answer_index": 1,
+              "explanation": "one TTL before"
+            },
+            {
+              "id": "nif-w5-5",
+              "answer_index": 2,
+              "explanation": "caches"
+            },
+            {
+              "id": "nif-w5-6",
+              "answer_index": 3,
+              "explanation": "overlap"
+            }
+          ],
+          "NETWORKING_INFRA-q06": [
+            {
+              "id": "nif-w6-1",
+              "answer_index": 0,
+              "explanation": "miss \u00d7 total"
+            },
+            {
+              "id": "nif-w6-2",
+              "answer_index": 1,
+              "explanation": "\u00d7150,000\u00d78"
+            },
+            {
+              "id": "nif-w6-3",
+              "answer_index": 2,
+              "explanation": "8% \u2192 4%"
+            },
+            {
+              "id": "nif-w6-4",
+              "answer_index": 3,
+              "explanation": "1 \u2212 hit"
+            },
+            {
+              "id": "nif-w6-5",
+              "answer_index": 0,
+              "explanation": "all requests"
+            },
+            {
+              "id": "nif-w6-6",
+              "answer_index": 1,
+              "explanation": "cache keys"
+            }
+          ],
+          "NETWORKING_INFRA-q07": [
+            {
+              "id": "nif-w7-1",
+              "answer_index": 2,
+              "explanation": "sum"
+            },
+            {
+              "id": "nif-w7-2",
+              "answer_index": 3,
+              "explanation": "0 \u2212 16.6 + 23"
+            },
+            {
+              "id": "nif-w7-3",
+              "answer_index": 0,
+              "explanation": "6.4 \u2265 3"
+            },
+            {
+              "id": "nif-w7-4",
+              "answer_index": 1,
+              "explanation": "logarithms"
+            },
+            {
+              "id": "nif-w7-5",
+              "answer_index": 2,
+              "explanation": "hidden loss"
+            },
+            {
+              "id": "nif-w7-6",
+              "answer_index": 3,
+              "explanation": "hygiene"
+            }
+          ],
+          "NETWORKING_INFRA-q08": [
+            {
+              "id": "nif-w8-1",
+              "answer_index": 0,
+              "explanation": "1 \u2212 0.001\u00b2"
+            },
+            {
+              "id": "nif-w8-2",
+              "answer_index": 1,
+              "explanation": "all must work"
+            },
+            {
+              "id": "nif-w8-3",
+              "answer_index": 2,
+              "explanation": "product"
+            },
+            {
+              "id": "nif-w8-4",
+              "answer_index": 3,
+              "explanation": "\u00d7 525,600"
+            },
+            {
+              "id": "nif-w8-5",
+              "answer_index": 0,
+              "explanation": "weakest serial part"
+            },
+            {
+              "id": "nif-w8-6",
+              "answer_index": 1,
+              "explanation": "shared cause"
+            }
+          ],
+          "NETWORKING_INFRA-q09": [
+            {
+              "id": "nif-w9-1",
+              "answer_index": 2,
+              "explanation": "ceil(19) \u2212 1"
+            },
+            {
+              "id": "nif-w9-2",
+              "answer_index": 3,
+              "explanation": "index 18"
+            },
+            {
+              "id": "nif-w9-3",
+              "answer_index": 0,
+              "explanation": "720 \u00d7 0.35"
+            },
+            {
+              "id": "nif-w9-4",
+              "answer_index": 1,
+              "explanation": "5%"
+            },
+            {
+              "id": "nif-w9-5",
+              "answer_index": 2,
+              "explanation": "432 \u00d7 5 min"
+            },
+            {
+              "id": "nif-w9-6",
+              "answer_index": 3,
+              "explanation": "contract"
+            }
+          ],
+          "NETWORKING_INFRA-q10": [
+            {
+              "id": "nif-w10-1",
+              "answer_index": 0,
+              "explanation": "RFC 5398"
+            },
+            {
+              "id": "nif-w10-2",
+              "answer_index": 1,
+              "explanation": "safety"
+            },
+            {
+              "id": "nif-w10-3",
+              "answer_index": 2,
+              "explanation": "compare"
+            },
+            {
+              "id": "nif-w10-4",
+              "answer_index": 3,
+              "explanation": "method"
+            },
+            {
+              "id": "nif-w10-5",
+              "answer_index": 0,
+              "explanation": "boundary"
+            },
+            {
+              "id": "nif-w10-6",
+              "answer_index": 1,
+              "explanation": "oral check"
+            }
+          ]
+        },
+        "mid": [
+          {
+            "id": "nif-mid-01",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-mid-02",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-mid-03",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-mid-04",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-mid-05",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-mid-06",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-mid-07",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-mid-08",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-mid-09",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-mid-10",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-mid-11",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-mid-12",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-mid-13",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-mid-14",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-mid-15",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-mid-16",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-mid-17",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-mid-18",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-mid-19",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-mid-20",
+            "answer_index": 1
+          }
+        ],
+        "final": [
+          {
+            "id": "nif-fin-01",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-02",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-03",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-04",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-fin-05",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-06",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-07",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-08",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-fin-09",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-10",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-11",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-12",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-fin-13",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-14",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-15",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-16",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-fin-17",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-18",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-19",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-20",
+            "answer_index": 2
+          },
+          {
+            "id": "nif-fin-21",
+            "answer_index": 3
+          },
+          {
+            "id": "nif-fin-22",
+            "answer_index": 0
+          },
+          {
+            "id": "nif-fin-23",
+            "answer_index": 1
+          },
+          {
+            "id": "nif-fin-24",
+            "answer_index": 2
+          }
+        ]
+      },
+      "rubrics": [
+        "NETWORKING_INFRA-lab",
+        "NETWORKING_INFRA-assignment",
+        "NETWORKING_INFRA-practical",
+        "NETWORKING_INFRA-project"
       ],
       "instructor_notes": "Keys stay out of learner ingest. Run labs with computing validators.",
       "presentation": [

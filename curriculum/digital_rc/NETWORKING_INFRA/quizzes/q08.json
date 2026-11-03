@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "nif-w8-1",
+      "kind": "mcq",
+      "stem": "Two 99.9% routers in parallel give what availability?",
+      "choices": [
+        "0.999999",
+        "0.998",
+        "0.9999",
+        "0.999"
+      ]
+    },
+    {
+      "id": "nif-w8-2",
+      "kind": "mcq",
+      "stem": "What happens to availability for parts in series?",
+      "choices": [
+        "They add",
+        "They multiply",
+        "The best one wins",
+        "They average"
+      ]
+    },
+    {
+      "id": "nif-w8-3",
+      "kind": "mcq",
+      "stem": "What is the design's overall availability?",
+      "choices": [
+        "About 0.9984",
+        "About 0.99999",
+        "About 0.9993991",
+        "About 0.9999"
+      ]
+    },
+    {
+      "id": "nif-w8-4",
+      "kind": "mcq",
+      "stem": "About how many minutes of downtime per year does it imply?",
+      "choices": [
+        "About 841",
+        "About 53",
+        "About 5",
+        "About 316"
+      ]
+    },
+    {
+      "id": "nif-w8-5",
+      "kind": "mcq",
+      "stem": "Which single change would help most?",
+      "choices": [
+        "A second power feed",
+        "Faster routers",
+        "More router RAM",
+        "A new logo"
+      ]
+    },
+    {
+      "id": "nif-w8-6",
+      "kind": "mcq",
+      "stem": "What breaks the independence assumption?",
+      "choices": [
+        "Different colours",
+        "Both routers on one power strip",
+        "Separate racks",
+        "Separate feeds"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "NETWORKING_INFRA-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "nif-w7-1",
+      "kind": "mcq",
+      "stem": "What is the total loss for 40 km, 4 connectors, and 6 splices?",
+      "choices": [
+        "14.0 dB",
+        "20.6 dB",
+        "16.6 dB",
+        "10.0 dB"
+      ]
+    },
+    {
+      "id": "nif-w7-2",
+      "kind": "mcq",
+      "stem": "With tx 0 dBm and sensitivity \u221223 dBm, what is the margin?",
+      "choices": [
+        "9.0 dB",
+        "23 dB",
+        "\u22126.4 dB",
+        "6.4 dB"
+      ]
+    },
+    {
+      "id": "nif-w7-3",
+      "kind": "mcq",
+      "stem": "Does the span pass the 3 dB rule?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only at night",
+        "Cannot tell"
+      ]
+    },
+    {
+      "id": "nif-w7-4",
+      "kind": "mcq",
+      "stem": "Why do engineers like decibels for budgets?",
+      "choices": [
+        "They are larger numbers",
+        "Losses add instead of multiply",
+        "They are metric",
+        "They avoid physics"
+      ]
+    },
+    {
+      "id": "nif-w7-5",
+      "kind": "mcq",
+      "stem": "What does counting only fiber loss do?",
+      "choices": [
+        "Understates the margin",
+        "Nothing",
+        "Overstates the margin",
+        "Fails every span"
+      ]
+    },
+    {
+      "id": "nif-w7-6",
+      "kind": "mcq",
+      "stem": "What should happen before measuring with a light meter?",
+      "choices": [
+        "Bend the fiber",
+        "Remove the splices",
+        "Raise the transmitter",
+        "Clean and inspect every connector"
+      ]
+    }
+  ]
+}

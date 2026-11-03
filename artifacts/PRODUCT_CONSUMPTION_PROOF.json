@@ -6,9 +6,9 @@
   "catalog_fields_present": true,
   "learner_ingest_has_no_keys": true,
   "teacher_ingest_has_keys": true,
-  "learner_course_count": 20,
-  "teacher_course_count": 20,
-  "owner_session_overlay_count": 20,
+  "learner_course_count": 21,
+  "teacher_course_count": 21,
+  "owner_session_overlay_count": 21,
   "current_product_layer": {
     "imported": false,
     "reason": "device-os_not_adjacent"

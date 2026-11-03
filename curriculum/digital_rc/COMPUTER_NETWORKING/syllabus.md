@@ -4,7 +4,7 @@
 Ten weeks on the WAIKE Packet Range: chop packets, survey CIDR, learn MACs with VLANs, forward with TTL and longest prefix, number TCP bytes, break loops, run SPF, interrogate DHCP/DNS/NAT liars, write an ordered ACL, then ship an intent file. Cisco CCNA 200-301 v1.1 domain weights are labels. Stanford CS144 is a structure citation. No Cisco labs, no Stanford code, no exam PDFs.
 
 ## Tracks and academy
-- Tracks: NETWORKING_INFRA
+- Tracks: COMPUTER_NETWORKING
 - Academy: ACADEMY_NETWORKING
 
 ## Duration

@@ -26,7 +26,7 @@
       "assignment": "Draw the sticky-note stack for a TLS web fetch from Pier to a library cache. Label who reads each header. No vendor GUI screenshots required.",
       "lab_hint": "lab_cidr_math",
       "track_ids": [
-        "NETWORKING_INFRA"
+        "COMPUTER_NETWORKING"
       ],
       "academy_id": "ACADEMY_NETWORKING"
     },
@@ -264,6 +264,19 @@
         "IT_SUPPORT_HARDWARE"
       ],
       "academy_id": "ACADEMY_IT"
+    },
+    {
+      "course_id": "NETWORKING_INFRA",
+      "title": "Networking and Internet Infrastructure \u2014 Backbone Room",
+      "kinesthetic_hook": "Ten Backbone Room change requests: budget fiber latency \u2192 write IPv6 canonically \u2192 size TCP windows \u2192 pick a BGP path \u2192 plan a DNS cutover \u2192 size CDN offload \u2192 budget an optical span \u2192 compute availability \u2192 read a 95th-percentile bill \u2192 submit a design packet.",
+      "lesson_excerpt": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so the signal moves at roughly 204,000 km/s. Divide the route length by that speed: 1,145 km takes about 5.6067 milliseconds.",
+      "worked_example": "1,145 km \u00d7 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B \u00d7 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms",
+      "assignment": "Submit lab_nif_latency_budget JSON for NIF-5101: route_km, packet_bytes, link_gbps, propagation_ms, serialization_ms, one_way_ms.",
+      "lab_hint": "lab_nif_latency_budget",
+      "track_ids": [
+        "NETWORKING_INFRA"
+      ],
+      "academy_id": "ACADEMY_NETWORKING"
     }
   ]
 }

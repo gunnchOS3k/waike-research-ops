@@ -1,0 +1,269 @@
+{
+  "assessment_id": "NETWORKING_INFRA-final",
+  "items": [
+    {
+      "id": "nif-fin-01",
+      "kind": "mcq",
+      "stem": "A sales team promises 2 ms one-way across 1,145 km of fiber. What do you say?",
+      "choices": [
+        "Fine with a faster router",
+        "Possible on Sundays",
+        "Only with IPv6",
+        "Impossible; propagation alone is about 5.6 ms"
+      ]
+    },
+    {
+      "id": "nif-fin-02",
+      "kind": "mcq",
+      "stem": "Upgrading a link from 1 to 10 Gbit/s reduces which part of a 1,145 km budget?",
+      "choices": [
+        "Serialization only",
+        "Propagation",
+        "Both by ten",
+        "Neither"
+      ]
+    },
+    {
+      "id": "nif-fin-03",
+      "kind": "mcq",
+      "stem": "Two engineers write 2001:DB8:0:0:1::1 and 2001:db8::1:0:0:1 for the same address. Which is canonical?",
+      "choices": [
+        "2001:DB8:0:0:1::1",
+        "2001:db8::1:0:0:1",
+        "Both",
+        "Neither"
+      ]
+    },
+    {
+      "id": "nif-fin-04",
+      "kind": "mcq",
+      "stem": "A customer asks for a /72 on a LAN to save space. Your answer?",
+      "choices": [
+        "Agree",
+        "Use /128 everywhere",
+        "Keep LANs at /64; autoconfiguration expects it",
+        "Use IPv4"
+      ]
+    },
+    {
+      "id": "nif-fin-05",
+      "kind": "mcq",
+      "stem": "A long-haul transfer stalls at 6 Mbit/s on a 1 Gbit/s link. First check?",
+      "choices": [
+        "Buy 10 Gbit/s",
+        "Change DNS",
+        "Replace the fiber",
+        "TCP window scaling on both hosts and middleboxes"
+      ]
+    },
+    {
+      "id": "nif-fin-06",
+      "kind": "mcq",
+      "stem": "Why does a 200 ms path need a larger window than a 20 ms path at the same rate?",
+      "choices": [
+        "The bandwidth-delay product is ten times larger",
+        "Packets are larger",
+        "DNS is slower",
+        "BGP prefers it"
+      ]
+    },
+    {
+      "id": "nif-fin-07",
+      "kind": "mcq",
+      "stem": "A route has the shortest AS_PATH but loses. Most likely reason?",
+      "choices": [
+        "Router IDs are random",
+        "Another route has higher local preference",
+        "IPv6 broke it",
+        "TTL expired"
+      ]
+    },
+    {
+      "id": "nif-fin-08",
+      "kind": "mcq",
+      "stem": "Why is local preference above AS_PATH in the order?",
+      "choices": [
+        "It is shorter",
+        "It is newer",
+        "It encodes the operator's own policy",
+        "It is random"
+      ]
+    },
+    {
+      "id": "nif-fin-09",
+      "kind": "mcq",
+      "stem": "A cutover is planned for tomorrow and the TTL is one day. What should you have done?",
+      "choices": [
+        "Nothing",
+        "Raised the TTL",
+        "Deleted the record",
+        "Lowered the TTL at least a day earlier"
+      ]
+    },
+    {
+      "id": "nif-fin-10",
+      "kind": "mcq",
+      "stem": "Why keep old servers running after a DNS change?",
+      "choices": [
+        "Resolvers can serve the old answer for up to one TTL",
+        "To test BGP",
+        "For backups",
+        "DNS changes are instant"
+      ]
+    },
+    {
+      "id": "nif-fin-11",
+      "kind": "mcq",
+      "stem": "The origin link is near capacity at a 92% hit ratio. Highest-leverage fix?",
+      "choices": [
+        "Lower the TTL",
+        "Raise the hit ratio; misses drive origin load",
+        "Disable the CDN",
+        "Add query strings"
+      ]
+    },
+    {
+      "id": "nif-fin-12",
+      "kind": "mcq",
+      "stem": "A report says 'the CDN offloads 92%, so origin sees 11,040 rps of 12,000'. What is wrong?",
+      "choices": [
+        "Nothing",
+        "It should be 12,000",
+        "It multiplied by the hit ratio instead of the miss ratio",
+        "It ignored DNS"
+      ]
+    },
+    {
+      "id": "nif-fin-13",
+      "kind": "mcq",
+      "stem": "A span measures 4 dB worse than budget. Likely first cause?",
+      "choices": [
+        "Wrong IPv6 prefix",
+        "BGP origin",
+        "DNS TTL",
+        "Dirty or damaged connectors"
+      ]
+    },
+    {
+      "id": "nif-fin-14",
+      "kind": "mcq",
+      "stem": "Why require 3 dB of optical margin?",
+      "choices": [
+        "Ageing, temperature, and repair splices add loss over time",
+        "It looks tidy",
+        "Receivers like round numbers",
+        "It is the transmitter power"
+      ]
+    },
+    {
+      "id": "nif-fin-15",
+      "kind": "mcq",
+      "stem": "Both core routers share one power strip. What does that do to the availability estimate?",
+      "choices": [
+        "Nothing",
+        "It is overstated; failures are not independent",
+        "It improves",
+        "It doubles"
+      ]
+    },
+    {
+      "id": "nif-fin-16",
+      "kind": "mcq",
+      "stem": "The serial power feed dominates downtime. Most effective investment?",
+      "choices": [
+        "Faster routers",
+        "Larger optics",
+        "A second independent feed",
+        "A new website"
+      ]
+    },
+    {
+      "id": "nif-fin-17",
+      "kind": "mcq",
+      "stem": "A provider bills the month's peak sample under a 95th-percentile contract. What do you do?",
+      "choices": [
+        "Pay it",
+        "Ignore it",
+        "Switch to IPv6",
+        "Dispute it with the sorted samples and index"
+      ]
+    },
+    {
+      "id": "nif-fin-18",
+      "kind": "mcq",
+      "stem": "Why does 95th-percentile billing reward scheduling backups at quiet times?",
+      "choices": [
+        "Short bursts in the top 5% are not billed",
+        "Night traffic is free by law",
+        "Backups are invisible",
+        "It lowers latency"
+      ]
+    },
+    {
+      "id": "nif-fin-19",
+      "kind": "mcq",
+      "stem": "A design packet uses AS 13335 and 2606:4700::/32. Verdict?",
+      "choices": [
+        "Accept",
+        "Reject; those are real allocations, not documentation",
+        "Accept if reviewed",
+        "Accept with a footnote"
+      ]
+    },
+    {
+      "id": "nif-fin-20",
+      "kind": "mcq",
+      "stem": "Which statement belongs in every backbone design packet in this course?",
+      "choices": [
+        "Guaranteed five nines",
+        "Certified CCNA design",
+        "No production peering claim",
+        "Live traffic carried"
+      ]
+    },
+    {
+      "id": "nif-fin-21",
+      "kind": "mcq",
+      "stem": "Which public reference governs the TCP window scale option?",
+      "choices": [
+        "RFC 1034",
+        "RFC 4271",
+        "RFC 7489",
+        "RFC 7323"
+      ]
+    },
+    {
+      "id": "nif-fin-22",
+      "kind": "mcq",
+      "stem": "Which use of Cisco CCNA material is acceptable here?",
+      "choices": [
+        "Topic labels only, no exam items",
+        "Copying exam questions",
+        "Selling vouchers",
+        "Claiming certification"
+      ]
+    },
+    {
+      "id": "nif-fin-23",
+      "kind": "mcq",
+      "stem": "A packet restates last term's availability figure without inputs. What should the reviewer do?",
+      "choices": [
+        "Accept it",
+        "Ask for the recomputation from inputs",
+        "Round it up",
+        "Delete the packet"
+      ]
+    },
+    {
+      "id": "nif-fin-24",
+      "kind": "mcq",
+      "stem": "What does completing the Backbone Room course claim?",
+      "choices": [
+        "CCNP certification",
+        "ISP employment",
+        "Infrastructure practice with recomputed labs, not a certification or production role",
+        "Peering authority"
+      ]
+    }
+  ]
+}

@@ -1452,7 +1452,7 @@ def _cyber_weeks() -> list[dict[str, Any]]:
 COMPUTER_NETWORKING: dict[str, Any] = {
     "course_id": "COMPUTER_NETWORKING",
     "title": "Computer Networking — Packets to Campus Edge",
-    "track_ids": ["NETWORKING_INFRA"],
+    "track_ids": ["COMPUTER_NETWORKING"],
     "academy_id": "ACADEMY_NETWORKING",
     "kinesthetic_hook": "Parse a crafted frame, run LPM, and prove a four-router town on paper then in code.",
     "syllabus_hook": (

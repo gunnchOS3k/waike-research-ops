@@ -1781,15 +1781,15 @@
       {
         "id": "nif-mid-04",
         "kind": "mcq",
-        "stem": "What is the RFC 5952 form of 2001:0db8:0000:0000:0000:0000:0000:0001?",
+        "stem": "A neighbour table lists the link-local address FE80:0000:0000:0000:0204:61FF:FE9D:F156. How should the change record write it?",
         "choices": [
-          "2001:db8::1",
-          "2001:db8:0:0:0:0:0:1",
-          "2001:DB8::1",
-          "2001:db8::0:1"
+          "fe80::204:61ff:fe9d:f156",
+          "fe80::0204:61ff:fe9d:f156",
+          "FE80::204:61FF:FE9D:F156",
+          "fe80:0:0:0:204:61ff:fe9d:f156"
         ],
         "answer_index": 0,
-        "explanation": "longest run"
+        "explanation": "lowercase, drop leading zeros, compress the zero run"
       },
       {
         "id": "nif-mid-05",
