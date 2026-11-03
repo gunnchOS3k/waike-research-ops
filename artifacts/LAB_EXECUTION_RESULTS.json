@@ -1615,7 +1615,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'AMS1117-3.3', 'nRF52840', 'SSD1306'}"
+          "detail": "mpns={'SSD1306', 'AMS1117-3.3', 'nRF52840'}"
         },
         {
           "name": "total",
@@ -1800,7 +1800,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
+          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
         },
         {
           "name": "cause",
@@ -2658,7 +2658,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
+          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
         },
         {
           "name": "max",

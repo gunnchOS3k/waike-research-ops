@@ -1,9 +1,9 @@
 {
   "schema": "waike_pathway_discovery_honesty_v1",
-  "prepared_at": "2026-11-03T03:05:03Z",
+  "prepared_at": "2026-11-03T03:06:15Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
-  "full_18_course_digital_rc": false,
+  "full_18_course_digital_rc": true,
   "HUMAN": false,
   "RC2": false,
   "V1": false,
@@ -17,9 +17,9 @@
     "residuals_must_stay_not_true": []
   },
   "gates": {
-    "FULL_18_FALSE_HONEST": true,
     "DISCOVERY_NEQ_INVENTED_TRUE": true,
     "NO_INVENTED_DIGITAL_RC_TRUE": true,
-    "HUMAN_CURRICULUM_ACCEPTANCE": false
+    "HUMAN_CURRICULUM_ACCEPTANCE": false,
+    "FULL_18_FROM_WRITER_GATE": true
   }
 }

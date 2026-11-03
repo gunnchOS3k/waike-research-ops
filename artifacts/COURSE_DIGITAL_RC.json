@@ -5,18 +5,14 @@
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
   "HUMAN_E6": false,
-  "full_18_course_digital_rc": false,
+  "full_18_course_digital_rc": true,
   "full_18_detail": {
     "catalog_track_ids": 18,
-    "catalog_ids_with_own_true_package": 17,
-    "catalog_ids_not_passing": [
-      "HARDWARE_ENGINEERING"
-    ],
+    "catalog_ids_with_own_true_package": 18,
+    "catalog_ids_not_passing": [],
     "alias_only_catalog_ids": [],
     "alias_rows_remaining": [],
-    "catalog_ids_borrowed_by_other_courses": [
-      "EMBEDDED_PROTOTYPING"
-    ],
+    "catalog_ids_borrowed_by_other_courses": [],
     "computed_by": "scripts/write_course_digital_rc.py::compute_full_18"
   },
   "device_os_curriculum_pr": false,
@@ -792,5 +788,5 @@
   "exam_token_identical": 0,
   "exam_token_jaccard_ge_0_80": 0,
   "worst_exam_weekly_token_jaccard": 0.75,
-  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, stripped lesson depth \u2265800 without operator-note padding, and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 (IT/Networking/Cyber) \u222a #44 (Software/Hardware/PM) \u222a #45 (AI/Data/Cloud) \u222a #46 (Wireless/Robotics/Game) \u222a Stream-B (COMM_PD_ETHICS \u222a DATA_DASHBOARDS). Commercial standardized 6G does not exist today. Not a student/teacher E6. Not all 18 catalog tracks have their own passing course."
+  "claim_boundary": "COURSE_DIGITAL_RC is earned only when original mid/final items, balanced keys, non-cloned packaging, stripped lesson depth \u2265800 without operator-note padding, and labs that fail empty/wrong/print-PASS all hold. Product path keeps #43 (IT/Networking/Cyber) \u222a #44 (Software/Hardware/PM) \u222a #45 (AI/Data/Cloud) \u222a #46 (Wireless/Robotics/Game) \u222a Stream-B (COMM_PD_ETHICS \u222a DATA_DASHBOARDS). Commercial standardized 6G does not exist today. Not a student/teacher E6. full_18 is computed from this gate over all 18 catalog tracks; it is a Cursor-implementation state, not independent verification or HUMAN curriculum acceptance."
 }

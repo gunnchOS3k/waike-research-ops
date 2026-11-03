@@ -22,6 +22,12 @@ def _dump(name: str, payload: dict) -> None:
     (ART / name).write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def _gate_full_18(doc: dict) -> None:
+    gates = doc.setdefault("gates", {})
+    gates.pop("FULL_18_FALSE_HONEST", None)
+    gates["FULL_18_FROM_WRITER_GATE"] = True
+
+
 def main() -> int:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     rc = _load("COURSE_DIGITAL_RC.json")
@@ -123,9 +129,11 @@ def main() -> int:
             })
     residual.update({"prepared_at": now, "full_18_course_digital_rc": full_18, "residuals": rows, "full_18_missing": full_18_missing})
     residual.pop("course_digital_rc_not_true_ids", None)
+    _gate_full_18(residual)
     _dump("FULL_18_RESIDUAL_HONESTY.json", residual)
 
     alias.update({"prepared_at": now, "full_18_course_digital_rc": full_18, "residuals_not_aliased_to_true": not_true})
+    _gate_full_18(alias)
     _dump("CATALOG_ALIAS_HONESTY.json", alias)
 
     discovery = _load("PATHWAY_DISCOVERY_HONESTY.json")
@@ -137,6 +145,7 @@ def main() -> int:
         "course_digital_rc_true_count": len(true_ids),
         "residuals_must_stay_not_true": not_true,
     })
+    _gate_full_18(discovery)
     _dump("PATHWAY_DISCOVERY_HONESTY.json", discovery)
 
     print(json.dumps({"true": len(true_ids), "keys": len(keys), "not_true": not_true, "full_18": full_18}, indent=2))

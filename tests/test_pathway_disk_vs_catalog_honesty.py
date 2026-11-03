@@ -84,7 +84,8 @@ def test_catalog_alias_honesty_does_not_invent_true_or_flip_full_18():
     assert alias["RC2"] is False
     assert alias["V1"] is False
     assert alias["instructional_completeness_claimed"] is False
-    assert alias["gates"]["FULL_18_FALSE_HONEST"] is True
+    assert alias["gates"]["FULL_18_FROM_WRITER_GATE"] is True
+    assert "FULL_18_FALSE_HONEST" not in alias["gates"]
     assert alias["gates"]["CATALOG_ALIAS_NEQ_INVENTED_TRUE"] is True
     assert alias["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
     for row in alias["aliases"]:
@@ -110,7 +111,8 @@ def test_full_18_residual_honesty_does_not_invent_true_flags():
     assert residual["RC2"] is False
     assert residual["V1"] is False
     assert residual["instructional_completeness_claimed"] is False
-    assert residual["gates"]["FULL_18_FALSE_HONEST"] is True
+    assert residual["gates"]["FULL_18_FROM_WRITER_GATE"] is True
+    assert "FULL_18_FALSE_HONEST" not in residual["gates"]
     assert residual["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
     assert residual["gates"]["HUMAN_CURRICULUM_ACCEPTANCE"] is False
 
@@ -152,7 +154,8 @@ def test_pathway_discovery_honesty_does_not_invent_true_or_flip_full_18():
     assert discovery["RC2"] is False
     assert discovery["V1"] is False
     assert discovery["instructional_completeness_claimed"] is False
-    assert discovery["gates"]["FULL_18_FALSE_HONEST"] is True
+    assert discovery["gates"]["FULL_18_FROM_WRITER_GATE"] is True
+    assert "FULL_18_FALSE_HONEST" not in discovery["gates"]
     assert discovery["gates"]["DISCOVERY_NEQ_INVENTED_TRUE"] is True
     assert discovery["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
     assert discovery["discovery"]["digital_rc_dirs_with_course_json"] == len(dirs)

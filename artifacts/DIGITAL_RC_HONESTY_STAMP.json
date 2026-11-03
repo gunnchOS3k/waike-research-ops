@@ -1,6 +1,6 @@
 {
   "schema": "waike_digital_rc_honesty_stamp_v1",
-  "prepared_at": "2026-11-03T03:05:03Z",
+  "prepared_at": "2026-11-03T03:06:15Z",
   "source_artifact": "artifacts/COURSE_DIGITAL_RC.json",
   "companion_ledger": "artifacts/PATHWAY_DISK_VS_CATALOG_LEDGER.json",
   "HUMAN": false,
@@ -9,7 +9,7 @@
   "HUMAN_E6": false,
   "REAL_STUDENT_E6": false,
   "REAL_TEACHER_E6": false,
-  "full_18_course_digital_rc": false,
+  "full_18_course_digital_rc": true,
   "course_digital_rc_true_count": 21,
   "course_digital_rc_true_ids": [
     "AI_ML_EDGE",
@@ -36,19 +36,16 @@
   ],
   "course_digital_rc_not_true_ids": [],
   "catalog_vs_true_gap_count": -3,
-  "catalog_vs_true_gap_note": "18 catalog track IDs vs 21 COURSE_DIGITAL_RC keys; 21 keys pass the writer gate; 17 of 18 catalog tracks have their own passing course.",
+  "catalog_vs_true_gap_note": "18 catalog track IDs vs 21 COURSE_DIGITAL_RC keys; 21 keys pass the writer gate; 18 of 18 catalog tracks have their own passing course.",
   "instructional_completeness_claimed": false,
   "note": "Companion honesty stamp only. Does not invent missing digital-RC courses or flip HUMAN/RC2/V1. Dir presence ≠ instructional completeness.",
   "full_18_missing": {
-    "catalog_ids_with_own_true_package": 17,
+    "catalog_ids_with_own_true_package": 18,
     "catalog_track_ids": 18,
     "alias_only_catalog_ids": [],
     "writer_computes_full_18": true,
-    "full_18_course_digital_rc": false,
-    "needed": [
-      "Catalog tracks without their own passing course: HARDWARE_ENGINEERING",
-      "Courses still list other catalog tracks in track_ids: EMBEDDED_PROTOTYPING"
-    ],
+    "full_18_course_digital_rc": true,
+    "needed": [],
     "verification_boundary": "Cursor-implementation state from the writer gate; not independent verification or HUMAN acceptance."
   }
 }

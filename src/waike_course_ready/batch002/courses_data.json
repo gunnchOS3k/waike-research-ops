@@ -924,8 +924,7 @@
     "course_id": "HARDWARE_ENGINEERING",
     "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
     "track_ids": [
-      "HARDWARE_ENGINEERING",
-      "EMBEDDED_PROTOTYPING"
+      "HARDWARE_ENGINEERING"
     ],
     "academy_id": "ACADEMY_HARDWARE",
     "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",

@@ -65,8 +65,7 @@
       "assignment": "Submit SPICE network JSON and show handwritten KCL at the mid node.",
       "lab_hint": "lab_spice_network",
       "track_ids": [
-        "HARDWARE_ENGINEERING",
-        "EMBEDDED_PROTOTYPING"
+        "HARDWARE_ENGINEERING"
       ],
       "academy_id": "ACADEMY_HARDWARE"
     },

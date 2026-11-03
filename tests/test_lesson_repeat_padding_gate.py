@@ -50,7 +50,10 @@ def test_batch007_lessons_have_no_verbatim_repeats():
 
 def test_course_digital_rc_artifact_matches_gate():
     rc = json.loads((ROOT / "artifacts" / "COURSE_DIGITAL_RC.json").read_text(encoding="utf-8"))
-    assert rc["full_18_course_digital_rc"] is False
+    aliases = json.loads((ROOT / "artifacts" / "CATALOG_ALIAS_HONESTY.json").read_text(encoding="utf-8"))["aliases"]
+    catalog = json.loads((ROOT / "curriculum" / "taxonomy" / "eighteen_tracks.json").read_text(encoding="utf-8"))
+    catalog_ids = sorted(t.get("track_id") or t.get("id") for t in catalog["tracks"])
+    assert rc["full_18_course_digital_rc"] is writer.compute_full_18(rc["courses"], catalog_ids, aliases)[0]
     for cid, row in rc["courses"].items():
         padded = any(repeated_lesson_sentences(w.get("lesson") or "") for w in COURSES[cid]["weeks"])
         if padded:

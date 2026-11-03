@@ -1,7 +1,7 @@
 {
   "schema": "waike.learner_ingest.v1",
   "role": "learner",
-  "generated_utc": "2026-11-03T03:05:03Z",
+  "generated_utc": "2026-11-03T03:05:39Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -5383,8 +5383,7 @@
       "course_id": "HARDWARE_ENGINEERING",
       "title": "Hardware Engineering + Embedded Prototyping \u2014 ForgeSense Node",
       "track_ids": [
-        "HARDWARE_ENGINEERING",
-        "EMBEDDED_PROTOTYPING"
+        "HARDWARE_ENGINEERING"
       ],
       "academy_id": "ACADEMY_HARDWARE",
       "kinesthetic_hook": "Compute a divider, budget real MPNs, run Zephyr on QEMU, then digitally diagnose a sagging 3V3 rail.",

@@ -1,11 +1,11 @@
 {
   "schema": "waike_pathway_disk_vs_catalog_ledger_v1",
-  "prepared_at": "2026-11-03T03:05:03Z",
+  "prepared_at": "2026-11-03T03:06:15Z",
   "HUMAN": false,
   "RC2": false,
   "V1": false,
   "instructional_completeness_claimed": false,
-  "full_18_course_digital_rc": false,
+  "full_18_course_digital_rc": true,
   "counts": {
     "catalog_track_ids": 18,
     "digital_rc_dirs_on_disk": 21,
