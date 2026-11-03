@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "soc-w10-1",
+      "kind": "mcq",
+      "stem": "What must every open incident in a handoff carry?",
+      "choices": [
+        "Only a title",
+        "Technique ID, NIST phase, and a next owner",
+        "The analyst's mood",
+        "A screenshot"
+      ]
+    },
+    {
+      "id": "soc-w10-2",
+      "kind": "mcq",
+      "stem": "Which of these is a NIST SP 800-61 phase?",
+      "choices": [
+        "Revenge",
+        "Marketing",
+        "Containment, eradication, and recovery",
+        "Exploit development"
+      ]
+    },
+    {
+      "id": "soc-w10-3",
+      "kind": "mcq",
+      "stem": "Why carry MTTD and MTTR from the calculation rather than memory?",
+      "choices": [
+        "Memory is always right",
+        "The SIEM forbids it",
+        "They never change",
+        "Rounded guesses drift from the record"
+      ]
+    },
+    {
+      "id": "soc-w10-4",
+      "kind": "mcq",
+      "stem": "What does 'no offensive tooling' mean for the desk?",
+      "choices": [
+        "It detects and contains; it does not build exploits or scan others",
+        "It may scan any network",
+        "It writes malware for practice",
+        "It ignores attacks"
+      ]
+    },
+    {
+      "id": "soc-w10-5",
+      "kind": "mcq",
+      "stem": "Who reads the handoff first?",
+      "choices": [
+        "The attacker",
+        "The incoming shift",
+        "Only auditors",
+        "Nobody"
+      ]
+    },
+    {
+      "id": "soc-w10-6",
+      "kind": "mcq",
+      "stem": "During review a mentor asks for what walk-through?",
+      "choices": [
+        "The entire SIEM config",
+        "Every quiz answer",
+        "One incident from first log line to current phase",
+        "A vendor demo"
+      ]
+    }
+  ]
+}

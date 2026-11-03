@@ -1,0 +1,16 @@
+{
+  "practical_id": "CYBER_SOC-practical",
+  "labs": [
+    "lab_soc_log_parse",
+    "lab_soc_window_rule",
+    "lab_soc_detection_metrics",
+    "lab_soc_ioc_match",
+    "lab_soc_attack_map",
+    "lab_soc_dmarc_align",
+    "lab_soc_cvss_score",
+    "lab_soc_triage_queue",
+    "lab_soc_shift_metrics",
+    "lab_soc_shift_handoff"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

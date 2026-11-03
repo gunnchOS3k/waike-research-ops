@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "soc-w9-1",
+      "kind": "mcq",
+      "stem": "Detection gaps are 12, 45, 5, 70 minutes. What is MTTD?",
+      "choices": [
+        "28.5 minutes",
+        "45 minutes",
+        "132 minutes",
+        "33 minutes"
+      ]
+    },
+    {
+      "id": "soc-w9-2",
+      "kind": "mcq",
+      "stem": "What is the median time to detect for the same four gaps?",
+      "choices": [
+        "28.5 minutes",
+        "33 minutes",
+        "25 minutes",
+        "37.5 minutes"
+      ]
+    },
+    {
+      "id": "soc-w9-3",
+      "kind": "mcq",
+      "stem": "Why report the median beside the mean?",
+      "choices": [
+        "The median is always larger",
+        "One slow case can pull the mean up",
+        "Means are illegal",
+        "Medians include resolution"
+      ]
+    },
+    {
+      "id": "soc-w9-4",
+      "kind": "mcq",
+      "stem": "Why define where MTTR starts?",
+      "choices": [
+        "MTTR never changes",
+        "It is set by law",
+        "Teams measure from different events, so numbers differ",
+        "It hides incidents"
+      ]
+    },
+    {
+      "id": "soc-w9-5",
+      "kind": "mcq",
+      "stem": "Resolution times 78, 65, 35, 150 minutes give what MTTR?",
+      "choices": [
+        "71.5 minutes",
+        "150 minutes",
+        "65 minutes",
+        "82 minutes"
+      ]
+    },
+    {
+      "id": "soc-w9-6",
+      "kind": "mcq",
+      "stem": "A five-minute MTTD drop across two four-incident weeks shows what?",
+      "choices": [
+        "Probably noise in a tiny sample",
+        "A proven improvement",
+        "A broken SIEM",
+        "A need to fire analysts"
+      ]
+    }
+  ]
+}

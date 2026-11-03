@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "soc-w5-1",
+      "kind": "mcq",
+      "stem": "Many failed SSH logins from one source map to which technique?",
+      "choices": [
+        "T1566 Phishing",
+        "T1486 Data Encrypted for Impact",
+        "T1059 Command and Scripting Interpreter",
+        "T1110 Brute Force"
+      ]
+    },
+    {
+      "id": "soc-w5-2",
+      "kind": "mcq",
+      "stem": "Why does T1078 Valid Accounts appear under several tactics?",
+      "choices": [
+        "Stolen credentials help an intruder enter, persist, and evade",
+        "It is mislabelled",
+        "Tactics are random",
+        "It only applies to admins"
+      ]
+    },
+    {
+      "id": "soc-w5-3",
+      "kind": "mcq",
+      "stem": "Files renamed .locked with a ransom note map to?",
+      "choices": [
+        "T1110 under credential access",
+        "T1486 under impact",
+        "T1566 under initial access",
+        "T1078 under persistence"
+      ]
+    },
+    {
+      "id": "soc-w5-4",
+      "kind": "mcq",
+      "stem": "Why must actor_attribution_claim stay false?",
+      "choices": [
+        "ATT&CK forbids naming groups",
+        "Attribution is always obvious",
+        "Many groups share the same techniques",
+        "Tactics prove identity"
+      ]
+    },
+    {
+      "id": "soc-w5-5",
+      "kind": "mcq",
+      "stem": "PowerShell with an encoded command maps to which tactic?",
+      "choices": [
+        "Impact",
+        "Collection",
+        "Reconnaissance",
+        "Execution"
+      ]
+    },
+    {
+      "id": "soc-w5-6",
+      "kind": "mcq",
+      "stem": "What is the main benefit of ATT&CK mapping on a desk?",
+      "choices": [
+        "A shared vocabulary across teams",
+        "Automatic blocking",
+        "Legal proof",
+        "Faster hashing"
+      ]
+    }
+  ]
+}

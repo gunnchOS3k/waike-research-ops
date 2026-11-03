@@ -304,5 +304,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "CYBER_SOC-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "CYBER_SOC-offline",
+      "labs": [
+        "lab_soc_log_parse",
+        "lab_soc_window_rule"
+      ],
+      "catalog_course_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness \u2014 Night Shift Desk"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

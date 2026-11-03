@@ -1,6 +1,6 @@
 {
   "schema": "waike_pathway_disk_vs_catalog_ledger_v1",
-  "prepared_at": "2026-11-03T00:00:32Z",
+  "prepared_at": "2026-11-03T02:59:31Z",
   "HUMAN": false,
   "RC2": false,
   "V1": false,
@@ -8,9 +8,9 @@
   "full_18_course_digital_rc": false,
   "counts": {
     "catalog_track_ids": 18,
-    "digital_rc_dirs_on_disk": 17,
-    "course_digital_rc_keys": 17,
-    "course_digital_rc_true": 17
+    "digital_rc_dirs_on_disk": 18,
+    "course_digital_rc_keys": 18,
+    "course_digital_rc_true": 18
   },
   "digital_rc_dirs_on_disk": [
     "AI_ML_EDGE",
@@ -18,6 +18,7 @@
     "COMM_PD_ETHICS",
     "COMPUTER_NETWORKING",
     "CYBERSECURITY",
+    "CYBER_SOC",
     "DATA_DASHBOARDS",
     "DATA_VIZ_BI",
     "EMBEDDED_PROTOTYPING",
@@ -37,6 +38,7 @@
     "COMM_PD_ETHICS",
     "COMPUTER_NETWORKING",
     "CYBERSECURITY",
+    "CYBER_SOC",
     "DATA_DASHBOARDS",
     "DATA_VIZ_BI",
     "EMBEDDED_PROTOTYPING",

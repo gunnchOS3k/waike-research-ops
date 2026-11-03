@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "soc-w8-1",
+      "kind": "mcq",
+      "stem": "Which alert goes first under severity \u00d7 criticality?",
+      "choices": [
+        "A2",
+        "A5",
+        "A1",
+        "A3"
+      ]
+    },
+    {
+      "id": "soc-w8-2",
+      "kind": "mcq",
+      "stem": "Why does A2, a critical alert, rank fifth?",
+      "choices": [
+        "It arrived first",
+        "Critical alerts are ignored",
+        "It sits on a criticality-one kiosk",
+        "It is a duplicate"
+      ]
+    },
+    {
+      "id": "soc-w8-3",
+      "kind": "mcq",
+      "stem": "A3 and A6 tie at six. What breaks the tie?",
+      "choices": [
+        "Alphabetical order",
+        "Random choice",
+        "Higher severity always",
+        "Earlier arrival"
+      ]
+    },
+    {
+      "id": "soc-w8-4",
+      "kind": "mcq",
+      "stem": "When is A2 due if it arrived at minute 12?",
+      "choices": [
+        "Minute 27",
+        "Minute 72",
+        "Minute 252",
+        "Minute 12"
+      ]
+    },
+    {
+      "id": "soc-w8-5",
+      "kind": "mcq",
+      "stem": "A low-priority alert's due time will pass before you reach it. What should you do?",
+      "choices": [
+        "Close it silently",
+        "Ask the shift lead for help",
+        "Change its received time",
+        "Ignore the SLA"
+      ]
+    },
+    {
+      "id": "soc-w8-6",
+      "kind": "mcq",
+      "stem": "What makes a triage queue defensible?",
+      "choices": [
+        "Gut feeling",
+        "Newest first always",
+        "A stated sort rule you can explain",
+        "Loudest requester first"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2318 @@
+{
+  "CYBER_SOC": {
+    "offset": 2,
+    "mid": [
+      {
+        "id": "soc-mid-01",
+        "kind": "mcq",
+        "stem": "A log shows 'Failed password for invalid user test from 203.0.113.9'. What does 'invalid user' tell you?",
+        "choices": [
+          "The account name does not exist on the host",
+          "The password was correct",
+          "The address is internal",
+          "The login succeeded"
+        ],
+        "answer_index": 0,
+        "explanation": "username spray"
+      },
+      {
+        "id": "soc-mid-02",
+        "kind": "mcq",
+        "stem": "Your rule counts failures since midnight with no window. What goes wrong at 23:50?",
+        "choices": [
+          "A day's scattered typos can add up to an alert",
+          "Nothing",
+          "It never fires",
+          "It only fires on weekends"
+        ],
+        "answer_index": 0,
+        "explanation": "missing window"
+      },
+      {
+        "id": "soc-mid-03",
+        "kind": "mcq",
+        "stem": "Five failures arrive at seconds 0, 59, 118, 177, 236 against a 4-in-60 s rule. Does it fire?",
+        "choices": [
+          "No; no four fall within 60 seconds",
+          "Yes, at 177",
+          "Yes, at 59",
+          "Yes, at 0"
+        ],
+        "answer_index": 0,
+        "explanation": "slow drip"
+      },
+      {
+        "id": "soc-mid-04",
+        "kind": "mcq",
+        "stem": "A rule has precision 0.9 and recall 0.2. Describe it.",
+        "choices": [
+          "Alerts are trustworthy but most attacks are missed",
+          "Noisy but complete",
+          "Perfect",
+          "Useless in every way"
+        ],
+        "answer_index": 0,
+        "explanation": "trade-off"
+      },
+      {
+        "id": "soc-mid-05",
+        "kind": "mcq",
+        "stem": "Doubling true negatives while holding other counts does what to precision?",
+        "choices": [
+          "Leaves it unchanged",
+          "Doubles it",
+          "Halves it",
+          "Sets it to 1"
+        ],
+        "answer_index": 0,
+        "explanation": "TN not in precision"
+      },
+      {
+        "id": "soc-mid-06",
+        "kind": "mcq",
+        "stem": "Two files have SHA-256 digests that differ in the last character. What do you conclude?",
+        "choices": [
+          "They are different files",
+          "They are the same file",
+          "One hash is truncated",
+          "The hash function failed"
+        ],
+        "answer_index": 0,
+        "explanation": "fingerprint"
+      },
+      {
+        "id": "soc-mid-07",
+        "kind": "mcq",
+        "stem": "Which of these is correctly defanged?",
+        "choices": [
+          "hxxps://login[.]example[.]org/reset",
+          "https://login.example.org/reset",
+          "hxxps://login.example.org/reset",
+          "login example org"
+        ],
+        "answer_index": 0,
+        "explanation": "dots and scheme"
+      },
+      {
+        "id": "soc-mid-08",
+        "kind": "mcq",
+        "stem": "A user forwards a phish to the whole department 'as a warning'. What risk did that create?",
+        "choices": [
+          "More people can now click the live link",
+          "None",
+          "It deletes the phish",
+          "It blocks the sender"
+        ],
+        "answer_index": 0,
+        "explanation": "containment"
+      },
+      {
+        "id": "soc-mid-09",
+        "kind": "mcq",
+        "stem": "Which ATT&CK tactic describes the attacker's goal of staying in after a reboot?",
+        "choices": [
+          "Persistence",
+          "Impact",
+          "Reconnaissance",
+          "Exfiltration"
+        ],
+        "answer_index": 0,
+        "explanation": "tactic meaning"
+      },
+      {
+        "id": "soc-mid-10",
+        "kind": "mcq",
+        "stem": "A colleague says 'this T1566 alert proves a nation-state attack'. Your response?",
+        "choices": [
+          "Technique use alone does not identify an actor",
+          "Agree and publish",
+          "Delete the alert",
+          "Change the technique ID"
+        ],
+        "answer_index": 0,
+        "explanation": "attribution"
+      },
+      {
+        "id": "soc-mid-11",
+        "kind": "mcq",
+        "stem": "Valid-account misuse is hard to detect mainly because…",
+        "choices": [
+          "The login itself looks legitimate",
+          "It always fails",
+          "It uses malware",
+          "It is rare"
+        ],
+        "answer_index": 0,
+        "explanation": "T1078"
+      },
+      {
+        "id": "soc-mid-12",
+        "kind": "mcq",
+        "stem": "A message's From domain is example.org, DKIM d=example.org passes, SPF fails. DMARC result?",
+        "choices": [
+          "Pass, through aligned DKIM",
+          "Fail",
+          "Neutral",
+          "Cannot be evaluated"
+        ],
+        "answer_index": 0,
+        "explanation": "one aligned pass"
+      },
+      {
+        "id": "soc-mid-13",
+        "kind": "mcq",
+        "stem": "Strict alignment would treat mail.harborpay.example vs harborpay.example how?",
+        "choices": [
+          "As not aligned",
+          "As aligned",
+          "As a DKIM failure",
+          "As spam"
+        ],
+        "answer_index": 0,
+        "explanation": "strict"
+      },
+      {
+        "id": "soc-mid-14",
+        "kind": "mcq",
+        "stem": "Why would an attacker register harb0rpay.example?",
+        "choices": [
+          "To pass checks for a look-alike domain users misread",
+          "To break DMARC",
+          "To speed delivery",
+          "To get a certificate"
+        ],
+        "answer_index": 0,
+        "explanation": "look-alike"
+      },
+      {
+        "id": "soc-mid-15",
+        "kind": "mcq",
+        "stem": "A vector changes only AC:L to AC:H. What happens to the base score?",
+        "choices": [
+          "It drops, because exploitability falls",
+          "It rises",
+          "No change",
+          "It becomes 10"
+        ],
+        "answer_index": 0,
+        "explanation": "complexity"
+      },
+      {
+        "id": "soc-mid-16",
+        "kind": "mcq",
+        "stem": "Two flaws both score 7.5. One is on a test VM, one on payroll. Which patch first?",
+        "choices": [
+          "Payroll, because asset value differs",
+          "The test VM",
+          "Either, scores are equal",
+          "Neither"
+        ],
+        "answer_index": 0,
+        "explanation": "context"
+      },
+      {
+        "id": "soc-mid-17",
+        "kind": "mcq",
+        "stem": "An analyst rounds 6.94 to 6.9 when scoring CVSS by hand. What is the correct value?",
+        "choices": [
+          "7.0",
+          "6.9",
+          "6.0",
+          "7.5"
+        ],
+        "answer_index": 0,
+        "explanation": "Roundup"
+      },
+      {
+        "id": "soc-mid-18",
+        "kind": "mcq",
+        "stem": "Severity weight 3, criticality 2 versus weight 2, criticality 3. Which wins?",
+        "choices": [
+          "They tie at 6; earlier arrival decides",
+          "The first",
+          "The second",
+          "Neither is queued"
+        ],
+        "answer_index": 0,
+        "explanation": "tie"
+      },
+      {
+        "id": "soc-mid-19",
+        "kind": "mcq",
+        "stem": "Your queue will breach three SLAs this hour. What is the honest action?",
+        "choices": [
+          "Tell the shift lead and request help",
+          "Backdate received times",
+          "Close low alerts unread",
+          "Turn off the SLA timer"
+        ],
+        "answer_index": 0,
+        "explanation": "capacity"
+      },
+      {
+        "id": "soc-mid-20",
+        "kind": "mcq",
+        "stem": "A single 6-hour detection appears among ten 10-minute ones. Which summary misleads less?",
+        "choices": [
+          "The median with the outlier named",
+          "The mean alone",
+          "The maximum alone",
+          "Nothing at all"
+        ],
+        "answer_index": 0,
+        "explanation": "robust"
+      }
+    ],
+    "final": [
+      {
+        "id": "soc-fin-01",
+        "kind": "mcq",
+        "stem": "An accepted login follows twelve failures from one address at 03:00. First action on the desk?",
+        "choices": [
+          "Escalate and check what the account did next",
+          "Ignore it, it succeeded",
+          "Block every address",
+          "Delete the log"
+        ],
+        "answer_index": 0,
+        "explanation": "triage"
+      },
+      {
+        "id": "soc-fin-02",
+        "kind": "mcq",
+        "stem": "A teammate wants to tune a rule live in production without replay. Your advice?",
+        "choices": [
+          "Replay against stored events first",
+          "Go ahead",
+          "Disable the SIEM",
+          "Raise all thresholds to 1000"
+        ],
+        "answer_index": 0,
+        "explanation": "backtest"
+      },
+      {
+        "id": "soc-fin-03",
+        "kind": "mcq",
+        "stem": "After tuning, precision rose from 0.3 to 0.6 and recall fell from 0.75 to 0.5. How do you report it?",
+        "choices": [
+          "Show both before and after and the trade-off",
+          "Report only precision",
+          "Report only recall",
+          "Say nothing changed"
+        ],
+        "answer_index": 0,
+        "explanation": "honest reporting"
+      },
+      {
+        "id": "soc-fin-04",
+        "kind": "mcq",
+        "stem": "Which metric counts how many real attacks a rule missed?",
+        "choices": [
+          "False negatives",
+          "True negatives",
+          "Precision",
+          "Alert volume"
+        ],
+        "answer_index": 0,
+        "explanation": "FN"
+      },
+      {
+        "id": "soc-fin-05",
+        "kind": "mcq",
+        "stem": "A threat feed lists a domain. Your log has it with a different subdomain. Is that a match?",
+        "choices": [
+          "Possibly; record it as a related indicator and investigate",
+          "Exactly the same indicator",
+          "Never relevant",
+          "Proof of breach"
+        ],
+        "answer_index": 0,
+        "explanation": "partial match"
+      },
+      {
+        "id": "soc-fin-06",
+        "kind": "mcq",
+        "stem": "Where should a live malicious sample never be opened?",
+        "choices": [
+          "On a personal or production laptop",
+          "In an approved isolated sandbox",
+          "In a vendor's analysis portal approved by policy",
+          "Nowhere is ever acceptable"
+        ],
+        "answer_index": 0,
+        "explanation": "safe handling"
+      },
+      {
+        "id": "soc-fin-07",
+        "kind": "mcq",
+        "stem": "Which statement about MITRE ATT&CK is accurate?",
+        "choices": [
+          "It catalogues techniques and tactics, not culprits",
+          "It assigns blame",
+          "It is a firewall",
+          "It scores vulnerabilities"
+        ],
+        "answer_index": 0,
+        "explanation": "purpose"
+      },
+      {
+        "id": "soc-fin-08",
+        "kind": "mcq",
+        "stem": "A ransomware note appears. Which technique ID belongs in the handoff?",
+        "choices": [
+          "T1486",
+          "T1110",
+          "T1566",
+          "T1595"
+        ],
+        "answer_index": 0,
+        "explanation": "impact"
+      },
+      {
+        "id": "soc-fin-09",
+        "kind": "mcq",
+        "stem": "An email shows DMARC fail but the user insists it is from their bank. What do you check first?",
+        "choices": [
+          "Which domains SPF and DKIM actually vouched for",
+          "The font",
+          "The subject line length",
+          "The time zone"
+        ],
+        "answer_index": 0,
+        "explanation": "alignment"
+      },
+      {
+        "id": "soc-fin-10",
+        "kind": "mcq",
+        "stem": "Why do many organisations publish a DMARC reject policy after monitoring?",
+        "choices": [
+          "So unaligned mail claiming their domain is refused",
+          "To speed up newsletters",
+          "To disable DKIM",
+          "To hide their MX"
+        ],
+        "answer_index": 0,
+        "explanation": "policy"
+      },
+      {
+        "id": "soc-fin-11",
+        "kind": "mcq",
+        "stem": "A CVSS vector has S:C. What changes in the calculation?",
+        "choices": [
+          "The changed-scope impact formula and PR weights apply",
+          "Nothing",
+          "The score is capped at 5",
+          "Exploitability is ignored"
+        ],
+        "answer_index": 0,
+        "explanation": "scope"
+      },
+      {
+        "id": "soc-fin-12",
+        "kind": "mcq",
+        "stem": "A vendor scores a flaw 9.8 but your server has the service disabled. What remains true?",
+        "choices": [
+          "The base score is 9.8; your exposure is lower",
+          "The base score becomes 0",
+          "The vendor is wrong",
+          "The flaw disappears"
+        ],
+        "answer_index": 0,
+        "explanation": "base vs environment"
+      },
+      {
+        "id": "soc-fin-13",
+        "kind": "mcq",
+        "stem": "Your queue sorts by newest alert first. What failure follows?",
+        "choices": [
+          "Old critical alerts on key assets wait too long",
+          "Nothing",
+          "Alerts merge",
+          "SLAs disappear"
+        ],
+        "answer_index": 0,
+        "explanation": "sort rule"
+      },
+      {
+        "id": "soc-fin-14",
+        "kind": "mcq",
+        "stem": "Two analysts disagree on queue order. What settles it?",
+        "choices": [
+          "The written severity × criticality rule",
+          "Seniority",
+          "Coin toss",
+          "Whoever shouts"
+        ],
+        "answer_index": 0,
+        "explanation": "explainable"
+      },
+      {
+        "id": "soc-fin-15",
+        "kind": "mcq",
+        "stem": "Your MTTD is 33 minutes; another team reports 8. What do you check before comparing?",
+        "choices": [
+          "How each team defines the start and end points",
+          "Who has better coffee",
+          "Nothing",
+          "Their tool vendor"
+        ],
+        "answer_index": 0,
+        "explanation": "definitions"
+      },
+      {
+        "id": "soc-fin-16",
+        "kind": "mcq",
+        "stem": "Management wants MTTR below 30 minutes by next week. What do you tell them?",
+        "choices": [
+          "Which incidents drive the number and what would shorten them",
+          "It is done",
+          "Stop logging incidents",
+          "Close tickets faster without fixing"
+        ],
+        "answer_index": 0,
+        "explanation": "honest metrics"
+      },
+      {
+        "id": "soc-fin-17",
+        "kind": "mcq",
+        "stem": "A handoff lists 'ransomware stuff, Bob knows'. What is missing?",
+        "choices": [
+          "Technique ID, NIST phase, and a named next owner",
+          "Nothing",
+          "A meme",
+          "The analyst's password"
+        ],
+        "answer_index": 0,
+        "explanation": "completeness"
+      },
+      {
+        "id": "soc-fin-18",
+        "kind": "mcq",
+        "stem": "Which NIST SP 800-61 phase includes writing lessons learned?",
+        "choices": [
+          "Post-incident activity",
+          "Preparation",
+          "Detection and analysis",
+          "Containment"
+        ],
+        "answer_index": 0,
+        "explanation": "phase"
+      },
+      {
+        "id": "soc-fin-19",
+        "kind": "mcq",
+        "stem": "A training packet includes a real customer's email headers. What should happen?",
+        "choices": [
+          "Remove them and use synthetic data",
+          "Keep them, they are realistic",
+          "Share them wider",
+          "Encrypt and post publicly"
+        ],
+        "answer_index": 0,
+        "explanation": "data boundary"
+      },
+      {
+        "id": "soc-fin-20",
+        "kind": "mcq",
+        "stem": "A trainee asks to port-scan a neighbour's network 'for practice'. Your answer?",
+        "choices": [
+          "No; only systems you own or are authorised to test",
+          "Yes, on weekends",
+          "Only with a VPN",
+          "Only if it is fast"
+        ],
+        "answer_index": 0,
+        "explanation": "authorisation"
+      },
+      {
+        "id": "soc-fin-21",
+        "kind": "mcq",
+        "stem": "Why does the course use 203.0.113.0/24 and similar ranges?",
+        "choices": [
+          "They are reserved for documentation, so no real host is implicated",
+          "They are faster",
+          "They are private LAN ranges",
+          "They belong to MITRE"
+        ],
+        "answer_index": 0,
+        "explanation": "RFC 5737"
+      },
+      {
+        "id": "soc-fin-22",
+        "kind": "mcq",
+        "stem": "What is the clearest sign a rule's alerts are mostly noise?",
+        "choices": [
+          "Precision well below one half",
+          "High recall",
+          "Low alert volume",
+          "A long rule name"
+        ],
+        "answer_index": 0,
+        "explanation": "precision"
+      },
+      {
+        "id": "soc-fin-23",
+        "kind": "mcq",
+        "stem": "A detection engineer proposes alerting on every login. What happens to recall and precision?",
+        "choices": [
+          "Recall approaches 1; precision collapses",
+          "Both rise",
+          "Both fall to 0",
+          "Neither changes"
+        ],
+        "answer_index": 0,
+        "explanation": "extremes"
+      },
+      {
+        "id": "soc-fin-24",
+        "kind": "mcq",
+        "stem": "What is the boundary of the Night Shift Desk course?",
+        "choices": [
+          "Defensive analysis on synthetic data, not a certification or live SOC duty",
+          "A guaranteed SOC job",
+          "A penetration-testing licence",
+          "Access to production SIEMs"
+        ],
+        "answer_index": 0,
+        "explanation": "claim boundary"
+      }
+    ]
+  },
+  "DIGITAL_CONFIDENCE": {
+    "offset": 5,
+    "mid": [
+      {
+        "id": "dco-mid-01",
+        "kind": "mcq",
+        "stem": "You are in /home/ben/Music and type ../../ana/Pictures. Where are you?",
+        "choices": [
+          "/home/ana/Pictures",
+          "/home/ben/ana/Pictures",
+          "/ana/Pictures",
+          "/home/ben/Music/ana/Pictures"
+        ],
+        "answer_index": 0,
+        "explanation": "two levels up"
+      },
+      {
+        "id": "dco-mid-02",
+        "kind": "mcq",
+        "stem": "A path starts with a slash. What kind of path is it on macOS?",
+        "choices": [
+          "Absolute",
+          "Relative",
+          "Hidden",
+          "Broken"
+        ],
+        "answer_index": 0,
+        "explanation": "root"
+      },
+      {
+        "id": "dco-mid-03",
+        "kind": "mcq",
+        "stem": "Which name helps you find a budget file next spring?",
+        "choices": [
+          "budget-2026-11.xlsx",
+          "Untitled(3).xlsx",
+          "asdf.xlsx",
+          "final-final.xlsx"
+        ],
+        "answer_index": 0,
+        "explanation": "naming"
+      },
+      {
+        "id": "dco-mid-04",
+        "kind": "mcq",
+        "stem": "A 1 TB drive shows roughly how many GiB?",
+        "choices": [
+          "About 931",
+          "About 1,000",
+          "About 1,024",
+          "About 512"
+        ],
+        "answer_index": 0,
+        "explanation": "10^12 / 2^30"
+      },
+      {
+        "id": "dco-mid-05",
+        "kind": "mcq",
+        "stem": "Your phone says a video is 800 MB and the USB stick has 0.7 GiB free. Will it fit?",
+        "choices": [
+          "No; 800 MB is about 0.745 GiB",
+          "Yes, easily",
+          "Only if renamed",
+          "Only on Windows"
+        ],
+        "answer_index": 0,
+        "explanation": "convert"
+      },
+      {
+        "id": "dco-mid-06",
+        "kind": "mcq",
+        "stem": "Which unit do drive boxes usually use?",
+        "choices": [
+          "Decimal gigabytes",
+          "Binary gibibytes",
+          "Kilobits",
+          "Megapixels"
+        ],
+        "answer_index": 0,
+        "explanation": "marketing unit"
+      },
+      {
+        "id": "dco-mid-07",
+        "kind": "mcq",
+        "stem": "A website forces a new password every 30 days. What does NIST SP 800-63B suggest instead?",
+        "choices": [
+          "Change on evidence of compromise",
+          "Change daily",
+          "Never use passwords",
+          "Reuse old ones"
+        ],
+        "answer_index": 0,
+        "explanation": "rotation"
+      },
+      {
+        "id": "dco-mid-08",
+        "kind": "mcq",
+        "stem": "Which choice gives the most bits?",
+        "choices": [
+          "Six random diceware words",
+          "Ten random digits",
+          "Your pet's name plus 1",
+          "Eight random lowercase letters"
+        ],
+        "answer_index": 0,
+        "explanation": "77.5 bits"
+      },
+      {
+        "id": "dco-mid-09",
+        "kind": "mcq",
+        "stem": "A friend uses one strong password everywhere. What is the risk?",
+        "choices": [
+          "One breached site exposes all accounts",
+          "None, it is strong",
+          "It slows the computer",
+          "It expires faster"
+        ],
+        "answer_index": 0,
+        "explanation": "reuse"
+      },
+      {
+        "id": "dco-mid-10",
+        "kind": "mcq",
+        "stem": "Which link actually belongs to harborbank.example?",
+        "choices": [
+          "https://login.harborbank.example/start",
+          "https://harborbank.example.verify.example.net",
+          "https://harborbank-example.net",
+          "https://example.net/harborbank.example"
+        ],
+        "answer_index": 0,
+        "explanation": "right end"
+      },
+      {
+        "id": "dco-mid-11",
+        "kind": "mcq",
+        "stem": "A text says 'your parcel is held, pay 2 dollars' with a link. Safest move?",
+        "choices": [
+          "Check the courier's own site or app directly",
+          "Pay quickly",
+          "Reply STOP with your card",
+          "Forward to everyone"
+        ],
+        "answer_index": 0,
+        "explanation": "out-of-band"
+      },
+      {
+        "id": "dco-mid-12",
+        "kind": "mcq",
+        "stem": "A shortened link hides its address. What can you do before opening?",
+        "choices": [
+          "Use a preview feature or ask the desk",
+          "Open it on a work computer",
+          "Assume it is fine",
+          "Enter your password to check"
+        ],
+        "answer_index": 0,
+        "explanation": "preview"
+      },
+      {
+        "id": "dco-mid-13",
+        "kind": "mcq",
+        "stem": "=SUM(B2:B4) returns 300. You change B3 from 100 to 150. What does the cell show now?",
+        "choices": [
+          "350",
+          "300",
+          "450",
+          "150"
+        ],
+        "answer_index": 0,
+        "explanation": "live formula"
+      },
+      {
+        "id": "dco-mid-14",
+        "kind": "mcq",
+        "stem": "Which formula gives B2 as a share of total B7?",
+        "choices": [
+          "=B2/B7",
+          "=B7/B2",
+          "=B2+B7",
+          "=SUM(B2)"
+        ],
+        "answer_index": 0,
+        "explanation": "share"
+      },
+      {
+        "id": "dco-mid-15",
+        "kind": "mcq",
+        "stem": "Your typed total disagrees with the rows. Which number do you trust?",
+        "choices": [
+          "The formula over the rows",
+          "The typed total",
+          "Neither",
+          "The larger one"
+        ],
+        "answer_index": 0,
+        "explanation": "single source"
+      },
+      {
+        "id": "dco-mid-16",
+        "kind": "mcq",
+        "stem": "You type 900 characters in 3 minutes with 6 errors. Net WPM?",
+        "choices": [
+          "58",
+          "60",
+          "54",
+          "300"
+        ],
+        "answer_index": 0,
+        "explanation": "60 − 2"
+      },
+      {
+        "id": "dco-mid-17",
+        "kind": "mcq",
+        "stem": "Why is a 'word' fixed at five characters in typing tests?",
+        "choices": [
+          "So long and short words count fairly",
+          "Because English words are five letters",
+          "To make scores higher",
+          "It is a typo"
+        ],
+        "answer_index": 0,
+        "explanation": "fairness"
+      },
+      {
+        "id": "dco-mid-18",
+        "kind": "mcq",
+        "stem": "A 12,000,000-byte file encodes to how many base64 bytes?",
+        "choices": [
+          "16,000,000",
+          "12,000,000",
+          "24,000,000",
+          "13,000,000"
+        ],
+        "answer_index": 0,
+        "explanation": "4/3"
+      },
+      {
+        "id": "dco-mid-19",
+        "kind": "mcq",
+        "stem": "Your plan has the laptop and a cloud folder only. Which 3-2-1 rule fails?",
+        "choices": [
+          "Three copies",
+          "Two media",
+          "One offsite",
+          "None"
+        ],
+        "answer_index": 0,
+        "explanation": "count"
+      },
+      {
+        "id": "dco-mid-20",
+        "kind": "mcq",
+        "stem": "#595959 on white is about 7:1. What does it pass?",
+        "choices": [
+          "AA for normal and large text",
+          "Nothing",
+          "Only large text",
+          "Only print"
+        ],
+        "answer_index": 0,
+        "explanation": "≥4.5"
+      }
+    ],
+    "final": [
+      {
+        "id": "dco-fin-01",
+        "kind": "mcq",
+        "stem": "A form asks you to upload 'C:\\Users\\Mia\\Desktop\\id.pdf' but you saved it in Downloads. What changed?",
+        "choices": [
+          "The folder part of the path",
+          "The file type",
+          "The drive size",
+          "The password"
+        ],
+        "answer_index": 0,
+        "explanation": "location"
+      },
+      {
+        "id": "dco-fin-02",
+        "kind": "mcq",
+        "stem": "Why do support staff ask 'where are you standing?' when a relative path fails?",
+        "choices": [
+          "Relative paths start from the current folder",
+          "Paths are random",
+          "It is small talk",
+          "Absolute paths never work"
+        ],
+        "answer_index": 0,
+        "explanation": "cwd"
+      },
+      {
+        "id": "dco-fin-03",
+        "kind": "mcq",
+        "stem": "A 2 TB external drive shows about 1.82 TB on a laptop. What explains it?",
+        "choices": [
+          "Decimal versus binary units",
+          "A broken drive",
+          "Hidden viruses",
+          "The cable"
+        ],
+        "answer_index": 0,
+        "explanation": "units"
+      },
+      {
+        "id": "dco-fin-04",
+        "kind": "mcq",
+        "stem": "A photo folder is 9.5 GB and the free space shows 9 GiB. Fits?",
+        "choices": [
+          "Yes, 9.5 GB is about 8.85 GiB",
+          "No",
+          "Exactly equal",
+          "Cannot tell"
+        ],
+        "answer_index": 0,
+        "explanation": "convert first"
+      },
+      {
+        "id": "dco-fin-05",
+        "kind": "mcq",
+        "stem": "Which password policy best follows current NIST guidance?",
+        "choices": [
+          "Long passphrases, checked against breached lists, changed on compromise",
+          "Eight characters, changed monthly",
+          "Must include a symbol and a capital only",
+          "No passwords at all"
+        ],
+        "answer_index": 0,
+        "explanation": "800-63B"
+      },
+      {
+        "id": "dco-fin-06",
+        "kind": "mcq",
+        "stem": "Why can a short password with symbols be weaker than a long lowercase one?",
+        "choices": [
+          "Length adds more bits than symbols when chosen at random",
+          "Symbols are ignored",
+          "Lowercase is encrypted",
+          "It cannot be"
+        ],
+        "answer_index": 0,
+        "explanation": "length"
+      },
+      {
+        "id": "dco-fin-07",
+        "kind": "mcq",
+        "stem": "A website offers 'remember me' on a shared library computer. Best choice?",
+        "choices": [
+          "Decline and sign out when finished",
+          "Accept",
+          "Accept and leave the tab open",
+          "Write the password on the desk"
+        ],
+        "answer_index": 0,
+        "explanation": "shared device"
+      },
+      {
+        "id": "dco-fin-08",
+        "kind": "mcq",
+        "stem": "An email from 'support@harborbank.example.alerts-help.example.org' asks for your PIN. Who sent it?",
+        "choices": [
+          "Whoever owns example.org",
+          "Harbor Bank",
+          "The library",
+          "Your email provider"
+        ],
+        "answer_index": 0,
+        "explanation": "domain"
+      },
+      {
+        "id": "dco-fin-09",
+        "kind": "mcq",
+        "stem": "A message pressures you to act within ten minutes. What does urgency usually signal?",
+        "choices": [
+          "A tactic to stop you checking",
+          "A genuine emergency always",
+          "A system update",
+          "A refund"
+        ],
+        "answer_index": 0,
+        "explanation": "pressure"
+      },
+      {
+        "id": "dco-fin-10",
+        "kind": "mcq",
+        "stem": "You must share a 60 MB video with a teacher. Most reliable method?",
+        "choices": [
+          "Upload and share a view-only link",
+          "Attach it to one email",
+          "Split it into twelve emails",
+          "Print it"
+        ],
+        "answer_index": 0,
+        "explanation": "size"
+      },
+      {
+        "id": "dco-fin-11",
+        "kind": "mcq",
+        "stem": "A sheet's total is typed as 1,000 while the rows add to 1,100. What should you fix?",
+        "choices": [
+          "Replace the typed total with =SUM over the rows",
+          "Delete a row",
+          "Change the rows to match",
+          "Hide the total"
+        ],
+        "answer_index": 0,
+        "explanation": "formula"
+      },
+      {
+        "id": "dco-fin-12",
+        "kind": "mcq",
+        "stem": "Which formula finds the average of B2 through B9?",
+        "choices": [
+          "=AVERAGE(B2:B9)",
+          "=SUM(B2:B9)",
+          "=B2/B9",
+          "=MAX(B2:B9)"
+        ],
+        "answer_index": 0,
+        "explanation": "AVERAGE"
+      },
+      {
+        "id": "dco-fin-13",
+        "kind": "mcq",
+        "stem": "Your accuracy is 90% at 60 WPM. What should practice focus on?",
+        "choices": [
+          "Slowing down to raise accuracy",
+          "Going faster",
+          "Ignoring errors",
+          "Stopping practice"
+        ],
+        "answer_index": 0,
+        "explanation": "accuracy"
+      },
+      {
+        "id": "dco-fin-14",
+        "kind": "mcq",
+        "stem": "Which posture reduces strain while typing?",
+        "choices": [
+          "Square to the keyboard with level wrists",
+          "Wrists bent upward",
+          "Keyboard on your lap at an angle",
+          "Leaning on one elbow"
+        ],
+        "answer_index": 0,
+        "explanation": "ergonomics"
+      },
+      {
+        "id": "dco-fin-15",
+        "kind": "mcq",
+        "stem": "A backup drive sits beside the laptop in the same bag. Which threat defeats both?",
+        "choices": [
+          "The bag being stolen",
+          "A typo",
+          "A slow network",
+          "A power cut at the library"
+        ],
+        "answer_index": 0,
+        "explanation": "offsite"
+      },
+      {
+        "id": "dco-fin-16",
+        "kind": "mcq",
+        "stem": "You last tested a restore two years ago. What is the plan's status?",
+        "choices": [
+          "Unproven until you test again",
+          "Perfect",
+          "Illegal",
+          "Offsite"
+        ],
+        "answer_index": 0,
+        "explanation": "restore"
+      },
+      {
+        "id": "dco-fin-17",
+        "kind": "mcq",
+        "stem": "Why does a cloud sync folder alone fail 3-2-1?",
+        "choices": [
+          "Deletions and damage sync to every copy",
+          "Clouds are offline",
+          "It uses too much space",
+          "It is always private"
+        ],
+        "answer_index": 0,
+        "explanation": "sync"
+      },
+      {
+        "id": "dco-fin-18",
+        "kind": "mcq",
+        "stem": "A flyer uses white text on pale yellow. What should you do before printing?",
+        "choices": [
+          "Measure the contrast ratio",
+          "Add more yellow",
+          "Use a smaller font",
+          "Nothing"
+        ],
+        "answer_index": 0,
+        "explanation": "measure"
+      },
+      {
+        "id": "dco-fin-19",
+        "kind": "mcq",
+        "stem": "Large text needs at least what contrast for WCAG AA?",
+        "choices": [
+          "3 to 1",
+          "4.5 to 1",
+          "7 to 1",
+          "2 to 1"
+        ],
+        "answer_index": 0,
+        "explanation": "large"
+      },
+      {
+        "id": "dco-fin-20",
+        "kind": "mcq",
+        "stem": "Which is a real accessibility improvement besides contrast?",
+        "choices": [
+          "Readable font size and clear link text",
+          "Blinking text",
+          "Text inside images only",
+          "Light grey on white"
+        ],
+        "answer_index": 0,
+        "explanation": "beyond contrast"
+      },
+      {
+        "id": "dco-fin-21",
+        "kind": "mcq",
+        "stem": "A volunteer asks you to email them your password 'to help'. What do you do?",
+        "choices": [
+          "Refuse and show the request to the desk",
+          "Send it",
+          "Send half of it",
+          "Post it on paper"
+        ],
+        "answer_index": 0,
+        "explanation": "never share"
+      },
+      {
+        "id": "dco-fin-22",
+        "kind": "mcq",
+        "stem": "Where should multi-factor sign-in be turned on first?",
+        "choices": [
+          "The email account",
+          "A game account",
+          "A shopping wish list",
+          "The library catalogue"
+        ],
+        "answer_index": 0,
+        "explanation": "priority"
+      },
+      {
+        "id": "dco-fin-23",
+        "kind": "mcq",
+        "stem": "Which item belongs in a personal safety plan?",
+        "choices": [
+          "Who to ask when a message looks strange",
+          "Your bank PIN",
+          "Your recovery codes",
+          "A copy of your ID"
+        ],
+        "answer_index": 0,
+        "explanation": "contents"
+      },
+      {
+        "id": "dco-fin-24",
+        "kind": "mcq",
+        "stem": "What does the Library Lab course claim when you finish?",
+        "choices": [
+          "Practice-based digital confidence, not a certification",
+          "A guaranteed job",
+          "A government licence",
+          "Cyber-security certification"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      }
+    ]
+  },
+  "IT_SUPPORT_HARDWARE": {
+    "offset": 3,
+    "mid": [
+      {
+        "id": "ish-mid-01",
+        "kind": "mcq",
+        "stem": "A build totals 520 W of parts. Which supply does the bench rule pick?",
+        "choices": [
+          "650 W",
+          "550 W",
+          "750 W",
+          "500 W"
+        ],
+        "answer_index": 0,
+        "explanation": "520 × 1.25 = 650 W exactly"
+      },
+      {
+        "id": "ish-mid-02",
+        "kind": "mcq",
+        "stem": "Why might a supply that meets the total still fail under a new graphics card?",
+        "choices": [
+          "It lacks the card's power connectors or rail capacity",
+          "Supplies hate graphics",
+          "Fans block it",
+          "The case is too big"
+        ],
+        "answer_index": 0,
+        "explanation": "connectors"
+      },
+      {
+        "id": "ish-mid-03",
+        "kind": "mcq",
+        "stem": "Four sticks fill A1, A2, B1, B2. How many channels run?",
+        "choices": [
+          "Two",
+          "Four",
+          "One",
+          "Eight"
+        ],
+        "answer_index": 0,
+        "explanation": "two letters"
+      },
+      {
+        "id": "ish-mid-04",
+        "kind": "mcq",
+        "stem": "DDR5-4800 in two channels gives what peak bandwidth by the bench formula?",
+        "choices": [
+          "76.8 GB/s",
+          "38.4 GB/s",
+          "4.8 GB/s",
+          "153.6 GB/s"
+        ],
+        "answer_index": 0,
+        "explanation": "4800×8×2/1000"
+      },
+      {
+        "id": "ish-mid-05",
+        "kind": "mcq",
+        "stem": "Integrated graphics are slow and one stick is installed. Cheapest improvement?",
+        "choices": [
+          "Add a matching stick in the other channel",
+          "Buy a new CPU",
+          "Replace the case",
+          "Lower the resolution to 640×480"
+        ],
+        "answer_index": 0,
+        "explanation": "dual channel"
+      },
+      {
+        "id": "ish-mid-06",
+        "kind": "mcq",
+        "stem": "Six 2 TB disks in RAID 6 give how much usable space?",
+        "choices": [
+          "8 TB",
+          "10 TB",
+          "12 TB",
+          "6 TB"
+        ],
+        "answer_index": 0,
+        "explanation": "(n−2)×s"
+      },
+      {
+        "id": "ish-mid-07",
+        "kind": "mcq",
+        "stem": "A teacher deletes a folder on a RAID 1 volume. What happens on the mirror?",
+        "choices": [
+          "It is deleted there too",
+          "It is kept safe",
+          "It is restored automatically",
+          "It moves to the cloud"
+        ],
+        "answer_index": 0,
+        "explanation": "not backup"
+      },
+      {
+        "id": "ish-mid-08",
+        "kind": "mcq",
+        "stem": "Why does a RAID 5 rebuild worry technicians with large disks?",
+        "choices": [
+          "Long rebuilds stress the remaining disks",
+          "It deletes parity",
+          "It shrinks capacity",
+          "It is instant"
+        ],
+        "answer_index": 0,
+        "explanation": "risk window"
+      },
+      {
+        "id": "ish-mid-09",
+        "kind": "mcq",
+        "stem": "A 3 TB disk set up as MBR with 512-byte sectors exposes about how much?",
+        "choices": [
+          "About 2 TiB",
+          "All 3 TB",
+          "1 TB",
+          "Nothing"
+        ],
+        "answer_index": 0,
+        "explanation": "ceiling"
+      },
+      {
+        "id": "ish-mid-10",
+        "kind": "mcq",
+        "stem": "A PC will not boot from a GPT disk after cloning. Which firmware setting do you check?",
+        "choices": [
+          "UEFI versus legacy BIOS mode",
+          "Fan curve",
+          "Keyboard layout",
+          "Screen brightness"
+        ],
+        "answer_index": 0,
+        "explanation": "boot mode"
+      },
+      {
+        "id": "ish-mid-11",
+        "kind": "mcq",
+        "stem": "A machine is dead after a storm. What do you test before opening the case?",
+        "choices": [
+          "The outlet and power cable",
+          "The graphics driver",
+          "The RAM timings",
+          "The boot order"
+        ],
+        "answer_index": 0,
+        "explanation": "cheapest first"
+      },
+      {
+        "id": "ish-mid-12",
+        "kind": "mcq",
+        "stem": "The PC boots, then shows a stop error right after a driver update. First step?",
+        "choices": [
+          "Roll back the last driver or update",
+          "Replace the motherboard",
+          "Reseat the CPU",
+          "Change the PSU"
+        ],
+        "answer_index": 0,
+        "explanation": "recent change"
+      },
+      {
+        "id": "ish-mid-13",
+        "kind": "mcq",
+        "stem": "Why write the symptom in the customer's own words?",
+        "choices": [
+          "It preserves details your guess might discard",
+          "Customers prefer it",
+          "It is required by law",
+          "It is shorter"
+        ],
+        "answer_index": 0,
+        "explanation": "evidence"
+      },
+      {
+        "id": "ish-mid-14",
+        "kind": "mcq",
+        "stem": "2560×1440 at 144 Hz with 24-bit colour needs about how much?",
+        "choices": [
+          "About 12.7 Gbit/s",
+          "About 5.3 Gbit/s",
+          "About 25 Gbit/s",
+          "About 1.4 Gbit/s"
+        ],
+        "answer_index": 0,
+        "explanation": "2560×1440×144×24"
+      },
+      {
+        "id": "ish-mid-15",
+        "kind": "mcq",
+        "stem": "A monitor runs 4K at 30 Hz over HDMI 1.4. What is the honest fix?",
+        "choices": [
+          "Use a port and cable rated for the mode, like DP 1.4",
+          "Buy a longer cable",
+          "Lower the brightness",
+          "Install a new keyboard"
+        ],
+        "answer_index": 0,
+        "explanation": "link"
+      },
+      {
+        "id": "ish-mid-16",
+        "kind": "mcq",
+        "stem": "A 600 Wh UPS at 90% efficiency feeds 180 W. Runtime?",
+        "choices": [
+          "180 minutes",
+          "200 minutes",
+          "120 minutes",
+          "300 minutes"
+        ],
+        "answer_index": 0,
+        "explanation": "600×0.9/180 h"
+      },
+      {
+        "id": "ish-mid-17",
+        "kind": "mcq",
+        "stem": "Doubling the load on a UPS does what to runtime by the bench formula?",
+        "choices": [
+          "Halves it",
+          "Doubles it",
+          "No change",
+          "Quarters it"
+        ],
+        "answer_index": 0,
+        "explanation": "inverse"
+      },
+      {
+        "id": "ish-mid-18",
+        "kind": "mcq",
+        "stem": "A 20 GB image goes to 10 machines over 1 Gbit/s at 80% efficiency, unicast. About how long?",
+        "choices": [
+          "About 33 minutes",
+          "About 3.3 minutes",
+          "About 200 minutes",
+          "About 20 minutes"
+        ],
+        "answer_index": 0,
+        "explanation": "160/0.8 s ×10"
+      },
+      {
+        "id": "ish-mid-19",
+        "kind": "mcq",
+        "stem": "Why verify one finished machine before releasing an imaged lab?",
+        "choices": [
+          "One mistake would otherwise repeat on every machine",
+          "It is tradition",
+          "Imaging is random",
+          "To slow down"
+        ],
+        "answer_index": 0,
+        "explanation": "batch error"
+      },
+      {
+        "id": "ish-mid-20",
+        "kind": "mcq",
+        "stem": "A leased laptop goes back to the vendor. Which category applies at minimum?",
+        "choices": [
+          "Purge",
+          "Clear",
+          "No action",
+          "Quick format"
+        ],
+        "answer_index": 0,
+        "explanation": "leaves control"
+      }
+    ],
+    "final": [
+      {
+        "id": "ish-fin-01",
+        "kind": "mcq",
+        "stem": "A volunteer wants a 1,200 W supply 'to be safe' for a 250 W office PC. Your advice?",
+        "choices": [
+          "Size to the budget with headroom; oversizing wastes money and efficiency",
+          "Agree",
+          "Use 300 W with no headroom",
+          "Remove the fans"
+        ],
+        "answer_index": 0,
+        "explanation": "right-size"
+      },
+      {
+        "id": "ish-fin-02",
+        "kind": "mcq",
+        "stem": "A PSU's fan has stopped and it smells hot. What do you do?",
+        "choices": [
+          "Replace the unit; never open it",
+          "Open it and clean the capacitors",
+          "Tape the fan",
+          "Run it at night only"
+        ],
+        "answer_index": 0,
+        "explanation": "safety"
+      },
+      {
+        "id": "ish-fin-03",
+        "kind": "mcq",
+        "stem": "A board manual says use A2 and B2 for two sticks, but they sit in A1 and B1. Likely effect?",
+        "choices": [
+          "Possibly unstable or not running the preferred layout; follow the manual",
+          "Triple speed",
+          "No display ever",
+          "Nothing could matter"
+        ],
+        "answer_index": 0,
+        "explanation": "manual"
+      },
+      {
+        "id": "ish-fin-04",
+        "kind": "mcq",
+        "stem": "A customer asks why a gaming laptop with one stick has poor frame rates. Best explanation?",
+        "choices": [
+          "Single-channel memory halves bandwidth for integrated graphics",
+          "The screen is too bright",
+          "The keyboard is slow",
+          "Batteries limit frames"
+        ],
+        "answer_index": 0,
+        "explanation": "channels"
+      },
+      {
+        "id": "ish-fin-05",
+        "kind": "mcq",
+        "stem": "A nonprofit wants maximum space on four disks for a scratch volume it can afford to lose. Which RAID?",
+        "choices": [
+          "RAID 0",
+          "RAID 6",
+          "RAID 1",
+          "RAID 10"
+        ],
+        "answer_index": 0,
+        "explanation": "capacity"
+      },
+      {
+        "id": "ish-fin-06",
+        "kind": "mcq",
+        "stem": "A file server has RAID 6 and no other copy. Ransomware encrypts the share. What protects them?",
+        "choices": [
+          "Nothing, unless a separate backup exists",
+          "RAID 6 parity",
+          "The second parity disk",
+          "The rebuild"
+        ],
+        "answer_index": 0,
+        "explanation": "backup"
+      },
+      {
+        "id": "ish-fin-07",
+        "kind": "mcq",
+        "stem": "A customer's 6 TB disk shows only 2 TB. What do you explain?",
+        "choices": [
+          "MBR cannot address beyond 2 TiB with 512-byte sectors; GPT is needed",
+          "The disk is fake",
+          "Windows hides 4 TB",
+          "Cables limit size"
+        ],
+        "answer_index": 0,
+        "explanation": "ceiling"
+      },
+      {
+        "id": "ish-fin-08",
+        "kind": "mcq",
+        "stem": "Why keep a GPT disk's backup table in mind during recovery?",
+        "choices": [
+          "A damaged primary table can be rebuilt from it",
+          "It stores passwords",
+          "It doubles capacity",
+          "It boots faster"
+        ],
+        "answer_index": 0,
+        "explanation": "resilience"
+      },
+      {
+        "id": "ish-fin-09",
+        "kind": "mcq",
+        "stem": "Five tickets arrive. Which practice keeps diagnosis honest?",
+        "choices": [
+          "Record the stage of failure and the cheapest confirming test",
+          "Swap the motherboard first",
+          "Guess from the case colour",
+          "Reinstall the OS on all five"
+        ],
+        "answer_index": 0,
+        "explanation": "method"
+      },
+      {
+        "id": "ish-fin-10",
+        "kind": "mcq",
+        "stem": "A PC shuts down during games after a GPU upgrade but the CPU is cool. Next check?",
+        "choices": [
+          "The power budget against the new card",
+          "Keyboard drivers",
+          "Monitor size",
+          "Mouse DPI"
+        ],
+        "answer_index": 0,
+        "explanation": "PSU"
+      },
+      {
+        "id": "ish-fin-11",
+        "kind": "mcq",
+        "stem": "A customer wants 4K 120 Hz on a PC with only HDMI 2.0. What do you say?",
+        "choices": [
+          "The port cannot carry it uncompressed; use DP 1.4 or accept 60 Hz",
+          "Buy a gold cable",
+          "It works fine",
+          "Use VGA"
+        ],
+        "answer_index": 0,
+        "explanation": "honest limits"
+      },
+      {
+        "id": "ish-fin-12",
+        "kind": "mcq",
+        "stem": "Why label display rates as lower bounds?",
+        "choices": [
+          "Blanking intervals add to the real requirement",
+          "Cables are faster than advertised",
+          "Monitors round down",
+          "It is tradition"
+        ],
+        "answer_index": 0,
+        "explanation": "blanking"
+      },
+      {
+        "id": "ish-fin-13",
+        "kind": "mcq",
+        "stem": "A UPS test lasts 40 minutes instead of the computed 60. What is the likely reason?",
+        "choices": [
+          "Aged batteries or a heavier load than measured",
+          "The formula is wrong forever",
+          "The UPS is too new",
+          "The room is too quiet"
+        ],
+        "answer_index": 0,
+        "explanation": "real world"
+      },
+      {
+        "id": "ish-fin-14",
+        "kind": "mcq",
+        "stem": "A UPS feeds a router, a storage box, and a space heater. What must change?",
+        "choices": [
+          "Remove the heater from the battery outlets",
+          "Add another heater",
+          "Nothing",
+          "Unplug the router"
+        ],
+        "answer_index": 0,
+        "explanation": "load"
+      },
+      {
+        "id": "ish-fin-15",
+        "kind": "mcq",
+        "stem": "Imaging forty machines by unicast takes four hours. Which change helps most?",
+        "choices": [
+          "Multicast with a unicast fallback",
+          "Faster keyboards",
+          "Larger monitors",
+          "Imaging at night only"
+        ],
+        "answer_index": 0,
+        "explanation": "throughput"
+      },
+      {
+        "id": "ish-fin-16",
+        "kind": "mcq",
+        "stem": "The effective link rate halves from 0.7 to 0.35 Gbit/s. What happens to imaging time?",
+        "choices": [
+          "It doubles",
+          "It halves",
+          "No change",
+          "It quadruples"
+        ],
+        "answer_index": 0,
+        "explanation": "inverse"
+      },
+      {
+        "id": "ish-fin-17",
+        "kind": "mcq",
+        "stem": "Which record should follow every imaged machine?",
+        "choices": [
+          "Image version and serial number",
+          "The technician's playlist",
+          "Nothing",
+          "The donor's browsing history"
+        ],
+        "answer_index": 0,
+        "explanation": "traceability"
+      },
+      {
+        "id": "ish-fin-18",
+        "kind": "mcq",
+        "stem": "A donated SSD is going to a school. Which method satisfies the bench rule?",
+        "choices": [
+          "Purge using the drive's secure or cryptographic erase",
+          "Delete files",
+          "Quick format",
+          "Rename the volume"
+        ],
+        "answer_index": 0,
+        "explanation": "purge"
+      },
+      {
+        "id": "ish-fin-19",
+        "kind": "mcq",
+        "stem": "A drive is physically cracked and spins noisily. Its sanitization?",
+        "choices": [
+          "Destroy",
+          "Clear",
+          "Purge by overwrite",
+          "Reuse"
+        ],
+        "answer_index": 0,
+        "explanation": "failed media"
+      },
+      {
+        "id": "ish-fin-20",
+        "kind": "mcq",
+        "stem": "What belongs on a sanitization certificate?",
+        "choices": [
+          "Serial, method, date, and who did it",
+          "The donor's photos",
+          "The asking price",
+          "Nothing"
+        ],
+        "answer_index": 0,
+        "explanation": "certificate"
+      },
+      {
+        "id": "ish-fin-21",
+        "kind": "mcq",
+        "stem": "A service report says 'fixed it'. What is missing?",
+        "choices": [
+          "Fault class, the specific fix, and sanitization proof",
+          "Nothing",
+          "A joke",
+          "The donor's address"
+        ],
+        "answer_index": 0,
+        "explanation": "detail"
+      },
+      {
+        "id": "ish-fin-22",
+        "kind": "mcq",
+        "stem": "A technician copies a donor's music 'because it was good'. What rule was broken?",
+        "choices": [
+          "No customer data retained or copied",
+          "Imaging rules",
+          "RAID rules",
+          "UPS rules"
+        ],
+        "answer_index": 0,
+        "explanation": "privacy"
+      },
+      {
+        "id": "ish-fin-23",
+        "kind": "mcq",
+        "stem": "Which CompTIA A+ use is acceptable in this course?",
+        "choices": [
+          "Domain labels for topics, no exam items",
+          "Copying exam questions",
+          "Selling vouchers",
+          "Claiming certification"
+        ],
+        "answer_index": 0,
+        "explanation": "reference"
+      },
+      {
+        "id": "ish-fin-24",
+        "kind": "mcq",
+        "stem": "What does completing the Refurb Bench course claim?",
+        "choices": [
+          "Bench practice with recomputed labs, not a certification",
+          "A+ certification",
+          "Electrician licence",
+          "Manufacturer warranty authority"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      }
+    ]
+  },
+  "NETWORKING_INFRA": {
+    "offset": 6,
+    "mid": [
+      {
+        "id": "nif-mid-01",
+        "kind": "mcq",
+        "stem": "A 2,000 km fiber route with index 1.468 has about how much propagation delay?",
+        "choices": [
+          "About 9.8 ms",
+          "About 6.7 ms",
+          "About 20 ms",
+          "About 2 ms"
+        ],
+        "answer_index": 0,
+        "explanation": "2,000 × 1.468 / 299,792"
+      },
+      {
+        "id": "nif-mid-02",
+        "kind": "mcq",
+        "stem": "A 9,000-byte jumbo frame at 10 Gbit/s takes how long to serialize?",
+        "choices": [
+          "7.2 µs",
+          "72 µs",
+          "0.9 µs",
+          "720 µs"
+        ],
+        "answer_index": 0,
+        "explanation": "72,000 bits / 1e10"
+      },
+      {
+        "id": "nif-mid-03",
+        "kind": "mcq",
+        "stem": "Why can a satellite link never match a short fiber path's latency?",
+        "choices": [
+          "Propagation distance dominates",
+          "Satellites are slow computers",
+          "Packets are larger",
+          "DNS is slower"
+        ],
+        "answer_index": 0,
+        "explanation": "physics"
+      },
+      {
+        "id": "nif-mid-04",
+        "kind": "mcq",
+        "stem": "What is the RFC 5952 form of 2001:0db8:0000:0000:0000:0000:0000:0001?",
+        "choices": [
+          "2001:db8::1",
+          "2001:db8:0:0:0:0:0:1",
+          "2001:DB8::1",
+          "2001:db8::0:1"
+        ],
+        "answer_index": 0,
+        "explanation": "longest run"
+      },
+      {
+        "id": "nif-mid-05",
+        "kind": "mcq",
+        "stem": "How many /56 prefixes fit in a /48?",
+        "choices": [
+          "256",
+          "65,536",
+          "8",
+          "16"
+        ],
+        "answer_index": 0,
+        "explanation": "2^8"
+      },
+      {
+        "id": "nif-mid-06",
+        "kind": "mcq",
+        "stem": "What is the BDP of 100 Mbit/s at 40 ms RTT?",
+        "choices": [
+          "500,000 bytes",
+          "4,000,000 bytes",
+          "40,000 bytes",
+          "100,000 bytes"
+        ],
+        "answer_index": 0,
+        "explanation": "1e8 × 0.04 / 8"
+      },
+      {
+        "id": "nif-mid-07",
+        "kind": "mcq",
+        "stem": "A transfer over 160 ms with a 65,535-byte window caps at about?",
+        "choices": [
+          "3.28 Mbit/s",
+          "6.55 Mbit/s",
+          "13.1 Mbit/s",
+          "65.5 Mbit/s"
+        ],
+        "answer_index": 0,
+        "explanation": "window×8/0.16"
+      },
+      {
+        "id": "nif-mid-08",
+        "kind": "mcq",
+        "stem": "Two routes have equal local preference; one AS_PATH has 2 ASNs, the other 5. Which wins?",
+        "choices": [
+          "The 2-ASN route",
+          "The 5-ASN route",
+          "Lowest router ID",
+          "Neither"
+        ],
+        "answer_index": 0,
+        "explanation": "shortest path"
+      },
+      {
+        "id": "nif-mid-09",
+        "kind": "mcq",
+        "stem": "An operator wants all traffic to prefer one upstream regardless of path length. Which attribute?",
+        "choices": [
+          "Higher local preference",
+          "Lower MED",
+          "Router ID",
+          "Origin"
+        ],
+        "answer_index": 0,
+        "explanation": "policy"
+      },
+      {
+        "id": "nif-mid-10",
+        "kind": "mcq",
+        "stem": "A record with TTL 300 changes at t=10,000. Worst-case stale window?",
+        "choices": [
+          "300 seconds",
+          "10,000 seconds",
+          "0 seconds",
+          "3,600 seconds"
+        ],
+        "answer_index": 0,
+        "explanation": "full TTL"
+      },
+      {
+        "id": "nif-mid-11",
+        "kind": "mcq",
+        "stem": "A migration is at t=86,400 and the current TTL is 86,400. By when must it be lowered?",
+        "choices": [
+          "t = 0",
+          "t = 43,200",
+          "t = 86,399",
+          "t = 86,400"
+        ],
+        "answer_index": 0,
+        "explanation": "one TTL before"
+      },
+      {
+        "id": "nif-mid-12",
+        "kind": "mcq",
+        "stem": "At 8,000 rps and a 0.90 hit ratio, how many requests reach origin?",
+        "choices": [
+          "800 per second",
+          "7,200 per second",
+          "90 per second",
+          "8,000 per second"
+        ],
+        "answer_index": 0,
+        "explanation": "miss × total"
+      },
+      {
+        "id": "nif-mid-13",
+        "kind": "mcq",
+        "stem": "800 rps of 200 KB objects need about how much origin bandwidth?",
+        "choices": [
+          "1.28 Gbit/s",
+          "160 Mbit/s",
+          "12.8 Gbit/s",
+          "200 Mbit/s"
+        ],
+        "answer_index": 0,
+        "explanation": "800×200,000×8"
+      },
+      {
+        "id": "nif-mid-14",
+        "kind": "mcq",
+        "stem": "A 20 km span with 2 connectors and 4 splices has how much loss by the course coefficients?",
+        "choices": [
+          "8.4 dB",
+          "7.0 dB",
+          "10.0 dB",
+          "4.4 dB"
+        ],
+        "answer_index": 0,
+        "explanation": "7 + 1 + 0.4"
+      },
+      {
+        "id": "nif-mid-15",
+        "kind": "mcq",
+        "stem": "Tx −3 dBm, loss 18 dB, sensitivity −20 dBm. Margin and verdict?",
+        "choices": [
+          "−1 dB, fails",
+          "5 dB, passes",
+          "3 dB, passes",
+          "17 dB, passes"
+        ],
+        "answer_index": 0,
+        "explanation": "−3 − 18 + 20"
+      },
+      {
+        "id": "nif-mid-16",
+        "kind": "mcq",
+        "stem": "Two 99% links in parallel are available about how much?",
+        "choices": [
+          "99.99%",
+          "98%",
+          "99.5%",
+          "100%"
+        ],
+        "answer_index": 0,
+        "explanation": "1 − 0.01²"
+      },
+      {
+        "id": "nif-mid-17",
+        "kind": "mcq",
+        "stem": "A 99.9% firewall in series with a 99.99% switch is available about how much?",
+        "choices": [
+          "99.89%",
+          "99.99%",
+          "99.95%",
+          "100.89%"
+        ],
+        "answer_index": 0,
+        "explanation": "product"
+      },
+      {
+        "id": "nif-mid-18",
+        "kind": "mcq",
+        "stem": "What is 99.9% availability in downtime per year?",
+        "choices": [
+          "About 525.6 minutes",
+          "About 52.6 minutes",
+          "About 5.3 minutes",
+          "About 8,760 minutes"
+        ],
+        "answer_index": 0,
+        "explanation": "0.001 × 525,600"
+      },
+      {
+        "id": "nif-mid-19",
+        "kind": "mcq",
+        "stem": "A month has 8,640 five-minute samples. How many are discarded at the 95th percentile?",
+        "choices": [
+          "432",
+          "864",
+          "43",
+          "8,208"
+        ],
+        "answer_index": 0,
+        "explanation": "5%"
+      },
+      {
+        "id": "nif-mid-20",
+        "kind": "mcq",
+        "stem": "Why do providers sample in five-minute averages?",
+        "choices": [
+          "It smooths microbursts into a billable record",
+          "It is the law",
+          "It doubles bills",
+          "Routers cannot count faster"
+        ],
+        "answer_index": 0,
+        "explanation": "billing method"
+      }
+    ],
+    "final": [
+      {
+        "id": "nif-fin-01",
+        "kind": "mcq",
+        "stem": "A sales team promises 2 ms one-way across 1,145 km of fiber. What do you say?",
+        "choices": [
+          "Impossible; propagation alone is about 5.6 ms",
+          "Fine with a faster router",
+          "Possible on Sundays",
+          "Only with IPv6"
+        ],
+        "answer_index": 0,
+        "explanation": "physics"
+      },
+      {
+        "id": "nif-fin-02",
+        "kind": "mcq",
+        "stem": "Upgrading a link from 1 to 10 Gbit/s reduces which part of a 1,145 km budget?",
+        "choices": [
+          "Serialization only",
+          "Propagation",
+          "Both by ten",
+          "Neither"
+        ],
+        "answer_index": 0,
+        "explanation": "bits"
+      },
+      {
+        "id": "nif-fin-03",
+        "kind": "mcq",
+        "stem": "Two engineers write 2001:DB8:0:0:1::1 and 2001:db8::1:0:0:1 for the same address. Which is canonical?",
+        "choices": [
+          "2001:db8::1:0:0:1",
+          "2001:DB8:0:0:1::1",
+          "Both",
+          "Neither"
+        ],
+        "answer_index": 0,
+        "explanation": "first longest run"
+      },
+      {
+        "id": "nif-fin-04",
+        "kind": "mcq",
+        "stem": "A customer asks for a /72 on a LAN to save space. Your answer?",
+        "choices": [
+          "Keep LANs at /64; autoconfiguration expects it",
+          "Agree",
+          "Use /128 everywhere",
+          "Use IPv4"
+        ],
+        "answer_index": 0,
+        "explanation": "standard"
+      },
+      {
+        "id": "nif-fin-05",
+        "kind": "mcq",
+        "stem": "A long-haul transfer stalls at 6 Mbit/s on a 1 Gbit/s link. First check?",
+        "choices": [
+          "TCP window scaling on both hosts and middleboxes",
+          "Buy 10 Gbit/s",
+          "Change DNS",
+          "Replace the fiber"
+        ],
+        "answer_index": 0,
+        "explanation": "BDP"
+      },
+      {
+        "id": "nif-fin-06",
+        "kind": "mcq",
+        "stem": "Why does a 200 ms path need a larger window than a 20 ms path at the same rate?",
+        "choices": [
+          "The bandwidth-delay product is ten times larger",
+          "Packets are larger",
+          "DNS is slower",
+          "BGP prefers it"
+        ],
+        "answer_index": 0,
+        "explanation": "BDP"
+      },
+      {
+        "id": "nif-fin-07",
+        "kind": "mcq",
+        "stem": "A route has the shortest AS_PATH but loses. Most likely reason?",
+        "choices": [
+          "Another route has higher local preference",
+          "Router IDs are random",
+          "IPv6 broke it",
+          "TTL expired"
+        ],
+        "answer_index": 0,
+        "explanation": "order"
+      },
+      {
+        "id": "nif-fin-08",
+        "kind": "mcq",
+        "stem": "Why is local preference above AS_PATH in the order?",
+        "choices": [
+          "It encodes the operator's own policy",
+          "It is shorter",
+          "It is newer",
+          "It is random"
+        ],
+        "answer_index": 0,
+        "explanation": "policy"
+      },
+      {
+        "id": "nif-fin-09",
+        "kind": "mcq",
+        "stem": "A cutover is planned for tomorrow and the TTL is one day. What should you have done?",
+        "choices": [
+          "Lowered the TTL at least a day earlier",
+          "Nothing",
+          "Raised the TTL",
+          "Deleted the record"
+        ],
+        "answer_index": 0,
+        "explanation": "planning"
+      },
+      {
+        "id": "nif-fin-10",
+        "kind": "mcq",
+        "stem": "Why keep old servers running after a DNS change?",
+        "choices": [
+          "Resolvers can serve the old answer for up to one TTL",
+          "To test BGP",
+          "For backups",
+          "DNS changes are instant"
+        ],
+        "answer_index": 0,
+        "explanation": "overlap"
+      },
+      {
+        "id": "nif-fin-11",
+        "kind": "mcq",
+        "stem": "The origin link is near capacity at a 92% hit ratio. Highest-leverage fix?",
+        "choices": [
+          "Raise the hit ratio; misses drive origin load",
+          "Lower the TTL",
+          "Disable the CDN",
+          "Add query strings"
+        ],
+        "answer_index": 0,
+        "explanation": "miss ratio"
+      },
+      {
+        "id": "nif-fin-12",
+        "kind": "mcq",
+        "stem": "A report says 'the CDN offloads 92%, so origin sees 11,040 rps of 12,000'. What is wrong?",
+        "choices": [
+          "It multiplied by the hit ratio instead of the miss ratio",
+          "Nothing",
+          "It should be 12,000",
+          "It ignored DNS"
+        ],
+        "answer_index": 0,
+        "explanation": "miss ratio"
+      },
+      {
+        "id": "nif-fin-13",
+        "kind": "mcq",
+        "stem": "A span measures 4 dB worse than budget. Likely first cause?",
+        "choices": [
+          "Dirty or damaged connectors",
+          "Wrong IPv6 prefix",
+          "BGP origin",
+          "DNS TTL"
+        ],
+        "answer_index": 0,
+        "explanation": "hygiene"
+      },
+      {
+        "id": "nif-fin-14",
+        "kind": "mcq",
+        "stem": "Why require 3 dB of optical margin?",
+        "choices": [
+          "Ageing, temperature, and repair splices add loss over time",
+          "It looks tidy",
+          "Receivers like round numbers",
+          "It is the transmitter power"
+        ],
+        "answer_index": 0,
+        "explanation": "margin"
+      },
+      {
+        "id": "nif-fin-15",
+        "kind": "mcq",
+        "stem": "Both core routers share one power strip. What does that do to the availability estimate?",
+        "choices": [
+          "It is overstated; failures are not independent",
+          "Nothing",
+          "It improves",
+          "It doubles"
+        ],
+        "answer_index": 0,
+        "explanation": "shared cause"
+      },
+      {
+        "id": "nif-fin-16",
+        "kind": "mcq",
+        "stem": "The serial power feed dominates downtime. Most effective investment?",
+        "choices": [
+          "A second independent feed",
+          "Faster routers",
+          "Larger optics",
+          "A new website"
+        ],
+        "answer_index": 0,
+        "explanation": "weakest link"
+      },
+      {
+        "id": "nif-fin-17",
+        "kind": "mcq",
+        "stem": "A provider bills the month's peak sample under a 95th-percentile contract. What do you do?",
+        "choices": [
+          "Dispute it with the sorted samples and index",
+          "Pay it",
+          "Ignore it",
+          "Switch to IPv6"
+        ],
+        "answer_index": 0,
+        "explanation": "contract"
+      },
+      {
+        "id": "nif-fin-18",
+        "kind": "mcq",
+        "stem": "Why does 95th-percentile billing reward scheduling backups at quiet times?",
+        "choices": [
+          "Short bursts in the top 5% are not billed",
+          "Night traffic is free by law",
+          "Backups are invisible",
+          "It lowers latency"
+        ],
+        "answer_index": 0,
+        "explanation": "bursts"
+      },
+      {
+        "id": "nif-fin-19",
+        "kind": "mcq",
+        "stem": "A design packet uses AS 13335 and 2606:4700::/32. Verdict?",
+        "choices": [
+          "Reject; those are real allocations, not documentation",
+          "Accept",
+          "Accept if reviewed",
+          "Accept with a footnote"
+        ],
+        "answer_index": 0,
+        "explanation": "documentation only"
+      },
+      {
+        "id": "nif-fin-20",
+        "kind": "mcq",
+        "stem": "Which statement belongs in every backbone design packet in this course?",
+        "choices": [
+          "No production peering claim",
+          "Guaranteed five nines",
+          "Certified CCNA design",
+          "Live traffic carried"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      },
+      {
+        "id": "nif-fin-21",
+        "kind": "mcq",
+        "stem": "Which public reference governs the TCP window scale option?",
+        "choices": [
+          "RFC 7323",
+          "RFC 1034",
+          "RFC 4271",
+          "RFC 7489"
+        ],
+        "answer_index": 0,
+        "explanation": "window scaling"
+      },
+      {
+        "id": "nif-fin-22",
+        "kind": "mcq",
+        "stem": "Which use of Cisco CCNA material is acceptable here?",
+        "choices": [
+          "Topic labels only, no exam items",
+          "Copying exam questions",
+          "Selling vouchers",
+          "Claiming certification"
+        ],
+        "answer_index": 0,
+        "explanation": "reference"
+      },
+      {
+        "id": "nif-fin-23",
+        "kind": "mcq",
+        "stem": "A packet restates last term's availability figure without inputs. What should the reviewer do?",
+        "choices": [
+          "Ask for the recomputation from inputs",
+          "Accept it",
+          "Round it up",
+          "Delete the packet"
+        ],
+        "answer_index": 0,
+        "explanation": "recompute"
+      },
+      {
+        "id": "nif-fin-24",
+        "kind": "mcq",
+        "stem": "What does completing the Backbone Room course claim?",
+        "choices": [
+          "Infrastructure practice with recomputed labs, not a certification or production role",
+          "CCNP certification",
+          "ISP employment",
+          "Peering authority"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      }
+    ]
+  }
+}

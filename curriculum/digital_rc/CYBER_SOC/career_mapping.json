@@ -1,0 +1,16 @@
+{
+  "roles": [
+    "soc_analyst_tier1_trainee",
+    "security_operations_intern",
+    "alert_triage_assistant"
+  ],
+  "nice_categories": [
+    "protect_and_defend",
+    "analyze"
+  ],
+  "certs_aligned_not_granted": [
+    "MITRE ATT&CK technique vocabulary (PUBLIC_REFERENCE_ONLY)",
+    "FIRST CVSS v3.1 scoring (PUBLIC_REFERENCE_ONLY; not a certification)",
+    "NIST SP 800-61r2 incident phases (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

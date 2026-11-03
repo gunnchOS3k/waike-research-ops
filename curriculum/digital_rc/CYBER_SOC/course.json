@@ -1,0 +1,256 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "CYBER_SOC",
+  "title": "Cybersecurity Foundations and SOC Readiness \u2014 Night Shift Desk",
+  "track_ids": [
+    "CYBER_SOC"
+  ],
+  "academy_id": "ACADEMY_CYBER",
+  "kinesthetic_hook": "Ten Night Shift Desk tickets: read the auth log \u2192 tune a window rule \u2192 measure precision \u2192 hash and defang indicators \u2192 map to ATT&CK \u2192 check DMARC alignment \u2192 score CVSS by hand \u2192 order the queue \u2192 report MTTD/MTTR \u2192 hand off the shift.",
+  "lesson_excerpt": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happened to whom from which address. In this fixture 203.0.113.45 fails three times as root, 198.51.100.7 tries the made-up ",
+  "worked_example": "203.0.113.45 failed 3\u00d7, 198.51.100.7 failed 2\u00d7, 192.0.2.10 failed 1\u00d7; Accepted password for root from 203.0.113.45 at 01:15:31 \u2192 escalate",
+  "assignment": "Submit lab_soc_log_parse JSON for SOC-2101: failed_by_ip, top_source, accepted_after_failures.",
+  "lab_hint": "lab_soc_log_parse",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Auth log anatomy \u2014 failures, sources, and the success that follows",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w01",
+        "title": "Auth log anatomy \u2014 failures, sources, and the success that follows",
+        "body_md": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happened to whom from which address. In this fixture 203.0.113.45 fails three times as root, 198.51.100.7 tries the made-up accounts admin and oracle twice, and 192.0.2.10 fails once right after the user naiya logged in with her key from the same machine. Counting failures per source is the start, not the finding. The line that changes the night is the last one: Accepted password for root from 203.0.113.45, seconds after that address failed. A success that follows a run of failures from the same source is the pattern analysts escalate, because it can mean a guessed password. Naiya's typo after a good key login is noise you note and move past. All addresses here come from documentation ranges, so nobody's real server appears in the course, and you never paste a live customer log into a chat tool to save time.",
+        "worked_example": "203.0.113.45 failed 3\u00d7, 198.51.100.7 failed 2\u00d7, 192.0.2.10 failed 1\u00d7; Accepted password for root from 203.0.113.45 at 01:15:31 \u2192 escalate"
+      },
+      "lab_id": "lab_soc_log_parse"
+    },
+    {
+      "week": 2,
+      "title": "Windowed detection \u2014 a threshold means nothing without a clock",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w02",
+        "title": "Windowed detection \u2014 a threshold means nothing without a clock",
+        "body_md": "SOC-2202 asks you to turn last night's eyeballing into a rule the SIEM can run. 'Four failed logins' is not a rule until you say within how long. The fixture lists eleven failures with second offsets. With a threshold of four inside a sixty-second sliding window, 203.0.113.45 fires at second 70: the failures at 20, 50, 65 and 70 all sit within sixty seconds of each other, while the first one at second 0 has already aged out. 198.51.100.7 never fires, because its attempts at 200, 230, 250 and 265 span sixty-five seconds, one heartbeat too slow. Widen the window to ninety seconds and that address alerts at 265 as well. Neither choice is free. A wider window catches slow guessing and also pulls in people who mistype their passwords on a cold morning. Write the threshold and window into the rule's description so the next analyst can reason about a miss, and replay the rule against stored events before you switch it on. The lab grader replays your parameters, so it rejects an alert list that would only be true for a different window.",
+        "worked_example": "threshold 4 in 60 s \u2192 203.0.113.45 fires at t=70 (events 20, 50, 65, 70); 198.51.100.7 does not; widen to 90 s \u2192 it fires at 265"
+      },
+      "lab_id": "lab_soc_window_rule"
+    },
+    {
+      "week": 3,
+      "title": "Detection quality \u2014 precision, recall, and the analyst's hour",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w03",
+        "title": "Detection quality \u2014 precision, recall, and the analyst's hour",
+        "body_md": "SOC-2303 is a NO_AI week: do the fractions on paper and show each line, because these four numbers decide whether a rule stays on. A month of the brute-force rule produced 60 alerts. Eighteen were real attacks, true positives, and forty-two were not, false positives. Six real attacks slipped through without an alert, false negatives, and 934 quiet events were correctly left alone. Precision asks how often an alert is worth opening: 18 out of 60, or 0.30. Recall asks how many real attacks the rule caught: 18 out of 24, or 0.75. The false-positive rate compares wrong alerts with all benign events, 42 out of 976, about 0.043, which sounds tiny and still costs forty-two investigations. At ten minutes each that is seven analyst-hours spent proving nothing happened. A precision under one half means most alerts are noise, so the honest call is needs tuning, not 'the rule works'. Tuning that raises precision often lowers recall, so record both before and after a change, and never report recall alone because it flatters a noisy rule.",
+        "worked_example": "TP 18, FP 42, FN 6, TN 934 \u2192 precision 18/60 = 0.30, recall 18/24 = 0.75, FPR 42/976 = 0.043 \u2192 needs tuning"
+      },
+      "lab_id": "lab_soc_detection_metrics"
+    },
+    {
+      "week": 4,
+      "title": "Indicator hygiene \u2014 hash it, defang it, then compare",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w04",
+        "title": "Indicator hygiene \u2014 hash it, defang it, then compare",
+        "body_md": "SOC-2404 arrives with a suspicious attachment name and a link from a user report. Indicators of compromise are only useful if you can compare them exactly and pass them around safely. For files that means a cryptographic hash: SHA-256 turns any sequence of bytes into a 64-character fingerprint, and a single changed byte produces an unrelated digest, so the lab recomputes the hash from the inert sample text instead of trusting a pasted value. For links it means defanging before the indicator goes into a ticket, chat, or report: write hxxp instead of http and bracket every dot in the host, so update-check.example.net becomes update-check[.]example[.]net and nobody's mail client turns it into a clickable trap. Only after both steps do you check the desk's indicator list. Here the sample hash and the domain are both on it, so the answer is a match and the ticket goes to the phishing playbook. A miss does not mean safe, it means unknown, and the course's sample is inert text, never real malware, so nobody downloads or detonates anything on a personal laptop.",
+        "worked_example": "sha256('WAIKE-SOC training sample: \u2026') = fc6c0f88\u2026e657; http://update-check.example.net/payload \u2192 hxxp://update-check[.]example[.]net/payload; on IOC list \u2192 match"
+      },
+      "lab_id": "lab_soc_ioc_match"
+    },
+    {
+      "week": 5,
+      "title": "ATT&CK mapping \u2014 describe behaviour, not villains",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w05",
+        "title": "ATT&CK mapping \u2014 describe behaviour, not villains",
+        "body_md": "SOC-2505 gives the desk five behaviours seen this week and asks for a shared vocabulary. MITRE ATT&CK is a public catalogue of attacker techniques, each with an ID and one or more tactics that say what the attacker was trying to achieve. Many failed SSH logins from one address are T1110, Brute Force, under credential access. A never-before-seen account logging in at three in the morning with a correct password is T1078, Valid Accounts, which ATT&CK lists under several tactics because stolen credentials help an intruder get in, stay in, and blend in. A spoofed invoice attachment is T1566, Phishing, under initial access. PowerShell launched with an encoded command line is T1059, Command and Scripting Interpreter, under execution, and files renamed with a .locked suffix beside a ransom note are T1486, Data Encrypted for Impact. Mapping lets the day shift, the detection engineers, and management talk about the same thing. It does not tell you who did it. Plenty of groups use the same techniques, so the lab requires actor_attribution_claim to stay false.",
+        "worked_example": "B1 brute force \u2192 T1110 credential_access; B3 spoofed invoice \u2192 T1566 initial_access; B5 .locked files \u2192 T1486 impact; actor_attribution_claim false"
+      },
+      "lab_id": "lab_soc_attack_map"
+    },
+    {
+      "week": 6,
+      "title": "Email authentication \u2014 passing is not the same as aligned",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w06",
+        "title": "Email authentication \u2014 passing is not the same as aligned",
+        "body_md": "SOC-2606 compares two invoices that both claim to come from Harbor Pay. SPF checks whether the sending server is allowed to send for the envelope's return-path domain. DKIM checks a signature made with a key published by the domain in the signature's d= tag. Both can pass for a domain that has nothing to do with the address the reader sees in the From line. DMARC closes that gap with alignment: at least one passing check must belong to the same organisational domain as the visible From address. Under relaxed alignment, subdomains count, so in message A the From address mail.harborpay.example, the return path bounce.harborpay.example, and the DKIM domain harborpay.example all share harborpay.example, and DMARC passes. Message B also shows SPF pass and DKIM pass, but both checks vouch for bulk-sender.example while the From line says harborpay.example, so DMARC fails. That is exactly the shape of a convincing spoof, and a user who sees 'SPF pass' in a header viewer will be fooled unless someone on the desk explains alignment.",
+        "worked_example": "A: From mail.harborpay.example, SPF via bounce.harborpay.example, DKIM d=harborpay.example \u2192 aligned \u2192 DMARC pass; B: From harborpay.example, SPF/DKIM pass for bulk-sender.example \u2192 not aligned \u2192 DMARC fail"
+      },
+      "lab_id": "lab_soc_dmarc_align"
+    },
+    {
+      "week": 7,
+      "title": "CVSS v3.1 by hand \u2014 from vector string to severity band",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w07",
+        "title": "CVSS v3.1 by hand \u2014 from vector string to severity band",
+        "body_md": "SOC-2707 is the second NO_AI week, because a desk that only reads scores off a website cannot defend them in a patch meeting. The FIRST CVSS v3.1 base score turns eight metrics into a number. Impact starts from the confidentiality, integrity, and availability weights, 0.56 for High, 0.22 for Low, 0 for None, combined as ISS = 1 \u2212 (1 \u2212 C)(1 \u2212 I)(1 \u2212 A). For an unchanged scope, impact is 6.42 \u00d7 ISS. Exploitability is 8.22 \u00d7 attack vector \u00d7 attack complexity \u00d7 privileges required \u00d7 user interaction, where a network vector weighs 0.85 and low complexity 0.77. For the familiar AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H vector, ISS is about 0.9148, impact about 5.873, exploitability about 3.887, and their sum rounds up to 9.8, Critical. Roundup means the next tenth upward, not the nearest, which is where hand scorers slip. A local, low-privilege flaw that only leaks data, AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N, lands at 5.5, Medium. The base score describes the flaw, not your network; asset value enters next week.",
+        "worked_example": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \u2192 ISS 0.9148, impact 5.873, exploitability 3.887 \u2192 Roundup 9.8 Critical; AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N \u2192 5.5 Medium"
+      },
+      "lab_id": "lab_soc_cvss_score"
+    },
+    {
+      "week": 8,
+      "title": "Triage queue \u2014 severity meets asset criticality",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w08",
+        "title": "Triage queue \u2014 severity meets asset criticality",
+        "body_md": "SOC-2808 hands you six open alerts at once and one pair of hands. Severity alone is a poor sort key, because a critical alert on a lobby kiosk can matter less than a high alert on the domain controller. The desk multiplies a severity weight, four for critical down to one for low, by the asset's criticality from one to three. A5, critical on a criticality-three server, scores twelve and goes first. A1, high on criticality three, scores nine. A3 and A6 both score six, so the earlier arrival, A3 at minute two, goes ahead of A6 at minute eight. A2, the critical alert on a criticality-one kiosk, scores four, and A4 scores three. Each alert also gets a due time: the minute it arrived plus the service-level target for its severity, fifteen minutes for critical, an hour for high, four hours for medium, a day for low. That puts A2's due time at minute 27 even though it sits fifth in the queue, which is a signal to ask for help rather than quietly breach the target. A queue is a plan you can explain to the shift lead, not a mood.",
+        "worked_example": "priority = severity weight \u00d7 criticality: A5 12, A1 9, A3 6 (t=2), A6 6 (t=8), A2 4, A4 3; due = received + SLA (critical 15, high 60, medium 240, low 1440)"
+      },
+      "lab_id": "lab_soc_triage_queue"
+    },
+    {
+      "week": 9,
+      "title": "Shift metrics \u2014 MTTD, MTTR, and the median that resists one bad night",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w09",
+        "title": "Shift metrics \u2014 MTTD, MTTR, and the median that resists one bad night",
+        "body_md": "SOC-2909 asks how the week went, in numbers management will read. Mean time to detect is the average gap between when something happened and when the desk noticed. The four incidents took 12, 45, 5 and 70 minutes to detect, so MTTD is 33 minutes. Mean time to resolve, measured here from detection to resolution, averages 78, 65, 35 and 150 minutes to 82. Define the start and end points in the report, because some teams measure resolution from occurrence and their numbers are not comparable with yours. One slow detection, the seventy-minute ransomware case, pulls the mean up; the median of the four detection times is 28.5 minutes and tells a steadier story about a typical night. Report both, and name the outlier instead of hiding it, since that is the incident the next tuning effort should study. Four incidents are a tiny sample. A dashboard that celebrates a five-minute drop in MTTD between two such weeks is reporting noise, so the course asks for the numbers and a sentence about how much they can bear.",
+        "worked_example": "time to detect = 12, 45, 5, 70 min \u2192 MTTD 33, median 28.5; time to resolve from detection = 78, 65, 35, 150 \u2192 MTTR 82"
+      },
+      "lab_id": "lab_soc_shift_metrics"
+    },
+    {
+      "week": 10,
+      "title": "Shift handoff \u2014 open incidents, NIST phases, and clean boundaries",
+      "lesson": {
+        "lesson_id": "CYBER_SOC-w10",
+        "title": "Shift handoff \u2014 open incidents, NIST phases, and clean boundaries",
+        "body_md": "SOC-2A10 closes the night. A handoff is the document the day shift reads with its first coffee, so it must be complete without you in the room. List every open incident with its ATT&CK technique ID, the NIST SP 800-61 phase it is in, and a named next owner. The phases are preparation, detection and analysis, containment with eradication and recovery, and post-incident activity; saying 'containment' tells the reader which actions are already done and which are waiting. Carry the shift's MTTD and MTTR from last week's calculation rather than rounding them in your head, and say what changed in the rules you tuned. Two boundaries close every Night Shift Desk packet. It contains no real customer data, only the course's synthetic logs and documentation addresses, and it contains no offensive tooling: the desk detects, contains, and documents; it does not build exploits or scan systems it does not own. Mentors check the packet against six or more passed labs and ask you to walk one incident from first log line to current phase out loud.",
+        "worked_example": "I4 open: T1486, containment_eradication_recovery, next owner day-shift lead; MTTD 33, MTTR 82; real_customer_data false; offensive_tooling false"
+      },
+      "lab_id": "lab_soc_shift_handoff"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_soc_log_parse",
+    "lab_soc_window_rule",
+    "lab_soc_detection_metrics",
+    "lab_soc_ioc_match",
+    "lab_soc_attack_map",
+    "lab_soc_dmarc_align",
+    "lab_soc_cvss_score",
+    "lab_soc_triage_queue",
+    "lab_soc_shift_metrics",
+    "lab_soc_shift_handoff"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "CYBER_SOC-lab",
+    "CYBER_SOC-assignment",
+    "CYBER_SOC-quiz",
+    "CYBER_SOC-mid",
+    "CYBER_SOC-final-knowledge",
+    "CYBER_SOC-practical",
+    "CYBER_SOC-project",
+    "CYBER_SOC-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "soc_analyst_tier1_trainee",
+      "security_operations_intern",
+      "alert_triage_assistant"
+    ],
+    "nice_categories": [
+      "protect_and_defend",
+      "analyze"
+    ],
+    "certs_aligned_not_granted": [
+      "MITRE ATT&CK technique vocabulary (PUBLIC_REFERENCE_ONLY)",
+      "FIRST CVSS v3.1 scoring (PUBLIC_REFERENCE_ONLY; not a certification)",
+      "NIST SP 800-61r2 incident phases (PUBLIC_REFERENCE_ONLY)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/cyber_soc_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      3,
+      7
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": "waike_catalog_alias_honesty_v1",
-  "prepared_at": "2026-11-03T00:00:32Z",
+  "prepared_at": "2026-11-03T02:59:31Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
   "full_18_course_digital_rc": false,
@@ -8,7 +8,7 @@
   "RC2": false,
   "V1": false,
   "instructional_completeness_claimed": false,
-  "note": "Catalog alias rows map alternate taxonomy IDs onto existing COURSE_DIGITAL_RC keys. Aliasing ≠ inventing a true digital-RC course or flipping full_18.",
+  "note": "Alias rows map alternate taxonomy IDs onto other COURSE_DIGITAL_RC keys. An alias never satisfies a catalog track for full_18; batch009 replaces each alias with the track's own package, one track at a time.",
   "aliases": [
     {
       "catalog_track_id": "DIGITAL_CONFIDENCE",
@@ -24,11 +24,6 @@
       "catalog_track_id": "NETWORKING_INFRA",
       "maps_to_course_digital_rc_key": "COMPUTER_NETWORKING",
       "invent_course_digital_rc_true": false
-    },
-    {
-      "catalog_track_id": "CYBER_SOC",
-      "maps_to_course_digital_rc_key": "CYBERSECURITY",
-      "invent_course_digital_rc_true": false
     }
   ],
   "residuals_not_aliased_to_true": [],
@@ -37,5 +32,15 @@
     "CATALOG_ALIAS_NEQ_INVENTED_TRUE": true,
     "NO_INVENTED_DIGITAL_RC_TRUE": true,
     "HUMAN_CURRICULUM_ACCEPTANCE": false
-  }
+  },
+  "removed_aliases": [
+    {
+      "catalog_track_id": "CYBER_SOC",
+      "maps_to_course_digital_rc_key": "CYBERSECURITY",
+      "invent_course_digital_rc_true": false,
+      "removed_on": "2026-11-03",
+      "replaced_by_own_course": "CYBER_SOC",
+      "reason": "Owner decision: each formerly alias-only track gets its own distinct package (batch009)."
+    }
+  ]
 }

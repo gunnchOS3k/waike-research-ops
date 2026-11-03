@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "soc-w3-1",
+      "kind": "mcq",
+      "stem": "Sixty alerts, eighteen real. What is precision?",
+      "choices": [
+        "0.75",
+        "0.043",
+        "0.18",
+        "0.30"
+      ]
+    },
+    {
+      "id": "soc-w3-2",
+      "kind": "mcq",
+      "stem": "Twenty-four real attacks, eighteen alerted. What is recall?",
+      "choices": [
+        "0.75",
+        "0.30",
+        "0.25",
+        "0.82"
+      ]
+    },
+    {
+      "id": "soc-w3-3",
+      "kind": "mcq",
+      "stem": "Why is a 0.043 false-positive rate still expensive here?",
+      "choices": [
+        "It is above 50%",
+        "It means 42 investigations that find nothing",
+        "It hides true positives",
+        "It breaks the SIEM"
+      ]
+    },
+    {
+      "id": "soc-w3-4",
+      "kind": "mcq",
+      "stem": "Which single metric flatters a noisy rule?",
+      "choices": [
+        "Precision",
+        "False-negative count",
+        "Recall reported alone",
+        "Alert volume"
+      ]
+    },
+    {
+      "id": "soc-w3-5",
+      "kind": "mcq",
+      "stem": "What usually happens to recall when you tighten a rule for precision?",
+      "choices": [
+        "It always rises",
+        "It is unaffected",
+        "It becomes undefined",
+        "It tends to fall"
+      ]
+    },
+    {
+      "id": "soc-w3-6",
+      "kind": "mcq",
+      "stem": "Precision is 0.30. What is the honest call?",
+      "choices": [
+        "The rule needs tuning",
+        "The rule is excellent",
+        "Disable logging",
+        "Raise recall to 1.0 by alerting on everything"
+      ]
+    }
+  ]
+}

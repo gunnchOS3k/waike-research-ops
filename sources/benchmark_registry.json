@@ -904,6 +904,66 @@
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "O-RAN Alliance public architecture vocabulary (RIC, A1, E2), checked 2026-11-02.",
       "why_selected": "Loop-placement week of SEVEN_GC_APPRENTICESHIP; not an O-RAN certification."
+    },
+    {
+      "source_id": "MITRE_ATTACK_ENTERPRISE",
+      "institution": "MITRE",
+      "course_or_cert": "MITRE ATT&CK Enterprise matrix (public knowledge base)",
+      "current_version": "Public site checked 2026-11-03",
+      "url": "https://attack.mitre.org/",
+      "source_type": "public_knowledge_base",
+      "topic_domains": [
+        "technique_mapping",
+        "tactic_vocabulary"
+      ],
+      "assessment_patterns": [
+        "behaviour_to_technique_id"
+      ],
+      "license": "MITRE ATT&CK terms of use; technique IDs cited, no descriptions reproduced",
+      "attribution": "MITRE ATT&CK technique and tactic identifiers, checked 2026-11-03.",
+      "why_selected": "ATT&CK mapping and handoff weeks of CYBER_SOC; IDs only, no actor attribution.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "FIRST_CVSS_V3_1",
+      "institution": "FIRST",
+      "course_or_cert": "CVSS v3.1 Specification Document",
+      "current_version": "CVSS v3.1 (public specification)",
+      "url": "https://www.first.org/cvss/v3.1/specification-document",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "cvss_base_score",
+        "severity_bands"
+      ],
+      "assessment_patterns": [
+        "vector_to_score_recompute"
+      ],
+      "license": "FIRST CVSS terms; equations cited, specification text not reproduced",
+      "attribution": "FIRST CVSS v3.1 base-score equations and Roundup, checked 2026-11-03.",
+      "why_selected": "CVSS-by-hand week of CYBER_SOC; the lab recomputes base scores from vector strings.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "IETF_RFC7489_DMARC",
+      "institution": "IETF / RFC Editor",
+      "course_or_cert": "RFC 7489 — Domain-based Message Authentication, Reporting, and Conformance (DMARC)",
+      "current_version": "RFC 7489 (Informational, 2015)",
+      "url": "https://www.rfc-editor.org/rfc/rfc7489",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "dmarc_alignment",
+        "spf_dkim_identifier_alignment"
+      ],
+      "assessment_patterns": [
+        "relaxed_alignment_recompute"
+      ],
+      "license": "IETF Trust; cited by section, not reproduced",
+      "attribution": "RFC 7489 relaxed identifier alignment, checked 2026-11-03.",
+      "why_selected": "Email-authentication week of CYBER_SOC.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
     }
   ]
 }

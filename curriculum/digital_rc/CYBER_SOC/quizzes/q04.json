@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "soc-w4-1",
+      "kind": "mcq",
+      "stem": "Why does the grader recompute the SHA-256 rather than trust the ticket?",
+      "choices": [
+        "Hashes expire",
+        "One changed byte gives an unrelated digest",
+        "SHA-256 is reversible",
+        "It is faster"
+      ]
+    },
+    {
+      "id": "soc-w4-2",
+      "kind": "mcq",
+      "stem": "How is http://update-check.example.net written after defanging?",
+      "choices": [
+        "http://update-check.example.net",
+        "update-check dot example",
+        "hxxp://update-check[.]example[.]net",
+        "https://update-check.example.net"
+      ]
+    },
+    {
+      "id": "soc-w4-3",
+      "kind": "mcq",
+      "stem": "Why defang a URL before posting it in a ticket?",
+      "choices": [
+        "To encrypt it",
+        "To shorten it",
+        "Because tickets reject dots",
+        "So no client renders it as a clickable link"
+      ]
+    },
+    {
+      "id": "soc-w4-4",
+      "kind": "mcq",
+      "stem": "An indicator is not on the list. What does that mean?",
+      "choices": [
+        "Unknown, not proven safe",
+        "Definitely safe",
+        "Definitely malicious",
+        "The list is broken"
+      ]
+    },
+    {
+      "id": "soc-w4-5",
+      "kind": "mcq",
+      "stem": "What is the course's attachment sample?",
+      "choices": [
+        "Live malware",
+        "Inert text standing in for a file",
+        "A real customer invoice",
+        "An exploit kit"
+      ]
+    },
+    {
+      "id": "soc-w4-6",
+      "kind": "mcq",
+      "stem": "How long is a SHA-256 hex digest?",
+      "choices": [
+        "32 characters",
+        "40 characters",
+        "64 characters",
+        "128 characters"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "course_id": "CYBERSECURITY",
   "title": "Cybersecurity \u2014 Harbor SOC Foundations",
   "track_ids": [
-    "CYBER_SOC"
+    "CYBERSECURITY"
   ],
   "academy_id": "ACADEMY_CYBER",
   "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",

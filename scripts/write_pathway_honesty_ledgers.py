@@ -36,18 +36,23 @@ def main() -> int:
     aliased = {row["catalog_track_id"] for row in alias["aliases"]}
     catalog_missing = sorted(c for c in catalog_ids if c not in on_disk and c not in aliased)
     not_true = sorted(set(keyed_failing) | set(dirs_not_keyed) | set(catalog_missing))
-    full_18 = False
-    own_true = sorted(c for c in catalog_ids if c in true_ids)
-    alias_only = sorted(c for c in catalog_ids if c in aliased and c not in true_ids)
+    full_18 = rc["full_18_course_digital_rc"] is True
+    detail = rc["full_18_detail"]
+    needed = []
+    if detail["catalog_ids_not_passing"]:
+        needed.append("Catalog tracks without their own passing course: " + ", ".join(detail["catalog_ids_not_passing"]))
+    if detail["alias_only_catalog_ids"] or detail["alias_rows_remaining"]:
+        needed.append("Alias rows never satisfy a catalog track; replace them with own packages.")
+    if detail["catalog_ids_borrowed_by_other_courses"]:
+        needed.append("Courses still list other catalog tracks in track_ids: " + ", ".join(detail["catalog_ids_borrowed_by_other_courses"]))
     full_18_missing = {
-        "catalog_ids_with_own_true_package": len(own_true),
-        "catalog_track_ids": len(catalog_ids),
-        "alias_only_catalog_ids": alias_only,
-        "writer_computes_full_18": False,
-        "needed": [
-            "write_course_digital_rc.py has no full_18 computation; the flag is fixed False.",
-            "Alias-only catalog IDs need either their own distinct packages or an owner policy that accepts aliases.",
-        ],
+        "catalog_ids_with_own_true_package": detail["catalog_ids_with_own_true_package"],
+        "catalog_track_ids": detail["catalog_track_ids"],
+        "alias_only_catalog_ids": detail["alias_only_catalog_ids"],
+        "writer_computes_full_18": True,
+        "full_18_course_digital_rc": full_18,
+        "needed": needed,
+        "verification_boundary": "Cursor-implementation state from the writer gate; not independent verification or HUMAN acceptance.",
     }
 
     ledger = _load("PATHWAY_DISK_VS_CATALOG_LEDGER.json")
@@ -83,8 +88,8 @@ def main() -> int:
         "catalog_vs_true_gap_count": len(catalog_ids) - len(keys),
         "catalog_vs_true_gap_note": (
             f"{len(catalog_ids)} catalog track IDs vs {len(keys)} COURSE_DIGITAL_RC keys; "
-            f"{len(true_ids)} keys pass the writer gate. Remaining catalog IDs are aliases "
-            "and must not be invented as new digital-RC courses."
+            f"{len(true_ids)} keys pass the writer gate; "
+            f"{detail['catalog_ids_with_own_true_package']} of {len(catalog_ids)} catalog tracks have their own passing course."
         ),
         "full_18_missing": full_18_missing,
     })

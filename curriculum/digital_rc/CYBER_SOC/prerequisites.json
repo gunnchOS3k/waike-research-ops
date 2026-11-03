@@ -1,0 +1,10 @@
+{
+  "course_id": "CYBER_SOC",
+  "required": [
+    "Defensive-only rule: synthetic logs and documentation IP ranges, no live targets or exploit code",
+    "Can compute a ratio and a mean by hand"
+  ],
+  "recommended": [
+    "CYBERSECURITY governance and incident-clock vocabulary"
+  ]
+}

@@ -120,6 +120,40 @@ def _earned(cid: str, c: dict, labs: dict, prov: dict, tmpl: dict, proof: dict) 
     return (not reasons), reasons
 
 
+def compute_full_18(
+    per_course: dict, catalog_ids: list[str], aliases: list[dict], courses: dict | None = None,
+) -> tuple[bool, dict]:
+    """full_18 holds only when every catalog track has its own course that passes the gate above.
+
+    An alias row, or a course that lists another catalog track in its track_ids, never satisfies a track.
+    """
+    courses = COURSES if courses is None else courses
+    alias_map = {row["catalog_track_id"]: row.get("maps_to_course_digital_rc_key") for row in aliases}
+    borrowed = sorted({t for cid, c in courses.items() for t in c.get("track_ids") or [] if t != cid and t in catalog_ids})
+    rows = {}
+    for tid in catalog_ids:
+        row = per_course.get(tid) or {}
+        own_course = tid in courses and courses[tid].get("track_ids") == [tid]
+        rows[tid] = {
+            "own_course": own_course,
+            "COURSE_DIGITAL_RC": row.get("COURSE_DIGITAL_RC") is True,
+            "alias_only": tid in alias_map and not own_course,
+        }
+    passing = sorted(t for t, r in rows.items() if r["own_course"] and r["COURSE_DIGITAL_RC"])
+    alias_only = sorted(t for t, r in rows.items() if r["alias_only"])
+    failing = sorted(t for t in catalog_ids if t not in passing)
+    full = len(catalog_ids) == 18 and not failing and not alias_only and not alias_map and not borrowed
+    return full, {
+        "catalog_track_ids": len(catalog_ids),
+        "catalog_ids_with_own_true_package": len(passing),
+        "catalog_ids_not_passing": failing,
+        "alias_only_catalog_ids": alias_only,
+        "alias_rows_remaining": sorted(alias_map),
+        "catalog_ids_borrowed_by_other_courses": borrowed,
+        "computed_by": "scripts/write_course_digital_rc.py::compute_full_18",
+    }
+
+
 def main() -> int:
     counts = json.loads((ROOT / "artifacts" / "COURSE_COUNTS.json").read_text(encoding="utf-8"))
     labs = json.loads((ROOT / "artifacts" / "LAB_EXECUTION_RESULTS.json").read_text(encoding="utf-8"))
@@ -143,6 +177,10 @@ def main() -> int:
             "rc_fail_reasons": reasons,
         }
         batch_ok = batch_ok and earned
+    catalog = json.loads((ROOT / "curriculum" / "taxonomy" / "eighteen_tracks.json").read_text(encoding="utf-8"))
+    catalog_ids = sorted(t.get("track_id") or t.get("id") for t in catalog["tracks"])
+    aliases = json.loads((ROOT / "artifacts" / "CATALOG_ALIAS_HONESTY.json").read_text(encoding="utf-8")).get("aliases") or []
+    full_18, full_18_detail = compute_full_18(per_course, catalog_ids, aliases)
     payload = {
         "packet": "STREAM-B-PKT-003",
         "COURSE_DIGITAL_RC_BATCH": batch_ok,
@@ -152,7 +190,8 @@ def main() -> int:
         "REAL_STUDENT_E6": False,
         "REAL_TEACHER_E6": False,
         "HUMAN_E6": False,
-        "full_18_course_digital_rc": False,
+        "full_18_course_digital_rc": full_18,
+        "full_18_detail": full_18_detail,
         "device_os_curriculum_pr": False,
         "courses": per_course,
         "lab_execution_ok": labs["ok"],
@@ -175,12 +214,18 @@ def main() -> int:
             "(IT/Networking/Cyber) ∪ #44 (Software/Hardware/PM) ∪ #45 (AI/Data/Cloud) ∪ #46 "
             "(Wireless/Robotics/Game) ∪ Stream-B (COMM_PD_ETHICS ∪ DATA_DASHBOARDS). "
             "Commercial standardized 6G does not exist today. "
-            "Not a student/teacher E6. Not all 18 courses."
+            "Not a student/teacher E6. "
+            + (
+                "full_18 is computed from this gate over all 18 catalog tracks; it is a Cursor-implementation "
+                "state, not independent verification or HUMAN curriculum acceptance."
+                if full_18 else
+                "Not all 18 catalog tracks have their own passing course."
+            )
         ),
     }
     out = ROOT / "artifacts" / "COURSE_DIGITAL_RC.json"
     out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"COURSE_DIGITAL_RC_BATCH": batch_ok, "wrote": str(out)}, indent=2))
+    print(json.dumps({"COURSE_DIGITAL_RC_BATCH": batch_ok, "full_18": full_18, "wrote": str(out)}, indent=2))
     return 0 if batch_ok else 1
 
 

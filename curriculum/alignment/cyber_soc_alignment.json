@@ -1,0 +1,43 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "CYBER_SOC",
+  "track_ids": [
+    "CYBER_SOC"
+  ],
+  "date_checked": "2026-11-03",
+  "benchmarks": [
+    {
+      "source_id": "MITRE_ATTACK_ENTERPRISE",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "technique_mapping", "waike_weeks": [5]},
+        {"domain": "handoff_technique_ids", "waike_weeks": [10]}
+      ]
+    },
+    {
+      "source_id": "FIRST_CVSS_V3_1",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "cvss_base_score", "waike_weeks": [7]}
+      ]
+    },
+    {
+      "source_id": "IETF_RFC7489_DMARC",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "dmarc_alignment", "waike_weeks": [6]}
+      ]
+    },
+    {
+      "source_id": "NIST_SP_800_61R2_IR",
+      "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
+      "coverage": [
+        {"domain": "incident_phases", "waike_weeks": [9, 10]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "CYBERSECURITY": "CYBERSECURITY (Harbor SOC Foundations) is the broad security foundation: governance, identity lifecycle, hardening, segmentation, the incident clock, and a forensic timeline. CYBER_SOC is the tier-1 analyst desk and its arithmetic: auth-log parsing, windowed rules, precision and recall, indicator hygiene, ATT&CK IDs, DMARC alignment, CVSS v3.1 scoring, triage order, and MTTD/MTTR."
+  },
+  "claim_boundary": "Synthetic logs and documentation IP ranges only; defensive practice, no live targets, no actor attribution. Not a SOC certification. Not student/teacher E6."
+}

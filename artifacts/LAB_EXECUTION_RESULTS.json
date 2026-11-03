@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 160,
+  "lab_count": 170,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -195,6 +195,18 @@
       "lab_sga_twin_gap",
       "lab_sga_validity",
       "lab_sga_research_capstone"
+    ],
+    "CYBER_SOC": [
+      "lab_soc_log_parse",
+      "lab_soc_window_rule",
+      "lab_soc_detection_metrics",
+      "lab_soc_ioc_match",
+      "lab_soc_attack_map",
+      "lab_soc_dmarc_align",
+      "lab_soc_cvss_score",
+      "lab_soc_triage_queue",
+      "lab_soc_shift_metrics",
+      "lab_soc_shift_handoff"
     ]
   },
   "batch_001_lab_count": 20,
@@ -205,6 +217,7 @@
   "batch_006_lab_count": 10,
   "batch_007_lab_count": 20,
   "batch_008_lab_count": 10,
+  "batch_009_lab_count": 10,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1566,7 +1579,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'nRF52840', 'AMS1117-3.3', 'SSD1306'}"
+          "detail": "mpns={'SSD1306', 'nRF52840', 'AMS1117-3.3'}"
         },
         {
           "name": "total",
@@ -1751,7 +1764,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
+          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
         },
         {
           "name": "cause",
@@ -2609,7 +2622,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
+          "detail": "need {'open_count', 'freshness', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -6115,6 +6128,346 @@
       ],
       "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
       "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_log_parse",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "failed_counts_recomputed",
+          "ok": true,
+          "detail": "{'203.0.113.45': 3, '198.51.100.7': 2, '192.0.2.10': 1}"
+        },
+        {
+          "name": "top_source",
+          "ok": true,
+          "detail": "203.0.113.45"
+        },
+        {
+          "name": "success_after_failures_flagged",
+          "ok": true,
+          "detail": "an accepted login from an address that just failed is the line to escalate"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_window_rule",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "rule_parameters",
+          "ok": true,
+          "detail": "integer threshold \u2265 2 and window > 0"
+        },
+        {
+          "name": "alerts_recomputed",
+          "ok": true,
+          "detail": "expected {'203.0.113.45': 70}"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_detection_metrics",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "precision_recomputed",
+          "ok": true,
+          "detail": "expected 0.3000"
+        },
+        {
+          "name": "recall_recomputed",
+          "ok": true,
+          "detail": "expected 0.7500"
+        },
+        {
+          "name": "false_positive_rate_recomputed",
+          "ok": true,
+          "detail": "expected 0.0430"
+        },
+        {
+          "name": "alert_volume",
+          "ok": true,
+          "detail": "expected 60"
+        },
+        {
+          "name": "tuning_call_matches_precision",
+          "ok": true,
+          "detail": "precision < 0.5 \u2192 tune"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_ioc_match",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "sha256_recomputed",
+          "ok": true,
+          "detail": "sha256(sample_text)"
+        },
+        {
+          "name": "defang_recomputed",
+          "ok": true,
+          "detail": "hxxp://update-check[.]example[.]net/payload"
+        },
+        {
+          "name": "ioc_match_recomputed",
+          "ok": true,
+          "detail": "expected True"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_attack_map",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "all_behaviors_mapped",
+          "ok": true,
+          "detail": "mapped=['B1', 'B2', 'B3', 'B4', 'B5']"
+        },
+        {
+          "name": "techniques_and_tactics",
+          "ok": true,
+          "detail": "wrong=[]"
+        },
+        {
+          "name": "no_actor_attribution",
+          "ok": true,
+          "detail": "techniques are not actors"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_dmarc_align",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "message_A_alignment",
+          "ok": true,
+          "detail": "expected {'spf_aligned': True, 'dkim_aligned': True, 'dmarc_pass': True}"
+        },
+        {
+          "name": "message_B_alignment",
+          "ok": true,
+          "detail": "expected {'spf_aligned': False, 'dkim_aligned': False, 'dmarc_pass': False}"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_cvss_score",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "two_vectors",
+          "ok": true,
+          "detail": "vectors=2"
+        },
+        {
+          "name": "scores_recomputed",
+          "ok": true,
+          "detail": "wrong=0"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_triage_queue",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "queue_order_recomputed",
+          "ok": true,
+          "detail": "expected ['A5', 'A1', 'A3', 'A6', 'A2', 'A4']"
+        },
+        {
+          "name": "sla_due_recomputed",
+          "ok": true,
+          "detail": "received + SLA by severity"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_shift_metrics",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mttd_min_recomputed",
+          "ok": true,
+          "detail": "expected 33.0"
+        },
+        {
+          "name": "mttr_min_recomputed",
+          "ok": true,
+          "detail": "expected 82.0"
+        },
+        {
+          "name": "median_ttd_min_recomputed",
+          "ok": true,
+          "detail": "expected 28.5"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_soc_shift_handoff",
+      "course_id": "CYBER_SOC",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "\u22656 prior labs"
+        },
+        {
+          "name": "incidents_handed_off",
+          "ok": true,
+          "detail": "technique ID, NIST phase, next owner"
+        },
+        {
+          "name": "metrics_match_shift",
+          "ok": true,
+          "detail": "MTTD/MTTR from the shift log"
+        },
+        {
+          "name": "no_customer_data",
+          "ok": true,
+          "detail": "synthetic only"
+        },
+        {
+          "name": "no_offensive_tooling",
+          "ok": true,
+          "detail": "defensive desk"
+        }
+      ],
+      "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
+      "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -6208,6 +6561,18 @@
     },
     {
       "lab_id": "lab_sga_oran_loops_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_soc_shift_handoff_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_soc_attack_map_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_soc_detection_metrics_negative",
       "ok": true
     }
   ],
@@ -6857,6 +7222,46 @@
     {
       "lab_id": "lab_sga_research_capstone",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_log_parse",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_window_rule",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_detection_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_ioc_match",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_attack_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_dmarc_align",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_cvss_score",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_triage_queue",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_shift_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_shift_handoff",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -7498,6 +7903,46 @@
     },
     {
       "lab_id": "lab_sga_research_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_log_parse",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_window_rule",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_detection_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_ioc_match",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_attack_map",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_dmarc_align",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_cvss_score",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_triage_queue",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_shift_metrics",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_soc_shift_handoff",
       "failed_as_required": true
     }
   ],

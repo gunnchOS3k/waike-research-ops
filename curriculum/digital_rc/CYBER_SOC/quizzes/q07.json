@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "soc-w7-1",
+      "kind": "mcq",
+      "stem": "What base score does AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H receive?",
+      "choices": [
+        "10.0",
+        "8.8",
+        "7.5",
+        "9.8"
+      ]
+    },
+    {
+      "id": "soc-w7-2",
+      "kind": "mcq",
+      "stem": "How does CVSS v3.1 Roundup treat 5.41?",
+      "choices": [
+        "It becomes 5.5",
+        "It becomes 5.4",
+        "It becomes 5.0",
+        "It becomes 6.0"
+      ]
+    },
+    {
+      "id": "soc-w7-3",
+      "kind": "mcq",
+      "stem": "Which weight does High confidentiality impact use?",
+      "choices": [
+        "0.22",
+        "0.56",
+        "0.85",
+        "0.77"
+      ]
+    },
+    {
+      "id": "soc-w7-4",
+      "kind": "mcq",
+      "stem": "For unchanged scope, impact equals what?",
+      "choices": [
+        "7.52 \u00d7 ISS",
+        "8.22 \u00d7 ISS",
+        "6.42 \u00d7 ISS",
+        "ISS squared"
+      ]
+    },
+    {
+      "id": "soc-w7-5",
+      "kind": "mcq",
+      "stem": "A score of 5.5 falls in which band?",
+      "choices": [
+        "Low",
+        "High",
+        "Critical",
+        "Medium"
+      ]
+    },
+    {
+      "id": "soc-w7-6",
+      "kind": "mcq",
+      "stem": "What does the base score not include?",
+      "choices": [
+        "How valuable the affected asset is to you",
+        "Attack vector",
+        "Privileges required",
+        "Impact on integrity"
+      ]
+    }
+  ]
+}

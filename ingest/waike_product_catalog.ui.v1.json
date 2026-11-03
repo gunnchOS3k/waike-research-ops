@@ -40,7 +40,7 @@
       "assignment": "Write a one-page Harbor governance memo: CIA applied to the ticket-summarizer bot, one GRC owner, and one prohibited data class.",
       "lab_hint": "lab_hardening_baseline",
       "track_ids": [
-        "CYBER_SOC"
+        "CYBERSECURITY"
       ],
       "academy_id": "ACADEMY_CYBER"
     },
@@ -226,6 +226,19 @@
         "SEVEN_GC_APPRENTICESHIP"
       ],
       "academy_id": "ACADEMY_SOFTWARE"
+    },
+    {
+      "course_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness \u2014 Night Shift Desk",
+      "kinesthetic_hook": "Ten Night Shift Desk tickets: read the auth log \u2192 tune a window rule \u2192 measure precision \u2192 hash and defang indicators \u2192 map to ATT&CK \u2192 check DMARC alignment \u2192 score CVSS by hand \u2192 order the queue \u2192 report MTTD/MTTR \u2192 hand off the shift.",
+      "lesson_excerpt": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happened to whom from which address. In this fixture 203.0.113.45 fails three times as root, 198.51.100.7 tries the made-up ",
+      "worked_example": "203.0.113.45 failed 3\u00d7, 198.51.100.7 failed 2\u00d7, 192.0.2.10 failed 1\u00d7; Accepted password for root from 203.0.113.45 at 01:15:31 \u2192 escalate",
+      "assignment": "Submit lab_soc_log_parse JSON for SOC-2101: failed_by_ip, top_source, accepted_after_failures.",
+      "lab_hint": "lab_soc_log_parse",
+      "track_ids": [
+        "CYBER_SOC"
+      ],
+      "academy_id": "ACADEMY_CYBER"
     }
   ]
 }

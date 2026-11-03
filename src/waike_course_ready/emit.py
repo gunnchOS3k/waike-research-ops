@@ -392,6 +392,10 @@ def emit_course(course_id: str) -> dict[str, Any]:
             "EMBEDDED_PROTOTYPING": "curriculum/alignment/embedded_prototyping_alignment.json",
             "GUNNCHOS_PRODUCT_LAB": "curriculum/alignment/gunnchos_product_lab_alignment.json",
             "SEVEN_GC_APPRENTICESHIP": "curriculum/alignment/seven_gc_apprenticeship_alignment.json",
+            "CYBER_SOC": "curriculum/alignment/cyber_soc_alignment.json",
+            "DIGITAL_CONFIDENCE": "curriculum/alignment/digital_confidence_alignment.json",
+            "IT_SUPPORT_HARDWARE": "curriculum/alignment/it_support_hardware_alignment.json",
+            "NETWORKING_INFRA": "curriculum/alignment/networking_infra_alignment.json",
         }[course_id],
         "ai_use_policy": c.get("ai_use_policy"),
         "provenance": {

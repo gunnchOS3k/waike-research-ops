@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "CYBER_SOC",
+  "quizzes": {
+    "CYBER_SOC-q01": [
+      {
+        "id": "soc-w1-1",
+        "answer_index": 3,
+        "explanation": "three failures"
+      },
+      {
+        "id": "soc-w1-2",
+        "answer_index": 0,
+        "explanation": "success after failures"
+      },
+      {
+        "id": "soc-w1-3",
+        "answer_index": 1,
+        "explanation": "context"
+      },
+      {
+        "id": "soc-w1-4",
+        "answer_index": 2,
+        "explanation": "data handling"
+      },
+      {
+        "id": "soc-w1-5",
+        "answer_index": 3,
+        "explanation": "anatomy"
+      },
+      {
+        "id": "soc-w1-6",
+        "answer_index": 0,
+        "explanation": "RFC 5737"
+      }
+    ],
+    "CYBER_SOC-q02": [
+      {
+        "id": "soc-w2-1",
+        "answer_index": 1,
+        "explanation": "20,50,65,70"
+      },
+      {
+        "id": "soc-w2-2",
+        "answer_index": 2,
+        "explanation": "window edge"
+      },
+      {
+        "id": "soc-w2-3",
+        "answer_index": 3,
+        "explanation": "trade-off"
+      },
+      {
+        "id": "soc-w2-4",
+        "answer_index": 0,
+        "explanation": "window"
+      },
+      {
+        "id": "soc-w2-5",
+        "answer_index": 1,
+        "explanation": "backtest"
+      },
+      {
+        "id": "soc-w2-6",
+        "answer_index": 2,
+        "explanation": "maintainability"
+      }
+    ],
+    "CYBER_SOC-q03": [
+      {
+        "id": "soc-w3-1",
+        "answer_index": 3,
+        "explanation": "18/60"
+      },
+      {
+        "id": "soc-w3-2",
+        "answer_index": 0,
+        "explanation": "18/24"
+      },
+      {
+        "id": "soc-w3-3",
+        "answer_index": 1,
+        "explanation": "volume"
+      },
+      {
+        "id": "soc-w3-4",
+        "answer_index": 2,
+        "explanation": "one-sided"
+      },
+      {
+        "id": "soc-w3-5",
+        "answer_index": 3,
+        "explanation": "trade-off"
+      },
+      {
+        "id": "soc-w3-6",
+        "answer_index": 0,
+        "explanation": "<0.5"
+      }
+    ],
+    "CYBER_SOC-q04": [
+      {
+        "id": "soc-w4-1",
+        "answer_index": 1,
+        "explanation": "exact match"
+      },
+      {
+        "id": "soc-w4-2",
+        "answer_index": 2,
+        "explanation": "defang"
+      },
+      {
+        "id": "soc-w4-3",
+        "answer_index": 3,
+        "explanation": "safety"
+      },
+      {
+        "id": "soc-w4-4",
+        "answer_index": 0,
+        "explanation": "absence"
+      },
+      {
+        "id": "soc-w4-5",
+        "answer_index": 1,
+        "explanation": "boundary"
+      },
+      {
+        "id": "soc-w4-6",
+        "answer_index": 2,
+        "explanation": "256 bits"
+      }
+    ],
+    "CYBER_SOC-q05": [
+      {
+        "id": "soc-w5-1",
+        "answer_index": 3,
+        "explanation": "brute force"
+      },
+      {
+        "id": "soc-w5-2",
+        "answer_index": 0,
+        "explanation": "multi-tactic"
+      },
+      {
+        "id": "soc-w5-3",
+        "answer_index": 1,
+        "explanation": "impact"
+      },
+      {
+        "id": "soc-w5-4",
+        "answer_index": 2,
+        "explanation": "technique \u2260 actor"
+      },
+      {
+        "id": "soc-w5-5",
+        "answer_index": 3,
+        "explanation": "T1059"
+      },
+      {
+        "id": "soc-w5-6",
+        "answer_index": 0,
+        "explanation": "common language"
+      }
+    ],
+    "CYBER_SOC-q06": [
+      {
+        "id": "soc-w6-1",
+        "answer_index": 1,
+        "explanation": "alignment"
+      },
+      {
+        "id": "soc-w6-2",
+        "answer_index": 2,
+        "explanation": "signing domain"
+      },
+      {
+        "id": "soc-w6-3",
+        "answer_index": 3,
+        "explanation": "relaxed"
+      },
+      {
+        "id": "soc-w6-4",
+        "answer_index": 0,
+        "explanation": "envelope"
+      },
+      {
+        "id": "soc-w6-5",
+        "answer_index": 1,
+        "explanation": "either"
+      },
+      {
+        "id": "soc-w6-6",
+        "answer_index": 2,
+        "explanation": "user education"
+      }
+    ],
+    "CYBER_SOC-q07": [
+      {
+        "id": "soc-w7-1",
+        "answer_index": 3,
+        "explanation": "classic critical"
+      },
+      {
+        "id": "soc-w7-2",
+        "answer_index": 0,
+        "explanation": "next tenth up"
+      },
+      {
+        "id": "soc-w7-3",
+        "answer_index": 1,
+        "explanation": "C:H"
+      },
+      {
+        "id": "soc-w7-4",
+        "answer_index": 2,
+        "explanation": "scope U"
+      },
+      {
+        "id": "soc-w7-5",
+        "answer_index": 3,
+        "explanation": "4.0\u20136.9"
+      },
+      {
+        "id": "soc-w7-6",
+        "answer_index": 0,
+        "explanation": "base vs context"
+      }
+    ],
+    "CYBER_SOC-q08": [
+      {
+        "id": "soc-w8-1",
+        "answer_index": 1,
+        "explanation": "12"
+      },
+      {
+        "id": "soc-w8-2",
+        "answer_index": 2,
+        "explanation": "asset value"
+      },
+      {
+        "id": "soc-w8-3",
+        "answer_index": 3,
+        "explanation": "time"
+      },
+      {
+        "id": "soc-w8-4",
+        "answer_index": 0,
+        "explanation": "12 + 15"
+      },
+      {
+        "id": "soc-w8-5",
+        "answer_index": 1,
+        "explanation": "escalate capacity"
+      },
+      {
+        "id": "soc-w8-6",
+        "answer_index": 2,
+        "explanation": "explainable"
+      }
+    ],
+    "CYBER_SOC-q09": [
+      {
+        "id": "soc-w9-1",
+        "answer_index": 3,
+        "explanation": "mean"
+      },
+      {
+        "id": "soc-w9-2",
+        "answer_index": 0,
+        "explanation": "middle pair"
+      },
+      {
+        "id": "soc-w9-3",
+        "answer_index": 1,
+        "explanation": "outliers"
+      },
+      {
+        "id": "soc-w9-4",
+        "answer_index": 2,
+        "explanation": "comparability"
+      },
+      {
+        "id": "soc-w9-5",
+        "answer_index": 3,
+        "explanation": "mean"
+      },
+      {
+        "id": "soc-w9-6",
+        "answer_index": 0,
+        "explanation": "sample size"
+      }
+    ],
+    "CYBER_SOC-q10": [
+      {
+        "id": "soc-w10-1",
+        "answer_index": 1,
+        "explanation": "complete"
+      },
+      {
+        "id": "soc-w10-2",
+        "answer_index": 2,
+        "explanation": "phases"
+      },
+      {
+        "id": "soc-w10-3",
+        "answer_index": 3,
+        "explanation": "traceable"
+      },
+      {
+        "id": "soc-w10-4",
+        "answer_index": 0,
+        "explanation": "defensive"
+      },
+      {
+        "id": "soc-w10-5",
+        "answer_index": 1,
+        "explanation": "audience"
+      },
+      {
+        "id": "soc-w10-6",
+        "answer_index": 2,
+        "explanation": "oral check"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "soc-mid-01",
+      "answer_index": 2,
+      "explanation": "username spray"
+    },
+    {
+      "id": "soc-mid-02",
+      "answer_index": 3,
+      "explanation": "missing window"
+    },
+    {
+      "id": "soc-mid-03",
+      "answer_index": 0,
+      "explanation": "slow drip"
+    },
+    {
+      "id": "soc-mid-04",
+      "answer_index": 1,
+      "explanation": "trade-off"
+    },
+    {
+      "id": "soc-mid-05",
+      "answer_index": 2,
+      "explanation": "TN not in precision"
+    },
+    {
+      "id": "soc-mid-06",
+      "answer_index": 3,
+      "explanation": "fingerprint"
+    },
+    {
+      "id": "soc-mid-07",
+      "answer_index": 0,
+      "explanation": "dots and scheme"
+    },
+    {
+      "id": "soc-mid-08",
+      "answer_index": 1,
+      "explanation": "containment"
+    },
+    {
+      "id": "soc-mid-09",
+      "answer_index": 2,
+      "explanation": "tactic meaning"
+    },
+    {
+      "id": "soc-mid-10",
+      "answer_index": 3,
+      "explanation": "attribution"
+    },
+    {
+      "id": "soc-mid-11",
+      "answer_index": 0,
+      "explanation": "T1078"
+    },
+    {
+      "id": "soc-mid-12",
+      "answer_index": 1,
+      "explanation": "one aligned pass"
+    },
+    {
+      "id": "soc-mid-13",
+      "answer_index": 2,
+      "explanation": "strict"
+    },
+    {
+      "id": "soc-mid-14",
+      "answer_index": 3,
+      "explanation": "look-alike"
+    },
+    {
+      "id": "soc-mid-15",
+      "answer_index": 0,
+      "explanation": "complexity"
+    },
+    {
+      "id": "soc-mid-16",
+      "answer_index": 1,
+      "explanation": "context"
+    },
+    {
+      "id": "soc-mid-17",
+      "answer_index": 2,
+      "explanation": "Roundup"
+    },
+    {
+      "id": "soc-mid-18",
+      "answer_index": 3,
+      "explanation": "tie"
+    },
+    {
+      "id": "soc-mid-19",
+      "answer_index": 0,
+      "explanation": "capacity"
+    },
+    {
+      "id": "soc-mid-20",
+      "answer_index": 1,
+      "explanation": "robust"
+    }
+  ],
+  "final": [
+    {
+      "id": "soc-fin-01",
+      "answer_index": 3,
+      "explanation": "triage"
+    },
+    {
+      "id": "soc-fin-02",
+      "answer_index": 0,
+      "explanation": "backtest"
+    },
+    {
+      "id": "soc-fin-03",
+      "answer_index": 1,
+      "explanation": "honest reporting"
+    },
+    {
+      "id": "soc-fin-04",
+      "answer_index": 2,
+      "explanation": "FN"
+    },
+    {
+      "id": "soc-fin-05",
+      "answer_index": 3,
+      "explanation": "partial match"
+    },
+    {
+      "id": "soc-fin-06",
+      "answer_index": 0,
+      "explanation": "safe handling"
+    },
+    {
+      "id": "soc-fin-07",
+      "answer_index": 1,
+      "explanation": "purpose"
+    },
+    {
+      "id": "soc-fin-08",
+      "answer_index": 2,
+      "explanation": "impact"
+    },
+    {
+      "id": "soc-fin-09",
+      "answer_index": 3,
+      "explanation": "alignment"
+    },
+    {
+      "id": "soc-fin-10",
+      "answer_index": 0,
+      "explanation": "policy"
+    },
+    {
+      "id": "soc-fin-11",
+      "answer_index": 1,
+      "explanation": "scope"
+    },
+    {
+      "id": "soc-fin-12",
+      "answer_index": 2,
+      "explanation": "base vs environment"
+    },
+    {
+      "id": "soc-fin-13",
+      "answer_index": 3,
+      "explanation": "sort rule"
+    },
+    {
+      "id": "soc-fin-14",
+      "answer_index": 0,
+      "explanation": "explainable"
+    },
+    {
+      "id": "soc-fin-15",
+      "answer_index": 1,
+      "explanation": "definitions"
+    },
+    {
+      "id": "soc-fin-16",
+      "answer_index": 2,
+      "explanation": "honest metrics"
+    },
+    {
+      "id": "soc-fin-17",
+      "answer_index": 3,
+      "explanation": "completeness"
+    },
+    {
+      "id": "soc-fin-18",
+      "answer_index": 0,
+      "explanation": "phase"
+    },
+    {
+      "id": "soc-fin-19",
+      "answer_index": 1,
+      "explanation": "data boundary"
+    },
+    {
+      "id": "soc-fin-20",
+      "answer_index": 2,
+      "explanation": "authorisation"
+    },
+    {
+      "id": "soc-fin-21",
+      "answer_index": 3,
+      "explanation": "RFC 5737"
+    },
+    {
+      "id": "soc-fin-22",
+      "answer_index": 0,
+      "explanation": "precision"
+    },
+    {
+      "id": "soc-fin-23",
+      "answer_index": 1,
+      "explanation": "extremes"
+    },
+    {
+      "id": "soc-fin-24",
+      "answer_index": 2,
+      "explanation": "claim boundary"
+    }
+  ]
+}

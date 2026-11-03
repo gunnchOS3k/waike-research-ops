@@ -1,0 +1,269 @@
+{
+  "assessment_id": "CYBER_SOC-final",
+  "items": [
+    {
+      "id": "soc-fin-01",
+      "kind": "mcq",
+      "stem": "An accepted login follows twelve failures from one address at 03:00. First action on the desk?",
+      "choices": [
+        "Ignore it, it succeeded",
+        "Block every address",
+        "Delete the log",
+        "Escalate and check what the account did next"
+      ]
+    },
+    {
+      "id": "soc-fin-02",
+      "kind": "mcq",
+      "stem": "A teammate wants to tune a rule live in production without replay. Your advice?",
+      "choices": [
+        "Replay against stored events first",
+        "Go ahead",
+        "Disable the SIEM",
+        "Raise all thresholds to 1000"
+      ]
+    },
+    {
+      "id": "soc-fin-03",
+      "kind": "mcq",
+      "stem": "After tuning, precision rose from 0.3 to 0.6 and recall fell from 0.75 to 0.5. How do you report it?",
+      "choices": [
+        "Report only precision",
+        "Show both before and after and the trade-off",
+        "Report only recall",
+        "Say nothing changed"
+      ]
+    },
+    {
+      "id": "soc-fin-04",
+      "kind": "mcq",
+      "stem": "Which metric counts how many real attacks a rule missed?",
+      "choices": [
+        "True negatives",
+        "Precision",
+        "False negatives",
+        "Alert volume"
+      ]
+    },
+    {
+      "id": "soc-fin-05",
+      "kind": "mcq",
+      "stem": "A threat feed lists a domain. Your log has it with a different subdomain. Is that a match?",
+      "choices": [
+        "Exactly the same indicator",
+        "Never relevant",
+        "Proof of breach",
+        "Possibly; record it as a related indicator and investigate"
+      ]
+    },
+    {
+      "id": "soc-fin-06",
+      "kind": "mcq",
+      "stem": "Where should a live malicious sample never be opened?",
+      "choices": [
+        "On a personal or production laptop",
+        "In an approved isolated sandbox",
+        "In a vendor's analysis portal approved by policy",
+        "Nowhere is ever acceptable"
+      ]
+    },
+    {
+      "id": "soc-fin-07",
+      "kind": "mcq",
+      "stem": "Which statement about MITRE ATT&CK is accurate?",
+      "choices": [
+        "It assigns blame",
+        "It catalogues techniques and tactics, not culprits",
+        "It is a firewall",
+        "It scores vulnerabilities"
+      ]
+    },
+    {
+      "id": "soc-fin-08",
+      "kind": "mcq",
+      "stem": "A ransomware note appears. Which technique ID belongs in the handoff?",
+      "choices": [
+        "T1110",
+        "T1566",
+        "T1486",
+        "T1595"
+      ]
+    },
+    {
+      "id": "soc-fin-09",
+      "kind": "mcq",
+      "stem": "An email shows DMARC fail but the user insists it is from their bank. What do you check first?",
+      "choices": [
+        "The font",
+        "The subject line length",
+        "The time zone",
+        "Which domains SPF and DKIM actually vouched for"
+      ]
+    },
+    {
+      "id": "soc-fin-10",
+      "kind": "mcq",
+      "stem": "Why do many organisations publish a DMARC reject policy after monitoring?",
+      "choices": [
+        "So unaligned mail claiming their domain is refused",
+        "To speed up newsletters",
+        "To disable DKIM",
+        "To hide their MX"
+      ]
+    },
+    {
+      "id": "soc-fin-11",
+      "kind": "mcq",
+      "stem": "A CVSS vector has S:C. What changes in the calculation?",
+      "choices": [
+        "Nothing",
+        "The changed-scope impact formula and PR weights apply",
+        "The score is capped at 5",
+        "Exploitability is ignored"
+      ]
+    },
+    {
+      "id": "soc-fin-12",
+      "kind": "mcq",
+      "stem": "A vendor scores a flaw 9.8 but your server has the service disabled. What remains true?",
+      "choices": [
+        "The base score becomes 0",
+        "The vendor is wrong",
+        "The base score is 9.8; your exposure is lower",
+        "The flaw disappears"
+      ]
+    },
+    {
+      "id": "soc-fin-13",
+      "kind": "mcq",
+      "stem": "Your queue sorts by newest alert first. What failure follows?",
+      "choices": [
+        "Nothing",
+        "Alerts merge",
+        "SLAs disappear",
+        "Old critical alerts on key assets wait too long"
+      ]
+    },
+    {
+      "id": "soc-fin-14",
+      "kind": "mcq",
+      "stem": "Two analysts disagree on queue order. What settles it?",
+      "choices": [
+        "The written severity \u00d7 criticality rule",
+        "Seniority",
+        "Coin toss",
+        "Whoever shouts"
+      ]
+    },
+    {
+      "id": "soc-fin-15",
+      "kind": "mcq",
+      "stem": "Your MTTD is 33 minutes; another team reports 8. What do you check before comparing?",
+      "choices": [
+        "Who has better coffee",
+        "How each team defines the start and end points",
+        "Nothing",
+        "Their tool vendor"
+      ]
+    },
+    {
+      "id": "soc-fin-16",
+      "kind": "mcq",
+      "stem": "Management wants MTTR below 30 minutes by next week. What do you tell them?",
+      "choices": [
+        "It is done",
+        "Stop logging incidents",
+        "Which incidents drive the number and what would shorten them",
+        "Close tickets faster without fixing"
+      ]
+    },
+    {
+      "id": "soc-fin-17",
+      "kind": "mcq",
+      "stem": "A handoff lists 'ransomware stuff, Bob knows'. What is missing?",
+      "choices": [
+        "Nothing",
+        "A meme",
+        "The analyst's password",
+        "Technique ID, NIST phase, and a named next owner"
+      ]
+    },
+    {
+      "id": "soc-fin-18",
+      "kind": "mcq",
+      "stem": "Which NIST SP 800-61 phase includes writing lessons learned?",
+      "choices": [
+        "Post-incident activity",
+        "Preparation",
+        "Detection and analysis",
+        "Containment"
+      ]
+    },
+    {
+      "id": "soc-fin-19",
+      "kind": "mcq",
+      "stem": "A training packet includes a real customer's email headers. What should happen?",
+      "choices": [
+        "Keep them, they are realistic",
+        "Remove them and use synthetic data",
+        "Share them wider",
+        "Encrypt and post publicly"
+      ]
+    },
+    {
+      "id": "soc-fin-20",
+      "kind": "mcq",
+      "stem": "A trainee asks to port-scan a neighbour's network 'for practice'. Your answer?",
+      "choices": [
+        "Yes, on weekends",
+        "Only with a VPN",
+        "No; only systems you own or are authorised to test",
+        "Only if it is fast"
+      ]
+    },
+    {
+      "id": "soc-fin-21",
+      "kind": "mcq",
+      "stem": "Why does the course use 203.0.113.0/24 and similar ranges?",
+      "choices": [
+        "They are faster",
+        "They are private LAN ranges",
+        "They belong to MITRE",
+        "They are reserved for documentation, so no real host is implicated"
+      ]
+    },
+    {
+      "id": "soc-fin-22",
+      "kind": "mcq",
+      "stem": "What is the clearest sign a rule's alerts are mostly noise?",
+      "choices": [
+        "Precision well below one half",
+        "High recall",
+        "Low alert volume",
+        "A long rule name"
+      ]
+    },
+    {
+      "id": "soc-fin-23",
+      "kind": "mcq",
+      "stem": "A detection engineer proposes alerting on every login. What happens to recall and precision?",
+      "choices": [
+        "Both rise",
+        "Recall approaches 1; precision collapses",
+        "Both fall to 0",
+        "Neither changes"
+      ]
+    },
+    {
+      "id": "soc-fin-24",
+      "kind": "mcq",
+      "stem": "What is the boundary of the Night Shift Desk course?",
+      "choices": [
+        "A guaranteed SOC job",
+        "A penetration-testing licence",
+        "Defensive analysis on synthetic data, not a certification or live SOC duty",
+        "Access to production SIEMs"
+      ]
+    }
+  ]
+}

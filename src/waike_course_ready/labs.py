@@ -1084,6 +1084,9 @@ from waike_course_ready.batch008.labs import (
     LABS_008, COURSE_LABS_008, LAB_SPECS_008, REFERENCE_008, WRONG_008,
     lab_sga_paired_ci, lab_sga_twin_gap, lab_sga_oran_loops,
 )
+from waike_course_ready.batch009.labs import (
+    LABS_009, COURSE_LABS_009, LAB_SPECS_009, REFERENCE_009, WRONG_009, negatives_009,
+)
 
 LABS.update(LABS_002)
 LABS.update(LABS_003)
@@ -1092,6 +1095,7 @@ LABS.update(LABS_005)
 LABS.update(LABS_006)
 LABS.update(LABS_007)
 LABS.update(LABS_008)
+LABS.update(LABS_009)
 # Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
 COURSE_LABS.update(COURSE_LABS_003)
@@ -1100,6 +1104,7 @@ COURSE_LABS.update(COURSE_LABS_005)
 COURSE_LABS.update(COURSE_LABS_006)
 COURSE_LABS.update(COURSE_LABS_007)
 COURSE_LABS.update(COURSE_LABS_008)
+COURSE_LABS.update(COURSE_LABS_009)
 LAB_SPECS.update(LAB_SPECS_002)
 LAB_SPECS.update(LAB_SPECS_003)
 LAB_SPECS.update(LAB_SPECS_004)
@@ -1107,6 +1112,7 @@ LAB_SPECS.update(LAB_SPECS_005)
 LAB_SPECS.update(LAB_SPECS_006)
 LAB_SPECS.update(LAB_SPECS_007)
 LAB_SPECS.update(LAB_SPECS_008)
+LAB_SPECS.update(LAB_SPECS_009)
 REFERENCE.update(REFERENCE_002)
 REFERENCE.update(REFERENCE_003)
 REFERENCE.update(REFERENCE_004)
@@ -1114,6 +1120,7 @@ REFERENCE.update(REFERENCE_005)
 REFERENCE.update(REFERENCE_006)
 REFERENCE.update(REFERENCE_007)
 REFERENCE.update(REFERENCE_008)
+REFERENCE.update(REFERENCE_009)
 WRONG.update(WRONG_002)
 WRONG.update(WRONG_003)
 WRONG.update(WRONG_004)
@@ -1121,6 +1128,7 @@ WRONG.update(WRONG_005)
 WRONG.update(WRONG_006)
 WRONG.update(WRONG_007)
 WRONG.update(WRONG_008)
+WRONG.update(WRONG_009)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
@@ -1161,6 +1169,7 @@ def run_all() -> dict[str, Any]:
     no_sub_005 = run_lab("lab_consent_disclosure")
     no_sub_006 = run_lab("lab_schema_ingest")
     no_sub_008 = run_lab("lab_sga_claim_ledger")
+    no_sub_009 = [run_lab(ids[0]) for ids in COURSE_LABS_009.values()]
     print_pass_raises = False
     try:
         _fail_if_print_pass("PASS")
@@ -1201,6 +1210,13 @@ def run_all() -> dict[str, Any]:
         print_pass_on_submit_008 = False
     except AssertionError:
         print_pass_on_submit_008 = True
+    print_pass_on_submit_009 = True
+    for ids in COURSE_LABS_009.values():
+        try:
+            run_lab(ids[-1], submission="PASS")
+            print_pass_on_submit_009 = False
+        except AssertionError:
+            pass
 
     negatives = []
     # #43 package negatives (must remain)
@@ -1295,6 +1311,7 @@ def run_all() -> dict[str, Any]:
         "tasks": list(loop_ref["tasks"]) + [{"name": "train_beam_model", "loop_ms": 5, "loop_class": "non_real_time"}],
     })
     negatives.append({"lab_id": "lab_sga_oran_loops_negative", "ok": (not bad_loop.ok)})
+    negatives.extend(negatives_009())
 
     datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
     ttl_ok = _ttl1_from_parsed_header(datapath)
@@ -1309,12 +1326,13 @@ def run_all() -> dict[str, Any]:
     print_ok = (
         print_pass_raises and print_pass_on_submit_43 and print_pass_on_submit_002
         and print_pass_on_submit_003 and print_pass_on_submit_004 and print_pass_on_submit_005
-        and print_pass_on_submit_006 and print_pass_on_submit_008
+        and print_pass_on_submit_006 and print_pass_on_submit_008 and print_pass_on_submit_009
     )
     no_sub_ok = (
         (not no_sub_43["ok"]) and (not no_sub_002["ok"])
         and (not no_sub_003["ok"]) and (not no_sub_004["ok"]) and (not no_sub_005["ok"])
         and (not no_sub_006["ok"]) and (not no_sub_008["ok"])
+        and not any(r["ok"] for r in no_sub_009)
     )
     ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_ok and no_sub_ok and ttl_ok and computed_honesty
     return {
@@ -1329,6 +1347,7 @@ def run_all() -> dict[str, Any]:
         "batch_006_lab_count": sum(len(COURSE_LABS[c]) for c in ("DATA_DASHBOARDS",) if c in COURSE_LABS),
         "batch_007_lab_count": sum(len(COURSE_LABS[c]) for c in ("EMBEDDED_PROTOTYPING", "GUNNCHOS_PRODUCT_LAB") if c in COURSE_LABS),
         "batch_008_lab_count": sum(len(COURSE_LABS[c]) for c in ("SEVEN_GC_APPRENTICESHIP",) if c in COURSE_LABS),
+        "batch_009_lab_count": sum(len(ids) for ids in COURSE_LABS_009.values()),
         "results": results,
         "negatives_must_fail_and_did": negatives,
         "empty_submission_fails": empty_ok,

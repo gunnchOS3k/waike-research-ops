@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "soc-w2-1",
+      "kind": "mcq",
+      "stem": "With 4-in-60 s, when does 203.0.113.45 first alert?",
+      "choices": [
+        "At second 50",
+        "At second 70",
+        "At second 0",
+        "Never"
+      ]
+    },
+    {
+      "id": "soc-w2-2",
+      "kind": "mcq",
+      "stem": "Why does 198.51.100.7 stay quiet under 4-in-60 s?",
+      "choices": [
+        "It has only two failures",
+        "It is allow-listed",
+        "Its four attempts span 65 seconds",
+        "Its logins succeeded"
+      ]
+    },
+    {
+      "id": "soc-w2-3",
+      "kind": "mcq",
+      "stem": "What does widening the window to 90 s trade away?",
+      "choices": [
+        "All detection",
+        "Log retention",
+        "Nothing",
+        "More false positives from ordinary typos"
+      ]
+    },
+    {
+      "id": "soc-w2-4",
+      "kind": "mcq",
+      "stem": "What makes 'four failed logins' an actual rule?",
+      "choices": [
+        "Stating the time window it counts within",
+        "Writing it in capitals",
+        "Adding a severity",
+        "Sending it by email"
+      ]
+    },
+    {
+      "id": "soc-w2-5",
+      "kind": "mcq",
+      "stem": "Before enabling a new rule, what should you do?",
+      "choices": [
+        "Enable it on every host blind",
+        "Replay it against stored events",
+        "Delete old alerts",
+        "Disable logging"
+      ]
+    },
+    {
+      "id": "soc-w2-6",
+      "kind": "mcq",
+      "stem": "Where should the threshold and window be documented?",
+      "choices": [
+        "Only in your memory",
+        "In a sticky note",
+        "In the rule description",
+        "Nowhere"
+      ]
+    }
+  ]
+}

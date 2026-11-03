@@ -133,4 +133,34 @@ COURSE_PREREQS: dict[str, dict[str, list[str] | str]] = {
         ],
         "recommended": ["AI_ML_EDGE train/test split discipline", "DATA_VIZ_BI honest figure labelling"],
     },
+    "CYBER_SOC": {
+        "course_id": "CYBER_SOC",
+        "required": [
+            "Defensive-only rule: synthetic logs and documentation IP ranges, no live targets or exploit code",
+            "Can compute a ratio and a mean by hand",
+        ],
+        "recommended": ["CYBERSECURITY governance and incident-clock vocabulary"],
+    },
+    "DIGITAL_CONFIDENCE": {
+        "course_id": "DIGITAL_CONFIDENCE",
+        "required": [
+            "None beyond willingness to practise on library machines with made-up accounts",
+        ],
+        "recommended": [],
+    },
+    "IT_SUPPORT_HARDWARE": {
+        "course_id": "IT_SUPPORT_HARDWARE",
+        "required": [
+            "Never open donor data; power off and ground before touching parts",
+        ],
+        "recommended": ["DIGITAL_CONFIDENCE file and storage-unit habits"],
+    },
+    "NETWORKING_INFRA": {
+        "course_id": "NETWORKING_INFRA",
+        "required": [
+            "Algebra with units (ms, bytes, dB)",
+            "Documentation ASNs and 2001:db8::/32 only — no real company prefixes",
+        ],
+        "recommended": ["COMPUTER_NETWORKING addressing and name-resolution literacy"],
+    },
 }

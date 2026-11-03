@@ -1472,7 +1472,7 @@ COMPUTER_NETWORKING: dict[str, Any] = {
 CYBERSECURITY: dict[str, Any] = {
     "course_id": "CYBERSECURITY",
     "title": "Cybersecurity — Harbor SOC Foundations",
-    "track_ids": ["CYBER_SOC"],
+    "track_ids": ["CYBERSECURITY"],
     "academy_id": "ACADEMY_CYBER",
     "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",
     "syllabus_hook": (
@@ -1502,9 +1502,14 @@ from waike_course_ready.batch005.content import COURSES_005, BATCH_COURSE_IDS as
 from waike_course_ready.batch006.content import COURSES_006, BATCH_COURSE_IDS as BATCH_COURSE_IDS_006  # noqa: E402
 from waike_course_ready.batch007.content import COURSES_007, BATCH_COURSE_IDS as BATCH_COURSE_IDS_007  # noqa: E402
 from waike_course_ready.batch008.content import COURSES_008, BATCH_COURSE_IDS as BATCH_COURSE_IDS_008  # noqa: E402
+from waike_course_ready.batch009.content import COURSES_009, BATCH_COURSE_IDS as BATCH_COURSE_IDS_009  # noqa: E402
 
-# Product path = #43 ∪ #44 ∪ #45 ∪ #46 ∪ Stream-B COMM_PD ∪ DATA_DASHBOARDS ∪ batch007 residual closure ∪ batch008 SEVEN_GC_APPRENTICESHIP.
-COURSES = {**COURSES_001, **COURSES_002, **COURSES_003, **COURSES_004, **COURSES_005, **COURSES_006, **COURSES_007, **COURSES_008}
+# Product path = #43 ∪ #44 ∪ #45 ∪ #46 ∪ Stream-B COMM_PD ∪ DATA_DASHBOARDS ∪ batch007 residual closure
+# ∪ batch008 SEVEN_GC_APPRENTICESHIP ∪ batch009 formerly alias-only catalog tracks.
+COURSES = {
+    **COURSES_001, **COURSES_002, **COURSES_003, **COURSES_004, **COURSES_005, **COURSES_006, **COURSES_007,
+    **COURSES_008, **COURSES_009,
+}
 BATCH_COURSE_IDS_ACTIVE = tuple(COURSES)
 BATCH_COURSE_IDS = BATCH_COURSE_IDS_ACTIVE
 
@@ -1522,6 +1527,10 @@ def _rebalance_weekly() -> None:
         "EMBEDDED_PROTOTYPING": 0,
         "GUNNCHOS_PRODUCT_LAB": 1,
         "SEVEN_GC_APPRENTICESHIP": 2,
+        "CYBER_SOC": 3,
+        "DIGITAL_CONFIDENCE": 0,
+        "IT_SUPPORT_HARDWARE": 1,
+        "NETWORKING_INFRA": 2,
     }
     for cid, course in COURSES.items():
         k = offsets[cid]
@@ -1535,6 +1544,9 @@ _rebalance_weekly()
 
 
 def extra_assessment_items(course_id: str) -> dict[str, list[dict[str, Any]]]:
+    if course_id in COURSES_009:
+        from waike_course_ready.batch009.exams import extra_assessment_items_009
+        return extra_assessment_items_009(course_id)
     if course_id in COURSES_008:
         from waike_course_ready.batch008.exams import extra_assessment_items_008
         return extra_assessment_items_008(course_id)

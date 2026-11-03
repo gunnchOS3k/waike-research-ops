@@ -1,0 +1,150 @@
+[
+  {
+    "rubric_id": "CYBER_SOC-lab",
+    "title": "Desk lab recompute",
+    "criteria": [
+      {
+        "name": "recomputed",
+        "weight": 45,
+        "desc": "Counts, rates, and scores match the grader's recomputation"
+      },
+      {
+        "name": "defanged",
+        "weight": 25,
+        "desc": "Indicators appear only in defanged form"
+      },
+      {
+        "name": "rejects_stub",
+        "weight": 30,
+        "desc": "Empty and PASS-only submissions are refused"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-assignment",
+    "title": "SOC ticket write-up",
+    "criteria": [
+      {
+        "name": "ticket_ref",
+        "weight": 35,
+        "desc": "Cites the SOC ticket and the log lines used"
+      },
+      {
+        "name": "verdict",
+        "weight": 35,
+        "desc": "States escalate, close, or watch with a reason"
+      },
+      {
+        "name": "ai_mode",
+        "weight": 30,
+        "desc": "AI mode disclosed; NO_AI weeks hand-worked"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-quiz",
+    "title": "Weekly desk check",
+    "criteria": [
+      {
+        "name": "analyst_fit",
+        "weight": 50,
+        "desc": "Stems test the week's detection calculation"
+      },
+      {
+        "name": "key_custody",
+        "weight": 50,
+        "desc": "Answer key stays in the instructor tree"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-mid",
+    "title": "Midterm: detection arithmetic",
+    "criteria": [
+      {
+        "name": "new_scenarios",
+        "weight": 60,
+        "desc": "Twenty items on logs not used in weekly quizzes"
+      },
+      {
+        "name": "rates",
+        "weight": 40,
+        "desc": "Precision, recall, and window counts"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-final-knowledge",
+    "title": "Final: triage judgement",
+    "criteria": [
+      {
+        "name": "new_scenarios",
+        "weight": 50,
+        "desc": "Twenty-four items beyond weekly stems"
+      },
+      {
+        "name": "restraint",
+        "weight": 50,
+        "desc": "Defensive scope and evidence before escalation"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-practical",
+    "title": "Practical: live queue drill",
+    "criteria": [
+      {
+        "name": "queue_order",
+        "weight": 50,
+        "desc": "Critical alerts handled before low ones"
+      },
+      {
+        "name": "altered_inputs",
+        "weight": 50,
+        "desc": "Changed log lines change the result"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-project",
+    "title": "Shift handoff",
+    "criteria": [
+      {
+        "name": "labs_passed",
+        "weight": 30,
+        "desc": "Six or more desk labs passed"
+      },
+      {
+        "name": "open_items",
+        "weight": 40,
+        "desc": "Every open alert has an owner and next action"
+      },
+      {
+        "name": "metrics",
+        "weight": 30,
+        "desc": "MTTD and MTTR computed from closed tickets only"
+      }
+    ]
+  },
+  {
+    "rubric_id": "CYBER_SOC-portfolio",
+    "title": "Analyst portfolio",
+    "criteria": [
+      {
+        "name": "tuned_rule",
+        "weight": 40,
+        "desc": "One rule tuned with before-and-after precision"
+      },
+      {
+        "name": "cvss_trace",
+        "weight": 30,
+        "desc": "One CVSS vector scored by hand"
+      },
+      {
+        "name": "roles",
+        "weight": 30,
+        "desc": "Tier-1 trainee roles; no certification implied"
+      }
+    ]
+  }
+]

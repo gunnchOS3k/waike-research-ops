@@ -1,6 +1,6 @@
 {
   "schema": "waike_full_18_residual_honesty_v1",
-  "prepared_at": "2026-11-03T00:00:32Z",
+  "prepared_at": "2026-11-03T02:59:31Z",
   "floor_tip": "5a18707",
   "full_18_course_digital_rc": false,
   "HUMAN": false,
@@ -18,15 +18,17 @@
     "catalog_ids_with_own_true_package": 14,
     "catalog_track_ids": 18,
     "alias_only_catalog_ids": [
-      "CYBER_SOC",
       "DIGITAL_CONFIDENCE",
       "IT_SUPPORT_HARDWARE",
       "NETWORKING_INFRA"
     ],
-    "writer_computes_full_18": false,
+    "writer_computes_full_18": true,
+    "full_18_course_digital_rc": false,
     "needed": [
-      "write_course_digital_rc.py has no full_18 computation; the flag is fixed False.",
-      "Alias-only catalog IDs need either their own distinct packages or an owner policy that accepts aliases."
-    ]
+      "Catalog tracks without their own passing course: DIGITAL_CONFIDENCE, HARDWARE_ENGINEERING, IT_SUPPORT_HARDWARE, NETWORKING_INFRA",
+      "Alias rows never satisfy a catalog track; replace them with own packages.",
+      "Courses still list other catalog tracks in track_ids: DIGITAL_CONFIDENCE, EMBEDDED_PROTOTYPING, IT_SUPPORT_HARDWARE, NETWORKING_INFRA"
+    ],
+    "verification_boundary": "Cursor-implementation state from the writer gate; not independent verification or HUMAN acceptance."
   }
 }

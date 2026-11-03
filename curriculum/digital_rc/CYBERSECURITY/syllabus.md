@@ -4,7 +4,7 @@
 Harbor SOC is a classroom SOC. Prefer ISC2 CC outline effective 2026-09-01 (principles, governance, IAM, network/cloud, ops+IR) with AI woven through. Dual-map current CC and Security+ SY0-701. Berkeley CS161 donates a depth pattern only. All security labs are authorized fixtures. No dumps, no unauthorized scanning.
 
 ## Tracks and academy
-- Tracks: CYBER_SOC
+- Tracks: CYBERSECURITY
 - Academy: ACADEMY_CYBER
 
 ## Duration

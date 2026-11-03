@@ -25,7 +25,7 @@ def test_ledger_matches_on_disk_dirs_and_rc_keys():
     assert ledger["counts"]["course_digital_rc_keys"] == len(rc_keys)
     assert sorted(ledger["digital_rc_dirs_on_disk"]) == on_disk
     assert sorted(ledger["course_digital_rc_keys"]) == rc_keys
-    assert ledger["full_18_course_digital_rc"] is False
+    assert ledger["full_18_course_digital_rc"] is rc["full_18_course_digital_rc"]
     assert ledger["instructional_completeness_claimed"] is False
     assert ledger["HUMAN"] is False
     assert ledger["RC2"] is False
@@ -53,7 +53,7 @@ def test_honesty_stamp_lists_known_non_true_ids():
         | set(ledger["catalog_missing_digital_rc_dir"])
     )
 
-    assert stamp["full_18_course_digital_rc"] is False
+    assert stamp["full_18_course_digital_rc"] is rc["full_18_course_digital_rc"]
     assert stamp["instructional_completeness_claimed"] is False
     assert stamp["HUMAN"] is False
     assert stamp["RC2"] is False
@@ -65,9 +65,10 @@ def test_honesty_stamp_lists_known_non_true_ids():
     assert stamp["course_digital_rc_true_count"] == len(true_ids)
     assert sorted(stamp["course_digital_rc_not_true_ids"]) == expected_not_true
     missing = stamp["full_18_missing"]
-    assert stamp["course_digital_rc_not_true_ids"] or (
-        missing["alias_only_catalog_ids"] and missing["writer_computes_full_18"] is False
-    ), "full_18 false requires named non-true ids or named alias-only catalog ids"
+    assert missing["writer_computes_full_18"] is True
+    assert missing["full_18_course_digital_rc"] is rc["full_18_course_digital_rc"]
+    if rc["full_18_course_digital_rc"] is not True:
+        assert missing["needed"], "full_18 false must name what is still missing"
     assert stamp["catalog_vs_true_gap_count"] == (
         ledger["counts"]["catalog_track_ids"] - ledger["counts"]["course_digital_rc_keys"]
     )
@@ -78,7 +79,7 @@ def test_catalog_alias_honesty_does_not_invent_true_or_flip_full_18():
     residual = _load(ROOT / "artifacts" / "FULL_18_RESIDUAL_HONESTY.json")
     rc = _load(COURSE_RC)
 
-    assert alias["full_18_course_digital_rc"] is False
+    assert alias["full_18_course_digital_rc"] is rc["full_18_course_digital_rc"]
     assert alias["HUMAN"] is False
     assert alias["RC2"] is False
     assert alias["V1"] is False
@@ -101,8 +102,10 @@ def test_full_18_residual_honesty_does_not_invent_true_flags():
     residual = _load(residual_path)
     stamp = _load(STAMP)
     ledger = _load(LEDGER)
+    alias = _load(ROOT / "artifacts" / "CATALOG_ALIAS_HONESTY.json")
+    rc = _load(COURSE_RC)
 
-    assert residual["full_18_course_digital_rc"] is False
+    assert residual["full_18_course_digital_rc"] is rc["full_18_course_digital_rc"]
     assert residual["HUMAN"] is False
     assert residual["RC2"] is False
     assert residual["V1"] is False
@@ -111,15 +114,16 @@ def test_full_18_residual_honesty_does_not_invent_true_flags():
     assert residual["gates"]["NO_INVENTED_DIGITAL_RC_TRUE"] is True
     assert residual["gates"]["HUMAN_CURRICULUM_ACCEPTANCE"] is False
 
-    rc = _load(COURSE_RC)
     residual_ids = sorted(row["id"] for row in residual["residuals"])
     assert residual_ids == sorted(stamp["course_digital_rc_not_true_ids"])
     assert "SEVEN_GC_APPRENTICESHIP" not in residual_ids
     assert rc["courses"]["SEVEN_GC_APPRENTICESHIP"]["COURSE_DIGITAL_RC"] is True
     missing = residual["full_18_missing"]
-    assert missing["writer_computes_full_18"] is False
-    assert missing["catalog_ids_with_own_true_package"] < missing["catalog_track_ids"]
-    assert missing["alias_only_catalog_ids"] == ["CYBER_SOC", "DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE", "NETWORKING_INFRA"]
+    assert missing["writer_computes_full_18"] is True
+    assert missing["catalog_ids_with_own_true_package"] <= missing["catalog_track_ids"] == 18
+    assert missing["alias_only_catalog_ids"] == sorted(row["catalog_track_id"] for row in alias["aliases"])
+    if alias["aliases"]:
+        assert rc["full_18_course_digital_rc"] is False
     for row in residual["residuals"]:
         assert row["invent_course_digital_rc_true"] is False
         if row["kind"] == "keyed_course_fails_digital_rc_gate":
@@ -143,7 +147,7 @@ def test_pathway_discovery_honesty_does_not_invent_true_or_flip_full_18():
     discovered_ids = sorted(p.name for p in dirs)
     pathway_ids = sorted(p["course_id"] for p in pathways)
 
-    assert discovery["full_18_course_digital_rc"] is False
+    assert discovery["full_18_course_digital_rc"] is _load(COURSE_RC)["full_18_course_digital_rc"]
     assert discovery["HUMAN"] is False
     assert discovery["RC2"] is False
     assert discovery["V1"] is False

@@ -1,0 +1,3719 @@
+{
+  "CYBER_SOC": {
+    "course_id": "CYBER_SOC",
+    "title": "Cybersecurity Foundations and SOC Readiness — Night Shift Desk",
+    "track_ids": [
+      "CYBER_SOC"
+    ],
+    "academy_id": "ACADEMY_CYBER",
+    "kinesthetic_hook": "Ten Night Shift Desk tickets: read the auth log → tune a window rule → measure precision → hash and defang indicators → map to ATT&CK → check DMARC alignment → score CVSS by hand → order the queue → report MTTD/MTTR → hand off the shift.",
+    "syllabus_hook": "CYBER_SOC COURSE_DIGITAL_RC: analyst-desk numeracy for a junior SOC seat — log parsing, windowed detection, precision and recall, indicator hygiene, MITRE ATT&CK mapping, email authentication, CVSS v3.1, triage queues, and shift metrics. Defensive only, synthetic logs, documentation IP ranges. Distinct from the CYBERSECURITY Harbor SOC governance course. Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "soc_analyst_tier1_trainee",
+        "security_operations_intern",
+        "alert_triage_assistant"
+      ],
+      "nice_categories": [
+        "protect_and_defend",
+        "analyze"
+      ],
+      "certs_aligned_not_granted": [
+        "MITRE ATT&CK technique vocabulary (PUBLIC_REFERENCE_ONLY)",
+        "FIRST CVSS v3.1 scoring (PUBLIC_REFERENCE_ONLY; not a certification)",
+        "NIST SP 800-61r2 incident phases (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        3,
+        7
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Auth log anatomy — failures, sources, and the success that follows",
+        "lesson": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happened to whom from which address. In this fixture 203.0.113.45 fails three times as root, 198.51.100.7 tries the made-up accounts admin and oracle twice, and 192.0.2.10 fails once right after the user naiya logged in with her key from the same machine. Counting failures per source is the start, not the finding. The line that changes the night is the last one: Accepted password for root from 203.0.113.45, seconds after that address failed. A success that follows a run of failures from the same source is the pattern analysts escalate, because it can mean a guessed password. Naiya's typo after a good key login is noise you note and move past. All addresses here come from documentation ranges, so nobody's real server appears in the course, and you never paste a live customer log into a chat tool to save time.",
+        "worked_example": "203.0.113.45 failed 3×, 198.51.100.7 failed 2×, 192.0.2.10 failed 1×; Accepted password for root from 203.0.113.45 at 01:15:31 → escalate",
+        "assignment": "Submit lab_soc_log_parse JSON for SOC-2101: failed_by_ip, top_source, accepted_after_failures.",
+        "lab_id": "lab_soc_log_parse",
+        "quiz": [
+          {
+            "id": "soc-w1-1",
+            "kind": "mcq",
+            "stem": "Which address in the fixture has the most failed logins?",
+            "choices": [
+              "203.0.113.45",
+              "198.51.100.7",
+              "192.0.2.10",
+              "10.0.0.1"
+            ],
+            "answer_index": 0,
+            "explanation": "three failures"
+          },
+          {
+            "id": "soc-w1-2",
+            "kind": "mcq",
+            "stem": "Why does the root success from 203.0.113.45 need escalation?",
+            "choices": [
+              "It follows a run of failures from the same source",
+              "Root logins are always forbidden by law",
+              "It came from a documentation range",
+              "It used a public key"
+            ],
+            "answer_index": 0,
+            "explanation": "success after failures"
+          },
+          {
+            "id": "soc-w1-3",
+            "kind": "mcq",
+            "stem": "Naiya fails once just after a key login from her own address. How do you treat it?",
+            "choices": [
+              "Note it as likely noise and move on",
+              "Lock every account",
+              "Escalate as a breach",
+              "Delete the line"
+            ],
+            "answer_index": 0,
+            "explanation": "context"
+          },
+          {
+            "id": "soc-w1-4",
+            "kind": "mcq",
+            "stem": "What should never happen with a live customer log during triage?",
+            "choices": [
+              "Pasting it into an outside chat tool",
+              "Reading it on the SIEM",
+              "Counting its failures",
+              "Saving it in the case"
+            ],
+            "answer_index": 0,
+            "explanation": "data handling"
+          },
+          {
+            "id": "soc-w1-5",
+            "kind": "mcq",
+            "stem": "Which part of a log line tells you the remote address?",
+            "choices": [
+              "The 'from … port' clause",
+              "The process ID",
+              "The hostname bastion",
+              "The month"
+            ],
+            "answer_index": 0,
+            "explanation": "anatomy"
+          },
+          {
+            "id": "soc-w1-6",
+            "kind": "mcq",
+            "stem": "Why do the course logs use addresses like 198.51.100.7?",
+            "choices": [
+              "They are reserved documentation ranges",
+              "They belong to the course host",
+              "They are random",
+              "They are IPv6"
+            ],
+            "answer_index": 0,
+            "explanation": "RFC 5737"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Windowed detection — a threshold means nothing without a clock",
+        "lesson": "SOC-2202 asks you to turn last night's eyeballing into a rule the SIEM can run. 'Four failed logins' is not a rule until you say within how long. The fixture lists eleven failures with second offsets. With a threshold of four inside a sixty-second sliding window, 203.0.113.45 fires at second 70: the failures at 20, 50, 65 and 70 all sit within sixty seconds of each other, while the first one at second 0 has already aged out. 198.51.100.7 never fires, because its attempts at 200, 230, 250 and 265 span sixty-five seconds, one heartbeat too slow. Widen the window to ninety seconds and that address alerts at 265 as well. Neither choice is free. A wider window catches slow guessing and also pulls in people who mistype their passwords on a cold morning. Write the threshold and window into the rule's description so the next analyst can reason about a miss, and replay the rule against stored events before you switch it on. The lab grader replays your parameters, so it rejects an alert list that would only be true for a different window.",
+        "worked_example": "threshold 4 in 60 s → 203.0.113.45 fires at t=70 (events 20, 50, 65, 70); 198.51.100.7 does not; widen to 90 s → it fires at 265",
+        "assignment": "Submit lab_soc_window_rule JSON for SOC-2202: threshold, window_s, and the alerts your rule fires.",
+        "lab_id": "lab_soc_window_rule",
+        "quiz": [
+          {
+            "id": "soc-w2-1",
+            "kind": "mcq",
+            "stem": "With 4-in-60 s, when does 203.0.113.45 first alert?",
+            "choices": [
+              "At second 70",
+              "At second 50",
+              "At second 0",
+              "Never"
+            ],
+            "answer_index": 0,
+            "explanation": "20,50,65,70"
+          },
+          {
+            "id": "soc-w2-2",
+            "kind": "mcq",
+            "stem": "Why does 198.51.100.7 stay quiet under 4-in-60 s?",
+            "choices": [
+              "Its four attempts span 65 seconds",
+              "It has only two failures",
+              "It is allow-listed",
+              "Its logins succeeded"
+            ],
+            "answer_index": 0,
+            "explanation": "window edge"
+          },
+          {
+            "id": "soc-w2-3",
+            "kind": "mcq",
+            "stem": "What does widening the window to 90 s trade away?",
+            "choices": [
+              "More false positives from ordinary typos",
+              "All detection",
+              "Log retention",
+              "Nothing"
+            ],
+            "answer_index": 0,
+            "explanation": "trade-off"
+          },
+          {
+            "id": "soc-w2-4",
+            "kind": "mcq",
+            "stem": "What makes 'four failed logins' an actual rule?",
+            "choices": [
+              "Stating the time window it counts within",
+              "Writing it in capitals",
+              "Adding a severity",
+              "Sending it by email"
+            ],
+            "answer_index": 0,
+            "explanation": "window"
+          },
+          {
+            "id": "soc-w2-5",
+            "kind": "mcq",
+            "stem": "Before enabling a new rule, what should you do?",
+            "choices": [
+              "Replay it against stored events",
+              "Enable it on every host blind",
+              "Delete old alerts",
+              "Disable logging"
+            ],
+            "answer_index": 0,
+            "explanation": "backtest"
+          },
+          {
+            "id": "soc-w2-6",
+            "kind": "mcq",
+            "stem": "Where should the threshold and window be documented?",
+            "choices": [
+              "In the rule description",
+              "Only in your memory",
+              "In a sticky note",
+              "Nowhere"
+            ],
+            "answer_index": 0,
+            "explanation": "maintainability"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Detection quality — precision, recall, and the analyst's hour",
+        "lesson": "SOC-2303 is a NO_AI week: do the fractions on paper and show each line, because these four numbers decide whether a rule stays on. A month of the brute-force rule produced 60 alerts. Eighteen were real attacks, true positives, and forty-two were not, false positives. Six real attacks slipped through without an alert, false negatives, and 934 quiet events were correctly left alone. Precision asks how often an alert is worth opening: 18 out of 60, or 0.30. Recall asks how many real attacks the rule caught: 18 out of 24, or 0.75. The false-positive rate compares wrong alerts with all benign events, 42 out of 976, about 0.043, which sounds tiny and still costs forty-two investigations. At ten minutes each that is seven analyst-hours spent proving nothing happened. A precision under one half means most alerts are noise, so the honest call is needs tuning, not 'the rule works'. Tuning that raises precision often lowers recall, so record both before and after a change, and never report recall alone because it flatters a noisy rule.",
+        "worked_example": "TP 18, FP 42, FN 6, TN 934 → precision 18/60 = 0.30, recall 18/24 = 0.75, FPR 42/976 = 0.043 → needs tuning",
+        "assignment": "Submit lab_soc_detection_metrics JSON for SOC-2303 (NO_AI): precision, recall, false_positive_rate, alerts, needs_tuning.",
+        "lab_id": "lab_soc_detection_metrics",
+        "quiz": [
+          {
+            "id": "soc-w3-1",
+            "kind": "mcq",
+            "stem": "Sixty alerts, eighteen real. What is precision?",
+            "choices": [
+              "0.30",
+              "0.75",
+              "0.043",
+              "0.18"
+            ],
+            "answer_index": 0,
+            "explanation": "18/60"
+          },
+          {
+            "id": "soc-w3-2",
+            "kind": "mcq",
+            "stem": "Twenty-four real attacks, eighteen alerted. What is recall?",
+            "choices": [
+              "0.75",
+              "0.30",
+              "0.25",
+              "0.82"
+            ],
+            "answer_index": 0,
+            "explanation": "18/24"
+          },
+          {
+            "id": "soc-w3-3",
+            "kind": "mcq",
+            "stem": "Why is a 0.043 false-positive rate still expensive here?",
+            "choices": [
+              "It means 42 investigations that find nothing",
+              "It is above 50%",
+              "It hides true positives",
+              "It breaks the SIEM"
+            ],
+            "answer_index": 0,
+            "explanation": "volume"
+          },
+          {
+            "id": "soc-w3-4",
+            "kind": "mcq",
+            "stem": "Which single metric flatters a noisy rule?",
+            "choices": [
+              "Recall reported alone",
+              "Precision",
+              "False-negative count",
+              "Alert volume"
+            ],
+            "answer_index": 0,
+            "explanation": "one-sided"
+          },
+          {
+            "id": "soc-w3-5",
+            "kind": "mcq",
+            "stem": "What usually happens to recall when you tighten a rule for precision?",
+            "choices": [
+              "It tends to fall",
+              "It always rises",
+              "It is unaffected",
+              "It becomes undefined"
+            ],
+            "answer_index": 0,
+            "explanation": "trade-off"
+          },
+          {
+            "id": "soc-w3-6",
+            "kind": "mcq",
+            "stem": "Precision is 0.30. What is the honest call?",
+            "choices": [
+              "The rule needs tuning",
+              "The rule is excellent",
+              "Disable logging",
+              "Raise recall to 1.0 by alerting on everything"
+            ],
+            "answer_index": 0,
+            "explanation": "<0.5"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Indicator hygiene — hash it, defang it, then compare",
+        "lesson": "SOC-2404 arrives with a suspicious attachment name and a link from a user report. Indicators of compromise are only useful if you can compare them exactly and pass them around safely. For files that means a cryptographic hash: SHA-256 turns any sequence of bytes into a 64-character fingerprint, and a single changed byte produces an unrelated digest, so the lab recomputes the hash from the inert sample text instead of trusting a pasted value. For links it means defanging before the indicator goes into a ticket, chat, or report: write hxxp instead of http and bracket every dot in the host, so update-check.example.net becomes update-check[.]example[.]net and nobody's mail client turns it into a clickable trap. Only after both steps do you check the desk's indicator list. Here the sample hash and the domain are both on it, so the answer is a match and the ticket goes to the phishing playbook. A miss does not mean safe, it means unknown, and the course's sample is inert text, never real malware, so nobody downloads or detonates anything on a personal laptop.",
+        "worked_example": "sha256('WAIKE-SOC training sample: …') = fc6c0f88…e657; http://update-check.example.net/payload → hxxp://update-check[.]example[.]net/payload; on IOC list → match",
+        "assignment": "Submit lab_soc_ioc_match JSON for SOC-2404: sample_text, sha256, url, defanged_url, ioc_match.",
+        "lab_id": "lab_soc_ioc_match",
+        "quiz": [
+          {
+            "id": "soc-w4-1",
+            "kind": "mcq",
+            "stem": "Why does the grader recompute the SHA-256 rather than trust the ticket?",
+            "choices": [
+              "One changed byte gives an unrelated digest",
+              "Hashes expire",
+              "SHA-256 is reversible",
+              "It is faster"
+            ],
+            "answer_index": 0,
+            "explanation": "exact match"
+          },
+          {
+            "id": "soc-w4-2",
+            "kind": "mcq",
+            "stem": "How is http://update-check.example.net written after defanging?",
+            "choices": [
+              "hxxp://update-check[.]example[.]net",
+              "http://update-check.example.net",
+              "update-check dot example",
+              "https://update-check.example.net"
+            ],
+            "answer_index": 0,
+            "explanation": "defang"
+          },
+          {
+            "id": "soc-w4-3",
+            "kind": "mcq",
+            "stem": "Why defang a URL before posting it in a ticket?",
+            "choices": [
+              "So no client renders it as a clickable link",
+              "To encrypt it",
+              "To shorten it",
+              "Because tickets reject dots"
+            ],
+            "answer_index": 0,
+            "explanation": "safety"
+          },
+          {
+            "id": "soc-w4-4",
+            "kind": "mcq",
+            "stem": "An indicator is not on the list. What does that mean?",
+            "choices": [
+              "Unknown, not proven safe",
+              "Definitely safe",
+              "Definitely malicious",
+              "The list is broken"
+            ],
+            "answer_index": 0,
+            "explanation": "absence"
+          },
+          {
+            "id": "soc-w4-5",
+            "kind": "mcq",
+            "stem": "What is the course's attachment sample?",
+            "choices": [
+              "Inert text standing in for a file",
+              "Live malware",
+              "A real customer invoice",
+              "An exploit kit"
+            ],
+            "answer_index": 0,
+            "explanation": "boundary"
+          },
+          {
+            "id": "soc-w4-6",
+            "kind": "mcq",
+            "stem": "How long is a SHA-256 hex digest?",
+            "choices": [
+              "64 characters",
+              "32 characters",
+              "40 characters",
+              "128 characters"
+            ],
+            "answer_index": 0,
+            "explanation": "256 bits"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "ATT&CK mapping — describe behaviour, not villains",
+        "lesson": "SOC-2505 gives the desk five behaviours seen this week and asks for a shared vocabulary. MITRE ATT&CK is a public catalogue of attacker techniques, each with an ID and one or more tactics that say what the attacker was trying to achieve. Many failed SSH logins from one address are T1110, Brute Force, under credential access. A never-before-seen account logging in at three in the morning with a correct password is T1078, Valid Accounts, which ATT&CK lists under several tactics because stolen credentials help an intruder get in, stay in, and blend in. A spoofed invoice attachment is T1566, Phishing, under initial access. PowerShell launched with an encoded command line is T1059, Command and Scripting Interpreter, under execution, and files renamed with a .locked suffix beside a ransom note are T1486, Data Encrypted for Impact. Mapping lets the day shift, the detection engineers, and management talk about the same thing. It does not tell you who did it. Plenty of groups use the same techniques, so the lab requires actor_attribution_claim to stay false.",
+        "worked_example": "B1 brute force → T1110 credential_access; B3 spoofed invoice → T1566 initial_access; B5 .locked files → T1486 impact; actor_attribution_claim false",
+        "assignment": "Submit lab_soc_attack_map JSON for SOC-2505: technique ID and tactic for B1–B5, actor_attribution_claim false.",
+        "lab_id": "lab_soc_attack_map",
+        "quiz": [
+          {
+            "id": "soc-w5-1",
+            "kind": "mcq",
+            "stem": "Many failed SSH logins from one source map to which technique?",
+            "choices": [
+              "T1110 Brute Force",
+              "T1566 Phishing",
+              "T1486 Data Encrypted for Impact",
+              "T1059 Command and Scripting Interpreter"
+            ],
+            "answer_index": 0,
+            "explanation": "brute force"
+          },
+          {
+            "id": "soc-w5-2",
+            "kind": "mcq",
+            "stem": "Why does T1078 Valid Accounts appear under several tactics?",
+            "choices": [
+              "Stolen credentials help an intruder enter, persist, and evade",
+              "It is mislabelled",
+              "Tactics are random",
+              "It only applies to admins"
+            ],
+            "answer_index": 0,
+            "explanation": "multi-tactic"
+          },
+          {
+            "id": "soc-w5-3",
+            "kind": "mcq",
+            "stem": "Files renamed .locked with a ransom note map to?",
+            "choices": [
+              "T1486 under impact",
+              "T1110 under credential access",
+              "T1566 under initial access",
+              "T1078 under persistence"
+            ],
+            "answer_index": 0,
+            "explanation": "impact"
+          },
+          {
+            "id": "soc-w5-4",
+            "kind": "mcq",
+            "stem": "Why must actor_attribution_claim stay false?",
+            "choices": [
+              "Many groups share the same techniques",
+              "ATT&CK forbids naming groups",
+              "Attribution is always obvious",
+              "Tactics prove identity"
+            ],
+            "answer_index": 0,
+            "explanation": "technique ≠ actor"
+          },
+          {
+            "id": "soc-w5-5",
+            "kind": "mcq",
+            "stem": "PowerShell with an encoded command maps to which tactic?",
+            "choices": [
+              "Execution",
+              "Impact",
+              "Collection",
+              "Reconnaissance"
+            ],
+            "answer_index": 0,
+            "explanation": "T1059"
+          },
+          {
+            "id": "soc-w5-6",
+            "kind": "mcq",
+            "stem": "What is the main benefit of ATT&CK mapping on a desk?",
+            "choices": [
+              "A shared vocabulary across teams",
+              "Automatic blocking",
+              "Legal proof",
+              "Faster hashing"
+            ],
+            "answer_index": 0,
+            "explanation": "common language"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Email authentication — passing is not the same as aligned",
+        "lesson": "SOC-2606 compares two invoices that both claim to come from Harbor Pay. SPF checks whether the sending server is allowed to send for the envelope's return-path domain. DKIM checks a signature made with a key published by the domain in the signature's d= tag. Both can pass for a domain that has nothing to do with the address the reader sees in the From line. DMARC closes that gap with alignment: at least one passing check must belong to the same organisational domain as the visible From address. Under relaxed alignment, subdomains count, so in message A the From address mail.harborpay.example, the return path bounce.harborpay.example, and the DKIM domain harborpay.example all share harborpay.example, and DMARC passes. Message B also shows SPF pass and DKIM pass, but both checks vouch for bulk-sender.example while the From line says harborpay.example, so DMARC fails. That is exactly the shape of a convincing spoof, and a user who sees 'SPF pass' in a header viewer will be fooled unless someone on the desk explains alignment.",
+        "worked_example": "A: From mail.harborpay.example, SPF via bounce.harborpay.example, DKIM d=harborpay.example → aligned → DMARC pass; B: From harborpay.example, SPF/DKIM pass for bulk-sender.example → not aligned → DMARC fail",
+        "assignment": "Submit lab_soc_dmarc_align JSON for SOC-2606: spf_aligned, dkim_aligned, dmarc_pass for messages A and B.",
+        "lab_id": "lab_soc_dmarc_align",
+        "quiz": [
+          {
+            "id": "soc-w6-1",
+            "kind": "mcq",
+            "stem": "Message B passes SPF and DKIM. Why does DMARC still fail?",
+            "choices": [
+              "Neither passing check belongs to the From domain",
+              "DKIM keys expired",
+              "SPF is optional",
+              "The message is too long"
+            ],
+            "answer_index": 0,
+            "explanation": "alignment"
+          },
+          {
+            "id": "soc-w6-2",
+            "kind": "mcq",
+            "stem": "What does DKIM's d= tag name?",
+            "choices": [
+              "The domain whose key signed the message",
+              "The recipient",
+              "The mail server IP",
+              "The DMARC policy"
+            ],
+            "answer_index": 0,
+            "explanation": "signing domain"
+          },
+          {
+            "id": "soc-w6-3",
+            "kind": "mcq",
+            "stem": "Under relaxed alignment, does mail.harborpay.example align with harborpay.example?",
+            "choices": [
+              "Yes, they share the organisational domain",
+              "No, subdomains never align",
+              "Only for SPF",
+              "Only on weekends"
+            ],
+            "answer_index": 0,
+            "explanation": "relaxed"
+          },
+          {
+            "id": "soc-w6-4",
+            "kind": "mcq",
+            "stem": "SPF authorises a server to send for which domain?",
+            "choices": [
+              "The envelope return-path domain",
+              "The visible From domain only",
+              "Any domain",
+              "The recipient's domain"
+            ],
+            "answer_index": 0,
+            "explanation": "envelope"
+          },
+          {
+            "id": "soc-w6-5",
+            "kind": "mcq",
+            "stem": "For DMARC to pass, how many aligned passing checks are needed?",
+            "choices": [
+              "At least one of SPF or DKIM",
+              "Both",
+              "Neither",
+              "Three"
+            ],
+            "answer_index": 0,
+            "explanation": "either"
+          },
+          {
+            "id": "soc-w6-6",
+            "kind": "mcq",
+            "stem": "Why must the desk explain alignment to users?",
+            "choices": [
+              "'SPF pass' alone can make a spoof look trustworthy",
+              "Users configure DNS",
+              "Alignment is a user setting",
+              "It speeds delivery"
+            ],
+            "answer_index": 0,
+            "explanation": "user education"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "CVSS v3.1 by hand — from vector string to severity band",
+        "lesson": "SOC-2707 is the second NO_AI week, because a desk that only reads scores off a website cannot defend them in a patch meeting. The FIRST CVSS v3.1 base score turns eight metrics into a number. Impact starts from the confidentiality, integrity, and availability weights, 0.56 for High, 0.22 for Low, 0 for None, combined as ISS = 1 − (1 − C)(1 − I)(1 − A). For an unchanged scope, impact is 6.42 × ISS. Exploitability is 8.22 × attack vector × attack complexity × privileges required × user interaction, where a network vector weighs 0.85 and low complexity 0.77. For the familiar AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H vector, ISS is about 0.9148, impact about 5.873, exploitability about 3.887, and their sum rounds up to 9.8, Critical. Roundup means the next tenth upward, not the nearest, which is where hand scorers slip. A local, low-privilege flaw that only leaks data, AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N, lands at 5.5, Medium. The base score describes the flaw, not your network; asset value enters next week.",
+        "worked_example": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H → ISS 0.9148, impact 5.873, exploitability 3.887 → Roundup 9.8 Critical; AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N → 5.5 Medium",
+        "assignment": "Submit lab_soc_cvss_score JSON for SOC-2707 (NO_AI): at least two vectors with base_score and severity.",
+        "lab_id": "lab_soc_cvss_score",
+        "quiz": [
+          {
+            "id": "soc-w7-1",
+            "kind": "mcq",
+            "stem": "What base score does AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H receive?",
+            "choices": [
+              "9.8",
+              "10.0",
+              "8.8",
+              "7.5"
+            ],
+            "answer_index": 0,
+            "explanation": "classic critical"
+          },
+          {
+            "id": "soc-w7-2",
+            "kind": "mcq",
+            "stem": "How does CVSS v3.1 Roundup treat 5.41?",
+            "choices": [
+              "It becomes 5.5",
+              "It becomes 5.4",
+              "It becomes 5.0",
+              "It becomes 6.0"
+            ],
+            "answer_index": 0,
+            "explanation": "next tenth up"
+          },
+          {
+            "id": "soc-w7-3",
+            "kind": "mcq",
+            "stem": "Which weight does High confidentiality impact use?",
+            "choices": [
+              "0.56",
+              "0.22",
+              "0.85",
+              "0.77"
+            ],
+            "answer_index": 0,
+            "explanation": "C:H"
+          },
+          {
+            "id": "soc-w7-4",
+            "kind": "mcq",
+            "stem": "For unchanged scope, impact equals what?",
+            "choices": [
+              "6.42 × ISS",
+              "7.52 × ISS",
+              "8.22 × ISS",
+              "ISS squared"
+            ],
+            "answer_index": 0,
+            "explanation": "scope U"
+          },
+          {
+            "id": "soc-w7-5",
+            "kind": "mcq",
+            "stem": "A score of 5.5 falls in which band?",
+            "choices": [
+              "Medium",
+              "Low",
+              "High",
+              "Critical"
+            ],
+            "answer_index": 0,
+            "explanation": "4.0–6.9"
+          },
+          {
+            "id": "soc-w7-6",
+            "kind": "mcq",
+            "stem": "What does the base score not include?",
+            "choices": [
+              "How valuable the affected asset is to you",
+              "Attack vector",
+              "Privileges required",
+              "Impact on integrity"
+            ],
+            "answer_index": 0,
+            "explanation": "base vs context"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Triage queue — severity meets asset criticality",
+        "lesson": "SOC-2808 hands you six open alerts at once and one pair of hands. Severity alone is a poor sort key, because a critical alert on a lobby kiosk can matter less than a high alert on the domain controller. The desk multiplies a severity weight, four for critical down to one for low, by the asset's criticality from one to three. A5, critical on a criticality-three server, scores twelve and goes first. A1, high on criticality three, scores nine. A3 and A6 both score six, so the earlier arrival, A3 at minute two, goes ahead of A6 at minute eight. A2, the critical alert on a criticality-one kiosk, scores four, and A4 scores three. Each alert also gets a due time: the minute it arrived plus the service-level target for its severity, fifteen minutes for critical, an hour for high, four hours for medium, a day for low. That puts A2's due time at minute 27 even though it sits fifth in the queue, which is a signal to ask for help rather than quietly breach the target. A queue is a plan you can explain to the shift lead, not a mood.",
+        "worked_example": "priority = severity weight × criticality: A5 12, A1 9, A3 6 (t=2), A6 6 (t=8), A2 4, A4 3; due = received + SLA (critical 15, high 60, medium 240, low 1440)",
+        "assignment": "Submit lab_soc_triage_queue JSON for SOC-2808: ordered_ids and due_min for A1–A6.",
+        "lab_id": "lab_soc_triage_queue",
+        "quiz": [
+          {
+            "id": "soc-w8-1",
+            "kind": "mcq",
+            "stem": "Which alert goes first under severity × criticality?",
+            "choices": [
+              "A5",
+              "A2",
+              "A1",
+              "A3"
+            ],
+            "answer_index": 0,
+            "explanation": "12"
+          },
+          {
+            "id": "soc-w8-2",
+            "kind": "mcq",
+            "stem": "Why does A2, a critical alert, rank fifth?",
+            "choices": [
+              "It sits on a criticality-one kiosk",
+              "It arrived first",
+              "Critical alerts are ignored",
+              "It is a duplicate"
+            ],
+            "answer_index": 0,
+            "explanation": "asset value"
+          },
+          {
+            "id": "soc-w8-3",
+            "kind": "mcq",
+            "stem": "A3 and A6 tie at six. What breaks the tie?",
+            "choices": [
+              "Earlier arrival",
+              "Alphabetical order",
+              "Random choice",
+              "Higher severity always"
+            ],
+            "answer_index": 0,
+            "explanation": "time"
+          },
+          {
+            "id": "soc-w8-4",
+            "kind": "mcq",
+            "stem": "When is A2 due if it arrived at minute 12?",
+            "choices": [
+              "Minute 27",
+              "Minute 72",
+              "Minute 252",
+              "Minute 12"
+            ],
+            "answer_index": 0,
+            "explanation": "12 + 15"
+          },
+          {
+            "id": "soc-w8-5",
+            "kind": "mcq",
+            "stem": "A low-priority alert's due time will pass before you reach it. What should you do?",
+            "choices": [
+              "Ask the shift lead for help",
+              "Close it silently",
+              "Change its received time",
+              "Ignore the SLA"
+            ],
+            "answer_index": 0,
+            "explanation": "escalate capacity"
+          },
+          {
+            "id": "soc-w8-6",
+            "kind": "mcq",
+            "stem": "What makes a triage queue defensible?",
+            "choices": [
+              "A stated sort rule you can explain",
+              "Gut feeling",
+              "Newest first always",
+              "Loudest requester first"
+            ],
+            "answer_index": 0,
+            "explanation": "explainable"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Shift metrics — MTTD, MTTR, and the median that resists one bad night",
+        "lesson": "SOC-2909 asks how the week went, in numbers management will read. Mean time to detect is the average gap between when something happened and when the desk noticed. The four incidents took 12, 45, 5 and 70 minutes to detect, so MTTD is 33 minutes. Mean time to resolve, measured here from detection to resolution, averages 78, 65, 35 and 150 minutes to 82. Define the start and end points in the report, because some teams measure resolution from occurrence and their numbers are not comparable with yours. One slow detection, the seventy-minute ransomware case, pulls the mean up; the median of the four detection times is 28.5 minutes and tells a steadier story about a typical night. Report both, and name the outlier instead of hiding it, since that is the incident the next tuning effort should study. Four incidents are a tiny sample. A dashboard that celebrates a five-minute drop in MTTD between two such weeks is reporting noise, so the course asks for the numbers and a sentence about how much they can bear.",
+        "worked_example": "time to detect = 12, 45, 5, 70 min → MTTD 33, median 28.5; time to resolve from detection = 78, 65, 35, 150 → MTTR 82",
+        "assignment": "Submit lab_soc_shift_metrics JSON for SOC-2909: mttd_min, mttr_min, median_ttd_min.",
+        "lab_id": "lab_soc_shift_metrics",
+        "quiz": [
+          {
+            "id": "soc-w9-1",
+            "kind": "mcq",
+            "stem": "Detection gaps are 12, 45, 5, 70 minutes. What is MTTD?",
+            "choices": [
+              "33 minutes",
+              "28.5 minutes",
+              "45 minutes",
+              "132 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "mean"
+          },
+          {
+            "id": "soc-w9-2",
+            "kind": "mcq",
+            "stem": "What is the median time to detect for the same four gaps?",
+            "choices": [
+              "28.5 minutes",
+              "33 minutes",
+              "25 minutes",
+              "37.5 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "middle pair"
+          },
+          {
+            "id": "soc-w9-3",
+            "kind": "mcq",
+            "stem": "Why report the median beside the mean?",
+            "choices": [
+              "One slow case can pull the mean up",
+              "The median is always larger",
+              "Means are illegal",
+              "Medians include resolution"
+            ],
+            "answer_index": 0,
+            "explanation": "outliers"
+          },
+          {
+            "id": "soc-w9-4",
+            "kind": "mcq",
+            "stem": "Why define where MTTR starts?",
+            "choices": [
+              "Teams measure from different events, so numbers differ",
+              "MTTR never changes",
+              "It is set by law",
+              "It hides incidents"
+            ],
+            "answer_index": 0,
+            "explanation": "comparability"
+          },
+          {
+            "id": "soc-w9-5",
+            "kind": "mcq",
+            "stem": "Resolution times 78, 65, 35, 150 minutes give what MTTR?",
+            "choices": [
+              "82 minutes",
+              "71.5 minutes",
+              "150 minutes",
+              "65 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "mean"
+          },
+          {
+            "id": "soc-w9-6",
+            "kind": "mcq",
+            "stem": "A five-minute MTTD drop across two four-incident weeks shows what?",
+            "choices": [
+              "Probably noise in a tiny sample",
+              "A proven improvement",
+              "A broken SIEM",
+              "A need to fire analysts"
+            ],
+            "answer_index": 0,
+            "explanation": "sample size"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Shift handoff — open incidents, NIST phases, and clean boundaries",
+        "lesson": "SOC-2A10 closes the night. A handoff is the document the day shift reads with its first coffee, so it must be complete without you in the room. List every open incident with its ATT&CK technique ID, the NIST SP 800-61 phase it is in, and a named next owner. The phases are preparation, detection and analysis, containment with eradication and recovery, and post-incident activity; saying 'containment' tells the reader which actions are already done and which are waiting. Carry the shift's MTTD and MTTR from last week's calculation rather than rounding them in your head, and say what changed in the rules you tuned. Two boundaries close every Night Shift Desk packet. It contains no real customer data, only the course's synthetic logs and documentation addresses, and it contains no offensive tooling: the desk detects, contains, and documents; it does not build exploits or scan systems it does not own. Mentors check the packet against six or more passed labs and ask you to walk one incident from first log line to current phase out loud.",
+        "worked_example": "I4 open: T1486, containment_eradication_recovery, next owner day-shift lead; MTTD 33, MTTR 82; real_customer_data false; offensive_tooling false",
+        "assignment": "Submit lab_soc_shift_handoff JSON for SOC-2A10: labs_passed, open incidents with technique/phase/owner, MTTD/MTTR, boundaries.",
+        "lab_id": "lab_soc_shift_handoff",
+        "quiz": [
+          {
+            "id": "soc-w10-1",
+            "kind": "mcq",
+            "stem": "What must every open incident in a handoff carry?",
+            "choices": [
+              "Technique ID, NIST phase, and a next owner",
+              "Only a title",
+              "The analyst's mood",
+              "A screenshot"
+            ],
+            "answer_index": 0,
+            "explanation": "complete"
+          },
+          {
+            "id": "soc-w10-2",
+            "kind": "mcq",
+            "stem": "Which of these is a NIST SP 800-61 phase?",
+            "choices": [
+              "Containment, eradication, and recovery",
+              "Revenge",
+              "Marketing",
+              "Exploit development"
+            ],
+            "answer_index": 0,
+            "explanation": "phases"
+          },
+          {
+            "id": "soc-w10-3",
+            "kind": "mcq",
+            "stem": "Why carry MTTD and MTTR from the calculation rather than memory?",
+            "choices": [
+              "Rounded guesses drift from the record",
+              "Memory is always right",
+              "The SIEM forbids it",
+              "They never change"
+            ],
+            "answer_index": 0,
+            "explanation": "traceable"
+          },
+          {
+            "id": "soc-w10-4",
+            "kind": "mcq",
+            "stem": "What does 'no offensive tooling' mean for the desk?",
+            "choices": [
+              "It detects and contains; it does not build exploits or scan others",
+              "It may scan any network",
+              "It writes malware for practice",
+              "It ignores attacks"
+            ],
+            "answer_index": 0,
+            "explanation": "defensive"
+          },
+          {
+            "id": "soc-w10-5",
+            "kind": "mcq",
+            "stem": "Who reads the handoff first?",
+            "choices": [
+              "The incoming shift",
+              "The attacker",
+              "Only auditors",
+              "Nobody"
+            ],
+            "answer_index": 0,
+            "explanation": "audience"
+          },
+          {
+            "id": "soc-w10-6",
+            "kind": "mcq",
+            "stem": "During review a mentor asks for what walk-through?",
+            "choices": [
+              "One incident from first log line to current phase",
+              "The entire SIEM config",
+              "Every quiz answer",
+              "A vendor demo"
+            ],
+            "answer_index": 0,
+            "explanation": "oral check"
+          }
+        ]
+      }
+    ]
+  },
+  "DIGITAL_CONFIDENCE": {
+    "course_id": "DIGITAL_CONFIDENCE",
+    "title": "Digital Confidence to Computer Operator — Library Lab",
+    "track_ids": [
+      "DIGITAL_CONFIDENCE"
+    ],
+    "academy_id": "ACADEMY_IT",
+    "kinesthetic_hook": "Ten Library Lab help-desk cards: find the file → read the drive label → judge a password → read a link → build a budget sheet → measure typing → fit an attachment → plan backups → check screen contrast → write a safety plan.",
+    "syllabus_hook": "DIGITAL_CONFIDENCE COURSE_DIGITAL_RC: first-computer confidence for adult and teen learners at a library lab — paths and folders, storage units, password strength, link reading, spreadsheet formulas, keyboard fluency, attachments, 3-2-1 backups, and readable screens. Practice data only. Distinct from GENERAL_IT, which trains support specialists. Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "computer_operator_entry",
+        "library_digital_navigator_volunteer",
+        "office_assistant_digital"
+      ],
+      "nice_categories": [
+        "operate_and_maintain"
+      ],
+      "certs_aligned_not_granted": [
+        "NIST SP 800-63B password guidance (PUBLIC_REFERENCE_ONLY)",
+        "W3C WCAG 2.2 contrast criteria (PUBLIC_REFERENCE_ONLY)",
+        "CISA Secure Our World habits (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        2,
+        6
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Folders and paths — knowing where a file really lives",
+        "lesson": "Help card DCO-3101: Ana saved a summer photo and the file dialog now says 'not found'. Every file has an address called a path, written from the top of the drive down through folders, like /home/ana/Documents/photos/summer.jpg. That full form is an absolute path because it starts at the root, the single slash. Programs also accept relative paths that start from wherever you are standing, called the current working directory. Two dots mean the folder above, and a single dot means here. Standing in /home/ana/Documents/letters, the relative path ../photos/2026/../summer.jpg climbs out of letters into Documents, steps into photos and into 2026, then climbs back out of 2026, landing on /home/ana/Documents/photos/summer.jpg. Walk it with your finger on a drawn tree before trusting it. Windows writes C:\\Users\\Ana\\Documents with backslashes and a drive letter, but the idea of climbing and descending is the same. When a file goes missing, ask two questions out loud: where am I standing, and which way does the path walk from here.",
+        "worked_example": "cwd /home/ana/Documents/letters + ../photos/2026/../summer.jpg → /home/ana/Documents/photos/summer.jpg",
+        "assignment": "Submit lab_dco_paths JSON for DCO-3101: two tasks with cwd, relative path, and resolved absolute path.",
+        "lab_id": "lab_dco_paths",
+        "quiz": [
+          {
+            "id": "dco-w1-1",
+            "kind": "mcq",
+            "stem": "What does '..' mean in a path?",
+            "choices": [
+              "The folder above the current one",
+              "The current folder",
+              "The home folder",
+              "A hidden file"
+            ],
+            "answer_index": 0,
+            "explanation": "parent"
+          },
+          {
+            "id": "dco-w1-2",
+            "kind": "mcq",
+            "stem": "Which path is absolute on Linux or macOS?",
+            "choices": [
+              "/home/ana/Documents",
+              "Documents/letters",
+              "../photos",
+              "./form.pdf"
+            ],
+            "answer_index": 0,
+            "explanation": "starts at root"
+          },
+          {
+            "id": "dco-w1-3",
+            "kind": "mcq",
+            "stem": "From /home/ana, where does ./Downloads/form.pdf point?",
+            "choices": [
+              "/home/ana/Downloads/form.pdf",
+              "/Downloads/form.pdf",
+              "/home/Downloads/form.pdf",
+              "/home/ana/form.pdf"
+            ],
+            "answer_index": 0,
+            "explanation": "dot = here"
+          },
+          {
+            "id": "dco-w1-4",
+            "kind": "mcq",
+            "stem": "Standing in /home/ana/Documents/letters, where does ../photos lead?",
+            "choices": [
+              "/home/ana/Documents/photos",
+              "/home/ana/photos",
+              "/photos",
+              "/home/ana/Documents/letters/photos"
+            ],
+            "answer_index": 0,
+            "explanation": "one level up"
+          },
+          {
+            "id": "dco-w1-5",
+            "kind": "mcq",
+            "stem": "What should you ask first when a file 'disappears'?",
+            "choices": [
+              "Where am I standing, and which way does the path walk?",
+              "Is the computer broken?",
+              "Should I reinstall?",
+              "Who deleted it?"
+            ],
+            "answer_index": 0,
+            "explanation": "orientation"
+          },
+          {
+            "id": "dco-w1-6",
+            "kind": "mcq",
+            "stem": "How does Windows usually separate folders in a path?",
+            "choices": [
+              "With backslashes after a drive letter",
+              "With commas",
+              "With spaces",
+              "With dots only"
+            ],
+            "answer_index": 0,
+            "explanation": "C:\\"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Storage units — why a 500 GB drive shows 465 GiB",
+        "lesson": "DCO-3202 is a NO_AI week; work the division on paper. A patron bought a '500 GB' drive and thinks the store cheated her because the computer shows about 465 GB. Nobody cheated. Drive makers count in powers of ten, so a gigabyte is 1,000,000,000 bytes. Many operating systems count in powers of two, where a gibibyte, GiB, is 1,073,741,824 bytes, and then label the result GB anyway. Divide 500,000,000,000 by 1,073,741,824 and you get about 465.66, the same drive described in a bigger unit. The same confusion bites when deciding whether something will fit. Her phone holds 1,200 photos at about 4.2 MB each, where MB means a million bytes, so the folder is 5.04 billion bytes. In the binary unit that is about 4.69 GiB, and the laptop says 4.5 GiB free. It will not fit, even though '5 GB into 4.5' felt close. Write the unit beside every number, convert both sides to the same unit before comparing, and leave room to spare, because a completely full disk makes most computers slow and unstable.",
+        "worked_example": "500 GB = 500×10^9 B = 465.66 GiB; 1,200 photos × 4.2 MB = 5.04×10^9 B = 4.694 GiB > 4.5 GiB free → does not fit",
+        "assignment": "Submit lab_dco_storage_units JSON for DCO-3202 (NO_AI): drive and photo sizes in GiB and the fit decision.",
+        "lab_id": "lab_dco_storage_units",
+        "quiz": [
+          {
+            "id": "dco-w2-1",
+            "kind": "mcq",
+            "stem": "How many bytes are in a decimal gigabyte?",
+            "choices": [
+              "1,000,000,000",
+              "1,073,741,824",
+              "1,024,000",
+              "8,000,000,000"
+            ],
+            "answer_index": 0,
+            "explanation": "10^9"
+          },
+          {
+            "id": "dco-w2-2",
+            "kind": "mcq",
+            "stem": "About how many GiB is a 500 GB drive?",
+            "choices": [
+              "465.66",
+              "500",
+              "512",
+              "476.8"
+            ],
+            "answer_index": 0,
+            "explanation": "÷ 2^30"
+          },
+          {
+            "id": "dco-w2-3",
+            "kind": "mcq",
+            "stem": "Why did the store not cheat the patron?",
+            "choices": [
+              "The same bytes are counted in a larger unit",
+              "Drives shrink with age",
+              "The operating system steals space",
+              "Labels are always wrong"
+            ],
+            "answer_index": 0,
+            "explanation": "units"
+          },
+          {
+            "id": "dco-w2-4",
+            "kind": "mcq",
+            "stem": "Twelve hundred photos at 4.2 MB each total about how many GiB?",
+            "choices": [
+              "4.69",
+              "5.04",
+              "4.20",
+              "50.4"
+            ],
+            "answer_index": 0,
+            "explanation": "5.04e9 / 2^30"
+          },
+          {
+            "id": "dco-w2-5",
+            "kind": "mcq",
+            "stem": "4.69 GiB of photos, 4.5 GiB free. Does it fit?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only on Tuesdays",
+              "Only compressed by the OS automatically"
+            ],
+            "answer_index": 0,
+            "explanation": "compare same unit"
+          },
+          {
+            "id": "dco-w2-6",
+            "kind": "mcq",
+            "stem": "Why leave spare space on a disk?",
+            "choices": [
+              "A full disk makes most computers slow and unstable",
+              "It wastes money",
+              "Space expires",
+              "It is required by law"
+            ],
+            "answer_index": 0,
+            "explanation": "headroom"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Passwords and passphrases — strength is length times choice",
+        "lesson": "DCO-3303 starts with a sticky note that says P@ssw0rd! and a question: is this strong? Strength depends on how the password was chosen, not on how it looks. If every character is picked at random from a pool, the number of possibilities is the pool size raised to the length, and we measure it in bits: length times log2 of the pool. Four words drawn at random from a 7,776-word dice list give about 51.7 bits. Eight characters drawn at random from the 95 printable keyboard symbols give about 52.6 bits. Twelve random lowercase letters give about 56.4 bits, stronger than either, because length grows strength faster than adding symbols. P@ssw0rd! scores far lower than its nine characters suggest, because guessing tools try dictionary words with common swaps first. The NIST digital identity guidance, SP 800-63B, favours long memorable secrets, checking them against lists of known-breached passwords, and changing them when there is evidence of compromise rather than on a fixed calendar. Use a different secret on every site, and let a password manager remember them.",
+        "worked_example": "4 diceware words: 4×log2(7776) = 51.70 bits; 8 random printable: 8×log2(95) = 52.56; 12 random lowercase: 12×log2(26) = 56.41",
+        "assignment": "Submit lab_dco_entropy JSON for DCO-3303: three schemes with pool, length, bits, the strongest, and the two policy flags.",
+        "lab_id": "lab_dco_entropy",
+        "quiz": [
+          {
+            "id": "dco-w3-1",
+            "kind": "mcq",
+            "stem": "How are password bits computed for random choices?",
+            "choices": [
+              "Length × log2(pool size)",
+              "Pool size + length",
+              "Number of symbols × 10",
+              "Length squared"
+            ],
+            "answer_index": 0,
+            "explanation": "entropy"
+          },
+          {
+            "id": "dco-w3-2",
+            "kind": "mcq",
+            "stem": "Which is strongest among the three examples?",
+            "choices": [
+              "Twelve random lowercase letters",
+              "Four diceware words",
+              "Eight random printable characters",
+              "P@ssw0rd!"
+            ],
+            "answer_index": 0,
+            "explanation": "56.4 bits"
+          },
+          {
+            "id": "dco-w3-3",
+            "kind": "mcq",
+            "stem": "Why is P@ssw0rd! weak despite symbols?",
+            "choices": [
+              "Guessers try dictionary words with common swaps first",
+              "It is too long",
+              "Symbols are illegal",
+              "It has no spaces"
+            ],
+            "answer_index": 0,
+            "explanation": "not random"
+          },
+          {
+            "id": "dco-w3-4",
+            "kind": "mcq",
+            "stem": "What does NIST SP 800-63B say about forced periodic changes?",
+            "choices": [
+              "Change on evidence of compromise, not a fixed calendar",
+              "Change every week",
+              "Never change passwords",
+              "Change on birthdays"
+            ],
+            "answer_index": 0,
+            "explanation": "rotation"
+          },
+          {
+            "id": "dco-w3-5",
+            "kind": "mcq",
+            "stem": "Why use a password manager?",
+            "choices": [
+              "It lets you keep a different secret on every site",
+              "It makes passwords shorter",
+              "It shares passwords with friends",
+              "It removes the need for any password"
+            ],
+            "answer_index": 0,
+            "explanation": "uniqueness"
+          },
+          {
+            "id": "dco-w3-6",
+            "kind": "mcq",
+            "stem": "Adding one random word to a four-word diceware phrase adds about how many bits?",
+            "choices": [
+              "About 12.9",
+              "About 1",
+              "About 51.7",
+              "Exactly 100"
+            ],
+            "answer_index": 0,
+            "explanation": "log2 7776"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Reading a link — the real address is at the right end",
+        "lesson": "DCO-3404 is a text message that says a bank account is locked and offers a link. Before tapping, read the address the way a computer does. Skip the https:// and stop at the first single slash after it; what sits between is the hostname. Read the hostname from the right end, label by label, because the rightmost labels say who owns it. In https://account.harborbank.example.verify-login.example.net/session the hostname is account.harborbank.example.verify-login.example.net, and its last two labels are example.net. The bank's name near the left is just decoration chosen by whoever owns example.net, which is not the bank. So the call is: do not open. Real organisations rarely ask you to log in from a message; type the bank's address yourself or use its app. Some country endings use three labels, such as .co.uk, so the rule 'last two labels' is a starting point, and the course's examples use the reserved .example endings so nobody is sent anywhere real. When unsure, show the message to the library desk rather than replying.",
+        "worked_example": "https://account.harborbank.example.verify-login.example.net/session → hostname ends in example.net → not harborbank.example → do not open",
+        "assignment": "Submit lab_dco_link_check JSON for DCO-3404: hostname, registered domain, and the safe_to_open decision.",
+        "lab_id": "lab_dco_link_check",
+        "quiz": [
+          {
+            "id": "dco-w4-1",
+            "kind": "mcq",
+            "stem": "Where does the hostname end in a web address?",
+            "choices": [
+              "At the first single slash after https://",
+              "At the first dot",
+              "At the end of the line",
+              "At the word 'login'"
+            ],
+            "answer_index": 0,
+            "explanation": "host boundary"
+          },
+          {
+            "id": "dco-w4-2",
+            "kind": "mcq",
+            "stem": "From which end do you read a hostname to find its owner?",
+            "choices": [
+              "The right end",
+              "The left end",
+              "The middle",
+              "Any end"
+            ],
+            "answer_index": 0,
+            "explanation": "right to left"
+          },
+          {
+            "id": "dco-w4-3",
+            "kind": "mcq",
+            "stem": "Who owns account.harborbank.example.verify-login.example.net?",
+            "choices": [
+              "Whoever owns example.net",
+              "Harbor Bank",
+              "The phone company",
+              "Nobody"
+            ],
+            "answer_index": 0,
+            "explanation": "registered domain"
+          },
+          {
+            "id": "dco-w4-4",
+            "kind": "mcq",
+            "stem": "A message asks you to log in through its link. Safer choice?",
+            "choices": [
+              "Type the organisation's address yourself or use its app",
+              "Tap quickly before it expires",
+              "Reply with your password",
+              "Forward it to friends"
+            ],
+            "answer_index": 0,
+            "explanation": "out-of-band"
+          },
+          {
+            "id": "dco-w4-5",
+            "kind": "mcq",
+            "stem": "Why does 'last two labels' need care for .co.uk addresses?",
+            "choices": [
+              "Some endings use three labels",
+              "UK addresses are illegal",
+              "Dots mean nothing",
+              "It always works"
+            ],
+            "answer_index": 0,
+            "explanation": "public suffix"
+          },
+          {
+            "id": "dco-w4-6",
+            "kind": "mcq",
+            "stem": "Why do course links end in .example?",
+            "choices": [
+              "The ending is reserved, so nobody is sent anywhere real",
+              "It is faster",
+              "It is a bank",
+              "It is encrypted"
+            ],
+            "answer_index": 0,
+            "explanation": "reserved"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Spreadsheet formulas — let the sheet do the arithmetic",
+        "lesson": "DCO-3505 is a monthly budget written on the back of an envelope that never adds up the same way twice. Move it into a spreadsheet: labels in column A, amounts in column B, one row per item. Rent is 650, food 240, the bus pass 55, the phone 35, and savings 120. Instead of typing the total, write =SUM(B2:B6) and the sheet answers 1,100, then keeps answering correctly when the phone bill changes. =AVERAGE(B2:B6) gives 220, the typical line, and =MAX(B2:B6) finds the largest amount, which belongs to rent. To see how much of the month food takes, divide its cell by the total cell, =B3/B7, and format the result as a percentage: about 21.82 percent. The habit worth keeping is that numbers you typed live in one place and every other number is a formula pointing at them. A total typed by hand goes stale the first time anything changes, and that is how budgets quietly stop matching reality. Save the file somewhere you will find it, with a name that says what and when.",
+        "worked_example": "rent 650, food 240, bus pass 55, phone 35, savings 120 → =SUM 1100, =AVERAGE 220, =MAX rent, food share =240/1100 = 21.82%",
+        "assignment": "Submit lab_dco_sheet_formulas JSON for DCO-3505: rows, total, average, largest item, and one share percentage.",
+        "lab_id": "lab_dco_sheet_formulas",
+        "quiz": [
+          {
+            "id": "dco-w5-1",
+            "kind": "mcq",
+            "stem": "What does =SUM(B2:B6) return for this budget?",
+            "choices": [
+              "1,100",
+              "220",
+              "650",
+              "5"
+            ],
+            "answer_index": 0,
+            "explanation": "sum"
+          },
+          {
+            "id": "dco-w5-2",
+            "kind": "mcq",
+            "stem": "Why use a formula instead of typing the total?",
+            "choices": [
+              "It stays correct when a row changes",
+              "It looks nicer",
+              "Typing is forbidden",
+              "Formulas are faster to print"
+            ],
+            "answer_index": 0,
+            "explanation": "single source"
+          },
+          {
+            "id": "dco-w5-3",
+            "kind": "mcq",
+            "stem": "What is food's share of the 1,100 total?",
+            "choices": [
+              "About 21.82%",
+              "About 24%",
+              "About 2.4%",
+              "About 45%"
+            ],
+            "answer_index": 0,
+            "explanation": "240/1100"
+          },
+          {
+            "id": "dco-w5-4",
+            "kind": "mcq",
+            "stem": "Which function finds the largest amount?",
+            "choices": [
+              "MAX",
+              "MIN",
+              "COUNT",
+              "AVERAGE"
+            ],
+            "answer_index": 0,
+            "explanation": "MAX"
+          },
+          {
+            "id": "dco-w5-5",
+            "kind": "mcq",
+            "stem": "What does =AVERAGE(B2:B6) give here?",
+            "choices": [
+              "220",
+              "1,100",
+              "240",
+              "130"
+            ],
+            "answer_index": 0,
+            "explanation": "1100/5"
+          },
+          {
+            "id": "dco-w5-6",
+            "kind": "mcq",
+            "stem": "What is the habit this week builds?",
+            "choices": [
+              "Typed inputs in one place, everything else a formula",
+              "Retype totals daily",
+              "Avoid spreadsheets",
+              "Use only percentages"
+            ],
+            "answer_index": 0,
+            "explanation": "habit"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Keyboard fluency — gross speed, net speed, accuracy",
+        "lesson": "DCO-3606 is a NO_AI week because it measures your own hands. Job applications and online forms reward people who can type steadily, so the library runs a five-minute practice passage. Typing speed is counted in words per minute, where a 'word' is defined as five characters, spaces included, so long and short words count fairly. Typing 1,250 characters in five minutes is 250 'words' over five minutes, a gross speed of 50 WPM. Mistakes left uncorrected are subtracted per minute: fifteen errors over five minutes costs three, so net speed is 47 WPM. Accuracy compares correct characters with all characters, 1,235 out of 1,250, or 98.8 percent. Most learners improve fastest by slowing down until accuracy stays near ninety-eight percent, then letting speed return, because unlearning a mistyped pattern takes longer than learning it right. Sit square to the keyboard, keep wrists level, and rest the index fingers on the small bumps on F and J. Record the three numbers each week rather than chasing a single best run.",
+        "worked_example": "1,250 characters in 5 minutes with 15 uncorrected errors → gross 50 WPM, net 47 WPM, accuracy 98.8%",
+        "assignment": "Submit lab_dco_typing_wpm JSON for DCO-3606 (NO_AI): chars, minutes, errors, gross_wpm, net_wpm, accuracy_pct.",
+        "lab_id": "lab_dco_typing_wpm",
+        "quiz": [
+          {
+            "id": "dco-w6-1",
+            "kind": "mcq",
+            "stem": "How many characters count as one word in WPM?",
+            "choices": [
+              "Five",
+              "One",
+              "Ten",
+              "However many letters the word has"
+            ],
+            "answer_index": 0,
+            "explanation": "convention"
+          },
+          {
+            "id": "dco-w6-2",
+            "kind": "mcq",
+            "stem": "1,250 characters in 5 minutes is what gross speed?",
+            "choices": [
+              "50 WPM",
+              "250 WPM",
+              "25 WPM",
+              "1,250 WPM"
+            ],
+            "answer_index": 0,
+            "explanation": "1250/5/5"
+          },
+          {
+            "id": "dco-w6-3",
+            "kind": "mcq",
+            "stem": "Fifteen uncorrected errors in five minutes reduce net speed by how much?",
+            "choices": [
+              "3 WPM",
+              "15 WPM",
+              "5 WPM",
+              "0.3 WPM"
+            ],
+            "answer_index": 0,
+            "explanation": "per minute"
+          },
+          {
+            "id": "dco-w6-4",
+            "kind": "mcq",
+            "stem": "What is the accuracy for 15 errors in 1,250 characters?",
+            "choices": [
+              "98.8%",
+              "85%",
+              "99.9%",
+              "95%"
+            ],
+            "answer_index": 0,
+            "explanation": "1235/1250"
+          },
+          {
+            "id": "dco-w6-5",
+            "kind": "mcq",
+            "stem": "Which practice habit improves speed fastest for most learners?",
+            "choices": [
+              "Slow down until accuracy holds near 98%",
+              "Type as fast as possible always",
+              "Never correct errors",
+              "Look only at the keys"
+            ],
+            "answer_index": 0,
+            "explanation": "accuracy first"
+          },
+          {
+            "id": "dco-w6-6",
+            "kind": "mcq",
+            "stem": "Which keys have small bumps for the index fingers?",
+            "choices": [
+              "F and J",
+              "A and L",
+              "Q and P",
+              "Enter and Space"
+            ],
+            "answer_index": 0,
+            "explanation": "home row"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Attachments — why a 19 MB file will not fit under 25 MB",
+        "lesson": "DCO-3707: a patron's resume portfolio is 19 MB, the mail service says attachments up to 25 MB, and sending still fails. Email was designed to carry text, so attachments are converted into text with an encoding called base64 before they travel. Base64 turns every three bytes into four characters, so the encoded file is about a third larger: four times the byte count divided by three, rounded up to a whole group. Nineteen million bytes become 25,333,336 bytes, just over the 25,000,000-byte limit, which is why the message bounces even though the file looked small enough. An 18 MB file would encode to 24,000,000 bytes and squeak through. When something will not fit, do not split it into a dozen emails or squeeze the quality until the pictures blur. Upload it to a storage service, share a link with view-only permission, and mention in the message what the link is and how long it will stay up. Never attach other people's personal documents to practice messages; the lab uses only made-up byte counts.",
+        "worked_example": "19,000,000 B → base64 4·ceil(19,000,000/3) = 25,333,336 B > 25,000,000 limit → share a link",
+        "assignment": "Submit lab_dco_attachment_fit JSON for DCO-3707: file and limit bytes, encoded size, fits, and plan.",
+        "lab_id": "lab_dco_attachment_fit",
+        "quiz": [
+          {
+            "id": "dco-w7-1",
+            "kind": "mcq",
+            "stem": "Why do attachments grow before sending?",
+            "choices": [
+              "They are base64-encoded into text",
+              "Mail servers add photos",
+              "Files double in size",
+              "The subject line is added"
+            ],
+            "answer_index": 0,
+            "explanation": "encoding"
+          },
+          {
+            "id": "dco-w7-2",
+            "kind": "mcq",
+            "stem": "Base64 turns every three bytes into how many characters?",
+            "choices": [
+              "Four",
+              "Three",
+              "Six",
+              "Eight"
+            ],
+            "answer_index": 0,
+            "explanation": "4/3"
+          },
+          {
+            "id": "dco-w7-3",
+            "kind": "mcq",
+            "stem": "Nineteen million bytes encode to about how many?",
+            "choices": [
+              "25,333,336",
+              "19,000,000",
+              "38,000,000",
+              "21,000,000"
+            ],
+            "answer_index": 0,
+            "explanation": "4·ceil(n/3)"
+          },
+          {
+            "id": "dco-w7-4",
+            "kind": "mcq",
+            "stem": "An 18 MB file against a 25 MB limit: fits?",
+            "choices": [
+              "Yes, 24,000,000 encoded bytes",
+              "No",
+              "Only zipped",
+              "Only on mobile"
+            ],
+            "answer_index": 0,
+            "explanation": "edge"
+          },
+          {
+            "id": "dco-w7-5",
+            "kind": "mcq",
+            "stem": "A file will not fit. Best plan?",
+            "choices": [
+              "Share a link with view-only permission",
+              "Split it into many emails",
+              "Blur the pictures heavily",
+              "Give up"
+            ],
+            "answer_index": 0,
+            "explanation": "share link"
+          },
+          {
+            "id": "dco-w7-6",
+            "kind": "mcq",
+            "stem": "What belongs in practice messages?",
+            "choices": [
+              "Made-up content only",
+              "A friend's passport scan",
+              "Real bank statements",
+              "Other patrons' resumes"
+            ],
+            "answer_index": 0,
+            "explanation": "privacy"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Backups — three copies, two kinds of storage, one away from home",
+        "lesson": "DCO-3808 begins with tears: a laptop died and took two years of family photos with it. A simple rule, called 3-2-1, prevents most of these stories. Keep three copies of anything you would miss, the original plus two backups. Store them on at least two different kinds of storage, so one failure type, such as a batch of bad drives, cannot take everything. Keep one copy somewhere else, away from the house, so a fire, flood, or theft leaves something behind. The library's example plan has the photos on the laptop's SSD, a copy on a USB hard drive at home, and a copy in a cloud folder; that is three copies, three kinds of storage, and one offsite. There is a fourth rule people forget: a backup you have never restored is a hope, not a plan. Once a month, pick a random file and open it from each backup. Two copies on the same USB stick are one copy with extra steps, and a sync folder that mirrors deletions instantly is convenient but is not a backup on its own.",
+        "worked_example": "laptop SSD + home USB HDD + cloud folder (offsite) → 3 copies, 3 media, 1 offsite; restore tested → plan_ok",
+        "assignment": "Submit lab_dco_backup_321 JSON for DCO-3808: copies with media and offsite flags, each rule, restore_tested, plan_ok.",
+        "lab_id": "lab_dco_backup_321",
+        "quiz": [
+          {
+            "id": "dco-w8-1",
+            "kind": "mcq",
+            "stem": "What does the '1' in 3-2-1 require?",
+            "choices": [
+              "One copy kept offsite",
+              "One password",
+              "One computer",
+              "One backup per year"
+            ],
+            "answer_index": 0,
+            "explanation": "offsite"
+          },
+          {
+            "id": "dco-w8-2",
+            "kind": "mcq",
+            "stem": "Why use two kinds of storage?",
+            "choices": [
+              "So one failure type cannot take every copy",
+              "It is cheaper",
+              "It is faster",
+              "It is the law"
+            ],
+            "answer_index": 0,
+            "explanation": "media diversity"
+          },
+          {
+            "id": "dco-w8-3",
+            "kind": "mcq",
+            "stem": "Two copies on the same USB stick count as what?",
+            "choices": [
+              "Effectively one copy",
+              "Two backups",
+              "A 3-2-1 plan",
+              "An offsite copy"
+            ],
+            "answer_index": 0,
+            "explanation": "single point"
+          },
+          {
+            "id": "dco-w8-4",
+            "kind": "mcq",
+            "stem": "What makes a backup plan more than a hope?",
+            "choices": [
+              "A restore you have actually tested",
+              "A larger drive",
+              "A longer password",
+              "A newer laptop"
+            ],
+            "answer_index": 0,
+            "explanation": "restore test"
+          },
+          {
+            "id": "dco-w8-5",
+            "kind": "mcq",
+            "stem": "A sync folder deletes a file everywhere when you delete it locally. What is it on its own?",
+            "choices": [
+              "Convenient, but not a backup",
+              "A perfect backup",
+              "An offsite archive",
+              "Illegal"
+            ],
+            "answer_index": 0,
+            "explanation": "sync ≠ backup"
+          },
+          {
+            "id": "dco-w8-6",
+            "kind": "mcq",
+            "stem": "How often does the library suggest a test restore?",
+            "choices": [
+              "About once a month",
+              "Never",
+              "Every ten years",
+              "Only after a disaster"
+            ],
+            "answer_index": 0,
+            "explanation": "cadence"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Readable screens — measuring colour contrast",
+        "lesson": "DCO-3909: the library's new event flyer uses pale grey text, and a patron with low vision cannot read it. Readability can be measured. The W3C's Web Content Accessibility Guidelines, WCAG 2.2, define a contrast ratio between text and background colours. Each colour's red, green, and blue values are converted to a relative luminance, a weighted brightness in which green counts most and blue least, and the ratio is the lighter luminance plus 0.05 divided by the darker luminance plus 0.05. Black on white is 21 to 1; identical colours are 1 to 1. Normal-size text needs at least 4.5 to 1 for level AA, and large text needs 3 to 1. The grey #767676 on white measures about 4.54 and just passes. One step lighter, #777777, measures about 4.48 and fails for normal text, even though most eyes cannot tell the two apart, which is exactly why you measure rather than guess. Use a contrast checker before printing or posting, and remember contrast is one accessibility check among many, not the whole job.",
+        "worked_example": "#767676 on #ffffff → 4.54:1 passes AA normal text; #777777 on #ffffff → 4.48:1 fails AA normal, passes AA large",
+        "assignment": "Submit lab_dco_contrast JSON for DCO-3909: two colour pairs with ratio, aa_normal, and aa_large.",
+        "lab_id": "lab_dco_contrast",
+        "quiz": [
+          {
+            "id": "dco-w9-1",
+            "kind": "mcq",
+            "stem": "What minimum contrast does WCAG AA require for normal text?",
+            "choices": [
+              "4.5 to 1",
+              "3 to 1",
+              "7 to 1",
+              "1.5 to 1"
+            ],
+            "answer_index": 0,
+            "explanation": "AA"
+          },
+          {
+            "id": "dco-w9-2",
+            "kind": "mcq",
+            "stem": "#777777 on white measures about 4.48. Does it pass AA for normal text?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only on phones",
+              "Only in print"
+            ],
+            "answer_index": 0,
+            "explanation": "below 4.5"
+          },
+          {
+            "id": "dco-w9-3",
+            "kind": "mcq",
+            "stem": "What is the contrast of black on white?",
+            "choices": [
+              "21 to 1",
+              "4.5 to 1",
+              "100 to 1",
+              "1 to 1"
+            ],
+            "answer_index": 0,
+            "explanation": "maximum"
+          },
+          {
+            "id": "dco-w9-4",
+            "kind": "mcq",
+            "stem": "Which colour channel counts most in relative luminance?",
+            "choices": [
+              "Green",
+              "Red",
+              "Blue",
+              "All equally"
+            ],
+            "answer_index": 0,
+            "explanation": "weights"
+          },
+          {
+            "id": "dco-w9-5",
+            "kind": "mcq",
+            "stem": "Why measure instead of eyeballing #767676 versus #777777?",
+            "choices": [
+              "They look alike but fall on opposite sides of 4.5",
+              "Eyes are always wrong",
+              "Measuring is faster",
+              "Only designers can see colour"
+            ],
+            "answer_index": 0,
+            "explanation": "precision"
+          },
+          {
+            "id": "dco-w9-6",
+            "kind": "mcq",
+            "stem": "What is true about contrast and accessibility?",
+            "choices": [
+              "Contrast is one check among many",
+              "Contrast alone makes a page accessible",
+              "Contrast only matters for print",
+              "It only applies to images"
+            ],
+            "answer_index": 0,
+            "explanation": "scope"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Personal digital safety plan — the page you keep",
+        "lesson": "DCO-3A10 asks each learner to leave the Library Lab with one page they will actually use. It names a password manager, because unique secrets for every site are impossible to remember otherwise. It turns on multi-factor sign-in for the email account first, since email is where every other password reset arrives, so whoever controls it controls the rest. It lists the backup copies by media and location, passes the 3-2-1 rule, and records the date of the last test restore. It names a real person or desk to show strange messages to, such as the library's IT desk, so nobody has to judge a convincing scam alone at midnight. It records which colours and font sizes work for the reader's eyes. It never contains an actual password, PIN, or recovery code; those belong in the manager or on paper locked away, not on a page that might be photographed. Mentors check the plan against six or more passed labs and ask the learner to show one step live, such as opening a file from the cloud backup.",
+        "worked_example": "password manager yes; MFA on email yes; laptop/USB/cloud backups with tested restore; report phishing to the library IT desk; no real passwords in the plan",
+        "assignment": "Submit lab_dco_safety_plan JSON for DCO-3A10: labs_passed, manager, MFA, backup copies, restore test, phishing contact, no real passwords.",
+        "lab_id": "lab_dco_safety_plan",
+        "quiz": [
+          {
+            "id": "dco-w10-1",
+            "kind": "mcq",
+            "stem": "Why turn on multi-factor sign-in for email first?",
+            "choices": [
+              "Password resets for other accounts arrive there",
+              "Email is the slowest account",
+              "It is the cheapest",
+              "Email never gets attacked"
+            ],
+            "answer_index": 0,
+            "explanation": "reset hub"
+          },
+          {
+            "id": "dco-w10-2",
+            "kind": "mcq",
+            "stem": "What must never appear in the safety plan?",
+            "choices": [
+              "An actual password or recovery code",
+              "The name of the password manager",
+              "Backup locations",
+              "A help-desk contact"
+            ],
+            "answer_index": 0,
+            "explanation": "secrets"
+          },
+          {
+            "id": "dco-w10-3",
+            "kind": "mcq",
+            "stem": "Why name a person or desk for strange messages?",
+            "choices": [
+              "So nobody judges a convincing scam alone",
+              "To blame them later",
+              "For marketing",
+              "It is optional decoration"
+            ],
+            "answer_index": 0,
+            "explanation": "support"
+          },
+          {
+            "id": "dco-w10-4",
+            "kind": "mcq",
+            "stem": "What should the backup section record besides locations?",
+            "choices": [
+              "The date of the last test restore",
+              "Every file name",
+              "The drive's colour",
+              "The purchase price"
+            ],
+            "answer_index": 0,
+            "explanation": "evidence"
+          },
+          {
+            "id": "dco-w10-5",
+            "kind": "mcq",
+            "stem": "During review, what does a mentor ask the learner to do?",
+            "choices": [
+              "Show one step live, such as opening a backed-up file",
+              "Recite the quiz",
+              "Reveal a password",
+              "Buy new hardware"
+            ],
+            "answer_index": 0,
+            "explanation": "demonstration"
+          },
+          {
+            "id": "dco-w10-6",
+            "kind": "mcq",
+            "stem": "Where do recovery codes belong?",
+            "choices": [
+              "In the password manager or locked away on paper",
+              "On the fridge",
+              "In the safety plan",
+              "In a text message to a friend"
+            ],
+            "answer_index": 0,
+            "explanation": "storage"
+          }
+        ]
+      }
+    ]
+  },
+  "IT_SUPPORT_HARDWARE": {
+    "course_id": "IT_SUPPORT_HARDWARE",
+    "title": "IT Support and Hardware Foundations — Refurb Bench",
+    "track_ids": [
+      "IT_SUPPORT_HARDWARE"
+    ],
+    "academy_id": "ACADEMY_IT",
+    "kinesthetic_hook": "Ten Refurb Bench work orders on donated PCs: size the PSU → populate memory channels → plan RAID → choose MBR or GPT → isolate a fault → match display and cable → size a UPS → image a lab → sanitize drives → file the service report.",
+    "syllabus_hook": "IT_SUPPORT_HARDWARE COURSE_DIGITAL_RC: bench-technician arithmetic and decision tables for refurbishing donated computers — power budgets, memory channels, RAID, partition schemes, fault isolation, display bandwidth, UPS runtime, imaging throughput, and media sanitization. Distinct from GENERAL_IT (tickets and operating systems) and HARDWARE_ENGINEERING (circuits and embedded design). Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "it_support_technician_entry",
+        "pc_refurbishment_technician",
+        "deskside_support_apprentice"
+      ],
+      "nice_categories": [
+        "operate_and_maintain"
+      ],
+      "certs_aligned_not_granted": [
+        "CompTIA A+ hardware domain labels (PUBLIC_REFERENCE_ONLY; no exam items)",
+        "NIST SP 800-88 media sanitization vocabulary (PUBLIC_REFERENCE_ONLY)",
+        "UEFI specification boot vocabulary (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        3,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Power supply budget — parts, headroom, and the smallest adequate unit",
+        "lesson": "Work order ISH-4101: a donated tower is getting a graphics card so a youth club can edit video, and the old 450 W power supply is suspect. Start with a parts list and each part's rated draw from its spec sheet, not from a forum guess. The processor is rated 125 W, the card 200 W, the motherboard about 50, two memory sticks about 10 together, the SSD about 8, and the fans about 12, for 405 W. A supply running near its limit gets hot, loud, and less efficient, and real loads spike above their averages, so the bench adds a quarter on top: 405 × 1.25 is 506.25 W. The smallest catalogue unit that covers it is 550 W, so the 450 W supply goes in the parts bin. Bigger is not automatically better, since a 1,000 W unit idling at 60 W wastes money and often efficiency. Check that the new supply has the right connectors for the card, and never open a supply's case; the capacitors inside can hold a dangerous charge long after it is unplugged.",
+        "worked_example": "CPU 125 + GPU 200 + board 50 + RAM 10 + SSD 8 + fans 12 = 405 W × 1.25 = 506.25 W → 550 W unit",
+        "assignment": "Submit lab_ish_psu_budget JSON for ISH-4101: components, total_w, required_w, chosen_psu_w.",
+        "lab_id": "lab_ish_psu_budget",
+        "quiz": [
+          {
+            "id": "ish-w1-1",
+            "kind": "mcq",
+            "stem": "The parts total 405 W. What does the bench require after headroom?",
+            "choices": [
+              "506.25 W",
+              "405 W",
+              "450 W",
+              "810 W"
+            ],
+            "answer_index": 0,
+            "explanation": "× 1.25"
+          },
+          {
+            "id": "ish-w1-2",
+            "kind": "mcq",
+            "stem": "Which catalogue unit should be chosen for 506.25 W?",
+            "choices": [
+              "550 W",
+              "450 W",
+              "850 W",
+              "500 W"
+            ],
+            "answer_index": 0,
+            "explanation": "smallest adequate"
+          },
+          {
+            "id": "ish-w1-3",
+            "kind": "mcq",
+            "stem": "Why add headroom above the parts total?",
+            "choices": [
+              "Loads spike and supplies near their limit run hot",
+              "Headroom is required by law",
+              "To use more electricity",
+              "Parts lie about colour"
+            ],
+            "answer_index": 0,
+            "explanation": "margin"
+          },
+          {
+            "id": "ish-w1-4",
+            "kind": "mcq",
+            "stem": "Where should a part's wattage come from?",
+            "choices": [
+              "Its spec sheet",
+              "A forum guess",
+              "Its colour",
+              "The case size"
+            ],
+            "answer_index": 0,
+            "explanation": "source"
+          },
+          {
+            "id": "ish-w1-5",
+            "kind": "mcq",
+            "stem": "Why never open a power supply's case?",
+            "choices": [
+              "Capacitors can hold a dangerous charge after unplugging",
+              "It voids the paint",
+              "It is glued",
+              "Fans fall out"
+            ],
+            "answer_index": 0,
+            "explanation": "safety"
+          },
+          {
+            "id": "ish-w1-6",
+            "kind": "mcq",
+            "stem": "Why is a 1,000 W unit a poor choice for a 300 W load?",
+            "choices": [
+              "It wastes money and may run less efficiently",
+              "It will explode",
+              "It cannot power fans",
+              "It has no connectors"
+            ],
+            "answer_index": 0,
+            "explanation": "oversizing"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Memory channels — the slots you choose set the bandwidth",
+        "lesson": "ISH-4202 is a slow machine that has two good memory sticks in it. Desktop boards usually have two memory channels, labelled A and B, each a separate 64-bit path to the processor. Each transfer moves eight bytes per channel, so peak bandwidth in gigabytes per second is the transfer rate in megatransfers per second times eight times the number of channels, divided by a thousand. DDR4-3200 in one channel gives 25.6 GB/s; spread across both channels it gives 51.2. The previous volunteer pushed both sticks into A1 and A2, which sit on the same channel, so the machine runs single-channel and integrated graphics, which borrow system memory, crawl. Moving one stick to B2 doubles the path without buying anything. The board manual names the preferred slots, often A2 and B2 for two sticks, and the firmware setup screen confirms the mode after a reboot. Handle sticks by the edges, match the notch to the key in the slot, and press until both latches click; a half-seated stick is a classic cause of beeps and no display.",
+        "worked_example": "DDR4-3200 in A2 + B2 → 2 channels → 3200 × 8 × 2 / 1000 = 51.2 GB/s; in A1 + A2 → 1 channel → 25.6 GB/s",
+        "assignment": "Submit lab_ish_memory_bandwidth JSON for ISH-4202: mt_s, slots_used, channels, bandwidth_gb_s.",
+        "lab_id": "lab_ish_memory_bandwidth",
+        "quiz": [
+          {
+            "id": "ish-w2-1",
+            "kind": "mcq",
+            "stem": "DDR4-3200 in two channels gives what peak bandwidth?",
+            "choices": [
+              "51.2 GB/s",
+              "25.6 GB/s",
+              "3.2 GB/s",
+              "102.4 GB/s"
+            ],
+            "answer_index": 0,
+            "explanation": "3200×8×2/1000"
+          },
+          {
+            "id": "ish-w2-2",
+            "kind": "mcq",
+            "stem": "Two sticks in A1 and A2 run how many channels?",
+            "choices": [
+              "One",
+              "Two",
+              "Four",
+              "Zero"
+            ],
+            "answer_index": 0,
+            "explanation": "same letter"
+          },
+          {
+            "id": "ish-w2-3",
+            "kind": "mcq",
+            "stem": "Why did integrated graphics crawl on this machine?",
+            "choices": [
+              "They borrow system memory, which was single-channel",
+              "The GPU was missing",
+              "The sticks were too large",
+              "The fans were slow"
+            ],
+            "answer_index": 0,
+            "explanation": "shared memory"
+          },
+          {
+            "id": "ish-w2-4",
+            "kind": "mcq",
+            "stem": "How many bytes move per channel per transfer?",
+            "choices": [
+              "Eight",
+              "One",
+              "Sixty-four",
+              "Thirty-two"
+            ],
+            "answer_index": 0,
+            "explanation": "64-bit"
+          },
+          {
+            "id": "ish-w2-5",
+            "kind": "mcq",
+            "stem": "Where do you confirm the memory mode after a change?",
+            "choices": [
+              "The firmware setup screen",
+              "The case sticker",
+              "The keyboard",
+              "The monitor menu"
+            ],
+            "answer_index": 0,
+            "explanation": "verify"
+          },
+          {
+            "id": "ish-w2-6",
+            "kind": "mcq",
+            "stem": "A half-seated stick commonly causes what?",
+            "choices": [
+              "Beeps and no display",
+              "Faster boot",
+              "Louder speakers",
+              "Brighter screen"
+            ],
+            "answer_index": 0,
+            "explanation": "symptom"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "RAID — usable space, tolerated failures, and why it is not a backup",
+        "lesson": "ISH-4303 is a NO_AI week; build the table by hand. A community centre wants its donated four-bay storage box set up for shared files, with four 4 TB disks. RAID combines disks into one volume with different trade-offs. RAID 0 stripes data across all four for 16 TB and speed, but any single failure loses everything. RAID 1 mirrors the same data on every disk: only 4 TB usable, yet three disks can die. RAID 5 spreads one disk's worth of parity, leaving 12 TB and surviving one failure. RAID 6 uses two disks' worth of parity for 8 TB and survives any two. RAID 10 mirrors pairs and stripes across them, also 8 TB; it is guaranteed to survive one failure and survives a second only if it hits the other pair, so the honest table says one. With large disks, rebuilding after a failure takes many hours and stresses the survivors, which is why RAID 6 suits this box better than RAID 5. Most important: RAID protects against a disk dying, not against deletion, ransomware, or fire, because those damage every copy at once. The centre still needs the 3-2-1 backup plan.",
+        "worked_example": "four 4 TB disks: RAID 0 16 TB/0, RAID 1 4 TB/3, RAID 5 12 TB/1, RAID 6 8 TB/2, RAID 10 8 TB/1 guaranteed",
+        "assignment": "Submit lab_ish_raid_capacity JSON for ISH-4303 (NO_AI): disks, size_tb, five RAID levels, raid_is_backup false.",
+        "lab_id": "lab_ish_raid_capacity",
+        "quiz": [
+          {
+            "id": "ish-w3-1",
+            "kind": "mcq",
+            "stem": "Four 4 TB disks in RAID 5 give how much usable space?",
+            "choices": [
+              "12 TB",
+              "16 TB",
+              "8 TB",
+              "4 TB"
+            ],
+            "answer_index": 0,
+            "explanation": "n−1"
+          },
+          {
+            "id": "ish-w3-2",
+            "kind": "mcq",
+            "stem": "How many disk failures does RAID 6 survive guaranteed?",
+            "choices": [
+              "Two",
+              "One",
+              "Three",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "double parity"
+          },
+          {
+            "id": "ish-w3-3",
+            "kind": "mcq",
+            "stem": "What does RAID 0 offer and risk?",
+            "choices": [
+              "Full capacity and speed; any failure loses all",
+              "Mirroring and safety",
+              "Parity protection",
+              "Offsite copies"
+            ],
+            "answer_index": 0,
+            "explanation": "striping"
+          },
+          {
+            "id": "ish-w3-4",
+            "kind": "mcq",
+            "stem": "Why is RAID 10's guaranteed tolerance listed as one failure?",
+            "choices": [
+              "A second failure in the same mirror pair loses data",
+              "It has no mirrors",
+              "It uses parity",
+              "It survives four failures"
+            ],
+            "answer_index": 0,
+            "explanation": "worst case"
+          },
+          {
+            "id": "ish-w3-5",
+            "kind": "mcq",
+            "stem": "Why is RAID not a backup?",
+            "choices": [
+              "Deletion and ransomware hit every disk at once",
+              "It is too slow",
+              "It needs four disks",
+              "It is illegal"
+            ],
+            "answer_index": 0,
+            "explanation": "same volume"
+          },
+          {
+            "id": "ish-w3-6",
+            "kind": "mcq",
+            "stem": "Why prefer RAID 6 over RAID 5 with large disks?",
+            "choices": [
+              "Long rebuilds stress survivors; a second failure is survivable",
+              "RAID 6 is faster always",
+              "It uses fewer disks",
+              "It needs no parity"
+            ],
+            "answer_index": 0,
+            "explanation": "rebuild risk"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "MBR or GPT — the two-terabyte ceiling and UEFI boot",
+        "lesson": "ISH-4404 is a new 4 TB data disk that shows only about 2 TB of usable space after the last technician set it up. A disk's partition table records where each partition starts and ends. The older Master Boot Record format stores those positions as 32-bit sector numbers, so it can address at most 2^32 sectors. With the common 512-byte sectors that is 2,199,023,255,552 bytes, two tebibytes, and anything beyond is simply unreachable. The GUID Partition Table uses 64-bit addresses, supports far larger disks, keeps a backup copy of the table at the end of the disk, and allows many more partitions. A 4,000,000,000,000-byte disk is larger than the MBR ceiling, so it must be GPT. Disks with 4,096-byte native sectors stretch MBR to 16 TiB, but they are not what the bench usually sees. To boot an operating system from a GPT disk, the PC's firmware needs to run in UEFI mode rather than legacy BIOS mode, a setting in the firmware setup screen. Converting the scheme erases the table, so copy the data off and confirm the backup before you touch it.",
+        "worked_example": "MBR limit = 2^32 × 512 B = 2,199,023,255,552 B (2 TiB); 4 TB disk > limit → GPT, boot with UEFI; 4096-byte sectors raise the MBR limit to 16 TiB",
+        "assignment": "Submit lab_ish_partition_scheme JSON for ISH-4404: disk_bytes, sector_bytes, mbr_max_bytes, scheme, boot_firmware.",
+        "lab_id": "lab_ish_partition_scheme",
+        "quiz": [
+          {
+            "id": "ish-w4-1",
+            "kind": "mcq",
+            "stem": "Why can MBR not address more than about 2 TiB with 512-byte sectors?",
+            "choices": [
+              "It stores sector numbers in 32 bits",
+              "Disks are too slow",
+              "It has no partitions",
+              "It is encrypted"
+            ],
+            "answer_index": 0,
+            "explanation": "2^32"
+          },
+          {
+            "id": "ish-w4-2",
+            "kind": "mcq",
+            "stem": "What is the MBR limit in bytes with 512-byte sectors?",
+            "choices": [
+              "2,199,023,255,552",
+              "2,000,000,000,000",
+              "4,294,967,296",
+              "512,000,000,000"
+            ],
+            "answer_index": 0,
+            "explanation": "2^32 × 512"
+          },
+          {
+            "id": "ish-w4-3",
+            "kind": "mcq",
+            "stem": "Which scheme must a 4 TB disk use to expose all of its space?",
+            "choices": [
+              "GPT",
+              "MBR",
+              "FAT",
+              "Either"
+            ],
+            "answer_index": 0,
+            "explanation": "> limit"
+          },
+          {
+            "id": "ish-w4-4",
+            "kind": "mcq",
+            "stem": "What firmware mode boots an operating system from a GPT disk?",
+            "choices": [
+              "UEFI",
+              "Legacy BIOS only",
+              "Safe mode",
+              "DOS"
+            ],
+            "answer_index": 0,
+            "explanation": "boot"
+          },
+          {
+            "id": "ish-w4-5",
+            "kind": "mcq",
+            "stem": "Where does GPT keep a backup copy of its table?",
+            "choices": [
+              "At the end of the disk",
+              "In the BIOS chip",
+              "In the cloud",
+              "Nowhere"
+            ],
+            "answer_index": 0,
+            "explanation": "redundancy"
+          },
+          {
+            "id": "ish-w4-6",
+            "kind": "mcq",
+            "stem": "What must happen before converting a disk's partition scheme?",
+            "choices": [
+              "Copy the data off and confirm the backup",
+              "Nothing",
+              "Unplug the monitor",
+              "Update the keyboard"
+            ],
+            "answer_index": 0,
+            "explanation": "data safety"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Fault isolation — symptom first, subsystem second, parts last",
+        "lesson": "ISH-4505 is five machines on the bench at once and a temptation to start swapping motherboards. Good technicians follow the power-on sequence, because each stage that succeeds rules out everything before it. No lights and no fans means the power path: the outlet, the cable, the supply's rear switch, then the supply itself. Fans spinning with beeps and no picture means the board is alive but the self-test failed, most often memory or a processor that is not seated; reseat the sticks one at a time before anything else. A self-test that passes and then complains there is no boot device points at the boot order in the firmware or a disk that is not detected. A machine that boots and then shows a stop error usually blames the last driver or update installed. Random shutdowns only under heavy load suggest heat or an undersized supply, so check temperatures and last week's power budget. Write down the symptom in the customer's words, the stage it fails at, and the cheapest test that would confirm your guess. Replacing parts before isolating the fault costs money and hides the real cause.",
+        "worked_example": "T1 fans/no display/beeps → memory_or_cpu_seating; T2 dead → power_path; T3 shuts down under load → thermal_or_psu_capacity; T4 no boot device → boot_order_or_disk; T5 stop error after boot → driver_or_os",
+        "assignment": "Submit lab_ish_fault_isolation JSON for ISH-4505: classification of T1–T5 and replaced_parts_before_isolating false.",
+        "lab_id": "lab_ish_fault_isolation",
+        "quiz": [
+          {
+            "id": "ish-w5-1",
+            "kind": "mcq",
+            "stem": "Fans spin, the PC beeps, and there is no display. First suspect?",
+            "choices": [
+              "Memory or CPU seating",
+              "The monitor's brand",
+              "The operating system",
+              "The keyboard"
+            ],
+            "answer_index": 0,
+            "explanation": "POST failure"
+          },
+          {
+            "id": "ish-w5-2",
+            "kind": "mcq",
+            "stem": "No lights and no fans at all. Which path do you check first?",
+            "choices": [
+              "Power: outlet, cable, PSU switch",
+              "Graphics driver",
+              "Boot order",
+              "RAM speed"
+            ],
+            "answer_index": 0,
+            "explanation": "power"
+          },
+          {
+            "id": "ish-w5-3",
+            "kind": "mcq",
+            "stem": "Self-test passes but 'no boot device' appears. What do you check?",
+            "choices": [
+              "Firmware boot order and disk detection",
+              "PSU wattage",
+              "Fan speed",
+              "Monitor cable"
+            ],
+            "answer_index": 0,
+            "explanation": "boot"
+          },
+          {
+            "id": "ish-w5-4",
+            "kind": "mcq",
+            "stem": "A PC shuts down only during long renders. Likely cause?",
+            "choices": [
+              "Heat or an undersized power supply",
+              "A bad mouse",
+              "A missing driver for the printer",
+              "The keyboard layout"
+            ],
+            "answer_index": 0,
+            "explanation": "load"
+          },
+          {
+            "id": "ish-w5-5",
+            "kind": "mcq",
+            "stem": "Why follow the power-on sequence?",
+            "choices": [
+              "Each passing stage rules out everything before it",
+              "It is faster to guess",
+              "Customers prefer it",
+              "It voids warranties"
+            ],
+            "answer_index": 0,
+            "explanation": "isolation"
+          },
+          {
+            "id": "ish-w5-6",
+            "kind": "mcq",
+            "stem": "What does swapping parts before isolating usually cause?",
+            "choices": [
+              "Wasted money and a hidden real cause",
+              "Faster fixes",
+              "Better documentation",
+              "Lower power use"
+            ],
+            "answer_index": 0,
+            "explanation": "shotgun"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Display bandwidth — will the cable carry the mode?",
+        "lesson": "ISH-4606: a donated 4K monitor flickers or drops to 30 Hz on a refurbished PC. A screen mode is a stream of pixels, and the cable has a ceiling. Multiply width by height by refresh rate by bits per pixel: 3,840 by 2,160 at 60 Hz with 24-bit colour is about 11.94 gigabits per second. That ignores the blanking intervals between lines and frames, so the true need is somewhat higher, and the honest label is lower bound. Compare it with each link's usable data rate after encoding overhead: HDMI 1.4 carries about 8.16, HDMI 2.0 about 14.4, and DisplayPort 1.4 about 25.92. The 4K 60 Hz mode fits HDMI 2.0 and DisplayPort 1.4 but not HDMI 1.4, which is why the old port falls back to 30 Hz. Double the refresh to 120 Hz and the need becomes about 23.89 Gbit/s, which only DisplayPort 1.4 carries uncompressed here. Cables and ports are both links in the chain: a certified high-speed cable on an old port still runs at the old port's speed, so read both before promising a customer a mode.",
+        "worked_example": "3840×2160×60×24 = 11.94 Gbit/s → fits HDMI 2.0 (14.4) and DP 1.4 (25.92), not HDMI 1.4 (8.16); at 120 Hz 23.89 Gbit/s → only DP 1.4",
+        "assignment": "Submit lab_ish_display_link JSON for ISH-4606: two modes with rate_gbps and fits per link, rate_is_lower_bound true.",
+        "lab_id": "lab_ish_display_link",
+        "quiz": [
+          {
+            "id": "ish-w6-1",
+            "kind": "mcq",
+            "stem": "What is the pixel data rate for 4K at 60 Hz and 24 bits per pixel?",
+            "choices": [
+              "About 11.94 Gbit/s",
+              "About 23.89 Gbit/s",
+              "About 8.16 Gbit/s",
+              "About 1.5 Gbit/s"
+            ],
+            "answer_index": 0,
+            "explanation": "w×h×Hz×bpp"
+          },
+          {
+            "id": "ish-w6-2",
+            "kind": "mcq",
+            "stem": "Why is that figure a lower bound?",
+            "choices": [
+              "It ignores blanking intervals",
+              "It includes audio",
+              "Cables add speed",
+              "It counts two monitors"
+            ],
+            "answer_index": 0,
+            "explanation": "blanking"
+          },
+          {
+            "id": "ish-w6-3",
+            "kind": "mcq",
+            "stem": "Which link cannot carry 4K 60 Hz uncompressed at 24-bit colour?",
+            "choices": [
+              "HDMI 1.4",
+              "HDMI 2.0",
+              "DisplayPort 1.4",
+              "None of them"
+            ],
+            "answer_index": 0,
+            "explanation": "8.16 < 11.94"
+          },
+          {
+            "id": "ish-w6-4",
+            "kind": "mcq",
+            "stem": "Which link here carries 4K 120 Hz uncompressed?",
+            "choices": [
+              "DisplayPort 1.4",
+              "HDMI 2.0",
+              "HDMI 1.4",
+              "VGA"
+            ],
+            "answer_index": 0,
+            "explanation": "25.92 > 23.89"
+          },
+          {
+            "id": "ish-w6-5",
+            "kind": "mcq",
+            "stem": "A new certified cable on an old HDMI 1.4 port runs at what speed?",
+            "choices": [
+              "The old port's speed",
+              "Double speed",
+              "DisplayPort speed",
+              "Unlimited"
+            ],
+            "answer_index": 0,
+            "explanation": "weakest link"
+          },
+          {
+            "id": "ish-w6-6",
+            "kind": "mcq",
+            "stem": "Why does the old port fall back to 30 Hz?",
+            "choices": [
+              "Half the refresh fits under its ceiling",
+              "30 Hz looks better",
+              "The monitor is broken",
+              "The OS prefers it"
+            ],
+            "answer_index": 0,
+            "explanation": "fallback"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "UPS runtime — watt-hours, inverter loss, and a graceful shutdown",
+        "lesson": "ISH-4707: the community centre's storage box and router should ride out short power cuts and shut down cleanly during long ones. A battery's energy is in watt-hours, and the uninterruptible power supply converts it back to mains power through an inverter that loses some energy as heat. This unit holds two 12 V, 36 Ah batteries, about 864 Wh, and its inverter is about 85 percent efficient. The load measured at the wall is 300 W, so the runtime is 864 × 0.85 ÷ 300 hours, about 2.45 hours or 146.9 minutes. Batteries age, cold rooms reduce capacity, and the last minutes of a discharge are not reliable, so the bench starts a graceful shutdown no later than 80 percent of the computed runtime; here the plan picks 110 minutes. Configure the storage box to listen for the UPS's low-battery signal over USB or the network, and test it by pulling the plug while someone watches. Never plug a laser printer or a space heater into the battery outlets; their surges can overload the inverter.",
+        "worked_example": "864 Wh × 0.85 / 300 W × 60 = 146.9 min; start shutdown by 80% → no later than about 117 min (bench picks 110)",
+        "assignment": "Submit lab_ish_ups_runtime JSON for ISH-4707: battery_wh, efficiency, load_w, runtime_min, shutdown_at_min.",
+        "lab_id": "lab_ish_ups_runtime",
+        "quiz": [
+          {
+            "id": "ish-w7-1",
+            "kind": "mcq",
+            "stem": "864 Wh at 85% efficiency into a 300 W load lasts about how long?",
+            "choices": [
+              "146.9 minutes",
+              "172.8 minutes",
+              "86.4 minutes",
+              "300 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "Wh×eff/W"
+          },
+          {
+            "id": "ish-w7-2",
+            "kind": "mcq",
+            "stem": "What does ignoring inverter efficiency do to the estimate?",
+            "choices": [
+              "Overstates the runtime",
+              "Understates it",
+              "Nothing",
+              "Doubles the load"
+            ],
+            "answer_index": 0,
+            "explanation": "loss"
+          },
+          {
+            "id": "ish-w7-3",
+            "kind": "mcq",
+            "stem": "Why start shutdown by 80% of computed runtime?",
+            "choices": [
+              "Batteries age and the final minutes are unreliable",
+              "To save paper",
+              "It is faster",
+              "UPS units require it by law"
+            ],
+            "answer_index": 0,
+            "explanation": "margin"
+          },
+          {
+            "id": "ish-w7-4",
+            "kind": "mcq",
+            "stem": "How does the storage box know to shut down?",
+            "choices": [
+              "It listens for the UPS low-battery signal",
+              "Someone guesses",
+              "It never shuts down",
+              "The router tells it"
+            ],
+            "answer_index": 0,
+            "explanation": "signal"
+          },
+          {
+            "id": "ish-w7-5",
+            "kind": "mcq",
+            "stem": "Which device should not go on the battery outlets?",
+            "choices": [
+              "A laser printer",
+              "The router",
+              "The storage box",
+              "The modem"
+            ],
+            "answer_index": 0,
+            "explanation": "surge"
+          },
+          {
+            "id": "ish-w7-6",
+            "kind": "mcq",
+            "stem": "How do you prove the shutdown works?",
+            "choices": [
+              "Pull the plug in a supervised test",
+              "Assume it",
+              "Read the box",
+              "Ask the vendor"
+            ],
+            "answer_index": 0,
+            "explanation": "test"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Imaging a lab — unicast one by one versus one multicast stream",
+        "lesson": "ISH-4808: forty refurbished laptops need the same 32 GB system image before the library's coding club opens. Image sizes are in bytes and network links in bits, so start by multiplying by eight: 256 gigabits per copy. On a gigabit link that really delivers about 70 percent of its rating, one copy takes about 366 seconds, a little over six minutes. Sending the image to each laptop separately, unicast, repeats that forty times through the same server port: about 244 minutes, more than four hours. Multicast sends one stream that every listening machine receives together, so in the ideal case the whole lab finishes in about the time of a single copy, roughly six minutes. Real networks need switches that handle multicast properly, and one slow or faulty laptop can hold the session back, so plan a fallback to unicast for stragglers. Whatever the method, check one finished machine against a list of expected settings before releasing the rest, and record which image version went onto which serial numbers.",
+        "worked_example": "32 GB image × 8 = 256 Gbit ÷ (1 Gbit/s × 0.7) = 365.7 s per stream; 40 machines unicast ≈ 243.8 min; multicast ≈ 6.1 min",
+        "assignment": "Submit lab_ish_imaging_time JSON for ISH-4808: image_gb, machines, link_gbps, efficiency, unicast_min, multicast_min.",
+        "lab_id": "lab_ish_imaging_time",
+        "quiz": [
+          {
+            "id": "ish-w8-1",
+            "kind": "mcq",
+            "stem": "Why multiply the image size by eight first?",
+            "choices": [
+              "Images are in bytes, links in bits",
+              "To add a safety margin",
+              "Images compress by eight",
+              "There are eight machines"
+            ],
+            "answer_index": 0,
+            "explanation": "units"
+          },
+          {
+            "id": "ish-w8-2",
+            "kind": "mcq",
+            "stem": "At 0.7 Gbit/s effective, how long is one 32 GB copy?",
+            "choices": [
+              "About 6.1 minutes",
+              "About 32 seconds",
+              "About 4 hours",
+              "About 45 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "256/0.7 s"
+          },
+          {
+            "id": "ish-w8-3",
+            "kind": "mcq",
+            "stem": "Unicast to forty machines takes about how long?",
+            "choices": [
+              "About 244 minutes",
+              "About 6 minutes",
+              "About 40 seconds",
+              "About 24 minutes"
+            ],
+            "answer_index": 0,
+            "explanation": "×40"
+          },
+          {
+            "id": "ish-w8-4",
+            "kind": "mcq",
+            "stem": "Why can multicast finish near the time of one copy?",
+            "choices": [
+              "Every machine receives the same single stream",
+              "It compresses forty times",
+              "It skips verification",
+              "It uses Wi-Fi"
+            ],
+            "answer_index": 0,
+            "explanation": "one stream"
+          },
+          {
+            "id": "ish-w8-5",
+            "kind": "mcq",
+            "stem": "What should be ready if multicast stalls on a few laptops?",
+            "choices": [
+              "A unicast fallback for stragglers",
+              "A new switch",
+              "Nothing",
+              "A second image"
+            ],
+            "answer_index": 0,
+            "explanation": "fallback"
+          },
+          {
+            "id": "ish-w8-6",
+            "kind": "mcq",
+            "stem": "What do you record after imaging?",
+            "choices": [
+              "Which image version went onto which serial numbers",
+              "The weather",
+              "Only the start time",
+              "Nothing"
+            ],
+            "answer_index": 0,
+            "explanation": "traceability"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Media sanitization — Clear, Purge, or Destroy before a device leaves",
+        "lesson": "ISH-4909 is the second NO_AI week, because a sanitization decision has to be yours. Donated machines arrive full of strangers' lives, and the bench's promise is that nothing leaves with them. NIST Special Publication 800-88 frames the choice with three words. Clear uses ordinary commands to overwrite user-addressable storage, enough when the device stays inside the organisation. Purge uses methods that defeat laboratory recovery, such as the drive's own secure-erase or cryptographic-erase commands, and is the floor when a device leaves your control through donation, sale, or a returned lease. Destroy means the media cannot be reused: shredding, disintegrating, or incinerating, and it is the only answer for a drive that has failed and will not accept commands. Solid-state drives remap blocks behind the scenes, so overwriting the visible space can leave old data in spare areas; rely on the drive's purge commands. Every decision ends with verification and a certificate recording the serial number, method, date, and who did it. A quick format is none of the three.",
+        "worked_example": "RB-1001 HDD reuse_internal → Clear; RB-1002 SSD leave_org → Purge; RB-1003 failed SSD → Destroy; RB-1004 HDD leave_org → Purge; each verified with a certificate ID",
+        "assignment": "Submit lab_ish_sanitize_decision JSON for ISH-4909 (NO_AI): method, verification, and certificate ID for RB-1001…1004.",
+        "lab_id": "lab_ish_sanitize_decision",
+        "quiz": [
+          {
+            "id": "ish-w9-1",
+            "kind": "mcq",
+            "stem": "A working SSD will be donated to another organisation. Minimum method?",
+            "choices": [
+              "Purge",
+              "Clear",
+              "Quick format",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "leaves control"
+          },
+          {
+            "id": "ish-w9-2",
+            "kind": "mcq",
+            "stem": "A failed drive will not accept commands. What is left?",
+            "choices": [
+              "Destroy",
+              "Clear",
+              "Purge with software",
+              "Reuse"
+            ],
+            "answer_index": 0,
+            "explanation": "only option"
+          },
+          {
+            "id": "ish-w9-3",
+            "kind": "mcq",
+            "stem": "Why is overwriting visible space risky on an SSD?",
+            "choices": [
+              "Remapped spare blocks can keep old data",
+              "SSDs cannot be written",
+              "It is too slow",
+              "It voids the warranty"
+            ],
+            "answer_index": 0,
+            "explanation": "flash"
+          },
+          {
+            "id": "ish-w9-4",
+            "kind": "mcq",
+            "stem": "What fits a hard drive staying in the same organisation?",
+            "choices": [
+              "Clear",
+              "Destroy",
+              "Nothing",
+              "Purge only by fire"
+            ],
+            "answer_index": 0,
+            "explanation": "internal reuse"
+          },
+          {
+            "id": "ish-w9-5",
+            "kind": "mcq",
+            "stem": "What must every sanitization end with?",
+            "choices": [
+              "Verification and a certificate",
+              "A reboot",
+              "A new label only",
+              "A customer call"
+            ],
+            "answer_index": 0,
+            "explanation": "evidence"
+          },
+          {
+            "id": "ish-w9-6",
+            "kind": "mcq",
+            "stem": "Is a quick format Clear, Purge, or Destroy?",
+            "choices": [
+              "None of them",
+              "Clear",
+              "Purge",
+              "Destroy"
+            ],
+            "answer_index": 0,
+            "explanation": "not sanitization"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Refurb service report — fault, fix, sanitization, proof",
+        "lesson": "ISH-4A10 closes the term with the document that travels with each refurbished machine. For every device the report gives the serial number, the fault class from the bench's isolation table, and the fix in plain words, such as reseated the memory stick in A2. It records the sanitization method chosen for the drive and that verification passed, pointing at last week's certificate. It notes anything a new owner should know, like a replacement power supply, the memory mode confirmed in firmware, or a monitor that needs the DisplayPort cable for full refresh. The bench also signs one sentence for the whole batch: no customer data was retained, copied, or looked through beyond what the repair required. Technicians who browse a donor's photos to 'test the drive' end their volunteering that day. Mentors review the report against six or more passed labs, pick one machine at random, and ask the technician to explain the fault and the fix while the case is open. A clean report is what lets a school trust a donated computer.",
+        "worked_example": "RB-1002: fault memory_or_cpu_seating, fix reseated DIMM in A2, sanitization Purge, verified; customer_data_retained false",
+        "assignment": "Submit lab_ish_service_report JSON for ISH-4A10: labs_passed, per-device fault/fix/sanitization/verification, customer_data_retained false.",
+        "lab_id": "lab_ish_service_report",
+        "quiz": [
+          {
+            "id": "ish-w10-1",
+            "kind": "mcq",
+            "stem": "Which field connects a device to its isolation work?",
+            "choices": [
+              "The fault class from the bench table",
+              "The case colour",
+              "The donor's name",
+              "The price"
+            ],
+            "answer_index": 0,
+            "explanation": "fault class"
+          },
+          {
+            "id": "ish-w10-2",
+            "kind": "mcq",
+            "stem": "What must the report say about sanitization?",
+            "choices": [
+              "The method used and that verification passed",
+              "Nothing",
+              "Only the date",
+              "The donor's address"
+            ],
+            "answer_index": 0,
+            "explanation": "proof"
+          },
+          {
+            "id": "ish-w10-3",
+            "kind": "mcq",
+            "stem": "A technician browses a donor's photos 'to test the drive'. What follows?",
+            "choices": [
+              "Their volunteering ends that day",
+              "A thank-you note",
+              "Nothing",
+              "A promotion"
+            ],
+            "answer_index": 0,
+            "explanation": "privacy"
+          },
+          {
+            "id": "ish-w10-4",
+            "kind": "mcq",
+            "stem": "What should a new owner learn from the report?",
+            "choices": [
+              "Notable replacements and settings, like the cable for full refresh",
+              "The donor's history",
+              "Every quiz score",
+              "Nothing"
+            ],
+            "answer_index": 0,
+            "explanation": "handover"
+          },
+          {
+            "id": "ish-w10-5",
+            "kind": "mcq",
+            "stem": "During review a mentor picks one machine and asks for what?",
+            "choices": [
+              "An explanation of the fault and fix with the case open",
+              "A sales pitch",
+              "A new image",
+              "The donor's password"
+            ],
+            "answer_index": 0,
+            "explanation": "oral check"
+          },
+          {
+            "id": "ish-w10-6",
+            "kind": "mcq",
+            "stem": "What does a clean report let a school do?",
+            "choices": [
+              "Trust a donated computer",
+              "Skip updates",
+              "Ignore sanitization",
+              "Avoid backups"
+            ],
+            "answer_index": 0,
+            "explanation": "trust"
+          }
+        ]
+      }
+    ]
+  },
+  "NETWORKING_INFRA": {
+    "course_id": "NETWORKING_INFRA",
+    "title": "Networking and Internet Infrastructure — Backbone Room",
+    "track_ids": [
+      "NETWORKING_INFRA"
+    ],
+    "academy_id": "ACADEMY_NETWORKING",
+    "kinesthetic_hook": "Ten Backbone Room change requests: budget fiber latency → write IPv6 canonically → size TCP windows → pick a BGP path → plan a DNS cutover → size CDN offload → budget an optical span → compute availability → read a 95th-percentile bill → submit a design packet.",
+    "syllabus_hook": "NETWORKING_INFRA COURSE_DIGITAL_RC: internet-scale infrastructure arithmetic — fiber propagation, IPv6 text and prefix math, bandwidth-delay product, BGP path selection, DNS caching, CDN offload, optical link budgets, availability in series and parallel, and 95th-percentile transit billing. Documentation ASNs and prefixes only. Distinct from COMPUTER_NETWORKING (campus LAN, subnetting, switching). Not student/teacher E6.",
+    "career": {
+      "roles": [
+        "network_operations_center_trainee",
+        "noc_technician_apprentice",
+        "isp_field_support_assistant"
+      ],
+      "nice_categories": [
+        "operate_and_maintain",
+        "oversee_and_govern"
+      ],
+      "certs_aligned_not_granted": [
+        "Cisco CCNA 200-301 network-fundamentals labels (PUBLIC_REFERENCE_ONLY; no exam items)",
+        "IETF RFC 4271 / 5952 / 7323 / 1034 vocabulary (PUBLIC_REFERENCE_ONLY)"
+      ]
+    },
+    "ai_use_policy": {
+      "modes": [
+        "EXPLAIN",
+        "HINT",
+        "QUESTION_ME",
+        "DEBUG_WITH_ME",
+        "REVIEW_MY_WORK",
+        "COMPARE_APPROACHES",
+        "PRACTICE"
+      ],
+      "assessment_modes": [
+        "AI_ALLOWED",
+        "AI_RESTRICTED",
+        "AI_DISCLOSED",
+        "NO_AI"
+      ],
+      "default_weekly": "AI_DISCLOSED",
+      "no_ai_weeks": [
+        7,
+        9
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Fiber latency budget — light is slower in glass",
+        "lesson": "Change request NIF-5101 asks whether a new 1,145 km fiber route between two regional exchanges can promise game servers a one-way delay under six milliseconds. Light in a vacuum covers about 299,792 km each second, but glass slows it by the fiber's group index, about 1.468, so the signal moves at roughly 204,000 km/s. Divide the route length by that speed: 1,145 km takes about 5.6067 milliseconds. That is propagation, and no upgrade fixes it short of a straighter path. Serialization is the time to clock a packet's bits onto the wire: 1,500 bytes is 12,000 bits, which takes 0.012 ms at one gigabit per second and would take ten times longer on a 100-megabit link. Add them for a one-way floor of about 5.619 ms, before any queueing or equipment delay. Route length is not the straight-line distance on a map; cables follow railways and roads, so ask for the measured route. Using the vacuum speed understates delay by about a third and leads to promises the backbone cannot keep.",
+        "worked_example": "1,145 km × 1.468 / 299,792.458 km/s = 5.6067 ms propagation; 1,500 B × 8 / 1 Gbit/s = 0.012 ms; one-way 5.6187 ms",
+        "assignment": "Submit lab_nif_latency_budget JSON for NIF-5101: route_km, packet_bytes, link_gbps, propagation_ms, serialization_ms, one_way_ms.",
+        "lab_id": "lab_nif_latency_budget",
+        "quiz": [
+          {
+            "id": "nif-w1-1",
+            "kind": "mcq",
+            "stem": "About how fast does light travel in fiber with index 1.468?",
+            "choices": [
+              "About 204,000 km/s",
+              "About 300,000 km/s",
+              "About 1,468 km/s",
+              "About 100,000 km/s"
+            ],
+            "answer_index": 0,
+            "explanation": "c / n"
+          },
+          {
+            "id": "nif-w1-2",
+            "kind": "mcq",
+            "stem": "What is the propagation delay over 1,145 km of fiber?",
+            "choices": [
+              "About 5.61 ms",
+              "About 3.82 ms",
+              "About 11.45 ms",
+              "About 0.56 ms"
+            ],
+            "answer_index": 0,
+            "explanation": "km × n / c"
+          },
+          {
+            "id": "nif-w1-3",
+            "kind": "mcq",
+            "stem": "How long does a 1,500-byte packet take to serialize at 1 Gbit/s?",
+            "choices": [
+              "0.012 ms",
+              "1.5 ms",
+              "0.0015 ms",
+              "12 ms"
+            ],
+            "answer_index": 0,
+            "explanation": "12,000 bits"
+          },
+          {
+            "id": "nif-w1-4",
+            "kind": "mcq",
+            "stem": "Which delay can a faster link reduce?",
+            "choices": [
+              "Serialization",
+              "Propagation",
+              "Both equally",
+              "Neither"
+            ],
+            "answer_index": 0,
+            "explanation": "bits per second"
+          },
+          {
+            "id": "nif-w1-5",
+            "kind": "mcq",
+            "stem": "Why ask for the measured route length?",
+            "choices": [
+              "Cables follow roads and railways, not straight lines",
+              "Maps are illegal",
+              "Fiber shrinks",
+              "To add serialization"
+            ],
+            "answer_index": 0,
+            "explanation": "real path"
+          },
+          {
+            "id": "nif-w1-6",
+            "kind": "mcq",
+            "stem": "What error does using the vacuum speed of light cause?",
+            "choices": [
+              "Understates delay by about a third",
+              "Overstates delay",
+              "No error",
+              "Doubles serialization"
+            ],
+            "answer_index": 0,
+            "explanation": "index"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "title": "IPv6 text and prefixes — one canonical way to write an address",
+        "lesson": "NIF-5202 began as an outage: two engineers searched the change log for the same router address and missed each other because they had typed it differently. IPv6 addresses are 128 bits, written as eight groups of four hex digits, and RFC 5952 sets one canonical text form so tools and people agree. Write hex in lowercase, drop leading zeros in each group, and replace the longest run of two or more all-zero groups with a double colon, choosing the first run if two are equally long. A single zero group stays as 0. So 2001:0DB8:0000:0000:0001:0000:0000:0001 has two runs of two zero groups; the first one collapses and the result is 2001:db8::1:0:0:1. The 2001:db8::/32 block is reserved for documentation, which is why this course uses it. Prefix math is about counting bits: a site receives a /48, and LAN segments are /64, so 64 minus 48 leaves 16 bits for subnet numbers, which is 65,536 subnets. Never squeeze a LAN smaller than /64; address autoconfiguration expects it.",
+        "worked_example": "2001:0DB8:0000:0000:0001:0000:0000:0001 → 2001:db8::1:0:0:1; /48 site → /64 subnets: 2^16 = 65,536",
+        "assignment": "Submit lab_nif_ipv6_text JSON for NIF-5202: full, compressed, site_prefix_len, subnet_len, subnet_count.",
+        "lab_id": "lab_nif_ipv6_text",
+        "quiz": [
+          {
+            "id": "nif-w2-1",
+            "kind": "mcq",
+            "stem": "What is the RFC 5952 form of 2001:0DB8:0000:0000:0001:0000:0000:0001?",
+            "choices": [
+              "2001:db8::1:0:0:1",
+              "2001:db8:0:0:1::1",
+              "2001:DB8::1::1",
+              "2001:db8:0:0:1:0:0:1"
+            ],
+            "answer_index": 0,
+            "explanation": "first longest run"
+          },
+          {
+            "id": "nif-w2-2",
+            "kind": "mcq",
+            "stem": "When two zero runs are equally long, which one becomes ::?",
+            "choices": [
+              "The first",
+              "The last",
+              "Both",
+              "Neither"
+            ],
+            "answer_index": 0,
+            "explanation": "tie rule"
+          },
+          {
+            "id": "nif-w2-3",
+            "kind": "mcq",
+            "stem": "Can :: replace a single all-zero group?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only in uppercase",
+              "Only at the end"
+            ],
+            "answer_index": 0,
+            "explanation": "two or more"
+          },
+          {
+            "id": "nif-w2-4",
+            "kind": "mcq",
+            "stem": "How many /64 subnets fit in a /48?",
+            "choices": [
+              "65,536",
+              "16",
+              "256",
+              "4,096"
+            ],
+            "answer_index": 0,
+            "explanation": "2^16"
+          },
+          {
+            "id": "nif-w2-5",
+            "kind": "mcq",
+            "stem": "Which block is reserved for documentation?",
+            "choices": [
+              "2001:db8::/32",
+              "2606:4700::/32",
+              "fe80::/10",
+              "::/0"
+            ],
+            "answer_index": 0,
+            "explanation": "RFC 3849"
+          },
+          {
+            "id": "nif-w2-6",
+            "kind": "mcq",
+            "stem": "Why keep LAN segments at /64?",
+            "choices": [
+              "Address autoconfiguration expects it",
+              "It saves addresses",
+              "It is faster",
+              "Routers cannot route /64"
+            ],
+            "answer_index": 0,
+            "explanation": "SLAAC"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Bandwidth-delay product — why one connection cannot fill the pipe",
+        "lesson": "NIF-5303: a research group pays for a one-gigabit link to a partner 80 milliseconds away and complains that a single file transfer crawls at a few megabits. TCP may only have one window of unacknowledged bytes in flight, then must wait for acknowledgements to return. The bandwidth-delay product says how many bytes the pipe holds: one gigabit per second times 0.08 seconds is 80 million bits, or 10,000,000 bytes. The original TCP header allows a window of at most 65,535 bytes, so the sender stalls after 64 KiB each round trip; throughput is window times eight divided by the round-trip time, about 6.55 Mbit/s here, less than one percent of the link. RFC 7323 window scaling shifts the advertised window left by a negotiated count; a shift of 8 multiplies 65,535 by 256 to about 16.8 MB, enough to cover the 10 MB product. The fix is end-host tuning and checking that no middlebox strips the option, not buying a bigger link.",
+        "worked_example": "1 Gbit/s × 0.080 s / 8 = 10,000,000 B BDP; 65,535-byte window × 8 / 0.080 s = 6.55 Mbit/s; window scale shift 8 (65,535 × 256 ≥ 10 MB)",
+        "assignment": "Submit lab_nif_bdp_window JSON for NIF-5303: rate_mbps, rtt_ms, window_bytes, bdp_bytes, max_throughput_mbps, window_scale_shift.",
+        "lab_id": "lab_nif_bdp_window",
+        "quiz": [
+          {
+            "id": "nif-w3-1",
+            "kind": "mcq",
+            "stem": "What is the BDP of 1 Gbit/s at 80 ms RTT?",
+            "choices": [
+              "10,000,000 bytes",
+              "80,000,000 bytes",
+              "65,535 bytes",
+              "1,000,000 bytes"
+            ],
+            "answer_index": 0,
+            "explanation": "rate × RTT / 8"
+          },
+          {
+            "id": "nif-w3-2",
+            "kind": "mcq",
+            "stem": "A 65,535-byte window over 80 ms caps throughput at about?",
+            "choices": [
+              "6.55 Mbit/s",
+              "1,000 Mbit/s",
+              "65.5 Mbit/s",
+              "0.8 Mbit/s"
+            ],
+            "answer_index": 0,
+            "explanation": "window×8/RTT"
+          },
+          {
+            "id": "nif-w3-3",
+            "kind": "mcq",
+            "stem": "Which window scale shift first covers a 10 MB BDP?",
+            "choices": [
+              "8",
+              "4",
+              "0",
+              "14"
+            ],
+            "answer_index": 0,
+            "explanation": "65,535 × 256"
+          },
+          {
+            "id": "nif-w3-4",
+            "kind": "mcq",
+            "stem": "Why does buying a bigger link not fix NIF-5303?",
+            "choices": [
+              "The window, not the link, limits a single flow",
+              "Links never help",
+              "Latency doubles",
+              "It costs nothing"
+            ],
+            "answer_index": 0,
+            "explanation": "window bound"
+          },
+          {
+            "id": "nif-w3-5",
+            "kind": "mcq",
+            "stem": "What can silently break window scaling?",
+            "choices": [
+              "A middlebox stripping the option",
+              "IPv6",
+              "Long passwords",
+              "DNS"
+            ],
+            "answer_index": 0,
+            "explanation": "middlebox"
+          },
+          {
+            "id": "nif-w3-6",
+            "kind": "mcq",
+            "stem": "Doubling the RTT with a fixed window does what to throughput?",
+            "choices": [
+              "Halves it",
+              "Doubles it",
+              "No change",
+              "Quadruples it"
+            ],
+            "answer_index": 0,
+            "explanation": "inverse"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "title": "BGP best path — policy first, then the shorter story",
+        "lesson": "NIF-5404 asks why traffic to a partner network leaves through the long transit path instead of the direct one. Border Gateway Protocol routers hear several routes to the same prefix and pick one by walking an ordered list of attributes, stopping at the first that differs. This course uses a simplified order: highest local preference, shortest AS_PATH, lowest origin code with IGP before EGP before incomplete, lowest MED, then lowest router ID. Local preference is the operator's own policy, so it outranks everything about the route's length. Here R1 offers a one-hop path through documentation AS 64500 but carries local preference 100, while R2 and R3 both carry 200, so R1 is out at the first step even though its path is shortest. R2 and R3 each have four AS numbers, a tie, so the origin decides: R2 is IGP and R3 is EGP, and R2 wins. The deciding attribute is origin. Real routers add steps such as weight and eBGP-over-iBGP; RFC 4271 is the reference, and vendor documents list their full order.",
+        "worked_example": "R1 lp100 [64500]; R2 lp200 len4 IGP; R3 lp200 len4 EGP → local_pref removes R1, AS_PATH ties, origin IGP<EGP → R2",
+        "assignment": "Submit lab_nif_bgp_path JSON for NIF-5404: best_route and deciding_attribute with a sentence per eliminated route.",
+        "lab_id": "lab_nif_bgp_path",
+        "quiz": [
+          {
+            "id": "nif-w4-1",
+            "kind": "mcq",
+            "stem": "Which attribute is compared first in the course's simplified order?",
+            "choices": [
+              "Local preference",
+              "AS_PATH length",
+              "MED",
+              "Router ID"
+            ],
+            "answer_index": 0,
+            "explanation": "policy"
+          },
+          {
+            "id": "nif-w4-2",
+            "kind": "mcq",
+            "stem": "Why is R1 eliminated despite the shortest path?",
+            "choices": [
+              "Its local preference is lower",
+              "Its router ID is high",
+              "Its MED is zero",
+              "It is EGP"
+            ],
+            "answer_index": 0,
+            "explanation": "lp 100 < 200"
+          },
+          {
+            "id": "nif-w4-3",
+            "kind": "mcq",
+            "stem": "R2 and R3 both have four-AS paths. What decides next?",
+            "choices": [
+              "Origin code",
+              "Router ID",
+              "Local preference again",
+              "Path colour"
+            ],
+            "answer_index": 0,
+            "explanation": "next step"
+          },
+          {
+            "id": "nif-w4-4",
+            "kind": "mcq",
+            "stem": "Which origin code is preferred?",
+            "choices": [
+              "IGP",
+              "EGP",
+              "Incomplete",
+              "All equal"
+            ],
+            "answer_index": 0,
+            "explanation": "lowest"
+          },
+          {
+            "id": "nif-w4-5",
+            "kind": "mcq",
+            "stem": "Which route wins NIF-5404?",
+            "choices": [
+              "R2",
+              "R1",
+              "R3",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "origin IGP"
+          },
+          {
+            "id": "nif-w4-6",
+            "kind": "mcq",
+            "stem": "Where is the authoritative BGP specification?",
+            "choices": [
+              "RFC 4271",
+              "RFC 5952",
+              "RFC 1034",
+              "RFC 7489"
+            ],
+            "answer_index": 0,
+            "explanation": "reference"
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "title": "DNS TTL — planning a change the world sees late",
+        "lesson": "NIF-5505 is a cutover: a public website moves to new servers at t = 5,000 seconds and the old servers will be switched off soon after. Resolvers that looked up the name keep the answer for its time to live, and RFC 1034 lets them reuse it without asking again. A resolver that cached the record at t = 3,000 with a TTL of 3,600 seconds will hand out the old address until t = 6,600, so its users see the old site for 1,600 seconds after the change. In the worst case a resolver caches the old answer one second before the change and stays stale for the whole TTL, 3,600 seconds. The fix is planning: lower the TTL to something short, such as 300 seconds, at least one old TTL before the change, so by t = 1,400 at the latest, and raise it again once the new servers are stable. Keep the old servers answering until the worst-case window has passed. A change is not live when the zone file is saved; it is live when the last cache has expired.",
+        "worked_example": "TTL 3600; resolver cached at t=3000 → expires 6600; record changed at 5000 → stale window 1600 s; worst case 3600 s; lower TTL by t=1400",
+        "assignment": "Submit lab_nif_dns_ttl JSON for NIF-5505: ttl_s, cached_at_s, changed_at_s, stale_until_s, stale_window_s, worst_case_s, lower_ttl_by_s.",
+        "lab_id": "lab_nif_dns_ttl",
+        "quiz": [
+          {
+            "id": "nif-w5-1",
+            "kind": "mcq",
+            "stem": "Cached at 3,000 with TTL 3,600. When does that resolver's copy expire?",
+            "choices": [
+              "t = 6,600",
+              "t = 3,600",
+              "t = 5,000",
+              "t = 8,600"
+            ],
+            "answer_index": 0,
+            "explanation": "cached + TTL"
+          },
+          {
+            "id": "nif-w5-2",
+            "kind": "mcq",
+            "stem": "The record changed at 5,000. How long does that resolver serve stale data?",
+            "choices": [
+              "1,600 seconds",
+              "3,600 seconds",
+              "0 seconds",
+              "5,000 seconds"
+            ],
+            "answer_index": 0,
+            "explanation": "6,600 − 5,000"
+          },
+          {
+            "id": "nif-w5-3",
+            "kind": "mcq",
+            "stem": "What is the worst-case stale window for TTL 3,600?",
+            "choices": [
+              "3,600 seconds",
+              "1,600 seconds",
+              "300 seconds",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "full TTL"
+          },
+          {
+            "id": "nif-w5-4",
+            "kind": "mcq",
+            "stem": "By when must the TTL be lowered for a change at 5,000?",
+            "choices": [
+              "t = 1,400",
+              "t = 4,999",
+              "t = 5,000",
+              "t = 6,600"
+            ],
+            "answer_index": 0,
+            "explanation": "one TTL before"
+          },
+          {
+            "id": "nif-w5-5",
+            "kind": "mcq",
+            "stem": "When is a DNS change actually live everywhere?",
+            "choices": [
+              "When the last cache has expired",
+              "When the zone is saved",
+              "Immediately",
+              "After a reboot"
+            ],
+            "answer_index": 0,
+            "explanation": "caches"
+          },
+          {
+            "id": "nif-w5-6",
+            "kind": "mcq",
+            "stem": "Why keep old servers answering after the change?",
+            "choices": [
+              "Stale resolvers still send users there",
+              "For fun",
+              "To double cost",
+              "DNS requires it forever"
+            ],
+            "answer_index": 0,
+            "explanation": "overlap"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "CDN offload — the miss ratio is what the origin pays for",
+        "lesson": "NIF-5606: a public broadcaster expects 12,000 requests per second for a live results page, each object about 150 kilobytes, and its origin servers sit behind a two-gigabit link. A content delivery network answers from edge caches when it can, and only the misses travel back to the origin. The origin's load scales with the miss ratio, one minus the hit ratio. At a 92 percent hit ratio, 8 percent of 12,000 is 960 requests per second, and 960 times 150,000 bytes times 8 bits is 1.152 gigabits per second, uncomfortably close to the two-gigabit link. Raising the hit ratio to 96 percent halves the misses to 480 requests per second and 0.576 Gbit/s. Four points of hit ratio halved the origin's work, which is why cache keys, longer TTLs for static images, and stripping needless query strings matter. The edge still delivers all 14.4 Gbit/s to viewers, so the CDN contract must cover that. Multiplying by the hit ratio instead of the miss ratio gives a number that looks impressive and is wrong.",
+        "worked_example": "12,000 rps × 150 KB: hit 0.92 → 960 rps, 1.152 Gbit/s at origin; hit 0.96 → 480 rps, 0.576 Gbit/s; edge serves 14.4 Gbit/s total",
+        "assignment": "Submit lab_nif_cdn_offload JSON for NIF-5606: total_rps, object_kb, two scenarios with origin_rps and origin_gbps.",
+        "lab_id": "lab_nif_cdn_offload",
+        "quiz": [
+          {
+            "id": "nif-w6-1",
+            "kind": "mcq",
+            "stem": "At a 92% hit ratio and 12,000 rps, how many requests reach the origin?",
+            "choices": [
+              "960 per second",
+              "11,040 per second",
+              "9,200 per second",
+              "120 per second"
+            ],
+            "answer_index": 0,
+            "explanation": "miss × total"
+          },
+          {
+            "id": "nif-w6-2",
+            "kind": "mcq",
+            "stem": "What origin bandwidth do 960 rps of 150 KB objects need?",
+            "choices": [
+              "1.152 Gbit/s",
+              "144 Mbit/s",
+              "14.4 Gbit/s",
+              "0.96 Gbit/s"
+            ],
+            "answer_index": 0,
+            "explanation": "×150,000×8"
+          },
+          {
+            "id": "nif-w6-3",
+            "kind": "mcq",
+            "stem": "Raising the hit ratio from 92% to 96% does what to origin load?",
+            "choices": [
+              "Halves it",
+              "Cuts it by 4%",
+              "Doubles it",
+              "No change"
+            ],
+            "answer_index": 0,
+            "explanation": "8% → 4%"
+          },
+          {
+            "id": "nif-w6-4",
+            "kind": "mcq",
+            "stem": "Which ratio does origin load scale with?",
+            "choices": [
+              "The miss ratio",
+              "The hit ratio",
+              "The TTL",
+              "The object count"
+            ],
+            "answer_index": 0,
+            "explanation": "1 − hit"
+          },
+          {
+            "id": "nif-w6-5",
+            "kind": "mcq",
+            "stem": "Total edge delivery for 12,000 rps of 150 KB is about?",
+            "choices": [
+              "14.4 Gbit/s",
+              "1.44 Gbit/s",
+              "144 Gbit/s",
+              "1.152 Gbit/s"
+            ],
+            "answer_index": 0,
+            "explanation": "all requests"
+          },
+          {
+            "id": "nif-w6-6",
+            "kind": "mcq",
+            "stem": "Which change usually raises the hit ratio?",
+            "choices": [
+              "Stripping needless query strings from cache keys",
+              "Shorter TTLs on images",
+              "Disabling caching",
+              "Adding random parameters"
+            ],
+            "answer_index": 0,
+            "explanation": "cache keys"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Optical link budget — loss, margin, and the 3 dB rule",
+        "lesson": "NIF-5707 is a NO_AI week: do the decibel arithmetic on paper first. A field team must confirm that optics with a 0 dBm transmitter and a receiver sensitivity of −23 dBm will work over a new 40 km span. Decibels add, which is why engineers like them. The planning coefficients are 0.35 dB per kilometre of fiber, 0.5 dB for each mated connector, and 0.1 dB for each fusion splice. Forty kilometres costs 14 dB, four connectors cost 2, and six splices cost 0.6, for 16.6 dB in total. The light arrives at −16.6 dBm, and the receiver can still read it down to −23, so the margin is 6.4 dB. The backbone rule asks for at least 3 dB of margin to cover ageing, dirty connectors, temperature, and the repair splices a backhoe will eventually require, so this span passes. Counting only fiber loss would claim 9 dB of margin and hide two decibels of connectors. Clean and inspect every connector before measuring, and compare the light meter's reading with the budget.",
+        "worked_example": "40 km × 0.35 + 4 × 0.5 + 6 × 0.1 = 16.6 dB loss; margin = 0 − 16.6 − (−23) = 6.4 dB ≥ 3 → passes",
+        "assignment": "Submit lab_nif_optical_budget JSON for NIF-5707 (NO_AI): km, connectors, splices, tx_dbm, rx_sens_dbm, loss_db, margin_db, passes.",
+        "lab_id": "lab_nif_optical_budget",
+        "quiz": [
+          {
+            "id": "nif-w7-1",
+            "kind": "mcq",
+            "stem": "What is the total loss for 40 km, 4 connectors, and 6 splices?",
+            "choices": [
+              "16.6 dB",
+              "14.0 dB",
+              "20.6 dB",
+              "10.0 dB"
+            ],
+            "answer_index": 0,
+            "explanation": "sum"
+          },
+          {
+            "id": "nif-w7-2",
+            "kind": "mcq",
+            "stem": "With tx 0 dBm and sensitivity −23 dBm, what is the margin?",
+            "choices": [
+              "6.4 dB",
+              "9.0 dB",
+              "23 dB",
+              "−6.4 dB"
+            ],
+            "answer_index": 0,
+            "explanation": "0 − 16.6 + 23"
+          },
+          {
+            "id": "nif-w7-3",
+            "kind": "mcq",
+            "stem": "Does the span pass the 3 dB rule?",
+            "choices": [
+              "Yes",
+              "No",
+              "Only at night",
+              "Cannot tell"
+            ],
+            "answer_index": 0,
+            "explanation": "6.4 ≥ 3"
+          },
+          {
+            "id": "nif-w7-4",
+            "kind": "mcq",
+            "stem": "Why do engineers like decibels for budgets?",
+            "choices": [
+              "Losses add instead of multiply",
+              "They are larger numbers",
+              "They are metric",
+              "They avoid physics"
+            ],
+            "answer_index": 0,
+            "explanation": "logarithms"
+          },
+          {
+            "id": "nif-w7-5",
+            "kind": "mcq",
+            "stem": "What does counting only fiber loss do?",
+            "choices": [
+              "Overstates the margin",
+              "Understates the margin",
+              "Nothing",
+              "Fails every span"
+            ],
+            "answer_index": 0,
+            "explanation": "hidden loss"
+          },
+          {
+            "id": "nif-w7-6",
+            "kind": "mcq",
+            "stem": "What should happen before measuring with a light meter?",
+            "choices": [
+              "Clean and inspect every connector",
+              "Bend the fiber",
+              "Remove the splices",
+              "Raise the transmitter"
+            ],
+            "answer_index": 0,
+            "explanation": "hygiene"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Availability — redundancy in parallel, single points in series",
+        "lesson": "NIF-5808: a regional exchange's design has two core routers sharing traffic, each available 99.9 percent of the time, followed by one power feed at 99.95 percent and one fiber uplink at 99.99 percent. The question from management is how many minutes a year customers should expect to lose. A redundant pair fails only when both members are down at once, so its unavailability is the product of theirs: 0.001 times 0.001 is one in a million, making the pair 0.999999 available, assuming failures are independent. Parts in series all have to work, so their availabilities multiply: 0.999999 times 0.9995 times 0.9999 is about 0.9993991. A year has 525,600 minutes, so expected downtime is about 315.9 minutes, more than five hours, almost all of it from the single power feed. Spending more on routers would barely move the result; a second feed would. Shared causes such as one power strip feeding both routers break the independence assumption and must be designed away.",
+        "worked_example": "pair 1 − (0.001 × 0.001) = 0.999999; × 0.9995 × 0.9999 = 0.9993991; downtime (1 − A) × 525,600 = 315.9 min/yr",
+        "assignment": "Submit lab_nif_availability JSON for NIF-5808: parallel_pair, serial, availability, downtime_min_per_year.",
+        "lab_id": "lab_nif_availability",
+        "quiz": [
+          {
+            "id": "nif-w8-1",
+            "kind": "mcq",
+            "stem": "Two 99.9% routers in parallel give what availability?",
+            "choices": [
+              "0.999999",
+              "0.998",
+              "0.9999",
+              "0.999"
+            ],
+            "answer_index": 0,
+            "explanation": "1 − 0.001²"
+          },
+          {
+            "id": "nif-w8-2",
+            "kind": "mcq",
+            "stem": "What happens to availability for parts in series?",
+            "choices": [
+              "They multiply",
+              "They add",
+              "The best one wins",
+              "They average"
+            ],
+            "answer_index": 0,
+            "explanation": "all must work"
+          },
+          {
+            "id": "nif-w8-3",
+            "kind": "mcq",
+            "stem": "What is the design's overall availability?",
+            "choices": [
+              "About 0.9993991",
+              "About 0.9984",
+              "About 0.99999",
+              "About 0.9999"
+            ],
+            "answer_index": 0,
+            "explanation": "product"
+          },
+          {
+            "id": "nif-w8-4",
+            "kind": "mcq",
+            "stem": "About how many minutes of downtime per year does it imply?",
+            "choices": [
+              "About 316",
+              "About 841",
+              "About 53",
+              "About 5"
+            ],
+            "answer_index": 0,
+            "explanation": "× 525,600"
+          },
+          {
+            "id": "nif-w8-5",
+            "kind": "mcq",
+            "stem": "Which single change would help most?",
+            "choices": [
+              "A second power feed",
+              "Faster routers",
+              "More router RAM",
+              "A new logo"
+            ],
+            "answer_index": 0,
+            "explanation": "weakest serial part"
+          },
+          {
+            "id": "nif-w8-6",
+            "kind": "mcq",
+            "stem": "What breaks the independence assumption?",
+            "choices": [
+              "Both routers on one power strip",
+              "Different colours",
+              "Separate racks",
+              "Separate feeds"
+            ],
+            "answer_index": 0,
+            "explanation": "shared cause"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "95th-percentile billing — the bursts you do not pay for",
+        "lesson": "NIF-5909, the second NO_AI week, is a disputed transit invoice. Many internet transit contracts bill on the 95th percentile: the provider records average throughput every five minutes, sorts the month's samples, throws away the top five percent, and bills the highest remaining sample. The course fixture has twenty samples between 289 and 905 Mbit/s. With twenty samples, five percent is one, so the bill uses the sample at sorted index ceil(0.95 × 20) − 1, which is index 18 counting from zero. Sorted, that is 720 Mbit/s, while the 905 Mbit/s burst at the top is discarded. At $0.35 per Mbit/s the charge is $252. Billing the peak would charge $316.75, and billing the mean would undercount the busy hours. A real month has about 8,640 samples, so roughly 432 five-minute periods, about 36 hours, can burst without raising the bill. Know where your provider samples, whether inbound and outbound are compared, and check their arithmetic before paying.",
+        "worked_example": "20 five-minute samples sorted; index ceil(0.95 × 20) − 1 = 18 → 720 Mbit/s × $0.35 = $252; the single 905 Mbit/s burst is free",
+        "assignment": "Submit lab_nif_p95_billing JSON for NIF-5909 (NO_AI): samples_mbps, usd_per_mbps, p95_mbps, bill_usd, free_burst_samples.",
+        "lab_id": "lab_nif_p95_billing",
+        "quiz": [
+          {
+            "id": "nif-w9-1",
+            "kind": "mcq",
+            "stem": "With 20 samples, which sorted index (from zero) is billed?",
+            "choices": [
+              "18",
+              "19",
+              "20",
+              "0"
+            ],
+            "answer_index": 0,
+            "explanation": "ceil(19) − 1"
+          },
+          {
+            "id": "nif-w9-2",
+            "kind": "mcq",
+            "stem": "What is the billed rate in the course fixture?",
+            "choices": [
+              "720 Mbit/s",
+              "905 Mbit/s",
+              "640 Mbit/s",
+              "455 Mbit/s"
+            ],
+            "answer_index": 0,
+            "explanation": "index 18"
+          },
+          {
+            "id": "nif-w9-3",
+            "kind": "mcq",
+            "stem": "At $0.35 per Mbit/s, what is the charge?",
+            "choices": [
+              "$252",
+              "$316.75",
+              "$224",
+              "$35"
+            ],
+            "answer_index": 0,
+            "explanation": "720 × 0.35"
+          },
+          {
+            "id": "nif-w9-4",
+            "kind": "mcq",
+            "stem": "How many samples are free bursts with 20 samples?",
+            "choices": [
+              "One",
+              "Zero",
+              "Two",
+              "Five"
+            ],
+            "answer_index": 0,
+            "explanation": "5%"
+          },
+          {
+            "id": "nif-w9-5",
+            "kind": "mcq",
+            "stem": "Roughly how many hours of bursting does a 30-day month allow?",
+            "choices": [
+              "About 36",
+              "About 3.6",
+              "About 360",
+              "None"
+            ],
+            "answer_index": 0,
+            "explanation": "432 × 5 min"
+          },
+          {
+            "id": "nif-w9-6",
+            "kind": "mcq",
+            "stem": "Why is billing the peak wrong under this contract?",
+            "choices": [
+              "The top 5% of samples are discarded",
+              "Peaks are illegal",
+              "Peaks are averages",
+              "It is cheaper"
+            ],
+            "answer_index": 0,
+            "explanation": "contract"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Backbone design packet — documentation numbers, recomputed",
+        "lesson": "NIF-5A10 closes the term with a design packet for the regional backbone that the class has been building. It uses only documentation numbers: an autonomous system number from 64496 to 64511, here 64500, and an IPv6 prefix inside 2001:db8::/32, here 2001:db8:4400::/48. Using a real company's ASN or prefix in a training packet can leak into configurations and hijack someone else's traffic, so the reviewer rejects it on sight. The packet recomputes rather than restates: the 1,145 km route's propagation delay, the availability of the redundant core with its serial power feed and uplink compared with the 0.999 target, and the 6.4 dB optical margin. It cites RFC 4271, 5952, 7323, and 1034 for the behaviour it relies on. The final line says plainly that the packet is a classroom exercise and makes no claim about production peering or real customer service. Mentors pick one number at random and ask the author to derive it at the whiteboard.",
+        "worked_example": "ASN 64500, prefix 2001:db8:4400::/48, 1,145 km → 5.6067 ms, availability 0.9993991 vs target 0.999 met, margin 6.4 dB, production_peering_claim false",
+        "assignment": "Submit lab_nif_design_packet JSON for NIF-5A10: labs_passed, asn, ipv6_prefix, recomputed latency/availability/optical, production_peering_claim false.",
+        "lab_id": "lab_nif_design_packet",
+        "quiz": [
+          {
+            "id": "nif-w10-1",
+            "kind": "mcq",
+            "stem": "Which ASN range is reserved for documentation?",
+            "choices": [
+              "64496–64511",
+              "13335–13350",
+              "1–100",
+              "65535 only"
+            ],
+            "answer_index": 0,
+            "explanation": "RFC 5398"
+          },
+          {
+            "id": "nif-w10-2",
+            "kind": "mcq",
+            "stem": "Why must training packets avoid real ASNs and prefixes?",
+            "choices": [
+              "They can leak into configs and hijack traffic",
+              "They are too long",
+              "They cost money",
+              "They are secret"
+            ],
+            "answer_index": 0,
+            "explanation": "safety"
+          },
+          {
+            "id": "nif-w10-3",
+            "kind": "mcq",
+            "stem": "Does 0.9993991 meet a 0.999 target?",
+            "choices": [
+              "Yes",
+              "No",
+              "Only with RAID",
+              "Cannot tell"
+            ],
+            "answer_index": 0,
+            "explanation": "compare"
+          },
+          {
+            "id": "nif-w10-4",
+            "kind": "mcq",
+            "stem": "What does 'recompute rather than restate' mean here?",
+            "choices": [
+              "Derive each number from its inputs",
+              "Copy last term's figures",
+              "Round everything to 1",
+              "Skip the math"
+            ],
+            "answer_index": 0,
+            "explanation": "method"
+          },
+          {
+            "id": "nif-w10-5",
+            "kind": "mcq",
+            "stem": "What must the final line of the packet say?",
+            "choices": [
+              "No production peering claim",
+              "Guaranteed uptime",
+              "Certified by Cisco",
+              "Live customer service"
+            ],
+            "answer_index": 0,
+            "explanation": "boundary"
+          },
+          {
+            "id": "nif-w10-6",
+            "kind": "mcq",
+            "stem": "How do mentors check the packet?",
+            "choices": [
+              "Ask the author to derive a random number at the whiteboard",
+              "Check the font",
+              "Count pages",
+              "Accept it unread"
+            ],
+            "answer_index": 0,
+            "explanation": "oral check"
+          }
+        ]
+      }
+    ]
+  }
+}

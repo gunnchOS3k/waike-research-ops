@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "soc-w1-1",
+      "kind": "mcq",
+      "stem": "Which address in the fixture has the most failed logins?",
+      "choices": [
+        "198.51.100.7",
+        "192.0.2.10",
+        "10.0.0.1",
+        "203.0.113.45"
+      ]
+    },
+    {
+      "id": "soc-w1-2",
+      "kind": "mcq",
+      "stem": "Why does the root success from 203.0.113.45 need escalation?",
+      "choices": [
+        "It follows a run of failures from the same source",
+        "Root logins are always forbidden by law",
+        "It came from a documentation range",
+        "It used a public key"
+      ]
+    },
+    {
+      "id": "soc-w1-3",
+      "kind": "mcq",
+      "stem": "Naiya fails once just after a key login from her own address. How do you treat it?",
+      "choices": [
+        "Lock every account",
+        "Note it as likely noise and move on",
+        "Escalate as a breach",
+        "Delete the line"
+      ]
+    },
+    {
+      "id": "soc-w1-4",
+      "kind": "mcq",
+      "stem": "What should never happen with a live customer log during triage?",
+      "choices": [
+        "Reading it on the SIEM",
+        "Counting its failures",
+        "Pasting it into an outside chat tool",
+        "Saving it in the case"
+      ]
+    },
+    {
+      "id": "soc-w1-5",
+      "kind": "mcq",
+      "stem": "Which part of a log line tells you the remote address?",
+      "choices": [
+        "The process ID",
+        "The hostname bastion",
+        "The month",
+        "The 'from \u2026 port' clause"
+      ]
+    },
+    {
+      "id": "soc-w1-6",
+      "kind": "mcq",
+      "stem": "Why do the course logs use addresses like 198.51.100.7?",
+      "choices": [
+        "They are reserved documentation ranges",
+        "They belong to the course host",
+        "They are random",
+        "They are IPv6"
+      ]
+    }
+  ]
+}

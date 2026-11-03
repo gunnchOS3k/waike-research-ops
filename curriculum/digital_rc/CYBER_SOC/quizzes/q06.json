@@ -1,0 +1,72 @@
+{
+  "quiz_id": "CYBER_SOC-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "soc-w6-1",
+      "kind": "mcq",
+      "stem": "Message B passes SPF and DKIM. Why does DMARC still fail?",
+      "choices": [
+        "DKIM keys expired",
+        "Neither passing check belongs to the From domain",
+        "SPF is optional",
+        "The message is too long"
+      ]
+    },
+    {
+      "id": "soc-w6-2",
+      "kind": "mcq",
+      "stem": "What does DKIM's d= tag name?",
+      "choices": [
+        "The recipient",
+        "The mail server IP",
+        "The domain whose key signed the message",
+        "The DMARC policy"
+      ]
+    },
+    {
+      "id": "soc-w6-3",
+      "kind": "mcq",
+      "stem": "Under relaxed alignment, does mail.harborpay.example align with harborpay.example?",
+      "choices": [
+        "No, subdomains never align",
+        "Only for SPF",
+        "Only on weekends",
+        "Yes, they share the organisational domain"
+      ]
+    },
+    {
+      "id": "soc-w6-4",
+      "kind": "mcq",
+      "stem": "SPF authorises a server to send for which domain?",
+      "choices": [
+        "The envelope return-path domain",
+        "The visible From domain only",
+        "Any domain",
+        "The recipient's domain"
+      ]
+    },
+    {
+      "id": "soc-w6-5",
+      "kind": "mcq",
+      "stem": "For DMARC to pass, how many aligned passing checks are needed?",
+      "choices": [
+        "Both",
+        "At least one of SPF or DKIM",
+        "Neither",
+        "Three"
+      ]
+    },
+    {
+      "id": "soc-w6-6",
+      "kind": "mcq",
+      "stem": "Why must the desk explain alignment to users?",
+      "choices": [
+        "Users configure DNS",
+        "Alignment is a user setting",
+        "'SPF pass' alone can make a spoof look trustworthy",
+        "It speeds delivery"
+      ]
+    }
+  ]
+}

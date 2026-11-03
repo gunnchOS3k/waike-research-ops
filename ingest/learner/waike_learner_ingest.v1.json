@@ -1,7 +1,7 @@
 {
   "schema": "waike.learner_ingest.v1",
   "role": "learner",
-  "generated_utc": "2026-11-03T00:00:31Z",
+  "generated_utc": "2026-11-03T02:59:31Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
@@ -2692,7 +2692,7 @@
       "course_id": "CYBERSECURITY",
       "title": "Cybersecurity \u2014 Harbor SOC Foundations",
       "track_ids": [
-        "CYBER_SOC"
+        "CYBERSECURITY"
       ],
       "academy_id": "ACADEMY_CYBER",
       "kinesthetic_hook": "Triage a fixture SIEM, enforce RBAC on a bot, and detect a length lie in a toy parser.",
@@ -22914,6 +22914,1355 @@
           "labs": [
             "lab_sga_claim_ledger",
             "lab_sga_repro_manifest"
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "CYBER_SOC",
+      "title": "Cybersecurity Foundations and SOC Readiness \u2014 Night Shift Desk",
+      "track_ids": [
+        "CYBER_SOC"
+      ],
+      "academy_id": "ACADEMY_CYBER",
+      "kinesthetic_hook": "Ten Night Shift Desk tickets: read the auth log \u2192 tune a window rule \u2192 measure precision \u2192 hash and defang indicators \u2192 map to ATT&CK \u2192 check DMARC alignment \u2192 score CVSS by hand \u2192 order the queue \u2192 report MTTD/MTTR \u2192 hand off the shift.",
+      "lesson_excerpt": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happ",
+      "worked_example": "203.0.113.45 failed 3\u00d7, 198.51.100.7 failed 2\u00d7, 192.0.2.10 failed 1\u00d7; Accepted password for root from 203.0.113.45 at 01:15:31 \u2192 escalate",
+      "assignment": "Submit lab_soc_log_parse JSON for SOC-2101: failed_by_ip, top_source, accepted_after_failures.",
+      "lab_hint": "lab_soc_log_parse",
+      "syllabus": {
+        "weeks": 10,
+        "hook": "CYBER_SOC COURSE_DIGITAL_RC: analyst-desk numeracy for a junior SOC seat \u2014 log parsing, windowed detection, precision and recall, indicator hygiene, MITRE ATT&CK mapping, email authentication, CVSS v3.1, triage queues, and shift metrics. Defensive only, synthetic logs, documentation IP ranges. Distinct from the CYBERSECURITY Harbor SOC governance course. Not student/teacher E6."
+      },
+      "weeks": [
+        {
+          "week": 1,
+          "title": "Auth log anatomy \u2014 failures, sources, and the success that follows",
+          "lesson_id": "CYBER_SOC-w01",
+          "body_md": "Ticket SOC-2101 lands at 01:20 on the Night Shift Desk: eight lines from the bastion host's sshd log and a request to say whether anything matters. Read a log line left to right as a sentence. The timestamp says when, the host and process say where, and the message says what happened to whom from which address. In this fixture 203.0.113.45 fails three times as root, 198.51.100.7 tries the made-up accounts admin and oracle twice, and 192.0.2.10 fails once right after the user naiya logged in with her key from the same machine. Counting failures per source is the start, not the finding. The line that changes the night is the last one: Accepted password for root from 203.0.113.45, seconds after that address failed. A success that follows a run of failures from the same source is the pattern analysts escalate, because it can mean a guessed password. Naiya's typo after a good key login is noise you note and move past. All addresses here come from documentation ranges, so nobody's real server appears in the course, and you never paste a live customer log into a chat tool to save time.",
+          "worked_example": "203.0.113.45 failed 3\u00d7, 198.51.100.7 failed 2\u00d7, 192.0.2.10 failed 1\u00d7; Accepted password for root from 203.0.113.45 at 01:15:31 \u2192 escalate"
+        },
+        {
+          "week": 2,
+          "title": "Windowed detection \u2014 a threshold means nothing without a clock",
+          "lesson_id": "CYBER_SOC-w02",
+          "body_md": "SOC-2202 asks you to turn last night's eyeballing into a rule the SIEM can run. 'Four failed logins' is not a rule until you say within how long. The fixture lists eleven failures with second offsets. With a threshold of four inside a sixty-second sliding window, 203.0.113.45 fires at second 70: the failures at 20, 50, 65 and 70 all sit within sixty seconds of each other, while the first one at second 0 has already aged out. 198.51.100.7 never fires, because its attempts at 200, 230, 250 and 265 span sixty-five seconds, one heartbeat too slow. Widen the window to ninety seconds and that address alerts at 265 as well. Neither choice is free. A wider window catches slow guessing and also pulls in people who mistype their passwords on a cold morning. Write the threshold and window into the rule's description so the next analyst can reason about a miss, and replay the rule against stored events before you switch it on. The lab grader replays your parameters, so it rejects an alert list that would only be true for a different window.",
+          "worked_example": "threshold 4 in 60 s \u2192 203.0.113.45 fires at t=70 (events 20, 50, 65, 70); 198.51.100.7 does not; widen to 90 s \u2192 it fires at 265"
+        },
+        {
+          "week": 3,
+          "title": "Detection quality \u2014 precision, recall, and the analyst's hour",
+          "lesson_id": "CYBER_SOC-w03",
+          "body_md": "SOC-2303 is a NO_AI week: do the fractions on paper and show each line, because these four numbers decide whether a rule stays on. A month of the brute-force rule produced 60 alerts. Eighteen were real attacks, true positives, and forty-two were not, false positives. Six real attacks slipped through without an alert, false negatives, and 934 quiet events were correctly left alone. Precision asks how often an alert is worth opening: 18 out of 60, or 0.30. Recall asks how many real attacks the rule caught: 18 out of 24, or 0.75. The false-positive rate compares wrong alerts with all benign events, 42 out of 976, about 0.043, which sounds tiny and still costs forty-two investigations. At ten minutes each that is seven analyst-hours spent proving nothing happened. A precision under one half means most alerts are noise, so the honest call is needs tuning, not 'the rule works'. Tuning that raises precision often lowers recall, so record both before and after a change, and never report recall alone because it flatters a noisy rule.",
+          "worked_example": "TP 18, FP 42, FN 6, TN 934 \u2192 precision 18/60 = 0.30, recall 18/24 = 0.75, FPR 42/976 = 0.043 \u2192 needs tuning"
+        },
+        {
+          "week": 4,
+          "title": "Indicator hygiene \u2014 hash it, defang it, then compare",
+          "lesson_id": "CYBER_SOC-w04",
+          "body_md": "SOC-2404 arrives with a suspicious attachment name and a link from a user report. Indicators of compromise are only useful if you can compare them exactly and pass them around safely. For files that means a cryptographic hash: SHA-256 turns any sequence of bytes into a 64-character fingerprint, and a single changed byte produces an unrelated digest, so the lab recomputes the hash from the inert sample text instead of trusting a pasted value. For links it means defanging before the indicator goes into a ticket, chat, or report: write hxxp instead of http and bracket every dot in the host, so update-check.example.net becomes update-check[.]example[.]net and nobody's mail client turns it into a clickable trap. Only after both steps do you check the desk's indicator list. Here the sample hash and the domain are both on it, so the answer is a match and the ticket goes to the phishing playbook. A miss does not mean safe, it means unknown, and the course's sample is inert text, never real malware, so nobody downloads or detonates anything on a personal laptop.",
+          "worked_example": "sha256('WAIKE-SOC training sample: \u2026') = fc6c0f88\u2026e657; http://update-check.example.net/payload \u2192 hxxp://update-check[.]example[.]net/payload; on IOC list \u2192 match"
+        },
+        {
+          "week": 5,
+          "title": "ATT&CK mapping \u2014 describe behaviour, not villains",
+          "lesson_id": "CYBER_SOC-w05",
+          "body_md": "SOC-2505 gives the desk five behaviours seen this week and asks for a shared vocabulary. MITRE ATT&CK is a public catalogue of attacker techniques, each with an ID and one or more tactics that say what the attacker was trying to achieve. Many failed SSH logins from one address are T1110, Brute Force, under credential access. A never-before-seen account logging in at three in the morning with a correct password is T1078, Valid Accounts, which ATT&CK lists under several tactics because stolen credentials help an intruder get in, stay in, and blend in. A spoofed invoice attachment is T1566, Phishing, under initial access. PowerShell launched with an encoded command line is T1059, Command and Scripting Interpreter, under execution, and files renamed with a .locked suffix beside a ransom note are T1486, Data Encrypted for Impact. Mapping lets the day shift, the detection engineers, and management talk about the same thing. It does not tell you who did it. Plenty of groups use the same techniques, so the lab requires actor_attribution_claim to stay false.",
+          "worked_example": "B1 brute force \u2192 T1110 credential_access; B3 spoofed invoice \u2192 T1566 initial_access; B5 .locked files \u2192 T1486 impact; actor_attribution_claim false"
+        },
+        {
+          "week": 6,
+          "title": "Email authentication \u2014 passing is not the same as aligned",
+          "lesson_id": "CYBER_SOC-w06",
+          "body_md": "SOC-2606 compares two invoices that both claim to come from Harbor Pay. SPF checks whether the sending server is allowed to send for the envelope's return-path domain. DKIM checks a signature made with a key published by the domain in the signature's d= tag. Both can pass for a domain that has nothing to do with the address the reader sees in the From line. DMARC closes that gap with alignment: at least one passing check must belong to the same organisational domain as the visible From address. Under relaxed alignment, subdomains count, so in message A the From address mail.harborpay.example, the return path bounce.harborpay.example, and the DKIM domain harborpay.example all share harborpay.example, and DMARC passes. Message B also shows SPF pass and DKIM pass, but both checks vouch for bulk-sender.example while the From line says harborpay.example, so DMARC fails. That is exactly the shape of a convincing spoof, and a user who sees 'SPF pass' in a header viewer will be fooled unless someone on the desk explains alignment.",
+          "worked_example": "A: From mail.harborpay.example, SPF via bounce.harborpay.example, DKIM d=harborpay.example \u2192 aligned \u2192 DMARC pass; B: From harborpay.example, SPF/DKIM pass for bulk-sender.example \u2192 not aligned \u2192 DMARC fail"
+        },
+        {
+          "week": 7,
+          "title": "CVSS v3.1 by hand \u2014 from vector string to severity band",
+          "lesson_id": "CYBER_SOC-w07",
+          "body_md": "SOC-2707 is the second NO_AI week, because a desk that only reads scores off a website cannot defend them in a patch meeting. The FIRST CVSS v3.1 base score turns eight metrics into a number. Impact starts from the confidentiality, integrity, and availability weights, 0.56 for High, 0.22 for Low, 0 for None, combined as ISS = 1 \u2212 (1 \u2212 C)(1 \u2212 I)(1 \u2212 A). For an unchanged scope, impact is 6.42 \u00d7 ISS. Exploitability is 8.22 \u00d7 attack vector \u00d7 attack complexity \u00d7 privileges required \u00d7 user interaction, where a network vector weighs 0.85 and low complexity 0.77. For the familiar AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H vector, ISS is about 0.9148, impact about 5.873, exploitability about 3.887, and their sum rounds up to 9.8, Critical. Roundup means the next tenth upward, not the nearest, which is where hand scorers slip. A local, low-privilege flaw that only leaks data, AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N, lands at 5.5, Medium. The base score describes the flaw, not your network; asset value enters next week.",
+          "worked_example": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H \u2192 ISS 0.9148, impact 5.873, exploitability 3.887 \u2192 Roundup 9.8 Critical; AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N \u2192 5.5 Medium"
+        },
+        {
+          "week": 8,
+          "title": "Triage queue \u2014 severity meets asset criticality",
+          "lesson_id": "CYBER_SOC-w08",
+          "body_md": "SOC-2808 hands you six open alerts at once and one pair of hands. Severity alone is a poor sort key, because a critical alert on a lobby kiosk can matter less than a high alert on the domain controller. The desk multiplies a severity weight, four for critical down to one for low, by the asset's criticality from one to three. A5, critical on a criticality-three server, scores twelve and goes first. A1, high on criticality three, scores nine. A3 and A6 both score six, so the earlier arrival, A3 at minute two, goes ahead of A6 at minute eight. A2, the critical alert on a criticality-one kiosk, scores four, and A4 scores three. Each alert also gets a due time: the minute it arrived plus the service-level target for its severity, fifteen minutes for critical, an hour for high, four hours for medium, a day for low. That puts A2's due time at minute 27 even though it sits fifth in the queue, which is a signal to ask for help rather than quietly breach the target. A queue is a plan you can explain to the shift lead, not a mood.",
+          "worked_example": "priority = severity weight \u00d7 criticality: A5 12, A1 9, A3 6 (t=2), A6 6 (t=8), A2 4, A4 3; due = received + SLA (critical 15, high 60, medium 240, low 1440)"
+        },
+        {
+          "week": 9,
+          "title": "Shift metrics \u2014 MTTD, MTTR, and the median that resists one bad night",
+          "lesson_id": "CYBER_SOC-w09",
+          "body_md": "SOC-2909 asks how the week went, in numbers management will read. Mean time to detect is the average gap between when something happened and when the desk noticed. The four incidents took 12, 45, 5 and 70 minutes to detect, so MTTD is 33 minutes. Mean time to resolve, measured here from detection to resolution, averages 78, 65, 35 and 150 minutes to 82. Define the start and end points in the report, because some teams measure resolution from occurrence and their numbers are not comparable with yours. One slow detection, the seventy-minute ransomware case, pulls the mean up; the median of the four detection times is 28.5 minutes and tells a steadier story about a typical night. Report both, and name the outlier instead of hiding it, since that is the incident the next tuning effort should study. Four incidents are a tiny sample. A dashboard that celebrates a five-minute drop in MTTD between two such weeks is reporting noise, so the course asks for the numbers and a sentence about how much they can bear.",
+          "worked_example": "time to detect = 12, 45, 5, 70 min \u2192 MTTD 33, median 28.5; time to resolve from detection = 78, 65, 35, 150 \u2192 MTTR 82"
+        },
+        {
+          "week": 10,
+          "title": "Shift handoff \u2014 open incidents, NIST phases, and clean boundaries",
+          "lesson_id": "CYBER_SOC-w10",
+          "body_md": "SOC-2A10 closes the night. A handoff is the document the day shift reads with its first coffee, so it must be complete without you in the room. List every open incident with its ATT&CK technique ID, the NIST SP 800-61 phase it is in, and a named next owner. The phases are preparation, detection and analysis, containment with eradication and recovery, and post-incident activity; saying 'containment' tells the reader which actions are already done and which are waiting. Carry the shift's MTTD and MTTR from last week's calculation rather than rounding them in your head, and say what changed in the rules you tuned. Two boundaries close every Night Shift Desk packet. It contains no real customer data, only the course's synthetic logs and documentation addresses, and it contains no offensive tooling: the desk detects, contains, and documents; it does not build exploits or scan systems it does not own. Mentors check the packet against six or more passed labs and ask you to walk one incident from first log line to current phase out loud.",
+          "worked_example": "I4 open: T1486, containment_eradication_recovery, next owner day-shift lead; MTTD 33, MTTR 82; real_customer_data false; offensive_tooling false"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "a01",
+          "prompt": "Submit lab_soc_log_parse JSON for SOC-2101: failed_by_ip, top_source, accepted_after_failures."
+        },
+        {
+          "id": "a02",
+          "prompt": "Submit lab_soc_window_rule JSON for SOC-2202: threshold, window_s, and the alerts your rule fires."
+        },
+        {
+          "id": "a03",
+          "prompt": "Submit lab_soc_detection_metrics JSON for SOC-2303 (NO_AI): precision, recall, false_positive_rate, alerts, needs_tuning."
+        },
+        {
+          "id": "a04",
+          "prompt": "Submit lab_soc_ioc_match JSON for SOC-2404: sample_text, sha256, url, defanged_url, ioc_match."
+        },
+        {
+          "id": "a05",
+          "prompt": "Submit lab_soc_attack_map JSON for SOC-2505: technique ID and tactic for B1\u2013B5, actor_attribution_claim false."
+        },
+        {
+          "id": "a06",
+          "prompt": "Submit lab_soc_dmarc_align JSON for SOC-2606: spf_aligned, dkim_aligned, dmarc_pass for messages A and B."
+        },
+        {
+          "id": "a07",
+          "prompt": "Submit lab_soc_cvss_score JSON for SOC-2707 (NO_AI): at least two vectors with base_score and severity."
+        },
+        {
+          "id": "a08",
+          "prompt": "Submit lab_soc_triage_queue JSON for SOC-2808: ordered_ids and due_min for A1\u2013A6."
+        },
+        {
+          "id": "a09",
+          "prompt": "Submit lab_soc_shift_metrics JSON for SOC-2909: mttd_min, mttr_min, median_ttd_min."
+        },
+        {
+          "id": "a10",
+          "prompt": "Submit lab_soc_shift_handoff JSON for SOC-2A10: labs_passed, open incidents with technique/phase/owner, MTTD/MTTR, boundaries."
+        }
+      ],
+      "labs": [
+        "lab_soc_log_parse",
+        "lab_soc_window_rule",
+        "lab_soc_detection_metrics",
+        "lab_soc_ioc_match",
+        "lab_soc_attack_map",
+        "lab_soc_dmarc_align",
+        "lab_soc_cvss_score",
+        "lab_soc_triage_queue",
+        "lab_soc_shift_metrics",
+        "lab_soc_shift_handoff"
+      ],
+      "quizzes": [
+        {
+          "quiz_id": "CYBER_SOC-q01",
+          "week": 1,
+          "items": [
+            {
+              "id": "soc-w1-1",
+              "kind": "mcq",
+              "stem": "Which address in the fixture has the most failed logins?",
+              "choices": [
+                "198.51.100.7",
+                "192.0.2.10",
+                "10.0.0.1",
+                "203.0.113.45"
+              ]
+            },
+            {
+              "id": "soc-w1-2",
+              "kind": "mcq",
+              "stem": "Why does the root success from 203.0.113.45 need escalation?",
+              "choices": [
+                "It follows a run of failures from the same source",
+                "Root logins are always forbidden by law",
+                "It came from a documentation range",
+                "It used a public key"
+              ]
+            },
+            {
+              "id": "soc-w1-3",
+              "kind": "mcq",
+              "stem": "Naiya fails once just after a key login from her own address. How do you treat it?",
+              "choices": [
+                "Lock every account",
+                "Note it as likely noise and move on",
+                "Escalate as a breach",
+                "Delete the line"
+              ]
+            },
+            {
+              "id": "soc-w1-4",
+              "kind": "mcq",
+              "stem": "What should never happen with a live customer log during triage?",
+              "choices": [
+                "Reading it on the SIEM",
+                "Counting its failures",
+                "Pasting it into an outside chat tool",
+                "Saving it in the case"
+              ]
+            },
+            {
+              "id": "soc-w1-5",
+              "kind": "mcq",
+              "stem": "Which part of a log line tells you the remote address?",
+              "choices": [
+                "The process ID",
+                "The hostname bastion",
+                "The month",
+                "The 'from \u2026 port' clause"
+              ]
+            },
+            {
+              "id": "soc-w1-6",
+              "kind": "mcq",
+              "stem": "Why do the course logs use addresses like 198.51.100.7?",
+              "choices": [
+                "They are reserved documentation ranges",
+                "They belong to the course host",
+                "They are random",
+                "They are IPv6"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q02",
+          "week": 2,
+          "items": [
+            {
+              "id": "soc-w2-1",
+              "kind": "mcq",
+              "stem": "With 4-in-60 s, when does 203.0.113.45 first alert?",
+              "choices": [
+                "At second 50",
+                "At second 70",
+                "At second 0",
+                "Never"
+              ]
+            },
+            {
+              "id": "soc-w2-2",
+              "kind": "mcq",
+              "stem": "Why does 198.51.100.7 stay quiet under 4-in-60 s?",
+              "choices": [
+                "It has only two failures",
+                "It is allow-listed",
+                "Its four attempts span 65 seconds",
+                "Its logins succeeded"
+              ]
+            },
+            {
+              "id": "soc-w2-3",
+              "kind": "mcq",
+              "stem": "What does widening the window to 90 s trade away?",
+              "choices": [
+                "All detection",
+                "Log retention",
+                "Nothing",
+                "More false positives from ordinary typos"
+              ]
+            },
+            {
+              "id": "soc-w2-4",
+              "kind": "mcq",
+              "stem": "What makes 'four failed logins' an actual rule?",
+              "choices": [
+                "Stating the time window it counts within",
+                "Writing it in capitals",
+                "Adding a severity",
+                "Sending it by email"
+              ]
+            },
+            {
+              "id": "soc-w2-5",
+              "kind": "mcq",
+              "stem": "Before enabling a new rule, what should you do?",
+              "choices": [
+                "Enable it on every host blind",
+                "Replay it against stored events",
+                "Delete old alerts",
+                "Disable logging"
+              ]
+            },
+            {
+              "id": "soc-w2-6",
+              "kind": "mcq",
+              "stem": "Where should the threshold and window be documented?",
+              "choices": [
+                "Only in your memory",
+                "In a sticky note",
+                "In the rule description",
+                "Nowhere"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q03",
+          "week": 3,
+          "items": [
+            {
+              "id": "soc-w3-1",
+              "kind": "mcq",
+              "stem": "Sixty alerts, eighteen real. What is precision?",
+              "choices": [
+                "0.75",
+                "0.043",
+                "0.18",
+                "0.30"
+              ]
+            },
+            {
+              "id": "soc-w3-2",
+              "kind": "mcq",
+              "stem": "Twenty-four real attacks, eighteen alerted. What is recall?",
+              "choices": [
+                "0.75",
+                "0.30",
+                "0.25",
+                "0.82"
+              ]
+            },
+            {
+              "id": "soc-w3-3",
+              "kind": "mcq",
+              "stem": "Why is a 0.043 false-positive rate still expensive here?",
+              "choices": [
+                "It is above 50%",
+                "It means 42 investigations that find nothing",
+                "It hides true positives",
+                "It breaks the SIEM"
+              ]
+            },
+            {
+              "id": "soc-w3-4",
+              "kind": "mcq",
+              "stem": "Which single metric flatters a noisy rule?",
+              "choices": [
+                "Precision",
+                "False-negative count",
+                "Recall reported alone",
+                "Alert volume"
+              ]
+            },
+            {
+              "id": "soc-w3-5",
+              "kind": "mcq",
+              "stem": "What usually happens to recall when you tighten a rule for precision?",
+              "choices": [
+                "It always rises",
+                "It is unaffected",
+                "It becomes undefined",
+                "It tends to fall"
+              ]
+            },
+            {
+              "id": "soc-w3-6",
+              "kind": "mcq",
+              "stem": "Precision is 0.30. What is the honest call?",
+              "choices": [
+                "The rule needs tuning",
+                "The rule is excellent",
+                "Disable logging",
+                "Raise recall to 1.0 by alerting on everything"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q04",
+          "week": 4,
+          "items": [
+            {
+              "id": "soc-w4-1",
+              "kind": "mcq",
+              "stem": "Why does the grader recompute the SHA-256 rather than trust the ticket?",
+              "choices": [
+                "Hashes expire",
+                "One changed byte gives an unrelated digest",
+                "SHA-256 is reversible",
+                "It is faster"
+              ]
+            },
+            {
+              "id": "soc-w4-2",
+              "kind": "mcq",
+              "stem": "How is http://update-check.example.net written after defanging?",
+              "choices": [
+                "http://update-check.example.net",
+                "update-check dot example",
+                "hxxp://update-check[.]example[.]net",
+                "https://update-check.example.net"
+              ]
+            },
+            {
+              "id": "soc-w4-3",
+              "kind": "mcq",
+              "stem": "Why defang a URL before posting it in a ticket?",
+              "choices": [
+                "To encrypt it",
+                "To shorten it",
+                "Because tickets reject dots",
+                "So no client renders it as a clickable link"
+              ]
+            },
+            {
+              "id": "soc-w4-4",
+              "kind": "mcq",
+              "stem": "An indicator is not on the list. What does that mean?",
+              "choices": [
+                "Unknown, not proven safe",
+                "Definitely safe",
+                "Definitely malicious",
+                "The list is broken"
+              ]
+            },
+            {
+              "id": "soc-w4-5",
+              "kind": "mcq",
+              "stem": "What is the course's attachment sample?",
+              "choices": [
+                "Live malware",
+                "Inert text standing in for a file",
+                "A real customer invoice",
+                "An exploit kit"
+              ]
+            },
+            {
+              "id": "soc-w4-6",
+              "kind": "mcq",
+              "stem": "How long is a SHA-256 hex digest?",
+              "choices": [
+                "32 characters",
+                "40 characters",
+                "64 characters",
+                "128 characters"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q05",
+          "week": 5,
+          "items": [
+            {
+              "id": "soc-w5-1",
+              "kind": "mcq",
+              "stem": "Many failed SSH logins from one source map to which technique?",
+              "choices": [
+                "T1566 Phishing",
+                "T1486 Data Encrypted for Impact",
+                "T1059 Command and Scripting Interpreter",
+                "T1110 Brute Force"
+              ]
+            },
+            {
+              "id": "soc-w5-2",
+              "kind": "mcq",
+              "stem": "Why does T1078 Valid Accounts appear under several tactics?",
+              "choices": [
+                "Stolen credentials help an intruder enter, persist, and evade",
+                "It is mislabelled",
+                "Tactics are random",
+                "It only applies to admins"
+              ]
+            },
+            {
+              "id": "soc-w5-3",
+              "kind": "mcq",
+              "stem": "Files renamed .locked with a ransom note map to?",
+              "choices": [
+                "T1110 under credential access",
+                "T1486 under impact",
+                "T1566 under initial access",
+                "T1078 under persistence"
+              ]
+            },
+            {
+              "id": "soc-w5-4",
+              "kind": "mcq",
+              "stem": "Why must actor_attribution_claim stay false?",
+              "choices": [
+                "ATT&CK forbids naming groups",
+                "Attribution is always obvious",
+                "Many groups share the same techniques",
+                "Tactics prove identity"
+              ]
+            },
+            {
+              "id": "soc-w5-5",
+              "kind": "mcq",
+              "stem": "PowerShell with an encoded command maps to which tactic?",
+              "choices": [
+                "Impact",
+                "Collection",
+                "Reconnaissance",
+                "Execution"
+              ]
+            },
+            {
+              "id": "soc-w5-6",
+              "kind": "mcq",
+              "stem": "What is the main benefit of ATT&CK mapping on a desk?",
+              "choices": [
+                "A shared vocabulary across teams",
+                "Automatic blocking",
+                "Legal proof",
+                "Faster hashing"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q06",
+          "week": 6,
+          "items": [
+            {
+              "id": "soc-w6-1",
+              "kind": "mcq",
+              "stem": "Message B passes SPF and DKIM. Why does DMARC still fail?",
+              "choices": [
+                "DKIM keys expired",
+                "Neither passing check belongs to the From domain",
+                "SPF is optional",
+                "The message is too long"
+              ]
+            },
+            {
+              "id": "soc-w6-2",
+              "kind": "mcq",
+              "stem": "What does DKIM's d= tag name?",
+              "choices": [
+                "The recipient",
+                "The mail server IP",
+                "The domain whose key signed the message",
+                "The DMARC policy"
+              ]
+            },
+            {
+              "id": "soc-w6-3",
+              "kind": "mcq",
+              "stem": "Under relaxed alignment, does mail.harborpay.example align with harborpay.example?",
+              "choices": [
+                "No, subdomains never align",
+                "Only for SPF",
+                "Only on weekends",
+                "Yes, they share the organisational domain"
+              ]
+            },
+            {
+              "id": "soc-w6-4",
+              "kind": "mcq",
+              "stem": "SPF authorises a server to send for which domain?",
+              "choices": [
+                "The envelope return-path domain",
+                "The visible From domain only",
+                "Any domain",
+                "The recipient's domain"
+              ]
+            },
+            {
+              "id": "soc-w6-5",
+              "kind": "mcq",
+              "stem": "For DMARC to pass, how many aligned passing checks are needed?",
+              "choices": [
+                "Both",
+                "At least one of SPF or DKIM",
+                "Neither",
+                "Three"
+              ]
+            },
+            {
+              "id": "soc-w6-6",
+              "kind": "mcq",
+              "stem": "Why must the desk explain alignment to users?",
+              "choices": [
+                "Users configure DNS",
+                "Alignment is a user setting",
+                "'SPF pass' alone can make a spoof look trustworthy",
+                "It speeds delivery"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q07",
+          "week": 7,
+          "items": [
+            {
+              "id": "soc-w7-1",
+              "kind": "mcq",
+              "stem": "What base score does AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H receive?",
+              "choices": [
+                "10.0",
+                "8.8",
+                "7.5",
+                "9.8"
+              ]
+            },
+            {
+              "id": "soc-w7-2",
+              "kind": "mcq",
+              "stem": "How does CVSS v3.1 Roundup treat 5.41?",
+              "choices": [
+                "It becomes 5.5",
+                "It becomes 5.4",
+                "It becomes 5.0",
+                "It becomes 6.0"
+              ]
+            },
+            {
+              "id": "soc-w7-3",
+              "kind": "mcq",
+              "stem": "Which weight does High confidentiality impact use?",
+              "choices": [
+                "0.22",
+                "0.56",
+                "0.85",
+                "0.77"
+              ]
+            },
+            {
+              "id": "soc-w7-4",
+              "kind": "mcq",
+              "stem": "For unchanged scope, impact equals what?",
+              "choices": [
+                "7.52 \u00d7 ISS",
+                "8.22 \u00d7 ISS",
+                "6.42 \u00d7 ISS",
+                "ISS squared"
+              ]
+            },
+            {
+              "id": "soc-w7-5",
+              "kind": "mcq",
+              "stem": "A score of 5.5 falls in which band?",
+              "choices": [
+                "Low",
+                "High",
+                "Critical",
+                "Medium"
+              ]
+            },
+            {
+              "id": "soc-w7-6",
+              "kind": "mcq",
+              "stem": "What does the base score not include?",
+              "choices": [
+                "How valuable the affected asset is to you",
+                "Attack vector",
+                "Privileges required",
+                "Impact on integrity"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q08",
+          "week": 8,
+          "items": [
+            {
+              "id": "soc-w8-1",
+              "kind": "mcq",
+              "stem": "Which alert goes first under severity \u00d7 criticality?",
+              "choices": [
+                "A2",
+                "A5",
+                "A1",
+                "A3"
+              ]
+            },
+            {
+              "id": "soc-w8-2",
+              "kind": "mcq",
+              "stem": "Why does A2, a critical alert, rank fifth?",
+              "choices": [
+                "It arrived first",
+                "Critical alerts are ignored",
+                "It sits on a criticality-one kiosk",
+                "It is a duplicate"
+              ]
+            },
+            {
+              "id": "soc-w8-3",
+              "kind": "mcq",
+              "stem": "A3 and A6 tie at six. What breaks the tie?",
+              "choices": [
+                "Alphabetical order",
+                "Random choice",
+                "Higher severity always",
+                "Earlier arrival"
+              ]
+            },
+            {
+              "id": "soc-w8-4",
+              "kind": "mcq",
+              "stem": "When is A2 due if it arrived at minute 12?",
+              "choices": [
+                "Minute 27",
+                "Minute 72",
+                "Minute 252",
+                "Minute 12"
+              ]
+            },
+            {
+              "id": "soc-w8-5",
+              "kind": "mcq",
+              "stem": "A low-priority alert's due time will pass before you reach it. What should you do?",
+              "choices": [
+                "Close it silently",
+                "Ask the shift lead for help",
+                "Change its received time",
+                "Ignore the SLA"
+              ]
+            },
+            {
+              "id": "soc-w8-6",
+              "kind": "mcq",
+              "stem": "What makes a triage queue defensible?",
+              "choices": [
+                "Gut feeling",
+                "Newest first always",
+                "A stated sort rule you can explain",
+                "Loudest requester first"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q09",
+          "week": 9,
+          "items": [
+            {
+              "id": "soc-w9-1",
+              "kind": "mcq",
+              "stem": "Detection gaps are 12, 45, 5, 70 minutes. What is MTTD?",
+              "choices": [
+                "28.5 minutes",
+                "45 minutes",
+                "132 minutes",
+                "33 minutes"
+              ]
+            },
+            {
+              "id": "soc-w9-2",
+              "kind": "mcq",
+              "stem": "What is the median time to detect for the same four gaps?",
+              "choices": [
+                "28.5 minutes",
+                "33 minutes",
+                "25 minutes",
+                "37.5 minutes"
+              ]
+            },
+            {
+              "id": "soc-w9-3",
+              "kind": "mcq",
+              "stem": "Why report the median beside the mean?",
+              "choices": [
+                "The median is always larger",
+                "One slow case can pull the mean up",
+                "Means are illegal",
+                "Medians include resolution"
+              ]
+            },
+            {
+              "id": "soc-w9-4",
+              "kind": "mcq",
+              "stem": "Why define where MTTR starts?",
+              "choices": [
+                "MTTR never changes",
+                "It is set by law",
+                "Teams measure from different events, so numbers differ",
+                "It hides incidents"
+              ]
+            },
+            {
+              "id": "soc-w9-5",
+              "kind": "mcq",
+              "stem": "Resolution times 78, 65, 35, 150 minutes give what MTTR?",
+              "choices": [
+                "71.5 minutes",
+                "150 minutes",
+                "65 minutes",
+                "82 minutes"
+              ]
+            },
+            {
+              "id": "soc-w9-6",
+              "kind": "mcq",
+              "stem": "A five-minute MTTD drop across two four-incident weeks shows what?",
+              "choices": [
+                "Probably noise in a tiny sample",
+                "A proven improvement",
+                "A broken SIEM",
+                "A need to fire analysts"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "CYBER_SOC-q10",
+          "week": 10,
+          "items": [
+            {
+              "id": "soc-w10-1",
+              "kind": "mcq",
+              "stem": "What must every open incident in a handoff carry?",
+              "choices": [
+                "Only a title",
+                "Technique ID, NIST phase, and a next owner",
+                "The analyst's mood",
+                "A screenshot"
+              ]
+            },
+            {
+              "id": "soc-w10-2",
+              "kind": "mcq",
+              "stem": "Which of these is a NIST SP 800-61 phase?",
+              "choices": [
+                "Revenge",
+                "Marketing",
+                "Containment, eradication, and recovery",
+                "Exploit development"
+              ]
+            },
+            {
+              "id": "soc-w10-3",
+              "kind": "mcq",
+              "stem": "Why carry MTTD and MTTR from the calculation rather than memory?",
+              "choices": [
+                "Memory is always right",
+                "The SIEM forbids it",
+                "They never change",
+                "Rounded guesses drift from the record"
+              ]
+            },
+            {
+              "id": "soc-w10-4",
+              "kind": "mcq",
+              "stem": "What does 'no offensive tooling' mean for the desk?",
+              "choices": [
+                "It detects and contains; it does not build exploits or scan others",
+                "It may scan any network",
+                "It writes malware for practice",
+                "It ignores attacks"
+              ]
+            },
+            {
+              "id": "soc-w10-5",
+              "kind": "mcq",
+              "stem": "Who reads the handoff first?",
+              "choices": [
+                "The attacker",
+                "The incoming shift",
+                "Only auditors",
+                "Nobody"
+              ]
+            },
+            {
+              "id": "soc-w10-6",
+              "kind": "mcq",
+              "stem": "During review a mentor asks for what walk-through?",
+              "choices": [
+                "The entire SIEM config",
+                "Every quiz answer",
+                "One incident from first log line to current phase",
+                "A vendor demo"
+              ]
+            }
+          ]
+        }
+      ],
+      "assessments": {
+        "mid_course": [
+          {
+            "id": "soc-mid-01",
+            "stem": "A log shows 'Failed password for invalid user test from 203.0.113.9'. What does 'invalid user' tell you?",
+            "choices": [
+              "The password was correct",
+              "The address is internal",
+              "The account name does not exist on the host",
+              "The login succeeded"
+            ]
+          },
+          {
+            "id": "soc-mid-02",
+            "stem": "Your rule counts failures since midnight with no window. What goes wrong at 23:50?",
+            "choices": [
+              "Nothing",
+              "It never fires",
+              "It only fires on weekends",
+              "A day's scattered typos can add up to an alert"
+            ]
+          },
+          {
+            "id": "soc-mid-03",
+            "stem": "Five failures arrive at seconds 0, 59, 118, 177, 236 against a 4-in-60 s rule. Does it fire?",
+            "choices": [
+              "No; no four fall within 60 seconds",
+              "Yes, at 177",
+              "Yes, at 59",
+              "Yes, at 0"
+            ]
+          },
+          {
+            "id": "soc-mid-04",
+            "stem": "A rule has precision 0.9 and recall 0.2. Describe it.",
+            "choices": [
+              "Noisy but complete",
+              "Alerts are trustworthy but most attacks are missed",
+              "Perfect",
+              "Useless in every way"
+            ]
+          },
+          {
+            "id": "soc-mid-05",
+            "stem": "Doubling true negatives while holding other counts does what to precision?",
+            "choices": [
+              "Doubles it",
+              "Halves it",
+              "Leaves it unchanged",
+              "Sets it to 1"
+            ]
+          },
+          {
+            "id": "soc-mid-06",
+            "stem": "Two files have SHA-256 digests that differ in the last character. What do you conclude?",
+            "choices": [
+              "They are the same file",
+              "One hash is truncated",
+              "The hash function failed",
+              "They are different files"
+            ]
+          },
+          {
+            "id": "soc-mid-07",
+            "stem": "Which of these is correctly defanged?",
+            "choices": [
+              "hxxps://login[.]example[.]org/reset",
+              "https://login.example.org/reset",
+              "hxxps://login.example.org/reset",
+              "login example org"
+            ]
+          },
+          {
+            "id": "soc-mid-08",
+            "stem": "A user forwards a phish to the whole department 'as a warning'. What risk did that create?",
+            "choices": [
+              "None",
+              "More people can now click the live link",
+              "It deletes the phish",
+              "It blocks the sender"
+            ]
+          },
+          {
+            "id": "soc-mid-09",
+            "stem": "Which ATT&CK tactic describes the attacker's goal of staying in after a reboot?",
+            "choices": [
+              "Impact",
+              "Reconnaissance",
+              "Persistence",
+              "Exfiltration"
+            ]
+          },
+          {
+            "id": "soc-mid-10",
+            "stem": "A colleague says 'this T1566 alert proves a nation-state attack'. Your response?",
+            "choices": [
+              "Agree and publish",
+              "Delete the alert",
+              "Change the technique ID",
+              "Technique use alone does not identify an actor"
+            ]
+          },
+          {
+            "id": "soc-mid-11",
+            "stem": "Valid-account misuse is hard to detect mainly because\u2026",
+            "choices": [
+              "The login itself looks legitimate",
+              "It always fails",
+              "It uses malware",
+              "It is rare"
+            ]
+          },
+          {
+            "id": "soc-mid-12",
+            "stem": "A message's From domain is example.org, DKIM d=example.org passes, SPF fails. DMARC result?",
+            "choices": [
+              "Fail",
+              "Pass, through aligned DKIM",
+              "Neutral",
+              "Cannot be evaluated"
+            ]
+          },
+          {
+            "id": "soc-mid-13",
+            "stem": "Strict alignment would treat mail.harborpay.example vs harborpay.example how?",
+            "choices": [
+              "As aligned",
+              "As a DKIM failure",
+              "As not aligned",
+              "As spam"
+            ]
+          },
+          {
+            "id": "soc-mid-14",
+            "stem": "Why would an attacker register harb0rpay.example?",
+            "choices": [
+              "To break DMARC",
+              "To speed delivery",
+              "To get a certificate",
+              "To pass checks for a look-alike domain users misread"
+            ]
+          },
+          {
+            "id": "soc-mid-15",
+            "stem": "A vector changes only AC:L to AC:H. What happens to the base score?",
+            "choices": [
+              "It drops, because exploitability falls",
+              "It rises",
+              "No change",
+              "It becomes 10"
+            ]
+          },
+          {
+            "id": "soc-mid-16",
+            "stem": "Two flaws both score 7.5. One is on a test VM, one on payroll. Which patch first?",
+            "choices": [
+              "The test VM",
+              "Payroll, because asset value differs",
+              "Either, scores are equal",
+              "Neither"
+            ]
+          },
+          {
+            "id": "soc-mid-17",
+            "stem": "An analyst rounds 6.94 to 6.9 when scoring CVSS by hand. What is the correct value?",
+            "choices": [
+              "6.9",
+              "6.0",
+              "7.0",
+              "7.5"
+            ]
+          },
+          {
+            "id": "soc-mid-18",
+            "stem": "Severity weight 3, criticality 2 versus weight 2, criticality 3. Which wins?",
+            "choices": [
+              "The first",
+              "The second",
+              "Neither is queued",
+              "They tie at 6; earlier arrival decides"
+            ]
+          },
+          {
+            "id": "soc-mid-19",
+            "stem": "Your queue will breach three SLAs this hour. What is the honest action?",
+            "choices": [
+              "Tell the shift lead and request help",
+              "Backdate received times",
+              "Close low alerts unread",
+              "Turn off the SLA timer"
+            ]
+          },
+          {
+            "id": "soc-mid-20",
+            "stem": "A single 6-hour detection appears among ten 10-minute ones. Which summary misleads less?",
+            "choices": [
+              "The mean alone",
+              "The median with the outlier named",
+              "The maximum alone",
+              "Nothing at all"
+            ]
+          }
+        ],
+        "final_knowledge": [
+          {
+            "id": "soc-fin-01",
+            "stem": "An accepted login follows twelve failures from one address at 03:00. First action on the desk?",
+            "choices": [
+              "Ignore it, it succeeded",
+              "Block every address",
+              "Delete the log",
+              "Escalate and check what the account did next"
+            ]
+          },
+          {
+            "id": "soc-fin-02",
+            "stem": "A teammate wants to tune a rule live in production without replay. Your advice?",
+            "choices": [
+              "Replay against stored events first",
+              "Go ahead",
+              "Disable the SIEM",
+              "Raise all thresholds to 1000"
+            ]
+          },
+          {
+            "id": "soc-fin-03",
+            "stem": "After tuning, precision rose from 0.3 to 0.6 and recall fell from 0.75 to 0.5. How do you report it?",
+            "choices": [
+              "Report only precision",
+              "Show both before and after and the trade-off",
+              "Report only recall",
+              "Say nothing changed"
+            ]
+          },
+          {
+            "id": "soc-fin-04",
+            "stem": "Which metric counts how many real attacks a rule missed?",
+            "choices": [
+              "True negatives",
+              "Precision",
+              "False negatives",
+              "Alert volume"
+            ]
+          },
+          {
+            "id": "soc-fin-05",
+            "stem": "A threat feed lists a domain. Your log has it with a different subdomain. Is that a match?",
+            "choices": [
+              "Exactly the same indicator",
+              "Never relevant",
+              "Proof of breach",
+              "Possibly; record it as a related indicator and investigate"
+            ]
+          },
+          {
+            "id": "soc-fin-06",
+            "stem": "Where should a live malicious sample never be opened?",
+            "choices": [
+              "On a personal or production laptop",
+              "In an approved isolated sandbox",
+              "In a vendor's analysis portal approved by policy",
+              "Nowhere is ever acceptable"
+            ]
+          },
+          {
+            "id": "soc-fin-07",
+            "stem": "Which statement about MITRE ATT&CK is accurate?",
+            "choices": [
+              "It assigns blame",
+              "It catalogues techniques and tactics, not culprits",
+              "It is a firewall",
+              "It scores vulnerabilities"
+            ]
+          },
+          {
+            "id": "soc-fin-08",
+            "stem": "A ransomware note appears. Which technique ID belongs in the handoff?",
+            "choices": [
+              "T1110",
+              "T1566",
+              "T1486",
+              "T1595"
+            ]
+          },
+          {
+            "id": "soc-fin-09",
+            "stem": "An email shows DMARC fail but the user insists it is from their bank. What do you check first?",
+            "choices": [
+              "The font",
+              "The subject line length",
+              "The time zone",
+              "Which domains SPF and DKIM actually vouched for"
+            ]
+          },
+          {
+            "id": "soc-fin-10",
+            "stem": "Why do many organisations publish a DMARC reject policy after monitoring?",
+            "choices": [
+              "So unaligned mail claiming their domain is refused",
+              "To speed up newsletters",
+              "To disable DKIM",
+              "To hide their MX"
+            ]
+          },
+          {
+            "id": "soc-fin-11",
+            "stem": "A CVSS vector has S:C. What changes in the calculation?",
+            "choices": [
+              "Nothing",
+              "The changed-scope impact formula and PR weights apply",
+              "The score is capped at 5",
+              "Exploitability is ignored"
+            ]
+          },
+          {
+            "id": "soc-fin-12",
+            "stem": "A vendor scores a flaw 9.8 but your server has the service disabled. What remains true?",
+            "choices": [
+              "The base score becomes 0",
+              "The vendor is wrong",
+              "The base score is 9.8; your exposure is lower",
+              "The flaw disappears"
+            ]
+          },
+          {
+            "id": "soc-fin-13",
+            "stem": "Your queue sorts by newest alert first. What failure follows?",
+            "choices": [
+              "Nothing",
+              "Alerts merge",
+              "SLAs disappear",
+              "Old critical alerts on key assets wait too long"
+            ]
+          },
+          {
+            "id": "soc-fin-14",
+            "stem": "Two analysts disagree on queue order. What settles it?",
+            "choices": [
+              "The written severity \u00d7 criticality rule",
+              "Seniority",
+              "Coin toss",
+              "Whoever shouts"
+            ]
+          },
+          {
+            "id": "soc-fin-15",
+            "stem": "Your MTTD is 33 minutes; another team reports 8. What do you check before comparing?",
+            "choices": [
+              "Who has better coffee",
+              "How each team defines the start and end points",
+              "Nothing",
+              "Their tool vendor"
+            ]
+          },
+          {
+            "id": "soc-fin-16",
+            "stem": "Management wants MTTR below 30 minutes by next week. What do you tell them?",
+            "choices": [
+              "It is done",
+              "Stop logging incidents",
+              "Which incidents drive the number and what would shorten them",
+              "Close tickets faster without fixing"
+            ]
+          },
+          {
+            "id": "soc-fin-17",
+            "stem": "A handoff lists 'ransomware stuff, Bob knows'. What is missing?",
+            "choices": [
+              "Nothing",
+              "A meme",
+              "The analyst's password",
+              "Technique ID, NIST phase, and a named next owner"
+            ]
+          },
+          {
+            "id": "soc-fin-18",
+            "stem": "Which NIST SP 800-61 phase includes writing lessons learned?",
+            "choices": [
+              "Post-incident activity",
+              "Preparation",
+              "Detection and analysis",
+              "Containment"
+            ]
+          },
+          {
+            "id": "soc-fin-19",
+            "stem": "A training packet includes a real customer's email headers. What should happen?",
+            "choices": [
+              "Keep them, they are realistic",
+              "Remove them and use synthetic data",
+              "Share them wider",
+              "Encrypt and post publicly"
+            ]
+          },
+          {
+            "id": "soc-fin-20",
+            "stem": "A trainee asks to port-scan a neighbour's network 'for practice'. Your answer?",
+            "choices": [
+              "Yes, on weekends",
+              "Only with a VPN",
+              "No; only systems you own or are authorised to test",
+              "Only if it is fast"
+            ]
+          },
+          {
+            "id": "soc-fin-21",
+            "stem": "Why does the course use 203.0.113.0/24 and similar ranges?",
+            "choices": [
+              "They are faster",
+              "They are private LAN ranges",
+              "They belong to MITRE",
+              "They are reserved for documentation, so no real host is implicated"
+            ]
+          },
+          {
+            "id": "soc-fin-22",
+            "stem": "What is the clearest sign a rule's alerts are mostly noise?",
+            "choices": [
+              "Precision well below one half",
+              "High recall",
+              "Low alert volume",
+              "A long rule name"
+            ]
+          },
+          {
+            "id": "soc-fin-23",
+            "stem": "A detection engineer proposes alerting on every login. What happens to recall and precision?",
+            "choices": [
+              "Both rise",
+              "Recall approaches 1; precision collapses",
+              "Both fall to 0",
+              "Neither changes"
+            ]
+          },
+          {
+            "id": "soc-fin-24",
+            "stem": "What is the boundary of the Night Shift Desk course?",
+            "choices": [
+              "A guaranteed SOC job",
+              "A penetration-testing licence",
+              "Defensive analysis on synthetic data, not a certification or live SOC duty",
+              "Access to production SIEMs"
+            ]
+          }
+        ],
+        "practical_labs": [
+          "lab_soc_log_parse",
+          "lab_soc_window_rule",
+          "lab_soc_detection_metrics",
+          "lab_soc_ioc_match",
+          "lab_soc_attack_map",
+          "lab_soc_dmarc_align",
+          "lab_soc_cvss_score",
+          "lab_soc_triage_queue",
+          "lab_soc_shift_metrics",
+          "lab_soc_shift_handoff"
+        ]
+      },
+      "portfolio": {
+        "no_pii": true
+      },
+      "offline_pack": {
+        "lesson_ids": [
+          "CYBER_SOC-w01",
+          "CYBER_SOC-w02",
+          "CYBER_SOC-w03",
+          "CYBER_SOC-w04",
+          "CYBER_SOC-w05",
+          "CYBER_SOC-w06",
+          "CYBER_SOC-w07",
+          "CYBER_SOC-w08",
+          "CYBER_SOC-w09",
+          "CYBER_SOC-w10"
+        ],
+        "session_shape": {
+          "lesson_id": "CYBER_SOC-w01",
+          "role": "learner",
+          "offline_pack": "CYBER_SOC-offline",
+          "labs": [
+            "lab_soc_log_parse",
+            "lab_soc_window_rule"
           ]
         }
       }

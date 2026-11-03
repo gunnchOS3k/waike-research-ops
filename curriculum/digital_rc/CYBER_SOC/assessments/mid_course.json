@@ -1,0 +1,225 @@
+{
+  "assessment_id": "CYBER_SOC-mid",
+  "items": [
+    {
+      "id": "soc-mid-01",
+      "kind": "mcq",
+      "stem": "A log shows 'Failed password for invalid user test from 203.0.113.9'. What does 'invalid user' tell you?",
+      "choices": [
+        "The password was correct",
+        "The address is internal",
+        "The account name does not exist on the host",
+        "The login succeeded"
+      ]
+    },
+    {
+      "id": "soc-mid-02",
+      "kind": "mcq",
+      "stem": "Your rule counts failures since midnight with no window. What goes wrong at 23:50?",
+      "choices": [
+        "Nothing",
+        "It never fires",
+        "It only fires on weekends",
+        "A day's scattered typos can add up to an alert"
+      ]
+    },
+    {
+      "id": "soc-mid-03",
+      "kind": "mcq",
+      "stem": "Five failures arrive at seconds 0, 59, 118, 177, 236 against a 4-in-60 s rule. Does it fire?",
+      "choices": [
+        "No; no four fall within 60 seconds",
+        "Yes, at 177",
+        "Yes, at 59",
+        "Yes, at 0"
+      ]
+    },
+    {
+      "id": "soc-mid-04",
+      "kind": "mcq",
+      "stem": "A rule has precision 0.9 and recall 0.2. Describe it.",
+      "choices": [
+        "Noisy but complete",
+        "Alerts are trustworthy but most attacks are missed",
+        "Perfect",
+        "Useless in every way"
+      ]
+    },
+    {
+      "id": "soc-mid-05",
+      "kind": "mcq",
+      "stem": "Doubling true negatives while holding other counts does what to precision?",
+      "choices": [
+        "Doubles it",
+        "Halves it",
+        "Leaves it unchanged",
+        "Sets it to 1"
+      ]
+    },
+    {
+      "id": "soc-mid-06",
+      "kind": "mcq",
+      "stem": "Two files have SHA-256 digests that differ in the last character. What do you conclude?",
+      "choices": [
+        "They are the same file",
+        "One hash is truncated",
+        "The hash function failed",
+        "They are different files"
+      ]
+    },
+    {
+      "id": "soc-mid-07",
+      "kind": "mcq",
+      "stem": "Which of these is correctly defanged?",
+      "choices": [
+        "hxxps://login[.]example[.]org/reset",
+        "https://login.example.org/reset",
+        "hxxps://login.example.org/reset",
+        "login example org"
+      ]
+    },
+    {
+      "id": "soc-mid-08",
+      "kind": "mcq",
+      "stem": "A user forwards a phish to the whole department 'as a warning'. What risk did that create?",
+      "choices": [
+        "None",
+        "More people can now click the live link",
+        "It deletes the phish",
+        "It blocks the sender"
+      ]
+    },
+    {
+      "id": "soc-mid-09",
+      "kind": "mcq",
+      "stem": "Which ATT&CK tactic describes the attacker's goal of staying in after a reboot?",
+      "choices": [
+        "Impact",
+        "Reconnaissance",
+        "Persistence",
+        "Exfiltration"
+      ]
+    },
+    {
+      "id": "soc-mid-10",
+      "kind": "mcq",
+      "stem": "A colleague says 'this T1566 alert proves a nation-state attack'. Your response?",
+      "choices": [
+        "Agree and publish",
+        "Delete the alert",
+        "Change the technique ID",
+        "Technique use alone does not identify an actor"
+      ]
+    },
+    {
+      "id": "soc-mid-11",
+      "kind": "mcq",
+      "stem": "Valid-account misuse is hard to detect mainly because\u2026",
+      "choices": [
+        "The login itself looks legitimate",
+        "It always fails",
+        "It uses malware",
+        "It is rare"
+      ]
+    },
+    {
+      "id": "soc-mid-12",
+      "kind": "mcq",
+      "stem": "A message's From domain is example.org, DKIM d=example.org passes, SPF fails. DMARC result?",
+      "choices": [
+        "Fail",
+        "Pass, through aligned DKIM",
+        "Neutral",
+        "Cannot be evaluated"
+      ]
+    },
+    {
+      "id": "soc-mid-13",
+      "kind": "mcq",
+      "stem": "Strict alignment would treat mail.harborpay.example vs harborpay.example how?",
+      "choices": [
+        "As aligned",
+        "As a DKIM failure",
+        "As not aligned",
+        "As spam"
+      ]
+    },
+    {
+      "id": "soc-mid-14",
+      "kind": "mcq",
+      "stem": "Why would an attacker register harb0rpay.example?",
+      "choices": [
+        "To break DMARC",
+        "To speed delivery",
+        "To get a certificate",
+        "To pass checks for a look-alike domain users misread"
+      ]
+    },
+    {
+      "id": "soc-mid-15",
+      "kind": "mcq",
+      "stem": "A vector changes only AC:L to AC:H. What happens to the base score?",
+      "choices": [
+        "It drops, because exploitability falls",
+        "It rises",
+        "No change",
+        "It becomes 10"
+      ]
+    },
+    {
+      "id": "soc-mid-16",
+      "kind": "mcq",
+      "stem": "Two flaws both score 7.5. One is on a test VM, one on payroll. Which patch first?",
+      "choices": [
+        "The test VM",
+        "Payroll, because asset value differs",
+        "Either, scores are equal",
+        "Neither"
+      ]
+    },
+    {
+      "id": "soc-mid-17",
+      "kind": "mcq",
+      "stem": "An analyst rounds 6.94 to 6.9 when scoring CVSS by hand. What is the correct value?",
+      "choices": [
+        "6.9",
+        "6.0",
+        "7.0",
+        "7.5"
+      ]
+    },
+    {
+      "id": "soc-mid-18",
+      "kind": "mcq",
+      "stem": "Severity weight 3, criticality 2 versus weight 2, criticality 3. Which wins?",
+      "choices": [
+        "The first",
+        "The second",
+        "Neither is queued",
+        "They tie at 6; earlier arrival decides"
+      ]
+    },
+    {
+      "id": "soc-mid-19",
+      "kind": "mcq",
+      "stem": "Your queue will breach three SLAs this hour. What is the honest action?",
+      "choices": [
+        "Tell the shift lead and request help",
+        "Backdate received times",
+        "Close low alerts unread",
+        "Turn off the SLA timer"
+      ]
+    },
+    {
+      "id": "soc-mid-20",
+      "kind": "mcq",
+      "stem": "A single 6-hour detection appears among ten 10-minute ones. Which summary misleads less?",
+      "choices": [
+        "The mean alone",
+        "The median with the outlier named",
+        "The maximum alone",
+        "Nothing at all"
+      ]
+    }
+  ]
+}
