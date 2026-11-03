@@ -84,3 +84,9 @@ def test_full_18_true_only_with_own_packages_and_no_aliases():
             assert (ROOT / "curriculum" / "digital_rc" / t / "course.json").is_file(), t
     for flag in ("HUMAN_E6", "REAL_STUDENT_E6", "REAL_TEACHER_E6"):
         assert rc[flag] is False
+
+
+def test_emitted_packages_carry_the_source_track_ids():
+    for cid, course in COURSES.items():
+        pkg = json.loads((ROOT / "curriculum" / "digital_rc" / cid / "course.json").read_text(encoding="utf-8"))
+        assert pkg["track_ids"] == course["track_ids"], cid

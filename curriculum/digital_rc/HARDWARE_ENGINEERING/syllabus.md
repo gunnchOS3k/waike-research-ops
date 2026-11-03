@@ -4,7 +4,7 @@
 Integrates HARDWARE_ENGINEERING and EMBEDDED_PROTOTYPING: SPICE nets, Thévenin, RC, logic, power budget with real MPNs, bus protocols, Zephyr west/QEMU, DT, PCB ERC/DRC/BOM, failure diagnosis. Sim/QEMU/Device Lab digital before physical; soldering/instruments PHYSICAL_PENDING. MIT 6.002/Zephyr/KiCad/datasheets are reference only.
 
 ## Tracks and academy
-- Tracks: HARDWARE_ENGINEERING, EMBEDDED_PROTOTYPING
+- Tracks: HARDWARE_ENGINEERING
 - Academy: ACADEMY_HARDWARE
 
 ## Duration

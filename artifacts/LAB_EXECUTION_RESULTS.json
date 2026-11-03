@@ -2658,7 +2658,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
+          "detail": "need {'freshness', 'median_by_zone', 'open_count'}"
         },
         {
           "name": "max",
