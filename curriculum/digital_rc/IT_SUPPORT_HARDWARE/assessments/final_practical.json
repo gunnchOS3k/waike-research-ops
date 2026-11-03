@@ -1,0 +1,16 @@
+{
+  "practical_id": "IT_SUPPORT_HARDWARE-practical",
+  "labs": [
+    "lab_ish_psu_budget",
+    "lab_ish_memory_bandwidth",
+    "lab_ish_raid_capacity",
+    "lab_ish_partition_scheme",
+    "lab_ish_fault_isolation",
+    "lab_ish_display_link",
+    "lab_ish_ups_runtime",
+    "lab_ish_imaging_time",
+    "lab_ish_sanitize_decision",
+    "lab_ish_service_report"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

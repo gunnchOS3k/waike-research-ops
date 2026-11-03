@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 180,
+  "lab_count": 190,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -219,6 +219,18 @@
       "lab_dco_backup_321",
       "lab_dco_contrast",
       "lab_dco_safety_plan"
+    ],
+    "IT_SUPPORT_HARDWARE": [
+      "lab_ish_psu_budget",
+      "lab_ish_memory_bandwidth",
+      "lab_ish_raid_capacity",
+      "lab_ish_partition_scheme",
+      "lab_ish_fault_isolation",
+      "lab_ish_display_link",
+      "lab_ish_ups_runtime",
+      "lab_ish_imaging_time",
+      "lab_ish_sanitize_decision",
+      "lab_ish_service_report"
     ]
   },
   "batch_001_lab_count": 20,
@@ -229,7 +241,7 @@
   "batch_006_lab_count": 10,
   "batch_007_lab_count": 20,
   "batch_008_lab_count": 10,
-  "batch_009_lab_count": 20,
+  "batch_009_lab_count": 30,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1591,7 +1603,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'nRF52840', 'SSD1306', 'AMS1117-3.3'}"
+          "detail": "mpns={'AMS1117-3.3', 'nRF52840', 'SSD1306'}"
         },
         {
           "name": "total",
@@ -2634,7 +2646,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'freshness', 'median_by_zone', 'open_count'}"
+          "detail": "need {'open_count', 'freshness', 'median_by_zone'}"
         },
         {
           "name": "max",
@@ -6870,6 +6882,356 @@
       ],
       "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
       "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_psu_budget",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "components_listed",
+          "ok": true,
+          "detail": "\u22654 parts with positive watts"
+        },
+        {
+          "name": "total_recomputed",
+          "ok": true,
+          "detail": "405.0 W"
+        },
+        {
+          "name": "headroom_applied",
+          "ok": true,
+          "detail": "\u00d7 1.25"
+        },
+        {
+          "name": "smallest_adequate_psu",
+          "ok": true,
+          "detail": "550 W"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_memory_bandwidth",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "transfer rate and populated slots"
+        },
+        {
+          "name": "channels_from_slots",
+          "ok": true,
+          "detail": "distinct channel letters = 2"
+        },
+        {
+          "name": "bandwidth_recomputed",
+          "ok": true,
+          "detail": "51.2 GB/s"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_raid_capacity",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "array_inputs",
+          "ok": true,
+          "detail": "\u22654 disks of positive size"
+        },
+        {
+          "name": "five_levels",
+          "ok": true,
+          "detail": "RAID 0/1/5/6/10"
+        },
+        {
+          "name": "levels_recomputed",
+          "ok": true,
+          "detail": "wrong=[]"
+        },
+        {
+          "name": "raid_not_backup",
+          "ok": true,
+          "detail": "RAID survives disk loss, not deletion or ransomware"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_partition_scheme",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "disk bytes and a 512 or 4096-byte sector"
+        },
+        {
+          "name": "mbr_limit_recomputed",
+          "ok": true,
+          "detail": "2^32 \u00d7 512 = 2199023255552"
+        },
+        {
+          "name": "scheme_choice",
+          "ok": true,
+          "detail": "GPT above the MBR limit"
+        },
+        {
+          "name": "uefi_for_gpt_boot",
+          "ok": true,
+          "detail": "booting a GPT system disk needs UEFI"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_fault_isolation",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "tickets_classified",
+          "ok": true,
+          "detail": "expected {'ISH-T1': 'memory_or_cpu_seating', 'ISH-T2': 'power_path', 'ISH-T3': 'thermal_or_psu_capacity', 'ISH-T4': 'boot_order_or_disk', 'ISH-T5': 'driver_or_os'}"
+        },
+        {
+          "name": "isolate_before_replace",
+          "ok": true,
+          "detail": "no shotgun swaps"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_display_link",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "two_modes",
+          "ok": true,
+          "detail": "modes=2"
+        },
+        {
+          "name": "modes_recomputed",
+          "ok": true,
+          "detail": "wrong=0"
+        },
+        {
+          "name": "blanking_ignored_stated",
+          "ok": true,
+          "detail": "active pixels only \u2192 lower bound"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_ups_runtime",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "Wh > 0, 0 < efficiency \u2264 1, load > 0"
+        },
+        {
+          "name": "runtime_recomputed",
+          "ok": true,
+          "detail": "146.9 min"
+        },
+        {
+          "name": "shutdown_with_margin",
+          "ok": true,
+          "detail": "start shutdown by 80% of runtime"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_imaging_time",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "positive size, count, link; 0 < efficiency \u2264 1"
+        },
+        {
+          "name": "unicast_recomputed",
+          "ok": true,
+          "detail": "243.8 min"
+        },
+        {
+          "name": "multicast_recomputed",
+          "ok": true,
+          "detail": "6.10 min"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_sanitize_decision",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "every_device",
+          "ok": true,
+          "detail": "one decision per serial"
+        },
+        {
+          "name": "methods_by_disposition",
+          "ok": true,
+          "detail": "wrong=[]"
+        },
+        {
+          "name": "certificates",
+          "ok": true,
+          "detail": "verification + certificate per device"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_ish_service_report",
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "\u22656 prior labs"
+        },
+        {
+          "name": "devices_documented",
+          "ok": true,
+          "detail": "fault class, fix, sanitization, verification"
+        },
+        {
+          "name": "no_customer_data",
+          "ok": true,
+          "detail": "nothing kept from donors"
+        }
+      ],
+      "claim_boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6.",
+      "boundary": "IT_SUPPORT_HARDWARE Refurb Bench. Planning arithmetic and decision tables on donated-PC fixtures; no customer data retained, no mains-voltage work inside a PSU. Not student/teacher E6."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -6987,6 +7349,18 @@
     },
     {
       "lab_id": "lab_dco_backup_321_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_ish_service_report_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_ish_raid_capacity_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_ish_fault_isolation_negative",
       "ok": true
     }
   ],
@@ -7716,6 +8090,46 @@
     {
       "lab_id": "lab_dco_safety_plan",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_psu_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_memory_bandwidth",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_raid_capacity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_partition_scheme",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_fault_isolation",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_display_link",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_ups_runtime",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_imaging_time",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_sanitize_decision",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_service_report",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -8437,6 +8851,46 @@
     },
     {
       "lab_id": "lab_dco_safety_plan",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_psu_budget",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_memory_bandwidth",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_raid_capacity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_partition_scheme",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_fault_isolation",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_display_link",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_ups_runtime",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_imaging_time",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_sanitize_decision",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_ish_service_report",
       "failed_as_required": true
     }
   ],

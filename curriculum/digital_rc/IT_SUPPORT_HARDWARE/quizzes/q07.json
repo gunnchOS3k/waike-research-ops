@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "ish-w7-1",
+      "kind": "mcq",
+      "stem": "864 Wh at 85% efficiency into a 300 W load lasts about how long?",
+      "choices": [
+        "172.8 minutes",
+        "146.9 minutes",
+        "86.4 minutes",
+        "300 minutes"
+      ]
+    },
+    {
+      "id": "ish-w7-2",
+      "kind": "mcq",
+      "stem": "What does ignoring inverter efficiency do to the estimate?",
+      "choices": [
+        "Understates it",
+        "Nothing",
+        "Overstates the runtime",
+        "Doubles the load"
+      ]
+    },
+    {
+      "id": "ish-w7-3",
+      "kind": "mcq",
+      "stem": "Why start shutdown by 80% of computed runtime?",
+      "choices": [
+        "To save paper",
+        "It is faster",
+        "UPS units require it by law",
+        "Batteries age and the final minutes are unreliable"
+      ]
+    },
+    {
+      "id": "ish-w7-4",
+      "kind": "mcq",
+      "stem": "How does the storage box know to shut down?",
+      "choices": [
+        "It listens for the UPS low-battery signal",
+        "Someone guesses",
+        "It never shuts down",
+        "The router tells it"
+      ]
+    },
+    {
+      "id": "ish-w7-5",
+      "kind": "mcq",
+      "stem": "Which device should not go on the battery outlets?",
+      "choices": [
+        "The router",
+        "A laser printer",
+        "The storage box",
+        "The modem"
+      ]
+    },
+    {
+      "id": "ish-w7-6",
+      "kind": "mcq",
+      "stem": "How do you prove the shutdown works?",
+      "choices": [
+        "Assume it",
+        "Read the box",
+        "Pull the plug in a supervised test",
+        "Ask the vendor"
+      ]
+    }
+  ]
+}

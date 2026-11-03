@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "ish-w3-1",
+      "kind": "mcq",
+      "stem": "Four 4 TB disks in RAID 5 give how much usable space?",
+      "choices": [
+        "16 TB",
+        "12 TB",
+        "8 TB",
+        "4 TB"
+      ]
+    },
+    {
+      "id": "ish-w3-2",
+      "kind": "mcq",
+      "stem": "How many disk failures does RAID 6 survive guaranteed?",
+      "choices": [
+        "One",
+        "Three",
+        "Two",
+        "None"
+      ]
+    },
+    {
+      "id": "ish-w3-3",
+      "kind": "mcq",
+      "stem": "What does RAID 0 offer and risk?",
+      "choices": [
+        "Mirroring and safety",
+        "Parity protection",
+        "Offsite copies",
+        "Full capacity and speed; any failure loses all"
+      ]
+    },
+    {
+      "id": "ish-w3-4",
+      "kind": "mcq",
+      "stem": "Why is RAID 10's guaranteed tolerance listed as one failure?",
+      "choices": [
+        "A second failure in the same mirror pair loses data",
+        "It has no mirrors",
+        "It uses parity",
+        "It survives four failures"
+      ]
+    },
+    {
+      "id": "ish-w3-5",
+      "kind": "mcq",
+      "stem": "Why is RAID not a backup?",
+      "choices": [
+        "It is too slow",
+        "Deletion and ransomware hit every disk at once",
+        "It needs four disks",
+        "It is illegal"
+      ]
+    },
+    {
+      "id": "ish-w3-6",
+      "kind": "mcq",
+      "stem": "Why prefer RAID 6 over RAID 5 with large disks?",
+      "choices": [
+        "RAID 6 is faster always",
+        "It uses fewer disks",
+        "Long rebuilds stress survivors; a second failure is survivable",
+        "It needs no parity"
+      ]
+    }
+  ]
+}

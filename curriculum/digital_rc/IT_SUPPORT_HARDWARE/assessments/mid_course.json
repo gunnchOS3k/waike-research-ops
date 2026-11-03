@@ -1,0 +1,225 @@
+{
+  "assessment_id": "IT_SUPPORT_HARDWARE-mid",
+  "items": [
+    {
+      "id": "ish-mid-01",
+      "kind": "mcq",
+      "stem": "A build totals 520 W of parts. Which supply does the bench rule pick?",
+      "choices": [
+        "550 W",
+        "750 W",
+        "500 W",
+        "650 W"
+      ]
+    },
+    {
+      "id": "ish-mid-02",
+      "kind": "mcq",
+      "stem": "Why might a supply that meets the total still fail under a new graphics card?",
+      "choices": [
+        "It lacks the card's power connectors or rail capacity",
+        "Supplies hate graphics",
+        "Fans block it",
+        "The case is too big"
+      ]
+    },
+    {
+      "id": "ish-mid-03",
+      "kind": "mcq",
+      "stem": "Four sticks fill A1, A2, B1, B2. How many channels run?",
+      "choices": [
+        "Four",
+        "Two",
+        "One",
+        "Eight"
+      ]
+    },
+    {
+      "id": "ish-mid-04",
+      "kind": "mcq",
+      "stem": "DDR5-4800 in two channels gives what peak bandwidth by the bench formula?",
+      "choices": [
+        "38.4 GB/s",
+        "4.8 GB/s",
+        "76.8 GB/s",
+        "153.6 GB/s"
+      ]
+    },
+    {
+      "id": "ish-mid-05",
+      "kind": "mcq",
+      "stem": "Integrated graphics are slow and one stick is installed. Cheapest improvement?",
+      "choices": [
+        "Buy a new CPU",
+        "Replace the case",
+        "Lower the resolution to 640\u00d7480",
+        "Add a matching stick in the other channel"
+      ]
+    },
+    {
+      "id": "ish-mid-06",
+      "kind": "mcq",
+      "stem": "Six 2 TB disks in RAID 6 give how much usable space?",
+      "choices": [
+        "8 TB",
+        "10 TB",
+        "12 TB",
+        "6 TB"
+      ]
+    },
+    {
+      "id": "ish-mid-07",
+      "kind": "mcq",
+      "stem": "A teacher deletes a folder on a RAID 1 volume. What happens on the mirror?",
+      "choices": [
+        "It is kept safe",
+        "It is deleted there too",
+        "It is restored automatically",
+        "It moves to the cloud"
+      ]
+    },
+    {
+      "id": "ish-mid-08",
+      "kind": "mcq",
+      "stem": "Why does a RAID 5 rebuild worry technicians with large disks?",
+      "choices": [
+        "It deletes parity",
+        "It shrinks capacity",
+        "Long rebuilds stress the remaining disks",
+        "It is instant"
+      ]
+    },
+    {
+      "id": "ish-mid-09",
+      "kind": "mcq",
+      "stem": "A 3 TB disk set up as MBR with 512-byte sectors exposes about how much?",
+      "choices": [
+        "All 3 TB",
+        "1 TB",
+        "Nothing",
+        "About 2 TiB"
+      ]
+    },
+    {
+      "id": "ish-mid-10",
+      "kind": "mcq",
+      "stem": "A PC will not boot from a GPT disk after cloning. Which firmware setting do you check?",
+      "choices": [
+        "UEFI versus legacy BIOS mode",
+        "Fan curve",
+        "Keyboard layout",
+        "Screen brightness"
+      ]
+    },
+    {
+      "id": "ish-mid-11",
+      "kind": "mcq",
+      "stem": "A machine is dead after a storm. What do you test before opening the case?",
+      "choices": [
+        "The graphics driver",
+        "The outlet and power cable",
+        "The RAM timings",
+        "The boot order"
+      ]
+    },
+    {
+      "id": "ish-mid-12",
+      "kind": "mcq",
+      "stem": "The PC boots, then shows a stop error right after a driver update. First step?",
+      "choices": [
+        "Replace the motherboard",
+        "Reseat the CPU",
+        "Roll back the last driver or update",
+        "Change the PSU"
+      ]
+    },
+    {
+      "id": "ish-mid-13",
+      "kind": "mcq",
+      "stem": "Why write the symptom in the customer's own words?",
+      "choices": [
+        "Customers prefer it",
+        "It is required by law",
+        "It is shorter",
+        "It preserves details your guess might discard"
+      ]
+    },
+    {
+      "id": "ish-mid-14",
+      "kind": "mcq",
+      "stem": "2560\u00d71440 at 144 Hz with 24-bit colour needs about how much?",
+      "choices": [
+        "About 12.7 Gbit/s",
+        "About 5.3 Gbit/s",
+        "About 25 Gbit/s",
+        "About 1.4 Gbit/s"
+      ]
+    },
+    {
+      "id": "ish-mid-15",
+      "kind": "mcq",
+      "stem": "A monitor runs 4K at 30 Hz over HDMI 1.4. What is the honest fix?",
+      "choices": [
+        "Buy a longer cable",
+        "Use a port and cable rated for the mode, like DP 1.4",
+        "Lower the brightness",
+        "Install a new keyboard"
+      ]
+    },
+    {
+      "id": "ish-mid-16",
+      "kind": "mcq",
+      "stem": "A 600 Wh UPS at 90% efficiency feeds 180 W. Runtime?",
+      "choices": [
+        "200 minutes",
+        "120 minutes",
+        "180 minutes",
+        "300 minutes"
+      ]
+    },
+    {
+      "id": "ish-mid-17",
+      "kind": "mcq",
+      "stem": "Doubling the load on a UPS does what to runtime by the bench formula?",
+      "choices": [
+        "Doubles it",
+        "No change",
+        "Quarters it",
+        "Halves it"
+      ]
+    },
+    {
+      "id": "ish-mid-18",
+      "kind": "mcq",
+      "stem": "A 20 GB image goes to 10 machines over 1 Gbit/s at 80% efficiency, unicast. About how long?",
+      "choices": [
+        "About 33 minutes",
+        "About 3.3 minutes",
+        "About 200 minutes",
+        "About 20 minutes"
+      ]
+    },
+    {
+      "id": "ish-mid-19",
+      "kind": "mcq",
+      "stem": "Why verify one finished machine before releasing an imaged lab?",
+      "choices": [
+        "It is tradition",
+        "One mistake would otherwise repeat on every machine",
+        "Imaging is random",
+        "To slow down"
+      ]
+    },
+    {
+      "id": "ish-mid-20",
+      "kind": "mcq",
+      "stem": "A leased laptop goes back to the vendor. Which category applies at minimum?",
+      "choices": [
+        "Clear",
+        "No action",
+        "Purge",
+        "Quick format"
+      ]
+    }
+  ]
+}

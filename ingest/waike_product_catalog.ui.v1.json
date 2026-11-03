@@ -13,7 +13,7 @@
       "assignment": "Build the required folder tree for ticket 4417, write a four-line operator journal (remember / calculate / talk / what broke), and describe one restore method that is not Ctrl+Z. No patron PII.",
       "lab_hint": "lab_ticket_queue",
       "track_ids": [
-        "IT_SUPPORT_HARDWARE"
+        "GENERAL_IT"
       ],
       "academy_id": "ACADEMY_IT"
     },
@@ -249,6 +249,19 @@
       "lab_hint": "lab_dco_paths",
       "track_ids": [
         "DIGITAL_CONFIDENCE"
+      ],
+      "academy_id": "ACADEMY_IT"
+    },
+    {
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations \u2014 Refurb Bench",
+      "kinesthetic_hook": "Ten Refurb Bench work orders on donated PCs: size the PSU \u2192 populate memory channels \u2192 plan RAID \u2192 choose MBR or GPT \u2192 isolate a fault \u2192 match display and cable \u2192 size a UPS \u2192 image a lab \u2192 sanitize drives \u2192 file the service report.",
+      "lesson_excerpt": "Work order ISH-4101: a donated tower is getting a graphics card so a youth club can edit video, and the old 450 W power supply is suspect. Start with a parts list and each part's rated draw from its spec sheet, not from a forum guess. The processor is rated 125 W, the card 200 W, the motherboard about 50, two memory sticks about 10 together, the SSD about 8, and the fans about 12, for 405 W. A sup",
+      "worked_example": "CPU 125 + GPU 200 + board 50 + RAM 10 + SSD 8 + fans 12 = 405 W \u00d7 1.25 = 506.25 W \u2192 550 W unit",
+      "assignment": "Submit lab_ish_psu_budget JSON for ISH-4101: components, total_w, required_w, chosen_psu_w.",
+      "lab_hint": "lab_ish_psu_budget",
+      "track_ids": [
+        "IT_SUPPORT_HARDWARE"
       ],
       "academy_id": "ACADEMY_IT"
     }

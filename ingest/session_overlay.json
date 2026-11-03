@@ -340,5 +340,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "IT_SUPPORT_HARDWARE-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "IT_SUPPORT_HARDWARE-offline",
+      "labs": [
+        "lab_ish_psu_budget",
+        "lab_ish_memory_bandwidth"
+      ],
+      "catalog_course_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations \u2014 Refurb Bench"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

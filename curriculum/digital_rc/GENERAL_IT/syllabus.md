@@ -4,7 +4,7 @@
 This is not a survey of 'computers.' It is the job of keeping a public desk alive: a library kiosk that logs people out at 20:00 idle, a printer that only answers to a local name, and a Friday change that must snapshot before it mutates. Weeks 1–4 build operator muscle (Digital Confidence). Weeks 5–10 add hardware triage, services, DNS, backup, and automation (IT Support and Hardware). Google IT Support module titles and CompTIA A+ V15 220-1201/1202 domain names are alignment labels only.
 
 ## Tracks and academy
-- Tracks: IT_SUPPORT_HARDWARE
+- Tracks: GENERAL_IT
 - Academy: ACADEMY_IT
 
 ## Duration

@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "ish-w8-1",
+      "kind": "mcq",
+      "stem": "Why multiply the image size by eight first?",
+      "choices": [
+        "To add a safety margin",
+        "Images compress by eight",
+        "There are eight machines",
+        "Images are in bytes, links in bits"
+      ]
+    },
+    {
+      "id": "ish-w8-2",
+      "kind": "mcq",
+      "stem": "At 0.7 Gbit/s effective, how long is one 32 GB copy?",
+      "choices": [
+        "About 6.1 minutes",
+        "About 32 seconds",
+        "About 4 hours",
+        "About 45 minutes"
+      ]
+    },
+    {
+      "id": "ish-w8-3",
+      "kind": "mcq",
+      "stem": "Unicast to forty machines takes about how long?",
+      "choices": [
+        "About 6 minutes",
+        "About 244 minutes",
+        "About 40 seconds",
+        "About 24 minutes"
+      ]
+    },
+    {
+      "id": "ish-w8-4",
+      "kind": "mcq",
+      "stem": "Why can multicast finish near the time of one copy?",
+      "choices": [
+        "It compresses forty times",
+        "It skips verification",
+        "Every machine receives the same single stream",
+        "It uses Wi-Fi"
+      ]
+    },
+    {
+      "id": "ish-w8-5",
+      "kind": "mcq",
+      "stem": "What should be ready if multicast stalls on a few laptops?",
+      "choices": [
+        "A new switch",
+        "Nothing",
+        "A second image",
+        "A unicast fallback for stragglers"
+      ]
+    },
+    {
+      "id": "ish-w8-6",
+      "kind": "mcq",
+      "stem": "What do you record after imaging?",
+      "choices": [
+        "Which image version went onto which serial numbers",
+        "The weather",
+        "Only the start time",
+        "Nothing"
+      ]
+    }
+  ]
+}

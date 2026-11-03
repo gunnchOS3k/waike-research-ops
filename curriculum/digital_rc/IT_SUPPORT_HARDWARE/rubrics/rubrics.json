@@ -1,0 +1,150 @@
+[
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-lab",
+    "title": "Bench lab recompute",
+    "criteria": [
+      {
+        "name": "recomputed",
+        "weight": 45,
+        "desc": "Watts, bandwidths, and capacities match the recomputation"
+      },
+      {
+        "name": "safety",
+        "weight": 25,
+        "desc": "Electrical and data-handling safety noted"
+      },
+      {
+        "name": "rejects_stub",
+        "weight": 30,
+        "desc": "Empty and PASS-only submissions are refused"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-assignment",
+    "title": "ISH work order",
+    "criteria": [
+      {
+        "name": "order_ref",
+        "weight": 35,
+        "desc": "Names the work order and machine serial"
+      },
+      {
+        "name": "evidence",
+        "weight": 35,
+        "desc": "Photo or reading supporting the decision"
+      },
+      {
+        "name": "ai_mode",
+        "weight": 30,
+        "desc": "AI mode disclosed; NO_AI weeks hand-worked"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-quiz",
+    "title": "Weekly bench check",
+    "criteria": [
+      {
+        "name": "bench_fit",
+        "weight": 50,
+        "desc": "Stems use the week's machine and numbers"
+      },
+      {
+        "name": "key_custody",
+        "weight": 50,
+        "desc": "Answer key kept by the bench lead"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-mid",
+    "title": "Midterm: bench arithmetic",
+    "criteria": [
+      {
+        "name": "new_machines",
+        "weight": 60,
+        "desc": "Twenty items on machines not used weekly"
+      },
+      {
+        "name": "units",
+        "weight": 40,
+        "desc": "Watts, GB/s, TB, Gbit/s, and minutes"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-final-knowledge",
+    "title": "Final: diagnosis and data handling",
+    "criteria": [
+      {
+        "name": "new_machines",
+        "weight": 50,
+        "desc": "Twenty-four items beyond weekly stems"
+      },
+      {
+        "name": "privacy",
+        "weight": 50,
+        "desc": "Sanitization and donor-data restraint"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-practical",
+    "title": "Practical: timed fault drill",
+    "criteria": [
+      {
+        "name": "isolation",
+        "weight": 50,
+        "desc": "Names the failing stage before replacing parts"
+      },
+      {
+        "name": "altered_inputs",
+        "weight": 50,
+        "desc": "Changed parts lists change the result"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-project",
+    "title": "Service report batch",
+    "criteria": [
+      {
+        "name": "labs_passed",
+        "weight": 30,
+        "desc": "Six or more bench labs passed"
+      },
+      {
+        "name": "per_device",
+        "weight": 40,
+        "desc": "Fault, fix, and sanitization recorded per machine"
+      },
+      {
+        "name": "no_retention",
+        "weight": 30,
+        "desc": "customer_data_retained false"
+      }
+    ]
+  },
+  {
+    "rubric_id": "IT_SUPPORT_HARDWARE-portfolio",
+    "title": "Technician portfolio",
+    "criteria": [
+      {
+        "name": "refurbs",
+        "weight": 40,
+        "desc": "Two refurbished machines documented end to end"
+      },
+      {
+        "name": "certificate",
+        "weight": 30,
+        "desc": "One sanitization certificate with method and serial"
+      },
+      {
+        "name": "roles",
+        "weight": 30,
+        "desc": "Entry technician roles; no A+ implied"
+      }
+    ]
+  }
+]

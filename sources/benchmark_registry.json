@@ -1027,6 +1027,46 @@
       "why_selected": "Link-reading and personal safety-plan weeks of DIGITAL_CONFIDENCE; not a certificate.",
       "date_checked": "2026-11-03",
       "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "NIST_SP_800_88R2_SANITIZATION",
+      "institution": "NIST",
+      "course_or_cert": "SP 800-88 Rev. 2 Guidelines for Media Sanitization",
+      "current_version": "SP 800-88 Rev. 2 (Rev. 1 withdrawn)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "clear_purge_destroy",
+        "sanitization_verification"
+      ],
+      "assessment_patterns": [
+        "disposition_to_method"
+      ],
+      "license": "US government work; cited, not reproduced",
+      "attribution": "NIST SP 800-88 Rev. 2 sanitization vocabulary (Clear, Purge, Destroy), checked 2026-11-03.",
+      "why_selected": "Sanitization and service-report weeks of IT_SUPPORT_HARDWARE; the bench rule is a simplification, not the full decision flow.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "UEFI_SPECIFICATIONS",
+      "institution": "UEFI Forum",
+      "course_or_cert": "UEFI Specification (public listing)",
+      "current_version": "Public specifications page checked 2026-11-03",
+      "url": "https://uefi.org/specifications",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "gpt_partition_table",
+        "uefi_boot"
+      ],
+      "assessment_patterns": [
+        "mbr_limit_recompute"
+      ],
+      "license": "UEFI Forum terms; cited, not reproduced",
+      "attribution": "UEFI specification GPT and boot vocabulary, checked 2026-11-03.",
+      "why_selected": "MBR-or-GPT week of IT_SUPPORT_HARDWARE.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
     }
   ]
 }

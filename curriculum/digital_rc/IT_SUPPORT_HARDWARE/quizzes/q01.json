@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "ish-w1-1",
+      "kind": "mcq",
+      "stem": "The parts total 405 W. What does the bench require after headroom?",
+      "choices": [
+        "405 W",
+        "506.25 W",
+        "450 W",
+        "810 W"
+      ]
+    },
+    {
+      "id": "ish-w1-2",
+      "kind": "mcq",
+      "stem": "Which catalogue unit should be chosen for 506.25 W?",
+      "choices": [
+        "450 W",
+        "850 W",
+        "550 W",
+        "500 W"
+      ]
+    },
+    {
+      "id": "ish-w1-3",
+      "kind": "mcq",
+      "stem": "Why add headroom above the parts total?",
+      "choices": [
+        "Headroom is required by law",
+        "To use more electricity",
+        "Parts lie about colour",
+        "Loads spike and supplies near their limit run hot"
+      ]
+    },
+    {
+      "id": "ish-w1-4",
+      "kind": "mcq",
+      "stem": "Where should a part's wattage come from?",
+      "choices": [
+        "Its spec sheet",
+        "A forum guess",
+        "Its colour",
+        "The case size"
+      ]
+    },
+    {
+      "id": "ish-w1-5",
+      "kind": "mcq",
+      "stem": "Why never open a power supply's case?",
+      "choices": [
+        "It voids the paint",
+        "Capacitors can hold a dangerous charge after unplugging",
+        "It is glued",
+        "Fans fall out"
+      ]
+    },
+    {
+      "id": "ish-w1-6",
+      "kind": "mcq",
+      "stem": "Why is a 1,000 W unit a poor choice for a 300 W load?",
+      "choices": [
+        "It will explode",
+        "It cannot power fans",
+        "It wastes money and may run less efficiently",
+        "It has no connectors"
+      ]
+    }
+  ]
+}

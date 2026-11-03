@@ -1,0 +1,269 @@
+{
+  "assessment_id": "IT_SUPPORT_HARDWARE-final",
+  "items": [
+    {
+      "id": "ish-fin-01",
+      "kind": "mcq",
+      "stem": "A volunteer wants a 1,200 W supply 'to be safe' for a 250 W office PC. Your advice?",
+      "choices": [
+        "Size to the budget with headroom; oversizing wastes money and efficiency",
+        "Agree",
+        "Use 300 W with no headroom",
+        "Remove the fans"
+      ]
+    },
+    {
+      "id": "ish-fin-02",
+      "kind": "mcq",
+      "stem": "A PSU's fan has stopped and it smells hot. What do you do?",
+      "choices": [
+        "Open it and clean the capacitors",
+        "Replace the unit; never open it",
+        "Tape the fan",
+        "Run it at night only"
+      ]
+    },
+    {
+      "id": "ish-fin-03",
+      "kind": "mcq",
+      "stem": "A board manual says use A2 and B2 for two sticks, but they sit in A1 and B1. Likely effect?",
+      "choices": [
+        "Triple speed",
+        "No display ever",
+        "Possibly unstable or not running the preferred layout; follow the manual",
+        "Nothing could matter"
+      ]
+    },
+    {
+      "id": "ish-fin-04",
+      "kind": "mcq",
+      "stem": "A customer asks why a gaming laptop with one stick has poor frame rates. Best explanation?",
+      "choices": [
+        "The screen is too bright",
+        "The keyboard is slow",
+        "Batteries limit frames",
+        "Single-channel memory halves bandwidth for integrated graphics"
+      ]
+    },
+    {
+      "id": "ish-fin-05",
+      "kind": "mcq",
+      "stem": "A nonprofit wants maximum space on four disks for a scratch volume it can afford to lose. Which RAID?",
+      "choices": [
+        "RAID 0",
+        "RAID 6",
+        "RAID 1",
+        "RAID 10"
+      ]
+    },
+    {
+      "id": "ish-fin-06",
+      "kind": "mcq",
+      "stem": "A file server has RAID 6 and no other copy. Ransomware encrypts the share. What protects them?",
+      "choices": [
+        "RAID 6 parity",
+        "Nothing, unless a separate backup exists",
+        "The second parity disk",
+        "The rebuild"
+      ]
+    },
+    {
+      "id": "ish-fin-07",
+      "kind": "mcq",
+      "stem": "A customer's 6 TB disk shows only 2 TB. What do you explain?",
+      "choices": [
+        "The disk is fake",
+        "Windows hides 4 TB",
+        "MBR cannot address beyond 2 TiB with 512-byte sectors; GPT is needed",
+        "Cables limit size"
+      ]
+    },
+    {
+      "id": "ish-fin-08",
+      "kind": "mcq",
+      "stem": "Why keep a GPT disk's backup table in mind during recovery?",
+      "choices": [
+        "It stores passwords",
+        "It doubles capacity",
+        "It boots faster",
+        "A damaged primary table can be rebuilt from it"
+      ]
+    },
+    {
+      "id": "ish-fin-09",
+      "kind": "mcq",
+      "stem": "Five tickets arrive. Which practice keeps diagnosis honest?",
+      "choices": [
+        "Record the stage of failure and the cheapest confirming test",
+        "Swap the motherboard first",
+        "Guess from the case colour",
+        "Reinstall the OS on all five"
+      ]
+    },
+    {
+      "id": "ish-fin-10",
+      "kind": "mcq",
+      "stem": "A PC shuts down during games after a GPU upgrade but the CPU is cool. Next check?",
+      "choices": [
+        "Keyboard drivers",
+        "The power budget against the new card",
+        "Monitor size",
+        "Mouse DPI"
+      ]
+    },
+    {
+      "id": "ish-fin-11",
+      "kind": "mcq",
+      "stem": "A customer wants 4K 120 Hz on a PC with only HDMI 2.0. What do you say?",
+      "choices": [
+        "Buy a gold cable",
+        "It works fine",
+        "The port cannot carry it uncompressed; use DP 1.4 or accept 60 Hz",
+        "Use VGA"
+      ]
+    },
+    {
+      "id": "ish-fin-12",
+      "kind": "mcq",
+      "stem": "Why label display rates as lower bounds?",
+      "choices": [
+        "Cables are faster than advertised",
+        "Monitors round down",
+        "It is tradition",
+        "Blanking intervals add to the real requirement"
+      ]
+    },
+    {
+      "id": "ish-fin-13",
+      "kind": "mcq",
+      "stem": "A UPS test lasts 40 minutes instead of the computed 60. What is the likely reason?",
+      "choices": [
+        "Aged batteries or a heavier load than measured",
+        "The formula is wrong forever",
+        "The UPS is too new",
+        "The room is too quiet"
+      ]
+    },
+    {
+      "id": "ish-fin-14",
+      "kind": "mcq",
+      "stem": "A UPS feeds a router, a storage box, and a space heater. What must change?",
+      "choices": [
+        "Add another heater",
+        "Remove the heater from the battery outlets",
+        "Nothing",
+        "Unplug the router"
+      ]
+    },
+    {
+      "id": "ish-fin-15",
+      "kind": "mcq",
+      "stem": "Imaging forty machines by unicast takes four hours. Which change helps most?",
+      "choices": [
+        "Faster keyboards",
+        "Larger monitors",
+        "Multicast with a unicast fallback",
+        "Imaging at night only"
+      ]
+    },
+    {
+      "id": "ish-fin-16",
+      "kind": "mcq",
+      "stem": "The effective link rate halves from 0.7 to 0.35 Gbit/s. What happens to imaging time?",
+      "choices": [
+        "It halves",
+        "No change",
+        "It quadruples",
+        "It doubles"
+      ]
+    },
+    {
+      "id": "ish-fin-17",
+      "kind": "mcq",
+      "stem": "Which record should follow every imaged machine?",
+      "choices": [
+        "Image version and serial number",
+        "The technician's playlist",
+        "Nothing",
+        "The donor's browsing history"
+      ]
+    },
+    {
+      "id": "ish-fin-18",
+      "kind": "mcq",
+      "stem": "A donated SSD is going to a school. Which method satisfies the bench rule?",
+      "choices": [
+        "Delete files",
+        "Purge using the drive's secure or cryptographic erase",
+        "Quick format",
+        "Rename the volume"
+      ]
+    },
+    {
+      "id": "ish-fin-19",
+      "kind": "mcq",
+      "stem": "A drive is physically cracked and spins noisily. Its sanitization?",
+      "choices": [
+        "Clear",
+        "Purge by overwrite",
+        "Destroy",
+        "Reuse"
+      ]
+    },
+    {
+      "id": "ish-fin-20",
+      "kind": "mcq",
+      "stem": "What belongs on a sanitization certificate?",
+      "choices": [
+        "The donor's photos",
+        "The asking price",
+        "Nothing",
+        "Serial, method, date, and who did it"
+      ]
+    },
+    {
+      "id": "ish-fin-21",
+      "kind": "mcq",
+      "stem": "A service report says 'fixed it'. What is missing?",
+      "choices": [
+        "Fault class, the specific fix, and sanitization proof",
+        "Nothing",
+        "A joke",
+        "The donor's address"
+      ]
+    },
+    {
+      "id": "ish-fin-22",
+      "kind": "mcq",
+      "stem": "A technician copies a donor's music 'because it was good'. What rule was broken?",
+      "choices": [
+        "Imaging rules",
+        "No customer data retained or copied",
+        "RAID rules",
+        "UPS rules"
+      ]
+    },
+    {
+      "id": "ish-fin-23",
+      "kind": "mcq",
+      "stem": "Which CompTIA A+ use is acceptable in this course?",
+      "choices": [
+        "Copying exam questions",
+        "Selling vouchers",
+        "Domain labels for topics, no exam items",
+        "Claiming certification"
+      ]
+    },
+    {
+      "id": "ish-fin-24",
+      "kind": "mcq",
+      "stem": "What does completing the Refurb Bench course claim?",
+      "choices": [
+        "A+ certification",
+        "Electrician licence",
+        "Manufacturer warranty authority",
+        "Bench practice with recomputed labs, not a certification"
+      ]
+    }
+  ]
+}

@@ -43,6 +43,11 @@ _NEGATIVES: dict[str, list[tuple[str, dict[str, Any]]]] = {
         ("lab_dco_link_check", {"safe_to_open": True}),
         ("lab_dco_backup_321", {"restore_tested": False}),
     ],
+    labs_ish.COURSE: [
+        ("lab_ish_service_report", {"customer_data_retained": True}),
+        ("lab_ish_raid_capacity", {"raid_is_backup": True}),
+        ("lab_ish_fault_isolation", {"replaced_parts_before_isolating": True}),
+    ],
 }
 
 

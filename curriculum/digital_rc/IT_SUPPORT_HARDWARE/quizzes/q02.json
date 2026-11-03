@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "ish-w2-1",
+      "kind": "mcq",
+      "stem": "DDR4-3200 in two channels gives what peak bandwidth?",
+      "choices": [
+        "25.6 GB/s",
+        "3.2 GB/s",
+        "102.4 GB/s",
+        "51.2 GB/s"
+      ]
+    },
+    {
+      "id": "ish-w2-2",
+      "kind": "mcq",
+      "stem": "Two sticks in A1 and A2 run how many channels?",
+      "choices": [
+        "One",
+        "Two",
+        "Four",
+        "Zero"
+      ]
+    },
+    {
+      "id": "ish-w2-3",
+      "kind": "mcq",
+      "stem": "Why did integrated graphics crawl on this machine?",
+      "choices": [
+        "The GPU was missing",
+        "They borrow system memory, which was single-channel",
+        "The sticks were too large",
+        "The fans were slow"
+      ]
+    },
+    {
+      "id": "ish-w2-4",
+      "kind": "mcq",
+      "stem": "How many bytes move per channel per transfer?",
+      "choices": [
+        "One",
+        "Sixty-four",
+        "Eight",
+        "Thirty-two"
+      ]
+    },
+    {
+      "id": "ish-w2-5",
+      "kind": "mcq",
+      "stem": "Where do you confirm the memory mode after a change?",
+      "choices": [
+        "The case sticker",
+        "The keyboard",
+        "The monitor menu",
+        "The firmware setup screen"
+      ]
+    },
+    {
+      "id": "ish-w2-6",
+      "kind": "mcq",
+      "stem": "A half-seated stick commonly causes what?",
+      "choices": [
+        "Beeps and no display",
+        "Faster boot",
+        "Louder speakers",
+        "Brighter screen"
+      ]
+    }
+  ]
+}

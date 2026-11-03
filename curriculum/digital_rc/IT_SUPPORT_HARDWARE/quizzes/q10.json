@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "ish-w10-1",
+      "kind": "mcq",
+      "stem": "Which field connects a device to its isolation work?",
+      "choices": [
+        "The case colour",
+        "The donor's name",
+        "The price",
+        "The fault class from the bench table"
+      ]
+    },
+    {
+      "id": "ish-w10-2",
+      "kind": "mcq",
+      "stem": "What must the report say about sanitization?",
+      "choices": [
+        "The method used and that verification passed",
+        "Nothing",
+        "Only the date",
+        "The donor's address"
+      ]
+    },
+    {
+      "id": "ish-w10-3",
+      "kind": "mcq",
+      "stem": "A technician browses a donor's photos 'to test the drive'. What follows?",
+      "choices": [
+        "A thank-you note",
+        "Their volunteering ends that day",
+        "Nothing",
+        "A promotion"
+      ]
+    },
+    {
+      "id": "ish-w10-4",
+      "kind": "mcq",
+      "stem": "What should a new owner learn from the report?",
+      "choices": [
+        "The donor's history",
+        "Every quiz score",
+        "Notable replacements and settings, like the cable for full refresh",
+        "Nothing"
+      ]
+    },
+    {
+      "id": "ish-w10-5",
+      "kind": "mcq",
+      "stem": "During review a mentor picks one machine and asks for what?",
+      "choices": [
+        "A sales pitch",
+        "A new image",
+        "The donor's password",
+        "An explanation of the fault and fix with the case open"
+      ]
+    },
+    {
+      "id": "ish-w10-6",
+      "kind": "mcq",
+      "stem": "What does a clean report let a school do?",
+      "choices": [
+        "Trust a donated computer",
+        "Skip updates",
+        "Ignore sanitization",
+        "Avoid backups"
+      ]
+    }
+  ]
+}

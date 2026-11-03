@@ -1,6 +1,6 @@
 {
   "schema": "waike_pathway_discovery_honesty_v1",
-  "prepared_at": "2026-11-03T03:01:00Z",
+  "prepared_at": "2026-11-03T03:02:52Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
   "full_18_course_digital_rc": false,
@@ -11,9 +11,9 @@
   "instructional_completeness_claimed": false,
   "note": "Filesystem pathway discovery (curriculum/digital_rc/*/course.json) enumerates on-disk packages only. Discovery count ≠ inventing COURSE_DIGITAL_RC=true for residual IDs and ≠ flipping full_18.",
   "discovery": {
-    "digital_rc_dirs_with_course_json": 19,
-    "course_digital_rc_keys": 19,
-    "course_digital_rc_true_count": 19,
+    "digital_rc_dirs_with_course_json": 20,
+    "course_digital_rc_keys": 20,
+    "course_digital_rc_true_count": 20,
     "residuals_must_stay_not_true": []
   },
   "gates": {

@@ -54,7 +54,7 @@ SYLLABUS_CLAIM_009 = {
         "REAL_STUDENT_E6 or REAL_TEACHER_E6."
     ),
     ISH: (
-        "CompTIA A+ objective labels, NIST SP 800-88r1, and the UEFI specification are PUBLIC_REFERENCE_ONLY; no "
+        "CompTIA A+ objective labels, NIST SP 800-88 Rev. 2, and the UEFI specification are PUBLIC_REFERENCE_ONLY; no "
         "exam items. Donor data is never opened. Not A+ certification or a manufacturer warranty authority. "
         "COURSE_DIGITAL_RC only, not REAL_STUDENT_E6 or REAL_TEACHER_E6."
     ),

@@ -1,0 +1,38 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "IT_SUPPORT_HARDWARE",
+  "track_ids": [
+    "IT_SUPPORT_HARDWARE"
+  ],
+  "date_checked": "2026-11-03",
+  "benchmarks": [
+    {
+      "source_id": "COMPTIA_APLUS_V15_220_1201_1202",
+      "reuse_class": "RESTRICTED",
+      "coverage": [
+        {"domain": "hardware", "waike_weeks": [1, 2, 6]},
+        {"domain": "hardware_network_troubleshooting", "waike_weeks": [5]},
+        {"domain": "operational_procedures", "waike_weeks": [7, 10]}
+      ]
+    },
+    {
+      "source_id": "UEFI_SPECIFICATIONS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "gpt_and_uefi_boot", "waike_weeks": [4]}
+      ]
+    },
+    {
+      "source_id": "NIST_SP_800_88R2_SANITIZATION",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "media_sanitization", "waike_weeks": [9, 10]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "GENERAL_IT": "GENERAL_IT runs a public help desk (accounts, services, DNS, change windows). IT_SUPPORT_HARDWARE is the refurb bench: power budgets, memory channels, RAID, partition schemes, fault isolation, display bandwidth, UPS runtime, imaging, and sanitization.",
+    "HARDWARE_ENGINEERING": "HARDWARE_ENGINEERING designs circuits and boards (SPICE, Thevenin, PCB ERC/DRC, Zephyr). IT_SUPPORT_HARDWARE services finished PCs and does not design hardware."
+  },
+  "claim_boundary": "Donated machines with donor data never opened; CompTIA A+ used as topic labels only, no exam items. Not A+ certification or manufacturer warranty authority. Not student/teacher E6."
+}

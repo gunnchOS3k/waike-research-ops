@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "ish-w4-1",
+      "kind": "mcq",
+      "stem": "Why can MBR not address more than about 2 TiB with 512-byte sectors?",
+      "choices": [
+        "Disks are too slow",
+        "It has no partitions",
+        "It is encrypted",
+        "It stores sector numbers in 32 bits"
+      ]
+    },
+    {
+      "id": "ish-w4-2",
+      "kind": "mcq",
+      "stem": "What is the MBR limit in bytes with 512-byte sectors?",
+      "choices": [
+        "2,199,023,255,552",
+        "2,000,000,000,000",
+        "4,294,967,296",
+        "512,000,000,000"
+      ]
+    },
+    {
+      "id": "ish-w4-3",
+      "kind": "mcq",
+      "stem": "Which scheme must a 4 TB disk use to expose all of its space?",
+      "choices": [
+        "MBR",
+        "GPT",
+        "FAT",
+        "Either"
+      ]
+    },
+    {
+      "id": "ish-w4-4",
+      "kind": "mcq",
+      "stem": "What firmware mode boots an operating system from a GPT disk?",
+      "choices": [
+        "Legacy BIOS only",
+        "Safe mode",
+        "UEFI",
+        "DOS"
+      ]
+    },
+    {
+      "id": "ish-w4-5",
+      "kind": "mcq",
+      "stem": "Where does GPT keep a backup copy of its table?",
+      "choices": [
+        "In the BIOS chip",
+        "In the cloud",
+        "Nowhere",
+        "At the end of the disk"
+      ]
+    },
+    {
+      "id": "ish-w4-6",
+      "kind": "mcq",
+      "stem": "What must happen before converting a disk's partition scheme?",
+      "choices": [
+        "Copy the data off and confirm the backup",
+        "Nothing",
+        "Unplug the monitor",
+        "Update the keyboard"
+      ]
+    }
+  ]
+}

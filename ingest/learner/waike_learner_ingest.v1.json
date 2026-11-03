@@ -1,13 +1,13 @@
 {
   "schema": "waike.learner_ingest.v1",
   "role": "learner",
-  "generated_utc": "2026-11-03T03:01:00Z",
+  "generated_utc": "2026-11-03T03:02:52Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
       "title": "General IT \u2014 Operator to Support Specialist",
       "track_ids": [
-        "IT_SUPPORT_HARDWARE"
+        "GENERAL_IT"
       ],
       "academy_id": "ACADEMY_IT",
       "kinesthetic_hook": "Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.",
@@ -25611,6 +25611,1355 @@
           "labs": [
             "lab_dco_paths",
             "lab_dco_storage_units"
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "IT_SUPPORT_HARDWARE",
+      "title": "IT Support and Hardware Foundations \u2014 Refurb Bench",
+      "track_ids": [
+        "IT_SUPPORT_HARDWARE"
+      ],
+      "academy_id": "ACADEMY_IT",
+      "kinesthetic_hook": "Ten Refurb Bench work orders on donated PCs: size the PSU \u2192 populate memory channels \u2192 plan RAID \u2192 choose MBR or GPT \u2192 isolate a fault \u2192 match display and cable \u2192 size a UPS \u2192 image a lab \u2192 sanitize drives \u2192 file the service report.",
+      "lesson_excerpt": "Work order ISH-4101: a donated tower is getting a graphics card so a youth club can edit video, and the old 450 W power supply is suspect. Start with a parts list and each part's rated draw from its spec sheet, not from a forum guess. The processor is rated 125 W, the card 200 W,",
+      "worked_example": "CPU 125 + GPU 200 + board 50 + RAM 10 + SSD 8 + fans 12 = 405 W \u00d7 1.25 = 506.25 W \u2192 550 W unit",
+      "assignment": "Submit lab_ish_psu_budget JSON for ISH-4101: components, total_w, required_w, chosen_psu_w.",
+      "lab_hint": "lab_ish_psu_budget",
+      "syllabus": {
+        "weeks": 10,
+        "hook": "IT_SUPPORT_HARDWARE COURSE_DIGITAL_RC: bench-technician arithmetic and decision tables for refurbishing donated computers \u2014 power budgets, memory channels, RAID, partition schemes, fault isolation, display bandwidth, UPS runtime, imaging throughput, and media sanitization. Distinct from GENERAL_IT (tickets and operating systems) and HARDWARE_ENGINEERING (circuits and embedded design). Not student/teacher E6."
+      },
+      "weeks": [
+        {
+          "week": 1,
+          "title": "Power supply budget \u2014 parts, headroom, and the smallest adequate unit",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w01",
+          "body_md": "Work order ISH-4101: a donated tower is getting a graphics card so a youth club can edit video, and the old 450 W power supply is suspect. Start with a parts list and each part's rated draw from its spec sheet, not from a forum guess. The processor is rated 125 W, the card 200 W, the motherboard about 50, two memory sticks about 10 together, the SSD about 8, and the fans about 12, for 405 W. A supply running near its limit gets hot, loud, and less efficient, and real loads spike above their averages, so the bench adds a quarter on top: 405 \u00d7 1.25 is 506.25 W. The smallest catalogue unit that covers it is 550 W, so the 450 W supply goes in the parts bin. Bigger is not automatically better, since a 1,000 W unit idling at 60 W wastes money and often efficiency. Check that the new supply has the right connectors for the card, and never open a supply's case; the capacitors inside can hold a dangerous charge long after it is unplugged.",
+          "worked_example": "CPU 125 + GPU 200 + board 50 + RAM 10 + SSD 8 + fans 12 = 405 W \u00d7 1.25 = 506.25 W \u2192 550 W unit"
+        },
+        {
+          "week": 2,
+          "title": "Memory channels \u2014 the slots you choose set the bandwidth",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w02",
+          "body_md": "ISH-4202 is a slow machine that has two good memory sticks in it. Desktop boards usually have two memory channels, labelled A and B, each a separate 64-bit path to the processor. Each transfer moves eight bytes per channel, so peak bandwidth in gigabytes per second is the transfer rate in megatransfers per second times eight times the number of channels, divided by a thousand. DDR4-3200 in one channel gives 25.6 GB/s; spread across both channels it gives 51.2. The previous volunteer pushed both sticks into A1 and A2, which sit on the same channel, so the machine runs single-channel and integrated graphics, which borrow system memory, crawl. Moving one stick to B2 doubles the path without buying anything. The board manual names the preferred slots, often A2 and B2 for two sticks, and the firmware setup screen confirms the mode after a reboot. Handle sticks by the edges, match the notch to the key in the slot, and press until both latches click; a half-seated stick is a classic cause of beeps and no display.",
+          "worked_example": "DDR4-3200 in A2 + B2 \u2192 2 channels \u2192 3200 \u00d7 8 \u00d7 2 / 1000 = 51.2 GB/s; in A1 + A2 \u2192 1 channel \u2192 25.6 GB/s"
+        },
+        {
+          "week": 3,
+          "title": "RAID \u2014 usable space, tolerated failures, and why it is not a backup",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w03",
+          "body_md": "ISH-4303 is a NO_AI week; build the table by hand. A community centre wants its donated four-bay storage box set up for shared files, with four 4 TB disks. RAID combines disks into one volume with different trade-offs. RAID 0 stripes data across all four for 16 TB and speed, but any single failure loses everything. RAID 1 mirrors the same data on every disk: only 4 TB usable, yet three disks can die. RAID 5 spreads one disk's worth of parity, leaving 12 TB and surviving one failure. RAID 6 uses two disks' worth of parity for 8 TB and survives any two. RAID 10 mirrors pairs and stripes across them, also 8 TB; it is guaranteed to survive one failure and survives a second only if it hits the other pair, so the honest table says one. With large disks, rebuilding after a failure takes many hours and stresses the survivors, which is why RAID 6 suits this box better than RAID 5. Most important: RAID protects against a disk dying, not against deletion, ransomware, or fire, because those damage every copy at once. The centre still needs the 3-2-1 backup plan.",
+          "worked_example": "four 4 TB disks: RAID 0 16 TB/0, RAID 1 4 TB/3, RAID 5 12 TB/1, RAID 6 8 TB/2, RAID 10 8 TB/1 guaranteed"
+        },
+        {
+          "week": 4,
+          "title": "MBR or GPT \u2014 the two-terabyte ceiling and UEFI boot",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w04",
+          "body_md": "ISH-4404 is a new 4 TB data disk that shows only about 2 TB of usable space after the last technician set it up. A disk's partition table records where each partition starts and ends. The older Master Boot Record format stores those positions as 32-bit sector numbers, so it can address at most 2^32 sectors. With the common 512-byte sectors that is 2,199,023,255,552 bytes, two tebibytes, and anything beyond is simply unreachable. The GUID Partition Table uses 64-bit addresses, supports far larger disks, keeps a backup copy of the table at the end of the disk, and allows many more partitions. A 4,000,000,000,000-byte disk is larger than the MBR ceiling, so it must be GPT. Disks with 4,096-byte native sectors stretch MBR to 16 TiB, but they are not what the bench usually sees. To boot an operating system from a GPT disk, the PC's firmware needs to run in UEFI mode rather than legacy BIOS mode, a setting in the firmware setup screen. Converting the scheme erases the table, so copy the data off and confirm the backup before you touch it.",
+          "worked_example": "MBR limit = 2^32 \u00d7 512 B = 2,199,023,255,552 B (2 TiB); 4 TB disk > limit \u2192 GPT, boot with UEFI; 4096-byte sectors raise the MBR limit to 16 TiB"
+        },
+        {
+          "week": 5,
+          "title": "Fault isolation \u2014 symptom first, subsystem second, parts last",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w05",
+          "body_md": "ISH-4505 is five machines on the bench at once and a temptation to start swapping motherboards. Good technicians follow the power-on sequence, because each stage that succeeds rules out everything before it. No lights and no fans means the power path: the outlet, the cable, the supply's rear switch, then the supply itself. Fans spinning with beeps and no picture means the board is alive but the self-test failed, most often memory or a processor that is not seated; reseat the sticks one at a time before anything else. A self-test that passes and then complains there is no boot device points at the boot order in the firmware or a disk that is not detected. A machine that boots and then shows a stop error usually blames the last driver or update installed. Random shutdowns only under heavy load suggest heat or an undersized supply, so check temperatures and last week's power budget. Write down the symptom in the customer's words, the stage it fails at, and the cheapest test that would confirm your guess. Replacing parts before isolating the fault costs money and hides the real cause.",
+          "worked_example": "T1 fans/no display/beeps \u2192 memory_or_cpu_seating; T2 dead \u2192 power_path; T3 shuts down under load \u2192 thermal_or_psu_capacity; T4 no boot device \u2192 boot_order_or_disk; T5 stop error after boot \u2192 driver_or_os"
+        },
+        {
+          "week": 6,
+          "title": "Display bandwidth \u2014 will the cable carry the mode?",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w06",
+          "body_md": "ISH-4606: a donated 4K monitor flickers or drops to 30 Hz on a refurbished PC. A screen mode is a stream of pixels, and the cable has a ceiling. Multiply width by height by refresh rate by bits per pixel: 3,840 by 2,160 at 60 Hz with 24-bit colour is about 11.94 gigabits per second. That ignores the blanking intervals between lines and frames, so the true need is somewhat higher, and the honest label is lower bound. Compare it with each link's usable data rate after encoding overhead: HDMI 1.4 carries about 8.16, HDMI 2.0 about 14.4, and DisplayPort 1.4 about 25.92. The 4K 60 Hz mode fits HDMI 2.0 and DisplayPort 1.4 but not HDMI 1.4, which is why the old port falls back to 30 Hz. Double the refresh to 120 Hz and the need becomes about 23.89 Gbit/s, which only DisplayPort 1.4 carries uncompressed here. Cables and ports are both links in the chain: a certified high-speed cable on an old port still runs at the old port's speed, so read both before promising a customer a mode.",
+          "worked_example": "3840\u00d72160\u00d760\u00d724 = 11.94 Gbit/s \u2192 fits HDMI 2.0 (14.4) and DP 1.4 (25.92), not HDMI 1.4 (8.16); at 120 Hz 23.89 Gbit/s \u2192 only DP 1.4"
+        },
+        {
+          "week": 7,
+          "title": "UPS runtime \u2014 watt-hours, inverter loss, and a graceful shutdown",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w07",
+          "body_md": "ISH-4707: the community centre's storage box and router should ride out short power cuts and shut down cleanly during long ones. A battery's energy is in watt-hours, and the uninterruptible power supply converts it back to mains power through an inverter that loses some energy as heat. This unit holds two 12 V, 36 Ah batteries, about 864 Wh, and its inverter is about 85 percent efficient. The load measured at the wall is 300 W, so the runtime is 864 \u00d7 0.85 \u00f7 300 hours, about 2.45 hours or 146.9 minutes. Batteries age, cold rooms reduce capacity, and the last minutes of a discharge are not reliable, so the bench starts a graceful shutdown no later than 80 percent of the computed runtime; here the plan picks 110 minutes. Configure the storage box to listen for the UPS's low-battery signal over USB or the network, and test it by pulling the plug while someone watches. Never plug a laser printer or a space heater into the battery outlets; their surges can overload the inverter.",
+          "worked_example": "864 Wh \u00d7 0.85 / 300 W \u00d7 60 = 146.9 min; start shutdown by 80% \u2192 no later than about 117 min (bench picks 110)"
+        },
+        {
+          "week": 8,
+          "title": "Imaging a lab \u2014 unicast one by one versus one multicast stream",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w08",
+          "body_md": "ISH-4808: forty refurbished laptops need the same 32 GB system image before the library's coding club opens. Image sizes are in bytes and network links in bits, so start by multiplying by eight: 256 gigabits per copy. On a gigabit link that really delivers about 70 percent of its rating, one copy takes about 366 seconds, a little over six minutes. Sending the image to each laptop separately, unicast, repeats that forty times through the same server port: about 244 minutes, more than four hours. Multicast sends one stream that every listening machine receives together, so in the ideal case the whole lab finishes in about the time of a single copy, roughly six minutes. Real networks need switches that handle multicast properly, and one slow or faulty laptop can hold the session back, so plan a fallback to unicast for stragglers. Whatever the method, check one finished machine against a list of expected settings before releasing the rest, and record which image version went onto which serial numbers.",
+          "worked_example": "32 GB image \u00d7 8 = 256 Gbit \u00f7 (1 Gbit/s \u00d7 0.7) = 365.7 s per stream; 40 machines unicast \u2248 243.8 min; multicast \u2248 6.1 min"
+        },
+        {
+          "week": 9,
+          "title": "Media sanitization \u2014 Clear, Purge, or Destroy before a device leaves",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w09",
+          "body_md": "ISH-4909 is the second NO_AI week, because a sanitization decision has to be yours. Donated machines arrive full of strangers' lives, and the bench's promise is that nothing leaves with them. NIST Special Publication 800-88 frames the choice with three words. Clear uses ordinary commands to overwrite user-addressable storage, enough when the device stays inside the organisation. Purge uses methods that defeat laboratory recovery, such as the drive's own secure-erase or cryptographic-erase commands, and is the floor when a device leaves your control through donation, sale, or a returned lease. Destroy means the media cannot be reused: shredding, disintegrating, or incinerating, and it is the only answer for a drive that has failed and will not accept commands. Solid-state drives remap blocks behind the scenes, so overwriting the visible space can leave old data in spare areas; rely on the drive's purge commands. Every decision ends with verification and a certificate recording the serial number, method, date, and who did it. A quick format is none of the three.",
+          "worked_example": "RB-1001 HDD reuse_internal \u2192 Clear; RB-1002 SSD leave_org \u2192 Purge; RB-1003 failed SSD \u2192 Destroy; RB-1004 HDD leave_org \u2192 Purge; each verified with a certificate ID"
+        },
+        {
+          "week": 10,
+          "title": "Refurb service report \u2014 fault, fix, sanitization, proof",
+          "lesson_id": "IT_SUPPORT_HARDWARE-w10",
+          "body_md": "ISH-4A10 closes the term with the document that travels with each refurbished machine. For every device the report gives the serial number, the fault class from the bench's isolation table, and the fix in plain words, such as reseated the memory stick in A2. It records the sanitization method chosen for the drive and that verification passed, pointing at last week's certificate. It notes anything a new owner should know, like a replacement power supply, the memory mode confirmed in firmware, or a monitor that needs the DisplayPort cable for full refresh. The bench also signs one sentence for the whole batch: no customer data was retained, copied, or looked through beyond what the repair required. Technicians who browse a donor's photos to 'test the drive' end their volunteering that day. Mentors review the report against six or more passed labs, pick one machine at random, and ask the technician to explain the fault and the fix while the case is open. A clean report is what lets a school trust a donated computer.",
+          "worked_example": "RB-1002: fault memory_or_cpu_seating, fix reseated DIMM in A2, sanitization Purge, verified; customer_data_retained false"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "a01",
+          "prompt": "Submit lab_ish_psu_budget JSON for ISH-4101: components, total_w, required_w, chosen_psu_w."
+        },
+        {
+          "id": "a02",
+          "prompt": "Submit lab_ish_memory_bandwidth JSON for ISH-4202: mt_s, slots_used, channels, bandwidth_gb_s."
+        },
+        {
+          "id": "a03",
+          "prompt": "Submit lab_ish_raid_capacity JSON for ISH-4303 (NO_AI): disks, size_tb, five RAID levels, raid_is_backup false."
+        },
+        {
+          "id": "a04",
+          "prompt": "Submit lab_ish_partition_scheme JSON for ISH-4404: disk_bytes, sector_bytes, mbr_max_bytes, scheme, boot_firmware."
+        },
+        {
+          "id": "a05",
+          "prompt": "Submit lab_ish_fault_isolation JSON for ISH-4505: classification of T1\u2013T5 and replaced_parts_before_isolating false."
+        },
+        {
+          "id": "a06",
+          "prompt": "Submit lab_ish_display_link JSON for ISH-4606: two modes with rate_gbps and fits per link, rate_is_lower_bound true."
+        },
+        {
+          "id": "a07",
+          "prompt": "Submit lab_ish_ups_runtime JSON for ISH-4707: battery_wh, efficiency, load_w, runtime_min, shutdown_at_min."
+        },
+        {
+          "id": "a08",
+          "prompt": "Submit lab_ish_imaging_time JSON for ISH-4808: image_gb, machines, link_gbps, efficiency, unicast_min, multicast_min."
+        },
+        {
+          "id": "a09",
+          "prompt": "Submit lab_ish_sanitize_decision JSON for ISH-4909 (NO_AI): method, verification, and certificate ID for RB-1001\u20261004."
+        },
+        {
+          "id": "a10",
+          "prompt": "Submit lab_ish_service_report JSON for ISH-4A10: labs_passed, per-device fault/fix/sanitization/verification, customer_data_retained false."
+        }
+      ],
+      "labs": [
+        "lab_ish_psu_budget",
+        "lab_ish_memory_bandwidth",
+        "lab_ish_raid_capacity",
+        "lab_ish_partition_scheme",
+        "lab_ish_fault_isolation",
+        "lab_ish_display_link",
+        "lab_ish_ups_runtime",
+        "lab_ish_imaging_time",
+        "lab_ish_sanitize_decision",
+        "lab_ish_service_report"
+      ],
+      "quizzes": [
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q01",
+          "week": 1,
+          "items": [
+            {
+              "id": "ish-w1-1",
+              "kind": "mcq",
+              "stem": "The parts total 405 W. What does the bench require after headroom?",
+              "choices": [
+                "405 W",
+                "506.25 W",
+                "450 W",
+                "810 W"
+              ]
+            },
+            {
+              "id": "ish-w1-2",
+              "kind": "mcq",
+              "stem": "Which catalogue unit should be chosen for 506.25 W?",
+              "choices": [
+                "450 W",
+                "850 W",
+                "550 W",
+                "500 W"
+              ]
+            },
+            {
+              "id": "ish-w1-3",
+              "kind": "mcq",
+              "stem": "Why add headroom above the parts total?",
+              "choices": [
+                "Headroom is required by law",
+                "To use more electricity",
+                "Parts lie about colour",
+                "Loads spike and supplies near their limit run hot"
+              ]
+            },
+            {
+              "id": "ish-w1-4",
+              "kind": "mcq",
+              "stem": "Where should a part's wattage come from?",
+              "choices": [
+                "Its spec sheet",
+                "A forum guess",
+                "Its colour",
+                "The case size"
+              ]
+            },
+            {
+              "id": "ish-w1-5",
+              "kind": "mcq",
+              "stem": "Why never open a power supply's case?",
+              "choices": [
+                "It voids the paint",
+                "Capacitors can hold a dangerous charge after unplugging",
+                "It is glued",
+                "Fans fall out"
+              ]
+            },
+            {
+              "id": "ish-w1-6",
+              "kind": "mcq",
+              "stem": "Why is a 1,000 W unit a poor choice for a 300 W load?",
+              "choices": [
+                "It will explode",
+                "It cannot power fans",
+                "It wastes money and may run less efficiently",
+                "It has no connectors"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q02",
+          "week": 2,
+          "items": [
+            {
+              "id": "ish-w2-1",
+              "kind": "mcq",
+              "stem": "DDR4-3200 in two channels gives what peak bandwidth?",
+              "choices": [
+                "25.6 GB/s",
+                "3.2 GB/s",
+                "102.4 GB/s",
+                "51.2 GB/s"
+              ]
+            },
+            {
+              "id": "ish-w2-2",
+              "kind": "mcq",
+              "stem": "Two sticks in A1 and A2 run how many channels?",
+              "choices": [
+                "One",
+                "Two",
+                "Four",
+                "Zero"
+              ]
+            },
+            {
+              "id": "ish-w2-3",
+              "kind": "mcq",
+              "stem": "Why did integrated graphics crawl on this machine?",
+              "choices": [
+                "The GPU was missing",
+                "They borrow system memory, which was single-channel",
+                "The sticks were too large",
+                "The fans were slow"
+              ]
+            },
+            {
+              "id": "ish-w2-4",
+              "kind": "mcq",
+              "stem": "How many bytes move per channel per transfer?",
+              "choices": [
+                "One",
+                "Sixty-four",
+                "Eight",
+                "Thirty-two"
+              ]
+            },
+            {
+              "id": "ish-w2-5",
+              "kind": "mcq",
+              "stem": "Where do you confirm the memory mode after a change?",
+              "choices": [
+                "The case sticker",
+                "The keyboard",
+                "The monitor menu",
+                "The firmware setup screen"
+              ]
+            },
+            {
+              "id": "ish-w2-6",
+              "kind": "mcq",
+              "stem": "A half-seated stick commonly causes what?",
+              "choices": [
+                "Beeps and no display",
+                "Faster boot",
+                "Louder speakers",
+                "Brighter screen"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q03",
+          "week": 3,
+          "items": [
+            {
+              "id": "ish-w3-1",
+              "kind": "mcq",
+              "stem": "Four 4 TB disks in RAID 5 give how much usable space?",
+              "choices": [
+                "16 TB",
+                "12 TB",
+                "8 TB",
+                "4 TB"
+              ]
+            },
+            {
+              "id": "ish-w3-2",
+              "kind": "mcq",
+              "stem": "How many disk failures does RAID 6 survive guaranteed?",
+              "choices": [
+                "One",
+                "Three",
+                "Two",
+                "None"
+              ]
+            },
+            {
+              "id": "ish-w3-3",
+              "kind": "mcq",
+              "stem": "What does RAID 0 offer and risk?",
+              "choices": [
+                "Mirroring and safety",
+                "Parity protection",
+                "Offsite copies",
+                "Full capacity and speed; any failure loses all"
+              ]
+            },
+            {
+              "id": "ish-w3-4",
+              "kind": "mcq",
+              "stem": "Why is RAID 10's guaranteed tolerance listed as one failure?",
+              "choices": [
+                "A second failure in the same mirror pair loses data",
+                "It has no mirrors",
+                "It uses parity",
+                "It survives four failures"
+              ]
+            },
+            {
+              "id": "ish-w3-5",
+              "kind": "mcq",
+              "stem": "Why is RAID not a backup?",
+              "choices": [
+                "It is too slow",
+                "Deletion and ransomware hit every disk at once",
+                "It needs four disks",
+                "It is illegal"
+              ]
+            },
+            {
+              "id": "ish-w3-6",
+              "kind": "mcq",
+              "stem": "Why prefer RAID 6 over RAID 5 with large disks?",
+              "choices": [
+                "RAID 6 is faster always",
+                "It uses fewer disks",
+                "Long rebuilds stress survivors; a second failure is survivable",
+                "It needs no parity"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q04",
+          "week": 4,
+          "items": [
+            {
+              "id": "ish-w4-1",
+              "kind": "mcq",
+              "stem": "Why can MBR not address more than about 2 TiB with 512-byte sectors?",
+              "choices": [
+                "Disks are too slow",
+                "It has no partitions",
+                "It is encrypted",
+                "It stores sector numbers in 32 bits"
+              ]
+            },
+            {
+              "id": "ish-w4-2",
+              "kind": "mcq",
+              "stem": "What is the MBR limit in bytes with 512-byte sectors?",
+              "choices": [
+                "2,199,023,255,552",
+                "2,000,000,000,000",
+                "4,294,967,296",
+                "512,000,000,000"
+              ]
+            },
+            {
+              "id": "ish-w4-3",
+              "kind": "mcq",
+              "stem": "Which scheme must a 4 TB disk use to expose all of its space?",
+              "choices": [
+                "MBR",
+                "GPT",
+                "FAT",
+                "Either"
+              ]
+            },
+            {
+              "id": "ish-w4-4",
+              "kind": "mcq",
+              "stem": "What firmware mode boots an operating system from a GPT disk?",
+              "choices": [
+                "Legacy BIOS only",
+                "Safe mode",
+                "UEFI",
+                "DOS"
+              ]
+            },
+            {
+              "id": "ish-w4-5",
+              "kind": "mcq",
+              "stem": "Where does GPT keep a backup copy of its table?",
+              "choices": [
+                "In the BIOS chip",
+                "In the cloud",
+                "Nowhere",
+                "At the end of the disk"
+              ]
+            },
+            {
+              "id": "ish-w4-6",
+              "kind": "mcq",
+              "stem": "What must happen before converting a disk's partition scheme?",
+              "choices": [
+                "Copy the data off and confirm the backup",
+                "Nothing",
+                "Unplug the monitor",
+                "Update the keyboard"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q05",
+          "week": 5,
+          "items": [
+            {
+              "id": "ish-w5-1",
+              "kind": "mcq",
+              "stem": "Fans spin, the PC beeps, and there is no display. First suspect?",
+              "choices": [
+                "The monitor's brand",
+                "Memory or CPU seating",
+                "The operating system",
+                "The keyboard"
+              ]
+            },
+            {
+              "id": "ish-w5-2",
+              "kind": "mcq",
+              "stem": "No lights and no fans at all. Which path do you check first?",
+              "choices": [
+                "Graphics driver",
+                "Boot order",
+                "Power: outlet, cable, PSU switch",
+                "RAM speed"
+              ]
+            },
+            {
+              "id": "ish-w5-3",
+              "kind": "mcq",
+              "stem": "Self-test passes but 'no boot device' appears. What do you check?",
+              "choices": [
+                "PSU wattage",
+                "Fan speed",
+                "Monitor cable",
+                "Firmware boot order and disk detection"
+              ]
+            },
+            {
+              "id": "ish-w5-4",
+              "kind": "mcq",
+              "stem": "A PC shuts down only during long renders. Likely cause?",
+              "choices": [
+                "Heat or an undersized power supply",
+                "A bad mouse",
+                "A missing driver for the printer",
+                "The keyboard layout"
+              ]
+            },
+            {
+              "id": "ish-w5-5",
+              "kind": "mcq",
+              "stem": "Why follow the power-on sequence?",
+              "choices": [
+                "It is faster to guess",
+                "Each passing stage rules out everything before it",
+                "Customers prefer it",
+                "It voids warranties"
+              ]
+            },
+            {
+              "id": "ish-w5-6",
+              "kind": "mcq",
+              "stem": "What does swapping parts before isolating usually cause?",
+              "choices": [
+                "Faster fixes",
+                "Better documentation",
+                "Wasted money and a hidden real cause",
+                "Lower power use"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q06",
+          "week": 6,
+          "items": [
+            {
+              "id": "ish-w6-1",
+              "kind": "mcq",
+              "stem": "What is the pixel data rate for 4K at 60 Hz and 24 bits per pixel?",
+              "choices": [
+                "About 23.89 Gbit/s",
+                "About 8.16 Gbit/s",
+                "About 1.5 Gbit/s",
+                "About 11.94 Gbit/s"
+              ]
+            },
+            {
+              "id": "ish-w6-2",
+              "kind": "mcq",
+              "stem": "Why is that figure a lower bound?",
+              "choices": [
+                "It ignores blanking intervals",
+                "It includes audio",
+                "Cables add speed",
+                "It counts two monitors"
+              ]
+            },
+            {
+              "id": "ish-w6-3",
+              "kind": "mcq",
+              "stem": "Which link cannot carry 4K 60 Hz uncompressed at 24-bit colour?",
+              "choices": [
+                "HDMI 2.0",
+                "HDMI 1.4",
+                "DisplayPort 1.4",
+                "None of them"
+              ]
+            },
+            {
+              "id": "ish-w6-4",
+              "kind": "mcq",
+              "stem": "Which link here carries 4K 120 Hz uncompressed?",
+              "choices": [
+                "HDMI 2.0",
+                "HDMI 1.4",
+                "DisplayPort 1.4",
+                "VGA"
+              ]
+            },
+            {
+              "id": "ish-w6-5",
+              "kind": "mcq",
+              "stem": "A new certified cable on an old HDMI 1.4 port runs at what speed?",
+              "choices": [
+                "Double speed",
+                "DisplayPort speed",
+                "Unlimited",
+                "The old port's speed"
+              ]
+            },
+            {
+              "id": "ish-w6-6",
+              "kind": "mcq",
+              "stem": "Why does the old port fall back to 30 Hz?",
+              "choices": [
+                "Half the refresh fits under its ceiling",
+                "30 Hz looks better",
+                "The monitor is broken",
+                "The OS prefers it"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q07",
+          "week": 7,
+          "items": [
+            {
+              "id": "ish-w7-1",
+              "kind": "mcq",
+              "stem": "864 Wh at 85% efficiency into a 300 W load lasts about how long?",
+              "choices": [
+                "172.8 minutes",
+                "146.9 minutes",
+                "86.4 minutes",
+                "300 minutes"
+              ]
+            },
+            {
+              "id": "ish-w7-2",
+              "kind": "mcq",
+              "stem": "What does ignoring inverter efficiency do to the estimate?",
+              "choices": [
+                "Understates it",
+                "Nothing",
+                "Overstates the runtime",
+                "Doubles the load"
+              ]
+            },
+            {
+              "id": "ish-w7-3",
+              "kind": "mcq",
+              "stem": "Why start shutdown by 80% of computed runtime?",
+              "choices": [
+                "To save paper",
+                "It is faster",
+                "UPS units require it by law",
+                "Batteries age and the final minutes are unreliable"
+              ]
+            },
+            {
+              "id": "ish-w7-4",
+              "kind": "mcq",
+              "stem": "How does the storage box know to shut down?",
+              "choices": [
+                "It listens for the UPS low-battery signal",
+                "Someone guesses",
+                "It never shuts down",
+                "The router tells it"
+              ]
+            },
+            {
+              "id": "ish-w7-5",
+              "kind": "mcq",
+              "stem": "Which device should not go on the battery outlets?",
+              "choices": [
+                "The router",
+                "A laser printer",
+                "The storage box",
+                "The modem"
+              ]
+            },
+            {
+              "id": "ish-w7-6",
+              "kind": "mcq",
+              "stem": "How do you prove the shutdown works?",
+              "choices": [
+                "Assume it",
+                "Read the box",
+                "Pull the plug in a supervised test",
+                "Ask the vendor"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q08",
+          "week": 8,
+          "items": [
+            {
+              "id": "ish-w8-1",
+              "kind": "mcq",
+              "stem": "Why multiply the image size by eight first?",
+              "choices": [
+                "To add a safety margin",
+                "Images compress by eight",
+                "There are eight machines",
+                "Images are in bytes, links in bits"
+              ]
+            },
+            {
+              "id": "ish-w8-2",
+              "kind": "mcq",
+              "stem": "At 0.7 Gbit/s effective, how long is one 32 GB copy?",
+              "choices": [
+                "About 6.1 minutes",
+                "About 32 seconds",
+                "About 4 hours",
+                "About 45 minutes"
+              ]
+            },
+            {
+              "id": "ish-w8-3",
+              "kind": "mcq",
+              "stem": "Unicast to forty machines takes about how long?",
+              "choices": [
+                "About 6 minutes",
+                "About 244 minutes",
+                "About 40 seconds",
+                "About 24 minutes"
+              ]
+            },
+            {
+              "id": "ish-w8-4",
+              "kind": "mcq",
+              "stem": "Why can multicast finish near the time of one copy?",
+              "choices": [
+                "It compresses forty times",
+                "It skips verification",
+                "Every machine receives the same single stream",
+                "It uses Wi-Fi"
+              ]
+            },
+            {
+              "id": "ish-w8-5",
+              "kind": "mcq",
+              "stem": "What should be ready if multicast stalls on a few laptops?",
+              "choices": [
+                "A new switch",
+                "Nothing",
+                "A second image",
+                "A unicast fallback for stragglers"
+              ]
+            },
+            {
+              "id": "ish-w8-6",
+              "kind": "mcq",
+              "stem": "What do you record after imaging?",
+              "choices": [
+                "Which image version went onto which serial numbers",
+                "The weather",
+                "Only the start time",
+                "Nothing"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q09",
+          "week": 9,
+          "items": [
+            {
+              "id": "ish-w9-1",
+              "kind": "mcq",
+              "stem": "A working SSD will be donated to another organisation. Minimum method?",
+              "choices": [
+                "Clear",
+                "Purge",
+                "Quick format",
+                "None"
+              ]
+            },
+            {
+              "id": "ish-w9-2",
+              "kind": "mcq",
+              "stem": "A failed drive will not accept commands. What is left?",
+              "choices": [
+                "Clear",
+                "Purge with software",
+                "Destroy",
+                "Reuse"
+              ]
+            },
+            {
+              "id": "ish-w9-3",
+              "kind": "mcq",
+              "stem": "Why is overwriting visible space risky on an SSD?",
+              "choices": [
+                "SSDs cannot be written",
+                "It is too slow",
+                "It voids the warranty",
+                "Remapped spare blocks can keep old data"
+              ]
+            },
+            {
+              "id": "ish-w9-4",
+              "kind": "mcq",
+              "stem": "What fits a hard drive staying in the same organisation?",
+              "choices": [
+                "Clear",
+                "Destroy",
+                "Nothing",
+                "Purge only by fire"
+              ]
+            },
+            {
+              "id": "ish-w9-5",
+              "kind": "mcq",
+              "stem": "What must every sanitization end with?",
+              "choices": [
+                "A reboot",
+                "Verification and a certificate",
+                "A new label only",
+                "A customer call"
+              ]
+            },
+            {
+              "id": "ish-w9-6",
+              "kind": "mcq",
+              "stem": "Is a quick format Clear, Purge, or Destroy?",
+              "choices": [
+                "Clear",
+                "Purge",
+                "None of them",
+                "Destroy"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "IT_SUPPORT_HARDWARE-q10",
+          "week": 10,
+          "items": [
+            {
+              "id": "ish-w10-1",
+              "kind": "mcq",
+              "stem": "Which field connects a device to its isolation work?",
+              "choices": [
+                "The case colour",
+                "The donor's name",
+                "The price",
+                "The fault class from the bench table"
+              ]
+            },
+            {
+              "id": "ish-w10-2",
+              "kind": "mcq",
+              "stem": "What must the report say about sanitization?",
+              "choices": [
+                "The method used and that verification passed",
+                "Nothing",
+                "Only the date",
+                "The donor's address"
+              ]
+            },
+            {
+              "id": "ish-w10-3",
+              "kind": "mcq",
+              "stem": "A technician browses a donor's photos 'to test the drive'. What follows?",
+              "choices": [
+                "A thank-you note",
+                "Their volunteering ends that day",
+                "Nothing",
+                "A promotion"
+              ]
+            },
+            {
+              "id": "ish-w10-4",
+              "kind": "mcq",
+              "stem": "What should a new owner learn from the report?",
+              "choices": [
+                "The donor's history",
+                "Every quiz score",
+                "Notable replacements and settings, like the cable for full refresh",
+                "Nothing"
+              ]
+            },
+            {
+              "id": "ish-w10-5",
+              "kind": "mcq",
+              "stem": "During review a mentor picks one machine and asks for what?",
+              "choices": [
+                "A sales pitch",
+                "A new image",
+                "The donor's password",
+                "An explanation of the fault and fix with the case open"
+              ]
+            },
+            {
+              "id": "ish-w10-6",
+              "kind": "mcq",
+              "stem": "What does a clean report let a school do?",
+              "choices": [
+                "Trust a donated computer",
+                "Skip updates",
+                "Ignore sanitization",
+                "Avoid backups"
+              ]
+            }
+          ]
+        }
+      ],
+      "assessments": {
+        "mid_course": [
+          {
+            "id": "ish-mid-01",
+            "stem": "A build totals 520 W of parts. Which supply does the bench rule pick?",
+            "choices": [
+              "550 W",
+              "750 W",
+              "500 W",
+              "650 W"
+            ]
+          },
+          {
+            "id": "ish-mid-02",
+            "stem": "Why might a supply that meets the total still fail under a new graphics card?",
+            "choices": [
+              "It lacks the card's power connectors or rail capacity",
+              "Supplies hate graphics",
+              "Fans block it",
+              "The case is too big"
+            ]
+          },
+          {
+            "id": "ish-mid-03",
+            "stem": "Four sticks fill A1, A2, B1, B2. How many channels run?",
+            "choices": [
+              "Four",
+              "Two",
+              "One",
+              "Eight"
+            ]
+          },
+          {
+            "id": "ish-mid-04",
+            "stem": "DDR5-4800 in two channels gives what peak bandwidth by the bench formula?",
+            "choices": [
+              "38.4 GB/s",
+              "4.8 GB/s",
+              "76.8 GB/s",
+              "153.6 GB/s"
+            ]
+          },
+          {
+            "id": "ish-mid-05",
+            "stem": "Integrated graphics are slow and one stick is installed. Cheapest improvement?",
+            "choices": [
+              "Buy a new CPU",
+              "Replace the case",
+              "Lower the resolution to 640\u00d7480",
+              "Add a matching stick in the other channel"
+            ]
+          },
+          {
+            "id": "ish-mid-06",
+            "stem": "Six 2 TB disks in RAID 6 give how much usable space?",
+            "choices": [
+              "8 TB",
+              "10 TB",
+              "12 TB",
+              "6 TB"
+            ]
+          },
+          {
+            "id": "ish-mid-07",
+            "stem": "A teacher deletes a folder on a RAID 1 volume. What happens on the mirror?",
+            "choices": [
+              "It is kept safe",
+              "It is deleted there too",
+              "It is restored automatically",
+              "It moves to the cloud"
+            ]
+          },
+          {
+            "id": "ish-mid-08",
+            "stem": "Why does a RAID 5 rebuild worry technicians with large disks?",
+            "choices": [
+              "It deletes parity",
+              "It shrinks capacity",
+              "Long rebuilds stress the remaining disks",
+              "It is instant"
+            ]
+          },
+          {
+            "id": "ish-mid-09",
+            "stem": "A 3 TB disk set up as MBR with 512-byte sectors exposes about how much?",
+            "choices": [
+              "All 3 TB",
+              "1 TB",
+              "Nothing",
+              "About 2 TiB"
+            ]
+          },
+          {
+            "id": "ish-mid-10",
+            "stem": "A PC will not boot from a GPT disk after cloning. Which firmware setting do you check?",
+            "choices": [
+              "UEFI versus legacy BIOS mode",
+              "Fan curve",
+              "Keyboard layout",
+              "Screen brightness"
+            ]
+          },
+          {
+            "id": "ish-mid-11",
+            "stem": "A machine is dead after a storm. What do you test before opening the case?",
+            "choices": [
+              "The graphics driver",
+              "The outlet and power cable",
+              "The RAM timings",
+              "The boot order"
+            ]
+          },
+          {
+            "id": "ish-mid-12",
+            "stem": "The PC boots, then shows a stop error right after a driver update. First step?",
+            "choices": [
+              "Replace the motherboard",
+              "Reseat the CPU",
+              "Roll back the last driver or update",
+              "Change the PSU"
+            ]
+          },
+          {
+            "id": "ish-mid-13",
+            "stem": "Why write the symptom in the customer's own words?",
+            "choices": [
+              "Customers prefer it",
+              "It is required by law",
+              "It is shorter",
+              "It preserves details your guess might discard"
+            ]
+          },
+          {
+            "id": "ish-mid-14",
+            "stem": "2560\u00d71440 at 144 Hz with 24-bit colour needs about how much?",
+            "choices": [
+              "About 12.7 Gbit/s",
+              "About 5.3 Gbit/s",
+              "About 25 Gbit/s",
+              "About 1.4 Gbit/s"
+            ]
+          },
+          {
+            "id": "ish-mid-15",
+            "stem": "A monitor runs 4K at 30 Hz over HDMI 1.4. What is the honest fix?",
+            "choices": [
+              "Buy a longer cable",
+              "Use a port and cable rated for the mode, like DP 1.4",
+              "Lower the brightness",
+              "Install a new keyboard"
+            ]
+          },
+          {
+            "id": "ish-mid-16",
+            "stem": "A 600 Wh UPS at 90% efficiency feeds 180 W. Runtime?",
+            "choices": [
+              "200 minutes",
+              "120 minutes",
+              "180 minutes",
+              "300 minutes"
+            ]
+          },
+          {
+            "id": "ish-mid-17",
+            "stem": "Doubling the load on a UPS does what to runtime by the bench formula?",
+            "choices": [
+              "Doubles it",
+              "No change",
+              "Quarters it",
+              "Halves it"
+            ]
+          },
+          {
+            "id": "ish-mid-18",
+            "stem": "A 20 GB image goes to 10 machines over 1 Gbit/s at 80% efficiency, unicast. About how long?",
+            "choices": [
+              "About 33 minutes",
+              "About 3.3 minutes",
+              "About 200 minutes",
+              "About 20 minutes"
+            ]
+          },
+          {
+            "id": "ish-mid-19",
+            "stem": "Why verify one finished machine before releasing an imaged lab?",
+            "choices": [
+              "It is tradition",
+              "One mistake would otherwise repeat on every machine",
+              "Imaging is random",
+              "To slow down"
+            ]
+          },
+          {
+            "id": "ish-mid-20",
+            "stem": "A leased laptop goes back to the vendor. Which category applies at minimum?",
+            "choices": [
+              "Clear",
+              "No action",
+              "Purge",
+              "Quick format"
+            ]
+          }
+        ],
+        "final_knowledge": [
+          {
+            "id": "ish-fin-01",
+            "stem": "A volunteer wants a 1,200 W supply 'to be safe' for a 250 W office PC. Your advice?",
+            "choices": [
+              "Size to the budget with headroom; oversizing wastes money and efficiency",
+              "Agree",
+              "Use 300 W with no headroom",
+              "Remove the fans"
+            ]
+          },
+          {
+            "id": "ish-fin-02",
+            "stem": "A PSU's fan has stopped and it smells hot. What do you do?",
+            "choices": [
+              "Open it and clean the capacitors",
+              "Replace the unit; never open it",
+              "Tape the fan",
+              "Run it at night only"
+            ]
+          },
+          {
+            "id": "ish-fin-03",
+            "stem": "A board manual says use A2 and B2 for two sticks, but they sit in A1 and B1. Likely effect?",
+            "choices": [
+              "Triple speed",
+              "No display ever",
+              "Possibly unstable or not running the preferred layout; follow the manual",
+              "Nothing could matter"
+            ]
+          },
+          {
+            "id": "ish-fin-04",
+            "stem": "A customer asks why a gaming laptop with one stick has poor frame rates. Best explanation?",
+            "choices": [
+              "The screen is too bright",
+              "The keyboard is slow",
+              "Batteries limit frames",
+              "Single-channel memory halves bandwidth for integrated graphics"
+            ]
+          },
+          {
+            "id": "ish-fin-05",
+            "stem": "A nonprofit wants maximum space on four disks for a scratch volume it can afford to lose. Which RAID?",
+            "choices": [
+              "RAID 0",
+              "RAID 6",
+              "RAID 1",
+              "RAID 10"
+            ]
+          },
+          {
+            "id": "ish-fin-06",
+            "stem": "A file server has RAID 6 and no other copy. Ransomware encrypts the share. What protects them?",
+            "choices": [
+              "RAID 6 parity",
+              "Nothing, unless a separate backup exists",
+              "The second parity disk",
+              "The rebuild"
+            ]
+          },
+          {
+            "id": "ish-fin-07",
+            "stem": "A customer's 6 TB disk shows only 2 TB. What do you explain?",
+            "choices": [
+              "The disk is fake",
+              "Windows hides 4 TB",
+              "MBR cannot address beyond 2 TiB with 512-byte sectors; GPT is needed",
+              "Cables limit size"
+            ]
+          },
+          {
+            "id": "ish-fin-08",
+            "stem": "Why keep a GPT disk's backup table in mind during recovery?",
+            "choices": [
+              "It stores passwords",
+              "It doubles capacity",
+              "It boots faster",
+              "A damaged primary table can be rebuilt from it"
+            ]
+          },
+          {
+            "id": "ish-fin-09",
+            "stem": "Five tickets arrive. Which practice keeps diagnosis honest?",
+            "choices": [
+              "Record the stage of failure and the cheapest confirming test",
+              "Swap the motherboard first",
+              "Guess from the case colour",
+              "Reinstall the OS on all five"
+            ]
+          },
+          {
+            "id": "ish-fin-10",
+            "stem": "A PC shuts down during games after a GPU upgrade but the CPU is cool. Next check?",
+            "choices": [
+              "Keyboard drivers",
+              "The power budget against the new card",
+              "Monitor size",
+              "Mouse DPI"
+            ]
+          },
+          {
+            "id": "ish-fin-11",
+            "stem": "A customer wants 4K 120 Hz on a PC with only HDMI 2.0. What do you say?",
+            "choices": [
+              "Buy a gold cable",
+              "It works fine",
+              "The port cannot carry it uncompressed; use DP 1.4 or accept 60 Hz",
+              "Use VGA"
+            ]
+          },
+          {
+            "id": "ish-fin-12",
+            "stem": "Why label display rates as lower bounds?",
+            "choices": [
+              "Cables are faster than advertised",
+              "Monitors round down",
+              "It is tradition",
+              "Blanking intervals add to the real requirement"
+            ]
+          },
+          {
+            "id": "ish-fin-13",
+            "stem": "A UPS test lasts 40 minutes instead of the computed 60. What is the likely reason?",
+            "choices": [
+              "Aged batteries or a heavier load than measured",
+              "The formula is wrong forever",
+              "The UPS is too new",
+              "The room is too quiet"
+            ]
+          },
+          {
+            "id": "ish-fin-14",
+            "stem": "A UPS feeds a router, a storage box, and a space heater. What must change?",
+            "choices": [
+              "Add another heater",
+              "Remove the heater from the battery outlets",
+              "Nothing",
+              "Unplug the router"
+            ]
+          },
+          {
+            "id": "ish-fin-15",
+            "stem": "Imaging forty machines by unicast takes four hours. Which change helps most?",
+            "choices": [
+              "Faster keyboards",
+              "Larger monitors",
+              "Multicast with a unicast fallback",
+              "Imaging at night only"
+            ]
+          },
+          {
+            "id": "ish-fin-16",
+            "stem": "The effective link rate halves from 0.7 to 0.35 Gbit/s. What happens to imaging time?",
+            "choices": [
+              "It halves",
+              "No change",
+              "It quadruples",
+              "It doubles"
+            ]
+          },
+          {
+            "id": "ish-fin-17",
+            "stem": "Which record should follow every imaged machine?",
+            "choices": [
+              "Image version and serial number",
+              "The technician's playlist",
+              "Nothing",
+              "The donor's browsing history"
+            ]
+          },
+          {
+            "id": "ish-fin-18",
+            "stem": "A donated SSD is going to a school. Which method satisfies the bench rule?",
+            "choices": [
+              "Delete files",
+              "Purge using the drive's secure or cryptographic erase",
+              "Quick format",
+              "Rename the volume"
+            ]
+          },
+          {
+            "id": "ish-fin-19",
+            "stem": "A drive is physically cracked and spins noisily. Its sanitization?",
+            "choices": [
+              "Clear",
+              "Purge by overwrite",
+              "Destroy",
+              "Reuse"
+            ]
+          },
+          {
+            "id": "ish-fin-20",
+            "stem": "What belongs on a sanitization certificate?",
+            "choices": [
+              "The donor's photos",
+              "The asking price",
+              "Nothing",
+              "Serial, method, date, and who did it"
+            ]
+          },
+          {
+            "id": "ish-fin-21",
+            "stem": "A service report says 'fixed it'. What is missing?",
+            "choices": [
+              "Fault class, the specific fix, and sanitization proof",
+              "Nothing",
+              "A joke",
+              "The donor's address"
+            ]
+          },
+          {
+            "id": "ish-fin-22",
+            "stem": "A technician copies a donor's music 'because it was good'. What rule was broken?",
+            "choices": [
+              "Imaging rules",
+              "No customer data retained or copied",
+              "RAID rules",
+              "UPS rules"
+            ]
+          },
+          {
+            "id": "ish-fin-23",
+            "stem": "Which CompTIA A+ use is acceptable in this course?",
+            "choices": [
+              "Copying exam questions",
+              "Selling vouchers",
+              "Domain labels for topics, no exam items",
+              "Claiming certification"
+            ]
+          },
+          {
+            "id": "ish-fin-24",
+            "stem": "What does completing the Refurb Bench course claim?",
+            "choices": [
+              "A+ certification",
+              "Electrician licence",
+              "Manufacturer warranty authority",
+              "Bench practice with recomputed labs, not a certification"
+            ]
+          }
+        ],
+        "practical_labs": [
+          "lab_ish_psu_budget",
+          "lab_ish_memory_bandwidth",
+          "lab_ish_raid_capacity",
+          "lab_ish_partition_scheme",
+          "lab_ish_fault_isolation",
+          "lab_ish_display_link",
+          "lab_ish_ups_runtime",
+          "lab_ish_imaging_time",
+          "lab_ish_sanitize_decision",
+          "lab_ish_service_report"
+        ]
+      },
+      "portfolio": {
+        "no_pii": true
+      },
+      "offline_pack": {
+        "lesson_ids": [
+          "IT_SUPPORT_HARDWARE-w01",
+          "IT_SUPPORT_HARDWARE-w02",
+          "IT_SUPPORT_HARDWARE-w03",
+          "IT_SUPPORT_HARDWARE-w04",
+          "IT_SUPPORT_HARDWARE-w05",
+          "IT_SUPPORT_HARDWARE-w06",
+          "IT_SUPPORT_HARDWARE-w07",
+          "IT_SUPPORT_HARDWARE-w08",
+          "IT_SUPPORT_HARDWARE-w09",
+          "IT_SUPPORT_HARDWARE-w10"
+        ],
+        "session_shape": {
+          "lesson_id": "IT_SUPPORT_HARDWARE-w01",
+          "role": "learner",
+          "offline_pack": "IT_SUPPORT_HARDWARE-offline",
+          "labs": [
+            "lab_ish_psu_budget",
+            "lab_ish_memory_bandwidth"
           ]
         }
       }

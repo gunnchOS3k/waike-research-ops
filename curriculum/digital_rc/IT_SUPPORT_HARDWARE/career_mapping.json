@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "it_support_technician_entry",
+    "pc_refurbishment_technician",
+    "deskside_support_apprentice"
+  ],
+  "nice_categories": [
+    "operate_and_maintain"
+  ],
+  "certs_aligned_not_granted": [
+    "CompTIA A+ hardware domain labels (PUBLIC_REFERENCE_ONLY; no exam items)",
+    "NIST SP 800-88 media sanitization vocabulary (PUBLIC_REFERENCE_ONLY)",
+    "UEFI specification boot vocabulary (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

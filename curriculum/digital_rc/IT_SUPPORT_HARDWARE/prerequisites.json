@@ -1,0 +1,9 @@
+{
+  "course_id": "IT_SUPPORT_HARDWARE",
+  "required": [
+    "Never open donor data; power off and ground before touching parts"
+  ],
+  "recommended": [
+    "DIGITAL_CONFIDENCE file and storage-unit habits"
+  ]
+}

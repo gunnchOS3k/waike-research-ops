@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "ish-w9-1",
+      "kind": "mcq",
+      "stem": "A working SSD will be donated to another organisation. Minimum method?",
+      "choices": [
+        "Clear",
+        "Purge",
+        "Quick format",
+        "None"
+      ]
+    },
+    {
+      "id": "ish-w9-2",
+      "kind": "mcq",
+      "stem": "A failed drive will not accept commands. What is left?",
+      "choices": [
+        "Clear",
+        "Purge with software",
+        "Destroy",
+        "Reuse"
+      ]
+    },
+    {
+      "id": "ish-w9-3",
+      "kind": "mcq",
+      "stem": "Why is overwriting visible space risky on an SSD?",
+      "choices": [
+        "SSDs cannot be written",
+        "It is too slow",
+        "It voids the warranty",
+        "Remapped spare blocks can keep old data"
+      ]
+    },
+    {
+      "id": "ish-w9-4",
+      "kind": "mcq",
+      "stem": "What fits a hard drive staying in the same organisation?",
+      "choices": [
+        "Clear",
+        "Destroy",
+        "Nothing",
+        "Purge only by fire"
+      ]
+    },
+    {
+      "id": "ish-w9-5",
+      "kind": "mcq",
+      "stem": "What must every sanitization end with?",
+      "choices": [
+        "A reboot",
+        "Verification and a certificate",
+        "A new label only",
+        "A customer call"
+      ]
+    },
+    {
+      "id": "ish-w9-6",
+      "kind": "mcq",
+      "stem": "Is a quick format Clear, Purge, or Destroy?",
+      "choices": [
+        "Clear",
+        "Purge",
+        "None of them",
+        "Destroy"
+      ]
+    }
+  ]
+}

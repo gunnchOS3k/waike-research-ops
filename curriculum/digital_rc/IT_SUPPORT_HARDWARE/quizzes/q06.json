@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "ish-w6-1",
+      "kind": "mcq",
+      "stem": "What is the pixel data rate for 4K at 60 Hz and 24 bits per pixel?",
+      "choices": [
+        "About 23.89 Gbit/s",
+        "About 8.16 Gbit/s",
+        "About 1.5 Gbit/s",
+        "About 11.94 Gbit/s"
+      ]
+    },
+    {
+      "id": "ish-w6-2",
+      "kind": "mcq",
+      "stem": "Why is that figure a lower bound?",
+      "choices": [
+        "It ignores blanking intervals",
+        "It includes audio",
+        "Cables add speed",
+        "It counts two monitors"
+      ]
+    },
+    {
+      "id": "ish-w6-3",
+      "kind": "mcq",
+      "stem": "Which link cannot carry 4K 60 Hz uncompressed at 24-bit colour?",
+      "choices": [
+        "HDMI 2.0",
+        "HDMI 1.4",
+        "DisplayPort 1.4",
+        "None of them"
+      ]
+    },
+    {
+      "id": "ish-w6-4",
+      "kind": "mcq",
+      "stem": "Which link here carries 4K 120 Hz uncompressed?",
+      "choices": [
+        "HDMI 2.0",
+        "HDMI 1.4",
+        "DisplayPort 1.4",
+        "VGA"
+      ]
+    },
+    {
+      "id": "ish-w6-5",
+      "kind": "mcq",
+      "stem": "A new certified cable on an old HDMI 1.4 port runs at what speed?",
+      "choices": [
+        "Double speed",
+        "DisplayPort speed",
+        "Unlimited",
+        "The old port's speed"
+      ]
+    },
+    {
+      "id": "ish-w6-6",
+      "kind": "mcq",
+      "stem": "Why does the old port fall back to 30 Hz?",
+      "choices": [
+        "Half the refresh fits under its ceiling",
+        "30 Hz looks better",
+        "The monitor is broken",
+        "The OS prefers it"
+      ]
+    }
+  ]
+}

@@ -26,7 +26,7 @@ def _q(qid: str, stem: str, choices: list[str], answer: int, explain: str, kind:
 GENERAL_IT: dict[str, Any] = {
     "course_id": "GENERAL_IT",
     "title": "General IT — Operator to Support Specialist",
-    "track_ids": ["IT_SUPPORT_HARDWARE"],
+    "track_ids": ["GENERAL_IT"],
     "academy_id": "ACADEMY_IT",
     "kinesthetic_hook": "Run the Gary Civic Tech Desk for ten weeks: accounts, disks, tickets, then an after-hours change window.",
     "syllabus_hook": (

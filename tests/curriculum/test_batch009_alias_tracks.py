@@ -121,6 +121,21 @@ def test_dco_graders_recompute_from_submitted_inputs():
     assert round(labs_dco.contrast_ratio("#767676", "#ffffff"), 2) == 4.54
 
 
+def test_ish_graders_recompute_from_submitted_inputs():
+    ref = labs_ish.REFERENCE_ISH
+    mem = ref["lab_ish_memory_bandwidth"]
+    assert not labs_ish.lab_ish_memory_bandwidth({**mem, "mt_s": 4800}).ok
+    assert labs_ish.lab_ish_memory_bandwidth({**mem, "mt_s": 4800, "bandwidth_gb_s": 76.8}).ok
+    ups = ref["lab_ish_ups_runtime"]
+    assert not labs_ish.lab_ish_ups_runtime({**ups, "load_w": 450}).ok
+    rt = labs_ish.ups_runtime_min(864, 0.85, 450)
+    assert labs_ish.lab_ish_ups_runtime({**ups, "load_w": 450, "runtime_min": round(rt, 1), "shutdown_at_min": 70}).ok
+    raid = ref["lab_ish_raid_capacity"]
+    assert not labs_ish.lab_ish_raid_capacity({**raid, "disks": 6}).ok
+    assert labs_ish.raid_row("10", 4, 4) == {"usable_tb": 8, "guaranteed_failures": 1}
+    assert labs_ish.mbr_limit(512) == 2_199_023_255_552
+
+
 @pytest.mark.parametrize("cid", BATCH_COURSE_IDS)
 def test_enabled_tracks_are_on_product_path_with_reachable_references(cid):
     assert COURSES[cid]["track_ids"] == [cid]

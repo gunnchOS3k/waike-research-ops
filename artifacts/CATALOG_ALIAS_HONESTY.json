@@ -1,6 +1,6 @@
 {
   "schema": "waike_catalog_alias_honesty_v1",
-  "prepared_at": "2026-11-03T03:01:00Z",
+  "prepared_at": "2026-11-03T03:02:52Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
   "full_18_course_digital_rc": false,
@@ -10,11 +10,6 @@
   "instructional_completeness_claimed": false,
   "note": "Alias rows map alternate taxonomy IDs onto other COURSE_DIGITAL_RC keys. An alias never satisfies a catalog track for full_18; batch009 replaces each alias with the track's own package, one track at a time.",
   "aliases": [
-    {
-      "catalog_track_id": "IT_SUPPORT_HARDWARE",
-      "maps_to_course_digital_rc_key": "HARDWARE_ENGINEERING",
-      "invent_course_digital_rc_true": false
-    },
     {
       "catalog_track_id": "NETWORKING_INFRA",
       "maps_to_course_digital_rc_key": "COMPUTER_NETWORKING",
@@ -35,6 +30,14 @@
       "invent_course_digital_rc_true": false,
       "removed_on": "2026-11-03",
       "replaced_by_own_course": "DIGITAL_CONFIDENCE",
+      "reason": "Owner decision: each formerly alias-only track gets its own distinct package (batch009)."
+    },
+    {
+      "catalog_track_id": "IT_SUPPORT_HARDWARE",
+      "maps_to_course_digital_rc_key": "HARDWARE_ENGINEERING",
+      "invent_course_digital_rc_true": false,
+      "removed_on": "2026-11-03",
+      "replaced_by_own_course": "IT_SUPPORT_HARDWARE",
       "reason": "Owner decision: each formerly alias-only track gets its own distinct package (batch009)."
     },
     {

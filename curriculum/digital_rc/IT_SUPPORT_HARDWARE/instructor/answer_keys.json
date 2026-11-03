@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "IT_SUPPORT_HARDWARE",
+  "quizzes": {
+    "IT_SUPPORT_HARDWARE-q01": [
+      {
+        "id": "ish-w1-1",
+        "answer_index": 1,
+        "explanation": "\u00d7 1.25"
+      },
+      {
+        "id": "ish-w1-2",
+        "answer_index": 2,
+        "explanation": "smallest adequate"
+      },
+      {
+        "id": "ish-w1-3",
+        "answer_index": 3,
+        "explanation": "margin"
+      },
+      {
+        "id": "ish-w1-4",
+        "answer_index": 0,
+        "explanation": "source"
+      },
+      {
+        "id": "ish-w1-5",
+        "answer_index": 1,
+        "explanation": "safety"
+      },
+      {
+        "id": "ish-w1-6",
+        "answer_index": 2,
+        "explanation": "oversizing"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q02": [
+      {
+        "id": "ish-w2-1",
+        "answer_index": 3,
+        "explanation": "3200\u00d78\u00d72/1000"
+      },
+      {
+        "id": "ish-w2-2",
+        "answer_index": 0,
+        "explanation": "same letter"
+      },
+      {
+        "id": "ish-w2-3",
+        "answer_index": 1,
+        "explanation": "shared memory"
+      },
+      {
+        "id": "ish-w2-4",
+        "answer_index": 2,
+        "explanation": "64-bit"
+      },
+      {
+        "id": "ish-w2-5",
+        "answer_index": 3,
+        "explanation": "verify"
+      },
+      {
+        "id": "ish-w2-6",
+        "answer_index": 0,
+        "explanation": "symptom"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q03": [
+      {
+        "id": "ish-w3-1",
+        "answer_index": 1,
+        "explanation": "n\u22121"
+      },
+      {
+        "id": "ish-w3-2",
+        "answer_index": 2,
+        "explanation": "double parity"
+      },
+      {
+        "id": "ish-w3-3",
+        "answer_index": 3,
+        "explanation": "striping"
+      },
+      {
+        "id": "ish-w3-4",
+        "answer_index": 0,
+        "explanation": "worst case"
+      },
+      {
+        "id": "ish-w3-5",
+        "answer_index": 1,
+        "explanation": "same volume"
+      },
+      {
+        "id": "ish-w3-6",
+        "answer_index": 2,
+        "explanation": "rebuild risk"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q04": [
+      {
+        "id": "ish-w4-1",
+        "answer_index": 3,
+        "explanation": "2^32"
+      },
+      {
+        "id": "ish-w4-2",
+        "answer_index": 0,
+        "explanation": "2^32 \u00d7 512"
+      },
+      {
+        "id": "ish-w4-3",
+        "answer_index": 1,
+        "explanation": "> limit"
+      },
+      {
+        "id": "ish-w4-4",
+        "answer_index": 2,
+        "explanation": "boot"
+      },
+      {
+        "id": "ish-w4-5",
+        "answer_index": 3,
+        "explanation": "redundancy"
+      },
+      {
+        "id": "ish-w4-6",
+        "answer_index": 0,
+        "explanation": "data safety"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q05": [
+      {
+        "id": "ish-w5-1",
+        "answer_index": 1,
+        "explanation": "POST failure"
+      },
+      {
+        "id": "ish-w5-2",
+        "answer_index": 2,
+        "explanation": "power"
+      },
+      {
+        "id": "ish-w5-3",
+        "answer_index": 3,
+        "explanation": "boot"
+      },
+      {
+        "id": "ish-w5-4",
+        "answer_index": 0,
+        "explanation": "load"
+      },
+      {
+        "id": "ish-w5-5",
+        "answer_index": 1,
+        "explanation": "isolation"
+      },
+      {
+        "id": "ish-w5-6",
+        "answer_index": 2,
+        "explanation": "shotgun"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q06": [
+      {
+        "id": "ish-w6-1",
+        "answer_index": 3,
+        "explanation": "w\u00d7h\u00d7Hz\u00d7bpp"
+      },
+      {
+        "id": "ish-w6-2",
+        "answer_index": 0,
+        "explanation": "blanking"
+      },
+      {
+        "id": "ish-w6-3",
+        "answer_index": 1,
+        "explanation": "8.16 < 11.94"
+      },
+      {
+        "id": "ish-w6-4",
+        "answer_index": 2,
+        "explanation": "25.92 > 23.89"
+      },
+      {
+        "id": "ish-w6-5",
+        "answer_index": 3,
+        "explanation": "weakest link"
+      },
+      {
+        "id": "ish-w6-6",
+        "answer_index": 0,
+        "explanation": "fallback"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q07": [
+      {
+        "id": "ish-w7-1",
+        "answer_index": 1,
+        "explanation": "Wh\u00d7eff/W"
+      },
+      {
+        "id": "ish-w7-2",
+        "answer_index": 2,
+        "explanation": "loss"
+      },
+      {
+        "id": "ish-w7-3",
+        "answer_index": 3,
+        "explanation": "margin"
+      },
+      {
+        "id": "ish-w7-4",
+        "answer_index": 0,
+        "explanation": "signal"
+      },
+      {
+        "id": "ish-w7-5",
+        "answer_index": 1,
+        "explanation": "surge"
+      },
+      {
+        "id": "ish-w7-6",
+        "answer_index": 2,
+        "explanation": "test"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q08": [
+      {
+        "id": "ish-w8-1",
+        "answer_index": 3,
+        "explanation": "units"
+      },
+      {
+        "id": "ish-w8-2",
+        "answer_index": 0,
+        "explanation": "256/0.7 s"
+      },
+      {
+        "id": "ish-w8-3",
+        "answer_index": 1,
+        "explanation": "\u00d740"
+      },
+      {
+        "id": "ish-w8-4",
+        "answer_index": 2,
+        "explanation": "one stream"
+      },
+      {
+        "id": "ish-w8-5",
+        "answer_index": 3,
+        "explanation": "fallback"
+      },
+      {
+        "id": "ish-w8-6",
+        "answer_index": 0,
+        "explanation": "traceability"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q09": [
+      {
+        "id": "ish-w9-1",
+        "answer_index": 1,
+        "explanation": "leaves control"
+      },
+      {
+        "id": "ish-w9-2",
+        "answer_index": 2,
+        "explanation": "only option"
+      },
+      {
+        "id": "ish-w9-3",
+        "answer_index": 3,
+        "explanation": "flash"
+      },
+      {
+        "id": "ish-w9-4",
+        "answer_index": 0,
+        "explanation": "internal reuse"
+      },
+      {
+        "id": "ish-w9-5",
+        "answer_index": 1,
+        "explanation": "evidence"
+      },
+      {
+        "id": "ish-w9-6",
+        "answer_index": 2,
+        "explanation": "not sanitization"
+      }
+    ],
+    "IT_SUPPORT_HARDWARE-q10": [
+      {
+        "id": "ish-w10-1",
+        "answer_index": 3,
+        "explanation": "fault class"
+      },
+      {
+        "id": "ish-w10-2",
+        "answer_index": 0,
+        "explanation": "proof"
+      },
+      {
+        "id": "ish-w10-3",
+        "answer_index": 1,
+        "explanation": "privacy"
+      },
+      {
+        "id": "ish-w10-4",
+        "answer_index": 2,
+        "explanation": "handover"
+      },
+      {
+        "id": "ish-w10-5",
+        "answer_index": 3,
+        "explanation": "oral check"
+      },
+      {
+        "id": "ish-w10-6",
+        "answer_index": 0,
+        "explanation": "trust"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "ish-mid-01",
+      "answer_index": 3,
+      "explanation": "520 \u00d7 1.25 = 650 W exactly"
+    },
+    {
+      "id": "ish-mid-02",
+      "answer_index": 0,
+      "explanation": "connectors"
+    },
+    {
+      "id": "ish-mid-03",
+      "answer_index": 1,
+      "explanation": "two letters"
+    },
+    {
+      "id": "ish-mid-04",
+      "answer_index": 2,
+      "explanation": "4800\u00d78\u00d72/1000"
+    },
+    {
+      "id": "ish-mid-05",
+      "answer_index": 3,
+      "explanation": "dual channel"
+    },
+    {
+      "id": "ish-mid-06",
+      "answer_index": 0,
+      "explanation": "(n\u22122)\u00d7s"
+    },
+    {
+      "id": "ish-mid-07",
+      "answer_index": 1,
+      "explanation": "not backup"
+    },
+    {
+      "id": "ish-mid-08",
+      "answer_index": 2,
+      "explanation": "risk window"
+    },
+    {
+      "id": "ish-mid-09",
+      "answer_index": 3,
+      "explanation": "ceiling"
+    },
+    {
+      "id": "ish-mid-10",
+      "answer_index": 0,
+      "explanation": "boot mode"
+    },
+    {
+      "id": "ish-mid-11",
+      "answer_index": 1,
+      "explanation": "cheapest first"
+    },
+    {
+      "id": "ish-mid-12",
+      "answer_index": 2,
+      "explanation": "recent change"
+    },
+    {
+      "id": "ish-mid-13",
+      "answer_index": 3,
+      "explanation": "evidence"
+    },
+    {
+      "id": "ish-mid-14",
+      "answer_index": 0,
+      "explanation": "2560\u00d71440\u00d7144\u00d724"
+    },
+    {
+      "id": "ish-mid-15",
+      "answer_index": 1,
+      "explanation": "link"
+    },
+    {
+      "id": "ish-mid-16",
+      "answer_index": 2,
+      "explanation": "600\u00d70.9/180 h"
+    },
+    {
+      "id": "ish-mid-17",
+      "answer_index": 3,
+      "explanation": "inverse"
+    },
+    {
+      "id": "ish-mid-18",
+      "answer_index": 0,
+      "explanation": "160/0.8 s \u00d710"
+    },
+    {
+      "id": "ish-mid-19",
+      "answer_index": 1,
+      "explanation": "batch error"
+    },
+    {
+      "id": "ish-mid-20",
+      "answer_index": 2,
+      "explanation": "leaves control"
+    }
+  ],
+  "final": [
+    {
+      "id": "ish-fin-01",
+      "answer_index": 0,
+      "explanation": "right-size"
+    },
+    {
+      "id": "ish-fin-02",
+      "answer_index": 1,
+      "explanation": "safety"
+    },
+    {
+      "id": "ish-fin-03",
+      "answer_index": 2,
+      "explanation": "manual"
+    },
+    {
+      "id": "ish-fin-04",
+      "answer_index": 3,
+      "explanation": "channels"
+    },
+    {
+      "id": "ish-fin-05",
+      "answer_index": 0,
+      "explanation": "capacity"
+    },
+    {
+      "id": "ish-fin-06",
+      "answer_index": 1,
+      "explanation": "backup"
+    },
+    {
+      "id": "ish-fin-07",
+      "answer_index": 2,
+      "explanation": "ceiling"
+    },
+    {
+      "id": "ish-fin-08",
+      "answer_index": 3,
+      "explanation": "resilience"
+    },
+    {
+      "id": "ish-fin-09",
+      "answer_index": 0,
+      "explanation": "method"
+    },
+    {
+      "id": "ish-fin-10",
+      "answer_index": 1,
+      "explanation": "PSU"
+    },
+    {
+      "id": "ish-fin-11",
+      "answer_index": 2,
+      "explanation": "honest limits"
+    },
+    {
+      "id": "ish-fin-12",
+      "answer_index": 3,
+      "explanation": "blanking"
+    },
+    {
+      "id": "ish-fin-13",
+      "answer_index": 0,
+      "explanation": "real world"
+    },
+    {
+      "id": "ish-fin-14",
+      "answer_index": 1,
+      "explanation": "load"
+    },
+    {
+      "id": "ish-fin-15",
+      "answer_index": 2,
+      "explanation": "throughput"
+    },
+    {
+      "id": "ish-fin-16",
+      "answer_index": 3,
+      "explanation": "inverse"
+    },
+    {
+      "id": "ish-fin-17",
+      "answer_index": 0,
+      "explanation": "traceability"
+    },
+    {
+      "id": "ish-fin-18",
+      "answer_index": 1,
+      "explanation": "purge"
+    },
+    {
+      "id": "ish-fin-19",
+      "answer_index": 2,
+      "explanation": "failed media"
+    },
+    {
+      "id": "ish-fin-20",
+      "answer_index": 3,
+      "explanation": "certificate"
+    },
+    {
+      "id": "ish-fin-21",
+      "answer_index": 0,
+      "explanation": "detail"
+    },
+    {
+      "id": "ish-fin-22",
+      "answer_index": 1,
+      "explanation": "privacy"
+    },
+    {
+      "id": "ish-fin-23",
+      "answer_index": 2,
+      "explanation": "reference"
+    },
+    {
+      "id": "ish-fin-24",
+      "answer_index": 3,
+      "explanation": "boundary"
+    }
+  ]
+}

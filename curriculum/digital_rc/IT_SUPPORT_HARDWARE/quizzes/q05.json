@@ -1,0 +1,72 @@
+{
+  "quiz_id": "IT_SUPPORT_HARDWARE-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "ish-w5-1",
+      "kind": "mcq",
+      "stem": "Fans spin, the PC beeps, and there is no display. First suspect?",
+      "choices": [
+        "The monitor's brand",
+        "Memory or CPU seating",
+        "The operating system",
+        "The keyboard"
+      ]
+    },
+    {
+      "id": "ish-w5-2",
+      "kind": "mcq",
+      "stem": "No lights and no fans at all. Which path do you check first?",
+      "choices": [
+        "Graphics driver",
+        "Boot order",
+        "Power: outlet, cable, PSU switch",
+        "RAM speed"
+      ]
+    },
+    {
+      "id": "ish-w5-3",
+      "kind": "mcq",
+      "stem": "Self-test passes but 'no boot device' appears. What do you check?",
+      "choices": [
+        "PSU wattage",
+        "Fan speed",
+        "Monitor cable",
+        "Firmware boot order and disk detection"
+      ]
+    },
+    {
+      "id": "ish-w5-4",
+      "kind": "mcq",
+      "stem": "A PC shuts down only during long renders. Likely cause?",
+      "choices": [
+        "Heat or an undersized power supply",
+        "A bad mouse",
+        "A missing driver for the printer",
+        "The keyboard layout"
+      ]
+    },
+    {
+      "id": "ish-w5-5",
+      "kind": "mcq",
+      "stem": "Why follow the power-on sequence?",
+      "choices": [
+        "It is faster to guess",
+        "Each passing stage rules out everything before it",
+        "Customers prefer it",
+        "It voids warranties"
+      ]
+    },
+    {
+      "id": "ish-w5-6",
+      "kind": "mcq",
+      "stem": "What does swapping parts before isolating usually cause?",
+      "choices": [
+        "Faster fixes",
+        "Better documentation",
+        "Wasted money and a hidden real cause",
+        "Lower power use"
+      ]
+    }
+  ]
+}
