@@ -1,0 +1,255 @@
+{
+  "schema": "waike.course_package.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "title": "7GC AI-RAN Research Apprenticeship \u2014 Research Bench",
+  "track_ids": [
+    "SEVEN_GC_APPRENTICESHIP"
+  ],
+  "academy_id": "ACADEMY_SOFTWARE",
+  "kinesthetic_hook": "Ten Research Bench weeks: claim ledger \u2192 reproducible manifest \u2192 NTN delay \u2192 LEO Doppler \u2192 beam top-k \u2192 paired interval \u2192 O-RAN loops \u2192 twin gap \u2192 validity threats \u2192 traced capstone. Synthetic and cited evidence only.",
+  "lesson_excerpt": "Research Bench ticket SGA-1101 opens the apprenticeship with a question small enough to answer: does a codebook prior raise top-3 beam accuracy on a synthetic LEO scenario? Before any code runs, write a claim ledger. Every sentence you might later put in a poster gets one row and one evidence class. SYNTHETIC_SIM means your own simulator produced it, so the claim is only as strong as the model's a",
+  "worked_example": "claim A: SYNTHETIC_SIM; claim B: CITED_SPEC source_id=3GPP_TR_38_811_NTN; claim C: MEASURED dataset_ref=none-yet status=OPEN",
+  "assignment": "Submit lab_sga_claim_ledger JSON for SGA-1101 with at least three labeled claims and affiliation_claim false.",
+  "lab_hint": "lab_sga_claim_ledger",
+  "syllabus": {
+    "path": "syllabus.md",
+    "weeks": 10
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Research question and claim ledger",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w01",
+        "title": "Research question and claim ledger",
+        "body_md": "Research Bench ticket SGA-1101 opens the apprenticeship with a question small enough to answer: does a codebook prior raise top-3 beam accuracy on a synthetic LEO scenario? Before any code runs, write a claim ledger. Every sentence you might later put in a poster gets one row and one evidence class. SYNTHETIC_SIM means your own simulator produced it, so the claim is only as strong as the model's assumptions. CITED_SPEC means a standards document states it, and the row must name the source_id, for example the 3GPP NTN study TR 38.811. MEASURED means field or bench data exist and the row points at a dataset_ref you can hand to a reviewer. A MEASURED row with no dataset is not a weak claim; it is an open question, and the ledger should say OPEN rather than quietly drop it. The 7GC campuses share one more rule: no row may imply that a university, operator, or vendor endorses the work, so affiliation_claim stays false. Mentors read the ledger before the results, because a tidy chart built on an unlabeled claim is the most common way an apprenticeship poster goes wrong.",
+        "worked_example": "claim A: SYNTHETIC_SIM; claim B: CITED_SPEC source_id=3GPP_TR_38_811_NTN; claim C: MEASURED dataset_ref=none-yet status=OPEN"
+      },
+      "lab_id": "lab_sga_claim_ledger"
+    },
+    {
+      "week": 2,
+      "title": "Reproducible runs \u2014 config digest, seed, and rerun",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w02",
+        "title": "Reproducible runs \u2014 config digest, seed, and rerun",
+        "body_md": "SGA-1202 turns the week-one question into something another apprentice can rerun on a different campus. A run manifest has four parts. The config text is the exact file the simulator read, byte for byte, and its SHA-256 digest proves which file that was; changing a single newline changes the digest, so the grader recomputes it rather than trusting a pasted hash. The seed must be an integer you chose and wrote down, not the word random, because an unpinned generator makes every comparison later in the course meaningless. The command line is recorded verbatim, including flags, so nobody has to guess which entry point produced a figure. Finally, run the same seed and config twice and report both metrics. If they differ, something nondeterministic is leaking in: thread scheduling, an unseeded library, or a timestamp in the config. Track that down before moving on. Gary, Geelong, and Nubuke cohorts swap manifests in week ten, and a figure whose manifest does not reproduce is removed from the shared packet rather than footnoted.",
+        "worked_example": "config_text='scenario=leo600_sband\\nseed=20261102\\nbeams=8\\nepochs=5\\n' \u2192 sha256 recorded; rerun_metric_a == rerun_metric_b == 0.625"
+      },
+      "lab_id": "lab_sga_repro_manifest"
+    },
+    {
+      "week": 3,
+      "title": "NTN propagation delay \u2014 nadir one-way and round trip",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w03",
+        "title": "NTN propagation delay \u2014 nadir one-way and round trip",
+        "body_md": "SGA-1303 is the first physics week. A non-terrestrial network puts the base station, or a relay for it, on a satellite, and the first consequence is time. Light covers 299,792.458 km per second, so a low-Earth-orbit satellite directly overhead at 600 km is about 2.0014 ms away one way and 4.0028 ms round trip. A geostationary satellite at 35,786 km is about 119.37 ms one way, which is why GEO links feel sluggish for interactive traffic even with ample bandwidth. These are nadir numbers: the satellite straight above the user. At low elevation the slant range can be several times the altitude, so the real delay is longer, and the lab asks you to state geometry = nadir so nobody mistakes a lower bound for a link budget. The 3GPP NTN study, TR 38.811, discusses why terrestrial timing assumptions such as HARQ round trips and timing advance must be stretched for these distances. The grader recomputes your delay from the altitude you submit, so copying the LEO answer onto a GEO altitude fails, which is exactly the mistake this week is designed to catch.",
+        "worked_example": "h=600 km: one_way = 600 / 299792.458 km/s = 2.0014 ms; rtt = 4.0028 ms. GEO h=35786 km: one_way \u2248 119.37 ms"
+      },
+      "lab_id": "lab_sga_ntn_delay"
+    },
+    {
+      "week": 4,
+      "title": "LEO Doppler \u2014 orbital speed and the upper bound",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w04",
+        "title": "LEO Doppler \u2014 orbital speed and the upper bound",
+        "body_md": "SGA-1404 is a NO_AI week: work the numbers by hand and show each line. A satellite in a circular orbit moves at v = sqrt(\u03bc / r), where \u03bc for Earth is 398,600.4418 km\u00b3/s\u00b2 and r is Earth's mean radius of 6,371 km plus the altitude. At 600 km that gives r = 6,971 km and v \u2248 7.5617 km/s, roughly 27,000 km/h. The carrier seen by a ground user shifts by the component of that velocity along the line of sight, so the shift can never exceed (v / c) \u00b7 f_c. At a 2 GHz S-band carrier the bound is about 50.45 kHz, which is more than three times the 15 kHz subcarrier spacing of a common NR numerology, so uncompensated Doppler would smear subcarriers into each other. The true maximum seen from the ground is somewhat lower because Earth's curvature and the user's own rotation change the geometry, and it falls to zero as the satellite passes overhead. That is why the lab names this an upper bound and sets bound_is_upper = true. A bound is a design margin, not a measurement, and the claim ledger from week one should file it as SYNTHETIC_SIM or CITED_SPEC.",
+        "worked_example": "v = sqrt(398600.4418 / (6371 + 600)) = 7.5617 km/s; f_d \u2264 (v/c)\u00b7f_c = 50.45 kHz at 2 GHz"
+      },
+      "lab_id": "lab_sga_leo_doppler"
+    },
+    {
+      "week": 5,
+      "title": "Beam selection \u2014 top-1 and top-k accuracy",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w05",
+        "title": "Beam selection \u2014 top-1 and top-k accuracy",
+        "body_md": "SGA-1505 moves from link physics to the learning problem behind the AI-RAN papers. A millimetre-wave or NTN cell sweeps a codebook of narrow beams, and exhaustive sweeping costs time and overhead. A beam-selection model looks at side information, such as position or a coarse channel estimate, and ranks the beams it thinks are best, so the radio only measures the top few. The honest metric is top-k accuracy: the fraction of samples whose true best beam appears in the model's first k guesses. On the eight-sample fixture in the lab readme, four samples rank the true beam first, giving top-1 = 0.5, and seven of eight contain it within three guesses, giving top-3 = 0.875. Read those numbers together: top-3 tells you a three-beam refinement sweep would usually succeed, while top-1 says the model alone is right only half the time. Top-k also hides how much signal is lost when the second-best beam is chosen, which week nine records as a construct-validity threat. The fixture is synthetic, so dataset_class must say so.",
+        "worked_example": "8 samples; top-1 hits at samples 1,3,5,7 \u2192 0.5; top-3 misses only sample 6 \u2192 0.875"
+      },
+      "lab_id": "lab_sga_beam_topk"
+    },
+    {
+      "week": 6,
+      "title": "Baseline vs model \u2014 paired interval over seeds",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w06",
+        "title": "Baseline vs model \u2014 paired interval over seeds",
+        "body_md": "SGA-1606 asks whether the model actually beats the baseline or merely got a lucky seed. Run both on the same five seeds and subtract run by run; pairing removes the shared difficulty of each seed, which is usually the largest source of spread. The fixture differences are 0.05, 0.02, 0.07, 0.02 and 0.04, with mean 0.04 and sample standard deviation about 0.0212. With only five pairs you need Student's t, not the normal 1.96: t at 0.975 with four degrees of freedom is 2.776, so the half-width is 2.776 \u00d7 0.0212 / \u221a5 \u2248 0.0263 and the 95 percent interval runs from about 0.0137 to 0.0663. It excludes zero, so the poster may say the model improved top-3 accuracy on this synthetic scenario, and should print the interval beside the claim. Had the interval crossed zero, the honest sentence would be that five seeds cannot distinguish the two. Notice what the interval does not license: it says nothing about another scenario, a real cell, or a different codebook. That limitation goes into next week's external-validity row, not into a caveat nobody reads.",
+        "worked_example": "diffs = [0.05,0.02,0.07,0.02,0.04]; mean 0.04; sd 0.0212; 95% CI = 0.04 \u00b1 2.776\u00b70.0212/\u221a5 = [0.0137, 0.0663]"
+      },
+      "lab_id": "lab_sga_paired_ci"
+    },
+    {
+      "week": 7,
+      "title": "O-RAN control loops \u2014 where an AI model may act",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w07",
+        "title": "O-RAN control loops \u2014 where an AI model may act",
+        "body_md": "SGA-1707 places the week-five model inside a real architecture. O-RAN splits radio control into loops by how fast they must react. Decisions under about 10 ms, such as HARQ retransmission and per-slot scheduling, stay in the distributed unit and its real-time software. Decisions between roughly 10 ms and one second run as xApps on the near-real-time RAN Intelligent Controller, which is where a beam-pair or handover tuning model would live. Anything slower than a second, including training, long-horizon energy policy, and analytics, runs as an rApp on the non-real-time RIC inside service management and orchestration. The non-real-time RIC guides the near-real-time RIC through the A1 interface with declarative policies, while E2 connects the near-real-time RIC to the base-station nodes it controls. The lab gives you three tasks; classify each by its loop latency, cover all three loops, and name the A1 target. Placing model training in the real-time loop is a design error, not an optimisation, and the grader treats it that way. O-RAN Alliance specifications are cited here for topic labels only.",
+        "worked_example": "HARQ 1 ms \u2192 real_time (DU); handover tuning 100 ms \u2192 near_real_time (xApp); energy policy 60 s \u2192 non_real_time (rApp); A1 \u2192 near_rt_ric"
+      },
+      "lab_id": "lab_sga_oran_loops"
+    },
+    {
+      "week": 8,
+      "title": "Digital-twin gap \u2014 comparison is not calibration",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w08",
+        "title": "Digital-twin gap \u2014 comparison is not calibration",
+        "body_md": "SGA-1808 confronts the gap the 7GC papers keep honest. A digital twin predicts received power across a site; the lab's twin gives -95, -97, -99 and -101 dBm at four points, and a separate reference simulator gives -94, -98, -100 and -103 dBm. The errors are -1, 1, 1 and 2 dB, their squares sum to 7, and the root-mean-square error is sqrt(7/4), about 1.32 dB. That number is useful: it says two models of the same site agree to roughly a decibel. It is not calibration. Calibration compares the twin with measurements from the real site, and in this course the count of field samples is zero. With zero measured samples the status must read UNCALIBRATED_NO_MEASUREMENTS and calibrated_claim must be false, however good the agreement looks. Two simulators can share the same wrong assumption, such as an optimistic clutter model, and agree perfectly while both miss reality. Paper I in the research spine records exactly this open gap. The apprentice's job is to state it clearly enough that the next cohort with radio access knows which measurements to collect.",
+        "worked_example": "twin \u2212 reference = [-1, 1, 1, 2] dB \u2192 RMSE = sqrt(7/4) = 1.3229 dB; measured_samples=0 \u2192 UNCALIBRATED_NO_MEASUREMENTS"
+      },
+      "lab_id": "lab_sga_twin_gap"
+    },
+    {
+      "week": 9,
+      "title": "Threats to validity and research ethics",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w09",
+        "title": "Threats to validity and research ethics",
+        "body_md": "SGA-1909 is the second NO_AI week, because the point is your own judgement about your own work. Sort what could make the results wrong into four kinds. Internal validity asks whether the comparison itself is fair: five seeds, a tuned model against an untuned baseline, or a data leak between training and test positions. External validity asks whether the result travels: one synthetic LEO scenario says little about a dense Gary street canyon or a Geelong port. Construct validity asks whether the metric measures what you care about: top-k accuracy ignores how many decibels are lost when the second-best beam is used. Conclusion validity asks whether the statistics support the sentence: five paired runs give a wide interval, and testing many metrics invites a lucky one. Then restate the guardrails every 7GC research program shares. Use synthetic data only. Never use private competition IQ captures, even if a teammate offers them. Make no claim that a university, operator, or agency endorses the work. A reviewer who sees honest threats listed early trusts the remaining claims more, not less.",
+        "worked_example": "internal: 5 seeds; external: one synthetic scenario; construct: top-k ignores SNR loss; conclusion: n=5, wide CI"
+      },
+      "lab_id": "lab_sga_validity"
+    },
+    {
+      "week": 10,
+      "title": "Research capstone \u2014 traced figures, no submission claim",
+      "lesson": {
+        "lesson_id": "SEVEN_GC_APPRENTICESHIP-w10",
+        "title": "Research capstone \u2014 traced figures, no submission claim",
+        "body_md": "SGA-1A10 assembles the packet that cohorts on different campuses exchange. It contains the week-one claim ledger, updated with what the term actually showed, and at least one figure. Every figure carries the config digest and seed from its manifest, so a reader in Nubuke can regenerate the Gary figure without emailing anyone. The packet names its evidence class, which for this course is SYNTHETIC_SIM end to end, and repeats the week-eight gap in plain words. It also states what it is not: submitted_claim stays false, because drafting a figure for the research spine is not the same as submitting a paper, and only the program owner decides when a manuscript goes out. Mentors review the packet against six or more passed labs, check that no instructor answer key leaked into the learner folder, and rerun one figure from its manifest in front of the apprentice. A packet that survives that rerun is a real research artifact at apprentice scale. It is not a publication, a credential, or evidence of deployment, and the closing slide says so.",
+        "worked_example": "labs_passed=9; figure topk_vs_codebook carries config_sha256 and seed 20261102; submitted_claim=false; evidence_class=SYNTHETIC_SIM"
+      },
+      "lab_id": "lab_sga_research_capstone"
+    }
+  ],
+  "assignments": [
+    "a01.md",
+    "a02.md",
+    "a03.md",
+    "a04.md",
+    "a05.md",
+    "a06.md",
+    "a07.md",
+    "a08.md",
+    "a09.md",
+    "a10.md"
+  ],
+  "labs": [
+    "lab_sga_claim_ledger",
+    "lab_sga_repro_manifest",
+    "lab_sga_ntn_delay",
+    "lab_sga_leo_doppler",
+    "lab_sga_beam_topk",
+    "lab_sga_paired_ci",
+    "lab_sga_oran_loops",
+    "lab_sga_twin_gap",
+    "lab_sga_validity",
+    "lab_sga_research_capstone"
+  ],
+  "quizzes": [
+    "q01.json",
+    "q02.json",
+    "q03.json",
+    "q04.json",
+    "q05.json",
+    "q06.json",
+    "q07.json",
+    "q08.json",
+    "q09.json",
+    "q10.json"
+  ],
+  "assessments": {
+    "mid_course_items": 20,
+    "final_items": 24,
+    "practicals": 1,
+    "projects": 1
+  },
+  "rubrics": [
+    "SEVEN_GC_APPRENTICESHIP-lab",
+    "SEVEN_GC_APPRENTICESHIP-assignment",
+    "SEVEN_GC_APPRENTICESHIP-quiz",
+    "SEVEN_GC_APPRENTICESHIP-mid",
+    "SEVEN_GC_APPRENTICESHIP-final-knowledge",
+    "SEVEN_GC_APPRENTICESHIP-practical",
+    "SEVEN_GC_APPRENTICESHIP-project",
+    "SEVEN_GC_APPRENTICESHIP-portfolio"
+  ],
+  "answer_keys_ref": "instructor/answer_keys.json",
+  "student_materials_ref": "student/STUDENT_PACKET.md",
+  "instructor_materials_ref": "instructor/INSTRUCTOR_PACKET.md",
+  "presentation_materials_ref": "presentation/",
+  "offline_pack_ref": "offline_pack/pack.json",
+  "portfolio": {
+    "path": "portfolio/"
+  },
+  "career_mapping": {
+    "roles": [
+      "research_apprentice",
+      "ran_ml_research_assistant",
+      "reproducibility_reviewer_junior"
+    ],
+    "nice_categories": [
+      "analyze",
+      "investigate"
+    ],
+    "certs_aligned_not_granted": [
+      "3GPP TR 38.811 / TR 38.901 topic labels (PUBLIC_REFERENCE_ONLY)",
+      "O-RAN architecture vocabulary (PUBLIC_REFERENCE_ONLY; not an O-RAN certification)"
+    ]
+  },
+  "alignment_ref": "curriculum/alignment/seven_gc_apprenticeship_alignment.json",
+  "ai_use_policy": {
+    "modes": [
+      "EXPLAIN",
+      "HINT",
+      "QUESTION_ME",
+      "DEBUG_WITH_ME",
+      "REVIEW_MY_WORK",
+      "COMPARE_APPROACHES",
+      "PRACTICE"
+    ],
+    "assessment_modes": [
+      "AI_ALLOWED",
+      "AI_RESTRICTED",
+      "AI_DISCLOSED",
+      "NO_AI"
+    ],
+    "default_weekly": "AI_DISCLOSED",
+    "no_ai_weeks": [
+      4,
+      9
+    ]
+  },
+  "provenance": {
+    "original_waike": true,
+    "reuse_class_note": "See sources/benchmark_registry.json",
+    "instructor_keys_not_in_learner_ui": true
+  },
+  "counts": {
+    "syllabus": 1,
+    "weeks": 10,
+    "full_lessons": 10,
+    "assignments": 10,
+    "runnable_labs": 10,
+    "quizzes": 10,
+    "quiz_items": 60,
+    "mid_course_items": 20,
+    "final_items": 24,
+    "mid_course_items_original": 20,
+    "final_items_original": 24,
+    "practicals": 1,
+    "projects": 1,
+    "rubrics": 8,
+    "answer_keys": 13,
+    "student_materials": 1,
+    "instructor_materials": 11,
+    "presentation_materials": 10,
+    "offline_pack": 1,
+    "portfolio_artifacts": 1
+  }
+}

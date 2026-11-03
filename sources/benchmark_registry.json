@@ -337,7 +337,7 @@
     {
       "source_id": "GROW_GOOGLE_IT_SUPPORT_LANDING",
       "institution": "Google",
-      "course_or_cert": "Google Career Certificates \u2014 IT Support landing",
+      "course_or_cert": "Google Career Certificates — IT Support landing",
       "current_version": "checked 2026-08-13",
       "date_checked": "2026-08-13",
       "url": "https://grow.google/certificates/it-support/",
@@ -502,7 +502,7 @@
       "assessment_patterns": [
         "verification_requirements_not_exam_items"
       ],
-      "license": "OWASP license for ASVS text \u2014 WAIKE uses domain labels only, not requirement text harvest",
+      "license": "OWASP license for ASVS text — WAIKE uses domain labels only, not requirement text harvest",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "OWASP ASVS project landing themes, 2026-08-13. No requirement enumeration copied into quizzes.",
       "why_selected": "Secure-dev review week labels for SOFTWARE_BUILDER."
@@ -535,7 +535,7 @@
     {
       "source_id": "ZEPHYR_DOCS_WEST_QEMU",
       "institution": "Zephyr Project",
-      "course_or_cert": "Zephyr RTOS docs \u2014 west and QEMU",
+      "course_or_cert": "Zephyr RTOS docs — west and QEMU",
       "current_version": "latest docs qemu_cortex_m0 / west build",
       "date_checked": "2026-08-13",
       "url": "https://docs.zephyrproject.org/latest/boards/qemu/cortex_m0/doc/index.html",
@@ -549,7 +549,7 @@
       "assessment_patterns": [
         "not_an_exam"
       ],
-      "license": "Zephyr Project licensing for code/docs \u2014 reference; WAIKE writes original fixtures",
+      "license": "Zephyr Project licensing for code/docs — reference; WAIKE writes original fixtures",
       "reuse_class": "OPEN_LICENSE_ADAPT_ALLOWED",
       "attribution": "Zephyr QEMU Cortex-M0 board doc command examples cited as reference, 2026-08-13.",
       "why_selected": "Embedded prototyping integration digital path before physical."
@@ -708,7 +708,7 @@
       "assessment_patterns": [
         "project_based_public"
       ],
-      "license": "Course site terms; structure citation only \u2014 no notebook/solution copy",
+      "license": "Course site terms; structure citation only — no notebook/solution copy",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "fast.ai public course structure themes, 2026-08-14.",
       "why_selected": "Practical DL teaching shape for tiny-net / eval weeks."
@@ -760,7 +760,7 @@
     {
       "source_id": "TUFTE_VISUAL_DISPLAY_PRINCIPLES",
       "institution": "Edward Tufte (public design principles)",
-      "course_or_cert": "The Visual Display of Quantitative Information \u2014 principles commonly cited in public syllabi",
+      "course_or_cert": "The Visual Display of Quantitative Information — principles commonly cited in public syllabi",
       "current_version": "Public principle labels only (checked 2026-08-14)",
       "date_checked": "2026-08-14",
       "url": "https://www.edwardtufte.com/tufte/",
@@ -772,7 +772,7 @@
       "assessment_patterns": [
         "critique_based"
       ],
-      "license": "Book copyright; principle labels only \u2014 no text reproduction",
+      "license": "Book copyright; principle labels only — no text reproduction",
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "Publicly discussed Tufte principle labels used as encoding vocabulary, 2026-08-14.",
       "why_selected": "Encoding integrity vocabulary for visualization weeks."
@@ -841,6 +841,69 @@
       "reuse_class": "PUBLIC_REFERENCE_ONLY",
       "attribution": "Docker public Dockerfile best-practice themes, 2026-08-14.",
       "why_selected": "Container hygiene for CLOUD_DEVOPS Dockerfile week."
+    },
+    {
+      "source_id": "3GPP_TR_38_811_NTN",
+      "institution": "3GPP",
+      "course_or_cert": "TR 38.811 Study on New Radio to support non-terrestrial networks",
+      "current_version": "Public spec archive listing 2026-11-02",
+      "date_checked": "2026-11-02",
+      "url": "https://www.3gpp.org/ftp/Specs/archive/38_series/38.811/",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "ntn_propagation_delay",
+        "leo_doppler",
+        "ntn_timing"
+      ],
+      "assessment_patterns": [
+        "recompute_from_geometry"
+      ],
+      "license": "3GPP specification terms; topics cited, text not copied",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "3GPP TR 38.811 NTN study topic labels, archive checked 2026-11-02.",
+      "why_selected": "Anchors SEVEN_GC_APPRENTICESHIP NTN delay and Doppler weeks."
+    },
+    {
+      "source_id": "3GPP_TR_38_901_CHANNEL",
+      "institution": "3GPP",
+      "course_or_cert": "TR 38.901 Study on channel model for frequencies from 0.5 to 100 GHz",
+      "current_version": "Public spec archive listing 2026-11-02",
+      "date_checked": "2026-11-02",
+      "url": "https://www.3gpp.org/ftp/Specs/archive/38_series/38.901/",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "channel_model_assumptions",
+        "beam_codebook_context",
+        "twin_calibration_context"
+      ],
+      "assessment_patterns": [
+        "metric_and_assumption_review"
+      ],
+      "license": "3GPP specification terms; topics cited, text not copied",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "3GPP TR 38.901 channel-model topic labels, archive checked 2026-11-02.",
+      "why_selected": "Context for SEVEN_GC_APPRENTICESHIP beam-selection and digital-twin gap weeks."
+    },
+    {
+      "source_id": "ORAN_SPECIFICATIONS",
+      "institution": "O-RAN Alliance",
+      "course_or_cert": "O-RAN architecture specifications (public listing)",
+      "current_version": "Public specifications page 2026-11-02",
+      "date_checked": "2026-11-02",
+      "url": "https://www.o-ran.org/specifications",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "ric_control_loops",
+        "a1_e2_interfaces",
+        "xapp_rapp_placement"
+      ],
+      "assessment_patterns": [
+        "placement_classification"
+      ],
+      "license": "O-RAN Alliance terms; vocabulary cited, no specification text reproduced",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "attribution": "O-RAN Alliance public architecture vocabulary (RIC, A1, E2), checked 2026-11-02.",
+      "why_selected": "Loop-placement week of SEVEN_GC_APPRENTICESHIP; not an O-RAN certification."
     }
   ]
 }

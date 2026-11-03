@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "research_apprentice",
+    "ran_ml_research_assistant",
+    "reproducibility_reviewer_junior"
+  ],
+  "nice_categories": [
+    "analyze",
+    "investigate"
+  ],
+  "certs_aligned_not_granted": [
+    "3GPP TR 38.811 / TR 38.901 topic labels (PUBLIC_REFERENCE_ONLY)",
+    "O-RAN architecture vocabulary (PUBLIC_REFERENCE_ONLY; not an O-RAN certification)"
+  ]
+}

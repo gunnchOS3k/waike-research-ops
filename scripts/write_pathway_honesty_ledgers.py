@@ -37,6 +37,18 @@ def main() -> int:
     catalog_missing = sorted(c for c in catalog_ids if c not in on_disk and c not in aliased)
     not_true = sorted(set(keyed_failing) | set(dirs_not_keyed) | set(catalog_missing))
     full_18 = False
+    own_true = sorted(c for c in catalog_ids if c in true_ids)
+    alias_only = sorted(c for c in catalog_ids if c in aliased and c not in true_ids)
+    full_18_missing = {
+        "catalog_ids_with_own_true_package": len(own_true),
+        "catalog_track_ids": len(catalog_ids),
+        "alias_only_catalog_ids": alias_only,
+        "writer_computes_full_18": False,
+        "needed": [
+            "write_course_digital_rc.py has no full_18 computation; the flag is fixed False.",
+            "Alias-only catalog IDs need either their own distinct packages or an owner policy that accepts aliases.",
+        ],
+    }
 
     ledger = _load("PATHWAY_DISK_VS_CATALOG_LEDGER.json")
     ledger.update({
@@ -71,9 +83,10 @@ def main() -> int:
         "catalog_vs_true_gap_count": len(catalog_ids) - len(keys),
         "catalog_vs_true_gap_note": (
             f"{len(catalog_ids)} catalog track IDs vs {len(keys)} COURSE_DIGITAL_RC keys; "
-            f"{len(true_ids)} keys pass the writer gate. Remaining catalog IDs are aliases or the "
-            "catalog-only apprenticeship overlay and must not be invented as new digital-RC courses."
+            f"{len(true_ids)} keys pass the writer gate. Remaining catalog IDs are aliases "
+            "and must not be invented as new digital-RC courses."
         ),
+        "full_18_missing": full_18_missing,
     })
     _dump("DIGITAL_RC_HONESTY_STAMP.json", stamp)
 
@@ -103,7 +116,7 @@ def main() -> int:
                 "invent_course_digital_rc_true": False,
                 "note": "Catalog track only - no digital_rc dir. Research overlay stays HUMAN_PENDING; do not invent a 19th course or flip full_18.",
             })
-    residual.update({"prepared_at": now, "full_18_course_digital_rc": full_18, "residuals": rows})
+    residual.update({"prepared_at": now, "full_18_course_digital_rc": full_18, "residuals": rows, "full_18_missing": full_18_missing})
     residual.pop("course_digital_rc_not_true_ids", None)
     _dump("FULL_18_RESIDUAL_HONESTY.json", residual)
 

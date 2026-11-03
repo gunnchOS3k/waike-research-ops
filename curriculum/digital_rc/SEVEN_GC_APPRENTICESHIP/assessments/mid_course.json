@@ -1,0 +1,225 @@
+{
+  "assessment_id": "SEVEN_GC_APPRENTICESHIP-mid",
+  "items": [
+    {
+      "id": "sga-mid-01",
+      "kind": "mcq",
+      "stem": "An apprentice reports 'GEO delay is fine for gaming' with no delay figure. Which week-one ledger fix applies?",
+      "choices": [
+        "Delete the sentence silently",
+        "Label it MEASURED",
+        "Add an affiliation",
+        "Add a row with its evidence class or mark it OPEN"
+      ]
+    },
+    {
+      "id": "sga-mid-02",
+      "kind": "mcq",
+      "stem": "A cited 3GPP delay value appears without a source_id. What is wrong?",
+      "choices": [
+        "CITED_SPEC rows must name the source",
+        "Nothing; specs are obvious",
+        "It must be MEASURED instead",
+        "It needs a seed"
+      ]
+    },
+    {
+      "id": "sga-mid-03",
+      "kind": "mcq",
+      "stem": "Your config file has a trailing timestamp line. What reproducibility risk does that create?",
+      "choices": [
+        "None",
+        "Every run changes the digest and possibly the output",
+        "It speeds reruns",
+        "It pins the seed"
+      ]
+    },
+    {
+      "id": "sga-mid-04",
+      "kind": "mcq",
+      "stem": "A teammate's figure has a seed but no config digest. Can another campus regenerate it?",
+      "choices": [
+        "Yes, the seed is enough",
+        "Yes, if the figure looks right",
+        "Not reliably; the config used is unknown",
+        "Only on Linux"
+      ]
+    },
+    {
+      "id": "sga-mid-05",
+      "kind": "mcq",
+      "stem": "A satellite sits at 1,200 km nadir. Approximately what is its one-way delay?",
+      "choices": [
+        "About 2.0 ms",
+        "About 40 ms",
+        "About 0.4 ms",
+        "About 4.0 ms"
+      ]
+    },
+    {
+      "id": "sga-mid-06",
+      "kind": "mcq",
+      "stem": "Why do GEO links feel sluggish even with high bandwidth?",
+      "choices": [
+        "Round trip near 240 ms dominates interaction",
+        "GEO satellites are slower",
+        "Bandwidth is shared",
+        "Doppler is large"
+      ]
+    },
+    {
+      "id": "sga-mid-07",
+      "kind": "mcq",
+      "stem": "At low elevation, how does slant range compare with altitude?",
+      "choices": [
+        "It is always equal",
+        "It can be several times larger",
+        "It is always smaller",
+        "It is undefined"
+      ]
+    },
+    {
+      "id": "sga-mid-08",
+      "kind": "mcq",
+      "stem": "Doubling the carrier from 2 GHz to 4 GHz does what to the LEO Doppler bound?",
+      "choices": [
+        "Halves it",
+        "Leaves it unchanged",
+        "Doubles it",
+        "Squares it"
+      ]
+    },
+    {
+      "id": "sga-mid-09",
+      "kind": "mcq",
+      "stem": "Raising a LEO orbit from 600 km to 1,200 km does what to circular orbital speed?",
+      "choices": [
+        "Raises it sharply",
+        "Leaves it unchanged",
+        "Doubles it",
+        "Lowers it slightly"
+      ]
+    },
+    {
+      "id": "sga-mid-10",
+      "kind": "mcq",
+      "stem": "Why would uncompensated 50 kHz Doppler harm a 15 kHz-spaced OFDM signal?",
+      "choices": [
+        "Subcarriers shift into their neighbours",
+        "Power doubles",
+        "The cyclic prefix grows",
+        "Nothing happens"
+      ]
+    },
+    {
+      "id": "sga-mid-11",
+      "kind": "mcq",
+      "stem": "Which of these is a design margin rather than a measurement?",
+      "choices": [
+        "A logged field RSRP",
+        "The (v/c)\u00b7f_c Doppler bound",
+        "A bench spectrum capture",
+        "A drive-test trace"
+      ]
+    },
+    {
+      "id": "sga-mid-12",
+      "kind": "mcq",
+      "stem": "A model's top-1 is 0.40 and top-5 is 0.95 on a 64-beam codebook. What deployment fits?",
+      "choices": [
+        "Trust top-1 alone",
+        "Sweep all 64 beams",
+        "Rank with the model, sweep five beams",
+        "Drop the codebook"
+      ]
+    },
+    {
+      "id": "sga-mid-13",
+      "kind": "mcq",
+      "stem": "A test set of 8 samples gives top-1 = 0.5. What caution applies?",
+      "choices": [
+        "The model is perfect",
+        "The result is measured",
+        "Top-1 cannot be computed",
+        "Eight samples give a very coarse estimate"
+      ]
+    },
+    {
+      "id": "sga-mid-14",
+      "kind": "mcq",
+      "stem": "Why might top-k reward a model that is useless in the field?",
+      "choices": [
+        "It ignores how much SNR the chosen beam loses",
+        "It counts too many samples",
+        "It requires labels",
+        "It uses seeds"
+      ]
+    },
+    {
+      "id": "sga-mid-15",
+      "kind": "mcq",
+      "stem": "Which side information might a beam-selection model use?",
+      "choices": [
+        "The user's name",
+        "User position or a coarse channel estimate",
+        "Billing records",
+        "Ambient temperature only"
+      ]
+    },
+    {
+      "id": "sga-mid-16",
+      "kind": "mcq",
+      "stem": "An apprentice uses a different random seed for baseline and model each run. What is lost?",
+      "choices": [
+        "Nothing",
+        "The codebook",
+        "The pairing that cancels per-seed difficulty",
+        "The digest"
+      ]
+    },
+    {
+      "id": "sga-mid-17",
+      "kind": "mcq",
+      "stem": "Five paired differences have sd 0.03. Using t = 2.776, what is the 95% half-width?",
+      "choices": [
+        "About 0.026",
+        "About 0.083",
+        "About 0.013",
+        "About 0.037"
+      ]
+    },
+    {
+      "id": "sga-mid-18",
+      "kind": "mcq",
+      "stem": "Replacing t = 2.776 with z = 1.96 for n = 5 has what effect?",
+      "choices": [
+        "The interval becomes too narrow",
+        "The interval becomes too wide",
+        "No effect",
+        "The mean changes"
+      ]
+    },
+    {
+      "id": "sga-mid-19",
+      "kind": "mcq",
+      "stem": "Which statement is supported by a CI of [0.0137, 0.0663] on one synthetic scenario?",
+      "choices": [
+        "The model wins on every scenario",
+        "The model beat the baseline on that scenario",
+        "The gain is exactly 4%",
+        "The model is calibrated"
+      ]
+    },
+    {
+      "id": "sga-mid-20",
+      "kind": "mcq",
+      "stem": "An apprentice reruns seeds until the interval excludes zero. What validity does that break?",
+      "choices": [
+        "Construct validity",
+        "External validity",
+        "Conclusion validity",
+        "None"
+      ]
+    }
+  ]
+}

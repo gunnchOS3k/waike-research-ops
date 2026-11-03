@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "sga-w4-1",
+      "kind": "mcq",
+      "stem": "Circular orbital speed at 600 km altitude is closest to which value?",
+      "choices": [
+        "7.56 km/s",
+        "11.2 km/s",
+        "3.07 km/s",
+        "0.46 km/s"
+      ]
+    },
+    {
+      "id": "sga-w4-2",
+      "kind": "mcq",
+      "stem": "Why is (v/c)\u00b7f_c called an upper bound?",
+      "choices": [
+        "It includes atmospheric gain",
+        "Only the line-of-sight component shifts the carrier",
+        "It is the measured shift",
+        "It ignores the carrier"
+      ]
+    },
+    {
+      "id": "sga-w4-3",
+      "kind": "mcq",
+      "stem": "At 2 GHz, how does the LEO Doppler bound compare with 15 kHz subcarrier spacing?",
+      "choices": [
+        "It is about equal",
+        "It is negligible",
+        "It is more than three times larger",
+        "It is exactly 15 kHz"
+      ]
+    },
+    {
+      "id": "sga-w4-4",
+      "kind": "mcq",
+      "stem": "What happens to Doppler as the satellite passes directly overhead?",
+      "choices": [
+        "It peaks",
+        "It doubles",
+        "It stays constant",
+        "It falls through zero"
+      ]
+    },
+    {
+      "id": "sga-w4-5",
+      "kind": "mcq",
+      "stem": "Which constant does the orbital speed formula use?",
+      "choices": [
+        "\u03bc = 398,600.4418 km\u00b3/s\u00b2",
+        "c = 299,792.458 km/s",
+        "g = 9.81 m/s\u00b2",
+        "h = 6.626e-34 J\u00b7s"
+      ]
+    },
+    {
+      "id": "sga-w4-6",
+      "kind": "mcq",
+      "stem": "How should the claim ledger file a Doppler bound?",
+      "choices": [
+        "As MEASURED",
+        "As SYNTHETIC_SIM or CITED_SPEC, not MEASURED",
+        "As an affiliation claim",
+        "It does not belong in the ledger"
+      ]
+    }
+  ]
+}

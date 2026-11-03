@@ -1,6 +1,6 @@
 {
   "schema": "waike_catalog_alias_honesty_v1",
-  "prepared_at": "2026-11-02T23:25:36Z",
+  "prepared_at": "2026-11-03T00:00:32Z",
   "floor_tip": "5a18707",
   "published_tip": "5c47fb5",
   "full_18_course_digital_rc": false,
@@ -31,9 +31,7 @@
       "invent_course_digital_rc_true": false
     }
   ],
-  "residuals_not_aliased_to_true": [
-    "SEVEN_GC_APPRENTICESHIP"
-  ],
+  "residuals_not_aliased_to_true": [],
   "gates": {
     "FULL_18_FALSE_HONEST": true,
     "CATALOG_ALIAS_NEQ_INVENTED_TRUE": true,

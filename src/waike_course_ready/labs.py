@@ -1080,6 +1080,10 @@ from waike_course_ready.batch006.labs import (
 from waike_course_ready.batch007.labs import (
     LABS_007, COURSE_LABS_007, LAB_SPECS_007, REFERENCE_007, WRONG_007,
 )
+from waike_course_ready.batch008.labs import (
+    LABS_008, COURSE_LABS_008, LAB_SPECS_008, REFERENCE_008, WRONG_008,
+    lab_sga_paired_ci, lab_sga_twin_gap, lab_sga_oran_loops,
+)
 
 LABS.update(LABS_002)
 LABS.update(LABS_003)
@@ -1087,6 +1091,7 @@ LABS.update(LABS_004)
 LABS.update(LABS_005)
 LABS.update(LABS_006)
 LABS.update(LABS_007)
+LABS.update(LABS_008)
 # Union — never clear prior batches' COURSE_LABS
 COURSE_LABS.update(COURSE_LABS_002)
 COURSE_LABS.update(COURSE_LABS_003)
@@ -1094,24 +1099,28 @@ COURSE_LABS.update(COURSE_LABS_004)
 COURSE_LABS.update(COURSE_LABS_005)
 COURSE_LABS.update(COURSE_LABS_006)
 COURSE_LABS.update(COURSE_LABS_007)
+COURSE_LABS.update(COURSE_LABS_008)
 LAB_SPECS.update(LAB_SPECS_002)
 LAB_SPECS.update(LAB_SPECS_003)
 LAB_SPECS.update(LAB_SPECS_004)
 LAB_SPECS.update(LAB_SPECS_005)
 LAB_SPECS.update(LAB_SPECS_006)
 LAB_SPECS.update(LAB_SPECS_007)
+LAB_SPECS.update(LAB_SPECS_008)
 REFERENCE.update(REFERENCE_002)
 REFERENCE.update(REFERENCE_003)
 REFERENCE.update(REFERENCE_004)
 REFERENCE.update(REFERENCE_005)
 REFERENCE.update(REFERENCE_006)
 REFERENCE.update(REFERENCE_007)
+REFERENCE.update(REFERENCE_008)
 WRONG.update(WRONG_002)
 WRONG.update(WRONG_003)
 WRONG.update(WRONG_004)
 WRONG.update(WRONG_005)
 WRONG.update(WRONG_006)
 WRONG.update(WRONG_007)
+WRONG.update(WRONG_008)
 
 def reference_submission(lab_id: str) -> dict[str, Any]:
     sub = dict(REFERENCE[lab_id])
@@ -1151,6 +1160,7 @@ def run_all() -> dict[str, Any]:
     no_sub_004 = run_lab("lab_fspl_budget")
     no_sub_005 = run_lab("lab_consent_disclosure")
     no_sub_006 = run_lab("lab_schema_ingest")
+    no_sub_008 = run_lab("lab_sga_claim_ledger")
     print_pass_raises = False
     try:
         _fail_if_print_pass("PASS")
@@ -1186,6 +1196,11 @@ def run_all() -> dict[str, Any]:
         print_pass_on_submit_006 = False
     except AssertionError:
         print_pass_on_submit_006 = True
+    try:
+        run_lab("lab_sga_repro_manifest", submission="PASS")
+        print_pass_on_submit_008 = False
+    except AssertionError:
+        print_pass_on_submit_008 = True
 
     negatives = []
     # #43 package negatives (must remain)
@@ -1267,6 +1282,19 @@ def run_all() -> dict[str, Any]:
         "lag_minutes": 900, "sla_minutes": 60, "sla_ok": True, "claim_live_when_stale": True,
     })
     negatives.append({"lab_id": "lab_freshness_sla_negative", "ok": (not bad_fresh.ok)})
+    # batch008 SEVEN_GC_APPRENTICESHIP negatives: one dishonest field on an otherwise-correct reference
+    bad_ci = lab_sga_paired_ci({**REFERENCE_008["lab_sga_paired_ci"], "ci_low": -0.01, "claims_improvement": True})
+    negatives.append({"lab_id": "lab_sga_paired_ci_negative", "ok": (not bad_ci.ok)})
+    bad_twin = lab_sga_twin_gap({
+        **REFERENCE_008["lab_sga_twin_gap"], "calibration_status": "CALIBRATED", "calibrated_claim": True,
+    })
+    negatives.append({"lab_id": "lab_sga_twin_gap_negative", "ok": (not bad_twin.ok)})
+    loop_ref = REFERENCE_008["lab_sga_oran_loops"]
+    bad_loop = lab_sga_oran_loops({
+        **loop_ref,
+        "tasks": list(loop_ref["tasks"]) + [{"name": "train_beam_model", "loop_ms": 5, "loop_class": "non_real_time"}],
+    })
+    negatives.append({"lab_id": "lab_sga_oran_loops_negative", "ok": (not bad_loop.ok)})
 
     datapath = next(r for r in results if r["lab_id"] == "lab_datapath")
     ttl_ok = _ttl1_from_parsed_header(datapath)
@@ -1281,12 +1309,12 @@ def run_all() -> dict[str, Any]:
     print_ok = (
         print_pass_raises and print_pass_on_submit_43 and print_pass_on_submit_002
         and print_pass_on_submit_003 and print_pass_on_submit_004 and print_pass_on_submit_005
-        and print_pass_on_submit_006
+        and print_pass_on_submit_006 and print_pass_on_submit_008
     )
     no_sub_ok = (
         (not no_sub_43["ok"]) and (not no_sub_002["ok"])
         and (not no_sub_003["ok"]) and (not no_sub_004["ok"]) and (not no_sub_005["ok"])
-        and (not no_sub_006["ok"])
+        and (not no_sub_006["ok"]) and (not no_sub_008["ok"])
     )
     ok = refs_ok and empty_ok and wrong_ok and neg_ok and print_ok and no_sub_ok and ttl_ok and computed_honesty
     return {
@@ -1300,6 +1328,7 @@ def run_all() -> dict[str, Any]:
         "batch_005_lab_count": sum(len(COURSE_LABS[c]) for c in ("COMM_PD_ETHICS",) if c in COURSE_LABS),
         "batch_006_lab_count": sum(len(COURSE_LABS[c]) for c in ("DATA_DASHBOARDS",) if c in COURSE_LABS),
         "batch_007_lab_count": sum(len(COURSE_LABS[c]) for c in ("EMBEDDED_PROTOTYPING", "GUNNCHOS_PRODUCT_LAB") if c in COURSE_LABS),
+        "batch_008_lab_count": sum(len(COURSE_LABS[c]) for c in ("SEVEN_GC_APPRENTICESHIP",) if c in COURSE_LABS),
         "results": results,
         "negatives_must_fail_and_did": negatives,
         "empty_submission_fails": empty_ok,

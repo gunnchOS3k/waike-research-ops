@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "sga-w1-1",
+      "kind": "mcq",
+      "stem": "A ledger row says MEASURED but has no dataset_ref. What should it become?",
+      "choices": [
+        "A SYNTHETIC_SIM result",
+        "A CITED_SPEC claim",
+        "An OPEN question until data exist",
+        "A removed row with no trace"
+      ]
+    },
+    {
+      "id": "sga-w1-2",
+      "kind": "mcq",
+      "stem": "Which evidence class requires a source_id?",
+      "choices": [
+        "SYNTHETIC_SIM",
+        "MEASURED",
+        "OPEN",
+        "CITED_SPEC"
+      ]
+    },
+    {
+      "id": "sga-w1-3",
+      "kind": "mcq",
+      "stem": "Why is affiliation_claim fixed to false on the Research Bench?",
+      "choices": [
+        "No institution has endorsed the apprentice work",
+        "Affiliations slow the simulator",
+        "3GPP forbids naming universities",
+        "It is optional metadata"
+      ]
+    },
+    {
+      "id": "sga-w1-4",
+      "kind": "mcq",
+      "stem": "A simulator output supports a claim. How strong is that claim?",
+      "choices": [
+        "Equal to a field trial",
+        "As strong as the simulator's assumptions",
+        "Stronger than any spec",
+        "Independent of configuration"
+      ]
+    },
+    {
+      "id": "sga-w1-5",
+      "kind": "mcq",
+      "stem": "When should the claim ledger be written?",
+      "choices": [
+        "After the poster is printed",
+        "Only if a reviewer asks",
+        "Before any results are generated",
+        "After choosing the best seed"
+      ]
+    },
+    {
+      "id": "sga-w1-6",
+      "kind": "mcq",
+      "stem": "Which document anchors NTN delay statements in this course?",
+      "choices": [
+        "IEEE 802.11ax",
+        "RFC 9293",
+        "ISO 9001",
+        "3GPP TR 38.811"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-lab",
+    "title": "Research Bench recompute lab",
+    "criteria": [
+      {
+        "name": "recomputed_values",
+        "weight": 40,
+        "desc": "Submitted numbers match the grader's recomputation from inputs"
+      },
+      {
+        "name": "evidence_class",
+        "weight": 30,
+        "desc": "SYNTHETIC_SIM / CITED_SPEC labels present and correct"
+      },
+      {
+        "name": "rejects_stub",
+        "weight": 30,
+        "desc": "Empty and PASS-only submissions are refused"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-assignment",
+    "title": "SGA ticket write-up",
+    "criteria": [
+      {
+        "name": "ticket_trace",
+        "weight": 35,
+        "desc": "Cites the SGA ticket and the manifest digest"
+      },
+      {
+        "name": "claim_scope",
+        "weight": 35,
+        "desc": "States the scenario the claim covers and no further"
+      },
+      {
+        "name": "ai_mode",
+        "weight": 30,
+        "desc": "AI mode disclosed; NO_AI weeks hand-worked"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-quiz",
+    "title": "Weekly method check",
+    "criteria": [
+      {
+        "name": "concept_fit",
+        "weight": 50,
+        "desc": "Stems probe the week's calculation or method"
+      },
+      {
+        "name": "key_privacy",
+        "weight": 50,
+        "desc": "Answer key lives only in the instructor tree"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-mid",
+    "title": "Midterm: evidence and link physics",
+    "criteria": [
+      {
+        "name": "fresh_items",
+        "weight": 60,
+        "desc": "Twenty items that are not weekly restatements"
+      },
+      {
+        "name": "numeric_reasoning",
+        "weight": 40,
+        "desc": "Delay, Doppler, and interval arithmetic"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-final-knowledge",
+    "title": "Final: placement, calibration, ethics",
+    "criteria": [
+      {
+        "name": "fresh_items",
+        "weight": 50,
+        "desc": "Twenty-four items beyond weekly stems"
+      },
+      {
+        "name": "boundary_judgement",
+        "weight": 50,
+        "desc": "Calibration, affiliation, and submission boundaries"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-practical",
+    "title": "Practical: rerun a figure",
+    "criteria": [
+      {
+        "name": "manifest_rerun",
+        "weight": 50,
+        "desc": "Figure regenerates from digest and seed"
+      },
+      {
+        "name": "wrong_inputs_fail",
+        "weight": 50,
+        "desc": "Altered inputs change the recomputed result"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-project",
+    "title": "Traced research packet",
+    "criteria": [
+      {
+        "name": "labs_passed",
+        "weight": 30,
+        "desc": "Six or more Research Bench labs passed"
+      },
+      {
+        "name": "figure_trace",
+        "weight": 40,
+        "desc": "Every figure carries config_sha256 and seed"
+      },
+      {
+        "name": "no_submission",
+        "weight": 30,
+        "desc": "submitted_claim false; owner decides submission"
+      }
+    ]
+  },
+  {
+    "rubric_id": "SEVEN_GC_APPRENTICESHIP-portfolio",
+    "title": "Apprentice portfolio",
+    "criteria": [
+      {
+        "name": "ledger_update",
+        "weight": 40,
+        "desc": "Week-one ledger revised with term results"
+      },
+      {
+        "name": "twin_gap",
+        "weight": 30,
+        "desc": "Calibration gap stated with the measurements needed"
+      },
+      {
+        "name": "roles",
+        "weight": 30,
+        "desc": "Research-assistant roles, credentials not implied"
+      }
+    ]
+  }
+]

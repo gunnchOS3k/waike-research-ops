@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "sga-w7-1",
+      "kind": "mcq",
+      "stem": "A model that tunes handover every 100 ms belongs where?",
+      "choices": [
+        "An rApp on the non-real-time RIC",
+        "The DU real-time loop",
+        "An xApp on the near-real-time RIC",
+        "The core network billing system"
+      ]
+    },
+    {
+      "id": "sga-w7-2",
+      "kind": "mcq",
+      "stem": "Which interface carries declarative policy from non-RT RIC to near-RT RIC?",
+      "choices": [
+        "E2",
+        "F1",
+        "Xn",
+        "A1"
+      ]
+    },
+    {
+      "id": "sga-w7-3",
+      "kind": "mcq",
+      "stem": "Where does model training on a day of KPIs run?",
+      "choices": [
+        "An rApp in the non-real-time RIC",
+        "An xApp",
+        "The DU scheduler",
+        "The UE modem"
+      ]
+    },
+    {
+      "id": "sga-w7-4",
+      "kind": "mcq",
+      "stem": "Which interface connects the near-RT RIC to the nodes it controls?",
+      "choices": [
+        "A1",
+        "E2",
+        "O1 only",
+        "N2"
+      ]
+    },
+    {
+      "id": "sga-w7-5",
+      "kind": "mcq",
+      "stem": "HARQ retransmission timing sits in which loop?",
+      "choices": [
+        "Near-real-time",
+        "Non-real-time",
+        "Real-time, under about 10 ms",
+        "Offline"
+      ]
+    },
+    {
+      "id": "sga-w7-6",
+      "kind": "mcq",
+      "stem": "How does the grader treat training in the real-time loop?",
+      "choices": [
+        "As an optimisation",
+        "As optional",
+        "As extra credit",
+        "As a design error"
+      ]
+    }
+  ]
+}

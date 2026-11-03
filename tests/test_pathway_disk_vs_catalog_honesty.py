@@ -64,7 +64,10 @@ def test_honesty_stamp_lists_known_non_true_ids():
     assert sorted(stamp["course_digital_rc_true_ids"]) == true_ids
     assert stamp["course_digital_rc_true_count"] == len(true_ids)
     assert sorted(stamp["course_digital_rc_not_true_ids"]) == expected_not_true
-    assert stamp["course_digital_rc_not_true_ids"], "full_18 false requires named non-true ids"
+    missing = stamp["full_18_missing"]
+    assert stamp["course_digital_rc_not_true_ids"] or (
+        missing["alias_only_catalog_ids"] and missing["writer_computes_full_18"] is False
+    ), "full_18 false requires named non-true ids or named alias-only catalog ids"
     assert stamp["catalog_vs_true_gap_count"] == (
         ledger["counts"]["catalog_track_ids"] - ledger["counts"]["course_digital_rc_keys"]
     )
@@ -111,7 +114,12 @@ def test_full_18_residual_honesty_does_not_invent_true_flags():
     rc = _load(COURSE_RC)
     residual_ids = sorted(row["id"] for row in residual["residuals"])
     assert residual_ids == sorted(stamp["course_digital_rc_not_true_ids"])
-    assert "SEVEN_GC_APPRENTICESHIP" in residual_ids
+    assert "SEVEN_GC_APPRENTICESHIP" not in residual_ids
+    assert rc["courses"]["SEVEN_GC_APPRENTICESHIP"]["COURSE_DIGITAL_RC"] is True
+    missing = residual["full_18_missing"]
+    assert missing["writer_computes_full_18"] is False
+    assert missing["catalog_ids_with_own_true_package"] < missing["catalog_track_ids"]
+    assert missing["alias_only_catalog_ids"] == ["CYBER_SOC", "DIGITAL_CONFIDENCE", "IT_SUPPORT_HARDWARE", "NETWORKING_INFRA"]
     for row in residual["residuals"]:
         assert row["invent_course_digital_rc_true"] is False
         if row["kind"] == "keyed_course_fails_digital_rc_gate":
@@ -154,4 +162,4 @@ def test_pathway_discovery_honesty_does_not_invent_true_or_flip_full_18():
         assert rid not in true_ids
     assert "EMBEDDED_PROTOTYPING" in discovered_ids
     assert "GUNNCHOS_PRODUCT_LAB" in discovered_ids
-    assert "SEVEN_GC_APPRENTICESHIP" not in discovered_ids
+    assert "SEVEN_GC_APPRENTICESHIP" in discovered_ids

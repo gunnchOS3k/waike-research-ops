@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "sga-w6-1",
+      "kind": "mcq",
+      "stem": "Why subtract baseline from model run by run on the same seed?",
+      "choices": [
+        "Pairing cancels the shared difficulty of each seed",
+        "It doubles the sample size",
+        "It removes the need for a baseline",
+        "Seeds must be discarded"
+      ]
+    },
+    {
+      "id": "sga-w6-2",
+      "kind": "mcq",
+      "stem": "With five paired runs, which critical value builds the 95% interval?",
+      "choices": [
+        "z = 1.96",
+        "t = 2.776 with 4 degrees of freedom",
+        "t = 1.645",
+        "z = 2.58"
+      ]
+    },
+    {
+      "id": "sga-w6-3",
+      "kind": "mcq",
+      "stem": "The interval is [0.0137, 0.0663]. What may the poster claim?",
+      "choices": [
+        "Improvement in all deployments",
+        "No difference",
+        "Improvement on this synthetic scenario, with the interval printed",
+        "A 6.6% guaranteed gain"
+      ]
+    },
+    {
+      "id": "sga-w6-4",
+      "kind": "mcq",
+      "stem": "If the interval had crossed zero, what is the honest sentence?",
+      "choices": [
+        "The model is worse",
+        "The model is better but noisy",
+        "Rerun until it excludes zero",
+        "Five seeds cannot distinguish the two methods"
+      ]
+    },
+    {
+      "id": "sga-w6-5",
+      "kind": "mcq",
+      "stem": "Which source of spread does pairing usually remove?",
+      "choices": [
+        "Per-seed scenario difficulty",
+        "Model capacity",
+        "Codebook size",
+        "Carrier frequency"
+      ]
+    },
+    {
+      "id": "sga-w6-6",
+      "kind": "mcq",
+      "stem": "Where does 'says nothing about a real cell' belong?",
+      "choices": [
+        "The seed list",
+        "The external-validity row",
+        "The config digest",
+        "The title"
+      ]
+    }
+  ]
+}

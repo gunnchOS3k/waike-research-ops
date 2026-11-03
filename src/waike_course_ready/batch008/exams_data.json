@@ -1,0 +1,581 @@
+{
+  "SEVEN_GC_APPRENTICESHIP": {
+    "offset": 7,
+    "mid": [
+      {
+        "id": "sga-mid-01",
+        "kind": "mcq",
+        "stem": "An apprentice reports 'GEO delay is fine for gaming' with no delay figure. Which week-one ledger fix applies?",
+        "choices": [
+          "Add a row with its evidence class or mark it OPEN",
+          "Delete the sentence silently",
+          "Label it MEASURED",
+          "Add an affiliation"
+        ],
+        "answer_index": 0,
+        "explanation": "ledger every claim"
+      },
+      {
+        "id": "sga-mid-02",
+        "kind": "mcq",
+        "stem": "A cited 3GPP delay value appears without a source_id. What is wrong?",
+        "choices": [
+          "CITED_SPEC rows must name the source",
+          "Nothing; specs are obvious",
+          "It must be MEASURED instead",
+          "It needs a seed"
+        ],
+        "answer_index": 0,
+        "explanation": "name the spec"
+      },
+      {
+        "id": "sga-mid-03",
+        "kind": "mcq",
+        "stem": "Your config file has a trailing timestamp line. What reproducibility risk does that create?",
+        "choices": [
+          "Every run changes the digest and possibly the output",
+          "None",
+          "It speeds reruns",
+          "It pins the seed"
+        ],
+        "answer_index": 0,
+        "explanation": "nondeterministic config"
+      },
+      {
+        "id": "sga-mid-04",
+        "kind": "mcq",
+        "stem": "A teammate's figure has a seed but no config digest. Can another campus regenerate it?",
+        "choices": [
+          "Not reliably; the config used is unknown",
+          "Yes, the seed is enough",
+          "Yes, if the figure looks right",
+          "Only on Linux"
+        ],
+        "answer_index": 0,
+        "explanation": "seed and digest both"
+      },
+      {
+        "id": "sga-mid-05",
+        "kind": "mcq",
+        "stem": "A satellite sits at 1,200 km nadir. Approximately what is its one-way delay?",
+        "choices": [
+          "About 4.0 ms",
+          "About 2.0 ms",
+          "About 40 ms",
+          "About 0.4 ms"
+        ],
+        "answer_index": 0,
+        "explanation": "1200/c"
+      },
+      {
+        "id": "sga-mid-06",
+        "kind": "mcq",
+        "stem": "Why do GEO links feel sluggish even with high bandwidth?",
+        "choices": [
+          "Round trip near 240 ms dominates interaction",
+          "GEO satellites are slower",
+          "Bandwidth is shared",
+          "Doppler is large"
+        ],
+        "answer_index": 0,
+        "explanation": "latency, not throughput"
+      },
+      {
+        "id": "sga-mid-07",
+        "kind": "mcq",
+        "stem": "At low elevation, how does slant range compare with altitude?",
+        "choices": [
+          "It can be several times larger",
+          "It is always equal",
+          "It is always smaller",
+          "It is undefined"
+        ],
+        "answer_index": 0,
+        "explanation": "slant > nadir"
+      },
+      {
+        "id": "sga-mid-08",
+        "kind": "mcq",
+        "stem": "Doubling the carrier from 2 GHz to 4 GHz does what to the LEO Doppler bound?",
+        "choices": [
+          "Doubles it",
+          "Halves it",
+          "Leaves it unchanged",
+          "Squares it"
+        ],
+        "answer_index": 0,
+        "explanation": "linear in f_c"
+      },
+      {
+        "id": "sga-mid-09",
+        "kind": "mcq",
+        "stem": "Raising a LEO orbit from 600 km to 1,200 km does what to circular orbital speed?",
+        "choices": [
+          "Lowers it slightly",
+          "Raises it sharply",
+          "Leaves it unchanged",
+          "Doubles it"
+        ],
+        "answer_index": 0,
+        "explanation": "v ∝ 1/sqrt(r)"
+      },
+      {
+        "id": "sga-mid-10",
+        "kind": "mcq",
+        "stem": "Why would uncompensated 50 kHz Doppler harm a 15 kHz-spaced OFDM signal?",
+        "choices": [
+          "Subcarriers shift into their neighbours",
+          "Power doubles",
+          "The cyclic prefix grows",
+          "Nothing happens"
+        ],
+        "answer_index": 0,
+        "explanation": "inter-carrier interference"
+      },
+      {
+        "id": "sga-mid-11",
+        "kind": "mcq",
+        "stem": "Which of these is a design margin rather than a measurement?",
+        "choices": [
+          "The (v/c)·f_c Doppler bound",
+          "A logged field RSRP",
+          "A bench spectrum capture",
+          "A drive-test trace"
+        ],
+        "answer_index": 0,
+        "explanation": "bound vs data"
+      },
+      {
+        "id": "sga-mid-12",
+        "kind": "mcq",
+        "stem": "A model's top-1 is 0.40 and top-5 is 0.95 on a 64-beam codebook. What deployment fits?",
+        "choices": [
+          "Rank with the model, sweep five beams",
+          "Trust top-1 alone",
+          "Sweep all 64 beams",
+          "Drop the codebook"
+        ],
+        "answer_index": 0,
+        "explanation": "rank and refine"
+      },
+      {
+        "id": "sga-mid-13",
+        "kind": "mcq",
+        "stem": "A test set of 8 samples gives top-1 = 0.5. What caution applies?",
+        "choices": [
+          "Eight samples give a very coarse estimate",
+          "The model is perfect",
+          "The result is measured",
+          "Top-1 cannot be computed"
+        ],
+        "answer_index": 0,
+        "explanation": "tiny n"
+      },
+      {
+        "id": "sga-mid-14",
+        "kind": "mcq",
+        "stem": "Why might top-k reward a model that is useless in the field?",
+        "choices": [
+          "It ignores how much SNR the chosen beam loses",
+          "It counts too many samples",
+          "It requires labels",
+          "It uses seeds"
+        ],
+        "answer_index": 0,
+        "explanation": "metric gap"
+      },
+      {
+        "id": "sga-mid-15",
+        "kind": "mcq",
+        "stem": "Which side information might a beam-selection model use?",
+        "choices": [
+          "User position or a coarse channel estimate",
+          "The user's name",
+          "Billing records",
+          "Ambient temperature only"
+        ],
+        "answer_index": 0,
+        "explanation": "inputs"
+      },
+      {
+        "id": "sga-mid-16",
+        "kind": "mcq",
+        "stem": "An apprentice uses a different random seed for baseline and model each run. What is lost?",
+        "choices": [
+          "The pairing that cancels per-seed difficulty",
+          "Nothing",
+          "The codebook",
+          "The digest"
+        ],
+        "answer_index": 0,
+        "explanation": "unpaired design"
+      },
+      {
+        "id": "sga-mid-17",
+        "kind": "mcq",
+        "stem": "Five paired differences have sd 0.03. Using t = 2.776, what is the 95% half-width?",
+        "choices": [
+          "About 0.037",
+          "About 0.026",
+          "About 0.083",
+          "About 0.013"
+        ],
+        "answer_index": 0,
+        "explanation": "2.776·0.03/√5"
+      },
+      {
+        "id": "sga-mid-18",
+        "kind": "mcq",
+        "stem": "Replacing t = 2.776 with z = 1.96 for n = 5 has what effect?",
+        "choices": [
+          "The interval becomes too narrow",
+          "The interval becomes too wide",
+          "No effect",
+          "The mean changes"
+        ],
+        "answer_index": 0,
+        "explanation": "overconfident"
+      },
+      {
+        "id": "sga-mid-19",
+        "kind": "mcq",
+        "stem": "Which statement is supported by a CI of [0.0137, 0.0663] on one synthetic scenario?",
+        "choices": [
+          "The model beat the baseline on that scenario",
+          "The model wins on every scenario",
+          "The gain is exactly 4%",
+          "The model is calibrated"
+        ],
+        "answer_index": 0,
+        "explanation": "scoped claim"
+      },
+      {
+        "id": "sga-mid-20",
+        "kind": "mcq",
+        "stem": "An apprentice reruns seeds until the interval excludes zero. What validity does that break?",
+        "choices": [
+          "Conclusion validity",
+          "Construct validity",
+          "External validity",
+          "None"
+        ],
+        "answer_index": 0,
+        "explanation": "p-hacking"
+      }
+    ],
+    "final": [
+      {
+        "id": "sga-fin-01",
+        "kind": "mcq",
+        "stem": "A beam-tuning model must react every 50 ms. Which component hosts it?",
+        "choices": [
+          "Near-real-time RIC xApp",
+          "Non-real-time RIC rApp",
+          "DU real-time scheduler",
+          "Core network UPF"
+        ],
+        "answer_index": 0,
+        "explanation": "10 ms–1 s"
+      },
+      {
+        "id": "sga-fin-02",
+        "kind": "mcq",
+        "stem": "An energy-saving policy updated hourly from KPIs runs where?",
+        "choices": [
+          "Non-real-time RIC rApp",
+          "Near-real-time RIC xApp",
+          "DU",
+          "UE"
+        ],
+        "answer_index": 0,
+        "explanation": ">1 s"
+      },
+      {
+        "id": "sga-fin-03",
+        "kind": "mcq",
+        "stem": "Which interface would an rApp's guidance travel over to reach an xApp?",
+        "choices": [
+          "A1",
+          "E2",
+          "F1-U",
+          "Uu"
+        ],
+        "answer_index": 0,
+        "explanation": "A1 policy"
+      },
+      {
+        "id": "sga-fin-04",
+        "kind": "mcq",
+        "stem": "A proposal trains a neural network inside the per-slot scheduler loop. How should a reviewer respond?",
+        "choices": [
+          "Reject the placement; training belongs in the non-RT loop",
+          "Approve it as faster",
+          "Move it to the UE",
+          "Ignore loop timing"
+        ],
+        "answer_index": 0,
+        "explanation": "loop placement"
+      },
+      {
+        "id": "sga-fin-05",
+        "kind": "mcq",
+        "stem": "O-RAN documents are used in this course how?",
+        "choices": [
+          "For topic labels and architecture vocabulary only",
+          "As exam answer sources",
+          "As a certification",
+          "As measured data"
+        ],
+        "answer_index": 0,
+        "explanation": "PUBLIC_REFERENCE_ONLY"
+      },
+      {
+        "id": "sga-fin-06",
+        "kind": "mcq",
+        "stem": "Twin and reference sim disagree by RMSE 0.4 dB. What may the poster claim?",
+        "choices": [
+          "Two models agree closely; calibration remains open",
+          "The twin is calibrated",
+          "The twin matches the field",
+          "Measurements are unnecessary"
+        ],
+        "answer_index": 0,
+        "explanation": "agreement ≠ calibration"
+      },
+      {
+        "id": "sga-fin-07",
+        "kind": "mcq",
+        "stem": "Which single change would allow calibrated_claim to become true?",
+        "choices": [
+          "Comparing the twin with real site measurements",
+          "Lowering RMSE against the sim",
+          "Adding more seeds",
+          "Renaming the status"
+        ],
+        "answer_index": 0,
+        "explanation": "field data"
+      },
+      {
+        "id": "sga-fin-08",
+        "kind": "mcq",
+        "stem": "A twin uses an optimistic clutter model shared with the reference simulator. What risk follows?",
+        "choices": [
+          "Both agree while both miss reality",
+          "RMSE increases",
+          "Doppler doubles",
+          "Seeds diverge"
+        ],
+        "answer_index": 0,
+        "explanation": "shared bias"
+      },
+      {
+        "id": "sga-fin-09",
+        "kind": "mcq",
+        "stem": "Errors of 0, 0, 0 and 4 dB give what RMSE?",
+        "choices": [
+          "2 dB",
+          "1 dB",
+          "4 dB",
+          "0 dB"
+        ],
+        "answer_index": 0,
+        "explanation": "sqrt(16/4)"
+      },
+      {
+        "id": "sga-fin-10",
+        "kind": "mcq",
+        "stem": "Why does the research spine keep Paper I's calibration gap visible?",
+        "choices": [
+          "So the next cohort knows which measurements to collect",
+          "To lower expectations",
+          "Because it is required by 3GPP",
+          "To delay publication"
+        ],
+        "answer_index": 0,
+        "explanation": "actionable gap"
+      },
+      {
+        "id": "sga-fin-11",
+        "kind": "mcq",
+        "stem": "Two training positions also appear in the test set. Which validity threat is this?",
+        "choices": [
+          "Internal (data leak)",
+          "External",
+          "Construct",
+          "None"
+        ],
+        "answer_index": 0,
+        "explanation": "leak"
+      },
+      {
+        "id": "sga-fin-12",
+        "kind": "mcq",
+        "stem": "Results from a LEO S-band scenario are presented as valid for urban mmWave. Which threat?",
+        "choices": [
+          "External validity",
+          "Internal validity",
+          "Construct validity",
+          "Reproducibility"
+        ],
+        "answer_index": 0,
+        "explanation": "transfer"
+      },
+      {
+        "id": "sga-fin-13",
+        "kind": "mcq",
+        "stem": "An apprentice optimises top-1 accuracy while the operator cares about throughput. Which threat?",
+        "choices": [
+          "Construct validity",
+          "Conclusion validity",
+          "Internal validity",
+          "External validity"
+        ],
+        "answer_index": 0,
+        "explanation": "metric mismatch"
+      },
+      {
+        "id": "sga-fin-14",
+        "kind": "mcq",
+        "stem": "Which guardrail forbids using captured signals from a private competition?",
+        "choices": [
+          "No private competition IQ",
+          "Synthetic data only applies to figures",
+          "No affiliation claims",
+          "Seeds must be pinned"
+        ],
+        "answer_index": 0,
+        "explanation": "IQ guardrail"
+      },
+      {
+        "id": "sga-fin-15",
+        "kind": "mcq",
+        "stem": "A slide says 'in partnership with a national lab' with no agreement in place. Which rule is broken?",
+        "choices": [
+          "No affiliation claims",
+          "Reproducibility",
+          "Construct validity",
+          "Paired design"
+        ],
+        "answer_index": 0,
+        "explanation": "affiliation"
+      },
+      {
+        "id": "sga-fin-16",
+        "kind": "mcq",
+        "stem": "Which capstone element lets another campus regenerate a figure without contacting you?",
+        "choices": [
+          "Config digest and seed on the figure",
+          "A high-resolution PNG",
+          "The mentor's email",
+          "A video walkthrough"
+        ],
+        "answer_index": 0,
+        "explanation": "manifest"
+      },
+      {
+        "id": "sga-fin-17",
+        "kind": "mcq",
+        "stem": "Why is a capstone packet not a publication?",
+        "choices": [
+          "It has not been submitted or peer reviewed",
+          "It lacks figures",
+          "It uses Python",
+          "It has a seed"
+        ],
+        "answer_index": 0,
+        "explanation": "scope"
+      },
+      {
+        "id": "sga-fin-18",
+        "kind": "mcq",
+        "stem": "Who decides when a manuscript from the research spine is submitted?",
+        "choices": [
+          "The program owner",
+          "Any apprentice",
+          "The simulator",
+          "The mentor alone, silently"
+        ],
+        "answer_index": 0,
+        "explanation": "owner decision"
+      },
+      {
+        "id": "sga-fin-19",
+        "kind": "mcq",
+        "stem": "During review a mentor's rerun of one figure gives a different curve. What follows?",
+        "choices": [
+          "The figure is removed until its manifest reproduces",
+          "Keep the prettier curve",
+          "Average the two",
+          "Change the seed quietly"
+        ],
+        "answer_index": 0,
+        "explanation": "reproduce or remove"
+      },
+      {
+        "id": "sga-fin-20",
+        "kind": "mcq",
+        "stem": "Which artifact must never appear in the learner packet?",
+        "choices": [
+          "Instructor answer keys",
+          "Config digests",
+          "Claim ledger",
+          "Validity threats"
+        ],
+        "answer_index": 0,
+        "explanation": "key hygiene"
+      },
+      {
+        "id": "sga-fin-21",
+        "kind": "mcq",
+        "stem": "A 7GC cohort in Geelong wants to reuse Gary's beam figure in a port scenario. What should the ledger say?",
+        "choices": [
+          "The figure is SYNTHETIC_SIM for its own scenario; port transfer is untested",
+          "It is MEASURED for ports",
+          "It applies everywhere",
+          "It needs no ledger row"
+        ],
+        "answer_index": 0,
+        "explanation": "scoped reuse"
+      },
+      {
+        "id": "sga-fin-22",
+        "kind": "mcq",
+        "stem": "Delay at 600 km nadir is 2.0 ms; a user at 20° elevation sees a longer delay. Why?",
+        "choices": [
+          "Slant range is longer than altitude",
+          "Light slows at low elevation",
+          "The satellite moves away faster",
+          "Doppler adds delay"
+        ],
+        "answer_index": 0,
+        "explanation": "geometry"
+      },
+      {
+        "id": "sga-fin-23",
+        "kind": "mcq",
+        "stem": "Which pair of results would justify 'the model reduces sweep cost on this scenario'?",
+        "choices": [
+          "High top-3 accuracy and a paired CI excluding zero",
+          "One lucky seed",
+          "A calibrated twin alone",
+          "An affiliation"
+        ],
+        "answer_index": 0,
+        "explanation": "evidence pairing"
+      },
+      {
+        "id": "sga-fin-24",
+        "kind": "mcq",
+        "stem": "What is the apprenticeship's final claim boundary?",
+        "choices": [
+          "Synthetic, reproducible, apprentice-scale research — not deployment or credential",
+          "Field-validated 6G deployment",
+          "Peer-reviewed publication",
+          "Vendor certification"
+        ],
+        "answer_index": 0,
+        "explanation": "boundary"
+      }
+    ]
+  }
+}

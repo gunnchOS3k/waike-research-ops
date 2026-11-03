@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "sga-w9-1",
+      "kind": "mcq",
+      "stem": "A data leak between training and test positions threatens which validity?",
+      "choices": [
+        "External",
+        "Construct",
+        "Internal",
+        "Conclusion"
+      ]
+    },
+    {
+      "id": "sga-w9-2",
+      "kind": "mcq",
+      "stem": "One synthetic LEO scenario cannot speak for a street canyon. Which validity?",
+      "choices": [
+        "Internal",
+        "Construct",
+        "Conclusion",
+        "External"
+      ]
+    },
+    {
+      "id": "sga-w9-3",
+      "kind": "mcq",
+      "stem": "Top-k ignores decibels lost on the second-best beam. Which validity?",
+      "choices": [
+        "Construct",
+        "External",
+        "Internal",
+        "Conclusion"
+      ]
+    },
+    {
+      "id": "sga-w9-4",
+      "kind": "mcq",
+      "stem": "Testing many metrics and reporting the best one threatens which validity?",
+      "choices": [
+        "Construct",
+        "Conclusion",
+        "External",
+        "Internal"
+      ]
+    },
+    {
+      "id": "sga-w9-5",
+      "kind": "mcq",
+      "stem": "A teammate offers private competition IQ captures. What do you do?",
+      "choices": [
+        "Use them quietly",
+        "Use them with a footnote",
+        "Decline; synthetic data only",
+        "Use them if anonymised"
+      ]
+    },
+    {
+      "id": "sga-w9-6",
+      "kind": "mcq",
+      "stem": "How do honest threats listed early affect reviewer trust?",
+      "choices": [
+        "They sink the paper",
+        "They are ignored",
+        "They replace results",
+        "They raise trust in the remaining claims"
+      ]
+    }
+  ]
+}

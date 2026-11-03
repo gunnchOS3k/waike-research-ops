@@ -213,6 +213,19 @@
         "GUNNCHOS_PRODUCT_LAB"
       ],
       "academy_id": "ACADEMY_HARDWARE"
+    },
+    {
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship \u2014 Research Bench",
+      "kinesthetic_hook": "Ten Research Bench weeks: claim ledger \u2192 reproducible manifest \u2192 NTN delay \u2192 LEO Doppler \u2192 beam top-k \u2192 paired interval \u2192 O-RAN loops \u2192 twin gap \u2192 validity threats \u2192 traced capstone. Synthetic and cited evidence only.",
+      "lesson_excerpt": "Research Bench ticket SGA-1101 opens the apprenticeship with a question small enough to answer: does a codebook prior raise top-3 beam accuracy on a synthetic LEO scenario? Before any code runs, write a claim ledger. Every sentence you might later put in a poster gets one row and one evidence class. SYNTHETIC_SIM means your own simulator produced it, so the claim is only as strong as the model's a",
+      "worked_example": "claim A: SYNTHETIC_SIM; claim B: CITED_SPEC source_id=3GPP_TR_38_811_NTN; claim C: MEASURED dataset_ref=none-yet status=OPEN",
+      "assignment": "Submit lab_sga_claim_ledger JSON for SGA-1101 with at least three labeled claims and affiliation_claim false.",
+      "lab_hint": "lab_sga_claim_ledger",
+      "track_ids": [
+        "SEVEN_GC_APPRENTICESHIP"
+      ],
+      "academy_id": "ACADEMY_SOFTWARE"
     }
   ]
 }

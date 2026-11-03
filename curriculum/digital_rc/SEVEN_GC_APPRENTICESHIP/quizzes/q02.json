@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "sga-w2-1",
+      "kind": "mcq",
+      "stem": "Why does the grader recompute the config digest?",
+      "choices": [
+        "A pasted hash may not match the file actually used",
+        "Hashing is faster than reading",
+        "Digests replace the seed",
+        "SHA-256 is only for passwords"
+      ]
+    },
+    {
+      "id": "sga-w2-2",
+      "kind": "mcq",
+      "stem": "Two reruns with the same seed and config disagree. What does that signal?",
+      "choices": [
+        "The model is improving",
+        "Hidden nondeterminism to fix before comparing",
+        "Normal sampling noise to average away",
+        "The digest is wrong"
+      ]
+    },
+    {
+      "id": "sga-w2-3",
+      "kind": "mcq",
+      "stem": "Which seed value fails the manifest check?",
+      "choices": [
+        "20261102",
+        "7",
+        "\"random\"",
+        "0"
+      ]
+    },
+    {
+      "id": "sga-w2-4",
+      "kind": "mcq",
+      "stem": "What happens to a week-ten figure whose manifest does not reproduce?",
+      "choices": [
+        "It gets a footnote",
+        "It is kept if it looks good",
+        "It is rerun with a new seed until it matches",
+        "It is removed from the shared packet"
+      ]
+    },
+    {
+      "id": "sga-w2-5",
+      "kind": "mcq",
+      "stem": "Changing one newline in config_text does what to the SHA-256?",
+      "choices": [
+        "Changes the digest completely",
+        "Leaves it unchanged",
+        "Changes only the last hex digit",
+        "Makes it invalid"
+      ]
+    },
+    {
+      "id": "sga-w2-6",
+      "kind": "mcq",
+      "stem": "Why record the command line verbatim?",
+      "choices": [
+        "To make the manifest longer",
+        "So nobody guesses which entry point or flags made a figure",
+        "Because shells require it",
+        "To hide the config"
+      ]
+    }
+  ]
+}

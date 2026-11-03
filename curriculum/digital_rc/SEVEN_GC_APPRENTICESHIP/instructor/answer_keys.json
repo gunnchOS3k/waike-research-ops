@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "quizzes": {
+    "SEVEN_GC_APPRENTICESHIP-q01": [
+      {
+        "id": "sga-w1-1",
+        "answer_index": 2,
+        "explanation": "unbacked measurement is open"
+      },
+      {
+        "id": "sga-w1-2",
+        "answer_index": 3,
+        "explanation": "cited claims name the spec"
+      },
+      {
+        "id": "sga-w1-3",
+        "answer_index": 0,
+        "explanation": "no implied endorsement"
+      },
+      {
+        "id": "sga-w1-4",
+        "answer_index": 1,
+        "explanation": "sim inherits model assumptions"
+      },
+      {
+        "id": "sga-w1-5",
+        "answer_index": 2,
+        "explanation": "ledger first"
+      },
+      {
+        "id": "sga-w1-6",
+        "answer_index": 3,
+        "explanation": "TR 38.811 is the NTN study"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q02": [
+      {
+        "id": "sga-w2-1",
+        "answer_index": 0,
+        "explanation": "verify, don't trust"
+      },
+      {
+        "id": "sga-w2-2",
+        "answer_index": 1,
+        "explanation": "nondeterminism leak"
+      },
+      {
+        "id": "sga-w2-3",
+        "answer_index": 2,
+        "explanation": "seed must be an integer"
+      },
+      {
+        "id": "sga-w2-4",
+        "answer_index": 3,
+        "explanation": "non-reproducible figures removed"
+      },
+      {
+        "id": "sga-w2-5",
+        "answer_index": 0,
+        "explanation": "avalanche property"
+      },
+      {
+        "id": "sga-w2-6",
+        "answer_index": 1,
+        "explanation": "exact provenance"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q03": [
+      {
+        "id": "sga-w3-1",
+        "answer_index": 2,
+        "explanation": "600/299792.458 s"
+      },
+      {
+        "id": "sga-w3-2",
+        "answer_index": 3,
+        "explanation": "35786 km / c"
+      },
+      {
+        "id": "sga-w3-3",
+        "answer_index": 0,
+        "explanation": "nadir is the minimum"
+      },
+      {
+        "id": "sga-w3-4",
+        "answer_index": 1,
+        "explanation": "TR 38.811 timing"
+      },
+      {
+        "id": "sga-w3-5",
+        "answer_index": 2,
+        "explanation": "rtt = 2 \u00d7 one-way"
+      },
+      {
+        "id": "sga-w3-6",
+        "answer_index": 3,
+        "explanation": "recompute from inputs"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q04": [
+      {
+        "id": "sga-w4-1",
+        "answer_index": 0,
+        "explanation": "sqrt(\u03bc/r)"
+      },
+      {
+        "id": "sga-w4-2",
+        "answer_index": 1,
+        "explanation": "projection \u2264 full speed"
+      },
+      {
+        "id": "sga-w4-3",
+        "answer_index": 2,
+        "explanation": "50 kHz vs 15 kHz"
+      },
+      {
+        "id": "sga-w4-4",
+        "answer_index": 3,
+        "explanation": "radial velocity zero at zenith"
+      },
+      {
+        "id": "sga-w4-5",
+        "answer_index": 0,
+        "explanation": "Earth GM"
+      },
+      {
+        "id": "sga-w4-6",
+        "answer_index": 1,
+        "explanation": "bound is not measurement"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q05": [
+      {
+        "id": "sga-w5-1",
+        "answer_index": 2,
+        "explanation": "membership in first k"
+      },
+      {
+        "id": "sga-w5-2",
+        "answer_index": 3,
+        "explanation": "hits at ranks 2\u20133"
+      },
+      {
+        "id": "sga-w5-3",
+        "answer_index": 0,
+        "explanation": "reduce sweep cost"
+      },
+      {
+        "id": "sga-w5-4",
+        "answer_index": 1,
+        "explanation": "construct gap"
+      },
+      {
+        "id": "sga-w5-5",
+        "answer_index": 2,
+        "explanation": "rank then refine"
+      },
+      {
+        "id": "sga-w5-6",
+        "answer_index": 3,
+        "explanation": "fixture is synthetic"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q06": [
+      {
+        "id": "sga-w6-1",
+        "answer_index": 0,
+        "explanation": "paired design"
+      },
+      {
+        "id": "sga-w6-2",
+        "answer_index": 1,
+        "explanation": "small-sample t"
+      },
+      {
+        "id": "sga-w6-3",
+        "answer_index": 2,
+        "explanation": "scoped claim"
+      },
+      {
+        "id": "sga-w6-4",
+        "answer_index": 3,
+        "explanation": "inconclusive"
+      },
+      {
+        "id": "sga-w6-5",
+        "answer_index": 0,
+        "explanation": "seed difficulty"
+      },
+      {
+        "id": "sga-w6-6",
+        "answer_index": 1,
+        "explanation": "external validity"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q07": [
+      {
+        "id": "sga-w7-1",
+        "answer_index": 2,
+        "explanation": "10 ms\u20131 s"
+      },
+      {
+        "id": "sga-w7-2",
+        "answer_index": 3,
+        "explanation": "A1 policy"
+      },
+      {
+        "id": "sga-w7-3",
+        "answer_index": 0,
+        "explanation": ">1 s loop"
+      },
+      {
+        "id": "sga-w7-4",
+        "answer_index": 1,
+        "explanation": "E2 control"
+      },
+      {
+        "id": "sga-w7-5",
+        "answer_index": 2,
+        "explanation": "sub-10 ms"
+      },
+      {
+        "id": "sga-w7-6",
+        "answer_index": 3,
+        "explanation": "wrong loop"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q08": [
+      {
+        "id": "sga-w8-1",
+        "answer_index": 0,
+        "explanation": "sqrt(7/4)"
+      },
+      {
+        "id": "sga-w8-2",
+        "answer_index": 1,
+        "explanation": "no measurements"
+      },
+      {
+        "id": "sga-w8-3",
+        "answer_index": 2,
+        "explanation": "shared bias"
+      },
+      {
+        "id": "sga-w8-4",
+        "answer_index": 3,
+        "explanation": "field data"
+      },
+      {
+        "id": "sga-w8-5",
+        "answer_index": 0,
+        "explanation": "state the gap"
+      },
+      {
+        "id": "sga-w8-6",
+        "answer_index": 1,
+        "explanation": "agreement only"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q09": [
+      {
+        "id": "sga-w9-1",
+        "answer_index": 2,
+        "explanation": "unfair comparison"
+      },
+      {
+        "id": "sga-w9-2",
+        "answer_index": 3,
+        "explanation": "generalisation"
+      },
+      {
+        "id": "sga-w9-3",
+        "answer_index": 0,
+        "explanation": "metric fit"
+      },
+      {
+        "id": "sga-w9-4",
+        "answer_index": 1,
+        "explanation": "multiple comparisons"
+      },
+      {
+        "id": "sga-w9-5",
+        "answer_index": 2,
+        "explanation": "guardrail"
+      },
+      {
+        "id": "sga-w9-6",
+        "answer_index": 3,
+        "explanation": "credibility"
+      }
+    ],
+    "SEVEN_GC_APPRENTICESHIP-q10": [
+      {
+        "id": "sga-w10-1",
+        "answer_index": 0,
+        "explanation": "traceable figure"
+      },
+      {
+        "id": "sga-w10-2",
+        "answer_index": 1,
+        "explanation": "owner decides submission"
+      },
+      {
+        "id": "sga-w10-3",
+        "answer_index": 2,
+        "explanation": "live reproduction"
+      },
+      {
+        "id": "sga-w10-4",
+        "answer_index": 3,
+        "explanation": "course is synthetic"
+      },
+      {
+        "id": "sga-w10-5",
+        "answer_index": 0,
+        "explanation": "no key leak"
+      },
+      {
+        "id": "sga-w10-6",
+        "answer_index": 1,
+        "explanation": "scoped outcome"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "sga-mid-01",
+      "answer_index": 3,
+      "explanation": "ledger every claim"
+    },
+    {
+      "id": "sga-mid-02",
+      "answer_index": 0,
+      "explanation": "name the spec"
+    },
+    {
+      "id": "sga-mid-03",
+      "answer_index": 1,
+      "explanation": "nondeterministic config"
+    },
+    {
+      "id": "sga-mid-04",
+      "answer_index": 2,
+      "explanation": "seed and digest both"
+    },
+    {
+      "id": "sga-mid-05",
+      "answer_index": 3,
+      "explanation": "1200/c"
+    },
+    {
+      "id": "sga-mid-06",
+      "answer_index": 0,
+      "explanation": "latency, not throughput"
+    },
+    {
+      "id": "sga-mid-07",
+      "answer_index": 1,
+      "explanation": "slant > nadir"
+    },
+    {
+      "id": "sga-mid-08",
+      "answer_index": 2,
+      "explanation": "linear in f_c"
+    },
+    {
+      "id": "sga-mid-09",
+      "answer_index": 3,
+      "explanation": "v \u221d 1/sqrt(r)"
+    },
+    {
+      "id": "sga-mid-10",
+      "answer_index": 0,
+      "explanation": "inter-carrier interference"
+    },
+    {
+      "id": "sga-mid-11",
+      "answer_index": 1,
+      "explanation": "bound vs data"
+    },
+    {
+      "id": "sga-mid-12",
+      "answer_index": 2,
+      "explanation": "rank and refine"
+    },
+    {
+      "id": "sga-mid-13",
+      "answer_index": 3,
+      "explanation": "tiny n"
+    },
+    {
+      "id": "sga-mid-14",
+      "answer_index": 0,
+      "explanation": "metric gap"
+    },
+    {
+      "id": "sga-mid-15",
+      "answer_index": 1,
+      "explanation": "inputs"
+    },
+    {
+      "id": "sga-mid-16",
+      "answer_index": 2,
+      "explanation": "unpaired design"
+    },
+    {
+      "id": "sga-mid-17",
+      "answer_index": 3,
+      "explanation": "2.776\u00b70.03/\u221a5"
+    },
+    {
+      "id": "sga-mid-18",
+      "answer_index": 0,
+      "explanation": "overconfident"
+    },
+    {
+      "id": "sga-mid-19",
+      "answer_index": 1,
+      "explanation": "scoped claim"
+    },
+    {
+      "id": "sga-mid-20",
+      "answer_index": 2,
+      "explanation": "p-hacking"
+    }
+  ],
+  "final": [
+    {
+      "id": "sga-fin-01",
+      "answer_index": 0,
+      "explanation": "10 ms\u20131 s"
+    },
+    {
+      "id": "sga-fin-02",
+      "answer_index": 1,
+      "explanation": ">1 s"
+    },
+    {
+      "id": "sga-fin-03",
+      "answer_index": 2,
+      "explanation": "A1 policy"
+    },
+    {
+      "id": "sga-fin-04",
+      "answer_index": 3,
+      "explanation": "loop placement"
+    },
+    {
+      "id": "sga-fin-05",
+      "answer_index": 0,
+      "explanation": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "id": "sga-fin-06",
+      "answer_index": 1,
+      "explanation": "agreement \u2260 calibration"
+    },
+    {
+      "id": "sga-fin-07",
+      "answer_index": 2,
+      "explanation": "field data"
+    },
+    {
+      "id": "sga-fin-08",
+      "answer_index": 3,
+      "explanation": "shared bias"
+    },
+    {
+      "id": "sga-fin-09",
+      "answer_index": 0,
+      "explanation": "sqrt(16/4)"
+    },
+    {
+      "id": "sga-fin-10",
+      "answer_index": 1,
+      "explanation": "actionable gap"
+    },
+    {
+      "id": "sga-fin-11",
+      "answer_index": 2,
+      "explanation": "leak"
+    },
+    {
+      "id": "sga-fin-12",
+      "answer_index": 3,
+      "explanation": "transfer"
+    },
+    {
+      "id": "sga-fin-13",
+      "answer_index": 0,
+      "explanation": "metric mismatch"
+    },
+    {
+      "id": "sga-fin-14",
+      "answer_index": 1,
+      "explanation": "IQ guardrail"
+    },
+    {
+      "id": "sga-fin-15",
+      "answer_index": 2,
+      "explanation": "affiliation"
+    },
+    {
+      "id": "sga-fin-16",
+      "answer_index": 3,
+      "explanation": "manifest"
+    },
+    {
+      "id": "sga-fin-17",
+      "answer_index": 0,
+      "explanation": "scope"
+    },
+    {
+      "id": "sga-fin-18",
+      "answer_index": 1,
+      "explanation": "owner decision"
+    },
+    {
+      "id": "sga-fin-19",
+      "answer_index": 2,
+      "explanation": "reproduce or remove"
+    },
+    {
+      "id": "sga-fin-20",
+      "answer_index": 3,
+      "explanation": "key hygiene"
+    },
+    {
+      "id": "sga-fin-21",
+      "answer_index": 0,
+      "explanation": "scoped reuse"
+    },
+    {
+      "id": "sga-fin-22",
+      "answer_index": 1,
+      "explanation": "geometry"
+    },
+    {
+      "id": "sga-fin-23",
+      "answer_index": 2,
+      "explanation": "evidence pairing"
+    },
+    {
+      "id": "sga-fin-24",
+      "answer_index": 3,
+      "explanation": "boundary"
+    }
+  ]
+}

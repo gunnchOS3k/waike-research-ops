@@ -125,4 +125,12 @@ COURSE_PREREQS: dict[str, dict[str, list[str] | str]] = {
         ],
         "recommended": ["SOFTWARE_BUILDER compose/deploy vocabulary", "GENERAL_IT ticket discipline"],
     },
+    "SEVEN_GC_APPRENTICESHIP": {
+        "course_id": "SEVEN_GC_APPRENTICESHIP",
+        "required": [
+            "WIRELESS_6G link-budget and AI-RAN vocabulary (or equivalent)",
+            "Synthetic data only — no private competition IQ, no affiliation claims",
+        ],
+        "recommended": ["AI_ML_EDGE train/test split discipline", "DATA_VIZ_BI honest figure labelling"],
+    },
 }

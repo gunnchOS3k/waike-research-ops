@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 150,
+  "lab_count": 160,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -183,6 +183,18 @@
       "lab_gpl_ci_tokens",
       "lab_gpl_dep_pin",
       "lab_gpl_product_capstone"
+    ],
+    "SEVEN_GC_APPRENTICESHIP": [
+      "lab_sga_claim_ledger",
+      "lab_sga_repro_manifest",
+      "lab_sga_ntn_delay",
+      "lab_sga_leo_doppler",
+      "lab_sga_beam_topk",
+      "lab_sga_paired_ci",
+      "lab_sga_oran_loops",
+      "lab_sga_twin_gap",
+      "lab_sga_validity",
+      "lab_sga_research_capstone"
     ]
   },
   "batch_001_lab_count": 20,
@@ -192,6 +204,7 @@
   "batch_005_lab_count": 10,
   "batch_006_lab_count": 10,
   "batch_007_lab_count": 20,
+  "batch_008_lab_count": 10,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1553,7 +1566,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'AMS1117-3.3', 'nRF52840', 'SSD1306'}"
+          "detail": "mpns={'nRF52840', 'AMS1117-3.3', 'SSD1306'}"
         },
         {
           "name": "total",
@@ -1738,7 +1751,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
+          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
         },
         {
           "name": "cause",
@@ -2596,7 +2609,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'freshness', 'open_count', 'median_by_zone'}"
+          "detail": "need {'open_count', 'median_by_zone', 'freshness'}"
         },
         {
           "name": "max",
@@ -5702,6 +5715,406 @@
       ],
       "claim_boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103.",
       "boundary": "GUNNCHOS_PRODUCT_LAB Product Bench. Not student/teacher E6. Do not merge device-os #103."
+    },
+    {
+      "lab_id": "lab_sga_claim_ledger",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "claims_present",
+          "ok": true,
+          "detail": "claims=3"
+        },
+        {
+          "name": "evidence_class_labeled",
+          "ok": true,
+          "detail": "each claim labels its evidence"
+        },
+        {
+          "name": "no_measured_without_dataset",
+          "ok": true,
+          "detail": "measured_without_dataset=0"
+        },
+        {
+          "name": "cited_specs_named",
+          "ok": true,
+          "detail": "CITED_SPEC needs source_id"
+        },
+        {
+          "name": "no_affiliation",
+          "ok": true,
+          "detail": "affiliation_claim must be false"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_repro_manifest",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "config_digest_recomputed",
+          "ok": true,
+          "detail": "sha256(config_text)"
+        },
+        {
+          "name": "seed_pinned",
+          "ok": true,
+          "detail": "integer seed"
+        },
+        {
+          "name": "command_recorded",
+          "ok": true,
+          "detail": "exact command"
+        },
+        {
+          "name": "rerun_identical",
+          "ok": true,
+          "detail": "same seed + config \u2192 same metric"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_ntn_delay",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "altitude_positive",
+          "ok": true,
+          "detail": "altitude_km > 0"
+        },
+        {
+          "name": "one_way_recomputed",
+          "ok": true,
+          "detail": "expected 2.001 ms"
+        },
+        {
+          "name": "rtt_recomputed",
+          "ok": true,
+          "detail": "expected 4.003 ms"
+        },
+        {
+          "name": "nadir_stated",
+          "ok": true,
+          "detail": "slant range is longer than nadir"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_leo_doppler",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_positive",
+          "ok": true,
+          "detail": "altitude and carrier > 0"
+        },
+        {
+          "name": "orbital_speed_recomputed",
+          "ok": true,
+          "detail": "expected 7.562 km/s"
+        },
+        {
+          "name": "doppler_bound_recomputed",
+          "ok": true,
+          "detail": "expected 50.45 kHz"
+        },
+        {
+          "name": "bound_not_measurement",
+          "ok": true,
+          "detail": "v/c\u00b7f is an upper bound"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_beam_topk",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "n_matches_fixture",
+          "ok": true,
+          "detail": "n=8"
+        },
+        {
+          "name": "top1_recomputed",
+          "ok": true,
+          "detail": "expected 0.5"
+        },
+        {
+          "name": "top3_recomputed",
+          "ok": true,
+          "detail": "expected 0.875"
+        },
+        {
+          "name": "synthetic_labeled",
+          "ok": true,
+          "detail": "fixture is synthetic"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_paired_ci",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "mean_recomputed",
+          "ok": true,
+          "detail": "expected 0.0400"
+        },
+        {
+          "name": "ci_low_recomputed",
+          "ok": true,
+          "detail": "expected 0.0137"
+        },
+        {
+          "name": "ci_high_recomputed",
+          "ok": true,
+          "detail": "expected 0.0663"
+        },
+        {
+          "name": "claim_matches_interval",
+          "ok": true,
+          "detail": "claim only if CI excludes 0"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_oran_loops",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "three_tasks",
+          "ok": true,
+          "detail": "tasks=3"
+        },
+        {
+          "name": "loops_classified",
+          "ok": true,
+          "detail": "misclassified=0"
+        },
+        {
+          "name": "covers_all_loops",
+          "ok": true,
+          "detail": "one task per loop"
+        },
+        {
+          "name": "a1_targets_near_rt_ric",
+          "ok": true,
+          "detail": "A1: non-RT RIC \u2192 near-RT RIC"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_twin_gap",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "rmse_recomputed",
+          "ok": true,
+          "detail": "expected 1.3229 dB"
+        },
+        {
+          "name": "measured_count_integer",
+          "ok": true,
+          "detail": "count of field samples"
+        },
+        {
+          "name": "status_uncalibrated",
+          "ok": true,
+          "detail": "no field data"
+        },
+        {
+          "name": "no_calibrated_claim",
+          "ok": true,
+          "detail": "twin vs sim is not calibration"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_validity",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "four_validity_kinds",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "synthetic_only",
+          "ok": true,
+          "detail": "synthetic data only"
+        },
+        {
+          "name": "no_private_iq",
+          "ok": true,
+          "detail": "no private competition IQ"
+        },
+        {
+          "name": "no_affiliation",
+          "ok": true,
+          "detail": "no affiliation claim"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_sga_research_capstone",
+      "course_id": "SEVEN_GC_APPRENTICESHIP",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "\u22656 prior labs"
+        },
+        {
+          "name": "figures_traced",
+          "ok": true,
+          "detail": "each figure has config digest + seed"
+        },
+        {
+          "name": "not_submitted",
+          "ok": true,
+          "detail": "no paper-submission claim"
+        },
+        {
+          "name": "evidence_synthetic",
+          "ok": true,
+          "detail": "capstone evidence class"
+        },
+        {
+          "name": "no_key_leak",
+          "ok": true,
+          "detail": "instructor keys stay out"
+        }
+      ],
+      "claim_boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6.",
+      "boundary": "SEVEN_GC_APPRENTICESHIP Research Bench. Synthetic simulation and cited specs only; no measured-field, paper-submission, or affiliation claims. Not student/teacher E6."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -5783,6 +6196,18 @@
     },
     {
       "lab_id": "lab_freshness_sla_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_sga_paired_ci_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_sga_twin_gap_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_sga_oran_loops_negative",
       "ok": true
     }
   ],
@@ -6392,6 +6817,46 @@
     {
       "lab_id": "lab_gpl_product_capstone",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_claim_ledger",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_repro_manifest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_ntn_delay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_leo_doppler",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_beam_topk",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_paired_ci",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_oran_loops",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_twin_gap",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_validity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_research_capstone",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -6993,6 +7458,46 @@
     },
     {
       "lab_id": "lab_gpl_product_capstone",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_claim_ledger",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_repro_manifest",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_ntn_delay",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_leo_doppler",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_beam_topk",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_paired_ci",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_oran_loops",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_twin_gap",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_validity",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_sga_research_capstone",
       "failed_as_required": true
     }
   ],

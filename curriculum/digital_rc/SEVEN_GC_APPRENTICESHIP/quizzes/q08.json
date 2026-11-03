@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "sga-w8-1",
+      "kind": "mcq",
+      "stem": "Twin vs reference errors are -1, 1, 1, 2 dB. What is the RMSE?",
+      "choices": [
+        "About 1.32 dB",
+        "0.75 dB",
+        "1.75 dB",
+        "5 dB"
+      ]
+    },
+    {
+      "id": "sga-w8-2",
+      "kind": "mcq",
+      "stem": "With zero field samples, what status must the twin carry?",
+      "choices": [
+        "CALIBRATED",
+        "UNCALIBRATED_NO_MEASUREMENTS",
+        "PARTIALLY_CALIBRATED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "id": "sga-w8-3",
+      "kind": "mcq",
+      "stem": "Why can two simulators agree and both be wrong?",
+      "choices": [
+        "Simulators never disagree",
+        "RMSE hides agreement",
+        "They can share the same incorrect assumption",
+        "Seeds force agreement"
+      ]
+    },
+    {
+      "id": "sga-w8-4",
+      "kind": "mcq",
+      "stem": "What does calibration compare the twin against?",
+      "choices": [
+        "A second simulator",
+        "The previous run",
+        "The codebook",
+        "Measurements from the real site"
+      ]
+    },
+    {
+      "id": "sga-w8-5",
+      "kind": "mcq",
+      "stem": "What is the most useful honest output of this week?",
+      "choices": [
+        "A clear list of which measurements the next cohort should collect",
+        "A calibrated flag",
+        "A lower RMSE",
+        "A press release"
+      ]
+    },
+    {
+      "id": "sga-w8-6",
+      "kind": "mcq",
+      "stem": "A 1.3 dB twin-vs-sim RMSE justifies which statement?",
+      "choices": [
+        "The twin is calibrated",
+        "The two models agree to about a decibel",
+        "The site is measured",
+        "The twin is deployed"
+      ]
+    }
+  ]
+}

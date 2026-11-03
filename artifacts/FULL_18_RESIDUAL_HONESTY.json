@@ -1,6 +1,6 @@
 {
   "schema": "waike_full_18_residual_honesty_v1",
-  "prepared_at": "2026-11-02T23:25:36Z",
+  "prepared_at": "2026-11-03T00:00:32Z",
   "floor_tip": "5a18707",
   "full_18_course_digital_rc": false,
   "HUMAN": false,
@@ -8,17 +8,25 @@
   "V1": false,
   "HUMAN_E6": false,
   "instructional_completeness_claimed": false,
-  "residuals": [
-    {
-      "id": "SEVEN_GC_APPRENTICESHIP",
-      "kind": "catalog_only_no_digital_rc_dir",
-      "invent_course_digital_rc_true": false,
-      "note": "Catalog track only - no digital_rc dir. Research overlay stays HUMAN_PENDING; do not invent a 19th course or flip full_18."
-    }
-  ],
+  "residuals": [],
   "gates": {
     "FULL_18_FALSE_HONEST": true,
     "NO_INVENTED_DIGITAL_RC_TRUE": true,
     "HUMAN_CURRICULUM_ACCEPTANCE": false
+  },
+  "full_18_missing": {
+    "catalog_ids_with_own_true_package": 14,
+    "catalog_track_ids": 18,
+    "alias_only_catalog_ids": [
+      "CYBER_SOC",
+      "DIGITAL_CONFIDENCE",
+      "IT_SUPPORT_HARDWARE",
+      "NETWORKING_INFRA"
+    ],
+    "writer_computes_full_18": false,
+    "needed": [
+      "write_course_digital_rc.py has no full_18 computation; the flag is fixed False.",
+      "Alias-only catalog IDs need either their own distinct packages or an owner policy that accepts aliases."
+    ]
   }
 }

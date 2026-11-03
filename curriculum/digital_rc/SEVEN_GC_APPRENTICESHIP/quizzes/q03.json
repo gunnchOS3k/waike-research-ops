@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "sga-w3-1",
+      "kind": "mcq",
+      "stem": "What is the nadir one-way delay to a satellite at 600 km?",
+      "choices": [
+        "About 20 ms",
+        "About 0.2 ms",
+        "About 2.0 ms",
+        "About 119 ms"
+      ]
+    },
+    {
+      "id": "sga-w3-2",
+      "kind": "mcq",
+      "stem": "Roughly how long is a one-way GEO nadir delay?",
+      "choices": [
+        "About 2 ms",
+        "About 12 ms",
+        "About 1.2 s",
+        "About 119 ms"
+      ]
+    },
+    {
+      "id": "sga-w3-3",
+      "kind": "mcq",
+      "stem": "Why must the lab state geometry = nadir?",
+      "choices": [
+        "Slant range at low elevation is longer, so nadir is a lower bound",
+        "Nadir delay is always the worst case",
+        "3GPP only defines nadir",
+        "Geometry changes the speed of light"
+      ]
+    },
+    {
+      "id": "sga-w3-4",
+      "kind": "mcq",
+      "stem": "Which terrestrial timing assumptions does NTN stretch?",
+      "choices": [
+        "Ethernet MTU size",
+        "HARQ round trips and timing advance",
+        "DNS TTL values",
+        "Battery charge cycles"
+      ]
+    },
+    {
+      "id": "sga-w3-5",
+      "kind": "mcq",
+      "stem": "Round-trip delay equals what?",
+      "choices": [
+        "The one-way delay squared",
+        "Half the one-way delay",
+        "Twice the one-way delay",
+        "One-way plus 1 ms"
+      ]
+    },
+    {
+      "id": "sga-w3-6",
+      "kind": "mcq",
+      "stem": "A student submits the 600 km delay with altitude_km = 35786. What happens?",
+      "choices": [
+        "It passes because delay is constant",
+        "It passes with a warning",
+        "The grader rounds it",
+        "The recompute fails"
+      ]
+    }
+  ]
+}

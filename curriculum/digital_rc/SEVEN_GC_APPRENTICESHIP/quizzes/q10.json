@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "sga-w10-1",
+      "kind": "mcq",
+      "stem": "What must every capstone figure carry?",
+      "choices": [
+        "Its config digest and seed",
+        "A university logo",
+        "A screenshot of the terminal",
+        "The mentor's signature only"
+      ]
+    },
+    {
+      "id": "sga-w10-2",
+      "kind": "mcq",
+      "stem": "Why is submitted_claim false in the capstone?",
+      "choices": [
+        "Papers are forbidden",
+        "Drafting a figure is not submitting a paper",
+        "The simulator cannot export",
+        "Mentors submit automatically"
+      ]
+    },
+    {
+      "id": "sga-w10-3",
+      "kind": "mcq",
+      "stem": "What do mentors rerun during review?",
+      "choices": [
+        "Every seed ever tried",
+        "The quiz",
+        "One figure from its manifest",
+        "Nothing"
+      ]
+    },
+    {
+      "id": "sga-w10-4",
+      "kind": "mcq",
+      "stem": "What evidence class does the capstone carry end to end?",
+      "choices": [
+        "MEASURED",
+        "CITED_SPEC only",
+        "PRIVATE_IQ",
+        "SYNTHETIC_SIM"
+      ]
+    },
+    {
+      "id": "sga-w10-5",
+      "kind": "mcq",
+      "stem": "Which leak does review explicitly check for?",
+      "choices": [
+        "Instructor answer keys in the learner folder",
+        "Config digests",
+        "Seeds",
+        "Figure titles"
+      ]
+    },
+    {
+      "id": "sga-w10-6",
+      "kind": "mcq",
+      "stem": "A packet survives the rerun. What is it?",
+      "choices": [
+        "A peer-reviewed paper",
+        "An apprentice-scale research artifact, not a publication",
+        "A deployment certificate",
+        "A field trial"
+      ]
+    }
+  ]
+}

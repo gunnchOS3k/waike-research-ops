@@ -1,0 +1,16 @@
+{
+  "practical_id": "SEVEN_GC_APPRENTICESHIP-practical",
+  "labs": [
+    "lab_sga_claim_ledger",
+    "lab_sga_repro_manifest",
+    "lab_sga_ntn_delay",
+    "lab_sga_leo_doppler",
+    "lab_sga_beam_topk",
+    "lab_sga_paired_ci",
+    "lab_sga_oran_loops",
+    "lab_sga_twin_gap",
+    "lab_sga_validity",
+    "lab_sga_research_capstone"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

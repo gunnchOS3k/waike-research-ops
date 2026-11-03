@@ -34,8 +34,14 @@ from waike_course_ready.batch007.packaging import (
     rubrics_007, lab_readme_007, instructor_week_notes_007, presentation_007,
     instructor_packet_007, student_packet_007, group_project_007, portfolio_007,
 )
+from waike_course_ready.batch008.packaging import (
+    SYLLABUS_ASSESSMENT_008, SYLLABUS_CLAIM_008, SYLLABUS_DURATION_008,
+    rubrics_008, lab_readme_008, instructor_week_notes_008, presentation_008,
+    instructor_packet_008, student_packet_008, group_project_008, portfolio_008,
+)
 
 SYLLABUS_ASSESSMENT = {
+    **SYLLABUS_ASSESSMENT_008,
     **SYLLABUS_ASSESSMENT_007,
     **SYLLABUS_ASSESSMENT_006,
     **SYLLABUS_ASSESSMENT_005,
@@ -68,6 +74,7 @@ SYLLABUS_ASSESSMENT = {
 }
 
 SYLLABUS_DURATION = {
+    **SYLLABUS_DURATION_008,
     **SYLLABUS_DURATION_007,
     **SYLLABUS_DURATION_006,
     **SYLLABUS_DURATION_005,
@@ -90,6 +97,7 @@ SYLLABUS_DURATION = {
 }
 
 SYLLABUS_CLAIM = {
+    **SYLLABUS_CLAIM_008,
     **SYLLABUS_CLAIM_007,
     **SYLLABUS_CLAIM_006,
     **SYLLABUS_CLAIM_005,
@@ -114,6 +122,8 @@ SYLLABUS_CLAIM = {
 
 
 def rubrics(course_id: str) -> list[dict[str, Any]]:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return rubrics_008(course_id)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return rubrics_007(course_id)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -253,6 +263,8 @@ def rubrics(course_id: str) -> list[dict[str, Any]]:
 
 
 def lab_readme(course_id: str, lab_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return lab_readme_008(course_id, lab_id)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return lab_readme_007(course_id, lab_id)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -309,6 +321,8 @@ def lab_readme(course_id: str, lab_id: str) -> str:
 
 
 def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return instructor_week_notes_008(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return instructor_week_notes_007(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -385,6 +399,8 @@ def instructor_week_notes(course_id: str, week: dict[str, Any]) -> str:
 
 
 def presentation(course_id: str, week: dict[str, Any]) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return presentation_008(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return presentation_007(course_id, week)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -428,6 +444,8 @@ def presentation(course_id: str, week: dict[str, Any]) -> str:
 
 
 def instructor_packet(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return instructor_packet_008(course_id)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return instructor_packet_007(course_id)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -468,6 +486,8 @@ def instructor_packet(course_id: str) -> str:
 
 
 def student_packet(course_id: str, hook: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return student_packet_008(course_id, hook)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return student_packet_007(course_id, hook)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -490,6 +510,8 @@ def student_packet(course_id: str, hook: str) -> str:
 
 
 def group_project(course_id: str, title: str, assignment: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return group_project_008(course_id, title, assignment)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return group_project_007(course_id, title, assignment)
     if course_id in SYLLABUS_ASSESSMENT_006:
@@ -512,6 +534,8 @@ def group_project(course_id: str, title: str, assignment: str) -> str:
 
 
 def portfolio(course_id: str) -> str:
+    if course_id in SYLLABUS_ASSESSMENT_008:
+        return portfolio_008(course_id)
     if course_id in SYLLABUS_ASSESSMENT_007:
         return portfolio_007(course_id)
     if course_id in SYLLABUS_ASSESSMENT_006:

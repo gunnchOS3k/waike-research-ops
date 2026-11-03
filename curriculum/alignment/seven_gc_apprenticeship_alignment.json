@@ -1,0 +1,63 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "track_ids": [
+    "SEVEN_GC_APPRENTICESHIP"
+  ],
+  "date_checked": "2026-11-02",
+  "benchmarks": [
+    {
+      "source_id": "3GPP_TR_38_811_NTN",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "ntn_propagation_delay",
+          "waike_weeks": [
+            3
+          ]
+        },
+        {
+          "domain": "leo_doppler",
+          "waike_weeks": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "3GPP_TR_38_901_CHANNEL",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "beam_codebook_context",
+          "waike_weeks": [
+            5
+          ]
+        },
+        {
+          "domain": "twin_calibration_context",
+          "waike_weeks": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ORAN_SPECIFICATIONS",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {
+          "domain": "ric_control_loops",
+          "waike_weeks": [
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "distinct_from": {
+    "WIRELESS_6G": "WIRELESS_6G teaches link budgets and AI-RAN policy as an operator; SEVEN_GC_APPRENTICESHIP teaches research method: claim ledgers, manifests, paired intervals, calibration honesty, validity threats.",
+    "AI_ML_EDGE": "AI_ML_EDGE owns model training/deployment; SEVEN_GC_APPRENTICESHIP evaluates claims about models without granting deployment readiness."
+  },
+  "claim_boundary": "Synthetic and cited evidence only; no private competition IQ; no affiliation claims; no paper submission; twin UNCALIBRATED_NO_MEASUREMENTS. Not student/teacher E6."
+}

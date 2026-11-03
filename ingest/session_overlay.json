@@ -286,5 +286,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "SEVEN_GC_APPRENTICESHIP-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "SEVEN_GC_APPRENTICESHIP-offline",
+      "labs": [
+        "lab_sga_claim_ledger",
+        "lab_sga_repro_manifest"
+      ],
+      "catalog_course_id": "SEVEN_GC_APPRENTICESHIP",
+      "title": "7GC AI-RAN Research Apprenticeship \u2014 Research Bench"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

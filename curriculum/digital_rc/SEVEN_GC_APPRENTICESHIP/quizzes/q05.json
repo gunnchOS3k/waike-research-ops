@@ -1,0 +1,72 @@
+{
+  "quiz_id": "SEVEN_GC_APPRENTICESHIP-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "sga-w5-1",
+      "kind": "mcq",
+      "stem": "What does top-3 accuracy measure?",
+      "choices": [
+        "Accuracy of the third-ranked beam only",
+        "Average of three seeds",
+        "Share of samples whose true beam is within the first three guesses",
+        "SNR of the top three beams"
+      ]
+    },
+    {
+      "id": "sga-w5-2",
+      "kind": "mcq",
+      "stem": "On the fixture, why is top-3 higher than top-1?",
+      "choices": [
+        "The fixture has three classes",
+        "Top-3 uses a different model",
+        "Rounding",
+        "Three samples rank the true beam second or third"
+      ]
+    },
+    {
+      "id": "sga-w5-3",
+      "kind": "mcq",
+      "stem": "Why do beam-selection models exist at all?",
+      "choices": [
+        "Exhaustive codebook sweeps cost time and overhead",
+        "Beams cannot be measured",
+        "Codebooks are secret",
+        "They replace the antenna"
+      ]
+    },
+    {
+      "id": "sga-w5-4",
+      "kind": "mcq",
+      "stem": "What does top-k accuracy fail to show?",
+      "choices": [
+        "Whether the true beam was ranked",
+        "How much SNR is lost when a non-best beam is chosen",
+        "The number of samples",
+        "The codebook size"
+      ]
+    },
+    {
+      "id": "sga-w5-5",
+      "kind": "mcq",
+      "stem": "A top-1 of 0.5 and top-3 of 0.875 suggests which deployment?",
+      "choices": [
+        "Model alone picks the beam",
+        "Exhaustive sweep is unnecessary at k=1",
+        "Model ranks, radio refines over three beams",
+        "Discard the model"
+      ]
+    },
+    {
+      "id": "sga-w5-6",
+      "kind": "mcq",
+      "stem": "Which dataset_class must the fixture carry?",
+      "choices": [
+        "MEASURED",
+        "CITED_SPEC",
+        "PRIVATE_IQ",
+        "SYNTHETIC_SIM"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "SEVEN_GC_APPRENTICESHIP",
+  "lesson_ids": [
+    "SEVEN_GC_APPRENTICESHIP-w01",
+    "SEVEN_GC_APPRENTICESHIP-w02",
+    "SEVEN_GC_APPRENTICESHIP-w03",
+    "SEVEN_GC_APPRENTICESHIP-w04",
+    "SEVEN_GC_APPRENTICESHIP-w05",
+    "SEVEN_GC_APPRENTICESHIP-w06",
+    "SEVEN_GC_APPRENTICESHIP-w07",
+    "SEVEN_GC_APPRENTICESHIP-w08",
+    "SEVEN_GC_APPRENTICESHIP-w09",
+    "SEVEN_GC_APPRENTICESHIP-w10"
+  ],
+  "labs": [
+    "lab_sga_claim_ledger",
+    "lab_sga_repro_manifest",
+    "lab_sga_ntn_delay",
+    "lab_sga_leo_doppler",
+    "lab_sga_beam_topk",
+    "lab_sga_paired_ci",
+    "lab_sga_oran_loops",
+    "lab_sga_twin_gap",
+    "lab_sga_validity",
+    "lab_sga_research_capstone"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}
