@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q09",
+  "week": 9,
+  "items": [
+    {
+      "id": "dco-w9-1",
+      "kind": "mcq",
+      "stem": "What minimum contrast does WCAG AA require for normal text?",
+      "choices": [
+        "4.5 to 1",
+        "3 to 1",
+        "7 to 1",
+        "1.5 to 1"
+      ]
+    },
+    {
+      "id": "dco-w9-2",
+      "kind": "mcq",
+      "stem": "#777777 on white measures about 4.48. Does it pass AA for normal text?",
+      "choices": [
+        "Yes",
+        "No",
+        "Only on phones",
+        "Only in print"
+      ]
+    },
+    {
+      "id": "dco-w9-3",
+      "kind": "mcq",
+      "stem": "What is the contrast of black on white?",
+      "choices": [
+        "4.5 to 1",
+        "100 to 1",
+        "21 to 1",
+        "1 to 1"
+      ]
+    },
+    {
+      "id": "dco-w9-4",
+      "kind": "mcq",
+      "stem": "Which colour channel counts most in relative luminance?",
+      "choices": [
+        "Red",
+        "Blue",
+        "All equally",
+        "Green"
+      ]
+    },
+    {
+      "id": "dco-w9-5",
+      "kind": "mcq",
+      "stem": "Why measure instead of eyeballing #767676 versus #777777?",
+      "choices": [
+        "They look alike but fall on opposite sides of 4.5",
+        "Eyes are always wrong",
+        "Measuring is faster",
+        "Only designers can see colour"
+      ]
+    },
+    {
+      "id": "dco-w9-6",
+      "kind": "mcq",
+      "stem": "What is true about contrast and accessibility?",
+      "choices": [
+        "Contrast alone makes a page accessible",
+        "Contrast is one check among many",
+        "Contrast only matters for print",
+        "It only applies to images"
+      ]
+    }
+  ]
+}

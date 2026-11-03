@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "lab_count": 170,
+  "lab_count": 180,
   "course_labs": {
     "GENERAL_IT": [
       "lab_os_users",
@@ -207,6 +207,18 @@
       "lab_soc_triage_queue",
       "lab_soc_shift_metrics",
       "lab_soc_shift_handoff"
+    ],
+    "DIGITAL_CONFIDENCE": [
+      "lab_dco_paths",
+      "lab_dco_storage_units",
+      "lab_dco_entropy",
+      "lab_dco_link_check",
+      "lab_dco_sheet_formulas",
+      "lab_dco_typing_wpm",
+      "lab_dco_attachment_fit",
+      "lab_dco_backup_321",
+      "lab_dco_contrast",
+      "lab_dco_safety_plan"
     ]
   },
   "batch_001_lab_count": 20,
@@ -217,7 +229,7 @@
   "batch_006_lab_count": 10,
   "batch_007_lab_count": 20,
   "batch_008_lab_count": 10,
-  "batch_009_lab_count": 10,
+  "batch_009_lab_count": 20,
   "results": [
     {
       "lab_id": "lab_os_users",
@@ -1579,7 +1591,7 @@
         {
           "name": "real_mpns",
           "ok": true,
-          "detail": "mpns={'SSD1306', 'nRF52840', 'AMS1117-3.3'}"
+          "detail": "mpns={'nRF52840', 'SSD1306', 'AMS1117-3.3'}"
         },
         {
           "name": "total",
@@ -1764,7 +1776,7 @@
         {
           "name": "symptoms",
           "ok": true,
-          "detail": "sym={'rail_sag_3v3', 'i2c_nack'}"
+          "detail": "sym={'i2c_nack', 'rail_sag_3v3'}"
         },
         {
           "name": "cause",
@@ -2622,7 +2634,7 @@
         {
           "name": "tiles",
           "ok": true,
-          "detail": "need {'open_count', 'freshness', 'median_by_zone'}"
+          "detail": "need {'freshness', 'median_by_zone', 'open_count'}"
         },
         {
           "name": "max",
@@ -6468,6 +6480,396 @@
       ],
       "claim_boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6.",
       "boundary": "CYBER_SOC Night Shift Desk. Synthetic logs, documentation IP ranges, and public framework IDs only; no exploit development, no live targets, no real customer data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_paths",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "two_tasks",
+          "ok": true,
+          "detail": "tasks=2"
+        },
+        {
+          "name": "paths_resolved",
+          "ok": true,
+          "detail": "wrong=0"
+        },
+        {
+          "name": "uses_parent_step",
+          "ok": true,
+          "detail": "at least one path climbs with .."
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_storage_units",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_positive",
+          "ok": true,
+          "detail": "drive, count, size, free > 0"
+        },
+        {
+          "name": "shown_gib_recomputed",
+          "ok": true,
+          "detail": "465.66 GiB"
+        },
+        {
+          "name": "photos_gib_recomputed",
+          "ok": true,
+          "detail": "4.694 GiB"
+        },
+        {
+          "name": "fit_decision",
+          "ok": true,
+          "detail": "fits=False"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_entropy",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "three_schemes",
+          "ok": true,
+          "detail": "schemes=3"
+        },
+        {
+          "name": "bits_recomputed",
+          "ok": true,
+          "detail": "wrong=0"
+        },
+        {
+          "name": "strongest_named",
+          "ok": true,
+          "detail": "expected twelve lowercase letters"
+        },
+        {
+          "name": "no_reuse",
+          "ok": true,
+          "detail": "one secret per site"
+        },
+        {
+          "name": "no_forced_rotation",
+          "ok": true,
+          "detail": "NIST SP 800-63B: change on evidence of compromise, not on a calendar"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_link_check",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "hostname_read",
+          "ok": true,
+          "detail": "account.harborbank.example.verify-login.example.net"
+        },
+        {
+          "name": "registered_domain_read",
+          "ok": true,
+          "detail": "read right to left: example.net"
+        },
+        {
+          "name": "safety_call",
+          "ok": true,
+          "detail": "safe=False"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_sheet_formulas",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "four_rows",
+          "ok": true,
+          "detail": "rows=5"
+        },
+        {
+          "name": "sum_recomputed",
+          "ok": true,
+          "detail": "SUM=1100.0"
+        },
+        {
+          "name": "average_recomputed",
+          "ok": true,
+          "detail": "AVERAGE"
+        },
+        {
+          "name": "largest_item",
+          "ok": true,
+          "detail": "MAX row"
+        },
+        {
+          "name": "share_recomputed",
+          "ok": true,
+          "detail": "row / SUM \u00d7 100"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_typing_wpm",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "chars > 0, minutes > 0, 0 \u2264 errors \u2264 chars"
+        },
+        {
+          "name": "gross_wpm_recomputed",
+          "ok": true,
+          "detail": "50.00"
+        },
+        {
+          "name": "net_wpm_recomputed",
+          "ok": true,
+          "detail": "47.00"
+        },
+        {
+          "name": "accuracy_pct_recomputed",
+          "ok": true,
+          "detail": "98.80"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_attachment_fit",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "inputs_valid",
+          "ok": true,
+          "detail": "integer byte counts"
+        },
+        {
+          "name": "encoded_size_recomputed",
+          "ok": true,
+          "detail": "4\u00b7ceil(n/3) = 25333336"
+        },
+        {
+          "name": "fit_decision",
+          "ok": true,
+          "detail": "fits=False"
+        },
+        {
+          "name": "plan_matches",
+          "ok": true,
+          "detail": "share a link when it will not fit"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_backup_321",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "three_copies_recomputed",
+          "ok": true,
+          "detail": "three_copies=True"
+        },
+        {
+          "name": "two_media_recomputed",
+          "ok": true,
+          "detail": "two_media=True"
+        },
+        {
+          "name": "one_offsite_recomputed",
+          "ok": true,
+          "detail": "one_offsite=True"
+        },
+        {
+          "name": "plan_verdict",
+          "ok": true,
+          "detail": "3-2-1 and a tested restore"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_contrast",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "two_pairs",
+          "ok": true,
+          "detail": "pairs=2"
+        },
+        {
+          "name": "ratios_recomputed",
+          "ok": true,
+          "detail": "wrong=0"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
+    },
+    {
+      "lab_id": "lab_dco_safety_plan",
+      "course_id": "DIGITAL_CONFIDENCE",
+      "ok": true,
+      "checks": [
+        {
+          "name": "student_artifact",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "name": "required_keys",
+          "ok": true,
+          "detail": "missing=[]"
+        },
+        {
+          "name": "labs_passed",
+          "ok": true,
+          "detail": "\u22656 prior labs"
+        },
+        {
+          "name": "password_manager",
+          "ok": true,
+          "detail": "unique secrets need a manager"
+        },
+        {
+          "name": "mfa_on_email",
+          "ok": true,
+          "detail": "email resets everything else"
+        },
+        {
+          "name": "backup_321",
+          "ok": true,
+          "detail": "3-2-1 + restore test"
+        },
+        {
+          "name": "phish_contact",
+          "ok": true,
+          "detail": "who to tell"
+        },
+        {
+          "name": "no_real_passwords",
+          "ok": true,
+          "detail": "plan never holds secrets"
+        }
+      ],
+      "claim_boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6.",
+      "boundary": "DIGITAL_CONFIDENCE Library Lab. Practice files, made-up budgets, and example.* links only; never real passwords or personal data. Not student/teacher E6."
     }
   ],
   "negatives_must_fail_and_did": [
@@ -6573,6 +6975,18 @@
     },
     {
       "lab_id": "lab_soc_detection_metrics_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_dco_safety_plan_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_dco_link_check_negative",
+      "ok": true
+    },
+    {
+      "lab_id": "lab_dco_backup_321_negative",
       "ok": true
     }
   ],
@@ -7262,6 +7676,46 @@
     {
       "lab_id": "lab_soc_shift_handoff",
       "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_paths",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_storage_units",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_entropy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_link_check",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_sheet_formulas",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_typing_wpm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_attachment_fit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_backup_321",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_contrast",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_safety_plan",
+      "failed_as_required": true
     }
   ],
   "wrong_rows": [
@@ -7943,6 +8397,46 @@
     },
     {
       "lab_id": "lab_soc_shift_handoff",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_paths",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_storage_units",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_entropy",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_link_check",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_sheet_formulas",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_typing_wpm",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_attachment_fit",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_backup_321",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_contrast",
+      "failed_as_required": true
+    },
+    {
+      "lab_id": "lab_dco_safety_plan",
       "failed_as_required": true
     }
   ],

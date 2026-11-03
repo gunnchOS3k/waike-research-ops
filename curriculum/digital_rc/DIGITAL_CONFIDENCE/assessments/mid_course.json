@@ -1,0 +1,225 @@
+{
+  "assessment_id": "DIGITAL_CONFIDENCE-mid",
+  "items": [
+    {
+      "id": "dco-mid-01",
+      "kind": "mcq",
+      "stem": "You are in /home/ben/Music and type ../../ana/Pictures. Where are you?",
+      "choices": [
+        "/home/ben/ana/Pictures",
+        "/home/ana/Pictures",
+        "/ana/Pictures",
+        "/home/ben/Music/ana/Pictures"
+      ]
+    },
+    {
+      "id": "dco-mid-02",
+      "kind": "mcq",
+      "stem": "A path starts with a slash. What kind of path is it on macOS?",
+      "choices": [
+        "Relative",
+        "Hidden",
+        "Absolute",
+        "Broken"
+      ]
+    },
+    {
+      "id": "dco-mid-03",
+      "kind": "mcq",
+      "stem": "Which name helps you find a budget file next spring?",
+      "choices": [
+        "Untitled(3).xlsx",
+        "asdf.xlsx",
+        "final-final.xlsx",
+        "budget-2026-11.xlsx"
+      ]
+    },
+    {
+      "id": "dco-mid-04",
+      "kind": "mcq",
+      "stem": "A 1 TB drive shows roughly how many GiB?",
+      "choices": [
+        "About 931",
+        "About 1,000",
+        "About 1,024",
+        "About 512"
+      ]
+    },
+    {
+      "id": "dco-mid-05",
+      "kind": "mcq",
+      "stem": "Your phone says a video is 800 MB and the USB stick has 0.7 GiB free. Will it fit?",
+      "choices": [
+        "Yes, easily",
+        "No; 800 MB is about 0.745 GiB",
+        "Only if renamed",
+        "Only on Windows"
+      ]
+    },
+    {
+      "id": "dco-mid-06",
+      "kind": "mcq",
+      "stem": "Which unit do drive boxes usually use?",
+      "choices": [
+        "Binary gibibytes",
+        "Kilobits",
+        "Decimal gigabytes",
+        "Megapixels"
+      ]
+    },
+    {
+      "id": "dco-mid-07",
+      "kind": "mcq",
+      "stem": "A website forces a new password every 30 days. What does NIST SP 800-63B suggest instead?",
+      "choices": [
+        "Change daily",
+        "Never use passwords",
+        "Reuse old ones",
+        "Change on evidence of compromise"
+      ]
+    },
+    {
+      "id": "dco-mid-08",
+      "kind": "mcq",
+      "stem": "Which choice gives the most bits?",
+      "choices": [
+        "Six random diceware words",
+        "Ten random digits",
+        "Your pet's name plus 1",
+        "Eight random lowercase letters"
+      ]
+    },
+    {
+      "id": "dco-mid-09",
+      "kind": "mcq",
+      "stem": "A friend uses one strong password everywhere. What is the risk?",
+      "choices": [
+        "None, it is strong",
+        "One breached site exposes all accounts",
+        "It slows the computer",
+        "It expires faster"
+      ]
+    },
+    {
+      "id": "dco-mid-10",
+      "kind": "mcq",
+      "stem": "Which link actually belongs to harborbank.example?",
+      "choices": [
+        "https://harborbank.example.verify.example.net",
+        "https://harborbank-example.net",
+        "https://login.harborbank.example/start",
+        "https://example.net/harborbank.example"
+      ]
+    },
+    {
+      "id": "dco-mid-11",
+      "kind": "mcq",
+      "stem": "A text says 'your parcel is held, pay 2 dollars' with a link. Safest move?",
+      "choices": [
+        "Pay quickly",
+        "Reply STOP with your card",
+        "Forward to everyone",
+        "Check the courier's own site or app directly"
+      ]
+    },
+    {
+      "id": "dco-mid-12",
+      "kind": "mcq",
+      "stem": "A shortened link hides its address. What can you do before opening?",
+      "choices": [
+        "Use a preview feature or ask the desk",
+        "Open it on a work computer",
+        "Assume it is fine",
+        "Enter your password to check"
+      ]
+    },
+    {
+      "id": "dco-mid-13",
+      "kind": "mcq",
+      "stem": "=SUM(B2:B4) returns 300. You change B3 from 100 to 150. What does the cell show now?",
+      "choices": [
+        "300",
+        "350",
+        "450",
+        "150"
+      ]
+    },
+    {
+      "id": "dco-mid-14",
+      "kind": "mcq",
+      "stem": "Which formula gives B2 as a share of total B7?",
+      "choices": [
+        "=B7/B2",
+        "=B2+B7",
+        "=B2/B7",
+        "=SUM(B2)"
+      ]
+    },
+    {
+      "id": "dco-mid-15",
+      "kind": "mcq",
+      "stem": "Your typed total disagrees with the rows. Which number do you trust?",
+      "choices": [
+        "The typed total",
+        "Neither",
+        "The larger one",
+        "The formula over the rows"
+      ]
+    },
+    {
+      "id": "dco-mid-16",
+      "kind": "mcq",
+      "stem": "You type 900 characters in 3 minutes with 6 errors. Net WPM?",
+      "choices": [
+        "58",
+        "60",
+        "54",
+        "300"
+      ]
+    },
+    {
+      "id": "dco-mid-17",
+      "kind": "mcq",
+      "stem": "Why is a 'word' fixed at five characters in typing tests?",
+      "choices": [
+        "Because English words are five letters",
+        "So long and short words count fairly",
+        "To make scores higher",
+        "It is a typo"
+      ]
+    },
+    {
+      "id": "dco-mid-18",
+      "kind": "mcq",
+      "stem": "A 12,000,000-byte file encodes to how many base64 bytes?",
+      "choices": [
+        "12,000,000",
+        "24,000,000",
+        "16,000,000",
+        "13,000,000"
+      ]
+    },
+    {
+      "id": "dco-mid-19",
+      "kind": "mcq",
+      "stem": "Your plan has the laptop and a cloud folder only. Which 3-2-1 rule fails?",
+      "choices": [
+        "Two media",
+        "One offsite",
+        "None",
+        "Three copies"
+      ]
+    },
+    {
+      "id": "dco-mid-20",
+      "kind": "mcq",
+      "stem": "#595959 on white is about 7:1. What does it pass?",
+      "choices": [
+        "AA for normal and large text",
+        "Nothing",
+        "Only large text",
+        "Only print"
+      ]
+    }
+  ]
+}

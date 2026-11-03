@@ -964,6 +964,69 @@
       "why_selected": "Email-authentication week of CYBER_SOC.",
       "date_checked": "2026-11-03",
       "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "NIST_SP_800_63B_4_AUTH",
+      "institution": "NIST",
+      "course_or_cert": "SP 800-63B-4 Digital Identity Guidelines: Authentication and Authenticator Management",
+      "current_version": "SP 800-63-4 suite (public HTML edition)",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "password_length_over_complexity",
+        "no_forced_periodic_rotation",
+        "blocklist_checks"
+      ],
+      "assessment_patterns": [
+        "entropy_recompute"
+      ],
+      "license": "US government work; cited, not reproduced",
+      "attribution": "NIST SP 800-63B-4 memorized-secret guidance, checked 2026-11-03.",
+      "why_selected": "Passphrase week of DIGITAL_CONFIDENCE; the lab recomputes bits from pool and length.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "W3C_WCAG_2_2",
+      "institution": "W3C",
+      "course_or_cert": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "current_version": "W3C Recommendation",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "source_type": "standards_document",
+      "topic_domains": [
+        "contrast_minimum_1_4_3",
+        "relative_luminance"
+      ],
+      "assessment_patterns": [
+        "contrast_ratio_recompute"
+      ],
+      "license": "W3C document license; success criterion cited by number",
+      "attribution": "WCAG 2.2 SC 1.4.3 contrast thresholds and relative-luminance definition, checked 2026-11-03.",
+      "why_selected": "Readable-screens week of DIGITAL_CONFIDENCE.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
+    },
+    {
+      "source_id": "CISA_SECURE_OUR_WORLD",
+      "institution": "CISA",
+      "course_or_cert": "Secure Our World (public awareness programme)",
+      "current_version": "Public site checked 2026-11-03",
+      "url": "https://www.cisa.gov/secure-our-world",
+      "source_type": "public_guidance",
+      "topic_domains": [
+        "recognize_phishing",
+        "mfa",
+        "password_managers",
+        "software_updates"
+      ],
+      "assessment_patterns": [
+        "safety_plan_checklist"
+      ],
+      "license": "US government public guidance; themes cited",
+      "attribution": "CISA Secure Our World four core behaviours, checked 2026-11-03.",
+      "why_selected": "Link-reading and personal safety-plan weeks of DIGITAL_CONFIDENCE; not a certificate.",
+      "date_checked": "2026-11-03",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY"
     }
   ]
 }

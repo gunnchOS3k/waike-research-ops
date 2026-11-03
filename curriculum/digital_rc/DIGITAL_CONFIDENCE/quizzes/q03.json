@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q03",
+  "week": 3,
+  "items": [
+    {
+      "id": "dco-w3-1",
+      "kind": "mcq",
+      "stem": "How are password bits computed for random choices?",
+      "choices": [
+        "Length \u00d7 log2(pool size)",
+        "Pool size + length",
+        "Number of symbols \u00d7 10",
+        "Length squared"
+      ]
+    },
+    {
+      "id": "dco-w3-2",
+      "kind": "mcq",
+      "stem": "Which is strongest among the three examples?",
+      "choices": [
+        "Four diceware words",
+        "Twelve random lowercase letters",
+        "Eight random printable characters",
+        "P@ssw0rd!"
+      ]
+    },
+    {
+      "id": "dco-w3-3",
+      "kind": "mcq",
+      "stem": "Why is P@ssw0rd! weak despite symbols?",
+      "choices": [
+        "It is too long",
+        "Symbols are illegal",
+        "Guessers try dictionary words with common swaps first",
+        "It has no spaces"
+      ]
+    },
+    {
+      "id": "dco-w3-4",
+      "kind": "mcq",
+      "stem": "What does NIST SP 800-63B say about forced periodic changes?",
+      "choices": [
+        "Change every week",
+        "Never change passwords",
+        "Change on birthdays",
+        "Change on evidence of compromise, not a fixed calendar"
+      ]
+    },
+    {
+      "id": "dco-w3-5",
+      "kind": "mcq",
+      "stem": "Why use a password manager?",
+      "choices": [
+        "It lets you keep a different secret on every site",
+        "It makes passwords shorter",
+        "It shares passwords with friends",
+        "It removes the need for any password"
+      ]
+    },
+    {
+      "id": "dco-w3-6",
+      "kind": "mcq",
+      "stem": "Adding one random word to a four-word diceware phrase adds about how many bits?",
+      "choices": [
+        "About 1",
+        "About 12.9",
+        "About 51.7",
+        "Exactly 100"
+      ]
+    }
+  ]
+}

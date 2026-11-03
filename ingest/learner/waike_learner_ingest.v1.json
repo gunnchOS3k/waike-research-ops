@@ -1,13 +1,12 @@
 {
   "schema": "waike.learner_ingest.v1",
   "role": "learner",
-  "generated_utc": "2026-11-03T02:59:31Z",
+  "generated_utc": "2026-11-03T03:01:00Z",
   "courses": [
     {
       "course_id": "GENERAL_IT",
       "title": "General IT \u2014 Operator to Support Specialist",
       "track_ids": [
-        "DIGITAL_CONFIDENCE",
         "IT_SUPPORT_HARDWARE"
       ],
       "academy_id": "ACADEMY_IT",
@@ -24263,6 +24262,1355 @@
           "labs": [
             "lab_soc_log_parse",
             "lab_soc_window_rule"
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator \u2014 Library Lab",
+      "track_ids": [
+        "DIGITAL_CONFIDENCE"
+      ],
+      "academy_id": "ACADEMY_IT",
+      "kinesthetic_hook": "Ten Library Lab help-desk cards: find the file \u2192 read the drive label \u2192 judge a password \u2192 read a link \u2192 build a budget sheet \u2192 measure typing \u2192 fit an attachment \u2192 plan backups \u2192 check screen contrast \u2192 write a safety plan.",
+      "lesson_excerpt": "Help card DCO-3101: Ana saved a summer photo and the file dialog now says 'not found'. Every file has an address called a path, written from the top of the drive down through folders, like /home/ana/Documents/photos/summer.jpg. That full form is an absolute path because it starts",
+      "worked_example": "cwd /home/ana/Documents/letters + ../photos/2026/../summer.jpg \u2192 /home/ana/Documents/photos/summer.jpg",
+      "assignment": "Submit lab_dco_paths JSON for DCO-3101: two tasks with cwd, relative path, and resolved absolute path.",
+      "lab_hint": "lab_dco_paths",
+      "syllabus": {
+        "weeks": 10,
+        "hook": "DIGITAL_CONFIDENCE COURSE_DIGITAL_RC: first-computer confidence for adult and teen learners at a library lab \u2014 paths and folders, storage units, password strength, link reading, spreadsheet formulas, keyboard fluency, attachments, 3-2-1 backups, and readable screens. Practice data only. Distinct from GENERAL_IT, which trains support specialists. Not student/teacher E6."
+      },
+      "weeks": [
+        {
+          "week": 1,
+          "title": "Folders and paths \u2014 knowing where a file really lives",
+          "lesson_id": "DIGITAL_CONFIDENCE-w01",
+          "body_md": "Help card DCO-3101: Ana saved a summer photo and the file dialog now says 'not found'. Every file has an address called a path, written from the top of the drive down through folders, like /home/ana/Documents/photos/summer.jpg. That full form is an absolute path because it starts at the root, the single slash. Programs also accept relative paths that start from wherever you are standing, called the current working directory. Two dots mean the folder above, and a single dot means here. Standing in /home/ana/Documents/letters, the relative path ../photos/2026/../summer.jpg climbs out of letters into Documents, steps into photos and into 2026, then climbs back out of 2026, landing on /home/ana/Documents/photos/summer.jpg. Walk it with your finger on a drawn tree before trusting it. Windows writes C:\\Users\\Ana\\Documents with backslashes and a drive letter, but the idea of climbing and descending is the same. When a file goes missing, ask two questions out loud: where am I standing, and which way does the path walk from here.",
+          "worked_example": "cwd /home/ana/Documents/letters + ../photos/2026/../summer.jpg \u2192 /home/ana/Documents/photos/summer.jpg"
+        },
+        {
+          "week": 2,
+          "title": "Storage units \u2014 why a 500 GB drive shows 465 GiB",
+          "lesson_id": "DIGITAL_CONFIDENCE-w02",
+          "body_md": "DCO-3202 is a NO_AI week; work the division on paper. A patron bought a '500 GB' drive and thinks the store cheated her because the computer shows about 465 GB. Nobody cheated. Drive makers count in powers of ten, so a gigabyte is 1,000,000,000 bytes. Many operating systems count in powers of two, where a gibibyte, GiB, is 1,073,741,824 bytes, and then label the result GB anyway. Divide 500,000,000,000 by 1,073,741,824 and you get about 465.66, the same drive described in a bigger unit. The same confusion bites when deciding whether something will fit. Her phone holds 1,200 photos at about 4.2 MB each, where MB means a million bytes, so the folder is 5.04 billion bytes. In the binary unit that is about 4.69 GiB, and the laptop says 4.5 GiB free. It will not fit, even though '5 GB into 4.5' felt close. Write the unit beside every number, convert both sides to the same unit before comparing, and leave room to spare, because a completely full disk makes most computers slow and unstable.",
+          "worked_example": "500 GB = 500\u00d710^9 B = 465.66 GiB; 1,200 photos \u00d7 4.2 MB = 5.04\u00d710^9 B = 4.694 GiB > 4.5 GiB free \u2192 does not fit"
+        },
+        {
+          "week": 3,
+          "title": "Passwords and passphrases \u2014 strength is length times choice",
+          "lesson_id": "DIGITAL_CONFIDENCE-w03",
+          "body_md": "DCO-3303 starts with a sticky note that says P@ssw0rd! and a question: is this strong? Strength depends on how the password was chosen, not on how it looks. If every character is picked at random from a pool, the number of possibilities is the pool size raised to the length, and we measure it in bits: length times log2 of the pool. Four words drawn at random from a 7,776-word dice list give about 51.7 bits. Eight characters drawn at random from the 95 printable keyboard symbols give about 52.6 bits. Twelve random lowercase letters give about 56.4 bits, stronger than either, because length grows strength faster than adding symbols. P@ssw0rd! scores far lower than its nine characters suggest, because guessing tools try dictionary words with common swaps first. The NIST digital identity guidance, SP 800-63B, favours long memorable secrets, checking them against lists of known-breached passwords, and changing them when there is evidence of compromise rather than on a fixed calendar. Use a different secret on every site, and let a password manager remember them.",
+          "worked_example": "4 diceware words: 4\u00d7log2(7776) = 51.70 bits; 8 random printable: 8\u00d7log2(95) = 52.56; 12 random lowercase: 12\u00d7log2(26) = 56.41"
+        },
+        {
+          "week": 4,
+          "title": "Reading a link \u2014 the real address is at the right end",
+          "lesson_id": "DIGITAL_CONFIDENCE-w04",
+          "body_md": "DCO-3404 is a text message that says a bank account is locked and offers a link. Before tapping, read the address the way a computer does. Skip the https:// and stop at the first single slash after it; what sits between is the hostname. Read the hostname from the right end, label by label, because the rightmost labels say who owns it. In https://account.harborbank.example.verify-login.example.net/session the hostname is account.harborbank.example.verify-login.example.net, and its last two labels are example.net. The bank's name near the left is just decoration chosen by whoever owns example.net, which is not the bank. So the call is: do not open. Real organisations rarely ask you to log in from a message; type the bank's address yourself or use its app. Some country endings use three labels, such as .co.uk, so the rule 'last two labels' is a starting point, and the course's examples use the reserved .example endings so nobody is sent anywhere real. When unsure, show the message to the library desk rather than replying.",
+          "worked_example": "https://account.harborbank.example.verify-login.example.net/session \u2192 hostname ends in example.net \u2192 not harborbank.example \u2192 do not open"
+        },
+        {
+          "week": 5,
+          "title": "Spreadsheet formulas \u2014 let the sheet do the arithmetic",
+          "lesson_id": "DIGITAL_CONFIDENCE-w05",
+          "body_md": "DCO-3505 is a monthly budget written on the back of an envelope that never adds up the same way twice. Move it into a spreadsheet: labels in column A, amounts in column B, one row per item. Rent is 650, food 240, the bus pass 55, the phone 35, and savings 120. Instead of typing the total, write =SUM(B2:B6) and the sheet answers 1,100, then keeps answering correctly when the phone bill changes. =AVERAGE(B2:B6) gives 220, the typical line, and =MAX(B2:B6) finds the largest amount, which belongs to rent. To see how much of the month food takes, divide its cell by the total cell, =B3/B7, and format the result as a percentage: about 21.82 percent. The habit worth keeping is that numbers you typed live in one place and every other number is a formula pointing at them. A total typed by hand goes stale the first time anything changes, and that is how budgets quietly stop matching reality. Save the file somewhere you will find it, with a name that says what and when.",
+          "worked_example": "rent 650, food 240, bus pass 55, phone 35, savings 120 \u2192 =SUM 1100, =AVERAGE 220, =MAX rent, food share =240/1100 = 21.82%"
+        },
+        {
+          "week": 6,
+          "title": "Keyboard fluency \u2014 gross speed, net speed, accuracy",
+          "lesson_id": "DIGITAL_CONFIDENCE-w06",
+          "body_md": "DCO-3606 is a NO_AI week because it measures your own hands. Job applications and online forms reward people who can type steadily, so the library runs a five-minute practice passage. Typing speed is counted in words per minute, where a 'word' is defined as five characters, spaces included, so long and short words count fairly. Typing 1,250 characters in five minutes is 250 'words' over five minutes, a gross speed of 50 WPM. Mistakes left uncorrected are subtracted per minute: fifteen errors over five minutes costs three, so net speed is 47 WPM. Accuracy compares correct characters with all characters, 1,235 out of 1,250, or 98.8 percent. Most learners improve fastest by slowing down until accuracy stays near ninety-eight percent, then letting speed return, because unlearning a mistyped pattern takes longer than learning it right. Sit square to the keyboard, keep wrists level, and rest the index fingers on the small bumps on F and J. Record the three numbers each week rather than chasing a single best run.",
+          "worked_example": "1,250 characters in 5 minutes with 15 uncorrected errors \u2192 gross 50 WPM, net 47 WPM, accuracy 98.8%"
+        },
+        {
+          "week": 7,
+          "title": "Attachments \u2014 why a 19 MB file will not fit under 25 MB",
+          "lesson_id": "DIGITAL_CONFIDENCE-w07",
+          "body_md": "DCO-3707: a patron's resume portfolio is 19 MB, the mail service says attachments up to 25 MB, and sending still fails. Email was designed to carry text, so attachments are converted into text with an encoding called base64 before they travel. Base64 turns every three bytes into four characters, so the encoded file is about a third larger: four times the byte count divided by three, rounded up to a whole group. Nineteen million bytes become 25,333,336 bytes, just over the 25,000,000-byte limit, which is why the message bounces even though the file looked small enough. An 18 MB file would encode to 24,000,000 bytes and squeak through. When something will not fit, do not split it into a dozen emails or squeeze the quality until the pictures blur. Upload it to a storage service, share a link with view-only permission, and mention in the message what the link is and how long it will stay up. Never attach other people's personal documents to practice messages; the lab uses only made-up byte counts.",
+          "worked_example": "19,000,000 B \u2192 base64 4\u00b7ceil(19,000,000/3) = 25,333,336 B > 25,000,000 limit \u2192 share a link"
+        },
+        {
+          "week": 8,
+          "title": "Backups \u2014 three copies, two kinds of storage, one away from home",
+          "lesson_id": "DIGITAL_CONFIDENCE-w08",
+          "body_md": "DCO-3808 begins with tears: a laptop died and took two years of family photos with it. A simple rule, called 3-2-1, prevents most of these stories. Keep three copies of anything you would miss, the original plus two backups. Store them on at least two different kinds of storage, so one failure type, such as a batch of bad drives, cannot take everything. Keep one copy somewhere else, away from the house, so a fire, flood, or theft leaves something behind. The library's example plan has the photos on the laptop's SSD, a copy on a USB hard drive at home, and a copy in a cloud folder; that is three copies, three kinds of storage, and one offsite. There is a fourth rule people forget: a backup you have never restored is a hope, not a plan. Once a month, pick a random file and open it from each backup. Two copies on the same USB stick are one copy with extra steps, and a sync folder that mirrors deletions instantly is convenient but is not a backup on its own.",
+          "worked_example": "laptop SSD + home USB HDD + cloud folder (offsite) \u2192 3 copies, 3 media, 1 offsite; restore tested \u2192 plan_ok"
+        },
+        {
+          "week": 9,
+          "title": "Readable screens \u2014 measuring colour contrast",
+          "lesson_id": "DIGITAL_CONFIDENCE-w09",
+          "body_md": "DCO-3909: the library's new event flyer uses pale grey text, and a patron with low vision cannot read it. Readability can be measured. The W3C's Web Content Accessibility Guidelines, WCAG 2.2, define a contrast ratio between text and background colours. Each colour's red, green, and blue values are converted to a relative luminance, a weighted brightness in which green counts most and blue least, and the ratio is the lighter luminance plus 0.05 divided by the darker luminance plus 0.05. Black on white is 21 to 1; identical colours are 1 to 1. Normal-size text needs at least 4.5 to 1 for level AA, and large text needs 3 to 1. The grey #767676 on white measures about 4.54 and just passes. One step lighter, #777777, measures about 4.48 and fails for normal text, even though most eyes cannot tell the two apart, which is exactly why you measure rather than guess. Use a contrast checker before printing or posting, and remember contrast is one accessibility check among many, not the whole job.",
+          "worked_example": "#767676 on #ffffff \u2192 4.54:1 passes AA normal text; #777777 on #ffffff \u2192 4.48:1 fails AA normal, passes AA large"
+        },
+        {
+          "week": 10,
+          "title": "Personal digital safety plan \u2014 the page you keep",
+          "lesson_id": "DIGITAL_CONFIDENCE-w10",
+          "body_md": "DCO-3A10 asks each learner to leave the Library Lab with one page they will actually use. It names a password manager, because unique secrets for every site are impossible to remember otherwise. It turns on multi-factor sign-in for the email account first, since email is where every other password reset arrives, so whoever controls it controls the rest. It lists the backup copies by media and location, passes the 3-2-1 rule, and records the date of the last test restore. It names a real person or desk to show strange messages to, such as the library's IT desk, so nobody has to judge a convincing scam alone at midnight. It records which colours and font sizes work for the reader's eyes. It never contains an actual password, PIN, or recovery code; those belong in the manager or on paper locked away, not on a page that might be photographed. Mentors check the plan against six or more passed labs and ask the learner to show one step live, such as opening a file from the cloud backup.",
+          "worked_example": "password manager yes; MFA on email yes; laptop/USB/cloud backups with tested restore; report phishing to the library IT desk; no real passwords in the plan"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "a01",
+          "prompt": "Submit lab_dco_paths JSON for DCO-3101: two tasks with cwd, relative path, and resolved absolute path."
+        },
+        {
+          "id": "a02",
+          "prompt": "Submit lab_dco_storage_units JSON for DCO-3202 (NO_AI): drive and photo sizes in GiB and the fit decision."
+        },
+        {
+          "id": "a03",
+          "prompt": "Submit lab_dco_entropy JSON for DCO-3303: three schemes with pool, length, bits, the strongest, and the two policy flags."
+        },
+        {
+          "id": "a04",
+          "prompt": "Submit lab_dco_link_check JSON for DCO-3404: hostname, registered domain, and the safe_to_open decision."
+        },
+        {
+          "id": "a05",
+          "prompt": "Submit lab_dco_sheet_formulas JSON for DCO-3505: rows, total, average, largest item, and one share percentage."
+        },
+        {
+          "id": "a06",
+          "prompt": "Submit lab_dco_typing_wpm JSON for DCO-3606 (NO_AI): chars, minutes, errors, gross_wpm, net_wpm, accuracy_pct."
+        },
+        {
+          "id": "a07",
+          "prompt": "Submit lab_dco_attachment_fit JSON for DCO-3707: file and limit bytes, encoded size, fits, and plan."
+        },
+        {
+          "id": "a08",
+          "prompt": "Submit lab_dco_backup_321 JSON for DCO-3808: copies with media and offsite flags, each rule, restore_tested, plan_ok."
+        },
+        {
+          "id": "a09",
+          "prompt": "Submit lab_dco_contrast JSON for DCO-3909: two colour pairs with ratio, aa_normal, and aa_large."
+        },
+        {
+          "id": "a10",
+          "prompt": "Submit lab_dco_safety_plan JSON for DCO-3A10: labs_passed, manager, MFA, backup copies, restore test, phishing contact, no real passwords."
+        }
+      ],
+      "labs": [
+        "lab_dco_paths",
+        "lab_dco_storage_units",
+        "lab_dco_entropy",
+        "lab_dco_link_check",
+        "lab_dco_sheet_formulas",
+        "lab_dco_typing_wpm",
+        "lab_dco_attachment_fit",
+        "lab_dco_backup_321",
+        "lab_dco_contrast",
+        "lab_dco_safety_plan"
+      ],
+      "quizzes": [
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q01",
+          "week": 1,
+          "items": [
+            {
+              "id": "dco-w1-1",
+              "kind": "mcq",
+              "stem": "What does '..' mean in a path?",
+              "choices": [
+                "The folder above the current one",
+                "The current folder",
+                "The home folder",
+                "A hidden file"
+              ]
+            },
+            {
+              "id": "dco-w1-2",
+              "kind": "mcq",
+              "stem": "Which path is absolute on Linux or macOS?",
+              "choices": [
+                "Documents/letters",
+                "/home/ana/Documents",
+                "../photos",
+                "./form.pdf"
+              ]
+            },
+            {
+              "id": "dco-w1-3",
+              "kind": "mcq",
+              "stem": "From /home/ana, where does ./Downloads/form.pdf point?",
+              "choices": [
+                "/Downloads/form.pdf",
+                "/home/Downloads/form.pdf",
+                "/home/ana/Downloads/form.pdf",
+                "/home/ana/form.pdf"
+              ]
+            },
+            {
+              "id": "dco-w1-4",
+              "kind": "mcq",
+              "stem": "Standing in /home/ana/Documents/letters, where does ../photos lead?",
+              "choices": [
+                "/home/ana/photos",
+                "/photos",
+                "/home/ana/Documents/letters/photos",
+                "/home/ana/Documents/photos"
+              ]
+            },
+            {
+              "id": "dco-w1-5",
+              "kind": "mcq",
+              "stem": "What should you ask first when a file 'disappears'?",
+              "choices": [
+                "Where am I standing, and which way does the path walk?",
+                "Is the computer broken?",
+                "Should I reinstall?",
+                "Who deleted it?"
+              ]
+            },
+            {
+              "id": "dco-w1-6",
+              "kind": "mcq",
+              "stem": "How does Windows usually separate folders in a path?",
+              "choices": [
+                "With commas",
+                "With backslashes after a drive letter",
+                "With spaces",
+                "With dots only"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q02",
+          "week": 2,
+          "items": [
+            {
+              "id": "dco-w2-1",
+              "kind": "mcq",
+              "stem": "How many bytes are in a decimal gigabyte?",
+              "choices": [
+                "1,073,741,824",
+                "1,024,000",
+                "1,000,000,000",
+                "8,000,000,000"
+              ]
+            },
+            {
+              "id": "dco-w2-2",
+              "kind": "mcq",
+              "stem": "About how many GiB is a 500 GB drive?",
+              "choices": [
+                "500",
+                "512",
+                "476.8",
+                "465.66"
+              ]
+            },
+            {
+              "id": "dco-w2-3",
+              "kind": "mcq",
+              "stem": "Why did the store not cheat the patron?",
+              "choices": [
+                "The same bytes are counted in a larger unit",
+                "Drives shrink with age",
+                "The operating system steals space",
+                "Labels are always wrong"
+              ]
+            },
+            {
+              "id": "dco-w2-4",
+              "kind": "mcq",
+              "stem": "Twelve hundred photos at 4.2 MB each total about how many GiB?",
+              "choices": [
+                "5.04",
+                "4.69",
+                "4.20",
+                "50.4"
+              ]
+            },
+            {
+              "id": "dco-w2-5",
+              "kind": "mcq",
+              "stem": "4.69 GiB of photos, 4.5 GiB free. Does it fit?",
+              "choices": [
+                "Yes",
+                "Only on Tuesdays",
+                "No",
+                "Only compressed by the OS automatically"
+              ]
+            },
+            {
+              "id": "dco-w2-6",
+              "kind": "mcq",
+              "stem": "Why leave spare space on a disk?",
+              "choices": [
+                "It wastes money",
+                "Space expires",
+                "It is required by law",
+                "A full disk makes most computers slow and unstable"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q03",
+          "week": 3,
+          "items": [
+            {
+              "id": "dco-w3-1",
+              "kind": "mcq",
+              "stem": "How are password bits computed for random choices?",
+              "choices": [
+                "Length \u00d7 log2(pool size)",
+                "Pool size + length",
+                "Number of symbols \u00d7 10",
+                "Length squared"
+              ]
+            },
+            {
+              "id": "dco-w3-2",
+              "kind": "mcq",
+              "stem": "Which is strongest among the three examples?",
+              "choices": [
+                "Four diceware words",
+                "Twelve random lowercase letters",
+                "Eight random printable characters",
+                "P@ssw0rd!"
+              ]
+            },
+            {
+              "id": "dco-w3-3",
+              "kind": "mcq",
+              "stem": "Why is P@ssw0rd! weak despite symbols?",
+              "choices": [
+                "It is too long",
+                "Symbols are illegal",
+                "Guessers try dictionary words with common swaps first",
+                "It has no spaces"
+              ]
+            },
+            {
+              "id": "dco-w3-4",
+              "kind": "mcq",
+              "stem": "What does NIST SP 800-63B say about forced periodic changes?",
+              "choices": [
+                "Change every week",
+                "Never change passwords",
+                "Change on birthdays",
+                "Change on evidence of compromise, not a fixed calendar"
+              ]
+            },
+            {
+              "id": "dco-w3-5",
+              "kind": "mcq",
+              "stem": "Why use a password manager?",
+              "choices": [
+                "It lets you keep a different secret on every site",
+                "It makes passwords shorter",
+                "It shares passwords with friends",
+                "It removes the need for any password"
+              ]
+            },
+            {
+              "id": "dco-w3-6",
+              "kind": "mcq",
+              "stem": "Adding one random word to a four-word diceware phrase adds about how many bits?",
+              "choices": [
+                "About 1",
+                "About 12.9",
+                "About 51.7",
+                "Exactly 100"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q04",
+          "week": 4,
+          "items": [
+            {
+              "id": "dco-w4-1",
+              "kind": "mcq",
+              "stem": "Where does the hostname end in a web address?",
+              "choices": [
+                "At the first dot",
+                "At the end of the line",
+                "At the first single slash after https://",
+                "At the word 'login'"
+              ]
+            },
+            {
+              "id": "dco-w4-2",
+              "kind": "mcq",
+              "stem": "From which end do you read a hostname to find its owner?",
+              "choices": [
+                "The left end",
+                "The middle",
+                "Any end",
+                "The right end"
+              ]
+            },
+            {
+              "id": "dco-w4-3",
+              "kind": "mcq",
+              "stem": "Who owns account.harborbank.example.verify-login.example.net?",
+              "choices": [
+                "Whoever owns example.net",
+                "Harbor Bank",
+                "The phone company",
+                "Nobody"
+              ]
+            },
+            {
+              "id": "dco-w4-4",
+              "kind": "mcq",
+              "stem": "A message asks you to log in through its link. Safer choice?",
+              "choices": [
+                "Tap quickly before it expires",
+                "Type the organisation's address yourself or use its app",
+                "Reply with your password",
+                "Forward it to friends"
+              ]
+            },
+            {
+              "id": "dco-w4-5",
+              "kind": "mcq",
+              "stem": "Why does 'last two labels' need care for .co.uk addresses?",
+              "choices": [
+                "UK addresses are illegal",
+                "Dots mean nothing",
+                "Some endings use three labels",
+                "It always works"
+              ]
+            },
+            {
+              "id": "dco-w4-6",
+              "kind": "mcq",
+              "stem": "Why do course links end in .example?",
+              "choices": [
+                "It is faster",
+                "It is a bank",
+                "It is encrypted",
+                "The ending is reserved, so nobody is sent anywhere real"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q05",
+          "week": 5,
+          "items": [
+            {
+              "id": "dco-w5-1",
+              "kind": "mcq",
+              "stem": "What does =SUM(B2:B6) return for this budget?",
+              "choices": [
+                "1,100",
+                "220",
+                "650",
+                "5"
+              ]
+            },
+            {
+              "id": "dco-w5-2",
+              "kind": "mcq",
+              "stem": "Why use a formula instead of typing the total?",
+              "choices": [
+                "It looks nicer",
+                "It stays correct when a row changes",
+                "Typing is forbidden",
+                "Formulas are faster to print"
+              ]
+            },
+            {
+              "id": "dco-w5-3",
+              "kind": "mcq",
+              "stem": "What is food's share of the 1,100 total?",
+              "choices": [
+                "About 24%",
+                "About 2.4%",
+                "About 21.82%",
+                "About 45%"
+              ]
+            },
+            {
+              "id": "dco-w5-4",
+              "kind": "mcq",
+              "stem": "Which function finds the largest amount?",
+              "choices": [
+                "MIN",
+                "COUNT",
+                "AVERAGE",
+                "MAX"
+              ]
+            },
+            {
+              "id": "dco-w5-5",
+              "kind": "mcq",
+              "stem": "What does =AVERAGE(B2:B6) give here?",
+              "choices": [
+                "220",
+                "1,100",
+                "240",
+                "130"
+              ]
+            },
+            {
+              "id": "dco-w5-6",
+              "kind": "mcq",
+              "stem": "What is the habit this week builds?",
+              "choices": [
+                "Retype totals daily",
+                "Typed inputs in one place, everything else a formula",
+                "Avoid spreadsheets",
+                "Use only percentages"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q06",
+          "week": 6,
+          "items": [
+            {
+              "id": "dco-w6-1",
+              "kind": "mcq",
+              "stem": "How many characters count as one word in WPM?",
+              "choices": [
+                "One",
+                "Ten",
+                "Five",
+                "However many letters the word has"
+              ]
+            },
+            {
+              "id": "dco-w6-2",
+              "kind": "mcq",
+              "stem": "1,250 characters in 5 minutes is what gross speed?",
+              "choices": [
+                "250 WPM",
+                "25 WPM",
+                "1,250 WPM",
+                "50 WPM"
+              ]
+            },
+            {
+              "id": "dco-w6-3",
+              "kind": "mcq",
+              "stem": "Fifteen uncorrected errors in five minutes reduce net speed by how much?",
+              "choices": [
+                "3 WPM",
+                "15 WPM",
+                "5 WPM",
+                "0.3 WPM"
+              ]
+            },
+            {
+              "id": "dco-w6-4",
+              "kind": "mcq",
+              "stem": "What is the accuracy for 15 errors in 1,250 characters?",
+              "choices": [
+                "85%",
+                "98.8%",
+                "99.9%",
+                "95%"
+              ]
+            },
+            {
+              "id": "dco-w6-5",
+              "kind": "mcq",
+              "stem": "Which practice habit improves speed fastest for most learners?",
+              "choices": [
+                "Type as fast as possible always",
+                "Never correct errors",
+                "Slow down until accuracy holds near 98%",
+                "Look only at the keys"
+              ]
+            },
+            {
+              "id": "dco-w6-6",
+              "kind": "mcq",
+              "stem": "Which keys have small bumps for the index fingers?",
+              "choices": [
+                "A and L",
+                "Q and P",
+                "Enter and Space",
+                "F and J"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q07",
+          "week": 7,
+          "items": [
+            {
+              "id": "dco-w7-1",
+              "kind": "mcq",
+              "stem": "Why do attachments grow before sending?",
+              "choices": [
+                "They are base64-encoded into text",
+                "Mail servers add photos",
+                "Files double in size",
+                "The subject line is added"
+              ]
+            },
+            {
+              "id": "dco-w7-2",
+              "kind": "mcq",
+              "stem": "Base64 turns every three bytes into how many characters?",
+              "choices": [
+                "Three",
+                "Four",
+                "Six",
+                "Eight"
+              ]
+            },
+            {
+              "id": "dco-w7-3",
+              "kind": "mcq",
+              "stem": "Nineteen million bytes encode to about how many?",
+              "choices": [
+                "19,000,000",
+                "38,000,000",
+                "25,333,336",
+                "21,000,000"
+              ]
+            },
+            {
+              "id": "dco-w7-4",
+              "kind": "mcq",
+              "stem": "An 18 MB file against a 25 MB limit: fits?",
+              "choices": [
+                "No",
+                "Only zipped",
+                "Only on mobile",
+                "Yes, 24,000,000 encoded bytes"
+              ]
+            },
+            {
+              "id": "dco-w7-5",
+              "kind": "mcq",
+              "stem": "A file will not fit. Best plan?",
+              "choices": [
+                "Share a link with view-only permission",
+                "Split it into many emails",
+                "Blur the pictures heavily",
+                "Give up"
+              ]
+            },
+            {
+              "id": "dco-w7-6",
+              "kind": "mcq",
+              "stem": "What belongs in practice messages?",
+              "choices": [
+                "A friend's passport scan",
+                "Made-up content only",
+                "Real bank statements",
+                "Other patrons' resumes"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q08",
+          "week": 8,
+          "items": [
+            {
+              "id": "dco-w8-1",
+              "kind": "mcq",
+              "stem": "What does the '1' in 3-2-1 require?",
+              "choices": [
+                "One password",
+                "One computer",
+                "One copy kept offsite",
+                "One backup per year"
+              ]
+            },
+            {
+              "id": "dco-w8-2",
+              "kind": "mcq",
+              "stem": "Why use two kinds of storage?",
+              "choices": [
+                "It is cheaper",
+                "It is faster",
+                "It is the law",
+                "So one failure type cannot take every copy"
+              ]
+            },
+            {
+              "id": "dco-w8-3",
+              "kind": "mcq",
+              "stem": "Two copies on the same USB stick count as what?",
+              "choices": [
+                "Effectively one copy",
+                "Two backups",
+                "A 3-2-1 plan",
+                "An offsite copy"
+              ]
+            },
+            {
+              "id": "dco-w8-4",
+              "kind": "mcq",
+              "stem": "What makes a backup plan more than a hope?",
+              "choices": [
+                "A larger drive",
+                "A restore you have actually tested",
+                "A longer password",
+                "A newer laptop"
+              ]
+            },
+            {
+              "id": "dco-w8-5",
+              "kind": "mcq",
+              "stem": "A sync folder deletes a file everywhere when you delete it locally. What is it on its own?",
+              "choices": [
+                "A perfect backup",
+                "An offsite archive",
+                "Convenient, but not a backup",
+                "Illegal"
+              ]
+            },
+            {
+              "id": "dco-w8-6",
+              "kind": "mcq",
+              "stem": "How often does the library suggest a test restore?",
+              "choices": [
+                "Never",
+                "Every ten years",
+                "Only after a disaster",
+                "About once a month"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q09",
+          "week": 9,
+          "items": [
+            {
+              "id": "dco-w9-1",
+              "kind": "mcq",
+              "stem": "What minimum contrast does WCAG AA require for normal text?",
+              "choices": [
+                "4.5 to 1",
+                "3 to 1",
+                "7 to 1",
+                "1.5 to 1"
+              ]
+            },
+            {
+              "id": "dco-w9-2",
+              "kind": "mcq",
+              "stem": "#777777 on white measures about 4.48. Does it pass AA for normal text?",
+              "choices": [
+                "Yes",
+                "No",
+                "Only on phones",
+                "Only in print"
+              ]
+            },
+            {
+              "id": "dco-w9-3",
+              "kind": "mcq",
+              "stem": "What is the contrast of black on white?",
+              "choices": [
+                "4.5 to 1",
+                "100 to 1",
+                "21 to 1",
+                "1 to 1"
+              ]
+            },
+            {
+              "id": "dco-w9-4",
+              "kind": "mcq",
+              "stem": "Which colour channel counts most in relative luminance?",
+              "choices": [
+                "Red",
+                "Blue",
+                "All equally",
+                "Green"
+              ]
+            },
+            {
+              "id": "dco-w9-5",
+              "kind": "mcq",
+              "stem": "Why measure instead of eyeballing #767676 versus #777777?",
+              "choices": [
+                "They look alike but fall on opposite sides of 4.5",
+                "Eyes are always wrong",
+                "Measuring is faster",
+                "Only designers can see colour"
+              ]
+            },
+            {
+              "id": "dco-w9-6",
+              "kind": "mcq",
+              "stem": "What is true about contrast and accessibility?",
+              "choices": [
+                "Contrast alone makes a page accessible",
+                "Contrast is one check among many",
+                "Contrast only matters for print",
+                "It only applies to images"
+              ]
+            }
+          ]
+        },
+        {
+          "quiz_id": "DIGITAL_CONFIDENCE-q10",
+          "week": 10,
+          "items": [
+            {
+              "id": "dco-w10-1",
+              "kind": "mcq",
+              "stem": "Why turn on multi-factor sign-in for email first?",
+              "choices": [
+                "Email is the slowest account",
+                "It is the cheapest",
+                "Password resets for other accounts arrive there",
+                "Email never gets attacked"
+              ]
+            },
+            {
+              "id": "dco-w10-2",
+              "kind": "mcq",
+              "stem": "What must never appear in the safety plan?",
+              "choices": [
+                "The name of the password manager",
+                "Backup locations",
+                "A help-desk contact",
+                "An actual password or recovery code"
+              ]
+            },
+            {
+              "id": "dco-w10-3",
+              "kind": "mcq",
+              "stem": "Why name a person or desk for strange messages?",
+              "choices": [
+                "So nobody judges a convincing scam alone",
+                "To blame them later",
+                "For marketing",
+                "It is optional decoration"
+              ]
+            },
+            {
+              "id": "dco-w10-4",
+              "kind": "mcq",
+              "stem": "What should the backup section record besides locations?",
+              "choices": [
+                "Every file name",
+                "The date of the last test restore",
+                "The drive's colour",
+                "The purchase price"
+              ]
+            },
+            {
+              "id": "dco-w10-5",
+              "kind": "mcq",
+              "stem": "During review, what does a mentor ask the learner to do?",
+              "choices": [
+                "Recite the quiz",
+                "Reveal a password",
+                "Show one step live, such as opening a backed-up file",
+                "Buy new hardware"
+              ]
+            },
+            {
+              "id": "dco-w10-6",
+              "kind": "mcq",
+              "stem": "Where do recovery codes belong?",
+              "choices": [
+                "On the fridge",
+                "In the safety plan",
+                "In a text message to a friend",
+                "In the password manager or locked away on paper"
+              ]
+            }
+          ]
+        }
+      ],
+      "assessments": {
+        "mid_course": [
+          {
+            "id": "dco-mid-01",
+            "stem": "You are in /home/ben/Music and type ../../ana/Pictures. Where are you?",
+            "choices": [
+              "/home/ben/ana/Pictures",
+              "/home/ana/Pictures",
+              "/ana/Pictures",
+              "/home/ben/Music/ana/Pictures"
+            ]
+          },
+          {
+            "id": "dco-mid-02",
+            "stem": "A path starts with a slash. What kind of path is it on macOS?",
+            "choices": [
+              "Relative",
+              "Hidden",
+              "Absolute",
+              "Broken"
+            ]
+          },
+          {
+            "id": "dco-mid-03",
+            "stem": "Which name helps you find a budget file next spring?",
+            "choices": [
+              "Untitled(3).xlsx",
+              "asdf.xlsx",
+              "final-final.xlsx",
+              "budget-2026-11.xlsx"
+            ]
+          },
+          {
+            "id": "dco-mid-04",
+            "stem": "A 1 TB drive shows roughly how many GiB?",
+            "choices": [
+              "About 931",
+              "About 1,000",
+              "About 1,024",
+              "About 512"
+            ]
+          },
+          {
+            "id": "dco-mid-05",
+            "stem": "Your phone says a video is 800 MB and the USB stick has 0.7 GiB free. Will it fit?",
+            "choices": [
+              "Yes, easily",
+              "No; 800 MB is about 0.745 GiB",
+              "Only if renamed",
+              "Only on Windows"
+            ]
+          },
+          {
+            "id": "dco-mid-06",
+            "stem": "Which unit do drive boxes usually use?",
+            "choices": [
+              "Binary gibibytes",
+              "Kilobits",
+              "Decimal gigabytes",
+              "Megapixels"
+            ]
+          },
+          {
+            "id": "dco-mid-07",
+            "stem": "A website forces a new password every 30 days. What does NIST SP 800-63B suggest instead?",
+            "choices": [
+              "Change daily",
+              "Never use passwords",
+              "Reuse old ones",
+              "Change on evidence of compromise"
+            ]
+          },
+          {
+            "id": "dco-mid-08",
+            "stem": "Which choice gives the most bits?",
+            "choices": [
+              "Six random diceware words",
+              "Ten random digits",
+              "Your pet's name plus 1",
+              "Eight random lowercase letters"
+            ]
+          },
+          {
+            "id": "dco-mid-09",
+            "stem": "A friend uses one strong password everywhere. What is the risk?",
+            "choices": [
+              "None, it is strong",
+              "One breached site exposes all accounts",
+              "It slows the computer",
+              "It expires faster"
+            ]
+          },
+          {
+            "id": "dco-mid-10",
+            "stem": "Which link actually belongs to harborbank.example?",
+            "choices": [
+              "https://harborbank.example.verify.example.net",
+              "https://harborbank-example.net",
+              "https://login.harborbank.example/start",
+              "https://example.net/harborbank.example"
+            ]
+          },
+          {
+            "id": "dco-mid-11",
+            "stem": "A text says 'your parcel is held, pay 2 dollars' with a link. Safest move?",
+            "choices": [
+              "Pay quickly",
+              "Reply STOP with your card",
+              "Forward to everyone",
+              "Check the courier's own site or app directly"
+            ]
+          },
+          {
+            "id": "dco-mid-12",
+            "stem": "A shortened link hides its address. What can you do before opening?",
+            "choices": [
+              "Use a preview feature or ask the desk",
+              "Open it on a work computer",
+              "Assume it is fine",
+              "Enter your password to check"
+            ]
+          },
+          {
+            "id": "dco-mid-13",
+            "stem": "=SUM(B2:B4) returns 300. You change B3 from 100 to 150. What does the cell show now?",
+            "choices": [
+              "300",
+              "350",
+              "450",
+              "150"
+            ]
+          },
+          {
+            "id": "dco-mid-14",
+            "stem": "Which formula gives B2 as a share of total B7?",
+            "choices": [
+              "=B7/B2",
+              "=B2+B7",
+              "=B2/B7",
+              "=SUM(B2)"
+            ]
+          },
+          {
+            "id": "dco-mid-15",
+            "stem": "Your typed total disagrees with the rows. Which number do you trust?",
+            "choices": [
+              "The typed total",
+              "Neither",
+              "The larger one",
+              "The formula over the rows"
+            ]
+          },
+          {
+            "id": "dco-mid-16",
+            "stem": "You type 900 characters in 3 minutes with 6 errors. Net WPM?",
+            "choices": [
+              "58",
+              "60",
+              "54",
+              "300"
+            ]
+          },
+          {
+            "id": "dco-mid-17",
+            "stem": "Why is a 'word' fixed at five characters in typing tests?",
+            "choices": [
+              "Because English words are five letters",
+              "So long and short words count fairly",
+              "To make scores higher",
+              "It is a typo"
+            ]
+          },
+          {
+            "id": "dco-mid-18",
+            "stem": "A 12,000,000-byte file encodes to how many base64 bytes?",
+            "choices": [
+              "12,000,000",
+              "24,000,000",
+              "16,000,000",
+              "13,000,000"
+            ]
+          },
+          {
+            "id": "dco-mid-19",
+            "stem": "Your plan has the laptop and a cloud folder only. Which 3-2-1 rule fails?",
+            "choices": [
+              "Two media",
+              "One offsite",
+              "None",
+              "Three copies"
+            ]
+          },
+          {
+            "id": "dco-mid-20",
+            "stem": "#595959 on white is about 7:1. What does it pass?",
+            "choices": [
+              "AA for normal and large text",
+              "Nothing",
+              "Only large text",
+              "Only print"
+            ]
+          }
+        ],
+        "final_knowledge": [
+          {
+            "id": "dco-fin-01",
+            "stem": "A form asks you to upload 'C:\\Users\\Mia\\Desktop\\id.pdf' but you saved it in Downloads. What changed?",
+            "choices": [
+              "The file type",
+              "The drive size",
+              "The folder part of the path",
+              "The password"
+            ]
+          },
+          {
+            "id": "dco-fin-02",
+            "stem": "Why do support staff ask 'where are you standing?' when a relative path fails?",
+            "choices": [
+              "Paths are random",
+              "It is small talk",
+              "Absolute paths never work",
+              "Relative paths start from the current folder"
+            ]
+          },
+          {
+            "id": "dco-fin-03",
+            "stem": "A 2 TB external drive shows about 1.82 TB on a laptop. What explains it?",
+            "choices": [
+              "Decimal versus binary units",
+              "A broken drive",
+              "Hidden viruses",
+              "The cable"
+            ]
+          },
+          {
+            "id": "dco-fin-04",
+            "stem": "A photo folder is 9.5 GB and the free space shows 9 GiB. Fits?",
+            "choices": [
+              "No",
+              "Yes, 9.5 GB is about 8.85 GiB",
+              "Exactly equal",
+              "Cannot tell"
+            ]
+          },
+          {
+            "id": "dco-fin-05",
+            "stem": "Which password policy best follows current NIST guidance?",
+            "choices": [
+              "Eight characters, changed monthly",
+              "Must include a symbol and a capital only",
+              "Long passphrases, checked against breached lists, changed on compromise",
+              "No passwords at all"
+            ]
+          },
+          {
+            "id": "dco-fin-06",
+            "stem": "Why can a short password with symbols be weaker than a long lowercase one?",
+            "choices": [
+              "Symbols are ignored",
+              "Lowercase is encrypted",
+              "It cannot be",
+              "Length adds more bits than symbols when chosen at random"
+            ]
+          },
+          {
+            "id": "dco-fin-07",
+            "stem": "A website offers 'remember me' on a shared library computer. Best choice?",
+            "choices": [
+              "Decline and sign out when finished",
+              "Accept",
+              "Accept and leave the tab open",
+              "Write the password on the desk"
+            ]
+          },
+          {
+            "id": "dco-fin-08",
+            "stem": "An email from 'support@harborbank.example.alerts-help.example.org' asks for your PIN. Who sent it?",
+            "choices": [
+              "Harbor Bank",
+              "Whoever owns example.org",
+              "The library",
+              "Your email provider"
+            ]
+          },
+          {
+            "id": "dco-fin-09",
+            "stem": "A message pressures you to act within ten minutes. What does urgency usually signal?",
+            "choices": [
+              "A genuine emergency always",
+              "A system update",
+              "A tactic to stop you checking",
+              "A refund"
+            ]
+          },
+          {
+            "id": "dco-fin-10",
+            "stem": "You must share a 60 MB video with a teacher. Most reliable method?",
+            "choices": [
+              "Attach it to one email",
+              "Split it into twelve emails",
+              "Print it",
+              "Upload and share a view-only link"
+            ]
+          },
+          {
+            "id": "dco-fin-11",
+            "stem": "A sheet's total is typed as 1,000 while the rows add to 1,100. What should you fix?",
+            "choices": [
+              "Replace the typed total with =SUM over the rows",
+              "Delete a row",
+              "Change the rows to match",
+              "Hide the total"
+            ]
+          },
+          {
+            "id": "dco-fin-12",
+            "stem": "Which formula finds the average of B2 through B9?",
+            "choices": [
+              "=SUM(B2:B9)",
+              "=AVERAGE(B2:B9)",
+              "=B2/B9",
+              "=MAX(B2:B9)"
+            ]
+          },
+          {
+            "id": "dco-fin-13",
+            "stem": "Your accuracy is 90% at 60 WPM. What should practice focus on?",
+            "choices": [
+              "Going faster",
+              "Ignoring errors",
+              "Slowing down to raise accuracy",
+              "Stopping practice"
+            ]
+          },
+          {
+            "id": "dco-fin-14",
+            "stem": "Which posture reduces strain while typing?",
+            "choices": [
+              "Wrists bent upward",
+              "Keyboard on your lap at an angle",
+              "Leaning on one elbow",
+              "Square to the keyboard with level wrists"
+            ]
+          },
+          {
+            "id": "dco-fin-15",
+            "stem": "A backup drive sits beside the laptop in the same bag. Which threat defeats both?",
+            "choices": [
+              "The bag being stolen",
+              "A typo",
+              "A slow network",
+              "A power cut at the library"
+            ]
+          },
+          {
+            "id": "dco-fin-16",
+            "stem": "You last tested a restore two years ago. What is the plan's status?",
+            "choices": [
+              "Perfect",
+              "Unproven until you test again",
+              "Illegal",
+              "Offsite"
+            ]
+          },
+          {
+            "id": "dco-fin-17",
+            "stem": "Why does a cloud sync folder alone fail 3-2-1?",
+            "choices": [
+              "Clouds are offline",
+              "It uses too much space",
+              "Deletions and damage sync to every copy",
+              "It is always private"
+            ]
+          },
+          {
+            "id": "dco-fin-18",
+            "stem": "A flyer uses white text on pale yellow. What should you do before printing?",
+            "choices": [
+              "Add more yellow",
+              "Use a smaller font",
+              "Nothing",
+              "Measure the contrast ratio"
+            ]
+          },
+          {
+            "id": "dco-fin-19",
+            "stem": "Large text needs at least what contrast for WCAG AA?",
+            "choices": [
+              "3 to 1",
+              "4.5 to 1",
+              "7 to 1",
+              "2 to 1"
+            ]
+          },
+          {
+            "id": "dco-fin-20",
+            "stem": "Which is a real accessibility improvement besides contrast?",
+            "choices": [
+              "Blinking text",
+              "Readable font size and clear link text",
+              "Text inside images only",
+              "Light grey on white"
+            ]
+          },
+          {
+            "id": "dco-fin-21",
+            "stem": "A volunteer asks you to email them your password 'to help'. What do you do?",
+            "choices": [
+              "Send it",
+              "Send half of it",
+              "Refuse and show the request to the desk",
+              "Post it on paper"
+            ]
+          },
+          {
+            "id": "dco-fin-22",
+            "stem": "Where should multi-factor sign-in be turned on first?",
+            "choices": [
+              "A game account",
+              "A shopping wish list",
+              "The library catalogue",
+              "The email account"
+            ]
+          },
+          {
+            "id": "dco-fin-23",
+            "stem": "Which item belongs in a personal safety plan?",
+            "choices": [
+              "Who to ask when a message looks strange",
+              "Your bank PIN",
+              "Your recovery codes",
+              "A copy of your ID"
+            ]
+          },
+          {
+            "id": "dco-fin-24",
+            "stem": "What does the Library Lab course claim when you finish?",
+            "choices": [
+              "A guaranteed job",
+              "Practice-based digital confidence, not a certification",
+              "A government licence",
+              "Cyber-security certification"
+            ]
+          }
+        ],
+        "practical_labs": [
+          "lab_dco_paths",
+          "lab_dco_storage_units",
+          "lab_dco_entropy",
+          "lab_dco_link_check",
+          "lab_dco_sheet_formulas",
+          "lab_dco_typing_wpm",
+          "lab_dco_attachment_fit",
+          "lab_dco_backup_321",
+          "lab_dco_contrast",
+          "lab_dco_safety_plan"
+        ]
+      },
+      "portfolio": {
+        "no_pii": true
+      },
+      "offline_pack": {
+        "lesson_ids": [
+          "DIGITAL_CONFIDENCE-w01",
+          "DIGITAL_CONFIDENCE-w02",
+          "DIGITAL_CONFIDENCE-w03",
+          "DIGITAL_CONFIDENCE-w04",
+          "DIGITAL_CONFIDENCE-w05",
+          "DIGITAL_CONFIDENCE-w06",
+          "DIGITAL_CONFIDENCE-w07",
+          "DIGITAL_CONFIDENCE-w08",
+          "DIGITAL_CONFIDENCE-w09",
+          "DIGITAL_CONFIDENCE-w10"
+        ],
+        "session_shape": {
+          "lesson_id": "DIGITAL_CONFIDENCE-w01",
+          "role": "learner",
+          "offline_pack": "DIGITAL_CONFIDENCE-offline",
+          "labs": [
+            "lab_dco_paths",
+            "lab_dco_storage_units"
           ]
         }
       }

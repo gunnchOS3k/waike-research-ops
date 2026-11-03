@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "computer_operator_entry",
+    "library_digital_navigator_volunteer",
+    "office_assistant_digital"
+  ],
+  "nice_categories": [
+    "operate_and_maintain"
+  ],
+  "certs_aligned_not_granted": [
+    "NIST SP 800-63B password guidance (PUBLIC_REFERENCE_ONLY)",
+    "W3C WCAG 2.2 contrast criteria (PUBLIC_REFERENCE_ONLY)",
+    "CISA Secure Our World habits (PUBLIC_REFERENCE_ONLY)"
+  ]
+}

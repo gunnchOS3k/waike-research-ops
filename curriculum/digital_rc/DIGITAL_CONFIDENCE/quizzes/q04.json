@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q04",
+  "week": 4,
+  "items": [
+    {
+      "id": "dco-w4-1",
+      "kind": "mcq",
+      "stem": "Where does the hostname end in a web address?",
+      "choices": [
+        "At the first dot",
+        "At the end of the line",
+        "At the first single slash after https://",
+        "At the word 'login'"
+      ]
+    },
+    {
+      "id": "dco-w4-2",
+      "kind": "mcq",
+      "stem": "From which end do you read a hostname to find its owner?",
+      "choices": [
+        "The left end",
+        "The middle",
+        "Any end",
+        "The right end"
+      ]
+    },
+    {
+      "id": "dco-w4-3",
+      "kind": "mcq",
+      "stem": "Who owns account.harborbank.example.verify-login.example.net?",
+      "choices": [
+        "Whoever owns example.net",
+        "Harbor Bank",
+        "The phone company",
+        "Nobody"
+      ]
+    },
+    {
+      "id": "dco-w4-4",
+      "kind": "mcq",
+      "stem": "A message asks you to log in through its link. Safer choice?",
+      "choices": [
+        "Tap quickly before it expires",
+        "Type the organisation's address yourself or use its app",
+        "Reply with your password",
+        "Forward it to friends"
+      ]
+    },
+    {
+      "id": "dco-w4-5",
+      "kind": "mcq",
+      "stem": "Why does 'last two labels' need care for .co.uk addresses?",
+      "choices": [
+        "UK addresses are illegal",
+        "Dots mean nothing",
+        "Some endings use three labels",
+        "It always works"
+      ]
+    },
+    {
+      "id": "dco-w4-6",
+      "kind": "mcq",
+      "stem": "Why do course links end in .example?",
+      "choices": [
+        "It is faster",
+        "It is a bank",
+        "It is encrypted",
+        "The ending is reserved, so nobody is sent anywhere real"
+      ]
+    }
+  ]
+}

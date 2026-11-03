@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q07",
+  "week": 7,
+  "items": [
+    {
+      "id": "dco-w7-1",
+      "kind": "mcq",
+      "stem": "Why do attachments grow before sending?",
+      "choices": [
+        "They are base64-encoded into text",
+        "Mail servers add photos",
+        "Files double in size",
+        "The subject line is added"
+      ]
+    },
+    {
+      "id": "dco-w7-2",
+      "kind": "mcq",
+      "stem": "Base64 turns every three bytes into how many characters?",
+      "choices": [
+        "Three",
+        "Four",
+        "Six",
+        "Eight"
+      ]
+    },
+    {
+      "id": "dco-w7-3",
+      "kind": "mcq",
+      "stem": "Nineteen million bytes encode to about how many?",
+      "choices": [
+        "19,000,000",
+        "38,000,000",
+        "25,333,336",
+        "21,000,000"
+      ]
+    },
+    {
+      "id": "dco-w7-4",
+      "kind": "mcq",
+      "stem": "An 18 MB file against a 25 MB limit: fits?",
+      "choices": [
+        "No",
+        "Only zipped",
+        "Only on mobile",
+        "Yes, 24,000,000 encoded bytes"
+      ]
+    },
+    {
+      "id": "dco-w7-5",
+      "kind": "mcq",
+      "stem": "A file will not fit. Best plan?",
+      "choices": [
+        "Share a link with view-only permission",
+        "Split it into many emails",
+        "Blur the pictures heavily",
+        "Give up"
+      ]
+    },
+    {
+      "id": "dco-w7-6",
+      "kind": "mcq",
+      "stem": "What belongs in practice messages?",
+      "choices": [
+        "A friend's passport scan",
+        "Made-up content only",
+        "Real bank statements",
+        "Other patrons' resumes"
+      ]
+    }
+  ]
+}

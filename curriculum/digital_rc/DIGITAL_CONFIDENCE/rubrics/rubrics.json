@@ -1,0 +1,150 @@
+[
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-lab",
+    "title": "Library practice lab",
+    "criteria": [
+      {
+        "name": "recomputed",
+        "weight": 45,
+        "desc": "Paths, sizes, and scores match the recomputation"
+      },
+      {
+        "name": "plain_language",
+        "weight": 25,
+        "desc": "Explains the answer in a sentence a patron understands"
+      },
+      {
+        "name": "rejects_stub",
+        "weight": 30,
+        "desc": "Empty and PASS-only submissions are refused"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-assignment",
+    "title": "DCO task sheet",
+    "criteria": [
+      {
+        "name": "task_ref",
+        "weight": 35,
+        "desc": "Names the DCO task and the practice file"
+      },
+      {
+        "name": "steps",
+        "weight": 35,
+        "desc": "Lists the clicks or keystrokes in order"
+      },
+      {
+        "name": "ai_mode",
+        "weight": 30,
+        "desc": "AI mode disclosed; NO_AI weeks done alone"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-quiz",
+    "title": "Weekly confidence check",
+    "criteria": [
+      {
+        "name": "everyday_fit",
+        "weight": 50,
+        "desc": "Stems use situations from the library lab"
+      },
+      {
+        "name": "key_custody",
+        "weight": 50,
+        "desc": "Answer key kept by the instructor"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-mid",
+    "title": "Midterm: everyday arithmetic",
+    "criteria": [
+      {
+        "name": "new_situations",
+        "weight": 60,
+        "desc": "Twenty items unlike weekly quiz stems"
+      },
+      {
+        "name": "units",
+        "weight": 40,
+        "desc": "Bytes, gibibytes, entropy bits, and speeds"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-final-knowledge",
+    "title": "Final: safe operator habits",
+    "criteria": [
+      {
+        "name": "new_situations",
+        "weight": 50,
+        "desc": "Twenty-four items beyond weekly stems"
+      },
+      {
+        "name": "safety",
+        "weight": 50,
+        "desc": "Links, passwords, backups, and asking for help"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-practical",
+    "title": "Practical: help a patron",
+    "criteria": [
+      {
+        "name": "walkthrough",
+        "weight": 50,
+        "desc": "Guides a peer through one task without taking the mouse"
+      },
+      {
+        "name": "altered_inputs",
+        "weight": 50,
+        "desc": "Changed file sizes change the answer"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-project",
+    "title": "Personal safety plan",
+    "criteria": [
+      {
+        "name": "labs_passed",
+        "weight": 30,
+        "desc": "Six or more practice labs passed"
+      },
+      {
+        "name": "contacts",
+        "weight": 40,
+        "desc": "Names who to call and how to reach them"
+      },
+      {
+        "name": "backups",
+        "weight": 30,
+        "desc": "Shows a 3-2-1 plan with real locations"
+      }
+    ]
+  },
+  {
+    "rubric_id": "DIGITAL_CONFIDENCE-portfolio",
+    "title": "Operator portfolio",
+    "criteria": [
+      {
+        "name": "before_after",
+        "weight": 40,
+        "desc": "Typing and task times from week one and week ten"
+      },
+      {
+        "name": "accessibility",
+        "weight": 30,
+        "desc": "One document checked for contrast"
+      },
+      {
+        "name": "roles",
+        "weight": 30,
+        "desc": "Entry operator roles; no certificate implied"
+      }
+    ]
+  }
+]

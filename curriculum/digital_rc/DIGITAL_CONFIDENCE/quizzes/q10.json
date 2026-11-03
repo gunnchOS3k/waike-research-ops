@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q10",
+  "week": 10,
+  "items": [
+    {
+      "id": "dco-w10-1",
+      "kind": "mcq",
+      "stem": "Why turn on multi-factor sign-in for email first?",
+      "choices": [
+        "Email is the slowest account",
+        "It is the cheapest",
+        "Password resets for other accounts arrive there",
+        "Email never gets attacked"
+      ]
+    },
+    {
+      "id": "dco-w10-2",
+      "kind": "mcq",
+      "stem": "What must never appear in the safety plan?",
+      "choices": [
+        "The name of the password manager",
+        "Backup locations",
+        "A help-desk contact",
+        "An actual password or recovery code"
+      ]
+    },
+    {
+      "id": "dco-w10-3",
+      "kind": "mcq",
+      "stem": "Why name a person or desk for strange messages?",
+      "choices": [
+        "So nobody judges a convincing scam alone",
+        "To blame them later",
+        "For marketing",
+        "It is optional decoration"
+      ]
+    },
+    {
+      "id": "dco-w10-4",
+      "kind": "mcq",
+      "stem": "What should the backup section record besides locations?",
+      "choices": [
+        "Every file name",
+        "The date of the last test restore",
+        "The drive's colour",
+        "The purchase price"
+      ]
+    },
+    {
+      "id": "dco-w10-5",
+      "kind": "mcq",
+      "stem": "During review, what does a mentor ask the learner to do?",
+      "choices": [
+        "Recite the quiz",
+        "Reveal a password",
+        "Show one step live, such as opening a backed-up file",
+        "Buy new hardware"
+      ]
+    },
+    {
+      "id": "dco-w10-6",
+      "kind": "mcq",
+      "stem": "Where do recovery codes belong?",
+      "choices": [
+        "On the fridge",
+        "In the safety plan",
+        "In a text message to a friend",
+        "In the password manager or locked away on paper"
+      ]
+    }
+  ]
+}

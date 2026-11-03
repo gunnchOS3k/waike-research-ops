@@ -1,0 +1,16 @@
+{
+  "practical_id": "DIGITAL_CONFIDENCE-practical",
+  "labs": [
+    "lab_dco_paths",
+    "lab_dco_storage_units",
+    "lab_dco_entropy",
+    "lab_dco_link_check",
+    "lab_dco_sheet_formulas",
+    "lab_dco_typing_wpm",
+    "lab_dco_attachment_fit",
+    "lab_dco_backup_321",
+    "lab_dco_contrast",
+    "lab_dco_safety_plan"
+  ],
+  "pass_rule": "all listed labs ok=true AND package negatives fail"
+}

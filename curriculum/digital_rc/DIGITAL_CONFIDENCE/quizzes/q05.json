@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q05",
+  "week": 5,
+  "items": [
+    {
+      "id": "dco-w5-1",
+      "kind": "mcq",
+      "stem": "What does =SUM(B2:B6) return for this budget?",
+      "choices": [
+        "1,100",
+        "220",
+        "650",
+        "5"
+      ]
+    },
+    {
+      "id": "dco-w5-2",
+      "kind": "mcq",
+      "stem": "Why use a formula instead of typing the total?",
+      "choices": [
+        "It looks nicer",
+        "It stays correct when a row changes",
+        "Typing is forbidden",
+        "Formulas are faster to print"
+      ]
+    },
+    {
+      "id": "dco-w5-3",
+      "kind": "mcq",
+      "stem": "What is food's share of the 1,100 total?",
+      "choices": [
+        "About 24%",
+        "About 2.4%",
+        "About 21.82%",
+        "About 45%"
+      ]
+    },
+    {
+      "id": "dco-w5-4",
+      "kind": "mcq",
+      "stem": "Which function finds the largest amount?",
+      "choices": [
+        "MIN",
+        "COUNT",
+        "AVERAGE",
+        "MAX"
+      ]
+    },
+    {
+      "id": "dco-w5-5",
+      "kind": "mcq",
+      "stem": "What does =AVERAGE(B2:B6) give here?",
+      "choices": [
+        "220",
+        "1,100",
+        "240",
+        "130"
+      ]
+    },
+    {
+      "id": "dco-w5-6",
+      "kind": "mcq",
+      "stem": "What is the habit this week builds?",
+      "choices": [
+        "Retype totals daily",
+        "Typed inputs in one place, everything else a formula",
+        "Avoid spreadsheets",
+        "Use only percentages"
+      ]
+    }
+  ]
+}

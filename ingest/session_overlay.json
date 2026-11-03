@@ -322,5 +322,23 @@
     },
     "mock": false,
     "owner_projected": true
+  },
+  {
+    "ok": true,
+    "session": {
+      "lesson_id": "DIGITAL_CONFIDENCE-w01",
+      "profile": "student",
+      "role": "learner",
+      "account": "ingest-learner",
+      "offline_pack": "DIGITAL_CONFIDENCE-offline",
+      "labs": [
+        "lab_dco_paths",
+        "lab_dco_storage_units"
+      ],
+      "catalog_course_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator \u2014 Library Lab"
+    },
+    "mock": false,
+    "owner_projected": true
   }
 ]

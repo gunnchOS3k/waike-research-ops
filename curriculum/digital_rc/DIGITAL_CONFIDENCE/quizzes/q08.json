@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q08",
+  "week": 8,
+  "items": [
+    {
+      "id": "dco-w8-1",
+      "kind": "mcq",
+      "stem": "What does the '1' in 3-2-1 require?",
+      "choices": [
+        "One password",
+        "One computer",
+        "One copy kept offsite",
+        "One backup per year"
+      ]
+    },
+    {
+      "id": "dco-w8-2",
+      "kind": "mcq",
+      "stem": "Why use two kinds of storage?",
+      "choices": [
+        "It is cheaper",
+        "It is faster",
+        "It is the law",
+        "So one failure type cannot take every copy"
+      ]
+    },
+    {
+      "id": "dco-w8-3",
+      "kind": "mcq",
+      "stem": "Two copies on the same USB stick count as what?",
+      "choices": [
+        "Effectively one copy",
+        "Two backups",
+        "A 3-2-1 plan",
+        "An offsite copy"
+      ]
+    },
+    {
+      "id": "dco-w8-4",
+      "kind": "mcq",
+      "stem": "What makes a backup plan more than a hope?",
+      "choices": [
+        "A larger drive",
+        "A restore you have actually tested",
+        "A longer password",
+        "A newer laptop"
+      ]
+    },
+    {
+      "id": "dco-w8-5",
+      "kind": "mcq",
+      "stem": "A sync folder deletes a file everywhere when you delete it locally. What is it on its own?",
+      "choices": [
+        "A perfect backup",
+        "An offsite archive",
+        "Convenient, but not a backup",
+        "Illegal"
+      ]
+    },
+    {
+      "id": "dco-w8-6",
+      "kind": "mcq",
+      "stem": "How often does the library suggest a test restore?",
+      "choices": [
+        "Never",
+        "Every ten years",
+        "Only after a disaster",
+        "About once a month"
+      ]
+    }
+  ]
+}

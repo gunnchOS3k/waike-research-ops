@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q06",
+  "week": 6,
+  "items": [
+    {
+      "id": "dco-w6-1",
+      "kind": "mcq",
+      "stem": "How many characters count as one word in WPM?",
+      "choices": [
+        "One",
+        "Ten",
+        "Five",
+        "However many letters the word has"
+      ]
+    },
+    {
+      "id": "dco-w6-2",
+      "kind": "mcq",
+      "stem": "1,250 characters in 5 minutes is what gross speed?",
+      "choices": [
+        "250 WPM",
+        "25 WPM",
+        "1,250 WPM",
+        "50 WPM"
+      ]
+    },
+    {
+      "id": "dco-w6-3",
+      "kind": "mcq",
+      "stem": "Fifteen uncorrected errors in five minutes reduce net speed by how much?",
+      "choices": [
+        "3 WPM",
+        "15 WPM",
+        "5 WPM",
+        "0.3 WPM"
+      ]
+    },
+    {
+      "id": "dco-w6-4",
+      "kind": "mcq",
+      "stem": "What is the accuracy for 15 errors in 1,250 characters?",
+      "choices": [
+        "85%",
+        "98.8%",
+        "99.9%",
+        "95%"
+      ]
+    },
+    {
+      "id": "dco-w6-5",
+      "kind": "mcq",
+      "stem": "Which practice habit improves speed fastest for most learners?",
+      "choices": [
+        "Type as fast as possible always",
+        "Never correct errors",
+        "Slow down until accuracy holds near 98%",
+        "Look only at the keys"
+      ]
+    },
+    {
+      "id": "dco-w6-6",
+      "kind": "mcq",
+      "stem": "Which keys have small bumps for the index fingers?",
+      "choices": [
+        "A and L",
+        "Q and P",
+        "Enter and Space",
+        "F and J"
+      ]
+    }
+  ]
+}

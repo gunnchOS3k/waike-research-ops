@@ -102,6 +102,25 @@ def test_soc_graders_recompute_from_submitted_parameters():
     assert labs_soc.cvss31_base("CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N") == 5.5
 
 
+def test_dco_graders_recompute_from_submitted_inputs():
+    ref = labs_dco.REFERENCE_DCO
+    sheet = ref["lab_dco_sheet_formulas"]
+    assert not labs_dco.lab_dco_sheet_formulas({**sheet, "rows": {**sheet["rows"], "food": 300}}).ok
+    rows = {**sheet["rows"], "food": 300}
+    total = sum(rows.values())
+    assert labs_dco.lab_dco_sheet_formulas({
+        "rows": rows, "total": total, "average": total / len(rows), "largest_item": "rent",
+        "share_item": "food", "share_pct": round(100 * 300 / total, 2),
+    }).ok
+    att = ref["lab_dco_attachment_fit"]
+    assert not labs_dco.lab_dco_attachment_fit({**att, "file_bytes": 12_000_000}).ok
+    assert labs_dco.lab_dco_attachment_fit({
+        "file_bytes": 12_000_000, "limit_bytes": 25_000_000, "encoded_bytes": 16_000_000, "fits": True, "plan": "attach",
+    }).ok
+    assert round(labs_dco.contrast_ratio("#777777", "#ffffff"), 2) == 4.48
+    assert round(labs_dco.contrast_ratio("#767676", "#ffffff"), 2) == 4.54
+
+
 @pytest.mark.parametrize("cid", BATCH_COURSE_IDS)
 def test_enabled_tracks_are_on_product_path_with_reachable_references(cid):
     assert COURSES[cid]["track_ids"] == [cid]

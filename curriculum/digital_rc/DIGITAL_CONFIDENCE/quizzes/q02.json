@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q02",
+  "week": 2,
+  "items": [
+    {
+      "id": "dco-w2-1",
+      "kind": "mcq",
+      "stem": "How many bytes are in a decimal gigabyte?",
+      "choices": [
+        "1,073,741,824",
+        "1,024,000",
+        "1,000,000,000",
+        "8,000,000,000"
+      ]
+    },
+    {
+      "id": "dco-w2-2",
+      "kind": "mcq",
+      "stem": "About how many GiB is a 500 GB drive?",
+      "choices": [
+        "500",
+        "512",
+        "476.8",
+        "465.66"
+      ]
+    },
+    {
+      "id": "dco-w2-3",
+      "kind": "mcq",
+      "stem": "Why did the store not cheat the patron?",
+      "choices": [
+        "The same bytes are counted in a larger unit",
+        "Drives shrink with age",
+        "The operating system steals space",
+        "Labels are always wrong"
+      ]
+    },
+    {
+      "id": "dco-w2-4",
+      "kind": "mcq",
+      "stem": "Twelve hundred photos at 4.2 MB each total about how many GiB?",
+      "choices": [
+        "5.04",
+        "4.69",
+        "4.20",
+        "50.4"
+      ]
+    },
+    {
+      "id": "dco-w2-5",
+      "kind": "mcq",
+      "stem": "4.69 GiB of photos, 4.5 GiB free. Does it fit?",
+      "choices": [
+        "Yes",
+        "Only on Tuesdays",
+        "No",
+        "Only compressed by the OS automatically"
+      ]
+    },
+    {
+      "id": "dco-w2-6",
+      "kind": "mcq",
+      "stem": "Why leave spare space on a disk?",
+      "choices": [
+        "It wastes money",
+        "Space expires",
+        "It is required by law",
+        "A full disk makes most computers slow and unstable"
+      ]
+    }
+  ]
+}

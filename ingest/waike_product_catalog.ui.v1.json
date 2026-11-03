@@ -13,7 +13,6 @@
       "assignment": "Build the required folder tree for ticket 4417, write a four-line operator journal (remember / calculate / talk / what broke), and describe one restore method that is not Ctrl+Z. No patron PII.",
       "lab_hint": "lab_ticket_queue",
       "track_ids": [
-        "DIGITAL_CONFIDENCE",
         "IT_SUPPORT_HARDWARE"
       ],
       "academy_id": "ACADEMY_IT"
@@ -239,6 +238,19 @@
         "CYBER_SOC"
       ],
       "academy_id": "ACADEMY_CYBER"
+    },
+    {
+      "course_id": "DIGITAL_CONFIDENCE",
+      "title": "Digital Confidence to Computer Operator \u2014 Library Lab",
+      "kinesthetic_hook": "Ten Library Lab help-desk cards: find the file \u2192 read the drive label \u2192 judge a password \u2192 read a link \u2192 build a budget sheet \u2192 measure typing \u2192 fit an attachment \u2192 plan backups \u2192 check screen contrast \u2192 write a safety plan.",
+      "lesson_excerpt": "Help card DCO-3101: Ana saved a summer photo and the file dialog now says 'not found'. Every file has an address called a path, written from the top of the drive down through folders, like /home/ana/Documents/photos/summer.jpg. That full form is an absolute path because it starts at the root, the single slash. Programs also accept relative paths that start from wherever you are standing, called th",
+      "worked_example": "cwd /home/ana/Documents/letters + ../photos/2026/../summer.jpg \u2192 /home/ana/Documents/photos/summer.jpg",
+      "assignment": "Submit lab_dco_paths JSON for DCO-3101: two tasks with cwd, relative path, and resolved absolute path.",
+      "lab_hint": "lab_dco_paths",
+      "track_ids": [
+        "DIGITAL_CONFIDENCE"
+      ],
+      "academy_id": "ACADEMY_IT"
     }
   ]
 }

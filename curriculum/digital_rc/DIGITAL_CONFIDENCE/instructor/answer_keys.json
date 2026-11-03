@@ -1,0 +1,550 @@
+{
+  "schema": "waike.answer_keys.v1",
+  "course_id": "DIGITAL_CONFIDENCE",
+  "quizzes": {
+    "DIGITAL_CONFIDENCE-q01": [
+      {
+        "id": "dco-w1-1",
+        "answer_index": 0,
+        "explanation": "parent"
+      },
+      {
+        "id": "dco-w1-2",
+        "answer_index": 1,
+        "explanation": "starts at root"
+      },
+      {
+        "id": "dco-w1-3",
+        "answer_index": 2,
+        "explanation": "dot = here"
+      },
+      {
+        "id": "dco-w1-4",
+        "answer_index": 3,
+        "explanation": "one level up"
+      },
+      {
+        "id": "dco-w1-5",
+        "answer_index": 0,
+        "explanation": "orientation"
+      },
+      {
+        "id": "dco-w1-6",
+        "answer_index": 1,
+        "explanation": "C:\\"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q02": [
+      {
+        "id": "dco-w2-1",
+        "answer_index": 2,
+        "explanation": "10^9"
+      },
+      {
+        "id": "dco-w2-2",
+        "answer_index": 3,
+        "explanation": "\u00f7 2^30"
+      },
+      {
+        "id": "dco-w2-3",
+        "answer_index": 0,
+        "explanation": "units"
+      },
+      {
+        "id": "dco-w2-4",
+        "answer_index": 1,
+        "explanation": "5.04e9 / 2^30"
+      },
+      {
+        "id": "dco-w2-5",
+        "answer_index": 2,
+        "explanation": "compare same unit"
+      },
+      {
+        "id": "dco-w2-6",
+        "answer_index": 3,
+        "explanation": "headroom"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q03": [
+      {
+        "id": "dco-w3-1",
+        "answer_index": 0,
+        "explanation": "entropy"
+      },
+      {
+        "id": "dco-w3-2",
+        "answer_index": 1,
+        "explanation": "56.4 bits"
+      },
+      {
+        "id": "dco-w3-3",
+        "answer_index": 2,
+        "explanation": "not random"
+      },
+      {
+        "id": "dco-w3-4",
+        "answer_index": 3,
+        "explanation": "rotation"
+      },
+      {
+        "id": "dco-w3-5",
+        "answer_index": 0,
+        "explanation": "uniqueness"
+      },
+      {
+        "id": "dco-w3-6",
+        "answer_index": 1,
+        "explanation": "log2 7776"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q04": [
+      {
+        "id": "dco-w4-1",
+        "answer_index": 2,
+        "explanation": "host boundary"
+      },
+      {
+        "id": "dco-w4-2",
+        "answer_index": 3,
+        "explanation": "right to left"
+      },
+      {
+        "id": "dco-w4-3",
+        "answer_index": 0,
+        "explanation": "registered domain"
+      },
+      {
+        "id": "dco-w4-4",
+        "answer_index": 1,
+        "explanation": "out-of-band"
+      },
+      {
+        "id": "dco-w4-5",
+        "answer_index": 2,
+        "explanation": "public suffix"
+      },
+      {
+        "id": "dco-w4-6",
+        "answer_index": 3,
+        "explanation": "reserved"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q05": [
+      {
+        "id": "dco-w5-1",
+        "answer_index": 0,
+        "explanation": "sum"
+      },
+      {
+        "id": "dco-w5-2",
+        "answer_index": 1,
+        "explanation": "single source"
+      },
+      {
+        "id": "dco-w5-3",
+        "answer_index": 2,
+        "explanation": "240/1100"
+      },
+      {
+        "id": "dco-w5-4",
+        "answer_index": 3,
+        "explanation": "MAX"
+      },
+      {
+        "id": "dco-w5-5",
+        "answer_index": 0,
+        "explanation": "1100/5"
+      },
+      {
+        "id": "dco-w5-6",
+        "answer_index": 1,
+        "explanation": "habit"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q06": [
+      {
+        "id": "dco-w6-1",
+        "answer_index": 2,
+        "explanation": "convention"
+      },
+      {
+        "id": "dco-w6-2",
+        "answer_index": 3,
+        "explanation": "1250/5/5"
+      },
+      {
+        "id": "dco-w6-3",
+        "answer_index": 0,
+        "explanation": "per minute"
+      },
+      {
+        "id": "dco-w6-4",
+        "answer_index": 1,
+        "explanation": "1235/1250"
+      },
+      {
+        "id": "dco-w6-5",
+        "answer_index": 2,
+        "explanation": "accuracy first"
+      },
+      {
+        "id": "dco-w6-6",
+        "answer_index": 3,
+        "explanation": "home row"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q07": [
+      {
+        "id": "dco-w7-1",
+        "answer_index": 0,
+        "explanation": "encoding"
+      },
+      {
+        "id": "dco-w7-2",
+        "answer_index": 1,
+        "explanation": "4/3"
+      },
+      {
+        "id": "dco-w7-3",
+        "answer_index": 2,
+        "explanation": "4\u00b7ceil(n/3)"
+      },
+      {
+        "id": "dco-w7-4",
+        "answer_index": 3,
+        "explanation": "edge"
+      },
+      {
+        "id": "dco-w7-5",
+        "answer_index": 0,
+        "explanation": "share link"
+      },
+      {
+        "id": "dco-w7-6",
+        "answer_index": 1,
+        "explanation": "privacy"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q08": [
+      {
+        "id": "dco-w8-1",
+        "answer_index": 2,
+        "explanation": "offsite"
+      },
+      {
+        "id": "dco-w8-2",
+        "answer_index": 3,
+        "explanation": "media diversity"
+      },
+      {
+        "id": "dco-w8-3",
+        "answer_index": 0,
+        "explanation": "single point"
+      },
+      {
+        "id": "dco-w8-4",
+        "answer_index": 1,
+        "explanation": "restore test"
+      },
+      {
+        "id": "dco-w8-5",
+        "answer_index": 2,
+        "explanation": "sync \u2260 backup"
+      },
+      {
+        "id": "dco-w8-6",
+        "answer_index": 3,
+        "explanation": "cadence"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q09": [
+      {
+        "id": "dco-w9-1",
+        "answer_index": 0,
+        "explanation": "AA"
+      },
+      {
+        "id": "dco-w9-2",
+        "answer_index": 1,
+        "explanation": "below 4.5"
+      },
+      {
+        "id": "dco-w9-3",
+        "answer_index": 2,
+        "explanation": "maximum"
+      },
+      {
+        "id": "dco-w9-4",
+        "answer_index": 3,
+        "explanation": "weights"
+      },
+      {
+        "id": "dco-w9-5",
+        "answer_index": 0,
+        "explanation": "precision"
+      },
+      {
+        "id": "dco-w9-6",
+        "answer_index": 1,
+        "explanation": "scope"
+      }
+    ],
+    "DIGITAL_CONFIDENCE-q10": [
+      {
+        "id": "dco-w10-1",
+        "answer_index": 2,
+        "explanation": "reset hub"
+      },
+      {
+        "id": "dco-w10-2",
+        "answer_index": 3,
+        "explanation": "secrets"
+      },
+      {
+        "id": "dco-w10-3",
+        "answer_index": 0,
+        "explanation": "support"
+      },
+      {
+        "id": "dco-w10-4",
+        "answer_index": 1,
+        "explanation": "evidence"
+      },
+      {
+        "id": "dco-w10-5",
+        "answer_index": 2,
+        "explanation": "demonstration"
+      },
+      {
+        "id": "dco-w10-6",
+        "answer_index": 3,
+        "explanation": "storage"
+      }
+    ]
+  },
+  "mid": [
+    {
+      "id": "dco-mid-01",
+      "answer_index": 1,
+      "explanation": "two levels up"
+    },
+    {
+      "id": "dco-mid-02",
+      "answer_index": 2,
+      "explanation": "root"
+    },
+    {
+      "id": "dco-mid-03",
+      "answer_index": 3,
+      "explanation": "naming"
+    },
+    {
+      "id": "dco-mid-04",
+      "answer_index": 0,
+      "explanation": "10^12 / 2^30"
+    },
+    {
+      "id": "dco-mid-05",
+      "answer_index": 1,
+      "explanation": "convert"
+    },
+    {
+      "id": "dco-mid-06",
+      "answer_index": 2,
+      "explanation": "marketing unit"
+    },
+    {
+      "id": "dco-mid-07",
+      "answer_index": 3,
+      "explanation": "rotation"
+    },
+    {
+      "id": "dco-mid-08",
+      "answer_index": 0,
+      "explanation": "77.5 bits"
+    },
+    {
+      "id": "dco-mid-09",
+      "answer_index": 1,
+      "explanation": "reuse"
+    },
+    {
+      "id": "dco-mid-10",
+      "answer_index": 2,
+      "explanation": "right end"
+    },
+    {
+      "id": "dco-mid-11",
+      "answer_index": 3,
+      "explanation": "out-of-band"
+    },
+    {
+      "id": "dco-mid-12",
+      "answer_index": 0,
+      "explanation": "preview"
+    },
+    {
+      "id": "dco-mid-13",
+      "answer_index": 1,
+      "explanation": "live formula"
+    },
+    {
+      "id": "dco-mid-14",
+      "answer_index": 2,
+      "explanation": "share"
+    },
+    {
+      "id": "dco-mid-15",
+      "answer_index": 3,
+      "explanation": "single source"
+    },
+    {
+      "id": "dco-mid-16",
+      "answer_index": 0,
+      "explanation": "60 \u2212 2"
+    },
+    {
+      "id": "dco-mid-17",
+      "answer_index": 1,
+      "explanation": "fairness"
+    },
+    {
+      "id": "dco-mid-18",
+      "answer_index": 2,
+      "explanation": "4/3"
+    },
+    {
+      "id": "dco-mid-19",
+      "answer_index": 3,
+      "explanation": "count"
+    },
+    {
+      "id": "dco-mid-20",
+      "answer_index": 0,
+      "explanation": "\u22654.5"
+    }
+  ],
+  "final": [
+    {
+      "id": "dco-fin-01",
+      "answer_index": 2,
+      "explanation": "location"
+    },
+    {
+      "id": "dco-fin-02",
+      "answer_index": 3,
+      "explanation": "cwd"
+    },
+    {
+      "id": "dco-fin-03",
+      "answer_index": 0,
+      "explanation": "units"
+    },
+    {
+      "id": "dco-fin-04",
+      "answer_index": 1,
+      "explanation": "convert first"
+    },
+    {
+      "id": "dco-fin-05",
+      "answer_index": 2,
+      "explanation": "800-63B"
+    },
+    {
+      "id": "dco-fin-06",
+      "answer_index": 3,
+      "explanation": "length"
+    },
+    {
+      "id": "dco-fin-07",
+      "answer_index": 0,
+      "explanation": "shared device"
+    },
+    {
+      "id": "dco-fin-08",
+      "answer_index": 1,
+      "explanation": "domain"
+    },
+    {
+      "id": "dco-fin-09",
+      "answer_index": 2,
+      "explanation": "pressure"
+    },
+    {
+      "id": "dco-fin-10",
+      "answer_index": 3,
+      "explanation": "size"
+    },
+    {
+      "id": "dco-fin-11",
+      "answer_index": 0,
+      "explanation": "formula"
+    },
+    {
+      "id": "dco-fin-12",
+      "answer_index": 1,
+      "explanation": "AVERAGE"
+    },
+    {
+      "id": "dco-fin-13",
+      "answer_index": 2,
+      "explanation": "accuracy"
+    },
+    {
+      "id": "dco-fin-14",
+      "answer_index": 3,
+      "explanation": "ergonomics"
+    },
+    {
+      "id": "dco-fin-15",
+      "answer_index": 0,
+      "explanation": "offsite"
+    },
+    {
+      "id": "dco-fin-16",
+      "answer_index": 1,
+      "explanation": "restore"
+    },
+    {
+      "id": "dco-fin-17",
+      "answer_index": 2,
+      "explanation": "sync"
+    },
+    {
+      "id": "dco-fin-18",
+      "answer_index": 3,
+      "explanation": "measure"
+    },
+    {
+      "id": "dco-fin-19",
+      "answer_index": 0,
+      "explanation": "large"
+    },
+    {
+      "id": "dco-fin-20",
+      "answer_index": 1,
+      "explanation": "beyond contrast"
+    },
+    {
+      "id": "dco-fin-21",
+      "answer_index": 2,
+      "explanation": "never share"
+    },
+    {
+      "id": "dco-fin-22",
+      "answer_index": 3,
+      "explanation": "priority"
+    },
+    {
+      "id": "dco-fin-23",
+      "answer_index": 0,
+      "explanation": "contents"
+    },
+    {
+      "id": "dco-fin-24",
+      "answer_index": 1,
+      "explanation": "boundary"
+    }
+  ]
+}

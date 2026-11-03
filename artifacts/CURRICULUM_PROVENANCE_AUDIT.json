@@ -223,6 +223,13 @@
       "C": 26,
       "D": 26,
       "n": 104
+    },
+    "DIGITAL_CONFIDENCE": {
+      "A": 26,
+      "B": 26,
+      "C": 26,
+      "D": 26,
+      "n": 104
     }
   },
   "key_balance_ok": true,
@@ -371,6 +378,14 @@
       "token_identical": 0,
       "token_jaccard_ge_0_80": 0,
       "worst_token_jaccard": 0.4286
+    },
+    "DIGITAL_CONFIDENCE": {
+      "weekly_stems": 60,
+      "mid_original": 20,
+      "final_original": 24,
+      "token_identical": 0,
+      "token_jaccard_ge_0_80": 0,
+      "worst_token_jaccard": 0.4286
     }
   },
   "exam_token_identical": 0,
@@ -395,11 +410,12 @@
     "EMBEDDED_PROTOTYPING": 932,
     "GUNNCHOS_PRODUCT_LAB": 927,
     "SEVEN_GC_APPRENTICESHIP": 1025,
-    "CYBER_SOC": 1013
+    "CYBER_SOC": 1013,
+    "DIGITAL_CONFIDENCE": 968
   },
   "lesson_padding_rejected": 0,
   "repeated_trailer_findings": {},
-  "registry_size": 41,
+  "registry_size": 44,
   "findings": [],
   "claim_boundary": "Original WAIKE items. Restricted sources used as domain labels only."
 }

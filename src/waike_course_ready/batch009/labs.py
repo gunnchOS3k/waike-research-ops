@@ -38,6 +38,11 @@ _NEGATIVES: dict[str, list[tuple[str, dict[str, Any]]]] = {
         ("lab_soc_attack_map", {"actor_attribution_claim": True}),
         ("lab_soc_detection_metrics", {"needs_tuning": False}),
     ],
+    labs_dco.COURSE: [
+        ("lab_dco_safety_plan", {"real_passwords_included": True}),
+        ("lab_dco_link_check", {"safe_to_open": True}),
+        ("lab_dco_backup_321", {"restore_tested": False}),
+    ],
 }
 
 

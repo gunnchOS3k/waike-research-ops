@@ -1,0 +1,29 @@
+{
+  "schema": "waike.offline_pack.v1",
+  "course_id": "DIGITAL_CONFIDENCE",
+  "lesson_ids": [
+    "DIGITAL_CONFIDENCE-w01",
+    "DIGITAL_CONFIDENCE-w02",
+    "DIGITAL_CONFIDENCE-w03",
+    "DIGITAL_CONFIDENCE-w04",
+    "DIGITAL_CONFIDENCE-w05",
+    "DIGITAL_CONFIDENCE-w06",
+    "DIGITAL_CONFIDENCE-w07",
+    "DIGITAL_CONFIDENCE-w08",
+    "DIGITAL_CONFIDENCE-w09",
+    "DIGITAL_CONFIDENCE-w10"
+  ],
+  "labs": [
+    "lab_dco_paths",
+    "lab_dco_storage_units",
+    "lab_dco_entropy",
+    "lab_dco_link_check",
+    "lab_dco_sheet_formulas",
+    "lab_dco_typing_wpm",
+    "lab_dco_attachment_fit",
+    "lab_dco_backup_321",
+    "lab_dco_contrast",
+    "lab_dco_safety_plan"
+  ],
+  "product_pack_hint": "wireless_basics_101 maps as a session-shaped compatibility probe only"
+}

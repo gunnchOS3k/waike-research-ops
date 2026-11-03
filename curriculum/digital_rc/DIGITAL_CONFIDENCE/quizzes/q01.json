@@ -1,0 +1,72 @@
+{
+  "quiz_id": "DIGITAL_CONFIDENCE-q01",
+  "week": 1,
+  "items": [
+    {
+      "id": "dco-w1-1",
+      "kind": "mcq",
+      "stem": "What does '..' mean in a path?",
+      "choices": [
+        "The folder above the current one",
+        "The current folder",
+        "The home folder",
+        "A hidden file"
+      ]
+    },
+    {
+      "id": "dco-w1-2",
+      "kind": "mcq",
+      "stem": "Which path is absolute on Linux or macOS?",
+      "choices": [
+        "Documents/letters",
+        "/home/ana/Documents",
+        "../photos",
+        "./form.pdf"
+      ]
+    },
+    {
+      "id": "dco-w1-3",
+      "kind": "mcq",
+      "stem": "From /home/ana, where does ./Downloads/form.pdf point?",
+      "choices": [
+        "/Downloads/form.pdf",
+        "/home/Downloads/form.pdf",
+        "/home/ana/Downloads/form.pdf",
+        "/home/ana/form.pdf"
+      ]
+    },
+    {
+      "id": "dco-w1-4",
+      "kind": "mcq",
+      "stem": "Standing in /home/ana/Documents/letters, where does ../photos lead?",
+      "choices": [
+        "/home/ana/photos",
+        "/photos",
+        "/home/ana/Documents/letters/photos",
+        "/home/ana/Documents/photos"
+      ]
+    },
+    {
+      "id": "dco-w1-5",
+      "kind": "mcq",
+      "stem": "What should you ask first when a file 'disappears'?",
+      "choices": [
+        "Where am I standing, and which way does the path walk?",
+        "Is the computer broken?",
+        "Should I reinstall?",
+        "Who deleted it?"
+      ]
+    },
+    {
+      "id": "dco-w1-6",
+      "kind": "mcq",
+      "stem": "How does Windows usually separate folders in a path?",
+      "choices": [
+        "With commas",
+        "With backslashes after a drive letter",
+        "With spaces",
+        "With dots only"
+      ]
+    }
+  ]
+}

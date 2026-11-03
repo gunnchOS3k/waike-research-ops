@@ -1,0 +1,36 @@
+{
+  "schema": "waike.alignment.v1",
+  "course_id": "DIGITAL_CONFIDENCE",
+  "track_ids": [
+    "DIGITAL_CONFIDENCE"
+  ],
+  "date_checked": "2026-11-03",
+  "benchmarks": [
+    {
+      "source_id": "NIST_SP_800_63B_4_AUTH",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "passphrase_strength", "waike_weeks": [3]}
+      ]
+    },
+    {
+      "source_id": "CISA_SECURE_OUR_WORLD",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "recognize_phishing_links", "waike_weeks": [4]},
+        {"domain": "mfa_and_password_manager", "waike_weeks": [10]}
+      ]
+    },
+    {
+      "source_id": "W3C_WCAG_2_2",
+      "reuse_class": "PUBLIC_REFERENCE_ONLY",
+      "coverage": [
+        {"domain": "contrast_minimum", "waike_weeks": [9]}
+      ]
+    }
+  ],
+  "distinct_from": {
+    "GENERAL_IT": "GENERAL_IT trains a support specialist running a public desk (accounts, disks, DNS, change windows). DIGITAL_CONFIDENCE is for adults returning to computers: paths, storage units, passphrases, reading links, spreadsheet formulas, typing, attachments, backups, contrast, and a personal safety plan."
+  },
+  "claim_boundary": "Practice files and made-up accounts only; no patron data. Not a digital-literacy certificate. Not student/teacher E6."
+}

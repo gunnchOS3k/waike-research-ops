@@ -1,0 +1,269 @@
+{
+  "assessment_id": "DIGITAL_CONFIDENCE-final",
+  "items": [
+    {
+      "id": "dco-fin-01",
+      "kind": "mcq",
+      "stem": "A form asks you to upload 'C:\\Users\\Mia\\Desktop\\id.pdf' but you saved it in Downloads. What changed?",
+      "choices": [
+        "The file type",
+        "The drive size",
+        "The folder part of the path",
+        "The password"
+      ]
+    },
+    {
+      "id": "dco-fin-02",
+      "kind": "mcq",
+      "stem": "Why do support staff ask 'where are you standing?' when a relative path fails?",
+      "choices": [
+        "Paths are random",
+        "It is small talk",
+        "Absolute paths never work",
+        "Relative paths start from the current folder"
+      ]
+    },
+    {
+      "id": "dco-fin-03",
+      "kind": "mcq",
+      "stem": "A 2 TB external drive shows about 1.82 TB on a laptop. What explains it?",
+      "choices": [
+        "Decimal versus binary units",
+        "A broken drive",
+        "Hidden viruses",
+        "The cable"
+      ]
+    },
+    {
+      "id": "dco-fin-04",
+      "kind": "mcq",
+      "stem": "A photo folder is 9.5 GB and the free space shows 9 GiB. Fits?",
+      "choices": [
+        "No",
+        "Yes, 9.5 GB is about 8.85 GiB",
+        "Exactly equal",
+        "Cannot tell"
+      ]
+    },
+    {
+      "id": "dco-fin-05",
+      "kind": "mcq",
+      "stem": "Which password policy best follows current NIST guidance?",
+      "choices": [
+        "Eight characters, changed monthly",
+        "Must include a symbol and a capital only",
+        "Long passphrases, checked against breached lists, changed on compromise",
+        "No passwords at all"
+      ]
+    },
+    {
+      "id": "dco-fin-06",
+      "kind": "mcq",
+      "stem": "Why can a short password with symbols be weaker than a long lowercase one?",
+      "choices": [
+        "Symbols are ignored",
+        "Lowercase is encrypted",
+        "It cannot be",
+        "Length adds more bits than symbols when chosen at random"
+      ]
+    },
+    {
+      "id": "dco-fin-07",
+      "kind": "mcq",
+      "stem": "A website offers 'remember me' on a shared library computer. Best choice?",
+      "choices": [
+        "Decline and sign out when finished",
+        "Accept",
+        "Accept and leave the tab open",
+        "Write the password on the desk"
+      ]
+    },
+    {
+      "id": "dco-fin-08",
+      "kind": "mcq",
+      "stem": "An email from 'support@harborbank.example.alerts-help.example.org' asks for your PIN. Who sent it?",
+      "choices": [
+        "Harbor Bank",
+        "Whoever owns example.org",
+        "The library",
+        "Your email provider"
+      ]
+    },
+    {
+      "id": "dco-fin-09",
+      "kind": "mcq",
+      "stem": "A message pressures you to act within ten minutes. What does urgency usually signal?",
+      "choices": [
+        "A genuine emergency always",
+        "A system update",
+        "A tactic to stop you checking",
+        "A refund"
+      ]
+    },
+    {
+      "id": "dco-fin-10",
+      "kind": "mcq",
+      "stem": "You must share a 60 MB video with a teacher. Most reliable method?",
+      "choices": [
+        "Attach it to one email",
+        "Split it into twelve emails",
+        "Print it",
+        "Upload and share a view-only link"
+      ]
+    },
+    {
+      "id": "dco-fin-11",
+      "kind": "mcq",
+      "stem": "A sheet's total is typed as 1,000 while the rows add to 1,100. What should you fix?",
+      "choices": [
+        "Replace the typed total with =SUM over the rows",
+        "Delete a row",
+        "Change the rows to match",
+        "Hide the total"
+      ]
+    },
+    {
+      "id": "dco-fin-12",
+      "kind": "mcq",
+      "stem": "Which formula finds the average of B2 through B9?",
+      "choices": [
+        "=SUM(B2:B9)",
+        "=AVERAGE(B2:B9)",
+        "=B2/B9",
+        "=MAX(B2:B9)"
+      ]
+    },
+    {
+      "id": "dco-fin-13",
+      "kind": "mcq",
+      "stem": "Your accuracy is 90% at 60 WPM. What should practice focus on?",
+      "choices": [
+        "Going faster",
+        "Ignoring errors",
+        "Slowing down to raise accuracy",
+        "Stopping practice"
+      ]
+    },
+    {
+      "id": "dco-fin-14",
+      "kind": "mcq",
+      "stem": "Which posture reduces strain while typing?",
+      "choices": [
+        "Wrists bent upward",
+        "Keyboard on your lap at an angle",
+        "Leaning on one elbow",
+        "Square to the keyboard with level wrists"
+      ]
+    },
+    {
+      "id": "dco-fin-15",
+      "kind": "mcq",
+      "stem": "A backup drive sits beside the laptop in the same bag. Which threat defeats both?",
+      "choices": [
+        "The bag being stolen",
+        "A typo",
+        "A slow network",
+        "A power cut at the library"
+      ]
+    },
+    {
+      "id": "dco-fin-16",
+      "kind": "mcq",
+      "stem": "You last tested a restore two years ago. What is the plan's status?",
+      "choices": [
+        "Perfect",
+        "Unproven until you test again",
+        "Illegal",
+        "Offsite"
+      ]
+    },
+    {
+      "id": "dco-fin-17",
+      "kind": "mcq",
+      "stem": "Why does a cloud sync folder alone fail 3-2-1?",
+      "choices": [
+        "Clouds are offline",
+        "It uses too much space",
+        "Deletions and damage sync to every copy",
+        "It is always private"
+      ]
+    },
+    {
+      "id": "dco-fin-18",
+      "kind": "mcq",
+      "stem": "A flyer uses white text on pale yellow. What should you do before printing?",
+      "choices": [
+        "Add more yellow",
+        "Use a smaller font",
+        "Nothing",
+        "Measure the contrast ratio"
+      ]
+    },
+    {
+      "id": "dco-fin-19",
+      "kind": "mcq",
+      "stem": "Large text needs at least what contrast for WCAG AA?",
+      "choices": [
+        "3 to 1",
+        "4.5 to 1",
+        "7 to 1",
+        "2 to 1"
+      ]
+    },
+    {
+      "id": "dco-fin-20",
+      "kind": "mcq",
+      "stem": "Which is a real accessibility improvement besides contrast?",
+      "choices": [
+        "Blinking text",
+        "Readable font size and clear link text",
+        "Text inside images only",
+        "Light grey on white"
+      ]
+    },
+    {
+      "id": "dco-fin-21",
+      "kind": "mcq",
+      "stem": "A volunteer asks you to email them your password 'to help'. What do you do?",
+      "choices": [
+        "Send it",
+        "Send half of it",
+        "Refuse and show the request to the desk",
+        "Post it on paper"
+      ]
+    },
+    {
+      "id": "dco-fin-22",
+      "kind": "mcq",
+      "stem": "Where should multi-factor sign-in be turned on first?",
+      "choices": [
+        "A game account",
+        "A shopping wish list",
+        "The library catalogue",
+        "The email account"
+      ]
+    },
+    {
+      "id": "dco-fin-23",
+      "kind": "mcq",
+      "stem": "Which item belongs in a personal safety plan?",
+      "choices": [
+        "Who to ask when a message looks strange",
+        "Your bank PIN",
+        "Your recovery codes",
+        "A copy of your ID"
+      ]
+    },
+    {
+      "id": "dco-fin-24",
+      "kind": "mcq",
+      "stem": "What does the Library Lab course claim when you finish?",
+      "choices": [
+        "A guaranteed job",
+        "Practice-based digital confidence, not a certification",
+        "A government licence",
+        "Cyber-security certification"
+      ]
+    }
+  ]
+}
